@@ -13,7 +13,7 @@ export default function Home() {
         
         <meta name="description" content="The Public Good"></meta>
         {/* <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/50540494506_b25446840c_c.jpg"></meta> */}
-        <meta name="description" property="og:description" contents="The Public Good"></meta>
+        <meta name="description" property="og:description" content="The Public Good"></meta>
         <meta name="author" content="Daniel Hartley"></meta>
 
         

@@ -20,9 +20,15 @@ https://github.com/vercel/next.js/tree/canary/examples/using-preact
 
 ### 6 add support for jest tests
 
+** tests cannot go in /pages **
+
 ### 7 add manifest and service worker support
 
 ### 8 add support for open graph protocol e.g. meta tages in header
+
+### 9 run first performance tests
+
+### 10 add _document.tsx in /pages
 
 
 ---------- below this line is the original README.md ----------
