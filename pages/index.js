@@ -4,7 +4,7 @@ import Carbonbadge from "react-carbonbadge"
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div class={styles.container}>
       <Head>
         <title>The Public Good</title>
 
@@ -22,23 +22,22 @@ export default function Home() {
         <link rel="manifest" href="/manifest.json" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+      <main class={styles.main}>
+        <h1 class={styles.title}>
+          The Public Good
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <p class={styles.description}>
+            helping good companies do good
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+        <div class={styles.grid}>
+          <a href="https://nextjs.org/docs" class={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="https://nextjs.org/learn" class={styles.card}>
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
@@ -46,8 +45,9 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
+      <footer class={styles.footer}>
         <Carbonbadge darkMode={true} />
+        <object data="/lighthouse.svg" type="image/svg+xml" />
       </footer>
     </div>
   )

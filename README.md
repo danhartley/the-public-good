@@ -30,8 +30,13 @@ https://github.com/vercel/next.js/tree/canary/examples/using-preact
 
 ### 10 add _document.tsx in /pages
 
+### 11 add lightouse and website carbon badges
+
+### 12 add netlify build status badge:
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/95741ee3-ab8b-47f4-a4ca-b039765160f1/deploy-status)](https://app.netlify.com/sites/snapdragon-retrieval/deploys)
 
+### 13 classname is now supported out of the box
 
 ---------- below this line is the original README.md ----------
 
