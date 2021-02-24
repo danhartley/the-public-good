@@ -30,6 +30,8 @@ https://github.com/vercel/next.js/tree/canary/examples/using-preact
 
 ### 10 add _document.tsx in /pages
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/95741ee3-ab8b-47f4-a4ca-b039765160f1/deploy-status)](https://app.netlify.com/sites/snapdragon-retrieval/deploys)
+
 
 ---------- below this line is the original README.md ----------
 
