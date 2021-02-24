@@ -1,0 +1,11 @@
+{
+    "name": "the-public-good",
+    "short_name": "the-public-good",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#fff",
+    "theme_color": "#673ab8",
+    "icons": [
+    ]
+  }

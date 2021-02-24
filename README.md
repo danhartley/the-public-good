@@ -1,3 +1,32 @@
+# Preact with next.js
+
+## Online documentation
+
+https://docs.google.com/spreadsheets/d/1wPCe1_E_bgqGdEIR60ckRatEVjGMUZHqvofyGWZkwyM/edit#gid=310824755
+
+## Steps summary
+
+### 1 install preact for next.js
+
+https://github.com/vercel/next.js/tree/canary/examples/using-preact
+
+### 2 create local git repo & add to github
+
+### 3 integrate with netlify
+
+### 4 add support for typescript
+
+### 5 add support for absolute paths
+
+### 6 add support for jest tests
+
+### 7 add manifest and service worker support
+
+### 8 add support for open graph protocol e.g. meta tages in header
+
+
+---------- below this line is the original README.md ----------
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
