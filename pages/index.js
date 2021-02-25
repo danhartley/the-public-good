@@ -48,7 +48,7 @@ export default function Home() {
       <footer class={styles.footer}>
         <Carbonbadge darkMode={true} />
         <div>
-            <object data="/lighthouse.svg" type="image/svg+xml" alt="lighthouse performance badge" />
+            <object data="/lighthouse.svg" type="image/svg+xml" alt="lighthouse performance badge, score 100%" aria-label="lighthouse performance badge, score 100%" />
         </div>
       </footer>
     </div>
