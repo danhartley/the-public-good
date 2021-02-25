@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from 'styles/Home.module.css';
+import styles from 'styles/Home.module.scss';
 import Carbonbadge from "react-carbonbadge"
 
 export default function Home() {
@@ -47,7 +47,9 @@ export default function Home() {
 
       <footer class={styles.footer}>
         <Carbonbadge darkMode={true} />
-        <object data="/lighthouse.svg" type="image/svg+xml" />
+        <div>
+            <object data="/lighthouse.svg" type="image/svg+xml" alt="lighthouse performance badge" />
+        </div>
       </footer>
     </div>
   )
