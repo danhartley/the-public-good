@@ -3,6 +3,7 @@
 ## Online documentation
 
   - https://docs.google.com/spreadsheets/d/1wPCe1_E_bgqGdEIR60ckRatEVjGMUZHqvofyGWZkwyM/edit#gid=310824755
+  - github markdown: https://github.github.com/gfm/
 
 ## Steps summary
 

@@ -32,6 +32,10 @@ export default function Home() {
             stop wasting time
         </p>
 
+        <p class={styles.description}>
+            this site will not empower you to do anything
+        </p>
+
         <div class={styles.grid}>
           <a href="https://nextjs.org/docs" class={styles.card}>
             <h2>Documentation &rarr;</h2>
@@ -48,9 +52,9 @@ export default function Home() {
 
       <footer class={styles.footer}>
         <Carbonbadge darkMode={true} />
-        <div>
+        {/* <div>
             <object data="/lighthouse.svg" type="image/svg+xml" alt="lighthouse performance badge, score 100%" aria-label="lighthouse performance badge, score 100%" />
-        </div>
+        </div> */}
       </footer>
     </div>
   )
