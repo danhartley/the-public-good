@@ -2,13 +2,13 @@
 
 ## Online documentation
 
-  -https://docs.google.com/spreadsheets/d/1wPCe1_E_bgqGdEIR60ckRatEVjGMUZHqvofyGWZkwyM/edit#gid=310824755
+  - https://docs.google.com/spreadsheets/d/1wPCe1_E_bgqGdEIR60ckRatEVjGMUZHqvofyGWZkwyM/edit#gid=310824755
 
 ## Steps summary
 
 1 install preact for next.js
 
-  -see: https://github.com/vercel/next.js/tree/canary/examples/using-preact
+  - see: https://github.com/vercel/next.js/tree/canary/examples/using-preact
 
 2 create local git repo & add to github
 
@@ -20,7 +20,7 @@
 
 6 add support for jest tests
 
-  -** tests cannot go in /pages **
+  - ** tests cannot go in /pages **
 
 7 add manifest and service worker support
 
@@ -32,12 +32,12 @@
 
 11 add lighthouse and website carbon badges
 
-  -add badges
-  -add lighthouse budget and README for how to run reports (against the live site) from the command line
+  - add badges
+  - add lighthouse budget and README for how to run reports (against the live site) from the command line
 
 12 add netlify build status badge:
 
-  -[![Netlify Status](https://api.netlify.com/api/v1/badges/95741ee3-ab8b-47f4-a4ca-b039765160f1/deploy-status)](https://app.netlify.com/sites/snapdragon-retrieval/deploys)
+  - [![Netlify Status](https://api.netlify.com/api/v1/badges/95741ee3-ab8b-47f4-a4ca-b039765160f1/deploy-status)](https://app.netlify.com/sites/snapdragon-retrieval/deploys)
 
 13 classname is now supported out of the box
 
@@ -45,23 +45,25 @@
 
 15 create branch for netlify deploys
 
-  -see cheat-sheet: https://gist.github.com/cferdinandi/ef665330286fd5d7127d
+  - see cheat-sheet: https://gist.github.com/cferdinandi/ef665330286fd5d7127d
 
-  -change netlify deploy branch from main to netlify-deploy: https://app.netlify.com/sites/condescending-villani-e9aade/settings/deploys
+  - change netlify deploy branch from main to netlify-deploy: https://app.netlify.com/sites/condescending-villani-e9aade/settings/deploys
 
-  -check current: git branch -vv
-  -create new local branch: git checkout -b netlify-deploy
-  -sync branch with remote: git push -u origin netlify-deploy
-  -checkout branch: git checkout netlify-deploy
-  -check current: git branch -vv
-  -return to main: git checkout main
-  -make changes to main: git add . git commit git push
-  -** netlify does NOT publish changes **
-  -checkout out branch: git checkout netlify-deploy
-  -merge changes from main: git merge main
-  -check changes to branch: git log netlify-deploy
-  -push changes to origin: git push
-  -** netlify PUBLISHES changes **
+  ```
+  check current: git branch -vv
+  create new local branch: git checkout -b netlify-deploy
+  sync branch with remote: git push -u origin netlify-deploy
+  checkout branch: git checkout netlify-deploy
+  check current: git branch -vv
+  return to main: git checkout main
+  make changes to main: git add . git commit git push
+  ** netlify does NOT publish changes **
+  checkout out branch: git checkout netlify-deploy
+  merge changes from main: git merge main
+  check changes to branch: git log netlify-deploy
+  push changes to origin: git push
+  ** netlify PUBLISHES changes **
+  ```
 
 ---------- below this line is the original README.md ----------
 

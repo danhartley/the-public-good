@@ -29,7 +29,7 @@ export default function Home() {
         </h1>
 
         <p class={styles.description}>
-            stop wasting time - main changes, no deploy
+            stop wasting time
         </p>
 
         <div class={styles.grid}>
