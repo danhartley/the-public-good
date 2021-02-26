@@ -32,6 +32,9 @@ https://github.com/vercel/next.js/tree/canary/examples/using-preact
 
 ### 11 add lighthouse and website carbon badges
 
+add badges
+add lighthouse budget and README for how to run reports (against the live site) from the command line
+
 ### 12 add netlify build status badge:
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/95741ee3-ab8b-47f4-a4ca-b039765160f1/deploy-status)](https://app.netlify.com/sites/snapdragon-retrieval/deploys)

@@ -16,10 +16,11 @@ export default function Home() {
         {/* <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/50540494506_b25446840c_c.jpg"></meta> */}
         <meta name="description" property="og:description" content="The Public Good"></meta>
         <meta name="author" content="Daniel Hartley"></meta>
-
+        <meta name="release" content={ new Date()}></meta>
         
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
+
       </Head>
 
       <main class={styles.main}>
@@ -28,7 +29,7 @@ export default function Home() {
         </h1>
 
         <p class={styles.description}>
-            helping good companies do good
+            stop wasting time - main changes, no deploy
         </p>
 
         <div class={styles.grid}>
