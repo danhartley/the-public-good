@@ -25,26 +25,30 @@ export default function Home() {
 
       <main class={styles.main}>
         <h1 class={styles.title}>
-          The Public Good
+          
         </h1>
 
         <p class={styles.description}>
-            stop wasting time
-        </p>
-
-        <p class={styles.description}>
-            this site will not empower you to do anything
+            no dilly-dallying
         </p>
 
         <div class={styles.grid}>
           <a href="https://nextjs.org/docs" class={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h2>Fast websites are a good thing</h2>
+            <p>Having a slow connection, or limited data, is not unusual.</p>
+            <p>Data can be < a href="https://ourworldindata.org/grapher/cost-of-1gb-of-mobile-data?region=World"> expensive</a> and therefore limited; our device may be low on battery.</p>
+            <p>The world's resources are finite and precious.</p>
+            
           </a>
 
           <a href="https://nextjs.org/learn" class={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h2>We all need help sometimes</h2>
+            <p>There are <a href="https://developers.google.com/web/fundamentals/accessibility">all sorts of reasons</a> why any one of us may have trouble accessing a website some, or all, of the time.</p>
+          </a>
+
+          <a href="https://nextjs.org/learn" class={styles.card}>
+            <h2>You are not alone</h2>
+            <p>Get to the point</p>
           </a>
 
         </div>
