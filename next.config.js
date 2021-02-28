@@ -5,7 +5,7 @@ const path = require('path');
 const withPWA = require('next-pwa');
 const runtimeCaching = require('next-pwa/cache');
 
-const { createSecureHeaders } = require("next-secure-headers");
+// const { createSecureHeaders } = require("next-secure-headers");
 
 module.exports = withPreact({
     sassOptions: {
@@ -20,29 +20,29 @@ module.exports = withPWA({
   },
 });
 
-module.exports = {
-    async headers() {
-      return [
-        {
-          source: "/(.*)",
-          headers: createSecureHeaders({
-            contentSecurityPolicy: {
-              directives: {
-                defaultSrc: [
-                  "'self'",
-                  "https://netlify.app",
-                ],
-                styleSrc: ["'self'", "'unsafe-inline'"],
-                imgSrc: ["'self'"],
-                baseUri: "self",
-                formAction: "self",
-                frameAncestors: true,
-              },
-            },
+// module.exports = {
+//     async headers() {
+//       return [
+//         {
+//           source: "/(.*)",
+//           headers: createSecureHeaders({
+//             contentSecurityPolicy: {
+//               directives: {
+//                 defaultSrc: [
+//                   "'self'",
+//                   "https://netlify.app",
+//                 ],
+//                 styleSrc: ["'self'", "'unsafe-inline'"],
+//                 imgSrc: ["'self'"],
+//                 baseUri: "self",
+//                 formAction: "self",
+//                 frameAncestors: true,
+//               },
+//             },
            
-          }),
-        },
+//           }),
+//         },
         
-      ];
-    },
-  };
+//       ];
+//     },
+//   };
