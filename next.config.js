@@ -31,6 +31,7 @@ module.exports = withPWA({
 //                 defaultSrc: [
 //                   "'self'",
 //                   "https://netlify.app",
+//                   "https://unpkg.com/website-carbon-badges@^1/b.min.js"
 //                 ],
 //                 styleSrc: ["'self'", "'unsafe-inline'"],
 //                 imgSrc: ["'self'"],
@@ -45,4 +46,4 @@ module.exports = withPWA({
         
 //       ];
 //     },
-//   };
+// };
