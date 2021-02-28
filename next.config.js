@@ -20,8 +20,29 @@ module.exports = withPWA({
   },
 });
 
-module.exports = {
+module.exports ={
     async headers() {
-      return [{ source: "/(.*)", headers: createSecureHeaders() }];
+      return [
+        {
+          source: "/(.*)",
+          headers: createSecureHeaders({
+            contentSecurityPolicy: {
+              directives: {
+                defaultSrc: [
+                  "'self'",
+                  "https://netlify.app",
+                ],
+                styleSrc: ["'self'", "'unsafe-inline'"],
+                imgSrc: ["'self'"],
+                baseUri: "self",
+                formAction: "self",
+                frameAncestors: true,
+              },
+            },
+           
+          }),
+        },
+        
+      ];
     },
-};
+  };
