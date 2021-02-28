@@ -6,10 +6,9 @@
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy =  '''
     style-src 'self';
-    default-src 'self' 'https://unpkg.com/website-carbon-badges@^1/b.min.js';
+    default-src 'self';
     object-src 'none';
     img-src https:;
-    script-src 'self'
-    'unsafe-inline';
+    script-src 'self' https://unpkg.com/website-carbon-badges@^1/b.min.js; # 'unsafe-inline'
     frame-ancestors 'none';'''
 
