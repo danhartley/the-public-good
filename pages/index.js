@@ -56,9 +56,9 @@ export default function Home() {
       </main>
 
       <footer class={styles.footer}>
-        <div id="wcb" class="carbonbadge"></div>
-        <script src="https://unpkg.com/website-carbon-badges@1.1.1/b.min.js" defer></script>
-        {/* <Carbonbadge darkMode={true} /> */}
+        {/* <div id="wcb" class="carbonbadge"></div>
+        <script src="https://unpkg.com/website-carbon-badges@1.1.1/b.min.js" defer></script> */}
+        <Carbonbadge darkMode={true} />
         {/* <div>
             <object data="/lighthouse.svg" type="image/svg+xml" alt="lighthouse performance badge, score 100%" aria-label="lighthouse performance badge, score 100%" />
         </div> */}
