@@ -20,7 +20,7 @@ module.exports = withPWA({
   },
 });
 
-module.exports ={
+module.exports = {
     async headers() {
       return [
         {

@@ -65,6 +65,12 @@
   push changes to origin: git push
   ** netlify PUBLISHES changes **
   ```
+16 apply tighter headers security
+
+  ```
+  add next-secure-headers settings in netlify.config.js
+  add netlify security settings in netlify.toml
+  ```
 
 ---------- below this line is the original README.md ----------
 
