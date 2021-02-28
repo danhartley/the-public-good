@@ -18,7 +18,7 @@ export default function Home() {
         <meta name="author" content="Daniel Hartley"></meta>
         <meta name="release" content={ new Date()}></meta>
         
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
 
       </Head>
@@ -35,7 +35,7 @@ export default function Home() {
         <div class={styles.grid}>
           <a href="https://nextjs.org/docs" class={styles.card}>
             <h2>Fast websites are a good thing</h2>
-            <p>Having a <a href="https://en.unesco.org/news/new-report-global-broadband-access-underscores-urgent-need-reach-half-world-still-unconnected"> slow connection</a> is not unusual.</p>
+            <p>Having a <a href="https://internethealthreport.org/2019/the-worlds-slowest-internet-is-the-least-affordable/"> slow connection</a> is not unusual.</p>
             <p>Data can be < a href="https://ourworldindata.org/grapher/cost-of-1gb-of-mobile-data?region=World"> expensive</a>. Poor design <a href ="https://webkit.org/blog/8970/how-web-content-can-affect-power-usage/">runs down batteries</a>.</p>
             <p>There is a <a href="https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"> cost in emissions</a> for every page.</p>
             <p>When you waste people's time, <a href="https://developer.mozilla.org/en-US/docs/Learn/Performance/why_web_performance">they don't hang around.</a></p>
