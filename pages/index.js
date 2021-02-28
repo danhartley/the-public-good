@@ -18,7 +18,7 @@ export default function Home() {
         <meta name="author" content="Daniel Hartley"></meta>
         <meta name="release" content={ new Date()}></meta>
         
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
         <link rel="manifest" href="/manifest.json" />
 
       </Head>
