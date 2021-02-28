@@ -8,7 +8,5 @@
     object-src 'none';
     img-src https:;
     default-src 'self' unpkg.com *.unpkg.com;
-    # style-src 'self';
-    # script-src 'self' unpkg.com *.unpkg.com;
     frame-ancestors 'none';'''
 
