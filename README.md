@@ -70,6 +70,8 @@
   ```
   add next-secure-headers settings in netlify.config.js
   add netlify security settings in netlify.toml
+  run tests: https://observatory.mozilla.org/analyze/condescending-villani-e9aade.netlify.app
+  run tests: https://webpagetest.org/result/210228_DiEC_445775dc7e0b56cdc18d146032aae636/
   ```
 
 ---------- below this line is the original README.md ----------

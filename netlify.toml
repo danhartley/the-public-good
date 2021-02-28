@@ -10,5 +10,6 @@
     object-src 'none';
     img-src https:;
     script-src 'self' https://unpkg.com/website-carbon-badges@^1/b.min.js;
+    connect-src: https://unpkg.com/website-carbon-badges@^1/b.min.js;
     frame-ancestors 'none';'''
 
