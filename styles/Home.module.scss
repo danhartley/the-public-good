@@ -96,7 +96,6 @@
 .card:hover,
 .card:focus,
 .card:active {
-//   color: #0070f3;
   border-color: #0070f3;
 }
 
@@ -109,7 +108,7 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-  width: 680px;
+  max-width: 680px;
   margin: 5px 0 0 0;
 }
 

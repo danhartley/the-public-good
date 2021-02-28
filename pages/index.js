@@ -35,15 +35,16 @@ export default function Home() {
         <div class={styles.grid}>
           <a href="https://nextjs.org/docs" class={styles.card}>
             <h2>Fast websites are a good thing</h2>
-            <p>Having a slow connection, or limited data, is not unusual.</p>
-            <p>Data can be < a href="https://ourworldindata.org/grapher/cost-of-1gb-of-mobile-data?region=World"> expensive</a> and therefore limited; our device may be low on battery.</p>
-            <p>The world's resources are finite and precious.</p>
+            <p>Having a <a href="https://en.unesco.org/news/new-report-global-broadband-access-underscores-urgent-need-reach-half-world-still-unconnected"> slow connection</a> is not unusual.</p>
+            <p>Data can be < a href="https://ourworldindata.org/grapher/cost-of-1gb-of-mobile-data?region=World"> expensive</a>. Poor design <a href ="https://webkit.org/blog/8970/how-web-content-can-affect-power-usage/">runs down batteries</a>.</p>
+            <p>There is a <a href="https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"> cost in emissions</a> for every page.</p>
             
           </a>
 
           <a href="https://nextjs.org/learn" class={styles.card}>
-            <h2>We all need help sometimes</h2>
+            <h2>We all need help</h2>
             <p>There are <a href="https://developers.google.com/web/fundamentals/accessibility">all sorts of reasons</a> why any one of us may have trouble accessing a website some, or all, of the time.</p>
+            <p>Many devices are <a href="https://web.dev/load-faster-like-proxx/">limited</a>.</p>
           </a>
 
           <a href="https://nextjs.org/learn" class={styles.card}>

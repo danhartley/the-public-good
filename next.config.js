@@ -5,6 +5,8 @@ const path = require('path');
 const withPWA = require('next-pwa');
 const runtimeCaching = require('next-pwa/cache');
 
+const { createSecureHeaders } = require("next-secure-headers");
+
 module.exports = withPreact({
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
@@ -17,3 +19,9 @@ module.exports = withPWA({
     runtimeCaching,
   },
 });
+
+module.exports = {
+    async headers() {
+      return [{ source: "/(.*)", headers: createSecureHeaders() }];
+    },
+};
