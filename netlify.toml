@@ -5,4 +5,11 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = '''
+    style-src 'self';
+    default-src 'self';
+    object-src 'none';
+    img-src https:;
+    script-src 'self'
+    'unsafe-inline';
+    frame-ancestors 'none';'''
 
