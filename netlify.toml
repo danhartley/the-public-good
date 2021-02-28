@@ -6,7 +6,7 @@
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy =  '''
     style-src 'self' 'unsafe-inline';
-    default-src 'self' 'unsafe-inline'pkg;
+    default-src 'self' 'unsafe-inline' unpkg.com;
     object-src 'none';
     img-src https:;
     script-src 'self';
