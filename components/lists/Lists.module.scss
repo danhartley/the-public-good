@@ -1,0 +1,9 @@
+@import 'styles/mixins.scss';
+
+.linkList {
+    list-style: none;
+    li {
+        @include externalLink();
+        margin: 10px 0;
+    }
+}

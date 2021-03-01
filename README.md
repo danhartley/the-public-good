@@ -74,6 +74,10 @@
   run tests: https://webpagetest.org/result/210228_DiEC_445775dc7e0b56cdc18d146032aae636/
   ```
 
+16 support for class instead of classname. Add the anyname.d.ts file
+
+17 create layout page template
+
 ---------- below this line is the original README.md ----------
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
