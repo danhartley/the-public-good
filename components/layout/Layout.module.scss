@@ -48,7 +48,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // @include toggleFlexDirection();
+    color: rgba($dark, .8);
+    background-color: $light;
     & > div {
         margin: 10px;
     }

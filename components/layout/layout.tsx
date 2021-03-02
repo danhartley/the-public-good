@@ -53,7 +53,7 @@ export default function Layout({
                     <p class={styles.description}>
                         no dilly-dallying
                     </p>
-                    {children}  
+                    {children}
                     </main>
                 </div>
 
