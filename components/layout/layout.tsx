@@ -46,7 +46,7 @@ export default function Layout({
                     <main class={styles.main}>
                     <div class={styles.header}>
                         <Link href={'/'}>
-                            <a aria-label="Home page"><h1 class={styles.title}>The Public Good</h1></a>
+                            <a aria-label="Home page"><h1 class={styles.title}><span></span></h1></a>
                         </Link>
                     </div>
 

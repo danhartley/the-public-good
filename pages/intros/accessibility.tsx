@@ -4,7 +4,14 @@ import { Lists } from 'components/lists/Lists';
 import styles from 'pages/intros/Intro.module.scss';
 
 const links = [
-    {}
+    {
+        "name": "axe - Web Accessibility Testing",
+        "source": "https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
+    },
+    {
+        "name": "Color Contrast Accessibility Validator",
+        "source": "https://color.a11y.com/"
+    },
 ];
 
 const Accessibility = () => {
@@ -12,10 +19,9 @@ const Accessibility = () => {
         <Layout title="Web performance" description={'Web performance'} header={'Web performance'}>
 
             <p>Many of the test sites listed on the <span class={styles.link}><Link href={'/intros/web-performance'}><a>website performance page</a></Link></span> include accessibility checks.</p>
-            <p>This page has references to articles and guides.</p>
-            
+                        
             <section class={styles.card}>
-            <p>Each link will take you to a page where you can enter your site URL and run a series of performance and accessibility tests.</p>
+            <p>There are a number of browser development tools</p>
 
             <div class={styles.grid}>
                 <Lists.InternalLinksList links={links} />
