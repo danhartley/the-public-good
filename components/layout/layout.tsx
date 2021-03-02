@@ -46,7 +46,7 @@ export default function Layout({
                     <main class={styles.main}>
                     <div class={styles.header}>
                         <Link href={'/'}>
-                            <a aria-label="Home page"><h1 class={styles.title}></h1></a>
+                            <a aria-label="Home page"><h1 class={styles.title}>The Public Good</h1></a>
                         </Link>
                     </div>
 
@@ -59,7 +59,7 @@ export default function Layout({
 
                 <footer class={styles.footer}>
                     <div>© Daniel Hartley 2020. All rights reserved.</div>
-                    <Carbonbadge darkMode={true} />
+                    <Carbonbadge darkMode={false} />
                     {/* <div>
                         <object data="/lighthouse.svg" type="image/svg+xml" alt="lighthouse performance badge, score 100%" aria-label="lighthouse performance badge, score 100%" />
                     </div> */}
