@@ -1,6 +1,6 @@
 import Layout from 'components/layout/layout';
 import { Lists } from 'components/lists/Lists';
-import styles from 'pages/intros/Intro.module.scss';
+import styles from 'pages/pages.module.scss';
 
 const perfLinks = [
     {
@@ -52,7 +52,7 @@ const WebPerformance = () => {
 
             <section class={styles.card}>
 
-                <p>Each link will take you to a page where you can enter your site URL and run a series of performance and accessibility tests.</p>
+                <p>Click links to run website performance and accessibility tests.</p>
 
                 <div class={styles.grid}>
                     <Lists.InternalLinksList links={perfLinks} />
@@ -61,7 +61,7 @@ const WebPerformance = () => {
             </section>
             <section class={styles.card}>
 
-                <p>Each link will take you to a page where you can enter your site URL and run a series of tests related to its carbon emissions.</p>
+                <p>Click links to run website carbon emissions checks.</p>
 
                 <div class={styles.grid}>
                     <Lists.InternalLinksList links={greenLinks} />

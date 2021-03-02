@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Layout from 'components/layout/layout';
 import { Lists } from 'components/lists/Lists';
-import styles from 'pages/intros/Intro.module.scss';
+import styles from 'pages/pages.module.scss';
 
 const links = [
     {
@@ -18,7 +18,7 @@ const Accessibility = () => {
     return (
         <Layout title="Web performance" description={'Web performance'} header={'Web performance'}>
 
-            <p>Many of the test sites listed on the <span class={styles.link}><Link href={'/intros/web-performance'}><a>website performance page</a></Link></span> include accessibility checks.</p>
+            <p>Many of the test sites listed on the <span class={styles.link}><Link href={'/web-performance'}><a>website performance page</a></Link></span> include accessibility checks.</p>
                         
             <section class={styles.card}>
             <p>There are a number of browser development tools</p>

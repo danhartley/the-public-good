@@ -51,7 +51,8 @@ export default function Layout({
                     </div>
 
                     <p class={styles.description}>
-                        no dilly-dallying
+                        We will build you a fast, safe, accessible website.
+                        {/* no dilly-dallying */}
                     </p>
                     {children}
                     </main>

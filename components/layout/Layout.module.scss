@@ -12,7 +12,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .title {
@@ -35,9 +34,12 @@
 }
 
 .description {
-  margin: 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    @media (min-width: 601px) {
+        margin: 20px 0;
+    }
 }
 
 .footer {
