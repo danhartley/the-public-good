@@ -18,7 +18,10 @@ $light: white;
     border: 1px solid #eaeaea;
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
-    @include externalLink();      
+    @include externalLink();
+    h2 {
+        margin-top: 0;
+    }
     p {
       font-size: 1.25rem;
       line-height: 1.5;
