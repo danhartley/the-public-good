@@ -43,18 +43,17 @@ export default function Layout({
                 </Head>
 
                 <div class={styles.container}>
-                    <main class={styles.main}>
-                    <div class={styles.header}>
-                        <Link href={'/'}>
-                            <a aria-label="Home page"><h1 class={styles.title}><span></span></h1></a>
-                        </Link>
-                    </div>
+                    <main>
+                        <div class={styles.header}>
+                            <Link href={'/'}>
+                                <a aria-label="Home page"><h1 class={styles.title}><span></span></h1></a>
+                            </Link>
+                            <p class={styles.description}>
+                                Making websites with small footprints.
+                            </p>
+                        </div>
 
-                    <p class={styles.description}>
-                        We will build you a fast, safe, accessible website.
-                        {/* no dilly-dallying */}
-                    </p>
-                    {children}
+                        {children}
                     </main>
                 </div>
 

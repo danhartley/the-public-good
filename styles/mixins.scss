@@ -1,5 +1,6 @@
 $dark: black;
 $light: white;
+$emphasis: rgb(120, 0, 0);
 
 @mixin toggleFlexDirection() {
     display: flex;
@@ -10,13 +11,12 @@ $light: white;
 }
 
 @mixin card() {
-    margin: 1rem;
-    padding: 1.5rem;
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
     text-align: left;
     text-decoration: none;
-    border: 1px solid rgba($dark, .2);
-    border-radius: 10px;
-    transition: color 0.15s ease, border-color 0.15s ease;
+    border: 1px solid rgba($dark, .1);
+    max-width: 600px;
     @include externalLink();
     h1 {
         color: rgba($dark, .8);

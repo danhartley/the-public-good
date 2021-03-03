@@ -7,13 +7,6 @@
     }
 }
 
-.main {
-  padding: 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
 .title {
   margin: 0;
   line-height: 1.15;
@@ -34,11 +27,14 @@
 }
 
 .description {
+    color: $emphasis;
+    font-weight: bold;
     margin: 0;
     line-height: 1.5;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    letter-spacing: .15px;
     @media (min-width: 601px) {
-        margin: 20px 0;
+        margin: 0 0 15px 0;
     }
 }
 

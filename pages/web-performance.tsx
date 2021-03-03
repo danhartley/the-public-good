@@ -20,27 +20,16 @@ const perfLinks = [
         "source": "https://gtmetrix.com/"
     },
     {
-        "name": "Google PageSpeed Insights ",
+        "name": "Google PageSpeed Insights",
         "source": "https://developers.google.com/speed/pagespeed/insights/"
     },
-];
-
-const greenLinks = [
     {
-        "name": "The Green Web Foundation",
-        "source": "https://www.thegreenwebfoundation.org/"
+        "name": "Yellow Lab Tools",
+        "source": "https://yellowlab.tools/"
     },
     {
-        "name": "Website Carbon Calculator",
-        "source": "https://www.websitecarbon.com/"
-    },
-    {
-        "name": "Beacon",
-        "source": "https://digitalbeacon.co/"
-    },
-    {
-        "name": "Ecograder",
-        "source": "https://ecograder.com/"
+        "name": "Pingdom Website Speed Test",
+        "source": "https://tools.pingdom.com/"
     },
 ];
 
@@ -48,23 +37,14 @@ const WebPerformance = () => {
     return (
         <Layout title="Web performance" description={'Web performance'} header={'Web performance'}>
 
-            <p>There are many resources for checking your site performance.</p>
+            {/* <p>There are many resources for checking your site performance.</p> */}
 
             <section class={styles.card}>
 
-                <p>Click links to run website performance and accessibility tests.</p>
+                <h2>Website performance and accessibility tests</h2>
 
                 <div class={styles.grid}>
                     <Lists.InternalLinksList links={perfLinks} />
-                </div>
-
-            </section>
-            <section class={styles.card}>
-
-                <p>Click links to run website carbon emissions checks.</p>
-
-                <div class={styles.grid}>
-                    <Lists.InternalLinksList links={greenLinks} />
                 </div>
 
             </section>
