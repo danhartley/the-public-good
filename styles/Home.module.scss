@@ -8,17 +8,13 @@
     @include grid()
 }
 
+.blurb {
+    @include card();
+    p {
+        margin-top: 20px;
+    }
+}
+
 .card {
     @include card();
 }
-
-.logo {
-  height: 1em;
-}
-
-// @media (max-width: 600px) {
-//   .grid {
-//     width: 100%;
-//     flex-direction: column;
-//   }
-// }

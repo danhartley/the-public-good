@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import { useState, useEffect } from "preact/hooks";
 
 import Link from 'next/link';
 import Head from 'next/head';
@@ -16,12 +16,14 @@ export default function Layout({
   score = null
 }) {
 
-    const router = useRouter();
+    const [matches, setMatches] = useState(false);
 
-    const { provider, lesson, widget } = router.query;
+    useEffect(() => {
+        const mediaMatch = window.matchMedia('(min-width: 601px)');
+        setMatches(mediaMatch.matches);
+    },[]);
 
-    return (
-        
+    return (        
             <div>
                 <Head>
                     <title>The Public Good</title>
@@ -41,12 +43,15 @@ export default function Layout({
                     <link rel="manifest" href="/manifest.json" />
 
                 </Head>
-
                 <div class={styles.container}>
-                    <main>
+                    <main class={styles.main}>
                         <div class={styles.header}>
                             <Link href={'/'}>
-                                <a aria-label="Home page"><h1 class={styles.title}><span></span></h1></a>
+                                <a aria-label="Home page">
+                                {
+                                    matches ? <h1 class={styles.title}>The Public Good</h1> : <h1 class={styles.title}>The PG</h1>
+                                }
+                                </a>
                             </Link>
                             <p class={styles.description}>
                                 Making websites with small footprints.
@@ -55,16 +60,14 @@ export default function Layout({
 
                         {children}
                     </main>
+                    <footer class={styles.footer}>
+                        <div>© Daniel Hartley 2020. All rights reserved.</div>
+                        <Carbonbadge darkMode={true} />
+                        {/* <div>
+                            <object data="/lighthouse.svg" type="image/svg+xml" alt="lighthouse performance badge, score 100%" aria-label="lighthouse performance badge, score 100%" />
+                        </div> */}
+                    </footer>
                 </div>
-
-                <footer class={styles.footer}>
-                    <div>© Daniel Hartley 2020. All rights reserved.</div>
-                    <Carbonbadge darkMode={false} />
-                    {/* <div>
-                        <object data="/lighthouse.svg" type="image/svg+xml" alt="lighthouse performance badge, score 100%" aria-label="lighthouse performance badge, score 100%" />
-                    </div> */}
-                </footer>
             </div>
-   
     )
 }

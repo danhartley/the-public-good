@@ -7,6 +7,18 @@ export default function Home() {
   return (
     <Layout title="Home" header={"Welcome"}>
         <div class={styles.grid}>
+
+            <section class={styles.blurb}>
+                <h2>Approach</h2>  
+                <p>This website adheres to four rules: it is fast; accessible to everyone; supports all devices; and functions on poor connections.</p>
+                {/* Including the <a href="https://www.nokia.com/phones/en_int/nokia-3310">Nokia 3310</a>. */}
+                <p>The architecture conforms to a set of approaches and tools called <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a>.</p>
+                <p>It isn't a template because third party libraries and solutions change fast, and best practices change with them.</p>
+                <p>The specifics of how this website was put together are detailed in <a href="A detailed, technical breakdown of the site">the breakdown.</a></p>
+                <p>Sites that adhere to these principles find ways to stand out without compromising their principles. The design agency, <a href="https://www.advocatedesign.co.uk/index">Advocate</a>, <a href="https://solar.lowtechmagazine.com/">Low-tech Magazine</a>, and <a href="https://zerowastekoeln.de/">Zero Waste Cologne</a> have character. They are also relaxing to visit because they make their purpose clear, and discovery easy.</p>                
+
+            </section>
+
             <section class={styles.card}>
                 <h2>Web performance</h2>
                 <p>Having a <a aria-label="Mozilla Internet Health Report 2019 states that the slowest mobile broadband internet in the world is also the least affordable." href="https://internethealthreport.org/2019/the-worlds-slowest-internet-is-the-least-affordable/"> slow connection</a> is not unusual.</p>

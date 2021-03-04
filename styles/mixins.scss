@@ -1,6 +1,10 @@
-$dark: black;
-$light: white;
-$emphasis: rgb(120, 0, 0);
+$foreground: white;
+$background: #383838;
+// $emphasis: rgb(120, 0, 0);
+// $emphasis: rgb(205, 28, 2);
+// $emphasis: rgb(154, 18, 0);
+// $emphasis: rgb(167, 21, 0);
+$emphasis: white;
 
 @mixin toggleFlexDirection() {
     display: flex;
@@ -12,37 +16,40 @@ $emphasis: rgb(120, 0, 0);
 
 @mixin card() {
     margin: 1rem 0;
-    padding: 1rem 1.5rem;
+    padding: 0;
     text-align: left;
-    text-decoration: none;
-    border: 1px solid rgba($dark, .1);
+    text-decoration: none;    
     max-width: 600px;
     @include externalLink();
     h1 {
-        color: rgba($dark, .8);
+        color: rgba($foreground, .8);
     }
     h2 {
         margin-top: 0;
     }
     p {
         font-size: .8rem;
-        @media (min-width: 601px) {
-            font-size: 1.25rem;
-        }
         line-height: 2;
         margin: 10px 0 0 0;
+    }
+    @media (min-width: 601px) {
+        padding: 1rem 1.5rem;
+        border: 1px solid rgba($foreground, .1);
+        p {
+            font-size: 1.25rem;
+        }
     }
 }
 
 @mixin link() {    
     a, a:hover, a:active, a:visited {
-        color: rgba($dark, .8) !important;
+        color: rgba($foreground, .8) !important;
         text-decoration: none;
-        border-bottom: 1px solid rgba($dark, .6);
-        padding-bottom: 3px;
+        border-bottom: 1px solid rgba($foreground, .6);
+        padding-bottom: 2px;
     }
     a:hover {
-        color: rgba($dark, .6) !important;
+        color: rgba($foreground, .6) !important;
     }
 }
 
@@ -65,13 +72,12 @@ $emphasis: rgb(120, 0, 0);
 }
 
 @mixin container {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    color: rgba($dark, .8);
-    background-color: $light;    
-    min-height: calc(100vh - 100px);
-    padding: 0 0.5rem;
+    // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Arial',Helvetica,Arial,Lucida,sans-serif;
+    color: rgba($foreground, .8);
+    background-color: $background;    
+    padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }

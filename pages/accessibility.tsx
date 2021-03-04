@@ -18,10 +18,10 @@ const Accessibility = () => {
     return (
         <Layout title="Web performance" description={'Web performance'} header={'Web performance'}>
 
-            <p>Many of the test sites listed on the <span class={styles.link}><Link href={'/web-performance'}><a>website performance page</a></Link></span> include accessibility checks.</p>
+            {/* <p>Many of the test sites listed on the <span class={styles.link}><Link href={'/web-performance'}><a>website performance page</a></Link></span> include accessibility checks.</p> */}
                         
             <section class={styles.card}>
-            <p>There are a number of browser development tools</p>
+            <h2>Browser development tools</h2>
 
             <div class={styles.grid}>
                 <Lists.InternalLinksList links={links} />
