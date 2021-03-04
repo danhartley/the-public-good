@@ -1,5 +1,5 @@
 import Layout from 'components/layout/layout';
-import { Lists } from 'components/lists/Lists';
+import { Links } from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
 
 const perfLinks = [
@@ -33,23 +33,15 @@ const perfLinks = [
     },
 ];
 
-const WebPerformance = () => {
+const Performance = () => {
     return (
-        <Layout title="Web performance" description={'Web performance'} header={'Web performance'}>
-
-            {/* <p>There are many resources for checking your site performance.</p> */}
-
+        <Layout title="Web performance" description={'Web performance'}>
             <section class={styles.card}>
-
-                <h2>Website performance and accessibility tests</h2>
-
-                <div class={styles.grid}>
-                    <Lists.InternalLinksList links={perfLinks} />
-                </div>
-
+                <h2>Website performance and accessibility tests</h2>                
+                <Links.InternalLinksList links={perfLinks} />                
             </section>
         </Layout>
     )
 };
 
-export default WebPerformance;
+export default Performance;

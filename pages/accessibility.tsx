@@ -1,9 +1,12 @@
-import Link from 'next/link';
 import Layout from 'components/layout/layout';
-import { Lists } from 'components/lists/Lists';
+import { Links } from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
 
 const links = [
+    {
+        "name": "WAVE Web Accessibility Evaluation Tool",
+        "source": "https://wave.webaim.org/"
+    },
     {
         "name": "axe - Web Accessibility Testing",
         "source": "https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
@@ -16,16 +19,10 @@ const links = [
 
 const Accessibility = () => {
     return (
-        <Layout title="Web performance" description={'Web performance'} header={'Web performance'}>
-
-            {/* <p>Many of the test sites listed on the <span class={styles.link}><Link href={'/web-performance'}><a>website performance page</a></Link></span> include accessibility checks.</p> */}
-                        
+        <Layout title="Web accessibility" description={'Web accessibility'}>
             <section class={styles.card}>
-            <h2>Browser development tools</h2>
-
-            <div class={styles.grid}>
-                <Lists.InternalLinksList links={links} />
-            </div>
+                <h2>Accessibility tools</h2>
+                <Links.InternalLinksList links={links} />
             </section>
         </Layout>
     )

@@ -6,17 +6,17 @@ import styles from 'styles/Home.module.scss';
 export default function Home() {
   return (
     <Layout title="Home" header={"Welcome"}>
-        <div class={styles.grid}>
-
-            <section class={styles.blurb}>
-                <h2>Approach</h2>  
-                <p>This website adheres to four rules: it is fast; accessible to everyone; supports all devices; and functions on poor connections.</p>
-                {/* Including the <a href="https://www.nokia.com/phones/en_int/nokia-3310">Nokia 3310</a>. */}
-                <p>The architecture conforms to a set of approaches and tools called <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a>.</p>
-                <p>It isn't a template because third party libraries and solutions change fast, and best practices change with them.</p>
-                <p>The specifics of how this website was put together are detailed in <a href="A detailed, technical breakdown of the site">the breakdown.</a></p>
-                <p>Sites that adhere to these principles find ways to stand out without compromising their principles. The design agency, <a href="https://www.advocatedesign.co.uk/index">Advocate</a>, <a href="https://solar.lowtechmagazine.com/">Low-tech Magazine</a>, and <a href="https://zerowastekoeln.de/">Zero Waste Cologne</a> have character. They are also relaxing to visit because they make their purpose clear, and discovery easy.</p>                
-
+            <section class={styles.card}>
+                <h2>Website architecture</h2>  
+                <p>This website is fast, accessible, works when your connection is slow, and on any device, including the <a href="https://www.nokia.com/phones/en_int/nokia-3310">Nokia 3310</a>.</p>
+                <p>It is the working example of my set of good practices. The specifics of how this website was put together are covered in 
+                    <span class={styles.internalLink}>
+                        &nbsp;<Link href={'/architecture'}>
+                            <a>the breakdown</a>
+                        </Link>.
+                    </span>                    
+                </p>                
+                <p>Sites that follow similar principles find ways to stand out without compromise. <a href="https://solar.lowtechmagazine.com/">Low-tech Magazine</a>, and <a href="https://zerowastekoeln.de/">Zero Waste Cologne</a>, <a href="https://www.advocatedesign.co.uk/index">Advocate</a>, and <a href="https://heydonworks.com/">Heydownworks</a> have character, clear objectives and straightforward navigation.</p>
             </section>
 
             <section class={styles.card}>
@@ -25,10 +25,9 @@ export default function Home() {
                 <p>Data can be expensive, <a aria-label="Our World in Data map showing that the cost of 1GB of mobile data as a percentage of income, is highest a spread of African countries." href="https://ourworldindata.org/grapher/cost-of-1gb-of-mobile-data?region=World">especially in countries where only mobile connectivity is available</a>.</p>
                 <p>Poor design <a aria-label="WebKit guidelines for developers on how to minimise mobile and laptop energy use." href ="https://webkit.org/blog/8970/how-web-content-can-affect-power-usage/">runs down batteries</a>.</p>
                 <p>When you waste people's time, <a href="https://developer.mozilla.org/en-US/docs/Learn/Performance/why_web_performance">they don't hang around.</a></p>
-                {/* <p>No one likes to be <a href="https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/">kept waiting</a>.</p> */}
                 <p><a href="https://www.nngroup.com/articles/powers-of-10-time-scales-in-ux/">It takes 0.05 seconds to form an opinion.</a></p>
                 <p class={styles.internalLink}>
-                    <Link href={'/web-performance'}>
+                    <Link href={'/performance'}>
                         <a>Read more about web performance</a>
                     </Link>
                 </p>
@@ -51,8 +50,7 @@ export default function Home() {
                         <a>Read more about sustainability</a>
                     </Link>
                 </p>
-            </section> 
-        </div>            
+            </section>
     </Layout>
   )
 }

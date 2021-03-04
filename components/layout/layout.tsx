@@ -1,39 +1,28 @@
-import { useState, useEffect } from "preact/hooks";
+import { useRouter } from 'next/router';
 
 import Link from 'next/link';
 import Head from 'next/head';
 import Carbonbadge from "react-carbonbadge";
+import { Links } from 'components/links/Links';
 
 import styles from 'components/layout/Layout.module.scss';
 
 export default function Layout({
   children,
-  title = 'This is the default title',
-  description = 'Lesson retrieval',
-  header = '',
-  headerLink = '',
-  disableNavigation = false,
-  score = null
+  title = 'The Public Good',
+  description = 'The Public Good'
 }) {
-
-    const [matches, setMatches] = useState(false);
-
-    useEffect(() => {
-        const mediaMatch = window.matchMedia('(min-width: 601px)');
-        setMatches(mediaMatch.matches);
-    },[]);
-
+    const router = useRouter();
     return (        
             <div>
                 <Head>
-                    <title>The Public Good</title>
+                    <title>{ title }</title>
 
                     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"></meta>
                     <meta name="mobile-web-app-capable" content="yes"></meta>
                     <meta name="apple-mobile-web-app-capable" content="yes"></meta>
                     
-                    <meta name="description" content="The Public Good"></meta>
-                    {/* <meta name="description" content={description}></meta> */}
+                    <meta name="description" content={description}></meta>
                     {/* <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/50540494506_b25446840c_c.jpg"></meta> */}
                     <meta name="description" property="og:description" content="The Public Good"></meta>
                     <meta name="author" content="Daniel Hartley"></meta>
@@ -45,27 +34,22 @@ export default function Layout({
                 </Head>
                 <div class={styles.container}>
                     <main class={styles.main}>
-                        <div class={styles.header}>
+                        <header class={styles.header}>
                             <Link href={'/'}>
                                 <a aria-label="Home page">
-                                {
-                                    matches ? <h1 class={styles.title}>The Public Good</h1> : <h1 class={styles.title}>The PG</h1>
-                                }
+                                    <h1 role="navigation" class={styles.title}>The Public Good</h1>
                                 </a>
                             </Link>
                             <p class={styles.description}>
                                 Making websites with small footprints.
                             </p>
-                        </div>
-
+                        </header>
                         {children}
+                        { router.pathname === '/' ? null : <nav><Links.Home></Links.Home></nav> }
                     </main>
                     <footer class={styles.footer}>
-                        <div>© Daniel Hartley 2020. All rights reserved.</div>
+                        <div>© Daniel Hartley 2021. All rights reserved.</div>
                         <Carbonbadge darkMode={true} />
-                        {/* <div>
-                            <object data="/lighthouse.svg" type="image/svg+xml" alt="lighthouse performance badge, score 100%" aria-label="lighthouse performance badge, score 100%" />
-                        </div> */}
                     </footer>
                 </div>
             </div>

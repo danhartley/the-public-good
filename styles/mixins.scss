@@ -1,21 +1,9 @@
 $foreground: white;
 $background: #383838;
-// $emphasis: rgb(120, 0, 0);
-// $emphasis: rgb(205, 28, 2);
-// $emphasis: rgb(154, 18, 0);
-// $emphasis: rgb(167, 21, 0);
 $emphasis: white;
 
-@mixin toggleFlexDirection() {
-    display: flex;
-    flex-direction: column;
-    @media (min-width: 601px) {
-        flex-direction: row;
-    }
-}
-
 @mixin card() {
-    margin: 1rem 0;
+    margin: 2rem 0;
     padding: 0;
     text-align: left;
     text-decoration: none;    
@@ -25,12 +13,11 @@ $emphasis: white;
         color: rgba($foreground, .8);
     }
     h2 {
-        margin-top: 0;
+        margin: 0 0 1rem 0;
     }
     p {
         font-size: .8rem;
         line-height: 2;
-        margin: 10px 0 0 0;
     }
     @media (min-width: 601px) {
         padding: 1rem 1.5rem;
@@ -43,36 +30,28 @@ $emphasis: white;
 
 @mixin link() {    
     a, a:hover, a:active, a:visited {
-        color: rgba($foreground, .8) !important;
+        color: rgba($foreground, .8);
         text-decoration: none;
         border-bottom: 1px solid rgba($foreground, .6);
         padding-bottom: 2px;
     }
     a:hover {
-        color: rgba($foreground, .6) !important;
+        color: rgba($foreground, .6);
     }
 }
 
 @mixin internalLink() {
     @include link();
-    margin: 15px 0 0 0 !important;
-    font-style: italic;
-    font-size: .9rem !important;
+    a, a:hover, a:active, a:visited {
+        border-bottom: 1px dashed rgba($foreground, .6);
+    }
 }
 
 @mixin externalLink() {
     @include link();
 }
 
-@mixin grid() {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 @mixin container {
-    // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-family: 'Arial',Helvetica,Arial,Lucida,sans-serif;
     color: rgba($foreground, .8);
     background-color: $background;    
@@ -80,4 +59,28 @@ $emphasis: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.container {
+    @include container();
+    .header {
+        @include link();
+    }
+}
+
+.card {
+    @include card();
+    .internalLink {
+        @include internalLink();
+    }
+}
+
+.linkList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        @include externalLink();
+        margin: .5rem 0;
+    }
 }

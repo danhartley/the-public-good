@@ -1,4 +1,6 @@
-import styles from 'components/lists/Lists.module.scss';
+import Link from 'next/link';
+
+import styles from 'components/links/Links.module.scss';
 
 const ExternalLinksList = ({links}) => {
     const list = links.map(link => {
@@ -24,7 +26,20 @@ const InternalLinksList = ({links}) => {
     )
 };
 
-export const Lists = {    
+const Home = () => {
+    return (
+        <section class={styles.card}>
+            <p class={styles.internalLink}>
+                <Link href={'/'}>
+                    <a>Home</a>
+                </Link>
+            </p>
+        </section>
+    )
+};
+
+export const Links = {    
     InternalLinksList,    
-    ExternalLinksList    
+    ExternalLinksList,
+    Home
 }
