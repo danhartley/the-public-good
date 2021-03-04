@@ -84,3 +84,7 @@ $emphasis: white;
         margin: .5rem 0;
     }
 }
+
+.externalList {
+    @include externalLink();
+}

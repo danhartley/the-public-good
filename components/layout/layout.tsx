@@ -2,7 +2,6 @@ import { useRouter } from 'next/router';
 
 import Link from 'next/link';
 import Head from 'next/head';
-import Carbonbadge from "react-carbonbadge";
 import { Links } from 'components/links/Links';
 
 import styles from 'components/layout/Layout.module.scss';
@@ -45,11 +44,11 @@ export default function Layout({
                             </p>
                         </header>
                         {children}
-                        { router.pathname === '/' ? null : <nav><Links.Home></Links.Home></nav> }
+                        { router.pathname === '/' ? null : <nav><Links.Home textAlign={'right'}></Links.Home></nav> }
                     </main>
                     <footer class={styles.footer}>
                         <div>© Daniel Hartley 2021. All rights reserved.</div>
-                        <Carbonbadge darkMode={true} />
+                        <div class={styles.externalList}><a href="https://www.linkedin.com/in/danhartley/">LinkedIn</a></div>
                     </footer>
                 </div>
             </div>

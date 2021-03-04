@@ -1,3 +1,4 @@
+import Carbonbadge from "react-carbonbadge";
 import Layout from 'components/layout/layout';
 import { Links } from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
@@ -44,6 +45,9 @@ const Sustainability = () => {
                     <li><a aria-label="Assessment of the world's response to SDG 17.8 provided by Our World in Data" href="https://sdg-tracker.org/global-partnerships">Internet access (SDG 17.8)</a></li>
                     <li><a aria-label="Assessment of the world's response to SDG 12 provided by Our World in Data" href="https://sdg-tracker.org/sustainable-consumption-production">Data centres (SDG 12)</a></li>
                 </ul>
+            </section>
+            <section class={styles.card}>
+                <Carbonbadge darkMode={true} />
             </section>
         </Layout>
     )

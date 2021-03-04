@@ -16,7 +16,7 @@ export default function Home() {
                         </Link>.
                     </span>                    
                 </p>                
-                <p>Sites that follow similar principles find ways to stand out without compromise. <a href="https://solar.lowtechmagazine.com/">Low-tech Magazine</a>, and <a href="https://zerowastekoeln.de/">Zero Waste Cologne</a>, <a href="https://www.advocatedesign.co.uk/index">Advocate</a>, and <a href="https://heydonworks.com/">Heydownworks</a> have character, clear objectives and straightforward navigation.</p>
+                <p>Sites that follow similar principles find ways to stand out without compromise. <a href="https://solar.lowtechmagazine.com/">Low-tech Magazine</a>, <a href="https://yakim.nl/articles/voiceover-testing/">Yakim</a>, <a href="https://zerowastekoeln.de/">Zero Waste Cologne</a>, <a href="https://www.advocatedesign.co.uk/index">Advocate</a>, and <a href="https://heydonworks.com/">Heydownworks</a> have character, clear objectives and straightforward navigation.</p>
             </section>
 
             <section class={styles.card}>

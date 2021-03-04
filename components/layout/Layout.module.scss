@@ -1,7 +1,7 @@
 @import 'styles/mixins.scss';
 
 .main {
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px - 8px - 8px);
 }
 
 .title {
@@ -33,7 +33,7 @@
     height: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     color: rgba($foreground, .8);
     background-color: $background;
@@ -44,6 +44,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    div:nth-child(1) {
+        font-size: .8rem;
+    }
+    @media (min-width: 601px) {
+        div:nth-child(1) {
+            font-size: inherit;
+        }        
     }
 }
   
