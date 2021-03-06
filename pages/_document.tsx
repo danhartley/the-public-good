@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head>
             <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
         </Head>
-        <body>
+        <body style={"margin: 0" as React.CSSProperties}>
           <Main />
           <NextScript />
         </body>

@@ -22,7 +22,7 @@ const InternalLinksList = ({links}) => {
     });
 
     return (
-        <ul class={styles.linkList}>{list}</ul>
+        <ul class={styles.unorderedList}>{list}</ul>
     )
 };
 

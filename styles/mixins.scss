@@ -1,6 +1,6 @@
 $foreground: white;
 $background: #383838;
-$emphasis: white;
+$emphasis: #FEE715FF;
 
 @mixin card() {
     margin: 2rem 0;
@@ -30,13 +30,16 @@ $emphasis: white;
 
 @mixin link() {    
     a, a:hover, a:active, a:visited {
-        color: rgba($foreground, .8);
+        color: rgba($foreground, 1);
         text-decoration: none;
         border-bottom: 1px solid rgba($foreground, .6);
-        padding-bottom: 2px;
+        padding-bottom: 3px;
     }
     a:hover {
         color: rgba($foreground, .6);
+    }
+    a:visited {
+        color: gray;
     }
 }
 
@@ -75,7 +78,7 @@ $emphasis: white;
     }
 }
 
-.linkList {
+@mixin unorderedList() {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -83,6 +86,10 @@ $emphasis: white;
         @include externalLink();
         margin: .5rem 0;
     }
+}
+
+.unorderedList {
+    @include unorderedList();
 }
 
 .externalList {
