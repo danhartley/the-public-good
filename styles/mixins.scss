@@ -1,6 +1,5 @@
-$foreground: white;
-$background: #383838;
-$emphasis: #FEE715FF;
+$foreground: rgb(255,255,255);
+$background: rgb(55, 55, 55);
 
 @mixin card() {
     margin: 2rem 0;
@@ -10,10 +9,11 @@ $emphasis: #FEE715FF;
     max-width: 600px;
     @include externalLink();
     h1 {
-        color: rgba($foreground, .8);
+        color: rgba($foreground, .9) !important;        
     }
     h2 {
         margin: 0 0 1rem 0;
+        font-weight: 500;
     }
     p {
         font-size: .8rem;
@@ -30,23 +30,43 @@ $emphasis: #FEE715FF;
 
 @mixin link() {    
     a, a:hover, a:active, a:visited {
-        color: rgba($foreground, 1);
+        color: rgb(135, 195, 200);
         text-decoration: none;
-        border-bottom: 1px solid rgba($foreground, .6);
+        border-bottom: 1px solid rgb(135, 195, 200);
         padding-bottom: 3px;
     }
     a:hover {
-        color: rgba($foreground, .6);
+        color: rgb(120 172 177);
     }
     a:visited {
-        color: gray;
+        color: rgb(214 174 222);
+    }
+    a:visited:hover {
+        color: rgb(192 157 199);
+    }
+    h1 {
+        // color: rgba($foreground, .9);
+        color: var(--fg);
     }
 }
 
 @mixin internalLink() {
     @include link();
-    a, a:hover, a:active, a:visited {
-        border-bottom: 1px dashed rgba($foreground, .6);
+    a {
+        color: orange;
+        border-bottom: 1px solid orange;
+    }
+    a:hover {
+        color: rgb(233 153 7);
+        border-bottom: 1px solid rgb(233 153 7);
+    }
+    a:visited {
+        color: rgb(250 140 188);
+        border-bottom: 1px solid rgb(250 140 188);
+    }
+    a:visited:hover {
+        color: rgb(222 131 170);
+        border-bottom: 1px solid rgb(222 131 170);
     }
 }
 
@@ -56,9 +76,10 @@ $emphasis: #FEE715FF;
 
 @mixin container {
     font-family: 'Arial',Helvetica,Arial,Lucida,sans-serif;
-    color: rgba($foreground, .8);
-    background-color: $background;    
-    padding: 1rem 0.5rem;
+    color: rgba($foreground, .9);
+    // background-color: $background;    
+    background-color: var(--bg);
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,4 +115,14 @@ $emphasis: #FEE715FF;
 
 .externalList {
     @include externalLink();
+}
+
+.list {
+    @include unorderedList();
+    font-size: 1rem;
+    margin-left: .5rem;
+    li:before {
+        content: '- ';
+        margin-left: -.5rem;
+    }
 }

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Layout from 'components/layout/layout';
-
 import styles from 'styles/Home.module.scss';
 
 export default function Home() {
@@ -11,17 +10,20 @@ export default function Home() {
             <h2>Promises</h2>
             <p>                
                 <ul class={styles.list}>
-                    <li>Encourage you to follow links to other sites. A <a arai-label="Low-tech Magazine's solar-powered website" href="https://solar.lowtechmagazine.com/">solar-powered website</a>. <a aria-label="The communal computer developed at Dynamicland" href="https://dynamicland.org/">A communal computer</a>. <a href="https://ourworldindata.org/time-use-living-conditions">The world's energy problem</a>. <a href="https://neumz.com/">Daily Gregorian Chant</a>. <a href="https://www.youtube.com/watch?v=ZJQjjBR6PbY&t=19s">The Origin of the Elements</a>.</li>
-                    <li>Talk about the good work of other people, and organisations. <a aria-label="Yakin's introduction to VoiceOver." href="https://yakim.nl/articles/voiceover-testing/">Intro to VoiceOver</a>.</li>
-                    <li>Help others make faster, safer, acessible websites.</li>
-                    <li><a href="mailto:dbmhartley@protonmail.com">Listen</a> to criticism.</li>
+                    <li>Encourage you to follow links to other sites. <a arai-label="Low-tech Magazine's solar-powered website" href="https://solar.lowtechmagazine.com/">A solar-powered website</a>. <a aria-label="The communal computer developed at Dynamicland" href="https://dynamicland.org/">A communal computer</a>. <a href="https://ourworldindata.org/time-use-living-conditions">The world's energy problem</a>. <a href="https://neumz.com/">Daily Gregorian Chant</a>. <a href="https://www.youtube.com/watch?v=ZJQjjBR6PbY&t=19s">The Origin of the Elements</a>. <a aria-label="Yakin's introduction to VoiceOver." href="https://yakim.nl/articles/voiceover-testing/">How to use VoiceOver</a>.</li>
+                    <li><span class={styles.internalLink}>
+                        <Link href={'/services'}>
+                            <a>Help others</a>
+                        </Link>
+                        </span> make faster, safer, acessible websites.
+                    </li>                    
                     <li>Support <a aria-label="truthteller, website for climate whistleblowers" href="https://truthteller.life/">truth tellers</a>.</li>
-                    <li>Talk about things I'm interested in.</li>
-                    <li>Reveal website <span class={styles.internalLink}>
-                    <Link href={'/architecture'}>
-                        <a>bugbears</a>
-                    </Link>
-                </span>.</li>
+                    <li>Reveal my <span class={styles.internalLink}>
+                            <Link href={'/bugbears'}>
+                                <a>bugbears</a>
+                            </Link>
+                        </span>.
+                    </li>
                 </ul>    
             </p>
         </section>

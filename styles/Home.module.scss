@@ -1,11 +1,1 @@
 @import 'styles/mixins.scss';
-
-.list {
-    @include unorderedList();
-    font-size: 1rem;
-    margin-left: .5rem;
-    li:before {
-        content: '- ';
-        margin-left: -.5rem;
-    }
-}
