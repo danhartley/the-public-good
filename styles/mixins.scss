@@ -1,6 +1,3 @@
-$foreground: rgb(255,255,255);
-$background: rgb(55, 55, 55);
-
 @mixin card() {
     margin: 2rem 0;
     padding: 0;
@@ -9,11 +6,11 @@ $background: rgb(55, 55, 55);
     max-width: 600px;
     @include externalLink();
     h1 {
-        color: rgba($foreground, .9) !important;        
+        color: rgba(var(--fg), .9) !important;
     }
     h2 {
         margin: 0 0 1rem 0;
-        font-weight: 500;
+        font-weight: var(--il-fw);
     }
     p {
         font-size: .8rem;
@@ -21,7 +18,7 @@ $background: rgb(55, 55, 55);
     }
     @media (min-width: 601px) {
         padding: 1rem 1.5rem;
-        border: 1px solid rgba($foreground, .1);
+        border: 1px solid rgb(var(--fg), 0.3);
         p {
             font-size: 1.25rem;
         }
@@ -30,43 +27,46 @@ $background: rgb(55, 55, 55);
 
 @mixin link() {    
     a, a:hover, a:active, a:visited {
-        color: rgb(135, 195, 200);
+        color: rgb(var(--l));
         text-decoration: none;
-        border-bottom: 1px solid rgb(135, 195, 200);
+        border-bottom: 1px solid rgb(var(--l));
         padding-bottom: 3px;
     }
     a:hover {
-        color: rgb(120 172 177);
+        color: rgbA(var(--l), .8);
+        border-bottom: 1px solid rgba(var(--l), .8);
     }
     a:visited {
-        color: rgb(214 174 222);
+        color: rgb(var(--l-v));
+        border-bottom: 1px solid rgb(var(--l-v));
     }
     a:visited:hover {
-        color: rgb(192 157 199);
+        color: rgba(var(--l-v), .8);
+        border-bottom: 1px solid rgba(var(--l-v), .8);
     }
     h1 {
-        // color: rgba($foreground, .9);
-        color: var(--fg);
+        color: rgb(var(--fg));
     }
 }
 
 @mixin internalLink() {
     @include link();
     a {
-        color: orange;
-        border-bottom: 1px solid orange;
+        color: rgb(var(--il));
+        border-bottom: 1px solid rgb(var(--il));
+        font-weight: var(--il-fw);
     }
     a:hover {
-        color: rgb(233 153 7);
-        border-bottom: 1px solid rgb(233 153 7);
+        color: rgba(var(--il), .8);
+        border-bottom: 1px solid rgba(var(--il), .8);
     }
     a:visited {
-        color: rgb(250 140 188);
-        border-bottom: 1px solid rgb(250 140 188);
+        color: rgb(var(--il-v));
+        border-bottom: 1px solid rgb(var(--il-v));
     }
     a:visited:hover {
-        color: rgb(222 131 170);
-        border-bottom: 1px solid rgb(222 131 170);
+        color: rgba(var(--il-v), .8);
+        border-bottom: 1px solid rgba(var(--il-v));
     }
 }
 
@@ -76,9 +76,8 @@ $background: rgb(55, 55, 55);
 
 @mixin container {
     font-family: 'Arial',Helvetica,Arial,Lucida,sans-serif;
-    color: rgba($foreground, .9);
-    // background-color: $background;    
-    background-color: var(--bg);
+    color: rgb(var(--fg));
+    background-color: rgb(var(--bg));
     padding: 1rem;
     display: flex;
     flex-direction: column;

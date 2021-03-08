@@ -24,7 +24,7 @@
       "**/*.ts",
       "**/*.tsx"
     , "index.test.js"
-    ],
+, "public/_app.js"    ],
     "exclude": [
       "node_modules"
     ]
