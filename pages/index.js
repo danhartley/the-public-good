@@ -7,23 +7,22 @@ export default function Home() {
     <Layout title="Home" header={"Welcome"}>
 
         <section class={styles.card}>
-            <h2>Promises</h2>
+            <h2>Services</h2>
             <p>                
                 <ul class={styles.list}>
-                    <li>Encourage you to follow links to other sites. <a arai-label="Low-tech Magazine's solar-powered website" href="https://solar.lowtechmagazine.com/">A solar-powered website</a>. <a aria-label="The communal computer developed at Dynamicland" href="https://dynamicland.org/">A communal computer</a>. <a href="https://ourworldindata.org/time-use-living-conditions">The world's energy problem</a>. <a href="https://neumz.com/">Daily Gregorian Chant</a>. <a href="https://www.youtube.com/watch?v=ZJQjjBR6PbY&t=19s">The Origin of the Elements</a>. <a aria-label="Yakin's introduction to VoiceOver." href="https://yakim.nl/articles/voiceover-testing/">How to use VoiceOver</a>.</li>
-                    <li><span class={styles.internalLink}>
+                    <li>I will <span class={styles.internalLink}>
                         <Link href={'/services'}>
-                            <a>Help others</a>
+                            <a>help you</a>
                         </Link>
-                        </span> make faster, safer, acessible websites.
+                        </span> create a fast, safe, acessible website.
                     </li>                    
-                    <li>Support <a aria-label="truthteller, website for climate whistleblowers" href="https://truthteller.life/">truth tellers</a>.</li>
+                    <li>Encourage you to leave. <a arai-label="Low-tech Magazine's solar-powered website" href="https://solar.lowtechmagazine.com/">A solar-powered website</a>. <a aria-label="The communal computer developed at Dynamicland" href="https://dynamicland.org/">A communal computer</a>. <a href="https://ourworldindata.org/time-use-living-conditions">The world's energy problem</a>. <a href="https://neumz.com/">Daily Gregorian Chant</a>. <a href="https://www.youtube.com/watch?v=ZJQjjBR6PbY&t=19s">The Origin of the Elements</a>. <a aria-label="Yakin's introduction to VoiceOver." href="https://yakim.nl/articles/voiceover-testing/">How to use VoiceOver</a>.</li>
                     <li>Reveal my <span class={styles.internalLink}>
                             <Link href={'/bugbears'}>
                                 <a>bugbears</a>
                             </Link>
                         </span>.
-                    </li>
+                    </li>                    
                 </ul>    
             </p>
         </section>
@@ -37,7 +36,7 @@ export default function Home() {
                     </Link>.
                 </span>                    
             </p>                
-            <p>Sites that follow similar principles find ways to stand out without compromise. <a href="https://zerowastekoeln.de/">Zero Waste Cologne</a>, <a href="https://www.advocatedesign.co.uk/index">Advocate</a>, and <a href="https://heydonworks.com/">Heydownworks</a> have character, clear objectives and straightforward navigation.</p>
+            <p>Sites that follow similar principles find ways to stand out without compromise. <a href="https://zerowastekoeln.de/">Zero Waste Cologne</a>, and <a href="https://heydonworks.com/">Heydownworks</a> have character, clear objectives and straightforward navigation.</p>
         </section>
         <section class={styles.card}>
             <h2>Performance</h2>

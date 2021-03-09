@@ -7,7 +7,11 @@ const Architecture = () => {
             <section class={styles.card}>
                 <h2>Website architecture</h2>
 
-                <p>As I put this website together, I grouped the parts I needed.</p>
+                <p>With each website I do something new. For this website I experimented with <a href="https://en.wikipedia.org/wiki/Light-on-dark_color_scheme">dark mode</a>. The evidence suggests you should offer <a aria-label="A guide to using light and dark modes" href="https://www.nngroup.com/articles/dark-mode/">the option to switch</a> to light mode.</p>
+
+                <p>I also documented my work, providing detail for each step. I chose to do this rather than setting up a template because third party libraries and solutions change fast, and best practices change with them.</p>
+
+                <h3>Steps summary</h3>        
 
                 <p>       
                     <ol>
@@ -16,7 +20,7 @@ const Architecture = () => {
                             <ul class={styles.list}>
                                 <li><a href="https://www.typescriptlang.org/">Typescript</a> adds features to JavaScript which help to better structure and test code. </li>
                                 <li><a href="https://sass-lang.com/">Sass</a> extends CSS to which it is converted when compiling the site ready for release.</li>
-                                <li>Pages are statically generated using <a href="https://nextjs.org/">next.js</a>. Instead of serving dynamic pages based on variables, such as a specific product or blog, a static site generater (SSG) creates all of these pages - which could be many thousands - each time the site is updated. They are therefore immmediately available to a browser request.</li>
+                                <li>Pages are statically generated using <a href="https://nextjs.org/">next.js</a>. Instead of serving dynamic pages based on variables, such as a specific product or blog, a static site generater (SSG), like next.js, is used to create all of these pages - which could be many thousands - each time the site is updated. They are therefore immmediately available to a browser request.</li>
                             </ul>
                         </li>
                         <li>
@@ -27,11 +31,9 @@ const Architecture = () => {
                         </li>
                     </ol>
                 </p>
-
-                {/* <p>The architecture of this site follows principles set out in <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a>.</p> */}
-                <p>It isn't a template because third party libraries and solutions change fast, and best practices change with them.</p>
+                
                 <p>I could have made this site using HTML and inline styles but I chose a set of tools which allow me to extend the site more easily.</p>
-                <p>Some of the tools are invisible to the browser, that is their role ends before the page loads; among these are languages and tools which help development and deployment. Some, however, carry an overhead, including the JavaScript framework Preact.</p>                
+                {/* <p>Some of the tools are invisible to the browser, that is their role ends before the page loads; among these are languages and tools which help development and deployment. Some, however, carry an overhead, including the JavaScript framework Preact.</p>                 */}
             </section>
         </Layout>
     )
