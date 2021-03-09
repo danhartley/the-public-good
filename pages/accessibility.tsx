@@ -21,7 +21,9 @@ const Accessibility = () => {
     return (
         <Layout title="Web accessibility" description={'Web accessibility'}>
             <section class={styles.card}>
-                <h2>Accessibility tools</h2>
+                <h2>Accessibility</h2>
+
+                <h3>Tools</h3>
                 <Links.InternalLinksList links={links} />
             </section>
         </Layout>

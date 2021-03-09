@@ -37,7 +37,9 @@ const Performance = () => {
     return (
         <Layout title="Web performance" description={'Web performance'}>
             <section class={styles.card}>
-                <h2>Website performance and accessibility tests</h2>                
+                <h2>Website performance and accessibility tests</h2>      
+
+                <h3>Tools</h3>          
                 <Links.InternalLinksList links={perfLinks} />                
             </section>
         </Layout>

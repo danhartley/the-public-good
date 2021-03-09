@@ -13,14 +13,15 @@ const Services = () => {
                                 <a>4 projects of my own</a>
                             </Link>
                         </span>. But each project also brings change and adaptation.</p>
-                <p> 
-                    <h3>Overview</h3>               
-                    <ul class={styles.list}>
-                        <li>A proven way to build fast, accessible, extensible websites.</li>
-                        <li>A website built based on <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</li>
-                        <li>A supporter of your work because I only take on projects I believe in.</li>
-                    </ul>                    
-                </p>     
+                
+                <h3>Overview</h3>               
+                <ul class={styles.list}>
+                    <li>A proven way to build fast, accessible, extensible websites.</li>
+                    <li>A website measured against a range of performance, accessibilty, and sustainability metrics.</li>
+                    <li>A website built based on <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</li>
+                    <li>A supporter of your work because I only take on projects I believe in.</li>
+                </ul>                    
+            
 
                 <p>If you would like to discuss an idea, a project, or a website, please contact me at <a href="mailto:dbmhartley@protonmail.com">Daniel Hartley</a>.</p>           
 

@@ -34,11 +34,13 @@ const Sustainability = () => {
     return (
         <Layout title="Web sustainability" description={'Web sustainability'}>
             <section class={styles.card}>
-                <h2>Website carbon emissions checks</h2>
+                <h2>Sustainability</h2>
+
+                <h3>Website carbon emissions checks</h3>
                 <Links.InternalLinksList links={greenLinks} />
             </section>
             <section class={styles.card}>
-                <h2>UN Sustainable Development Goals (SDGs)</h2>
+                <h3>UN Sustainable Development Goals (SDGs)</h3>
                 <span>Tracked by <a href="https://ourworldindata.org/">Our World in Data</a>.</span>
                 <ul class={styles.unorderedList}>
                     <li><a aria-label="Assessment of the world's response to SDG 7.1 provided by Our World in Data" href="https://sdg-tracker.org/energy#targets">Energy efficiency (SDG 7.1)</a></li>
