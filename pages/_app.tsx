@@ -12,13 +12,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         const _style = _darkMode 
         ? `
             --m:dark;
-            --fg:235, 235, 235; 
-            --bg:55, 55, 55;
-            --l:135, 195, 200;            
+            --fg:207, 210, 214; 
+            --bg:45, 45, 45;
+            --l:87, 163, 202;
             --l-v:214, 174, 222;
             --il:255, 165, 0;
-            --il-v:250, 140, 188;
-            --il-fw:initial;
+            --il-v:255, 165, 0;
+            --il-fw:bold;
             --d: 220 156 151;
         ` 
         : 

@@ -1,1 +1,9 @@
 @import 'styles/mixins.scss';
+
+.homeCard {
+    @include card();
+    .internalLink {
+        @include internalLink();
+    }
+    border-bottom: none !important;
+}

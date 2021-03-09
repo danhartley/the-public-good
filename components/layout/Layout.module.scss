@@ -4,6 +4,28 @@
     min-height: calc(100vh - 100px - 8px - 8px);
 }
 
+.mode {
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.dark {
+    color:rgba(var(--fg), 1);    
+    &:after {
+        content: "\25D0";    
+    }
+}
+
+.light {
+    color:rgba(var(--fg), 1);
+    &:after {
+        content: "\25D1";
+    }
+}
+
 .title {
   margin: 0;
   font-size: 2rem;
@@ -20,10 +42,10 @@
 
 .description {
     color: rgb(var(--d));
-    margin: 0;
     line-height: 1.5;
-    font-size: 1rem;
     letter-spacing: .5px;
+    display: flex;
+    justify-content: center;
     @media (min-width: 601px) {
         margin: 0 0 1rem 0;
         font-size: 1.25rem;
@@ -52,8 +74,8 @@
     }
     @include link();
     a, a:hover, a:visited, a:visited:hover {            
-        color: rgb(235 235 235);
-        border-bottom: 1px solid rgb(235 235 235);
+        color: rgb(var(--fg));
+        border-bottom: 1px solid rgb(var(--fg));
     }
     @media (min-width: 601px) {
         div:nth-child(1) {

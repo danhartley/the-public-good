@@ -61,8 +61,8 @@ const Layout = ({
                             </a>
                         </Link>
                         <p class={styles.description}>
-                            Making websites with small footprints.
-                            <button ref={btnMode} onClick={() => toggleMode()}>{mode.isDark ? 'Light' : 'Dark'}</button>
+                            <span>Making websites with small footprints.</span>
+                            <button class={styles.mode} ref={btnMode} onClick={() => toggleMode()}>{mode.isDark ? <span class={styles.light}></span> : <span class={styles.dark}></span>}</button>
                         </p>
                     </header>
                     {children}

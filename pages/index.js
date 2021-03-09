@@ -29,18 +29,18 @@ export default function Home() {
         </section>
 
         <section class={styles.card}>
-            <h2>Website architecture</h2>  
+            <h2>Architecture</h2>  
             <p>This website is a working example of <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> practices.</p>
-            <p>The specifics of how this website was put together are covered in <span class={styles.internalLink}>
+            <p>The specifics of how this website was put together are covered in detail in <span class={styles.internalLink}>
                     <Link href={'/architecture'}>
-                        <a>the breakdown</a>
+                        <a>architecture</a>
                     </Link>.
                 </span>                    
             </p>                
             <p>Sites that follow similar principles find ways to stand out without compromise. <a href="https://zerowastekoeln.de/">Zero Waste Cologne</a>, <a href="https://www.advocatedesign.co.uk/index">Advocate</a>, and <a href="https://heydonworks.com/">Heydownworks</a> have character, clear objectives and straightforward navigation.</p>
         </section>
         <section class={styles.card}>
-            <h2>Web performance</h2>
+            <h2>Performance</h2>
             <p>Having a <a aria-label="Mozilla Internet Health Report 2019 states that the slowest mobile broadband internet in the world is also the least affordable." href="https://internethealthreport.org/2019/the-worlds-slowest-internet-is-the-least-affordable/"> slow connection</a> is not unusual.</p>
             <p>Data can be expensive, <a aria-label="Our World in Data map showing that the cost of 1GB of mobile data as a percentage of income, is highest a spread of African countries." href="https://ourworldindata.org/grapher/cost-of-1gb-of-mobile-data?region=World">especially in countries where only mobile connectivity is available</a>.</p>
             <p>Poor design <a aria-label="WebKit guidelines for developers on how to minimise mobile and laptop energy use." href ="https://webkit.org/blog/8970/how-web-content-can-affect-power-usage/">runs down batteries</a>.</p>

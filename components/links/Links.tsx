@@ -28,7 +28,7 @@ const InternalLinksList = ({links}) => {
 
 const Home = ({ textAlign = 'left' }) => {
     return (
-        <section class={styles.card} style={`text-align:${textAlign}` as React.CSSProperties}>
+        <section class={styles.homeCard} style={`text-align:${textAlign}` as React.CSSProperties}>
             <p class={styles.internalLink}>
                 <Link href={'/'}>
                     <a>The PG Home</a>
