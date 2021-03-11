@@ -18,7 +18,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             --l-v:214, 174, 222;
             --il:255, 165, 0;
             --il-v:255, 165, 0;
-            --il-fw:bold;
+            --il-fw:initial;
             --d: 220 156 151;
         ` 
         : 

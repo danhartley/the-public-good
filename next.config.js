@@ -5,7 +5,6 @@ const path = require('path');
 const withPWA = require('next-pwa');
 const runtimeCaching = require('next-pwa/cache');
 
-// const { createSecureHeaders } = require("next-secure-headers");
 
 module.exports = withPreact({
     sassOptions: {
@@ -19,31 +18,3 @@ module.exports = withPWA({
     runtimeCaching,
   },
 });
-
-// module.exports = {
-//     async headers() {
-//       return [
-//         {
-//           source: "/(.*)",
-//           headers: createSecureHeaders({
-//             contentSecurityPolicy: {
-//               directives: {
-//                 defaultSrc: [
-//                   "'self'",
-//                   "https://netlify.app",
-//                   "https://unpkg.com/website-carbon-badges@^1/b.min.js"
-//                 ],
-//                 styleSrc: ["'self'", "'unsafe-inline'"],
-//                 imgSrc: ["'self'"],
-//                 baseUri: "self",
-//                 formAction: "self",
-//                 frameAncestors: true,
-//               },
-//             },
-           
-//           }),
-//         },
-        
-//       ];
-//     },
-// };
