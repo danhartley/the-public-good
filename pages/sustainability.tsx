@@ -41,7 +41,7 @@ const Sustainability = () => {
             </section>
             <section class={styles.card}>
                 <h3>UN Sustainable Development Goals (SDGs)</h3>
-                <span>Tracked by <a href="https://ourworldindata.org/">Our World in Data</a>.</span>
+                <p>Tracked by <a href="https://ourworldindata.org/">Our World in Data</a>.</p>
                 <ul class={styles.unorderedList}>
                     <li><a aria-label="Assessment of the world's response to SDG 7.1 provided by Our World in Data" href="https://sdg-tracker.org/energy#targets">Energy efficiency (SDG 7.1)</a></li>
                     <li><a aria-label="Assessment of the world's response to SDG 17.8 provided by Our World in Data" href="https://sdg-tracker.org/global-partnerships">Internet access (SDG 17.8)</a></li>
@@ -49,7 +49,7 @@ const Sustainability = () => {
                 </ul>
             </section>
             <section class={styles.card}>
-                <Carbonbadge darkMode={true} />
+                <p><Carbonbadge darkMode={true} /></p>
             </section>
         </Layout>
     )
