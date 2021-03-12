@@ -40,7 +40,7 @@ const History = () => {
                             </ul>
                         </li>
                         <li>
-                            <a href="https://condescending-villani-e9aade.netlify.app/">The Public Good</a>
+                            <a href="https://the-public-good.netlify.app">The Public Good</a>
                             <div>See <span class={styles.internalLink}><Link href={'/architecture'}>
                             <a>Architecture</a>
                         </Link></span>.</div>
