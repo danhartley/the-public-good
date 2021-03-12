@@ -8,8 +8,12 @@ const links = [
         "source": "https://wave.webaim.org/"
     },
     {
-        "name": "axe - Web Accessibility Testing",
+        "name": "axe - Web Accessibility Testing Chrome extension",
         "source": "https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
+    },
+    {
+        "name": "GreenIT-Analysis - Web Accessibility Testing Chrome extension",
+        "source": "https://chrome.google.com/webstore/detail/greenit-analysis/mofbfhffeklkbebfclfaiifefjflcpad?hl=en"
     },
     {
         "name": "Color Contrast Accessibility Validator",
