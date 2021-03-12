@@ -21,7 +21,7 @@ const Architecture = () => {
 
                 <p>With each website I do something new. For this website I experimented with <a href="https://en.wikipedia.org/wiki/Light-on-dark_color_scheme">dark mode</a>. The evidence suggests you should offer <a aria-label="A guide to using light and dark modes" href="https://www.nngroup.com/articles/dark-mode/">the option to switch</a> to light mode. I used <a href="https://preactjs.com/guide/v10/context/">Preact context</a> to handle the global mode setting.</p>
 
-                <p>I also documented how I set up the project. I chose to do this rather than setting up a template because third party libraries and solutions change fast, and best practices change with them. These steps will guide future projects.</p>
+                <p>I also documented how I set up the project. I chose to do this rather than creating a template because third party libraries and solutions change fast, and best practices change with them. These steps will guide future projects.</p>
 
                 <h3>Documentation</h3>        
 
@@ -32,30 +32,28 @@ const Architecture = () => {
                             <ul class={styles.list}>
                                 <li><a href="https://www.typescriptlang.org/">Typescript</a> adds features to JavaScript which help to better structure and test code. </li>
                                 <li><a href="https://sass-lang.com/">Sass</a> extends CSS to which it is converted when compiling the site ready for release.</li>
-                                <li>Pages are statically generated using <a href="https://nextjs.org/">next.js</a>. Instead of serving dynamic pages based on variables, such as a specific product or blog, a static site generater (SSG), like next.js, is used to create all of these pages - which could be many thousands - each time the site is updated. They are therefore immmediately available to a browser request.</li>
+                                <li>Pages are statically generated using <a href="https://nextjs.org/">next.js</a>. Instead of serving dynamic pages based on variables, such as a specific product or blog, a static site generater (SSG), like Next.js, is used to create all of these pages - which could be many thousands - each time the site is updated. They are therefore immmediately available to a browser request.</li>
                             </ul>
                         </li>
                         <li>
                             <span>Code developed by third-parties which affect both how the site is built and its performance in the browser.</span>
                             <ul class={styles.list}>
-                                <li><a href="https://preactjs.com/">Preact</a> is a light-weight alternative to React which models the state of a page and modifies it in response to user actions. Preact adds to the page weight. For this site, I could have dispensed with it. I could have written it in Notepad. However, since the lighhouse score for the website performance is 100%, and I wanted to create a set of tools that would support more complex sites, I kept it in.</li>
+                                <li><a href="https://preactjs.com/">Preact</a> is a light-weight alternative to React which models the state of a page and modifies it in response to user actions. Preact adds to the page weight. For this site I could have dispensed with a framework, it is sufficiently simple to have been written it in Notepad but this site serves as a guide that would support more complex scenarios.</li>
                             </ul>
                         </li>
                         <li>
                             <span>Settings and tweaks that keep things running smoothly.</span>
                             <ul class={styles.list}>
-                                <li>PWA set up including manifest and Next.js support.</li>
-                                <li>Meta tags including support for PWA and third party links including for LinkedIn.</li>
-                                <li>Support for Sas, Typescript, Jest, and the class attribute.</li>
+                                <li>PWA support.</li>
+                                <li>Configuration to enable Sass, Typescript, Jest, and Preact to be used together.</li>
                                 <li>Layout design pattern.</li>
+                                <li>Meta tags to provide links for LinkedIn.</li>
                             </ul>
                         </li>
                     </ul>
                 </p>            
-                
-                <p>I could have made this site using HTML and inline styles but I chose a set of tools which allow me to extend the site more easily.</p>        
 
-                <p>For a complete picture of the web technologies I use, or have used, please take a look at my <a href="https://danhartley.github.io/snapdragon-redux/wiki/">curriculum vitae</a>.</p>
+                <p>For a complete picture of the web technologies I use, or have used, please see my <a href="https://danhartley.github.io/snapdragon-redux/wiki/">curriculum vitae</a>.</p>
             </section>
         </Layout>
     )

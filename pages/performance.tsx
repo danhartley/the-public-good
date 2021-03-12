@@ -50,7 +50,7 @@ const Performance = () => {
                 <h3>Measured performance</h3>
 
                 <p>The bits that make up a page are critical because they determine the amount of energy required to produce that page. If we are thinking about sustainability as well as performance, this is important.</p>
-                <p>However, what is sent in response to a user's first request and subsequent requests varies. The page is likely to be cached in many places, including in the user's brower, reducing computational requirements (less energy), and what is sent over the network (again, less energy).</p>
+                <p>However, what is sent in response to a user's first request and subsequent requests varies; the page is likely to be cached in many places, including in the user's brower, reducing computational requirements (less energy), and what is sent over the network (again, less energy).</p>
                 <p>Measuring the overall performance of a website is more difficult still if it is made up of many pages of different weights. The home page may be lightweight but other pages, some of which users will link to directly, may contain images and video.</p>
                 
                 <h3>Real-world performance</h3>
@@ -63,7 +63,7 @@ const Performance = () => {
 
                 <p>A website can give score relatively well on Google's performance tool Lighthouse through trickery. I used all sorts of techniques to push up the score for my website <a href="https://www.learn-the-planet.com/">Learn the Planet</a>. I now concentrate on absolute, measurable performance in bytes before addressing, if necessary, perceived performance.</p>
 
-                <p>Both <a href="https://web.dev/rail/">Google</a> (Chrome) and <a href="https://developer.mozilla.org/en-US/docs/Learn/Performance/Perceived_performance">Mozilla</a> (Firefox) both cover this topic in detail.</p>
+                <p>Both <a href="https://web.dev/rail/">Google</a> (Chrome) and <a href="https://developer.mozilla.org/en-US/docs/Learn/Performance/Perceived_performance">Mozilla</a> (Firefox) cover this topic in detail.</p>
 
                 <p>There will also be times when best practice in terms of software engineering <a aria-label="When best practices can slow your application down by Stack Overflow" href="https://stackoverflow.blog/2021/03/03/best-practices-can-slow-your-application-down/">clashes</a> with website performance.</p>
 

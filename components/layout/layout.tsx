@@ -70,7 +70,7 @@ const Layout = ({
                 </main>
                 <footer class={styles.footer}>
                     <div><span>© <a href="mailto:dbmhartley@protonmail.com">Daniel Hartley</a> 2021. All rights reserved.</span></div>
-                    <div class={styles.externalList}><a href="https://www.linkedin.com/in/danhartley/">LinkedIn</a></div>
+                    <div class={styles.externalList}><a href="https://www.linkedin.com/in/danhartley/">LinkedIn</a> | <a href="https://danhartley.github.io/snapdragon-redux/wiki/">CV</a></div>
                 </footer>
             </div>                
         </div>
