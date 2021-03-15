@@ -24,13 +24,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         : 
         `
             --m:light;
-            --fg:25, 25, 25; 
+            --fg:35, 35, 35; 
             --bg:250, 250, 250;
             --l:40, 40, 40;
             --l-v:75, 75, 75;
             --il:50, 50, 50;
             --il-fw:bold;
-            --e: 20,20,20;
+            --e: 25,25,25;
         ` as any;
         return _style;
     };

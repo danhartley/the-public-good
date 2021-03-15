@@ -10,16 +10,16 @@
     }
     h2 {
         margin: 0 0 1rem 0;
-        font-size: 1.6rem;
+        font-size: 1.75rem;
         font-weight: var(--il-fw);
     }
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin: 1.5rem 0 0 0;
         font-weight: var(--il-fw);
     }
     p {
-        font-size: .8rem;
+        font-size: 1rem;
         line-height: 1.8;
         margin: .75rem 0;
     }
@@ -94,7 +94,8 @@
 }
 
 @mixin container {
-    font-family: 'Arial',Helvetica,Arial,Lucida,sans-serif;
+    // font-family: 'Arial',Helvetica,Arial,Lucida,sans-serif;
+    font-family: 'PT Serif', serif;
     color: rgb(var(--fg));
     background-color: rgb(var(--bg));
     padding: 1rem;
