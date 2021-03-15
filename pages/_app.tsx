@@ -19,18 +19,18 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             --il:255, 165, 0;
             --il-v:255, 165, 0;
             --il-fw:initial;
-            --d: 220 156 151;
+            --e: 255, 255, 255;
         ` 
         : 
         `
             --m:light;
             --fg:25, 25, 25; 
             --bg:250, 250, 250;
-            --l:50, 50, 50;
+            --l:40, 40, 40;
             --l-v:75, 75, 75;
             --il:50, 50, 50;
             --il-fw:bold;
-            --d: 0,0,0;
+            --e: 0,0,0;
         ` as any;
         return _style;
     };

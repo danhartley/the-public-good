@@ -26,7 +26,7 @@ const Architecture = () => {
                 <h3>Documentation</h3>        
 
                 <p>       
-                    <ul>
+                    <ul class={styles.list}>
                         <li>
                             <span>The conventions, good practices, and solutions used to develop and build the website. They influence how the the website is assembled. They are not essential, and could be replaced without affecting the appearance or performance of the website. They do not add to page weight.</span>
                             <ul class={styles.list}>
@@ -38,7 +38,7 @@ const Architecture = () => {
                         <li>
                             <span>Code developed by third-parties which affect both how the site is built and its performance in the browser.</span>
                             <ul class={styles.list}>
-                                <li><a href="https://preactjs.com/">Preact</a> is a light-weight alternative to React which models the state of a page and modifies it in response to user actions. Preact adds to the page weight. For this site I could have dispensed with a framework, it is sufficiently simple to have been written it in Notepad but this site serves as a guide that would support more complex scenarios.</li>
+                                <li><a href="https://preactjs.com/">Preact</a> is a light-weight alternative to React which models the state of a page and modifies it in response to user actions. Preact adds to the page weight. For this site I could have dispensed with a framework, it is sufficiently simple to have been written it in Notepad, but this site is also intended to serve as a guide on more complex projects.</li>
                             </ul>
                         </li>
                         <li>

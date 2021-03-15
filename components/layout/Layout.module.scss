@@ -38,10 +38,10 @@
 .title,
 .description {
   text-align: center;
+  color: rgb(var(--e));
 }
 
-.description {
-    color: rgb(var(--d));
+.description {    
     letter-spacing: .5px;
     display: flex;
     justify-content: center;

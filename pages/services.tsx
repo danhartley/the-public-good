@@ -13,7 +13,7 @@ const Services = () => {
                         <li>Fast, accessible, safe, and extensible.</li>
                         <li>Tested on speed, safety, accessibilty, and sustainability against a range of  metrics.</li>
                         <li>Tested for bugs during development.</li>
-                        <li>Built based on <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</li>                    
+                        <li>Built on <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</li>                    
                     </ul> 
                 </p>
                 <h3>Optional features</h3>

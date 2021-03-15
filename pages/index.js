@@ -20,7 +20,7 @@ export default function Home() {
                         <Link href={'/services'}>
                             <a>help you</a>
                         </Link>
-                        </span> create a fast, safe, acessible website that uses minimal electricity to run.
+                        </span> to create a fast, safe, acessible website that uses minimal electricity to run.
             </p>        
             {/* <p>                
                 <ul class={styles.list}>

@@ -11,7 +11,7 @@ const History = () => {
                     <ul class={styles.list}>
                         <li>
                             <a href="https://www.learn-the-planet.com/">Learn the Planet</a>.
-                            <div>Lessons, videos and tests to foster knowledge of the natural world.</div>
+                            <div>Lessons, videos and tests to encourage interest and knowledge of the natural world.</div>
                             <p>For this project I returned to the web fundamentals: HTML, CSS and JavaScript. I added Redux for state management, and a tiny templating library. I used Bootstrap for styling but removed all but a handful of dependencies.</p>
                             <p>The app is both a <a href="https://developer.mozilla.org/en-US/docs/Glossary/SPA">SPA</a> and a <a href="https://web.dev/progressive-web-apps/">PWA</a>, and therefore uses <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">service workers</a>, and has a <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest">manifest</a>.</p>
                             <p>I switched from using <a href="https://gruntjs.com/">Grunt</a> to <a href="https://webpack.js.org">webpack</a> for generating runtime files, placed the app on the cloud (<a href="https://cloud.google.com/">Google Cloud Platform</a>), and used <a href="https://firebase.google.com/">Firebase</a> and <a href="https://firebase.google.com/docs/functions">serverless functions</a> for persistence and retrieval.</p>

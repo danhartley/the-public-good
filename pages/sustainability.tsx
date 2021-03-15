@@ -51,6 +51,11 @@ const Sustainability = () => {
             <section class={styles.card}>
                 <p><Carbonbadge darkMode={true} /></p>
             </section>
+            <section class={styles.card}>
+                <p class={styles.centre}>
+                    <img src="https://api.thegreenwebfoundation.org/greencheckimage/the-public-good.netlify.app" alt="This website is hosted Green - checked by thegreenwebfoundation.org" />
+                </p>
+            </section>
         </Layout>
     )
 };

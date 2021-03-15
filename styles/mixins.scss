@@ -37,8 +37,13 @@
             border: none !important;
         }
         p {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
         }
+    }
+    .centre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -60,9 +65,6 @@
     a:visited:hover {
         color: rgba(var(--l-v), .8);
         border-bottom: 1px solid rgba(var(--l-v), .8);
-    }
-    h1 {
-        color: rgb(var(--fg));
     }
 }
 

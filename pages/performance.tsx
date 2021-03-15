@@ -51,7 +51,7 @@ const Performance = () => {
 
                 <p>The bits that make up a page are critical because they determine the amount of energy required to produce that page. If we are thinking about sustainability as well as performance, this is important.</p>
                 <p>However, what is sent in response to a user's first request and subsequent requests varies; the page is likely to be cached in many places, including in the user's brower, reducing computational requirements (less energy), and what is sent over the network (again, less energy).</p>
-                <p>Measuring the overall performance of a website is more difficult still if it is made up of many pages of different weights. The home page may be lightweight but other pages, some of which users will link to directly, may contain images and video.</p>
+                <p>Measuring the overall performance of a website is more difficult still if it is made up of many pages of different weights. The home page may be quick to download but other pages, some of which users will link to directly, may contain images and video.</p>
                 
                 <h3>Real-world performance</h3>
 
