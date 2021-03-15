@@ -30,7 +30,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             --l-v:75, 75, 75;
             --il:50, 50, 50;
             --il-fw:bold;
-            --e: 0,0,0;
+            --e: 20,20,20;
         ` as any;
         return _style;
     };
