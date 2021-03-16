@@ -19,7 +19,7 @@ const Architecture = () => {
                     </ul>
                 </p>
 
-                <p>With each website I do something new. For this website I experimented with <a href="https://en.wikipedia.org/wiki/Light-on-dark_color_scheme">dark mode</a>. The evidence suggests you should offer <a aria-label="A guide to using light and dark modes" href="https://www.nngroup.com/articles/dark-mode/">the option to switch</a> to light mode. I used <a href="https://preactjs.com/guide/v10/context/">Preact context</a> to handle the global mode setting.</p>
+                <p>With each website I do something new. For this website I experimented with <a href="https://en.wikipedia.org/wiki/Light-on-dark_color_scheme">dark mode</a>. Evidence suggests the user should have the <a aria-label="A guide to using light and dark modes" href="https://www.nngroup.com/articles/dark-mode/">the option to switch</a> to light mode.</p>
 
                 <p>I also documented how I set up the project. I chose to do this rather than creating a template because third party libraries and solutions change fast, and best practices change with them. These steps will guide future projects.</p>
 
@@ -32,13 +32,13 @@ const Architecture = () => {
                             <ul class={styles.list}>
                                 <li><a href="https://www.typescriptlang.org/">Typescript</a> adds features to JavaScript which help to better structure and test code. </li>
                                 <li><a href="https://sass-lang.com/">Sass</a> extends CSS to which it is converted when compiling the site ready for release.</li>
-                                <li>Pages are statically generated using <a href="https://nextjs.org/">next.js</a>. Instead of serving dynamic pages based on variables, such as a specific product or blog, a static site generater (SSG), like Next.js, is used to create all of these pages - which could be many thousands - each time the site is updated. They are therefore immmediately available to a browser request.</li>
+                                <li>Pages are statically generated using <a href="https://nextjs.org/">next.js</a>. Instead of serving dynamic pages based on variables, such as a specific product or blog, a static site generator (SSG), like Next.js, is used to create all of these pages - which could be many thousands - each time the site is updated. They are therefore immediately available to a browser request.</li>
                             </ul>
                         </li>
                         <li>
                             <span>Code developed by third-parties which affect both how the site is built and its performance in the browser.</span>
                             <ul class={styles.list}>
-                                <li><a href="https://preactjs.com/">Preact</a> is a light-weight alternative to React which models the state of a page and modifies it in response to user actions. Preact adds to the page weight. For this site I could have dispensed with a framework, it is sufficiently simple to have been written it in Notepad, but this site is also intended to serve as a guide on more complex projects.</li>
+                                <li><a href="https://preactjs.com/">Preact</a> is a light-weight alternative to React which models the state of a page and modifies it in response to user actions. Preact adds to the page weight. For this site I could have dispensed with a framework, it is sufficiently simple that I could have written it in Notepad, but this site is also intended to serve as a guide on more complex projects.</li>
                             </ul>
                         </li>
                         <li>

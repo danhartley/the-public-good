@@ -7,30 +7,33 @@ const History = () => {
         <Layout title="Web History" description={'Web History'}>
             <section class={styles.card}>
                 <h2>Projects</h2>                
-                <p>                
+                <p>                             
                     <ul class={styles.list}>
-                        <li>
-                            <a href="https://www.learn-the-planet.com/">Learn the Planet</a>.
-                            <div>Lessons, videos and tests to encourage interest and knowledge of the natural world.</div>
-                            <p>For this project I returned to the web fundamentals: HTML, CSS and JavaScript. I added Redux for state management, and a tiny templating library. I used Bootstrap for styling but removed all but a handful of dependencies.</p>
-                            <p>The app is both a <a href="https://developer.mozilla.org/en-US/docs/Glossary/SPA">SPA</a> and a <a href="https://web.dev/progressive-web-apps/">PWA</a>, and therefore uses <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">service workers</a>, and has a <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest">manifest</a>.</p>
-                            <p>I switched from using <a href="https://gruntjs.com/">Grunt</a> to <a href="https://webpack.js.org">webpack</a> for generating runtime files, placed the app on the cloud (<a href="https://cloud.google.com/">Google Cloud Platform</a>), and used <a href="https://firebase.google.com/">Firebase</a> and <a href="https://firebase.google.com/docs/functions">serverless functions</a> for persistence and retrieval.</p>
-                            <p>Development was compromised by my limited understanding of the domain (all living things), and made harder by constant shifts in direction; the orginal app, for example, had no videos, but these became central, and I tacked on a number of features that are interesting but distract and detract from the principle function of the app.</p>
-
+                        <li><span><a href="https://www.learn-the-planet.com/">Learn the Planet</a></span>                                   
+                            <div>Lessons, videos and tests to stimulate interest and further understanding of the natural world.</div>
+                            <p>The project on which I made many mistakes, and was therefore forced to solve numerous problems. What cost me above all was not having a clear idea what the project was about; I changed tack on several occasions, each of which required a major refactor. As a developer I did good work, but I was a poor client, having too little understanding of my subject, my goals, and my users. But there were positives:</p>
+                            <ul class={styles.list}>
+                                <li>The switch to <a href="https://webpack.js.org">webpack</a> from <a href="https://gruntjs.com/">Grunt</a> for bundling and optimising files.</li>
+                                <li>A shift from building <a href="https://developer.mozilla.org/en-US/docs/Glossary/SPA">Single Page Apps</a> to <a href="https://web.dev/progressive-web-apps/">Progressive Web Apps</a>.</li>
+                                <li>Hosting the site on <a href="https://cloud.google.com/">Google's Cloud Platform</a> and adding <a href="https://firebase.google.com/docs/functions">serverless functions</a>.</li>
+                                <li>Increased testing, using <a href="https://jestjs.io/">Jest</a>, including, at times, <a href="https://www.freecodecamp.org/news/test-driven-development-what-it-is-and-what-it-is-not-41fa6bca02a2/">Test Driven Development</a>.</li>
+                            </ul>
+                            <p>I also reduced my dependency on runtime libraries, including <a href="https://getbootstrap.com/">Bootstrap</a>. I have mixed feelings about <a href="https://redux.js.org/">Redux</a> which is a simple and effective approach to state management but is hard to tame. Intrinsic to Redux, however, is functional programming which is an excellent fit for the web. I am grateful to <a href="https://overreacted.io/">Dan Abramov</a>, who created Redux, and <a href="https://www.youtube.com/c/funfunfunction">mpj</a> for their thoughts and instruction on this subject.</p>
+                            <p>Although the project has not yet found its intended audience, I learnt a lot about how to define and scope a project, how far <a aria-label="The Evolution of Javascript" href="https://www.modernjs.com/"> JavaScript</a> had come in a few years, and many wonderful things about the living world, including the true composition of <a href="https://www.theatlantic.com/science/archive/2019/01/how-lichens-explain-and-re-explain-world/580681/">lichens</a>.</p>
                         </li>
                         <li>
-                            <a href="https://danhartley.github.io/snapdragon-verbs/">The Verb</a>
+                            <span><a href="https://danhartley.github.io/snapdragon-verbs/">The Verb</a></span>
                             <div>Drills to test knowledge of Spanish and Portuguese verbs.</div>
-                            <p>This project reflected a new approach. I put in place some simple rules for the project. It should:  
+                            <p>At the outset, I put in place generic rules to avoid the problems I had encountered on the previous project. Any project should now:  
                                 <ul class={styles.list}>
                                     <li>Take no more than 6 weeks to complete, including scoping, design, development and user testing.</li>
-                                    <li>Have a clear, achievable goal; in this case, the ability to test any Portuguese verb (I added suport for Spanish in the sixth week) with short cuts for tackling irregular verbs. </li>
-                                    <li>Contain provision to test a limited set of untried technologies and design ideas; I selectd Preact as a framework, and used a monochrome design that focuses user attention during a test.</li>
+                                    <li>Have a clear, achievable goal; in this case, the ability to test any Portuguese or Spanish verb. </li>
+                                    <li>Experiment with a predefined set of technologies and design ideas; for this project, I selected Preact as a framework, and limited myself to a monochromatic interface.</li>
                                 </ul>                                
                             </p>
                         </li>
                         <li>
-                            <a href="https://snapdragon-retrieval.netlify.app/providers">Snapdragon Retrieval</a>
+                            <span><a href="https://snapdragon-retrieval.netlify.app/providers">Snapdragon Retrieval</a></span>
                             <div>Follow up tests to accompany podcasts and long articles.</div>
                             <p>I maintained the schedule I had created for The Verb, added support for <a href="https://www.typescriptlang.org/">Typescript</a>, and <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> features:</p>
                             <ul class={styles.list}>
@@ -40,7 +43,7 @@ const History = () => {
                             </ul>
                         </li>
                         <li>
-                            <a href="https://the-public-good.netlify.app">The Public Good</a>
+                            <span><a href="https://the-public-good.netlify.app">The Public Good</a></span>
                             <div>See <span class={styles.internalLink}><Link href={'/architecture'}>
                             <a>Architecture</a>
                         </Link></span>.</div>

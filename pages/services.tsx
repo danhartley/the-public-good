@@ -8,13 +8,16 @@ const Services = () => {
             <section class={styles.card}>
                 <h2>Services</h2>                
 
-                <p>The sites I build have the following charactersitics.
+                <h3>Essential features</h3>
+                <p>
+                    <span>The sites I build have the following characteristics.</span>
                     <ul class={styles.list}>
-                        <li>Fast, accessible, safe, and extensible.</li>
-                        <li>Tested on speed, safety, accessibilty, and sustainability against a range of  metrics.</li>
-                        <li>Tested for bugs during development.</li>
-                        <li>Built on <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</li>                    
+                        <li>Fast: pages are assembled before they are requested so waiting time is reduced.</li>
+                        <li>Accessible: pages are available to all users, on any device.</li>
+                        <li>Safe: opportunities for attack are minimised.</li>
+                        <li>Extensible: you can change, modify or adapt your site to changing needs.</li> 
                     </ul> 
+                    <span>I follow <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</span>
                 </p>
                 <h3>Optional features</h3>
                 <p>
@@ -29,10 +32,8 @@ const Services = () => {
                 <p>
                     <span class={styles.internalLink}>I have selected and tested this development stack over the course of <Link href={'/projects'}><a>4 projects</a></Link>.</span>
                 </p>
-                <p>For a complete picture of the web technologies I use, please see my <a href="https://danhartley.github.io/snapdragon-redux/wiki/">curriculum vitae</a>.</p>
-                
-                <p>If you would like to discuss an idea, a project, or a website, please contact me at <a href="mailto:dbmhartley@protonmail.com">Daniel Hartley</a>.</p>           
-
+                <p>If you would like to discuss an idea, a project, please contact me at <a href="mailto:dbmhartley@protonmail.com">Daniel Hartley</a>.</p>           
+                <p>For a complete picture of the web technologies I use, this is my <a href="https://danhartley.github.io/snapdragon-redux/wiki/">curriculum vitae</a>.</p>            
             </section>                
         </Layout>
     )
