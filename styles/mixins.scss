@@ -5,9 +5,6 @@
     text-decoration: none;    
     max-width: 800px;
     @include externalLink();
-    h1 {
-        color: rgba(var(--fg), .9) !important;
-    }
     h2 {
         margin: 0 0 1rem 0;
         font-size: 1.75rem;
@@ -28,14 +25,11 @@
             margin-bottom: 1.5rem;
         }
     }
+    border-bottom: 2px dashed rgb(var(--fg), 0.3);
     @media (min-width: 601px) {
         padding: 1rem 1.5rem;
         padding: 0;
         margin: 3rem 0 1rem 0;
-        border-bottom: 2px dashed rgb(var(--fg), 0.3);
-        &:last-child {
-            border: none !important;
-        }
         p {
             font-size: 1.25rem;
         }

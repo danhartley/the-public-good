@@ -28,6 +28,10 @@ const greenLinks = [
         "name": "EcoIndex Firefox extension",
         "source": "https://addons.mozilla.org/fr/firefox/addon/ecoindex/"
     },
+    {
+        "name": "surfgreen.dev (beta)",
+        "source": "https://surfgreen.dev/"
+    },
 ];
 
 const Sustainability = () => {

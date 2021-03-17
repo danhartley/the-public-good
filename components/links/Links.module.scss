@@ -5,5 +5,5 @@
     .internalLink {
         @include internalLink();
     }
-    border-bottom: none !important;
+    border-bottom: none;
 }

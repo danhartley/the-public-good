@@ -78,6 +78,9 @@
 
 17 create layout page template
 
+18 Analysis: 
+   follow these instructions: https://flaviocopes.com/nextjs-analyze-app-bundle/
+
 ---------- below this line is the original README.md ----------
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
