@@ -15,7 +15,7 @@
 
 3 integrate with netlify
 
-4 add support for typescript
+4 add additional support for typescript (basic suppport built-in with next.js)
 
 5 add support for absolute paths
 
@@ -78,8 +78,16 @@
 
 17 create layout page template
 
-18 Analysis: 
+18 analysis: 
    follow these instructions: https://flaviocopes.com/nextjs-analyze-app-bundle/
+   to run: npm run analyze
+
+19 browser support:
+   Handled by next.js, see: https://nextjs.org/docs/basic-features/supported-browsers-features
+
+20 netlify performance metrics including web vitals
+   https://explorers.netlify.com/learn/nextjs/nextjs-performance
+   https://nextjs.org/docs/advanced-features/measuring-performance    
 
 ---------- below this line is the original README.md ----------
 

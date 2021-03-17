@@ -25,8 +25,6 @@ const Layout = ({
         // ignoring user's previous preference
         const strMode = getComputedStyle(document.querySelector('#container')).getPropertyValue('--m');                
         if(strMode === 'dark' && !mode.isDark) {
-            console.log(strMode);
-            console.log(mode.isDark);            
             btnMode.current.click();
             setTimeout(() => {
                 btnMode.current.click();
