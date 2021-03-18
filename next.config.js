@@ -18,7 +18,8 @@ module.exports = withPWA({
   pwa: {
     dest: 'public',
     runtimeCaching,
+    disable: process.env.NODE_ENV === 'development',
   },
 });
 
-module.exports = withBundleAnalyzer({});
+// module.exports = withBundleAnalyzer({});
