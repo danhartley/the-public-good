@@ -41,15 +41,11 @@ const Layout = ({
             const reducer = (accumulator: number, currentValue: number) => {     
                 return accumulator + Math.round((currentValue / 1000));
             };
-            const transferSize = requests.map(r => r.transferSize).reduce(reducer, 0);
-            console.log('ts: ', ts);
+            const transferSize = requests.map(r => r.transferSize || 0).reduce(reducer, 0);
             const bytes = transferSize - ts;
-            console.log('transferSize: ', bytes);
             ts = transferSize;
-            const decodedBodySize = requests.map(r => r.decodedBodySize).reduce(reducer, 0);
-            console.log('dbs: ', dbs);
-            console.log('decodedBodySize: ', decodedBodySize - dbs);
-            dbs = decodedBodySize;
+            // const decodedBodySize = requests.map(r => r.decodedBodySize || 0).reduce(reducer, 0);
+            // dbs = decodedBodySize;
             if(bytesTransferred.current && !isNaN(bytes) && transferSize) {
                 bytesTransferred.current.innerText = `${bytes}Kb transferred to load this page.`;
             }
