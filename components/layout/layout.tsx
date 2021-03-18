@@ -37,7 +37,7 @@ const Layout = ({
 
     useEffect(() => {
         if(window && window.performance) {
-            const requests = Array.from(window.performance.getEntriesByType("resource"));
+            const requests = Array.from(window.performance.getEntriesByType("resource")) as any[];
             const reducer = (accumulator: number, currentValue: number) => {     
                 return accumulator + Math.round((currentValue / 1000));
             };
