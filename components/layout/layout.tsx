@@ -7,6 +7,8 @@ import ModeContext from 'components/contexts/ModeContext';
 import { Links } from 'components/links/Links';
 import styles from 'components/layout/Layout.module.scss';
 
+let ts = 0, dbs = 0;
+
 const Layout = ({
   children,
   title = 'The Public Good',
@@ -18,6 +20,7 @@ const Layout = ({
     const router = useRouter();
 
     const btnMode = useRef(null);
+    const bytesTransferred = useRef(null);
 
     useEffect(() => {
         // run this code to reset to light mode when page is refreshed and light mode 
@@ -31,6 +34,25 @@ const Layout = ({
             });
         }
     });
+
+    useEffect(() => {
+        const requests = Array.from(window.performance.getEntriesByType("resource"));
+        const reducer = (accumulator: number, currentValue: number) => {     
+            return accumulator + Math.round((currentValue / 1000));
+        };
+        const transferSize = requests.map(r => r.transferSize).reduce(reducer, 0);
+        console.log('ts: ', ts);
+        const bytes = transferSize - ts;
+        console.log('transferSize: ', bytes);
+        ts = transferSize;
+        const decodedBodySize = requests.map(r => r.decodedBodySize).reduce(reducer, 0);
+        console.log('dbs: ', dbs);
+        console.log('decodedBodySize: ', decodedBodySize - dbs);
+        dbs = decodedBodySize;
+        if(bytesTransferred.current && !isNaN(bytes) && transferSize) {
+            bytesTransferred.current.innerText = `${bytes}Kb transferred to load this page.`;
+        }
+    }, []);
 
     return (        
         <div>
@@ -69,6 +91,7 @@ const Layout = ({
                 <footer class={styles.footer}>
                     <div><span>© <a href="mailto:dbmhartley@protonmail.com">Daniel Hartley</a> 2021. All rights reserved.</span></div>
                     <div class={styles.externalList}><a href="https://www.linkedin.com/in/danhartley/">LinkedIn</a> | <a href="https://danhartley.github.io/snapdragon-redux/wiki/">CV</a></div>
+                    <div ref={bytesTransferred}></div>
                 </footer>
             </div>                
         </div>
