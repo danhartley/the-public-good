@@ -14,30 +14,14 @@ export default function Home() {
         <section class={styles.card}>
             <h2>Be explicit</h2>
 
-            <p>I believe our ability to mitigate the threats we pose to the planet depends on individual and collective action. As a web developer I work to reduce our demand on energy resources.</p>
+            <p>I believe our ability to mitigate the threats we pose to the planet depends on individual and collective action. As a web developer, I work to reduce our demand on energy resources.</p>
 
             <p>I will <span class={styles.internalLink}>
                         <Link href={'/services'}>
                             <a>help you</a>
                         </Link>
-                        </span> to create a fast, safe, acessible website that uses minimal electricity to run.
-            </p>        
-            {/* <p>                
-                <ul class={styles.list}>
-                    <li>I will <span class={styles.internalLink}>
-                        <Link href={'/services'}>
-                            <a>help you</a>
-                        </Link>
-                        </span> create a fast, safe, acessible website with low green house gas emsissions.
-                    </li>                                        
-                    <li>Reveal my <span class={styles.internalLink}>
-                            <Link href={'/bugbears'}>
-                                <a>bugbears</a>
-                            </Link>
-                        </span>.
-                    </li>                    
-                </ul>    
-            </p> */}
+                        </span> to create a fast, safe, accessible website that uses minimal electricity to run.
+            </p>
         </section>
 
         <section class={styles.card}>

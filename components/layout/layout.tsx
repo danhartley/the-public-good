@@ -37,8 +37,6 @@ const Layout = ({
 
     useEffect(() => {
         if (typeof window !== "undefined" && typeof window.performance !== "undefined") {
-            console.log(window.performance);
-            
             const requests = Array.from(window.performance.getEntriesByType("resource")) as any[];
             const reducer = (accumulator: number, currentValue: number) => {     
                 return accumulator + Math.round((currentValue / 1000));
@@ -46,8 +44,6 @@ const Layout = ({
             const transferSize = requests.map(r => r.transferSize || 0).reduce(reducer, 0);
             const bytes = transferSize - ts;
             ts = transferSize;
-            // const decodedBodySize = requests.map(r => r.decodedBodySize || 0).reduce(reducer, 0);
-            // dbs = decodedBodySize;
             if(bytesTransferred.current && !isNaN(bytes) && transferSize) {
                 bytesTransferred.current.innerText = `${bytes}Kb transferred to load this page.`;
             }

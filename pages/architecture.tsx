@@ -26,7 +26,7 @@ const Architecture = () => {
                 <h3>Documentation</h3>        
 
                 <p>       
-                    <ul class={styles.list}>
+                    <ul class={styles.unorderedList}>
                         <li>
                             <span>The conventions, good practices, and solutions used to develop and build the website. They influence how the the website is assembled. They are not essential, and could be replaced without affecting the appearance or performance of the website. They do not add to page weight.</span>
                             <ul class={styles.list}>
