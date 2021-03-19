@@ -38,6 +38,7 @@ const Layout = ({
     useEffect(() => {
         if (typeof window !== "undefined" && typeof window.performance !== "undefined") {
             const requests = Array.from(window.performance.getEntriesByType("resource")) as any[];
+            console.log(requests);            
             const reducer = (accumulator: number, currentValue: number) => {     
                 return accumulator + Math.round((currentValue / 1000));
             };
@@ -63,7 +64,7 @@ const Layout = ({
                 <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51042880167_31d0c74fa5_c_d.jpg"></meta>
                 <meta name="description" property="og:description" content="The Public Good"></meta>
                 <meta name="author" content="Daniel Hartley"></meta>
-                <meta name="release" content={ new Date().toDateString() }></meta>
+                <meta name="release" content={new Date().toDateString()}></meta>
                 
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="manifest" href="/manifest.json" />
@@ -89,7 +90,7 @@ const Layout = ({
                     <div class={styles.externalList}><a href="https://www.linkedin.com/in/danhartley/">LinkedIn</a> | <a href="https://danhartley.github.io/snapdragon-redux/wiki/">CV</a></div>
                     <div ref={bytesTransferred}></div>
                 </footer>
-            </div>                
+            </div>
         </div>
     )
 };

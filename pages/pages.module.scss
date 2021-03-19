@@ -1,1 +1,11 @@
 @import 'styles/mixins.scss';
+
+.dataTable {
+    dt {
+        font-weight: bold;
+    }
+}
+
+.published {
+    font-size: .9rem;
+}
