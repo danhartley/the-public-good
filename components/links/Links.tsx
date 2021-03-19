@@ -38,8 +38,31 @@ const Home = ({ textAlign = 'left' }) => {
     )
 };
 
+const RelatedLinks = ({links}) => {
+
+    const list = links.map(link => {
+        return <li>
+            <Link href={`/${link.href}`}>
+                <a>{link.title}</a>
+            </Link>
+        </li>
+    });
+
+    return (
+        <section class={styles.related}>
+            <p class={styles.internalLink}>
+                <h3>Related</h3>
+                <ul class={styles.list}>
+                    {list}
+                </ul>
+            </p>                
+        </section>
+    )
+};
+
 export const Links = {    
     InternalLinksList,    
     ExternalLinksList,
-    Home
+    Home,
+    RelatedLinks
 }

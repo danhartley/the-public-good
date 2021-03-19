@@ -49,7 +49,7 @@ export default function Home() {
                 <ul class={styles.list}>
                     <li>
                         <Link href={'/performance'}>
-                            <a>Read more about performance</a>
+                            <a>Performance testing</a>
                         </Link>
                     </li>
                 </ul>
@@ -63,7 +63,7 @@ export default function Home() {
                 <ul class={styles.list}>
                     <li>
                         <Link href={'/accessibility'}>
-                            <a>Read more about accessibility</a>
+                            <a>Accessibility testing</a>
                         </Link>
                     </li>
                 </ul>                
@@ -76,10 +76,10 @@ export default function Home() {
                 <ul class={styles.list}>
                     <li>
                         <Link href={'/sustainability'}>
-                            <a>Read more about sustainability</a>
+                            <a>Sustainability testing</a>
                         </Link>
                     </li>
-                </ul>  
+                </ul>
             </p>
         </section>
     </Layout>

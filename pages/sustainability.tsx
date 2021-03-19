@@ -60,6 +60,7 @@ const Sustainability = () => {
                     <img src="https://api.thegreenwebfoundation.org/greencheckimage/the-public-good.netlify.app" alt="This website is hosted Green - checked by thegreenwebfoundation.org" />
                 </p>
             </section>
+            <Links.RelatedLinks links={[{href:'performance',title:'Performance testing'},{href:'accessibility',title:'Accessibility testing'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
