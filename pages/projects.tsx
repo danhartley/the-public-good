@@ -2,9 +2,9 @@ import Link from 'next/link';
 import Layout from 'components/layout/layout';
 import styles from 'pages/pages.module.scss';
 
-const History = () => {
+const Projects = () => {
     return (
-        <Layout title="Web History" description={'Web History'}>
+        <Layout title="Web Projects" description={'Web Projects'}>
             <section class={styles.card}>
                 <h2>Projects</h2>                
                 <p>                             
@@ -55,4 +55,4 @@ const History = () => {
     )
 };
 
-export default History;
+export default Projects;
