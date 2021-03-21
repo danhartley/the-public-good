@@ -40,6 +40,16 @@
         align-items: center;
         justify-content: center;
     }
+    .quote {
+        margin: .5rem 0 1.5rem 0;
+        padding: 0 2rem;
+        font-size: .8em;
+        line-height: 1.8;
+        display: block;
+    }
+    .italic {
+        font-style: italic;
+    }
 }
 
 @mixin link() {    
