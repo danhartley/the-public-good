@@ -50,6 +50,14 @@
     .italic {
         font-style: italic;
     }
+    .super {
+        font-size: .8rem;
+        vertical-align: super;
+    }
+    .timing {
+        font-size: .8rem;
+        font-style: italic;
+    }
 }
 
 @mixin link() {    
