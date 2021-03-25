@@ -17,39 +17,39 @@ const Thinking = () => {
 
                 <p>We are discussing climate change in its broadest terms, and how best to respond to its manifold, attendant threats.</p>
                 
-                {/* There is no case to be made for pitting individual action against national or international action. The question is what is most useful, on what parts of the problem should we be focused most. */}
+                <p>There is no case to be made for pitting individual action against national or international action. The question is what is most useful, on what parts of the problem should we be focused most.</p>
 
                 <p>The debate is disrupted at the outset by two propositions. We give the myth of climate change short shrift. The second idea, formulated by a coalition of fossil fuel interests, is that the fault is ours.</p>
 
-                {/* <p>In the 1950s an ad hoc affiliation of American companies started a campaign called <a href="https://kab.org/">Keep America Beautiful</a> with the intention of shifting blame for the waste caused by mass-produced plastics from the manufacturers to the public. It worked in two respects: the campaign was successful in diverting attention; but people also became aware of the impact of leaving rubbish; legislation followed, and the campaign is still active today.</p> */}
+                <p>In the 1950s an ad hoc affiliation of American companies started a campaign called <a href="https://kab.org/">Keep America Beautiful</a> with the intention of shifting blame for the waste caused by mass-produced plastics from the manufacturers to the public. It worked in two respects: the campaign was successful in diverting attention; but people also became aware of the impact of leaving rubbish; legislation followed, and the campaign is still active today.</p>
 
-                {/* <p>In 2002 BP rebranded itself as 'Beyond Petroleum', a declaration which was nothing more than a <a aria-label="Forbes article reviewing BP's position on renewables" href="https://www.nytimes.com/2006/08/14/opinion/14kenney.html">marketing slogan</a>. Following the Deepwater Horizon disaster in 2006, BP sold off its <a aria-label="Reuters article on BP selling off solar assets" href="https://www.reuters.com/article/us-bp-solar/bp-turns-out-lights-at-solar-business-idUSTRE7BK1CC20111221?edition-redirect=uk">solar assets</a> in 2011 and <a aria-label="Reuters article on BP selling off wind assets" href="https://www.reuters.com/article/us-bp-wind-idUSBRE93208B20130403">wind assets</a> in 2013.</p> */}
+                <p>In 2002 BP rebranded itself as 'Beyond Petroleum', a declaration which was nothing more than a <a aria-label="Forbes article reviewing BP's position on renewables" href="https://www.nytimes.com/2006/08/14/opinion/14kenney.html">marketing slogan</a>. Following the Deepwater Horizon disaster in 2006, BP sold off its <a aria-label="Reuters article on BP selling off solar assets" href="https://www.reuters.com/article/us-bp-solar/bp-turns-out-lights-at-solar-business-idUSTRE7BK1CC20111221?edition-redirect=uk">solar assets</a> in 2011 and <a aria-label="Reuters article on BP selling off wind assets" href="https://www.reuters.com/article/us-bp-wind-idUSBRE93208B20130403">wind assets</a> in 2013.</p>
                 
-                {/* <p>In <a href="https://www.researchgate.net/publication/305209345_Where_has_all_the_oil_gone_BP_branding_and_the_discursive_elimination_of_climate_change_risk">'Where has all the oil gone?</a>', Julie Doyle sums up BP's rationale:
+                <p>In <a href="https://www.researchgate.net/publication/305209345_Where_has_all_the_oil_gone_BP_branding_and_the_discursive_elimination_of_climate_change_risk">'Where has all the oil gone?</a>', Julie Doyle sums up BP's rationale:
                     <span class={styles.quote}>
                         …through the use of the language and symbols of environmental discourse, as well as the discourse of sustainable development, BP is able to acknowledge the current reality of climate change (and the role of fossil fuels within this), whilst simultaneously erase its own implications, as an oil company.
                     </span>
-                </p> */}
+                </p>
 
                 <p>As part of their 'Beyond Petroleum' <a aria-label="Forbes article reviewing BP's position on renewables" href="https://www.nytimes.com/2006/08/14/opinion/14kenney.html">marketing campaign</a>, BP popularised the concept of the carbon footprint. In 2020, they released a <a aria-label="BP carbon emissions calculator" href="https://www.knowyourcarbonfootprint.com/">second carbon calculator</a> which, when it was introduced on Twitter, did not receive a favourable <a href="https://twitter.com/bp_plc/status/1186645440621531136">reception</a>.</p>
 
-                {/* <p>It appears that it is prudent to be sceptical of what fossil fuel companies, perhaps all large public companies, tell us about themselves.</p> */}
+                <p>Amy Westervelt's podcast series <a href="https://www.criticalfrequency.org/drilled">Drilled</a></p>
 
-                {/* Amy Westervelt's podcast series <a href="https://www.criticalfrequency.org/drilled">Drilled</a> */}
+                <p>It appears that it is prudent to be sceptical of what fossil fuel companies, perhaps all large public companies, tell us about themselves.</p>                
 
-                {/* The <a href="https://www.bbc.com/future/article/20200618-climate-change-who-is-to-blame-and-why-does-it-matter">debate</a> as to whether climate change is tackled most effectively through <a href="https://en.wikipedia.org/wiki/Individual_action_on_climate_change">individual action</a>, or through collaborative initiatives, be they social or political, such as voting, protesting, and lobbying.  */}
+                The <a href="https://www.bbc.com/future/article/20200618-climate-change-who-is-to-blame-and-why-does-it-matter">debate</a> as to whether climate change is tackled most effectively through <a href="https://en.wikipedia.org/wiki/Individual_action_on_climate_change">individual action</a>, or through collaborative initiatives, be they social or political, such as voting, protesting, and lobbying. 
 
-                {/* <p>In his article<a aria-label="Mark Kaufman as Mashable sets out the case against fossil fuel companies" href="https://mashable.com/feature/carbon-footprint-pr-campaign-sham"> The carbon footprint sham</a>, Mark Kaufman argues the burden of responsibility for global warming must be placed squarely on the fossil fuel industry. He concludes,
+                <p>In his article<a aria-label="Mark Kaufman as Mashable sets out the case against fossil fuel companies" href="https://mashable.com/feature/carbon-footprint-pr-campaign-sham"> The carbon footprint sham</a>, Mark Kaufman argues the burden of responsibility for global warming must be placed squarely on the fossil fuel industry. He concludes,
                     <span class={styles.quote}>
                     BP wants you to accept responsibility for the globally disrupted climate. Just like beverage industrialists wanted people to feel bad about the amassing pollution created by their plastics and cans, or more sinisterly, tobacco companies blamed smokers for becoming addicted to addictive carcinogenic products. We’ve seen this manipulative playbook before, and BP played it well.
                     </span>
-                </p> */}
+                </p>
 
-                {/* <p>Kaufamn does not discount personal responsibility, or action particularly as it may lead to political action.</p> */}
+                <p>Kaufamn does not discount personal responsibility, or action particularly as it may lead to political action.</p>
 
-                {/* <p>In a Financial Times <a href="https://www.ft.com/content/b6bdc4b1-d41f-49f0-a3df-61614cc1a2b7">review</a> <span class={styles.super}>paywall</span> of books by Michael E Mann, Bill Gates and Jonathan Franzen, the authors are presented respectively as favouring legislation, technology, and mitigation.</p> */}
+                <p>In a Financial Times <a href="https://www.ft.com/content/b6bdc4b1-d41f-49f0-a3df-61614cc1a2b7">review</a> <span class={styles.super}>paywall</span> of books by Michael E Mann, Bill Gates and Jonathan Franzen, the authors are presented respectively as favouring legislation, technology, and mitigation.</p>
 
-                {/* <p>Fossil fuel companies try to distract attention away from their own activities, and shift reponsibility on to consumers. That is logical.</p> */}
+                <p>Fossil fuel companies try to distract attention away from their own activities, and shift reponsibility on to consumers. That is logical.</p>
 
                 <p>The climatologist, Michael E Mann, argues we must not be distracted by such attempts to draw our attention away from those responsible, and that it is they, not us, who must be subject to the greatest change. In an article for Time, <a href="https://time.com/5669071/lifestyle-changes-climate-change/">Lifestyle Changes Aren’t Enough to Save the Planet. Here’s What Could</a>, Mann writes,
                     <span class={styles.quote}>
@@ -61,29 +61,33 @@ const Thinking = () => {
                     </span>          
                 </p>
 
-                {/* <p>He has a point; few of us like being told what to do, and on matters of morality, we tend to be especially prickly.</p> */}
+                <p>He has a point; few of us like being told what to do, and on matters of morality, we tend to be especially prickly.</p>
 
                 <p>Shifting the blame for climate change onto consumers has two consequences: necessary action is not taken to reduce emissions; the untrustworthy and unscrupulous retain the power to affect and control decision making.</p>
 
                 <p>But what of individual actions; do well-intentioned efforts detract from wider ranging or systematic changes that might be more productive?</p>
 
+                <p>Do individual acts detract from systemic changes that might be more productive?</p>
+
                 <p>Two recent studies provide evidential support that action in one area can preclude further action; acceptance of <a aria-label="Article from Nature, Nudging out support for a carbon tax." href="https://www.nature.com/articles/s41558-019-0474-0.epdf?referrer_access_token=7hony2jeIBDx312LZL9Gf9RgN0jAjWel9jnR3ZoTv0Nfy3PIgvrwnNXQzIbXH8z1u5o1DVXJKOCBERWXBQ6n3i7p3mfuhk8O9_ARe2av1P-d3pfhbb06zqr_k1ZVK_HD8tEj_6p2jxRJQxwkRFQWahxt7ZYR4Ws1ZVY58B8B8F6TJ6aO9hG-1I9AhErSlutuYsCZeDXvm9-XQaK48r5_g_7ekTO-pGXMZtdqirjpVkfWgFjWyxnVqqn0_h9toXZES8i2jx06Io6c6_qOC8Bd6VHPqm72I77ZCjw2ljeahJRxzha7MfU5fOL8oy4OqgnRM5K5ySLjcAfgtZx4iUYU7Q%3D%3D&tracking_referrer=www.usatoday.com">one tax</a>, even at the lower end of a range, lessens acceptance of further taxation, and <a aria-label="Article from Nature, Household behaviour crowds out support for climate change policy when sufficient progress is perceived." href="https://www.nature.com/articles/nclimate3316"> household behaviour may crowd out public support for government action</a>.</p>
                 
-                <p>Are there examples of action leading to reductions in greenhouse gase emissions? We can examine two: one that is the result of collective individual action; the other has come about as a result of government regulation and subsidies.</p>
+                <p>Are there examples of action leading to reductions in greenhouse gase emissions? We can examine two</p>
+
+                <p>There are two cases where action has brought some change: one that is the result of collective individual action; the other has come about as a result of government regulation and subsidies.</p>
 
                 <p>Meat and dairy account for <a aria-label="Carbon Brief report: What is the climate impact of eating meat and dairy?" href="https://interactive.carbonbrief.org/what-is-the-climate-impact-of-eating-meat-and-dairy/">14.5%</a> of emissions. The total emissions for meat and dairy and food production as a whole continues to grow, as does the percentage growth for meat and dairy within the agriculture sector. This is mostly a good thing; more people have better access to the food they need, and have healthier <a href="https://ourworldindata.org/diet-compositions">diets</a>. In a few, predominantly wealthy, countries meat and dairy consumption per capita has fallen, and the number of vegetarians has risen; but in the majority of countries, people are eating more meat and dairy, including India which has <a aria-label="Wikipedia: Vegetarianism by country" href="https://en.wikipedia-on-ipfs.org/wiki/Vegetarianism_by_country.html">more vegetarians than the rest of the world combined</a>.</p>
 
                 <p>While the impact of eating less meat and dairy in some European countries, Israel and Australia is measurable, it is small, and globally insignificant.</p>
                 
-                <p>The <a href="https://ourworldindata.org/renewable-energy">impact</a> of renewable energies in lowering emissions has been greater, though not enough to prevent an overall increase. One quarter of global electricity production comes from renewables, and in 2019, around 11% of global primary energy. The profile of contributions is changing as more solar and wind power is added, but hydropower continues to dominate, accounting for more than all other forms combined.</p>
+                <p>The <a href="https://ourworldindata.org/renewable-energy">impact</a> of renewable energies in lowering emissions has been greater, though not enough to prevent an overall increase (growth in demand <a href="https://www.iea.org/news/global-energy-demand-rose-by-23-in-2018-its-fastest-pace-in-the-last-decade">exceeds</a> additions to supply from renewables). One quarter of global electricity production comes from renewables, and in 2019, around 11% of global primary energy. The profile of contributions is changing as more solar and wind power is added, but hydropower continues to dominate, accounting for more than all other forms combined.</p>
 
                 <p>To date, neither individual action nor state led initiatives have had a significant impact on emissions.</p>    
 
-                {/* <p>If everyone in the world adopted a vegan diet, the savings would, however, considerable, reducing global land use by 3 billion hectares.</p> */}
-                {/* <p>This is unlikely to happen, and would not be advisable in parts of the world where protein from meat is essential. But is it more improbable than technologies unproven at scale, such as carbon capture and storage? It is an idea worth considering given the high cost of failure.</p> */}
+                <p>If everyone in the world adopted a vegan diet, the savings would, however, considerable, reducing global land use by 3 billion hectares.</p>
+                <p>This is unlikely to happen, and would not be advisable in parts of the world where protein from meat is essential. But is it more improbable than technologies unproven at scale, such as carbon capture and storage? It is an idea worth considering given the high cost of failure.</p>
                 <p>Is it more likely that the world will shift to a vegan diet supplemented perhaps by synthetic products, or that technologies unproven at scale will save us?</p>
 
-                {/* <p>Agriculture plays a part in this in the transport, storage and packing of food, as does electricity generation for domestic and business use.</p>     */}
+                <p>Agriculture plays a part in this in the transport, storage and packing of food, as does electricity generation for domestic and business use.</p>    
 
                 <p>Energy is responsible for <a aria-label="Our World in Data report: Sector by sector: where do global greenhouse gas emissions come from?" href="https://ourworldindata.org/ghg-emissions-by-sector">73.2%</a> of emissions. There is little individuals can do about these emissions, they are characteristic of the societies they live in, built into the roads, buildings, and transport they use. This background carbon footprint is insidious. In 2008 MIT <a href="https://news.mit.edu/2008/footprint-tt0416">calculated</a> that a homeless person in the US had a carbon footprint of 8.5 tonnes. We may think this example unfair, but the figures add up; everyone in a rich country is living beyond the means of the plant before they have eaten one mouthful of food or taken one hot shower.</p>
 
@@ -92,9 +96,9 @@ const Thinking = () => {
 
                 <p>We have seen that individual actions have a limited role in reducing emissions, that political, systemic change is essential, and that the two overlap, not always in beneficial ways. But what of the actions themselves, do they have <a href="https://en.wikipedia.org/wiki/Intrinsic_value_(ethics)">intrinsic value</a>?</p>
 
-                <p>This question is not easily answered, but the individual can take it on, at least in respect of themselves. I don't eat meat because it is unsustainable, but the reason I stopped was the contradiction between what I knew and what I did. This decision brought no hardship, and I continue to eat some dairy products. If everyone stopped eating meat and dairy that collective effort would <a href="https://ourworldindata.org/land-use-diets">transform the planet</a>, but each single decision, though insignificant in global terms, has a great impact on the individual, and that should not be underestimated. </p>
+                <p>This question is not easily answered, but the individual can take it on, at least in respect of themselves. I don't eat meat because it is unsustainable, but the reason I stopped was the contradiction between what I knew and what I did. This decision brought no hardship, and I continue to eat some dairy products. If everyone stopped eating meat and dairy that collective effort would <a href="https://ourworldindata.org/land-use-diets">transform the planet</a>, but each single decision, though insignificant in global terms, has a greatest impact on the individual, and that should not be underestimated. </p>
 
-                <p>Knowing facts is not sufficient to effect change, but a decision which may involve inconvenience, loss of income, or the forfeit of a pleasure, is sustained more readily when it has solid foundations, for then the reason behind, and the need for, the change, is clear, though the consequences are neither immediate nor discernible. It is contrary to forego gratification or gain, but it is hard to ignore that which is right to do, when that right has been established and understood. We may call this our conscience, our sense of duty, or a moral imperative; and we may discover that acting in accordance with our beliefs and understanding, is less disruptive, and more sustaining, than we imagined.</p>
+                <p>Knowing facts is not sufficient to effect change, but a decision which may involve inconvenience, loss of income, or the forfeit of a pleasure, is sustained more readily when it has solid foundations, for then the reason behind, and the need for, the change, is clear, even if the benefits are neither immediate nor discernible. It is contrary to forego gratification or gain, but it is hard to ignore that which is right to do, when that right has been established and understood. We may call this our conscience, our sense of duty, or a moral imperative; and we may discover that acting in accordance with our beliefs and understanding, is less disruptive, and more sustaining, than we imagined.</p>
 
                 <h3>More change, not less</h3>
             
@@ -118,11 +122,11 @@ const Thinking = () => {
                     </span>
                 </p>
 
-                {/* <h3>Work</h3>
+                <h3>Work</h3>
 
                 <p>There are two ways. The first is often comes at work. We typically have less control at work than we do at home. If we work in an industry connected with high emissions, and there are many, our actions are directly contributing to the problem; we may also feel unjustly criticsed, and fearful for our jobs. The corollary to this is that our actions can have wider reach.</p>
 
-                <p>If we chose to separate our private and public lives, or segregate personal and business affairs, that is our decision, it does not reflect an inherent difference, or truth; we are but one person, though it may be simpler or more convenient to imagine that we are not. The consequences of our actions are unaffected by the roles we assume when we undertake those actions.</p> */}
+                <p>If we chose to separate our private and public lives, or segregate personal and business affairs, that is our decision, it does not reflect an inherent difference, or truth; we are but one person, though it may be simpler or more convenient to imagine that we are not. The consequences of our actions are unaffected by the roles we assume when we undertake those actions.</p>
 
                 <h3>Participation</h3>
 
@@ -160,8 +164,8 @@ const Thinking = () => {
                     </span>
                 </p>
 
-                {/* <h3>Grands projets</h3>
-                <p>A more open debate; grand projets are popular with some politicians in particular, but they have a mixed record. The idea of <a href="https://www.greenthesinai.com/">greening the Sinai desert</a> is stimulating, striking an optimistic note, but the mix of outside intervention - <a href="http://theweathermakers.nl/">The Weather Makers</a>, the company behind the plan have not visited the area, nor can due to instability in the region - requiring huge investment, the temption of huge profits, and an authoritarian regime, and precious little local involvement, gives pause for thought.</p> */}
+                <h3>Grands projets</h3>
+                <p>A more open debate; grand projets are popular with some politicians in particular, but they have a mixed record. The idea of <a href="https://www.greenthesinai.com/">greening the Sinai desert</a> is stimulating, striking an optimistic note, but the mix of outside intervention - <a href="http://theweathermakers.nl/">The Weather Makers</a>, the company behind the plan have not visited the area, nor can due to instability in the region - requiring huge investment, the temption of huge profits, and an authoritarian regime, and precious little local involvement, gives pause for thought.</p>
 
                 <h3>Population</h3>
 
@@ -170,7 +174,8 @@ const Thinking = () => {
                 <p>It is not the number of people that is critical, but what each of us demands of the planet; the demand made by people in developed countries is unsustainable, and would remain so even if the world's population were reduced by the poorest 50%; they are responsible for <a aria-label="Our World in Data report on CO2 emissions by income" href="https://ourworldindata.org/co2-by-income-region">14% of emissions</a>, <a aria-label="Oxfam report on carbon inequality" href="https://www.oxfam.org/en/press-releases/carbon-emissions-richest-1-percent-more-double-emissions-poorest-half-humanity">half that of the top 1%</a>.</p>
 
                 <p>The World Bank emphasises the <a href="https://www.worldbank.org/en/topic/education/publication/missed-opportunities-the-high-cost-of-not-educating-girls#:~:text=The%20report%20says%20that%20limited,lost%20lifetime%20productivity%20and%20earnings.">financial cost</a> of not educating girls, to the state and the individual,
-                <span class={styles.quote}>On average, women with secondary school education earn almost twice as much as those with no education at all.</span></p>
+                    <span class={styles.quote}>On average, women with secondary school education earn almost twice as much as those with no education at all.</span>
+                </p>
                 <p>There are many benefits including the elimination of child marriages, better health and well-being, greater agency and opportunities, and a reduction in fertility rates. A study for the BBC by the Royal Geographical Society found that the world population could be reduced by 843 million people through improving women's education, and funding family planning.</p>
 
                 <h3>Travellers from an antique land</h3>
@@ -189,6 +194,28 @@ const Thinking = () => {
 
                 <p>How we act is up to each of us; we may chose to benefit from education, guidance, and help, but we possess the immediate and perpetual freedom to think; some enjoy the liberty of translating our thoughts into action, but <a href="https://www.frontiersin.org/articles/10.3389/fpubh.2019.00357/full">many</a> have little or no agency, and others fear they will not in the future. As we have discovered over the past year, our autonomy is quickly lost.</p>
 
+                This problem is exacerbated if we overestimate the value of our actions. For example, a household that buys only locally sourced meat may think it has done its bit, though this has <a aria-label="Article by Our World in Data, You want to reduce the carbon footprint of your food? Focus on what you eat, not whether your food is local" href="https://ourworldindata.org/food-choice-vs-eating-local">minimal impact</a> on greenhouse gas emissions.
+                
+                We cannot ignore the problems we face and hope everything works out, as though we were dealing with the toss of the coin.
+
+                <p>Evolution is backwards looking; a trait or a gene that already exists is passed on when the organism that contains it reproduces.</p>
+
+                <p>We have amassed a great heap of deadlines by when things must get done. </p>
+
+                <p>We have amassed a great heap of deadlines by when things must get done, future promises that others must fulfill. New dates are drawn in the sand as we trample those we marked before.</p>
+
+                {/* New dates are drawn in the sand as we trample over the old ones */}
+
+                <p>Our history may not have prepared us for what we must do.</p>
+
+                {/* https://time.com/5669071/lifestyle-changes-climate-change/
+                https://www.globalwitness.org/en/campaigns/environmental-activists/defending-tomorrow/ */}
+
+                <p>As Tim Christophersen, head of the Nature for Climate branch at the UN Environment Programme, puts it, 
+                    <span class={styles.quote}>Ecosystem restoration is not a technical challenge; it’s a social challenge.</span>
+                </p>
+
+                <p>Mann is worried that debates about personal choices will distract from the need to police carbon emissions. Diet is, however, more than simply a lifestyle choice; food production is big business. According to Our World in Data, <a href="https://ourworldindata.org/environmental-impacts-of-food">food production</a> accounts for 26% of global greenhouse gas emissions.</p>
             
             </section>                
         </Layout>
@@ -196,27 +223,3 @@ const Thinking = () => {
 };
 
 export default Thinking;
-
-
-                {/* This problem is exacerbated if we overestimate the value of our actions. For example, a household that buys only locally sourced meat may think it has done its bit, though this has <a aria-label="Article by Our World in Data, You want to reduce the carbon footprint of your food? Focus on what you eat, not whether your food is local" href="https://ourworldindata.org/food-choice-vs-eating-local">minimal impact</a> on greenhouse gas emissions.</p> */}
-                
-                {/* We cannot ignore the problems we face and hope everything works out, as though we were dealing with the toss of the coin. */}
-
-                {/* <p>Evolution is backwards looking; a trait or a gene that already exists is passed on when the organism that contains it reproduces.</p> */}
-
-                {/* <p>We have amassed a great heap of deadlines by when things must get done. </p> */}
-
-                {/* <p>We have amassed a great heap of deadlines by when things must get done, future promises that others must fulfill. New dates are drawn in the sand as we trample those we marked before.</p> */}
-
-                {/* New dates are drawn in the sand as we trample over the old ones */}
-
-                {/* <p>Our history may not have prepared us for what we must do.</p> */}
-
-                {/* https://time.com/5669071/lifestyle-changes-climate-change/ */}
-                {/* https://www.globalwitness.org/en/campaigns/environmental-activists/defending-tomorrow/ */}
-                {/* <p>As Tim Christophersen, head of the Nature for Climate branch at the UN Environment Programme, puts it, 
-                    <span class={styles.quote}>Ecosystem restoration is not a technical challenge; it’s a social challenge.</span>
-                </p> */}
-
-                {/* <p>Mann is worried that debates about personal choices will distract from the need to police carbon emissions. Diet is, however, more than simply a lifestyle choice; food production is big business. According to Our World in Data, <a href="https://ourworldindata.org/environmental-impacts-of-food">food production</a> accounts for 26% of global greenhouse gas emissions.</p> */}
-

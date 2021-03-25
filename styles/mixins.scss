@@ -21,6 +21,9 @@
         line-height: 1.8;
         margin: .75rem 0;
     }
+    div {
+        line-height: 1.8;
+    }
     ul, p {
         &:last-child {
             margin-bottom: 1.5rem;
@@ -28,7 +31,6 @@
     }
     border-bottom: 2px dashed rgb(var(--fg), 0.3);
     @media (min-width: 601px) {
-        padding: 1rem 1.5rem;
         padding: 0;
         margin: 3rem 0 1rem 0;
         p {
@@ -138,10 +140,10 @@
         @include externalLink();
         margin: .5rem 0;
         div {
-            margin: .5rem 0;
+            margin: .5rem 0;            
         }
-        & > span > a {
-            font-size: 1.2em;
+        span {
+            line-height: 1.8;
         }
     }
 }
@@ -152,6 +154,16 @@
 
 .externalList {
     @include externalLink();
+}
+
+.table {
+    margin-top: 1rem;
+    th {
+        padding: 0 1rem 0 0;
+    }
+    li {
+        font-size: .9rem;
+    }
 }
 
 .list {

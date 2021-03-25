@@ -3,7 +3,7 @@ import Layout from 'components/layout/layout';
 import { Links } from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
 
-const greenLinks = [
+const businessCalculators = [
     {
         "name": "The Green Web Foundation",
         "source": "https://www.thegreenwebfoundation.org/"
@@ -39,9 +39,8 @@ const Sustainability = () => {
         <Layout title="Web sustainability" description={'Web sustainability'}>
             <section class={styles.card}>
                 <h2>Sustainability</h2>
-
-                <h3>Website carbon emissions checks</h3>
-                <Links.InternalLinksList links={greenLinks} />
+                <h3>Website carbon emissions calculators</h3>
+                <Links.InternalLinksList links={businessCalculators} />
             </section>
             <section class={styles.card}>
                 <h3>UN Sustainable Development Goals (SDGs)</h3>
