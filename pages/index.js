@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Layout from 'components/layout/layout';
+import { Links } from 'components/links/Links';
 import styles from 'styles/Home.module.scss';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
                         </Link>
                         </span> to create a fast, safe, accessible website that uses minimal electricity to run.
             </p>
+            <Links.InternalLink link={{'value': 'carbonfootprint', 'text': 'Overview of carbon footprint calculators'}}></Links.InternalLink>
         </section>
 
         <section class={styles.card}>

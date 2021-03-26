@@ -49,12 +49,18 @@
         line-height: 1.8;
         display: block;
     }
+    .inset {
+        font-size: .9rem;
+    }
     .italic {
         font-style: italic;
     }
     .super {
         font-size: .8rem;
         vertical-align: super;
+    }
+    .bang {
+        border: none;
     }
     .timing {
         font-size: .8rem;

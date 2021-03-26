@@ -26,6 +26,18 @@ const InternalLinksList = ({links}) => {
     )
 };
 
+const InternalLink = ({link}) => {
+    return  <p class={styles.internalLink}>
+                <ul class={styles.list}>
+                    <li>
+                        <Link href={`/${link.value}`}>
+                            <a>{link.text}</a>
+                        </Link>
+                    </li>
+                </ul>
+            </p>
+};
+
 const Home = ({ textAlign = 'left' }) => {
     return (
         <section class={styles.homeCard} style={`text-align:${textAlign}` as React.CSSProperties}>
@@ -64,5 +76,6 @@ export const Links = {
     InternalLinksList,    
     ExternalLinksList,
     Home,
-    RelatedLinks
+    RelatedLinks,
+    InternalLink
 }

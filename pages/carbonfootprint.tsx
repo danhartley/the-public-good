@@ -1,5 +1,5 @@
 import Layout from 'components/layout/layout';
-import Table from 'components/table/table.tsx';
+import Table from 'components/table/table';
 import { Links } from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
 
@@ -100,7 +100,8 @@ const CarbonFootprint = () => {
     return (
         <Layout title="Carbon Footprint" description={'Carbon Footprint'}>
             <section class={styles.card}>
-                <h2>Carbon footprint</h2>                
+                <h2>Carbon footprint</h2>      
+                {/* <div class={styles.timing}>8 minute read</div> */}
                 <p>
                     <span class={styles.quote}>
                     The total greenhouse gas (GHG) emissions caused by an individual, event, organization, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a>
@@ -111,9 +112,14 @@ const CarbonFootprint = () => {
                 According to Our World in Data (2017):
                 <ul class={styles.list}>
                     <li>Per capita CO2 emissions: <a href="https://ourworldindata.org/grapher/co-emissions-per-capita?tab=chart">4.73 tonnes</a>.</li> 
-                    <li>Total emissions: <a href="https://ourworldindata.org/co2-emissions">36.44 billion tonnes of CO2</a>.</li>
-                    <li>World population: <a href="https://ourworldindata.org/world-population-growth">7.55 billion</a> *.</li>
+                    <li>Total CO2: <a href="https://ourworldindata.org/co2-emissions">36.44 billion tonnes of CO2</a>.</li>
+                    <li>Total CO2e: <a href="https://ourworldindata.org/greenhouse-gas-emissions">49.36 billion tonnes of CO2e</a> (2016).</li>
+                    <li>World population: <a href="https://ourworldindata.org/world-population-growth">7.55 billion</a> <a id="data" class={styles.bang} href="#discrepancy">*</a>.</li>
                 </ul>
+                <div class={styles.inset}>
+                    Emissions have risen worldwide since 2017 with the exception of 2020 when they fell; <a href="https://www.nature.com/articles/d41586-021-00090-3">Nature, 6.4% (2.3 billion tonnes)</a>, <a href="https://www.iea.org/articles/global-energy-review-co2-emissions-in-2020">IEA 5.8%</a>, <a href="https://carbonmonitor.org/">Carbon Monitor 4%</a>.
+                    <span> <a href="https://carbonmonitor.org/">Daily estimates</a> are also available from Carbon Monitor.</span>
+                </div>                
                 </p>
                 <h3>Sustainable emissions</h3>
                 <p>                                 
@@ -234,7 +240,7 @@ const CarbonFootprint = () => {
 
                 <p>What of the actions themselves, do they have <a href="https://en.wikipedia.org/wiki/Intrinsic_value_(ethics)">intrinsic value</a>? Does knowing the average emission of a transatlantic flight, or the carbon dioxide-equivalent per kilo of beef mean anything?</p>
 
-                <p>A decision which may involve inconvenience, loss of income, or the forfeit of a pleasure, is sustained more readily when it has solid foundations, for then the reason behind, and the need for, the change, is clear, even if its ultimate benefits is neither immediate nor discernible. It is against the grain for most to forego gratification or gain, but it is hard to ignore that which is right to do, when that right has been established and understood. We may call this conscience, sense of duty, or moral imperative; and we may discover that acting in accordance with our beliefs and our understanding, is less disruptive, and more sustaining, than we imagined.</p>
+                <p>A decision which may involve inconvenience, loss of income, or the forfeit of a pleasure, is sustained more readily when it has solid foundations, for then the reason behind, and the need for, the change, is clear, even if any ultimate benefit that accrues is indiscernible. It is against the grain for most to forego gratification or gain, but it is hard to ignore that which is right to do, when that right has been established and understood. We may call this conscience, sense of duty, or moral imperative; and we may discover that acting in accordance with our beliefs and our understanding, is less disruptive, and more sustaining, than we imagined.</p>
 
                 <h3>Carbon footprint calculators</h3>
 
@@ -246,7 +252,7 @@ const CarbonFootprint = () => {
 
                 <h3>Comparison</h3>
 
-                <p>I used 5 calculators to find my carbon footprint. <span class={styles.super}>+</span></p>
+                <p>I used 5 calculators to find my carbon footprint. <span class={styles.super}><a id="table" class={styles.bang} href="#profile">+</a></span></p>
 
                 <Table calculators={calculators.filter(c => c.score)}></Table>
 
@@ -262,11 +268,17 @@ const CarbonFootprint = () => {
                         <li>Follow, or reference, <a href="https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf">Ecological Footprint Standards (PDF)</a>.</li>
                         <li>Indicate the implicit, background carbon footprint.</li>
                         <li>Include and explain carbon dioxide-equivalents.</li>
-                        {/* <li>Extend the concept to larger entities where decisions have a greater positive impact on emissions, and negative impacts on employment, wealth, etc.</li> */}
                     </ul>
                 </p>
+
+                <h3>Conclusion</h3>
+
+                <p>Carbon footprint calculators have value as an introduction to the consequences of our choices, and as a starting point for examining our interdependency, lack of autonomy, and the limits pertaining to personal action.</p>
+
+                <p>Footprints would be improved by making the implicit cost of services explicit. This intrinsic, background value for a society is the floor below which individual action cannot take us, and which can only be breached by direct, participatory action that brings about policy change.</p>
+
                 </section>
-            <section class={styles.card}>
+            <section id="discrepancy" class={styles.card}>
                 <p>* There is a discrepancy hidden in these figures: 
                     <span class={styles.quote}>
                         4.73 tonnes * 7.55 billion = 35.70 billion tonnes of CO2
@@ -280,9 +292,13 @@ const CarbonFootprint = () => {
                         1 - (36.44 billion tonnes / 35.70 billion tonnes) ~2%
                     </span>
                     This is explained by the 'bunker fuels', or 'International transport', that is emissions for which no one has taken credit.
+
+                    <div>
+                        <a class={styles.inset} href="#data">Continue reading</a>
+                    </div>
                 </p>
             </section>
-            <section class={styles.card}>
+            <section id="profile" class={styles.card}>
                 <p>
                     + My profile
                     <ul class={styles.list}>                        
@@ -301,6 +317,9 @@ const CarbonFootprint = () => {
                         <li>10 kilometres per week train</li>
                         <li>4 hours flying per year</li>
                     </ul>
+                    <div>
+                        <a class={styles.inset} href="#table">Return to emissions table</a>
+                    </div>
                 </p>
             </section>
         </Layout>
