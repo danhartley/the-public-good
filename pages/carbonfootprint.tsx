@@ -225,7 +225,7 @@ const CarbonFootprint = () => {
 
                 <p>Carbon footprints are sometimes used as a proxy for individual acts, which are then placed in opposition to political or social acts, limiting choice to one or the other, either/or.</p>
 
-                <p>One reason for this polarity is that fossil fuel companies have promoted the idea that emissions reduction is the responsibility of individuals, and one of the tools they have used is the carbon footprint; not only was BP was the first to popularise the concept, they have released carbon footprint calculators twice, in 2006 and 2020, to coincide with campaigns defending or stating their green credentials.</p>
+                <p>One reason for this polarity is that fossil fuel companies have promoted the idea that emissions reduction is the responsibility of individuals, and one of the tools they have used is the carbon footprint; not only was BP the first to popularise the concept, they have released carbon footprint calculators twice, in 2006 and 2020, to coincide with campaigns defending or stating their green credentials.</p>
 
                 <p>Do individual acts detract from systemic changes that might be more productive?</p>
 
