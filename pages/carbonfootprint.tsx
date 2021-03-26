@@ -322,6 +322,7 @@ const CarbonFootprint = () => {
                     </div>
                 </p>
             </section>
+            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability testing'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
