@@ -27,20 +27,18 @@ const InternalLinksList = ({links}) => {
 };
 
 const InternalLink = ({link}) => {
-    return  <p class={styles.internalLink}>
-                <ul class={styles.list}>
-                    <li>
-                        <Link href={`/${link.value}`}>
-                            <a>{link.text}</a>
-                        </Link>
-                    </li>
-                </ul>
+    return  <p class={styles.internalLinkBlock}>
+                <span class={styles.internalLink}>                
+                    <Link href={`/${link.value}`}>
+                        <a>{link.text}</a>
+                    </Link>                    
+                </span>
             </p>
 };
 
 const Home = ({ textAlign = 'left' }) => {
     return (
-        <section class={styles.homeCard} style={`text-align:${textAlign}` as React.CSSProperties}>
+        <section class={styles.internalLinkBlock} style={`text-align:${textAlign}` as React.CSSProperties}>
             <p class={styles.internalLink}>
                 <Link href={'/'}>
                     <a>The PG Home</a>

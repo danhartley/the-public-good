@@ -13,10 +13,10 @@ const Table = ({calculators}) => {
         return (
         <tr>
             <td>{c.name}</td>
-            <td>{c.score.co2}</td>
-            <td>{c.score.shareable ? 'true' : 'false'}</td>
-            {c.score.method ? <td><a href={c.score.method}>{c.score.sources ? 'true' : 'false'}</a></td> : null }
-            <td><ul class={styles.list}>{other}</ul></td>
+            <td>{c.score.co2}t CO2e</td>
+            <td class={styles.wideOnly}>{c.score.shareable ? 'true' : 'false'}</td>
+            {c.score.method ? <td class={styles.wideOnly}><a href={c.score.method}>{c.score.sources ? 'true' : 'false'}</a></td> : null }
+            <td class={styles.wideOnly}><ul class={styles.list}>{other}</ul></td>
         </tr> )
     });
 
@@ -26,9 +26,9 @@ const Table = ({calculators}) => {
             <tr>
                 <th>Calculator</th>
                 <th>Footprint</th>
-                <th>Sharable</th>
-                <th>Sources</th>
-                <th>Other</th>
+                <th class={styles.wideOnly}>Sharable</th>
+                <th class={styles.wideOnly}>Sources</th>
+                <th class={styles.wideOnly}>Other</th>
             </tr>
            </thead>
           <tbody>

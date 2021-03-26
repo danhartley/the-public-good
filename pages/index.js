@@ -21,8 +21,12 @@ export default function Home() {
                         <Link href={'/services'}>
                             <a>help you</a>
                         </Link>
-                        </span> to create a fast, safe, accessible website that uses minimal electricity to run.
-            </p>
+                      </span> to create a fast, safe, accessible website that uses minimal electricity to run.
+            </p>            
+        </section>
+
+        <section class={styles.card}>
+            <h2>Latest</h2>
             <Links.InternalLink link={{'value': 'carbonfootprint', 'text': 'Overview of carbon footprint calculators'}}></Links.InternalLink>
         </section>
 
