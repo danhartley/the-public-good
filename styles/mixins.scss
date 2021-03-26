@@ -7,9 +7,15 @@
     @include externalLink();
     h2 {
         margin: 0 0 .75rem 0;
-        font-size: 1.85rem;
+        font-size: 1.25rem;
         font-weight: normal;
         overflow-wrap: break-word;
+        @media (min-width: 414px) {
+            font-size: 1.5rem;
+        }
+        @media (min-width: 601px) {
+            font-size: 1.85rem;
+        }
     }
     h3 {
         font-size: 1.3rem;
