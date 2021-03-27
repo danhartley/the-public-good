@@ -134,14 +134,14 @@ const CarbonFootprint = () => {
                         </span>
                         <p>As the population rises, this allowance will <a aria-label="Carbon Brief, Analysis: Why children must emit eight times less CO2 than their grandparents" href="https://www.carbonbrief.org/analysis-why-children-must-emit-eight-times-less-co2-than-their-grandparents">fall</a>.</p>
 
-                        The calculation assumes that sinks absorb all emissions immediately, which is not the case. Counting emissions and calculating budgets is <a href="https://www.carbonbrief.org/analysis-why-the-ipcc-1-5c-report-expanded-the-carbon-budget">not straight forward</a>; the IPPC publishes a <a aria-label="IPCC Guide to Uncertainty (PDF)" href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">guide</a> for the lead authors of reports solely concerned with explaining how to express uncertainty.
+                        The calculation assumes that sinks absorb all emissions immediately, which is not the case. Counting emissions and calculating budgets is <a href="https://www.carbonbrief.org/analysis-why-the-ipcc-1-5c-report-expanded-the-carbon-budget">not straightforward</a>; the IPPC publishes a <a aria-label="IPCC Guide to Uncertainty (PDF)" href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">guide</a> for the lead authors of reports solely concerned with explaining how to express uncertainty.
                     </div>
                 </p>
 
                 <h3>CO2e</h3>
 
                 <p>
-                    Unfortunately CO2 is not the only greenhouse gas; emissions from methane, nitrous oxide, and F-gases must also be taken into account. Total emissions are measured using <a aria-label="Our World in Data, How do we quantify greenhouse gas emissions?" href="https://ourworldindata.org/greenhouse-gas-emissions#how-are-greenhouse-gases-measured">carbon dioxide-equivalents</a>.
+                    Unfortunately CO2 is not the only greenhouse gas; emissions from methane, nitrous oxide, and <a href="https://en.wikipedia.org/wiki/Fluorinated_gases">Fluorinated gases</a> (F-gases) must also be taken into account. Total emissions are measured using <a aria-label="Our World in Data, How do we quantify greenhouse gas emissions?" href="https://ourworldindata.org/greenhouse-gas-emissions#how-are-greenhouse-gases-measured">carbon dioxide-equivalents</a>.
                     <p>
                         The total figure for all greenhouse gas emissions is therefore higher, more than <a aria-label="Our World in Data, Total greenhouse gas emissions" href="https://ourworldindata.org/greenhouse-gas-emissions">50 billion tonnes of CO2e</a>.
                     </p>
@@ -174,6 +174,8 @@ const CarbonFootprint = () => {
                 </p>
 
                 <p>The debate around carbon footprints is often about who is <a aria-label="BBC article, Who is really to blame for climate change?" href="https://www.bbc.com/future/article/20200618-climate-change-who-is-to-blame-and-why-does-it-matter">responsible</a> for carbon emissions.</p>
+
+                <p>In 2002 BP rebranded itself as 'Beyond Petroleum'; as part of their <a aria-label="Forbes article reviewing BP's position on renewables" href="https://www.nytimes.com/2006/08/14/opinion/14kenney.html">marketing campaign</a> they released a carbon footprint calculator which popularised the concept. Following the <a aria-label="Wikipedia article on the Deepwater Horizon oil spill" href="https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill">Deepwater Horizon disaster</a> in 2006, BP sold off its <a aria-label="Reuters article on BP selling off solar assets" href="https://www.reuters.com/article/us-bp-solar/bp-turns-out-lights-at-solar-business-idUSTRE7BK1CC20111221?edition-redirect=uk">solar</a> (2011) and <a aria-label="Reuters article on BP selling off wind assets" href="https://www.reuters.com/article/us-bp-wind-idUSBRE93208B20130403">wind</a> (2013) assets.</p>
 
                 <p>
                     <div>In his article, <a aria-label="Mark Kaufman as Mashable sets out the case against fossil fuel companies" href="https://mashable.com/feature/carbon-footprint-pr-campaign-sham"> The carbon footprint sham</a>, Mark Kaufman argues the burden of responsibility for global warming must be placed squarely on the fossil fuel industry. He concludes,
@@ -216,8 +218,7 @@ const CarbonFootprint = () => {
                         <li>Tracing back carbon emissions is hard; many calculations are derived from assumptions based on figures for large units, usually countries.</li>
                         <li>The background or implicit value for the region where the user lives is not separated out, although an average for that region is often given.</li>
                         <li>There is no oversight, and no formal process of review; this makes it hard for the public to know which calculators are accurate or reliable.</li>
-                        {/* <li>Some do not follow standards and are black boxes with little or no explanation of how the final footprint is derived. The ones listed here do provide infomration as to how they achieved the footprint value.</li> */}
-                        {/* <li>Climate change, biodiversity loss, ocean acidification, pollution deforestation, etc. are global problems best tackled by collective effort through systemic change.</li> */}
+                        <li>Our good intentions can be undone by <a aria-label="Article titled Psychological obstacles to the efficacy of environmental footprint tools" href="https://iopscience.iop.org/article/10.1088/1748-9326/ab9968">primary cognitive biases</a>.</li>
                     </ul>
                 </p>
 
@@ -257,7 +258,11 @@ const CarbonFootprint = () => {
                 <Table calculators={calculators.filter(c => c.score)}></Table>
 
                 <p>
-                    Calculators don't take into account personal circumstances; wealthier people have more choice as to where they live, and how they live. Nor do they take into account our work which may carry a footprint quite different than the private one. The reason for this is to avoid double counting emissions - if you make cars, the car owners are responsible for those emissions, not the manufacturer; but since these are personal emissions calculators, this limits their value. And finally they are snapshots, which don't take into account our history, or future plans.
+                    Calculators don't take into account important personal circumstances; wealthier people have more choice as to where they live, and how they live. Nor do they take into account our work which may carry a footprint quite different than the private one. The reason for this is to avoid double counting emissions - if you make cars, the car owners are responsible for those emissions, not the manufacturer; but since these are personal emissions calculators, this limits their value. And finally they are snapshots, which don't take into account our history, or future plans.                    
+                </p>
+
+                <p>
+                    If we assume that carbon emissions must peak, and decline, in order to meet the goals set in Paris in 2015, we can see that the effect on individual <a href="https://www.carbonbrief.org/analysis-why-children-must-emit-eight-times-less-co2-than-their-grandparents">lifetime carbon budgets</a> is startling.
                 </p>
 
                 <h3>Recommendations</h3>
@@ -294,7 +299,7 @@ const CarbonFootprint = () => {
                     This is explained by the 'bunker fuels', or 'International transport', that is emissions for which no one has taken credit.
 
                     <div>
-                        <a class={styles.inset} href="#data">Continue reading</a>
+                        <a class={styles.inset} href="#data">Return to current emissions</a>
                     </div>
                 </p>
             </section>
