@@ -213,7 +213,7 @@ const CarbonFootprint = () => {
                         </span>
                     </div>
                     <div>
-                        If we extend this finding to all rich countries, it would impossible for even the most diligent individual to live sustainably; before they had eaten one mouthful of food or taken one hot shower, they would be living beyond the capacity of the planet to support them.
+                        If we extend this finding to all rich countries, it would be impossible for even the most diligent individual to live sustainably; before they had eaten one mouthful of food or taken one hot shower, they would be living beyond the capacity of the planet to support them.
                     </div>
                 </p>
 
@@ -256,7 +256,7 @@ const CarbonFootprint = () => {
                     A little hope in the final sentence.
                 </p>
 
-                <p>The choice, however, is ours, we can save electricity and water, become a vegan and run for office. If we think we can combine personal and political action, then we should so, and trust others to do the same.</p>
+                <p>The choice, however, is ours, we can save electricity and water, become a vegan and run for office. If we think we can combine personal and political action, then we should, and trust others to do the same.</p>
 
                 <p>What of the actions themselves, do they have <a href="https://en.wikipedia.org/wiki/Intrinsic_value_(ethics)">intrinsic value</a>? Does knowing the average emission of a transatlantic flight, or the carbon dioxide-equivalent per kilo of beef mean anything?</p>
 
@@ -307,7 +307,7 @@ const CarbonFootprint = () => {
                     <span class={styles.quote}>
                         4.73 tonnes * 7.55 billion = 35.70 billion tonnes of CO2
                     </span>
-                    Any yet,
+                    And yet,
                     <span class={styles.quote}>
                         36.44 billion tonnes / 7.55 billion people = 4.83 tonnes of CO2
                     </span>

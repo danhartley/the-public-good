@@ -26,7 +26,7 @@ const Table = ({calculators}) => {
             <tr>
                 <th>Calculator</th>
                 <th>Footprint</th>
-                <th class={styles.wideOnly}>Sharable</th>
+                <th class={styles.wideOnly}>Shareable</th>
                 <th class={styles.wideOnly}>Sources</th>
                 <th class={styles.wideOnly}>Other</th>
             </tr>
