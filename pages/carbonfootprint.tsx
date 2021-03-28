@@ -138,6 +138,25 @@ const CarbonFootprint = () => {
                     </div>
                 </p>
 
+                <p>
+                    Why is a sustainable footprint not zero?
+                    <p>
+                        The <a aria-label="Paper on the Global Carbon Budget 2020" href="https://essd.copernicus.org/articles/12/3269/2020/">global carbon budget</a>, published annually, provides an account of the balance between carbon sources - emissions - and sinks. The movement of carbon atoms betweens sinks and sources is called the <a aria-label="US National Ocean Service article, What is the carbon cycle?" href="https://oceanservice.noaa.gov/facts/carbon-cycle.html">carbon cycle</a>, and it is perturbations in this cycle which cause global warming.
+                        Since 1950 around <a href="https://www.nature.com/articles/s41598-018-24241-1.pdf?origin=ppub">50%</a> of anthropogenic emissions have been taken up by <a href="https://www.pnas.org/content/116/24/11646">natural sinks</a>, though at variable rates.
+                        Due to <a href="https://en.wikipedia.org/wiki/CO2_fertilization_effect">carbon fertilisation</a>, and other factors, including increased use of nitrogen, natural sinks have been taking up more carbon dioxide, though <a aria-label="Article published in Nature: Effects of rising CO2 levels on carbon sequestration are coordinated above and below ground" href="https://www.nature.com/articles/d41586-021-00737-1">this upward trend may not continue</a>.
+                        <div>
+                            Natural sinks cannot be relied on indefinitely, and become sources of emissions if they are removed or die.
+                            IPCC calculations and NDAs (<a href="https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs">Nationally Determined Contributions</a>), take into account natural sources. 
+                        </div>                        
+                        <p>
+                            Negative emissions refer to greenhouse gases, primarily carbon dioxide, removed from the atmosphere, either though biogenic means (planting trees, restoring mangrove forests and planting sea grasses), or by artificial methods such as <a aria-label="Report by the International Energy Agency on direct air capture" href="https://www.iea.org/reports/direct-air-capture">direct air capture</a> (DAC).                
+                        </p>
+                        <p>
+                            Carbon capture and storage, and carbon offsetting are used, at best, to keep emissions from an activity carbon neutral; they do not reduce carbon already in the atmosphere.
+                        </p>
+                    </p>                    
+                </p>
+
                 <h3>CO2e</h3>
 
                 <p>
@@ -268,7 +287,7 @@ const CarbonFootprint = () => {
                 <h3>Recommendations</h3>
                 <p>
                     <ul class={styles.list}>
-                        <li>Do not offer the option to share footprints because they are free of context, and not comparable.</li>
+                        <li>Do not offer the option to share the results of footprints because they are free of context, and not comparable.</li>
                         <li>Show workings and explain assumptions.</li>
                         <li>Follow, or reference, <a href="https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf">Ecological Footprint Standards (PDF)</a>.</li>
                         <li>Indicate the implicit, background carbon footprint.</li>

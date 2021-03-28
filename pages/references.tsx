@@ -14,7 +14,11 @@ const keyReferences = [
     {
         "name": "The Economics of Biodiversity: The Dasgupta Review",
         "source": "https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review"
-    }
+    },
+    {
+        "name": "IPCC Special Report: Climate Change and Land",
+        "source": "https://www.ipcc.ch/srccl/"
+    },
 ];
 
 const keyPosts = [
