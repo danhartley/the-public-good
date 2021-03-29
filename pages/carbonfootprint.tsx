@@ -345,6 +345,7 @@ const CarbonFootprint = () => {
                         <a class={styles.inset} href="#table">Return to emissions table</a>
                     </div>
                 </p>
+                <p><span class={styles.published}>Published: {new Date('Mon 29 March 2021').toDateString()}</span></p>
             </section>
             <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability testing'}]}></Links.RelatedLinks>
         </Layout>
