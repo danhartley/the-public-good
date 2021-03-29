@@ -281,7 +281,7 @@ const CarbonFootprint = () => {
 
                 <Table calculators={calculators.filter(c => c.score)}></Table>
 
-                <p>Why are there such large discrepancies between the footprints?</p>
+                <p>Why are there such large discrepancies between footprints?</p>
 
                 <p>Calculators accept a variety of information, and differ as to external baseline data and assumptions; this does not necessarily make one better than another; all of these calculators are well researched, and independently valuable, but direct comparison between them is not possible. Discrepancies are a cautionary reminder that, when dealing with climate change figures, it is more constructive to think in terms of ranges than specific figures, and that the ranges themselves fluctuate. The value of our footprint is seductive, an effective means of engagement; how the number was derived <a aria-label="Mossy Earth carbon footprint calculator methodology" href="https://mossy.earth/methodologies/carbon-footprint-calculator">is more valuable</a>.</p>
 
