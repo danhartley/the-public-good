@@ -215,6 +215,11 @@ const CarbonFootprint = () => {
                     <div>
                         If we extend this finding to all rich countries, it would be impossible for even the most diligent individual to live sustainably; before they had eaten one mouthful of food or taken one hot shower, they would be living beyond the capacity of the planet to support them.
                     </div>
+                    <div>
+                    <p class={styles.italic}>
+                        A <a aria-label="Carbon Footprint of Nations: A Global, Trade-Linked Analysis" href="https://pubs.acs.org/doi/10.1021/es803496a#">paper</a> from 2009, puts the domestic share of emissions at 80%, the world average at 73%, and most European countries in the 60s. (Ed. <span class={styles.published}>{new Date('Mon 29 March 2021').toDateString()}</span>)
+                    </p>
+                    </div>
                 </p>
 
                 <h3>Benefits of carbon footprints</h3>
@@ -268,7 +273,7 @@ const CarbonFootprint = () => {
 
                 <Links.InternalLinksList links={calculators} />
 
-                <div>NB Not all calculators are the same. The Global Food Network makes clear their <a aria-label="Global Food Network: Footprint Calculator FAQs" href="https://www.footprintnetwork.org/footprint-calculator-faq/#gen1">calculator</a> is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint and a figure for CO2 emissions (a carbon footprint). </div>
+                <div>NB Not all calculators are the same. The Global Food Network makes clear their <a aria-label="Global Food Network: Footprint Calculator FAQs" href="https://www.footprintnetwork.org/footprint-calculator-faq/#gen1">calculator</a> is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true footprint, measured by area) and a figure for CO2 emissions (a carbon footprint). </div>
 
                 <h3>Comparison</h3>
 
@@ -278,7 +283,7 @@ const CarbonFootprint = () => {
 
                 <p>Why are there such large discrepancies between the footprints?</p>
 
-                <p>Calculators accept a variety of information, and differ as to external data and assumptions; this does not necessarily make one better than another; all of these calculators are well researched, and independently valuable, but direct comparison between them is not possible. Discrepancies are a cautionary reminder that, when dealing with climate change figures, it is more constructive to think in terms of ranges than specific figures, and that the ranges themselves fluctuate. The value of our footprint is seductive, an effective means of engagement; how the number was derived <a aria-label="Mossy Earth carbon footprint calculator methodology" href="https://mossy.earth/methodologies/carbon-footprint-calculator">is more valuable</a>.</p>
+                <p>Calculators accept a variety of information, and differ as to external baseline data and assumptions; this does not necessarily make one better than another; all of these calculators are well researched, and independently valuable, but direct comparison between them is not possible. Discrepancies are a cautionary reminder that, when dealing with climate change figures, it is more constructive to think in terms of ranges than specific figures, and that the ranges themselves fluctuate. The value of our footprint is seductive, an effective means of engagement; how the number was derived <a aria-label="Mossy Earth carbon footprint calculator methodology" href="https://mossy.earth/methodologies/carbon-footprint-calculator">is more valuable</a>.</p>
 
                 <p>
                     Calculators are necessarily constrained by the information we provide, but whilst certain inferences can be made from the data we do provide, they are agnostic as to some important factors that affect our behaviour and options; wealthier people, for example, have more choice as to where they live, and how they live. Nor do these calculators take into account our work which may have a footprint at odds with our private one. The reason for this is to avoid double counting emissions - if you make cars, the car owners are responsible for those emissions, not the manufacturer; but since these are personal emissions calculators, this limits their value.                    
@@ -349,7 +354,8 @@ const CarbonFootprint = () => {
                         <a class={styles.inset} href="#table">Return to emissions table</a>
                     </div>
                 </p>
-                <p><span class={styles.published}>Published: {new Date('Mon 29 March 2021').toDateString()}</span></p>
+                <p><span class={styles.published}>Published: {new Date('Sat 27 March 2021').toDateString()}</span></p>
+                <p><span class={styles.published}>Edited: {new Date('Mon 29 March 2021').toDateString()}</span></p>
             </section>
             <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability testing'}]}></Links.RelatedLinks>
         </Layout>
