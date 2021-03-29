@@ -34,13 +34,13 @@ const calculators = [
     },
     {
         "name": "Mossy Earth",
-        "source": "https://mossy.earth/footprint",
+        "source": "https://mossy.earth/methodologies/carbon-footprint-calculator",
         "score": {
             "co2": "6.54",
             "world": "5",
             "shareable": true,
             "sources": true,
-            "method": "https://mossy.earth/methodologies/carbon-calculator",
+            "method": "https://mossy.earth/methodologies/carbon-footprint-calculator",
             "other": [
                 'Results emailed',
             ]
@@ -180,7 +180,7 @@ const CarbonFootprint = () => {
                         </span>
                     </li>
                     <li>
-                        BP launches a <a aria-label="BP carbon emissions calculator" href="https://www.knowyourcarbonfootprint.com/">second carbon calculator</a>. It does not receive a favourable <a href="https://twitter.com/bp_plc/status/1186645440621531136">reception</a>.
+                        <div>BP launches a <a aria-label="BP carbon emissions calculator" href="https://www.knowyourcarbonfootprint.com/">second carbon calculator</a>. It does not receive a favourable <a href="https://twitter.com/bp_plc/status/1186645440621531136">reception</a>.</div>
                     </li>
                 </ul>
 
@@ -192,9 +192,13 @@ const CarbonFootprint = () => {
                     </span>          
                 </p>
 
-                <p>The debate around carbon footprints is often about who is <a aria-label="BBC article, Who is really to blame for climate change?" href="https://www.bbc.com/future/article/20200618-climate-change-who-is-to-blame-and-why-does-it-matter">responsible</a> for carbon emissions.</p>
+                <p>
+                    <div>The debate around carbon footprints is often about who is <a aria-label="BBC article, Who is really to blame for climate change?" href="https://www.bbc.com/future/article/20200618-climate-change-who-is-to-blame-and-why-does-it-matter">responsible</a> for carbon emissions.</div>
+                </p>
 
-                <p>In 2002 BP rebranded itself as 'Beyond Petroleum'; as part of their <a aria-label="Forbes article reviewing BP's position on renewables" href="https://www.nytimes.com/2006/08/14/opinion/14kenney.html">marketing campaign</a> they released a carbon footprint calculator which popularised the concept. Following the <a aria-label="Wikipedia article on the Deepwater Horizon oil spill" href="https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill">Deepwater Horizon disaster</a> in 2006, BP sold off its <a aria-label="Reuters article on BP selling off solar assets" href="https://www.reuters.com/article/us-bp-solar/bp-turns-out-lights-at-solar-business-idUSTRE7BK1CC20111221?edition-redirect=uk">solar</a> (2011) and <a aria-label="Reuters article on BP selling off wind assets" href="https://www.reuters.com/article/us-bp-wind-idUSBRE93208B20130403">wind</a> (2013) assets.</p>
+                <p>
+                    <div>In 2002 BP rebranded itself as 'Beyond Petroleum'; as part of their <a aria-label="Forbes article reviewing BP's position on renewables" href="https://www.nytimes.com/2006/08/14/opinion/14kenney.html">marketing campaign</a> they released a carbon footprint calculator which popularised the concept. Following the <a aria-label="Wikipedia article on the Deepwater Horizon oil spill" href="https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill">Deepwater Horizon disaster</a> in 2006, BP sold off its <a aria-label="Reuters article on BP selling off solar assets" href="https://www.reuters.com/article/us-bp-solar/bp-turns-out-lights-at-solar-business-idUSTRE7BK1CC20111221?edition-redirect=uk">solar</a> (2011) and <a aria-label="Reuters article on BP selling off wind assets" href="https://www.reuters.com/article/us-bp-wind-idUSBRE93208B20130403">wind</a> (2013) assets.</div>
+                </p>
 
                 <p>
                     <div>In his article, <a aria-label="Mark Kaufman as Mashable sets out the case against fossil fuel companies" href="https://mashable.com/feature/carbon-footprint-pr-campaign-sham"> The carbon footprint sham</a>, Mark Kaufman argues the burden of responsibility for global warming must be placed squarely on the fossil fuel industry. He concludes,
@@ -217,7 +221,7 @@ const CarbonFootprint = () => {
                     </div>
                     <div>
                     <p class={styles.italic}>
-                        A <a aria-label="Carbon Footprint of Nations: A Global, Trade-Linked Analysis" href="https://pubs.acs.org/doi/10.1021/es803496a#">paper</a> from 2009, puts the domestic share of emissions at 80%, the world average at 73%, and most European countries in the 60s. (Ed. <span class={styles.published}>{new Date('Mon 29 March 2021').toDateString()}</span>)
+                        <div>A <a aria-label="Carbon Footprint of Nations: A Global, Trade-Linked Analysis" href="https://pubs.acs.org/doi/10.1021/es803496a#">paper</a> from 2009, puts the domestic share of emissions at 80%, the world average at 73%, and most European countries in the 60s. (Ed. <span class={styles.published}>{new Date('Mon 29 March 2021').toDateString()}</span>)</div>
                     </p>
                     </div>
                 </p>
@@ -263,7 +267,9 @@ const CarbonFootprint = () => {
 
                 <p>The choice, however, is ours, we can save electricity and water, become a vegan and run for office. If we think we can combine personal and political action, then we should, and trust others to do the same.</p>
 
-                <p>What of the actions themselves, do they have <a href="https://en.wikipedia.org/wiki/Intrinsic_value_(ethics)">intrinsic value</a>? Does knowing the average emission of a transatlantic flight, or the carbon dioxide-equivalent per kilo of beef mean anything?</p>
+                <p>
+                    <span>What of the actions themselves, do they have <a href="https://en.wikipedia.org/wiki/Intrinsic_value_(ethics)">intrinsic value</a>? Does knowing the average emission of a transatlantic flight, or the carbon dioxide-equivalent per kilo of beef mean anything?</span>
+                </p>
 
                 <p>A decision which may involve inconvenience, loss of income, or the forfeit of a pleasure, is sustained more readily when it has solid foundations, for then the reason behind, and the need for, the change, is clear, even if any ultimate benefit that accrues is indiscernible. It is against the grain for most to forego gratification or gain, but it is hard to ignore that which is right to do, when that right has been established and understood. We may call this conscience, sense of duty, or moral imperative; and we may discover that acting in accordance with our beliefs and our understanding, is less disruptive, and more sustaining, than we imagined.</p>
 
@@ -271,9 +277,11 @@ const CarbonFootprint = () => {
 
                 <br/>
 
-                <Links.InternalLinksList links={calculators} />
+                <Links.ExternalLinksList links={calculators} />
 
-                <div>NB Not all calculators are the same. The Global Food Network makes clear their <a aria-label="Global Food Network: Footprint Calculator FAQs" href="https://www.footprintnetwork.org/footprint-calculator-faq/#gen1">calculator</a> is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true footprint, measured by area) and a figure for CO2 emissions (a carbon footprint). </div>
+                <p>
+                    <div class={styles.small}>NB Not all calculators are the same. The Global Food Network makes clear their <a aria-label="Global Food Network: Footprint Calculator FAQs" href="https://www.footprintnetwork.org/footprint-calculator-faq/#gen1">calculator</a> is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true footprint, measured by area) and a figure for CO2 emissions (a carbon footprint).</div>
+                </p>
 
                 <h3>Comparison</h3>
 

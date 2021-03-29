@@ -33,11 +33,11 @@ const References = () => {
         <Layout title="References" description={'References'}>
             <section class={styles.card}>
                 <h2>Key References</h2>
-                <Links.InternalLinksList links={keyReferences} />
+                <Links.ExternalLinksList links={keyReferences} />
             </section>
             <section class={styles.card}>
                 <h2>Key posts</h2>
-                <Links.InternalLinksList links={keyPosts} />
+                <Links.ExternalLinksList links={keyPosts} />
             </section>
         </Layout>
     )

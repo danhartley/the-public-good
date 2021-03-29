@@ -45,7 +45,7 @@ const Performance = () => {
 
                 <h3>Tests</h3>          
                 <p>To run these tests all you need is a public website.</p>
-                <Links.InternalLinksList links={perfLinks} />   
+                <Links.ExternalLinksList links={perfLinks} />   
 
                 <h3>Measured performance</h3>
 

@@ -28,7 +28,7 @@ const Accessibility = () => {
                 <h2>Accessibility</h2>
 
                 <h3>Tools</h3>
-                <Links.InternalLinksList links={links} />
+                <Links.ExternalLinksList links={links} />
             
                 <p>
                     <h3>Colour contrast</h3>

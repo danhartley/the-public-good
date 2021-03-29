@@ -40,7 +40,7 @@ const Sustainability = () => {
             <section class={styles.card}>
                 <h2>Sustainability</h2>
                 <h3>Website carbon emissions calculators</h3>
-                <Links.InternalLinksList links={businessCalculators} />
+                <Links.ExternalLinksList links={businessCalculators} />
             </section>
             <section class={styles.card}>
                 <h3>UN Sustainable Development Goals (SDGs)</h3>
