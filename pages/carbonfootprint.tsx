@@ -139,7 +139,7 @@ const CarbonFootprint = () => {
                 </p>
 
                 <p>
-                    Why is a sustainable footprint not zero?
+                    <h3>Global carbon budget</h3>
                     <p>
                         The <a aria-label="Paper on the Global Carbon Budget 2020" href="https://essd.copernicus.org/articles/12/3269/2020/">global carbon budget</a>, published annually, provides an account of the balance between carbon sources - emissions - and sinks. The movement of carbon atoms betweens sinks and sources is called the <a aria-label="US National Ocean Service article, What is the carbon cycle?" href="https://oceanservice.noaa.gov/facts/carbon-cycle.html">carbon cycle</a>, and it is perturbations in this cycle which cause global warming.
                         Since 1950 around <a href="https://www.nature.com/articles/s41598-018-24241-1.pdf?origin=ppub">50%</a> of anthropogenic emissions have been taken up by <a href="https://www.pnas.org/content/116/24/11646">natural sinks</a>, though at variable rates.
@@ -149,7 +149,7 @@ const CarbonFootprint = () => {
                             IPCC calculations and NDAs (<a href="https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs">Nationally Determined Contributions</a>), take into account natural sources. 
                         </div>                        
                         <p>
-                            Negative emissions refer to greenhouse gases, primarily carbon dioxide, removed from the atmosphere, either though biogenic means (planting trees, restoring mangrove forests and planting sea grasses), or by artificial methods such as <a aria-label="Report by the International Energy Agency on direct air capture" href="https://www.iea.org/reports/direct-air-capture">direct air capture</a> (DAC).                
+                            Negative emissions refer to greenhouse gases, primarily carbon dioxide, removed from the atmosphere, either though biogenic means (including planting trees, and restoring mangrove forests and sea grasses), or by artificial methods such as <a aria-label="Report by the International Energy Agency on direct air capture" href="https://www.iea.org/reports/direct-air-capture">direct air capture</a> (DAC).                
                         </p>
                         <p>
                             Carbon capture and storage, and carbon offsetting are used, at best, to keep emissions from an activity carbon neutral; they do not reduce carbon already in the atmosphere.
