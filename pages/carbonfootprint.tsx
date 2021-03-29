@@ -276,18 +276,22 @@ const CarbonFootprint = () => {
 
                 <Table calculators={calculators.filter(c => c.score)}></Table>
 
+                <p>Why are there such large discrepancies between the footprints?</p>
+
+                <p>Calculators accept a variety of information, and differ as to external data and assumptions; this does not necessarily make one better than another; all of these calculators are well researched, and independently valuable, but direct comparison between them is not possible. Discrepancies are a cautionary reminder that, when dealing with climate change figures, it is more constructive to think in terms of ranges than specific figures, and that the ranges themselves fluctuate. The value of our footprint is seductive, an effective means of engagement; how the number was derived <a aria-label="Mossy Earth carbon footprint calculator methodology" href="https://mossy.earth/methodologies/carbon-footprint-calculator">is more valuable</a>.</p>
+
                 <p>
-                    Calculators don't take into account important personal circumstances; wealthier people have more choice as to where they live, and how they live. Nor do they take into account our work which may carry a footprint quite different than the private one. The reason for this is to avoid double counting emissions - if you make cars, the car owners are responsible for those emissions, not the manufacturer; but since these are personal emissions calculators, this limits their value. And finally they are snapshots, which don't take into account our history, or future plans.                    
+                    Calculators are necessarily constrained by the information we provide, but whilst certain inferences can be made from the data we do provide, they are agnostic as to some important factors that affect our behaviour and options; wealthier people, for example, have more choice as to where they live, and how they live. Nor do these calculators take into account our work which may have a footprint at odds with our private one. The reason for this is to avoid double counting emissions - if you make cars, the car owners are responsible for those emissions, not the manufacturer; but since these are personal emissions calculators, this limits their value.                    
                 </p>
 
                 <p>
-                    If we assume that carbon emissions must peak, and decline, in order to meet the goals set in Paris in 2015, we can see that the effect on individual <a href="https://www.carbonbrief.org/analysis-why-children-must-emit-eight-times-less-co2-than-their-grandparents">lifetime carbon budgets</a> is startling.
+                    And finally, they are snapshots, which don't take into account our history, or future plans. If we assume that carbon emissions must peak, and decline, in order to meet the goals set in Paris in 2015, the effect on individual <a href="https://www.carbonbrief.org/analysis-why-children-must-emit-eight-times-less-co2-than-their-grandparents">lifetime carbon budgets</a> is startling.
                 </p>
 
                 <h3>Recommendations</h3>
                 <p>
                     <ul class={styles.list}>
-                        <li>Do not offer the option to share the results of footprints because they are free of context, and not comparable.</li>
+                        <li>Do not offer the option to share the results of footprints because they are free of important context, and are not comparable; but do share the calculator itself.</li>
                         <li>Show workings and explain assumptions.</li>
                         <li>Follow, or reference, <a href="https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf">Ecological Footprint Standards (PDF)</a>.</li>
                         <li>Indicate the implicit, background carbon footprint.</li>
