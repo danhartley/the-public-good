@@ -15,7 +15,7 @@ const Table = ({calculators}) => {
             <td>{c.name}</td>
             <td>{c.score.co2}t CO2e</td>
             <td class={styles.wideOnly}>{c.score.shareable ? 'true' : 'false'}</td>
-            {c.score.method ? <td class={styles.wideOnly}><a href={c.score.method}>{c.score.sources ? 'true' : 'false'}</a></td> : null }
+            {c.score.method ? <td class={styles.wideOnly}><a id={c.name} href={c.score.method}>{c.score.sources ? 'true' : 'false'}</a></td> : null }
             <td class={styles.wideOnly}><ul class={styles.list}>{other}</ul></td>
         </tr> )
     });
