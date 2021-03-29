@@ -23,11 +23,11 @@ const Layout = ({
     const bytesTransferred = useRef(null);
 
     useEffect(() => {
-        // run this code to reset to light mode when page is refreshed and light mode 
-        // is the user's default. Downside is the screen flickers; comment out to revert to dark mode,
+        // run this code to reset to dark mode when page is refreshed and dark mode 
+        // is the user's default. Downside is the screen flickers; comment out to revert to light mode,
         // ignoring user's previous preference
         const strMode = getComputedStyle(document.querySelector('#container')).getPropertyValue('--m');                
-        if(strMode === 'dark' && !mode.isDark) {
+        if(strMode === 'light' && mode.isDark) {
             btnMode.current.click();
             setTimeout(() => {
                 btnMode.current.click();

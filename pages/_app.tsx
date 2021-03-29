@@ -6,7 +6,7 @@ import ModeContext from 'components/contexts/ModeContext';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 
-    const [darkMode, setDarkMode] = useLocalStorageState({ key: 'is-dark-mode', defaultValue: true });
+    const [darkMode, setDarkMode] = useLocalStorageState({ key: 'is-dark-mode', defaultValue: false });
 
     const getStyle = (_darkMode:boolean) => {        
         const _style = _darkMode 
