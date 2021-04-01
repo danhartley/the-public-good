@@ -61,7 +61,8 @@ const Layout = ({
                 <meta name="apple-mobile-web-app-capable" content="yes"></meta>
                 <meta name="color-scheme" content="dark light"></meta>
                 <meta name="description" content={description}></meta>
-                <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51042880167_31d0c74fa5_c_d.jpg"></meta>
+                <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51087414841_fae772ccf8_w_d.jpg"></meta>
+                {/* <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51042880167_31d0c74fa5_c_d.jpg"></meta> */}
                 <meta name="description" property="og:description" content="The Public Good"></meta>
                 <meta name="author" content="Daniel Hartley"></meta>
                 <meta name="release" content={new Date().toDateString()}></meta>

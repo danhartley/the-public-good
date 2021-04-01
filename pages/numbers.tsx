@@ -66,10 +66,18 @@ const Numbers = () => {
             <section class={styles.card}>
                 <h2>Numbers</h2>
 
-                <h3>Carbon & CO2</h3>
+                <div class={styles.menu}>
+                    <span><a class={styles.bang} href="#carbon">Carbon</a></span>
+                    <span><a class={styles.bang} href="#co2e">CO2e</a></span>
+                    <span><a class={styles.bang} href="#geologic_time">Geologic time</a></span>
+                    <span><a class={styles.bang} href="#emissions">Emissions</a></span>
+                    <span><a class={styles.bang} href="#energy">Energy</a></span>
+                </div>
+
+                <h3 id="carbon">Carbon & CO2</h3>
 
                 <p>
-                Emissions values are usually given in tonnes of carbon dioxide (or CO2e, see below), but occasionally a value is given in tonnes of carbon (the giveaway is that the value looks surprisingly small).
+                Emissions values are usually given in tonnes of carbon dioxide (or CO2e<a class={styles.bang} href="#co2e">*</a>), but occasionally a value is given in tonnes of carbon (the giveaway is that the value looks surprisingly small).
 
                 To convert a mass of carbon to carbon dioxide multiple by 3.67.
                 </p>
@@ -90,6 +98,9 @@ const Numbers = () => {
                         <a aria-label="QandA in Scientific American on how to calculate weight of CO2" href="https://www.scientificamerican.com/article/experts-weight-ratio-co2-fuel/">Example calculation using weight and moles.</a>
                     </div>
                 </p>
+                
+                <h3 id="co2e">CO2e</h3>
+                
                 <h3 id="geologic_time">The geologic time scale of fossil fuels</h3>
 
                 <h4>Peat</h4>
@@ -115,22 +126,22 @@ const Numbers = () => {
                 Homo time, and Homo sapiens
                 Cooking: 500,000 years or 2 million? */}
 
-                <h3>When do we count emissions from?</h3>
+                <h3 id="emissions">When do we count emissions from?</h3>
 
                 <p>
                     The IPCC calculates the rise in the global mean surface temperature (GMST) from the beginning of large-scale industrial activity.
                     Their <a aria-label="IPCC Annex: Glossary" href="https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_AnnexI_Glossary.pdf">reference period</a> (PDF) is 1850-1900.
                     <div>
-                        Industrialisation had begun before this date, primarily in England (<a href="https://ourworldindata.org/contributed-most-global-co2">78% of gobal emissions</a>), 
+                        Industrialisation had begun before this date, primarily in England (<a href="https://ourworldindata.org/contributed-most-global-co2">78% of gobal emissions</a>). 
                         
-                        Dates for the Industrial Revolution in Europe and the United States are typically given as starting in 1760, and ending in 1820, or 1840, but emissions were low by comparison to today, just <a aria-label="Our World in Data report on historic CO2 emission" href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">4.96 billion tonnes</a>, and were localised. Prior to this period humans had been burning wood and even coal, and clearing land, but emissions were comparatively insignificant.
+                        Dates for the Industrial Revolution in Europe and the United States are typically given as starting in 1760, and ending in 1820, or 1840, but emissions were low by comparison to today, just <a aria-label="Our World in Data report on historic CO2 emission" href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">4.96 billion tonnes</a>, and were localised. Prior to this period humans had been burning wood, coal, and clearing land, but emissions were comparatively insignificant.
                         
-                        <a href="https://ourworldindata.org/grapher/cumulative-co2-emissions-region?stackMode=absolute">Cumulative emissions</a> to date:
+                        <p><a href="https://ourworldindata.org/grapher/cumulative-co2-emissions-region?stackMode=absolute">Cumulative emissions</a></p>
                         <table class={styles.table}>
                             <thead>
                                 <tr>
                                     <th>Year</th>
-                                    <th>Cumulative emissions (billions of tonnes</th>
+                                    <th>Cumulative emissions (billions of tonnes)</th>
                                 </tr>
                             </thead>
                             <tbody>

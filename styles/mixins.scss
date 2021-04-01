@@ -205,3 +205,13 @@
         margin-left: -.5rem;
     }
 }
+
+.menu {
+    column-count: 3;
+    @media (min-width: 414px) {
+        column-count: 4;
+    }
+    span {
+        display: inherit;
+    }
+}
