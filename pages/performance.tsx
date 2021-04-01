@@ -43,7 +43,7 @@ const Performance = () => {
             <section class={styles.card}>
                 <h2>Performance</h2>      
 
-                <h3>Tests</h3>          
+                <h3>Free tools</h3>          
                 <p>To run these tests all you need is a public website.</p>
                 <Links.ExternalLinksList links={perfLinks} />   
 

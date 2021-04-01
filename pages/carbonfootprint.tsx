@@ -94,6 +94,10 @@ const calculators = [
         "name": "World Wildlife Fund (UK only)",
         "source": "https://footprint.wwf.org.uk/"
     },
+    {
+        "name": "giki zero (UK only)",
+        "source": "https://zero.giki.earth/"
+    },
 ];
 
 const CarbonFootprint = () => {
