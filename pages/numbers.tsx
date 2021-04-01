@@ -36,7 +36,7 @@ const Numbers = () => {
 
     const fuels = eds.map(ed => <tr><td>{ed.name}</td><td>{Number(ed.value).toLocaleString()}</td></tr>);
 
-    const dates = [
+    const cumulativeEmissions = [
         {
             year: 1850,
             total: 4.96
@@ -59,7 +59,44 @@ const Numbers = () => {
         }
     ];
 
-    const emissions = dates.map(d => <tr><td>{d.year}</td><td>{Number(d.total).toLocaleString()}</td></tr>);
+    const geologicDates = [
+        {
+            what: '',
+            when: ''
+        },
+    ];
+
+    const emissions = cumulativeEmissions.map(d => <tr><td>{d.year}</td><td>{Number(d.total).toLocaleString()}</td></tr>);
+
+    const humanDates = [
+        {
+            what: 'Hominini tribe separates from Gorillini',
+            when: '8-9 mya',
+            info: 'Humans, Australopithecus, and chimpanzees separate from gorillas'
+        },
+        {
+            what: 'Separation of the subtribes Hominina and Panina',
+            when: '2.3-1.6 mya',
+            info: 'Humans and extinct biped ancestors separate from chimpanzees'
+        },
+        {
+            what: 'Homo habilis',
+            when: '4-7 mya',
+            info: 'Human ancestor or related species',
+            link: 'https://en.wikipedia.org/wiki/Homo_habilis',
+            source: 'Wikipedia'
+        },
+    ];
+
+    const humans = humanDates.map(hd => {
+        return (
+            <tr>
+                { hd.link ? <td><a href={hd.link} aria-label={`${hd.source} article on ${hd.what}`}>{hd.what}</a></td> : <td>{hd.what}</td> }
+                <td>{hd.when}</td>
+                <td>{hd.info}</td>
+            </tr>
+        )
+    });
 
     return (
         <Layout title="Numbers" description={'Numbers'}>
@@ -77,7 +114,7 @@ const Numbers = () => {
                 <h3 id="carbon">Carbon & CO2</h3>
 
                 <p>
-                Emissions values are usually given in tonnes of carbon dioxide (or CO2e<a class={styles.bang} href="#co2e">*</a>), but occasionally a value is given in tonnes of carbon (the giveaway is that the value looks surprisingly small).
+                Emissions values are usually given in tonnes of carbon dioxide, but occasionally a value is given in tonnes of carbon (the giveaway is that the value looks surprisingly small).
 
                 To convert a mass of carbon to carbon dioxide multiple by 3.67.
                 </p>
@@ -126,7 +163,24 @@ const Numbers = () => {
                 Homo time, and Homo sapiens
                 Cooking: 500,000 years or 2 million? */}
 
-                <h3 id="emissions">When do we count emissions from?</h3>
+                <h3 id="human_time">Human time</h3>
+
+                <a href="https://en.wikipedia.org/wiki/Timeline_of_human_evolution">Human Evolution</a>    
+
+                <table class={styles.table}>
+                    <thead>
+                        <tr>
+                            <th>What</th>
+                            <th>When</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        { humans }
+                    </tbody>
+                </table>
+
+                <h3 id="emissions">Emissions since when?</h3>
 
                 <p>
                     The IPCC calculates the rise in the global mean surface temperature (GMST) from the beginning of large-scale industrial activity.
