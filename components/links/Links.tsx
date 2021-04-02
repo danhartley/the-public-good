@@ -58,9 +58,11 @@ const RelatedLinks = ({links}) => {
     )
 };
 
-export const Links = {    
+const Links = {    
     ExternalLinksList,
     Home,
     RelatedLinks,
     InternalLink
-}
+};
+
+export default Links;

@@ -1,18 +1,26 @@
 import Layout from 'components/layout/layout';
 import styles from 'pages/pages.module.scss';
-import { Links } from 'components/links/Links';
+import Links from 'components/links/Links';
 
 const Nature = () => {
     return (
         <Layout title="Nature" description={'Nature'}>
             <section class={styles.card}>
                 <h2>Nature</h2>
+
+                <h3>Abstract</h3>
+
+                <p>An uneasy mutualism exists between humans and the species we eat; the crops we have modified flourish, and the animals we have domesticated have multiplied. Plants, fish and animals have been subject to evolution through human selection, and been placed in ecosytems and environments engineered to maximise the yield of the products we derive from them. Chickens are the most successful animal on the planet by numbers, there are three to every human, but few live in conditions they would seek; and every year 69 billion are killed for food.</p>
                 
                 <p>There is a stange, and appalling asymmetry in the history of fossil fuels; laid down over millions of years, many millions of years ago, those that we have burnt have given up their carbon in a little over a hundred and fifty years.</p>
 
                 <p>They enabled an explosion in our development, and gave us power far beyond the limits of our own bodies.</p>
 
                 <p>Our use of contemporary energy, in the form of controlled fire, enabled our evolution.</p>
+
+                <h3>Food production</h3>
+
+                //https://ourworldindata.org/meat-production
 
 
                 <h3>Fire</h3>

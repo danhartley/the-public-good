@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
 import ModeContext from 'components/contexts/ModeContext';
-import { Links } from 'components/links/Links';
+import Links from 'components/links/Links';
 import styles from 'components/layout/Layout.module.scss';
 
 let ts = 0, dbs = 0;

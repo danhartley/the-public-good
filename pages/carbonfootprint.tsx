@@ -1,104 +1,7 @@
 import Layout from 'components/layout/layout';
-import Table from 'components/table/table';
-import { Links } from 'components/links/Links';
+import Tables from 'pages/tables/tables';
+import Links from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
-
-const calculators = [    
-    {
-        "name": "Global Footprint Network",
-        "source": "https://www.footprintcalculator.org/",
-        "score": {
-            "co2": "2.6",
-            "shareable": true,
-            "sources": true,
-            "method": "https://www.footprintnetwork.org/footprint-calculator-faq/#gen1",
-            "other": [
-                '1.9 gha (available 1.3)', 'Carbon 47% of ecological footprint', '1.1 Earths', 'Overshoot day, 21 November'
-            ]
-        }
-    },
-    {
-        "name": "UN carbon footprint calculator",
-        "source": "https://offset.climateneutralnow.org/footprintcalc",
-        "score": {
-            "co2": "3.37",
-            "portugal": "4.33",
-            "world": "4.67",
-            "shareable": true,
-            "sources": true,
-            "method": "https://offset.climateneutralnow.org/howtooffset",
-            "other": [
-                'All ghgs as CO2e'
-            ]
-        }
-    },
-    {
-        "name": "Mossy Earth",
-        "source": "https://mossy.earth/methodologies/carbon-footprint-calculator",
-        "score": {
-            "co2": "6.54",
-            "world": "5",
-            "shareable": true,
-            "sources": true,
-            "method": "https://mossy.earth/methodologies/carbon-footprint-calculator",
-            "other": [
-                'Results emailed',
-            ]
-        }
-    },
-    {
-        "name": "Carbon footprint",
-        "source": "https://www.carbonfootprint.com/calculator.aspx",
-        "score": {
-            "co2": "2.11",
-            "portugal": "4.33",
-            "world": "5",
-            "target": "2",
-            "shareable": false,
-            "sources": true,
-            "method": "https://www.carbonfootprint.com/calculatorfaqs.html",
-            "other": [
-                'Data are editable', 'All ghgs as CO2e'
-            ]
-        }
-    },
-    {
-        "name": "Know Your Carbon footprint (BP)",
-        "source": "https://www.knowyourcarbonfootprint.com/",
-        "score": {
-            "co2": "6.35",
-            "world": "4.98",
-            "shareable": true,
-            "sources": true,
-            "method": "https://www.knowyourcarbonfootprint.com/BP_TN_Lifestyle_GHG_Emissions_Calculator_Methodology_Statement_03Mar2020.a9a76d7e.pdf",
-            "other": [
-                'Currency in USD',
-                'UK defaults',
-                'Data are editable'
-            ]
-        }
-    },
-    {
-        "name": "The Nature Conservancy (US only)",
-        "source": "https://www.nature.org/en-us/get-involved/how-to-help/carbon-footprint-calculator/"
-    },
-    {
-        "name": "US Environmental Protection Agency (US only)",
-        "source": "https://www3.epa.gov/carbon-footprint-calculator/"
-    },
-    {
-        "name": "COTAP.org – Carbon Offsets To Alleviate Poverty (US only)",
-        "source": "https://cotap.org/carbon-footprint-calculator/"
-    },
-    {
-        "name": "World Wildlife Fund (UK only)",
-        "source": "https://footprint.wwf.org.uk/"
-    },
-    {
-        "name": "giki zero (UK only)",
-        "source": "https://zero.giki.earth/"
-    },
-];
 
 const CarbonFootprint = () => {
     return (
@@ -292,7 +195,7 @@ const CarbonFootprint = () => {
 
                 <br/>
 
-                <Links.ExternalLinksList links={calculators} />
+                <Tables.Calculators></Tables.Calculators>
 
                 <p>
                     <div class={styles.small}>NB Not all calculators are the same. The Global Food Network makes clear their <a aria-label="Global Food Network: Footprint Calculator FAQs" href="https://www.footprintnetwork.org/footprint-calculator-faq/#gen1">calculator</a> is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true footprint, measured by area) and a figure for CO2 emissions (a carbon footprint).</div>
@@ -302,7 +205,7 @@ const CarbonFootprint = () => {
 
                 <p>I used 5 calculators to find my carbon footprint. <span class={styles.super}><a id="table" class={styles.bang} href="#profile">+</a></span></p>
 
-                <Table calculators={calculators.filter(c => c.score)}></Table>
+                <Tables.Calculators withScores={true}></Tables.Calculators>
 
                 <p>Why are there such large discrepancies between footprints?</p>
 

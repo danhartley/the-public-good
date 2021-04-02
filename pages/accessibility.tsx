@@ -1,5 +1,5 @@
 import Layout from 'components/layout/layout';
-import { Links } from 'components/links/Links';
+import Links from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
 
 const links = [
