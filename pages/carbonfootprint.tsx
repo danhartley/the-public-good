@@ -334,7 +334,7 @@ const CarbonFootprint = () => {
                 <p>Footprints would be improved by making the implicit cost of services explicit. This intrinsic, background value for a society is the floor below which individual action cannot take us, and which can only be breached by direct, participatory action that brings about policy change.</p>
 
                 <p>
-                    <a href="#top">Top</a>
+                    <a class={styles.bang} href="#top">Top</a>
                 </p>
 
                 </section>
