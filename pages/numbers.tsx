@@ -5,31 +5,31 @@ const Numbers = () => {
 
     const eds = [
         {
-            name: "peat",
+            name: "Peat",
             value: 15
         },
         {
-            name: "wood",
+            name: "Wood",
             value: 16
         },
         {
-            name: "coal",
+            name: "Coal",
             value: 24
         },
         {
-            name: "crude oil",
+            name: "Crude oil",
             value: 44
         },
         {
-            name: "gasoline",
+            name: "Gasoline",
             value: 46
         },
         {
-            name: "natural gas",
+            name: "Natural gas",
             value: 46
         },
         {
-            name: "nuclear (uranium-235)",
+            name: "Nuclear (uranium-235)",
             value: 3900000
         },
     ];
@@ -59,13 +59,6 @@ const Numbers = () => {
         }
     ];
 
-    const geologicDates = [
-        {
-            what: '',
-            when: ''
-        },
-    ];
-
     const emissions = cumulativeEmissions.map(d => <tr><td>{d.year}</td><td>{Number(d.total).toLocaleString()}</td></tr>);
 
     const humanDates = [
@@ -86,6 +79,27 @@ const Numbers = () => {
             link: 'https://en.wikipedia.org/wiki/Homo_habilis',
             source: 'Wikipedia'
         },
+        {
+            what: 'Homo erectus',
+            when: '2 mya',
+            info: 'Extinct species of archaic human',
+            link: 'https://en.wikipedia.org/wiki/Homo_erectus',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'Earliest use of fire',
+            when: '1 mya',
+            info: 'Wonderwerk Cave, South Africa',
+            link: 'https://en.wikipedia.org/wiki/Control_of_fire_by_early_humans#Lower_Paleolithic_evidence',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'Earliest evidence of cooking',
+            when: '.5 mya',
+            info: 'By Homo erectus',
+            link: 'https://en.wikipedia.org/wiki/Cooking#History',
+            source: 'Wikipedia'
+        },
     ];
 
     const humans = humanDates.map(hd => {
@@ -94,6 +108,54 @@ const Numbers = () => {
                 { hd.link ? <td><a href={hd.link} aria-label={`${hd.source} article on ${hd.what}`}>{hd.what}</a></td> : <td>{hd.what}</td> }
                 <td>{hd.when}</td>
                 <td>{hd.info}</td>
+            </tr>
+        )
+    });
+
+    const geologicDates = [
+        {
+            what: 'Paleozoic Era',
+            when: '541-252 mya',
+            info: 'Ancient life',
+            link: 'https://en.wikipedia.org/wiki/Paleozoic',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'Carboniferous Period',
+            when: '359-299 mya',
+            info: 'Its coal beds powered the Industrial Revolution',
+            link: 'https://en.wikipedia.org/wiki/Carboniferous',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'Mesozoic Era',
+            when: '252-66 mya',
+            info: 'Age of Reptiles and the Age of Conifers',
+            link: 'https://en.wikipedia.org/wiki/Mesozoic',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'Cretaceous Period',
+            when: '145-66 mya',
+            info: 'Further coal beds laid down',
+            link: 'https://en.wikipedia.org/wiki/Cretaceous',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'Cenozoic Era',
+            when: '66 mya - present',
+            info: 'Age of Mammals',
+            link: 'https://en.wikipedia.org/wiki/Cenozoic',
+            source: 'Wikipedia'
+        },
+    ];
+
+    const geology = geologicDates.map(gd => {
+        return (
+            <tr>
+                { gd.link ? <td><a href={gd.link} aria-label={`${gd.source} article on ${gd.what}`}>{gd.what}</a></td> : <td>{gd.what}</td> }
+                <td>{gd.when}</td>
+                <td>{gd.info}</td>
             </tr>
         )
     });
@@ -158,14 +220,27 @@ const Numbers = () => {
                     </span>
                 </p>
 
+                <table class={styles.table}>
+                    <thead>
+                        <tr>
+                            <th>What</th>
+                            <th>When</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        { geology }
+                    </tbody>
+                </table>
+
+
                  {/* e.g. mesozoic, carboniferous,
                 Climate e.g. interglacials, Milankovitch cycles
-                Homo time, and Homo sapiens
-                Cooking: 500,000 years or 2 million? */}
+                 */}
 
                 <h3 id="human_time">Human time</h3>
 
-                <a href="https://en.wikipedia.org/wiki/Timeline_of_human_evolution">Human Evolution</a>    
+                <p>A rough, and disbuted timeline of <a href="https://en.wikipedia.org/wiki/Timeline_of_human_evolution">human evolution</a>.</p>
 
                 <table class={styles.table}>
                     <thead>
@@ -224,7 +299,31 @@ const Numbers = () => {
 
                 <a href="https://energyeducation.ca/encyclopedia/Energy_density"></a>
 
-                power density
+                <h4>Horsepower</h4>
+
+                <p>
+                    There are numerous definitions for the value of <a aria-label="Wikipedia article on horsepower" href="https://en.wikipedia.org/wiki/Horsepower">horsepower</a>; one metric measure is defined as,
+                    <span class={styles.quote}>
+                        The power needed to lift 75 kilograms by 1 metre in 1 second.
+                    </span>
+                    Comparing horses and humans,
+                    <span class={styles.quote}>
+                        <div>A horse can reach a peak of ~11kW over a period of a few seconds.</div>
+                        <div>A horse can reach a peak of ~1kW over a period of a few seconds.</div>
+                    </span>
+                    And over time,
+                    <span class={styles.quote}>
+                        <div>A horse can perform sustained activity at a work rate of about 0.75kW.</div>
+                        <div>A human can perform sustained activity at a work rate of about 0.075kW.</div>
+                    </span>
+                    Everyday power requirements,
+                    <span class={styles.quote}>
+                        <div>A toaster uses in the range of .8 to 1.5kW of energy.</div>
+                        <div>An ordinary family salon has ~120 horsepower, and an SUV ~200 horsepower.</div>
+                    </span>                    
+                </p>
+
+                <h4>Power density</h4>
 
                 <h3>Ocean acidification</h3>
 

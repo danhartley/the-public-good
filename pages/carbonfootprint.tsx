@@ -104,13 +104,17 @@ const CarbonFootprint = () => {
     return (
         <Layout title="Carbon Footprint" description={'Carbon Footprint'}>
             <section class={styles.card}>
-                <h2>Carbon footprint</h2>      
-                {/* <div class={styles.timing}>8 minute read</div> */}
+                <h2>Carbon footprint</h2>                      
                 <p>
                     <span class={styles.quote}>
-                    The total greenhouse gas (GHG) emissions caused by an individual, event, organization, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a>
+                    The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a>
                     </span>
                 </p>
+
+                <p class={styles.inset}>
+                    This article is a 10 minute read. Jump to a discussion on <a class={styles.bang} href="#individualActs">Individual acts</a>, a list of <a class={styles.bang} href="#calculators">Carbon footprint calculators</a>, a <a class={styles.bang} href="#comparison">Comparison</a> of calculators, or the <a class={styles.bang} href="#conclusion">Conclusion</a>.
+                </p>
+
                 <h3>Current emissions</h3>
                 <p>
                 According to Our World in Data (2017):
@@ -129,12 +133,19 @@ const CarbonFootprint = () => {
                 <p>                                 
                     <div>
                         <span class={styles.quote}>
-                        Since 1959, approximately 350 billion tonnes of carbon have been emitted by humans to the atmosphere, of which about 55 per cent has moved into the land and oceans.
+                        The natural response of land to human-induced environmental change caused a net sink of around 11.2 GtCO2 yr-1 during 2007–2016 (equivalent to 29% of total CO2 emissions) (<a href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">medium confidence</a>) (PDF).
+                        <div><a href="https://www.ipcc.ch/srccl/chapter/summary-for-policymakers/">IPCC Special report on climate change and land</a> (PDF)</div>
+                        </span>
+                        <span class={styles.quote}>
+                        The ocean has taken up between 20–30% (<a href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">very likely</a>) of total anthropogenic CO2 emissions since the 1980s causing further ocean acidification.
+                        <div><a href="https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/">IPCC Special report on the ocean and cryosphere in a changing climate</a></div>
                         </span>
                     </div>
-                    <div>Based on natural <a href="https://en.wikipedia.org/wiki/Carbon_sink">carbon sinks</a> absorbing <a href="https://www.globalcarbonproject.org/news/CarbonSinkIncreases.html">55%</a> of emissions, a sustainable, or 'net neutral' per capita budget would be:
+                    <div>
+                        
+                        The value for CO2 taken up by <a href="https://en.wikipedia.org/wiki/Carbon_sink">carbon sinks</a> is variable, affected by a number of limiting factors, and best represented as a range rather than a single figure. To calculate a sustainable, or 'net neutral' per capita budget, we use an approximation of 50%:
                         <span class={styles.quote}>
-                            4.73 tonnes * .55 = 2.6 tonnes of CO2
+                            4.73 tonnes * .50 = 2.365 tonnes of CO2
                         </span>
                         <p>As the population rises, this allowance will <a aria-label="Carbon Brief, Analysis: Why children must emit eight times less CO2 than their grandparents" href="https://www.carbonbrief.org/analysis-why-children-must-emit-eight-times-less-co2-than-their-grandparents">fall</a>.</p>
 
@@ -146,7 +157,7 @@ const CarbonFootprint = () => {
                     <h3>Global carbon budget</h3>
                     <p>
                         The <a aria-label="Paper on the Global Carbon Budget 2020" href="https://essd.copernicus.org/articles/12/3269/2020/">global carbon budget</a>, published annually, provides an account of the balance between carbon sources - emissions - and sinks. The movement of carbon atoms betweens sinks and sources is called the <a aria-label="US National Ocean Service article, What is the carbon cycle?" href="https://oceanservice.noaa.gov/facts/carbon-cycle.html">carbon cycle</a>, and it is perturbations in this cycle which cause global warming.
-                        Since 1950 around <a href="https://www.nature.com/articles/s41598-018-24241-1.pdf?origin=ppub">50%</a> of anthropogenic emissions have been taken up by <a href="https://www.pnas.org/content/116/24/11646">natural sinks</a>, though at variable rates.
+                        Since 1950 around <a href="https://www.nature.com/articles/s41598-018-24241-1.pdf?origin=ppub">48±7%</a> of anthropogenic emissions have been taken up by <a href="https://www.pnas.org/content/116/24/11646">natural sinks</a>, though at variable rates.
                         Due to <a href="https://en.wikipedia.org/wiki/CO2_fertilization_effect">carbon fertilisation</a>, and other factors, including increased use of nitrogen, natural sinks have been taking up more carbon dioxide, though <a aria-label="Article published in Nature: Effects of rising CO2 levels on carbon sequestration are coordinated above and below ground" href="https://www.nature.com/articles/d41586-021-00737-1">this upward trend may not continue</a>.
                         <div>
                             Natural sinks cannot be relied on indefinitely, and become sources of emissions if they are removed or die.
@@ -254,7 +265,7 @@ const CarbonFootprint = () => {
                     </ul>
                 </p>
 
-                <h3>Individual acts</h3>
+                <h3 id="individualActs">Individual acts</h3>
 
                 <p>Carbon footprints are sometimes used as a proxy for individual acts, which are then placed in opposition to political or social acts, limiting choice to one or the other, either/or.</p>
 
@@ -277,7 +288,7 @@ const CarbonFootprint = () => {
 
                 <p>A decision which may involve inconvenience, loss of income, or the forfeit of a pleasure, is sustained more readily when it has solid foundations, for then the reason behind, and the need for, the change, is clear, even if any ultimate benefit that accrues is indiscernible. It is against the grain for most to forego gratification or gain, but it is hard to ignore that which is right to do, when that right has been established and understood. We may call this conscience, sense of duty, or moral imperative; and we may discover that acting in accordance with our beliefs and our understanding, is less disruptive, and more sustaining, than we imagined.</p>
 
-                <h3>Carbon footprint calculators</h3>
+                <h3 id="calculators">Carbon footprint calculators</h3>
 
                 <br/>
 
@@ -287,7 +298,7 @@ const CarbonFootprint = () => {
                     <div class={styles.small}>NB Not all calculators are the same. The Global Food Network makes clear their <a aria-label="Global Food Network: Footprint Calculator FAQs" href="https://www.footprintnetwork.org/footprint-calculator-faq/#gen1">calculator</a> is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true footprint, measured by area) and a figure for CO2 emissions (a carbon footprint).</div>
                 </p>
 
-                <h3>Comparison</h3>
+                <h3 id="comparison">Comparison</h3>
 
                 <p>I used 5 calculators to find my carbon footprint. <span class={styles.super}><a id="table" class={styles.bang} href="#profile">+</a></span></p>
 
@@ -316,7 +327,7 @@ const CarbonFootprint = () => {
                     </ul>
                 </p>
 
-                <h3>Conclusion</h3>
+                <h3 id="conclusion">Conclusion</h3>
 
                 <p>Carbon footprint calculators have value as an introduction to the consequences of our choices, and as a starting point for examining our interdependency, lack of autonomy, and the limits pertaining to personal action.</p>
 
@@ -368,6 +379,7 @@ const CarbonFootprint = () => {
                 </p>
                 <p><span class={styles.published}>Published: {new Date('Sat 27 March 2021').toDateString()}</span></p>
                 <p><span class={styles.published}>Edited: {new Date('Mon 29 March 2021').toDateString()}</span></p>
+                <p><span class={styles.published}>Edited: Use IPCC values for natural carbon sinks {new Date('Mon 2 April 2021').toDateString()}</span></p>
             </section>
             <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability testing'}]}></Links.RelatedLinks>
         </Layout>
