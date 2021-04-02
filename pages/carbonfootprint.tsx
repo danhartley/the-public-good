@@ -1,5 +1,5 @@
 import Layout from 'components/layout/layout';
-import Tables from 'pages/tables/tables';
+import Tables from 'components/tables/tables';
 import Links from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
 

@@ -1,6 +1,6 @@
 import Layout from 'components/layout/layout';
 import styles from 'pages/pages.module.scss';
-import Tables from 'pages/tables/tables';
+import Tables from 'components/tables/tables';
 
 const Numbers = () => {
 
