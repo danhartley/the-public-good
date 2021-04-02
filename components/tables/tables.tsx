@@ -1,5 +1,6 @@
 import Links from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
+import { CSSProperties } from 'react';
 
 const Fuels = () => {
 
@@ -130,6 +131,41 @@ const Humans = () => {
             link: 'https://en.wikipedia.org/wiki/Cooking#History',
             source: 'Wikipedia'
         },
+        {
+            what: 'Last Glacial Maximum (LGM)',
+            when: '120 kya',
+            info: 'Ice sheets at their greatest extent',
+            link: 'https://en.wikipedia.org/wiki/Last_Glacial_Maximum',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'Younger Dryas',
+            when: '11.7-12.9 kya',
+            info: 'Temporary reversal of climactic warming since LGM',
+            link: 'https://en.wikipedia.org/wiki/Younger_Dryas',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'Holocene epoch',
+            when: '11.65 kya',
+            info: 'Interglacial period',
+            link: 'https://en.wikipedia.org/wiki/Holocene',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'First domestication of livestock',
+            when: '10-11 kya',
+            info: 'Fertile Crescent',
+            link: 'https://en.wikipedia.org/wiki/Domestication#Animals',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'Domestication of cereal crops',
+            when: '11 kya',
+            info: 'Fertile Crescent',
+            link: 'https://en.wikipedia.org/wiki/Domestication#History',
+            source: 'Wikipedia'
+        },
     ];
 
     const humans = humanDates.map(hd => {
@@ -142,11 +178,15 @@ const Humans = () => {
         )
     });
 
+    const inlineStyle:CSSProperties = {
+        width: '8rem'
+    };
+
     return(<table class={styles.table}>
         <thead>
             <tr>
                 <th>What</th>
-                <th>When</th>
+                <th style={inlineStyle}>When</th>
                 <th></th>
             </tr>
         </thead>
@@ -192,6 +232,13 @@ const Geology = () => {
             when: '66 mya - present',
             info: 'Age of Mammals',
             link: 'https://en.wikipedia.org/wiki/Cenozoic',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'Holocene epoch',
+            when: '11.65 kya',
+            info: 'Interglacial period',
+            link: 'https://en.wikipedia.org/wiki/Holocene',
             source: 'Wikipedia'
         },
     ];

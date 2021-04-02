@@ -10,34 +10,12 @@ const Nature = () => {
 
                 <h3>Abstract</h3>
 
-                <p>An uneasy mutualism exists between humans and the species we eat; the crops we have modified flourish, and the animals we have domesticated have multiplied. Plants, fish and animals have been subject to evolution through human selection, and been placed in ecosytems and environments engineered to maximise the yield of the products we derive from them. Chickens are the most successful animal on the planet by numbers, there are three to every human, but few live in conditions they would seek; and every year 69 billion are killed for food.</p>
-                
-                <p>There is a stange, and appalling asymmetry in the history of fossil fuels; laid down over millions of years, many millions of years ago, those that we have burnt have given up their carbon in a little over a hundred and fifty years.</p>
-
-                <p>They enabled an explosion in our development, and gave us power far beyond the limits of our own bodies.</p>
-
-                <p>Our use of contemporary energy, in the form of controlled fire, enabled our evolution.</p>
+                <p>An uneasy mutualism exists between humans and the species we eat; the crops and animals we have domesticated and modified have flourished, and multiplied exponentially. Plants, fish and animals have been subject to evolution through human selection (selective breeding), and been placed in ecosytems and environments engineered to maximise the yield of the products we derive from them. Chickens are the most successful animal on the planet by numbers, there are three to every human, but whilst the species is prospering, the cost to the individual is high; few live in conditions they would seek, and every year 69 billion are killed for food.</p>
 
                 <h3>Food production</h3>
 
-                //https://ourworldindata.org/meat-production
-
-
-                <h3>Fire</h3>
-
-                <p>The earliest supported findings of <a href="https://en.wikipedia.org/wiki/Control_of_fire_by_early_humans">controlled use of fire</a> are from Wonderwerk, South Africa, 1 million years ago, but Homo erectus may have done so <a aria-label="Royal Society Article, The discovery of fire by humans: a long and convoluted process" href="https://royalsocietypublishing.org/doi/10.1098/rstb.2015.0164">much earlier</a>. </p>
-
-                <p>Evidence of fire stimulation and preservation is found throughout our ancestors, and <span class={styles.italic}>Homo erectus</span>, from whom we evolved, had a brain 50% bigger than its predecessor, <span class={styles.italic}>Homo habilis</span>. These skills were likely critical to the evolution of our own species; we are poorly adapted to survive without the ability to control fire to keep warm, and to <a aria-label="Control of Fire in the Paleolithic: Evaluating the Cooking Hypothesis by Richard Wrangham" href="https://www.journals.uchicago.edu/doi/pdfplus/10.1086/692113">cook</a> (PDF). More energy enabled us to do less work to stay alive, and in response large brains, best suited to profit from thinking time, evolved. So too, our dependence on energy.</p>
-
-                <h3>Fossil fuels</h3>
-
-                <p>Our entanglement with fossil fuels is more recent.</p>
-
-                <h3>Asymmetry</h3>
-
-                <Links.InternalLink link={{'value': 'numbers#geologic_time', 'text': 'Geologic time'}}></Links.InternalLink>
-
-                <p>We crossed a divide between the living and the non-living when we began to use fossil fuels. The work this enabled us to do has been extraordinary.</p>
+                <p><a href="https://ourworldindata.org/meat-production">Dead animals</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Selective_breeding">Selective breeding</a></p>
 
                 <h3>Naturalists</h3>
 
@@ -48,6 +26,7 @@ const Nature = () => {
                 </p>
 
             </section>
+            <Links.RelatedLinks links={[{href:'numbers',title:'Numbers'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

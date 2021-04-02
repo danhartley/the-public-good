@@ -13,6 +13,7 @@ const Numbers = () => {
                     <span><a class={styles.bang} href="#carbon">Carbon</a></span>
                     <span><a class={styles.bang} href="#co2e">CO2e</a></span>
                     <span><a class={styles.bang} href="#geologic_time">Geologic time</a></span>
+                    <span><a class={styles.bang} href="#human_time">Human time</a></span>
                     <span><a class={styles.bang} href="#emissions">Emissions</a></span>
                     <span><a class={styles.bang} href="#energy">Energy</a></span>
                 </div>
