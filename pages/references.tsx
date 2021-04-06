@@ -19,6 +19,10 @@ const keyReferences = [
         "name": "IPCC Special Report: Climate Change and Land",
         "source": "https://www.ipcc.ch/srccl/"
     },
+    {
+        "name": "Sustainable Energy - without the hot air David MacKay",
+        "source": "http://www.withouthotair.com/"
+    },
 ];
 
 const keyPosts = [

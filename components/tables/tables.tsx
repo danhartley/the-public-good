@@ -50,6 +50,37 @@ const Fuels = () => {
     </table>);
 };
 
+const Power = () => {
+
+    const efficiences = [
+        {
+            name: 'Solar Constant',
+            efficiency: 0,
+            value: '1380'
+        },
+        {
+            name: 'Crops',
+            efficiency: 2,
+            value: '0.25-1'
+        },
+    ];
+
+    const vs = efficiences.map(e => <tr><td>{e.name}</td><td>{Number(e.efficiency).toLocaleString()}</td><td>{Number(e.value).toLocaleString()}</td></tr>);
+
+    return (<table class={styles.table}>
+        <thead>
+            <tr>
+                <th>X</th>
+                <th>Efficiency %</th>
+                <th>Power density W/m2</th>
+            </tr>
+        </thead>
+        <tbody>
+            { vs }
+        </tbody>
+    </table>);    
+};
+
 const Emissions = () => {
 
     const cumulativeEmissions = [
@@ -164,6 +195,13 @@ const Humans = () => {
             when: '11 kya',
             info: 'Fertile Crescent',
             link: 'https://en.wikipedia.org/wiki/Domestication#History',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'James Watt patents his steam engine design',
+            when: '1769',
+            info: 'Catalyses The Industrial Revolution',
+            link: 'https://en.wikipedia.org/wiki/Watt_steam_engine',
             source: 'Wikipedia'
         },
     ];

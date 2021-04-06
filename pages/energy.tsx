@@ -18,6 +18,18 @@ const Energy = () => {
 
                 <p>Contemporary fuels, those which can be replenished until our sun too dies,  </p>
 
+                <h3>Numbers, not adjectives</h3>
+                
+                <h4>What is our consumption of energy?</h4>
+                <h4>How do we supply the energy we use?</h4>
+                <h4>What do we do?</h4>
+
+                <p>
+                    <span class={styles.quote}>
+                        if everyone does a little, we’ll achieve only a little. <a href="http://www.withouthotair.com/c1/page_3.shtml">David McKay</a>
+                    </span>
+                </p>
+
                 {/* <p>Our use of contemporary energy, in the form of controlled fire, enabled our evolution.</p> */}
 
                 <h3>Fossil fuels</h3>
@@ -48,6 +60,8 @@ const Energy = () => {
                         If we care about our common future and the common future of our descendants, we should all in part be naturalists.
                     </span>
                 </p>
+
+                <p>This article owes a debt to David McKay and his book, <a href="http://www.withouthotair.com/" aria-label="Online version of Sustainable Energy - Without the Hot Air">Sustainable Energy - Without the Hot Air</a>.</p>
 
             </section>
             <Links.RelatedLinks links={[{href:'numbers',title:'Numbers'}]}></Links.RelatedLinks>

@@ -53,6 +53,9 @@
         font-size: .8em;
         line-height: 1.8;
         display: block;
+        & div {
+            margin: .5rem 0;
+        }
     }
     .inset {
         font-size: .9rem;
@@ -65,7 +68,7 @@
         vertical-align: super;
     }
     .bang {
-        border: none;
+        border-bottom: 1px solid rgb(var(--l),.3);
     }
     .small {
         font-size: .9rem;

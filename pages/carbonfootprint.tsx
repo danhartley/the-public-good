@@ -8,14 +8,16 @@ const CarbonFootprint = () => {
         <Layout title="Carbon Footprint" description={'Carbon Footprint'}>
             <section class={styles.card}>
                 <h2>Carbon footprint</h2>                      
+
                 <p>
-                    <span class={styles.quote}>
-                    The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a>
-                    </span>
+                    This article is a 10 minute read. Jump to a discussion on <a class={styles.bang} href="#individualActs">Individual acts</a>, a list of <a class={styles.bang} href="#calculators">Carbon footprint calculators</a>, a <a class={styles.bang} href="#comparison">Comparison</a> of calculators, or the <a class={styles.bang} href="#conclusion">Conclusion</a>.
                 </p>
 
-                <p class={styles.inset}>
-                    This article is a 10 minute read. Jump to a discussion on <a class={styles.bang} href="#individualActs">Individual acts</a>, a list of <a class={styles.bang} href="#calculators">Carbon footprint calculators</a>, a <a class={styles.bang} href="#comparison">Comparison</a> of calculators, or the <a class={styles.bang} href="#conclusion">Conclusion</a>.
+                <p>
+                    <div class={styles.quote}>
+                        <div>The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a></div>                    
+                        <div>If everyone leaves their mobile phone charger plugged in, those chargers will use one quarter of one percent of their homes’ electricity. <a href="https://www.withouthotair.com/c19/page_114.shtml">Sustainable Energy - without the hot air David MacKay</a></div>
+                    </div>
                 </p>
 
                 <h3>Current emissions</h3>
@@ -88,17 +90,13 @@ const CarbonFootprint = () => {
 
                 <ul class={styles.list}>
                     <li>
-                        <span>
-                        <a aria-label="Profile of William Rees at the post carbon institute" href="https://www.postcarbon.org/our-people/william-rees/">William Rees</a> and Mathis Wackernagel use the term <a aria-label="Wikipedia article on ecological footprint" href="https://en.wikipedia.org/wiki/Ecological_footprint">ecological footprint</a> for the first time in an academic publication.
-                        </span>
+                        <span><a aria-label="Profile of William Rees at the post carbon institute" href="https://www.postcarbon.org/our-people/william-rees/">William Rees</a> and Mathis Wackernagel use the term <a aria-label="Wikipedia article on ecological footprint" href="https://en.wikipedia.org/wiki/Ecological_footprint">ecological footprint</a> for the first time in an academic publication.</span>
                     </li>
                     <li>
-                        <span>
-                        BP launches the first <a href="https://mashable.com/feature/carbon-footprint-pr-campaign-sham/?europe=true">carbon footprint calculator</a> and spends millions promoting the concept.
-                        </span>
+                        <span>BP launches the first <a href="https://mashable.com/feature/carbon-footprint-pr-campaign-sham/?europe=true">carbon footprint calculator</a> and spends millions promoting the concept.</span>
                     </li>
                     <li>
-                        <div>BP launches a <a aria-label="BP carbon emissions calculator" href="https://www.knowyourcarbonfootprint.com/">second carbon calculator</a>. It does not receive a favourable <a href="https://twitter.com/bp_plc/status/1186645440621531136">reception</a>.</div>
+                        <span>BP launches a <a aria-label="BP carbon emissions calculator" href="https://www.knowyourcarbonfootprint.com/">second carbon calculator</a>. It does not receive a favourable <a href="https://twitter.com/bp_plc/status/1186645440621531136">reception</a>.</span>
                     </li>
                 </ul>
 
@@ -284,9 +282,12 @@ const CarbonFootprint = () => {
                         <a class={styles.inset} href="#table">Return to emissions table</a>
                     </div>
                 </p>
-                <p><span class={styles.published}>Published: {new Date('Sat 27 March 2021').toDateString()}</span></p>
-                <p><span class={styles.published}>Edited: {new Date('Mon 29 March 2021').toDateString()}</span></p>
-                <p><span class={styles.published}>Edited: Use IPCC values for natural carbon sinks {new Date('Mon 2 April 2021').toDateString()}</span></p>
+                <p>
+                    <span class={styles.published}>Published: {new Date('Sat 27 March 2021').toDateString()}</span>
+                    <span class={styles.published}>Edited: {new Date('Mon 29 March 2021').toDateString()}</span>
+                    <span class={styles.published}>Edited: Use IPCC values for natural carbon sinks {new Date('Fri 2 April 2021').toDateString()}</span>
+                    <span class={styles.published}>Edited: Added David MacKay quote {new Date('Tues 6 April 2021').toDateString()}</span>
+                </p>
             </section>
             <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability testing'}]}></Links.RelatedLinks>
         </Layout>
