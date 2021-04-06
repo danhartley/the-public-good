@@ -4,7 +4,7 @@ import styles from 'components/links/Links.module.scss';
 
 const ExternalLinksList = ({links}) => {
     const list = links.map(link => {
-        return <li>
+        return <li class={styles.externalLink}>
             <a href={`${link.source}`}>{link.name}</a>
         </li>
     });
