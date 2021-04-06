@@ -93,9 +93,18 @@ const Numbers = () => {
 
                 <h4>Energy density</h4>
 
-                 <Tables.Fuels></Tables.Fuels>
+                {/* more complex, e.g. coal, more carbon. gas => oil => coal */}
 
-                <a href="https://energyeducation.ca/encyclopedia/Energy_density"></a>
+                <span class={styles.quote}>
+                    …the more concentrated sources of energy give you
+                    many great advantages in terms of their extraction, portability, transportation and storage costs,
+                    and conversion options. Vaclav Smil
+                 </span>
+
+                 <Tables.EnergyDensities></Tables.EnergyDensities>
+
+                <div><a href="https://energyeducation.ca/encyclopedia/Energy_density">Energy Education | Energy density</a></div>
+                <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
 
                 <h4>Horsepower</h4>
 
@@ -121,7 +130,25 @@ const Numbers = () => {
                     </span>                    
                 </p>
 
+
+                <h4>Human power</h4>
+
+                <p>
+                    <div class={styles.quote}>
+                        <div>
+                            2000 Calories / 1 day * 1 day / 24 hours * 60 minutes * 60 seconds * 4184 Joules / 1 Calories = 96.85 J/second = 96.85W ≈ 100W
+                            <div><a href="https://energyeducation.ca/encyclopedia/Power_servant">Energy Education | Power Servant</a></div>
+                        </div>
+                    </div>
+                </p>
+
                 <h4>Power density</h4>
+
+                These figures are from 2010 but although the values for pvs and wind have improved, the relative values are unchanged.
+
+                <Tables.PowerDensities></Tables.PowerDensities>
+
+                <div>Source: <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
 
                 <h3>Ocean acidification</h3>
 

@@ -23,6 +23,10 @@ const keyReferences = [
         "name": "Sustainable Energy - without the hot air David MacKay",
         "source": "http://www.withouthotair.com/"
     },
+    {
+        "name": "Power density primer Vaclav Smil",
+        "source": "http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf"
+    },
 ];
 
 const keyPosts = [

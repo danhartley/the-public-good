@@ -6,17 +6,17 @@ const Energy = () => {
     return (
         <Layout title="Energy" description={'Energy'}>
             <section class={styles.card}>
-                <h2>Energy</h2>
+                <h2>Energy & Us</h2>
 
                 <h3>Abstract</h3>
 
-                <p>There is a fearful asymmetry between the accumulation of carbon and methane in the earth, and their release into the atmosphere; reserves laid down over many millions of years many millions of years ago will be exhausted in a hundred odd years. Coal fields will endure the longest, oil and gas may be gone in fifty.</p>
+                <p>There is a fearful asymmetry between the accumulation of carbon and methane in the earth, and their release into the atmosphere; reserves laid down over thousands of millenia many millions of years ago will be exhausted in a little over a hundred years. Coal fields will endure the longest, oil and gas may be gone in fifty.</p>
 
-                <p>We used to worry about running out of fossil fuels, now our primary concern is how to reduce our dependency on them. Our species is dependent on energy, it has set us apart, enabling an explosion in evolution and culture which has given us power far beyond the limits of our own bodies.</p>
+                <p>We used to worry about running out of fossil fuels, now our primary concern is how to reduce our dependency on them. Our species is defined by energy, the use of which has set us apart; technology provides us with power far beyond the limits of our own bodies.</p>
 
-                <p>We we moved from burning wood to burning coal and then to oil and gas, we benefited from harnasing fuels that had greater energy densities. Nuclear briefly promised to eclipse them, the first energy source not derived from our sun, but from long distand dead stars. It may yet do so.</p>
+                <p>As we moved from burning wood to burning coal and then to oil and gas, we benefited from harnessing fuels with greater energy densities. Then came nuclear energy which is not derived from our sun but from the death of ancient stars; its role is controversial, and its contribution to the energy mix is likely to be limited at best.</p>
 
-                <p>Contemporary fuels, those which can be replenished until our sun too dies,  </p>
+                <p>Contemporary fuels are those which are replenished by the sun: wind, solar, hydroelectric. They have two drawbacks - they are intermittent, and are less energy dense; for the first time, we are converting our energy supply to forms that occupy more space, and have less power.</p>
 
                 <h3>Numbers, not adjectives</h3>
                 

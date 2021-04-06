@@ -2,12 +2,12 @@ import Links from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
 import { CSSProperties } from 'react';
 
-const Fuels = () => {
+const EnergyDensities = () => {
 
     const eds = [
         {
             name: "Peat",
-            value: 15
+            value: 15            
         },
         {
             name: "Wood",
@@ -19,7 +19,8 @@ const Fuels = () => {
         },
         {
             name: "Crude oil",
-            value: 44
+            value: 44,
+            volume: 35000
         },
         {
             name: "Gasoline",
@@ -27,7 +28,13 @@ const Fuels = () => {
         },
         {
             name: "Natural gas",
-            value: 46
+            value: 46,
+            volume: 35
+        },
+        {
+            name: "Hydrogen",
+            value: 143,
+            volume: 0.01
         },
         {
             name: "Nuclear (uranium-235)",
@@ -35,13 +42,18 @@ const Fuels = () => {
         },
     ];
 
-    const fuels = eds.map(ed => <tr><td>{ed.name}</td><td>{Number(ed.value).toLocaleString()}</td></tr>);
+    const fuels = eds.map(ed => <tr>
+            <td>{ed.name}</td>
+            <td>{Number(ed.value).toLocaleString()}</td>
+            { ed.volume ? <td>{Number(ed.volume).toLocaleString()}</td> : <td></td> }
+        </tr>);
 
     return (<table class={styles.table}>
         <thead>
             <tr>
                 <th>Fuel</th>
                 <th>Energy density MJ/kg</th>
+                <th>Energy density MJ/m3</th>
             </tr>
         </thead>
         <tbody>
@@ -50,29 +62,53 @@ const Fuels = () => {
     </table>);
 };
 
-const Power = () => {
+const PowerDensities = () => {
 
-    const efficiences = [
+    const densities = [
+        // {
+        //     name: 'Solar Constant',
+        //     low: '1380',
+        //     high: '1380',
+        // },
         {
-            name: 'Solar Constant',
-            efficiency: 0,
-            value: '1380'
+            name: 'Biomass',
+            low: '0.5',
+            high: '0.6'
         },
         {
-            name: 'Crops',
-            efficiency: 2,
-            value: '0.25-1'
+            name: 'Wind',
+            low: '0.5',
+            high: '1.5'
+        },
+        {
+            name: 'Solar PV',
+            low: '4',
+            high: '9'
+        },
+        {
+            name: 'Coal',
+            low: '100',
+            high: '1000'
+        },
+        {
+            name: 'Natural gas',
+            low: '200',
+            high: '2000'
         },
     ];
 
-    const vs = efficiences.map(e => <tr><td>{e.name}</td><td>{Number(e.efficiency).toLocaleString()}</td><td>{Number(e.value).toLocaleString()}</td></tr>);
+    const vs = densities.map(e => <tr>
+            <td>{e.name}</td>
+            <td>{Number(e.low).toLocaleString()}</td>
+            <td>{Number(e.high).toLocaleString()}</td>
+        </tr>);
 
     return (<table class={styles.table}>
         <thead>
             <tr>
-                <th>X</th>
-                <th>Efficiency %</th>
-                <th>Power density W/m2</th>
+                <th>Power source</th>
+                <th>Power density W/m2 Low</th>
+                <th>Power density W/m2 High</th>
             </tr>
         </thead>
         <tbody>
@@ -448,7 +484,8 @@ const Calculators = ({withScores = false}) => {
 };
 
 const Tables = {
-    Fuels,
+    EnergyDensities,
+    PowerDensities,
     Emissions,
     Humans,
     Geology,
