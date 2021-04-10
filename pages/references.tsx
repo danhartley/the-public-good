@@ -23,10 +23,6 @@ const keyReferences = [
         "name": "Sustainable Energy - without the hot air David MacKay",
         "source": "http://www.withouthotair.com/"
     },
-    {
-        "name": "Power density primer Vaclav Smil",
-        "source": "http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf"
-    },
 ];
 
 const keyPosts = [
@@ -34,7 +30,22 @@ const keyPosts = [
         "name": "Don’t Call Me a Pessimist on Climate Change. I Am a Realist | William Rees",
         "source": "https://www.postcarbon.org/dont-call-me-a-pessimist-on-climate-change-i-am-a-realist/"
     },
-]
+    {
+        "name": "Power density primer Vaclav Smil",
+        "source": "http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf"
+    },
+    {
+        "name": "What we need to know about the pace of decarbonization Vaclav Smil",
+        "source": "https://www.schoolofpublicpolicy.sk.ca/research/publications/policy-brief/what-we-need-to-know-about-the-pace-of-decarbonization.php"
+    },
+];
+
+const plans = [
+    {
+        "name": "100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World Jacobson et al.",
+        "source": "https://web.stanford.edu/group/efmh/jacobson/Articles/I/CountriesWWS.pdf"
+    },
+];
 
 const References = () => {
     return (
@@ -46,6 +57,10 @@ const References = () => {
             <section class={styles.card}>
                 <h2>Key posts</h2>
                 <Links.ExternalLinksList links={keyPosts} />
+            </section>
+            <section class={styles.card}>
+                <h2>Plan</h2>
+                <Links.ExternalLinksList links={plans} />
             </section>
         </Layout>
     )

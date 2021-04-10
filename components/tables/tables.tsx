@@ -6,6 +6,14 @@ const EnergyDensities = () => {
 
     const eds = [
         {
+            name: "Solar",
+            volume: '1.5 microjoules/m3'      
+        },
+        {
+            name: "Wind",
+            volume: '0.5-50 J/m3'      
+        },
+        {
             name: "Peat",
             value: 15            
         },
@@ -20,21 +28,21 @@ const EnergyDensities = () => {
         {
             name: "Crude oil",
             value: 44,
-            volume: 35000
+            volume: '35-45,000 MJ/m3'
         },
         {
             name: "Gasoline",
-            value: 46
+            value: '46 MJ/m3'
         },
         {
             name: "Natural gas",
             value: 46,
-            volume: 35
+            volume: '35 MJ/m3'
         },
         {
             name: "Hydrogen",
             value: 143,
-            volume: 0.01
+            volume: '0.01 MJ/m3'
         },
         {
             name: "Nuclear (uranium-235)",
@@ -44,8 +52,8 @@ const EnergyDensities = () => {
 
     const fuels = eds.map(ed => <tr>
             <td>{ed.name}</td>
-            <td>{Number(ed.value).toLocaleString()}</td>
-            { ed.volume ? <td>{Number(ed.volume).toLocaleString()}</td> : <td></td> }
+            { ed.value ? <td>{Number(ed.value).toLocaleString()}</td> : <td></td> }
+            { ed.volume ? <td>{ed.volume}</td> : <td></td> }
         </tr>);
 
     return (<table class={styles.table}>
@@ -53,7 +61,7 @@ const EnergyDensities = () => {
             <tr>
                 <th>Fuel</th>
                 <th>Energy density MJ/kg</th>
-                <th>Energy density MJ/m3</th>
+                <th>Energy density</th>
             </tr>
         </thead>
         <tbody>
@@ -117,9 +125,9 @@ const PowerDensities = () => {
     </table>);    
 };
 
-const Emissions = () => {
+const CumulativeEmissions = () => {
 
-    const cumulativeEmissions = [
+    const ces = [
         {
             year: 1850,
             total: 4.96
@@ -142,7 +150,7 @@ const Emissions = () => {
         }
     ];
 
-    const emissions = cumulativeEmissions.map(d => <tr><td>{d.year}</td><td>{Number(d.total).toLocaleString()}</td></tr>);
+    const emissions = ces.map(d => <tr><td>{d.year}</td><td>{Number(d.total).toLocaleString()}</td></tr>);
 
     return (<table class={styles.table}>
             <thead>
@@ -483,13 +491,69 @@ const Calculators = ({withScores = false}) => {
     }
 };
 
+const EmissionsDates = () => {
+
+    const dates = [        
+        {
+            what: 'James Watt patents his steam engine design',
+            when: '1769',
+            info: 'Catalyses The Industrial Revolution',
+            link: 'https://en.wikipedia.org/wiki/Watt_steam_engine',
+            source: 'Wikipedia'
+        },
+        {
+            what: 'UK electricty\'s first coal free hours',
+            when: 'May 2016',
+            info: 'Electricty without coal for first time since 1882',
+            link: 'https://interactive.carbonbrief.org/how-uk-transformed-electricity-supply-decade/',
+            source: 'Carbon Brief'
+        },
+        {
+            what: 'Windfarms win electricity contracts at auction',
+            when: 'September 2017',
+            info: 'Price for offshore wind lower than gas-fired power station',
+            link: 'https://interactive.carbonbrief.org/how-uk-transformed-electricity-supply-decade/',
+            source: 'Carbon Brief'
+        },
+    ];
+
+    const edates = dates.map(hd => {
+        return (
+            <tr>
+                { hd.link ? <td><a href={hd.link} aria-label={`${hd.source} article on ${hd.what}`}>{hd.what}</a></td> : <td>{hd.what}</td> }
+                <td>{hd.when}</td>
+                <td>{hd.info}</td>
+            </tr>
+        )
+    });
+
+    const inlineStyle:CSSProperties = {
+        width: '8rem'
+    };
+
+    return(<table class={styles.table}>
+        <thead>
+            <tr>
+                <th>What</th>
+                <th style={inlineStyle}>When</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            { edates }
+        </tbody>
+    </table>);
+};
+
+
 const Tables = {
     EnergyDensities,
     PowerDensities,
-    Emissions,
+    CumulativeEmissions,
     Humans,
     Geology,
-    Calculators
+    Calculators,
+    EmissionsDates
 };
 
 export default Tables;

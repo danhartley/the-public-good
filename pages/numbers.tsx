@@ -1,158 +1,144 @@
 import Layout from 'components/layout/layout';
 import styles from 'pages/pages.module.scss';
-import Tables from 'components/tables/tables';
+import Links from 'components/links/Links';
 
 const Numbers = () => {
-
     return (
         <Layout title="Numbers" description={'Numbers'}>
             <section class={styles.card}>
-                <h2>Numbers</h2>
 
-                <div class={styles.menu}>
-                    <span><a class={styles.bang} href="#carbon">Carbon</a></span>
-                    <span><a class={styles.bang} href="#co2e">CO2e</a></span>
-                    <span><a class={styles.bang} href="#geologic_time">Geologic time</a></span>
-                    <span><a class={styles.bang} href="#human_time">Human time</a></span>
-                    <span><a class={styles.bang} href="#emissions">Emissions</a></span>
-                    <span><a class={styles.bang} href="#energy">Energy</a></span>
-                </div>
+                <h3>Which numbers are important?</h3>
 
-                <h3 id="carbon">Carbon & CO2</h3>
+                {/* The numbers <a aria-label="IPCC Special report: global warming OF 1.5ºC Summary for Policymakers" href="https://www.ipcc.ch/sr15/chapter/spm/">1.5°C and 2°C</a> will be familiar to you if you are concerned about planet change. But are these the right numbers to be thinking about?  */}
 
-                <p>
-                Emissions values are usually given in tonnes of carbon dioxide, but occasionally a value is given in tonnes of carbon (the giveaway is that the value looks surprisingly small).
+                <p>When Napoleon began his invasion of Russia in the summer of 1812, he did not have the number 9,000 in mind, the size his Grande Armée would be reduced to five and a half months later; it was the starting number, almost 449,000, that dictated his <a aria-label="French invasion of Russia" href="https://en.wikipedia.org/wiki/French_invasion_of_Russia">campaign</a>.</p>
 
-                To convert a mass of carbon to carbon dioxide multiple by 3.67.
-                </p>
+                <p>Naploeon's army was well prepared, far more so than in any of his previous campaigns; 7,848 vehicles carried provisions for 40 days, but it was not enough; starvation, thirst, disease, and desertion had accounted for most of the army before a relatively mild winter decimated the remainder.</p>
 
-                <p>
-                    How is this number derived?
-                    <span class={styles.quote}>
-                        <div>The atomic mass of carbon is 12. The atomic mass of oxygen is 16.</div>
-                        <div>The ratio of CO2 to C is therefore 44/12 (1*12 + 2*16 / 12) or ~3.67.</div>
-                        <div>To calculate the mass of CO2 released by burning a particular fossil fuel it is necessary to know how much carbon it contains. The additional mass comes from the oxygen.</div>
-                        {/* <div>The weight of CO2 is 44 grams per mole (1 x 12 grams/mole for the carbon atom and 2 x 16 grams/mole for the oxygen atoms).</div>                        
-                        <div>The mass of one molecule of CO2 is 7.30×10<span class={styles.super}>−23</span></div> */}
-                    </span>
-                    <div>
-                        <a aria-label="Article explaining the difference between mass and weight from ThoughtCo" href="https://www.thoughtco.com/atomic-weight-and-atomic-mass-difference-4046144">Atomic mass or atomic weight?</a>
-                    </div>
-                    <div>
-                        <a aria-label="QandA in Scientific American on how to calculate weight of CO2" href="https://www.scientificamerican.com/article/experts-weight-ratio-co2-fuel/">Example calculation using weight and moles.</a>
-                    </div>
-                </p>
-                
-                <h3 id="co2e">CO2e</h3>
-                
-                <h3 id="geologic_time">The geologic time scale of fossil fuels</h3>
+                <p>Many numbers are relevant to planet change. Here are 4 ways they can be put to use: to record the state of the planet; to describe human populations and activities; to measure performance of materials and goods; to pin down values we cannot change. I will start with the last of these.</p>
 
-                <h4>Peat</h4>
+                <h4>Numbers we cannot change</h4>
+                {/* <p>                                        
+                    <ul class={styles.list}>
+                        <li>The atomic mass of carbon is 12. The atomic mass of oxygen is 16. The relative masses of Carbon and CO2 can be <span class={styles.internalLink}><Link href='numbers#carbon'><a>calculated</a></Link></span>.</li>
+                        <li>The energy density of <span class={styles.internalLink}><Link href='facts#energy_density'><a>natural gas</a></Link></span> is ~46 MJ/kg.</li>
+                        <li>Here are some more <Links.InternalLink link={{'value': 'facts', 'text': 'numbers'}}></Links.InternalLink>.</li>
+                    </ul>                    
+                </p> */}
 
-                Peat 
-
-                <h4>Coal</h4>
                 <p>
                     <span class={styles.quote}>
-                    The formation of coal takes a significant amount of time (on the order of a few million years), and the first coal-bearing rock units appeared about 290-360 million years ago, at a time known as the Carboniferous or "coal-bearing" Period. As well, there are extensive coal deposits from the Cretaceous age - about 65 to 144 million years ago. <a href="https://energyeducation.ca/encyclopedia/Coal_formation">Energy Education: coal formation</a>
-                    </span>
-                </p>
-
-                <h4>Oil & Gas</h4>
-                <p>
-                    <span class={styles.quote}>
-                        70% of oil deposits existing today were formed in the Mesozoic age (252 to 66 million years ago), 20% were formed in the Cenozoic age (65 million years ago), and only 10% were formed in the Paleozoic age (541 to 252 million years ago). This is likely because the Mesozoic age was marked by a tropical climate, with large amounts of plankton in the ocean. <a href="https://energyeducation.ca/encyclopedia/Oil_formation">Energy Education: oil formation</a>
-                    </span>
-                </p>
-
-                <Tables.Geology></Tables.Geology>
-
-                <h3 id="human_time">Human time</h3>
-
-                <p>A rough, and disbuted timeline of <a href="https://en.wikipedia.org/wiki/Timeline_of_human_evolution">human evolution</a>.</p>
-
-                 <Tables.Humans></Tables.Humans>
-
-                <h3 id="emissions">Emissions since when?</h3>
-
-                <p>
-                    The IPCC calculates the rise in the global mean surface temperature (GMST) from the beginning of large-scale industrial activity.
-                    Their <a aria-label="IPCC Annex: Glossary" href="https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_AnnexI_Glossary.pdf">reference period</a> (PDF) is 1850-1900.
-                    <div>
-                        Industrialisation had begun before this date, primarily in England (<a href="https://ourworldindata.org/contributed-most-global-co2">78% of gobal emissions</a>). 
-                        
-                        Dates for the Industrial Revolution in Europe and the United States are typically given as starting in 1760, and ending in 1820, or 1840, but emissions were low by comparison to today, just <a aria-label="Our World in Data report on historic CO2 emission" href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">4.96 billion tonnes</a>, and were localised. Prior to this period humans had been burning wood, coal, and clearing land, but emissions were comparatively insignificant.
-                        
-                        <p><a href="https://ourworldindata.org/grapher/cumulative-co2-emissions-region?stackMode=absolute">Cumulative emissions</a></p>
-                        <Tables.Emissions></Tables.Emissions>
-                        <p>In 1850 cumulative global emissions were around 0.3% of what they are today.</p>
-                    </div>
-                </p>
-
-                <h3 id="energy">Energy</h3>
-
-                <h4>Energy density</h4>
-
-                {/* more complex, e.g. coal, more carbon. gas => oil => coal */}
-
-                <span class={styles.quote}>
-                    …the more concentrated sources of energy give you
+                    You can start explaining some of the limits and possibilities of everyday life or historical
+                    progress by playing with energy densities: the more concentrated sources of energy give you
                     many great advantages in terms of their extraction, portability, transportation and storage costs,
-                    and conversion options. Vaclav Smil
-                 </span>
-
-                 <Tables.EnergyDensities></Tables.EnergyDensities>
-
-                <div><a href="https://energyeducation.ca/encyclopedia/Energy_density">Energy Education | Energy density</a></div>
-                <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
-
-                <h4>Horsepower</h4>
-
-                <p>
-                    There are numerous definitions for the value of <a aria-label="Wikipedia article on horsepower" href="https://en.wikipedia.org/wiki/Horsepower">horsepower</a>; one metric measure is defined as,
-                    <span class={styles.quote}>
-                        The power needed to lift 75 kilograms by 1 metre in 1 second.
+                    and conversion options. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil</a>
                     </span>
-                    Comparing horses and humans,
-                    <span class={styles.quote}>
-                        <div>A horse can reach a peak of ~11kW over a period of a few seconds.</div>
-                        <div>A horse can reach a peak of ~1kW over a period of a few seconds.</div>
-                    </span>
-                    And over time,
-                    <span class={styles.quote}>
-                        <div>A horse can perform sustained activity at a work rate of about 0.75kW.</div>
-                        <div>A human can perform sustained activity at a work rate of about 0.075kW.</div>
-                    </span>
-                    Everyday power requirements,
-                    <span class={styles.quote}>
-                        <div>A toaster uses in the range of .8 to 1.5kW of energy.</div>
-                        <div>An ordinary family salon has ~120 horsepower, and an SUV ~200 horsepower.</div>
-                    </span>                    
                 </p>
 
+                <p>The energy densities of coal, oil and gas make them useful as fuels. Contemporary fuels are those which are replenished by the sun: wind, solar, hydroelectric. They are attractive because they don't emit carbon, but they have two drawbacks - they are intermittent, and less energy dense.</p>
 
-                <h4>Human power</h4>
+                <p>They also have low <a href="https://energyeducation.ca/encyclopedia/Energy_vs_power">power</a> densities meaning they require more space. This presents a dilemma. The obvious choice would be to reason that change takes time; the shift from wood to coal and the shift from coal to oil and gas were local, often ad hoc, and remain incomplete.</p>
 
-                <p>
-                    <div class={styles.quote}>
-                        <div>
-                            2000 Calories / 1 day * 1 day / 24 hours * 60 minutes * 60 seconds * 4184 Joules / 1 Calories = 96.85 J/second = 96.85W ≈ 100W
-                            <div><a href="https://energyeducation.ca/encyclopedia/Power_servant">Energy Education | Power Servant</a></div>
-                        </div>
+                <p>The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them. Fossil fuels are the incumbent energy source, and if we are to fully replace them, it will entail adapting, extending and replacing existing infrastructure using more land with, at least initially, some duplication. Even with a great deal of political will and money, this will not be straightforward, as <a aria-label="McKinsey & Company report: Germany’s energy transition at a crossroads" href="https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/germanys-energy-transition-at-a-crossroads">Germany's Energiewende</a> demonstrates.</p>
+
+                <p>A comparison with the US reveals how tricky shifts are. Since 2000:
+                    <div class={styles.quote}>                    
+                        <div>The US has reduced its dependence on fossil fuels in primary energy consumption from 84 to 78%.</div>
+                        <div>Germany has reduced its dependence on fossil fuels in primary energy consumption from 85.7 to 80%.</div>
+                        <div><a href="http://vaclavsmil.com/wp-content/uploads/2021/01/71.ENERGIEWENDE.pdf">Vaclav Smil | Energiewende, 20 years later</a></div>
                     </div>
+                    Germany may yet benefit from its strategy; whilst the <a aria-label="Our World in Data United States: Energy Country Profile" href="https://ourworldindata.org/energy/country/united-states?country=~USA">US</a> has reduced emissions in large part by replacing coal with natural gas, <a aria-label="Our World in Data Germany: Energy Country Profile" href="https://ourworldindata.org/energy/country/germany?country=~DEU"></a> Germany has reduced its emissions by phasing out coal, increasing its dependency on gas, and adding more solar and wind to the energy mix.
                 </p>
 
-                <h4>Power density</h4>
+                <p>To date the majority of emissions reductions have been in <span class={styles.italic}>electricity</span> but only <a href="https://en.wikipedia.org/wiki/World_energy_consumption">20 percent</a> of the world's energy use comes from electricity. In countries where cuts to emissions have been possible, there has been little change to the energy mix in transport and industry where high density, high power, fuels are critical.</p>
 
-                These figures are from 2010 but although the values for pvs and wind have improved, the relative values are unchanged.
+                {/* The shift to renewables has come either from falling costs, or policy. Wind and solar can now compete with fossil fuels unsubsidised in many places. */}
+                {/* Unfortunately, not only do have relatively low energy densities, they low power densities which means more land must be dedicated to their production; since we have limited space, and it is also needed to produce food, this presents a problem. */}
 
-                <Tables.PowerDensities></Tables.PowerDensities>
+                {/* The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them. */}
 
-                <div>Source: <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
+                <h4>Technology - numbers we can affect</h4>
 
-                <h3>Ocean acidification</h3>
+                <p>There have been notable successes in replacing fossil fuels in the production of electricity, but less so for the energy sector as a whole.</p>
+
+                <p>In 2019 around <a href="https://www.iea.org/reports/global-ev-outlook-2020">one percent</a> of cars were electric. </p>
+                {/* <p>
+                    <ul class={styles.list}>
+                        <li>Global <a href="https://ourworldindata.org/grapher/cumulative-co2-emissions-region?stackMode=absolute">cumulative emissions</a> are around 1,610 billion tonnes of carbon dioxide (2019). This figure is increasingly annually, but may, one day, start to fall.</li>
+                        <li>Human activities are estimated to have caused approximately <a aria-label="IPCC Special report: global warming OF 1.5ºC Summary for Policymakers" href="https://www.ipcc.ch/sr15/chapter/spm/">1.0°C</a> of global warming above pre-industrial levels.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/World_energy_consumption">~20%</a> of the world's energy is in the form of electricity.</li>
+                        <li><a href="https://www.iea.org/reports/global-ev-outlook-2020">~1%</a> of cars are electric (2019).</li>
+                        <li><a href="https://ourworldindata.org/energy-access#access-to-electricity">13% of the world do not have access to electricity.</a></li>
+                        <li><a href="https://ourworldindata.org/energy-access#access-to-clean-fuels-for-cooking">40% of the world do not have access to clean fuels for cooking.</a></li>
+                    </ul>
+                </p> */}
+            
+                <h4>Human populations and activities</h4>
+
+                <p>The global population, is <a aria-label="UN Department of Economic and Social Affairs: Population Dynamics" href="https://population.un.org/wpp/Graphs/DemographicProfiles/Line/900">predicted</a> to rise to between 9.5 and 12.5 billion by the end of the century.</p>
+
+                <p>Nigeria is predicted to be home to more than 1 billion people by 2100. The per capita CO2 emissions (2017) for Nigeria was <a href="https://ourworldindata.org/co2/country/nigeria#per-capita-how-much-co2-does-the-average-person-emit">.68 tonnes</a>. The figure for the US in the same year was <a href="https://ourworldindata.org/co2/country/united-states?country=~USA#per-capita-how-much-co2-does-the-average-person-emit">16.16 tonnes</a>; that is a US citizen, on average, uses almost 24 times the resources of a Nigerian.</p>
+
+                <h4>The state of the planet</h4>
+
+                <h4>Case study: installation of natural gas in the UK</h4>
+
+                <p>Between 1967–1977, appliances in 35 million homes in the UK <a href="https://www.sciencedirect.com/science/article/abs/pii/S2210422417301909">were converted</a> to run on natural gas instead of manufactured gas. It was a success, though the cost was <a aria-label="UK House of Commons debate: Gas Conversion Programme" href="https://www.theyworkforyou.com/debates/?id=1970-02-23a.814.7">higher than expected</a>. Researchers at Keele University are now <a href="https://hydeploy.co.uk/">experimenting</a> with introducing hydrogen to the natural gas supply; tests currently introduce 20% hydrogen by volume (7% of energy).</p>                
+
+                <h4>Dates</h4>
+
+                <p>Dates are strange numbers, their familiar format only human-friendly. To make sense of them mathematically dates are calculated as the time since another time. For example, UTC or <span><a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">Coordinated Universal Time</a></span> is measured in milliseconds since January 1, 1970, 00:00:00.
+                    <span class={styles.quote}>
+                    English speakers originally proposed CUT (Coordinated Universal Time), while French speakers proposed TUC (Temps Universel Coordonné). UTC was the compromise.
+                    </span>
+                </p>
+                
+                <p>Dates weren't included in the original list, but we are fond of nailing commitments and intentions to arbitrary moments in time.</p>
+
+                <p>
+                    <ul class={styles.list}>
+                        <li>The goal of the <a href="https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement">Paris Agreement</a> is to limit global warming to well below 2, preferably to 1.5 degrees Celsius, compared to pre-industrial levels.</li>
+                        <li><a aria-label="IEA: Global EV Outlook 2020" href="Union of Concerned Scientists: 2030 or Bust?" href="https://blog.ucsusa.org/elliott-negin/2030-or-bust-what-is-the-importance-of-the-year-2030-climatewise">2030</a>, <a aria-label="The Guardian: The climate crisis in 2050" href="https://www.theguardian.com/cities/2019/oct/10/the-climate-crisis-in-2050-what-happens-if-cities-act-but-nations-dont">2050</a>, <a aria-label="NASA: Emissions Could Add 15 Inches to Sea Level by 2100" href="https://climate.nasa.gov/news/3021/emissions-could-add-15-inches-to-sea-level-by-2100-nasa-led-study-finds/">2100</a></li>
+                    </ul>
+                </p>
+
+                <h3>Numbers, not adjectives</h3>
+
+                <h3>Conclusion</h3>
+
+                <p>planet change, and species loss, are complex problems, and therefore it is as well we refer to data from many fields (<a href="https://en.wikipedia.org/wiki/Consilience">consilience</a>), and consider multiple solutions. The data reveal the problem, but not how to tackle it. The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them, and not only for luxuries like flying, but for our food, our freedom from toil, health care, access to information, and much more besides. And though some have enjoyed these benefits for more than a hundred years, others are still waiting.</p>
+
+                <p>
+                    <span class={styles.quote}>
+                    La Russie est entraînée par la fatalité! Ses destins doivent s'accomplir. Nous croirait-elle donc dégénérés? Ne serions-nous donc plus les soldats d'Austerlitz? Elle nous place entre le déshonneur et la guerre. Le choix ne saurait être douteux. Marchons donc en avant! <a aria-label="1812 La campagne de russie" href="https://www.napoleon.org/histoire-des-2-empires/chronologies/1812-la-campagne-de-russie-1-de-la-diplomatie-au-passage-du-niemen/">Napoléon</a>
+                    </span>
+                    <span class={styles.quote}>
+                    Russia is hurried away by a fatality: her destinies will be fulfilled. Does she think us degenerated? Are we no more the soldiers who fought at Austerlitz? She places us between dishonour and war — our choice cannot be difficult. <a aria-label="Wikipedia: French invasion of Russia" href="https://en.wikipedia.org/wiki/French_invasion_of_Russia#cite_note-R33ARW14-19">Napoleon</a>
+                    </span>
+                </p>
+
+                <p>
+                    <span class={styles.quote}>
+                        if everyone does a little, we’ll achieve only a little. <a href="http://www.withouthotair.com/c1/page_3.shtml">David McKay</a>
+                    </span>
+                </p>
+
+                <p>
+                    <span class={styles.quote}>
+                    Higher reliance on renewable energies may be desirable (mainly because of perceived environmental and strategic reasons) and technical advances would also make it an increasingly appealing economic choice –- but inherently low power densities of these conversions will require a new system of fuel and electricity supply that will be able to substitute for today’s dominant practices only after decades of gradual development. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a>
+                    </span>
+                </p>
+
+                <h3>Photosynthesis</h3>
+
+                <p>
+                    <span class={styles.quote}>
+                    Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a>
+                    </span>
+                </p>
 
             </section>
+            <Links.RelatedLinks links={[{href:'facts',title:'Facts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

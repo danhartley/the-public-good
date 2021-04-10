@@ -27,8 +27,8 @@ export default function Home() {
 
         <section class={styles.card}>
             <h2>Latest</h2>
-            <Links.InternalLink link={{'value': 'carbonfootprint', 'text': 'Personal carbon footprint calculators'}}></Links.InternalLink>
-            <Links.InternalLink link={{'value': 'population', 'text': 'The problem of population'}}></Links.InternalLink>
+            <Links.InternalLinkBlock link={{'value': 'carbonfootprint', 'text': 'Personal carbon footprint calculators'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'population', 'text': 'The problem of population'}}></Links.InternalLinkBlock>
         </section>
 
         <section class={styles.card}>

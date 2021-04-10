@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Layout from 'components/layout/layout';
 import styles from 'pages/pages.module.scss';
 import Links from 'components/links/Links';
@@ -6,9 +7,15 @@ const Energy = () => {
     return (
         <Layout title="Energy" description={'Energy'}>
             <section class={styles.card}>
-                <h2>Energy & Us</h2>
+                <h2>Energy</h2>
 
-                <h3>Abstract</h3>
+                <h3>Energy & Electricty</h3>
+
+                <p>There have been notable successes in replacing fossil fuels in the production of electricity, but less so for the energy sector as a whole.</p>
+
+                <h2>Energy, Time & Space</h2>
+
+                {/* (transport, buildings and industry), or agriculture */}
 
                 <p>There is a fearful asymmetry between the accumulation of carbon and methane in the earth, and their release into the atmosphere; reserves laid down over thousands of millenia many millions of years ago will be exhausted in a little over a hundred years. Coal fields will endure the longest, oil and gas may be gone in fifty.</p>
 
@@ -30,7 +37,21 @@ const Energy = () => {
                     </span>
                 </p>
 
-                {/* <p>Our use of contemporary energy, in the form of controlled fire, enabled our evolution.</p> */}
+                <h3>Power density & Energy density</h3>
+
+                <p>
+                    <span class={styles.quote}>
+                    Higher reliance on renewable energies may be desirable (mainly because of perceived environmental and strategic reasons) and technical advances would also make it an increasingly appealing economic choice –- but inherently low power densities of these conversions will require a new system of fuel and electricity supply that will be able to substitute for today’s dominant practices only after decades of gradual development. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a>
+                    </span>
+                </p>
+
+                <h3>Photosynthesis</h3>
+
+                <p>
+                    <span class={styles.quote}>
+                    Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a>
+                    </span>
+                </p>
 
                 <h3>Fossil fuels</h3>
 
@@ -43,28 +64,22 @@ const Energy = () => {
 
                 <p>Evidence of fire stimulation and preservation is found throughout our ancestors, and <span class={styles.italic}>Homo erectus</span>, from whom we evolved, had a brain 50% bigger than its predecessor, <span class={styles.italic}>Homo habilis</span>. These skills were likely critical to the evolution of our own species; we are poorly adapted to survive without the ability to control fire to keep warm, and to <a aria-label="Control of Fire in the Paleolithic: Evaluating the Cooking Hypothesis by Richard Wrangham" href="https://www.journals.uchicago.edu/doi/pdfplus/10.1086/692113">cook</a> (PDF). More energy enabled us to do less work to stay alive, and in response large brains, best suited to profit from thinking time, evolved. So too, our dependence on energy.</p>
 
-                <h3>Fossil fuels</h3>
-
                 <p>Our entanglement with fossil fuels is more recent.</p>
+
+                <h3>Powering down</h3>
+
+                <p>Horsepower 'invented' to demonstrate value of the steam engine; similarly horses to cars, carbon to oil.</p>
 
                 <h3>Asymmetry</h3>
 
-                <Links.InternalLink link={{'value': 'numbers#geologic_time', 'text': 'Geologic time'}}></Links.InternalLink>
+                <Links.InternalLinkBlock link={{'value': 'facts#geologic_time', 'text': 'Geologic time'}}></Links.InternalLinkBlock>
 
                 <p>We crossed a divide between the living and the non-living when we began to use fossil fuels. The work this enabled us to do has been extraordinary.</p>
-
-                <h3>Naturalists</h3>
-
-                <p>One of the most remarkable lines from <a href="https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review">The Economics of Biodiversity</a> report comes from the preface,
-                    <span class={styles.quote}>
-                        If we care about our common future and the common future of our descendants, we should all in part be naturalists.
-                    </span>
-                </p>
 
                 <p>This article owes a debt to David McKay and his book, <a href="http://www.withouthotair.com/" aria-label="Online version of Sustainable Energy - Without the Hot Air">Sustainable Energy - Without the Hot Air</a>.</p>
 
             </section>
-            <Links.RelatedLinks links={[{href:'numbers',title:'Numbers'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'facts',title:'Numbers'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

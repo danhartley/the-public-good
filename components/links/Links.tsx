@@ -15,11 +15,19 @@ const ExternalLinksList = ({links}) => {
 };
 
 const InternalLink = ({link}) => {
+    return  <span class={styles.internalLink}>                
+                <Link href={`/${link.value}`}>
+                    <a>{link.text}</a>
+                </Link>
+            </span>            
+};
+
+const InternalLinkBlock = ({link}) => {
     return  <p class={styles.internalLinkBlock}>
                 <span class={styles.internalLink}>                
                     <Link href={`/${link.value}`}>
                         <a>{link.text}</a>
-                    </Link>                    
+                    </Link>
                 </span>
             </p>
 };
@@ -62,7 +70,8 @@ const Links = {
     ExternalLinksList,
     Home,
     RelatedLinks,
-    InternalLink
+    InternalLink,
+    InternalLinkBlock
 };
 
 export default Links;

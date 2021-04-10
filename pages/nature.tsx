@@ -26,7 +26,7 @@ const Nature = () => {
                 </p>
 
             </section>
-            <Links.RelatedLinks links={[{href:'numbers',title:'Numbers'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'facts',title:'Facts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
