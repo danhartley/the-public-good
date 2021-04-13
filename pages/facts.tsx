@@ -91,21 +91,29 @@ const Facts = () => {
 
                 <h3 id="energy">Energy</h3>
 
+                <h4>Units</h4>
+
+                <p>
+                    SI Units: <a href="http://www.withouthotair.com/cI/page_328.shtml">Quick reference</a>
+                </p>
+
                 <h4 id="energy_density">Energy density</h4>
 
                 {/* more complex, e.g. coal, more carbon. gas => oil => coal */}
 
                 <span class={styles.quote}>
-                    …the more concentrated sources of energy give you
+                    You can start explaining some of the limits and possibilities of everyday life or historical
+                    progress by playing with energy densities: the more concentrated sources of energy give you
                     many great advantages in terms of their extraction, portability, transportation and storage costs,
-                    and conversion options. Vaclav Smil
-                 </span>
+                    and conversion options. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil</a>
+                </span>
 
                  <Tables.EnergyDensities></Tables.EnergyDensities>
 
                  <span class={styles.quote}>*Solar energy has a density over twenty quadrillion times less than oil</span>
 
                 <div><a href="https://energyeducation.ca/encyclopedia/Energy_density">Energy Education | Energy density</a></div>
+                <div><a href="https://apcentral.collegeboard.org/courses/ap-environmental-science/classroom-resources/energy-primer-ap-environmental-science-student">An Energy Primer for the AP Environmental Science Student</a></div>
                 <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
                 <div><a href="https://www.drexel.edu/~/media/Files/greatworks/pdf_sum10/WK8_Layton_EnergyDensities.ashx">A comparison of energy densities of prevalent energy sources in units of joules per cubic meter | Bradley E. Layton Drexel University</a></div>
 

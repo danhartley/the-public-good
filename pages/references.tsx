@@ -23,6 +23,14 @@ const keyReferences = [
         "name": "Sustainable Energy - without the hot air David MacKay",
         "source": "http://www.withouthotair.com/"
     },
+    {
+        "name": "The concept of risk | IPCC",
+        "source": "https://www.ipcc.ch/site/assets/uploads/2021/01/The-concept-of-risk-in-the-IPCC-Sixth-Assessment-Report.pdf"
+    },
+    {
+        "name": "Glossary | IPCC",
+        "source": "https://apps.ipcc.ch/glossary/"
+    },
 ];
 
 const keyPosts = [
@@ -42,8 +50,20 @@ const keyPosts = [
 
 const plans = [
     {
-        "name": "100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World Jacobson et al.",
+        "name": "100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World | Jacobson et al.",
         "source": "https://web.stanford.edu/group/efmh/jacobson/Articles/I/CountriesWWS.pdf"
+    },
+    {
+        "name": "Technology Zero Carbon Britain | Centre for Alternative",
+        "source": "https://cat.org.uk/info-resources/zero-carbon-britain/research-reports/zero-carbon-britain-rising-to-the-climate-emergency/"
+    },
+    {
+        "name": "European Green Deal",
+        "source": "https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en"
+    },
+    {
+        "name": "Green New Deal",
+        "source": "https://www.congress.gov/116/bills/hres109/BILLS-116hres109ih.pdf"
     },
 ];
 

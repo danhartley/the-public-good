@@ -7,24 +7,78 @@ const Numbers = () => {
         <Layout title="Numbers" description={'Numbers'}>
             <section class={styles.card}>
 
-                <h3>Which numbers are important?</h3>
+                <div class={styles.menu}>
+                    <span><a class={styles.bang} href="#carbon">Asymmetry of time</a></span>
+                    <span><a class={styles.bang} href="#co2e">Shaped by energy | intensity | 20%</a></span>
+                    <span><a class={styles.bang} href="#geologic_time">History catching up | cumulative emissions | depleted resources ? unraveling</a></span>
+                    <span><a class={styles.bang} href="#human_time">Transitions | Plans and goals | Failed projects | Probabilities</a></span>
+                    <span><a class={styles.bang} href="#emissions">Photosynthesis | shaped environment not v-v</a></span>
+                    <span><a class={styles.bang} href="#energy">Rhetoric | Napoleon</a></span>
+                </div>
+
+                <h3>The potential for adverse consequences</h3>
+
+                <div>
+                    <span class={styles.quote}>
+                    <a href="https://www.ipcc.ch/site/assets/uploads/2021/01/The-concept-of-risk-in-the-IPCC-Sixth-Assessment-Report.pdf">The concept of risk</a> - IPCC (PDF)
+                    </span>
+                </div>           
 
                 {/* The numbers <a aria-label="IPCC Special report: global warming OF 1.5ºC Summary for Policymakers" href="https://www.ipcc.ch/sr15/chapter/spm/">1.5°C and 2°C</a> will be familiar to you if you are concerned about planet change. But are these the right numbers to be thinking about?  */}
 
-                <p>When Napoleon began his invasion of Russia in the summer of 1812, he did not have the number 9,000 in mind, the size his Grande Armée would be reduced to five and a half months later; it was the starting number, almost 449,000, that dictated his <a aria-label="French invasion of Russia" href="https://en.wikipedia.org/wiki/French_invasion_of_Russia">campaign</a>.</p>
+                <p>When Napoleon began his invasion of Russia in the summer of 1812, he did not imagine that his Grande Armée of almost 449,000 men would be reduced to 9,000 within a few months.</p>
 
-                <p>Naploeon's army was well prepared, far more so than in any of his previous campaigns; 7,848 vehicles carried provisions for 40 days, but it was not enough; starvation, thirst, disease, and desertion had accounted for most of the army before a relatively mild winter decimated the remainder.</p>
+                <p><a aria-label="Wikipedia French invasion of Russia, Provisions and transportation" href="https://en.wikipedia.org/wiki/French_invasion_of_Russia#Provisions_and_transportation">Preparation had been extensive</a>, far greater than for any of his previous campaigns, but it was not enough; starvation, thirst, disease, and desertion accounted for the bulk of the army before a relatively mild winter decimated the remainder. Napoleon planned for the battles he had fought and won in central Europe, not the one he faced in Russia.</p>
 
-                <p>Many numbers are relevant to planet change. Here are 4 ways they can be put to use: to record the state of the planet; to describe human populations and activities; to measure performance of materials and goods; to pin down values we cannot change. I will start with the last of these.</p>
+                <h4>A new challenge</h4>
 
-                <h4>Numbers we cannot change</h4>
-                {/* <p>                                        
-                    <ul class={styles.list}>
-                        <li>The atomic mass of carbon is 12. The atomic mass of oxygen is 16. The relative masses of Carbon and CO2 can be <span class={styles.internalLink}><Link href='numbers#carbon'><a>calculated</a></Link></span>.</li>
-                        <li>The energy density of <span class={styles.internalLink}><Link href='facts#energy_density'><a>natural gas</a></Link></span> is ~46 MJ/kg.</li>
-                        <li>Here are some more <Links.InternalLink link={{'value': 'facts', 'text': 'numbers'}}></Links.InternalLink>.</li>
-                    </ul>                    
-                </p> */}
+                <p>
+                    In 1988 the <a href="https://en.wikipedia.org/wiki/World_Meteorological_Organization">World Meteorological Organisation</a> (WMO) established the <a href="https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change">Intergovernmental Panel on Climate Change</a> (IPCC). The IPCC was charged with reporting to the <a href="https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change">United Nations Framework Convention on Climate Change</a> (UNFCCC) whose objective was to,
+                    <span class={styles.quote}>
+                        Stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous anthropogenic (human-induced) interference with the climate system.
+                    </span> 
+                </p>
+
+                <h4>Defining the problem</h4>
+
+                <p>The IPCC <a href="https://www.ipcc.ch/report/sixth-assessment-report-cycle/">reviews and collates</a> available data related to the climate in order to produce a synthesis report every 5-7 years, in addition to special reports on specific areas of concern, such as the <a href="https://www.ipcc.ch/srocc/">cryosphere</a>, or <a href="https://www.ipcc.ch/srccl/">land</a>. The next report, the sixth assessment of the impact of climate change, will also take into account <a href="https://www.ipbes.net/global-assessment">biodiversity and ecosystem services</a>.</p>
+
+                <p>The IPCC records a rise in temperature of <a href="https://www.ncdc.noaa.gov/climate-monitoring/">1°C</a> <a href="https://www.ipcc.ch/sr15/faq/faq-chapter-1/">compared to pre-industrial times</a> (1850–1900).</p>
+
+                <p>The rise in temperature is a consequence of the increase of carbon dioxide in the atmosphere from around <a href="https://www.carbonbrief.org/met-office-atmospheric-co2-now-hitting-50-higher-than-pre-industrial-levels">278ppm</a> between 1750 and 1800 to 419.90 <a href="https://www.co2.earth/daily-co2">today, 21st April 2021.</a></p>
+
+                <h4>Do we have a plan?</h4>
+
+                <p>In accordance with the <a href="https://en.wikipedia.org/wiki/Paris_Agreement">Paris Agreement</a>, signed at <a href="https://unfccc.int/process-and-meetings/conferences/past-conferences/paris-climate-change-conference-november-2015/cop-21">COP21</a>, each country is required to present a <a href="https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs">National Determined Contribution</a> (NDC) which should,
+                    <span class={styles.quote}>
+                        …embody efforts by each country to reduce national emissions and adapt to the impacts of climate change.
+                    </span>
+                    And,
+                    <span class={styles.quote}>
+                    Together, these climate actions determine whether the world achieves the long-term goals of the Paris Agreement and to reach global peaking of greenhouse gas (GHG) emissions as soon as possible and to undertake rapid reductions thereafter in accordance with best available science, so as to achieve a balance between anthropogenic emissions by sources and removals by sinks of GHGs in the second half of this century.
+                    </span>
+                </p>
+
+                <p>However, not all has gone to plan.
+                    <span class={styles.quote}>
+                    After a year disrupted by the Covid-19 pandemic, nations representing only around 28% of global emissions registered new or updated “nationally determined contributions” (NDCs) on the UN’s official registry by the end of the year. Some big emitters did register their NDCs in time, including the UK and EU. But major absences included the US, India and China.
+                    <div><a href="https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition">Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?</a></div>
+                    </span>
+                </p>
+
+                <p>It is unsurprising, therefore, that <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">global emissions have not yet peaked</a>.</p>
+
+                {/* <p>The UN has drawn up a set of 17 <a href="https://sdgs.un.org/goals">Sustainable Development Goals</a> (SDGs) which encompass tackling climate change.</p> */}
+
+                <h4>Are there any other plans?</h4>
+
+                <p>In addition to intergovernmental and government plans, there is the US <span><a href="https://www.congress.gov/116/bills/hres109/BILLS-116hres109ih.pdf">Green New Deal</a></span> (PDF), the EU <span><a href="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en">European Green Deal</a></span>, <a href="Technology Zero Carbon Britain">Technology Zero Carbon Britain</a>, and <a href="https://web.stanford.edu/group/efmh/jacobson/Articles/I/CountriesWWS.pdf">100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World</a>.</p>
+
+                <p>We have drawn our lines in the sand without knowing how far in the tide will come.</p>
+                
+                {/* <p>Many numbers are relevant to planet change. Here are 4 ways they can be put to use: to record the state of the planet; to describe human populations and activities; to measure performance of materials and goods; to pin down values we cannot change. I will start with the last of these.</p> */}
+
+                <h4>Defining the problem (again)</h4>                
 
                 <p>
                     <span class={styles.quote}>
@@ -35,11 +89,51 @@ const Numbers = () => {
                     </span>
                 </p>
 
-                <p>The energy densities of coal, oil and gas make them useful as fuels. Contemporary fuels are those which are replenished by the sun: wind, solar, hydroelectric. They are attractive because they don't emit carbon, but they have two drawbacks - they are intermittent, and less energy dense.</p>
+                <p>The energy densities of coal, oil and gas make them useful as fuels. Contemporary fuels are those which are replenished by the sun: wind, solar, hydroelectric. They are attractive because they don't emit carbon, but they have two drawbacks - they are intermittent, and less energy dense. [explanation, and values]</p>
 
                 <p>They also have low <a href="https://energyeducation.ca/encyclopedia/Energy_vs_power">power</a> densities meaning they require more space. This presents a dilemma. The obvious choice would be to reason that change takes time; the shift from wood to coal and the shift from coal to oil and gas were local, often ad hoc, and remain incomplete.</p>
 
-                <p>The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them. Fossil fuels are the incumbent energy source, and if we are to fully replace them, it will entail adapting, extending and replacing existing infrastructure using more land with, at least initially, some duplication. Even with a great deal of political will and money, this will not be straightforward, as <a aria-label="McKinsey & Company report: Germany’s energy transition at a crossroads" href="https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/germanys-energy-transition-at-a-crossroads">Germany's Energiewende</a> demonstrates.</p>
+                <p>The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them. Fossil fuels are the incumbent energy source, and if we are to fully replace them, it will entail adapting, extending and replacing existing infrastructure using more land with, at least initially, some duplication.</p>
+
+                <h3>Where did it all begin?</h3>
+
+                <h4>Harnessing fire</h4>
+
+                <p>The earliest supported findings of <a href="https://en.wikipedia.org/wiki/Control_of_fire_by_early_humans">controlled use of fire</a> are from Wonderwerk, South Africa, 1 million years ago, but Homo erectus may have done so <a aria-label="Royal Society Article, The discovery of fire by humans: a long and convoluted process" href="https://royalsocietypublishing.org/doi/10.1098/rstb.2015.0164">much earlier</a>. </p>
+
+                <p>Evidence of fire stimulation and preservation is found throughout our ancestors, and <span class={styles.italic}>Homo erectus</span>, from whom we evolved, had a brain 50% bigger than its predecessor, <span class={styles.italic}>Homo habilis</span>. These skills were likely critical to the evolution of our own species; we are poorly adapted to survive without the ability to control fire to keep warm, and to <a aria-label="Control of Fire in the Paleolithic: Evaluating the Cooking Hypothesis by Richard Wrangham" href="https://www.journals.uchicago.edu/doi/pdfplus/10.1086/692113">cook</a> (PDF).</p>
+
+                <p>More energy enabled us to do less work to stay alive, and in response large brains, best suited to profit from thinking time, evolved. So too, our dependence on energy.</p>
+
+                <h4>The transition to coal</h4>
+
+                <p>
+                    The transformation from wood to coal was productive, with little or no adaptation in many cases, a greater release of power, and quickly gave rise to new opportunities. Nonetheless adoption takes time, dependent on availability and cost. Coal stoked the Industrial Revolution in Britain, and it was the dominant fuel until well into the twentieth century, yet extraction is higher today than ever. 
+                    <span class={styles.quote}>
+                        <div>Coal accounts for ~27% of world energy consumption by source. </div>
+                        <div>Coal provided 43,849 terra-watt hours in 2019, compared to 16,140 terra-watt hours in 1965</div>
+                        <div><a href="https://ourworldindata.org/energy-mix">Our World in Data | Energy Mix</a></div>
+                    </span>
+                </p>
+                <p>    
+                It's use has dwindled in the UK, but elsewhere, including China (<a href="https://ourworldindata.org/energy/country/china?country=~CHN">57.64%</a>) it is the primary source of energy. 
+                    <span class={styles.quote}>
+                    Britain was terribly well endowed with coal: when the Revolution started, the amount of carbon sitting in coal under Britain was roughly the same as the amount sitting in oil under Saudi Arabia. <div><a href="https://www.withouthotair.com/c1/page_6.shtml">Sustainable Energy - without the hot air David JC MacKay</a></div>
+                    </span>
+                    In 1965 the UK was dependent on coal for 59% of its energy needs; by 2019 this had fallen to <a href="https://ourworldindata.org/energy/country/united-kingdom?country=~GBR">3.35%</a>.
+                </p>              
+
+                <h4>The transition to oil</h4>  
+
+                <p>The transition from coal to oil is localised; some countries are still undergoing the transition to coal, and some of them may limit their use of oil.</p>
+
+                <h4>The dash for gas</h4>
+
+                <p>Between 1967–1977, appliances in 35 million homes in the UK <a href="https://www.sciencedirect.com/science/article/abs/pii/S2210422417301909">were converted</a> to run on natural gas instead of manufactured gas. It was a success, though the cost was <a aria-label="UK House of Commons debate: Gas Conversion Programme" href="https://www.theyworkforyou.com/debates/?id=1970-02-23a.814.7">higher than expected</a>. Researchers at Keele University are now <a href="https://hydeploy.co.uk/">experimenting</a> with introducing hydrogen to the natural gas supply; tests currently introduce 20% hydrogen by volume (7% of energy).</p>                
+
+                <h4>Powering down, the transition to renewables</h4>
+
+                <p>Even with a great deal of political will and money, this will not be straightforward, as <a aria-label="McKinsey & Company report: Germany’s energy transition at a crossroads" href="https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/germanys-energy-transition-at-a-crossroads">Germany's Energiewende</a> demonstrates.</p>
 
                 <p>A comparison with the US reveals how tricky shifts are. Since 2000:
                     <div class={styles.quote}>                    
@@ -75,15 +169,23 @@ const Numbers = () => {
             
                 <h4>Human populations and activities</h4>
 
-                <p>The global population, is <a aria-label="UN Department of Economic and Social Affairs: Population Dynamics" href="https://population.un.org/wpp/Graphs/DemographicProfiles/Line/900">predicted</a> to rise to between 9.5 and 12.5 billion by the end of the century.</p>
+                <p>Examination of global carbon emissions since around 1980 shows that rich, industrialised countries have not greatly increased (US), or reduced (Europe, Japan). The <a aria-label="Wikipedia article: Income and fertility" href="https://en.wikipedia.org/wiki/Income_and_fertility">correlation</a> between economic development and fertility is assumed to be either negative (fertility falls with development), or follows the J-Curve (inverse correlation followed by increased fertility but to a level below the <a href="https://en.wikipedia.org/wiki/Total_fertility_rate#Replacement_rates">replacement rate</a>).</p>
+
+                <p>The global population is <a aria-label="UN Department of Economic and Social Affairs: Population Dynamics" href="https://population.un.org/wpp/Graphs/DemographicProfiles/Line/900">predicted</a> to rise to between 9.5 and 12.5 billion by the end of the century.</p>
+
+                <p>There is no evidence to suggest the <a aria-label="Our World in Data: global population growth" href="https://ourworldindata.org/world-population-growth#how-has-world-population-growth-changed-over-time">global population</a> will not continue to grow; neither war nor pestilence has had a lasting effect. in this scenario, growth comes to an end because - for the first time in human history - every region of the world is theoretically wealthy with sufficient resources to feed and house its inhabitants. In a second scenario, population growth is halted for negative reasons, not from choice, but because there the planet cannot provide for everyone, except, at best, through redistribution, or at worst, because there is simply not enough to go round.</p>
+
+                <p>Or could we choose to limit population growth? There is no clear mechanism by which this could be done. If we aspire to equality in the distribution of goods, and to end practices that are damaging to the planet, our current practices would require the standard of living in rich countries to be modified; the effect of that would depend on us.</p>
+
+                <p>
+                    <span class={styles.quote}>
+                    <a href="https://www.sleek-mag.com/wp-content/uploads/2019/03/jenny-holzer-protect-me-times-square.jpg">Protect me from what I want</a> (image) <a href="https://en.wikipedia.org/wiki/Jenny_Holzer">Jenny Holzer</a>
+                    </span>
+                </p>
 
                 <p>Nigeria is predicted to be home to more than 1 billion people by 2100. The per capita CO2 emissions (2017) for Nigeria was <a href="https://ourworldindata.org/co2/country/nigeria#per-capita-how-much-co2-does-the-average-person-emit">.68 tonnes</a>. The figure for the US in the same year was <a href="https://ourworldindata.org/co2/country/united-states?country=~USA#per-capita-how-much-co2-does-the-average-person-emit">16.16 tonnes</a>; that is a US citizen, on average, uses almost 24 times the resources of a Nigerian.</p>
 
                 <h4>The state of the planet</h4>
-
-                <h4>Case study: installation of natural gas in the UK</h4>
-
-                <p>Between 1967–1977, appliances in 35 million homes in the UK <a href="https://www.sciencedirect.com/science/article/abs/pii/S2210422417301909">were converted</a> to run on natural gas instead of manufactured gas. It was a success, though the cost was <a aria-label="UK House of Commons debate: Gas Conversion Programme" href="https://www.theyworkforyou.com/debates/?id=1970-02-23a.814.7">higher than expected</a>. Researchers at Keele University are now <a href="https://hydeploy.co.uk/">experimenting</a> with introducing hydrogen to the natural gas supply; tests currently introduce 20% hydrogen by volume (7% of energy).</p>                
 
                 <h4>Dates</h4>
 
@@ -94,6 +196,10 @@ const Numbers = () => {
                 </p>
                 
                 <p>Dates weren't included in the original list, but we are fond of nailing commitments and intentions to arbitrary moments in time.</p>
+
+                <h4>Plans</h4>
+
+                <p>It is not only military campaigns that fail; many large scale projects, even <a aria-label="Harvard Businss Review report Why Good Projects Fail Anyway" href="https://hbr.org/2003/09/why-good-projects-fail-anyway">good ones</a> go over budget, run over time, or both. <a href="https://www.consultancy.uk/news/24677/most-construction-and-engineering-projects-are-unsuccessful">Two thirds of large construction and engineering projects</a>, <a href="https://pubsonline.informs.org/do/10.1287/orms.2019.06.08/full/">85% of big data projects</a>, 59% of <a href="https://bsc.cid.harvard.edu/files/bsc/files/public_policy_failure_cidwp344.pdf">World Bank</a> (PDF) projects fail <span class={styles.italic}>on either the direct ‘project and product’ performance measure or the indirect ‘problems are solved with development impact’ performance measure, or both</span>.</p>
 
                 <p>
                     <ul class={styles.list}>
