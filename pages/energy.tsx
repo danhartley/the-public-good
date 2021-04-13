@@ -45,14 +45,6 @@ const Energy = () => {
                     </span>
                 </p>
 
-                <h3>Photosynthesis</h3>
-
-                <p>
-                    <span class={styles.quote}>
-                    Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a>
-                    </span>
-                </p>
-
                 <h3>Fossil fuels</h3>
 
                 <p><a href="https://ourworldindata.org/grapher/years-of-fossil-fuel-reserves-left">Years of fossil fuel reserves left</a></p>

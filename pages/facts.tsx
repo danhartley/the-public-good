@@ -99,8 +99,6 @@ const Facts = () => {
 
                 <h4 id="energy_density">Energy density</h4>
 
-                {/* more complex, e.g. coal, more carbon. gas => oil => coal */}
-
                 <span class={styles.quote}>
                     You can start explaining some of the limits and possibilities of everyday life or historical
                     progress by playing with energy densities: the more concentrated sources of energy give you
@@ -116,6 +114,7 @@ const Facts = () => {
                 <div><a href="https://apcentral.collegeboard.org/courses/ap-environmental-science/classroom-resources/energy-primer-ap-environmental-science-student">An Energy Primer for the AP Environmental Science Student</a></div>
                 <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
                 <div><a href="https://www.drexel.edu/~/media/Files/greatworks/pdf_sum10/WK8_Layton_EnergyDensities.ashx">A comparison of energy densities of prevalent energy sources in units of joules per cubic meter | Bradley E. Layton Drexel University</a></div>
+                <div><a href="https://en.wikipedia.org/wiki/Comparison_of_commercial_battery_types">Wikipedia | Comparison of commercial battery types</a></div>
 
                 <h4>Horsepower</h4>
 
@@ -160,6 +159,21 @@ const Facts = () => {
                 <Tables.PowerDensities></Tables.PowerDensities>                
 
                 <div>Source: <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
+
+                <h4>Fuel emissions</h4>
+
+                <Tables.FuelEmissions></Tables.FuelEmissions>
+
+                <div><a href="https://www.volker-quaschning.de/datserv/CO2-spez/index_e.php">Volker Quaschning</a></div>
+
+                <h3>Photosynthesis</h3>
+
+                <p>
+                    <span class={styles.quote}>
+                    Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a>
+                    </span>
+                </p>
+
 
                 <h3>Ocean acidification</h3>
 

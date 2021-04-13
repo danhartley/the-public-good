@@ -14,6 +14,11 @@ const EnergyDensities = () => {
             volume: '0.5-50 J/m3'      
         },
         {
+            name: "Lithium-ion battery",
+            value: .79,
+            volume: '220-260 Wh/kg'
+        },
+        {
             name: "Peat",
             value: 15            
         },
@@ -32,11 +37,12 @@ const EnergyDensities = () => {
         },
         {
             name: "Gasoline",
-            value: '46 MJ/m3'
+            value: 46,
+            volume: '46 MJ/m3'
         },
         {
             name: "Natural gas",
-            value: 46,
+            value: 55,
             volume: '35 MJ/m3'
         },
         {
@@ -123,6 +129,66 @@ const PowerDensities = () => {
             { vs }
         </tbody>
     </table>);    
+};
+
+const FuelEmissions = () => {
+
+    const fes = [
+        {
+            name: "Peat",
+            value: .38,
+            value2: 106
+        },
+        {
+            name: "Wood",
+            value: .39,
+            value2: 109.6
+        },
+        {
+            name: "Lignite",
+            value: .36,
+            value2: 101.2
+        },
+        {
+            name: "Anthracite (hard coal)",
+            value: .34,
+            value2: 94.6
+        },
+        {
+            name: "Crude oil",
+            value: .26,
+            volume: 73.3
+        },
+        {
+            name: "Gasoline",
+            value: .25,
+            volume: 69.3
+        },
+        {
+            name: "Natural gas",
+            value: .2,
+            volume: 56.1
+        }
+    ];
+
+    const fuels = fes.map(fe => <tr>
+            <td>{fe.name}</td>
+            <td>{Number(fe.value).toLocaleString()}</td>
+            <td>{fe.value2}</td>
+        </tr>);
+
+    return (<table class={styles.table}>
+        <thead>
+            <tr>
+                <th>Fuel</th>
+                <th>Emis­sions kgCO2/kWh</th>
+                <th>Emis­sions kgCO2/GJ</th>
+            </tr>
+        </thead>
+        <tbody>
+            { fuels }
+        </tbody>
+    </table>);
 };
 
 const CumulativeEmissions = () => {
@@ -553,6 +619,7 @@ const EmissionsDates = () => {
 const Tables = {
     EnergyDensities,
     PowerDensities,
+    FuelEmissions,
     CumulativeEmissions,
     Humans,
     Geology,

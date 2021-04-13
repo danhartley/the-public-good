@@ -56,7 +56,7 @@ const Sustainability = () => {
             </section>
             <section class={styles.card}>
                 <p class={styles.centre}>
-                    <img src="https://api.thegreenwebfoundation.org/greencheckimage/the-public-good.netlify.app" alt="Checked by thegreenwebfoundation.org" />
+                    <img src="https://api.thegreenwebfoundation.org/greencheckimage/the-public-good.com" alt="Checked by thegreenwebfoundation.org" />
                 </p>
             </section>
             <Links.RelatedLinks links={[{href:'performance',title:'Performance testing'},{href:'accessibility',title:'Accessibility testing'},{href:'carbonfootprint',title:'Carbon footprint overview'}]}></Links.RelatedLinks>
