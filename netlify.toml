@@ -10,4 +10,4 @@
     default-src 'self' unpkg.com *.unpkg.com websitecarbon.com *.websitecarbon.com;
     style-src 'self' 'unsafe-inline';
     frame-ancestors 'none';'''
-
+    Access-Control-Allow-Origin = "*"
