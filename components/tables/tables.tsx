@@ -447,7 +447,7 @@ const Calculators = ({withScores = false}) => {
             "source": "https://zero.giki.earth/"
         },
         {
-            "name": "carbonclick (NZ & AUS only)",
+            "name": "CarbonClick (NZ & AUS only)",
             "source": "https://www.carbonclick.com/"
         },
     ];
