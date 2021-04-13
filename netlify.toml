@@ -10,5 +10,5 @@
     default-src 'self'
     style-src 'self' 'unsafe-inline'
     frame-ancestors 'none';'''
-    Access-Control-Allow-Origin = "*"
-    connect-src https://www.the-public-good.com/ https://www.thegreenwebfoundation.org
+    Access-Control-Allow-Origin = "*";
+    connect-src https://www.the-public-good.com/ https://www.thegreenwebfoundation.org;
