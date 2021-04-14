@@ -52,7 +52,7 @@ const Sustainability = () => {
                 </ul>
             </section>
             <section class={styles.card}>
-                <p><Carbonbadge darkMode={true} /></p>
+                <p><Carbonbadge darkMode={false} /></p>
             </section>
             <section class={styles.card}>
                 <p class={styles.centre}>

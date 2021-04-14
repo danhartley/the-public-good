@@ -87,42 +87,53 @@ const PowerDensities = () => {
         {
             name: 'Biomass',
             low: '0.5',
-            high: '0.6'
+            high: '0.6',
+            median: .08
         },
         {
             name: 'Wind',
             low: '0.5',
-            high: '1.5'
+            high: '1.5',
+            median: 2.02
         },
         {
             name: 'Solar PV',
             low: '4',
-            high: '9'
+            high: '9',
+            median: 6.6
+        },
+        {
+            name: 'Solar CSP',
+            low: '4',
+            high: '10',
+            median: 9.7
         },
         {
             name: 'Coal',
             low: '100',
-            high: '1000'
+            high: '1000',
+            median: 135.1
         },
         {
             name: 'Natural gas',
             low: '200',
-            high: '2000'
+            high: '2000',
+            median: 482.1
         },
     ];
 
     const vs = densities.map(e => <tr>
             <td>{e.name}</td>
-            <td>{Number(e.low).toLocaleString()}</td>
-            <td>{Number(e.high).toLocaleString()}</td>
+            <td>{`${Number(e.low).toLocaleString()}-${Number(e.high).toLocaleString()}`}</td>
+            <td>{Number(e.median).toLocaleString()}</td>
         </tr>);
 
     return (<table class={styles.table}>
         <thead>
             <tr>
                 <th>Power source</th>
-                <th>Power density W/m2 Low</th>
-                <th>Power density W/m2 High</th>
+                <th>Power density W/m2 range*</th>
+                <th>Power density W/m2 median+</th>
             </tr>
         </thead>
         <tbody>

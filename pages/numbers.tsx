@@ -9,7 +9,14 @@ const Numbers = () => {
         <Layout title="Numbers" description={'Numbers'}>
             <section class={styles.card}>
 
-                <h3>Background</h3>
+                <h2>Had we but world enough and time</h2>
+
+                <div class={styles.bang}><a href="#background">Background</a><span class={styles.italic}> 2 minutes</span></div>
+                <div class={styles.bang}><a href="#energy_entanglement">Tangled up in energy</a><span class={styles.italic}> 6 minutes</span></div>
+                <div class={styles.bang}><a href="#history">How did we get here?</a><span class={styles.italic}> 3 minutes</span></div>
+                <div class={styles.bang}><a href="#conclusion">Conclusion</a><span class={styles.italic}> 2 minutes</span></div>
+
+                <h3 id="background">Background</h3>
 
                 <h4>The potential for adverse consequences</h4>
 
@@ -26,7 +33,7 @@ const Numbers = () => {
                 <h4>A new challenge</h4>
 
                 <p>
-                    In 1988 the <a href="https://en.wikipedia.org/wiki/World_Meteorological_Organization">World Meteorological Organisation</a> (WMO) established the <a href="https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change">Intergovernmental Panel on Climate Change</a> (IPCC). The IPCC was charged with reporting to the <a href="https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change">United Nations Framework Convention on Climate Change</a> (UNFCCC) whose objective was to,
+                    In 1988 the World Meteorological Organisation <a href="https://en.wikipedia.org/wiki/World_Meteorological_Organization">WMO</a> established the Intergovernmental Panel on Climate Change <a href="https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change">IPCC</a>. The IPCC was charged with reporting to the United Nations Framework Convention on Climate Change <a href="https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change">UNFCCC</a> whose objective was to,
                     <span class={styles.quote}>
                         Stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous anthropogenic (human-induced) interference with the climate system.
                     </span> 
@@ -38,7 +45,7 @@ const Numbers = () => {
 
                 <p>The IPCC has recorded a rise in temperature of <a href="https://www.ncdc.noaa.gov/climate-monitoring/">1°C</a> <a href="https://www.ipcc.ch/sr15/faq/faq-chapter-1/">compared to pre-industrial times</a> (1850–1900).</p>
 
-                <p>The rise in temperature is a consequence of the increase of carbon dioxide in the atmosphere from around <a href="https://www.carbonbrief.org/met-office-atmospheric-co2-now-hitting-50-higher-than-pre-industrial-levels">278ppm</a> between 1750 and 1800 to 419.90 <a href="https://www.co2.earth/daily-co2">today, 21st April 2021.</a></p>
+                <p>This rise in temperature is a consequence of the increase of carbon dioxide in the atmosphere from around <a href="https://www.carbonbrief.org/met-office-atmospheric-co2-now-hitting-50-higher-than-pre-industrial-levels">278ppm</a> between 1750 and 1800 to 419.90 <a href="https://www.co2.earth/daily-co2">today, 21st April 2021.</a></p>
 
                 <h4>Do we have a plan?</h4>
 
@@ -59,21 +66,21 @@ const Numbers = () => {
                     </span>
                 </p>
 
-                <p>As a result, <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">global emissions have not yet peaked</a>.</p>
+                <p>As a result, <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">global emissions continue to rise</a>.</p>
 
                 <h4>Are there any other plans?</h4>
 
                 <p>Quite a few. In addition to intergovernmental and government plans, there is the US <span><a href="https://www.congress.gov/116/bills/hres109/BILLS-116hres109ih.pdf">Green New Deal</a></span> (PDF), the EU <span><a href="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en">European Green Deal</a></span>, <a href="Technology Zero Carbon Britain">Technology Zero Carbon Britain</a>, and <a href="https://web.stanford.edu/group/efmh/jacobson/Articles/I/CountriesWWS.pdf">100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World</a>.</p>
 
-                <p>The 13th of the UN's 17 <a href="https://sdgs.un.org/goals">Sustainable Development Goals</a> (SDGs), Climate Action, targets climate change directly, but also its impacts.</p>
-
-                <h3>Our entanglement with energy</h3>
+                <p>The 13th of the UN's own 17 <a href="https://sdgs.un.org/goals">Sustainable Development Goals</a> (SDGs), Climate Action, targets climate change and its impacts.</p>
+ 
+                <h3 id="energy_entanglement">Tangled up in energy</h3>
 
                 <h4>Living fuels, fossil fuels</h4>
 
-                <p>Photosynthesis is <a href="https://en.wikipedia.org/wiki/Photosynthetic_efficiency#Efficiencies_of_various_biofuel_crops">less efficient</a>, captures less energy from the sun, than photovoltaics. This is relevant if we are considering whether biofuels are a wise investment.</p>
+                <p>Photosynthesis is <a href="https://en.wikipedia.org/wiki/Photosynthetic_efficiency#Efficiencies_of_various_biofuel_crops">less efficient</a> than photovoltaics at capturing energy from the sun.</p>
 
-                <p>Photosynthesis, however, was not designed to solve a problem, the mechanisms by which it operates (and this varies), adhere only to the principle of natural selection. The products of photosynthesis, among them oxygen and energy in the form of carbohydrates, altered the environment, and thus enabled the evolution of almost all other living things.</p>
+                <p>Photosynthesis, however, was not designed to solve a problem, the mechanisms by which it operates, though they vary, adhere only to the principle of natural selection. The products of photosynthesis, among them oxygen and energy in the form of carbohydrates, altered the environment, and thus enabled the evolution of almost all other living things.</p>
 
                 <p>Fossil fuels were a silent partner in this transformation, capturing carbon dioxide stored in plants and animals at a time when levels of carbon dioxide were far higher than they are today. These reserves were laid down over thousands of millenia many millions of years ago. By burning them we have upset this equilibrium, releasing in decades their long accumulated power. Playing, ingeniously, impishly, with this asymmetry of time, we have opened a warehouse of jack-in-the-boxes.</p>
 
@@ -91,7 +98,7 @@ const Numbers = () => {
                     </div>
                 </p>
 
-                <p>The energy densities of coal, oil and gas make them useful as fuels. Contemporary fuels are those which are replenished by the sun: wind, solar, hydroelectric. They are attractive because they don't emit carbon, but they have two drawbacks - they are intermittent, and less energy dense.</p>
+                <p>The energy densities of coal, oil and gas make them useful as fuels. Contemporary fuels, renewables, are those which are replenished by the sun: wind, solar, hydroelectric. They are attractive because they don't emit carbon, but they have two drawbacks - they are intermittent, and less energy dense.</p>
 
                 <p>
                     <div class={styles.quote}>
@@ -99,23 +106,67 @@ const Numbers = () => {
                     <ul class={styles.unorderedList}>
                         <li>Wood - 16</li>
                         <li>Coal - 24</li>
-                        <li>Crude oil - 44</li>                        
+                        <li>Crude oil - 44</li>   
+                        <li><Links.InternalLink link={{'value': 'facts#energy', 'text': 'Energy densities table'}}></Links.InternalLink></li>                     
                     </ul>                    
                     </div>
-                    <div><Links.InternalLink link={{'value': 'facts#energy', 'text': 'Energy densities table'}}></Links.InternalLink></div>
+                    {/* <div class={styles.small}><Links.InternalLink link={{'value': 'facts#energy', 'text': 'Energy densities table'}}></Links.InternalLink></div> */}
                 </p>
 
-                <p>Contemporary fuels, renewables, also have low <a href="https://energyeducation.ca/encyclopedia/Energy_vs_power">power</a> densities meaning they require more space. This presents a dilemma. The obvious choice would be to reason that change takes time; the shift from wood to coal and the shift from coal to oil and gas were local, often ad hoc, and remain incomplete.</p>
-
-                These figures are from 2010 but although the values for pvs and wind have improved, the relative values are unchanged.
+                <p>Renewables, also have low <a href="https://energyeducation.ca/encyclopedia/Energy_vs_power">power</a> densities meaning they require more space. This presents a dilemma when planning to transition to them. The obvious choice would be to reason that change takes time; the shift from wood to coal and the shift from coal to oil and gas were local, often ad hoc, and remain incomplete, many years since the changeover began.</p>
 
                 <Tables.PowerDensities></Tables.PowerDensities>                
 
-                <div>Source: <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
+                <div>
+                    <div><span>*</span><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a></div>
+                    <div><span>+</span><a href="https://www.sciencedirect.com/science/article/pii/S0301421518305512">The spatial extent of renewable and non-renewable power generation John van Zalk, Paul Behrens</a></div>
+                </div>
 
-                <p>The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them. Fossil fuels are the incumbent energy source, and if we are to fully replace them, it will entail adapting, extending and replacing existing infrastructure using more land with, at great cost both financially and materially.</p>
+                <p>Higher values for renewables exist, but they are often in places - deserts, offshore - far from urban populations where energy demands are highest; this introduces the problems of transmission and storage. Locating energy close to demand is particularly hard for renewables due to competition for land (agriculture, amenity, housing), and nuclear (safety).</p>
 
-                <h3>How did we get here?</h3>
+                <p>Historical values for the power densities of renewables have proven to be on the low side (<a href="http://www.withouthotair.com/">McKay</a>). This is good news, but it presents a conundrum; when is the right time to invest in a particular technology? Invest too soon, and we will be committed to unnecessarily inefficient infrastructure, too late, or too slowly, and we will miss potential gains. If governments set deadlines, companies may meet emissions targets by investing in improving existing technology instead of technology that will take longer to test and deploy.</p>
+                
+                <p>Fossil fuels are the incumbent energy source, and if we are to replace them, it will entail adapting, extending and replacing existing infrastructure using more land at great cost both financially and materially. There may be gains that quickly override these costs, to health, wealth, and societal well-being. Do we also need to make a case for change that involves disruption, cost and possibly further injustice, one that favours the future over the present? If we think it appropriate to force sudden change, the consequences may be painful, and the burden of cost may fall unfairly.</p>
+
+                <h4>Unusual practices</h4>
+
+                <p>Business as usual is a vague term for, unless it is merely a proxy for cynical profiteering, it assumes stasis, whereas ideas, companies, plans, people, and markets are constantly in flux. How we get on, as a society, is a vexed question, and there are signs that the hegemony of capitalism is weakening. What we are contemplating is novel, and extraordinary; we are contemplating initiating change for reasons beyond the primary requirements we make on energy; arguably counter to those primary needs because we wish to replace our existing sources with others that are, at least in the short term, less efficient. This problem is not intractable, but resistance to change comes not only from protectionism and self interest, but from practical considerations that encompass physics, technology, time, resources, knowledge and ability.</p>
+                    
+                <p>If we frame climate change as an existential threat - either to ourselves, or our planet - these concerns may seem of secondary concern, but change is likely to be variable, messy and will encounter unimagined obstacles - or at least ones left out of our calculations and plans, such as the current pandemic. Into this mix are equally pressing concerns including justice and equality which are issues of importance to our species and may hold the key to whether we change our behaviour in time, but are of no consequence to other species, or the planet.</p>
+
+                <h4>Time's up</h4>
+
+                <p>Energy demand are falling in rich countries. In the <a href="https://ourworldindata.org/energy/country/united-states?country=~USA">US</a>, for example, energy usage is down from a peak in 1973 of 95.5 kWh per day to 79.9 in 2019, despite the <a href="https://blog.ucsusa.org/peter-oconnor/energy-efficiency-what-is-the-rebound-effect-946">rebound effect</a>. It is also conceivable that people will adjust their lives, consume less, and that economies will not be fixated on the mantra of economic growth. The <a aria-label="The Economics of Biodiversity: The Dasgupta Review" href="https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review">Dasgupta report</a>, commissioned by the UK treasury, proposes that the idea of growth should not be limited to economic growth, and raised the spectre of the hidden cost to the planet of pursuing only economic growth. Dasgupta's introduction concludes with a startling line given the context,
+                    <span class={styles.quote}>
+                        If we care about our common future and the common future of our descendants, we should all in part be naturalists.
+                    </span>
+                </p>
+
+                <h4>Fair demands</h4>
+
+                <p>Rich countries are touchy on the subject of <a href="https://ourworldindata.org/contributed-most-global-co2">historical emissions</a>. They may be factored in to emissions budgets, but countries that have recently industrialised claim, at the very least, the right to lift their people from want, and to enjoy the benefits of affordable energy.</p>
+
+                <p>US vs Nigeria
+                    <span class={styles.quote}>
+                    Nigeria is predicted to be home to more than 1 billion people by 2100. The per capita CO2 emissions (2017) for Nigeria was <a href="https://ourworldindata.org/co2/country/nigeria#per-capita-how-much-co2-does-the-average-person-emit">.68 tonnes</a>. The figure for the US in the same year was <a href="https://ourworldindata.org/co2/country/united-states?country=~USA#per-capita-how-much-co2-does-the-average-person-emit">16.16 tonnes</a>; that is a US citizen, on average, uses almost 24 times the resources of a Nigerian.
+                    </span>
+                </p>
+
+                <h4>Population</h4>
+
+                <p>The population of rich, industrialised countries has increased slightly or fallen in wealthy, industrialised countries.</p>
+
+                <p>The <a aria-label="Wikipedia article: Income and fertility" href="https://en.wikipedia.org/wiki/Income_and_fertility">correlation</a> between economic development and fertility is assumed to be either negative (fertility falls with development), or follows the J-Curve (inverse correlation followed by increased fertility but to a level below the <a href="https://en.wikipedia.org/wiki/Total_fertility_rate#Replacement_rates">replacement rate</a>).</p>
+
+                <p>The majority of studies <a aria-label="UN Department of Economic and Social Affairs: Population Dynamics" href="https://population.un.org/wpp/Graphs/DemographicProfiles/Line/900">predict</a> the <a aria-label="Our World in Data: global population growth" href="https://ourworldindata.org/world-population-growth#how-has-world-population-growth-changed-over-time">global population</a> will continue to grow; neither war nor pestilence has had a lasting effect. In this scenario, growth comes to an end because - for the first time in human history - every region of the world is theoretically wealthy with sufficient resources to feed and house its inhabitants.</p>
+                
+                <p>In a second scenario, population growth is halted for negative reasons, not from choice, but because the planet is unable to provide for everyone, and wealth remains unequally distributed.</p>
+
+                <p>A third scenario is that we limit population growth. There is no clear mechanism by which this can be done fairly.</p>
+
+                <p>If we aspire to equality in the distribution of goods, and to end practices that are damaging to the planet, people in rich countries (those of today and tomorrow) will need to live with less.</p>
+
+                <h3 id="history">How did we get here?</h3>
 
                 <h4>Harnessing fire</h4>
 
@@ -138,9 +189,9 @@ const Numbers = () => {
 
                 <p>    
                 It's use has dwindled in the UK, but elsewhere, including China (<a href="https://ourworldindata.org/energy/country/china?country=~CHN">57.64%</a>) it is the primary source of energy. 
-                    <span class={styles.quote}>
-                    Britain was terribly well endowed with coal: when the Revolution started, the amount of carbon sitting in coal under Britain was roughly the same as the amount sitting in oil under Saudi Arabia. <div><a href="https://www.withouthotair.com/c1/page_6.shtml">Sustainable Energy - without the hot air David JC MacKay</a></div>
-                    </span>
+                    <div class={styles.quote}>
+                        Britain was terribly well endowed with coal: when the Revolution started, the amount of carbon sitting in coal under Britain was roughly the same as the amount sitting in oil under Saudi Arabia. <div><a href="https://www.withouthotair.com/c1/page_6.shtml">Sustainable Energy - without the hot air David JC MacKay</a></div>
+                    </div>
                     In 1965 the UK was dependent on coal for 59% of its energy needs; by 2019 this had fallen to <a href="https://ourworldindata.org/energy/country/united-kingdom?country=~GBR">3.35%</a>.
                 </p>              
 
@@ -173,89 +224,19 @@ const Numbers = () => {
 
                 <h4>Electricity, not energy</h4>
 
-                <p>To date the majority of emissions reductions have been in electricity but only <a href="https://en.wikipedia.org/wiki/World_energy_consumption">20 percent</a> of the world's energy use comes from electricity. In countries where cuts to emissions have been possible, there has been little change to the energy mix in transport and industry where high density, high power, fuels are critical.</p>
-          
-                <h4>Demand side changes</h4>
+                <p>To date the majority of emissions reductions have been in electricity but only <a href="https://en.wikipedia.org/wiki/World_energy_consumption">20 percent</a> of the world's energy use comes from electricity. In countries where cuts to emissions have been possible, there has been little change to the energy mix in transport and industry where high density, high power, fuels are critical.</p>        
 
-                <p>If we cannot reduce carbon emissions from the fuels we use quickly, can we reduce demand? This divides the world into those  who enjoy an energy rich lifestyle, those who aspire to one, and those who do not yet have access to basic utilities, health, food and education.</p>
+                <h3 id="conclusion">Conclusion</h3>
 
-                <h4>Population</h4>
+                <p>History has caught up with us. The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them, and we have little time in which to overcome our addiction.</p>
 
-                <p>The population of rich, industrialised countries has increased slightly or fallen in wealthy, industrialised countries.</p>
+                <p>Which brings us back to the IPCC and their carefully constructed matrix of probabilities and uncertainties. The future is unlikely to be a clear path agreed upon by all, but a hotchpotch of competing ideas, ideals, protest, chicanery and ingenuity. The emergence of citizen's assemblies may play an important part, reflecting popular convictions that traditional, partisan politics, are unable to represent. The findings of the <a href="https://www.conventioncitoyennepourleclimat.fr/">Convention Citoyenne pour le Climat</a>, and <a href="https://www.climateassembly.uk/">Climate Assembly UK</a> have had some minor influence. The plan to <a href="https://www.theguardian.com/business/2021/apr/12/france-ban-some-domestic-flights-train-available-macron-climate-convention-mps">ban internal flights</a> in France is a watered down version of the original recommendation but it is striking. The UK government's <a href="https://www.gov.uk/government/publications/the-ten-point-plan-for-a-green-industrial-revolution">10 point plan on climate change</a> echoes sentiments echoed at the climate assembly. The <a href="https://globalassembly.org/">Global Assembly</a> has a commendably broad constituency but so far lacks an accountable executive.</p>
 
-                <p>The <a aria-label="Wikipedia article: Income and fertility" href="https://en.wikipedia.org/wiki/Income_and_fertility">correlation</a> between economic development and fertility is assumed to be either negative (fertility falls with development), or follows the J-Curve (inverse correlation followed by increased fertility but to a level below the <a href="https://en.wikipedia.org/wiki/Total_fertility_rate#Replacement_rates">replacement rate</a>).</p>
+                <p>Dates are strange numbers, their familiar format only human-friendly. <a href="https://en.wikipedia.org/wiki/Pierre-Simon_Laplace">Pierre-Simon Laplace</a>, former examiner of Napoleon at the École Militaire, was on the panel selected in 1790 to establish a <a href="https://en.wikipedia.org/wiki/History_of_the_metric_system#Implementation_in_Revolutionary_France">metric system</a>. The new system of weights and measures which unified what until then had been patchwork of regional and local measures, proved useful and durable. The <a href="https://en.wikipedia.org/wiki/French_Republican_calendar">metric calender</a> which respected neither tradition nor planetary orbits, lasted just 12 years from 1793 to 1805, except for a 19 day reprieve in 1871.</p>
 
-                <p>The global population is <a aria-label="UN Department of Economic and Social Affairs: Population Dynamics" href="https://population.un.org/wpp/Graphs/DemographicProfiles/Line/900">predicted</a> to rise to between 9.5 and 12.5 billion by the end of the century. The growth will come in poor countries which, it is assumed, will have already become, or soon become (relatively) rich. As they do so, their emissions will rise.</p>
+                <p>The IPCC sets dates, wholesome round numbers that resonate with purpose and authority, and are quite arbitrary. The roadmaps and pathways described do not bear the pastoral stamp of the First Republic, but they are are something.</p>
 
-                <p>There is no evidence to suggest the <a aria-label="Our World in Data: global population growth" href="https://ourworldindata.org/world-population-growth#how-has-world-population-growth-changed-over-time">global population</a> will not continue to grow; neither war nor pestilence has had a lasting effect. in this scenario, growth comes to an end because - for the first time in human history - every region of the world is theoretically wealthy with sufficient resources to feed and house its inhabitants. In a second scenario, population growth is halted for negative reasons, not from choice, but the planet is unable to provide for everyone, however its wealth is distributed.</p>
-
-                <p>A third scenario, avocated by some, is that we choose to limit population. There is no clear mechanism by which this can be done fairly. If we aspire to equality in the distribution of goods, and to end practices that are damaging to the planet, people in rich countries will need to modify the way they live.</p>
-
-                <p>
-                    <span class={styles.quote}>
-                    <a href="https://www.sleek-mag.com/wp-content/uploads/2019/03/jenny-holzer-protect-me-times-square.jpg">Protect me from what I want</a> (image) <a href="https://en.wikipedia.org/wiki/Jenny_Holzer">Jenny Holzer</a>
-                    </span>
-                </p>
-
-                <p>US vs Nigeria
-                    <span class={styles.quote}>
-                    Nigeria is predicted to be home to more than 1 billion people by 2100. The per capita CO2 emissions (2017) for Nigeria was <a href="https://ourworldindata.org/co2/country/nigeria#per-capita-how-much-co2-does-the-average-person-emit">.68 tonnes</a>. The figure for the US in the same year was <a href="https://ourworldindata.org/co2/country/united-states?country=~USA#per-capita-how-much-co2-does-the-average-person-emit">16.16 tonnes</a>; that is a US citizen, on average, uses almost 24 times the resources of a Nigerian.
-                    </span>
-                </p>
-
-                <h4>The state of the planet</h4>
-
-                <h4>Dates</h4>
-
-                <p>Dates are strange numbers, their familiar format only human-friendly. To make sense of them mathematically dates are calculated as the time since another time. For example, UTC or <span><a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">Coordinated Universal Time</a></span> is measured in milliseconds since January 1, 1970, 00:00:00.
-                    <span class={styles.quote}>
-                    English speakers originally proposed CUT (Coordinated Universal Time), while French speakers proposed TUC (Temps Universel Coordonné). UTC was the compromise.
-                    </span>
-                </p>
-                
-                <p>Dates weren't included in the original list, but we are fond of nailing commitments and intentions to arbitrary moments in time.</p>
-
-                <h4>Plans</h4>
-
-                <p>It is not only military campaigns that fail; many large scale projects, even <a aria-label="Harvard Businss Review report Why Good Projects Fail Anyway" href="https://hbr.org/2003/09/why-good-projects-fail-anyway">good ones</a> go over budget, run over time, or both. <a href="https://www.consultancy.uk/news/24677/most-construction-and-engineering-projects-are-unsuccessful">Two thirds of large construction and engineering projects</a>, <a href="https://pubsonline.informs.org/do/10.1287/orms.2019.06.08/full/">85% of big data projects</a>, 59% of <a href="https://bsc.cid.harvard.edu/files/bsc/files/public_policy_failure_cidwp344.pdf">World Bank</a> (PDF) projects fail <span class={styles.italic}>on either the direct ‘project and product’ performance measure or the indirect ‘problems are solved with development impact’ performance measure, or both</span>.</p>
-
-                <p>
-                    <ul class={styles.list}>
-                        <li>The goal of the <a href="https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement">Paris Agreement</a> is to limit global warming to well below 2, preferably to 1.5 degrees Celsius, compared to pre-industrial levels.</li>
-                        <li><a aria-label="Union of Concerned Scientists: 2030 or Bust?" href="https://blog.ucsusa.org/elliott-negin/2030-or-bust-what-is-the-importance-of-the-year-2030-climatewise">2030</a>, <a aria-label="The Guardian: The climate crisis in 2050" href="https://www.theguardian.com/cities/2019/oct/10/the-climate-crisis-in-2050-what-happens-if-cities-act-but-nations-dont">2050</a>, <a aria-label="NASA: Emissions Could Add 15 Inches to Sea Level by 2100" href="https://climate.nasa.gov/news/3021/emissions-could-add-15-inches-to-sea-level-by-2100-nasa-led-study-finds/">2100</a></li>
-                    </ul>
-                </p>
-
-                <h3>Numbers, not adjectives</h3>
-
-                <h3>Conclusion</h3>
-
-                <p>planet change, and species loss, are complex problems, and therefore it is as well we refer to data from many fields (<a href="https://en.wikipedia.org/wiki/Consilience">consilience</a>), and consider multiple solutions. The data reveal the problem, but not how to tackle it. The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them, and not only for luxuries like flying, but for our food, our freedom from toil, health care, access to information, and much more besides. And though some have enjoyed these benefits for more than a hundred years, others are still waiting.</p>
-
-                <p>
-                    <span class={styles.quote}>
-                    La Russie est entraînée par la fatalité! Ses destins doivent s'accomplir. Nous croirait-elle donc dégénérés? Ne serions-nous donc plus les soldats d'Austerlitz? Elle nous place entre le déshonneur et la guerre. Le choix ne saurait être douteux. Marchons donc en avant! <a aria-label="1812 La campagne de russie" href="https://www.napoleon.org/histoire-des-2-empires/chronologies/1812-la-campagne-de-russie-1-de-la-diplomatie-au-passage-du-niemen/">Napoléon</a>
-                    </span>
-                    <span class={styles.quote}>
-                    Russia is hurried away by a fatality: her destinies will be fulfilled. Does she think us degenerated? Are we no more the soldiers who fought at Austerlitz? She places us between dishonour and war — our choice cannot be difficult. <a aria-label="Wikipedia: French invasion of Russia" href="https://en.wikipedia.org/wiki/French_invasion_of_Russia#cite_note-R33ARW14-19">Napoleon</a>
-                    </span>
-                </p>
-
-                <p>
-                    <span class={styles.quote}>
-                        if everyone does a little, we’ll achieve only a little. <a href="http://www.withouthotair.com/c1/page_3.shtml">David McKay</a>
-                    </span>
-                </p>
-
-                <p>
-                    <span class={styles.quote}>
-                    Higher reliance on renewable energies may be desirable (mainly because of perceived environmental and strategic reasons) and technical advances would also make it an increasingly appealing economic choice –- but inherently low power densities of these conversions will require a new system of fuel and electricity supply that will be able to substitute for today’s dominant practices only after decades of gradual development. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a>
-                    </span>
-                </p>
-
-                <p>Which brings us back to the IPCC and their carefully constructed matrix of probabilities and uncertainties. The future is unlikely to be a clear path agreed upon by all, but a hodge-podge of competing ideas and ideals, well or ill-informed.</p>
-
-                <p>We have drawn our lines in the sand without knowing how far in the tide will come.</p>
+                <p>We have drawn our lines in the sand and must hope the tide does not obliterate them.</p>
 
             </section>
             <Links.RelatedLinks links={[{href:'facts',title:'Facts'}]}></Links.RelatedLinks>
@@ -264,26 +245,3 @@ const Numbers = () => {
 };
 
 export default Numbers;
-
-{/* The numbers <a aria-label="IPCC Special report: global warming of 1.5ºC Summary for Policymakers" href="https://www.ipcc.ch/sr15/chapter/spm/">1.5°C and 2°C</a> will be familiar to you if you are concerned about planet change. But are these the right numbers to be thinking about?  */}
-
-{/* The shift to renewables has come either from falling costs, or policy. Wind and solar can now compete with fossil fuels unsubsidised in many places. */}
-{/* Unfortunately, not only do have relatively low energy densities, they low power densities which means more land must be dedicated to their production; since we have limited space, and it is also needed to produce food, this presents a problem. */}
-
-{/* The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them. */}
-
-{/* <h4>Technology - numbers we can affect</h4>
-
-<p>There have been notable successes in replacing fossil fuels in the production of electricity, but less so for the energy sector as a whole.</p>
-
-<p>In 2019 around <a href="https://www.iea.org/reports/global-ev-outlook-2020">one percent</a> of cars were electric. </p> */}
-{/* <p>
-    <ul class={styles.list}>
-        <li>Global <a href="https://ourworldindata.org/grapher/cumulative-co2-emissions-region?stackMode=absolute">cumulative emissions</a> are around 1,610 billion tonnes of carbon dioxide (2019). This figure is increasingly annually, but may, one day, start to fall.</li>
-        <li>Human activities are estimated to have caused approximately <a aria-label="IPCC Special report: global warming OF 1.5ºC Summary for Policymakers" href="https://www.ipcc.ch/sr15/chapter/spm/">1.0°C</a> of global warming above pre-industrial levels.</li>
-        <li><a href="https://en.wikipedia.org/wiki/World_energy_consumption">~20%</a> of the world's energy is in the form of electricity.</li>
-        <li><a href="https://www.iea.org/reports/global-ev-outlook-2020">~1%</a> of cars are electric (2019).</li>
-        <li><a href="https://ourworldindata.org/energy-access#access-to-electricity">13% of the world do not have access to electricity.</a></li>
-        <li><a href="https://ourworldindata.org/energy-access#access-to-clean-fuels-for-cooking">40% of the world do not have access to clean fuels for cooking.</a></li>
-    </ul>
-</p> */}

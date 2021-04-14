@@ -21,7 +21,7 @@ const Facts = () => {
                 <h3 id="carbon">Carbon & CO2</h3>
 
                 <p>
-                Emissions values are usually given in tonnes of carbon dioxide, but occasionally a value is given in tonnes of carbon (the giveaway is that the value looks surprisingly small).
+                Emission values are usually given in tonnes of carbon dioxide, but occasionally a value is given in tonnes of carbon (the giveaway is that the value looks surprisingly small).
 
                 To convert a mass of carbon to carbon dioxide multiple by 3.67.
                 </p>
@@ -69,7 +69,7 @@ const Facts = () => {
 
                 <h3 id="human_time">Human time</h3>
 
-                <p>A rough, and disbuted timeline of <a href="https://en.wikipedia.org/wiki/Timeline_of_human_evolution">human evolution</a>.</p>
+                <p>A rough, and disputed timeline of <a href="https://en.wikipedia.org/wiki/Timeline_of_human_evolution">human evolution</a>.</p>
 
                  <Tables.Humans></Tables.Humans>
 
@@ -79,7 +79,7 @@ const Facts = () => {
                     The IPCC calculates the rise in the global mean surface temperature (GMST) from the beginning of large-scale industrial activity.
                     Their <a aria-label="IPCC Annex: Glossary" href="https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_AnnexI_Glossary.pdf">reference period</a> (PDF) is 1850-1900.
                     <div>
-                        Industrialisation had begun before this date, primarily in England (<a href="https://ourworldindata.org/contributed-most-global-co2">78% of gobal emissions</a>). 
+                        Industrialisation had begun before this date, primarily in England (<a href="https://ourworldindata.org/contributed-most-global-co2">78% of global emissions</a>). 
                         
                         Dates for the Industrial Revolution in Europe and the United States are typically given as starting in 1760, and ending in 1820, or 1840, but emissions were low by comparison to today, just <a aria-label="Our World in Data report on historical CO2 emission" href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">4.96 billion tonnes</a>, and were localised. Prior to this period humans had been burning wood, coal, and clearing land, but emissions were comparatively insignificant.
                         
@@ -115,6 +115,19 @@ const Facts = () => {
                 <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
                 <div><a href="https://www.drexel.edu/~/media/Files/greatworks/pdf_sum10/WK8_Layton_EnergyDensities.ashx">A comparison of energy densities of prevalent energy sources in units of joules per cubic meter | Bradley E. Layton Drexel University</a></div>
                 <div><a href="https://en.wikipedia.org/wiki/Comparison_of_commercial_battery_types">Wikipedia | Comparison of commercial battery types</a></div>
+
+                <h4>Power density</h4>
+
+                <Tables.PowerDensities></Tables.PowerDensities>                
+
+                <div>*<a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a></div>
+                <div>+<a href="https://www.sciencedirect.com/science/article/pii/S0301421518305512">The spatial extent of renewable and non-renewable power generation John van Zalk, Paul Behrens</a></div>
+
+                <h4>Fuel emissions</h4>
+
+                <Tables.FuelEmissions></Tables.FuelEmissions>
+
+                <div><a href="https://www.volker-quaschning.de/datserv/CO2-spez/index_e.php">Volker Quaschning</a></div>
 
                 <h4>Horsepower</h4>
 
@@ -152,30 +165,17 @@ const Facts = () => {
                     </div>
                 </p>
 
-                <h4>Power density</h4>
-
-                These figures are from 2010 but although the values for pvs and wind have improved, the relative values are unchanged.
-
-                <Tables.PowerDensities></Tables.PowerDensities>                
-
-                <div>Source: <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
-
-                <h4>Fuel emissions</h4>
-
-                <Tables.FuelEmissions></Tables.FuelEmissions>
-
-                <div><a href="https://www.volker-quaschning.de/datserv/CO2-spez/index_e.php">Volker Quaschning</a></div>
-
                 <h3>Photosynthesis</h3>
 
                 <p>
                     <span class={styles.quote}>
-                    Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a>
+                    Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation.
+                    <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a></div>
                     </span>
                 </p>
 
 
-                <h3>Ocean acidification</h3>
+                {/* <h3>Ocean acidification</h3> */}
 
             </section>
         </Layout>

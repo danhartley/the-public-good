@@ -70,6 +70,77 @@ const Energy = () => {
 
                 <p>This article owes a debt to David McKay and his book, <a href="http://www.withouthotair.com/" aria-label="Online version of Sustainable Energy - Without the Hot Air">Sustainable Energy - Without the Hot Air</a>.</p>
 
+                // This is relevant if we are considering whether biofuels are a wise investment.
+
+{/* The numbers <a aria-label="IPCC Special report: global warming of 1.5ºC Summary for Policymakers" href="https://www.ipcc.ch/sr15/chapter/spm/">1.5°C and 2°C</a> will be familiar to you if you are concerned about planet change. But are these the right numbers to be thinking about?  */}
+
+{/* The shift to renewables has come either from falling costs, or policy. Wind and solar can now compete with fossil fuels unsubsidised in many places. */}
+
+
+{/*
+
+<p>There have been notable successes in replacing fossil fuels in the production of electricity, but less so for the energy sector as a whole.</p>
+
+<p>In 2019 around <a href="https://www.iea.org/reports/global-ev-outlook-2020">one percent</a> of cars were electric. </p> */}
+{/* <p>
+    <ul class={styles.list}>
+        <li>Global <a href="https://ourworldindata.org/grapher/cumulative-co2-emissions-region?stackMode=absolute">cumulative emissions</a> are around 1,610 billion tonnes of carbon dioxide (2019). This figure is increasingly annually, but may, one day, start to fall.</li>
+        <li>Human activities are estimated to have caused approximately <a aria-label="IPCC Special report: global warming OF 1.5ºC Summary for Policymakers" href="https://www.ipcc.ch/sr15/chapter/spm/">1.0°C</a> of global warming above pre-industrial levels.</li>
+        <li><a href="https://en.wikipedia.org/wiki/World_energy_consumption">~20%</a> of the world's energy is in the form of electricity.</li>
+        <li><a href="https://www.iea.org/reports/global-ev-outlook-2020">~1%</a> of cars are electric (2019).</li>
+        <li><a href="https://ourworldindata.org/energy-access#access-to-electricity">13% of the world do not have access to electricity.</a></li>
+        <li><a href="https://ourworldindata.org/energy-access#access-to-clean-fuels-for-cooking">40% of the world do not have access to clean fuels for cooking.</a></li>
+    </ul>
+</p> */}
+
+{/* <p>
+    <span class={styles.quote}>
+    La Russie est entraînée par la fatalité! Ses destins doivent s'accomplir. Nous croirait-elle donc dégénérés? Ne serions-nous donc plus les soldats d'Austerlitz? Elle nous place entre le déshonneur et la guerre. Le choix ne saurait être douteux. Marchons donc en avant! <a aria-label="1812 La campagne de russie" href="https://www.napoleon.org/histoire-des-2-empires/chronologies/1812-la-campagne-de-russie-1-de-la-diplomatie-au-passage-du-niemen/">Napoléon</a>
+    </span>
+    <span class={styles.quote}>
+    Russia is hurried away by a fatality: her destinies will be fulfilled. Does she think us degenerated? Are we no more the soldiers who fought at Austerlitz? She places us between dishonour and war — our choice cannot be difficult. <a aria-label="Wikipedia: French invasion of Russia" href="https://en.wikipedia.org/wiki/French_invasion_of_Russia#cite_note-R33ARW14-19">Napoleon</a>
+    </span>
+</p> */}
+
+{/* <p>
+    <span class={styles.quote}>
+        if everyone does a little, we’ll achieve only a little. <a href="http://www.withouthotair.com/c1/page_3.shtml">David McKay</a>
+    </span>
+</p> */}
+
+{/* <p>
+    <span class={styles.quote}>
+    Higher reliance on renewable energies may be desirable (mainly because of perceived environmental and strategic reasons) and technical advances would also make it an increasingly appealing economic choice –- but inherently low power densities of these conversions will require a new system of fuel and electricity supply that will be able to substitute for today’s dominant practices only after decades of gradual development. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a>
+    </span>
+</p> */}
+
+{/* <h4>Plans</h4>
+
+<p>It is not only military campaigns that fail; many large scale projects, even <a aria-label="Harvard Businss Review report Why Good Projects Fail Anyway" href="https://hbr.org/2003/09/why-good-projects-fail-anyway">good ones</a> go over budget, run over time, or both. <a href="https://www.consultancy.uk/news/24677/most-construction-and-engineering-projects-are-unsuccessful">Two thirds of large construction and engineering projects</a>, <a href="https://pubsonline.informs.org/do/10.1287/orms.2019.06.08/full/">85% of big data projects</a>, 59% of <a href="https://bsc.cid.harvard.edu/files/bsc/files/public_policy_failure_cidwp344.pdf">World Bank</a> (PDF) projects fail <span class={styles.italic}>on either the direct ‘project and product’ performance measure or the indirect ‘problems are solved with development impact’ performance measure, or both</span>.</p>
+
+<p>
+    <ul class={styles.list}>
+        <li>The goal of the <a href="https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement">Paris Agreement</a> is to limit global warming to well below 2, preferably to 1.5 degrees Celsius, compared to pre-industrial levels.</li>
+        <li><a aria-label="Union of Concerned Scientists: 2030 or Bust?" href="https://blog.ucsusa.org/elliott-negin/2030-or-bust-what-is-the-importance-of-the-year-2030-climatewise">2030</a>, <a aria-label="The Guardian: The climate crisis in 2050" href="https://www.theguardian.com/cities/2019/oct/10/the-climate-crisis-in-2050-what-happens-if-cities-act-but-nations-dont">2050</a>, <a aria-label="NASA: Emissions Could Add 15 Inches to Sea Level by 2100" href="https://climate.nasa.gov/news/3021/emissions-could-add-15-inches-to-sea-level-by-2100-nasa-led-study-finds/">2100</a></li>
+    </ul>
+</p> */}
+
+{/* <h4>Dates</h4>
+
+<p>Dates are strange numbers, their familiar format only human-friendly. To make sense of them mathematically dates are calculated as the time since another time. For example, UTC or <span><a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">Coordinated Universal Time</a></span> is measured in milliseconds since January 1, 1970, 00:00:00.
+    <span class={styles.quote}>
+    English speakers originally proposed CUT (Coordinated Universal Time), while French speakers proposed TUC (Temps Universel Coordonné). UTC was the compromise.
+    </span>
+</p>
+
+<p>Dates weren't included in the original list, but we are fond of nailing commitments and intentions to arbitrary moments in time.</p> */}
+
+{/* <p>
+<span class={styles.quote}>
+<a href="https://www.sleek-mag.com/wp-content/uploads/2019/03/jenny-holzer-protect-me-times-square.jpg">Protect me from what I want</a> (image) <a href="https://en.wikipedia.org/wiki/Jenny_Holzer">Jenny Holzer</a>
+</span>
+</p> */}
+
             </section>
             <Links.RelatedLinks links={[{href:'facts',title:'Numbers'}]}></Links.RelatedLinks>
         </Layout>
