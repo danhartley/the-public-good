@@ -11,10 +11,12 @@ const Change = () => {
 
                 <h2>A hundred indecisions</h2>
 
-                <div class={styles.bang}><a href="#background">Background</a><span class={styles.italic}> 3 minutes</span></div>
-                <div class={styles.bang}><a href="#energy">Energy</a><span class={styles.italic}> 6 minutes</span></div>
-                <div class={styles.bang}><a href="#conclusion">Conclusion</a><span class={styles.italic}> 1 minute</span></div>
-                <div class={styles.bang}><a href="#appendix">Appendix: How did we get here?</a><span class={styles.italic}> 4 minutes</span></div>
+                <div>
+                    <div class={styles.bang}><a href="#background">Background</a><span class={styles.italic}> 3 minutes</span></div>
+                    <div class={styles.bang}><a href="#energy">Energy</a><span class={styles.italic}> 6 minutes</span></div>
+                    <div class={styles.bang}><a href="#conclusion">Conclusion</a><span class={styles.italic}> 1 minute</span></div>
+                    <div class={styles.bang}><a href="#appendix">Appendix: How did we get here?</a><span class={styles.italic}> 4 minutes</span></div>
+                </div>
 
                 <h3 id="background">Background</h3>
 

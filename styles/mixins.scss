@@ -34,7 +34,9 @@
     }
     div {
         line-height: 1.8;
-        padding: .25rem 0;
+        div {
+            padding: .25rem 0;
+        }
     }
     ul, p {
         &:last-child {
@@ -161,7 +163,7 @@
             font-size: 1rem;
         }
         @include externalLink();
-        margin: .5rem 0;
+        margin: .75rem 0;
         div {
             margin: .5rem 0;            
         }
@@ -215,6 +217,9 @@
 }
 
 .menu {
+    div {
+        padding: .25rem 0;
+    }
     column-count: 2;
     @media (min-width: 414px) {
         column-count: 3;
