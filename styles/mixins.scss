@@ -214,8 +214,11 @@
 }
 
 .menu {
-    column-count: 3;
+    column-count: 2;
     @media (min-width: 414px) {
+        column-count: 3;
+    }
+    @media (min-width: 601px) {
         column-count: 4;
     }
     span {
