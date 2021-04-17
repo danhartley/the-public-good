@@ -102,6 +102,12 @@
         color: rgba(var(--l-v), .8);
         border-bottom: 1px solid rgba(var(--l-v), .8);
     }
+    @media print { 
+        a {
+            border-bottom: none;
+            color: initial;
+        }
+    }
 }
 
 @mixin internalLink() {
