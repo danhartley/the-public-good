@@ -64,6 +64,7 @@ const Layout = ({
                 <meta name="description" property="og:description" content="The Public Good"></meta>
                 <meta name="author" content="Daniel Hartley"></meta>
                 <meta name="release" content={new Date().toDateString()}></meta>
+                <meta name="google-site-verification" content="lt3oOwZJMgC0jpfStGVplPtKRMvoiNjVQyq5Mhkgeew" />
                 
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="manifest" href="/manifest.json" />
