@@ -7,16 +7,25 @@ const CarbonFootprint = () => {
     return (
         <Layout title="Carbon Footprint" description={'Carbon Footprint'}>
             <section class={styles.card}>
-                <h2>Carbon footprint</h2>                      
+                <h2>Carbon footprint</h2>
 
-                <p>
+                <div>
+                    <div class={styles.bang}><a href="#individualActs">Individual Acts</a></div>
+                    <div class={styles.bang}><a href="#calculators">Available calculators</a></div>
+                    <div class={styles.bang}><a href="#comparison">Comparison of selected calculators</a></div>
+                    <div class={styles.bang}><a href="#conclusion">Conclusion</a></div>
+                </div>               
+
+                {/* <p>
                     This article is a 10 minute read. Jump to a discussion on <a class={styles.bang} href="#individualActs">Individual acts</a>, a list of <a class={styles.bang} href="#calculators">Carbon footprint calculators</a>, a <a class={styles.bang} href="#comparison">Comparison</a> of calculators, or the <a class={styles.bang} href="#conclusion">Conclusion</a>.
-                </p>
+                </p> */}      
+
+                <h4>Definition</h4>          
 
                 <p>
                     <div class={styles.quote}>
                         <div>The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a></div>                    
-                        <div>If everyone leaves their mobile phone charger plugged in, those chargers will use one quarter of one percent of their homes’ electricity. <a href="https://www.withouthotair.com/c19/page_114.shtml">Sustainable Energy - without the hot air David MacKay</a></div>
+                        {/* <div>If everyone leaves their mobile phone charger plugged in, those chargers will use one quarter of one percent of their homes’ electricity. <a href="https://www.withouthotair.com/c19/page_114.shtml">Sustainable Energy - without the hot air David MacKay</a></div> */}
                     </div>
                 </p>
 
@@ -137,7 +146,7 @@ const CarbonFootprint = () => {
                     </div>
                     <div>
                     <p class={styles.italic}>
-                        <div>A <a aria-label="Carbon Footprint of Nations: A Global, Trade-Linked Analysis" href="https://pubs.acs.org/doi/10.1021/es803496a#">paper</a> from 2009, puts the domestic share of emissions at 80%, the world average at 73%, and most European countries in the 60s. (Ed. <span class={styles.published}>{new Date('Mon 29 March 2021').toDateString()}</span>)</div>
+                        <div>A <a aria-label="Carbon Footprint of Nations: A Global, Trade-Linked Analysis" href="https://pubs.acs.org/doi/10.1021/es803496a#">paper</a> from 2009, puts the domestic share of emissions at 80%, the world average at 73%, and most European countries in the 60s. (Ed. {new Date('Mon 29 March 2021').toDateString()})</div>
                     </p>
                     </div>
                 </p>
