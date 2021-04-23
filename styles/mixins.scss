@@ -59,14 +59,24 @@
         margin: .5rem 0 1.5rem 0;
         padding: 0 2rem;
         font-size: .8em;
-        line-height: 1.8;
         display: block;
         & div {
             margin: .5rem 0;
         }
     }
     .inset {
-        font-size: .9rem;
+        padding: 0 2rem;
+        margin: 0.1 0;
+        font-size: 1rem;        
+        & div {
+            margin: .5rem 0;
+            line-height: 1.5;
+        }
+        & > span {
+            margin: .5rem 0;
+            line-height: 1.2;
+            display: block;
+        }
     }
     .italic {
         font-style: italic;
@@ -75,11 +85,26 @@
         font-size: .8rem;
         vertical-align: super;
     }
+    .sub {
+        font-size: .8rem;
+        vertical-align: sub;
+    }
     .bang {
         @include internalLink();
     }
     .small {
         font-size: .9rem;
+    }
+    .bold {
+        font-weight: var(--il-fw);
+    }
+    .centred {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            border: none;
+        }
     }
 }
 

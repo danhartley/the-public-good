@@ -1,0 +1,39 @@
+@import 'styles/mixins.scss';
+
+.btn {
+    border: none;
+    background-color: initial;
+    font-size: initial;
+    color: inherit;
+    cursor: pointer;
+    span {
+        pointer-events: none;
+        display: inline-block;
+    }
+    .up {
+        &:first-child:after {
+            content: '\002B';            
+            font-size: 1.4em;
+            margin-right: 1rem;
+            vertical-align: middle;
+        }
+    }    
+    .down {
+        &:first-child::after {
+            content: '\2212';
+            font-size: 1.4em;
+            margin-right: 1rem;
+            vertical-align: middle;
+        }
+    }
+    &:focus { 
+        outline: none;
+    }
+}
+
+.show {
+    display: initial;
+}
+.hide {
+    display: none;
+}

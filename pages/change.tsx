@@ -118,7 +118,7 @@ const Change = () => {
 
                 <p>Renewables, also have low <a href="https://energyeducation.ca/encyclopedia/Energy_vs_power">power</a> densities meaning they require more space. This presents a dilemma when planning to transition to them. The obvious choice would be to reason that change takes time; the shift from wood to coal and the shift from coal to oil and gas were local, often ad hoc, and remain incomplete, many years since the changeover to alternatives began.</p>
 
-                <Tables.PowerDensities></Tables.PowerDensities>                
+                <Tables.PowerDensities></Tables.PowerDensities>            
 
                 <div>
                     <div><span>*</span><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a></div>

@@ -22,14 +22,14 @@
 
 .dark {
     color:rgba(var(--fg), 1);    
-    &:after {
+    &::after {
         content: "\25D0";    
     }
 }
 
 .light {
     color:rgba(var(--fg), 1);
-    &:after {
+    &::after {
         content: "\25D1";
     }
 }
