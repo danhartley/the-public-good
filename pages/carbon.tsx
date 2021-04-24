@@ -44,7 +44,7 @@ const Carbon = () => {
             <section class={styles.card}>
                 <h2>Carbon</h2>
 
-                <p>
+                <Accordion header="Carbon properties">
                     <div class={styles.inset}>
                         <span>Symbol <span class={styles.bold}>C</span></span>
                         <span>Atomic number <span class={styles.bold}>6</span></span>
@@ -54,7 +54,7 @@ const Carbon = () => {
                         <span>By mass fourth <span><a href="https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements"> most abundant</a></span> element in the universe.</span>
                         <div><span><a href="https://pubchem.ncbi.nlm.nih.gov/element/Carbon">National Center for Biotechnology Information</a></span></div>
                     </div>
-                </p>
+                </Accordion>
 
                 <h3>The origins and properties of carbon</h3>
 
@@ -151,7 +151,7 @@ const Carbon = () => {
 
                 <p>By burning that coal, and other fossil fuels, we have begun to change the climate, and because the change is rapid, many species have not, and will not adapt.</p>
 
-                <h4>Carbon dioxide</h4>
+                <h4>Carbon emissions and reserves</h4>
 
                 <p>Cumulative <span><a href="https://ourworldindata.org/co2-emissions">emissions</a></span> of carbon dioxide to date are ~1.5 trillion tonnes.
                     <div class={styles.quote}>
@@ -161,15 +161,19 @@ const Carbon = () => {
                     </div>
                 </p>
 
-                <h4>The isotopic fingerprint</h4>
+                <h4>The isotopic signature of anthropogenic warming</h4>
 
-                <p>How do we know the extra carbon dioxide in the atmosphere is caused by burning fossil fuels?</p>
-                
-                <p>A relative decline in the amount of heavy carbon-13 isotopes in the atmosphere points to fossil fuel sources. Burning fossil fuels also depletes oxygen and lowers the ratio of oxygen to nitrogen in the atmosphere.</p>
+                <p>Isotopes are variants of a chemical elment which differ in their number of neutrons. Carbon has 3 isotopes, carbon-12, carbon-13 and carbon-14.</p>
 
-                {/* https://www.esrl.noaa.gov/gmd/ccgg/isotopes/c14tracer.html */}
+                <h5>How do we know the extra carbon dioxide in the atmosphere is caused by burning fossil fuels?</h5>
+
+                <p>Plants absorb less (heavy) carbon-13 from the atmosphere than (light) carbon-12, and also favour carbon-12 for photosynthesis.</p>
+
+                <p>Therefore when we burn fossil fuels we are releasing carbon that has relatively less carbon-13. This difference can be detected by measuring the relative ratio of carbon isotopes in the atmosphere. The isotopic signature confirms the man-made orgin of current climate change.</p>
+
+                <p>NASA has been monitoring the natural carbon cycle using satellites for some time including <span><a href="https://ocov2.jpl.nasa.gov/">Orbiting Carbon Observatory-2</a></span> and <span><a href="https://ocov3.jpl.nasa.gov/">Orbiting Carbon Observatory-3</a>. Around 2025 they will launch Copernicus CO2 Mission, the first operational carbon dioxide monitoring satellite constellation, focused on monitoring human-produced emissions.</span></p>
                 
-                <Accordion header="Covalent bonds between carbon and oxygen">
+                {/* <Accordion header="Covalent bonds between carbon and oxygen">
                 <p>In diamond the bonds are between carbon atoms (carbon-carbon, or C-C). In each molecule of carbon dioxide, two bonds are formed between carbon and oxygen (carbon-oxygen C-O).</p>
                     <div class={styles.quote}>
                         <div>Atoms have orbitals, or shells, that contain electrons. Only electrons in the outer (valence) shell are involved in bonds with other atoms.</div>
@@ -180,7 +184,7 @@ const Carbon = () => {
                         <div><a href="https://en.wikipedia.org/wiki/Carbon_dioxide">Carbon dioxide Wikipedia</a></div>
                     </div>
                 </Accordion>                    
-            
+             */}
             </section>
             <section class={styles.card}>
                 <h2>External Links</h2>
