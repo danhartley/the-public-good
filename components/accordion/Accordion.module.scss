@@ -6,6 +6,9 @@
     font-size: initial;
     color: inherit;
     cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
     span {
         pointer-events: none;
         display: inline-block;
@@ -14,16 +17,14 @@
         &:first-child:after {
             content: '\002B';            
             font-size: 1.4em;
-            margin-right: 1rem;
-            vertical-align: middle;
+            margin-right: .5rem;
         }
     }    
     .down {
         &:first-child::after {
             content: '\2212';
             font-size: 1.4em;
-            margin-right: 1rem;
-            vertical-align: middle;
+            margin-right: .5rem;
         }
     }
     &:focus { 

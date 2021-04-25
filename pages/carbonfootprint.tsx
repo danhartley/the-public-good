@@ -16,16 +16,11 @@ const CarbonFootprint = () => {
                     <div class={styles.bang}><a href="#conclusion">Conclusion</a></div>
                 </div>               
 
-                {/* <p>
-                    This article is a 10 minute read. Jump to a discussion on <a class={styles.bang} href="#individualActs">Individual acts</a>, a list of <a class={styles.bang} href="#calculators">Carbon footprint calculators</a>, a <a class={styles.bang} href="#comparison">Comparison</a> of calculators, or the <a class={styles.bang} href="#conclusion">Conclusion</a>.
-                </p> */}      
-
                 <h4>Definition</h4>          
 
                 <p>
                     <div class={styles.quote}>
                         <div>The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a></div>                    
-                        {/* <div>If everyone leaves their mobile phone charger plugged in, those chargers will use one quarter of one percent of their homes’ electricity. <a href="https://www.withouthotair.com/c19/page_114.shtml">Sustainable Energy - without the hot air David MacKay</a></div> */}
                     </div>
                 </p>
 
@@ -244,7 +239,9 @@ const CarbonFootprint = () => {
                 <p>Footprints would be improved by making the implicit cost of services explicit. This intrinsic, background value for a society is the floor below which individual action cannot take us, and which can only be breached by direct, participatory action that brings about policy change.</p>
 
                 <p>
-                    <a class={styles.bang} href="#top">Top</a>
+                    <div class={styles.small}>
+                        <a class={styles.bang} href="#top">Top</a>
+                    </div>
                 </p>
 
                 </section>
@@ -263,8 +260,8 @@ const CarbonFootprint = () => {
                     </span>
                     This is explained by the 'bunker fuels', or 'International transport', that is emissions for which no one has taken credit.
 
-                    <div>
-                        <a class={styles.inset} href="#data">Return to current emissions</a>
+                    <div class={styles.small}>
+                        <a href="#data">Return to current emissions</a>
                     </div>
                 </p>
             </section>
@@ -287,10 +284,12 @@ const CarbonFootprint = () => {
                         <li>10 kilometres per week train</li>
                         <li>4 hours flying per year</li>
                     </ul>
-                    <div>
-                        <a class={styles.inset} href="#table">Return to emissions table</a>
-                    </div>
+                    <span class={styles.small}>
+                        <a href="#table">Return to emissions table</a>
+                    </span>
                 </p>
+            </section>
+            <section class={styles.card}>
                 <p>
                     <span class={styles.published}>Published: {new Date('Sat 27 March 2021').toDateString()}</span>
                     <span class={styles.published}>Edited: {new Date('Mon 29 March 2021').toDateString()}</span>
@@ -298,7 +297,7 @@ const CarbonFootprint = () => {
                     <span class={styles.published}>Edited: Added David MacKay quote {new Date('Tues 6 April 2021').toDateString()}</span>
                 </p>
             </section>
-            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability testing'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability testing'}, {href:'carbon',title:'Carbon primer'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
