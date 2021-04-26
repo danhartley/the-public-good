@@ -12,7 +12,8 @@ let ts = 0, dbs = 0;
 const Layout = ({
   children,
   title = 'The Public Good',
-  description = 'The Public Good'
+  description = 'The Public Good',
+  image = 'https://live.staticflickr.com/65535/51087492836_0a43c2690e_n_d.jpg'
 }) => {
     
     const { mode, toggleMode } = useContext(ModeContext);
@@ -59,9 +60,8 @@ const Layout = ({
                 <meta name="mobile-web-app-capable" content="yes"></meta>
                 <meta name="apple-mobile-web-app-capable" content="yes"></meta>
                 <meta name="color-scheme" content="dark light"></meta>
-                <meta name="description" content={description}></meta>
-                <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51087492836_0a43c2690e_n_d.jpg"></meta>
-                <meta name="description" property="og:description" content="The Public Good"></meta>
+                <meta name="image" property="og:image" content={image}></meta>
+                <meta name="description" property="og:description" content={description}></meta>
                 <meta name="author" content="Daniel Hartley"></meta>
                 <meta name="release" content={new Date().toDateString()}></meta>
                 <meta name="google-site-verification" content="lt3oOwZJMgC0jpfStGVplPtKRMvoiNjVQyq5Mhkgeew" />
