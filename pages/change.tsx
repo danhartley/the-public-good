@@ -6,7 +6,7 @@ import styles from 'pages/pages.module.scss';
 
 const Change = () => {
     return (
-        <Layout title="Change" description={'Change'}>
+        <Layout title="Change" description={'A hundred indecisions'}>
             <section class={styles.card}>
 
                 <h2>A hundred indecisions</h2>
