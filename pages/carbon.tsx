@@ -120,8 +120,8 @@ const Carbon = () => {
 
                 <p>
                     <div class={styles.inset}>
-                        <span>CH<span class={styles.sub}>4</span> - methane and C<span class={styles.sub}>8</span>H<span class={styles.sub}>18</span> - octane are the ideal chemical formulae of pure hydrocarbons. </span>
-                        <span>Naturally occurring, unrefined fossil fuels, however, contain impurities which are released when they are burnt. These include oxygen - O, nitrogen - N and sulfur - S.</span>
+                        <span>C<span class={styles.sub}>4</span>H<span class={styles.sub}>10</span> - butane and C<span class={styles.sub}>8</span>H<span class={styles.sub}>18</span> - octane are pure hydrocarbons. Petrol is a mixture of many hydrocarbons.</span>
+                        <span>Naturally occurring, unrefined fossil fuels, such as crude oil and coal, contain impurities which are released when they are burnt. Coal, for example, is of variable quality, with higher grade forms (anthracite) having a higher ratio of carbon to other elements, including oxygen - O, nitrogen - N and sulfur - S.</span>
                         <span>Low grade <span class={styles.bold}>bituminous</span> coal has the formula <span class={styles.bold}>C<span class={styles.sub}>137</span>H<span class={styles.sub}>97</span>O<span class={styles.sub}>9</span>NS</span>.</span>
                         <span>High grade <span class={styles.bold}>anthracite</span> has the formula <span class={styles.bold}>C<span class={styles.sub}>240</span>H<span class={styles.sub}>99</span>O<span class={styles.sub}>4</span>NS</span>.</span>
                     </div>
@@ -152,7 +152,7 @@ const Carbon = () => {
 
                 <h4>The Carbon Cycle</h4>
 
-                <p>The carbon cycle regulates the flow of carbon through the earth and the atmosphere. How much carbon is in what part of the atmosphere affects temperature which alters conditions on earth to which all life must adapt.</p>
+                <p>The carbon cycle regulates the flow of carbon through the earth and the atmosphere. The distribution of carbon throughout the cycle affects temperature which alters conditions on earth to which all life must adapt.</p>
 
                 <p>The temperature of the seas and the land has varied widely over geologic time. The main driver for the climate is the energy reaching us from the sun, a figure which varies according to the earth's orbit and the state of the sun itself. Temperature is also affected by random events such as meteor strikes and volcanic eruptions.</p>
 
@@ -184,7 +184,7 @@ const Carbon = () => {
 
                 <p>Therefore when we burn fossil fuels we are releasing carbon that has relatively less carbon-13. This difference can be detected by measuring the relative ratio of carbon isotopes in the atmosphere. The isotopic signature confirms the man-made origin of current climate change.</p>
 
-                <p>NASA has been monitoring the natural carbon cycle using satellites for some time including <span><a href="https://ocov2.jpl.nasa.gov/">Orbiting Carbon Observatory-2</a></span> and <span><a href="https://ocov3.jpl.nasa.gov/">Orbiting Carbon Observatory-3</a>. Around 2025 they will launch Copernicus CO2 Mission, the first operational carbon dioxide monitoring satellite constellation, focused on monitoring human-produced emissions.</span></p>
+                <p>NASA has been monitoring the natural carbon cycle using satellites for some time including <span><a href="https://ocov2.jpl.nasa.gov/">Orbiting Carbon Observatory-2</a></span> and <span><a href="https://ocov3.jpl.nasa.gov/">Orbiting Carbon Observatory-3</a>. Around 2025 they will launch the Copernicus CO2 Mission, the first operational carbon dioxide monitoring satellite constellation, focused on monitoring human-produced emissions.</span></p>
                 
                 <h4>They seek him here, they seek him there</h4>
 
