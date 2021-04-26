@@ -40,7 +40,8 @@ const externalLinks = [
 
 const Carbon = () => {
     return (
-        <Layout title="Carbon" description={'The ties that bind'} image='https://live.staticflickr.com/65535/51139754738_8f40f490e9_z.jpg'>
+        <Layout title="Carbon" description={'The ties that bind'} image='https://live.staticflickr.com/65535/51139806123_992c84960d_k.jpg'>
+        {/* <Layout title="Carbon" description={'The ties that bind'} image='https://live.staticflickr.com/65535/51139754738_8f40f490e9_z.jpg'> */}
             <section class={styles.card}>
                 <h2>Carbon - the ties that bind</h2>
 
