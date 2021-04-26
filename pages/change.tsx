@@ -131,7 +131,7 @@ const Change = () => {
                 
                 <p>Fossil fuels are the incumbent energy source, and if we are to replace them, it will entail adapting, extending and replacing existing infrastructure using more land at great cost both financially and materially. There may be, however, gains that quickly override these costs, to health, wealth, and societal well-being.</p>
 
-                <p>Do we also need to make a case for change that involves disruption, cost and possibly further injustice, one that favours the future over the present? If we think it appropriate to force sudden change, the consequences may be painful, and the burden of cost may fall unfairly.</p>
+                <p>Do we also need to make a case for change that involves disruption, cost and possibly further injustice, one that favours the future over the present? If we think it appropriate to force sudden change, the consequences may be painful, and the burden of cost fall unfairly.</p>
 
                 <h4>Unusual practices</h4>
 
@@ -139,7 +139,7 @@ const Change = () => {
                     
                 <p>Historically, we can expect change to be unpredictable, jagged and with effects that are unequally distributed. A counter argument can be made that unprecedented action is required, and that more equality will help us to make the right decisions, for by accounting for everyone, on equal terms, rich and powerful countries will no longer be able to export their responsibility, or turn a blind eye to the effects of consumption which are realised elsewhere, and thereby come to accept solutions for living that are balanced and manageable over time.</p>
                 
-                <p>All other life on the planet has reason to see our species as a single, homogenous threat, and may regard our internecine problems as irrelevant when faced with their own unprecedented extinction. As a species we have done nothing for the planet, but it is possible that one day intelligent, disruptive humanity may prove its worth by preventing, for example, an asteroid from hitting the earth.</p>
+                <p>All other life on the planet has reason to see our species as a single, homogenous threat, and may regard our internecine problems as irrelevant when faced with their own unprecedented extinction. As a species we have done nothing for the planet, but it is possible that one day intelligent, disruptive humanity may prove its worth by, for example, preventing an asteroid from hitting the earth.</p>
 
                 <h4>Time's up</h4>
 
@@ -270,7 +270,7 @@ const Change = () => {
 
 
             </section>
-            <Links.RelatedLinks links={[{href:'facts',title:'Facts'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'carbon',title:'Carbon primer'}, {href:'facts',title:'Facts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
