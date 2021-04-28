@@ -78,7 +78,7 @@ const Layout = ({
                             </a>
                         </Link>
                         <p class={styles.description}>
-                            <span>I make websites with small footprints.</span>
+                            <span>This website will not empower you.</span>
                             <button aria-label="Toggle the website colour scheme: between light and dark" class={styles.mode} ref={btnMode} onClick={() => toggleMode()}>{mode.isDark ? <span class={styles.light}></span> : <span class={styles.dark}></span>}</button>
                         </p>
                     </header>
