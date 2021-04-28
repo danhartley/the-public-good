@@ -190,11 +190,11 @@ const Carbon = () => {
 
                 <p>Carbon is everywhere, including our own bodies where it is the second most abundant element (18%) after oxygen (65%). For a couple of hundred years we have benefited from chemical reactions irreversible in time scales appropriate to our species; the combustion of organic compounds, especially hydrocarbons, to release energy stored over unimaginably vast periods of time, is the foundation of our modern civilisations.</p>
 
-                <p>Will we enjoy an equally profitable relationship with hydrogen?</p>
+                <p>Will we enjoy an equally profitable relationship with <Links.InternalLink link={{'value': 'hydrogen', 'text': 'hydrogen'}}></Links.InternalLink>?</p>
 
             </section>
             <section class={styles.card}>
-                <h2>External Links</h2>
+                <h3>External Links</h3>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
             <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'carbonfootprint',title:'Carbon footprint'}]}></Links.RelatedLinks>
