@@ -82,7 +82,7 @@ const Hydrogen = () => {
                 </p>
 
                 <p>
-                    <div>These bonds in these compounds are polar. In a molecule of water, for example, the shared electrons spend more time near the (more electronegative) oxygen atom, which therefore takes on a partial negative charge. The hydrogen end of the molecule, where the electron spends less time, takes on a partial positive charge. Molecules of water position themselves in response to these partial charges; the hydrogen of one molecule being attracted to the oxygen of another (unlike charges attract), to form a <span class={styles.bold}>hydrogen bond</span>.</div>
+                    <div>The bonds in these compounds are polar. In a molecule of water, for example, the shared electrons spend more time near the (more electronegative) oxygen atom, which therefore takes on a partial negative charge. The hydrogen end of the molecule, where the electron spends less time, takes on a partial positive charge. Molecules of water position themselves in response to these partial charges; the hydrogen of one molecule being attracted to the oxygen of another (unlike charges attract), to form a <span class={styles.bold}>hydrogen bond</span>.</div>
                 </p>
 
                 <p>Hydrogen bonds explain cohesion (why water molecules 'bead'), and the relatively high boiling point of water - energy is needed to break apart the hydrogen bonds.</p>
@@ -150,7 +150,7 @@ const Hydrogen = () => {
                 <h4>Transport</h4>
 
                 <p>
-                    <div>Converting pipelines to carry a natural gas hydrogen mix is feasible. The cost of adapting existing lines for compressed hydrogen varies depending on whether you ask <span><a aria-label="European Hydrogen Backbone report" href="https://gasforclimate2050.eu/sdm_downloads/european-hydrogen-backbone/">industry</a></span> or their <span><a aria-label="Food and Water Action Europe report" href="https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf">critics</a></span>. At the heart of the debate is the feasibility of producing green hydrogen in large volumes soon. If the hydrogen passing through pipelines does not come from renewable sources, it will lock us in to further use of, and dependency on fossil gas at the expense of investment in renewables.</div>
+                    <div>Converting pipelines to carry a natural gas hydrogen mix is feasible. The cost of adapting existing lines for compressed hydrogen varies depending on whether you ask <span><a aria-label="European Hydrogen Backbone report" href="https://gasforclimate2050.eu/sdm_downloads/european-hydrogen-backbone/">industry</a></span> or their <span><a aria-label="Food and Water Action Europe report" href="https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf">critics</a></span>. At the heart of the debate is the feasibility of producing green hydrogen in large volumes soon. If the hydrogen passing through pipelines does not come from renewable sources, it will lock us in to further use of, and dependency on, fossil gas at the expense of investment in renewables.</div>
                 </p>
 
                 <h4>Fuel cells</h4>
@@ -197,7 +197,7 @@ const Hydrogen = () => {
                 <h4>Part to play</h4>
 
                 <p>
-                    <div>Hydrogen may have a more successful future if it is unburdened by hype, it just might take time for sensible methods of production and suitable uses to be found. Produced close to sources of excess renewable energy it may be a good fit for larger forms of transportation (fuel cells) including shipping, energy storage, and domestic and commercial heating (<a aria-label="BBC article - Climate change hope for hydrogen fuel" href="https://www.bbc.com/news/science-environment-50873047">hydrogen boilers</a>).</div>
+                    <div>Hydrogen may have a successful future if it is unburdened by hype, it just might take time for sensible methods of production and suitable uses to be found. Produced close to sources of excess renewable energy it may be a good fit for larger forms of transportation (fuel cells) including shipping, for energy storage, and domestic and commercial heating (<a aria-label="BBC article - Climate change hope for hydrogen fuel" href="https://www.bbc.com/news/science-environment-50873047">hydrogen boilers</a>).</div>
                 </p>
 
             </section>
