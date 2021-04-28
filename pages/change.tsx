@@ -141,7 +141,7 @@ const Change = () => {
                 
                 <p>All other life on the planet has reason to see our species as a single, homogenous threat, and may regard our internecine problems as irrelevant when faced with their own unprecedented extinction. As a species we have done nothing for the planet, but it is possible that one day intelligent, disruptive humanity may prove its worth by, for example, preventing an asteroid from hitting the earth.</p>
 
-                <h4>Time's up</h4>
+                <h4>Mind the GDP</h4>
 
                 <p>Energy demand is falling in rich countries. In the <a href="https://ourworldindata.org/energy/country/united-states?country=~USA">US</a>, for example, energy usage is down from a peak in 1973 of 95.5 kWh per day to 79.9 in 2019, despite the <a href="https://blog.ucsusa.org/peter-oconnor/energy-efficiency-what-is-the-rebound-effect-946">rebound effect</a>. It is conceivable that people will choose to consume less, and that societies will measure their progress on a broad set of values and principles rather than focusing on gross domestic product <a href="https://en.wikipedia.org/wiki/Gross_domestic_product">GDP</a>. The Dasgupta report, commissioned by the UK treasury, sets out the following case,
                     <span class={styles.quote}>

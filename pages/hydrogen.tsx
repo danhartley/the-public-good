@@ -3,6 +3,7 @@ import Accordion from 'components/accordion/accordion';
 import Formula from 'components/tools/formula';
 import styles from 'pages/pages.module.scss';
 import Links from 'components/links/Links';
+import Quiz from 'components/quiz/quiz';
 
 const externalLinks = [    
     {
@@ -205,6 +206,11 @@ const Hydrogen = () => {
                 <h3>External Links</h3>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
+
+            {/* <p>
+                <Quiz provider="" title=""></Quiz>
+            </p> */}
+
             <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'carbon',title:'Carbon'}]}></Links.RelatedLinks>
         </Layout>
     )
@@ -213,12 +219,3 @@ const Hydrogen = () => {
 export default Hydrogen;
 
 {/* <p>By far the most common isotope of hydrogen is protium (~99.98%). It does not contain a neutron and therefore has an atomic mass of ~1 not ~2. Deuterium which is believed to have formed naturally only in the Big Bang does have a neutron. It is produced for industrial, scientific and military purposes, including manufacture of the hydrogen bomb.</p> */}
-
-
-{/* <ul class={styles.list}>
-    <li>Make the most of existing industrial ports to turn them into hubs for lower‑cost, lower-carbon hydrogen</li>
-    <li>Use existing gas infrastructure to spur new clean hydrogen supplies.</li>
-    <li>Support transport fleets, freight and corridors to make fuel-cell vehicles more competitive.</li>
-    <li>Establish the first shipping routes to kick-start the international hydrogen trade.</li>
-</ul>
-<div class={styles.inset}>Summary recommendations from the International Energy Agency report <span><a href="https://www.iea.org/reports/the-future-of-hydrogen">The Future of Hydrogen</a></span></div> */}
