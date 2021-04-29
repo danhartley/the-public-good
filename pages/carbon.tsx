@@ -77,7 +77,9 @@ const Carbon = () => {
 
                 <h4>Allotropes</h4>
 
-                <p>Carbon assumes different structural forms - <span><a href="https://en.wikipedia.org/wiki/Allotropy">allotropes</a></span>. Alternate forms of the same element are created by external forces, such as heat and pressure. There are many <span><a href="https://en.wikipedia.org/wiki/Allotropes_of_carbon">allotropes of carbon</a></span> including those that naturally occur on earth - <span><a href="https://en.wikipedia.org/wiki/Amorphous_carbon">amorphous carbon</a></span>, diamond and graphite - and rarer forms such as <span><a href="https://en.wikipedia.org/wiki/Graphene">graphene</a></span> and <span><a href="https://en.wikipedia.org/wiki/Buckminsterfullerene">buckminsterfullerene</a></span>.</p>
+                <p>
+                    <div>Carbon assumes different structural forms - <span><a href="https://en.wikipedia.org/wiki/Allotropy">allotropes</a></span>. Alternate forms of the same element are created by external forces, such as heat and pressure. There are many <span><a href="https://en.wikipedia.org/wiki/Allotropes_of_carbon">allotropes of carbon</a></span> including those that naturally occur on earth - <span><a href="https://en.wikipedia.org/wiki/Amorphous_carbon">amorphous carbon</a></span>, diamond and graphite - and rarer forms such as <span><a href="https://en.wikipedia.org/wiki/Graphene">graphene</a></span> and <span><a href="https://en.wikipedia.org/wiki/Buckminsterfullerene">buckminsterfullerene</a></span>.</div>
+                </p>
 
                 <h4>Diamond</h4>
 

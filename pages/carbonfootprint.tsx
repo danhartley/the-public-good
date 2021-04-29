@@ -35,7 +35,7 @@ const CarbonFootprint = () => {
                 </ul>
                 <div class={styles.inset}>
                     Emissions have risen worldwide since 2017 with the exception of 2020 when they fell; <a href="https://www.nature.com/articles/d41586-021-00090-3">Nature, 6.4% (2.3 billion tonnes)</a>, <a href="https://www.iea.org/articles/global-energy-review-co2-emissions-in-2020">IEA 5.8%</a>, <a href="https://carbonmonitor.org/">Carbon Monitor 4%</a>.
-                    <span> <a href="https://carbonmonitor.org/">Daily estimates</a> are also available from Carbon Monitor.</span>
+                    <span><a href="https://carbonmonitor.org/">Daily estimates</a> are also available from Carbon Monitor.</span>
                 </div>                
                 </p>
                 <h3>Sustainable emissions</h3>

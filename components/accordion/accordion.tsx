@@ -12,16 +12,18 @@ const Accordion = ({
         setState(!state);
     };
 
+    const content = <p>
+        <button onClick={toggle} class={styles.btn}><span class={state ? styles.down : styles.up}></span><span>{ header }</span></button>
+        <div class={state ? styles.show : styles.hide}>
+        { children }
+        </div>
+    </p>
+
     return (
         <> 
+       {content}
         <p>
-            <button onClick={toggle} class={styles.btn}><span class={state ? styles.down : styles.up}></span><span>{ header }</span></button>
-            <div class={state ? styles.show : styles.hide}>
-            { children }
-            </div>
-        </p>       
-        <p>
-            <noscript>JavaScript is disabled, please turn on!</noscript>
+            <noscript>{content}</noscript>
         </p>
         </>
     )
