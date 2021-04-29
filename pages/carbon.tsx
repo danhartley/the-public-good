@@ -147,7 +147,7 @@ const Carbon = () => {
 
                 <h4>Polymers</h4>
 
-                <p>Because carbon atoms form strong bonds with other carbon atoms as well as the atoms of other elements it is able to form long chains, or polymers. Many of these are critical to life, including RNA , DNA, proteins, and sugars. It is this ability to bind to itself in long chains, form stable compounds with other elements and the proximity of electrons to the nucleus, that makes carbon the best, and perhaps the only, building block of life, not only on this planet, but in the universe.</p>
+                <p>Because carbon atoms form strong bonds with other carbon atoms as well as the atoms of other elements it is able to form long chains, or polymers. Many of these are critical to life, including RNA, DNA, proteins, and sugars. It is this ability to bind to itself in long chains, form stable compounds with other elements and the proximity of electrons to the nucleus, that makes carbon the best, and perhaps the only, building block of life, not only on this planet, but in the universe.</p>
 
                 <h3 id="carbon-and-the-planet">Carbon and the planet</h3>
 
