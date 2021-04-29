@@ -207,9 +207,9 @@ const Hydrogen = () => {
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
 
-            {/* <p>
-                <Quiz provider="" title=""></Quiz>
-            </p> */}
+            <p>
+                <Quiz link="Take the hydrogen test"></Quiz>
+            </p>
 
             <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'carbon',title:'Carbon'}]}></Links.RelatedLinks>
         </Layout>

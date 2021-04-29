@@ -1,0 +1,12 @@
+@import 'styles/mixins.scss';
+
+.widget {
+    width: 800px;
+    width: calc(100vw - 2rem);
+    height: 600px;
+    border: none;
+}
+
+.link {
+    @include externalLink();
+}
