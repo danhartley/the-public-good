@@ -35,6 +35,10 @@ const perfLinks = [
         "name": "dareboost",
         "source": "https://www.dareboost.com/en"
     },
+    {
+        "name": "SpeedCurve (free trial)",
+        "source": "https://speedcurve.com/"
+    },
 ];
 
 const Performance = () => {
