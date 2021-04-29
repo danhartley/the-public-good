@@ -202,14 +202,17 @@ const Hydrogen = () => {
                 </p>
 
             </section>
+
+            <section class={styles.card}>
+                <p>
+                    <Quiz link="Take the hydrogen test"></Quiz>
+                </p>
+            </section>
+
             <section class={styles.card}>
                 <h3>External Links</h3>
                 <Links.ExternalLinksList links={externalLinks} />
-            </section>
-
-            <p>
-                <Quiz link="Take the hydrogen test"></Quiz>
-            </p>
+            </section>            
 
             <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'carbon',title:'Carbon'}]}></Links.RelatedLinks>
         </Layout>

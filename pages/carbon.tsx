@@ -2,6 +2,7 @@ import Layout from 'components/layout/layout';
 import Accordion from 'components/accordion/accordion';
 import styles from 'pages/pages.module.scss';
 import Links from 'components/links/Links';
+import Quiz from 'components/quiz/quiz';
 
 const externalLinks = [
     {
@@ -193,6 +194,13 @@ const Carbon = () => {
                 <p>Will we enjoy an equally profitable relationship with <Links.InternalLink link={{'value': 'hydrogen', 'text': 'hydrogen'}}></Links.InternalLink>?</p>
 
             </section>
+            
+            <section class={styles.card}>
+                <p>
+                    <Quiz title="carbon-the-ties-that-bind" link="Take the carbon test"></Quiz>
+                </p>
+            </section>
+
             <section class={styles.card}>
                 <h3>External Links</h3>
                 <Links.ExternalLinksList links={externalLinks} />
