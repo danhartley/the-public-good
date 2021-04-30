@@ -24,7 +24,7 @@ const Services = () => {
                     <ul class={styles.list}>
                         <li>Open-source CMS (<a href="https://www.netlifycms.org/">netlify-cms)</a>.</li>
                         <li>Google <a href="https://firebase.google.com/">Firebase</a> database.</li>
-                        <li>Functions as a service, <a href="Serverless functions">Faas</a>, with either serverless functions on <a href="https://firebase.google.com/docs/functions">Google Cloud</a> or <a href="https://www.netlify.com/products/functions/">Lamda functions</a> on netlify.</li>
+                        <li>Functions as a service, <a href="Serverless functions">Faas</a>, with either serverless functions on <a href="https://firebase.google.com/docs/functions">Google Cloud</a> or <a href="https://www.netlify.com/products/functions/">Lambda functions</a> on netlify.</li>
                     </ul>
                 </p>
 

@@ -42,7 +42,7 @@ const Accessibility = () => {
                 </p>
                 <p><span class={styles.published}>Last updated: {new Date('Fri 19 March 2021').toDateString()}</span></p>
             </section>
-            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability testing'},{href:'performance',title:'Performance testing'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'architecture',title:'Architecture'},{href:'performance',title:'Performance'},{href:'sustainability',title:'Sustainability'},{href:'performance',title:'Performance'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

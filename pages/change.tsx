@@ -9,7 +9,7 @@ const Change = () => {
         <Layout title="Change" description={'A hundred indecisions'} image='https://live.staticflickr.com/65535/51143928462_4df026babc_o.jpg'>
             <section class={styles.card}>
 
-                <h2>A hundred indecisions</h2>
+                <h2>Climate change - time yet for a hundred indecisions</h2>
 
                 <div>
                     <div class={styles.bang}><a href="#background">Background</a><span class={styles.italic}> 3 minutes</span></div>

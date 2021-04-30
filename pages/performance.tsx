@@ -72,7 +72,7 @@ const Performance = () => {
                 <p>There will also be times when best practice in terms of software engineering <a aria-label="When best practices can slow your application down by Stack Overflow" href="https://stackoverflow.blog/2021/03/03/best-practices-can-slow-your-application-down/">clashes</a> with website performance.</p>
 
             </section>
-            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability testing'},{href:'accessibility',title:'Accessibility testing'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'architecture',title:'Architecture'},{href:'sustainability',title:'Sustainability'},{href:'accessibility',title:'Accessibility'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

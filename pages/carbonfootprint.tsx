@@ -7,7 +7,7 @@ const CarbonFootprint = () => {
     return (
         <Layout title="Carbon Footprint" description={'Carbon Footprint'}>
             <section class={styles.card}>
-                <h2>Carbon footprint</h2>
+                <h2>Carbon footprints - the value of individual acts</h2>
 
                 <div>
                     <div class={styles.bang}><a href="#individualActs">Individual Acts</a></div>
@@ -297,7 +297,7 @@ const CarbonFootprint = () => {
                     <span class={styles.published}>Edited: Added David MacKay quote {new Date('Tues 6 April 2021').toDateString()}</span>
                 </p>
             </section>
-            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability testing'}, {href:'carbon',title:'Carbon primer'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability'}, {href:'carbon',title:'Carbon primer'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

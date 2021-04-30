@@ -59,7 +59,7 @@ const Sustainability = () => {
                     <img src="https://api.thegreenwebfoundation.org/greencheckimage/www.the-public-good.com?nocache=true" alt="Checked by thegreenwebfoundation.org" />
                 </p>
             </section>
-            <Links.RelatedLinks links={[{href:'performance',title:'Performance testing'},{href:'accessibility',title:'Accessibility testing'},{href:'carbonfootprint',title:'Carbon footprint overview'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'architecture',title:'Architecture'},{href:'performance',title:'Performance'},{href:'accessibility',title:'Accessibility'},{href:'carbonfootprint',title:'Carbon footprints - the value of individual acts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
