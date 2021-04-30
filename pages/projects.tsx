@@ -15,10 +15,10 @@ const Projects = () => {
                             <p>The switch to <a href="https://webpack.js.org">webpack</a> from <a href="https://gruntjs.com/">Grunt</a> for bundling and optimising files.</p>
                             <p>A shift from building <a href="https://developer.mozilla.org/en-US/docs/Glossary/SPA">Single Page Apps</a> to <a href="https://web.dev/progressive-web-apps/">Progressive Web Apps</a>.</p>
                             <p>Hosting the site on <a href="https://cloud.google.com/">Google's Cloud Platform</a> and adding <a href="https://firebase.google.com/docs/functions">serverless functions</a>.</p>
-                            <p>Increased testing, using <a href="https://jestjs.io/">Jest</a>, including, at times, <a href="https://www.freecodecamp.org/news/test-driven-development-what-it-is-and-what-it-is-not-41fa6bca02a2/">Test Driven Development</a>.</p>
+                            <p>Increased testing, using <a href="https://jestjs.io/">Jest</a>, and, at times, <a href="https://www.freecodecamp.org/news/test-driven-development-what-it-is-and-what-it-is-not-41fa6bca02a2/">Test Driven Development</a>.</p>
                         </ul>
                         <p>I also reduced my dependency on runtime libraries, including <a href="https://getbootstrap.com/">Bootstrap</a>. I have mixed feelings about <a href="https://redux.js.org/">Redux</a> which is a simple and effective approach to state management but is hard to tame. Intrinsic to Redux, however, is functional programming which is an excellent fit for the web. I am grateful to <a href="https://overreacted.io/">Dan Abramov</a>, who created Redux, and <a href="https://www.youtube.com/c/funfunfunction">mpj</a> for their thoughts and instruction on this subject.</p>
-                        <p>Although the project has not yet found its intended audience, I learnt a lot about how to define and scope a project, how far <a aria-label="The Evolution of Javascript" href="https://www.modernjs.com/"> JavaScript</a> had come in a few years, and many wonderful things about the living world, including the true composition of <a href="https://www.theatlantic.com/science/archive/2019/01/how-lichens-explain-and-re-explain-world/580681/">lichens</a>.</p>
+                        <p>Although the project has not yet found its intended audience, I learnt how to define and scope a project, the evolution of <a aria-label="The Evolution of Javascript" href="https://www.modernjs.com/"> JavaScript</a> in just a few years, and many wonderful things about the living world, including the true composition of <a href="https://www.theatlantic.com/science/archive/2019/01/how-lichens-explain-and-re-explain-world/580681/">lichens</a>.</p>
                     </p>
                     <p>
                         <span><a href="https://danhartley.github.io/snapdragon-verbs/">The Verb</a></span>
@@ -44,7 +44,7 @@ const Projects = () => {
                 </p>
             </section>
 
-            <Links.RelatedLinks links={[{href:'architecture',title:'Architecture'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'services',title:'Services'},{href:'architecture',title:'Architecture'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

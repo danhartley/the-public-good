@@ -168,7 +168,7 @@
 
 @mixin container {
     font-family: 'PT Serif', serif;
-    color: rgba(var(--fg),.8);
+    color: rgba(var(--fg),.9);
     background-color: rgb(var(--bg));
     padding: 1rem;
     display: flex;
