@@ -21,7 +21,7 @@ const Projects = () => {
                         <p>Although the project has not yet found its intended audience, I learnt how to define and scope a project, the evolution of <a aria-label="The Evolution of Javascript" href="https://www.modernjs.com/"> JavaScript</a> in just a few years, and many wonderful things about the living world, including the true composition of <a href="https://www.theatlantic.com/science/archive/2019/01/how-lichens-explain-and-re-explain-world/580681/">lichens</a>.</p>
                     </p>
                     <p>
-                        <span><a href="https://danhartley.github.io/snapdragon-verbs/">The Verb</a></span>
+                        <h3><a href="https://danhartley.github.io/snapdragon-verbs/">The Verb</a></h3>
                         <div>Drills to test knowledge of Spanish and Portuguese verbs.</div>
                         <p>At the outset, I put in place generic rules to avoid the problems I had encountered on the previous project. Any project should now:  
                             <ul class={styles.list}>
