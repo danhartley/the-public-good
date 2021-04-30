@@ -39,6 +39,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         setDarkMode(!darkMode);
         mode.isDark = darkMode;
         mode.style = getStyle(darkMode) as any;
+        document.body.style.backgroundColor = darkMode ? 'rgb(250, 250, 250)' : 'rgb(45, 45, 45)';
     };
 
     return (

@@ -7,12 +7,17 @@ class MyDocument extends Document {
   }
 
   render() {
+
+    const style = {
+        backgroundColor: 'rgba(var(--bg),1)'
+    };
+
     return (
       <Html lang="en" dir="ltr">
         <Head>
             <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
         </Head>
-        <body>
+        <body style={style}>
           <Main />
           <NextScript />
         </body>
