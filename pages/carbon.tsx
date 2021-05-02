@@ -37,10 +37,6 @@ const externalLinks = [
         "name": "Khan Academy | The carbon cycle",
         "source": "https://www.khanacademy.org/science/high-school-biology/hs-ecology/hs-biogeochemical-cycles/v/carbon-cycle"
     },
-    {
-        "name": "Does the world need hydrogen to solve climate change?",
-        "source": "https://www.carbonbrief.org/in-depth-qa-does-the-world-need-hydrogen-to-solve-climate-change"
-    },
 ];
 
 const Carbon = () => {

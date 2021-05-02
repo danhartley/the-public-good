@@ -46,6 +46,10 @@ const externalLinks = [
         "name": "International Energy Agency | The future of hydrogen",
         "source": "https://www.iea.org/reports/the-future-of-hydrogen"
     },
+    {
+        "name": "Does the world need hydrogen to solve climate change?",
+        "source": "https://www.carbonbrief.org/in-depth-qa-does-the-world-need-hydrogen-to-solve-climate-change"
+    },
 ];
 
 const Hydrogen = () => {
