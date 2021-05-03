@@ -13,9 +13,9 @@ const Contract = () => {
 
     return (
         <Layout title="Contract" description={'Public contract between The Public Good and the Public'}>
-            <h2>The contract</h2>
-
+            
             <section class={styles.card}>
+                <h2>The contract</h2>
                 <p>
                     <h3>The contract for the-public-good.com</h3>
 

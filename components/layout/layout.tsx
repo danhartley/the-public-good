@@ -11,7 +11,7 @@ let ts = 0, dbs = 0;
 
 const Layout = ({
   children,
-  title = 'The Public Good',
+  title,
   description = 'The Public Good',
   image = 'https://live.staticflickr.com/65535/51087492836_0a43c2690e_n_d.jpg'
 }) => {
@@ -54,7 +54,7 @@ const Layout = ({
     return (        
         <div>
             <Head>
-                <title>{ title }</title>
+                <title>{ `The Public Good - ${title}` }</title>
 
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"></meta>
                 <meta name="mobile-web-app-capable" content="yes"></meta>
@@ -73,8 +73,8 @@ const Layout = ({
                 <main class={styles.main}>
                     <header class={styles.header}>
                         <Link href={'/'}>
-                            <a aria-label="Home page">
-                                <h1 role="navigation" class={styles.title}>The Public Good</h1>
+                            <a class={styles.title} aria-label="Home page">
+                                <span role="navigation">The Public Good</span>
                             </a>
                         </Link>
                         <p class={styles.description}>
