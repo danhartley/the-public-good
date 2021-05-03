@@ -57,7 +57,7 @@ const RelatedLinks = ({links}) => {
     return (
         <section class={styles.related}>
             <p class={styles.internalLink}>
-                <h3>Related</h3>
+                <h2>Related</h2>
                 <ul class={styles.list}>
                     {list}
                 </ul>

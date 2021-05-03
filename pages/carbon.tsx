@@ -44,7 +44,7 @@ const Carbon = () => {
     return (
         <Layout title="Carbon" description={'The ties that bind'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
             <section class={styles.card}>
-                <h2>Carbon - the ties that bind</h2>
+                <h1>Carbon - the ties that bind</h1>
 
                 <div>
                     <div class={styles.bang}><a href="#origins-and-properties">The origins and properties of carbon</a><span class={styles.italic}> 2 minutes</span></div>
@@ -62,9 +62,9 @@ const Carbon = () => {
                     </div>
                 </Accordion>
 
-                <h3 id="origins-and-properties">The origins and properties of carbon</h3>
+                <h2 id="origins-and-properties">The origins and properties of carbon</h2>
 
-                <h4>(Almost) as old as the stars</h4>
+                <h3>(Almost) as old as the stars</h3>
 
                 <p>Carbon atoms are formed in dying stars under extreme and improbable conditions during a set of nuclear fusion reactions known as the <span><a aria-label="Stanford article on the triple-alpha process" href="http://large.stanford.edu/courses/2017/ph241/udit2/">triple-alpha process</a></span>. On collapse of the star, in a supernova, the atoms are blown out, eventually forming new star systems such as our own.</p>
                 
@@ -72,13 +72,13 @@ const Carbon = () => {
 
                 <p>A further 500 million years passed before the first stars formed. In these stars conditions were right for <span><a href="https://en.wikipedia.org/wiki/Nucleosynthesis">nucleosynthesis</a></span>, the process by which elements heavier than boron are created. Carbon was the first of these elements.</p>
 
-                <h4>Allotropes</h4>
+                <h3>Allotropes</h3>
 
                 <p>
                     <div>Carbon assumes different structural forms - <span><a href="https://en.wikipedia.org/wiki/Allotropy">allotropes</a></span>. Alternate forms of the same element are created by external forces, such as heat and pressure. There are many <span><a href="https://en.wikipedia.org/wiki/Allotropes_of_carbon">allotropes of carbon</a></span> including those that naturally occur on earth - <span><a href="https://en.wikipedia.org/wiki/Amorphous_carbon">amorphous carbon</a></span>, diamond and graphite - and rarer forms such as <span><a href="https://en.wikipedia.org/wiki/Graphene">graphene</a></span> and <span><a href="https://en.wikipedia.org/wiki/Buckminsterfullerene">buckminsterfullerene</a></span>.</div>
                 </p>
 
-                <h4>Diamond</h4>
+                <h3>Diamond</h3>
 
                 <Accordion header="Covalent bonds">                    
                     <div class={styles.inset}>
@@ -96,17 +96,17 @@ const Carbon = () => {
 
                 <p>And because there are no free electrons, pure diamond does not conduct electricity.</p>
 
-                <h4>Graphite</h4>
+                <h3>Graphite</h3>
 
                 <p>In graphite atoms form in planes. Each atom is bound to its three nearest neighbours at an angle of 120°. Since only 3 of the 4 electrons are shared, the fourth is free to move; in this way graphite conducts electricity.</p>
 
                 <p>Each of the individual layers of atoms of which graphite is composed is called <span><a href="https://en.wikipedia.org/wiki/Graphene">graphene</a></span>. Graphene may unwittingly be produced by writing or drawing with a pencil; friction causes a layer, or more often hundreds of layers of atoms, to be removed. A single layer is graphene.</p>
 
-                <h3 id="carbon-compounds">Carbon compounds</h3>
+                <h2 id="carbon-compounds">Carbon compounds</h2>
 
                 <p>Such is carbon's propensity to form bonds that more compounds contain carbon than not, almost ten million. Organic chemistry is the study of these compounds. Those which contain only carbon and hydrogen are called hydrocarbons. Fossil fuels are hydrocarbons.</p>
 
-                <h4>Hydrocarbons</h4>
+                <h3>Hydrocarbons</h3>
 
                 <p>Fossil fuels form when dead plants and animals decompose in the absence of oxygen and are submitted to intense heat and pressure over millions of years.</p>
                 
@@ -131,7 +131,7 @@ const Carbon = () => {
                     </div>
                 </p>
 
-                <h4>The sun</h4>
+                <h3>The sun</h3>
 
                 <p>The energy from fossil fuels is derived from the sun; photons absorbed by chlorophyll excite electrons and thereby enable the processes by which photosynthesis produces organic compounds. Fossil fuels are a concentrated form of this energy.</p>
 
@@ -148,13 +148,13 @@ const Carbon = () => {
 
                 <p>The only energy source not derived from our sun is nuclear which ultimately derives from myriad distant, and now long dead stars.</p>
 
-                <h4>Polymers</h4>
+                <h3>Polymers</h3>
 
                 <p>Because carbon atoms form strong bonds with other carbon atoms as well as the atoms of other elements it is able to form long chains, or polymers. Many of these are critical to life, including RNA, DNA, proteins, and sugars. It is this ability to bind to itself in long chains, form stable compounds with other elements and the proximity of electrons to the nucleus, that makes carbon the best, and perhaps the only, building block of life, not only on this planet, but in the universe.</p>
 
-                <h3 id="carbon-and-the-planet">Carbon and the planet</h3>
+                <h2 id="carbon-and-the-planet">Carbon and the planet</h2>
 
-                <h4>The Carbon Cycle</h4>
+                <h3>The Carbon Cycle</h3>
 
                 <p>The carbon cycle regulates the flow of carbon through the earth and the atmosphere. The distribution of carbon throughout the cycle affects temperature which alters conditions on earth to which all life must adapt.</p>
 
@@ -168,7 +168,7 @@ const Carbon = () => {
 
                 <p>By burning that coal, and other fossil fuels, we have begun to change the climate, and because the change is rapid, many species have not, and will not, adapt.</p>
 
-                <h4>Carbon emissions and reserves</h4>
+                <h3>Carbon emissions and reserves</h3>
 
                 <p>Cumulative <span><a href="https://ourworldindata.org/co2-emissions">emissions</a></span> of carbon dioxide to date are ~1.5 trillion tonnes.
                     <div class={styles.quote}>
@@ -178,11 +178,11 @@ const Carbon = () => {
                     </div>
                 </p>
 
-                <h4>The isotopic signature of anthropogenic warming</h4>
+                <h3>The isotopic signature of anthropogenic warming</h3>
 
                 <p>Isotopes are variants of a chemical element which differ in their number of neutrons. Carbon has 3 isotopes, carbon-12, carbon-13 and carbon-14.</p>
 
-                <h5>How do we know the extra carbon dioxide in the atmosphere is caused by burning fossil fuels?</h5>
+                <h4>How do we know the extra carbon dioxide in the atmosphere is caused by burning fossil fuels?</h4>
 
                 <p>Plants absorb less (heavy) carbon-13 from the atmosphere than (light) carbon-12, and also favour carbon-12 for photosynthesis.</p>
 
@@ -190,7 +190,7 @@ const Carbon = () => {
 
                 <p>NASA has been monitoring the natural carbon cycle using satellites for some time including <span><a href="https://ocov2.jpl.nasa.gov/">Orbiting Carbon Observatory-2</a></span> and <span><a href="https://ocov3.jpl.nasa.gov/">Orbiting Carbon Observatory-3</a>. Around 2025 they will launch the Copernicus CO2 Mission, the first operational carbon dioxide monitoring satellite constellation, focused on monitoring human-produced emissions.</span></p>
                 
-                <h4>They seek him here, they seek him there</h4>
+                <h3>They seek him here, they seek him there</h3>
 
                 <p>Carbon is everywhere, including our own bodies where it is the second most abundant element (18%) after oxygen (65%). For a couple of hundred years we have benefited from chemical reactions irreversible in time scales appropriate to our species; the combustion of organic compounds, especially hydrocarbons, to release energy stored over unimaginably vast periods of time, is the foundation of our modern civilisations.</p>
 
@@ -205,7 +205,7 @@ const Carbon = () => {
             </section>
 
             <section class={styles.card}>
-                <h3>External Links</h3>
+                <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
             <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'carbonfootprint',title:'Carbon footprint'}]}></Links.RelatedLinks>

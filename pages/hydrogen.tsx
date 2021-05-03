@@ -57,7 +57,7 @@ const Hydrogen = () => {
         <Layout title="Hydrogen" description={'A singular atom'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>        
             <section class={styles.card}>
                 
-                <h2>Hydrogen - a singular atom</h2>
+                <h1>Hydrogen - a singular atom</h1>
 
                 <div>                
                     <div class={styles.bang}><a href="#origins-and-properties">The origins and properties of hydrogen</a><span class={styles.italic}> 2 minutes</span></div>
@@ -74,13 +74,13 @@ const Hydrogen = () => {
                     </div>
                 </Accordion>
 
-                <h3 id="origins-and-properties">The origins and properties of hydrogen</h3>
+                <h2 id="origins-and-properties">The origins and properties of hydrogen</h2>
 
-                <h4>The first element in the universe</h4>
+                <h3>The first element in the universe</h3>
 
                 <p>Hydrogen atoms were fleetingly formed during the Big Bang but it wasn't until the <span><a href="https://en.wikipedia.org/wiki/Recombination_(cosmology)">recombination</a></span> 370,000 years later that conditions became favourable for electrons to remain in orbit around atomic nuclei. <span>All other elements are formed from hydrogen which remains the <span><a href="https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements"> most abundant</a></span> element in the universe (74% by mass).</span></p>
 
-                <h4>But rarely alone on Earth</h4>
+                <h3>But rarely alone on Earth</h3>
 
                 <p>
                     <div>Hydrogen readily shares <span><a href="https://www.khanacademy.org/science/ap-biology/chemistry-of-life/introduction-to-biological-macromolecules/v/covalent-bonds">covalent bonds</a> (video)</span> with other elements to form compounds, including water <span><Formula>H2O</Formula></span>, ammonia <Formula>NH3</Formula>, hydrogen sulfide <Formula>H2S</Formula>, and organic compounds, such as hydrocarbons <span><Formula>CnH2n+2</Formula> </span> and carbohydrates <Formula>(CH2O)x</Formula>.</div>
@@ -99,11 +99,11 @@ const Hydrogen = () => {
 
                 <p>Hydrogen bonds can also form between molecules of different species, for example in DNA, where they hold together the two (polynucleotide) chains; the hydrogen bonds are strong enough to keep the double helix together, but not so strong as to prevent the chains separating when they need to be replicated.</p>
 
-                <h4>Energy carrier</h4>
+                <h3>Energy carrier</h3>
 
                 <p>Hydrogen is often considered a secondary source of energy, or energy carrier; it is produced from a variety of primary sources, such as natural gas, nuclear power, biomass, and renewable sources including wind and solar.</p>
 
-                <h3 id="production">Production</h3>
+                <h2 id="production">Production</h2>
 
                 <p>95% of hydrogen is produced by <span><a href="https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming">natural gas reforming</a> in two ways</span>.</p>
 
@@ -132,7 +132,7 @@ const Hydrogen = () => {
                     </p>
                 </Accordion>
 
-                <h4>Electrolysis</h4>
+                <h3>Electrolysis</h3>
 
                 <p>Electrolysis is a process whereby electricity is used to split water into hydrogen and oxygen. The process <span><a href="https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis">varies</a></span> depending on the electrolyte selected. Oxygen gas forms at the anode, hydrogen gas at the cathode.
                     <div class={styles.inset}>
@@ -152,13 +152,13 @@ const Hydrogen = () => {
 
                 <p>A fraction of hydrogen is currently produced from low carbon energy; the latest figure for the EU is <span><a aria-label="FCHO PDF report Hydrogen molecule market" href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf">0.1%</a> (PDF)</span>. Global production of hydrogen from electrolysis is less than <span><a aria-label="IEA report on the future of hydrogen" href="https://www.iea.org/reports/the-future-of-hydrogen">0.1%</a></span>.</p>
 
-                <h4>Transport</h4>
+                <h3>Transport</h3>
 
                 <p>
                     <div>Converting pipelines to carry a natural gas hydrogen mix is feasible. The cost of adapting existing lines for compressed hydrogen varies depending on whether you ask <span><a aria-label="European Hydrogen Backbone report" href="https://gasforclimate2050.eu/sdm_downloads/european-hydrogen-backbone/">industry</a></span> or their <span><a aria-label="Food and Water Action Europe report" href="https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf">critics</a></span>. At the heart of the debate is the feasibility of producing green hydrogen in large volumes soon. If the hydrogen passing through pipelines does not come from renewable sources, it will lock us in to further use of, and dependency on, fossil gas at the expense of investment in renewables.</div>
                 </p>
 
-                <h4>Fuel cells</h4>
+                <h3>Fuel cells</h3>
 
                 <p>Fuel cells can be used at a wide range of scales from a power station to a laptop. They work like batteries but do not run down, producing electricity as long as there is fuel. They are also efficient, converting chemical energy to electrical energy at around 60% efficiency; this compares well to an average of <span><a href="https://cefrc.princeton.edu/sites/cefrc/files/reitz_princeton-day1-hour1-2018.pdf">16%</a></span> for gas combustion engines.
                     <div class={styles.inset}><span class={styles.bold}>How fuel cells work</span></div>
@@ -168,15 +168,15 @@ const Hydrogen = () => {
                     </div>
                 </p>
 
-                <h4>Use today</h4>
+                <h3>Use today</h3>
 
                 <p>Hydrogen use today is dominated by industry, namely: oil refining, ammonia production, methanol production and steel production.</p>
 
-                <h3 id="conclusion">Potential</h3>
+                <h2 id="conclusion">Potential</h2>
 
                 <p>Hydrogen as a fuel is attractive because at the point of use it emits no greenhouse gases, and it can be used for long term storage at potentially lower cost than electricity. There are, however, drawbacks.</p>
 
-                <h4>Drawbacks</h4>
+                <h3>Drawbacks</h3>
 
                 <p>
                     <div>The majority of current hydrogen production involves greenhouse gas emissions. Production is often described using a colour <span><a href="https://pbs.twimg.com/media/ExOiiizVEAEvIpG?format=jpg&name=medium">spectrum</a> (image)</span>. 'Grey' hydrogen is produced by burning coal without capturing <Formula>CO2</Formula> emissions. The gas industry in particular is promoting 'blue' hydrogen whereby greenhouse gases emitted during the combustion of gas are sequestered. Carbon capture and storage (CCS) is not, however, established at the scale required despite a decade or more of trials, heavy investment, and government subsidies. In 2020 40 million tonnes of <Formula>CO2</Formula> was captured from <span><a aria-label="Global CCS Institute report: Global status of CCS 2020" href="https://www.globalccsinstitute.com/wp-content/uploads/2020/12/Global-Status-of-CCS-Report-2020_FINAL_December11.pdf">26</a></span> operating facilities worldwide.</div>
@@ -184,7 +184,7 @@ const Hydrogen = () => {
 
                 <p>'Green' hydrogen, produced only using renewable energy, and transported through 'hydrogen ready' pipelines is a seductive idea but if the path to that goal is overly long or impossible, we will be saddled with the cost of maintaining CCS infrastructure, and safeguarding sequestered <Formula>CO2</Formula> indefinitely, whilst still emitting greenhouse gases.</p>
 
-                <h4>Greasing the wheels of failure</h4>
+                <h3>Greasing the wheels of failure</h3>
 
                 <p>Talk of 'blue' hydrogen and carbon capture and storage means burning gas with no guarantee of a transition towards 'green' hydrogen.</p>
 
@@ -199,7 +199,7 @@ const Hydrogen = () => {
                     <div>This scenario is understandably attractive to fossil fuels companies who maintain their grip on the market, secure profits on existing investments, and receive subsidies in the name of reducing emissions. They are <span><a href="https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf">lobbying hard</a></span> in the EU to protect their interests.</div>
                 </p>
 
-                <h4>Part to play</h4>
+                <h3>Part to play</h3>
 
                 <p>
                     <div>Hydrogen may have a successful future if it is unburdened by hype, it just might take time for sensible methods of production and suitable uses to be found. Produced close to sources of excess renewable energy it may be a good fit for larger forms of transportation (fuel cells) including shipping, for energy storage, and domestic and commercial heating (<a aria-label="BBC article - Climate change hope for hydrogen fuel" href="https://www.bbc.com/news/science-environment-50873047">hydrogen boilers</a>).</div>
@@ -214,7 +214,7 @@ const Hydrogen = () => {
             </section>
 
             <section class={styles.card}>
-                <h3>External Links</h3>
+                <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>            
 

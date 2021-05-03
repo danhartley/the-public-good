@@ -7,7 +7,7 @@ const Facts = () => {
     return (
         <Layout title="Facts" description={'Facts'}>
             <section class={styles.card}>
-                <h2>Facts</h2>
+                <h1>Facts</h1>
 
                 <div class={styles.menu}>
                     <span><a class={styles.bang} href="#carbon">Carbon</a></span>
@@ -17,7 +17,7 @@ const Facts = () => {
                     <span><a class={styles.bang} href="#photosynthesis">Photosynthesis</a></span>
                 </div>
 
-                <h3 id="carbon">Carbon & CO2</h3>
+                <h2 id="carbon">Carbon & CO2</h2>
 
                 <p>
                 Emission values are usually given in tonnes of carbon dioxide, but occasionally a value is given in tonnes of carbon (the giveaway is that the value looks surprisingly small).
@@ -42,9 +42,9 @@ const Facts = () => {
                     </div>
                 </p>
                 
-                <h3 id="co2e">CO2e</h3>
+                <h2 id="co2e">CO2e</h2>
                 
-                <h4>Peat</h4>
+                <h3>Peat</h3>
 
                 <p>
                     <span class={styles.quote}>
@@ -53,35 +53,35 @@ const Facts = () => {
                     </span>
                 </p>
 
-                <h4>Coal</h4>
+                <h3>Coal</h3>
                 <p>
                     <span class={styles.quote}>
                     The formation of coal takes a significant amount of time (on the order of a few million years), and the first coal-bearing rock units appeared about 290-360 million years ago, at a time known as the Carboniferous or "coal-bearing" Period. As well, there are extensive coal deposits from the Cretaceous age - about 65 to 144 million years ago.<span> <a href="https://energyeducation.ca/encyclopedia/Coal_formation">Energy Education: coal formation</a></span>
                     </span>
                 </p>
 
-                <h4>Oil & Gas</h4>
+                <h3>Oil & Gas</h3>
                 <p>
                     <span class={styles.quote}>
                         70% of oil deposits existing today were formed in the Mesozoic age (252 to 66 million years ago), 20% were formed in the Cenozoic age (65 million years ago), and only 10% were formed in the Paleozoic age (541 to 252 million years ago). This is likely because the Mesozoic age was marked by a tropical climate, with large amounts of plankton in the ocean. <span> <a href="https://energyeducation.ca/encyclopedia/Oil_formation">Energy Education: oil formation</a></span>
                     </span>
                 </p>
 
-                <h3>Time</h3>
+                <h2>Time</h2>
 
-                <h4>Geologic time</h4>
+                <h3>Geologic time</h3>
 
                 <Tables.Geology></Tables.Geology>
 
-                <h4>Human time</h4>
+                <h3>Human time</h3>
 
                 <p>A rough, and disputed timeline of <a href="https://en.wikipedia.org/wiki/Timeline_of_human_evolution">human evolution</a>.</p>
 
                  <Tables.Humans></Tables.Humans>
 
-                <h3 id="emissions">Emissions</h3>            
+                <h2 id="emissions">Emissions</h2>            
 
-                <h4>Emissions since when?</h4>
+                <h3>Emissions since when?</h3>
 
                 <p>
                     The IPCC calculates the rise in the global mean surface temperature (GMST) from the beginning of large-scale industrial activity.
@@ -97,19 +97,19 @@ const Facts = () => {
                     </div>
                 </p>
 
-                <h4 id="fuel_emissions">Fuel emissions</h4>
+                <h3 id="fuel_emissions">Fuel emissions</h3>
 
                 <Tables.FuelEmissions></Tables.FuelEmissions>
 
-                <h3 id="energy">Energy</h3>
+                <h2 id="energy">Energy</h2>
 
-                <h4>Units</h4>
+                <h3>Units</h3>
 
                 <p>
                     SI Units: <a href="http://www.withouthotair.com/cI/page_328.shtml">Quick reference</a>
                 </p>
 
-                <h4 id="energy_density">Energy density</h4>
+                <h3 id="energy_density">Energy density</h3>
 
                 <span class={styles.quote}>
                     You can start explaining some of the limits and possibilities of everyday life or historical
@@ -128,7 +128,7 @@ const Facts = () => {
                 <div><a href="https://www.drexel.edu/~/media/Files/greatworks/pdf_sum10/WK8_Layton_EnergyDensities.ashx">A comparison of energy densities of prevalent energy sources in units of joules per cubic meter | Bradley E. Layton Drexel University</a></div>
                 <div><a href="https://en.wikipedia.org/wiki/Comparison_of_commercial_battery_types">Wikipedia | Comparison of commercial battery types</a></div>
 
-                <h4>Power density</h4>
+                <h3>Power density</h3>
 
                 <Tables.PowerDensities></Tables.PowerDensities>                
 
@@ -137,7 +137,7 @@ const Facts = () => {
 
                 <div><a href="https://www.volker-quaschning.de/datserv/CO2-spez/index_e.php">Volker Quaschning</a></div>
 
-                <h4>Horsepower</h4>
+                <h3>Horsepower</h3>
 
                 <p>
                     There are numerous definitions for the value of <a aria-label="Wikipedia article on horsepower" href="https://en.wikipedia.org/wiki/Horsepower">horsepower</a>; one metric measure is defined as,
@@ -162,7 +162,7 @@ const Facts = () => {
                 </p>
 
 
-                <h4>Human power</h4>
+                <h3>Human power</h3>
 
                 <p>
                     <div class={styles.quote}>
@@ -173,7 +173,7 @@ const Facts = () => {
                     </div>
                 </p>
 
-                <h3 id="photosynthesis">Photosynthesis</h3>
+                <h2 id="photosynthesis">Photosynthesis</h2>
 
                 <p>
                     <span class={styles.quote}>
@@ -183,7 +183,7 @@ const Facts = () => {
                 </p>
 
 
-                {/* <h3>Ocean acidification</h3> */}
+                {/* <h2>Ocean acidification</h2> */}
 
             </section>
         </Layout>

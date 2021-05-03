@@ -6,9 +6,9 @@ const Services = () => {
     return (
         <Layout title="Web Services" description={'Web Services'}>
             <section class={styles.card}>
-                <h2>Services</h2>          
+                <h1>Services</h1>          
 
-                <h3>The contract</h3>
+                <h2>The contract</h2>
 
                 <p>Outline principles on which the website is built.
 
@@ -22,7 +22,7 @@ const Services = () => {
                     </ul>
                 </p>
 
-                <h3>Essential features</h3>
+                <h2>Essential features</h2>
                 <p>
                     <span>The sites I build have the following characteristics.</span>
                     <ul class={styles.list}>
@@ -35,7 +35,7 @@ const Services = () => {
                     </ul> 
                     <span>I follow <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</span>
                 </p>
-                {/* <h3>Optional features</h3>
+                {/* <h2>Optional features</h2>
                 <p>
                     <ul class={styles.list}>
                         <li>Open-source CMS (<a href="https://www.netlifycms.org/">netlify-cms)</a>.</li>
@@ -44,7 +44,7 @@ const Services = () => {
                     </ul>
                 </p> */}
 
-                <h3>Best practices</h3>
+                <h2>Best practices</h2>
                 <p>
                     <span class={styles.internalLink}>I have selected and tested this development stack over the course of <Link href={'/projects'}><a>4 projects</a></Link>.</span>
                 </p>

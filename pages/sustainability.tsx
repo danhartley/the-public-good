@@ -38,12 +38,12 @@ const Sustainability = () => {
     return (
         <Layout title="Web sustainability" description={'Web sustainability'}>
             <section class={styles.card}>
-                <h2>Sustainability</h2>
-                <h3>Website carbon emissions calculators</h3>
+                <h1>Sustainability</h1>
+                <h2>Website carbon emissions calculators</h2>
                 <Links.ExternalLinksList links={businessCalculators} />
             </section>
             <section class={styles.card}>
-                <h3>UN Sustainable Development Goals (SDGs)</h3>
+                <h2>UN Sustainable Development Goals (SDGs)</h2>
                 <p>Tracked by <a href="https://ourworldindata.org/">Our World in Data</a>.</p>
                 <ul class={styles.unorderedList}>
                     <li><a aria-label="Assessment of the world's response to SDG 7.1 provided by Our World in Data" href="https://sdg-tracker.org/energy#targets">Energy efficiency (SDG 7.1)</a></li>

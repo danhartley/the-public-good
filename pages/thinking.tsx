@@ -6,9 +6,9 @@ const Thinking = () => {
     return (
         <Layout title="Web Thinking" description={'Web Thinking'}>
             <section class={styles.card}>
-                <h2>Thinking</h2>                
+                <h1>Thinking</h1>                
 
-                <h3>How to act</h3>
+                <h2>How to act</h2>
                 <div class={styles.timing}>5 minute read</div>
 
                 <p>What is the value of an individual act?</p>
@@ -100,7 +100,7 @@ const Thinking = () => {
 
                 <p>Knowing facts is not sufficient to effect change, but a decision which may involve inconvenience, loss of income, or the forfeit of a pleasure, is sustained more readily when it has solid foundations, for then the reason behind, and the need for, the change, is clear, even if the benefits are neither immediate nor discernible. It is contrary to forego gratification or gain, but it is hard to ignore that which is right to do, when that right has been established and understood. We may call this our conscience, our sense of duty, or a moral imperative; and we may discover that acting in accordance with our beliefs and understanding, is less disruptive, and more sustaining, than we imagined.</p>
 
-                <h3>More change, not less</h3>
+                <h2>More change, not less</h2>
             
                 <p>An overhaul of how we do things is overdue. That we have to adapt and mitigate is no longer in doubt; governments, <a aria-label="Report on climate risk and decarbonization" href="https://www.mckinsey.com/business-functions/sustainability/our-insights/climate-risk-and-decarbonization-what-every-mining-ceo-needs-to-know">management consultancies</a>, and even <a href="https://www.bp.com/en/global/corporate/news-and-insights/reimagining-energy/sustainability-report-carbon-6-ways-bp-taking-action.html">fossil fuel companies</a> acknowledge that climate change as a consequence of elevated greenhouse gas emissions, is destructive and requires a response.</p>
 
@@ -115,13 +115,13 @@ const Thinking = () => {
                 <p>It may not be enough, but without compassion and trust, our task will be harder; a diminished, or eviscerated humanity, can be a comfort to no one, whether they acted well, or poorly, for or against, the common good.</p>
 
 
-                <h3>Work</h3>
+                <h2>Work</h2>
 
                 <p>There are two ways. The first is often comes at work. We typically have less control at work than we do at home. If we work in an industry connected with high emissions, and there are many, our actions are directly contributing to the problem; we may also feel unjustly criticsed, and fearful for our jobs. The corollary to this is that our actions can have wider reach.</p>
 
                 <p>If we chose to separate our private and public lives, or segregate personal and business affairs, that is our decision, it does not reflect an inherent difference, or truth; we are but one person, though it may be simpler or more convenient to imagine that we are not. The consequences of our actions are unaffected by the roles we assume when we undertake those actions.</p>
 
-                <h3>Participation</h3>
+                <h2>Participation</h2>
 
                 <p>Mann himself is a vegetarian. Bill Gates admits to the guilty pleasure of using a private jet. Do these things matter? Mann does not proselytise on behalf of vegetarianism, Gates thinks personal actions are important (but less so than technological fixes). Individually the impact of their actions is infinitesimal, but does it affect how they think? We can't know, but it is a question we can ask ourselves, of our own guilty pleasures, and actions. This can apply in both directions, the vegan, having made a personal investment, may oversell veganism as a solution.</p>
 
@@ -136,7 +136,7 @@ const Thinking = () => {
                 <p>In addition, media, social or otherwise, must be accountable for the information they publish, and require editors and journalists to provide evidence in support of their arguments or contentions.</p>
 
 
-                <h3>Out with the old</h3>
+                <h2>Out with the old</h2>
 
                 <p>Informed discussion is now focused on how we should adapt rather than whether it is necessary, including questioning orthodox economic models and suppositions from within. In a report published 2 February 2021, <a href="https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review">The Economics of Biodiversity</a>, undertaken on behalf of HM Treasury (UK), the author, Professor Partha Dasgupta, writes:
                     <span class={styles.quote}>
@@ -157,11 +157,11 @@ const Thinking = () => {
                     </span>
                 </p>
 
-                <h3>Grands projets</h3>
+                <h2>Grands projets</h2>
                 <p>A more open debate; grand projets are popular with some politicians in particular, but they have a mixed record. The idea of <a href="https://www.greenthesinai.com/">greening the Sinai desert</a> is stimulating, striking an optimistic note, but the mix of outside intervention - <a href="http://theweathermakers.nl/">The Weather Makers</a>, the company behind the plan have not visited the area, nor can due to instability in the region - requiring huge investment, the temption of huge profits, and an authoritarian regime, and precious little local involvement, gives pause for thought.</p>
 
 
-                <h3>Travellers from an antique land</h3>
+                <h2>Travellers from an antique land</h2>
 
                 <p>The world is getting hotter, the question is by how much, and species are being lost, it is only their number that is in doubt. The results of our actions, in respect of climate change and biodiversity loss, will be a mixture of successes and failures, as they are now.</p>
 

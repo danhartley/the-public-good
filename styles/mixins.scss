@@ -5,7 +5,7 @@
     text-decoration: none;    
     max-width: 800px;
     @include externalLink();
-    h2 {
+    h1 {
         margin: 0 0 .75rem 0;
         font-size: calc(1.35rem + .25vw);        
         font-weight: normal;
@@ -17,23 +17,20 @@
             font-size: calc(1.75rem + .25vw);        
         }
     }
-    h3 {
-        font-style: italic;
-        font-size: calc(1.35rem + .25vw);
+    h2 {
+        letter-spacing: 1px;
+        font-size: calc(1.45rem + .25vw);
         margin: 1.5rem 0 0 0;
-        font-weight: var(--il-fw);
         font-weight: normal;
+        font-variant-caps: all-petite-caps;
     }
-    h4 {
-        font-size: calc(1.1rem + .25vw);
+    h3 {
+        font-size: calc(1rem + .25vw);
         font-weight: 700;
         margin-bottom: 0;
         letter-spacing: .5px;
     }
-    h5 {
-        font-size: .9rem;
-    }
-    h1,h2,h3,h4,h5 {
+    h1,h2,h3,h4 {
         color: rgba(var(--fg),1);
     }
     p {
@@ -100,6 +97,14 @@
     }
     .bang {
         @include internalLink();
+        font-variant-caps: all-petite-caps;
+        font-weight: normal;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+        .italic {
+            font-size: .9rem;
+            font-variant: normal;
+        }
     }
     .small {
         font-size: .9rem;

@@ -6,9 +6,9 @@ const Projects = () => {
     return (
         <Layout title="Web Projects" description={'Web Projects'}>
             <section class={styles.card}>
-                <h2>Projects</h2>                                
+                <h1>Projects</h1>                                
                 <p>                             
-                    <p><h3><a href="https://www.learn-the-planet.com/">Learn the Planet</a></h3>                                   
+                    <p><h2><a href="https://www.learn-the-planet.com/">Learn the Planet</a></h2>                                   
                         <div>Lessons, videos and tests to stimulate interest and further understanding of the natural world.</div>
                         <p>The project on which I made many mistakes, and was therefore forced to solve numerous problems. What cost me above all was not having a clear idea what the project was about; I changed tack on several occasions, each of which required a major refactor. As a developer I did good work, but I was a poor client, having too little understanding of my subject, my goals, and my users. But there were positives:</p>
                         <ul class={styles.list}>
@@ -21,7 +21,7 @@ const Projects = () => {
                         <p>Although the project has not yet found its intended audience, I learnt how to define and scope a project, the evolution of <a aria-label="The Evolution of Javascript" href="https://www.modernjs.com/"> JavaScript</a> in just a few years, and many wonderful things about the living world, including the true composition of <a href="https://www.theatlantic.com/science/archive/2019/01/how-lichens-explain-and-re-explain-world/580681/">lichens</a>.</p>
                     </p>
                     <p>
-                        <h3><a href="https://danhartley.github.io/snapdragon-verbs/">The Verb</a></h3>
+                        <h2><a href="https://danhartley.github.io/snapdragon-verbs/">The Verb</a></h2>
                         <div>Drills to test knowledge of Spanish and Portuguese verbs.</div>
                         <p>At the outset, I put in place generic rules to avoid the problems I had encountered on the previous project. Any project should now:  
                             <ul class={styles.list}>
@@ -32,7 +32,7 @@ const Projects = () => {
                         </p>
                     </p>
                     <p>
-                        <h3><a href="https://snapdragon-retrieval.netlify.app/providers">Snapdragon Retrieval</a></h3>
+                        <h2><a href="https://snapdragon-retrieval.netlify.app/providers">Snapdragon Retrieval</a></h2>
                         <div>Follow up tests to accompany podcasts and long articles.</div>
                         <p>I maintained the schedule I had created for The Verb, added support for <a href="https://www.typescriptlang.org/">Typescript</a>, and <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> features:</p>
                         <ul class={styles.list}>

@@ -71,15 +71,15 @@ const References = () => {
     return (
         <Layout title="References" description={'References'}>
             <section class={styles.card}>
-                <h2>Key References</h2>
+                <h1>Key References</h1>
                 <Links.ExternalLinksList links={keyReferences} />
             </section>
             <section class={styles.card}>
-                <h2>Key posts</h2>
+                <h1>Key posts</h1>
                 <Links.ExternalLinksList links={keyPosts} />
             </section>
             <section class={styles.card}>
-                <h2>Plan</h2>
+                <h1>Plan</h1>
                 <Links.ExternalLinksList links={plans} />
             </section>
         </Layout>

@@ -25,13 +25,13 @@ const Accessibility = () => {
     return (
         <Layout title="Web accessibility" description={'Web accessibility'}>
             <section class={styles.card}>
-                <h2>Accessibility</h2>
+                <h1>Accessibility</h1>
 
-                <h3>Tools</h3>
+                <h2>Tools</h2>
                 <Links.ExternalLinksList links={links} />
             
                 <p>
-                    <h3>Colour contrast</h3>
+                    <h2>Colour contrast</h2>
                     Not everyone has perfect eyesight, especially in poor light. Poor contrast can be tested, together with other accessibility issues, using the web accessibility evaluation tool, <a href="https://wave.webaim.org/">WAVE</a>, or by inspecting an element using browser tools.
                     <p>A summary of WAVE's <a href="https://webaim.org/resources/contrastchecker/">explanation of the WCAG</a> (Web Content Accessibility Guidelines):</p>
                     <dl class={styles.dataTable}>

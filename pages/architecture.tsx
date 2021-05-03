@@ -6,11 +6,11 @@ const Architecture = () => {
     return (
         <Layout title="Web architecture" description={'Web architecture'}>
             <section class={styles.card}>
-                <h2>Architecture</h2>
+                <h1>Architecture</h1>
 
                 <p>This website practices <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a>, "an architecture designed to make the web faster, more secure, and easier to scale".</p>
 
-                <h3>Technology</h3>
+                <h2>Technology</h2>
 
                 <p>
                     <ul class={styles.list}>
@@ -24,7 +24,7 @@ const Architecture = () => {
 
                 <p>I also documented how I set up the project. I chose to do this rather than creating a template because third party libraries and solutions change fast, and best practices change with them. These steps will guide future projects.</p>
 
-                <h3>Documentation</h3>        
+                <h2>Documentation</h2>        
 
                 <p>       
                     <ul class={styles.unorderedList}>

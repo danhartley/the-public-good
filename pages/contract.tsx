@@ -15,13 +15,13 @@ const Contract = () => {
         <Layout title="Contract" description={'Public contract between The Public Good and the Public'}>
             
             <section class={styles.card}>
-                <h2>The contract</h2>
+                <h1>The contract</h1>
                 <p>
-                    <h3>The contract for the-public-good.com</h3>
+                    <h2>The contract for the-public-good.com</h2>
 
                     <p>
 
-                        <h4>Terms</h4>
+                        <h3>Terms</h3>
 
                         <ul class={styles.unorderedList}>
                             <li>
@@ -50,7 +50,7 @@ const Contract = () => {
                             </li>
                         </ul>
 
-                        <h4>Transparency</h4>
+                        <h3>Transparency</h3>
 
                         <ul class={styles.unorderedList}>
                             <li>                                
@@ -71,7 +71,7 @@ const Contract = () => {
             </section>
        
             <section class={styles.card}>
-                <h3>External Links</h3>
+                <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
        
