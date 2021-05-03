@@ -4,9 +4,8 @@ import styles from 'pages/pages.module.scss';
 
 const Architecture = () => {
     return (
-        <Layout title="Web architecture" description={'Web architecture'}>
+        <Layout header="Architecture" title="Web architecture" description={'Web architecture'}>
             <section class={styles.card}>
-                <h1>Architecture</h1>
 
                 <p>This website practices <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a>, "an architecture designed to make the web faster, more secure, and easier to scale".</p>
 

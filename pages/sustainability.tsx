@@ -36,9 +36,9 @@ const businessCalculators = [
 
 const Sustainability = () => {
     return (
-        <Layout title="Web sustainability" description={'Web sustainability'}>
+        <Layout header="Sustainability" title="Web sustainability" description={'Web sustainability'}>
             <section class={styles.card}>
-                <h1>Sustainability</h1>
+
                 <h2>Website carbon emissions calculators</h2>
                 <Links.ExternalLinksList links={businessCalculators} />
             </section>

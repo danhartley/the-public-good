@@ -42,11 +42,11 @@ const Carbon = () => {
     ];
     
     return (
-        <Layout title="Carbon" description={'The ties that bind'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
-            <section class={styles.card}>
-                <h1>Carbon - the ties that bind</h1>
+        <Layout title="Carbon" header="Carbon - the ties that bind" description={'The ties that bind'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
 
-                <div>
+            <section class={styles.card}>
+                
+                <div class={styles.inset}>
                     <div class={styles.bang}><a href="#origins-and-properties">The origins and properties of carbon</a><span class={styles.italic}> 2 minutes</span></div>
                     <div class={styles.bang}><a href="#carbon-compounds">Carbon compounds</a><span class={styles.italic}> 2 minutes</span></div>
                     <div class={styles.bang}><a href="#carbon-and-the-planet">Carbon and the planet</a><span class={styles.italic}> 3 minutes</span></div>

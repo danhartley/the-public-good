@@ -12,10 +12,10 @@ const Contract = () => {
     ]
 
     return (
-        <Layout title="Contract" description={'Public contract between The Public Good and the Public'}>
+        <Layout header="The contract" title="Contract" description={'Public contract between The Public Good and the Public'}>
             
             <section class={styles.card}>
-                <h1>The contract</h1>
+
                 <p>
                     <h2>The contract for the-public-good.com</h2>
 

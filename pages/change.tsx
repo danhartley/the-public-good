@@ -6,12 +6,10 @@ import styles from 'pages/pages.module.scss';
 
 const Change = () => {
     return (
-        <Layout title="Change" description={'A hundred indecisions'} image='https://live.staticflickr.com/65535/51143928462_4df026babc_o.jpg'>
+        <Layout header="Climate change - time yet for a hundred indecisions" title="Change" description={'A hundred indecisions'} image='https://live.staticflickr.com/65535/51143928462_4df026babc_o.jpg'>
             <section class={styles.card}>
 
-                <h1>Climate change - time yet for a hundred indecisions</h1>
-
-                <div>
+                <div class={styles.inset}>
                     <div class={styles.bang}><a href="#background">Background</a><span class={styles.italic}> 3 minutes</span></div>
                     <div class={styles.bang}><a href="#energy">Energy</a><span class={styles.italic}> 6 minutes</span></div>
                     <div class={styles.bang}><a href="#conclusion">Conclusion</a><span class={styles.italic}> 1 minute</span></div>
@@ -104,7 +102,7 @@ const Change = () => {
 
                 <p>
                     <div class={styles.quote}>
-                    Energy density in MJ/kg:
+                    <span class={styles.bold}>Energy density in MJ/kg:</span>
                     <ul class={styles.unorderedList}>
                         <li>Wood - 16</li>
                         <li>Coal - 24</li>

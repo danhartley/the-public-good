@@ -5,7 +5,7 @@ import styles from 'styles/Home.module.scss';
 
 export default function Home() {
   return (
-    <Layout title="Home" header={"Welcome"}>
+    <Layout title="Home" header="Welcome to the home page">
 
         <section class={styles.card}>
             <h2>Always connect</h2>

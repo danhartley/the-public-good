@@ -2,6 +2,20 @@
 
 .main {
     min-height: calc(100vh - 100px - 8px - 8px);
+    h1 {
+        margin: 0 0 .75rem 0;
+        font-size: calc(1.35rem + .25vw);   
+        font-weight: normal;
+        font-style: italic;
+        letter-spacing: .75px;
+        overflow-wrap: break-word;
+        @media (min-width: 414px) {
+            font-size: calc(1.55rem + .25vw);
+        }
+        @media (min-width: 601px) {
+            font-size: calc(1.75rem + .25vw);        
+        }
+    }
 }
 
 .mode {
@@ -48,22 +62,24 @@ header {
         @media (min-width: 601px) {
             font-size: 4rem;
         }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .description {  
+    .title > span:nth-child(2), .description {
         margin: -.25em 0 .5rem 0;
         font-size: 0.7rem;
         letter-spacing: .5px;
-        font-style: italic;
         button:focus span {
             color: rgb(var(--il));
         }
         @media (min-width: 414px) {
-            margin: -.5rem 0 0rem 0; 
+            margin: -.5rem 0 .5rem 0; 
             font-size: .8rem;
         }
         @media (min-width: 601px) {
-            font-size: 1.125rem;            
+            font-size: .9rem;            
         }
     }
 }

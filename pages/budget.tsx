@@ -3,13 +3,10 @@ import styles from 'pages/pages.module.scss';
 
 const Budget = () => {
     return (
-        <Layout title="Budget" description={'Budget'}>
-            <h1>Budget page</h1>
-
+        <Layout header="Budget" title="Budget" description={'Budget'}>
             <p>
                 <span class={styles.big}>BIG</span>
             </p>
-
         </Layout>
     )
 };

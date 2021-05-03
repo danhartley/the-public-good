@@ -13,7 +13,8 @@ const Layout = ({
   children,
   title,
   description = 'The Public Good',
-  image = 'https://live.staticflickr.com/65535/51087492836_0a43c2690e_n_d.jpg'
+  image = 'https://live.staticflickr.com/65535/51087492836_0a43c2690e_n_d.jpg',
+  header = null
 }) => {
     
     const { mode, toggleMode } = useContext(ModeContext);
@@ -71,17 +72,18 @@ const Layout = ({
             </Head>
             <div id="container" style={mode.style as any} class={styles.container}>                
                 <main class={styles.main}>
-                    <header class={styles.header}>
+                    <header role="banner" class={styles.header}>
                         <Link href={'/'}>
                             <a class={styles.title} aria-label="Home page">
                                 <span role="navigation">The Public Good</span>
+                                <span>This website will not empower you.</span>
                             </a>
                         </Link>
-                        <p class={styles.description}>
-                            <span>This website will not empower you.</span>
+                        <p class={styles.description}>                            
                             <button aria-label="Toggle the website colour scheme: between light and dark" class={styles.mode} ref={btnMode} onClick={() => toggleMode()}>{mode.isDark ? <span class={styles.light}></span> : <span class={styles.dark}></span>}</button>
                         </p>
-                    </header>
+                    </header>                    
+                    { header ? <p><h1>{header}</h1></p> : null }
                     {children}
                     { router.pathname === '/' ? null : <nav><Links.Home textAlign={'right'}></Links.Home></nav> }
                 </main>

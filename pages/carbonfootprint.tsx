@@ -1,13 +1,13 @@
 import Layout from 'components/layout/layout';
 import Tables from 'components/tables/tables';
 import Links from 'components/links/Links';
+import Formula from 'components/tools/formula';
 import styles from 'pages/pages.module.scss';
 
 const CarbonFootprint = () => {
     return (
-        <Layout title="Carbon Footprint" description={'Carbon Footprint'}>
+        <Layout header="Carbon footprints - the value of individual acts" title="Carbon Footprint" description={'Carbon Footprint'}>
             <section class={styles.card}>
-                <h1>Carbon footprints - the value of individual acts</h1>
 
                 <div>
                     <div class={styles.bang}><a href="#individualActs">Individual Acts</a></div>
@@ -16,15 +16,16 @@ const CarbonFootprint = () => {
                     <div class={styles.bang}><a href="#conclusion">Conclusion</a></div>
                 </div>               
 
-                <h3>Definition</h3>          
-
                 <p>
+                    <div class={styles.bold}>Carbon footprint</div>
                     <div class={styles.quote}>
                         <div>The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a></div>                    
                     </div>
                 </p>
 
-                <h2>Current emissions</h2>
+                <h2><Formula>CO2</Formula> Emissions</h2>
+
+                <h3>Current emissions</h3>
                 <p>
                 According to Our World in Data (2017):
                 <ul class={styles.list}>
@@ -38,7 +39,7 @@ const CarbonFootprint = () => {
                     <span><a href="https://carbonmonitor.org/">Daily estimates</a> are also available from Carbon Monitor.</span>
                 </div>                
                 </p>
-                <h2>Sustainable emissions</h2>
+                <h3>Sustainable emissions</h3>
                 <p>                                 
                     <div>
                         <span class={styles.quote}>
@@ -63,7 +64,7 @@ const CarbonFootprint = () => {
                 </p>
 
                 <p>
-                    <h2>Global carbon budget</h2>
+                    <h3>Global carbon budget</h3>
                     <p>
                         The <a aria-label="Paper on the Global Carbon Budget 2020" href="https://essd.copernicus.org/articles/12/3269/2020/">global carbon budget</a>, published annually, provides an account of the balance between carbon sources - emissions - and sinks. The movement of carbon atoms betweens sinks and sources is called the <a aria-label="US National Ocean Service article, What is the carbon cycle?" href="https://oceanservice.noaa.gov/facts/carbon-cycle.html">carbon cycle</a>, and it is perturbations in this cycle which cause global warming.
                         Since 1950 around <a href="https://www.nature.com/articles/s41598-018-24241-1.pdf?origin=ppub">48±7%</a> of anthropogenic emissions have been taken up by <a href="https://www.pnas.org/content/116/24/11646">natural sinks</a>, though at variable rates.
@@ -81,7 +82,7 @@ const CarbonFootprint = () => {
                     </p>                    
                 </p>
 
-                <h2>CO2e</h2>
+                <h3>CO2e</h3>
 
                 <p>
                     Unfortunately CO2 is not the only greenhouse gas; emissions from methane, nitrous oxide, and <a href="https://en.wikipedia.org/wiki/Fluorinated_gases">Fluorinated gases</a> (F-gases) must also be taken into account. Total emissions are measured using <a aria-label="Our World in Data, How do we quantify greenhouse gas emissions?" href="https://ourworldindata.org/greenhouse-gas-emissions#how-are-greenhouse-gases-measured">carbon dioxide-equivalents</a>.
@@ -90,7 +91,9 @@ const CarbonFootprint = () => {
                     </p>
                 </p>
 
-                <h2>History</h2>
+                <h2>Personal carbon footprint</h2>
+
+                <h3>History</h3>
 
                 <ul class={styles.list}>
                     <li>
@@ -104,7 +107,7 @@ const CarbonFootprint = () => {
                     </li>
                 </ul>
 
-                <h2>Controversy</h2>
+                <h3>Controversy</h3>
 
                 <p>The climatologist, Michael E Mann, argues that whilst individual action is important, it must not distract from policy. In an article for Time, <a href="https://time.com/5669071/lifestyle-changes-climate-change/">Lifestyle Changes Aren’t Enough to Save the Planet. Here’s What Could</a>, he writes, 
                     <span class={styles.quote}>
@@ -128,7 +131,7 @@ const CarbonFootprint = () => {
                     </div>
                 </p>
 
-                <h2>Implicit emissions</h2>
+                <h3>Implicit footprint</h3>
 
                 <p>
                     <div>In 2008 MIT <a href="https://news.mit.edu/2008/footprint-tt0416">calculated</a> that even the least extravagant person in the US had a carbon footprint of 8.5 tonnes or 42.5% of the average which, at the time, was 20 tonnes.
@@ -146,7 +149,9 @@ const CarbonFootprint = () => {
                     </div>
                 </p>
 
-                <h2>Benefits of carbon footprints</h2>
+                <h2>Evaluation of carbon footprints</h2>
+
+                <h3>Benefits of carbon footprints</h3>
 
                 <p>
                     <ul class={styles.list}>
@@ -156,7 +161,7 @@ const CarbonFootprint = () => {
                     </ul>
                 </p>
 
-                <h2>Downsides of carbon footprints</h2>
+                <h3>Downsides of carbon footprints</h3>
                 
                 <p>
                     <ul class={styles.list}>
@@ -170,7 +175,7 @@ const CarbonFootprint = () => {
                     </ul>
                 </p>
 
-                <h2 id="individualActs">Individual acts</h2>
+                <h3 id="individualActs">Individual acts</h3>
 
                 <p>Carbon footprints are sometimes used as a proxy for individual acts, which are then placed in opposition to political or social acts, limiting choice to one or the other, either/or.</p>
 
@@ -195,7 +200,7 @@ const CarbonFootprint = () => {
 
                 <h2 id="calculators">Carbon footprint calculators</h2>
 
-                <br/>
+                <h3>Personal calculators</h3>
 
                 <Tables.Calculators></Tables.Calculators>
 
@@ -203,7 +208,7 @@ const CarbonFootprint = () => {
                     <div class={styles.small}>NB Not all calculators are the same. The Global Food Network makes clear their <a aria-label="Global Food Network: Footprint Calculator FAQs" href="https://www.footprintnetwork.org/footprint-calculator-faq/#gen1">calculator</a> is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true footprint, measured by area) and a figure for CO2 emissions (a carbon footprint).</div>
                 </p>
 
-                <h2 id="comparison">Comparison</h2>
+                <h3 id="comparison">Results from 5 calculators</h3>
 
                 <p>I used 5 calculators to find my carbon footprint. <span class={styles.super}><a id="table" class={styles.bang} href="#profile">+</a></span></p>
 
@@ -221,7 +226,7 @@ const CarbonFootprint = () => {
                     And finally, they are snapshots, which don't take into account our history, or future plans. If we assume that carbon emissions must peak, and decline, in order to meet the goals set in Paris in 2015, the effect on individual <a href="https://www.carbonbrief.org/analysis-why-children-must-emit-eight-times-less-co2-than-their-grandparents">lifetime carbon budgets</a> is startling.
                 </p>
 
-                <h2>Recommendations</h2>
+                <h3>Recommendations</h3>
                 <p>
                     <ul class={styles.list}>
                         <li>Do not offer the option to share the results of footprints because they are free of important context, and are not comparable; but do share the calculator itself.</li>
@@ -232,7 +237,7 @@ const CarbonFootprint = () => {
                     </ul>
                 </p>
 
-                <h2 id="conclusion">Conclusion</h2>
+                <h3 id="conclusion">Conclusion</h3>
 
                 <p>Carbon footprint calculators have value as an introduction to the consequences of our choices, and as a starting point for examining our interdependency, lack of autonomy, and the limits pertaining to personal action.</p>
 

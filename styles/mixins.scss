@@ -5,24 +5,10 @@
     text-decoration: none;    
     max-width: 800px;
     @include externalLink();
-    h1 {
-        margin: 0 0 .75rem 0;
-        font-size: calc(1.35rem + .25vw);        
-        font-weight: normal;
-        overflow-wrap: break-word;
-        @media (min-width: 414px) {
-            font-size: calc(1.55rem + .25vw);
-        }
-        @media (min-width: 601px) {
-            font-size: calc(1.75rem + .25vw);        
-        }
-    }
     h2 {
-        letter-spacing: 1px;
         font-size: calc(1.45rem + .25vw);
         margin: 1.5rem 0 0 0;
-        font-weight: normal;
-        font-variant-caps: all-petite-caps;
+        letter-spacing: .5px;
     }
     h3 {
         font-size: calc(1rem + .25vw);
@@ -71,8 +57,9 @@
         }
     }
     .inset {
-        padding: 0 2rem;
+        padding: 0 1.5rem;
         margin: 0.1rem 0;
+        margin-left: inherit;
         font-size: 1rem;        
         & div {
             margin: .5rem 0;
@@ -97,10 +84,8 @@
     }
     .bang {
         @include internalLink();
-        font-variant-caps: all-petite-caps;
         font-weight: normal;
-        letter-spacing: 1px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         .italic {
             font-size: .9rem;
             font-variant: normal;

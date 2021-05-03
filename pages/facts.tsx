@@ -5,9 +5,8 @@ import Tables from 'components/tables/tables';
 const Facts = () => {
 
     return (
-        <Layout title="Facts" description={'Facts'}>
+        <Layout header="Facts" title="Facts" description={'Facts'}>
             <section class={styles.card}>
-                <h1>Facts</h1>
 
                 <div class={styles.menu}>
                     <span><a class={styles.bang} href="#carbon">Carbon</a></span>

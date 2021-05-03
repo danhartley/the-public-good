@@ -43,10 +43,8 @@ const perfLinks = [
 
 const Performance = () => {
     return (
-        <Layout title="Web performance" description={'Web performance'}>
+        <Layout header="Performance" title="Web performance" description={'Web performance'}>
             <section class={styles.card}>
-                <h1>Performance</h1>      
-
                 <h2>Free tools</h2>          
                 <p>To run these tests all you need is a public website.</p>
                 <Links.ExternalLinksList links={perfLinks} />   

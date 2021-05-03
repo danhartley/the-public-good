@@ -4,10 +4,8 @@ import styles from 'pages/pages.module.scss';
 
 const Services = () => {
     return (
-        <Layout title="Web Services" description={'Web Services'}>
+        <Layout header="Services" title="Web Services" description={'Web Services'}>
             <section class={styles.card}>
-                <h1>Services</h1>          
-
                 <h2>The contract</h2>
 
                 <p>Outline principles on which the website is built.

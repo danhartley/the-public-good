@@ -54,12 +54,10 @@ const externalLinks = [
 
 const Hydrogen = () => {
     return (
-        <Layout title="Hydrogen" description={'A singular atom'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>        
+        <Layout header="Hydrogen - a singular atom" title="Hydrogen" description={'A singular atom'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>        
             <section class={styles.card}>
                 
-                <h1>Hydrogen - a singular atom</h1>
-
-                <div>                
+                <div class={styles.inset}>
                     <div class={styles.bang}><a href="#origins-and-properties">The origins and properties of hydrogen</a><span class={styles.italic}> 2 minutes</span></div>
                     <div class={styles.bang}><a href="#production">Production</a><span class={styles.italic}> 3 minutes</span></div>
                     <div class={styles.bang}><a href="#conclusion">Potential</a><span class={styles.italic}> 2 minutes</span></div>
@@ -93,8 +91,10 @@ const Hydrogen = () => {
                 <p>Hydrogen bonds explain cohesion (why water molecules 'bead'), and the relatively high boiling point of water - energy is needed to break apart the hydrogen bonds.</p>
 
                 <Accordion header="The polarity of water">
-                    <p>The polarity of water makes it a good solvent. When salt Na<span class={styles.super}>+</span>Cl<span class={styles.super}>-</span> is added to water, it dissolves; positive sodium ions - charged atoms are called ions - are attracted to the slightly negative hydrogen end of the water molecule, and positive chlorine ions are attracted to the oxygen end, thereby breaking apart, or dissolving, the bonds between the sodium and chlorine atoms.</p>
-                    <p>Why are the sodium and chlorine atoms in salt charged? The sodium and chlorine atoms in salt are bound together by an <span><a href="https://www.youtube.com/watch?v=hiyTfhjeF_U">ionic bond</a> (video)</span>. Ionic bonds occur where an electron, or electrons, are transferred from one atom to another, in this case from a sodium atom to a chlorine atom. Since the two atoms now have opposite charges they attract. Na becomes Na<span class={styles.super}>+</span> and Cl becomes Cl<span class={styles.super}>-</span>.</p>                    
+                    <div class={styles.inset}>
+                        <p>The polarity of water makes it a good solvent. When salt Na<span class={styles.super}>+</span>Cl<span class={styles.super}>-</span> is added to water, it dissolves; positive sodium ions - charged atoms are called ions - are attracted to the slightly negative hydrogen end of the water molecule, and positive chlorine ions are attracted to the oxygen end, thereby breaking apart, or dissolving, the bonds between the sodium and chlorine atoms.</p>
+                        <p>Why are the sodium and chlorine atoms in salt charged? The sodium and chlorine atoms in salt are bound together by an <span><a href="https://www.youtube.com/watch?v=hiyTfhjeF_U">ionic bond</a> (video)</span>. Ionic bonds occur where an electron, or electrons, are transferred from one atom to another, in this case from a sodium atom to a chlorine atom. Since the two atoms now have opposite charges they attract. Na becomes Na<span class={styles.super}>+</span> and Cl becomes Cl<span class={styles.super}>-</span>.</p>                    
+                    </div>
                 </Accordion>
 
                 <p>Hydrogen bonds can also form between molecules of different species, for example in DNA, where they hold together the two (polynucleotide) chains; the hydrogen bonds are strong enough to keep the double helix together, but not so strong as to prevent the chains separating when they need to be replicated.</p>
@@ -108,28 +108,32 @@ const Hydrogen = () => {
                 <p>95% of hydrogen is produced by <span><a href="https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming">natural gas reforming</a> in two ways</span>.</p>
 
                 <Accordion header="Steam-methane reforming reaction">
-                    <p>The methane in natural gas reacts with steam under high pressure in the presence of a catalyst to produce hydrogen, carbon monoxide and carbon dioxide.</p>
-                    <p>The carbon monoxide and steam are then reacted using a catalyst to produce carbon dioxide and more hydrogen in the "water-gas shift reaction".</p>                    
-                    <p>In a final step, the "pressure-swing adsorption" reaction, carbon dioxide and other impurities are removed from the gas stream, to leave pure hydrogen.</p>
-                    <p>
-                        <div class={styles.inset}>
-                            <span class={styles.bold}>Steam-methane reforming reaction</span>
-                            <span><Formula>CH4</Formula> + <Formula>H2O</Formula> (+heat) → <Formula>CO</Formula> + 3<Formula>H2</Formula></span>
-                            <span class={styles.bold}>Water-gas shift reaction</span>
-                            <span>CO + <Formula>H2O</Formula> → <Formula>CO2</Formula>  + <Formula>H2</Formula> (+ small amount of heat)</span>
-                        </div>
-                    </p>
+                    <div class={styles.inset}>
+                        <p>The methane in natural gas reacts with steam under high pressure in the presence of a catalyst to produce hydrogen, carbon monoxide and carbon dioxide.</p>
+                        <p>The carbon monoxide and steam are then reacted using a catalyst to produce carbon dioxide and more hydrogen in the "water-gas shift reaction".</p>                    
+                        <p>In a final step, the "pressure-swing adsorption" reaction, carbon dioxide and other impurities are removed from the gas stream, to leave pure hydrogen.</p>
+                        <p>
+                            <div class={styles.inset}>
+                                <span class={styles.bold}>Steam-methane reforming reaction</span>
+                                <span><Formula>CH4</Formula> + <Formula>H2O</Formula> (+heat) → <Formula>CO</Formula> + 3<Formula>H2</Formula></span>
+                                <span class={styles.bold}>Water-gas shift reaction</span>
+                                <span>CO + <Formula>H2O</Formula> → <Formula>CO2</Formula>  + <Formula>H2</Formula> (+ small amount of heat)</span>
+                            </div>
+                        </p>
+                    </div>
                 </Accordion>
 
                 <Accordion header="Partial oxidation">
-                    <p>The methane and other hydrocarbons in natural gas react with a limited amount of oxygen to partially oxidise the hydrocarbons. The carbon monoxide produced is once again reacted with water in the "water-gas shift reaction".
-                        <div class={styles.inset}>
-                            <span class={styles.bold}>Partial oxidation of methane reaction</span>
-                            <span><Formula>CH4</Formula> + <Formula>½O2</Formula> → <Formula>CO</Formula> + <Formula>2H2</Formula> (+ heat)</span>
-                            <span class={styles.bold}>Water-gas shift reaction</span>
-                            <span>CO + <Formula>H2O</Formula> → <Formula>CO2</Formula>  + <Formula>H2</Formula> (+ small amount of heat)</span>
-                        </div>
-                    </p>
+                    <div class={styles.inset}>
+                        <p>The methane and other hydrocarbons in natural gas react with a limited amount of oxygen to partially oxidise the hydrocarbons. The carbon monoxide produced is once again reacted with water in the "water-gas shift reaction".
+                            <div class={styles.inset}>
+                                <span class={styles.bold}>Partial oxidation of methane reaction</span>
+                                <span><Formula>CH4</Formula> + <Formula>½O2</Formula> → <Formula>CO</Formula> + <Formula>2H2</Formula> (+ heat)</span>
+                                <span class={styles.bold}>Water-gas shift reaction</span>
+                                <span>CO + <Formula>H2O</Formula> → <Formula>CO2</Formula>  + <Formula>H2</Formula> (+ small amount of heat)</span>
+                            </div>
+                        </p>
+                    </div>
                 </Accordion>
 
                 <h3>Electrolysis</h3>
