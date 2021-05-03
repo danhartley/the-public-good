@@ -1,45 +1,46 @@
 import Layout from 'components/layout/layout';
 import Accordion from 'components/accordion/accordion';
-import styles from 'pages/pages.module.scss';
 import Links from 'components/links/Links';
 import Quiz from 'components/quiz/quiz';
-
-const externalLinks = [
-    {
-        "name": "Khan Academy | Carbon, the building block of life",
-        "source": "https://www.khanacademy.org/science/biology/properties-of-carbon/carbon/v/carbon-as-a-building-block-of-life"
-    },
-    {
-        "name": "University of Nottingham | Periodic Videos - Carbon",
-        "source": "http://www.periodicvideos.com/videos/006.htm"
-    },
-    {
-        "name": "BBC In Our Time | Carbon",
-        "source": "https://www.bbc.co.uk/sounds/play/p003c1cj"
-    },
-    {
-        "name": "BBC Frontiers | Graphene",
-        "source": "https://www.bbc.co.uk/programmes/b00tgf18"
-    },
-    {
-        "name": "Dr. Edward Murphy, University of Virginia | The Origin of the Elements",
-        "source": "https://www.youtube.com/watch?v=ZJQjjBR6PbY&t=19s"
-    },
-    {
-        "name": "Crash Course Biology | Carbon",
-        "source": "https://www.youtube.com/watch?v=QnQe0xW_JY4&t=609s"
-    },
-    {
-        "name": "Bozeman Science | The Molecules of Life",
-        "source": "https://www.youtube.com/watch?v=QWf2jcznLsY"
-    },
-    {
-        "name": "Khan Academy | The carbon cycle",
-        "source": "https://www.khanacademy.org/science/high-school-biology/hs-ecology/hs-biogeochemical-cycles/v/carbon-cycle"
-    },
-];
+import styles from 'pages/pages.module.scss';
 
 const Carbon = () => {
+
+    const externalLinks = [
+        {
+            "name": "Khan Academy | Carbon, the building block of life",
+            "source": "https://www.khanacademy.org/science/biology/properties-of-carbon/carbon/v/carbon-as-a-building-block-of-life"
+        },
+        {
+            "name": "University of Nottingham | Periodic Videos - Carbon",
+            "source": "http://www.periodicvideos.com/videos/006.htm"
+        },
+        {
+            "name": "BBC In Our Time | Carbon",
+            "source": "https://www.bbc.co.uk/sounds/play/p003c1cj"
+        },
+        {
+            "name": "BBC Frontiers | Graphene",
+            "source": "https://www.bbc.co.uk/programmes/b00tgf18"
+        },
+        {
+            "name": "Dr. Edward Murphy, University of Virginia | The Origin of the Elements",
+            "source": "https://www.youtube.com/watch?v=ZJQjjBR6PbY&t=19s"
+        },
+        {
+            "name": "Crash Course Biology | Carbon",
+            "source": "https://www.youtube.com/watch?v=QnQe0xW_JY4&t=609s"
+        },
+        {
+            "name": "Bozeman Science | The Molecules of Life",
+            "source": "https://www.youtube.com/watch?v=QWf2jcznLsY"
+        },
+        {
+            "name": "Khan Academy | The carbon cycle",
+            "source": "https://www.khanacademy.org/science/high-school-biology/hs-ecology/hs-biogeochemical-cycles/v/carbon-cycle"
+        },
+    ];
+    
     return (
         <Layout title="Carbon" description={'The ties that bind'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
             <section class={styles.card}>

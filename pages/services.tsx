@@ -6,7 +6,21 @@ const Services = () => {
     return (
         <Layout title="Web Services" description={'Web Services'}>
             <section class={styles.card}>
-                <h2>Services</h2>                
+                <h2>Services</h2>          
+
+                <h3>The contract</h3>
+
+                <p>Outline principles on which the website is built.
+
+                    <ul class={styles.list}>
+                        <li>Public document</li>
+                        <li>Clear scope and reasoning and limits (financial, time, etc.)</li>
+                        <li>Good intentions and red lines.</li>
+                        <li>History of ammendments, breaches, etc.</li>
+                        <li>Explicit committments e.g. that the site is accesible.</li>
+                        <li>Promise to respond to criticism with reasonable time.</li>
+                    </ul>
+                </p>
 
                 <h3>Essential features</h3>
                 <p>
@@ -16,17 +30,19 @@ const Services = () => {
                         <li>Accessible: pages are available to all users, on any device.</li>
                         <li>Safe: opportunities for attack are minimised.</li>
                         <li>Extensible: you can change, modify or adapt your site to changing needs.</li> 
+                        <li>Content management: Open-source CMS (<a href="https://www.netlifycms.org/">netlify-cms)</a> or Google <a href="https://firebase.google.com/">Firebase</a> database.</li>
+                        <li>Functions as a service, <a href="Serverless functions">Faas</a>, with either serverless functions on <a href="https://firebase.google.com/docs/functions">Google Cloud</a> or <a href="https://www.netlify.com/products/functions/">Lambda functions</a> on netlify.</li>
                     </ul> 
                     <span>I follow <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</span>
                 </p>
-                <h3>Optional features</h3>
+                {/* <h3>Optional features</h3>
                 <p>
                     <ul class={styles.list}>
                         <li>Open-source CMS (<a href="https://www.netlifycms.org/">netlify-cms)</a>.</li>
                         <li>Google <a href="https://firebase.google.com/">Firebase</a> database.</li>
                         <li>Functions as a service, <a href="Serverless functions">Faas</a>, with either serverless functions on <a href="https://firebase.google.com/docs/functions">Google Cloud</a> or <a href="https://www.netlify.com/products/functions/">Lambda functions</a> on netlify.</li>
                     </ul>
-                </p>
+                </p> */}
 
                 <h3>Best practices</h3>
                 <p>
