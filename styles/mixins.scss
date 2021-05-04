@@ -9,12 +9,14 @@
         font-size: calc(1.45rem + .25vw);
         margin: 1.5rem 0 0 0;
         letter-spacing: .5px;
+        font-weight: normal;
     }
     h3 {
-        font-size: calc(1rem + .25vw);
+        font-size: calc(.8rem + .25vw);
         font-weight: 700;
         margin-bottom: 0;
-        letter-spacing: .5px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
     }
     h1,h2,h3,h4 {
         color: rgba(var(--fg),1);
@@ -138,7 +140,7 @@
     @include link();
     a {
         color: rgb(var(--il));
-        border-bottom: 1px solid rgb(var(--il));
+        border-bottom: 1px dashed rgb(var(--il));
         font-weight: var(--il-fw);
     }
     a:hover {
@@ -179,6 +181,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100vw;
+        margin-top: -1.5rem;
+        background-color: rgb(68, 49, 54) !important;
+        background-color: rgb(77, 68, 61) !important;
+        padding: 1rem;
+        &:focus-visible {
+            outline: none;
+        }
     }
 }
 

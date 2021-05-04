@@ -13,7 +13,7 @@ class MyDocument extends Document {
         <Head>
             <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
         </Head>
-        <body>
+        <body style="background-color:rgb(254 254 241);">
           <Main />
           <NextScript />
         </body>

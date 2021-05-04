@@ -12,58 +12,60 @@ const Contract = () => {
     ]
 
     return (
-        <Layout header="The contract" title="Contract" description={'Public contract between The Public Good and the Public'}>
+        <Layout header="The sociable contract" title="Contract" description={'Public contract between The Public Good and the Public'}>
             
             <section class={styles.card}>
 
                 <p>
-                    <h2>The contract for the-public-good.com</h2>
+                    <h2>Between The Public Good and the Public</h2>
 
                     <p>
 
                         <h3>Terms</h3>
 
-                        <ul class={styles.unorderedList}>
+                        <ul class={styles.list}>
                             <li>
-                                <div>The site will satisfy Web Content Accessibility Guidelines <a href="https://webaim.org/resources/contrastchecker/">WCAG Level AAA</a>.</div>
+                            <span>The site will satisfy Web Content Accessibility Guidelines <a href="https://webaim.org/resources/contrastchecker/">WCAG Level AAA</a>.</span>
+                            <div class={styles.italic}><a href="https://wave.webaim.org/report#/https://www.the-public-good.com/">Check</a> if this is true.</div>
                             </li>
                             <li>
-                                <div>The site will score at least 95% for Performance, Accessibility, Best Practices and SEO on <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>, on both Desktop and Mobile.</div>
+                            The site will score at least 95% for Performance, Accessibility, Best Practices and SEO on <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>, on both Desktop and Mobile.
+                            <div class={styles.italic}>Find out how to use <Links.InternalLink link={{'value': 'performance', 'text': 'Lighthouse'}}></Links.InternalLink> to check these scores.</div>
                             </li>
                             <li>
-                                <div>The site will score 'Cleaner than 85% of pages tested' using <a href="https://www.websitecarbon.com/">Website Carbon</a>.</div>
+                            The site will score 'Cleaner than 85% of pages tested' using <a href="https://www.websitecarbon.com/">Website Carbon</a>.
                             </li>
                             <li>
-                                <div>This site will contain no advertising.</div>
+                            This site will contain no advertising.
                             </li>
                             <li>
-                                <div>This site will not use cookies to track you.</div>
+                            This site will not use cookies to track you.
                             </li>
                             <li>
-                                <div>It will use local storage variable 'is-dark-mode' to store your preference for light or dark mode.</div>
+                            It will use local storage variable 'is-dark-mode' to store your preference for light or dark mode.
                             </li>
                             <li>
-                                <div>Support for  IE11 and all modern browsers (Edge, Firefox, Chrome, Safari, Opera, et al) based on <a href="https://nextjs.org/docs/basic-features/supported-browsers-features">Next.js support</a></div>
+                            Support for  IE11 and all modern browsers (Edge, Firefox, Chrome, Safari, Opera, et al) based on <a href="https://nextjs.org/docs/basic-features/supported-browsers-features">Next.js support</a>
                             </li>
                             <li>
-                                <div>Content or pages that are freely accessible will remain freely accessible in perpetuity.</div>
+                            Content or pages that are freely accessible will remain freely accessible in perpetuity.
                             </li>
                         </ul>
 
                         <h3>Transparency</h3>
 
-                        <ul class={styles.unorderedList}>
+                        <ul class={styles.list}>
                             <li>                                
-                                <div>Any breach or contravention of the terms of this contract will be put right in a timely fashion.</div>
+                            Any breach or contravention of the terms of this contract will be put right in a timely fashion.
                             </li>
                             <li>
-                                <div>Breaches or contraventions of the terms of this contract, including their length and severity, will be published here with the date of the breach and the date when it was addressed.</div>
+                            Breaches or contraventions of the terms of this contract, including their length and severity, will be published here with the date of the breach and the date when it was addressed.
                             </li>
                             <li>
-                                <div>Reasonable criticism relating to the terms of this contract will be addressed and published here with the date of the criticism and the date when it was addressed.</div>
+                            Reasonable criticism relating to the terms of this contract will be addressed and published here with the date of the criticism and the date when it was addressed.
                             </li>
                             <li>
-                                <div>Any changes to this contract will be documented so that the original wording is maintained, and will be accompanied by an explanation of the reasons for the change.</div>
+                            Any changes to this contract will be documented so that the original wording is maintained, and will be accompanied by an explanation of the reasons for the change.
                             </li>
                         </ul>
                     </p>
@@ -74,7 +76,7 @@ const Contract = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-       
+            <Links.RelatedLinks links={[{href:'services',title:'Services'}]}></Links.RelatedLinks>
        </Layout>       
     )
 };
