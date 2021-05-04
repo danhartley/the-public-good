@@ -30,7 +30,7 @@ const Contract = () => {
                             </li>
                             <li>
                             The site will score at least 95% for Performance, Accessibility, Best Practices and SEO on <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>, on both Desktop and Mobile.
-                            <div class={styles.italic}>Find out how to use <Links.InternalLink link={{'value': 'performance', 'text': 'Lighthouse'}}></Links.InternalLink> to check these scores.</div>
+                            <div class={styles.italic}>Find out how to use <Links.InternalLink link={{'value': 'performance#howTo', 'text': 'Lighthouse'}}></Links.InternalLink> to check these scores.</div>
                             </li>
                             <li>
                             The site will score 'Cleaner than 85% of pages tested' using <a href="https://www.websitecarbon.com/">Website Carbon</a>.
@@ -45,7 +45,7 @@ const Contract = () => {
                             It will use local storage variable 'is-dark-mode' to store your preference for light or dark mode.
                             </li>
                             <li>
-                            Support for  IE11 and all modern browsers (Edge, Firefox, Chrome, Safari, Opera, et al) based on <a href="https://nextjs.org/docs/basic-features/supported-browsers-features">Next.js support</a>
+                            Support IE11 and all modern browsers (Edge, Firefox, Chrome, Safari, Opera, et al) based on <a href="https://nextjs.org/docs/basic-features/supported-browsers-features">Next.js support</a>
                             </li>
                             <li>
                             Content or pages that are freely accessible will remain freely accessible in perpetuity.

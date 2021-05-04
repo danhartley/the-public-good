@@ -14,7 +14,7 @@
     h3 {
         font-size: calc(.8rem + .25vw);
         font-weight: 700;
-        margin-bottom: 0;
+        margin: 2rem 0 0 0;
         letter-spacing: 1px;
         text-transform: uppercase;
     }
@@ -142,8 +142,7 @@
 @mixin internalLink() {
     @include link();
     a {
-        color: rgb(var(--il));
-        border-bottom: 1px dashed rgb(var(--il));
+        color: rgb(var(--il));        
         font-weight: var(--il-fw);
     }
     a:hover {
@@ -151,12 +150,15 @@
         border-bottom: 1px solid rgba(var(--il), .8);
     }
     a:visited {
-        color: rgb(var(--il-v));
+        color: rgb(var(--il-v)) !important;
         border-bottom: 1px solid rgb(var(--il-v));
     }
     a:visited:hover {
         color: rgba(var(--il-v), .8);
         border-bottom: 1px solid rgba(var(--il-v));
+    }
+    a, a:hover, a:visited, a:visited:hover {
+        border-bottom: 1px dashed rgb(var(--il)) !important;
     }
 }
 

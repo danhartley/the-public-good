@@ -1,5 +1,9 @@
 @import 'styles/mixins.scss';
 
+.internalLink {
+    @include internalLink();
+}
+
 .internalLinkBlock {
     @include card();
     .internalLink {

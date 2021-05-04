@@ -13,7 +13,7 @@ const Accordion = ({
     };
 
     const content = <p>
-        <button onClick={toggle} class={styles.btn}><span class={state ? styles.down : styles.up}></span><span>{ header }</span></button>
+        <button aria-label={`Toggle view for additional information on ${header}`} onClick={toggle} class={styles.btn}><span class={state ? styles.down : styles.up}></span><span>{ header }</span></button>
         <div class={state ? styles.show : styles.hide}>
         { children }
         </div>

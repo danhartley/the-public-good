@@ -74,7 +74,7 @@ const Performance = () => {
 
                 <p>There will also be times when best practice in terms of software engineering <a aria-label="When best practices can slow your application down by Stack Overflow" href="https://stackoverflow.blog/2021/03/03/best-practices-can-slow-your-application-down/">clashes</a> with website performance.</p>
 
-                <h2>How to</h2>
+                <h2 id="howTo">How to</h2>
 
                 <h3>Open Chrome DevTools</h3>
 
@@ -84,7 +84,7 @@ const Performance = () => {
 
                 <p>Look for Lighthouse in the top menu (it will likely be hidden at first but one or more of Element, Console, Network will be visible). For help on setting up and using Lighthouse, see <a href="https://developers.google.com/web/tools/lighthouse">Google's page</a>.</p>
 
-                <p>I run Lighthouse in an Incognito Window in Chrome, or a Private Window in Firefox. This will allow you to measure performance between websites, or different versions of the same website, without the results being affected by previous sessions or other tasks. The lighthouse scores are artifical, 'lab' benchmarks. If you have an active, live site you can mesaure peformance against real user sessions.</p>
+                <p>I run Lighthouse in an Incognito Window in Chrome, or a Private Window in Firefox. This will allow you to measure performance between websites, or different versions of the same website, without the results being affected by previous sessions or other tasks. The lighthouse scores are artificial, 'lab' benchmarks. If you have an active, live site you can measure performance against real user sessions.</p>
 
             </section>
             <Links.RelatedLinks links={[{href:'architecture',title:'Architecture'},{href:'sustainability',title:'Sustainability'},{href:'accessibility',title:'Accessibility'}]}></Links.RelatedLinks>
