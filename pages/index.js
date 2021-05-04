@@ -26,7 +26,7 @@ export default function Home() {
         </section>
 
         <section class={styles.card}>
-            <h2>Latest</h2>
+            <h2>Climate change</h2>
             <Links.InternalLinkBlock link={{'value': 'carbon', 'text': 'Carbon - the ties that bind'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'hydrogen', 'text': 'Hydrogen - a singular atom'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'change', 'text': 'Climate change - time yet for a hundred indecisions'}}></Links.InternalLinkBlock>

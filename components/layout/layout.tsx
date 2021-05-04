@@ -13,7 +13,7 @@ const Layout = ({
   children,
   title,
   description = 'The Public Good',
-  image = 'https://live.staticflickr.com/65535/51087492836_0a43c2690e_n_d.jpg',
+  image = 'https://inaturalist-open-data.s3.amazonaws.com/photos/97465767/medium.jpeg?1601194277',
   header = null
 }) => {
     
