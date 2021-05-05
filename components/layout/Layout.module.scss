@@ -6,11 +6,11 @@
         margin: 0;
         border-bottom: 5px solid rgba(var(--h1),1);        
         padding-bottom: 3px;
-        display: inline-block;
+        display: inline;
         font-size: calc(1.35rem + .25vw);   
         font-weight: normal;
         letter-spacing: .75px;
-        overflow-wrap: break-word;
+        line-height: 1.7;
         @media (min-width: 414px) {
             font-size: calc(1.55rem + .25vw);
         }
