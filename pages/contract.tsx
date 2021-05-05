@@ -9,6 +9,14 @@ const Contract = () => {
             "name": "Smashing Magazine | Using Ethics In Web Design 2018",
             "source": "https://www.smashingmagazine.com/2018/03/using-ethics-in-web-design/"
         },
+        {
+            "name": "European Digital Rights (EDRi) | EthicalWebDev – guide for ethical website development and maintenance (PDF)",
+            "source": "https://edri.org/wp-content/uploads/2020/11/ethical_web_dev_web.pdf"
+        },
+        {
+            "name": "PRISM BREAK",
+            "source": "https://prism-break.org/en/"
+        },
     ]
 
     return (

@@ -89,6 +89,12 @@
    https://explorers.netlify.com/learn/nextjs/nextjs-performance
    https://nextjs.org/docs/advanced-features/measuring-performance    
 
+21 npm install --save-dev size-limit @size-limit/preset-app
+   for next project, set start as pages/index.js
+   npm run size --why
+   https://github.com/ai/size-limit
+   for timings add: npm install --save-dev size-limit @size-limit/time
+
 ---------- below this line is the original README.md ----------
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

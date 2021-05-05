@@ -2,6 +2,12 @@
   "name": "the-public-good",
   "version": "0.1.0",
   "private": true,
+  "size-limit": [
+    {
+      "limit": "250 ms",
+      "path": "pages/index.js"
+    }
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +16,8 @@
     "test": "jest",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
-    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
+    "size": "npm run build && size-limit"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^10.0.9",
@@ -26,6 +33,8 @@
     "sass": "^1.32.8"
   },
   "devDependencies": {
+    "@size-limit/file": "^4.10.2",
+    "@size-limit/time": "^4.10.2",
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2",
     "jest": "^26.6.3",
@@ -33,6 +42,7 @@
     "next-pwa": "^5.0.5",
     "next-secure-headers": "^2.2.0",
     "react-carbonbadge": "^1.0.1",
+    "size-limit": "^4.10.2",
     "ts-jest": "^26.5.2",
     "typescript": "^4.2.2",
     "webpack": "^4.46.0"

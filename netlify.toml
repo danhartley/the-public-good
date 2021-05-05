@@ -8,6 +8,6 @@
     object-src 'none';
     img-src https:;
     default-src 'self' unpkg.com *.unpkg.com websitecarbon.com *.websitecarbon.com *.thegreenwebfoundation.org;
-    style-src 'self' 'unsafe-inline';
+    style-src 'self';
     frame-ancestors 'none';'''
     Access-Control-Allow-Origin = "*"
