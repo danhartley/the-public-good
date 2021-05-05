@@ -10,9 +10,8 @@
         margin: 1.5rem 0 0 0;
         letter-spacing: .5px;
         font-weight: normal;
-        // border-bottom: 5px solid rgba(247, 110, 98,.5);
-        display: inline-block;
-        // padding-bottom: 3px;
+        display: block;
+        line-height: 1.7;
     }
     h3 {
         font-size: calc(.8rem + .25vw);
