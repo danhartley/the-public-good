@@ -9,6 +9,9 @@
     font-family: inherit;
     display: flex;
     align-items: center;
+    &:hover {
+        color: rgba(var(--fg),1);
+    }
     span {
         pointer-events: none;
         display: inline-block;

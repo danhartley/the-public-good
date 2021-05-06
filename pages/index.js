@@ -26,7 +26,7 @@ export default function Home() {
         </section>
 
         <section class={styles.card}>
-            <h2>Climate change</h2>
+            <h2>Climate change articles</h2>
             <Links.InternalLinkBlock link={{'value': 'carbon', 'text': 'Carbon - the ties that bind'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'hydrogen', 'text': 'Hydrogen - a singular atom'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'change', 'text': 'Climate change - time yet for a hundred indecisions'}}></Links.InternalLinkBlock>
@@ -81,7 +81,7 @@ export default function Home() {
         </section>
         <section class={styles.card}>
             <h2>Sustainability</h2>
-            <p>There is a <a href="https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"> cost in emissions</a> for every page.</p>
+            <p>There is a <a href="https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"> cost in greenhouse gas emissions</a> for every page.</p>
             <p class={styles.internalLink}>
                 <ul class={styles.list}>
                     <li>

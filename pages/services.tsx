@@ -37,7 +37,7 @@ const Services = () => {
                         <li>Clear scope and reasoning and limits (financial, time, etc.)</li>
                         <li>Good intentions and red lines.</li>
                         <li>History of ammendments, breaches, etc.</li>
-                        <li>Explicit committments e.g. that the site is accesible.</li>
+                        <li>Explicit commitments e.g. that the site is accesible.</li>
                         <li>Promise to respond to criticism with reasonable time.</li>
                     </ul>
                 </p> */}

@@ -2,6 +2,12 @@ import Link from 'next/link';
 
 import styles from 'components/links/Links.module.scss';
 
+const ExternalLink = ({link}) => {    
+    return link.label 
+        ? <a aria-label={link.label} href={`${link.source}`}>{link.name}</a>
+        : <a href={`${link.source}`}>{link.name}</a>
+}
+
 const ExternalLinksList = ({links}) => {
     const list = links.map(link => {
         return <li class={styles.externalLink}>
@@ -67,6 +73,7 @@ const RelatedLinks = ({links}) => {
 };
 
 const Links = {    
+    ExternalLink,
     ExternalLinksList,
     Home,
     RelatedLinks,

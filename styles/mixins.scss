@@ -120,12 +120,10 @@
     a, a:hover, a:active, a:visited {
         color: rgb(var(--l));
         text-decoration: none;
-        border-bottom: 1px solid rgb(var(--l));
         padding-bottom: 2px;
     }
     a:hover {
-        color: rgba(var(--l), .8);
-        border-bottom: 1px solid rgba(var(--l), .8);
+        border-bottom: 1px solid rgba(var(--l), 1);
     }
     a:visited {
         color: rgb(var(--l-v));
@@ -146,23 +144,14 @@
 @mixin internalLink() {
     @include link();
     a {
-        color: rgb(var(--il));        
+        color: rgb(var(--il)) !important;
         font-weight: var(--il-fw);
     }
-    a:hover {
-        color: rgba(var(--il), .8);
-        border-bottom: 1px solid rgba(var(--il), .8);
-    }
-    a:visited {
-        color: rgb(var(--il-v)) !important;
-        border-bottom: 1px solid rgb(var(--il-v));
-    }
-    a:visited:hover {
-        color: rgba(var(--il-v), .8);
-        border-bottom: 1px solid rgba(var(--il-v));
-    }
-    a, a:hover, a:visited, a:visited:hover {
+    a, a:visited, a:visited:hover {
         border-bottom: 1px dashed rgb(var(--il)) !important;
+    }
+    a:hover {
+        border-bottom: 1px solid rgb(var(--il)) !important;
     }
 }
 
@@ -200,10 +189,11 @@
 }
 
 .card {
-    @include card();
-    .internalLink {
-        @include internalLink();
-    }
+    @include card();    
+}
+
+.internalLink {
+    @include internalLink();
 }
 
 @mixin unorderedList() {
@@ -227,7 +217,10 @@
 }
 
 .unorderedList {
-    @include unorderedList();    
+    @include unorderedList();
+    li {
+        font-size: 1.1rem;
+    }
 }
 
 .externalList {

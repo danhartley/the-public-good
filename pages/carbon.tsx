@@ -47,9 +47,9 @@ const Carbon = () => {
             <section class={styles.card}>
                 
                 <div class={styles.inset}>
-                    <div class={styles.bang}><a href="#origins-and-properties">The origins and properties of carbon</a><span class={styles.italic}> 2 minutes</span></div>
-                    <div class={styles.bang}><a href="#carbon-compounds">Carbon compounds</a><span class={styles.italic}> 2 minutes</span></div>
-                    <div class={styles.bang}><a href="#carbon-and-the-planet">Carbon and the planet</a><span class={styles.italic}> 3 minutes</span></div>
+                    <div class={styles.bang}><a aria-label="Jump to The origins and properties of carbon on this page" href="#origins-and-properties">The origins and properties of carbon</a><span class={styles.italic}> 2 minutes</span></div>
+                    <div class={styles.bang}><a aria-label="Jump to Carbon compounds on this page" href="#carbon-compounds">Carbon compounds</a><span class={styles.italic}> 2 minutes</span></div>
+                    <div class={styles.bang}><a aria-label="Jump to Carbon and the planet on this page" href="#carbon-and-the-planet">Carbon and the planet</a><span class={styles.italic}> 3 minutes</span></div>
                 </div>
 
                 <Accordion header="Carbon properties">
@@ -194,7 +194,9 @@ const Carbon = () => {
 
                 <p>Carbon is everywhere, including our own bodies where it is the second most abundant element (18%) after oxygen (65%). For a couple of hundred years we have benefited from chemical reactions irreversible in time scales appropriate to our species; the combustion of organic compounds, especially hydrocarbons, to release energy stored over unimaginably vast periods of time, is the foundation of our modern civilisations.</p>
 
-                <p>Will we enjoy an equally profitable relationship with <Links.InternalLink link={{'value': 'hydrogen', 'text': 'hydrogen'}}></Links.InternalLink>?</p>
+                <p>
+                    <div>Will we enjoy an equally profitable relationship with <Links.InternalLink link={{'value': 'hydrogen', 'text': 'hydrogen'}}></Links.InternalLink>?</div>
+                </p>
 
             </section>
             
