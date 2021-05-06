@@ -33,7 +33,7 @@ const Contract = () => {
 
                         <ul class={styles.list}>
                             <li>
-                            <span>The site will satisfy Web Content Accessibility Guidelines <a href="https://webaim.org/resources/contrastchecker/">WCAG Level AAA</a>.</span>
+                            <span>The site will satisfy Web Content Accessibility Guidelines <a href="https://webaim.org/resources/contrastchecker/">WCAG Level AAA</a> in light mode; WCAG Level AA in datk more, Level AA for larger text.</span>
                             <div class={styles.italic}><a href="https://wave.webaim.org/report#/https://www.the-public-good.com/">Check</a> if this is true.</div>
                             </li>
                             <li>

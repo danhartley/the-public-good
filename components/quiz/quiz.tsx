@@ -14,7 +14,7 @@ const Quiz = ({provider = 'the-public-good', title = 'hydrogen-a-singular-atom',
             :
                 <>
                 <h2>How much do your remember?</h2>
-                <div class={styles.link}>
+                <div class={styles.externalLink}>
                     <a href={src}>{link !== '' ? link : title}</a>
                 </div>
                 </>

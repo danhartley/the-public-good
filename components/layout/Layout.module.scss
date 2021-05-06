@@ -58,9 +58,11 @@ header {
         margin: 0;                
         font-size: 2rem;
         font-weight: 400;
-        @include link();
-        color: white !important;
-        border-bottom: none !important;
+        &, &:visited {
+            @include internalLink();
+            color: white !important;
+            text-decoration: none;
+        }
         @media (min-width: 414px) {
             font-size: 2.5rem;
         }
@@ -115,9 +117,10 @@ header {
         font-style: italic;
     }
     @include link();
-    a, a:hover, a:visited, a:visited:hover {            
+    a, a:hover, a:focus, a:visited, a:visited:hover {            
         color: rgb(var(--fg));
         border-bottom: 1px solid rgb(var(--fg));
+        outline: none;
     }
     @media (min-width: 601px) {
         div:nth-child(1) {

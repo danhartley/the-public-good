@@ -13,8 +13,13 @@
 }
 
 .externalLink {
+    @include externalLink();
     line-height: 2;
     @media (min-width: 601px) {
         line-height: 1.5;
     }
+}
+
+.block {
+    display: inline-block;
 }
