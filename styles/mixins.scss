@@ -190,6 +190,20 @@
 
 .card {
     @include card();    
+    .btn {
+        color: rgb(var(--fg));
+        background-color: transparent;
+        padding: .5rem;
+        border: 2px solid lightgray;
+        border-radius: .5rem;
+        font-size: 1rem;
+        letter-spacing: .25px;
+        cursor: pointer;
+        &:hover {
+            border-color: rgba(var(--fg),.5);
+            outline: none;
+        }
+    }
 }
 
 .internalLink {
