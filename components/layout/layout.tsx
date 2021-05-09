@@ -74,7 +74,7 @@ const Layout = ({
                 <header role="banner" class={styles.header}>
                     <Link href={'/'}>
                         <a class={styles.title} aria-label="Home page">
-                            <span role="navigation">The Public Good</span>
+                            <nav aria-label="Header link to home page">The Public Good</nav>
                             <span>This website will not empower you.</span>
                         </a>
                     </Link>
@@ -85,7 +85,7 @@ const Layout = ({
                 <main class={styles.main}>               
                     { header ? <p class={styles.h1}><div><h1>{header}</h1></div></p> : null }
                     {children}
-                    { router.pathname === '/' ? null : <nav><Links.Home textAlign={'right'}></Links.Home></nav> }
+                    { router.pathname === '/' ? null : <nav aria-label="Footer link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
                 </main>
                 <footer class={styles.footer}>
                     <div><span>© <a href="mailto:dbmhartley@protonmail.com">Daniel Hartley</a> 2021. All rights reserved.</span></div>

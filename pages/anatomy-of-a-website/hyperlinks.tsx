@@ -24,10 +24,6 @@ const Hyperlinks = () => {
         },
     ];
 
-    const setFocus = e => {
-        document.getElementsByTagName('a')[1].focus();
-    };
-
     return (
         <Layout header="Hyperlinks" title="Hyperlinks" description={'Hyperlinks'}>
             <section class={styles.card}>
@@ -35,20 +31,6 @@ const Hyperlinks = () => {
                 <p>The URL (Uniform Resource Locator) of a page appears in the address bar at the top of the screen. The URL of this site is <span class={styles.italic}>https://www.the-public-good.com/site/hyperlinks</span>. Hyperlinks, or links, on other pages, including Google, can target this address.</p>
 
                 <p>Before the emergence of search engines, web directories like <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/Yahoo!_Directory'}}>Yahoo! Directory</Links.ExternalLink> and <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/DMOZ'}}>DMOZ</Links.ExternalLink> were the predominant means of discovering and accessing web sites.</p>
-
-                {/* <p>If you are viewing this page on a desktop the target of a link will appear in the status bar at bottom left of the screen when you hover the cursor over it, or focus on it using the keyboard. When you click on a link messages flash up describing the status of your request.</p> */}
-
-                {/* <p><button onClick={setFocus} class={styles.btn}>Click this button to focus on the next link</button></p>
-
-                <p>By way of demonstration, click on the button above. Doing so will focus the keyboard on the link to Alexa below. If you click tab you will see focus move from one link to another.</p>                
-
-                <p>
-                    <div>Typing the name of a site into the address bar has always been a key part of the web, hence the importance of domain names. The domain for this site is <span class={styles.italic}>the-public-good.com</span>. A page's path is unique - <span class={styles.italic}>/site/hyperlinks</span>.</div>                    
-                </p> */}
-
-                {/* <p>
-                    <div><span class={styles.bold}>How do we find websites?</span></div>
-                </p> */}
 
                 <p>A recent report by <Links.ExternalLink link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>Alexa</Links.ExternalLink> found that searches account for 40-60% of visitors to a site, and direct traffic (typically typing in the name of a website) 30-50%. Referrals - links - represent around 10% of visitors to a site, though this is higher, 26.6%, for 'non-standard content' such as this site. A small amount of traffic comes from social media but for news, weather and information this figure rises to 12.2%.</p>
 
