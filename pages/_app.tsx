@@ -15,7 +15,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             --fg:250, 250, 250; 
             --bg:45, 45, 45;
             --l:0, 220, 249;
-            --l-v:214, 174, 222;            
+            --l-v:231, 143, 247;
             --il:255, 165, 0;
             --il-v:255, 165, 0;
             --il-fw:bold;

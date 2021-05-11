@@ -54,7 +54,7 @@ const externalLinks = [
 
 const Hydrogen = () => {
     return (
-        <Layout header="Hydrogen - a singular atom" title="Hydrogen" description={'A singular atom'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>        
+        <Layout header="Hydrogen - a singular atom" title="Climate crisis - Hydrogen" description={'Climate crisis - Hydrogen'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>
             <section class={styles.card}>
                 
                 <div class={styles.inset}>
@@ -222,7 +222,7 @@ const Hydrogen = () => {
                 <Links.ExternalLinksList links={externalLinks} />
             </section>            
 
-            <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'carbon',title:'Carbon'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'climate-crisis/carbon-component-of-life',title:'Carbon - component of life'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

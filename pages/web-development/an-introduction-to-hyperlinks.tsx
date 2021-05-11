@@ -25,35 +25,39 @@ const Hyperlinks = () => {
     ];
 
     return (
-        <Layout header="Hyperlinks" title="Hyperlinks" description={'Hyperlinks'}>
+        <Layout header="An introduction to hyperlinks" title="Web development - An introduction to hyperlinks" description={'Web development - An introduction to hyperlinks'}>
             <section class={styles.card}>
 
-                <p><div class={styles.inset}><span class={styles.italic}>Reading time: 6 minutes</span></div></p>
+                <p><div class={styles.inset}><span class={styles.italic}>Reading time: 7 minutes</span></div></p>
 
-                <h2>A hyperlink primer</h2>
+                <h2>Going places</h2>
 
-                <p>Hyperlinks, or simply links, are references to data elsewhere. The links in this article are to pages or documents on other web sites. They are distinguished by their unique web address, or <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/URL'}}>URL</Links.ExternalLink>.</p>
+                <p>Hyperlinks, or simply links, are references to data elsewhere. The links in this article are to pages or documents on other web sites. They are identified by their unique web address, or <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/URL'}}>URL</Links.ExternalLink>.</p>
 
                 <p>
-                    <div>The address of this page is <span class={styles.italic}>https://www.the-public-good.com/web-primer/hyperlinks</span>.</div>
+                    <div>The address of this page is <span class={styles.italic}>https://www.the-public-good.com/web-development/hyperlinks</span>.</div>
                 </p>
 
-                <p>Web directories like <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/Yahoo!_Directory'}}>Yahoo! Directory</Links.ExternalLink> and <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/DMOZ'}}>DMOZ</Links.ExternalLink> were once the predominant means of discovering and accessing web sites. At the outset they were simply categorised lists of web addresses. The emergence of search engines changed this.</p>
+                <p>Web directories like <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/Yahoo!_Directory'}}>Yahoo! Directory</Links.ExternalLink> and <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/DMOZ'}}>DMOZ</Links.ExternalLink> were once the predominant means of discovering and accessing web sites. Initially they were little more than lists of web addresses. As the lists grew larger, they introduced search options. Google dropped the lists altogether.</p>
 
-                <p>A recent report from <Links.ExternalLink link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>Alexa</Links.ExternalLink> found that search accounts for 40-60% of visitors to a site, and direct traffic (typically typing in the name of a website) 30-50%. Referrals - links - represent around 10% of visitors to a site, though this is higher, 26.6%, for 'non-standard content' such as this site. A small amount of traffic comes from social media but for news, weather and information this figure rises to 12.2%.</p>
+                <p>A recent report from <Links.ExternalLink link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>Alexa</Links.ExternalLink> found that search now accounts for 40-60% of visitors to a site, and direct traffic (typically typing in the name of a website) 30-50%. Referrals - links - represent around 10% of visitors to a site, though this is higher for 'non-standard content' such as this site (26.6%). A small amount of traffic comes from social media but for news, weather and information this figure rises to 12.2%.</p>
 
-                <p>In addition to links to external sources, there are links on this page to <span class={styles.italic}>internal</span> resources such as the home page. There is also a link which will open your default email application with a new message addressed to my unique email address.</p>
+                {/* <p>
+                    <div>In addition to links to external sources, there are links on this page to <span class={styles.italic}>internal</span> resources such as the home page.</div>
+                </p> */}
+
+                {/* <p><div>There is one other link. Clicking my name in the footer will open your default email application and create a message addressed to me. The combination of the 'mailto' attribute and my email address - mailto:dbmhartley@protonmail.com - is also a valid <Links.ExternalLink link={{source:'https://webmasters.stackexchange.com/questions/19101/what-is-the-difference-between-a-uri-and-a-url/77783'}}>URL</Links.ExternalLink>.</div></p> */}
 
                 <h3>Outward bound</h3>
 
                 <p>Linking to other sites respects the right of the user to explore the web freely. Links may also be used to connect to resources used to advance arguments and support claims. External links - also known as outbound links - benefit readers. They also <Links.ExternalLink link={{source:'https://blog.alexa.com/outbound-links-content-marketing/'}}>improve search engine rankings</Links.ExternalLink>.</p>
 
                 <p>
-                    <div>The value of external sources is important. I only link to sources whose credentials I trust. I also avoid sites behind paywalls or that bombard the user with pop-ups. I favour sites free of advertising, with few exceptions (<Links.ExternalLink link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.ExternalLink> newspaper is one).</div>
+                    <div>The value of external sources is important. I only link to sources whose credentials I trust. I also avoid sites behind paywalls or that bombard the user with pop-ups. I favour sites free of advertising with few exceptions (<Links.ExternalLink link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.ExternalLink> newspaper is one).</div>
                 </p>
 
                 <p>
-                    <div>In order to disassociate a site from the source of a link the attributes <Links.ExternalLink link={{source:'https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/'}}>noopener, noreferrer and nofollow</Links.ExternalLink> can be added.</div>
+                    <div>To increase the security of a site and to avoid endorsing the source of a link the attributes <Links.ExternalLink link={{source:'https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/'}}>noopener, noreferrer and nofollow</Links.ExternalLink> can be added. Google has introduced 'sponsored' and 'user-generated content' attributes to <Links.ExternalLink link={{source:'https://developers.google.com/search/docs/advanced/guidelines/qualify-outbound-links'}}>qualify outbound links</Links.ExternalLink> to site sponsors and for links added by users in comments and forums.</div>
                 </p>
 
                 <p>
@@ -81,8 +85,8 @@ const Hyperlinks = () => {
 
                 <p>The reason to distinguish between visited and unvisited links is to save the reader linking to pages they have already visited. This is especially important if the link is to an external source.</p>
 
-                <p>The default colours can be overridden as I have done for this site. In order to meet user's expectations I followed WebAIM's advice on <Links.ExternalLink link={{source:'https://webaim.org/blog/wcag-2-0-and-link-colors/'}}>Link Colors</Links.ExternalLink> and used blue and purple hues that provide good colour contrasts. You can <Links.ExternalLink link={{source:'https://wave.webaim.org/report#/https://www.the-public-good.com/'}}>check for contrast errors</Links.ExternalLink> on this site.</p>
-
+                <p>The default colours can be overridden as I have done for this site. In order to meet user's expectations I followed WebAIM's advice on <Links.ExternalLink link={{source:'https://webaim.org/blog/wcag-2-0-and-link-colors/'}}>Link Colors</Links.ExternalLink> and used blue and purple hues that provide good colour contrasts. You can <Links.ExternalLink link={{source:'https://wave.webaim.org/report#/https://www.the-public-good.com/'}}>check for contrast errors</Links.ExternalLink> on this site.</p>                
+                
                 <h3>Underlining issues</h3>
 
                 <p>By default hyperlink text is underlined. How does this affect legibility?</p>
@@ -103,10 +107,6 @@ const Hyperlinks = () => {
 
                 <p>If you are reading on a desktop you will notice mouse hover or keyboard focus causes the line to darken and the cursor to change to a hand with a pointing finger. The cursor change is a default, the darkening (or other change) a convention.</p>
 
-                <p>
-                    <div>It is helpful to distinguish between <span class={styles.italic}>internal</span> links from external links. For this site I use different colours, and a dashed line instead of a solid line (though it turns solid on hover/focus). I don't change the colour of visited internal links. On a site with more internal links it may be helpful to make clear which pages the user has visited.</div>                    
-                </p>                
-                
                 <h3>Are hyperlinks distracting?</h3>
 
                 <p>Evidence suggests that judicious use of links does not impair understanding, or interrupt the reader's concentration.
@@ -124,8 +124,22 @@ const Hyperlinks = () => {
                 </p>
 
                 <p>
-                    <div>Meaningful and distinguishable link text is essential for users of screen readers, who may scan links independently of other content. If the text is too long, alternative text can be placed in an <Links.ExternalLink link={{label: 'MDN Using the aria-label attribute', source: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute'}}>aria-label attribute</Links.ExternalLink> which will not be seen.</div>
+                    <div>Meaningful and distinguishable link text is essential for users of screen readers who may scan links independently of other content. If the text is too long, alternative text can be placed in an <Links.ExternalLink link={{label: 'MDN Using the aria-label attribute', source: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute'}}>aria-label attribute</Links.ExternalLink> which will not be seen by sighted readers.</div>
                 </p>
+
+                <p>In order to minimise distraction some sites gather links in one place. In a short article this may be at the end of the piece. Some BBC articles group and list links as they go along, a technique which keeps the links close to the text they support.</p>
+
+                <h3>Internal links</h3>
+
+                <p>
+                    <div>I have been talking about external links. The <span class={styles.italic}>internal</span> links on this site are a different colour and have a dashed line (though it turns solid on hover/focus). Because these links form part of the site navigation, I make no distinction between un/visited internal links. I don't want to discourage a reader clicking on an internal link the content of which may have changed.</div>                    
+                </p>                
+
+                <p>The Guardian, a large site with many internal references across different sections of the paper, makes no distinction between external and internal links, or between visited and unvisited links.</p>
+
+                <p>The BBC also treats internal and external links alike but it signals the source of external links in the text of the link, for example, 'according to the Red Cross, citing government data.' Visited links are gray rather than black but neither the difference nor reason for the difference is evident.</p>
+
+                {/* <p>Googe search does differentiate between visited and unvisited links, in both its light and dark mode.</p> */}
 
                 <h3>Where should links open?</h3>
 
@@ -140,23 +154,35 @@ const Hyperlinks = () => {
 
                 <p>If the user wishes to open a new window or tab, that option remains available.</p>
 
-                <p>One objection to opening external links in the same tab is that clicking the back button causes the page to reload. Since this behaviour is more sustainable (the energy required to send the page is saved), you may choose to favour this approach over one that promotes accessibility. This website employs <Links.ExternalLink link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API'}}>service workers</Links.ExternalLink> so that, for the majority of users, the page loads from a local cache when the user returns.</p>
+                <p>One objection to opening external links in the same tab is that clicking the back button causes the page to reload. Since this behaviour is more sustainable (the energy required to resend the page is saved), you may choose to favour this approach over one that promotes accessibility. This website employs <Links.ExternalLink link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API'}}>service workers</Links.ExternalLink> so that, for the majority of users, the page loads from a local cache when the user returns.</p>
 
                 <p>If you would like to read a variety of opinions on the rights and wrongs of opening links in new tabs (or windows), I recommend <Links.ExternalLink link={{source:'https://uxmovement.com/navigation/why-external-links-should-open-in-new-tabs/'}}>Why External Links Should Open in New Tabs</Links.ExternalLink>, especially the comments section.</p>
 
-                <h3>The look of links</h3>
+                <h3>The address bar</h3>
 
-                <p>The address bar is of less value on devices with smaller screens which is typical of mobiles. Typing in the address bar and copy-and-pasting text is fiddly.</p>
+                <p>The address bar is of less value on devices with smaller screens which is typical of mobiles. Typing in the address bar or copy-and-pasting text is also fiddly.</p>
 
                 <p>On larger screens, however, URLs provide useful information. Where possible they should be human readable and screen-reader friendly.</p>
 
-                <p>They can also be used to provide insight to the structure of the web site and where <Links.ExternalLink link={{source:'https://developer.mozilla.org/en-US/docs/Glossary/Breadcrumb'}}>breadcrumbs</Links.ExternalLink> are used there should be consistency between the two.</p>
+                <p>URLs provide insight on the structure of the web site and where <Links.ExternalLink link={{source:'https://developer.mozilla.org/en-US/docs/Glossary/Breadcrumb'}}>breadcrumbs</Links.ExternalLink> are used there should be consistency between the two.</p>
 
                 <h3>Fitts's law</h3>
 
                 <p>Hyperlinks should be recognisable for all readers and on all devices. They should also be easy to select.</p>
 
-                <p><Links.ExternalLink link={{source:'https://lawsofux.com/fittss-law/'}}>Fitts's law</Links.ExternalLink> is a function of the ratio between the distance to a target and the width of that target. In other words, clicking on or tapping a link should require no great dexterity.</p>
+                <p><Links.ExternalLink link={{source:'https://lawsofux.com/fittss-law/'}}>Fitts's law</Links.ExternalLink> is a function of the ratio between the distance to a target and the width of that target. In other words, clicking on or tapping a link should not require dexterity.</p>
+
+                <h3>Summing up</h3>
+
+                <p>The BBC and The Guardian use different colours across their sites, including blue, black and red. But their links are always underlined, and the line is always below the bottom of descenders.</p>
+
+                <p>The conventions around links have shifted. But underlined text that doesn't interfere with the text is a prerequisite.</p>    
+
+                <p>Differentiating between visited links and unvisited links depends on how useful this information is to the reader.</p>
+
+                <p>Some sites use an icon to indicate that the source of a link is external. The website <Links.ExternalLink link={{source:'https://www.gov.uk/'}}>GOV.UK</Links.ExternalLink> removed them because they found that <Links.ExternalLink link={{source:'https://designnotes.blog.gov.uk/2016/11/28/removing-the-external-link-icon-from-gov-uk/'}}>the icon is obscure and ambiguous</Links.ExternalLink>. </p>
+
+                <p>Hyperlinks lead us from one document to another irrespective of the site to which they belong. They link ideas, opinions, people, and stories in order to explain, contradict and clarify. The links themselves should be clear, accessible and consistent, not only within a site but across sites.</p>
 
             </section>
 
@@ -167,10 +193,10 @@ const Hyperlinks = () => {
             </section>
         
             <section class={styles.card}>
-                <h2>External Links</h2>
+                <h2>References</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{href:'contract',title:'Sociable contract'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'architecture',title:'Architecture'},{href:'sustainability',title:'Sustainability'},{href:'accessibility',title:'Accessibility'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

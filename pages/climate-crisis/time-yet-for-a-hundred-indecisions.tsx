@@ -6,7 +6,7 @@ import styles from 'pages/pages.module.scss';
 
 const Change = () => {
     return (
-        <Layout header="Climate change - time yet for a hundred indecisions" title="Change" description={'A hundred indecisions'} image='https://live.staticflickr.com/65535/51143928462_4df026babc_o.jpg'>
+        <Layout header="Time yet for a hundred indecisions" title="Climate change - time yet for a hundred indecisions" description={'Climate change - time yet for a hundred indecisions'} image='https://live.staticflickr.com/65535/51143928462_4df026babc_o.jpg'>
             <section class={styles.card}>
 
                 <div class={styles.inset}>

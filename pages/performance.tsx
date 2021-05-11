@@ -49,7 +49,7 @@ const Performance = () => {
     return (
         <Layout header="Website performance" title="Web performance" description={'Web performance'}>
             <section class={styles.card}>
-                <h2>Free tools</h2>          
+
                 <p>To run these tests all you need is a public website.</p>
                 <Links.ExternalLinksList links={perfLinks} />   
 
@@ -74,7 +74,7 @@ const Performance = () => {
 
                 <p>There will also be times when best practice in terms of software engineering <a aria-label="When best practices can slow your application down by Stack Overflow" href="https://stackoverflow.blog/2021/03/03/best-practices-can-slow-your-application-down/">clashes</a> with website performance.</p>
 
-                <h2 id="howTo">How to</h2>
+                <h2 id="howTo">How to test your site</h2>
 
                 <h3>Open Chrome DevTools</h3>
 

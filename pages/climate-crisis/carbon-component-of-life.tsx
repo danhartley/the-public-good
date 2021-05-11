@@ -42,14 +42,14 @@ const Carbon = () => {
     ];
     
     return (
-        <Layout title="Carbon" header="Carbon - the ties that bind" description={'The ties that bind'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
+        <Layout title="Climate crisis - Carbon" header="Carbon - component of life" description={'Climate crisis - Carbon'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
 
             <section class={styles.card}>
                 
                 <div class={styles.inset}>
                     <div class={styles.bang}><a aria-label="Jump to The origins and properties of carbon on this page" href="#origins-and-properties">The origins and properties of carbon</a><span class={styles.italic}> 2 minutes</span></div>
                     <div class={styles.bang}><a aria-label="Jump to Carbon compounds on this page" href="#carbon-compounds">Carbon compounds</a><span class={styles.italic}> 2 minutes</span></div>
-                    <div class={styles.bang}><a aria-label="Jump to Carbon and the planet on this page" href="#carbon-and-the-planet">Carbon and the planet</a><span class={styles.italic}> 3 minutes</span></div>
+                    <div class={styles.bang}><a aria-label="Jump to The Carbon Cycle on this page" href="#carbon-cycle">The Carbon Cycle</a><span class={styles.italic}> 3 minutes</span></div>
                 </div>
 
                 <Accordion header="Carbon properties">
@@ -64,7 +64,7 @@ const Carbon = () => {
 
                 <h2 id="origins-and-properties">The origins and properties of carbon</h2>
 
-                <h3>(Almost) as old as the stars</h3>
+                {/* <h3>(Almost) as old as the stars</h3> */}
 
                 <p>Carbon atoms are formed in dying stars under extreme and improbable conditions during a set of nuclear fusion reactions known as the <span><a aria-label="Stanford article on the triple-alpha process" href="http://large.stanford.edu/courses/2017/ph241/udit2/">triple-alpha process</a></span>. On collapse of the star, in a supernova, the atoms are blown out, eventually forming new star systems such as our own.</p>
                 
@@ -82,7 +82,7 @@ const Carbon = () => {
 
                 <Accordion header="Covalent bonds">                    
                     <div class={styles.inset}>
-                        <div>Electrons are arranged in orbitals about the nucleus of an atom. Electrons in the outermost or valence orbital are able to form a pair with a valence electron from another atom.</div>
+                        <div>Electrons are arranged in orbitals about the nucleus of an atom. An electron in the outermost or valence orbital is able to form a pair with a valence electron from another atom.</div>
                         <div>These <span class={styles.bold}>covalent bonds</span> make atoms both more stable and cause them to be attracted to one another. This attraction equates to energy which is released when the bond is broken through combustion.</div>
                         <div>In diamond, each carbon atom shares electrons with four other carbon atoms, forming 4 single covalent bonds.</div>
                         <div>In carbon dioxide, each carbon atom shares 2 electrons with each oxygen atom, so that 2 double covalent bonds are formed.</div>
@@ -124,37 +124,18 @@ const Carbon = () => {
 
                 <p>
                     <div class={styles.inset}>
-                        <span>C<span class={styles.sub}>4</span>H<span class={styles.sub}>10</span> - butane and C<span class={styles.sub}>8</span>H<span class={styles.sub}>18</span> - octane are pure hydrocarbons. Petrol is a mixture of many hydrocarbons.</span>
-                        <span>Naturally occurring, unrefined fossil fuels, such as crude oil and coal, contain impurities which are released when they are burnt. Coal, for example, is of variable quality, with higher grade forms (anthracite) having a higher ratio of carbon to other elements, including oxygen - O, nitrogen - N and sulfur - S.</span>
-                        <span>Low grade <span class={styles.bold}>bituminous</span> coal has the formula <span class={styles.bold}>C<span class={styles.sub}>137</span>H<span class={styles.sub}>97</span>O<span class={styles.sub}>9</span>NS</span>.</span>
-                        <span>High grade <span class={styles.bold}>anthracite</span> has the formula <span class={styles.bold}>C<span class={styles.sub}>240</span>H<span class={styles.sub}>99</span>O<span class={styles.sub}>4</span>NS</span>.</span>
+                        <div>C<span class={styles.sub}>4</span>H<span class={styles.sub}>10</span> - butane and C<span class={styles.sub}>8</span>H<span class={styles.sub}>18</span> - octane are pure hydrocarbons. Petrol is a mixture of many hydrocarbons.</div>
+                        <div>Naturally occurring, unrefined fossil fuels, such as crude oil and coal, contain impurities which are released when they are burnt. Coal, for example, is of variable quality; higher grade forms such as anthracite have a higher ratio of carbon to other elements, including oxygen - O, nitrogen - N and sulfur - S.</div>
+                        <div>Low grade <span class={styles.bold}>bituminous</span> coal has the formula <span class={styles.bold}>C<span class={styles.sub}>137</span>H<span class={styles.sub}>97</span>O<span class={styles.sub}>9</span>NS</span>.</div>
+                        <div>High grade <span class={styles.bold}>anthracite</span> has the formula <span class={styles.bold}>C<span class={styles.sub}>240</span>H<span class={styles.sub}>99</span>O<span class={styles.sub}>4</span>NS</span>.</div>
                     </div>
                 </p>
-
-                <h3>The sun</h3>
-
-                <p>The energy from fossil fuels is derived from the sun; photons absorbed by chlorophyll excite electrons and thereby enable the processes by which photosynthesis produces organic compounds. Fossil fuels are a concentrated form of this energy.</p>
-
-                <p> Solar and wind power are renewable energy sources because the energy we obtain from them can be replaced immediately (by the sun).</p>
-
-                <p>
-                    <div class={styles.inset}>
-                        <span>Fossil fuels take ~1 million years to form. They have high energy and power densities.</span>
-                        <span>Renewables are constantly replenished by the sun's energy. They have low energy and power densities.</span>
-                        <span>In one year we release energy that took a million years to form. <span><a href="https://www.theguardian.com/science/2007/may/22/highereducation.education">Harry Kroto</a></span></span>
-                        <div><Links.InternalLink link={{'value': 'facts#energy', 'text': 'Values for energy and power densities'}}></Links.InternalLink></div>
-                    </div>
-                </p>
-
-                <p>The only energy source not derived from our sun is nuclear which ultimately derives from myriad distant, and now long dead stars.</p>
 
                 <h3>Polymers</h3>
 
                 <p>Because carbon atoms form strong bonds with other carbon atoms as well as the atoms of other elements it is able to form long chains, or polymers. Many of these are critical to life, including RNA, DNA, proteins, and sugars. It is this ability to bind to itself in long chains, form stable compounds with other elements and the proximity of electrons to the nucleus, that makes carbon the best, and perhaps the only, building block of life, not only on this planet, but in the universe.</p>
-
-                <h2 id="carbon-and-the-planet">Carbon and the planet</h2>
-
-                <h3>The Carbon Cycle</h3>
+    
+                <h2 id="carbon-cycle">The Carbon Cycle</h2>
 
                 <p>The carbon cycle regulates the flow of carbon through the earth and the atmosphere. The distribution of carbon throughout the cycle affects temperature which alters conditions on earth to which all life must adapt.</p>
 
@@ -173,14 +154,14 @@ const Carbon = () => {
                 <p>Cumulative <span><a href="https://ourworldindata.org/co2-emissions">emissions</a></span> of carbon dioxide to date are ~1.5 trillion tonnes.
                     <div class={styles.quote}>
                         <span>Remaining reserves in tonnes:  900 coal, 150 oil, 105 gas, 540 shale gas, etc. = 1.695 trillion.</span>
-                        <div>Carbon is also found in methane hydrates in polar regions and under the seas. Various estimates put this carbon between 500Gt and 3,000Gt.</div>
+                        <div>Carbon is also found in methane hydrates in polar regions and under the seas. Estimates vary between 500 and 3,000 gigatonnes of carbon.</div>
                         <div><a href="https://en.wikipedia.org/wiki/Carbon">Wikipedia</a></div>
                     </div>
                 </p>
 
                 <h3>The isotopic signature of anthropogenic warming</h3>
 
-                <p>Isotopes are variants of a chemical element which differ in their number of neutrons. Carbon has 3 isotopes, carbon-12, carbon-13 and carbon-14.</p>
+                <p>Isotopes are variants of a chemical element which differ in their number of neutrons. Carbon has 3 isotopes, carbon-12, carbon-13, and carbon-14.</p>
 
                 <h4>How do we know the extra carbon dioxide in the atmosphere is caused by burning fossil fuels?</h4>
 
@@ -190,12 +171,32 @@ const Carbon = () => {
 
                 <p>NASA has been monitoring the natural carbon cycle using satellites for some time including <span><a href="https://ocov2.jpl.nasa.gov/">Orbiting Carbon Observatory-2</a></span> and <span><a href="https://ocov3.jpl.nasa.gov/">Orbiting Carbon Observatory-3</a>. Around 2025 they will launch the Copernicus CO2 Mission, the first operational carbon dioxide monitoring satellite constellation, focused on monitoring human-produced emissions.</span></p>
                 
-                <h3>They seek him here, they seek him there</h3>
+                <h3>The sun</h3>
 
-                <p>Carbon is everywhere, including our own bodies where it is the second most abundant element (18%) after oxygen (65%). For a couple of hundred years we have benefited from chemical reactions irreversible in time scales appropriate to our species; the combustion of organic compounds, especially hydrocarbons, to release energy stored over unimaginably vast periods of time, is the foundation of our modern civilisations.</p>
+                <p>The energy from fossil fuels is derived from the sun; photons absorbed by chlorophyll excite electrons and thereby enable the processes by which photosynthesis produces organic compounds. Fossil fuels are a concentrated form of this energy.</p>
+
+                <p> Solar and wind power are renewable energy sources because the energy we obtain from them can be replaced immediately (by the sun).</p>
 
                 <p>
-                    <div>Will we enjoy an equally profitable relationship with <Links.InternalLink link={{'value': 'hydrogen', 'text': 'hydrogen'}}></Links.InternalLink>?</div>
+                    <div class={styles.inset}>
+                        <span>Fossil fuels take ~1 million years to form. They have high energy and power densities.</span>
+                        <span>Renewables are constantly replenished by the sun's energy. They have low energy and power densities.</span>
+                        <span>In one year we release energy that took a million years to form. <span><a href="https://www.theguardian.com/science/2007/may/22/highereducation.education">Harry Kroto</a></span></span>
+                        <div><Links.InternalLink link={{'value': 'facts#energy', 'text': 'Values for energy and power densities'}}></Links.InternalLink></div>
+                    </div>
+                </p>
+
+                <p>The only energy source not derived from our sun is nuclear which ultimately derives from myriad distant, and now long dead stars.</p>
+
+
+                <h2>The end of carbon dependency?</h2>
+
+                {/* <p>Carbon is everywhere, including our own bodies where it is the second most abundant element (18%) after oxygen (65%). </p> */}
+
+                <p>For a couple of hundred years we have benefited from chemical reactions irreversible in time scales appropriate to our species. The combustion of organic compounds, especially hydrocarbons, to release energy stored over unimaginably vast periods of time, is the foundation of our modern civilisations.</p>
+
+                <p>
+                    <div>Will we enjoy an equally profitable but more sustainable relationship with <Links.InternalLink link={{'value': 'climate-crisis/hydrogen-a-singular-atom', 'text': 'hydrogen'}}></Links.InternalLink>?</div>
                 </p>
 
             </section>
@@ -210,7 +211,7 @@ const Carbon = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'carbonfootprint',title:'Carbon footprint'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'climate-crisis/the-value-of-individual-acts',title:'The value of individual acts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

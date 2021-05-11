@@ -5,7 +5,7 @@ import styles from 'styles/Home.module.scss';
 
 export default function Home() {
   return (
-    <Layout title="Home" header="Welcome to the home page">
+    <Layout title="Home" header="Home sweet home">
 
         <section class={styles.card}>
             <h2>Always connect</h2>
@@ -22,16 +22,25 @@ export default function Home() {
                             <a>help you</a>
                         </Link>
                       </span> to create a fast, safe, accessible website that uses minimal electricity to run.
-            </p>            
+            </p>
+
+            <p>I also write articles on web development, and subjects loosely related to climate change.</p>
+            
         </section>
 
         <section class={styles.card}>
-            <h2>Climate change articles</h2>
-            <Links.InternalLinkBlock link={{'value': 'carbon', 'text': 'Carbon - the ties that bind'}}></Links.InternalLinkBlock>
-            <Links.InternalLinkBlock link={{'value': 'hydrogen', 'text': 'Hydrogen - a singular atom'}}></Links.InternalLinkBlock>
-            <Links.InternalLinkBlock link={{'value': 'change', 'text': 'Climate change - time yet for a hundred indecisions'}}></Links.InternalLinkBlock>
-            <Links.InternalLinkBlock link={{'value': 'carbonfootprint', 'text': 'Carbon footprints - the value of individual acts'}}></Links.InternalLinkBlock>
-            <Links.InternalLinkBlock link={{'value': 'population', 'text': 'The population problem'}}></Links.InternalLinkBlock>
+            <h2>Climate crisis</h2>
+            <Links.InternalLinkBlock link={{'value': 'climate-crisis/carbon-component-of-life', 'text': 'Carbon - component of life'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'climate-crisis/hydrogen-a-singular-atom', 'text': 'Hydrogen - a singular atom'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'climate-crisis/time-yet-for-a-hundred-indecisions', 'text': 'Time yet for a hundred indecisions'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'climate-crisis/the-value-of-individual-acts', 'text': 'The value of individual acts'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'climate-crisis/the-problem-of-population', 'text': 'The problem of population'}}></Links.InternalLinkBlock>
+        </section>
+
+        <section class={styles.card}>
+            <h2>Web development</h2>
+            <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-hyperlinks', 'text': 'An introduction to hyperlinks'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-mental-models', 'text': 'An introduction to mental models'}}></Links.InternalLinkBlock>
         </section>
 
         <section class={styles.card}>

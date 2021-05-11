@@ -13,7 +13,7 @@ const MentalModel = () => {
     ];
 
     return (
-        <Layout header="Mental models" title="Mental models" description={'Mental models'}>
+        <Layout header="An introduction to mental models" title="Web development - An introduction to mental models" description={'Web development - An introduction to mental models'}>
             <section class={styles.card}>
 
                 <p><div class={styles.inset}><span class={styles.italic}>Reading time: 6 minutes</span></div></p>

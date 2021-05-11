@@ -6,13 +6,13 @@ import styles from 'pages/pages.module.scss';
 
 const CarbonFootprint = () => {
     return (
-        <Layout header="Carbon footprints - the value of individual acts" title="Carbon Footprint" description={'Carbon Footprint'}>
+        <Layout header="The value of individual acts" title="Climate crisis - the value of individual acts" description={'Climate crisis - the value of individual acts'}>
             <section class={styles.card}>
 
                 <div>
-                    <div class={styles.bang}><a href="#individualActs">Individual Acts</a></div>
-                    <div class={styles.bang}><a href="#calculators">Available calculators</a></div>
+                    <div class={styles.bang}><a href="#calculators">Carbon calculators</a></div>
                     <div class={styles.bang}><a href="#comparison">Comparison of selected calculators</a></div>
+                    <div class={styles.bang}><a href="#individualActs">Individual Acts</a></div>
                     <div class={styles.bang}><a href="#conclusion">Conclusion</a></div>
                 </div>               
 
@@ -92,7 +92,7 @@ const CarbonFootprint = () => {
 
                 <h2>Personal carbon footprint</h2>
 
-                <h3>History</h3>
+                {/* <h3>History</h3> */}
 
                 <ul class={styles.list}>
                     <li>
@@ -174,7 +174,7 @@ const CarbonFootprint = () => {
                     </ul>
                 </p>
 
-                <h3 id="individualActs">Individual acts</h3>
+                <h2 id="individualActs">Individual acts</h2>
 
                 <p>Carbon footprints are sometimes used as a proxy for individual acts, which are then placed in opposition to political or social acts, limiting choice to one or the other, either/or.</p>
 
@@ -199,7 +199,7 @@ const CarbonFootprint = () => {
 
                 <h2 id="calculators">Carbon footprint calculators</h2>
 
-                <h3>Personal calculators</h3>
+                {/* <h3>Personal calculators</h3> */}
 
                 <Tables.Calculators></Tables.Calculators>
 
@@ -236,7 +236,7 @@ const CarbonFootprint = () => {
                     </ul>
                 </p>
 
-                <h3 id="conclusion">Conclusion</h3>
+                <h2 id="conclusion">Conclusion</h2>
 
                 <p>Carbon footprint calculators have value as an introduction to the consequences of our choices, and as a starting point for examining our interdependency, lack of autonomy, and the limits pertaining to personal action.</p>
 
@@ -301,7 +301,7 @@ const CarbonFootprint = () => {
                     <span class={styles.published}>Edited: Added David MacKay quote {new Date('Tues 6 April 2021').toDateString()}</span>
                 </p>
             </section>
-            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability'}, {href:'carbon',title:'Carbon primer'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability'}, {href:'climate-crisis/carbon-component-of-life',title:'Carbon - component of life'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
