@@ -16,6 +16,10 @@
         font-weight: var(--il-fw);
         line-height: 1.8;
         margin: 1.25rem 0;
+        &::before {
+            padding-right: .25rem;
+            content: '--';
+        }
     }
     h3,h4 {
         color: rgba(var(--fg),1);

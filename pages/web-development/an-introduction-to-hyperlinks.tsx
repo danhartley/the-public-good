@@ -40,7 +40,7 @@ const Hyperlinks = () => {
 
                 <p>Web directories like <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/Yahoo!_Directory'}}>Yahoo! Directory</Links.ExternalLink> and <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/DMOZ'}}>DMOZ</Links.ExternalLink> were once the predominant means of discovering and accessing web sites. Initially they were little more than lists of web addresses. As the lists grew larger, they introduced search options. Google dropped the lists altogether.</p>
 
-                <p>A recent report from <Links.ExternalLink link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>Alexa</Links.ExternalLink> found that search now accounts for 40-60% of visitors to a site, and direct traffic (typically typing in the name of a website) 30-50%. Referrals - links - represent around 10% of visitors to a site, though this is higher for 'non-standard content' such as this site (26.6%). A small amount of traffic comes from social media but for news, weather and information this figure rises to 12.2%.</p>
+                <p>A recent report from the data analytics company <Links.ExternalLink link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>Alexa</Links.ExternalLink> found that search now accounts for 40-60% of visitors to a site, and direct traffic (typically typing in the name of a website) 30-50%. Referrals - links - represent around 10% of visitors to a site, though this is higher for 'non-standard content' such as this site (26.6%). A small amount of traffic comes from social media but for news, weather and information this figure rises to 12.2%.</p>
 
                 {/* <p>
                     <div>In addition to links to external sources, there are links on this page to <span class={styles.italic}>internal</span> resources such as the home page.</div>
@@ -153,6 +153,13 @@ const Hyperlinks = () => {
                 <p>Exceptions include opening a help page while completing a form, or to avoid leaving a page where the user is logged in. But opening in a new window or tab should always be signalled, e.g. (opens in new tab).</p>
 
                 <p>If the user wishes to open a new window or tab, that option remains available.</p>
+
+                <p>If you don't know the keyboard shortcuts, here they are:
+                    <ul>
+                        <li>Mac: ⌘ + link</li>
+                        <li>Windows & Linux: Ctrl + link</li>
+                    </ul>
+                </p>
 
                 <p>One objection to opening external links in the same tab is that clicking the back button causes the page to reload. Since this behaviour is more sustainable (the energy required to resend the page is saved), you may choose to favour this approach over one that promotes accessibility. This website employs <Links.ExternalLink link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API'}}>service workers</Links.ExternalLink> so that, for the majority of users, the page loads from a local cache when the user returns.</p>
 
