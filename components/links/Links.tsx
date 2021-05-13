@@ -55,8 +55,8 @@ const RelatedLinks = ({links}) => {
 
     const list = links.map(link => {
         return <li>
-            <Link href={`/${link.href}`}>
-                <a>{link.title}</a>
+            <Link href={`/${link.value}`}>
+                <a>{link.text}</a>
             </Link>
         </li>
     });

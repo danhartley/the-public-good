@@ -223,11 +223,9 @@ const Hydrogen = () => {
                 <Links.ExternalLinksList links={externalLinks} />
             </section>            
 
-            <Links.RelatedLinks links={[{href:'climate-crisis/facts',title:'Facts'}, {href:'climate-crisis/carbon-component-of-life',title:'Carbon - component of life'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'climate-crisis/facts',text:'Facts'}, {value:'climate-crisis/carbon-component-of-life',text:'Carbon - component of life'}, {value:'climate-crisis/the-trickiest-of-transitions', text:'The trickiest of transitions'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
 
 export default Hydrogen;
-
-{/* <p>By far the most common isotope of hydrogen is protium (~99.98%). It does not contain a neutron and therefore has an atomic mass of ~1 not ~2. Deuterium which is believed to have formed naturally only in the Big Bang does have a neutron. It is produced for industrial, scientific and military purposes, including manufacture of the hydrogen bomb.</p> */}

@@ -42,7 +42,7 @@ const Services = () => {
                 <p>If you would like to discuss an idea or a project, please contact me at <a href="mailto:dbmhartley@protonmail.com">Daniel Hartley</a>.</p>           
                 <p>For a complete picture of the web technologies I use, this is my <a href="https://danhartley.github.io/snapdragon-redux/wiki/">curriculum vitae</a>.</p>            
             </section>  
-            <Links.RelatedLinks links={[{href:'web-development/sociable-contract',title:'Sociable contract'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'web-development/sociable-contract',text:'Sociable contract'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

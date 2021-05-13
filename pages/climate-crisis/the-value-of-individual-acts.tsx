@@ -276,7 +276,7 @@ const CarbonFootprint = () => {
                     <span class={styles.published}>Edited: Added David MacKay quote {new Date('Tues 6 April 2021').toDateString()}</span>
                 </p>
             </section>
-            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability'}, {href:'climate-crisis/carbon-component-of-life',title:'Carbon - component of life'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'sustainability',text:'Sustainability'}, {value:'climate-crisis/carbon-component-of-life',text:'Carbon - component of life'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

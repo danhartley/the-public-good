@@ -44,7 +44,7 @@ const Projects = () => {
                 </p>
             </section>
 
-            <Links.RelatedLinks links={[{href:'services',title:'Services'},{href:'architecture',title:'Architecture'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'services',text:'Services'},{value:'architecture',text:'Architecture'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

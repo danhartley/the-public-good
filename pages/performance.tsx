@@ -87,7 +87,7 @@ const Performance = () => {
                 <p>I run Lighthouse in an Incognito Window in Chrome, or a Private Window in Firefox. This will allow you to measure performance between websites, or different versions of the same website, without the results being affected by previous sessions or other tasks. The lighthouse scores are artificial, 'lab' benchmarks. If you have an active, live site you can measure performance against real user sessions.</p>
 
             </section>
-            <Links.RelatedLinks links={[{href:'architecture',title:'Architecture'},{href:'sustainability',title:'Sustainability'},{href:'accessibility',title:'Accessibility'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'architecture',text:'Architecture'},{value:'sustainability',text:'Sustainability'},{value:'accessibility',text:'Accessibility'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

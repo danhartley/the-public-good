@@ -56,7 +56,7 @@ const Architecture = () => {
                 <p>For a complete picture of the web technologies I use, or have used, please see my <a href="https://danhartley.github.io/snapdragon-redux/wiki/">curriculum vitae</a>.</p>
             </section>
 
-            <Links.RelatedLinks links={[{href:'sustainability',title:'Sustainability'},{href:'accessibility',title:'Accessibility'},{href:'performance',title:'Performance'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'sustainability',text:'Sustainability'},{value:'accessibility',text:'Accessibility'},{value:'performance',text:'Performance'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

@@ -22,54 +22,58 @@ module.exports = withPWA({
   },
 });
 
-// module.exports = {
-//     async redirects() {
-//       return [
-//         {
-//           source: '/change',
-//           destination: '/climate-crisis/the-trickiest-of-transitions',
-//           permanent: true,
-//         },
-//         {
-//           source: '/hydrogen',
-//           destination: '/climate-crisis/hydrogen-a-singular-atom',
-//           permanent: true,
-//         },
-//         {
-//           source: '/carbon',
-//           destination: '/climate-crisis/carbon-component-of-life',
-//           permanent: true,
-//         },
-//         {
-//           source: '/carbonfootprint',
-//           destination: '/climate-crisis/the-value-of-individual-acts',
-//           permanent: true,
-//         },
-//       ]
-//     },
-// }
+// full redirect to new url
 
 module.exports = {
-    async rewrites() {
+    async redirects() {
       return [
         {
           source: '/change',
-          destination: '/climate-crisis/the-trickiest-of-transitions'
+          destination: '/climate-crisis/the-trickiest-of-transitions',
+          permanent: true,
         },
         {
           source: '/hydrogen',
-          destination: '/climate-crisis/hydrogen-a-singular-atom'
+          destination: '/climate-crisis/hydrogen-a-singular-atom',
+          permanent: true,
         },
         {
           source: '/carbon',
-          destination: '/climate-crisis/carbon-component-of-life'
+          destination: '/climate-crisis/carbon-component-of-life',
+          permanent: true,
         },
         {
           source: '/carbonfootprint',
-          destination: '/climate-crisis/the-value-of-individual-acts'
+          destination: '/climate-crisis/the-value-of-individual-acts',
+          permanent: true,
         },
       ]
     },
 }
+
+// keep url but return new destination
+
+// module.exports = {
+//     async rewrites() {
+//       return [
+//         {
+//           source: '/change',
+//           destination: '/climate-crisis/the-trickiest-of-transitions'
+//         },
+//         {
+//           source: '/hydrogen',
+//           destination: '/climate-crisis/hydrogen-a-singular-atom'
+//         },
+//         {
+//           source: '/carbon',
+//           destination: '/climate-crisis/carbon-component-of-life'
+//         },
+//         {
+//           source: '/carbonfootprint',
+//           destination: '/climate-crisis/the-value-of-individual-acts'
+//         },
+//       ]
+//     },
+// }
 
 // module.exports = withBundleAnalyzer({});

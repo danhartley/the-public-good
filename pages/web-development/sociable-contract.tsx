@@ -83,7 +83,7 @@ const Contract = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{href:'services',title:'Services'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'services',text:'Services'}]}></Links.RelatedLinks>
        </Layout>       
     )
 };

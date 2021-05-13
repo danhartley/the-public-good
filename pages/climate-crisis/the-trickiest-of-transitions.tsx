@@ -260,7 +260,7 @@ const Change = () => {
 
 
             </section>
-            <Links.RelatedLinks links={[{href:'carbon',title:'Carbon primer'}, {href:'climate-crisis/facts',title:'Facts'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'climate-crisis/carbon-component-of-life',text:'Carbon - component of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

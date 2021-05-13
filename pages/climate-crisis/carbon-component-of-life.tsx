@@ -43,6 +43,10 @@ const Carbon = () => {
             "name": "Khan Academy | The carbon cycle (article)",
             "source": "https://www.khanacademy.org/science/biology/ecology/biogeochemical-cycles/a/the-carbon-cycle"
         },
+        {
+            "name": "U.S. Carbon Cycle Science Program | What is the Carbon Cycle?",
+            "source": "https://www.carboncyclescience.us/what-is-carbon-cycle"
+        },
     ];
     
     return (
@@ -211,7 +215,7 @@ const Carbon = () => {
                 <h2>References</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{href:'climate-crisis/facts',title:'Facts'}, {href:'climate-crisis/the-value-of-individual-acts',title:'The value of individual acts'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'climate-crisis/facts',text:'Facts'}, {value:'climate-crisis/the-value-of-individual-acts',text:'The value of individual acts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
