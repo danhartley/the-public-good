@@ -38,32 +38,11 @@ export default function Home() {
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/the-problem-of-population', 'text': 'The problem of population'}}></Links.InternalLinkBlock>
         </section>
 
-        {/* <section class={styles.card}>
-            <h2>Web development</h2>
-            <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-hyperlinks', 'text': 'Healthy hyperlinks'}}></Links.InternalLinkBlock>
-            <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-mental-models', 'text': 'An introduction to mental models'}}></Links.InternalLinkBlock>
-        </section> */}
-
-        {/* <section class={styles.card}>
-            <h2>Architecture</h2>  
-            <p>This website is an example of my approach to building websites. The <span class={styles.internalLink}><Link href={'/performance'}><a>Performance</a></Link></span>, <span class={styles.internalLink}><Link href={'/accessibility'}><a>Accessibility</a></Link></span> and <span class={styles.internalLink}><Link href={'/sustainability'}><a>Sustainability</a></Link></span> pages explain my thinking and link to external tests which can be used to measure performance and progress.</p>            
-            <p>Sites that follow similar principles find ways to stand out without compromise. <a href="https://lowtechlab.org/fr">Le Low-tech Lab</a>, <a href="https://zerowastekoeln.de/">Zero Waste Cologne</a>, and <a href="https://heydonworks.com/">Heydownworks</a> have character, clear objectives and straightforward navigation.</p>
-            <p class={styles.internalLink}>
-                <ul class={styles.dashedItemsList}>
-                    <li>
-                        <Link href={'/architecture'}>
-                            <a>Read more about architecture</a>
-                        </Link>
-                    </li>
-                </ul>
-            </p>
-        </section> */}
-
         <section class={styles.card}>
 
             <h2>Web development</h2>
             <Links.InternalLinkBlock link={{'value': 'web-development/well-designed-hyperlinks', 'text': 'Well-designed hyperlinks'}}></Links.InternalLinkBlock>
-            <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-mental-models', 'text': 'An introduction to mental models'}}></Links.InternalLinkBlock>
+            {/* <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-mental-models', 'text': 'An introduction to mental models'}}></Links.InternalLinkBlock> */}
 
             <p>I specialise in three areas: performance, accessibility, and sustainability.</p>
 
@@ -82,8 +61,6 @@ export default function Home() {
                     </li>
                 </ul>
             </p>
-        {/* </section>
-        <section class={styles.card}> */}
             <h3>Accessibility</h3>
             <p>Using websites can be challenging <a href="https://developers.google.com/web/fundamentals/accessibility">for many reasons</a>.</p>
             <p><a href="https://web.dev/load-faster-like-proxx/">Not all phones are smart</a>.</p>
@@ -96,8 +73,6 @@ export default function Home() {
                     </li>
                 </ul>                
             </p>
-        {/* </section>
-        <section class={styles.card}> */}
             <h3>Sustainability</h3>
             <p>There is a <a href="https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"> cost in greenhouse gas emissions</a> for every page.</p>
             <p class={styles.internalLink}>

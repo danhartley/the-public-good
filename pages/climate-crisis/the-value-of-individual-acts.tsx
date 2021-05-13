@@ -1,7 +1,6 @@
 import Layout from 'components/layout/layout';
 import Tables from 'components/tables/tables';
 import Links from 'components/links/Links';
-import Formula from 'components/tools/formula';
 import styles from 'pages/pages.module.scss';
 
 const CarbonFootprint = () => {
@@ -30,32 +29,6 @@ const CarbonFootprint = () => {
                     <span><a href="https://carbonmonitor.org/">Daily estimates</a> are also available from Carbon Monitor.</span>
                 </div>                
                 </p>
-                {/* <h3>Sustainable emissions</h3>
-                <p>                           
-
-                    The IPCC collates data from papers in a wide range of disciplines. To determine the change in levels of carbon dioxide in the atmosphere, it combines data from emissions sources and sinks. The ratio between sources and sinks determines whether anthropogenic emissions have an effect on natural systems.
-                    <div>
-                        <span class={styles.quote}>
-                        The natural response of land to human-induced environmental change caused a net sink of around 11.2 GtCO2 yr-1 during 2007–2016 (equivalent to 29% of total CO2 emissions) (<a href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">medium confidence</a>) (PDF).
-                        <div><a href="https://www.ipcc.ch/srccl/chapter/summary-for-policymakers/">IPCC Special report on climate change and land</a> (PDF)</div>
-                        </span>
-                        <span class={styles.quote}>
-                        The ocean has taken up between 20–30% (<a href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">very likely</a>) of total anthropogenic CO2 emissions since the 1980s causing further ocean acidification.
-                        <div><a href="https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/">IPCC Special report on the ocean and cryosphere in a changing climate</a></div>
-                        </span>
-                    </div>
-                    <div>
-                        
-                        The value for CO2 taken up by <a href="https://en.wikipedia.org/wiki/Carbon_sink">carbon sinks</a> is variable, affected by a number of limiting factors, and best represented as a range rather than a single figure. To calculate a sustainable, or 'net neutral' per capita budget, we use an approximation of 50%:
-                        <span class={styles.quote}>
-                            4.73 tonnes * .50 = 2.365 tonnes of CO2
-                        </span>
-                        <p>As the population rises, this allowance will <a aria-label="Carbon Brief, Analysis: Why children must emit eight times less CO2 than their grandparents" href="https://www.carbonbrief.org/analysis-why-children-must-emit-eight-times-less-co2-than-their-grandparents">fall</a>.</p>
-
-                        The calculation assumes that sinks absorb all emissions immediately, which is not the case. Counting emissions and calculating budgets is <a href="https://www.carbonbrief.org/analysis-why-the-ipcc-1-5c-report-expanded-the-carbon-budget">not straightforward</a>; the IPPC publishes a <a aria-label="IPCC Guide to Uncertainty (PDF)" href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">guide</a> for the lead authors of reports solely concerned with explaining how to express uncertainty.
-                    </div>
-                </p> */}
-
                 <p>
                     <h3>Carbon budgets</h3>
 
@@ -93,7 +66,6 @@ const CarbonFootprint = () => {
                 <h3>Carbon footprints</h3>
 
                 <p>
-                    {/* <div class={styles.bold}>Carbon footprint</div> */}
                     <div class={styles.quote}>
                         <div>The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a></div>                    
                     </div>

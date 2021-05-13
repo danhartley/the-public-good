@@ -42,12 +42,6 @@ const Hyperlinks = () => {
 
                 <p>A recent report from the data analytics company <Links.ExternalLink link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>Alexa</Links.ExternalLink> found that search now accounts for 40-60% of visitors to a site, and direct traffic (typically typing in the name of a website) 30-50%. Referrals - links - represent around 10% of visitors to a site, though this is higher for 'non-standard content' such as this site (26.6%). A small amount of traffic comes from social media but for news, weather and information this figure rises to 12.2%.</p>
 
-                {/* <p>
-                    <div>In addition to links to external sources, there are links on this page to <span class={styles.italic}>internal</span> resources such as the home page.</div>
-                </p> */}
-
-                {/* <p><div>There is one other link. Clicking my name in the footer will open your default email application and create a message addressed to me. The combination of the 'mailto' attribute and my email address - mailto:dbmhartley@protonmail.com - is also a valid <Links.ExternalLink link={{source:'https://webmasters.stackexchange.com/questions/19101/what-is-the-difference-between-a-uri-and-a-url/77783'}}>URL</Links.ExternalLink>.</div></p> */}
-
                 <h3>Outward bound</h3>
 
                 <p>Linking to other sites respects the right of the user to explore the web freely. Links may also be used to connect to resources used to advance arguments and support claims. External links - also known as outbound links - benefit readers. They also <Links.ExternalLink link={{source:'https://blog.alexa.com/outbound-links-content-marketing/'}}>improve search engine rankings</Links.ExternalLink>.</p>
@@ -59,12 +53,6 @@ const Hyperlinks = () => {
                 <p>
                     <div>To increase the security of a site and to avoid endorsing the source of a link the attributes <Links.ExternalLink link={{source:'https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/'}}>noopener, noreferrer and nofollow</Links.ExternalLink> can be added. Google has introduced 'sponsored' and 'user-generated content' attributes to <Links.ExternalLink link={{source:'https://developers.google.com/search/docs/advanced/guidelines/qualify-outbound-links'}}>qualify outbound links</Links.ExternalLink> to site sponsors and for links added by users in comments and forums.</div>
                 </p>
-
-                <p>
-                    {/* <div>The <Links.ExternalLink link={{source:'https://www.bbc.com/'}}>BBC</Links.ExternalLink> has a history of humming and hawing over their <Links.ExternalLink link={{source:'https://www.bbc.co.uk/blogs/theeditors/2010/03/bbc_news_linking_policy.html'}}>policy towards external links</Links.ExternalLink>. Their ambivalence is explained in part by their unwillingness to link to content over which they have no control. <Links.ExternalLink link={{label:'LinkedIn home page',source:'https://www.linkedin.com/'}}>LinkedIn</Links.ExternalLink> now looks more favourably on external links in posts that encourage <Links.ExternalLink link={{label:'LinkedIn blog on dwell time',source:'https://engineering.linkedin.com/blog/2020/understanding-feed-dwell-time'}}>'dwell time'</Links.ExternalLink> (not leaving their site). <Links.ExternalLink link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.ExternalLink> newspaper and <Links.ExternalLink link={{source:'https://www.carbonbrief.org/'}}>CarbonBrief</Links.ExternalLink> are liberal with their links, using them heavily to back up their reporting.</div> */}
-                </p>
-
-                {/* <p>The exemplary <Links.ExternalLink link={{source:'https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#getting-ready-planning-and-metrics'}}>front-end performance checklist</Links.ExternalLink> from Smashing Magazine links to hundreds of sources.</p> */}
 
                 <h3>Is blue the warmest colour?</h3>
 
@@ -138,8 +126,6 @@ const Hyperlinks = () => {
                 <p>The Guardian, a large site with many internal references across different sections of the paper, makes no distinction between external and internal links, or between visited and unvisited links.</p>
 
                 <p>The BBC also treats internal and external links alike but it signals the source of external links in the text of the link, for example, 'according to the Red Cross, citing government data.' Visited links are gray rather than black but neither the difference nor reason for the difference is evident.</p>
-
-                {/* <p>Googe search does differentiate between visited and unvisited links, in both its light and dark mode.</p> */}
 
                 <h3>Where should links open?</h3>
 

@@ -72,8 +72,6 @@ const Change = () => {
  
                 <h2 id="energy">The wrong kind of energy</h2>
 
-                {/* <p>Photosynthetic cells are <span><a href="https://en.wikipedia.org/wiki/Photosynthetic_efficiency#Efficiencies_of_various_biofuel_crops">less efficient</a></span> than photovoltaic cells at capturing energy from the sun.</p> */}
-
                 <p>Photosynthesis is <span><a href="https://en.wikipedia.org/wiki/Photosynthetic_efficiency#Efficiencies_of_various_biofuel_crops">less efficient</a></span> than photovoltaic cells at capturing energy from the sun. But the plants that benefit from it are highly effective at creating environments suitable for animals.</p>
 
                 <p>Fossil fuels accumulated behind the scenes, a consequence not of evolution but an accident of time and geography, silently capturing the carbon dioxide stored in dead plants and animals at a time when levels were far higher than they are today. These reserves were laid down over thousands of millenia many millions of years ago.</p>
@@ -124,8 +122,6 @@ const Change = () => {
                 <p>Historical values for the power densities of renewables have proven to be on the low side (<a href="http://www.withouthotair.com/">MacKay</a>). This is good news, but it presents a conundrum; when is the right time to invest in a particular technology? Invest too soon, and we will be committed to unnecessarily inefficient infrastructure, too late, or too slowly, and we will miss potential gains. If governments set deadlines, companies may meet emissions targets by investing in improving existing technology instead of better, less resource intensive, technology that will take longer to test and deploy.</p>
                 
                 <p>Fossil fuels are the incumbent energy source, and if we are to replace them, it will entail adapting, extending and replacing existing infrastructure using more land at great cost both financially and materially. There may be, however, gains that quickly override these costs, to health, wealth, and societal well-being.</p>
-
-                {/* <p>Do we also need to make a case for change that involves disruption, cost and possibly further injustice, one that favours the future over the present? If we think it appropriate to force sudden change, the consequences may be painful, and the burden of cost fall unfairly.</p> */}
 
                 <h3>Eternal summer shall fade</h3>
 

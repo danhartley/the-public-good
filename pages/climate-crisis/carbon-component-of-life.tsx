@@ -193,8 +193,6 @@ const Carbon = () => {
 
                 <h2>The end of carbon dependency?</h2>
 
-                {/* <p>Carbon is everywhere, including our own bodies where it is the second most abundant element (18%) after oxygen (65%). </p> */}
-
                 <p>For a couple of hundred years we have benefited from chemical reactions irreversible in time scales appropriate to our species. The combustion of organic compounds, especially hydrocarbons, to release energy stored over unimaginably vast periods of time, is the foundation of our modern civilisations.</p>
 
                 <p>
