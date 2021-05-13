@@ -15,12 +15,9 @@ const Accordion = ({
 
     const content = <p>
         <button aria-label={`Toggle view for additional information on ${header}`} onClick={e => toggle(!state)} class={styles.accordionBtn}><span class={state ? styles.down : styles.up}></span><span>{ header }</span></button>
-        {
-            state ? <div>{children}</div> : null
-        }
-        {/* <div class={state ? styles.show : styles.hide}>
+        <div class={state ? styles.show : styles.hide}>
         { children }
-        </div> */}
+        </div>
     </p>
 
     return (

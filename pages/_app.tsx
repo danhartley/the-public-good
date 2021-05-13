@@ -1,3 +1,4 @@
+import "preact/devtools";
 import type { AppProps } from 'next/app';
 import { useLocalStorageState } from 'hooks/local-storage';
 
