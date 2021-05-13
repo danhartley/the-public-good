@@ -1,8 +1,10 @@
 export default function Custom404() {
     return (
-        <>
-        <h1>404 - Page Not Found</h1>
-        <a href="https://www.the-public-good.com/">The Public Good</a>
-        </>
+        <section style={'margin:2rem;'}>
+            <h1>404 - Page Not Found</h1>
+            <p>
+                <a href="https://www.the-public-good.com/">The Public Good</a>
+            </p>
+        </section>
     )
 }
