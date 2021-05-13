@@ -55,7 +55,7 @@ const Layout = ({
     return (        
         <div>
             <Head>
-                <title>{ `The Public Good - ${title}` }</title>
+                <title>{title}</title>
 
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"></meta>
                 <meta name="mobile-web-app-capable" content="yes"></meta>

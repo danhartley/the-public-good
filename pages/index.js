@@ -5,7 +5,7 @@ import styles from 'styles/Home.module.scss';
 
 export default function Home() {
   return (
-    <Layout title="Responsible web development" header="Responsible web development">
+    <Layout title="Responsible web development" header="Responsible web development" description="Well-researched articles on responsible web development and the climate crisis.">
 
         <section class={styles.card}>
             <h2>Always connect</h2>
@@ -24,7 +24,7 @@ export default function Home() {
                       </span> create fast, accessible and secure websites.
             </p>
 
-            <p>I will write about the climate crisis and responsible web development.</p>
+            <p>I write about the climate crisis and responsible web development.</p>
 
         </section>
 
@@ -33,14 +33,14 @@ export default function Home() {
             
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/carbon-component-of-life', 'text': 'Carbon - component of life'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/hydrogen-a-singular-atom', 'text': 'Hydrogen - a singular atom'}}></Links.InternalLinkBlock>
-            <Links.InternalLinkBlock link={{'value': 'climate-crisis/time-yet-for-a-hundred-indecisions', 'text': 'Time yet for a hundred indecisions'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'climate-crisis/the-trickiest-of-transitions', 'text': 'The trickiest of transitions'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/the-value-of-individual-acts', 'text': 'The value of individual acts'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/the-problem-of-population', 'text': 'The problem of population'}}></Links.InternalLinkBlock>
         </section>
 
         {/* <section class={styles.card}>
             <h2>Web development</h2>
-            <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-hyperlinks', 'text': 'An introduction to hyperlinks'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-hyperlinks', 'text': 'Healthy hyperlinks'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-mental-models', 'text': 'An introduction to mental models'}}></Links.InternalLinkBlock>
         </section> */}
 
@@ -49,7 +49,7 @@ export default function Home() {
             <p>This website is an example of my approach to building websites. The <span class={styles.internalLink}><Link href={'/performance'}><a>Performance</a></Link></span>, <span class={styles.internalLink}><Link href={'/accessibility'}><a>Accessibility</a></Link></span> and <span class={styles.internalLink}><Link href={'/sustainability'}><a>Sustainability</a></Link></span> pages explain my thinking and link to external tests which can be used to measure performance and progress.</p>            
             <p>Sites that follow similar principles find ways to stand out without compromise. <a href="https://lowtechlab.org/fr">Le Low-tech Lab</a>, <a href="https://zerowastekoeln.de/">Zero Waste Cologne</a>, and <a href="https://heydonworks.com/">Heydownworks</a> have character, clear objectives and straightforward navigation.</p>
             <p class={styles.internalLink}>
-                <ul class={styles.list}>
+                <ul class={styles.dashedItemsList}>
                     <li>
                         <Link href={'/architecture'}>
                             <a>Read more about architecture</a>
@@ -62,8 +62,10 @@ export default function Home() {
         <section class={styles.card}>
 
             <h2>Web development</h2>
-            <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-hyperlinks', 'text': 'An introduction to hyperlinks'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'web-development/well-designed-hyperlinks', 'text': 'Well-designed hyperlinks'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-mental-models', 'text': 'An introduction to mental models'}}></Links.InternalLinkBlock>
+
+            <p>I specialise in three areas: performance, accessibility, and sustainability.</p>
 
             <h3>Performance</h3>
             <p>Having a <a aria-label="Mozilla Internet Health Report 2019 states that the slowest mobile broadband internet in the world is also the least affordable." href="https://internethealthreport.org/2019/the-worlds-slowest-internet-is-the-least-affordable/"> slow connection</a> is not unusual.</p>
@@ -72,7 +74,7 @@ export default function Home() {
             <p>When you waste people's time, <a href="https://developer.mozilla.org/en-US/docs/Learn/Performance/why_web_performance">they don't hang around.</a></p>
             <p><a href="https://www.nngroup.com/articles/powers-of-10-time-scales-in-ux/">It takes 0.05 seconds to form an opinion.</a></p>
             <p class={styles.internalLink}>
-                <ul class={styles.list}>
+                <ul class={styles.dashedItemsList}>
                     <li>
                         <Link href={'/performance'}>
                             <a>Read more about performance</a>
@@ -86,7 +88,7 @@ export default function Home() {
             <p>Using websites can be challenging <a href="https://developers.google.com/web/fundamentals/accessibility">for many reasons</a>.</p>
             <p><a href="https://web.dev/load-faster-like-proxx/">Not all phones are smart</a>.</p>
             <p class={styles.internalLink}>
-                <ul class={styles.list}>
+                <ul class={styles.dashedItemsList}>
                     <li>
                         <Link href={'/accessibility'}>
                             <a>Read more about accessibility</a>
@@ -99,7 +101,7 @@ export default function Home() {
             <h3>Sustainability</h3>
             <p>There is a <a href="https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"> cost in greenhouse gas emissions</a> for every page.</p>
             <p class={styles.internalLink}>
-                <ul class={styles.list}>
+                <ul class={styles.dashedItemsList}>
                     <li>
                         <Link href={'/sustainability'}>
                             <a>Read more about sustainability</a>

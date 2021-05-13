@@ -39,7 +39,7 @@ const externalLinks = [
         "source": "https://www.fchobservatory.eu/"
     },
     {
-        "name": "The hydrogen hype (PDF) | Food and Water Action Europe",
+        "name": "The hydrogen hype | Food and Water Action Europe",
         "source": "https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf"
     },
     {
@@ -54,7 +54,7 @@ const externalLinks = [
 
 const Hydrogen = () => {
     return (
-        <Layout header="Hydrogen - a singular atom" title="Climate crisis - Hydrogen" description={'Climate crisis - Hydrogen'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>
+        <Layout header="Hydrogen - a singular atom" title="Climate crisis | Hydrogen - a singular atom" description={'A synopsis of the element hydrogen: its origin and properties; potential as an energy carrier; and role in reducing greenhouse gas emissions.'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>
             <section class={styles.card}>
                 
                 <div class={styles.inset}>
@@ -63,7 +63,7 @@ const Hydrogen = () => {
                     <div class={styles.bang}><a href="#conclusion">Potential</a><span class={styles.italic}> 2 minutes</span></div>
                 </div>
 
-                <Accordion header="Hydrogen properties">
+                <Accordion header="Hydrogen basics">
                     <div class={styles.inset}>
                         <span>Symbol <span class={styles.bold}>H</span>; atomic number <span class={styles.bold}>1</span>; atomic mass <span class={styles.bold}>1.0080u</span></span>
                         <span>Nonmetal, naturally occurring as a gas H<span class={styles.sub}>2</span> at room temperature.</span>
@@ -74,11 +74,9 @@ const Hydrogen = () => {
 
                 <h2 id="origins-and-properties">The origins and properties of hydrogen</h2>
 
-                <h3>The first element in the universe</h3>
+                <p>Hydrogen atoms were fleetingly formed during the Big Bang but it wasn't until the <span><a href="https://en.wikipedia.org/wiki/Recombination_(cosmology)">recombination</a></span> 370,000 years later that conditions became favourable for electrons to remain in orbit around atomic nuclei. <span>Hydrogen was the first element in the universe and it is the <span><a href="https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements"> most abundant</a></span>. From it all other elements are formed.</span></p>
 
-                <p>Hydrogen atoms were fleetingly formed during the Big Bang but it wasn't until the <span><a href="https://en.wikipedia.org/wiki/Recombination_(cosmology)">recombination</a></span> 370,000 years later that conditions became favourable for electrons to remain in orbit around atomic nuclei. <span>All other elements are formed from hydrogen which remains the <span><a href="https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements"> most abundant</a></span> element in the universe (74% by mass).</span></p>
-
-                <h3>But rarely alone on Earth</h3>
+                <h3>Rarely alone on Earth</h3>
 
                 <p>
                     <div>Hydrogen readily shares <span><a href="https://www.khanacademy.org/science/ap-biology/chemistry-of-life/introduction-to-biological-macromolecules/v/covalent-bonds">covalent bonds</a> (video)</span> with other elements to form compounds, including water <span><Formula>H2O</Formula></span>, ammonia <Formula>NH3</Formula>, hydrogen sulfide <Formula>H2S</Formula>, and organic compounds, such as hydrocarbons <span><Formula>CnH2n+2</Formula> </span> and carbohydrates <Formula>(CH2O)x</Formula>.</div>
@@ -138,7 +136,7 @@ const Hydrogen = () => {
 
                 <h3>Electrolysis</h3>
 
-                <p>Electrolysis is a process whereby electricity is used to split water into hydrogen and oxygen. The process <span><a href="https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis">varies</a></span> depending on the electrolyte selected. Oxygen gas forms at the anode, hydrogen gas at the cathode.
+                <p>Electrolysis is a process whereby electricity is used to split water into hydrogen and oxygen. The process <Links.ExternalLink link={{label: 'Electrolysis varies depending on the electrolyte selected', source:'https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis'}}>varies</Links.ExternalLink> depending on the electrolyte selected. Oxygen gas forms at the anode, hydrogen gas at the cathode.
                     <div class={styles.inset}>
                         <span><span class={styles.bold}>Anode Reaction</span> <Formula>2H2O</Formula> → <Formula>O2</Formula> + 4H+ + 4e-</span>
                         <span><span class={styles.bold}>Cathode Reaction</span> 4H+ + 4e- → <Formula>2H2</Formula></span>
@@ -146,15 +144,15 @@ const Hydrogen = () => {
                     </div>                    
                 </p>
 
-                <p>Electrolysis can produce hydrogen with no greenhouse gas emissions, if the original source of the energy used is renewable. The process is currently 70-80% efficient; for every 40kWh of energy produced 50–55kWh of electricity is required. That is <span class={styles.italic}>less</span> energy is produced than is put in. 95% efficiency has been <span><a href="https://www.h2pro.co/">claimed</a></span> but not proven in production.</p>
+                <p>Electrolysis can produce hydrogen with no greenhouse gas emissions, if the original source of the energy used is renewable. The process is currently 70-80% efficient; for every 40kWh of energy produced 50–55kWh of electricity is required. That is <span class={styles.italic}>less</span> energy is produced than is put in. 95% efficiency has been <Links.ExternalLink link={{label:'95% efficiency claimed for electrolysis', source:'https://www.h2pro.co/'}}>claimed</Links.ExternalLink> but not proven in production.</p>
 
                 <p>
-                    <div>There are several <span><a aria-label="US Energy article on Hydrogen Fuel Basics" href="https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics">other methods</a></span> of hydrogen production including photobiological, photoelectrochemical, solar thermochemical and biological processes.</div>
+                    <div>There are several <span><a aria-label="US Energy article on Hydrogen Fuel Basics" href="https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics">other methods of hydrogen production</a></span> including photobiological, photoelectrochemical, solar thermochemical and biological processes.</div>
                 </p>
 
                 <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><span class={styles.italic}>high</span></span> energy <Links.InternalLink link={{'value': 'facts#energy', 'text': 'density'}}></Links.InternalLink> by mass).</p>
 
-                <p>A fraction of hydrogen is currently produced from low carbon energy; the latest figure for the EU is <span><a aria-label="FCHO PDF report Hydrogen molecule market" href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf">0.1%</a> (PDF)</span>. Global production of hydrogen from electrolysis is less than <span><a aria-label="IEA report on the future of hydrogen" href="https://www.iea.org/reports/the-future-of-hydrogen">0.1%</a></span>.</p>
+                <p>A fraction of hydrogen is currently produced from low carbon energy; the latest figure for the EU is <span><a aria-label="FCHO PDF report Hydrogen molecule market" href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf">0.1%</a></span>. Global production of hydrogen from electrolysis is less than <span><a aria-label="IEA report on the future of hydrogen" href="https://www.iea.org/reports/the-future-of-hydrogen">0.1%</a></span>.</p>
 
                 <h3>Transport</h3>
 
@@ -164,7 +162,8 @@ const Hydrogen = () => {
 
                 <h3>Fuel cells</h3>
 
-                <p>Fuel cells can be used at a wide range of scales from a power station to a laptop. They work like batteries but do not run down, producing electricity as long as there is fuel. They are also efficient, converting chemical energy to electrical energy at around 60% efficiency; this compares well to an average of <span><a href="https://cefrc.princeton.edu/sites/cefrc/files/reitz_princeton-day1-hour1-2018.pdf">16%</a></span> for gas combustion engines.
+                <p>
+                    <div>Fuel cells can be used at a wide range of scales from a power station to a laptop. They work like batteries but do not run down, producing electricity as long as there is fuel. They are also efficient, converting chemical energy to electrical energy at around 60% efficiency; this compares well to an average of <span><a href="https://cefrc.princeton.edu/sites/cefrc/files/reitz_princeton-day1-hour1-2018.pdf">16% efficiency for gas combustion engines</a></span>.</div>
                     <div class={styles.inset}><span class={styles.bold}>How fuel cells work</span></div>
                     <div class={styles.quote}>                        
                         <span>A fuel, such as hydrogen, is fed to the anode, and air is fed to the cathode. In a hydrogen fuel cell, a catalyst at the anode separates hydrogen molecules into protons and electrons, which take different paths to the cathode. The electrons go through an external circuit, creating a flow of electricity.</span>
@@ -209,6 +208,8 @@ const Hydrogen = () => {
                     <div>Hydrogen may have a successful future if it is unburdened by hype, it just might take time for sensible methods of production and suitable uses to be found. Produced close to sources of excess renewable energy it may be a good fit for larger forms of transportation (fuel cells) including shipping, for energy storage, and domestic and commercial heating (<a aria-label="BBC article - Climate change hope for hydrogen fuel" href="https://www.bbc.com/news/science-environment-50873047">hydrogen boilers</a>).</div>
                 </p>
 
+                <p>One positive example of combining wind power and hydrogen storage is the <Links.ExternalLink link={{source:'https://www.surfnturf.org.uk/'}}>Surf 'n' Turf community project</Links.ExternalLink> on the Orkney Islands north of Scotland where the abundance of energy makes conversion to hydrogen and back viable.</p>
+
             </section>
 
             <section class={styles.card}>
@@ -218,11 +219,11 @@ const Hydrogen = () => {
             </section>
 
             <section class={styles.card}>
-                <h2>External Links</h2>
+                <h2>References</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>            
 
-            <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'climate-crisis/carbon-component-of-life',title:'Carbon - component of life'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'climate-crisis/facts',title:'Facts'}, {href:'climate-crisis/carbon-component-of-life',title:'Carbon - component of life'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

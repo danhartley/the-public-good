@@ -1,3 +1,4 @@
+import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import styles from 'pages/pages.module.scss';
 import Tables from 'components/tables/tables';
@@ -5,21 +6,21 @@ import Tables from 'components/tables/tables';
 const Facts = () => {
 
     return (
-        <Layout header="Facts" title="Facts" description={'Facts'}>
+        <Layout header="Facts" title="Facts" description={'Facts pertinent to the climate crisis: timescales, emissions values, energy and power densities, and how to calculate horsepower.'}>
             <section class={styles.card}>
 
                 <div class={styles.menu}>
-                    <span><a class={styles.bang} href="#carbon">Carbon</a></span>
-                    <span><a class={styles.bang} href="#time">Time</a></span>
-                    <span><a class={styles.bang} href="#emissions">Emissions</a></span>
-                    <span><a class={styles.bang} href="#energy">Energy</a></span>
-                    <span><a class={styles.bang} href="#photosynthesis">Photosynthesis</a></span>
+                    <span class={styles.bang}><a href="#carbon">Carbon</a></span>
+                    <span class={styles.bang}><a href="#time">Time</a></span>
+                    <span class={styles.bang}><a href="#emissions">Emissions</a></span>
+                    <span class={styles.bang}><a href="#energy">Energy</a></span>
+                    <span class={styles.bang}><a href="#photosynthesis">Photosynthesis</a></span>
                 </div>
 
                 <h2 id="carbon">Carbon & CO2</h2>
 
                 <p>
-                Emission values are usually given in tonnes of carbon dioxide, but occasionally a value is given in tonnes of carbon (the giveaway is that the value looks surprisingly small).
+                Emissions values are usually given in tonnes of carbon dioxide, but occasionally a value is given in tonnes of carbon (the giveaway is that the value looks surprisingly small).
 
                 To convert a mass of carbon to carbon dioxide multiple by 3.67.
                 </p>
@@ -54,9 +55,9 @@ const Facts = () => {
 
                 <h3>Coal</h3>
                 <p>
-                    <span class={styles.quote}>
+                    <div class={styles.quote}>
                     The formation of coal takes a significant amount of time (on the order of a few million years), and the first coal-bearing rock units appeared about 290-360 million years ago, at a time known as the Carboniferous or "coal-bearing" Period. As well, there are extensive coal deposits from the Cretaceous age - about 65 to 144 million years ago.<span> <a href="https://energyeducation.ca/encyclopedia/Coal_formation">Energy Education: coal formation</a></span>
-                    </span>
+                    </div>
                 </p>
 
                 <h3>Oil & Gas</h3>
@@ -114,7 +115,7 @@ const Facts = () => {
                     You can start explaining some of the limits and possibilities of everyday life or historical
                     progress by playing with energy densities: the more concentrated sources of energy give you
                     many great advantages in terms of their extraction, portability, transportation and storage costs,
-                    and conversion options. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil</a>
+                    and conversion options. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil</a> (PDF)
                 </span>
 
                  <Tables.EnergyDensities></Tables.EnergyDensities>
@@ -123,7 +124,7 @@ const Facts = () => {
 
                 <div><a href="https://energyeducation.ca/encyclopedia/Energy_density">Energy Education | Energy density</a></div>
                 <div><a href="https://apcentral.collegeboard.org/courses/ap-environmental-science/classroom-resources/energy-primer-ap-environmental-science-student">An Energy Primer for the AP Environmental Science Student</a></div>
-                <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer</a></div>
+                <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer </a>(PDF)</div>
                 <div><a href="https://www.drexel.edu/~/media/Files/greatworks/pdf_sum10/WK8_Layton_EnergyDensities.ashx">A comparison of energy densities of prevalent energy sources in units of joules per cubic meter | Bradley E. Layton Drexel University</a></div>
                 <div><a href="https://en.wikipedia.org/wiki/Comparison_of_commercial_battery_types">Wikipedia | Comparison of commercial battery types</a></div>
 
@@ -131,7 +132,7 @@ const Facts = () => {
 
                 <Tables.PowerDensities></Tables.PowerDensities>                
 
-                <div>*<a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a></div>
+                <div>*<a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a> (PDF)</div>
                 <div>+<a href="https://www.sciencedirect.com/science/article/pii/S0301421518305512">The spatial extent of renewable and non-renewable power generation John van Zalk, Paul Behrens</a></div>
 
                 <div><a href="https://www.volker-quaschning.de/datserv/CO2-spez/index_e.php">Volker Quaschning</a></div>
@@ -148,7 +149,7 @@ const Facts = () => {
                         <div>A horse can reach a peak of ~11kW over a period of a few seconds.</div>
                         <div>A horse can reach a peak of ~1kW over a period of a few seconds.</div>
                     </span>
-                    And over time,
+                    Over time,
                     <span class={styles.quote}>
                         <div>A horse can perform sustained activity at a work rate of about 0.75kW.</div>
                         <div>A human can perform sustained activity at a work rate of about 0.075kW.</div>
@@ -177,7 +178,7 @@ const Facts = () => {
                 <p>
                     <span class={styles.quote}>
                     Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation.
-                    <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a></div>
+                    <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a> (PDF)</div>
                     </span>
                 </p>
 

@@ -6,20 +6,16 @@
     max-width: 800px;
     @include externalLink();
     h2 {
-        font-size: calc(1.40rem + .25vw);
+        font-size: calc(1.4rem + .25vw);
         line-height: 1.8;
         margin: 1.25rem 0;
         color: rgba(var(--fg),.9);
     }
     h3 {
-        font-size: calc(1rem + .25vw);
+        font-size: calc(1.1rem + .25vw);
         font-weight: var(--il-fw);
         line-height: 1.8;
         margin: 1.25rem 0;
-        &::before {
-            padding-right: .25rem;
-            content: '--';
-        }
     }
     h3,h4 {
         color: rgba(var(--fg),1);
@@ -55,7 +51,7 @@
     .quote {
         margin: .5rem 0 1.5rem 0;
         padding: 0 2rem;
-        font-size: .8em;
+        font-size: smaller;
         display: block;
         & div {
             margin: 0.25rem 0 0 0;
@@ -228,10 +224,7 @@
     margin: 0;
     padding: 0 .5rem;
     li {
-        font-size: .8rem;
-        @media (min-width: 601px) {
-            font-size: 1rem;
-        }
+        font-size: 1em !important;
         margin: .75rem 0;
         div {
             margin: .5rem 0;            
@@ -245,7 +238,7 @@
 .unorderedList {
     @include unorderedList();
     li {
-        font-size: 1.1rem;
+        font-size: smaller;
     }
 }
 
@@ -256,10 +249,7 @@
 .table {    
     margin: 1rem 0;    
     li {
-        font-size: .9rem;
-        @media (min-width: 601px) {
-            font-size: 1rem;
-        }
+        font-size: smaller;
     }
     th, td {
         line-height: 1.5;
@@ -277,7 +267,7 @@
     }
 }
 
-.list {
+.dashedItemsList {
     @include unorderedList();
     font-size: 1.1rem;
     margin-left: .5rem;

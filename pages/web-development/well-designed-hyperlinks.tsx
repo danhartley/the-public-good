@@ -25,7 +25,7 @@ const Hyperlinks = () => {
     ];
 
     return (
-        <Layout header="An introduction to hyperlinks" title="Web development - An introduction to hyperlinks" description={'Web development - An introduction to hyperlinks'}>
+        <Layout header="Well-designed hyperlinks" title="Web development | well-designed hyperlinks" description={'Hyperlink good practices explained. How to create accessible links with respect to size, colour, un/visited, internal/external states.'}>
             <section class={styles.card}>
 
                 <p><div class={styles.inset}><span class={styles.italic}>Reading time: 7 minutes</span></div></p>

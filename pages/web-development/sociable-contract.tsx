@@ -20,18 +20,18 @@ const Contract = () => {
     ]
 
     return (
-        <Layout header="The sociable contract" title="Contract" description={'Public contract between The Public Good and the Public'}>
+        <Layout header="The sociable contract" title="Web development | the sociable contract" description={'Where Daniel Hartley introduces the sociable contract; a set of promises intended to keep this site user-friendly.'}>
             
             <section class={styles.card}>
 
-                <p>
-                    <h2>Between The Public Good and the Public</h2>
+            <p>Where I introduce the sociable contract; a set of promises intended to keep this site user-friendly.</p>
 
-                    <p>
+            <h2>Between The Public Good & the Public</h2>
+            <p>
 
                         <h3>Terms</h3>
 
-                        <ul class={styles.list}>
+                        <ul class={styles.dashedItemsList}>
                             <li>
                             <span>The site will satisfy Web Content Accessibility Guidelines <a href="https://webaim.org/resources/contrastchecker/">WCAG Level AAA</a> in light mode; WCAG Level AA in datk more, Level AA for larger text.</span>
                             <div class={styles.italic}><a href="https://wave.webaim.org/report#/https://www.the-public-good.com/">Check</a> if this is true.</div>
@@ -60,9 +60,9 @@ const Contract = () => {
                             </li>
                         </ul>
 
-                        <h3>Transparency</h3>
+                        <h3>Fulfilment</h3>
 
-                        <ul class={styles.list}>
+                        <ul class={styles.dashedItemsList}>
                             <li>                                
                             Any breach or contravention of the terms of this contract will be put right in a timely fashion.
                             </li>
@@ -77,7 +77,6 @@ const Contract = () => {
                             </li>
                         </ul>
                     </p>
-                </p>
             </section>
        
             <section class={styles.card}>

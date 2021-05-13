@@ -344,9 +344,9 @@ const Humans = () => {
     return(<table class={styles.table}>
         <thead>
             <tr>
-                <th>What</th>
+                <th>Event</th>
                 <th style={inlineStyle}>When</th>
-                <th></th>
+                <th>Notes</th>
             </tr>
         </thead>
         <tbody>
@@ -415,9 +415,9 @@ const Geology = () => {
     return (<table class={styles.table}>
         <thead>
             <tr>
-                <th>What</th>
+                <th>Event</th>
                 <th>When</th>
-                <th></th>
+                <th>Notes</th>
             </tr>
         </thead>
         <tbody>
@@ -547,7 +547,7 @@ const Calculators = ({withScores = false}) => {
                 <td>{c.score.co2}t CO2e</td>
                 <td class={styles.wideOnly}>{c.score.shareable ? 'true' : 'false'}</td>
                 {c.score.method ? <td class={styles.wideOnly}><a id={c.name} href={c.score.method}>{c.score.sources ? 'true' : 'false'}</a></td> : null }
-                <td class={styles.wideOnly}><ul class={styles.list}>{other}</ul></td>
+                <td class={styles.wideOnly}><ul class={styles.dashedItemsList}>{other}</ul></td>
             </tr> )
         });
 

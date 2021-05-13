@@ -6,19 +6,17 @@ import styles from 'pages/pages.module.scss';
 
 const Change = () => {
     return (
-        <Layout header="Time yet for a hundred indecisions" title="Climate change - time yet for a hundred indecisions" description={'Climate change - time yet for a hundred indecisions'} image='https://live.staticflickr.com/65535/51143928462_4df026babc_o.jpg'>
+        <Layout header="The trickiest of transitions" title="Climate change - The trickiest of transitions" description={'Climate change - The trickiest of transitions'} image='https://live.staticflickr.com/65535/51143928462_4df026babc_o.jpg'>
             <section class={styles.card}>
 
                 <div class={styles.inset}>
-                    <div class={styles.bang}><a href="#background">Background</a><span class={styles.italic}> 3 minutes</span></div>
-                    <div class={styles.bang}><a href="#energy">Energy</a><span class={styles.italic}> 6 minutes</span></div>
+                    <div class={styles.bang}><a href="#background">The wrong kind of snow</a><span class={styles.italic}> 3 minutes</span></div>
+                    <div class={styles.bang}><a href="#energy">The wrong kind of energy</a><span class={styles.italic}> 6 minutes</span></div>
                     <div class={styles.bang}><a href="#conclusion">Conclusion</a><span class={styles.italic}> 1 minute</span></div>
                     <div class={styles.bang}><a href="#appendix">Appendix: How did we get here?</a><span class={styles.italic}> 4 minutes</span></div>
                 </div>
 
-                <h2 id="background">Background</h2>
-
-                <h3>The potential for adverse consequences</h3>
+                <h2 id="background">The wrong kind of snow</h2>
 
                 <div>
                     <span class={styles.quote}>
@@ -28,9 +26,9 @@ const Change = () => {
 
                 <p>When Napoleon began his invasion of Russia in the summer of 1812, he did not imagine that his Grande Armée of almost 449,000 men would be reduced to 9,000 within a few months.</p>
 
-                <p>Preparation had been <a aria-label="Wikipedia French invasion of Russia, Provisions and transportation" href="https://en.wikipedia.org/wiki/French_invasion_of_Russia#Provisions_and_transportation">extensive</a>, far greater than for any of his previous campaigns, but it was not enough; starvation, thirst, disease, and desertion accounted for the bulk of the army before a relatively mild winter decimated the remainder. Napoleon planned for the battles he had fought and won in central Europe, not the one he faced in Russia.</p>
+                <p>Preparation had been <a aria-label="Wikipedia French invasion of Russia, Provisions and transportation" href="https://en.wikipedia.org/wiki/French_invasion_of_Russia#Provisions_and_transportation">extensive</a>, far greater than for any of his previous campaigns, but it was not enough; starvation, thirst, disease, and desertion accounted for the bulk of the army before a relatively mild winter ravaged the remainder. Napoleon planned for the battles he had fought and won in central Europe, not the one he faced in Russia.</p>
 
-                <h3>High hopes for low emissions</h3>
+                <h3>Early consensus</h3>
 
                 <p>
                     In 1988 the World Meteorological Organisation <a href="https://en.wikipedia.org/wiki/World_Meteorological_Organization">WMO</a> established the Intergovernmental Panel on Climate Change <a href="https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change">IPCC</a>. The IPCC was charged with reporting to the United Nations Framework Convention on Climate Change <a href="https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change">UNFCCC</a> whose objective was to,
@@ -39,7 +37,7 @@ const Change = () => {
                     </span> 
                 </p>
 
-                <h3>Keeping score</h3>
+                <h3>Evidence gathering</h3>
 
                 <p>The IPCC <a href="https://www.ipcc.ch/report/sixth-assessment-report-cycle/">reviews and collates</a> available data related to the climate in order to produce a synthesis report every 5-7 years, in addition to special reports on specific areas of concern, such as the <a href="https://www.ipcc.ch/srocc/">cryosphere</a>, or <a href="https://www.ipcc.ch/srccl/">land</a>. The next report, the sixth assessment of the impact of climate change, will also take into account <a href="https://www.ipbes.net/global-assessment">biodiversity and ecosystem services</a>.</p>
 
@@ -47,7 +45,7 @@ const Change = () => {
 
                 <p>This rise in temperature is a consequence of the increase of carbon dioxide in the atmosphere from around <a href="https://www.carbonbrief.org/met-office-atmospheric-co2-now-hitting-50-higher-than-pre-industrial-levels">278ppm</a> between 1750 and 1800 to ~419ppm <a href="https://www.co2.earth/daily-co2">today</a>.</p>
 
-                <h3>Do we have a plan?</h3>
+                <h3>A plan forms</h3>
 
                 <p>In accordance with the <a href="https://en.wikipedia.org/wiki/Paris_Agreement">Paris Agreement</a>, signed at <a href="https://unfccc.int/process-and-meetings/conferences/past-conferences/paris-climate-change-conference-november-2015/cop-21">COP21</a>, each country is required to present a Nationally Determined Contribution <a href="https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs">NDC</a> which should,
                     <span class={styles.quote}>
@@ -59,30 +57,28 @@ const Change = () => {
                     </span>
                 </p>
 
-                <p>Commitments have not been honoured,
+                <p>Commitments have not been honoured.
                     <span class={styles.quote}>
                     After a year disrupted by the Covid-19 pandemic, nations representing only around 28% of global emissions registered new or updated “nationally determined contributions” (NDCs) on the UN’s official registry by the end of the year. Some big emitters did register their NDCs in time, including the UK and EU. But major absences included the US, India and China.
                     <div><a href="https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition">Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?</a></div>
                     </span>
                 </p>
 
-                <p>As a result, <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">global emissions continue to rise</a>.</p>
+                <p>As a result, <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">global emissions continue to rise</a>.</p>                
 
-                <h3>Are there any other plans?</h3>
-
-                <p>Quite a few. In addition to intergovernmental and government plans, there is the US <span><a href="https://www.congress.gov/116/bills/hres109/BILLS-116hres109ih.pdf">Green New Deal</a></span> (PDF), the EU <span><a href="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en">European Green Deal</a></span>, <span><a href="Technology Zero Carbon Britain">Technology Zero Carbon Britain</a></span>, and <span><a href="https://web.stanford.edu/group/efmh/jacobson/Articles/I/CountriesWWS.pdf">100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World</a></span>.</p>
+                <p>In response to the perceived failings of the Paris Agreement, other plans have been put forward. In addition to intergovernmental and government plans, there is the US <span><a href="https://www.congress.gov/116/bills/hres109/BILLS-116hres109ih.pdf">Green New Deal</a></span> (PDF), the EU <span><a href="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en">European Green Deal</a></span>, <span><a href="Technology Zero Carbon Britain">Technology Zero Carbon Britain</a></span>, and <span><a href="https://web.stanford.edu/group/efmh/jacobson/Articles/I/CountriesWWS.pdf">100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World</a></span>.</p>
 
                 <p>The 13th of the UN's own 17 Sustainable Development Goals <a href="https://sdgs.un.org/goals">SDGs</a>, Climate Action, targets climate change and its impacts.</p>
  
-                <h2 id="energy">Energy</h2>
+                <h2 id="energy">The wrong kind of energy</h2>
 
-                <h3>Eternal summer shall not fade</h3>
+                {/* <p>Photosynthetic cells are <span><a href="https://en.wikipedia.org/wiki/Photosynthetic_efficiency#Efficiencies_of_various_biofuel_crops">less efficient</a></span> than photovoltaic cells at capturing energy from the sun.</p> */}
 
-                <p>Photosynthetic cells are probably <span><a href="https://en.wikipedia.org/wiki/Photosynthetic_efficiency#Efficiencies_of_various_biofuel_crops">less efficient</a></span> than photovoltaic cells at capturing energy from the sun.</p>
+                <p>Photosynthesis is <span><a href="https://en.wikipedia.org/wiki/Photosynthetic_efficiency#Efficiencies_of_various_biofuel_crops">less efficient</a></span> than photovoltaic cells at capturing energy from the sun. But the plants that benefit from it are highly effective at creating environments suitable for animals.</p>
 
-                <p>Photosynthesis, however, was not designed to solve a problem, the mechanisms by which it operates, though they vary, adhere only to the principle of natural selection. The products of photosynthesis, among them oxygen and energy in the form of carbohydrates, altered the environment, and thus enabled the evolution of almost all living things.</p>
+                <p>Fossil fuels accumulated behind the scenes, a consequence not of evolution but an accident of time and geography, silently capturing the carbon dioxide stored in dead plants and animals at a time when levels were far higher than they are today. These reserves were laid down over thousands of millenia many millions of years ago.</p>
 
-                <p>Fossil fuels were a silent partner in this transformation, capturing carbon dioxide stored in plants and animals at a time when levels of carbon dioxide were far higher than they are today. These reserves were laid down over thousands of millenia many millions of years ago. By burning them we have upset this equilibrium, releasing in decades their long accumulated power. Playing ingeniously, impishly, with this asymmetry of time, we have opened a warehouse of jack-in-the-boxes.</p>
+                <p>By burning fossil fuels we have upset a natural equilibrium, releasing in decades their long accumulated power. Playing ingeniously, impishly, with this asymmetry of time, we have opened a warehouse of jack-in-the-boxes.</p>
 
                 <h3>The problem of energy density</h3>
 
@@ -129,9 +125,9 @@ const Change = () => {
                 
                 <p>Fossil fuels are the incumbent energy source, and if we are to replace them, it will entail adapting, extending and replacing existing infrastructure using more land at great cost both financially and materially. There may be, however, gains that quickly override these costs, to health, wealth, and societal well-being.</p>
 
-                <p>Do we also need to make a case for change that involves disruption, cost and possibly further injustice, one that favours the future over the present? If we think it appropriate to force sudden change, the consequences may be painful, and the burden of cost fall unfairly.</p>
+                {/* <p>Do we also need to make a case for change that involves disruption, cost and possibly further injustice, one that favours the future over the present? If we think it appropriate to force sudden change, the consequences may be painful, and the burden of cost fall unfairly.</p> */}
 
-                <h3>Unusual practices</h3>
+                <h3>Eternal summer shall fade</h3>
 
                 <p>Business as usual is a vague term for, unless it is merely a proxy for cynical profiteering, it assumes stasis, whereas ideas, companies, plans, people, and markets are constantly in flux. What we are contemplating is novel, and extraordinary, arguably counter to our energy demands, because we wish to replace our existing sources with others that are, at least in the short term, less efficient. This problem is not intractable, but resistance to change comes not only from protectionism and self interest, but from practical considerations that encompass physics, technology, time, resources, knowledge and ability.</p>
                     
@@ -182,7 +178,7 @@ const Change = () => {
 
                 <p>History has caught up with us. The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them, and we have little time in which to overcome our addiction.</p>
 
-                <p>Which brings us back to the IPCC and their carefully constructed <span><a aria-label="IPCC Guide to Uncertainty (PDF)" href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">matrix</a></span> of probabilities and uncertainties. The future is unlikely to be a clear path agreed upon by all, but a hotchpotch of competing ideas, ideals, protest, chicanery and ingenuity. The emergence of citizen's assemblies may play an important part, reflecting popular convictions that traditional, partisan politics are unable to represent. The French government legislated for a <a href="https://www.theguardian.com/business/2021/apr/12/france-ban-some-domestic-flights-train-available-macron-climate-convention-mps">ban</a> on some internal flights, following a (watered down) recommendation proposed by the <a href="https://www.conventioncitoyennepourleclimat.fr/">Convention Citoyenne pour le Climat</a>. The UK government's <a href="https://www.gov.uk/government/publications/the-ten-point-plan-for-a-green-industrial-revolution">10 point plan on climate change</a> echoes, in part, the findings of the <a href="https://www.climateassembly.uk/">Climate Assembly UK</a>. The <a href="https://globalassembly.org/">Global Assembly</a> has a commendably broad constituency but lacks an accountable body.</p>
+                <p>Which brings us back to the IPCC which has a carefully constructed <span><a aria-label="IPCC Guide to Uncertainty (PDF)" href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">matrix</a></span> of probabilities and uncertainties. The future is unlikely to be a clear path agreed upon by all, but a hotchpotch of competing ideas, ideals, protest, chicanery and ingenuity. The emergence of citizen's assemblies may play an important part, reflecting popular convictions that traditional, partisan politics are unable to represent. The French government legislated for a <a href="https://www.theguardian.com/business/2021/apr/12/france-ban-some-domestic-flights-train-available-macron-climate-convention-mps">ban</a> on some internal flights, following a (watered down) recommendation proposed by the <a href="https://www.conventioncitoyennepourleclimat.fr/">Convention Citoyenne pour le Climat</a>. The UK government's <a href="https://www.gov.uk/government/publications/the-ten-point-plan-for-a-green-industrial-revolution">10 point plan on climate change</a> echoes, in part, the findings of the <a href="https://www.climateassembly.uk/">Climate Assembly UK</a>. The <a href="https://globalassembly.org/">Global Assembly</a> has a commendably broad constituency but lacks an accountable body.</p>
 
                 <p><a href="https://en.wikipedia.org/wiki/Pierre-Simon_Laplace">Pierre-Simon Laplace</a>, an examiner of Napoleon when he attended the École Militaire, was on the panel selected in 1790, by another assembly, the <a href="https://en.wikipedia.org/wiki/National_Constituent_Assembly_(France)">Assemblée nationale constituante</a>, to establish a <a href="https://en.wikipedia.org/wiki/History_of_the_metric_system#Implementation_in_Revolutionary_France">metric system</a>. The new system of weights and measures which unified what until then had been patchwork of regional and local measures, proved useful and durable. The <a href="https://en.wikipedia.org/wiki/French_Republican_calendar">metric calendar</a> which respected neither tradition nor planetary orbits, lasted just 12 years from 1793 to 1805, except for a 19 day reprieve in 1871.</p>
 
@@ -268,7 +264,7 @@ const Change = () => {
 
 
             </section>
-            <Links.RelatedLinks links={[{href:'carbon',title:'Carbon primer'}, {href:'facts',title:'Facts'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'carbon',title:'Carbon primer'}, {href:'climate-crisis/facts',title:'Facts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

@@ -5,51 +5,35 @@ import styles from 'pages/pages.module.scss';
 
 const Services = () => {
     return (
-        <Layout header="Client web services" title="Client web services" description={'Web Services'}>
+        <Layout header="Client web services" title="Client web services" description={'Daniel Hartley will help you optimise an existing website, or build one that is fast, accessible, and sustainable.'}>
             <section class={styles.card}>
 
-                <h2>Features</h2>
+                <p>You should contact me if you want to build a site from scratch, or review performance of an existing site, including its compliance with industry standards.</p>
+
+                <h2>New sites</h2>
                 <p>
                     <span>The sites I build have the following characteristics:</span>
-                    <ul class={styles.list}>
-                        <li><span class={styles.bold}>Safe</span>: opportunities for attack are minimised.</li>
+                    <ul class={styles.dashedItemsList}>
+                        <li><span class={styles.bold}>Secure</span>: opportunities for attack are minimised.</li>
                         <li><span class={styles.bold}>Accessible</span>: pages are available to all users, on any device.</li>
                         <li><span class={styles.bold}>Fast</span>: pages are assembled before they are requested so waiting time is reduced.</li>
-                        <li><span class={styles.bold}>Extensible</span>: you can change, modify or adapt your site to changing needs.</li> 
-                        {/* <li>Content management: Open-source CMS (<a href="https://www.netlifycms.org/">netlify-cms)</a> or Google <a href="https://firebase.google.com/">Firebase</a> database.</li>
-                        <li>Functions as a service, <a href="Serverless functions">Faas</a>, with either serverless functions on <a href="https://firebase.google.com/docs/functions">Google Cloud</a> or <a href="https://www.netlify.com/products/functions/">Lambda functions</a> on netlify.</li> */}
+                        <li><span class={styles.bold}>Extensible</span>: you can change, modify or adapt your site to changing needs.</li>
                     </ul> 
                     <span>I follow <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</span>
                 </p>
 
-                <h2>The sociable contract</h2>
-
-                <p>The sociable contract outlines the principles upon which the website is built. It reflects the efforts of everyone who contributes to the project.</p>
-
+                <h2>Existing sites</h2>
                 <p>
-                    <div>I have created a <Links.InternalLink link={{'value': 'contract', 'text': 'sociable contract'}}></Links.InternalLink> for The Public Good.</div>
+                    <span>I will audit an exisiting site with a view to improving performance and compliance.</span>
                 </p>
 
-                {/* <p>
+                <h2>The sociable contract</h2>
 
-                    <ul class={styles.list}>
-                        <li>Public document</li>
-                        <li>Clear scope and reasoning and limits (financial, time, etc.)</li>
-                        <li>Good intentions and red lines.</li>
-                        <li>History of ammendments, breaches, etc.</li>
-                        <li>Explicit commitments e.g. that the site is accesible.</li>
-                        <li>Promise to respond to criticism with reasonable time.</li>
-                    </ul>
-                </p> */}
+                <p>The sociable contract outlines the principles upon which a website is built. It reflects the efforts of everyone who contributes to the project.</p>
 
-                {/* <h2>Optional features</h2>
                 <p>
-                    <ul class={styles.list}>
-                        <li>Open-source CMS (<a href="https://www.netlifycms.org/">netlify-cms)</a>.</li>
-                        <li>Google <a href="https://firebase.google.com/">Firebase</a> database.</li>
-                        <li>Functions as a service, <a href="Serverless functions">Faas</a>, with either serverless functions on <a href="https://firebase.google.com/docs/functions">Google Cloud</a> or <a href="https://www.netlify.com/products/functions/">Lambda functions</a> on netlify.</li>
-                    </ul>
-                </p> */}
+                    <div>I have created a <Links.InternalLink link={{'value': 'web-development/sociable-contract', 'text': 'sociable contract'}}></Links.InternalLink> for The Public Good.</div>
+                </p>
 
                 <h2>Best practices</h2>
                 <p>
@@ -58,7 +42,7 @@ const Services = () => {
                 <p>If you would like to discuss an idea or a project, please contact me at <a href="mailto:dbmhartley@protonmail.com">Daniel Hartley</a>.</p>           
                 <p>For a complete picture of the web technologies I use, this is my <a href="https://danhartley.github.io/snapdragon-redux/wiki/">curriculum vitae</a>.</p>            
             </section>  
-            <Links.RelatedLinks links={[{href:'contract',title:'Social contract'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'web-development/sociable-contract',title:'Sociable contract'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

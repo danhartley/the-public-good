@@ -6,29 +6,20 @@ import styles from 'pages/pages.module.scss';
 
 const CarbonFootprint = () => {
     return (
-        <Layout header="The value of individual acts" title="Climate crisis - the value of individual acts" description={'Climate crisis - the value of individual acts'}>
+        <Layout header="The value of individual acts" title="Climate crisis | the value of individual acts" description={'An introduction to greenhouse gas emissions, carbon budgets, and personal carbon footprint calculators with comparison of 5 calculators.'}>
             <section class={styles.card}>
 
                 <div>
-                    <div class={styles.bang}><a href="#calculators">Carbon calculators</a></div>
-                    <div class={styles.bang}><a href="#comparison">Comparison of selected calculators</a></div>
-                    <div class={styles.bang}><a href="#individualActs">Individual Acts</a></div>
-                    <div class={styles.bang}><a href="#conclusion">Conclusion</a></div>
+                    <div class={styles.bang}><a href="#intro">Carbon emissions, budgets & calculators</a><span class={styles.italic}> 4 minutes</span></div>
+                    <div class={styles.bang}><a href="#calculators">Individual carbon footprint calculators</a><span class={styles.italic}> 3 minutes</span></div>
+                    <div class={styles.bang}><a href="#individualActs">Individual Acts</a><span class={styles.italic}> 3 minutes</span></div>
                 </div>               
 
-                <p>
-                    <div class={styles.bold}>Carbon footprint</div>
-                    <div class={styles.quote}>
-                        <div>The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a></div>                    
-                    </div>
-                </p>
+                <h2 id="intro">Carbon emissions, budgets & calculators</h2>
 
-                <h2><Formula>CO2</Formula> Emissions</h2>
-
-                <h3>Current emissions</h3>
                 <p>
                 According to Our World in Data (2017):
-                <ul class={styles.list}>
+                <ul class={styles.dashedItemsList}>
                     <li>Per capita CO2 emissions: <a href="https://ourworldindata.org/grapher/co-emissions-per-capita?tab=chart">4.73 tonnes</a>.</li> 
                     <li>Total CO2: <a href="https://ourworldindata.org/co2-emissions">36.44 billion tonnes of CO2</a>.</li>
                     <li>Total CO2e: <a href="https://ourworldindata.org/greenhouse-gas-emissions">49.36 billion tonnes of CO2e</a> (2016).</li>
@@ -39,8 +30,10 @@ const CarbonFootprint = () => {
                     <span><a href="https://carbonmonitor.org/">Daily estimates</a> are also available from Carbon Monitor.</span>
                 </div>                
                 </p>
-                <h3>Sustainable emissions</h3>
-                <p>                                 
+                {/* <h3>Sustainable emissions</h3>
+                <p>                           
+
+                    The IPCC collates data from papers in a wide range of disciplines. To determine the change in levels of carbon dioxide in the atmosphere, it combines data from emissions sources and sinks. The ratio between sources and sinks determines whether anthropogenic emissions have an effect on natural systems.
                     <div>
                         <span class={styles.quote}>
                         The natural response of land to human-induced environmental change caused a net sink of around 11.2 GtCO2 yr-1 during 2007–2016 (equivalent to 29% of total CO2 emissions) (<a href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">medium confidence</a>) (PDF).
@@ -61,10 +54,17 @@ const CarbonFootprint = () => {
 
                         The calculation assumes that sinks absorb all emissions immediately, which is not the case. Counting emissions and calculating budgets is <a href="https://www.carbonbrief.org/analysis-why-the-ipcc-1-5c-report-expanded-the-carbon-budget">not straightforward</a>; the IPPC publishes a <a aria-label="IPCC Guide to Uncertainty (PDF)" href="https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf">guide</a> for the lead authors of reports solely concerned with explaining how to express uncertainty.
                     </div>
-                </p>
+                </p> */}
 
                 <p>
-                    <h3>Global carbon budget</h3>
+                    <h3>Carbon budgets</h3>
+
+                    <p>
+                        <div class={styles.quote}>
+                        The cumulative amount of carbon dioxide (CO2) emissions permitted over a period of time to keep within a certain temperature threshold. <Links.ExternalLink link={{source:'https://carbontracker.org/carbon-budgets-explained/'}}>Carbon Tracker</Links.ExternalLink>
+                        </div>
+                    </p>
+
                     <p>
                         The <a aria-label="Paper on the Global Carbon Budget 2020" href="https://essd.copernicus.org/articles/12/3269/2020/">global carbon budget</a>, published annually, provides an account of the balance between carbon sources - emissions - and sinks. The movement of carbon atoms betweens sinks and sources is called the <a aria-label="US National Ocean Service article, What is the carbon cycle?" href="https://oceanservice.noaa.gov/facts/carbon-cycle.html">carbon cycle</a>, and it is perturbations in this cycle which cause global warming.
                         Since 1950 around <a href="https://www.nature.com/articles/s41598-018-24241-1.pdf?origin=ppub">48±7%</a> of anthropogenic emissions have been taken up by <a href="https://www.pnas.org/content/116/24/11646">natural sinks</a>, though at variable rates.
@@ -90,23 +90,14 @@ const CarbonFootprint = () => {
                     </p>
                 </p>
 
-                <h2>Personal carbon footprint</h2>
+                <h3>Carbon footprints</h3>
 
-                {/* <h3>History</h3> */}
-
-                <ul class={styles.list}>
-                    <li>
-                        <span><a aria-label="Profile of William Rees at the post carbon institute" href="https://www.postcarbon.org/our-people/william-rees/">William Rees</a> and Mathis Wackernagel use the term <a aria-label="Wikipedia article on ecological footprint" href="https://en.wikipedia.org/wiki/Ecological_footprint">ecological footprint</a> for the first time in an academic publication.</span>
-                    </li>
-                    <li>
-                        <span>BP launches the first <a href="https://mashable.com/feature/carbon-footprint-pr-campaign-sham/?europe=true">carbon footprint calculator</a> and spends millions promoting the concept.</span>
-                    </li>
-                    <li>
-                        <span>BP launches a <a aria-label="BP carbon emissions calculator" href="https://www.knowyourcarbonfootprint.com/">second carbon calculator</a>. It does not receive a favourable <a href="https://twitter.com/bp_plc/status/1186645440621531136">reception</a>.</span>
-                    </li>
-                </ul>
-
-                <h3>Controversy</h3>
+                <p>
+                    {/* <div class={styles.bold}>Carbon footprint</div> */}
+                    <div class={styles.quote}>
+                        <div>The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or product, expressed as carbon dioxide equivalent. <a href="https://en.wikipedia.org/wiki/Carbon_footprint">Wikipedia</a></div>                    
+                    </div>
+                </p>
 
                 <p>The climatologist, Michael E Mann, argues that whilst individual action is important, it must not distract from policy. In an article for Time, <a href="https://time.com/5669071/lifestyle-changes-climate-change/">Lifestyle Changes Aren’t Enough to Save the Planet. Here’s What Could</a>, he writes, 
                     <span class={styles.quote}>
@@ -130,7 +121,7 @@ const CarbonFootprint = () => {
                     </div>
                 </p>
 
-                <h3>Implicit footprint</h3>
+                <h3>Carbon footprints of societies</h3>
 
                 <p>
                     <div>In 2008 MIT <a href="https://news.mit.edu/2008/footprint-tt0416">calculated</a> that even the least extravagant person in the US had a carbon footprint of 8.5 tonnes or 42.5% of the average which, at the time, was 20 tonnes.
@@ -148,12 +139,10 @@ const CarbonFootprint = () => {
                     </div>
                 </p>
 
-                <h2>Evaluation of carbon footprints</h2>
-
                 <h3>Benefits of carbon footprints</h3>
 
                 <p>
-                    <ul class={styles.list}>
+                    <ul class={styles.dashedItemsList}>
                         <li>Provide a basic framework for how to think about climate change numbers.</li>
                         <li>Demonstrate our dependency on fossil fuels.</li>
                         <li>Can establish good practices and measurable outcomes e.g. the <a href="https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf">Ecological Footprint Standards (PDF)</a></li>
@@ -163,7 +152,7 @@ const CarbonFootprint = () => {
                 <h3>Downsides of carbon footprints</h3>
                 
                 <p>
-                    <ul class={styles.list}>
+                    <ul class={styles.dashedItemsList}>
                         <li>Individual profiles are primarily based on averages with minimal personal data.
                             <div>For a comparison compare one <a href="https://calculator.farmcarbontoolkit.org.uk/">carbon footprint calculator for UK farmers</a> which takes 30 mins to 2 hours to complete.</div>
                         </li>
@@ -174,32 +163,21 @@ const CarbonFootprint = () => {
                     </ul>
                 </p>
 
-                <h2 id="individualActs">Individual acts</h2>
+                <h2 id="calculators">Individual carbon footprint calculators</h2>
 
-                <p>Carbon footprints are sometimes used as a proxy for individual acts, which are then placed in opposition to political or social acts, limiting choice to one or the other, either/or.</p>
+                <ul class={styles.dashedItemsList}>
+                    <li>
+                        <span><a aria-label="Profile of William Rees at the post carbon institute" href="https://www.postcarbon.org/our-people/william-rees/">William Rees</a> and Mathis Wackernagel use the term <a aria-label="Wikipedia article on ecological footprint" href="https://en.wikipedia.org/wiki/Ecological_footprint">ecological footprint</a> for the first time in an academic publication.</span>
+                    </li>
+                    <li>
+                        <span>BP launches the first <a href="https://mashable.com/feature/carbon-footprint-pr-campaign-sham/?europe=true">carbon footprint calculator</a> and spends millions promoting the concept.</span>
+                    </li>
+                    <li>
+                        <span>BP launches a <a aria-label="BP carbon emissions calculator" href="https://www.knowyourcarbonfootprint.com/">second carbon calculator</a>. It does not receive a favourable <a href="https://twitter.com/bp_plc/status/1186645440621531136">reception</a>.</span>
+                    </li>
+                </ul>
 
-                <p>One reason for this polarity is that fossil fuel companies have promoted the idea that emissions reduction is the responsibility of individuals, and one of the tools they have used is the carbon footprint; not only was BP the first to popularise the concept, they have released carbon footprint calculators twice, in 2006 and 2020, to coincide with campaigns defending or stating their green credentials.</p>
-
-                <p>Do individual acts detract from systemic changes that might be more productive?</p>
-
-                <p>Two recent studies provide evidential support that we keep a tally of our moral acts, and are quick to call in our debt; acceptance of <a aria-label="Article from Nature, Nudging out support for a carbon tax." href="https://www.nature.com/articles/s41558-019-0474-0.epdf?referrer_access_token=7hony2jeIBDx312LZL9Gf9RgN0jAjWel9jnR3ZoTv0Nfy3PIgvrwnNXQzIbXH8z1u5o1DVXJKOCBERWXBQ6n3i7p3mfuhk8O9_ARe2av1P-d3pfhbb06zqr_k1ZVK_HD8tEj_6p2jxRJQxwkRFQWahxt7ZYR4Ws1ZVY58B8B8F6TJ6aO9hG-1I9AhErSlutuYsCZeDXvm9-XQaK48r5_g_7ekTO-pGXMZtdqirjpVkfWgFjWyxnVqqn0_h9toXZES8i2jx06Io6c6_qOC8Bd6VHPqm72I77ZCjw2ljeahJRxzha7MfU5fOL8oy4OqgnRM5K5ySLjcAfgtZx4iUYU7Q%3D%3D&tracking_referrer=www.usatoday.com">one tax</a>, even at the lower end of a range, lessens acceptance of further taxation. A paper in <a aria-label="Article from Nature, Household behaviour crowds out support for climate change policy when sufficient progress is perceived." href="https://www.nature.com/articles/nclimate3316">Nature</a> that looked at how small changes might adversely affect willingness to accept larger ones, concluded,
-                    <span class={styles.quote}>
-                        It appears that, while people are generally concerned about societal problems such as climate change, they may not be willing to incur large costs to achieve a solution. With the perceived existence of a low-cost solution (a nudge), motivated reasoning may tempt some to exaggerate its ultimately small environmental impact. This may explain why participants generally thought the nudge was as or more effective at reducing pollution than the carbon tax. However, even those who knew that the carbon tax is more effective than the green energy nudge were discouraged from implementing the tax when a nudge became available, suggesting that crowding-out is not merely the result of incorrect perceptions of relative effectiveness. When these perceptions are corrected at the time of decision, however, motivated reasoning is difficult and crowding-out disappears.
-                    </span>
-                    A little hope in the final sentence.
-                </p>
-
-                <p>The choice, however, is ours, we can save electricity and water, become a vegan and run for office. If we think we can combine personal and political action, then we should, and trust others to do the same.</p>
-
-                <p>
-                    <span>What of the actions themselves, do they have <a href="https://en.wikipedia.org/wiki/Intrinsic_value_(ethics)">intrinsic value</a>? Does knowing the average emission of a transatlantic flight, or the carbon dioxide-equivalent per kilo of beef mean anything?</span>
-                </p>
-
-                <p>A decision which may involve inconvenience, loss of income, or the forfeit of a pleasure, is sustained more readily when it has solid foundations, for then the reason behind, and the need for, the change, is clear, even if any ultimate benefit that accrues is indiscernible. It is against the grain for most to forego gratification or gain, but it is hard to ignore that which is right to do, when that right has been established and understood. We may call this conscience, sense of duty, or moral imperative; and we may discover that acting in accordance with our beliefs and our understanding, is less disruptive, and more sustaining, than we imagined.</p>
-
-                <h2 id="calculators">Carbon footprint calculators</h2>
-
-                {/* <h3>Personal calculators</h3> */}
+                <p>There are numerous carbon footprint calculators. I have listed a few that seem more or less accurate but I would recommend using three or four to obtain an average. Any value should be treated as a rough approximation. As emissions are tied to particular goods and services, we can expect greater accuracy and specificity.</p>
 
                 <Tables.Calculators></Tables.Calculators>
 
@@ -227,7 +205,7 @@ const CarbonFootprint = () => {
 
                 <h3>Recommendations</h3>
                 <p>
-                    <ul class={styles.list}>
+                    <ul class={styles.dashedItemsList}>
                         <li>Do not offer the option to share the results of footprints because they are free of important context, and are not comparable; but do share the calculator itself.</li>
                         <li>Show workings and explain assumptions.</li>
                         <li>Follow, or reference, <a href="https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf">Ecological Footprint Standards (PDF)</a>.</li>
@@ -235,6 +213,31 @@ const CarbonFootprint = () => {
                         <li>Include and explain carbon dioxide-equivalents.</li>
                     </ul>
                 </p>
+
+
+                <h2 id="individualActs">Individual acts</h2>
+
+                <p>Carbon footprints are sometimes used as a proxy for individual acts, which are then placed in opposition to political or social acts, limiting choice to one or the other, either/or.</p>
+
+                <p>One reason for this polarity is that fossil fuel companies have promoted the idea that emissions reduction is the responsibility of individuals, and one of the tools they have used is the carbon footprint; not only was BP the first to popularise the concept, they have released carbon footprint calculators twice, in 2006 and 2020, to coincide with campaigns defending or stating their green credentials.</p>
+
+                <p>Do individual acts detract from systemic changes that might be more productive?</p>
+
+                <p>Two recent studies provide evidential support that we keep a tally of our moral acts, and are quick to call in our debt; acceptance of <a aria-label="Article from Nature, Nudging out support for a carbon tax." href="https://www.nature.com/articles/s41558-019-0474-0.epdf?referrer_access_token=7hony2jeIBDx312LZL9Gf9RgN0jAjWel9jnR3ZoTv0Nfy3PIgvrwnNXQzIbXH8z1u5o1DVXJKOCBERWXBQ6n3i7p3mfuhk8O9_ARe2av1P-d3pfhbb06zqr_k1ZVK_HD8tEj_6p2jxRJQxwkRFQWahxt7ZYR4Ws1ZVY58B8B8F6TJ6aO9hG-1I9AhErSlutuYsCZeDXvm9-XQaK48r5_g_7ekTO-pGXMZtdqirjpVkfWgFjWyxnVqqn0_h9toXZES8i2jx06Io6c6_qOC8Bd6VHPqm72I77ZCjw2ljeahJRxzha7MfU5fOL8oy4OqgnRM5K5ySLjcAfgtZx4iUYU7Q%3D%3D&tracking_referrer=www.usatoday.com">one tax</a>, even at the lower end of a range, lessens acceptance of further taxation. A paper in <a aria-label="Article from Nature, Household behaviour crowds out support for climate change policy when sufficient progress is perceived." href="https://www.nature.com/articles/nclimate3316">Nature</a> that looked at how small changes might adversely affect willingness to accept larger ones, concluded,
+                    <span class={styles.quote}>
+                        It appears that, while people are generally concerned about societal problems such as climate change, they may not be willing to incur large costs to achieve a solution. With the perceived existence of a low-cost solution (a nudge), motivated reasoning may tempt some to exaggerate its ultimately small environmental impact. This may explain why participants generally thought the nudge was as or more effective at reducing pollution than the carbon tax. However, even those who knew that the carbon tax is more effective than the green energy nudge were discouraged from implementing the tax when a nudge became available, suggesting that crowding-out is not merely the result of incorrect perceptions of relative effectiveness. When these perceptions are corrected at the time of decision, however, motivated reasoning is difficult and crowding-out disappears.
+                    </span>
+                    A little hope in the final sentence.
+                </p>
+
+                <p>The choice, however, is ours, we can save electricity and water, become a vegan and run for office. If we think we can combine personal and political action, then we should, and trust others to do the same.</p>
+
+                <p>
+                    <span>What of the actions themselves, do they have <a href="https://en.wikipedia.org/wiki/Intrinsic_value_(ethics)">intrinsic value</a>? Does knowing the average emission of a transatlantic flight, or the carbon dioxide-equivalent per kilo of beef mean anything?</span>
+                </p>
+
+                <p>A decision which may involve inconvenience, loss of income, or the forfeit of a pleasure, is sustained more readily when it has solid foundations, for then the reason behind, and the need for, the change, is clear, even if any ultimate benefit that accrues is indiscernible. It is against the grain for most to forego gratification or gain, but it is hard to ignore that which is right to do, when that right has been established and understood. We may call this conscience, sense of duty, or moral imperative; and we may discover that acting in accordance with our beliefs and our understanding, is less disruptive, and more sustaining, than we imagined.</p>
+
 
                 <h2 id="conclusion">Conclusion</h2>
 
@@ -272,7 +275,7 @@ const CarbonFootprint = () => {
             <section id="profile" class={styles.card}>
                 <p>
                     + My profile
-                    <ul class={styles.list}>                        
+                    <ul class={styles.dashedItemsList}>                        
                         <li>No meat, cheese, eggs most days, no milk</li>
                         <li>40% fresh, 60% packaged (pasta, beans, coffee, oats, oat milk, wine)</li>
                         <li>80% local food (within 320k)</li>

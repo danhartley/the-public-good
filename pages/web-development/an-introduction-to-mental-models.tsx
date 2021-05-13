@@ -29,7 +29,7 @@ const MentalModel = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{href:'contract',title:'Sociable contract'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'web-development/sociable-contract',title:'Sociable contract'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

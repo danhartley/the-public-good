@@ -36,23 +36,27 @@ const Carbon = () => {
             "source": "https://www.youtube.com/watch?v=QWf2jcznLsY"
         },
         {
-            "name": "Khan Academy | The carbon cycle",
+            "name": "Khan Academy | The carbon cycle (video)",
             "source": "https://www.khanacademy.org/science/high-school-biology/hs-ecology/hs-biogeochemical-cycles/v/carbon-cycle"
+        },
+        {
+            "name": "Khan Academy | The carbon cycle (article)",
+            "source": "https://www.khanacademy.org/science/biology/ecology/biogeochemical-cycles/a/the-carbon-cycle"
         },
     ];
     
     return (
-        <Layout title="Climate crisis - Carbon" header="Carbon - component of life" description={'Climate crisis - Carbon'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
+        <Layout title="Climate crisis | Carbon - component of life" header="Carbon - component of life" description={'A synopsis of the element carbon: its origin and properties; importance to life; the carbon cycle; and its impact as a greenhouse gas.'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
 
             <section class={styles.card}>
                 
                 <div class={styles.inset}>
                     <div class={styles.bang}><a aria-label="Jump to The origins and properties of carbon on this page" href="#origins-and-properties">The origins and properties of carbon</a><span class={styles.italic}> 2 minutes</span></div>
                     <div class={styles.bang}><a aria-label="Jump to Carbon compounds on this page" href="#carbon-compounds">Carbon compounds</a><span class={styles.italic}> 2 minutes</span></div>
-                    <div class={styles.bang}><a aria-label="Jump to The Carbon Cycle on this page" href="#carbon-cycle">The Carbon Cycle</a><span class={styles.italic}> 3 minutes</span></div>
+                    <div class={styles.bang}><a aria-label="Jump to The carbon cycle on this page" href="#carbon-cycle">The carbon cycle</a><span class={styles.italic}> 3 minutes</span></div>
                 </div>
 
-                <Accordion header="Carbon properties">
+                <Accordion header="Carbon basics">
                     <div class={styles.inset}>
                         <span>Symbol <span class={styles.bold}>C</span>; atomic number <span class={styles.bold}>6</span>; atomic mass <span class={styles.bold}>12.011u</span></span>
                         <span>Nonmetal, solid at room temperature.</span>
@@ -63,8 +67,6 @@ const Carbon = () => {
                 </Accordion>
 
                 <h2 id="origins-and-properties">The origins and properties of carbon</h2>
-
-                {/* <h3>(Almost) as old as the stars</h3> */}
 
                 <p>Carbon atoms are formed in dying stars under extreme and improbable conditions during a set of nuclear fusion reactions known as the <span><a aria-label="Stanford article on the triple-alpha process" href="http://large.stanford.edu/courses/2017/ph241/udit2/">triple-alpha process</a></span>. On collapse of the star, in a supernova, the atoms are blown out, eventually forming new star systems such as our own.</p>
                 
@@ -135,7 +137,7 @@ const Carbon = () => {
 
                 <p>Because carbon atoms form strong bonds with other carbon atoms as well as the atoms of other elements it is able to form long chains, or polymers. Many of these are critical to life, including RNA, DNA, proteins, and sugars. It is this ability to bind to itself in long chains, form stable compounds with other elements and the proximity of electrons to the nucleus, that makes carbon the best, and perhaps the only, building block of life, not only on this planet, but in the universe.</p>
     
-                <h2 id="carbon-cycle">The Carbon Cycle</h2>
+                <h2 id="carbon-cycle">The carbon cycle</h2>
 
                 <p>The carbon cycle regulates the flow of carbon through the earth and the atmosphere. The distribution of carbon throughout the cycle affects temperature which alters conditions on earth to which all life must adapt.</p>
 
@@ -208,40 +210,12 @@ const Carbon = () => {
             </section>
 
             <section class={styles.card}>
-                <h2>External Links</h2>
+                <h2>References</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{href:'facts',title:'Facts'}, {href:'climate-crisis/the-value-of-individual-acts',title:'The value of individual acts'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{href:'climate-crisis/facts',title:'Facts'}, {href:'climate-crisis/the-value-of-individual-acts',title:'The value of individual acts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
 
 export default Carbon;
-
-{/* <Accordion header="Covalent bonds between carbon and oxygen">
-<p>In diamond the bonds are between carbon atoms (carbon-carbon, or C-C). In each molecule of carbon dioxide, two bonds are formed between carbon and oxygen (carbon-oxygen C-O).</p>
-    <div class={styles.quote}>
-        <div>Atoms have orbitals, or shells, that contain electrons. Only electrons in the outer (valence) shell are involved in bonds with other atoms.</div>
-        <div>Carbon has an atomic mass of 6*; 2 electrons in its inner shell, and 4 valence electrons.</div>
-        <div>Oxygen has an atomic mass of 8*; 2 electrons in its inner shell, and 6 valence electrons.</div>
-        <div>For each atom in carbon dioxide to have 8 electrons in its outer shell, 2 oxygen atoms must share an electron with 1 carbon atom, hence its chemical formula CO<span class={styles.sub}>2</span>. These bonds are called double bonds.</div>
-        <div>*The <span><a href="https://cdn.britannica.com/45/7445-050-BB332C27/version-periodic-table-elements.jpg">periodic table</a></span> orders elements by their atomic number, in ascending order: Hydrogen 1, Helium 2,… Carbon 6, Nitrogen 7, Oxygen 8, etc.</div>
-        <div><a href="https://en.wikipedia.org/wiki/Carbon_dioxide">Carbon dioxide Wikipedia</a></div>
-    </div>
-</Accordion>                    
-*/}
-
-{/* <p>
-    <Accordion header="Structure of diamond crystals">
-    <div>These repeat in structures called <span><a href="https://en.wikipedia.org/wiki/Diamond_cubic">diamond cubic</a></span> crystal structures.</div>
-        <div class={styles.quote}>                            
-            How to calculate the number of carbon atoms (8) in each cube:
-            <div>&#8539; of an atom at each of the eight corners; &#189; of an atom on each of the six faces; 4 whole atoms contained within the cube: (&#8539; * 8) + (&#189; * 6) + (1 * 4) = 8
-            </div>
-            <div>There are no &#8539; or &#189; atoms, 8 is the number of atoms per cube averaged across the structure. Each carbon atom is always connected to exactly four other carbon atoms.</div>
-            <span><a aria-label="Image of a unit cell of diamond" href="https://content.bartleby.com/tbms-images/9781133958437/Chapter-21/images/58437-21-21.5e-question-digital_image001.jpg">Unit cell of diamond</a></span> (diagram)
-        </div>
-    </Accordion>
-</p> */}
-
-{/* <p>These bonds which hold the atoms together in diamond are covalent. Each atom forms 4 covalent bonds: each of the 4 electrons orbiting its outer shell is paired with an electron in the outer shell of another carbon atom, to bring the total number of elctrons in its outer shell to 8. These bonds fulfill the <span><a href="https://en.wikipedia.org/wiki/Octet_rule">octet rule</a></span> which states that elements tend to form bonds so that there are 8 electrons in their outer (or valence) shell.</p> */}

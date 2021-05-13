@@ -27,7 +27,7 @@ module.exports = {
       return [
         {
           source: '/change',
-          destination: '/climate-crisis/time-yet-for-a-hundred-indecisions',
+          destination: '/climate-crisis/the-trickiest-of-transitions',
           permanent: true,
         },
         {

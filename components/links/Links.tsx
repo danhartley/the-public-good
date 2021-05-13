@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from 'components/links/Links.module.scss';
 
 const ExternalLink = ({link, children}) => {    
+    console.log(link)
     return link.label 
         ? <span class={styles.block}><a aria-label={link.label} href={`${link.source}`}>{children}</a></span>
         : <span class={styles.block}><a href={`${link.source}`}>{children}</a></span>
@@ -64,7 +65,7 @@ const RelatedLinks = ({links}) => {
         <section class={styles.related}>
             <p class={styles.internalLink}>
                 <h2>Related</h2>
-                <ul class={styles.list}>
+                <ul class={styles.dashedItemsList}>
                     {list}
                 </ul>
             </p>                
