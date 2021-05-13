@@ -11,7 +11,7 @@ const CarbonFootprint = () => {
                 <div>
                     <div class={styles.bang}><a href="#intro">Carbon emissions, budgets & calculators</a><span class={styles.italic}> 4 minutes</span></div>
                     <div class={styles.bang}><a href="#calculators">Individual carbon footprint calculators</a><span class={styles.italic}> 3 minutes</span></div>
-                    <div class={styles.bang}><a href="#individualActs">Individual Acts</a><span class={styles.italic}> 3 minutes</span></div>
+                    <div class={styles.bang}><a href="#individualActs">Individual Acts</a><span class={styles.italic}> 2 minutes</span></div>
                 </div>               
 
                 <h2 id="intro">Carbon emissions, budgets & calculators</h2>

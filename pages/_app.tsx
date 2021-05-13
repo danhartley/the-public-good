@@ -1,4 +1,3 @@
-import { render, h } from "preact";
 import type { AppProps } from 'next/app';
 import { useLocalStorageState } from 'hooks/local-storage';
 
