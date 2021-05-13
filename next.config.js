@@ -26,24 +26,20 @@ module.exports = {
     async redirects() {
       return [
         {
-          source: '/change/',
-          destination: '/climate-crisis/the-trickiest-of-transitions/',
-          permanent: true,
+          source: '/change',
+          destination: '/climate-crisis/the-trickiest-of-transitions'
         },
         {
-          source: '/hydrogen/',
-          destination: '/climate-crisis/hydrogen-a-singular-atom/',
-          permanent: true,
+          source: '/hydrogen',
+          destination: '/climate-crisis/hydrogen-a-singular-atom'
         },
         {
-          source: '/carbon/',
-          destination: '/climate-crisis/carbon-component-of-life/',
-          permanent: true,
+          source: '/carbon',
+          destination: '/climate-crisis/carbon-component-of-life'
         },
         {
-          source: '/carbonfootprint/',
-          destination: '/climate-crisis/the-value-of-individual-acts/',
-          permanent: true,
+          source: '/carbonfootprint',
+          destination: '/climate-crisis/the-value-of-individual-acts'
         },
       ]
     },
