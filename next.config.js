@@ -42,7 +42,7 @@ module.exports = {
         },
         {
           source: '/carbonfootprint',
-          destination: 'climate-crisis/the-value-of-individual-acts',
+          destination: '/climate-crisis/the-value-of-individual-acts',
           permanent: true,
         },
       ]
