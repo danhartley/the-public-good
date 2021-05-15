@@ -217,7 +217,7 @@ const Hydrogen = () => {
 
             <section class={styles.card}>
                 <p>
-                    <Quiz link="Take the hydrogen test"></Quiz>
+                    <Quiz title="hydrogen-a-singular-atom" link="Take the hydrogen test"></Quiz>
                 </p>
             </section>
 

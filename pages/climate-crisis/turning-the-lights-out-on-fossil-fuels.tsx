@@ -1,6 +1,7 @@
 import Layout from 'components/layout/layout';
 import Tables from 'components/tables/tables';
 import Links from 'components/links/Links';
+import Top from 'components/top/top';
 
 import styles from 'pages/pages.module.scss';
 
@@ -202,6 +203,8 @@ const Change = () => {
 
                 <p>We have drawn our lines in the sand and must hope the tide does not obliterate them.</p>
 
+                <Top></Top>
+
                 </section>
 
                 <section class={styles.card}>
@@ -278,6 +281,7 @@ const Change = () => {
 
                 <p>To date the majority of emissions reductions have been in electricity but only <a href="https://en.wikipedia.org/wiki/World_energy_consumption">20 percent</a> of the world's energy use comes from electricity. In countries where cuts to emissions have been possible, there has been little change to the energy mix in transport and industry where high density, high power, fuels are critical.</p>        
 
+                <Top></Top>
 
             </section>
             <Links.RelatedLinks links={[{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>

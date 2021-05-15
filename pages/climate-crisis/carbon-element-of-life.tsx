@@ -210,7 +210,7 @@ const Carbon = () => {
             
             <section class={styles.card}>
                 <p>
-                    <Quiz title="carbon-the-ties-that-bind" link="Take the carbon test"></Quiz>
+                    <Quiz title="carbon-element-of-life" link="Take the carbon test"></Quiz>
                 </p>
             </section>
 
