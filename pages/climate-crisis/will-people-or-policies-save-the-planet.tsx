@@ -1,11 +1,13 @@
 import Layout from 'components/layout/layout';
 import Tables from 'components/tables/tables';
 import Links from 'components/links/Links';
+import Published from 'components/published/published';
+import Top from 'components/top/top';
 import styles from 'pages/pages.module.scss';
 
 const CarbonFootprint = () => {
     return (
-        <Layout header="The value of individual acts" title="Climate crisis | the value of individual acts" description={'An introduction to greenhouse gas emissions, carbon budgets, and personal carbon footprint calculators with comparison of 5 calculators.'}>
+        <Layout header="Will people or policies save the planet?" title="Climate crisis | Will people or policies save the planet?" description={'An introduction to greenhouse gas emissions, carbon budgets, and personal carbon footprint calculators with comparison of 5 calculators.'}>
             <section class={styles.card}>
 
                 <div>
@@ -44,7 +46,7 @@ const CarbonFootprint = () => {
                         Due to <a href="https://en.wikipedia.org/wiki/CO2_fertilization_effect">carbon fertilisation</a>, and other factors, including increased use of nitrogen, natural sinks have been taking up more carbon dioxide, though <a aria-label="Article published in Nature: Effects of rising CO2 levels on carbon sequestration are coordinated above and below ground" href="https://www.nature.com/articles/d41586-021-00737-1">this upward trend may not continue</a>.
                     </p>
                     <p>                         
-                        <div>Natural sinks cannot be relied on indefinitely, and become sources of emissions if they are removed or die. IPCC calculations and NDAs (<a href="https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs">Nationally Determined Contributions</a>), take into account natural sources. </div>
+                        <div>Natural sinks cannot be relied on indefinitely, and become sources of emissions if they are removed or die. IPCC calculations and Nationally Determined Contributions <a href="https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs">NDAs</a>, take into account natural sources. </div>
                     </p>
                     <p>
                         Negative emissions refer to greenhouse gases, primarily carbon dioxide, removed from the atmosphere, either though biogenic means (including planting trees, and restoring mangrove forests and sea grasses), or by artificial methods such as <a aria-label="Report by the International Energy Agency on direct air capture" href="https://www.iea.org/reports/direct-air-capture">direct air capture</a> (DAC).                
@@ -93,7 +95,7 @@ const CarbonFootprint = () => {
                     </div>
                 </p>
 
-                <h3>Carbon footprints of societies</h3>
+                <h3>Carbon footprint of societies</h3>
 
                 <p>
                     <div>In 2008 MIT <a href="https://news.mit.edu/2008/footprint-tt0416">calculated</a> that even the least extravagant person in the US had a carbon footprint of 8.5 tonnes or 42.5% of the average which, at the time, was 20 tonnes.
@@ -163,7 +165,7 @@ const CarbonFootprint = () => {
 
                 <Tables.Calculators withScores={true}></Tables.Calculators>
 
-                <p>Why are there such large discrepancies between footprints?</p>
+                <p><div class={styles.bold}>Why are there such large discrepancies between footprints?</div></p>
 
                 <p>Calculators accept a variety of information, and differ as to external baseline data and assumptions; this does not necessarily make one better than another; all of these calculators are well researched, and independently valuable, but direct comparison between them is not possible. Discrepancies are a cautionary reminder that, when dealing with climate change figures, it is more constructive to think in terms of ranges than specific figures, and that the ranges themselves fluctuate. The value of our footprint is seductive, an effective means of engagement; how the number was derived <a aria-label="Mossy Earth carbon footprint calculator methodology" href="https://mossy.earth/methodologies/carbon-footprint-calculator">is more valuable</a>.</p>
 
@@ -217,11 +219,7 @@ const CarbonFootprint = () => {
 
                 <p>Footprints would be improved by making the implicit cost of services explicit. This intrinsic, background value for a society is the floor below which individual action cannot take us, and which can only be breached by direct, participatory action that brings about policy change.</p>
 
-                <p>
-                    <div class={styles.small}>
-                        <a class={styles.bang} href="#top">Top</a>
-                    </div>
-                </p>
+                <Top></Top>
 
                 </section>
             <section id="discrepancy" class={styles.card}>
@@ -239,7 +237,7 @@ const CarbonFootprint = () => {
                     </span>
                     This is explained by the 'bunker fuels', or 'International transport', that is emissions for which no one has taken credit.
 
-                    <div class={styles.small}>
+                    <div class={styles.bang}>
                         <a href="#data">Return to current emissions</a>
                     </div>
                 </p>
@@ -263,19 +261,14 @@ const CarbonFootprint = () => {
                         <li>10 kilometres per week train</li>
                         <li>4 hours flying per year</li>
                     </ul>
-                    <span class={styles.small}>
+                    <div class={styles.bang}>
                         <a href="#table">Return to emissions table</a>
-                    </span>
+                    </div>
                 </p>
             </section>
-            <section class={styles.card}>
-                <p>
-                    <span class={styles.published}>Published: {new Date('Sat 27 March 2021').toDateString()}</span>
-                    <span class={styles.published}>Edited: {new Date('Mon 29 March 2021').toDateString()}</span>
-                    <span class={styles.published}>Edited: Use IPCC values for natural carbon sinks {new Date('Fri 2 April 2021').toDateString()}</span>
-                    <span class={styles.published}>Edited: Added David MacKay quote {new Date('Tues 6 April 2021').toDateString()}</span>
-                </p>
-            </section>
+
+            <Published strDate='Sat 27 March 2021' edited={[{strDate:'Mon 29 March 2021'},{strDate:'Fri 2 April 2021',text:'Use IPCC values for natural carbon sinks'},{strDate:'Tues 6 April 2021',text:'Added David MacKay quote'},{strDate:'Thu 13 May 2021',text:'Rewrite'}]}></Published>
+
             <Links.RelatedLinks links={[{value:'sustainability',text:'Sustainability'}, {value:'climate-crisis/carbon-component-of-life',text:'Carbon - component of life'}]}></Links.RelatedLinks>
         </Layout>
     )

@@ -1,6 +1,7 @@
 import Layout from 'components/layout/layout';
 import Accordion from 'components/accordion/accordion';
 import Links from 'components/links/Links';
+import Top from 'components/top/top';
 import Quiz from 'components/quiz/quiz';
 import styles from 'pages/pages.module.scss';
 
@@ -203,6 +204,8 @@ const Carbon = () => {
                     <div>Will we enjoy an equally profitable but more sustainable relationship with <Links.InternalLink link={{'value': 'climate-crisis/hydrogen-a-singular-atom', 'text': 'hydrogen'}}></Links.InternalLink>?</div>
                 </p>
 
+                <Top></Top>
+
             </section>
             
             <section class={styles.card}>
@@ -215,7 +218,7 @@ const Carbon = () => {
                 <h2>References</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:'climate-crisis/facts',text:'Facts'}, {value:'climate-crisis/the-value-of-individual-acts',text:'The value of individual acts'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'climate-crisis/facts',text:'Facts'}, {value:'climate-crisis/will-people-or-policies-save-the-planet',text:'Will people or policies save the planet?'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

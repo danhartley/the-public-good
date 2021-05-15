@@ -33,8 +33,8 @@ export default function Home() {
             
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/carbon-component-of-life', 'text': 'Carbon - component of life'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/hydrogen-a-singular-atom', 'text': 'Hydrogen - a singular atom'}}></Links.InternalLinkBlock>
-            <Links.InternalLinkBlock link={{'value': 'climate-crisis/the-trickiest-of-transitions', 'text': 'The trickiest of transitions'}}></Links.InternalLinkBlock>
-            <Links.InternalLinkBlock link={{'value': 'climate-crisis/the-value-of-individual-acts', 'text': 'The value of individual acts'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'climate-crisis/turning-the-lights-out-on-fossil-fuels', 'text': 'Turning the lights out on fossil fuels'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'climate-crisis/will-people-or-policies-save-the-planet', 'text': 'Will people or policies save the planet?'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/the-problem-of-population', 'text': 'The problem of population'}}></Links.InternalLinkBlock>
         </section>
 

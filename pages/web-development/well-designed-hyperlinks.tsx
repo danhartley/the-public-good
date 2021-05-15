@@ -1,6 +1,7 @@
-import Link from 'next/link';
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
+import Published from 'components/published/published';
+import Top from 'components/top/top';
 import styles from 'pages/pages.module.scss';
 
 const Hyperlinks = () => {
@@ -21,6 +22,10 @@ const Hyperlinks = () => {
         {
             "name": "Web AIM (Web Accessibility in Mind) | Contrast Checker",
             "source": "https://webaim.org/resources/contrastchecker/"
+        },
+        {
+            "name": "sitepoint | Making Accessible Links",
+            "source": "https://www.sitepoint.com/15-rules-making-accessible-links/"
         },
     ];
 
@@ -177,18 +182,17 @@ const Hyperlinks = () => {
 
                 <p>Hyperlinks lead us from one document to another irrespective of the site to which they belong. They link ideas, opinions, people, and stories in order to explain, contradict and clarify. The links themselves should be clear, accessible and consistent, not only within a site but across sites.</p>
 
+                <Top></Top>
+
             </section>
 
-            <section class={styles.card}>
-                <p>
-                    <span class={styles.published}>Published: {new Date('Mon 10 May 2021').toDateString()}</span>
-                </p>
-            </section>
-        
+            <Published strDate='Thu 13 May 2021'></Published>
+    
             <section class={styles.card}>
                 <h2>References</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
+
             <Links.RelatedLinks links={[{value:'architecture',text:'Architecture'},{value:'sustainability',text:'Sustainability'},{value:'accessibility',text:'Accessibility'}]}></Links.RelatedLinks>
         </Layout>
     )

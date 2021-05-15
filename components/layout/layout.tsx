@@ -85,7 +85,7 @@ const Layout = ({
                 <main class={styles.main}>               
                     { header ? <p class={styles.h1}><div><h1>{header}</h1></div></p> : null }
                     {children}
-                    { router.pathname === '/' ? null : <nav aria-label="Footer link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
+                    { router.pathname === '/' ? null : <nav aria-label="Published link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
                 </main>
                 <footer class={styles.footer}>
                     <div><span>© <a href="mailto:dbmhartley@protonmail.com">Daniel Hartley</a> 2021. All rights reserved.</span></div>

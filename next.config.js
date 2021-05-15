@@ -29,7 +29,7 @@ module.exports = withPWA({
 //       return [
 //         {
 //           source: '/change',
-//           destination: '/climate-crisis/the-trickiest-of-transitions',
+//           destination: '/climate-crisis/turning-the-lights-out-on-fossil-fuels',
 //           permanent: true,
 //         },
 //         {
@@ -44,7 +44,7 @@ module.exports = withPWA({
 //         },
 //         {
 //           source: '/carbonfootprint',
-//           destination: '/climate-crisis/the-value-of-individual-acts',
+//           destination: '/climate-crisis/will-people-or-policies-save-the-planet',
 //           permanent: true,
 //         },
 //       ]
@@ -58,7 +58,7 @@ module.exports = withPWA({
 //       return [
 //         {
 //           source: '/change',
-//           destination: '/climate-crisis/the-trickiest-of-transitions'
+//           destination: '/climate-crisis/turning-the-lights-out-on-fossil-fuels'
 //         },
 //         {
 //           source: '/hydrogen',
@@ -70,7 +70,7 @@ module.exports = withPWA({
 //         },
 //         {
 //           source: '/carbonfootprint',
-//           destination: '/climate-crisis/the-value-of-individual-acts'
+//           destination: '/climate-crisis/will-people-or-policies-save-the-planet'
 //         },
 //       ]
 //     },

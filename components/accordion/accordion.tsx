@@ -8,8 +8,7 @@ const Accordion = ({
 
     const [ state, setState ] = useState(false);
 
-    const toggle = toggledState => {
-        console.log('toggledState :', toggledState);        
+    const toggle = toggledState => {     
         setState(toggledState);
     };
 

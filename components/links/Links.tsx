@@ -2,8 +2,7 @@ import Link from 'next/link';
 
 import styles from 'components/links/Links.module.scss';
 
-const ExternalLink = ({link, children}) => {    
-    console.log(link)
+const ExternalLink = ({link, children}) => {
     return link.label 
         ? <span class={styles.block}><a aria-label={link.label} href={`${link.source}`}>{children}</a></span>
         : <span class={styles.block}><a href={`${link.source}`}>{children}</a></span>

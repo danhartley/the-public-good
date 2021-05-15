@@ -1,0 +1,6 @@
+@import 'styles/mixins.scss';
+
+.card .published {
+    @include bangLink();
+    font-size: .8rem;    
+}

@@ -1,6 +1,7 @@
-import Link from 'next/link';
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
+import Published from 'components/published/published';
+import Top from 'components/top/top';
 import styles from 'pages/pages.module.scss';
 
 const MentalModel = () => {
@@ -17,6 +18,8 @@ const MentalModel = () => {
             <section class={styles.card}>
 
                 <p><div class={styles.inset}><span class={styles.italic}>Reading time: 6 minutes</span></div></p>
+
+                <p class={styles.sunnary}></p>
 
                 <h2>For humans</h2>
 

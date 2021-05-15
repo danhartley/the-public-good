@@ -4,22 +4,17 @@
     min-height: calc(100vh - 100px - 8px - 8px);
     h1 {
         margin: 0;
-        // border-bottom: 5px solid rgba(var(--h1),1);        
         padding-bottom: 3px;
         display: inline;
         font-size: calc(1.65rem + .25vw);   
         font-weight: normal;
-        // letter-spacing: .75px;
-        // line-height: 1.7;
         @media (min-width: 414px) {
             font-size: calc(1.85rem + .25vw);
         }
         @media (min-width: 601px) {
             font-size: calc(2rem + .25vw);        
         }
-    }
-    h2:nth-child(1) {
-        margin-top: .5rem;
+        text-transform: capitalize;
     }
 }
 
@@ -132,4 +127,3 @@ header {
         }        
     }
 }
-  

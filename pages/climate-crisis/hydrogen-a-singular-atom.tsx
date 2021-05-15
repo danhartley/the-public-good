@@ -3,6 +3,7 @@ import Accordion from 'components/accordion/accordion';
 import Formula from 'components/tools/formula';
 import styles from 'pages/pages.module.scss';
 import Links from 'components/links/Links';
+import Top from 'components/top/top';
 import Quiz from 'components/quiz/quiz';
 
 const externalLinks = [    
@@ -210,6 +211,8 @@ const Hydrogen = () => {
 
                 <p>One positive example of combining wind power and hydrogen storage is the <Links.ExternalLink link={{source:'https://www.surfnturf.org.uk/'}}>Surf 'n' Turf community project</Links.ExternalLink> on the Orkney Islands north of Scotland where the abundance of energy makes conversion to hydrogen and back viable.</p>
 
+                <Top></Top>
+
             </section>
 
             <section class={styles.card}>
@@ -223,7 +226,7 @@ const Hydrogen = () => {
                 <Links.ExternalLinksList links={externalLinks} />
             </section>            
 
-            <Links.RelatedLinks links={[{value:'climate-crisis/facts',text:'Facts'}, {value:'climate-crisis/carbon-component-of-life',text:'Carbon - component of life'}, {value:'climate-crisis/the-trickiest-of-transitions', text:'The trickiest of transitions'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'climate-crisis/facts',text:'Facts'}, {value:'climate-crisis/carbon-component-of-life',text:'Carbon - component of life'}, {value:'climate-crisis/turning-the-lights-out-on-fossil-fuels', text:'Turning the lights out on fossil fuels'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
