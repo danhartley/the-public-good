@@ -269,7 +269,7 @@ const CarbonFootprint = () => {
 
             <Published strDate='Sat 27 March 2021' edited={[{strDate:'Mon 29 March 2021'},{strDate:'Fri 2 April 2021',text:'Use IPCC values for natural carbon sinks'},{strDate:'Tues 6 April 2021',text:'Added David MacKay quote'},{strDate:'Thu 13 May 2021',text:'Rewrite'}]}></Published>
 
-            <Links.RelatedLinks links={[{value:'sustainability',text:'Sustainability'}, {value:'climate-crisis/carbon-component-of-life',text:'Carbon - component of life'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'sustainability',text:'Sustainability'}, {value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

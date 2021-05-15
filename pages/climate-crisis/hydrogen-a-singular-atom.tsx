@@ -226,7 +226,7 @@ const Hydrogen = () => {
                 <Links.ExternalLinksList links={externalLinks} />
             </section>            
 
-            <Links.RelatedLinks links={[{value:'climate-crisis/facts',text:'Facts'}, {value:'climate-crisis/carbon-component-of-life',text:'Carbon - component of life'}, {value:'climate-crisis/turning-the-lights-out-on-fossil-fuels', text:'Turning the lights out on fossil fuels'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'climate-crisis/facts',text:'Facts'}, {value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/turning-the-lights-out-on-fossil-fuels', text:'Turning the lights out on fossil fuels'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

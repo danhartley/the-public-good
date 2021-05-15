@@ -39,7 +39,7 @@ module.exports = withPWA({
 //         },
 //         {
 //           source: '/carbon',
-//           destination: '/climate-crisis/carbon-component-of-life',
+//           destination: '/climate-crisis/carbon-element-of-life',
 //           permanent: true,
 //         },
 //         {
@@ -66,7 +66,7 @@ module.exports = withPWA({
 //         },
 //         {
 //           source: '/carbon',
-//           destination: '/climate-crisis/carbon-component-of-life'
+//           destination: '/climate-crisis/carbon-element-of-life'
 //         },
 //         {
 //           source: '/carbonfootprint',

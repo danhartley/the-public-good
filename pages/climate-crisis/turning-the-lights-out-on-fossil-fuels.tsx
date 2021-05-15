@@ -66,7 +66,7 @@ const Change = () => {
 
                 <p>As a result, <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">global emissions continue to rise</a>.</p>                
 
-                <p>The agreement reached at Paris was conservative. Change should be gradual, and growth maintained. The strongest argument for advocating growth is to improve the lives of those who have least. The strongest defence of fossil fuels is that without the energy they provide growth cannot be sustained. Sceptics of the status quo point out that at least some of this growth is artifical, that it derives from a debt we owe to the planet and some day - perhaps soon - we will have to repay it.</p>
+                <p>The agreement reached at Paris was conservative. Change should be gradual, and growth maintained. The strongest argument for advocating growth is to improve the lives of those who have least. The strongest defence of fossil fuels is that without the energy they provide growth cannot be sustained. Sceptics of the status quo point out that at least some of this growth is artificial, that it derives from a debt we owe to the planet and some day - perhaps soon - we will have to repay it.</p>
 
                 <p>The transition away from fossil fuels is, by historical standards, happening fast. It just isn't happening fast enough.</p>
 
@@ -156,7 +156,7 @@ const Change = () => {
 
                 <p>Rich countries are touchy on the subject of <a href="https://ourworldindata.org/contributed-most-global-co2">historical emissions</a>. They may be factored in to emissions budgets, but countries that have recently industrialised claim, at the very least, the right to lift their people from want, and to enjoy the benefits of affordable energy.</p>
 
-                <p>US vs. Nigeria
+                <p>USA vs. Nigeria
                     <span class={styles.quote}>
                     Nigeria is predicted to be home to more than 1 billion people by 2100. The per capita CO2 emissions (2017) for Nigeria was <a href="https://ourworldindata.org/co2/country/nigeria#per-capita-how-much-co2-does-the-average-person-emit">.68 tonnes</a>. The figure for the US in the same year was <a href="https://ourworldindata.org/co2/country/united-states?country=~USA#per-capita-how-much-co2-does-the-average-person-emit">16.16 tonnes</a>; that is a US citizen, on average, uses almost 24 times the resources of a Nigerian.
                     </span>
@@ -280,7 +280,7 @@ const Change = () => {
 
 
             </section>
-            <Links.RelatedLinks links={[{value:'climate-crisis/carbon-component-of-life',text:'Carbon - component of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

@@ -31,7 +31,7 @@ export default function Home() {
         <section class={styles.card}>
             <h2>Climate crisis</h2>
             
-            <Links.InternalLinkBlock link={{'value': 'climate-crisis/carbon-component-of-life', 'text': 'Carbon - component of life'}}></Links.InternalLinkBlock>
+            <Links.InternalLinkBlock link={{'value': 'climate-crisis/carbon-element-of-life', 'text': 'Carbon - element of life'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/hydrogen-a-singular-atom', 'text': 'Hydrogen - a singular atom'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/turning-the-lights-out-on-fossil-fuels', 'text': 'Turning the lights out on fossil fuels'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'climate-crisis/will-people-or-policies-save-the-planet', 'text': 'Will people or policies save the planet?'}}></Links.InternalLinkBlock>
