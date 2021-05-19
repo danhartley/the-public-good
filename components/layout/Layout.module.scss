@@ -41,6 +41,7 @@
 
 .dark {
     color: white;
+    color: rgb(var(--fg));
     &::after {
         content: "\25D0";    
     }
@@ -48,6 +49,7 @@
 
 .light {
     color: white;
+    color: rgb(var(--fg));
     &::after {
         content: "\25D1";
     }
@@ -57,10 +59,12 @@ header {
     .title {
         margin: 0;                
         font-size: 2rem;
+        font-size: 2rem;
         font-weight: 400;
         &, &:visited {
             @include internalLink();
-            color: white !important;
+            // color: white !important;
+            color: rgb(var(--fg),.9) !important;
             text-decoration: none;
         }
         @media (min-width: 414px) {
@@ -68,25 +72,37 @@ header {
         }
         @media (min-width: 601px) {
             padding-bottom: 1rem !important;
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .title > span:nth-child(2) {
+        transform: rotate(-2deg);
+        font-weight: bold;
+        color: rgb(var(--em));
+    }
+
+    .description {
+        color: rgb(var(--fg));
+    }
+
     .title > span:nth-child(2), .description {
         font-size: 0.8rem;
+        font-size: 0.9rem;
         letter-spacing: .5px;
-        font-style: italic;
+        font-style: italic;        
         button:focus span {
             color: white;
+            color: rgb(var(--fg));
         }
         @media (min-width: 414px) {
             font-size: .9rem;
         }
         @media (min-width: 601px) {
-            margin-top: -.5rem;
+            // margin-top: -.5rem;
             font-size: 1rem;            
         }
     }
@@ -116,7 +132,7 @@ header {
         font-style: italic;
     }
     @include link();
-    a, a:hover, a:focus, a:visited, a:visited:hover {            
+    a, a:hover, a:focus, a:visited, a:visited:hover, a:visited:focus {            
         color: rgb(var(--fg));
         border-bottom: 1px solid rgb(var(--fg));
         outline: none;

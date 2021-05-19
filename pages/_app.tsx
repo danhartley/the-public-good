@@ -20,6 +20,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             --il-v:255, 165, 0;
             --il-fw:bold;
             --h1:218, 217, 205;
+            --em:255, 255, 0;
         ` 
         : 
         `
@@ -31,6 +32,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             --il:50, 50, 50;
             --il-fw:bold;
             --h1:218, 217, 205;
+            --em:155, 0, 0;
         ` as any;
         return _style;
     };
@@ -41,8 +43,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         setDarkMode(!darkMode);
         mode.isDark = darkMode;
         mode.style = getStyle(darkMode) as any;
-        document.getElementsByTagName('header')[0].style.backgroundColor = darkMode ? 'rgb(250, 250, 250)' : 'rgb(45, 45, 45)';
-        document.body.style.backgroundColor = darkMode ? 'rgb(250, 250, 250)' : 'rgb(45, 45, 45)';
+        document.getElementsByTagName('header')[0].style.backgroundColor = darkMode ? 'rgb(255 255 247)' : 'rgb(45, 45, 45)';
+        document.body.style.backgroundColor = darkMode ? 'rgb(255 255 247)' : 'rgb(45, 45, 45)';
     };
 
     return (

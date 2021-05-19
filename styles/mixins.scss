@@ -188,10 +188,13 @@
     @include container();
     .header { 
         width: 100vw;
-        margin-top: -1.5rem;
-        background-color: rgb(77, 68, 61) !important;
-        padding: 1rem;
-        padding: .5rem 0 0 0;
+        // margin-top: -1.5rem;
+        // background-color: rgb(77, 68, 61) !important;
+        // border-bottom: 3px dotted rgb(var(--fg),.3) !important;
+        border-bottom: 1px solid rgb(var(--fg),.6) !important;
+        padding-bottom: 1rem;
+        // padding: .5rem 0 0 0;
+        // padding: 1.5rem 0 1rem 0;
         &:focus-visible {
             outline: none;
         }
@@ -209,7 +212,7 @@
         font-size: 1rem;
         letter-spacing: .25px;
         cursor: pointer;
-        &:hover {
+        &:hover, &:focus {
             border-color: rgba(var(--fg),.5);
             outline: none;
         }

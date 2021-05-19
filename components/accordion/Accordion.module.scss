@@ -9,7 +9,7 @@
     font-family: inherit;
     display: flex;
     align-items: center;
-    &:hover {
+    &:hover, &:focus {
         color: rgba(var(--fg),1);
     }
     span {
