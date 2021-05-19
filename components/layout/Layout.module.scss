@@ -21,7 +21,7 @@
 .mode {
     border: none;
     background: transparent;
-    outline: 0;
+    outline: none;
     cursor: pointer;
     font-size: 1.25rem;
     position: absolute;
@@ -90,8 +90,7 @@ header {
     }
 
     .title > span:nth-child(2), .description {
-        font-size: 0.8rem;
-        font-size: 0.9rem;
+        font-size: 0.75rem;
         letter-spacing: .5px;
         font-style: italic;        
         button:focus span {
@@ -102,7 +101,6 @@ header {
             font-size: .9rem;
         }
         @media (min-width: 601px) {
-            // margin-top: -.5rem;
             font-size: 1rem;            
         }
     }
@@ -135,7 +133,10 @@ header {
     a, a:hover, a:focus, a:visited, a:visited:hover, a:visited:focus {            
         color: rgb(var(--fg));
         border-bottom: 1px solid rgb(var(--fg));
-        outline: none;
+    }
+    a:hover, a:focus, a:visited, a:visited:hover, a:visited:focus {
+        outline: 2px dotted rgba(var(--fg), 1);
+        outline-offset: 4px;
     }
     @media (min-width: 601px) {
         div:nth-child(1) {

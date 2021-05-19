@@ -13,7 +13,7 @@ const Hyperlinks = () => {
         },
         {
             "name": "Web AIM (Web Accessibility in Mind) | Links and Hypertext",
-            "source": "https://webaim.org/techniques/hypertext/link_text"
+            "source": "https://webaim.org/techniques/hypertext/"
         },
         {
             "name": "Web AIM (Web Accessibility in Mind) | WCAG 2 Checklist",

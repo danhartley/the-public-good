@@ -118,21 +118,21 @@
     }
     a, a:hover, a:focus {
         text-decoration: none;
-        outline: none;
-    }
-    a, a:hover, a:focus {
         color: rgb(var(--l));
     }
     a:hover, a:focus {
         border-bottom: 1px solid rgba(var(--l), 1);
         padding-bottom: 2px;
+        outline: 2px dotted rgba(var(--l), 1);
+        outline-offset: 4px;
     }
     a:visited {
         color: rgb(var(--l-v));
-        border-bottom: 1px solid rgba(var(--l-v), .2);
     }
     a:visited:hover, a:visited:focus {
         border-bottom: 1px solid rgba(var(--l-v), .8);
+        outline: 2px dotted rgba(var(--l-v), 1);
+        outline-offset: 4px;
     }
     @media print { 
         a {
@@ -153,7 +153,8 @@
     }
     a:hover, a:focus {
         border-bottom: 1px solid rgb(var(--il)) !important;
-        outline: none;
+        outline: 2px dotted rgb(var(--il)) !important;
+        outline-offset: 4px;
     }
 }
 
@@ -201,9 +202,7 @@
     }
 }
 
-.card {
-    @include card();    
-    .btn {
+@mixin button {    
         color: rgb(var(--fg));
         background-color: transparent;
         padding: .5rem;
@@ -216,6 +215,12 @@
             border-color: rgba(var(--fg),.5);
             outline: none;
         }
+}
+
+.card {
+    @include card();    
+    .btn {
+        @include button();
     }
 }
 

@@ -4,6 +4,10 @@ import styles from 'pages/pages.module.scss';
 
 const links = [
     {
+        "name": "W3C Markup Validation Service",
+        "source": "https://validator.w3.org/"
+    },
+    {
         "name": "WAVE Web Accessibility Evaluation Tool",
         "source": "https://wave.webaim.org/"
     },

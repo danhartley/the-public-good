@@ -9,7 +9,7 @@ export default function Home() {
 
         <section class={styles.card}>
             <h2>Always connect</h2>
-            <p>Websites do not exist in isolation. I encourage you to leave: <a arai-label="Low-tech Magazine's solar-powered website" href="https://solar.lowtechmagazine.com/">A solar-powered website</a>, <a aria-label="The communal computer developed at Dynamicland" href="https://dynamicland.org/">A communal computer</a>, <a href="https://ourworldindata.org/time-use-living-conditions">The world's energy problem</a>, <a href="https://neumz.com/app/">Daily Gregorian Chant</a>, and <a aria-label="Link to the YouTube video, The Origin of the Elements, which does not have synchronized captioning" href="https://www.youtube.com/watch?v=ZJQjjBR6PbY&t=19s">The Origin of the Elements</a>.</p>
+            <p>Websites do not exist in isolation. I encourage you to leave: <a aria-label="Low-tech Magazine's solar-powered website" href="https://solar.lowtechmagazine.com/">A solar-powered website</a>, <a aria-label="The communal computer developed at Dynamicland" href="https://dynamicland.org/">A communal computer</a>, <a href="https://ourworldindata.org/time-use-living-conditions">The world's energy problem</a>, <a href="https://neumz.com/app/">Daily Gregorian Chant</a>, and <a aria-label="Link to the YouTube video, The Origin of the Elements, which does not have synchronized captioning" href="https://www.youtube.com/watch?v=ZJQjjBR6PbY&t=19s">The Origin of the Elements</a>.</p>
         </section>
 
         <section class={styles.card}>
@@ -41,8 +41,8 @@ export default function Home() {
         <section class={styles.card}>
 
             <h2>Web development</h2>
+            <Links.InternalLinkBlock link={{'value': 'web-development/following-the-rules-to-a-well-structured-web-page', 'text': 'Following the rules to a well-structured web page'}}></Links.InternalLinkBlock>
             <Links.InternalLinkBlock link={{'value': 'web-development/well-designed-hyperlinks', 'text': 'Well-designed hyperlinks'}}></Links.InternalLinkBlock>
-            <Links.InternalLinkBlock link={{'value': 'web-development/an-introduction-to-mental-models', 'text': 'An introduction to mental models'}}></Links.InternalLinkBlock>
 
             <p>I specialise in three areas: performance, accessibility, and sustainability.</p>
 

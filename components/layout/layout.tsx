@@ -71,7 +71,10 @@ const Layout = ({
                 <link rel="manifest" href="/manifest.json" />
             </Head>
             <div id="container" style={mode.style as any} class={styles.container}>                
-                <header role="banner" class={styles.header}>
+                <header class={styles.header}>
+
+                    {/* <div id="skiptocontent"><a href="#maincontent">skip to main content</a></div> */}
+
                     <Link href={'/'}>
                         <a class={styles.title} aria-label="Home page">
                             <nav aria-label="Header link to home page">The Public Good</nav>
@@ -87,8 +90,8 @@ const Layout = ({
                     {children}
                     { router.pathname === '/' ? null : <nav aria-label="Published link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
                 </main>
-                <footer class={styles.footer}>
-                    <div><span>© <a href="mailto:dbmhartley@protonmail.com">Daniel Hartley</a> 2021. All rights reserved.</span></div>
+                <footer role="contentinfo" class={styles.footer}>
+                    <div><span>© <a href="mailto:dbmhartley@protonmail.com" aria-label="email">Daniel Hartley</a> 2021. All rights reserved.</span></div>
                     <div class={styles.externalList}><a href="https://www.linkedin.com/in/danhartley/">LinkedIn</a> | <a href="https://danhartley.github.io/snapdragon-redux/wiki/">CV</a></div>
                     <div ref={bytesTransferred}></div>
                 </footer>

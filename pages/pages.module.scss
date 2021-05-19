@@ -23,9 +23,30 @@
 }
 
 .card .nestedElements {
+    @include unorderedList();
     font-size: 1rem;
-    div {
+    li {
         line-height: 1.2;
-        margin-left: 1.8em;
+        padding: 0 1.5rem;
+        ul {
+            @include unorderedList();
+        }
+    }
+}
+
+.fakeBtns {
+    display: flex;
+    button, div {
+        @include button();
+        font-family: Elena, 'PT Serif', serif;
+        font-size: 1rem;
+        max-width: 10rem;
+        width: calc((100vw - 3rem)/2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:nth-child(1) {
+            margin-right: .5rem;
+        }
     }
 }
