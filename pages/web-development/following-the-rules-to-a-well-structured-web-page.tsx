@@ -153,9 +153,15 @@ const MentalModel = () => {
 
                 <p>In practice, it is usually non-sighted users who suffer when there is a mismatch between the semantic value of an element and its use, or when meaning is conveyed by visual means alone.</p>
 
-                <h2>The importance of headers</h2>
+                <h2>Navigation</h2>
 
-                <p>Headers are used by sighted and non-sighted readers to get the gist of a page in order to decide whether it is worth reading.</p>           
+                <p>Links, text fields, checkboxes, dropdown menus, images and buttons are interactive elements. Users can navigate between them using either the keyboard or a screen reader.</p>
+
+                <p>Browsers support keyboard navigation between interactive elements primarily using the tab key. This is a quick form of navigation for expert users and another way to build up a mental model of the page. The appearance of an element changes to reflect that it has keyboard focus/pointer hover.</p>
+
+                <h3>Headers</h3>
+
+                <p>Headers are used by sighted and non-sighted readers to get the gist of a page in order to decide whether it is worth reading. Screen readers are also able to navigate between headers.</p>           
 
                 <p>By convention headers decrease in size.</p>
 
@@ -177,15 +183,21 @@ const MentalModel = () => {
 
                 <p>These headers are routinely resized, and their colours and fonts changed but it is bad practice to abuse their hierachy or use other elements in their place. </p>
 
-                <h3>Interactive elements</h3>
+                <h3>The back and forward button</h3>
+                
+                <p>Use of the keyboard, screen reader, or other assistive devices reveals the semantic structure of the page. They provide an alternative, and at times, improved way of navigating and interacting with a page.</p>
 
-                <p>Headers like links, text fields, checkboxes, dropdown menus are interactive elements. Browsers support keyboard navigation between interactive elements primarily using the tab key. This is a quick form of navigation for expert users and another way to build up a mental model of the page. The appearance of an element should change to reflect that it has keyboard focus/pointer hover.</p>
+                <p>But pages don't exisit in isolation. Hypertext allows pages to be connected across sites, and maintaining this connection is critical. Users need to move freely from page to page using links and the browser back and forward buttons. <Links.ExternalLink link={{source:'https://www.accessibility-developer-guide.com/knowledge/keyboard-only/browsing-websites/'}}>Keyboard navigation</Links.ExternalLink> is fast and easy because it skips passive content and relies on the interconnected structures which underpin the web.</p>
 
                 <h2>The primary goal of a page is to be understood</h2>
 
                 <p>When we open a new page we immediately scan it for meaning, searching for answers or clues as to its purpose.</p>
 
-                <p>HTML elements are designed to help developers establish a semantic model for users. Articles, blogs and posts need a relevant title, and quick access to headings which, taken together, provide an outline of the subject under discussion.</p>
+                <p>HTML elements are designed to help developers establish a semantic model for users.</p>
+
+                <p>Articles, blogs and posts need a relevant title, and quick access to headings which, taken together, provide an outline of the subject under discussion.</p>
+
+                <p>Ecommerce sites use headers for product categories, checkboxes and dropdown menus to filter items, links of additional information and buttons for purchasing.</p>
 
                 <h3>Mental models, conventions, and preconceptions</h3>
 
@@ -204,7 +216,7 @@ const MentalModel = () => {
 
                 <p>Movement is distracting, demands our attention, and <Links.ExternalLink link={{source:'https://www.nngroup.com/articles/animation-usability/'}}>is best used with caution</Links.ExternalLink>. Once we have built a model of a page we object to our assumptions being upset. Images and blocks of text that appear from nowhere or move around are highly disruptive to a static model. Change should be initiated by the user and respect cause and effect. Buttons and links are good examples.</p>    
 
-                <h3>Navigation and context</h3>
+                <h3>Context</h3>
 
                 <p>The primary aim of a page is to make itself understood, but it must also provide clues as to other pages on the same site. This is part of the context of the page, and helps us answer questions such as: Is this author reputable? Are there other interesting things here? Can I trust this site with my money?</p>
 

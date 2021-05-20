@@ -6,16 +6,16 @@
     max-width: 800px;
     @include externalLink();
     h2 {
-        font-size: calc(1.4rem + .25vw);
+        font-size: calc(1.5rem + .25vw);
         line-height: 1.8;
-        margin: 1.25rem 0;
+        margin: 2.5rem 0 0 0;
         color: rgba(var(--fg),.9);
     }
     h3 {
         font-size: calc(1.1rem + .25vw);
         font-weight: var(--il-fw);
         line-height: 1.8;
-        margin: 1.25rem 0;
+        margin: 2rem 0 0 0;
     }
     h3,h4 {
         color: rgba(var(--fg),1);
@@ -24,6 +24,9 @@
         font-size: 1rem;
         line-height: 1.8;
         margin: 1.25rem 0;
+    }
+    h2 + p, h3 + p, h4 + p {
+        margin-top: .75rem;
     }
     div {
         line-height: 1.8;
@@ -193,7 +196,8 @@
         // background-color: rgb(77, 68, 61) !important;
         // border-bottom: 3px dotted rgb(var(--fg),.3) !important;
         border-bottom: 1px solid rgb(var(--fg),.6) !important;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
+        margin-bottom: 1rem;
         // padding: .5rem 0 0 0;
         // padding: 1.5rem 0 1rem 0;
         &:focus-visible {

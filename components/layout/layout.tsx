@@ -86,7 +86,7 @@ const Layout = ({
                     </p>
                 </header>
                 <main class={styles.main}>               
-                    { header ? <p class={styles.h1}><div><h1>{header}</h1></div></p> : null }
+                    { header ? <div class={styles.h1}><div><h1>{header}</h1></div></div> : null }
                     {children}
                     { router.pathname === '/' ? null : <nav aria-label="Published link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
                 </main>
