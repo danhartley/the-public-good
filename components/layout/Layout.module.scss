@@ -114,7 +114,7 @@ header {
     div:nth-child(3) {
         font-style: italic;
     }
-    @include link();
+    // @include link();
     a, a:hover, a:focus, a:visited, a:visited:hover, a:visited:focus {            
         color: rgb(var(--fg));
         border-bottom: 1px solid rgb(var(--fg));

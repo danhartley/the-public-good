@@ -4,8 +4,8 @@ import styles from 'components/links/Links.module.scss';
 
 const ExternalLink = ({link, children}) => {
     return link.label 
-        ? <span class={styles.block}><a aria-label={link.label} href={`${link.source}`}>{children}</a></span>
-        : <span class={styles.block}><a href={`${link.source}`}>{children}</a></span>
+        ? <span class={styles.externalLink}><a aria-label={link.label} href={`${link.source}`}>{children}</a></span>
+        : <span class={styles.externalLink}><a href={`${link.source}`}>{children}</a></span>
 }
 
 const ExternalLinksList = ({links}) => {

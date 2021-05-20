@@ -2,8 +2,7 @@
     margin: 1rem 0;
     padding: 0;
     text-align: left;
-    text-decoration: none;    
-    @include externalLink();
+    text-decoration: none;
     h2 {
         font-size: calc(1.5rem + .25vw);
         line-height: 1.8;
@@ -140,16 +139,15 @@
 }
 
 @mixin internalLink() {
-    @include link();
     a, a:visited {
-        color: rgb(var(--il)) !important;
-        border-bottom: 1px dashed rgb(var(--il)) !important;
-        border-bottom-color: rgb(var(--il)) !important;
+        text-decoration: none;
+        color: rgb(var(--il));
+        border-bottom: 1px dashed rgb(var(--il));
         font-weight: var(--il-fw);
     }
     a:hover, a:focus, a:visited:hover, a:visited:focus {
-        border-bottom: 1px solid rgb(var(--il)) !important;
-        outline: .125rem dotted rgb(var(--il)) !important;
+        border-bottom: 1px solid rgb(var(--il));
+        outline: .125rem dotted rgb(var(--il));
         outline-offset: .25rem;
     }
 }
@@ -165,7 +163,29 @@
 }
 
 @mixin externalLink() {
-    @include link();
+    a {
+        border-bottom: 1px solid rgba(var(--l), .4);
+        padding-bottom: .125rem;
+    }
+    a, a:hover, a:focus {
+        text-decoration: none;
+        color: rgb(var(--l));
+    }
+    a:hover, a:focus {
+        border-bottom: 1px solid rgba(var(--l), 1);
+        padding-bottom: .125rem;
+        outline: .125rem dotted rgba(var(--l), 1);
+        outline-offset: .25rem;
+    }
+    a:visited {
+        color: rgb(var(--l-v));
+        border-bottom: 1px solid rgba(var(--l-v), .8);
+    }
+    a:visited:hover, a:visited:focus {
+        border-bottom: 1px solid rgba(var(--l-v), .8);
+        outline: .125rem dotted rgba(var(--l-v), 1);
+        outline-offset: .25rem;
+    }
 }
 
 @mixin container {
