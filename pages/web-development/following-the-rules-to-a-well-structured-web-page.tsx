@@ -155,7 +155,7 @@ const MentalModel = () => {
 
                 <h2>Navigation</h2>
 
-                <p>Links, text fields, checkboxes, dropdown menus, images and buttons are interactive elements. Users can navigate between them using either the keyboard or a screen reader.</p>
+                <p>Links, text input fields, checkboxes, dropdown menus, images and buttons are interactive elements. Users can navigate between them using either the keyboard or a screen reader.</p>
 
                 <p>Browsers support keyboard navigation between interactive elements primarily using the tab key. This is a quick form of navigation for expert users and another way to build up a mental model of the page. The appearance of an element changes to reflect that it has keyboard focus/pointer hover.</p>
 

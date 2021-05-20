@@ -3,7 +3,7 @@ import Layout from 'components/layout/layout';
 import Links from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
 
-const businessCalculators = [
+const onlineTools = [
     {
         "name": "The Green Web Foundation",
         "source": "https://www.thegreenwebfoundation.org/"
@@ -34,13 +34,20 @@ const businessCalculators = [
     },
 ];
 
+const externalLinks = [
+    {
+        "name": "Mightybytes | Ecograder and Your Website Sustainability Score",
+        "source": "https://www.mightybytes.com/blog/how-ecograder-totals-web-sustainability/"
+    },
+];
+
 const Sustainability = () => {
     return (
         <Layout header="Sustainability" title="Web sustainability" description={'Web sustainability'}>
             <section class={styles.card}>
 
                 <h2>Website carbon emissions calculators</h2>
-                <Links.ExternalLinksList links={businessCalculators} />
+                <Links.ExternalLinksList links={onlineTools} />
             </section>
             <section class={styles.card}>
                 <h2>UN Sustainable Development Goals (SDGs)</h2>
@@ -58,6 +65,10 @@ const Sustainability = () => {
                 <p class={styles.centre}>
                     <img src="https://api.thegreenwebfoundation.org/greencheckimage/www.the-public-good.com?nocache=true" alt="Checked by thegreenwebfoundation.org" />
                 </p>
+            </section>
+            <section class={styles.card}>
+                <h2>Links to external references</h2>
+                <Links.ExternalLinksList links={externalLinks} />
             </section>
             <Links.RelatedLinks links={[{value:'architecture',text:'Architecture'},{value:'performance',text:'Performance'},{value:'accessibility',text:'Accessibility'},{value:'climate-crisis/will-people-or-policies-save-the-planet',text:'Will people or policies save the planet?'}]}></Links.RelatedLinks>
         </Layout>

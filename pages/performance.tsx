@@ -43,6 +43,10 @@ const perfLinks = [
         "name": "Google Lighthouse Firefox extension",
         "source": "https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse"
     },
+    {
+        "name": "Moz | Domain Authority",
+        "source": "https://moz.com/domain-analysis#index"
+    },
 ];
 
 const Performance = () => {
