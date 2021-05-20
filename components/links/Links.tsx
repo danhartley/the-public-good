@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import styles from 'components/links/Links.module.scss';
 
-const ExternalLink = ({link, children}) => {
+const EL = ({link, children}) => {
     return link.label 
         ? <span class={styles.externalLink}><a aria-label={link.label} href={`${link.source}`}>{children}</a></span>
         : <span class={styles.externalLink}><a href={`${link.source}`}>{children}</a></span>
@@ -20,7 +20,7 @@ const ExternalLinksList = ({links}) => {
     )
 };
 
-const InternalLink = ({link, children}) => {
+const IL = ({link, children}) => {
     return  <span class={styles.internalLink}>                
                 <Link href={`/${link.source}`}>
                     <a>{children}</a>
@@ -28,7 +28,7 @@ const InternalLink = ({link, children}) => {
             </span>            
 };
 
-const InternalLinkBlock = ({link}) => {
+const ILBlock = ({link}) => {
     return  <p class={styles.internalLinkBlock}>
                 <span class={styles.internalLink}>                
                     <Link href={`/${link.value}`}>
@@ -73,12 +73,12 @@ const RelatedLinks = ({links}) => {
 };
 
 const Links = {    
-    ExternalLink,
+    EL,
     ExternalLinksList,
     Home,
     RelatedLinks,
-    InternalLink,
-    InternalLinkBlock
+    IL,
+    ILBlock
 };
 
 export default Links;

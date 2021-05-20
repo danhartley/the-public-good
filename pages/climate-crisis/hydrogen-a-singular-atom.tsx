@@ -5,6 +5,7 @@ import styles from 'pages/pages.module.scss';
 import Links from 'components/links/Links';
 import Top from 'components/top/top';
 import Quiz from 'components/quiz/quiz';
+import Link from 'next/link';
 
 const externalLinks = [    
     {
@@ -69,18 +70,18 @@ const Hydrogen = () => {
                         <span>Symbol <span class={styles.bold}>H</span>; atomic number <span class={styles.bold}>1</span>; atomic mass <span class={styles.bold}>1.0080u</span></span>
                         <span>Nonmetal, naturally occurring as a gas H<span class={styles.sub}>2</span> at room temperature.</span>
                         <span>Derived from greek <span class={styles.italic}>hydro</span>, "water", and <span class={styles.italic}>genes</span>, "forming".</span>                        
-                        <div><span><a href="https://pubchem.ncbi.nlm.nih.gov/element/Hydrogen">National Center for Biotechnology Information</a></span></div>
+                        <div><Links.EL link={{source:'https://pubchem.ncbi.nlm.nih.gov/element/Hydrogen'}}>National Center for Biotechnology Information</Links.EL></div>
                     </div>
                 </Accordion>
 
                 <h2 id="origins-and-properties">The origins and properties of hydrogen</h2>
 
-                <p>Hydrogen atoms were fleetingly formed during the Big Bang but it wasn't until the <span><a href="https://en.wikipedia.org/wiki/Recombination_(cosmology)">recombination</a></span> 370,000 years later that conditions became favourable for electrons to remain in orbit around atomic nuclei. <span>Hydrogen was the first element in the universe and it is the <span><a href="https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements"> most abundant</a></span>. From it all other elements are formed.</span></p>
+                <p>Hydrogen atoms were fleetingly formed during the Big Bang but it wasn't until the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Recombination_(cosmology)'}}>recombination</Links.EL> 370,000 years later that conditions became favourable for electrons to remain in orbit around atomic nuclei. <span>Hydrogen was the first element in the universe and it is the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements'}}>most abundant</Links.EL>. From it all other elements are formed.</span></p>
 
                 <h3>Rarely alone on Earth</h3>
 
                 <p>
-                    <div>Hydrogen readily shares <span><a href="https://www.khanacademy.org/science/ap-biology/chemistry-of-life/introduction-to-biological-macromolecules/v/covalent-bonds">covalent bonds</a> (video)</span> with other elements to form compounds, including water <span><Formula>H2O</Formula></span>, ammonia <Formula>NH3</Formula>, hydrogen sulfide <Formula>H2S</Formula>, and organic compounds, such as hydrocarbons <span><Formula>CnH2n+2</Formula> </span> and carbohydrates <Formula>(CH2O)x</Formula>.</div>
+                    <div>Hydrogen readily shares <Links.EL link={{source:'https://www.khanacademy.org/science/ap-biology/chemistry-of-life/introduction-to-biological-macromolecules/v/covalent-bonds'}}>covalent bonds</Links.EL> (video) with other elements to form compounds, including water <span><Formula>H2O</Formula></span>, ammonia <Formula>NH3</Formula>, hydrogen sulfide <Formula>H2S</Formula>, and organic compounds, such as hydrocarbons <span><Formula>CnH2n+2</Formula> </span> and carbohydrates <Formula>(CH2O)x</Formula>.</div>
                 </p>
 
                 <p>
@@ -92,7 +93,7 @@ const Hydrogen = () => {
                 <Accordion header="The polarity of water">
                     <div class={styles.inset}>
                         <p>The polarity of water makes it a good solvent. When salt Na<span class={styles.super}>+</span>Cl<span class={styles.super}>-</span> is added to water, it dissolves; positive sodium ions - charged atoms are called ions - are attracted to the slightly negative hydrogen end of the water molecule, and positive chlorine ions are attracted to the oxygen end, thereby breaking apart, or dissolving, the bonds between the sodium and chlorine atoms.</p>
-                        <p>Why are the sodium and chlorine atoms in salt charged? The sodium and chlorine atoms in salt are bound together by an <span><a href="https://www.youtube.com/watch?v=hiyTfhjeF_U">ionic bond</a> (video)</span>. Ionic bonds occur where an electron, or electrons, are transferred from one atom to another, in this case from a sodium atom to a chlorine atom. Since the two atoms now have opposite charges they attract. Na becomes Na<span class={styles.super}>+</span> and Cl becomes Cl<span class={styles.super}>-</span>.</p>                    
+                        <p>Why are the sodium and chlorine atoms in salt charged? The sodium and chlorine atoms in salt are bound together by an <Links.EL link={{source:'https://www.youtube.com/watch?v=hiyTfhjeF_U'}}>ionic bond</Links.EL> (video). Ionic bonds occur where an electron, or electrons, are transferred from one atom to another, in this case from a sodium atom to a chlorine atom. Since the two atoms now have opposite charges they attract. Na becomes Na<span class={styles.super}>+</span> and Cl becomes Cl<span class={styles.super}>-</span>.</p>                    
                     </div>
                 </Accordion>
 
@@ -104,7 +105,7 @@ const Hydrogen = () => {
 
                 <h2 id="production">Production</h2>
 
-                <p>95% of hydrogen is produced by <span><a href="https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming">natural gas reforming</a> in two ways</span>.</p>
+                <p>95% of hydrogen is produced by <Links.EL link={{source:'https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming'}}>natural gas reforming</Links.EL> in two ways.</p>
 
                 <Accordion header="Steam-methane reforming reaction">
                     <div class={styles.inset}>
@@ -137,7 +138,7 @@ const Hydrogen = () => {
 
                 <h3>Electrolysis</h3>
 
-                <p>Electrolysis is a process whereby electricity is used to split water into hydrogen and oxygen. The process <Links.ExternalLink link={{label: 'Electrolysis varies depending on the electrolyte selected', source:'https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis'}}>varies</Links.ExternalLink> depending on the electrolyte selected. Oxygen gas forms at the anode, hydrogen gas at the cathode.
+                <p>Electrolysis is a process whereby electricity is used to split water into hydrogen and oxygen. The process <Links.EL link={{label: 'Electrolysis varies depending on the electrolyte selected', source:'https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis'}}>varies</Links.EL> depending on the electrolyte selected. Oxygen gas forms at the anode, hydrogen gas at the cathode.
                     <div class={styles.inset}>
                         <span><span class={styles.bold}>Anode Reaction</span> <Formula>2H2O</Formula> → <Formula>O2</Formula> + 4H+ + 4e-</span>
                         <span><span class={styles.bold}>Cathode Reaction</span> 4H+ + 4e- → <Formula>2H2</Formula></span>
@@ -145,30 +146,30 @@ const Hydrogen = () => {
                     </div>                    
                 </p>
 
-                <p>Electrolysis can produce hydrogen with no greenhouse gas emissions, if the original source of the energy used is renewable. The process is currently 70-80% efficient; for every 40kWh of energy produced 50–55kWh of electricity is required. That is <span class={styles.italic}>less</span> energy is produced than is put in. 95% efficiency has been <Links.ExternalLink link={{label:'95% efficiency claimed for electrolysis', source:'https://www.h2pro.co/'}}>claimed</Links.ExternalLink> but not proven in production.</p>
+                <p>Electrolysis can produce hydrogen with no greenhouse gas emissions, if the original source of the energy used is renewable. The process is currently 70-80% efficient; for every 40kWh of energy produced 50–55kWh of electricity is required. That is <span class={styles.italic}>less</span> energy is produced than is put in. 95% efficiency has been <Links.EL link={{label:'95% efficiency claimed for electrolysis', source:'https://www.h2pro.co/'}}>claimed</Links.EL> but not proven in production.</p>
 
                 <p>
-                    <div>There are several <span><a aria-label="US Energy article on Hydrogen Fuel Basics" href="https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics">other methods of hydrogen production</a></span> including photobiological, photoelectrochemical, solar thermochemical and biological processes.</div>
+                    <div>There are several <Links.EL link={{label:'US Energy article on Hydrogen Fuel Basics', source:'href="https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics"'}}>other methods of hydrogen production</Links.EL> including photobiological, photoelectrochemical, solar thermochemical and biological processes.</div>
                 </p>
 
-                <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><span class={styles.italic}>high</span></span> energy <Links.InternalLink link={{source:'facts#energy'}}>density</Links.InternalLink> by mass).</p>
+                <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><span class={styles.italic}>high</span></span> energy <Links.IL link={{source:'facts#energy'}}>density</Links.IL> by mass).</p>
 
-                <p>A fraction of hydrogen is currently produced from low carbon energy; the latest figure for the EU is <span><a aria-label="FCHO PDF report Hydrogen molecule market" href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf">0.1%</a></span>. Global production of hydrogen from electrolysis is less than <span><a aria-label="IEA report on the future of hydrogen" href="https://www.iea.org/reports/the-future-of-hydrogen">0.1%</a></span>.</p>
+                <p>A fraction of hydrogen is currently produced from low carbon energy; the latest figure for the EU is <Links.EL link={{label:'FCHO PDF report Hydrogen molecule market', source:'href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf'}}>0.1%</Links.EL>. Global production of hydrogen from electrolysis is less than <Links.EL link={{label:'IEA report on the future of hydrogen', source:'https://www.iea.org/reports/the-future-of-hydrogen'}}>0.1%</Links.EL>.</p>
 
                 <h3>Transport</h3>
 
                 <p>
-                    <div>Converting pipelines to carry a natural gas hydrogen mix is feasible. The cost of adapting existing lines for compressed hydrogen varies depending on whether you ask <span><a aria-label="European Hydrogen Backbone report" href="https://gasforclimate2050.eu/sdm_downloads/european-hydrogen-backbone/">industry</a></span> or their <span><a aria-label="Food and Water Action Europe report" href="https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf">critics</a></span>. At the heart of the debate is the feasibility of producing green hydrogen in large volumes soon. If the hydrogen passing through pipelines does not come from renewable sources, it will lock us in to further use of, and dependency on, fossil gas at the expense of investment in renewables.</div>
+                    <div>Converting pipelines to carry a natural gas hydrogen mix is feasible. The cost of adapting existing lines for compressed hydrogen varies depending on whether you ask <Links.EL link={{label:'European Hydrogen Backbone report', source:'https://gasforclimate2050.eu/sdm_downloads/european-hydrogen-backbone'}}>industry</Links.EL> or their <Links.EL link={{label:'Food and Water Action Europe report', source:'https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf'}}>critics</Links.EL>. At the heart of the debate is the feasibility of producing green hydrogen in large volumes soon. If the hydrogen passing through pipelines does not come from renewable sources, it will lock us in to further use of, and dependency on, fossil gas at the expense of investment in renewables.</div>
                 </p>
 
                 <h3>Fuel cells</h3>
 
                 <p>
-                    <div>Fuel cells can be used at a wide range of scales from a power station to a laptop. They work like batteries but do not run down, producing electricity as long as there is fuel. They are also efficient, converting chemical energy to electrical energy at around 60% efficiency; this compares well to an average of <span><a href="https://cefrc.princeton.edu/sites/cefrc/files/reitz_princeton-day1-hour1-2018.pdf">16% efficiency for gas combustion engines</a></span>.</div>
+                    <div>Fuel cells can be used at a wide range of scales from a power station to a laptop. They work like batteries but do not run down, producing electricity as long as there is fuel. They are also efficient, converting chemical energy to electrical energy at around 60% efficiency; this compares well to an average of <Links.EL link={{source:'https://cefrc.princeton.edu/sites/cefrc/files/reitz_princeton-day1-hour1-2018.pdf'}}>16% efficiency for gas combustion engines</Links.EL>.</div>
                     <div class={styles.inset}><span class={styles.bold}>How fuel cells work</span></div>
                     <div class={styles.quote}>                        
                         <span>A fuel, such as hydrogen, is fed to the anode, and air is fed to the cathode. In a hydrogen fuel cell, a catalyst at the anode separates hydrogen molecules into protons and electrons, which take different paths to the cathode. The electrons go through an external circuit, creating a flow of electricity.</span>
-                        <div><span><a href="https://www.energy.gov/eere/fuelcells/fuel-cells">How fuel cells work | US Energy Efficiency & Renewable Energy</a></span></div>
+                        <div><Links.EL link={{source:'https://www.energy.gov/eere/fuelcells/fuel-cells'}}>How fuel cells work | US Energy Efficiency & Renewable Energy</Links.EL></div>
                     </div>
                 </p>
 
@@ -183,7 +184,7 @@ const Hydrogen = () => {
                 <h3>Drawbacks</h3>
 
                 <p>
-                    <div>The majority of current hydrogen production involves greenhouse gas emissions. Production is often described using a colour <span><a href="https://pbs.twimg.com/media/ExOiiizVEAEvIpG?format=jpg&name=medium">spectrum</a> (image)</span>. 'Grey' hydrogen is produced by burning coal without capturing <Formula>CO2</Formula> emissions. The gas industry in particular is promoting 'blue' hydrogen whereby greenhouse gases emitted during the combustion of gas are sequestered. Carbon capture and storage (CCS) is not, however, established at the scale required despite a decade or more of trials, heavy investment, and government subsidies. In 2020 40 million tonnes of <Formula>CO2</Formula> was captured from <span><a aria-label="Global CCS Institute report: Global status of CCS 2020" href="https://www.globalccsinstitute.com/wp-content/uploads/2020/12/Global-Status-of-CCS-Report-2020_FINAL_December11.pdf">26</a></span> operating facilities worldwide.</div>
+                    <div>The majority of current hydrogen production involves greenhouse gas emissions. Production is often described using a colour <Links.EL link={{source:'https://pbs.twimg.com/media/ExOiiizVEAEvIpG?format=jpg&name=medium'}}>spectrum</Links.EL> (image). 'Grey' hydrogen is produced by burning coal without capturing <Formula>CO2</Formula> emissions. The gas industry in particular is promoting 'blue' hydrogen whereby greenhouse gases emitted during the combustion of gas are sequestered. Carbon capture and storage (CCS) is not, however, established at the scale required despite a decade or more of trials, heavy investment, and government subsidies. In 2020 40 million tonnes of <Formula>CO2</Formula> was captured from <Links.EL link={{label:'Global CCS Institute report: Global status of CCS 2020', source:'https://www.globalccsinstitute.com/wp-content/uploads/2020/12/Global-Status-of-CCS-Report-2020_FINAL_December11.pdf'}}>26</Links.EL> operating facilities worldwide.</div>
                 </p>
 
                 <p>'Green' hydrogen, produced only using renewable energy, and transported through 'hydrogen ready' pipelines is a seductive idea but if the path to that goal is overly long or impossible, we will be saddled with the cost of maintaining CCS infrastructure, and safeguarding sequestered <Formula>CO2</Formula> indefinitely, whilst still emitting greenhouse gases.</p>
@@ -195,21 +196,21 @@ const Hydrogen = () => {
                 <p>
                     <div class={styles.quote}>
                         <span>Producing hydrogen from natural gas with carbon capture and storage, so-called blue hydrogen, could also be <span class={styles.italic}>the key to keeping Norwegian gas valuable in a low carbon future</span> [emphasis added].</span>
-                        <div><span><a href="https://www.equinor.com/en/what-we-do/hydrogen.html">Equinor formerly Statoil (the Norwegian State Oil company)</a></span></div>
+                        <div><Links.EL link={{source:'https://www.equinor.com/en/what-we-do/hydrogen.html'}}>Equinor formerly Statoil (the Norwegian State Oil company)</Links.EL></div>
                     </div>
                 </p>
 
                 <p>
-                    <div>This scenario is understandably attractive to fossil fuels companies who maintain their grip on the market, secure profits on existing investments, and receive subsidies in the name of reducing emissions. They are <span><a href="https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf">lobbying hard</a></span> in the EU to protect their interests.</div>
+                    <div>This scenario is understandably attractive to fossil fuels companies who maintain their grip on the market, secure profits on existing investments, and receive subsidies in the name of reducing emissions. They are <Links.EL link={{source:'https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf'}}>lobbying hard</Links.EL> in the EU to protect their interests.</div>
                 </p>
 
                 <h3>Part to play</h3>
 
                 <p>
-                    <div>Hydrogen may have a successful future if it is unburdened by hype, it just might take time for sensible methods of production and suitable uses to be found. Produced close to sources of excess renewable energy it may be a good fit for larger forms of transportation (fuel cells) including shipping, for energy storage, and domestic and commercial heating (<a aria-label="BBC article - Climate change hope for hydrogen fuel" href="https://www.bbc.com/news/science-environment-50873047">hydrogen boilers</a>).</div>
+                    <div>Hydrogen may have a successful future if it is unburdened by hype, it just might take time for sensible methods of production and suitable uses to be found. Produced close to sources of excess renewable energy it may be a good fit for larger forms of transportation (fuel cells) including shipping, for energy storage, and domestic and commercial heating (<Links.EL link={{label:'BBC article - Climate change hope for hydrogen fuel', source:'https://www.bbc.com/news/science-environment-50873047'}}>hydrogen boilers</Links.EL>).</div>
                 </p>
 
-                <p>One positive example of combining wind power and hydrogen storage is the <Links.ExternalLink link={{source:'https://www.surfnturf.org.uk/'}}>Surf 'n' Turf community project</Links.ExternalLink> on the Orkney Islands north of Scotland where the abundance of energy makes conversion to hydrogen and back viable.</p>
+                <p>One positive example of combining wind power and hydrogen storage is the <Links.EL link={{source:'https://www.surfnturf.org.uk/'}}>Surf 'n' Turf community project</Links.EL> on the Orkney Islands north of Scotland where the abundance of energy makes conversion to hydrogen and back viable.</p>
 
                 <Top></Top>
 

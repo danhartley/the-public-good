@@ -106,7 +106,7 @@ header {
     & > a {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: center;      
     }
     div:nth-child(1), div:nth-child(3) {
         font-size: .8rem;        
@@ -114,10 +114,10 @@ header {
     div:nth-child(3) {
         font-style: italic;
     }
-    // @include link();
     a, a:hover, a:focus, a:visited, a:visited:hover, a:visited:focus {            
         color: rgb(var(--fg));
         border-bottom: 1px solid rgb(var(--fg));
+        text-decoration: none;
     }
     a:hover, a:focus, a:visited, a:visited:hover, a:visited:focus {
         outline: .125rem dotted rgb(var(--fg));

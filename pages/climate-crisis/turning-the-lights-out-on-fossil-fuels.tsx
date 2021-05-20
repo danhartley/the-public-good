@@ -109,7 +109,7 @@ const Change = () => {
                         <li>Wood - 16</li>
                         <li>Coal - 24</li>
                         <li>Crude oil - 44</li>   
-                        <li><Links.InternalLink link={{source:'facts#energy'}}>Energy densities</Links.InternalLink></li>
+                        <li><Links.IL link={{source:'facts#energy'}}>Energy densities</Links.IL></li>
                     </ul>                    
                     </div>
                 </p>
@@ -130,7 +130,7 @@ const Change = () => {
                 <p>Historical values for the power densities of renewables have proven to be on the low side (<a href="http://www.withouthotair.com/">MacKay</a>). This is good news, but it presents a conundrum; when is the right time to invest in a particular technology? Invest too soon, and we will be committed to unnecessarily inefficient infrastructure, too late, or too slowly, and we will miss potential gains. If governments set deadlines, companies may meet emissions targets by investing in improving existing technology instead of better, less resource intensive, technology that will take longer to test and deploy.</p>
 
                 <p>
-                    <div>A 2021 paper suggests <Links.ExternalLink link={{source:'https://iopscience.iop.org/article/10.1088/1748-9326/abde07'}}>the cost of innovation has been overestimated</Links.ExternalLink>. The authors predict the transition away from fossil fuels will be <Links.ExternalLink link={{source:'https://www.carbonbrief.org/guest-post-why-the-low-carbon-transition-may-be-much-cheaper-than-models-predict'}}>cheaper than predicted</Links.ExternalLink>.</div>
+                    <div>A 2021 paper suggests <Links.EL link={{source:'https://iopscience.iop.org/article/10.1088/1748-9326/abde07'}}>the cost of innovation has been overestimated</Links.EL>. The authors predict the transition away from fossil fuels will be <Links.EL link={{source:'https://www.carbonbrief.org/guest-post-why-the-low-carbon-transition-may-be-much-cheaper-than-models-predict'}}>cheaper than predicted</Links.EL>.</div>
                 </p>
                 
                 <p>Fossil fuels are the incumbent energy source, and if we are to replace them, it will entail adapting, extending and replacing existing infrastructure using more land at great cost both financially and materially. There may be, however, gains that quickly override these costs, to health, wealth, and societal well-being.</p>
@@ -259,7 +259,7 @@ const Change = () => {
 
                 <p>As our energy demands have increased, so have our emissions, but the fuels we favour emit less carbon when burnt. In this respect, wood is less innocent than coal, and natural gas and oil an improvement on coal. This has led to the disingenuous claim that gas is a 'clean' fossil fuel.
                     <div>
-                    <Links.InternalLink link={{source:'facts#fuel_emissions'}}>Fuel emissions</Links.InternalLink>
+                    <Links.IL link={{source:'facts#fuel_emissions'}}>Fuel emissions</Links.IL>
                     </div>
                 </p>
 

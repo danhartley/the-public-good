@@ -128,13 +128,13 @@ const MentalModel = () => {
                 <p>Interpretation of an instruction need not be visual; an audio device or application, such as a screen reader represents the space before and after a paragraph in units of time, not space.</p>
 
                 <p>
-                    <div><Links.ExternalLink link={{source:'https://webaim.org/projects/screenreadersurvey7/#braille'}}>One third</Links.ExternalLink> of screen reader users also output content to a <Links.ExternalLink link={{source:'https://www.afb.org/node/16207/refreshable-braille-displays'}}>refreshable braille display</Links.ExternalLink>.</div>
+                    <div><Links.EL link={{source:'https://webaim.org/projects/screenreadersurvey7/#braille'}}>One third</Links.EL> of screen reader users also output content to a <Links.EL link={{source:'https://www.afb.org/node/16207/refreshable-braille-displays'}}>refreshable braille display</Links.EL>.</div>
                 </p>
 
                 <h2>Separation of presentation and content</h2>
 
                 <p>
-                    <div>The basic structure of a page is set out using HTML elements. Design is usually via rules written in a language called <Links.ExternalLink link={{source:'https://en.wikipedia.org/wiki/CSS'}}>CSS</Links.ExternalLink>. CSS wasn't part of the original specification for web pages but was added later to provide designers and developers with greater control over presentation, formatting, and layout.</div>
+                    <div>The basic structure of a page is set out using HTML elements. Design is usually via rules written in a language called <Links.EL link={{source:'https://en.wikipedia.org/wiki/CSS'}}>CSS</Links.EL>. CSS wasn't part of the original specification for web pages but was added later to provide designers and developers with greater control over presentation, formatting, and layout.</div>
                 </p>
 
                 <p>CSS can be used to control every aspect of a page from fonts, colours, the look and behaviour of buttons and links, to page layout.</p>
@@ -187,7 +187,7 @@ const MentalModel = () => {
                 
                 <p>Use of the keyboard, screen reader, or other assistive devices reveals the semantic structure of the page. They provide an alternative, and at times, improved way of navigating and interacting with a page.</p>
 
-                <p>But pages don't exisit in isolation. Hypertext allows pages to be connected across sites, and maintaining this connection is critical. Users need to move freely from page to page using links and the browser back and forward buttons. <Links.ExternalLink link={{source:'https://www.accessibility-developer-guide.com/knowledge/keyboard-only/browsing-websites/'}}>Keyboard navigation</Links.ExternalLink> is fast and easy because it skips passive content and relies on the interconnected structures which underpin the web.</p>
+                <p>But pages don't exisit in isolation. Hypertext allows pages to be connected across sites, and maintaining this connection is critical. Users need to move freely from page to page using links and the browser back and forward buttons. <Links.EL link={{source:'https://www.accessibility-developer-guide.com/knowledge/keyboard-only/browsing-websites/'}}>Keyboard navigation</Links.EL> is fast and easy because it skips passive content and relies on the interconnected structures which underpin the web.</p>
 
                 <h2>The primary goal of a page is to be understood</h2>
 
@@ -204,7 +204,7 @@ const MentalModel = () => {
                 <p>
                     <div class={styles.quote}>
                         <span>Users spend most of their time on other sites. </span>
-                        <span><Links.ExternalLink link={{source:'https://www.nngroup.com/videos/jakobs-law-internet-ux/'}}>Jakob's Law</Links.ExternalLink></span>
+                        <span><Links.EL link={{source:'https://www.nngroup.com/videos/jakobs-law-internet-ux/'}}>Jakob's Law</Links.EL></span>
                     </div>
                 </p>
 
@@ -214,7 +214,7 @@ const MentalModel = () => {
 
                 <h3>Animation</h3>
 
-                <p>Movement is distracting, demands our attention, and <Links.ExternalLink link={{source:'https://www.nngroup.com/articles/animation-usability/'}}>is best used with caution</Links.ExternalLink>. Once we have built a model of a page we object to our assumptions being upset. Images and blocks of text that appear from nowhere or move around are highly disruptive to a static model. Change should be initiated by the user and respect cause and effect. Buttons and links are good examples.</p>    
+                <p>Movement is distracting, demands our attention, and <Links.EL link={{source:'https://www.nngroup.com/articles/animation-usability/'}}>is best used with caution</Links.EL>. Once we have built a model of a page we object to our assumptions being upset. Images and blocks of text that appear from nowhere or move around are highly disruptive to a static model. Change should be initiated by the user and respect cause and effect. Buttons and links are good examples.</p>    
 
                 <h3>Context</h3>
 
@@ -225,7 +225,7 @@ const MentalModel = () => {
                 <p>
                     <div class={styles.quote}>
                         <span>A mental model is what the user believes about the system at hand. </span>
-                        <div><Links.ExternalLink link={{source:'https://www.nngroup.com/articles/mental-models/'}}>Mental Models</Links.ExternalLink> Jakob Nielsen</div>
+                        <div><Links.EL link={{source:'https://www.nngroup.com/articles/mental-models/'}}>Mental Models</Links.EL> Jakob Nielsen</div>
                     </div>
                 </p>
 
@@ -237,7 +237,7 @@ const MentalModel = () => {
 
                 <p>Websites like Facebook and Gmail have few pages but many ways to interact. For this reason they are often called web applications, or web apps, and rely on JavaScript for their functionality (although you can run a non-JavaScript version of Gmail). Under the hood they are still web pages composed of HTML elements.</p>
 
-                <p>Because of their complexity, scope and number of users, <Links.ExternalLink link={{source:'https://www.facebook.com/help/accessibility'}}>Facebook</Links.ExternalLink> and <Links.ExternalLink link={{source:'https://support.google.com/mail/answer/6115187'}}>Google</Links.ExternalLink> have websites dedicated to using their apps.</p>
+                <p>Because of their complexity, scope and number of users, <Links.EL link={{source:'https://www.facebook.com/help/accessibility'}}>Facebook</Links.EL> and <Links.EL link={{source:'https://support.google.com/mail/answer/6115187'}}>Google</Links.EL> have websites dedicated to using their apps.</p>
 
                 <h2>Summary</h2>
 
@@ -249,7 +249,7 @@ const MentalModel = () => {
                 
                 <p>A site that functions without CSS and JavaScript is likely to be well-structured, well-designed, and accessible.</p>
 
-                <p>If you prefer a more ascetic experience, the <Links.ExternalLink link={{source:'http://lynx.browser.org/'}}>Lynx text browser</Links.ExternalLink> might appeal to you.</p>
+                <p>If you prefer a more ascetic experience, the <Links.EL link={{source:'http://lynx.browser.org/'}}>Lynx text browser</Links.EL> might appeal to you.</p>
 
                 <Top></Top>
 

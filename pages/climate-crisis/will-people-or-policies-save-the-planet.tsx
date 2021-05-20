@@ -36,7 +36,7 @@ const CarbonFootprint = () => {
 
                     <p>
                         <div class={styles.quote}>
-                        The cumulative amount of carbon dioxide (CO2) emissions permitted over a period of time to keep within a certain temperature threshold. <Links.ExternalLink link={{source:'https://carbontracker.org/carbon-budgets-explained/'}}>Carbon Tracker</Links.ExternalLink>
+                        The cumulative amount of carbon dioxide (CO2) emissions permitted over a period of time to keep within a certain temperature threshold. <Links.EL link={{source:'https://carbontracker.org/carbon-budgets-explained/'}}>Carbon Tracker</Links.EL>
                         </div>
                     </p>
 

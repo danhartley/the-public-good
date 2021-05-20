@@ -32,7 +32,7 @@ const Services = () => {
                 <p>The sociable contract outlines the principles upon which a website is built. It reflects the efforts of everyone who contributes to the project.</p>
 
                 <p>
-                    <div>I have created a <Links.InternalLink link={{source:'web-development/sociable-contract'}}>sociable contract</Links.InternalLink> for The Public Good.</div>
+                    <div>I have created a <Links.IL link={{source:'web-development/sociable-contract'}}>sociable contract</Links.IL> for The Public Good.</div>
                 </p>
 
                 <h2>Best practices</h2>

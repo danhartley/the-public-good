@@ -53,7 +53,7 @@ const Other = () => {
                 <p>There is no concensus around the cost, in terms of energy or greenhouse gas emissions, of delivering a web page. Or even how to measure it. Where the boundary is drawn is significant; in addition to network and data centre costs, there is debate as to whether the energy consumption of the device should be included.
                     <div class={styles.quote}>
                         <span class={styles.bold}>The decision of whether or not to include end devices influences the result by 1-2 orders of magnitude.</span>
-                        <div>The energy intensity of the internet: home and access networks <Links.ExternalLink link={{source: "https://www.zora.uzh.ch/id/eprint/110005/1/2014_Coroama_Schien_Preist_Hilty_Energy_Intensity_Internet_Home_Access.pdf", label:"PDF The energy intensity of the internet"}}>PDF</Links.ExternalLink></div>
+                        <div>The energy intensity of the internet: home and access networks <Links.EL link={{source: "https://www.zora.uzh.ch/id/eprint/110005/1/2014_Coroama_Schien_Preist_Hilty_Energy_Intensity_Internet_Home_Access.pdf", label:"PDF The energy intensity of the internet"}}>PDF</Links.EL></div>
                     </div>
                 </p>
 

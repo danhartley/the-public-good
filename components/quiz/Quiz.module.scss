@@ -6,3 +6,7 @@
     height: 600px;
     border: none;
 }
+
+.externalLink {
+    @include externalLink();
+}
