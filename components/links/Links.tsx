@@ -20,10 +20,10 @@ const ExternalLinksList = ({links}) => {
     )
 };
 
-const InternalLink = ({link}) => {
+const InternalLink = ({link, children}) => {
     return  <span class={styles.internalLink}>                
-                <Link href={`/${link.value}`}>
-                    <a>{link.text}</a>
+                <Link href={`/${link.source}`}>
+                    <a>{children}</a>
                 </Link>
             </span>            
 };

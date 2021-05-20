@@ -38,7 +38,7 @@ const Contract = () => {
                             </li>
                             <li>
                             The site will score at least 95% for Performance, Accessibility, Best Practices and SEO on <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>, on both Desktop and Mobile.
-                            <div class={styles.italic}>Find out how to use <Links.InternalLink link={{'value': 'performance#howTo', 'text': 'Lighthouse'}}></Links.InternalLink> to check these scores.</div>
+                            <div class={styles.italic}>Find out how to use <Links.InternalLink link={{source:'performance#howTo'}}>Lighthouse</Links.InternalLink> to check these scores.</div>
                             </li>
                             <li>
                             The site will score 'Cleaner than 85% of pages tested' using <a href="https://www.websitecarbon.com/">Website Carbon</a>.

@@ -189,7 +189,7 @@ const Carbon = () => {
                         <span>Fossil fuels take ~1 million years to form. They have high energy and power densities.</span>
                         <span>Renewables are constantly replenished by the sun's energy. They have low energy and power densities.</span>
                         <span>In one year we release energy that took a million years to form. <span><a href="https://www.theguardian.com/science/2007/may/22/highereducation.education">Harry Kroto</a></span></span>
-                        <div><Links.InternalLink link={{'value': 'facts#energy', 'text': 'Values for energy and power densities'}}></Links.InternalLink></div>
+                        <div><Links.InternalLink link={{source:'facts#energy'}}>Values for energy and power densities</Links.InternalLink></div>
                     </div>
                 </p>
 
@@ -201,7 +201,7 @@ const Carbon = () => {
                 <p>For a couple of hundred years we have benefited from chemical reactions irreversible in time scales appropriate to our species. The combustion of organic compounds, especially hydrocarbons, to release energy stored over unimaginably vast periods of time, is the foundation of our modern civilisations.</p>
 
                 <p>
-                    <div>Will we enjoy an equally profitable but more sustainable relationship with <Links.InternalLink link={{'value': 'climate-crisis/hydrogen-a-singular-atom', 'text': 'hydrogen'}}></Links.InternalLink>?</div>
+                    <div>Will we enjoy an equally profitable but more sustainable relationship with <Links.InternalLink link={{source:'climate-crisis/hydrogen-a-singular-atom'}}>hydrogen</Links.InternalLink>?</div>
                 </p>
 
                 <Top></Top>

@@ -109,7 +109,7 @@ const Change = () => {
                         <li>Wood - 16</li>
                         <li>Coal - 24</li>
                         <li>Crude oil - 44</li>   
-                        <li><Links.InternalLink link={{'value': 'facts#energy', 'text': 'Energy densities'}}></Links.InternalLink></li>
+                        <li><Links.InternalLink link={{source:'facts#energy'}}>Energy densities</Links.InternalLink></li>
                     </ul>                    
                     </div>
                 </p>
@@ -259,7 +259,7 @@ const Change = () => {
 
                 <p>As our energy demands have increased, so have our emissions, but the fuels we favour emit less carbon when burnt. In this respect, wood is less innocent than coal, and natural gas and oil an improvement on coal. This has led to the disingenuous claim that gas is a 'clean' fossil fuel.
                     <div>
-                    <Links.InternalLink link={{'value': 'facts#fuel_emissions', 'text': 'Fuel emissions'}}></Links.InternalLink>
+                    <Links.InternalLink link={{source:'facts#fuel_emissions'}}>Fuel emissions</Links.InternalLink>
                     </div>
                 </p>
 

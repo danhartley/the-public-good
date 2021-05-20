@@ -17,12 +17,7 @@ export default function Home() {
 
             <p>Our ability to mitigate the threats we pose to the planet depends on individual and collective action.</p>
 
-            <p>I will <span class={styles.internalLink}>
-                        <Link href={'/services'}>
-                            <a>help you</a>
-                        </Link>
-                      </span> create fast, accessible and secure websites.
-            </p>
+            <p>I will <Links.InternalLink link={{source:'services'}}>help you</Links.InternalLink><span class={styles.internalLink}></span> create fast, accessible and secure websites.</p>
 
             <p>I write about the climate crisis and responsible web development.</p>
 
@@ -52,38 +47,22 @@ export default function Home() {
             <p>Poor design <a aria-label="WebKit guidelines for developers on how to minimise mobile and laptop energy use." href ="https://webkit.org/blog/8970/how-web-content-can-affect-power-usage/">runs down batteries</a>, and too many websites are <a href="https://www.nngroup.com/articles/the-need-for-speed">too slow</a>.</p>
             <p>When you waste people's time, <a href="https://developer.mozilla.org/en-US/docs/Learn/Performance/why_web_performance">they don't hang around.</a></p>
             <p><a href="https://www.nngroup.com/articles/powers-of-10-time-scales-in-ux/">It takes 0.05 seconds to form an opinion.</a></p>
-            <p class={styles.internalLink}>
-                <ul class={styles.dashedItemsList}>
-                    <li>
-                        <Link href={'/performance'}>
-                            <a>Read more about performance</a>
-                        </Link>
-                    </li>
-                </ul>
-            </p>
+
+            <p><Links.InternalLink link={{source:'performance'}}>Read more about performance</Links.InternalLink></p>
+
             <h3>Accessibility</h3>
             <p>Using websites can be challenging <a href="https://developers.google.com/web/fundamentals/accessibility">for many reasons</a>.</p>
             <p><a href="https://web.dev/load-faster-like-proxx/">Not all phones are smart</a>.</p>
-            <p class={styles.internalLink}>
-                <ul class={styles.dashedItemsList}>
-                    <li>
-                        <Link href={'/accessibility'}>
-                            <a>Read more about accessibility</a>
-                        </Link>
-                    </li>
-                </ul>                
-            </p>
+            
+            <p><Links.InternalLink link={{source:'accessibility'}}>Read more about accessibility</Links.InternalLink></p>
+
             <h3>Sustainability</h3>
-            <p>There is a <a href="https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"> cost in greenhouse gas emissions</a> for every page.</p>
-            <p class={styles.internalLink}>
-                <ul class={styles.dashedItemsList}>
-                    <li>
-                        <Link href={'/sustainability'}>
-                            <a>Read more about sustainability</a>
-                        </Link>
-                    </li>
-                </ul>
+            <p>
+                <div>There is a <Links.ExternalLink link={{source:'https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix'}}>cost in greenhouse gas emissions</Links.ExternalLink> for every page.</div>
             </p>
+
+            <p><Links.InternalLink link={{source:'sustainability'}}>Read more about sustainability</Links.InternalLink></p>
+
         </section>
     </Layout>
   )

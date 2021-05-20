@@ -151,7 +151,7 @@ const Hydrogen = () => {
                     <div>There are several <span><a aria-label="US Energy article on Hydrogen Fuel Basics" href="https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics">other methods of hydrogen production</a></span> including photobiological, photoelectrochemical, solar thermochemical and biological processes.</div>
                 </p>
 
-                <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><span class={styles.italic}>high</span></span> energy <Links.InternalLink link={{'value': 'facts#energy', 'text': 'density'}}></Links.InternalLink> by mass).</p>
+                <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><span class={styles.italic}>high</span></span> energy <Links.InternalLink link={{source:'facts#energy'}}>density</Links.InternalLink> by mass).</p>
 
                 <p>A fraction of hydrogen is currently produced from low carbon energy; the latest figure for the EU is <span><a aria-label="FCHO PDF report Hydrogen molecule market" href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf">0.1%</a></span>. Global production of hydrogen from electrolysis is less than <span><a aria-label="IEA report on the future of hydrogen" href="https://www.iea.org/reports/the-future-of-hydrogen">0.1%</a></span>.</p>
 
