@@ -131,9 +131,10 @@
     }
     a:visited {
         color: rgb(var(--l-v));
+        border-bottom: 1px solid rgba(var(--l-v), .8) !important;
     }
     a:visited:hover, a:visited:focus {
-        border-bottom: 1px solid rgba(var(--l-v), .8);
+        border-bottom: 1px solid rgba(var(--l-v), .8) !important;
         outline: 2px dotted rgba(var(--l-v), 1);
         outline-offset: 4px;
     }
@@ -190,20 +191,6 @@
 
 .container {
     @include container();
-    .header { 
-        width: 100vw;
-        // margin-top: -1.5rem;
-        // background-color: rgb(77, 68, 61) !important;
-        // border-bottom: 3px dotted rgb(var(--fg),.3) !important;
-        border-bottom: 1px solid rgb(var(--fg),.6) !important;
-        // padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        // padding: .5rem 0 0 0;
-        // padding: 1.5rem 0 1rem 0;
-        &:focus-visible {
-            outline: none;
-        }
-    }
 }
 
 @mixin button {    
