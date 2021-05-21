@@ -125,7 +125,7 @@ const Hyperlinks = () => {
                 <h3>Internal links</h3>
 
                 <p>
-                    <div>I've been talking about external links. The <em>internal</span> links on this site are a different colour and have a dashed line (though it turns solid on hover/focus). Because these links form part of the site navigation, I make no distinction between un/visited internal links. I don't want to discourage a reader clicking on an internal link the content of which may have changed.</div>                    
+                    <div>I've been talking about external links. The <em>internal</em> links on this site are a different colour and have a dashed line (though it turns solid on hover/focus). Because these links form part of the site navigation, I make no distinction between un/visited internal links. I don't want to discourage a reader clicking on an internal link the content of which may have changed.</div>                    
                 </p>                
 
                 <p>The Guardian, a large site with many internal references across different sections of the paper, makes no distinction between external and internal links, or between visited and unvisited links.</p>

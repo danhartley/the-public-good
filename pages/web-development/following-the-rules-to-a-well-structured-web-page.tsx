@@ -123,7 +123,7 @@ const MentalModel = () => {
 
                 <p><span>{'<p>This is a paragraph.</p>'}</span></p>
 
-                <p>This instruction is declarative; it specifies semantic intention, but it is not prescriptive. Specific representation is left to the discretion of web <em>application</span> authors (the people responsible for browsers like Chrome, Firefox, Edge, Tor, and Opera), and web developers.</p>
+                <p>This instruction is declarative; it specifies semantic intention, but it is not prescriptive. Specific representation is left to the discretion of web <em>application</em> authors (the people responsible for browsers like Chrome, Firefox, Edge, Tor, and Opera), and web developers.</p>
 
                 <p>Interpretation of an instruction need not be visual; an audio device or application, such as a screen reader represents the space before and after a paragraph in units of time, not space.</p>
 

@@ -35,8 +35,8 @@ const Accessibility = () => {
             
                 <p>
                     <h2>Colour contrast</h2>
-                    Not everyone has perfect eyesight, especially in poor light. Poor contrast can be tested, together with other accessibility issues, using the web accessibility evaluation tool, <a href="https://wave.webaim.org/">WAVE</a>, or by inspecting an element using browser tools.
-                    <p>A summary of WAVE's <a href="https://webaim.org/resources/contrastchecker/">explanation of the WCAG</a> (Web Content Accessibility Guidelines):</p>
+                    Not everyone has perfect eyesight, especially in poor light. Poor contrast can be tested, together with other accessibility issues, using the web accessibility evaluation tool, <Links.EL link={{source:'https://wave.webaim.org/'}}>WAVE</Links.EL>, or by inspecting an element using browser tools.
+                    <p>A summary of WAVE's <Links.EL link={{source:'https://webaim.org/resources/contrastchecker/explanation'}}>of the WCAG</Links.EL> (Web Content Accessibility Guidelines):</p>
                     <dl class={styles.dataTable}>
                         <dt>WCAG Level AAA</dt><dd>A contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.</dd>
                         <dt>WCAG 2.0 level AA</dt><dd>A contrast ratio of at least 4.5:1 for normal text and 3:1 for large text.</dd>
