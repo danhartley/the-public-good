@@ -85,7 +85,7 @@ const Hydrogen = () => {
                 </p>
 
                 <p>
-                    <div>The bonds in these compounds are polar. In a molecule of water, for example, the shared electrons spend more time near the (more electronegative) oxygen atom, which therefore takes on a partial negative charge. The hydrogen end of the molecule, where the electron spends less time, takes on a partial positive charge. Molecules of water position themselves in response to these partial charges; the hydrogen of one molecule being attracted to the oxygen of another (unlike charges attract), to form a <strong>hydrogen bond</span>.</div>
+                    <div>The bonds in these compounds are polar. In a molecule of water, for example, the shared electrons spend more time near the (more electronegative) oxygen atom, which therefore takes on a partial negative charge. The hydrogen end of the molecule, where the electron spends less time, takes on a partial positive charge. Molecules of water position themselves in response to these partial charges; the hydrogen of one molecule being attracted to the oxygen of another (unlike charges attract), to form a <strong>hydrogen bond</strong>.</div>
                 </p>
 
                 <p>Hydrogen bonds explain cohesion (why water molecules 'bead'), and the relatively high boiling point of water - energy is needed to break apart the hydrogen bonds.</p>
@@ -127,9 +127,9 @@ const Hydrogen = () => {
                     <div class={styles.inset}>
                         <p>The methane and other hydrocarbons in natural gas react with a limited amount of oxygen to partially oxidise the hydrocarbons. The carbon monoxide produced is once again reacted with water in the "water-gas shift reaction".
                             <div class={styles.inset}>
-                                <strong>Partial oxidation of methane reaction</span>
+                                <strong>Partial oxidation of methane reaction</strong>
                                 <span><Formula>CH4</Formula> + <Formula>½O2</Formula> → <Formula>CO</Formula> + <Formula>2H2</Formula> (+ heat)</span>
-                                <strong>Water-gas shift reaction</span>
+                                <strong>Water-gas shift reaction</strong>
                                 <span>CO + <Formula>H2O</Formula> → <Formula>CO2</Formula>  + <Formula>H2</Formula> (+ small amount of heat)</span>
                             </div>
                         </p>
@@ -140,19 +140,19 @@ const Hydrogen = () => {
 
                 <p>Electrolysis is a process whereby electricity is used to split water into hydrogen and oxygen. The process <Links.EL link={{label: 'Electrolysis varies depending on the electrolyte selected', source:'https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis'}}>varies</Links.EL> depending on the electrolyte selected. Oxygen gas forms at the anode, hydrogen gas at the cathode.
                     <div class={styles.inset}>
-                        <span><strong>Anode Reaction</span> <Formula>2H2O</Formula> → <Formula>O2</Formula> + 4H+ + 4e-</span>
-                        <span><strong>Cathode Reaction</span> 4H+ + 4e- → <Formula>2H2</Formula></span>
-                        <div class={styles.small}>An <strong>electrolyte</span> is a "substance that produces an electrically conducting solution when dissolved in a polar solvent, such as water." <span><a href="https://en.wikipedia.org/wiki/Electrolyte">Wikipedia</a></span></div>
+                        <span><strong>Anode Reaction</strong> <Formula>2H2O</Formula> → <Formula>O2</Formula> + 4H+ + 4e-</span>
+                        <span><strong>Cathode Reaction</strong> 4H+ + 4e- → <Formula>2H2</Formula></span>
+                        <div>An <strong>electrolyte</strong> is a "substance that produces an electrically conducting solution when dissolved in a polar solvent, such as water." <span><a href="https://en.wikipedia.org/wiki/Electrolyte">Wikipedia</a></span></div>
                     </div>                    
                 </p>
 
-                <p>Electrolysis can produce hydrogen with no greenhouse gas emissions, if the original source of the energy used is renewable. The process is currently 70-80% efficient; for every 40kWh of energy produced 50–55kWh of electricity is required. That is <em>less</span> energy is produced than is put in. 95% efficiency has been <Links.EL link={{label:'95% efficiency claimed for electrolysis', source:'https://www.h2pro.co/'}}>claimed</Links.EL> but not proven in production.</p>
+                <p>Electrolysis can produce hydrogen with no greenhouse gas emissions, if the original source of the energy used is renewable. The process is currently 70-80% efficient; for every 40kWh of energy produced 50–55kWh of electricity is required. That is <em>less</em> energy is produced than is put in. 95% efficiency has been <Links.EL link={{label:'95% efficiency claimed for electrolysis', source:'https://www.h2pro.co/'}}>claimed</Links.EL> but not proven in production.</p>
 
                 <p>
                     <div>There are several <Links.EL link={{label:'US Energy article on Hydrogen Fuel Basics', source:'href="https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics"'}}>other methods of hydrogen production</Links.EL> including photobiological, photoelectrochemical, solar thermochemical and biological processes.</div>
                 </p>
 
-                <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><em>high</span></span> energy <Links.IL link={{source:'facts#energy'}}>density</Links.IL> by mass).</p>
+                <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><em>high</em></span> energy <Links.IL link={{source:'facts#energy'}}>density</Links.IL> by mass).</p>
 
                 <p>A fraction of hydrogen is currently produced from low carbon energy; the latest figure for the EU is <Links.EL link={{label:'FCHO PDF report Hydrogen molecule market', source:'href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf'}}>0.1%</Links.EL>. Global production of hydrogen from electrolysis is less than <Links.EL link={{label:'IEA report on the future of hydrogen', source:'https://www.iea.org/reports/the-future-of-hydrogen'}}>0.1%</Links.EL>.</p>
 
@@ -166,7 +166,7 @@ const Hydrogen = () => {
 
                 <p>
                     <div>Fuel cells can be used at a wide range of scales from a power station to a laptop. They work like batteries but do not run down, producing electricity as long as there is fuel. They are also efficient, converting chemical energy to electrical energy at around 60% efficiency; this compares well to an average of <Links.EL link={{source:'https://cefrc.princeton.edu/sites/cefrc/files/reitz_princeton-day1-hour1-2018.pdf'}}>16% efficiency for gas combustion engines</Links.EL>.</div>
-                    <div class={styles.inset}><strong>How fuel cells work</span></div>
+                    <div class={styles.inset}><strong>How fuel cells work</strong></div>
                     <div class={styles.quote}>                        
                         <span>A fuel, such as hydrogen, is fed to the anode, and air is fed to the cathode. In a hydrogen fuel cell, a catalyst at the anode separates hydrogen molecules into protons and electrons, which take different paths to the cathode. The electrons go through an external circuit, creating a flow of electricity.</span>
                         <div><Links.EL link={{source:'https://www.energy.gov/eere/fuelcells/fuel-cells'}}>How fuel cells work | US Energy Efficiency & Renewable Energy</Links.EL></div>
@@ -195,7 +195,7 @@ const Hydrogen = () => {
 
                 <p>
                     <div class={styles.quote}>
-                        <span>Producing hydrogen from natural gas with carbon capture and storage, so-called blue hydrogen, could also be <em>the key to keeping Norwegian gas valuable in a low carbon future</span> [emphasis added].</span>
+                        <span>Producing hydrogen from natural gas with carbon capture and storage, so-called blue hydrogen, could also be <em>the key to keeping Norwegian gas valuable in a low carbon future</em> [emphasis added].</span>
                         <div><Links.EL link={{source:'https://www.equinor.com/en/what-we-do/hydrogen.html'}}>Equinor formerly Statoil (the Norwegian State Oil company)</Links.EL></div>
                     </div>
                 </p>

@@ -156,7 +156,7 @@ const CarbonFootprint = () => {
                 <Tables.Calculators></Tables.Calculators>
 
                 <p>
-                    <div class={styles.small}>NB Not all calculators are the same. The Global Food Network makes clear their <a aria-label="Global Food Network: Footprint Calculator FAQs" href="https://www.footprintnetwork.org/footprint-calculator-faq/#gen1">calculator</a> is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true footprint, measured by area) and a figure for CO2 emissions (a carbon footprint).</div>
+                    <div>NB Not all calculators are the same. The Global Food Network makes clear their <a aria-label="Global Food Network: Footprint Calculator FAQs" href="https://www.footprintnetwork.org/footprint-calculator-faq/#gen1">calculator</a> is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true footprint, measured by area) and a figure for CO2 emissions (a carbon footprint).</div>
                 </p>
 
                 <h3 id="comparison">Results from 5 calculators</h3>

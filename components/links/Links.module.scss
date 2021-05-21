@@ -1,20 +1,20 @@
 @import 'styles/mixins.scss';
 
 .internalLinkBlock {
-    @include card();
-    border-bottom: none;
-}
-
-.related {
-    @include card();
-    h2 {
-        margin: 0;
+    section {
+        border-bottom: none;
     }
 }
 
+// .related {
+//     @include section();
+//     h2 {
+//         margin: 0;
+//     }
+// }
+
 .externalLink {
     @include externalLink();
-    line-height: 2;
 }
 
 .block {

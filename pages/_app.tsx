@@ -43,7 +43,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         setDarkMode(!darkMode);
         mode.isDark = darkMode;
         mode.style = getStyle(darkMode) as any;
-        document.getElementsByTagName('header')[0].style.backgroundColor = darkMode ? 'rgb(255 255 247)' : 'rgb(45, 45, 45)';
         document.body.style.backgroundColor = darkMode ? 'rgb(255 255 247)' : 'rgb(45, 45, 45)';
     };
 

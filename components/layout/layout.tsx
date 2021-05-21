@@ -71,9 +71,9 @@ const Layout = ({
                 <link rel="manifest" href="/manifest.json" />
             </Head>
             <div id="container" style={mode.style as any} class={styles.container}>                
-                <header class={styles.header}>
+                <header>
 
-                    {/* <div id="skiptocontent"><a href="#maincontent">skip to main content</a></div> */}
+                    <div class={styles.skiptocontent}><a href="#main">skip to main content</a></div>
 
                     <Link href={'/'}>
                         <a class={styles.title} aria-label="Home page">
@@ -85,9 +85,11 @@ const Layout = ({
                         <button aria-label="Toggle the website colour scheme: between light and dark" class={styles.mode} ref={btnMode} onClick={() => toggleMode()}>{mode.isDark ? <span class={styles.light}></span> : <span class={styles.dark}></span>}</button>
                     </p>
                 </header>
-                <main class={styles.main}>               
+                <main id="main">               
+                    <article>
                     { header ? <div class={styles.h1}><div><h1>{header}</h1></div></div> : null }
                     {children}
+                    </article>
                     { router.pathname === '/' ? null : <nav aria-label="Published link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
                 </main>
                 <footer role="contentinfo" class={styles.footer}>

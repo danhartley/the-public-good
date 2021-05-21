@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Layout from 'components/layout/layout';
 import Links from 'components/links/Links';
 import styles from 'styles/Home.module.scss';

@@ -29,7 +29,7 @@ const IL = ({link, children}) => {
 };
 
 const ILBlock = ({link}) => {
-    return  <p class={styles.internalLinkBlock}>
+    return  <p>
                 <span class={styles.internalLink}>                
                     <Link href={`/${link.value}`}>
                         <a>{link.text}</a>
@@ -61,7 +61,7 @@ const RelatedLinks = ({links}) => {
     });
 
     return (
-        <section class={styles.related}>
+        <section>
             <p class={styles.internalLink}>
                 <h2>Related content</h2>
                 <ul class={styles.dashedItemsList}>
