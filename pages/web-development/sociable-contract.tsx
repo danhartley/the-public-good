@@ -33,15 +33,15 @@ const Contract = () => {
 
                         <ul class={styles.dashedItemsList}>
                             <li>
-                            <span>The site will satisfy Web Content Accessibility Guidelines <a href="https://webaim.org/resources/contrastchecker/">WCAG Level AAA</a> in light mode; WCAG Level AA in datk more, Level AA for larger text.</span>
-                            <div><em><a href="https://wave.webaim.org/report#/https://www.the-public-good.com/">Check</a></em> if this is true.</div>
+                            <span>The site will satisfy Web Content Accessibility Guidelines <Links.EL link={{source:'https://webaim.org/resources/contrastchecker/'}}>WCAG Level AAA</Links.EL> in light mode; WCAG Level AA in datk more, Level AA for larger text.</span>
+                            <div><em><Links.EL link={{source:'https://wave.webaim.org/report#/https://www.the-public-good.com/'}}>Check</Links.EL></em> if this is true.</div>
                             </li>
                             <li>
-                            The site will score at least 95% for Performance, Accessibility, Best Practices and SEO on <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>, on both Desktop and Mobile.
+                            The site will score at least 95% for Performance, Accessibility, Best Practices and SEO on <Links.EL link={{source:'https://developers.google.com/web/tools/lighthouse'}}>Lighthouse</Links.EL>, on both Desktop and Mobile.
                             <div><em>Find out how to use <Links.IL link={{source:'performance#howTo'}}>Lighthouse</Links.IL> to check these scores.</em></div>
                             </li>
                             <li>
-                            The site will score 'Cleaner than 85% of pages tested' using <a href="https://www.websitecarbon.com/">Website Carbon</a>.
+                            The site will score 'Cleaner than 85% of pages tested' using <Links.EL link={{source:'https://www.websitecarbon.com/'}}>Website Carbon</Links.EL>.
                             </li>
                             <li>
                             This site will contain no advertising.
@@ -53,7 +53,7 @@ const Contract = () => {
                             It will use local storage variable 'is-dark-mode' to store your preference for light or dark mode.
                             </li>
                             <li>
-                            Support IE11 and all modern browsers (Edge, Firefox, Chrome, Safari, Opera, et al) based on <a href="https://nextjs.org/docs/basic-features/supported-browsers-features">Next.js support</a>
+                            Support IE11 and all modern browsers (Edge, Firefox, Chrome, Safari, Opera, et al) based on <Links.EL link={{source:'https://nextjs.org/docs/basic-features/supported-browsers-features'}}>Next.js support</Links.EL>
                             </li>
                             <li>
                             Content or pages that are freely accessible will remain freely accessible in perpetuity.

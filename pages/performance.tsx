@@ -76,7 +76,7 @@ const Performance = () => {
 
                 <p>Both <Links.EL link={{source:'https://web.dev/rail/'}}>Google</Links.EL> (Chrome) and <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Learn/Performance/Perceived_performance'}}>Mozilla</Links.EL> (Firefox) cover this topic in detail.</p>
 
-                <p>There will also be times when best practice in terms of software engineering <a aria-label="When best practices can slow your application down by Stack Overflow" href="https://stackoverflow.blog/2021/03/03/best-practices-can-slow-your-application-down/">clashes</a> with website performance.</p>
+                <p>There will also be times when best practice in terms of software engineering <Links.EL link={{source:'https://stackoverflow.blog/2021/03/03/best-practices-can-slow-your-application-down/'}}>clashes</Links.EL> with website performance.</p>
 
                 <h2 id="howTo">How to test your site</h2>
 

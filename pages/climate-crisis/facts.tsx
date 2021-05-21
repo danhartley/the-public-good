@@ -10,11 +10,11 @@ const Facts = () => {
             <section>
 
                 <div class={styles.menu}>
-                    <span><a href="#carbon">Carbon</a></span>
-                    <span><a href="#time">Time</a></span>
-                    <span><a href="#emissions">Emissions</a></span>
-                    <span><a href="#energy">Energy</a></span>
-                    <span><a href="#photosynthesis">Photosynthesis</a></span>
+                    <span><Links.EL link={{source:'#carbon'}}>Carbon</Links.EL></span>
+                    <span><Links.EL link={{source:'#time'}}>Time</Links.EL></span>
+                    <span><Links.EL link={{source:'#emissions'}}>Emissions</Links.EL></span>
+                    <span><Links.EL link={{source:'#energy'}}>Energy</Links.EL></span>
+                    <span><Links.EL link={{source:'#photosynthesis'}}>Photosynthesis</Links.EL></span>
                 </div>
 
                 <h2 id="carbon">Carbon & CO2</h2>
@@ -35,10 +35,10 @@ const Facts = () => {
                         <div>The mass of one molecule of CO2 is 7.30×10<span class={styles.super}>−23</span></div> */}
                     </span>
                     <div>
-                        <a aria-label="Article explaining the difference between mass and weight from ThoughtCo" href="https://www.thoughtco.com/atomic-weight-and-atomic-mass-difference-4046144">Atomic mass or atomic weight?</a>
+                        <Links.EL link={{label:'Article explaining the difference between mass and weight from ThoughtCo', source:'https://www.thoughtco.com/atomic-weight-and-atomic-mass-difference-4046144'}}>Atomic mass or atomic weight?</Links.EL>
                     </div>
                     <div>
-                        <a aria-label="QandA in Scientific American on how to calculate weight of CO2" href="https://www.scientificamerican.com/article/experts-weight-ratio-co2-fuel/">Example calculation using weight and moles.</a>
+                        <Links.EL link={{source:'https://www.scientificamerican.com/article/experts-weight-ratio-co2-fuel/'}}>Example calculation using weight and moles.</Links.EL>
                     </div>
                 </p>
                 
@@ -49,7 +49,7 @@ const Facts = () => {
                 <p>
                     <span class={styles.quote}>
                     Peat is an accumulation of partially decayed vegetation or organic matter. The IPCC classifies peat as neither a fossil fuel nor a renewable fuel, and notes that its emission characteristics are similar to fossil fuels.
-                    <span> <a href="https://en.wikipedia.org/wiki/Peat">Wikipedia</a></span>
+                    <span> <Links.EL link={{source:'https://en.wikipedia.org/wiki/Peat'}}>Wikipedia</Links.EL></span>
                     </span>
                 </p>
 
@@ -75,7 +75,7 @@ const Facts = () => {
 
                 <h3>Human time</h3>
 
-                <p>A rough, and disputed timeline of <a href="https://en.wikipedia.org/wiki/Timeline_of_human_evolution">human evolution</a>.</p>
+                <p>A rough, and disputed timeline of <Links.EL link={{source:'https://en.wikipedia.org/wiki/Timeline_of_human_evolution'}}>human evolution</Links.EL>.</p>
 
                  <Tables.Humans></Tables.Humans>
 
@@ -85,13 +85,13 @@ const Facts = () => {
 
                 <p>
                     The IPCC calculates the rise in the global mean surface temperature (GMST) from the beginning of large-scale industrial activity.
-                    Their <a aria-label="IPCC Annex: Glossary" href="https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_AnnexI_Glossary.pdf">reference period</a> (PDF) is 1850-1900.
+                    Their <Links.EL link={{source:'https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_AnnexI_Glossary.pdf'}}>reference period</Links.EL> (PDF) is 1850-1900.
                     <div>
                         Industrialisation had begun before this date, primarily in England (<a href="https://ourworldindata.org/contributed-most-global-co2">78% of global emissions</a>). 
                         
-                        Dates for the Industrial Revolution in Europe and the United States are typically given as starting in 1760, and ending in 1820, or 1840, but emissions were low by comparison to today, just <a aria-label="Our World in Data report on historical CO2 emission" href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">4.96 billion tonnes</a>, and were localised. Prior to this period humans had been burning wood, coal, and clearing land, but emissions were comparatively insignificant.
+                        Dates for the Industrial Revolution in Europe and the United States are typically given as starting in 1760, and ending in 1820, or 1840, but emissions were low by comparison to today, just <Links.EL link={{source:'https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions'}}>4.96 billion tonnes</Links.EL>, and were localised. Prior to this period humans had been burning wood, coal, and clearing land, but emissions were comparatively insignificant.
                         
-                        <p><a href="https://ourworldindata.org/grapher/cumulative-co2-emissions-region?stackMode=absolute">Cumulative emissions</a></p>
+                        <p><Links.EL link={{source:'https://ourworldindata.org/grapher/cumulative-co2-emissions-region?stackMode=absolute'}}>Cumulative emissions</Links.EL></p>
                         <Tables.CumulativeEmissions></Tables.CumulativeEmissions>
                         <p>In 1850 cumulative global emissions were around 0.3% of what they are today.</p>
                     </div>
@@ -106,7 +106,7 @@ const Facts = () => {
                 <h3>Units</h3>
 
                 <p>
-                    SI Units: <a href="http://www.withouthotair.com/cI/page_328.shtml">Quick reference</a>
+                    SI Units: <Links.EL link={{source:'http://www.withouthotair.com/cI/page_328.shtml'}}>Quick reference</Links.EL>
                 </p>
 
                 <h3 id="energy_density">Energy density</h3>
@@ -115,7 +115,7 @@ const Facts = () => {
                     You can start explaining some of the limits and possibilities of everyday life or historical
                     progress by playing with energy densities: the more concentrated sources of energy give you
                     many great advantages in terms of their extraction, portability, transportation and storage costs,
-                    and conversion options. <a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil</a> (PDF)
+                    and conversion options. <Links.EL link={{source:'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf'}}>Vaclav Smil</Links.EL> (PDF)
                 </span>
 
                  <Tables.EnergyDensities></Tables.EnergyDensities>
@@ -123,7 +123,7 @@ const Facts = () => {
                  <span class={styles.quote}>*Solar energy has a density over twenty quadrillion times less than oil</span>
 
                 <div><a href="https://energyeducation.ca/encyclopedia/Energy_density">Energy Education | Energy density</a></div>
-                <div><a href="https://apcentral.collegeboard.org/courses/ap-environmental-science/classroom-resources/energy-primer-ap-environmental-science-student">An Energy Primer for the AP Environmental Science Student</a></div>
+                <div><Links.EL link={{source:'https://apcentral.collegeboard.org/courses/ap-environmental-science/classroom-resources/energy-primer-ap-environmental-science-student'}}>An Energy Primer for the AP Environmental Science Student</Links.EL></div>
                 <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer </a>(PDF)</div>
                 <div><a href="https://www.drexel.edu/~/media/Files/greatworks/pdf_sum10/WK8_Layton_EnergyDensities.ashx">A comparison of energy densities of prevalent energy sources in units of joules per cubic meter | Bradley E. Layton Drexel University</a></div>
                 <div><a href="https://en.wikipedia.org/wiki/Comparison_of_commercial_battery_types">Wikipedia | Comparison of commercial battery types</a></div>
@@ -132,15 +132,15 @@ const Facts = () => {
 
                 <Tables.PowerDensities></Tables.PowerDensities>                
 
-                <div>*<a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a> (PDF)</div>
+                <div>*<Links.EL link={{source:'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf'}}>Power density primer Vaclav Smil</Links.EL> (PDF)</div>
                 <div>+<a href="https://www.sciencedirect.com/science/article/pii/S0301421518305512">The spatial extent of renewable and non-renewable power generation John van Zalk, Paul Behrens</a></div>
 
-                <div><a href="https://www.volker-quaschning.de/datserv/CO2-spez/index_e.php">Volker Quaschning</a></div>
+                <div><Links.EL link={{source:'https://www.volker-quaschning.de/datserv/CO2-spez/index_e.php'}}>Volker Quaschning</Links.EL></div>
 
                 <h3>Horsepower</h3>
 
                 <p>
-                    There are numerous definitions for the value of <a aria-label="Wikipedia article on horsepower" href="https://en.wikipedia.org/wiki/Horsepower">horsepower</a>; one metric measure is defined as,
+                    There are numerous definitions for the value of <Links.EL link={{source:'https://en.wikipedia.org/wiki/Horsepower'}}>horsepower</Links.EL>; one metric measure is defined as,
                     <span class={styles.quote}>
                         The power needed to lift 75 kilograms by 1 metre in 1 second.
                     </span>
@@ -178,7 +178,7 @@ const Facts = () => {
                 <p>
                     <span class={styles.quote}>
                     Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation.
-                    <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Power density primer Vaclav Smil</a> (PDF)</div>
+                    <div><Links.EL link={{source:'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf'}}>Power density primer Vaclav Smil</Links.EL> (PDF)</div>
                     </span>
                 </p>
 

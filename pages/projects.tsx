@@ -17,11 +17,11 @@ const Projects = () => {
                             <p>Hosting the site on <a href="https://cloud.google.com/">Google's Cloud Platform</a> and adding <Links.EL link={{source:'https://firebase.google.com/docs/functions'}}>serverless functions</Links.EL>.</p>
                             <p>Increased testing, using <Links.EL link={{source:'https://jestjs.io/'}}>Jest</Links.EL>, and, at times, <Links.EL link={{source:'https://www.freecodecamp.org/news/test-driven-development-what-it-is-and-what-it-is-not-41fa6bca02a2/'}}>Test Driven Development</Links.EL>.</p>
                         </ul>
-                        <p>I also reduced my dependency on runtime libraries, including <a href="https://getbootstrap.com/">Bootstrap</a>. I have mixed feelings about <a href="https://redux.js.org/">Redux</a> which is a simple and effective approach to state management but is hard to tame. Intrinsic to Redux, however, is functional programming which is an excellent fit for the web. I am grateful to <a href="https://overreacted.io/">Dan Abramov</a>, who created Redux, and <a href="https://www.youtube.com/c/funfunfunction">mpj</a> for their thoughts and instruction on this subject.</p>
-                        <p>Although the project has not yet found its intended audience, I learnt how to define and scope a project, the evolution of <a aria-label="The Evolution of Javascript" href="https://www.modernjs.com/"> JavaScript</a> in just a few years, and many wonderful things about the living world, including the true composition of <a href="https://www.theatlantic.com/science/archive/2019/01/how-lichens-explain-and-re-explain-world/580681/">lichens</a>.</p>
+                        <p>I also reduced my dependency on runtime libraries, including <Links.EL link={{source:'https://getbootstrap.com/'}}>Bootstrap</Links.EL>. I have mixed feelings about <Links.EL link={{source:'https://redux.js.org/'}}>Redux</Links.EL> which is a simple and effective approach to state management but is hard to tame. Intrinsic to Redux, however, is functional programming which is an excellent fit for the web. I am grateful to <Links.EL link={{source:'https://overreacted.io/'}}>Dan Abramov</Links.EL>, who created Redux, and <Links.EL link={{source:'https://www.youtube.com/c/funfunfunction'}}>mpj</Links.EL> for their thoughts and instruction on this subject.</p>
+                        <p>Although the project has not yet found its intended audience, I learnt how to define and scope a project, the evolution of <Links.EL link={{source:'https://www.modernjs.com/'}}> JavaScript</Links.EL> in just a few years, and many wonderful things about the living world, including the true composition of <Links.EL link={{source:'https://www.theatlantic.com/science/archive/2019/01/how-lichens-explain-and-re-explain-world/580681/'}}>lichens</Links.EL>.</p>
                     </p>
                     <p>
-                        <h2><a href="https://danhartley.github.io/snapdragon-verbs/">The Verb</a></h2>
+                        <h2><Links.EL link={{source:'https://danhartley.github.io/snapdragon-verbs/'}}>The Verb</Links.EL></h2>
                         <div>Drills to test knowledge of Spanish and Portuguese verbs.</div>
                         <p>At the outset, I put in place generic rules to avoid the problems I had encountered on the previous project. Any project should now:  
                             <ul class={styles.dashedItemsList}>
@@ -32,13 +32,13 @@ const Projects = () => {
                         </p>
                     </p>
                     <p>
-                        <h2><a href="https://snapdragon-retrieval.netlify.app/providers">Snapdragon Retrieval</a></h2>
+                        <h2><Links.EL link={{source:'https://snapdragon-retrieval.netlify.app/providers'}}>Snapdragon Retrieval</Links.EL></h2>
                         <div>Follow up tests to accompany podcasts and long articles.</div>
-                        <p>I maintained the schedule I had created for The Verb, added support for <a href="https://www.typescriptlang.org/">Typescript</a>, and <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> features:</p>
+                        <p>I maintained the schedule I had created for The Verb, added support for <Links.EL link={{source:'https://www.typescriptlang.org/'}}>Typescript</Links.EL>, and <Links.EL link={{source:'https://jamstack.org/what-is-jamstack/'}}>Jamstack</Links.EL> features:</p>
                         <ul class={styles.dashedItemsList}>
-                            <p><a href="https://nextjs.org/">Next.js</a> for Static Site Generation.</p>
-                            <p><a href="https://www.netlify.com/">netlify</a> to serve pages.</p>
-                            <p>Netlify's <a href="https://www.netlifycms.org/">headless CMS</a>.</p>
+                            <p><Links.EL link={{source:'https://nextjs.org/'}}>Next.js</Links.EL> for Static Site Generation.</p>
+                            <p><Links.EL link={{source:'https://www.netlify.com/'}}>netlify</Links.EL> to serve pages.</p>
+                            <p>Netlify's <Links.EL link={{source:'https://www.netlifycms.org/'}}>headless CMS</Links.EL>.</p>
                         </ul>
                     </p>
                 </p>

@@ -19,7 +19,7 @@ const Services = () => {
                         <li><strong>Fast</strong>: pages are assembled before they are requested so waiting time is reduced.</li>
                         <li><strong>Extensible</strong>: you can change, modify or adapt your site to changing needs.</li>
                     </ul> 
-                    <span>I follow <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</span>
+                    <span>I follow <Links.EL link={{source:'https://jamstack.org/what-is-jamstack/'}}>Jamstack</Links.EL> principles.</span>
                 </p>
 
                 <h2>Existing sites</h2>
@@ -39,8 +39,8 @@ const Services = () => {
                 <p>
                     <span class={styles.internalLink}>I have selected and tested this development stack over the course of <Link href={'/projects'}><a>4 projects</a></Link>.</span>
                 </p>
-                <p>If you would like to discuss an idea or a project, please contact me at <a href="mailto:dbmhartley@protonmail.com" aria-label="email">Daniel Hartley</a>.</p>           
-                <p>For a complete picture of the web technologies I use, this is my <a href="https://danhartley.github.io/snapdragon-redux/wiki/">curriculum vitae</a>.</p>            
+                <p>If you would like to discuss an idea or a project, please contact me at <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL>.</p>           
+                <p>For a complete picture of the web technologies I use, this is my <Links.EL link={{source:'https://danhartley.github.io/snapdragon-redux/wiki/'}}>curriculum vitae</Links.EL>.</p>            
             </section>  
             <Links.RelatedLinks links={[{value:'web-development/sociable-contract',text:'Sociable contract'}]}></Links.RelatedLinks>
         </Layout>

@@ -57,9 +57,9 @@ const Carbon = () => {
             <section>
                 
                 <div class={styles.toc}>
-                    <div><a aria-label="Jump to The origins and properties of carbon on this page" href="#origins-and-properties">The origins and properties of carbon</a><span> 2 minutes</span></div>
-                    <div><a aria-label="Jump to Carbon compounds on this page" href="#carbon-compounds">Carbon compounds</a><span> 2 minutes</span></div>
-                    <div><a aria-label="Jump to The carbon cycle on this page" href="#carbon-cycle">The carbon cycle</a><span> 3 minutes</span></div>
+                    <div><Links.EL link={{source:'#origins-and-properties'}}>The origins and properties of carbon</Links.EL><span> 2 minutes</span></div>
+                    <div><Links.EL link={{source:'#carbon-compounds'}}>Carbon compounds</Links.EL><span> 2 minutes</span></div>
+                    <div><Links.EL link={{source:'#carbon-cycle'}}>The carbon cycle</Links.EL><span> 3 minutes</span></div>
                 </div>
 
                 <Accordion header="Carbon basics">
@@ -67,7 +67,7 @@ const Carbon = () => {
                         <span>Symbol <strong>C</strong>; atomic number <strong>6</strong>; atomic mass <strong>12.011u</strong></span>
                         <span>Nonmetal, solid at room temperature.</span>
                         <span>From the Latin <em>carbo</em> meaning "charcoal".</span>
-                        <span>By mass fourth <span><a href="https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements"> most abundant</a></span> element in the universe.</span>
+                        <span>By mass fourth <span><Links.EL link={{source:'https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements'}}> most abundant</Links.EL></span> element in the universe.</span>
                         <div><Links.EL link={{source:'https://pubchem.ncbi.nlm.nih.gov/element/Carbon'}}>National Center for Biotechnology Information</Links.EL></div>
                     </div>
                 </Accordion>

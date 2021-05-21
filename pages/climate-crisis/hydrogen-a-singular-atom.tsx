@@ -60,9 +60,9 @@ const Hydrogen = () => {
             <section>
                 
                 <div class={styles.toc}>
-                    <div><a href="#origins-and-properties">The origins and properties of hydrogen</a><span> 2 minutes</span></div>
-                    <div><a href="#production">Production</a><span> 3 minutes</span></div>
-                    <div><a href="#conclusion">Potential</a><span> 2 minutes</span></div>
+                    <div><Links.EL link={{source:'#origins-and-properties'}}>The origins and properties of hydrogen</Links.EL><span> 2 minutes</span></div>
+                    <div><Links.EL link={{source:'#production'}}>Production</Links.EL><span> 3 minutes</span></div>
+                    <div><Links.EL link={{source:'#conclusion'}}>Potential</Links.EL><span> 2 minutes</span></div>
                 </div>
 
                 <Accordion header="Hydrogen basics">
@@ -142,7 +142,7 @@ const Hydrogen = () => {
                     <div class={styles.inset}>
                         <span><strong>Anode Reaction</strong> <Formula>2H2O</Formula> → <Formula>O2</Formula> + 4H+ + 4e-</span>
                         <span><strong>Cathode Reaction</strong> 4H+ + 4e- → <Formula>2H2</Formula></span>
-                        <div>An <strong>electrolyte</strong> is a "substance that produces an electrically conducting solution when dissolved in a polar solvent, such as water." <span><a href="https://en.wikipedia.org/wiki/Electrolyte">Wikipedia</a></span></div>
+                        <div>An <strong>electrolyte</strong> is a "substance that produces an electrically conducting solution when dissolved in a polar solvent, such as water." <span><Links.EL link={{source:'https://en.wikipedia.org/wiki/Electrolyte'}}>Wikipedia</Links.EL></span></div>
                     </div>                    
                 </p>
 
