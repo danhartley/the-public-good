@@ -56,14 +56,14 @@ const Facts = () => {
                 <h3>Coal</h3>
                 <p>
                     <div class={styles.quote}>
-                    The formation of coal takes a significant amount of time (on the order of a few million years), and the first coal-bearing rock units appeared about 290-360 million years ago, at a time known as the Carboniferous or "coal-bearing" Period. As well, there are extensive coal deposits from the Cretaceous age - about 65 to 144 million years ago.<span> <a href="https://energyeducation.ca/encyclopedia/Coal_formation">Energy Education: coal formation</a></span>
+                    The formation of coal takes a significant amount of time (on the order of a few million years), and the first coal-bearing rock units appeared about 290-360 million years ago, at a time known as the Carboniferous or "coal-bearing" Period. As well, there are extensive coal deposits from the Cretaceous age - about 65 to 144 million years ago.<span> <Links.EL link={{source:'https://energyeducation.ca/encyclopedia/Coal_formation'}}>Energy Education: coal formation</Links.EL></span>
                     </div>
                 </p>
 
                 <h3>Oil & Gas</h3>
                 <p>
                     <span class={styles.quote}>
-                        70% of oil deposits existing today were formed in the Mesozoic age (252 to 66 million years ago), 20% were formed in the Cenozoic age (65 million years ago), and only 10% were formed in the Paleozoic age (541 to 252 million years ago). This is likely because the Mesozoic age was marked by a tropical climate, with large amounts of plankton in the ocean. <span> <a href="https://energyeducation.ca/encyclopedia/Oil_formation">Energy Education: oil formation</a></span>
+                        70% of oil deposits existing today were formed in the Mesozoic age (252 to 66 million years ago), 20% were formed in the Cenozoic age (65 million years ago), and only 10% were formed in the Paleozoic age (541 to 252 million years ago). This is likely because the Mesozoic age was marked by a tropical climate, with large amounts of plankton in the ocean. <span> <Links.EL link={{source:'https://energyeducation.ca/encyclopedia/Oil_formation'}}>Energy Education: oil formation</Links.EL></span>
                     </span>
                 </p>
 
@@ -87,7 +87,7 @@ const Facts = () => {
                     The IPCC calculates the rise in the global mean surface temperature (GMST) from the beginning of large-scale industrial activity.
                     Their <Links.EL link={{source:'https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_AnnexI_Glossary.pdf'}}>reference period</Links.EL> (PDF) is 1850-1900.
                     <div>
-                        Industrialisation had begun before this date, primarily in England (<a href="https://ourworldindata.org/contributed-most-global-co2">78% of global emissions</a>). 
+                        Industrialisation had begun before this date, primarily in England (<Links.EL link={{source:'https://ourworldindata.org/contributed-most-global-co2'}}>78% of global emissions</Links.EL>). 
                         
                         Dates for the Industrial Revolution in Europe and the United States are typically given as starting in 1760, and ending in 1820, or 1840, but emissions were low by comparison to today, just <Links.EL link={{source:'https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions'}}>4.96 billion tonnes</Links.EL>, and were localised. Prior to this period humans had been burning wood, coal, and clearing land, but emissions were comparatively insignificant.
                         
@@ -122,18 +122,18 @@ const Facts = () => {
 
                  <span class={styles.quote}>*Solar energy has a density over twenty quadrillion times less than oil</span>
 
-                <div><a href="https://energyeducation.ca/encyclopedia/Energy_density">Energy Education | Energy density</a></div>
+                <div><Links.EL link={{source:'https://energyeducation.ca/encyclopedia/Energy_density'}}>Energy Education | Energy density</Links.EL></div>
                 <div><Links.EL link={{source:'https://apcentral.collegeboard.org/courses/ap-environmental-science/classroom-resources/energy-primer-ap-environmental-science-student'}}>An Energy Primer for the AP Environmental Science Student</Links.EL></div>
-                <div><a href="http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf">Vaclav Smil | Power density primer </a>(PDF)</div>
-                <div><a href="https://www.drexel.edu/~/media/Files/greatworks/pdf_sum10/WK8_Layton_EnergyDensities.ashx">A comparison of energy densities of prevalent energy sources in units of joules per cubic meter | Bradley E. Layton Drexel University</a></div>
-                <div><a href="https://en.wikipedia.org/wiki/Comparison_of_commercial_battery_types">Wikipedia | Comparison of commercial battery types</a></div>
+                <div><Links.EL link={{source:'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf'}}>Vaclav Smil | Power density primer </Links.EL>(PDF)</div>
+                <div><Links.EL link={{source:'https://www.drexel.edu/~/media/Files/greatworks/pdf_sum10/WK8_Layton_EnergyDensities.ashx'}}>A comparison of energy densities of prevalent energy sources in units of joules per cubic meter | Bradley E. Layton Drexel University</Links.EL></div>
+                <div><Links.EL link={{source:'https://en.wikipedia.org/wiki/Comparison_of_commercial_battery_types'}}>Wikipedia | Comparison of commercial battery types</Links.EL></div>
 
                 <h3>Power density</h3>
 
                 <Tables.PowerDensities></Tables.PowerDensities>                
 
                 <div>*<Links.EL link={{source:'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf'}}>Power density primer Vaclav Smil</Links.EL> (PDF)</div>
-                <div>+<a href="https://www.sciencedirect.com/science/article/pii/S0301421518305512">The spatial extent of renewable and non-renewable power generation John van Zalk, Paul Behrens</a></div>
+                <div>+<Links.EL link={{source:'https://www.sciencedirect.com/science/article/pii/S0301421518305512'}}>The spatial extent of renewable and non-renewable power generation John van Zalk, Paul Behrens</Links.EL></div>
 
                 <div><Links.EL link={{source:'https://www.volker-quaschning.de/datserv/CO2-spez/index_e.php'}}>Volker Quaschning</Links.EL></div>
 
@@ -168,7 +168,7 @@ const Facts = () => {
                     <div class={styles.quote}>
                         <div>
                             2000 Calories / 1 day * 1 day / 24 hours * 60 minutes * 60 seconds * 4184 Joules / 1 Calories = 96.85 J/second = 96.85W ≈ 100W
-                            <div><a href="https://energyeducation.ca/encyclopedia/Power_servant">Energy Education | Power Servant</a></div>
+                            <div><Links.EL link={{source:'https://energyeducation.ca/encyclopedia/Power_servant'}}>Energy Education | Power Servant</Links.EL></div>
                         </div>
                     </div>
                 </p>

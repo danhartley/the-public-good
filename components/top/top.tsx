@@ -1,10 +1,11 @@
+import Links from 'components/links/Links';
 import styles from 'components/top/Top.module.scss';
 
 const Top = () => {
     return (
         <p class={styles.top}>
             <div class={styles.internalLink}>
-                <a class={styles.bang} href="#top">Back to the top of the page</a>
+                <Links.EL link={{source:'#top'}}>Back to the top of the page</Links.EL>
             </div>
         </p>
     )

@@ -30,34 +30,40 @@ const Hyperlinks = () => {
     ];
 
     return (
-        <Layout header="Well-designed hyperlinks" title="Web development | well-designed hyperlinks" description={'Hyperlink good practices explained. How to create accessible links with respect to size, colour, un/visited, internal/external states.'}>
+        <Layout header="For the love of hyperlinks" title="Web development | For the love of hyperlinks" description={'Hyperlink good practices explained. How to create accessible links with respect to size, colour, un/visited, internal/external states.'}>
             <section>
 
-                <p><div class={styles.inset}><em>Reading time: 7 minutes</em></div></p>
+                {/* <p><div class={styles.inset}><em>Reading time: 7 minutes</em></div></p> */}
 
-                <h2>Going places</h2>
+                <p><div class={styles.summary}>The Hyperlink is a defining feature of the web, a tiny digital instruction that transports us like a magic carpet to far off lands.</div></p>
 
-                <p>Hyperlinks, or simply links, are references to data elsewhere. The links in this article are to pages or documents on other web sites. They are identified by their unique web address, or <Links.EL link={{source:'https://en.wikipedia.org/wiki/URL'}}>URL</Links.EL>.</p>
+                <p>The far off lands are news stories, videos, images, maps, and a multiplicity of other data each with its own, unique uniform resource locator, or <Links.EL link={{source:'https://en.wikipedia.org/wiki/URL'}}>URL</Links.EL>, colloquially known as a web address.</p>
+
+                {/* <p>
+                    <div>The web address of this page is <em>https://www.the-public-good.com/web-development/well-designed-hyperlinks</em>.</div>
+                </p> */}
+
+                <p>The hyperlink, or link, requires only our command to initiate a series of requests and responses which fly around the world before despositing us at our destination.</p>
+
+                <p>Hyperlinks are simple, and although few understand how they work, everyone understands what they do. At least they did, until web developers started playing around with how they look, and behave. They did this not for our benefit, but to show off.</p>
+
+                <h3>It's good to connect</h3>
+
+                <p>Linking to other sites respects the right of the user to explore the web freely.</p>
+
+                <p>Authors use links to connect to resources that support their claims and - because they are courteous - to point out pages that are relevant or interesting to their reader. Their altruism is rewarded by improved <Links.EL link={{source:'https://blog.alexa.com/outbound-links-content-marketing/'}}>search engine rankings</Links.EL>.</p>
 
                 <p>
-                    <div>The address of this page is <em>https://www.https://www.the-public-good.com/web-development/well-designed-hyperlinks</em>.</div>
+                    <div>Connecting to an external resource is like conferring a little bit of praise or, at least, vouching for the worth of the recipient. For this reason it is incumbent on the referrer to check  they are not sending readers to sites behind paywalls or that will bombard them with pop-ups, that will not steal their data, and that will have little or no advertising.</div>
                 </p>
 
-                <p>Web directories like <Links.EL link={{source:'https://en.wikipedia.org/wiki/Yahoo!_Directory'}}>Yahoo! Directory</Links.EL> and <Links.EL link={{source:'https://en.wikipedia.org/wiki/DMOZ'}}>DMOZ</Links.EL> were once the predominant means of discovering and accessing web sites. Initially they were little more than lists of web addresses. As the lists grew larger, they introduced search options. Google dropped the lists altogether.</p>
-
-                <p>A recent report from the data analytics company <Links.EL link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>Alexa</Links.EL> found that search now accounts for 40-60% of visitors to a site, and direct traffic (typically typing in the name of a website) 30-50%. Referrals - links - represent around 10% of visitors to a site, though this is higher for 'non-standard content' such as this site (26.6%). A small amount of traffic comes from social media but for news, weather and information this figure rises to 12.2%.</p>
-
-                <h3>Outward bound</h3>
-
-                <p>Linking to other sites respects the right of the user to explore the web freely. Links may also be used to connect to resources used to advance arguments and support claims. External links - also known as outbound links - benefit readers. They also <Links.EL link={{source:'https://blog.alexa.com/outbound-links-content-marketing/'}}>improve search engine rankings</Links.EL>.</p>
-
-                <p>
-                    <div>The value of external sources is important. I only link to sources whose credentials I trust. I also avoid sites behind paywalls or that bombard the user with pop-ups. I favour sites free of advertising with few exceptions (<Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL> newspaper is one).</div>
-                </p>
+                <p>If you want to link to a site - perhaps it is the only source available - but prefer to keep your association at arm's link, it is possible to make your feelings clear to search engines.</p>
 
                 <p>
                     <div>To increase the security of a site and to avoid endorsing the source of a link the attributes <Links.EL link={{source:'https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/'}}>noopener, noreferrer and nofollow</Links.EL> can be added. Google has introduced 'sponsored' and 'user-generated content' attributes to <Links.EL link={{source:'https://developers.google.com/search/docs/advanced/guidelines/qualify-outbound-links'}}>qualify outbound links</Links.EL> to site sponsors and for links added by users in comments and forums.</div>
                 </p>
+
+                <p>If you don't want to upset your reader, you must be more explicit.</p>
 
                 <h3>Is blue the warmest colour?</h3>
 
@@ -89,16 +95,14 @@ const Hyperlinks = () => {
                 <p>
                 On the other hand, WebAIM warns us not to neglect readers with forms of colour blindness:
                     <div class={styles.quote}>
-                        <span>
-                        Make sure that colors are not the only method of conveying important information.
-                        </span>
-                        <Links.EL link={{source:'https://webaim.org/articles/visual/colorblind'}}>Designing for Color-blindness</Links.EL>
+                        <span>Make sure that colors are not the only method of conveying important information. </span >
+                        <Links.EL link={{source:'https://webaim.org/articles/visual/colorblind'}}>Designing for Color-blindness</Links.EL>                        
                     </div>
                 </p>
 
-                <p>One way to satisfy both requirements - I used it on this site - is to remove the default line and create a new one further down, below the bottom of any descenders. I also make this line faint to minimise distraction.</p>
+                <p>One way to satisfy both requirements is to remove the default line and create a new one further down, below the bottom of any descenders.</p>
 
-                <p>If you are reading on a desktop you will notice mouse hover or keyboard focus causes the line to darken and the cursor to change to a hand with a pointing finger. The cursor change is a default, the darkening (or other change) a convention.</p>
+                <p>If you are reading on a desktop you will notice mouse hover or keyboard focus causes the line to darken, the cursor to change to a hand with a pointing finger, and a box to appear around the link. The cursor change is a default, the darkening (or other change) a convention.</p>
 
                 <h3>Are hyperlinks distracting?</h3>
 
@@ -199,3 +203,8 @@ const Hyperlinks = () => {
 };
 
 export default Hyperlinks;
+
+
+{/* <p>Web directories like <Links.EL link={{source:'https://en.wikipedia.org/wiki/Yahoo!_Directory'}}>Yahoo! Directory</Links.EL> and <Links.EL link={{source:'https://en.wikipedia.org/wiki/DMOZ'}}>DMOZ</Links.EL> were once the predominant means of discovering and accessing web sites. Initially they were little more than lists of web addresses. As the lists grew larger, they introduced search options. Google dropped the lists altogether.</p>
+
+<p>A recent report from the data analytics company <Links.EL link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>Alexa</Links.EL> found that search now accounts for 40-60% of visitors to a site, and direct traffic (typically typing in the name of a website) 30-50%. Referrals - links - represent around 10% of visitors to a site, though this is higher for 'non-standard content' such as this site (26.6%). A small amount of traffic comes from social media but for news, weather and information this figure rises to 12.2%.</p> */}

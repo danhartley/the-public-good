@@ -59,11 +59,15 @@ const Hydrogen = () => {
         <Layout header="Hydrogen - a singular atom" title="Climate crisis | Hydrogen - a singular atom" description={'A synopsis of the element hydrogen: its origin and properties; potential as an energy carrier; and role in reducing greenhouse gas emissions.'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>
             <section>
                 
-                <div class={styles.toc}>
+                {/* <div class={styles.toc}>
                     <div><Links.EL link={{source:'#origins-and-properties'}}>The origins and properties of hydrogen</Links.EL><span> 2 minutes</span></div>
                     <div><Links.EL link={{source:'#production'}}>Production</Links.EL><span> 3 minutes</span></div>
                     <div><Links.EL link={{source:'#conclusion'}}>Potential</Links.EL><span> 2 minutes</span></div>
-                </div>
+                </div> */}
+
+                <p>
+                    <div class={styles.summary}>Hydrogen summary</div>
+                </p>
 
                 <Accordion header="Hydrogen basics">
                     <div class={styles.inset}>
@@ -76,9 +80,11 @@ const Hydrogen = () => {
 
                 <h2 id="origins-and-properties">The origins and properties of hydrogen</h2>
 
-                <p>Hydrogen atoms were fleetingly formed during the Big Bang but it wasn't until the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Recombination_(cosmology)'}}>recombination</Links.EL> 370,000 years later that conditions became favourable for electrons to remain in orbit around atomic nuclei. <span>Hydrogen was the first element in the universe and it is the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements'}}>most abundant</Links.EL>. From it all other elements are formed.</span></p>
+                <p>
+                    Hydrogen atoms were fleetingly formed during the Big Bang but it wasn't until the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Recombination_(cosmology)'}}>recombination</Links.EL> 370,000 years later that conditions became favourable for electrons to remain in orbit around atomic nuclei. <span>Hydrogen was the first element in the universe and it is the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements'}}>most abundant</Links.EL>. From it all other elements are formed.</span>
+                </p>
 
-                <h3>Rarely alone on Earth</h3>
+                <h3>Chemical bonds</h3>
 
                 <p>
                     <div>Hydrogen readily shares <Links.EL link={{source:'https://www.khanacademy.org/science/ap-biology/chemistry-of-life/introduction-to-biological-macromolecules/v/covalent-bonds'}}>covalent bonds</Links.EL> (video) with other elements to form compounds, including water <span><Formula>H2O</Formula></span>, ammonia <Formula>NH3</Formula>, hydrogen sulfide <Formula>H2S</Formula>, and organic compounds, such as hydrocarbons <span><Formula>CnH2n+2</Formula> </span> and carbohydrates <Formula>(CH2O)x</Formula>.</div>

@@ -147,7 +147,7 @@
 .toc {
     @include inset();
     @include bangLink();
-    span {
+    span:nth-child(2) {
         font-style: italic;
     }
 }
@@ -168,6 +168,16 @@
 
 .inset {
     @include inset();
+}
+
+.quote {
+    margin: .5rem 0 1.5rem 0;
+    padding: 0 .5rem;
+    font-size: smaller;
+    display: block;
+    & div {
+        margin: 0.25rem 0 0 0;
+    }
 }
 
 .sub {
@@ -241,16 +251,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .quote {
-        margin: .5rem 0 1.5rem 0;
-        padding: 0 .5rem;
-        font-size: smaller;
-        display: block;
-        & div {
-            margin: 0.25rem 0 0 0;
-        }
-    }    
+    }   
     .centred {
         display: flex;
         align-items: center;

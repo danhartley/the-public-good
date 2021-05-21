@@ -36,7 +36,7 @@ export default function Home() {
 
             <h2>Web development</h2>
             <Links.ILBlock link={{'value': 'web-development/following-the-rules-to-a-well-structured-web-page', 'text': 'Following the rules to a well-structured web page'}}></Links.ILBlock>
-            <Links.ILBlock link={{'value': 'web-development/well-designed-hyperlinks', 'text': 'Well-designed hyperlinks'}}></Links.ILBlock>
+            <Links.ILBlock link={{'value': 'web-development/well-designed-hyperlinks', 'text': 'For the love of hyperlinks'}}></Links.ILBlock>
 
             <p>I specialise in three areas: performance, accessibility, and sustainability.</p>
 

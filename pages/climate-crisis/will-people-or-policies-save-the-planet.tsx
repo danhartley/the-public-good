@@ -27,7 +27,7 @@ const CarbonFootprint = () => {
                     <li>World population: <Links.EL link={{source:'https://ourworldindata.org/world-population-growth'}}>7.55 billion</Links.EL> <a id="data" href="#discrepancy">*</a>.</li>
                 </ul>
                 <div class={styles.inset}>
-                    Emissions have risen worldwide since 2017 with the exception of 2020 when they fell; <a href="https://www.nature.com/articles/d41586-021-00090-3">Nature, 6.4% (2.3 billion tonnes)</a>, <a href="https://www.iea.org/articles/global-energy-review-co2-emissions-in-2020">IEA 5.8%</a>, <a href="https://carbonmonitor.org/">Carbon Monitor 4%</a>.
+                    Emissions have risen worldwide since 2017 with the exception of 2020 when they fell; <Links.EL link={{source:'https://www.nature.com/articles/d41586-021-00090-3">Nature, 6.4% (2.3 billion tonnes)</a>, <Links.EL link={{source:'https://www.iea.org/articles/global-energy-review-co2-emissions-in-2020'}}>IEA 5.8%</Links.EL>, <a href='}}>Carbon Monitor 4%</Links.EL>.
                     <span><Links.EL link={{source:'https://carbonmonitor.org/'}}>Daily estimates</Links.EL> are also available from Carbon Monitor.</span>
                 </div>                
                 </p>

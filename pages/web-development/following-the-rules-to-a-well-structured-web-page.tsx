@@ -84,7 +84,7 @@ const MentalModel = () => {
 
                 <p>Using elements correctly helps users create an accurate model of the page and its contents.</p>     
 
-                                <p>
+                <p>
                     <Accordion header="Schema of the document structure for this page">
                     The head contains meta information about the document such as its author. The content of the page appears in the body.
                     <p>
@@ -183,11 +183,13 @@ const MentalModel = () => {
 
                 <p>These headers are routinely resized, and their colours and fonts changed but it is bad practice to abuse their hierachy or use other elements in their place. </p>
 
-                <h3>The back and forward button</h3>
-                
+                <h3>The back button</h3>
+
+                <p>Pages don't exisit in isolation. Hypertext allows pages to be connected across sites, and maintaining this connection is critical. Users need to move freely from page to page using links and the browser back and forward buttons.</p>
+
                 <p>Use of the keyboard, screen reader, or other assistive devices reveals the semantic structure of the page. They provide an alternative, and at times, improved way of navigating and interacting with a page.</p>
 
-                <p>But pages don't exisit in isolation. Hypertext allows pages to be connected across sites, and maintaining this connection is critical. Users need to move freely from page to page using links and the browser back and forward buttons. <Links.EL link={{source:'https://www.accessibility-developer-guide.com/knowledge/keyboard-only/browsing-websites/'}}>Keyboard navigation</Links.EL> is fast and easy because it skips passive content and relies on the interconnected structures which underpin the web.</p>
+                <p><Links.EL link={{source:'https://www.accessibility-developer-guide.com/knowledge/keyboard-only/browsing-websites/'}}>Keyboard navigation</Links.EL> is fast and easy because it skips passive content and relies on the interconnected structures which underpin the web.</p>
 
                 <h2>The primary goal of a page is to be understood</h2>
 
@@ -261,7 +263,7 @@ const MentalModel = () => {
                 <h2>Links to external references</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:'web-development/well-designed-hyperlinks',text:'Well-designed hyperlinks'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'web-development/well-designed-hyperlinks',text:'For the love of hyperlinks'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

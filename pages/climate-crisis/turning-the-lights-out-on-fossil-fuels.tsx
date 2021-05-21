@@ -43,7 +43,7 @@ const Change = () => {
 
                 <p>The IPCC <Links.EL link={{source:'https://www.ipcc.ch/report/sixth-assessment-report-cycle/'}}>reviews and collates</Links.EL> available data related to the climate in order to produce a synthesis report every 5 to 7 years, in addition to special reports on specific areas of concern, such as the <Links.EL link={{source:'https://www.ipcc.ch/srocc/'}}>cryosphere</Links.EL>, or <Links.EL link={{source:'https://www.ipcc.ch/srccl/'}}>land</Links.EL>. The next report, the sixth assessment of the impact of climate change, will also take into account <Links.EL link={{source:'https://www.ipbes.net/global-assessment'}}>biodiversity and ecosystem services</Links.EL>.</p>
 
-                <p>The IPCC has recorded a rise in temperature <a href="https://www.ncdc.noaa.gov/climate-monitoring/">1°C</a> <a href="https://www.ipcc.ch/sr15/faq/faq-chapter-1/">above pre-industrial levels</a> (1850–1900).</p>
+                <p>The IPCC has recorded a rise in temperature <Links.EL link={{source:'https://www.ncdc.noaa.gov/climate-monitoring/'}}>1°C</Links.EL> <Links.EL link={{source:'https://www.ipcc.ch/sr15/faq/faq-chapter-1/'}}>above pre-industrial levels</Links.EL> (1850–1900).</p>
 
                 <p>This rise in temperature is a consequence of the increase of carbon dioxide in the atmosphere from around <Links.EL link={{source:'https://www.carbonbrief.org/met-office-atmospheric-co2-now-hitting-50-higher-than-pre-industrial-levels'}}>278ppm</Links.EL> between 1750 and 1800 to ~419ppm <Links.EL link={{source:'https://www.co2.earth/daily-co2'}}>today</Links.EL>.</p>
 
@@ -62,7 +62,7 @@ const Change = () => {
                 <p>Commitments have not been honoured.
                     <span class={styles.quote}>
                     After a year disrupted by the Covid-19 pandemic, nations representing only around 28% of global emissions registered new or updated “nationally determined contributions” (NDCs) on the UN’s official registry by the end of the year. Some big emitters did register their NDCs in time, including the UK and EU. But major absences included the US, India and China.
-                    <div><a href="https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition">Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?</a></div>
+                    <div><Links.EL link={{source:'https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition'}}>Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?</Links.EL></div>
                     </span>
                 </p>
 
@@ -122,7 +122,7 @@ const Change = () => {
 
                 <div>
                     <div><span>*</span><Links.EL link={{source:'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf'}}>Power density primer Vaclav Smil</Links.EL></div>
-                    <div><span>+</span><a href="https://www.sciencedirect.com/science/article/pii/S0301421518305512">The spatial extent of renewable and non-renewable power generation John van Zalk, Paul Behrens</a></div>
+                    <div><span>+</span><Links.EL link={{source:'https://www.sciencedirect.com/science/article/pii/S0301421518305512'}}>The spatial extent of renewable and non-renewable power generation John van Zalk, Paul Behrens</Links.EL></div>
                 </div>
 
                 <p>Higher values for renewables exist, but they are often in places - deserts, offshore - far from urban populations where energy demands are highest; this introduces the twin problems of transmission and storage. Locating energy close to demand is particularly hard for renewables due to competition for land (agriculture, amenity, housing), and nuclear (safety).</p>
@@ -227,18 +227,18 @@ const Change = () => {
                     <div class={styles.quote}>
                         <div>Coal accounts for ~27% of world energy consumption by source. </div>
                         <div>Coal provided 43,849 terra-watt hours in 2019, compared to 16,140 terra-watt hours in 1965.</div>
-                        <div><a href="https://ourworldindata.org/energy-mix">Our World in Data | Energy Mix</a></div>
+                        <div><Links.EL link={{source:'https://ourworldindata.org/energy-mix'}}>Our World in Data | Energy Mix</Links.EL></div>
                     </div>
-                    Coal remains the primary source of energy in China (<a href="https://ourworldindata.org/energy/country/china?country=~CHN">57.64%</a>).
+                    Coal remains the primary source of energy in China (<Links.EL link={{source:'https://ourworldindata.org/energy/country/china?country=~CHN'}}>57.64%</Links.EL>).
                 </p>
 
                 <h3>First emitter</h3>
 
                 <p> 
                     <div class={styles.quote}>
-                        Britain was terribly well endowed with coal: when the Revolution started, the amount of carbon sitting in coal under Britain was roughly the same as the amount sitting in oil under Saudi Arabia. <div><a href="https://www.withouthotair.com/c1/page_6.shtml">Sustainable Energy - without the hot air David JC MacKay</a></div>
+                        Britain was terribly well endowed with coal: when the Revolution started, the amount of carbon sitting in coal under Britain was roughly the same as the amount sitting in oil under Saudi Arabia. <div><Links.EL link={{source:'https://www.withouthotair.com/c1/page_6.shtml'}}>Sustainable Energy - without the hot air David JC MacKay</Links.EL></div>
                     </div>
-                    In 1965 the UK was dependent on coal for 59% of its energy needs; dwindling reserves, the discovery of North Sea Gas, and laterly support for renewables has seen a shift in its energy mix. By 2019 coal supplied just <span><a href="https://ourworldindata.org/energy/country/united-kingdom?country=~GBR">3.35%</a> of energy, less than half that of wind power (7.29%)</span>.
+                    In 1965 the UK was dependent on coal for 59% of its energy needs; dwindling reserves, the discovery of North Sea Gas, and laterly support for renewables has seen a shift in its energy mix. By 2019 coal supplied just <span><Links.EL link={{source:'https://ourworldindata.org/energy/country/united-kingdom?country=~GBR'}}>3.35%</Links.EL> of energy, less than half that of wind power (7.29%)</span>.
                 </p>
 
                 <h3>The transition to oil</h3>  
@@ -273,7 +273,7 @@ const Change = () => {
                     <div class={styles.quote}>                    
                         <div>The US has reduced its dependence on fossil fuels in primary energy consumption from 84 to 78%.</div>
                         <div>Germany has reduced its dependence on fossil fuels in primary energy consumption from 85.7 to 80%.</div>
-                        <div><a href="http://vaclavsmil.com/wp-content/uploads/2021/01/71.ENERGIEWENDE.pdf">Vaclav Smil | Energiewende, 20 years later</a></div>
+                        <div><Links.EL link={{source:'http://vaclavsmil.com/wp-content/uploads/2021/01/71.ENERGIEWENDE.pdf'}}>Vaclav Smil | Energiewende, 20 years later</Links.EL></div>
                     </div>
                     Germany may yet benefit from its strategy; whilst the <Links.EL link={{source:'https://ourworldindata.org/energy/country/united-states?country=~USA'}}>US</Links.EL> has reduced emissions in large part by replacing coal with natural gas, <Links.EL link={{label:'Our World in Data Germany: Energy Country Profile', source:'https://ourworldindata.org/energy/country/germany?country=~DEU'}}>Germany has reduced its emissions</Links.EL> by phasing out coal, increasing its dependency on gas, and adding more solar and wind to the energy mix.
                 </p>

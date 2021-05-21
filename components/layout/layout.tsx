@@ -73,7 +73,7 @@ const Layout = ({
             <div id="container" style={mode.style as any} class={styles.container}>                
                 <header>
 
-                    <div class={styles.skiptocontent}><a href="#main">skip to main content</a></div>
+                    <div class={styles.skiptocontent}><Links.EL link={{source:'#main'}}>skip to main content</Links.EL></div>
 
                     <Link href={'/'}>
                         <a class={styles.title} aria-label="Home page">
@@ -93,8 +93,8 @@ const Layout = ({
                     { router.pathname === '/' ? null : <nav aria-label="Published link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
                 </main>
                 <footer role="contentinfo" class={styles.footer}>
-                    <div><span>© <a href="mailto:dbmhartley@protonmail.com" aria-label="email">Daniel Hartley</a> 2021. All rights reserved.</span></div>
-                    <div class={styles.externalList}><a href="https://www.linkedin.com/in/danhartley/">LinkedIn</a> | <a href="https://danhartley.github.io/snapdragon-redux/wiki/">CV</a></div>
+                    <div><span>© <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL> 2021. All rights reserved.</span></div>
+                    <div class={styles.externalList}><Links.EL link={{source:'https://www.linkedin.com/in/danhartley/'}}>LinkedIn</Links.EL> | <Links.EL link={{source:'https://danhartley.github.io/snapdragon-redux/wiki/'}}>CV</Links.EL></div>
                     <div><em ref={bytesTransferred}></em></div>
                 </footer>
             </div>

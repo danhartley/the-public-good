@@ -47,7 +47,7 @@ const Other = () => {
                 <h2>How much energy do websites consume?</h2>
 
                 <p>
-                    <div>Websites come under the heading ICT (Informationand Communication Technology). This category, which covers data centres, networks, and devices, accounts for approximately <a href="https://www.researchgate.net/publication/342643762_New_perspectives_on_internet_electricity_use_in_2030">7%</a> of total global electricity use.</div>
+                    <div>Websites come under the heading ICT (Informationand Communication Technology). This category, which covers data centres, networks, and devices, accounts for approximately <Links.EL link={{source:'https://www.researchgate.net/publication/342643762_New_perspectives_on_internet_electricity_use_in_2030'}}>7%</Links.EL> of total global electricity use.</div>
                 </p>
 
                 <p>There is no concensus around the cost, in terms of energy or greenhouse gas emissions, of delivering a web page. Or even how to measure it. Where the boundary is drawn is significant; in addition to network and data centre costs, there is debate as to whether the energy consumption of the device should be included.

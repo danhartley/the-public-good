@@ -1,6 +1,6 @@
 @import 'styles/mixins.scss';
 
-.card .published {
+section p.published {
     @include bangLink();
-    font-size: .8rem;    
+    font-size: calc(.8rem + .25vw);    
 }

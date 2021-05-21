@@ -14,12 +14,12 @@ const Nature = () => {
 
                 <h2>Food production</h2>
 
-                <p><a href="https://ourworldindata.org/meat-production">Dead animals</a></p>
-                <p><a href="https://en.wikipedia.org/wiki/Selective_breeding">Selective breeding</a></p>
+                <p><Links.EL link={{source:'https://ourworldindata.org/meat-production'}}>Dead animals</Links.EL></p>
+                <p><Links.EL link={{source:'https://en.wikipedia.org/wiki/Selective_breeding'}}>Selective breeding</Links.EL></p>
 
                 <h2>Naturalists</h2>
 
-                <p>One of the most remarkable lines from <a href="https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review">The Economics of Biodiversity</a> report comes from the preface,
+                <p>One of the most remarkable lines from <Links.EL link={{source:'https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review'}}>The Economics of Biodiversity</Links.EL> report comes from the preface,
                     <span class={styles.quote}>
                         If we care about our common future and the common future of our descendants, we should all in part be naturalists.
                     </span>
@@ -33,5 +33,5 @@ const Nature = () => {
 
 export default Nature;
 
-{/* <a aria-label="Scientific American article on Wrangham's theory that cooking spurred our evolution" href="https://www.scientificamerican.com/article/cooking-up-bigger-brains/">cook</a> */}
+{/* <Links.EL link={{source:'https://www.scientificamerican.com/article/cooking-up-bigger-brains/'}}>cook</Links.EL> */}
 {/* One unproven theory proposes that our own species, homo sapiens, was fire-dependent, and could not have evolved if it hadn't been for the ability of homo erectus to control fire. */}

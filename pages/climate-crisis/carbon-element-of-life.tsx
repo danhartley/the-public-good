@@ -56,11 +56,11 @@ const Carbon = () => {
 
             <section>
                 
-                <div class={styles.toc}>
+                {/* <div class={styles.toc}>
                     <div><Links.EL link={{source:'#origins-and-properties'}}>The origins and properties of carbon</Links.EL><span> 2 minutes</span></div>
                     <div><Links.EL link={{source:'#carbon-compounds'}}>Carbon compounds</Links.EL><span> 2 minutes</span></div>
                     <div><Links.EL link={{source:'#carbon-cycle'}}>The carbon cycle</Links.EL><span> 3 minutes</span></div>
-                </div>
+                </div> */}
 
                 <Accordion header="Carbon basics">
                     <div class={styles.inset}>
@@ -72,9 +72,11 @@ const Carbon = () => {
                     </div>
                 </Accordion>
 
-                <h2 id="origins-and-properties">The origins and properties of carbon</h2>
+                {/* <h2 id="origins-and-properties">The origins and properties of carbon</h2> */}
 
-                <p>Carbon atoms are formed in dying stars under extreme and improbable conditions during a set of nuclear fusion reactions known as the <Links.EL link={{label:'Stanford article on the triple-alpha process', source:'href="http://large.stanford.edu/courses/2017/ph241/udit2/'}}>triple-alpha process</Links.EL>. On collapse of the star, in a supernova, the atoms are blown out, eventually forming new star systems such as our own.</p>
+                <p>
+                    <div class={styles.summary}>Carbon atoms are formed in dying stars under extreme and improbable conditions during a set of nuclear fusion reactions known as the <Links.EL link={{label:'Stanford article on the triple-alpha process', source:'href="http://large.stanford.edu/courses/2017/ph241/udit2/'}}>triple-alpha process</Links.EL>. On collapse of the star, in a supernova, the atoms are blown out, eventually forming new star systems such as our own.</div>
+                </p>
                 
                 <p>In the first 20 minutes after the Big Bang, protons, neutrons and electrons were created. It took hundreds of thousands of years of further cooling before the average energies of nuclei and electrons were low enough to form stable hydrogen and helium atoms.</p>
 
