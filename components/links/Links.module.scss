@@ -6,13 +6,6 @@
     }
 }
 
-// .related {
-//     @include section();
-//     h2 {
-//         margin: 0;
-//     }
-// }
-
 .externalLink {
     @include externalLink();
 }

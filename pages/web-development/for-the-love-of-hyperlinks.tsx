@@ -37,13 +37,13 @@ const Hyperlinks = () => {
 
                 <p><div class={styles.summary}>The Hyperlink is a defining feature of the web, a tiny digital instruction that transports us like a magic carpet to far off lands.</div></p>
 
-                <p>The far off lands are news stories, videos, images, maps, and a multiplicity of other data each with its own, unique uniform resource locator, or <Links.EL link={{source:'https://en.wikipedia.org/wiki/URL'}}>URL</Links.EL>, colloquially known as a web address.</p>
+                <p>The far off lands are news stories, videos, applications, images, maps, and a multiplicity of other data each with its own, unique uniform resource locator, or <Links.EL link={{source:'https://en.wikipedia.org/wiki/URL'}}>URL</Links.EL>, colloquially known as a web address.</p>
 
                 {/* <p>
-                    <div>The web address of this page is <em>https://www.the-public-good.com/web-development/well-designed-hyperlinks</em>.</div>
+                    <div>The web address of this page is <em>https://www.the-public-good.com/web-development/for-the-love-of-hyperlinks</em>.</div>
                 </p> */}
 
-                <p>The hyperlink, or link, requires only our command to initiate a series of requests and responses which fly around the world before despositing us at our destination.</p>
+                <p>The hyperlink, or link, requires only our command to initiate a series of requests and responses which fly around the world before depositing us at our destination.</p>
 
                 <p>Hyperlinks are simple, and although few understand how they work, everyone understands what they do. At least they did, until web developers started playing around with how they look, and behave. They did this not for our benefit, but to show off.</p>
 
@@ -67,9 +67,9 @@ const Hyperlinks = () => {
 
                 <h3>Is blue the warmest colour?</h3>
 
-                <p><div>There are <Links.EL link={{label: 'MIT Hyperlinking in Journalism', source: 'https://pdos.csail.mit.edu/~neha/hyperlinks/main-no.html'}}>differences of opinion</Links.EL> as to how to represent links. The default colour for links the user hasn't clicked on is <span class={styles.defaultBlue}>blue</span>.</div></p>
+                <p><div>The defaults for how links should look are not perfect, and a little bit ugly, so naturally there are <Links.EL link={{label: 'MIT Hyperlinking in Journalism', source: 'https://pdos.csail.mit.edu/~neha/hyperlinks/main-no.html'}}>differences of opinion</Links.EL> as to how they should appear.</div></p>
 
-                <p>Why blue? According to Tim Berners-Lee, there is no good reason, <Links.EL link={{source: 'https://www.w3.org/People/Berners-Lee/FAQ.html'}}>it is just a default</Links.EL>.</p>
+                <p>The default colour for links the user hasn't clicked on is <span class={styles.defaultBlue}>blue</span>. Why blue? According to Tim Berners-Lee, there is no good reason, <Links.EL link={{source: 'https://www.w3.org/People/Berners-Lee/FAQ.html'}}>it is just a default</Links.EL>.</p>
 
                 <p>                    
                     <div class={styles.quote}>
@@ -82,13 +82,19 @@ const Hyperlinks = () => {
                     <div>Dark blue, or <span class={styles.defaultPurple}>purple</span> is used for links the user has clicked on.</div>
                 </p>
 
-                <p>The reason to distinguish between visited and unvisited links is to save the reader linking to pages they have already visited. This is especially important if the link is to an external source.</p>
+                <p>The reason to distinguish between visited and unvisited links is to save us from linking to pages we have already visited. This is especially important if the link is to an external source.</p>
 
-                <p>The default colours can be overridden as I have done for this site. In order to meet user's expectations I followed WebAIM's advice on <Links.EL link={{source:'https://webaim.org/blog/wcag-2-0-and-link-colors/'}}>Link Colors</Links.EL> and used blue and purple hues that provide good colour contrasts. You can <Links.EL link={{source:'https://wave.webaim.org/report#/https://www.the-public-good.com/'}}>check for contrast errors</Links.EL> on this site.</p>                
+                <p>
+                    <div>It is tempting to override the defaults for links, and there are sound reasons for doing so. I will come to these.</div>
+                </p>
+
+                <p>Developers have a responsibility to seek guidance as to which colours are legible. WebAIM adocates on behalf of those with disabilities but their advice is pertinent to everyone. For this site, I have followed their recommendations on <Links.EL link={{source:'https://webaim.org/blog/wcag-2-0-and-link-colors/'}}>appropriate colours for links</Links.EL>. Since the default colours for un/visited sites are blue and dark blue/purple I have selected hues of these two that work in both light and dark mode.</p>
+
+                <p>You can check my selections for <Links.EL link={{source:'https://wave.webaim.org/report#/https://www.the-public-good.com/'}}>contrast errors</Links.EL>.</p>
                 
                 <h3>Underlining issues</h3>
 
-                <p>By default hyperlink text is underlined. How does this affect legibility?</p>
+                <p>By default hyperlink text is underlined. Does this affect our reading speed or comprehension?</p>
 
                 <p>The British Dyslexia Society's friendly style guide points out that <Links.EL link={{source:'https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide'}}>underlining text</Links.EL> can cause text to run together because the line cuts through the descenders of characters like g and y.</p>
                 
@@ -102,7 +108,9 @@ const Hyperlinks = () => {
 
                 <p>One way to satisfy both requirements is to remove the default line and create a new one further down, below the bottom of any descenders.</p>
 
-                <p>If you are reading on a desktop you will notice mouse hover or keyboard focus causes the line to darken, the cursor to change to a hand with a pointing finger, and a box to appear around the link. The cursor change is a default, the darkening (or other change) a convention.</p>
+                <p>If you are reading on a desktop you will notice mouse over or keyboard focus on links on this site cause the line under the text to darken, the cursor to change to a hand with a pointing finger, and a box to appear around the link.</p>
+
+                <p>The cursor change is a default, the darkening of the line a convention and some sort of box increasingly common. The idea is to avoid ambiguity and make it clear that here is something worthy paying attention to.</p>
 
                 <h3>Are hyperlinks distracting?</h3>
 
