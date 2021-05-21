@@ -57,19 +57,19 @@ const externalLinks = [
 const Hydrogen = () => {
     return (
         <Layout header="Hydrogen - a singular atom" title="Climate crisis | Hydrogen - a singular atom" description={'A synopsis of the element hydrogen: its origin and properties; potential as an energy carrier; and role in reducing greenhouse gas emissions.'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>
-            <section class={styles.card}>
+            <section>
                 
-                <div class={styles.inset}>
-                    <div class={styles.bang}><a href="#origins-and-properties">The origins and properties of hydrogen</a><span class={styles.italic}> 2 minutes</span></div>
-                    <div class={styles.bang}><a href="#production">Production</a><span class={styles.italic}> 3 minutes</span></div>
-                    <div class={styles.bang}><a href="#conclusion">Potential</a><span class={styles.italic}> 2 minutes</span></div>
+                <div class={styles.toc}>
+                    <div><a href="#origins-and-properties">The origins and properties of hydrogen</a><span> 2 minutes</span></div>
+                    <div><a href="#production">Production</a><span> 3 minutes</span></div>
+                    <div><a href="#conclusion">Potential</a><span> 2 minutes</span></div>
                 </div>
 
                 <Accordion header="Hydrogen basics">
                     <div class={styles.inset}>
-                        <span>Symbol <span class={styles.bold}>H</span>; atomic number <span class={styles.bold}>1</span>; atomic mass <span class={styles.bold}>1.0080u</span></span>
+                        <span>Symbol <strong>H</strong>; atomic number <strong>1</strong>; atomic mass <strong>1.0080u</strong></span>
                         <span>Nonmetal, naturally occurring as a gas H<span class={styles.sub}>2</span> at room temperature.</span>
-                        <span>Derived from greek <span class={styles.italic}>hydro</span>, "water", and <span class={styles.italic}>genes</span>, "forming".</span>                        
+                        <span>Derived from greek <em>hydro</em>, "water", and <em>genes</em>, "forming".</span>                        
                         <div><Links.EL link={{source:'https://pubchem.ncbi.nlm.nih.gov/element/Hydrogen'}}>National Center for Biotechnology Information</Links.EL></div>
                     </div>
                 </Accordion>
@@ -85,7 +85,7 @@ const Hydrogen = () => {
                 </p>
 
                 <p>
-                    <div>The bonds in these compounds are polar. In a molecule of water, for example, the shared electrons spend more time near the (more electronegative) oxygen atom, which therefore takes on a partial negative charge. The hydrogen end of the molecule, where the electron spends less time, takes on a partial positive charge. Molecules of water position themselves in response to these partial charges; the hydrogen of one molecule being attracted to the oxygen of another (unlike charges attract), to form a <span class={styles.bold}>hydrogen bond</span>.</div>
+                    <div>The bonds in these compounds are polar. In a molecule of water, for example, the shared electrons spend more time near the (more electronegative) oxygen atom, which therefore takes on a partial negative charge. The hydrogen end of the molecule, where the electron spends less time, takes on a partial positive charge. Molecules of water position themselves in response to these partial charges; the hydrogen of one molecule being attracted to the oxygen of another (unlike charges attract), to form a <strong>hydrogen bond</span>.</div>
                 </p>
 
                 <p>Hydrogen bonds explain cohesion (why water molecules 'bead'), and the relatively high boiling point of water - energy is needed to break apart the hydrogen bonds.</p>
@@ -114,9 +114,9 @@ const Hydrogen = () => {
                         <p>In a final step, the "pressure-swing adsorption" reaction, carbon dioxide and other impurities are removed from the gas stream, to leave pure hydrogen.</p>
                         <p>
                             <div class={styles.inset}>
-                                <span class={styles.bold}>Steam-methane reforming reaction</span>
+                                <strong>Steam-methane reforming reaction</strong>
                                 <span><Formula>CH4</Formula> + <Formula>H2O</Formula> (+heat) → <Formula>CO</Formula> + 3<Formula>H2</Formula></span>
-                                <span class={styles.bold}>Water-gas shift reaction</span>
+                                <strong>Water-gas shift reaction</strong>
                                 <span>CO + <Formula>H2O</Formula> → <Formula>CO2</Formula>  + <Formula>H2</Formula> (+ small amount of heat)</span>
                             </div>
                         </p>
@@ -127,9 +127,9 @@ const Hydrogen = () => {
                     <div class={styles.inset}>
                         <p>The methane and other hydrocarbons in natural gas react with a limited amount of oxygen to partially oxidise the hydrocarbons. The carbon monoxide produced is once again reacted with water in the "water-gas shift reaction".
                             <div class={styles.inset}>
-                                <span class={styles.bold}>Partial oxidation of methane reaction</span>
+                                <strong>Partial oxidation of methane reaction</span>
                                 <span><Formula>CH4</Formula> + <Formula>½O2</Formula> → <Formula>CO</Formula> + <Formula>2H2</Formula> (+ heat)</span>
-                                <span class={styles.bold}>Water-gas shift reaction</span>
+                                <strong>Water-gas shift reaction</span>
                                 <span>CO + <Formula>H2O</Formula> → <Formula>CO2</Formula>  + <Formula>H2</Formula> (+ small amount of heat)</span>
                             </div>
                         </p>
@@ -140,19 +140,19 @@ const Hydrogen = () => {
 
                 <p>Electrolysis is a process whereby electricity is used to split water into hydrogen and oxygen. The process <Links.EL link={{label: 'Electrolysis varies depending on the electrolyte selected', source:'https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis'}}>varies</Links.EL> depending on the electrolyte selected. Oxygen gas forms at the anode, hydrogen gas at the cathode.
                     <div class={styles.inset}>
-                        <span><span class={styles.bold}>Anode Reaction</span> <Formula>2H2O</Formula> → <Formula>O2</Formula> + 4H+ + 4e-</span>
-                        <span><span class={styles.bold}>Cathode Reaction</span> 4H+ + 4e- → <Formula>2H2</Formula></span>
-                        <div class={styles.small}>An <span class={styles.bold}>electrolyte</span> is a "substance that produces an electrically conducting solution when dissolved in a polar solvent, such as water." <span><a href="https://en.wikipedia.org/wiki/Electrolyte">Wikipedia</a></span></div>
+                        <span><strong>Anode Reaction</span> <Formula>2H2O</Formula> → <Formula>O2</Formula> + 4H+ + 4e-</span>
+                        <span><strong>Cathode Reaction</span> 4H+ + 4e- → <Formula>2H2</Formula></span>
+                        <div class={styles.small}>An <strong>electrolyte</span> is a "substance that produces an electrically conducting solution when dissolved in a polar solvent, such as water." <span><a href="https://en.wikipedia.org/wiki/Electrolyte">Wikipedia</a></span></div>
                     </div>                    
                 </p>
 
-                <p>Electrolysis can produce hydrogen with no greenhouse gas emissions, if the original source of the energy used is renewable. The process is currently 70-80% efficient; for every 40kWh of energy produced 50–55kWh of electricity is required. That is <span class={styles.italic}>less</span> energy is produced than is put in. 95% efficiency has been <Links.EL link={{label:'95% efficiency claimed for electrolysis', source:'https://www.h2pro.co/'}}>claimed</Links.EL> but not proven in production.</p>
+                <p>Electrolysis can produce hydrogen with no greenhouse gas emissions, if the original source of the energy used is renewable. The process is currently 70-80% efficient; for every 40kWh of energy produced 50–55kWh of electricity is required. That is <em>less</span> energy is produced than is put in. 95% efficiency has been <Links.EL link={{label:'95% efficiency claimed for electrolysis', source:'https://www.h2pro.co/'}}>claimed</Links.EL> but not proven in production.</p>
 
                 <p>
                     <div>There are several <Links.EL link={{label:'US Energy article on Hydrogen Fuel Basics', source:'href="https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics"'}}>other methods of hydrogen production</Links.EL> including photobiological, photoelectrochemical, solar thermochemical and biological processes.</div>
                 </p>
 
-                <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><span class={styles.italic}>high</span></span> energy <Links.IL link={{source:'facts#energy'}}>density</Links.IL> by mass).</p>
+                <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><em>high</span></span> energy <Links.IL link={{source:'facts#energy'}}>density</Links.IL> by mass).</p>
 
                 <p>A fraction of hydrogen is currently produced from low carbon energy; the latest figure for the EU is <Links.EL link={{label:'FCHO PDF report Hydrogen molecule market', source:'href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf'}}>0.1%</Links.EL>. Global production of hydrogen from electrolysis is less than <Links.EL link={{label:'IEA report on the future of hydrogen', source:'https://www.iea.org/reports/the-future-of-hydrogen'}}>0.1%</Links.EL>.</p>
 
@@ -166,7 +166,7 @@ const Hydrogen = () => {
 
                 <p>
                     <div>Fuel cells can be used at a wide range of scales from a power station to a laptop. They work like batteries but do not run down, producing electricity as long as there is fuel. They are also efficient, converting chemical energy to electrical energy at around 60% efficiency; this compares well to an average of <Links.EL link={{source:'https://cefrc.princeton.edu/sites/cefrc/files/reitz_princeton-day1-hour1-2018.pdf'}}>16% efficiency for gas combustion engines</Links.EL>.</div>
-                    <div class={styles.inset}><span class={styles.bold}>How fuel cells work</span></div>
+                    <div class={styles.inset}><strong>How fuel cells work</span></div>
                     <div class={styles.quote}>                        
                         <span>A fuel, such as hydrogen, is fed to the anode, and air is fed to the cathode. In a hydrogen fuel cell, a catalyst at the anode separates hydrogen molecules into protons and electrons, which take different paths to the cathode. The electrons go through an external circuit, creating a flow of electricity.</span>
                         <div><Links.EL link={{source:'https://www.energy.gov/eere/fuelcells/fuel-cells'}}>How fuel cells work | US Energy Efficiency & Renewable Energy</Links.EL></div>
@@ -195,7 +195,7 @@ const Hydrogen = () => {
 
                 <p>
                     <div class={styles.quote}>
-                        <span>Producing hydrogen from natural gas with carbon capture and storage, so-called blue hydrogen, could also be <span class={styles.italic}>the key to keeping Norwegian gas valuable in a low carbon future</span> [emphasis added].</span>
+                        <span>Producing hydrogen from natural gas with carbon capture and storage, so-called blue hydrogen, could also be <em>the key to keeping Norwegian gas valuable in a low carbon future</span> [emphasis added].</span>
                         <div><Links.EL link={{source:'https://www.equinor.com/en/what-we-do/hydrogen.html'}}>Equinor formerly Statoil (the Norwegian State Oil company)</Links.EL></div>
                     </div>
                 </p>
@@ -216,13 +216,13 @@ const Hydrogen = () => {
 
             </section>
 
-            <section class={styles.card}>
+            <section>
                 <p>
                     <Quiz title="hydrogen-a-singular-atom" link="Take the hydrogen test"></Quiz>
                 </p>
             </section>
 
-            <section class={styles.card}>
+            <section>
                 <h2>References</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>            

@@ -5,7 +5,7 @@ import Links from 'components/links/Links';
 const Nature = () => {
     return (
         <Layout title="Nature" description={'Nature'}>
-            <section class={styles.card}>
+            <section>
                 <h1>Nature</h1>
 
                 <h2>Abstract</h2>

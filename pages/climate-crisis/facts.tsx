@@ -7,14 +7,14 @@ const Facts = () => {
 
     return (
         <Layout header="Facts" title="Facts" description={'Facts pertinent to the climate crisis: timescales, emissions values, energy and power densities, and how to calculate horsepower.'}>
-            <section class={styles.card}>
+            <section>
 
                 <div class={styles.menu}>
-                    <span class={styles.bang}><a href="#carbon">Carbon</a></span>
-                    <span class={styles.bang}><a href="#time">Time</a></span>
-                    <span class={styles.bang}><a href="#emissions">Emissions</a></span>
-                    <span class={styles.bang}><a href="#energy">Energy</a></span>
-                    <span class={styles.bang}><a href="#photosynthesis">Photosynthesis</a></span>
+                    <span><a href="#carbon">Carbon</a></span>
+                    <span><a href="#time">Time</a></span>
+                    <span><a href="#emissions">Emissions</a></span>
+                    <span><a href="#energy">Energy</a></span>
+                    <span><a href="#photosynthesis">Photosynthesis</a></span>
                 </div>
 
                 <h2 id="carbon">Carbon & CO2</h2>

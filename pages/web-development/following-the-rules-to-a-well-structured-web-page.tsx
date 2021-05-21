@@ -72,9 +72,9 @@ const MentalModel = () => {
 
     return (
         <Layout header="Following the rules to a well-structured web page" title="Web development - following the rules to a well-structured web page" description={'Web development - the shared structure of web pages'}>
-            <section class={styles.card}>
+            <section>
 
-                <p><div class={styles.inset}><span class={styles.italic}>Reading time: 6 minutes</span></div></p>
+                <p><div class={styles.inset}><em>Reading time: 6 minutes</em></div></p>
 
                 <p><div class={styles.summary}>Web pages take many forms, but like species branching from a common ancestor, they share a basic structure.</div></p>
 
@@ -92,24 +92,24 @@ const MentalModel = () => {
                             <li>head</li>
                             <li>body
                                 <li>
-                                    <span class={styles.bold}>header</span> 
+                                    <strong>header</strong> 
                                     <ul>
                                         <li>nav</li>
                                     </ul>
                                 </li>                                                                    
                                 <li>
-                                    <span class={styles.bold}>main</span>
+                                    <strong>main</strong>
                                     <ul>
-                                        <li class={styles.italic}>h1 <span>the shared structure of web pages</span></li>
+                                        <li><em>h1</em> <span>the shared structure of web pages</span></li>
                                         <li>p <span>Web pages take many forms…</span></li>
                                         <li>p…</li>
-                                        <li class={styles.italic}>h2 <span>HTML elements and tags</span></li>
+                                        <li><em>h2</em> <span>HTML elements and tags</span></li>
                                         <li>p…</li>
                                     </ul>
                                 </li>
                             </li>
                             <li>
-                                <li><span class={styles.bold}>footer</span></li>
+                                <li><strong>footer</strong></li>
                                 <li></li>
                             </li>
                         </ul>
@@ -123,7 +123,7 @@ const MentalModel = () => {
 
                 <p><span>{'<p>This is a paragraph.</p>'}</span></p>
 
-                <p>This instruction is declarative; it specifies semantic intention, but it is not prescriptive. Specific representation is left to the discretion of web <span class={styles.italic}>application</span> authors (the people responsible for browsers like Chrome, Firefox, Edge, Tor, and Opera), and web developers.</p>
+                <p>This instruction is declarative; it specifies semantic intention, but it is not prescriptive. Specific representation is left to the discretion of web <em>application</span> authors (the people responsible for browsers like Chrome, Firefox, Edge, Tor, and Opera), and web developers.</p>
 
                 <p>Interpretation of an instruction need not be visual; an audio device or application, such as a screen reader represents the space before and after a paragraph in units of time, not space.</p>
 
@@ -257,7 +257,7 @@ const MentalModel = () => {
 
             <Published strDate='Tue 25 May 2021'></Published>
         
-            <section class={styles.card}>
+            <section>
                 <h2>Links to external references</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>

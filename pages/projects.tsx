@@ -5,7 +5,7 @@ import styles from 'pages/pages.module.scss';
 const Projects = () => {
     return (
         <Layout header="Projects" title="Web Projects" description={'Web Projects'}>
-            <section class={styles.card}>
+            <section>
 
                 <p>                             
                     <p><h2><a href="https://www.learn-the-planet.com/">Learn the Planet</a></h2>                                   

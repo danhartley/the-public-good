@@ -31,16 +31,16 @@ const Hyperlinks = () => {
 
     return (
         <Layout header="Well-designed hyperlinks" title="Web development | well-designed hyperlinks" description={'Hyperlink good practices explained. How to create accessible links with respect to size, colour, un/visited, internal/external states.'}>
-            <section class={styles.card}>
+            <section>
 
-                <p><div class={styles.inset}><span class={styles.italic}>Reading time: 7 minutes</span></div></p>
+                <p><div class={styles.inset}><em>Reading time: 7 minutes</em></div></p>
 
                 <h2>Going places</h2>
 
                 <p>Hyperlinks, or simply links, are references to data elsewhere. The links in this article are to pages or documents on other web sites. They are identified by their unique web address, or <Links.EL link={{source:'https://en.wikipedia.org/wiki/URL'}}>URL</Links.EL>.</p>
 
                 <p>
-                    <div>The address of this page is <span class={styles.italic}>https://www.https://www.the-public-good.com/web-development/well-designed-hyperlinks</span>.</div>
+                    <div>The address of this page is <em>https://www.https://www.the-public-good.com/web-development/well-designed-hyperlinks</em>.</div>
                 </p>
 
                 <p>Web directories like <Links.EL link={{source:'https://en.wikipedia.org/wiki/Yahoo!_Directory'}}>Yahoo! Directory</Links.EL> and <Links.EL link={{source:'https://en.wikipedia.org/wiki/DMOZ'}}>DMOZ</Links.EL> were once the predominant means of discovering and accessing web sites. Initially they were little more than lists of web addresses. As the lists grew larger, they introduced search options. Google dropped the lists altogether.</p>
@@ -125,7 +125,7 @@ const Hyperlinks = () => {
                 <h3>Internal links</h3>
 
                 <p>
-                    <div>I've been talking about external links. The <span class={styles.italic}>internal</span> links on this site are a different colour and have a dashed line (though it turns solid on hover/focus). Because these links form part of the site navigation, I make no distinction between un/visited internal links. I don't want to discourage a reader clicking on an internal link the content of which may have changed.</div>                    
+                    <div>I've been talking about external links. The <em>internal</span> links on this site are a different colour and have a dashed line (though it turns solid on hover/focus). Because these links form part of the site navigation, I make no distinction between un/visited internal links. I don't want to discourage a reader clicking on an internal link the content of which may have changed.</div>                    
                 </p>                
 
                 <p>The Guardian, a large site with many internal references across different sections of the paper, makes no distinction between external and internal links, or between visited and unvisited links.</p>
@@ -188,7 +188,7 @@ const Hyperlinks = () => {
 
             <Published strDate='Thu 13 May 2021'></Published>
     
-            <section class={styles.card}>
+            <section>
                 <h2>References</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>

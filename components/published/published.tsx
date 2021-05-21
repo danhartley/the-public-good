@@ -9,7 +9,7 @@ const Published = ({strDate, edited = null}) => {
                         : null;
 
     return (
-        <section class={styles.card}>
+        <section>
             <p class={styles.published}>
                 <div>
                     <div>Published: {new Date(strDate).toDateString()}</div>

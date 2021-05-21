@@ -54,19 +54,19 @@ const Carbon = () => {
     return (
         <Layout title="Climate crisis | Carbon - element of life" header="Carbon - element of life" description={'A synopsis of the element carbon: its origin and properties; importance to life; the carbon cycle; and its impact as a greenhouse gas.'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
 
-            <section class={styles.card}>
+            <section>
                 
-                <div class={styles.inset}>
-                    <div class={styles.bang}><a aria-label="Jump to The origins and properties of carbon on this page" href="#origins-and-properties">The origins and properties of carbon</a><span class={styles.italic}> 2 minutes</span></div>
-                    <div class={styles.bang}><a aria-label="Jump to Carbon compounds on this page" href="#carbon-compounds">Carbon compounds</a><span class={styles.italic}> 2 minutes</span></div>
-                    <div class={styles.bang}><a aria-label="Jump to The carbon cycle on this page" href="#carbon-cycle">The carbon cycle</a><span class={styles.italic}> 3 minutes</span></div>
+                <div class={styles.toc}>
+                    <div><a aria-label="Jump to The origins and properties of carbon on this page" href="#origins-and-properties">The origins and properties of carbon</a><span> 2 minutes</span></div>
+                    <div><a aria-label="Jump to Carbon compounds on this page" href="#carbon-compounds">Carbon compounds</a><span> 2 minutes</span></div>
+                    <div><a aria-label="Jump to The carbon cycle on this page" href="#carbon-cycle">The carbon cycle</a><span> 3 minutes</span></div>
                 </div>
 
                 <Accordion header="Carbon basics">
                     <div class={styles.inset}>
-                        <span>Symbol <span class={styles.bold}>C</span>; atomic number <span class={styles.bold}>6</span>; atomic mass <span class={styles.bold}>12.011u</span></span>
+                        <span>Symbol <strong>C</strong>; atomic number <strong>6</strong>; atomic mass <strong>12.011u</strong></span>
                         <span>Nonmetal, solid at room temperature.</span>
-                        <span>From the Latin <span class={styles.italic}>carbo</span> meaning "charcoal".</span>
+                        <span>From the Latin <em>carbo</em> meaning "charcoal".</span>
                         <span>By mass fourth <span><a href="https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements"> most abundant</a></span> element in the universe.</span>
                         <div><Links.EL link={{source:'https://pubchem.ncbi.nlm.nih.gov/element/Carbon'}}>National Center for Biotechnology Information</Links.EL></div>
                     </div>
@@ -91,7 +91,7 @@ const Carbon = () => {
                 <Accordion header="Covalent bonds">                    
                     <div class={styles.inset}>
                         <div>Electrons are arranged in orbitals about the nucleus of an atom. An electron in the outermost or valence orbital is able to form a pair with a valence electron from another atom.</div>
-                        <div>These <span class={styles.bold}>covalent bonds</span> make atoms both more stable and cause them to be attracted to one another. This attraction equates to energy which is released when the bond is broken through combustion.</div>
+                        <div>These <strong>covalent bonds</strong> make atoms both more stable and cause them to be attracted to one another. This attraction equates to energy which is released when the bond is broken through combustion.</div>
                         <div>In diamond, each carbon atom shares electrons with four other carbon atoms, forming 4 single covalent bonds.</div>
                         <div>In carbon dioxide, each carbon atom shares 2 electrons with each oxygen atom, so that 2 double covalent bonds are formed.</div>
                         <div><Links.EL link={{source:'https://www.khanacademy.org/science/ap-biology/chemistry-of-life/introduction-to-biological-macromolecules/v/covalent-bonds'}}>Covalent bonds | Khan Academy</Links.EL></div>
@@ -134,8 +134,8 @@ const Carbon = () => {
                     <div class={styles.inset}>
                         <div>C<span class={styles.sub}>4</span>H<span class={styles.sub}>10</span> - butane and C<span class={styles.sub}>8</span>H<span class={styles.sub}>18</span> - octane are pure hydrocarbons. Petrol is a mixture of many hydrocarbons.</div>
                         <div>Naturally occurring, unrefined fossil fuels, such as crude oil and coal, contain impurities which are released when they are burnt. Coal, for example, is of variable quality; higher grade forms such as anthracite have a higher ratio of carbon to other elements, including oxygen - O, nitrogen - N and sulfur - S.</div>
-                        <div>Low grade <span class={styles.bold}>bituminous</span> coal has the formula <span class={styles.bold}>C<span class={styles.sub}>137</span>H<span class={styles.sub}>97</span>O<span class={styles.sub}>9</span>NS</span>.</div>
-                        <div>High grade <span class={styles.bold}>anthracite</span> has the formula <span class={styles.bold}>C<span class={styles.sub}>240</span>H<span class={styles.sub}>99</span>O<span class={styles.sub}>4</span>NS</span>.</div>
+                        <div>Low grade <strong>bituminous</strong> coal has the formula <strong>C<span class={styles.sub}>137</span>H<span class={styles.sub}>97</span>O<span class={styles.sub}>9</span>NS</strong>.</div>
+                        <div>High grade <strong>anthracite</strong> has the formula <strong>C<span class={styles.sub}>240</span>H<span class={styles.sub}>99</span>O<span class={styles.sub}>4</span>NS</strong>.</div>
                     </div>
                 </p>
 
@@ -209,13 +209,13 @@ const Carbon = () => {
 
             </section>
             
-            <section class={styles.card}>
+            <section>
                 <p>
                     <Quiz title="carbon-element-of-life" link="Take the carbon test"></Quiz>
                 </p>
             </section>
 
-            <section class={styles.card}>
+            <section>
                 <h2>References</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>

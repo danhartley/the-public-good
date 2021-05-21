@@ -78,7 +78,7 @@ const Layout = ({
                     <Link href={'/'}>
                         <a class={styles.title} aria-label="Home page">
                             <nav aria-label="Header link to home page">The Public Good</nav>
-                            <span>This website will not empower you.</span>
+                            <span><em>This website will not empower you.</em></span>
                         </a>
                     </Link>
                     <p class={styles.description}>                            
@@ -93,7 +93,7 @@ const Layout = ({
                 <footer role="contentinfo" class={styles.footer}>
                     <div><span>© <a href="mailto:dbmhartley@protonmail.com" aria-label="email">Daniel Hartley</a> 2021. All rights reserved.</span></div>
                     <div class={styles.externalList}><a href="https://www.linkedin.com/in/danhartley/">LinkedIn</a> | <a href="https://danhartley.github.io/snapdragon-redux/wiki/">CV</a></div>
-                    <div ref={bytesTransferred}></div>
+                    <div><em ref={bytesTransferred}></em></div>
                 </footer>
             </div>
         </div>

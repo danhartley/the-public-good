@@ -28,7 +28,7 @@ const links = [
 const Accessibility = () => {
     return (
         <Layout header="Accessibility" title="Web accessibility" description={'Web accessibility'}>
-            <section class={styles.card}>
+            <section>
 
                 <h2>Tools</h2>
                 <Links.ExternalLinksList links={links} />

@@ -22,7 +22,7 @@ const Contract = () => {
     return (
         <Layout header="The sociable contract" title="Web development | the sociable contract" description={'Where Daniel Hartley introduces the sociable contract; a set of promises intended to keep this site user-friendly.'}>
             
-            <section class={styles.card}>
+            <section>
 
             <p>Where I introduce the sociable contract; a set of promises intended to keep this site user-friendly.</p>
 
@@ -34,11 +34,11 @@ const Contract = () => {
                         <ul class={styles.dashedItemsList}>
                             <li>
                             <span>The site will satisfy Web Content Accessibility Guidelines <a href="https://webaim.org/resources/contrastchecker/">WCAG Level AAA</a> in light mode; WCAG Level AA in datk more, Level AA for larger text.</span>
-                            <div class={styles.italic}><a href="https://wave.webaim.org/report#/https://www.the-public-good.com/">Check</a> if this is true.</div>
+                            <div><em><a href="https://wave.webaim.org/report#/https://www.the-public-good.com/">Check</a></em> if this is true.</div>
                             </li>
                             <li>
                             The site will score at least 95% for Performance, Accessibility, Best Practices and SEO on <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>, on both Desktop and Mobile.
-                            <div class={styles.italic}>Find out how to use <Links.IL link={{source:'performance#howTo'}}>Lighthouse</Links.IL> to check these scores.</div>
+                            <div><em>Find out how to use <Links.IL link={{source:'performance#howTo'}}>Lighthouse</Links.IL> to check these scores.</em></div>
                             </li>
                             <li>
                             The site will score 'Cleaner than 85% of pages tested' using <a href="https://www.websitecarbon.com/">Website Carbon</a>.
@@ -79,7 +79,7 @@ const Contract = () => {
                     </p>
             </section>
        
-            <section class={styles.card}>
+            <section>
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>

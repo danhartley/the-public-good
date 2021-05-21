@@ -62,7 +62,7 @@ const EnergyDensities = () => {
             { ed.volume ? <td>{ed.volume}</td> : <td></td> }
         </tr>);
 
-    return (<table class={styles.table}>
+    return (<table>
         <thead>
             <tr>
                 <th>Fuel</th>
@@ -128,7 +128,7 @@ const PowerDensities = () => {
             <td>{Number(e.median).toLocaleString()}</td>
         </tr>);
 
-    return (<table class={styles.table}>
+    return (<table>
         <thead>
             <tr>
                 <th>Power source</th>
@@ -188,7 +188,7 @@ const FuelEmissions = () => {
             <td>{fe.value2}</td>
         </tr>);
 
-    return (<table class={styles.table}>
+    return (<table>
         <thead>
             <tr>
                 <th>Fuel</th>
@@ -229,7 +229,7 @@ const CumulativeEmissions = () => {
 
     const emissions = ces.map(d => <tr><td>{d.year}</td><td>{Number(d.total).toLocaleString()}</td></tr>);
 
-    return (<table class={styles.table}>
+    return (<table>
             <thead>
                 <tr>
                     <th>Year</th>
@@ -341,7 +341,7 @@ const Humans = () => {
         width: '8rem'
     };
 
-    return(<table class={styles.table}>
+    return(<table>
         <thead>
             <tr>
                 <th>Event</th>
@@ -412,7 +412,7 @@ const Geology = () => {
         )
     });
 
-    return (<table class={styles.table}>
+    return (<table>
         <thead>
             <tr>
                 <th>Event</th>
@@ -552,7 +552,7 @@ const Calculators = ({withScores = false}) => {
         });
 
         return (
-            <table class={styles.table}>
+            <table>
             <thead>
                 <tr>
                     <th>Calculator</th>
@@ -612,7 +612,7 @@ const EmissionsDates = () => {
         width: '8rem'
     };
 
-    return(<table class={styles.table}>
+    return(<table>
         <thead>
             <tr>
                 <th>What</th>

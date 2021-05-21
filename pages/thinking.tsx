@@ -5,7 +5,7 @@ import styles from 'pages/pages.module.scss';
 const Thinking = () => {
     return (
         <Layout title="Web Thinking" description={'Web Thinking'}>
-            <section class={styles.card}>
+            <section>
                 <h1>Thinking</h1>                
 
                 <h2>How to act</h2>
@@ -104,7 +104,7 @@ const Thinking = () => {
             
                 <p>An overhaul of how we do things is overdue. That we have to adapt and mitigate is no longer in doubt; governments, <a aria-label="Report on climate risk and decarbonization" href="https://www.mckinsey.com/business-functions/sustainability/our-insights/climate-risk-and-decarbonization-what-every-mining-ceo-needs-to-know">management consultancies</a>, and even <a href="https://www.bp.com/en/global/corporate/news-and-insights/reimagining-energy/sustainability-report-carbon-6-ways-bp-taking-action.html">fossil fuel companies</a> acknowledge that climate change as a consequence of elevated greenhouse gas emissions, is destructive and requires a response.</p>
 
-                <p>But few of these institutions, governments, politicians, and businesses or their owners, are prepared to entertain radical change; from a mixture of caution, cynicism, opportunism, and innocent faith, they persevere with the practices that have given them prestige, money, and power. Bill Gates primarily favours technology to save the day, though he also <a href="https://www.gatesnotes.com/Energy/What-you-can-do-to-fight-climate-change">promotes individual and political activity</a>; Mark Carney, the former head of the Bank of England, and a UN special envoy for climate and finance, <a href="https://www.un.org/en/climatechange/mark-carney-investing-net-zero-climate-solutions-creates-value-and-rewards">still has faith in the markets</a>, though he stresses the importance of values as well as value; the British Government has a 10 point plan, but it is for a Green <span class={styles.italic}>Industrial</span> Revolution.</p>
+                // <p>But few of these institutions, governments, politicians, and businesses or their owners, are prepared to entertain radical change; from a mixture of caution, cynicism, opportunism, and innocent faith, they persevere with the practices that have given them prestige, money, and power. Bill Gates primarily favours technology to save the day, though he also <a href="https://www.gatesnotes.com/Energy/What-you-can-do-to-fight-climate-change">promotes individual and political activity</a>; Mark Carney, the former head of the Bank of England, and a UN special envoy for climate and finance, <a href="https://www.un.org/en/climatechange/mark-carney-investing-net-zero-climate-solutions-creates-value-and-rewards">still has faith in the markets</a>, though he stresses the importance of values as well as value; the British Government has a 10 point plan, but it is for a Green <span>Industrial</span> Revolution.</p>
 
                 <p>They may be right. It may be that continuity is safer than disruption. But we are dealing with a new type of problem.</p>
 

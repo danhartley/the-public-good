@@ -8,12 +8,12 @@ import styles from 'pages/pages.module.scss';
 const CarbonFootprint = () => {
     return (
         <Layout header="Will people or policies save the planet?" title="Climate crisis | Will people or policies save the planet?" description={'An introduction to greenhouse gas emissions, carbon budgets, and personal carbon footprint calculators with comparison of 5 calculators.'}>
-            <section class={styles.card}>
+            <section>
 
-                <div>
-                    <div class={styles.bang}><a href="#intro">Carbon emissions, budgets & calculators</a><span class={styles.italic}> 4 minutes</span></div>
-                    <div class={styles.bang}><a href="#calculators">Individual carbon footprint calculators</a><span class={styles.italic}> 3 minutes</span></div>
-                    <div class={styles.bang}><a href="#individualActs">Individual Acts</a><span class={styles.italic}> 2 minutes</span></div>
+                <div class={styles.toc}>
+                    <div><a href="#intro">Carbon emissions, budgets & calculators</a><span> 4 minutes</span></div>
+                    <div><a href="#calculators">Individual carbon footprint calculators</a><span> 3 minutes</span></div>
+                    <div><a href="#individualActs">Individual Acts</a><span> 2 minutes</span></div>
                 </div>               
 
                 <h2 id="intro">Carbon emissions, budgets & calculators</h2>
@@ -24,7 +24,7 @@ const CarbonFootprint = () => {
                     <li>Per capita CO2 emissions: <a href="https://ourworldindata.org/grapher/co-emissions-per-capita?tab=chart">4.73 tonnes</a>.</li> 
                     <li>Total CO2: <a href="https://ourworldindata.org/co2-emissions">36.44 billion tonnes of CO2</a>.</li>
                     <li>Total CO2e: <a href="https://ourworldindata.org/greenhouse-gas-emissions">49.36 billion tonnes of CO2e</a> (2016).</li>
-                    <li>World population: <a href="https://ourworldindata.org/world-population-growth">7.55 billion</a> <a id="data" class={styles.bang} href="#discrepancy">*</a>.</li>
+                    <li>World population: <a href="https://ourworldindata.org/world-population-growth">7.55 billion</a> <a id="data" href="#discrepancy">*</a>.</li>
                 </ul>
                 <div class={styles.inset}>
                     Emissions have risen worldwide since 2017 with the exception of 2020 when they fell; <a href="https://www.nature.com/articles/d41586-021-00090-3">Nature, 6.4% (2.3 billion tonnes)</a>, <a href="https://www.iea.org/articles/global-energy-review-co2-emissions-in-2020">IEA 5.8%</a>, <a href="https://carbonmonitor.org/">Carbon Monitor 4%</a>.
@@ -107,8 +107,8 @@ const CarbonFootprint = () => {
                         If we extend this finding to all rich countries, it would be impossible for even the most diligent individual to live sustainably; before they had eaten one mouthful of food or taken one hot shower, they would be living beyond the capacity of the planet to support them.
                     </div>
                     <div>
-                    <p class={styles.italic}>
-                        <div>A <a aria-label="Carbon Footprint of Nations: A Global, Trade-Linked Analysis" href="https://pubs.acs.org/doi/10.1021/es803496a#">paper</a> from 2009, puts the domestic share of emissions at 80%, the world average at 73%, and most European countries in the 60s. (Ed. {new Date('Mon 29 March 2021').toDateString()})</div>
+                    <p>
+                        <div><em>A <a aria-label="Carbon Footprint of Nations: A Global, Trade-Linked Analysis" href="https://pubs.acs.org/doi/10.1021/es803496a#">paper</a> from 2009, puts the domestic share of emissions at 80%, the world average at 73%, and most European countries in the 60s. (Ed. {new Date('Mon 29 March 2021').toDateString()})</em></div>
                     </p>
                     </div>
                 </p>
@@ -161,11 +161,11 @@ const CarbonFootprint = () => {
 
                 <h3 id="comparison">Results from 5 calculators</h3>
 
-                <p>I used 5 calculators to find my carbon footprint. <span class={styles.super}><a id="table" class={styles.bang} href="#profile">+</a></span></p>
+                <p>I used 5 calculators to find my carbon footprint. <span class={styles.super}><a id="table" href="#profile">+</a></span></p>
 
                 <Tables.Calculators withScores={true}></Tables.Calculators>
 
-                <p><div class={styles.bold}>Why are there such large discrepancies between footprints?</div></p>
+                <p><strong>Why are there such large discrepancies between footprints?</strong></p>
 
                 <p>Calculators accept a variety of information, and differ as to external baseline data and assumptions; this does not necessarily make one better than another; all of these calculators are well researched, and independently valuable, but direct comparison between them is not possible. Discrepancies are a cautionary reminder that, when dealing with climate change figures, it is more constructive to think in terms of ranges than specific figures, and that the ranges themselves fluctuate. The value of our footprint is seductive, an effective means of engagement; how the number was derived <a aria-label="Mossy Earth carbon footprint calculator methodology" href="https://mossy.earth/methodologies/carbon-footprint-calculator">is more valuable</a>.</p>
 
@@ -223,7 +223,7 @@ const CarbonFootprint = () => {
                 <Top></Top>
 
                 </section>
-            <section id="discrepancy" class={styles.card}>
+            <section id="discrepancy">
                 <p>* There is a discrepancy hidden in these figures: 
                     <span class={styles.quote}>
                         4.73 tonnes * 7.55 billion = 35.70 billion tonnes of CO2
@@ -238,12 +238,12 @@ const CarbonFootprint = () => {
                     </span>
                     This is explained by the 'bunker fuels', or 'International transport', that is emissions for which no one has taken credit.
 
-                    <div class={styles.bang}>
+                    <div>
                         <a href="#data">Return to current emissions</a>
                     </div>
                 </p>
             </section>
-            <section id="profile" class={styles.card}>
+            <section id="profile">
                 <p>
                     + My profile
                     <ul class={styles.dashedItemsList}>                        
@@ -262,7 +262,7 @@ const CarbonFootprint = () => {
                         <li>10 kilometres per week train</li>
                         <li>4 hours flying per year</li>
                     </ul>
-                    <div class={styles.bang}>
+                    <div>
                         <a href="#table">Return to emissions table</a>
                     </div>
                 </p>

@@ -6,7 +6,7 @@ import styles from 'pages/pages.module.scss';
 const Services = () => {
     return (
         <Layout header="Client web services" title="Client web services" description={'Daniel Hartley will help you optimise an existing website, or build one that is fast, accessible, and sustainable.'}>
-            <section class={styles.card}>
+            <section>
 
                 <p>You should contact me if you want to build a site from scratch, or review performance of an existing site, including its compliance with industry standards.</p>
 
@@ -14,10 +14,10 @@ const Services = () => {
                 <p>
                     <span>The sites I build have the following characteristics:</span>
                     <ul class={styles.dashedItemsList}>
-                        <li><span class={styles.bold}>Secure</span>: opportunities for attack are minimised.</li>
-                        <li><span class={styles.bold}>Accessible</span>: pages are available to all users, on any device.</li>
-                        <li><span class={styles.bold}>Fast</span>: pages are assembled before they are requested so waiting time is reduced.</li>
-                        <li><span class={styles.bold}>Extensible</span>: you can change, modify or adapt your site to changing needs.</li>
+                        <li><strong>Secure</strong>: opportunities for attack are minimised.</li>
+                        <li><strong>Accessible</strong>: pages are available to all users, on any device.</li>
+                        <li><strong>Fast</strong>: pages are assembled before they are requested so waiting time is reduced.</li>
+                        <li><strong>Extensible</strong>: you can change, modify or adapt your site to changing needs.</li>
                     </ul> 
                     <span>I follow <a aria-label="What is Jamstack?" href="https://jamstack.org/what-is-jamstack/">Jamstack</a> principles.</span>
                 </p>

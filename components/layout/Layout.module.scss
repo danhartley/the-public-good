@@ -83,7 +83,6 @@ header {
     .title > span:nth-child(2), .description {
         font-size: calc(0.5rem + .75vw);
         letter-spacing: .5px;
-        font-style: italic;        
         button:focus span {
             color: white;
             color: rgb(var(--fg));
@@ -110,9 +109,6 @@ header {
     }
     div:nth-child(1), div:nth-child(3) {
         font-size: .8rem;        
-    }
-    div:nth-child(3) {
-        font-style: italic;
     }
     a, a:hover, a:focus, a:visited, a:visited:hover, a:visited:focus {            
         color: rgb(var(--fg));

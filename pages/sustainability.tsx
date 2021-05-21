@@ -44,12 +44,12 @@ const externalLinks = [
 const Sustainability = () => {
     return (
         <Layout header="Sustainability" title="Web sustainability" description={'Web sustainability'}>
-            <section class={styles.card}>
+            <section>
 
                 <h2>Website carbon emissions calculators</h2>
                 <Links.ExternalLinksList links={onlineTools} />
             </section>
-            <section class={styles.card}>
+            <section>
                 <h2>UN Sustainable Development Goals (SDGs)</h2>
                 <p>Tracked by <a href="https://ourworldindata.org/">Our World in Data</a>.</p>
                 <ul class={styles.unorderedList}>
@@ -58,15 +58,15 @@ const Sustainability = () => {
                     <li><a aria-label="Assessment of the world's response to SDG 12 provided by Our World in Data" href="https://sdg-tracker.org/sustainable-consumption-production">Data centres (SDG 12)</a></li>
                 </ul>
             </section>
-            <section class={styles.card}>
+            <section>
                 <p><Carbonbadge darkMode={false} /></p>
             </section>
-            <section class={styles.card}>
+            <section>
                 <p class={styles.centre}>
                     <img src="https://api.thegreenwebfoundation.org/greencheckimage/www.the-public-good.com?nocache=true" alt="Checked by thegreenwebfoundation.org" />
                 </p>
             </section>
-            <section class={styles.card}>
+            <section>
                 <h2>Links to external references</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
