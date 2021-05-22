@@ -23,6 +23,10 @@
     }
 }
 
+.a {
+    text-decoration: underline;
+}
+
 .card .nestedElements {
     @include unorderedList();
     font-size: 1rem;

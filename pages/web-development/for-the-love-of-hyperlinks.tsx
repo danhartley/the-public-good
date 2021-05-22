@@ -43,9 +43,9 @@ const Hyperlinks = () => {
                     <div>The web address of this page is <em>https://www.the-public-good.com/web-development/for-the-love-of-hyperlinks</em>.</div>
                 </p> */}
 
-                <p>The hyperlink, or link, requires only our command to initiate a series of requests and responses which fly around the world before depositing us at our destination.</p>
+                <p>The hyperlink, or link, needs only our command to initiate a series of requests and responses which fly around the world before depositing us at our destination.</p>
 
-                <p>Hyperlinks are simple, and although few understand how they work, everyone understands what they do. At least they did, until web developers started playing around with how they look, and behave. They did this not for our benefit, but to show off.</p>
+                <p>Hyperlinks are simple, and although few understand how they work, everyone understands what they do. At least they did, until web developers started playing around with them.</p>
 
                 <h3>It's good to connect</h3>
 
@@ -54,7 +54,7 @@ const Hyperlinks = () => {
                 <p>Authors use links to connect to resources that support their claims and - because they are courteous - to point out pages that are relevant or interesting to their reader. Their altruism is rewarded by improved <Links.EL link={{source:'https://blog.alexa.com/outbound-links-content-marketing/'}}>search engine rankings</Links.EL>.</p>
 
                 <p>
-                    <div>Connecting to an external resource is like conferring a little bit of praise or, at least, vouching for the worth of the recipient. For this reason it is incumbent on the referrer to check  they are not sending readers to sites behind paywalls or that will bombard them with pop-ups, that will not steal their data, and that will have little or no advertising.</div>
+                    <div>Connecting to an external resource is like conferring a little bit of praise or, at least, vouching for the worth of the recipient. For this reason it is incumbent on the referrer to check  they are not sending readers to sites behind paywalls or that will bombard them with pop-ups, that will not steal their data, and that has little or no advertising.</div>
                 </p>
 
                 <p>If you want to link to a site - perhaps it is the only source available - but prefer to keep your association at arm's link, it is possible to make your feelings clear to search engines.</p>
@@ -66,8 +66,6 @@ const Hyperlinks = () => {
                 <p>If you don't want to upset your reader, you must be more explicit.</p>
 
                 <h3>Is blue the warmest colour?</h3>
-
-                <p><div>The defaults for how links should look are not perfect, and a little bit ugly, so naturally there are <Links.EL link={{label: 'MIT Hyperlinking in Journalism', source: 'https://pdos.csail.mit.edu/~neha/hyperlinks/main-no.html'}}>differences of opinion</Links.EL> as to how they should appear.</div></p>
 
                 <p>The default colour for links the user hasn't clicked on is <span class={styles.defaultBlue}>blue</span>. Why blue? According to Tim Berners-Lee, there is no good reason, <Links.EL link={{source: 'https://www.w3.org/People/Berners-Lee/FAQ.html'}}>it is just a default</Links.EL>.</p>
 
@@ -96,7 +94,7 @@ const Hyperlinks = () => {
 
                 <p>By default hyperlink text is underlined. Does this affect our reading speed or comprehension?</p>
 
-                <p>The British Dyslexia Society's friendly style guide points out that <Links.EL link={{source:'https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide'}}>underlining text</Links.EL> can cause text to run together because the line cuts through the descenders of characters like g and y.</p>
+                <p>The British Dyslexia Society's friendly style guide points out that <Links.EL link={{source:'https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide'}}>underlining text</Links.EL> can cause text to run together because the line cuts through the descenders of characters like g and y. The word <a class={styles.a} href="https://en.wiktionary.org/wiki/poppy">poppy</a> for example.</p>
                 
                 <p>
                 On the other hand, WebAIM warns us not to neglect readers with forms of colour blindness:
@@ -106,11 +104,11 @@ const Hyperlinks = () => {
                     </div>
                 </p>
 
-                <p>One way to satisfy both requirements is to remove the default line and create a new one further down, below the bottom of any descenders.</p>
+                <p>One way to satisfy both requirements is to remove the default line and create a new one further down, below the bottom of any descenders (as on this site).</p>
 
-                <p>If you are reading on a desktop you will notice mouse over or keyboard focus on links on this site cause the line under the text to darken, the cursor to change to a hand with a pointing finger, and a box to appear around the link.</p>
+                <p>If you are able to activate mouse over or keyboard focus you will observe changes to links on this site that are part default, part convention.</p>
 
-                <p>The cursor change is a default, the darkening of the line a convention and some sort of box increasingly common. The idea is to avoid ambiguity and make it clear that here is something worthy paying attention to.</p>
+                <p>These signals confirm that the text is a link, and that it can be activated by clicking or hitting Enter.</p>
 
                 <h3>Are hyperlinks distracting?</h3>
 
@@ -134,17 +132,17 @@ const Hyperlinks = () => {
 
                 <p>In order to minimise distraction some sites gather links in one place. In a short article this may be at the end of the piece. Some BBC articles group and list links as they go along, a technique which keeps the links close to the text they support.</p>
 
-                <h3>Internal links</h3>
+                <h3>Links to content on the same site</h3>
 
-                <p>
-                    <div>I've been talking about external links. The <em>internal</em> links on this site are a different colour and have a dashed line (though it turns solid on hover/focus). Because these links form part of the site navigation, I make no distinction between un/visited internal links. I don't want to discourage a reader clicking on an internal link the content of which may have changed.</div>                    
-                </p>                
+                <p>Links are agnostic as to where they live, they simply connect documents, often pages, no matter where they are.</p>
 
                 <p>The Guardian, a large site with many internal references across different sections of the paper, makes no distinction between external and internal links, or between visited and unvisited links.</p>
 
                 <p>The BBC also treats internal and external links alike but it signals the source of external links in the text of the link, for example, 'according to the Red Cross, citing government data.' Visited links are gray rather than black but neither the difference nor reason for the difference is evident.</p>
 
-                <h3>Where should links open?</h3>
+                <p>Some sites differentiate between internal and external links by <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links'}}>including an icon on the link</Links.EL> but not everyone recognises or understands these icons which can also be confused with indicators that the link will open in a new tab or window.</p>
+
+                <h3>Should links open in a new window?</h3>
 
                 <p>The W3C (World Wide Web Consortium) recommends that links open in the same window or tab as the current page.
                     <div class={styles.quote}>
@@ -153,7 +151,7 @@ const Hyperlinks = () => {
                     </div>
                 </p>
 
-                <p>Exceptions include opening a help page while completing a form, or to avoid leaving a page where the user is logged in. But opening in a new window or tab should always be signalled, e.g. (opens in new tab).</p>
+                <p>Exceptions include opening a help page while completing a form, or to avoid leaving a page where the user is logged in. But opening in a new window or tab should always be signalled, e.g. (this link opens in new tab).</p>
 
                 <p>If the user wishes to open a new window or tab, that option remains available.</p>
 
@@ -164,23 +162,25 @@ const Hyperlinks = () => {
                     </ul>
                 </p>
 
-                <p>One objection to opening external links in the same tab is that clicking the back button causes the page to reload. Since this behaviour is more sustainable (the energy required to resend the page is saved), you may choose to favour this approach over one that promotes accessibility. This website employs <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API'}}>service workers</Links.EL> so that, for the majority of users, the page loads from a local cache when the user returns.</p>
+                <p>One objection to opening external links in the same tab is that clicking the back button causes the page to reload. Since this behaviour is more sustainable (the energy required to resend the page is saved), you may choose to favour this approach over one that promotes accessibility. This website employs <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API'}}>service workers</Links.EL> so that, for the majority of users, the page loads from a local cache when they go back.</p>
 
                 <p>If you would like to read a variety of opinions on the rights and wrongs of opening links in new tabs (or windows), I recommend <Links.EL link={{source:'https://uxmovement.com/navigation/why-external-links-should-open-in-new-tabs/'}}>Why External Links Should Open in New Tabs</Links.EL>, especially the comments section.</p>
 
-                <h3>The address bar</h3>
+                <h3>Web addresses and the address bar</h3>
 
-                <p>The address bar is of less value on devices with smaller screens which is typical of mobiles. Typing in the address bar or copy-and-pasting text is also fiddly.</p>
+                <p>The relationship between the web address that appears in the address bar and hyperlinks is fundamental. The source of the hyperlink is the web address.</p>
 
-                <p>On larger screens, however, URLs provide useful information. Where possible they should be human readable and screen-reader friendly.</p>
+                <p>According to a <Links.EL link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>report on what drives web traffic</Links.EL> from the data analytics company Alexa, between 30% and 50% of website visits come about by users entering the address they want in the address bar. The figure is at the higher end for business websites, and sectors where trust is important such as personal finance.</p>
 
-                <p>URLs provide insight on the structure of the web site and where <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Glossary/Breadcrumb'}}>breadcrumbs</Links.EL> are used there should be consistency between the two.</p>
+                <p>Where they are visible web addresses provide useful information and should be human readable and screen-reader friendly.</p>
+
+                <p>They provide insight on the structure of the web site and where <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Glossary/Breadcrumb'}}>breadcrumbs</Links.EL> are used there should be consistency between the two.</p>
 
                 <h3>Fitts's law</h3>
 
-                <p>Hyperlinks should be recognisable for all readers and on all devices. They should also be easy to select.</p>
+                <p>Hyperlinks should be recognisable for all readers and on all devices. They should also be easy to click or tap.</p>
 
-                <p><Links.EL link={{source:'https://lawsofux.com/fittss-law/'}}>Fitts's law</Links.EL> is a function of the ratio between the distance to a target and the width of that target. In other words, clicking on or tapping a link should not require dexterity.</p>
+                <p><Links.EL link={{source:'https://lawsofux.com/fittss-law/'}}>Fitts's law</Links.EL> is a function of the ratio between the distance to a target and the width of that target. In other words, clicking on or tapping a link should not require dexterity. As well as being large enough, this requires links to be sufficiently spaced.</p>
 
                 <h3>Summing up</h3>
 
@@ -211,8 +211,3 @@ const Hyperlinks = () => {
 };
 
 export default Hyperlinks;
-
-
-{/* <p>Web directories like <Links.EL link={{source:'https://en.wikipedia.org/wiki/Yahoo!_Directory'}}>Yahoo! Directory</Links.EL> and <Links.EL link={{source:'https://en.wikipedia.org/wiki/DMOZ'}}>DMOZ</Links.EL> were once the predominant means of discovering and accessing web sites. Initially they were little more than lists of web addresses. As the lists grew larger, they introduced search options. Google dropped the lists altogether.</p>
-
-<p>A recent report from the data analytics company <Links.EL link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>Alexa</Links.EL> found that search now accounts for 40-60% of visitors to a site, and direct traffic (typically typing in the name of a website) 30-50%. Referrals - links - represent around 10% of visitors to a site, though this is higher for 'non-standard content' such as this site (26.6%). A small amount of traffic comes from social media but for news, weather and information this figure rises to 12.2%.</p> */}
