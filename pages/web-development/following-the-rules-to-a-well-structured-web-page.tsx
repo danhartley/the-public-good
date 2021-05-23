@@ -71,10 +71,9 @@ const MentalModel = () => {
     };
 
     return (
-        <Layout header="Following the rules to a well-structured web page" title="Web development - following the rules to a well-structured web page" description={'Web development - the shared structure of web pages'}>
-            <section>
-
-                <p><div class={styles.inset}><em>Reading time: 6 to 7 minutes</em></div></p>
+        <Layout header="Following the rules to a well-structured web page" rt="6 to 7" title="Web development - following the rules to a well-structured web page" description={'Web development - the shared structure of web pages'}>
+            
+            <section>                
 
                 <h2>Web pages take many forms, but like species branching from a common ancestor, they share a basic structure.</h2>
 

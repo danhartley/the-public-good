@@ -13,7 +13,7 @@ class MyDocument extends Document {
         <Head>
             <meta http-equiv="content-type" content="text/html;"></meta>
         </Head>
-        <body style={"background-color:rgb(255, 255, 247)" as React.CSSProperties}>
+        <body style={"background-color:rgb(255, 255, 247); margin: 0 .5rem .5rem .5rem;" as React.CSSProperties}>
           <Main />
           <NextScript />
         </body>

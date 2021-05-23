@@ -10,6 +10,7 @@
     align-items: center;
     border: .1rem solid transparent;
     color: rgba(var(--fg),1);
+    margin-left: -.5rem;
     &:hover, &:focus {
         border: .1rem dashed rgba(var(--fg),.5);
         outline: none;

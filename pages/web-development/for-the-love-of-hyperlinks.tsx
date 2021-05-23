@@ -30,10 +30,9 @@ const Hyperlinks = () => {
     ];
 
     return (
-        <Layout header="For the love of hyperlinks" title="Web development | For the love of hyperlinks" description={'Hyperlink good practices explained. How to create accessible links with respect to size, colour, un/visited, internal/external states.'}>
+        <Layout header="For the love of hyperlinks" rt="8 to 9" title="Web development | For the love of hyperlinks" description={'Hyperlink good practices explained. How to create accessible links with respect to size, colour, un/visited, internal/external states.'}>
+            
             <section>
-
-                <p><div class={styles.inset}><em>Reading time: 8 to 9 minutes</em></div></p>
 
                 <h2>The Hyperlink is a defining feature of the web, a tiny digital instruction that transports us like a magic carpet to far off lands.</h2>
 

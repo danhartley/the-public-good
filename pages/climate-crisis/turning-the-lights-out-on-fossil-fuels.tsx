@@ -7,10 +7,9 @@ import styles from 'pages/pages.module.scss';
 
 const Change = () => {
     return (
-        <Layout header="Turning the lights out on fossil fuels" title="Climate change - Turning the lights out on fossil fuels" description={'Climate change - Turning the lights out on fossil fuels'} image='https://live.staticflickr.com/65535/51143928462_4df026babc_o.jpg'>
-            <section>
+        <Layout header="Turning the lights out on fossil fuels" rt="9 to 10" title="Climate change - Turning the lights out on fossil fuels" description={'Climate change - Turning the lights out on fossil fuels'} image='https://live.staticflickr.com/65535/51143928462_4df026babc_o.jpg'>
 
-                <p><div class={styles.inset}><em>Reading time: 9 to 10 minutes</em></div></p>
+            <section>
 
                 <h2 id="background">The transition away from fossil fuels is, by historical standards, happening fast. It just isn't happening fast enough.</h2>
 
@@ -122,8 +121,8 @@ const Change = () => {
                 <p>
                     <div>A 2021 paper suggests <Links.EL link={{source:'https://iopscience.iop.org/article/10.1088/1748-9326/abde07'}}>the cost of innovation has been overestimated</Links.EL>. The authors predict the transition away from fossil fuels will be <Links.EL link={{source:'https://www.carbonbrief.org/guest-post-why-the-low-carbon-transition-may-be-much-cheaper-than-models-predict'}}>cheaper than predicted</Links.EL>.</div>
                 </p>
-                
-                <p>Fossil fuels are the incumbent energy source, and if we are to replace them, it will entail adapting, extending and replacing existing infrastructure using more land at great cost both financially and materially. There may be, however, gains that quickly override these costs, to health, wealth, and societal well-being.</p>
+
+                <p>But if governments adopt a position of <Links.EL link={{source:'https://www.ufz.de/index.php?en=46374'}}>technological neutrality</Links.EL> towards transformative solutions, the parameters for cost-effectiveness must be broad and long term.</p>
 
                 <h3>Eternal summer shall fade</h3>
 

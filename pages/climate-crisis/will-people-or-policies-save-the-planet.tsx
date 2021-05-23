@@ -7,10 +7,9 @@ import styles from 'pages/pages.module.scss';
 
 const CarbonFootprint = () => {
     return (
-        <Layout header="Will people or policies save the planet?" title="Climate crisis | Will people or policies save the planet?" description={'An introduction to greenhouse gas emissions, carbon budgets, and personal carbon footprint calculators with comparison of 5 calculators.'}>
-            <section>
+        <Layout header="Will people or policies save the planet?" rt="8 to 9" title="Climate crisis | Will people or policies save the planet?" description={'An introduction to greenhouse gas emissions, carbon budgets, and personal carbon footprint calculators with comparison of 5 calculators.'}>
 
-                <p><div class={styles.inset}><em>Reading time: 8 to 9 minutes</em></div></p>
+            <section>
 
                 <h2 id="intro">Societal changes are needed to avert the climate crisis but the knowledge of individuals is powerful.</h2>
 

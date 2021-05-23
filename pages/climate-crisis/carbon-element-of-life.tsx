@@ -51,12 +51,10 @@ const Carbon = () => {
     ];
     
     return (
-        <Layout title="Climate crisis | Carbon - element of life" header="Carbon - element of life" description={'A synopsis of the element carbon: its origin and properties; importance to life; the carbon cycle; and its impact as a greenhouse gas.'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
+        <Layout title="Climate crisis | Carbon - element of life" rt="6 to 7" header="Carbon - element of life" description={'A synopsis of the element carbon: its origin and properties; importance to life; the carbon cycle; and its impact as a greenhouse gas.'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
 
             <section>
 
-                <p><div class={styles.inset}><em>Reading time: 6 to 7 minutes</em></div></p>
-                
                 <h2>Carbon is essential to all life, but its rapid release into the atmosphere in the molecular form CO<span class={styles.sub}>2</span> is upsetting equilibria established over millions of years.</h2>
 
                 <Accordion header="Carbon basics">

@@ -56,11 +56,10 @@ const externalLinks = [
 
 const Hydrogen = () => {
     return (
-        <Layout header="Hydrogen - a singular atom" title="Climate crisis | Hydrogen - a singular atom" description={'A synopsis of the element hydrogen: its origin and properties; potential as an energy carrier; and role in reducing greenhouse gas emissions.'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>
+        <Layout header="Hydrogen - a singular atom" rt="6 to 7" title="Climate crisis | Hydrogen - a singular atom" description={'A synopsis of the element hydrogen: its origin and properties; potential as an energy carrier; and role in reducing greenhouse gas emissions.'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>
+            
             <section>
                 
-                <p><div class={styles.inset}><em>Reading time: 6 to 7 minutes</em></div></p>
-
                 <h2>Hydrogen produced from renewable sources has the potential to be a source of green energy, and an alternative energy carrier to electricity.</h2>
 
                 <Accordion header="Hydrogen basics">

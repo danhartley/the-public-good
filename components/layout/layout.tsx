@@ -14,7 +14,8 @@ const Layout = ({
   title,
   description = 'The Public Good',
   image = 'https://inaturalist-open-data.s3.amazonaws.com/photos/97465767/medium.jpeg?1601194277',
-  header = null
+  header = null,
+  rt = ''
 }) => {
     
     const { mode, toggleMode } = useContext(ModeContext);
@@ -87,7 +88,19 @@ const Layout = ({
                 </header>
                 <main id="main">               
                     <article>
-                    { header ? <div class={styles.h1}><div><h1>{header}</h1></div></div> : null }
+                    { header ? <div class={styles.h1}><h1>{header}</h1></div> : null }
+
+                    { rt.length > 0 
+                        ? <div class={styles.author}>
+                            <img src="https://avatars.githubusercontent.com/u/264690?s=60&amp;v=4" height="50px" width="50px" />
+                            <div>
+                                <div>Daniel Hartley</div>
+                                <div>Reading time: {rt} minutes</div>
+                            </div>
+                            </div>
+                        : null
+                    }
+
                     {children}
                     </article>
                     { router.pathname === '/' ? null : <nav aria-label="Published link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
