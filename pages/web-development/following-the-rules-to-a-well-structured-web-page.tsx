@@ -74,11 +74,11 @@ const MentalModel = () => {
         <Layout header="Following the rules to a well-structured web page" title="Web development - following the rules to a well-structured web page" description={'Web development - the shared structure of web pages'}>
             <section>
 
-                <p><div class={styles.inset}><em>Reading time: 6 minutes</em></div></p>
+                <p><div class={styles.inset}><em>Reading time: 6 to 7 minutes</em></div></p>
 
-                <p><div class={styles.summary}>Web pages take many forms, but like species branching from a common ancestor, they share a basic structure.</div></p>
+                <h2>Web pages take many forms, but like species branching from a common ancestor, they share a basic structure.</h2>
 
-                <p>The first web pages were simulacra of printed pages so it was natural that elements familiar from print were transcribed for the Internet. A web page is a document containing elements such as titles, headers, and paragraphs. These are used to structure and order its contents.</p>
+                <p>The first web pages were simulacra of printed pages so it was natural that elements familiar from print were transcribed for the Internet. A web page is a document containing elements such as titles, headers, and paragraphs. These are used to structure and order its contents and they impart meaning.</p>
 
                 <p>The range of elements has since expanded to meet new demands. The original specification included markup for images; it now includes markup - or tags - for video, audio and canvas (used for animation).</p>
 
@@ -100,11 +100,16 @@ const MentalModel = () => {
                                 <li>
                                     <strong>main</strong>
                                     <ul>
-                                        <li><em>h1</em> <span>the shared structure of web pages</span></li>
-                                        <li>p <span>Web pages take many forms…</span></li>
-                                        <li>p…</li>
-                                        <li><em>h2</em> <span>HTML elements and tags</span></li>
-                                        <li>p…</li>
+                                        <li>
+                                            article
+                                            <ul>
+                                                <li><em>h1</em> <span>Following the rules to a well-structured web page</span></li>
+                                                <li>p <span>Web pages take many forms…</span></li>
+                                                <li>p…</li>
+                                                <li><em>h2</em> <span>HTML elements and tags</span></li>
+                                                <li>p…</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
                             </li>
@@ -116,8 +121,6 @@ const MentalModel = () => {
                     </p>
                     </Accordion>
                 </p>           
-
-                <h2>HTML elements and tags</h2>
 
                 <p>An HTML element has an equivalent tag or set of tags which are used to decorate, or mark up text or other content. The P element - analogous to a paragraph - has opening and closing tags:</p>
 
@@ -134,7 +137,11 @@ const MentalModel = () => {
                 <h2>Separation of presentation and content</h2>
 
                 <p>
-                    <div>The basic structure of a page is set out using HTML elements. Design is usually via rules written in a language called <Links.EL link={{source:'https://en.wikipedia.org/wiki/CSS'}}>CSS</Links.EL>. CSS wasn't part of the original specification for web pages but was added later to provide designers and developers with greater control over presentation, formatting, and layout.</div>
+                    <div>The basic structure of a page is set out using HTML elements. HTML is also innately semantic; it confers meaning.</div>
+                </p>
+
+                <p>
+                    <div>Visual elaboration of meaning - design - is usually via rules written in a language called <Links.EL link={{source:'https://en.wikipedia.org/wiki/CSS'}}>CSS</Links.EL>. CSS wasn't part of the original specification for web pages but was added later to provide designers and developers with greater control over presentation, formatting, and layout.</div>
                 </p>
 
                 <p>CSS can be used to control every aspect of a page from fonts, colours, the look and behaviour of buttons and links, to page layout.</p>
@@ -181,15 +188,22 @@ const MentalModel = () => {
 
                 <p>The specification recommends one H1 element per page and so it is often reserved for the title. The author may use as many of the other headers as they please provided they are nested correctly - H3 within H2, etc.</p>
 
-                <p>These headers are routinely resized, and their colours and fonts changed but it is bad practice to abuse their hierachy or use other elements in their place. </p>
+                <p>These headers are routinely resized, and their colours and fonts changed but it is bad practice to abuse their hierarchy or use other elements in their place. Doing so loses meaning, and disrupts navigation.</p>
 
                 <h3>The back button</h3>
 
-                <p>Pages don't exisit in isolation. Hypertext allows pages to be connected across sites, and maintaining this connection is critical. Users need to move freely from page to page using links and the browser back and forward buttons.</p>
+                <p>Pages don't exist in isolation. Hypertext allows pages to be connected across sites, and maintaining this connection is critical. Users need to move freely from page to page using links and the browser back and forward buttons.</p>
 
                 <p>Use of the keyboard, screen reader, or other assistive devices reveals the semantic structure of the page. They provide an alternative, and at times, improved way of navigating and interacting with a page.</p>
 
                 <p><Links.EL link={{source:'https://www.accessibility-developer-guide.com/knowledge/keyboard-only/browsing-websites/'}}>Keyboard navigation</Links.EL> is fast and easy because it skips passive content and relies on the interconnected structures which underpin the web.</p>
+
+                <p>If you don't know the keyboard shortcuts, here they are:
+                    <ul>
+                        <li>Mac: ⌘ + left/right arrow key</li>
+                        <li>Windows & Linux: Alt + left/right arrow key</li>
+                    </ul>
+                </p>
 
                 <h2>The primary goal of a page is to be understood</h2>
 
@@ -212,15 +226,15 @@ const MentalModel = () => {
 
                 <p>When we visit a new page for the first time we do not bring a fresh eye to it; we have a stack of preconceptions fashioned by all the other pages we have seen. Upsetting our expectations makes us work harder to understand the basics when out attention should be focused on what makes the page unique.</p>
 
-                <p>Accepting preexisting models and conventions does not preclude innovation and originality but these rarely come at the cost of intelligibility.</p>
+                <p>Accepting existing models and conventions does not preclude innovation and originality which cannot come at the cost of intelligibility.</p>
 
                 <h3>Animation</h3>
 
-                <p>Movement is distracting, demands our attention, and <Links.EL link={{source:'https://www.nngroup.com/articles/animation-usability/'}}>is best used with caution</Links.EL>. Once we have built a model of a page we object to our assumptions being upset. Images and blocks of text that appear from nowhere or move around are highly disruptive to a static model. Change should be initiated by the user and respect cause and effect. Buttons and links are good examples.</p>    
+                <p>Movement is distracting, demands our attention, and <Links.EL link={{source:'https://www.nngroup.com/articles/animation-usability/'}}>is best used with caution</Links.EL>. Once we have built a model of a page we object to our assumptions being upset. Images and blocks of text that appear from nowhere or move around are highly disruptive to the static model we are trying to build. Change should be initiated by the user and respect cause and effect. Buttons and links are good examples.</p>    
 
                 <h3>Context</h3>
 
-                <p>The primary aim of a page is to make itself understood, but it must also provide clues as to other pages on the same site. This is part of the context of the page, and helps us answer questions such as: Is this author reputable? Are there other interesting things here? Can I trust this site with my money?</p>
+                <p>The primary aim of a page is to make itself understood, but it must also provide clues as to other pages on the same site. This is part of the context of the page, and as well as helping us navigate the site, helps us answer questions such as: Is this author reputable? Are there other interesting things here? Can I trust this site with my money?</p>
 
                 <h3>If your model doesn't fit the user's model, change your model</h3>
 
@@ -231,7 +245,7 @@ const MentalModel = () => {
                     </div>
                 </p>
 
-                <p>Consider this example of a mental model. The web address bar was designed for users to type in the name of a web site they already knew. If they wanted to search for a web site, they used a search box like the one on the Google homepage. But many people confused the two. Instead of telling them they were wrong, the Chrome browser began to allow users to accept either a site address or, if the entry wasn't an address, search for matches. The new model caught on, and all browsers now work this way.</p>
+                <p>Consider this example of a mental model. The web address bar was designed for users to type in the name of a web site they already knew. If they wanted to search for a web site, they used a search box like the one on the Google homepage. Many people confused the two. Instead of telling them they were wrong, the Chrome browser began to allow users to accept either a site address or, if the entry wasn't an address, search for matches. The new model caught on, and all browsers now work this way.</p>
 
                 <h2>Web applications</h2>
 
@@ -241,13 +255,13 @@ const MentalModel = () => {
 
                 <p>Because of their complexity, scope and number of users, <Links.EL link={{source:'https://www.facebook.com/help/accessibility'}}>Facebook</Links.EL> and <Links.EL link={{source:'https://support.google.com/mail/answer/6115187'}}>Google</Links.EL> have websites dedicated to using their apps.</p>
 
-                <h2>Summary</h2>
+                <h2>Summing up</h2>
 
-                <p>HTML is a language with grammar and syntax designed for displaying content on the Internet. It provides a solid foundation for designing and building the core requirements and experience of a web page.</p>
+                <p>HTML is a language with grammar and syntax designed for displaying content on the Internet. It contains all that is necessary to create a web page. Disable JavaScript and CSS styling and a page should still work.</p>
 
-                <p>CSS can be used to provide an improved version for sighted users. Finally JavaScript supports non-essential interactions, and alternative experiences. Some devices work poorly with JavaScript, and some users disable it.</p>
+                <p>CSS offers visual improvements for sighted users. JavaScript adds non-essential interactions and features.</p>
 
-                <p>For anyone interested in how web pages are composed it is worth the time to see how they look without CSS and JavaScript. The Smashing Magazine series 'I Used The Web For A Day…' (links below) covers how to disable them in diferent browsers.</p>
+                <p>Both JavaScript and CSS can be turned off. The Smashing Magazine series 'I Used The Web For A Day…' (there are links below) covers how to disable them in different browsers.</p>
                 
                 <p>A site that functions without CSS and JavaScript is likely to be well-structured, well-designed, and accessible.</p>
 

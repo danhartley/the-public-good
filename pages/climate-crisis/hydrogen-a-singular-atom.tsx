@@ -59,15 +59,9 @@ const Hydrogen = () => {
         <Layout header="Hydrogen - a singular atom" title="Climate crisis | Hydrogen - a singular atom" description={'A synopsis of the element hydrogen: its origin and properties; potential as an energy carrier; and role in reducing greenhouse gas emissions.'} image='https://live.staticflickr.com/65535/51143592172_4c70ca0245_o.jpg'>
             <section>
                 
-                {/* <div class={styles.toc}>
-                    <div><Links.EL link={{source:'#origins-and-properties'}}>The origins and properties of hydrogen</Links.EL><span> 2 minutes</span></div>
-                    <div><Links.EL link={{source:'#production'}}>Production</Links.EL><span> 3 minutes</span></div>
-                    <div><Links.EL link={{source:'#conclusion'}}>Potential</Links.EL><span> 2 minutes</span></div>
-                </div> */}
+                <p><div class={styles.inset}><em>Reading time: 6 to 7 minutes</em></div></p>
 
-                <p>
-                    <div class={styles.summary}>Hydrogen summary</div>
-                </p>
+                <h2>Hydrogen produced from renewable sources has the potential to be a source of green energy, and an alternative energy carrier to electricity.</h2>
 
                 <Accordion header="Hydrogen basics">
                     <div class={styles.inset}>
@@ -78,13 +72,15 @@ const Hydrogen = () => {
                     </div>
                 </Accordion>
 
-                <h2 id="origins-and-properties">The origins and properties of hydrogen</h2>
-
                 <p>
-                    Hydrogen atoms were fleetingly formed during the Big Bang but it wasn't until the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Recombination_(cosmology)'}}>recombination</Links.EL> 370,000 years later that conditions became favourable for electrons to remain in orbit around atomic nuclei. <span>Hydrogen was the first element in the universe and it is the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements'}}>most abundant</Links.EL>. From it all other elements are formed.</span>
+                    <span>Hydrogen atoms were fleetingly formed during the Big Bang but it wasn't until the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Recombination_(cosmology)'}}>recombination</Links.EL> 370,000 years later that conditions became favourable for electrons to remain in orbit around atomic nuclei.</span>
                 </p>
 
-                <h3>Chemical bonds</h3>
+                <p>
+                    <div>Hydrogen was the first element in the universe and it is the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements'}}>most abundant</Links.EL>. From it all other elements are formed.</div>
+                </p>
+
+                <h3>Covalent and hydrogen bonds</h3>
 
                 <p>
                     <div>Hydrogen readily shares <Links.EL link={{source:'https://www.khanacademy.org/science/ap-biology/chemistry-of-life/introduction-to-biological-macromolecules/v/covalent-bonds'}}>covalent bonds</Links.EL> (video) with other elements to form compounds, including water <span><Formula>H2O</Formula></span>, ammonia <Formula>NH3</Formula>, hydrogen sulfide <Formula>H2S</Formula>, and organic compounds, such as hydrocarbons <span><Formula>CnH2n+2</Formula> </span> and carbohydrates <Formula>(CH2O)x</Formula>.</div>
@@ -103,12 +99,8 @@ const Hydrogen = () => {
                     </div>
                 </Accordion>
 
-                <p>Hydrogen bonds can also form between molecules of different species, for example in DNA, where they hold together the two (polynucleotide) chains; the hydrogen bonds are strong enough to keep the double helix together, but not so strong as to prevent the chains separating when they need to be replicated.</p>
-
-                <h3>Energy carrier</h3>
-
-                <p>Hydrogen is often considered a secondary source of energy, or energy carrier; it is produced from a variety of primary sources, such as natural gas, nuclear power, biomass, and renewable sources including wind and solar.</p>
-
+                <p>Hydrogen bonds can also form between molecules of different species, for example in DNA, where they hold together the two (polynucleotide) chains. The hydrogen bonds are strong enough to keep the double helix together, but not so strong as to prevent the chains separating when they need to be replicated.</p>
+                
                 <h2 id="production">Production</h2>
 
                 <p>95% of hydrogen is produced by <Links.EL link={{source:'https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming'}}>natural gas reforming</Links.EL> in two ways.</p>
@@ -142,6 +134,10 @@ const Hydrogen = () => {
                     </div>
                 </Accordion>
 
+                <p>
+                    <div>There are several <Links.EL link={{label:'US Energy article on Hydrogen Fuel Basics', source:'href="https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics"'}}>other methods of hydrogen production</Links.EL> including photobiological, photoelectrochemical, solar thermochemical, biological processes, and electrolysis.</div>
+                </p>
+
                 <h3>Electrolysis</h3>
 
                 <p>Electrolysis is a process whereby electricity is used to split water into hydrogen and oxygen. The process <Links.EL link={{label: 'Electrolysis varies depending on the electrolyte selected', source:'https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis'}}>varies</Links.EL> depending on the electrolyte selected. Oxygen gas forms at the anode, hydrogen gas at the cathode.
@@ -152,23 +148,17 @@ const Hydrogen = () => {
                     </div>                    
                 </p>
 
-                <p>Electrolysis can produce hydrogen with no greenhouse gas emissions, if the original source of the energy used is renewable. The process is currently 70-80% efficient; for every 40kWh of energy produced 50–55kWh of electricity is required. That is <em>less</em> energy is produced than is put in. 95% efficiency has been <Links.EL link={{label:'95% efficiency claimed for electrolysis', source:'https://www.h2pro.co/'}}>claimed</Links.EL> but not proven in production.</p>
+                <p>Electrolysis can produce hydrogen with no greenhouse gas emissions, if the original source of the energy used is renewable. The process is currently 70% to 80% efficient; for every 40kWh of energy produced 50kWh to 55kWh of electricity is required. 95% efficiency has been <Links.EL link={{label:'95% efficiency claimed for electrolysis', source:'https://www.h2pro.co/'}}>claimed</Links.EL> but not proven in production.</p>
 
-                <p>
-                    <div>There are several <Links.EL link={{label:'US Energy article on Hydrogen Fuel Basics', source:'href="https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics"'}}>other methods of hydrogen production</Links.EL> including photobiological, photoelectrochemical, solar thermochemical and biological processes.</div>
-                </p>
-
-                <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><em>high</em></span> energy <Links.IL link={{source:'facts#energy'}}>density</Links.IL> by mass).</p>
-
-                <p>A fraction of hydrogen is currently produced from low carbon energy; the latest figure for the EU is <Links.EL link={{label:'FCHO PDF report Hydrogen molecule market', source:'href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf'}}>0.1%</Links.EL>. Global production of hydrogen from electrolysis is less than <Links.EL link={{label:'IEA report on the future of hydrogen', source:'https://www.iea.org/reports/the-future-of-hydrogen'}}>0.1%</Links.EL>.</p>
-
-                <h3>Transport</h3>
+                <h3>Transporting hydrogen</h3>
 
                 <p>
                     <div>Converting pipelines to carry a natural gas hydrogen mix is feasible. The cost of adapting existing lines for compressed hydrogen varies depending on whether you ask <Links.EL link={{label:'European Hydrogen Backbone report', source:'https://gasforclimate2050.eu/sdm_downloads/european-hydrogen-backbone'}}>industry</Links.EL> or their <Links.EL link={{label:'Food and Water Action Europe report', source:'https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf'}}>critics</Links.EL>. At the heart of the debate is the feasibility of producing green hydrogen in large volumes soon. If the hydrogen passing through pipelines does not come from renewable sources, it will lock us in to further use of, and dependency on, fossil gas at the expense of investment in renewables.</div>
                 </p>
 
-                <h3>Fuel cells</h3>
+                <p>Hydrogen gas has a low energy density by volume at ambient temperatures even compared to natural gas. It is therefore either compressed or liquified (molecular hydrogen has <span><em>high</em></span> energy <Links.IL link={{source:'facts#energy'}}>density</Links.IL> by mass) for transportation by road or rail.</p>
+
+                <h3>Hydrogen fuel cells</h3>
 
                 <p>
                     <div>Fuel cells can be used at a wide range of scales from a power station to a laptop. They work like batteries but do not run down, producing electricity as long as there is fuel. They are also efficient, converting chemical energy to electrical energy at around 60% efficiency; this compares well to an average of <Links.EL link={{source:'https://cefrc.princeton.edu/sites/cefrc/files/reitz_princeton-day1-hour1-2018.pdf'}}>16% efficiency for gas combustion engines</Links.EL>.</div>
@@ -179,7 +169,9 @@ const Hydrogen = () => {
                     </div>
                 </p>
 
-                <h3>Use today</h3>
+                <h3>Current production and use</h3>
+
+                <p>A fraction of hydrogen is currently produced from low carbon energy; the latest figure for the EU is <Links.EL link={{label:'FCHO PDF report Hydrogen molecule market', source:'href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf'}}>0.1%</Links.EL>. Global production of hydrogen from electrolysis is less than <Links.EL link={{label:'IEA report on the future of hydrogen', source:'https://www.iea.org/reports/the-future-of-hydrogen'}}>0.1%</Links.EL>.</p>
 
                 <p>Hydrogen use today is dominated by industry, namely: oil refining, ammonia production, methanol production and steel production.</p>
 
@@ -210,7 +202,7 @@ const Hydrogen = () => {
                     <div>This scenario is understandably attractive to fossil fuels companies who maintain their grip on the market, secure profits on existing investments, and receive subsidies in the name of reducing emissions. They are <Links.EL link={{source:'https://www.foodandwatereurope.org/wp-content/uploads/2020/12/HydrogenHype_Report2020.pdf'}}>lobbying hard</Links.EL> in the EU to protect their interests.</div>
                 </p>
 
-                <h3>Part to play</h3>
+                <h3>A mixed future</h3>
 
                 <p>
                     <div>Hydrogen may have a successful future if it is unburdened by hype, it just might take time for sensible methods of production and suitable uses to be found. Produced close to sources of excess renewable energy it may be a good fit for larger forms of transportation (fuel cells) including shipping, for energy storage, and domestic and commercial heating (<Links.EL link={{label:'BBC article - Climate change hope for hydrogen fuel', source:'https://www.bbc.com/news/science-environment-50873047'}}>hydrogen boilers</Links.EL>).</div>

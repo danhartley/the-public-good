@@ -4,7 +4,6 @@ import Links from 'components/links/Links';
 import Top from 'components/top/top';
 import Quiz from 'components/quiz/quiz';
 import styles from 'pages/pages.module.scss';
-import Link from 'next/link';
 
 const Carbon = () => {
 
@@ -55,12 +54,10 @@ const Carbon = () => {
         <Layout title="Climate crisis | Carbon - element of life" header="Carbon - element of life" description={'A synopsis of the element carbon: its origin and properties; importance to life; the carbon cycle; and its impact as a greenhouse gas.'} image='https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg'>
 
             <section>
+
+                <p><div class={styles.inset}><em>Reading time: 6 to 7 minutes</em></div></p>
                 
-                {/* <div class={styles.toc}>
-                    <div><Links.EL link={{source:'#origins-and-properties'}}>The origins and properties of carbon</Links.EL><span> 2 minutes</span></div>
-                    <div><Links.EL link={{source:'#carbon-compounds'}}>Carbon compounds</Links.EL><span> 2 minutes</span></div>
-                    <div><Links.EL link={{source:'#carbon-cycle'}}>The carbon cycle</Links.EL><span> 3 minutes</span></div>
-                </div> */}
+                <h2>Carbon is essential to all life, but its rapid release into the atmosphere in the molecular form CO<span class={styles.sub}>2</span> is upsetting equilibria established over millions of years.</h2>
 
                 <Accordion header="Carbon basics">
                     <div class={styles.inset}>
@@ -72,12 +69,10 @@ const Carbon = () => {
                     </div>
                 </Accordion>
 
-                {/* <h2 id="origins-and-properties">The origins and properties of carbon</h2> */}
-
-                <p>
-                    <div class={styles.summary}>Carbon atoms are formed in dying stars under extreme and improbable conditions during a set of nuclear fusion reactions known as the <Links.EL link={{label:'Stanford article on the triple-alpha process', source:'href="http://large.stanford.edu/courses/2017/ph241/udit2/'}}>triple-alpha process</Links.EL>. On collapse of the star, in a supernova, the atoms are blown out, eventually forming new star systems such as our own.</div>
-                </p>
+                <p>Carbon atoms are formed in dying stars under extreme and improbable conditions during a set of nuclear fusion reactions known as the <Links.EL link={{label:'Stanford article on the triple-alpha process', source:'http://large.stanford.edu/courses/2017/ph241/udit2/'}}>triple-alpha process</Links.EL>.</p>
                 
+                <p>On collapse of the star, in a supernova, the atoms are blown out, eventually forming new star systems such as our own.</p>
+
                 <p>In the first 20 minutes after the Big Bang, protons, neutrons and electrons were created. It took hundreds of thousands of years of further cooling before the average energies of nuclei and electrons were low enough to form stable hydrogen and helium atoms.</p>
 
                 <p>A further 500 million years passed before the first stars formed. In these stars conditions were right for <Links.EL link={{source:'https://en.wikipedia.org/wiki/Nucleosynthesis'}}>nucleosynthesis</Links.EL>, the process by which elements heavier than boron are created. Carbon was the first of these elements.</p>
@@ -85,8 +80,10 @@ const Carbon = () => {
                 <h3>Allotropes</h3>
 
                 <p>
-                    <div>Carbon assumes different structural forms - <Links.EL link={{source:'https://en.wikipedia.org/wiki/Allotropy'}}>allotropes</Links.EL>. Alternate forms of the same element are created by external forces, such as heat and pressure. There are many <Links.EL link={{source:'https://en.wikipedia.org/wiki/Allotropes_of_carbon'}}>allotropes of carbon</Links.EL> including those that naturally occur on earth - <Links.EL link={{source:'https://en.wikipedia.org/wiki/Amorphous_carbon'}}>amorphous carbon</Links.EL>, diamond and graphite - and rarer forms such as <Links.EL link={{source:'https://en.wikipedia.org/wiki/Graphene'}}>graphene</Links.EL> and <Links.EL link={{source:'https://en.wikipedia.org/wiki/Buckminsterfullerene'}}>buckminsterfullerene</Links.EL>.</div>
+                    <div>Carbon assumes different structural forms - <Links.EL link={{source:'https://en.wikipedia.org/wiki/Allotropy'}}>allotropes</Links.EL>. Alternate forms of the same element are created by external forces, such as heat and pressure.</div>
                 </p>
+
+                <p>There are many <Links.EL link={{source:'https://en.wikipedia.org/wiki/Allotropes_of_carbon'}}>allotropes of carbon</Links.EL> including those that naturally occur on earth - <Links.EL link={{source:'https://en.wikipedia.org/wiki/Amorphous_carbon'}}>amorphous carbon</Links.EL>, diamond and graphite - and rarer forms such as <Links.EL link={{source:'https://en.wikipedia.org/wiki/Graphene'}}>graphene</Links.EL> and <Links.EL link={{source:'https://en.wikipedia.org/wiki/Buckminsterfullerene'}}>buckminsterfullerene</Links.EL>.</p>
 
                 <h3>Diamond</h3>
 
@@ -101,7 +98,7 @@ const Carbon = () => {
                 </Accordion>
 
                 <p>
-                    <span>Diamond is arranged in a three dimensional tetrahedral lattice in which every carbon atom is bound to four other carbon atoms, in the form of a <Links.EL link={{label:'Image of tetrahedron', source:'https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/3-diamond-tetrahedral-molecular-structure-mikkel-juul-jensenscience-photo-library.jpg'}}>tetrahedron</Links.EL>. The proximity of atoms and the covalent bonds between them make diamond hard; breaking their covalent bonds requires a huge amount of energy</span>
+                    <span>Diamond is arranged in a three dimensional tetrahedral lattice in which every carbon atom is bound to four other carbon atoms, in the form of a <Links.EL link={{label:'Image of tetrahedron', source:'https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/3-diamond-tetrahedral-molecular-structure-mikkel-juul-jensenscience-photo-library.jpg'}}>tetrahedron</Links.EL>. The proximity of atoms and the covalent bonds between them make diamond hard; breaking their covalent bonds requires a huge amount of energy.</span>
                 </p>
 
                 <p>And because there are no free electrons, pure diamond does not conduct electricity.</p>
@@ -132,26 +129,29 @@ const Carbon = () => {
 
                 <p><Links.EL link={{source:'https://en.wikipedia.org/wiki/Acetylene'}}>Acetylene</Links.EL> C<span class={styles.sub}>2</span>H<span class={styles.sub}>2</span> burns at around 3,330°C in pure oxygen (oxyacetylene process) making it suitable for welding and cutting metals. The bulk of the energy released from acetylene is derived from the triple bond that exists between the two carbon atoms in each molecule.</p>
 
-                <p>
-                    <div class={styles.inset}>
-                        <div>C<span class={styles.sub}>4</span>H<span class={styles.sub}>10</span> - butane and C<span class={styles.sub}>8</span>H<span class={styles.sub}>18</span> - octane are pure hydrocarbons. Petrol is a mixture of many hydrocarbons.</div>
-                        <div>Naturally occurring, unrefined fossil fuels, such as crude oil and coal, contain impurities which are released when they are burnt. Coal, for example, is of variable quality; higher grade forms such as anthracite have a higher ratio of carbon to other elements, including oxygen - O, nitrogen - N and sulfur - S.</div>
-                        <div>Low grade <strong>bituminous</strong> coal has the formula <strong>C<span class={styles.sub}>137</span>H<span class={styles.sub}>97</span>O<span class={styles.sub}>9</span>NS</strong>.</div>
-                        <div>High grade <strong>anthracite</strong> has the formula <strong>C<span class={styles.sub}>240</span>H<span class={styles.sub}>99</span>O<span class={styles.sub}>4</span>NS</strong>.</div>
-                    </div>
-                </p>
+
+                <Accordion header="Forms and formulae of fossil fuels">
+                    <p>
+                        <div class={styles.inset}>
+                            <div>C<span class={styles.sub}>4</span>H<span class={styles.sub}>10</span> - butane and C<span class={styles.sub}>8</span>H<span class={styles.sub}>18</span> - octane are pure hydrocarbons. Petrol is a mixture of many hydrocarbons.</div>
+                            <div>Naturally occurring, unrefined fossil fuels, such as crude oil and coal, contain impurities which are released when they are burnt. Coal, for example, is of variable quality; higher grade forms such as anthracite have a higher ratio of carbon to other elements, including oxygen - O, nitrogen - N and sulfur - S.</div>
+                            <div>Low grade <strong>bituminous</strong> coal has the formula <strong>C<span class={styles.sub}>137</span>H<span class={styles.sub}>97</span>O<span class={styles.sub}>9</span>NS</strong>.</div>
+                            <div>High grade <strong>anthracite</strong> has the formula <strong>C<span class={styles.sub}>240</span>H<span class={styles.sub}>99</span>O<span class={styles.sub}>4</span>NS</strong>.</div>
+                        </div>
+                    </p>
+                </Accordion>
 
                 <h3>Polymers</h3>
 
                 <p>Because carbon atoms form strong bonds with other carbon atoms as well as the atoms of other elements it is able to form long chains, or polymers. Many of these are critical to life, including RNA, DNA, proteins, and sugars. It is this ability to bind to itself in long chains, form stable compounds with other elements and the proximity of electrons to the nucleus, that makes carbon the best, and perhaps the only, building block of life, not only on this planet, but in the universe.</p>
     
-                <h2 id="carbon-cycle">The carbon cycle</h2>
+                <h2 id="carbon-cycle">Fast times in the Anthropocene</h2>
 
                 <p>The carbon cycle regulates the flow of carbon through the earth and the atmosphere. The distribution of carbon throughout the cycle affects temperature which alters conditions on earth to which all life must adapt.</p>
 
                 <p>The temperature of the seas and the land has varied widely over geologic time. The main driver for the climate is the energy reaching us from the sun, a figure which varies according to the earth's orbit and the state of the sun itself. Temperature is also affected by random events such as meteor strikes and volcanic eruptions.</p>
 
-                <p>When temperature and climate change slowly evolution by natural selection is possible. Sudden disruption is catastrophic, and results in the <Links.EL link={{label:'National Graphic article: What are mass extinctions, and what causes them?', source:'https://www.nationalgeographic.com/science/article/mass-extinction'}}>mass extinction</Links.EL> of huge numbers of species. There have been five such events on earth, including the Permian–Triassic extinction event (the <Links.EL link={{label:'University of St Andrews article: Great Dying – what caused Earth’s biggest mass extinction?', source:'https://news.st-andrews.ac.uk/archive/great-dying-what-caused-earths-biggest-mass-extinction/'}}>Great Dying</Links.EL>) which accounted for 90-96% of all species.</p>
+                <p>When temperature and climate change slowly evolution by natural selection is possible. Sudden disruption is catastrophic, and results in the <Links.EL link={{label:'National Graphic article: What are mass extinctions, and what causes them?', source:'https://www.nationalgeographic.com/science/article/mass-extinction'}}>mass extinction</Links.EL> of huge numbers of species. There have been five such events on earth, including the Permian–Triassic extinction event (the <Links.EL link={{label:'University of St Andrews article: Great Dying – what caused Earth’s biggest mass extinction?', source:'https://news.st-andrews.ac.uk/archive/great-dying-what-caused-earths-biggest-mass-extinction/'}}>Great Dying</Links.EL>) which accounted for 90% to 96% of all species.</p>
 
                 <p>Species exist when and where conditions are favourable for adaptation and evolution; when they cannot adapt to new conditions, favourable or otherwise, they go extinct.</p>
 

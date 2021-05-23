@@ -33,15 +33,11 @@ const Hyperlinks = () => {
         <Layout header="For the love of hyperlinks" title="Web development | For the love of hyperlinks" description={'Hyperlink good practices explained. How to create accessible links with respect to size, colour, un/visited, internal/external states.'}>
             <section>
 
-                {/* <p><div class={styles.inset}><em>Reading time: 7 minutes</em></div></p> */}
+                <p><div class={styles.inset}><em>Reading time: 8 to 9 minutes</em></div></p>
 
-                <p><div class={styles.summary}>The Hyperlink is a defining feature of the web, a tiny digital instruction that transports us like a magic carpet to far off lands.</div></p>
+                <h2>The Hyperlink is a defining feature of the web, a tiny digital instruction that transports us like a magic carpet to far off lands.</h2>
 
                 <p>The far off lands are news stories, videos, applications, images, maps, and a multiplicity of other data each with its own, unique uniform resource locator, or <Links.EL link={{source:'https://en.wikipedia.org/wiki/URL'}}>URL</Links.EL>, colloquially known as a web address.</p>
-
-                {/* <p>
-                    <div>The web address of this page is <em>https://www.the-public-good.com/web-development/for-the-love-of-hyperlinks</em>.</div>
-                </p> */}
 
                 <p>The hyperlink, or link, needs only our command to initiate a series of requests and responses which fly around the world before depositing us at our destination.</p>
 
@@ -86,7 +82,7 @@ const Hyperlinks = () => {
                     <div>It is tempting to override the defaults for links, and there are sound reasons for doing so. I will come to these.</div>
                 </p>
 
-                <p>Developers have a responsibility to seek guidance as to which colours are legible. WebAIM adocates on behalf of those with disabilities but their advice is pertinent to everyone. For this site, I have followed their recommendations on <Links.EL link={{source:'https://webaim.org/blog/wcag-2-0-and-link-colors/'}}>appropriate colours for links</Links.EL>. Since the default colours for un/visited sites are blue and dark blue/purple I have selected hues of these two that work in both light and dark mode.</p>
+                <p>Developers have a responsibility to seek guidance as to which colours are legible. WebAIM is an advocate on behalf of those with disabilities but their advice is pertinent to everyone. For this site, I have followed their recommendations on <Links.EL link={{source:'https://webaim.org/blog/wcag-2-0-and-link-colors/'}}>appropriate colours for links</Links.EL>. Since the default colours for un/visited sites are blue and dark blue/purple I have selected hues of these two that work in both light and dark mode.</p>
 
                 <p>You can check my selections for <Links.EL link={{source:'https://wave.webaim.org/report#/https://www.the-public-good.com/'}}>contrast errors</Links.EL>.</p>
                 
@@ -108,7 +104,7 @@ const Hyperlinks = () => {
 
                 <p>If you are able to activate mouse over or keyboard focus you will observe changes to links on this site that are part default, part convention.</p>
 
-                <p>These signals confirm that the text is a link, and that it can be activated by clicking or hitting Enter.</p>
+                <p>These signals confirm that the text is a link, and that it can be activated by clicking, tapping or hitting Enter.</p>
 
                 <h3>Are hyperlinks distracting?</h3>
 
@@ -122,7 +118,7 @@ const Hyperlinks = () => {
                 <p>Solitary links are salient and may be distracting; a sprinkling of links, composed of common words, singly or in or short sentences, seems to be the best approach. It is recommended to use words of high frequency (words familiar to the target audience). The more relevant, specific and pithy the better.
                     <div class={styles.quote}>
                         <div>Hyperlinks highlight important information and suggest additional content, which for more difficult concepts, invites rereading of the preceding text.</div>
-                        <Links.EL link={{label: 'Gemma Fitzsimmons | The impact of hyperlinks on reading text', source: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210900'}}>The impact of hyperlinks on reading text</Links.EL>
+                        <div><Links.EL link={{label: 'Gemma Fitzsimmons | The impact of hyperlinks on reading text', source: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210900'}}>The impact of hyperlinks on reading text</Links.EL></div>
                     </div>
                 </p>
 
@@ -201,11 +197,11 @@ const Hyperlinks = () => {
             <Published strDate='Thu 13 May 2021'></Published>
     
             <section>
-                <h2>References</h2>
+                <h2>Links to external references</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
 
-            <Links.RelatedLinks links={[{value:'architecture',text:'Architecture'},{value:'sustainability',text:'Sustainability'},{value:'accessibility',text:'Accessibility'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'web-development/following-the-rules-to-a-well-structured-web-page',text:'Following the rules to a well-structured web page'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

@@ -10,10 +10,10 @@
     font-size: 4rem;
 }
 
-.summary {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+// .summary {
+//     font-size: 1.5rem;
+//     font-weight: bold;
+// }
 
 .diminishingHeaders {
     font-size: 1.5rem;
@@ -27,7 +27,7 @@
     text-decoration: underline;
 }
 
-.card .nestedElements {
+.nestedElements {
     @include unorderedList();
     font-size: 1rem;
     li {
