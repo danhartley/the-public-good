@@ -10,16 +10,12 @@ const CarbonFootprint = () => {
         <Layout header="Will people or policies save the planet?" title="Climate crisis | Will people or policies save the planet?" description={'An introduction to greenhouse gas emissions, carbon budgets, and personal carbon footprint calculators with comparison of 5 calculators.'}>
             <section>
 
-                <div class={styles.toc}>
-                    <div><a href="#intro">Carbon emissions, budgets & calculators</a><span> 4 minutes</span></div>
-                    <div><Links.EL link={{source:'#calculators'}}>Individual carbon footprint calculators</Links.EL><span> 3 minutes</span></div>
-                    <div><Links.EL link={{source:'#individualActs'}}>Individual Acts</Links.EL><span> 2 minutes</span></div>
-                </div>               
+                <p><div class={styles.inset}><em>Reading time: 8 to 9 minutes</em></div></p>
 
-                <h2 id="intro">Carbon emissions, budgets & calculators</h2>
+                <h2 id="intro">Societal changes are needed to avert the climate crisis but the knowledge of individuals is powerful.</h2>
 
                 <p>
-                According to Our World in Data (2017):
+                We use measurements to determine our starting point, and to assess progress. According to Our World in Data (2017):
                 <ul class={styles.dashedItemsList}>
                     <li>Per capita CO2 emissions: <Links.EL link={{source:'https://ourworldindata.org/grapher/co-emissions-per-capita?tab=chart'}}>4.73 tonnes</Links.EL>.</li> 
                     <li>Total CO2: <Links.EL link={{source:'https://ourworldindata.org/co2-emissions'}}>36.44 billion tonnes of CO2</Links.EL>.</li>
@@ -27,7 +23,7 @@ const CarbonFootprint = () => {
                     <li>World population: <Links.EL link={{source:'https://ourworldindata.org/world-population-growth'}}>7.55 billion</Links.EL> <a id="data" href="#discrepancy">*</a>.</li>
                 </ul>
                 <div class={styles.inset}>
-                    Emissions have risen worldwide since 2017 with the exception of 2020 when they fell; <Links.EL link={{source:'https://www.nature.com/articles/d41586-021-00090-3">Nature, 6.4% (2.3 billion tonnes)</a>, <Links.EL link={{source:'https://www.iea.org/articles/global-energy-review-co2-emissions-in-2020'}}>IEA 5.8%</Links.EL>, <a href='}}>Carbon Monitor 4%</Links.EL>.
+                    Emissions have risen worldwide since 2017 with the exception of 2020 when they fell; <Links.EL link={{source:'https://www.nature.com/articles/d41586-021-00090-3'}}>Nature, 6.4% (2.3 billion tonnes)</Links.EL>, <Links.EL link={{source:'https://www.iea.org/articles/global-energy-review-co2-emissions-in-2020'}}>IEA 5.8%</Links.EL>, <Links.EL link={{source:'https://carbonmonitor.org/'}}>Carbon Monitor 4%</Links.EL>.
                     <span><Links.EL link={{source:'https://carbonmonitor.org/'}}>Daily estimates</Links.EL> are also available from Carbon Monitor.</span>
                 </div>                
                 </p>
@@ -73,10 +69,10 @@ const CarbonFootprint = () => {
                     </div>
                 </p>
 
-                <p>The climatologist, Michael E Mann, argues that whilst individual action is important, it must not distract from policy. In an article for Time, <a href="https://time.com/5669071/lifestyle-changes-climate-change/">Lifestyle Changes Aren’t Enough to Save the Planet. Here’s What Could</a>, he writes, 
-                    <span class={styles.quote}>
+                <p>The climatologist, Michael E Mann, argues that whilst individual action is important, it must not distract from policy. In an article for Time, <Links.EL link={{source:'https://time.com/5669071/lifestyle-changes-climate-change/'}}>Lifestyle Changes Aren’t Enough to Save the Planet</Links.EL>. Here’s What Could, he writes, 
+                    <div class={styles.quote}>
                         We need systemic changes that will reduce everyone’s carbon footprint, whether or not they care.
-                    </span>          
+                    </div>          
                 </p>
 
                 <p>
@@ -89,9 +85,9 @@ const CarbonFootprint = () => {
 
                 <p>
                     <div>In his article, <Links.EL link={{source:'https://mashable.com/feature/carbon-footprint-pr-campaign-sham'}}> The carbon footprint sham</Links.EL>, Mark Kaufman argues the burden of responsibility for global warming must be placed squarely on the fossil fuel industry. He concludes,
-                        <span class={styles.quote}>
+                        <div class={styles.quote}>
                         BP wants you to accept responsibility for the globally disrupted climate. Just like beverage industrialists wanted people to feel bad about the amassing pollution created by their plastics and cans, or more sinisterly, tobacco companies blamed smokers for becoming addicted to addictive carcinogenic products. We’ve seen this manipulative playbook before, and BP played it well.
-                        </span>
+                        </div>
                     </div>
                 </p>
 
@@ -99,9 +95,9 @@ const CarbonFootprint = () => {
 
                 <p>
                     <div>In 2008 MIT <Links.EL link={{source:'https://news.mit.edu/2008/footprint-tt0416'}}>calculated</Links.EL> that even the least extravagant person in the US had a carbon footprint of 8.5 tonnes or 42.5% of the average which, at the time, was 20 tonnes.
-                        <span class={styles.quote}>
+                        <div class={styles.quote}>
                         Regardless of income, there is a certain floor below which the individual carbon footprint of a person in the U.S. will not drop.
-                        </span>
+                        </div>
                     </div>
                     <div>
                         If we extend this finding to all rich countries, it would be impossible for even the most diligent individual to live sustainably; before they had eaten one mouthful of food or taken one hot shower, they would be living beyond the capacity of the planet to support them.
@@ -153,7 +149,7 @@ const CarbonFootprint = () => {
 
                 <p>There are numerous carbon footprint calculators. I have listed a few that seem more or less accurate but I would recommend using three or four to obtain an average. Any value should be treated as a rough approximation. As emissions are tied to particular goods and services, we can expect greater accuracy and specificity.</p>
 
-                <Tables.Calculators></Tables.Calculators>
+                <p><Tables.Calculators></Tables.Calculators></p>
 
                 <p>
                     <div>NB Not all calculators are the same. The Global Food Network makes clear their <Links.EL link={{source:'https://www.footprintnetwork.org/footprint-calculator-faq/#gen1'}}>calculator</Links.EL> is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true footprint, measured by area) and a figure for CO2 emissions (a carbon footprint).</div>
@@ -182,7 +178,7 @@ const CarbonFootprint = () => {
                     <ul class={styles.dashedItemsList}>
                         <li>Do not offer the option to share the results of footprints because they are free of important context, and are not comparable; but do share the calculator itself.</li>
                         <li>Show workings and explain assumptions.</li>
-                        <li>Follow, or reference, <a href="https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf">Ecological Footprint Standards (PDF)</a>.</li>
+                        <li>Follow, or reference, <Links.EL link={{source:'https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf'}}>Ecological Footprint Standards (PDF)</Links.EL>.</li>
                         <li>Indicate the implicit, background carbon footprint.</li>
                         <li>Include and explain carbon dioxide-equivalents.</li>
                     </ul>
@@ -198,9 +194,9 @@ const CarbonFootprint = () => {
                 <p>Do individual acts detract from systemic changes that might be more productive?</p>
 
                 <p>Two recent studies provide evidential support that we keep a tally of our moral acts, and are quick to call in our debt; acceptance of <Links.EL link={{source:'https://www.nature.com/articles/s41558-019-0474-0.epdf?referrer_access_token=7hony2jeIBDx312LZL9Gf9RgN0jAjWel9jnR3ZoTv0Nfy3PIgvrwnNXQzIbXH8z1u5o1DVXJKOCBERWXBQ6n3i7p3mfuhk8O9_ARe2av1P-d3pfhbb06zqr_k1ZVK_HD8tEj_6p2jxRJQxwkRFQWahxt7ZYR4Ws1ZVY58B8B8F6TJ6aO9hG-1I9AhErSlutuYsCZeDXvm9-XQaK48r5_g_7ekTO-pGXMZtdqirjpVkfWgFjWyxnVqqn0_h9toXZES8i2jx06Io6c6_qOC8Bd6VHPqm72I77ZCjw2ljeahJRxzha7MfU5fOL8oy4OqgnRM5K5ySLjcAfgtZx4iUYU7Q%3D%3D&tracking_referrer=www.usatoday.com'}}>one tax</Links.EL>, even at the lower end of a range, lessens acceptance of further taxation. A paper in <Links.EL link={{source:'https://www.nature.com/articles/nclimate3316'}}>Nature</Links.EL> that looked at how small changes might adversely affect willingness to accept larger ones, concluded,
-                    <span class={styles.quote}>
+                    <div class={styles.quote}>
                         It appears that, while people are generally concerned about societal problems such as climate change, they may not be willing to incur large costs to achieve a solution. With the perceived existence of a low-cost solution (a nudge), motivated reasoning may tempt some to exaggerate its ultimately small environmental impact. This may explain why participants generally thought the nudge was as or more effective at reducing pollution than the carbon tax. However, even those who knew that the carbon tax is more effective than the green energy nudge were discouraged from implementing the tax when a nudge became available, suggesting that crowding-out is not merely the result of incorrect perceptions of relative effectiveness. When these perceptions are corrected at the time of decision, however, motivated reasoning is difficult and crowding-out disappears.
-                    </span>
+                    </div>
                     A little hope in the final sentence.
                 </p>
 
@@ -225,17 +221,17 @@ const CarbonFootprint = () => {
                 </section>
             <section id="discrepancy">
                 <p>* There is a discrepancy hidden in these figures: 
-                    <span class={styles.quote}>
+                    <div class={styles.quote}>
                         4.73 tonnes * 7.55 billion = 35.70 billion tonnes of CO2
-                    </span>
+                    </div>
                     And yet,
-                    <span class={styles.quote}>
+                    <div class={styles.quote}>
                         36.44 billion tonnes / 7.55 billion people = 4.83 tonnes of CO2
-                    </span>
+                    </div>
                     There is a 2% of emissions not accounted for,
-                    <span class={styles.quote}>
+                    <div class={styles.quote}>
                         1 - (36.44 billion tonnes / 35.70 billion tonnes) ~2%
-                    </span>
+                    </div>
                     This is explained by the 'bunker fuels', or 'International transport', that is emissions for which no one has taken credit.
 
                     <div>

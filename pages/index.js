@@ -7,12 +7,12 @@ export default function Home() {
     <Layout title="Responsible web development" header="Responsible web development" description="Well-researched articles on responsible web development and the climate crisis.">
 
         <section>
-            <h2>Always connect</h2>
+            {/* <h2>Always connect</h2> */}
             <p>Websites do not exist in isolation. I encourage you to leave: <Links.EL link={{label:'Low-tech Magazine\'s solar-powered website', source:'https://solar.lowtechmagazine.com/'}}>A solar-powered website</Links.EL>, <Links.EL link={{label:'The communal computer developed at Dynamicland', source:'https://dynamicland.org/'}}>A communal computer</Links.EL>, <Links.EL link={{source:'https://ourworldindata.org/time-use-living-conditions'}}>The world's energy problem</Links.EL>, <Links.EL link={{source:'https://neumz.com/app/'}}>Daily Gregorian Chant</Links.EL>, and <Links.EL link={{label:'Link to the YouTube video, The Origin of the Elements, which does not have synchronized captioning', source:'https://www.youtube.com/watch?v=ZJQjjBR6PbY&t=19s'}}>The Origin of the Elements</Links.EL>.</p>
-        </section>
+        {/* </section>
 
         <section>
-            <h2>Be explicit</h2>
+            <h2>Be explicit</h2> */}
 
             <p>Our ability to mitigate the threats we pose to the planet depends on individual and collective action.</p>
 
@@ -23,7 +23,7 @@ export default function Home() {
         </section>
 
         <section>
-            <h2>Climate crisis</h2>
+            <h2>The climate crisis</h2>
             
             <Links.ILBlock link={{'value': 'climate-crisis/carbon-element-of-life', 'text': 'Carbon - element of life'}}></Links.ILBlock>
             <Links.ILBlock link={{'value': 'climate-crisis/hydrogen-a-singular-atom', 'text': 'Hydrogen - a singular atom'}}></Links.ILBlock>
@@ -34,7 +34,7 @@ export default function Home() {
 
         <section>
 
-            <h2>Web development</h2>
+            <h2>Responsible web development</h2>
             <Links.ILBlock link={{'value': 'web-development/following-the-rules-to-a-well-structured-web-page', 'text': 'Following the rules to a well-structured web page'}}></Links.ILBlock>
             <Links.ILBlock link={{'value': 'web-development/for-the-love-of-hyperlinks', 'text': 'For the love of hyperlinks'}}></Links.ILBlock>
 

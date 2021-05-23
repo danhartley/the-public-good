@@ -41,7 +41,7 @@ const Hyperlinks = () => {
 
                 <p>The hyperlink, or link, needs only our command to initiate a series of requests and responses which fly around the world before depositing us at our destination.</p>
 
-                <p>Hyperlinks are simple, and although few understand how they work, everyone understands what they do. At least they did, until web developers started playing around with them.</p>
+                <p>Hyperlinks are simple, and although few understand how they work, everyone understands what they do. </p>
 
                 <h3>It's good to connect</h3>
 

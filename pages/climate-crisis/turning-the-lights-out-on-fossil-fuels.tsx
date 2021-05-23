@@ -10,21 +10,9 @@ const Change = () => {
         <Layout header="Turning the lights out on fossil fuels" title="Climate change - Turning the lights out on fossil fuels" description={'Climate change - Turning the lights out on fossil fuels'} image='https://live.staticflickr.com/65535/51143928462_4df026babc_o.jpg'>
             <section>
 
-                <div class={styles.toc}>
-                    <div><Links.EL link={{source:'#background'}}>Preparing for the past</Links.EL><span> 3 minutes</span></div>
-                    <div><Links.EL link={{source:'#energy'}}>The wrong kind of energy</Links.EL><span> 6 minutes</span></div>
-                    <div><Links.EL link={{source:'#conclusion'}}>Conclusion</Links.EL><span> 1 minute</span></div>
-                    <div><a href="#appendix">Appendix: How did we get here?</a><span> 4 minutes</span></div>
-                </div>
+                <p><div class={styles.inset}><em>Reading time: 9 to 10 minutes</em></div></p>
 
-                <h2 id="background">Preparing for the past</h2>
-
-                {/* <div>
-                    <span class={styles.quote}>
-                        <span>The potential for adverse consequences.</span>
-                        <div><Links.EL link={{source:'https://www.ipcc.ch/site/assets/uploads/2021/01/The-concept-of-risk-in-the-IPCC-Sixth-Assessment-Report.pdf'}}>The concept of risk</Links.EL> - IPCC (PDF)</div>
-                    </span>
-                </div>            */}
+                <h2 id="background">The transition away from fossil fuels is, by historical standards, happening fast. It just isn't happening fast enough.</h2>
 
                 <p>When Napoleon began his invasion of Russia in the summer of 1812, he did not imagine that his Grande Armée of almost 449,000 men would be reduced to 9,000 within a few months.</p>
 
@@ -34,9 +22,9 @@ const Change = () => {
 
                 <p>
                     In 1988 the World Meteorological Organisation <Links.EL link={{source:'https://en.wikipedia.org/wiki/World_Meteorological_Organization'}}>WMO</Links.EL> established the Intergovernmental Panel on Climate Change <Links.EL link={{source:'https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change'}}>IPCC</Links.EL>. The IPCC was charged with reporting to the United Nations Framework Convention on Climate Change <Links.EL link={{source:'https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change'}}>UNFCCC</Links.EL> whose objective was to,
-                    <span class={styles.quote}>
+                    <div class={styles.quote}>
                         Stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous anthropogenic (human-induced) interference with the climate system.
-                    </span> 
+                    </div> 
                 </p>
 
                 <h3>Assessment reports</h3>
@@ -50,20 +38,20 @@ const Change = () => {
                 <h3>The Paris Agreement</h3>
 
                 <p>In accordance with the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Paris_Agreement'}}>Paris Agreement</Links.EL>, signed at <Links.EL link={{source:'https://unfccc.int/process-and-meetings/conferences/past-conferences/paris-climate-change-conference-november-2015/cop-21'}}>COP21</Links.EL>, each country is required to present a Nationally Determined Contribution <Links.EL link={{source:'https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs'}}>NDC</Links.EL> which should,
-                    <span class={styles.quote}>
+                    <div class={styles.quote}>
                         …embody efforts by each country to reduce national emissions and adapt to the impacts of climate change.
-                    </span>
-                    And,
-                    <span class={styles.quote}>
+                    </div>
+                    The agreement continued,
+                    <div class={styles.quote}>
                     Together, these climate actions determine whether the world achieves the long-term goals of the Paris Agreement and to reach global peaking of greenhouse gas (GHG) emissions as soon as possible and to undertake rapid reductions thereafter in accordance with best available science, so as to achieve a balance between anthropogenic emissions by sources and removals by sinks of GHGs in the second half of this century.
-                    </span>
+                    </div>
                 </p>
 
                 <p>Commitments have not been honoured.
-                    <span class={styles.quote}>
+                    <div class={styles.quote}>
                     After a year disrupted by the Covid-19 pandemic, nations representing only around 28% of global emissions registered new or updated “nationally determined contributions” (NDCs) on the UN’s official registry by the end of the year. Some big emitters did register their NDCs in time, including the UK and EU. But major absences included the US, India and China.
-                    <div><Links.EL link={{source:'https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition'}}>Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?</Links.EL></div>
-                    </span>
+                    <Links.EL link={{source:'https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition'}}>Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?</Links.EL>
+                    </div>
                 </p>
 
                 <p>As a result, <Links.EL link={{source:'https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions'}}>global emissions continue to rise</Links.EL>.</p>                
@@ -73,14 +61,14 @@ const Change = () => {
                 <p>The transition away from fossil fuels is, by historical standards, happening fast. It just isn't happening fast enough.</p>
 
                 <p>
-                    <div>Beyond and since Paris other plans have been drawn up. Among the more radical is the <span><Links.EL link={{source:'https://www.congress.gov/116/bills/hres109/BILLS-116hres109ih.pdf'}}>Green New Deal</Links.EL> in the US</span> (PDF), <span><Links.EL link={{source:'Technology Zero Carbon Britain'}}>Technology Zero Carbon Britain</Links.EL></span>, and <span><Links.EL link={{source:'https://web.stanford.edu/group/efmh/jacobson/Articles/I/CountriesWWS.pdf">100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World</a></span>. The EU has put forward the <span><a href='}}>European Green Deal</Links.EL></span>.</div>
+                    <div>Beyond and since Paris other plans have been drawn up. Among the more radical is the <Links.EL link={{source:'https://www.congress.gov/116/bills/hres109/BILLS-116hres109ih.pdf'}}>Green New Deal</Links.EL> in the US (PDF), <Links.EL link={{source:'Technology Zero Carbon Britain'}}>Technology Zero Carbon Britain</Links.EL>, and <Links.EL link={{source:'https://web.stanford.edu/group/efmh/jacobson/Articles/I/CountriesWWS.pdf">100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World</a></span>. The EU has put forward the <span><a href='}}>European Green Deal</Links.EL>.</div>
                 </p>
 
                 <p>The 13th of the UN's own 17 Sustainable Development Goals <Links.EL link={{source:'https://sdgs.un.org/goals'}}>SDGs</Links.EL>, Climate Action, targets climate change and its impacts.</p>
  
                 <h2 id="energy">The wrong kind of energy</h2>
 
-                <p>Photosynthesis is <span><Links.EL link={{source:'https://en.wikipedia.org/wiki/Photosynthetic_efficiency#Efficiencies_of_various_biofuel_crops'}}>less efficient</Links.EL></span> than photovoltaic cells at capturing energy from the sun. But the plants that benefit from it are highly effective at creating environments suitable for animals.</p>
+                <p>Photosynthesis is <Links.EL link={{source:'https://en.wikipedia.org/wiki/Photosynthetic_efficiency#Efficiencies_of_various_biofuel_crops'}}>less efficient</Links.EL> than photovoltaic cells at capturing energy from the sun. But the plants that benefit from it are highly effective at creating environments suitable for animals.</p>
 
                 <p>Fossil fuels accumulated behind the scenes, a consequence not of evolution but an accident of time and geography, silently capturing the carbon dioxide stored in dead plants and animals at a time when levels were far higher than they are today. These reserves were laid down over thousands of millenia many millions of years ago.</p>
 
@@ -120,10 +108,12 @@ const Change = () => {
 
                 <Tables.PowerDensities></Tables.PowerDensities>            
 
-                <div>
-                    <div><span>*</span><Links.EL link={{source:'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf'}}>Power density primer Vaclav Smil</Links.EL></div>
-                    <div><span>+</span><Links.EL link={{source:'https://www.sciencedirect.com/science/article/pii/S0301421518305512'}}>The spatial extent of renewable and non-renewable power generation John van Zalk, Paul Behrens</Links.EL></div>
-                </div>
+                <p>
+                    <div class={styles.inset}>
+                        <div><span>* <Links.EL link={{source:'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf'}}>Power density primer Vaclav Smil</Links.EL></span></div>
+                        <div>+ <Links.EL link={{source:'https://www.sciencedirect.com/science/article/pii/S0301421518305512'}}>The spatial extent of renewable and non-renewable power generation J. van Zalk, P. Behrens</Links.EL></div>
+                    </div>
+                </p>
 
                 <p>Higher values for renewables exist, but they are often in places - deserts, offshore - far from urban populations where energy demands are highest; this introduces the twin problems of transmission and storage. Locating energy close to demand is particularly hard for renewables due to competition for land (agriculture, amenity, housing), and nuclear (safety).</p>
 
@@ -146,12 +136,12 @@ const Change = () => {
                 <h3>Mind the GDP</h3>
 
                 <p>Energy demand is falling in rich countries. In the <Links.EL link={{source:'https://ourworldindata.org/energy/country/united-states?country=~USA'}}>US</Links.EL>, for example, energy usage is down from a peak in 1973 of 95.5 kWh per day to 79.9 in 2019, despite the <Links.EL link={{source:'https://blog.ucsusa.org/peter-oconnor/energy-efficiency-what-is-the-rebound-effect-946'}}>rebound effect</Links.EL>. It is conceivable that people will choose to consume less, and that societies will measure their progress on a broad set of values and principles rather than focusing on gross domestic product <Links.EL link={{source:'https://en.wikipedia.org/wiki/Gross_domestic_product'}}>GDP</Links.EL>. The Dasgupta report, commissioned by the UK treasury, sets out the following case,
-                    <span class={styles.quote}>
+                    <div class={styles.quote}>
                     The options [set out by this report] for change are geared towards three broad, interconnected transitions, requiring humanity to ensure that our demands on Nature do not exceed its supply, and that we increase Nature’s supply relative to its current level; change our measures of economic success to help guide us on a more sustainable path; and transform our institutions and systems – in particular our finance and education systems – to enable these changes and sustain them for future generations.
                     <div>
                         <Links.EL link={{label:'The Economics of Biodiversity: The Dasgupta Review', source:'https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review'}}>The Economics of Biodiversity: The Dasgupta Review</Links.EL>
                     </div>
-                    </span>
+                    </div>
                 </p>
 
                 <h3>Historical emissions</h3>
@@ -159,9 +149,9 @@ const Change = () => {
                 <p>Rich countries are touchy on the subject of <Links.EL link={{source:'https://ourworldindata.org/contributed-most-global-co2'}}>historical emissions</Links.EL>. They may be factored in to emissions budgets, but countries that have recently industrialised claim, at the very least, the right to lift their people from want, and to enjoy the benefits of affordable energy.</p>
 
                 <p>USA vs. Nigeria
-                    <span class={styles.quote}>
+                    <div class={styles.quote}>
                     Nigeria is predicted to be home to more than 1 billion people by 2100. The per capita CO2 emissions (2017) for Nigeria was <Links.EL link={{source:'https://ourworldindata.org/co2/country/nigeria#per-capita-how-much-co2-does-the-average-person-emit'}}>.68 tonnes</Links.EL>. The figure for the US in the same year was <Links.EL link={{source:'https://ourworldindata.org/co2/country/united-states?country=~USA#per-capita-how-much-co2-does-the-average-person-emit'}}>16.16 tonnes</Links.EL>; that is a US citizen, on average, uses almost 24 times the resources of a Nigerian.
-                    </span>
+                    </div>
                 </p>
 
                 <h3>Population</h3>
@@ -171,16 +161,8 @@ const Change = () => {
                 <p>The <Links.EL link={{source:'https://en.wikipedia.org/wiki/Income_and_fertility'}}>correlation</Links.EL> between economic development and fertility is assumed to be either negative (fertility falls with development), or follows the J-Curve (inverse correlation followed by increased fertility but to a level below the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Total_fertility_rate#Replacement_rates'}}>replacement rate</Links.EL>).</p>
 
                 <p>
-                    <div>The majority of studies <span><Links.EL link={{source:'https://population.un.org/wpp/Graphs/DemographicProfiles/Line/900'}}>predict</Links.EL></span> the <span><Links.EL link={{source:'https://ourworldindata.org/world-population-growth#how-has-world-population-growth-changed-over-time'}}>global population</Links.EL></span> will continue to grow no matter what.</div>
+                    <div>The majority of studies <Links.EL link={{source:'https://population.un.org/wpp/Graphs/DemographicProfiles/Line/900'}}>predict</Links.EL> the <Links.EL link={{source:'https://ourworldindata.org/world-population-growth#how-has-world-population-growth-changed-over-time'}}>global population</Links.EL> will continue to grow no matter what.</div>
                 </p>
-
-                {/* <p>What might the future hold?</p> */}
-
-                {/* <p>In our first scenario, growth comes to an end because - for the first time in human history - every region of the world has sufficient resources to feed and house its inhabitants.</p>
-                
-                <p>In a second scenario, population growth is halted for negative reasons, not from choice, but because the planet is unable to provide for everyone, and wealth remains unequally distributed.</p>
-
-                <p>A third scenario is that we limit population growth. There is no clear mechanism by which this can be done fairly.</p> */}
 
                 <p>There is no clear mechanism by which population growth can be slowed or reversed.</p>
 
@@ -190,7 +172,7 @@ const Change = () => {
 
                 <p>History has caught up with us. The problem with fossil fuels is not that burning them releases carbon, it is that we are dependent on them, and we have little time in which to overcome our addiction.</p>
 
-                <p>In 2010 the IPCC published <span><Links.EL link={{source:'https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf'}}>a guide to uncertainty</Links.EL></span> which offers advice on how to represent confidence in how data are collected and the likelihood of their being accurate. Describing the problem is hard, predicting what will happen next, harder still. There will be no unambiguous signals.</p>
+                <p>In 2010 the IPCC published <Links.EL link={{source:'https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf'}}>a guide to uncertainty</Links.EL> which offers advice on how to represent confidence in how data are collected and the likelihood of their being accurate. Describing the problem is hard, predicting what will happen next, harder still. There will be no unambiguous signals.</p>
 
                 <p>
                     <div>The future is unlikely to be a clear path agreed upon by all, but a hotchpotch of competing ideas, ideals, protest, chicanery and ingenuity. The emergence of citizen's assemblies may play an important part, reflecting popular convictions that traditional, partisan politics are unable to represent. The French government legislated for a <Links.EL link={{source:'https://www.theguardian.com/business/2021/apr/12/france-ban-some-domestic-flights-train-available-macron-climate-convention-mps'}}>ban</Links.EL> on some internal flights, following a (watered down) recommendation proposed by the <Links.EL link={{source:'https://www.conventioncitoyennepourleclimat.fr/'}}>Convention Citoyenne pour le Climat</Links.EL>. The UK government's <Links.EL link={{source:'https://www.gov.uk/government/publications/the-ten-point-plan-for-a-green-industrial-revolution'}}>10 point plan on climate change</Links.EL> echoes, in part, the findings of the <Links.EL link={{source:'https://www.climateassembly.uk/'}}>Climate Assembly UK</Links.EL>. The <Links.EL link={{source:'https://globalassembly.org/'}}>Global Assembly</Links.EL> has a commendably broad constituency but lacks an accountable body.</div>
@@ -198,7 +180,7 @@ const Change = () => {
 
                 <p>Radical thought can lead to naive idealism or game-changing innovation. Which of the two is not always clear at the time.</p>
 
-                <p><Links.EL link={{source:'https://en.wikipedia.org/wiki/Pierre-Simon_Laplace">Pierre-Simon Laplace</a>, an examiner of Napoleon when he attended the École Militaire, was on the panel selected in 1790, by another assembly, the <a href="https://en.wikipedia.org/wiki/National_Constituent_Assembly_(France)">Assemblée nationale constituante</a>, to establish a <a href='}}>metric system</Links.EL>. The new system of weights and measures which unified what until then had been a patchwork of regional and local measures, proved useful and durable. The <Links.EL link={{source:'https://en.wikipedia.org/wiki/French_Republican_calendar'}}>metric calendar</Links.EL> which respected neither tradition nor planetary orbits, lasted just 12 years from 1793 to 1805, except for a 19 day reprieve in 1871. It was beautiful but hopelessly impractical.</p>
+                <p><Links.EL link={{source:'https://en.wikipedia.org/wiki/Pierre-Simon_Laplace'}}>Pierre-Simon Laplace</Links.EL>, an examiner of Napoleon when he attended the École Militaire, was on the panel selected in 1790, by another assembly, the <Links.EL link={{source:'https://en.wikipedia.org/wiki/National_Constituent_Assembly_(France)'}}>Assemblée nationale constituante</Links.EL>, to establish a metric system. The new system of weights and measures which unified what until then had been a patchwork of regional and local measures, proved useful and durable. The <Links.EL link={{source:'https://en.wikipedia.org/wiki/French_Republican_calendar'}}>metric calendar</Links.EL> which respected neither tradition nor planetary orbits, lasted just 12 years from 1793 to 1805, except for a 19 day reprieve in 1871. It was beautiful but hopelessly impractical.</p>
 
                 <p>The IPCC also sets dates, wholesome round numbers that resonate with purpose and authority. Are they a metric system for the ages, or a fairytale?</p>
 
@@ -210,7 +192,7 @@ const Change = () => {
 
                 <section>
 
-                <h2 id="appendix">How did we get here?</h2>
+                <h2 id="appendix">Appendix</h2>
 
                 <h3>Controlling fire</h3>
 
@@ -238,7 +220,7 @@ const Change = () => {
                     <div class={styles.quote}>
                         Britain was terribly well endowed with coal: when the Revolution started, the amount of carbon sitting in coal under Britain was roughly the same as the amount sitting in oil under Saudi Arabia. <div><Links.EL link={{source:'https://www.withouthotair.com/c1/page_6.shtml'}}>Sustainable Energy - without the hot air David JC MacKay</Links.EL></div>
                     </div>
-                    In 1965 the UK was dependent on coal for 59% of its energy needs; dwindling reserves, the discovery of North Sea Gas, and laterly support for renewables has seen a shift in its energy mix. By 2019 coal supplied just <span><Links.EL link={{source:'https://ourworldindata.org/energy/country/united-kingdom?country=~GBR'}}>3.35%</Links.EL> of energy, less than half that of wind power (7.29%)</span>.
+                    In 1965 the UK was dependent on coal for 59% of its energy needs; dwindling reserves, the discovery of North Sea Gas, and laterly support for renewables has seen a shift in its energy mix. By 2019 coal supplied just <Links.EL link={{source:'https://ourworldindata.org/energy/country/united-kingdom?country=~GBR'}}>3.35%</Links.EL> of energy, less than half that of wind power (7.29%).
                 </p>
 
                 <h3>The transition to oil</h3>  

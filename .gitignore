@@ -39,3 +39,5 @@ yarn-error.log*
 # workbox
 
 /public/workbox-*.js
+
+/pages/archive

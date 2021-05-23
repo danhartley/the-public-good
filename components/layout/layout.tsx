@@ -78,7 +78,7 @@ const Layout = ({
                     <Link href={'/'}>
                         <a class={styles.title} aria-label="Home page">
                             <nav aria-label="Header link to home page">The Public Good</nav>
-                            <span><em>This website will not empower you.</em></span>
+                            <div><em>This website will not empower you.</em></div>
                         </a>
                     </Link>
                     <p class={styles.description}>                            
