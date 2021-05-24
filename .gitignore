@@ -40,4 +40,5 @@ yarn-error.log*
 
 /public/workbox-*.js
 
-/pages/archive
+/pages/thinking.tsx
+/pages/nature.tsx

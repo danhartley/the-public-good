@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import styles from 'pages/pages.module.scss';
 
