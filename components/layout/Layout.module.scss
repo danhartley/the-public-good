@@ -5,7 +5,7 @@
         .skiptocontent a, .skiptocontent a:visited {
             position: absolute;
             top: -40px;
-            color: rgb(var(--bg));
+            color: white;
             height: 0;
         }
         width: 100vw; 
@@ -35,7 +35,7 @@
             color: rgb(var(--fg));
             font-size: calc(0.5rem + .75vw);
             letter-spacing: .5px;
-            button:focus span {
+            button:hover span, button:focus span {
                 color: white;
                 color: rgb(var(--fg));
             }
@@ -88,10 +88,8 @@
     right: 0;
     width: 3rem;
     height: 3rem;
-    span {
-        &:hover, &:focus {
-            color: rgb(var(--l)) !important;
-        }
+    &:hover, &:focus {
+        color: rgb(var(--l)) !important;
     }
 }
 
@@ -104,7 +102,6 @@
 
 .light {
     color: white;
-    color: rgb(var(--fg));
     &::after {
         content: "\25D1";
     }

@@ -197,7 +197,7 @@ const MentalModel = () => {
 
                 <p><Links.EL link={{source:'https://www.accessibility-developer-guide.com/knowledge/keyboard-only/browsing-websites/'}}>Keyboard navigation</Links.EL> is fast and easy because it skips passive content and relies on the interconnected structures which underpin the web.</p>
 
-                <p>If you don't know the keyboard shortcuts, here they are:
+                <p>If you don't know the keyboard shortcuts to move back and forwards between pages in the browser, here they are:
                     <ul>
                         <li>Mac: ⌘ + left/right arrow key</li>
                         <li>Windows & Linux: Alt + left/right arrow key</li>
@@ -225,7 +225,7 @@ const MentalModel = () => {
 
                 <p>When we visit a new page for the first time we do not bring a fresh eye to it; we have a stack of preconceptions fashioned by all the other pages we have seen. Upsetting our expectations makes us work harder to understand the basics when out attention should be focused on what makes the page unique.</p>
 
-                <p>Accepting existing models and conventions does not preclude innovation and originality which cannot come at the cost of intelligibility.</p>
+                <p>Innovation and originality should not play fast and loose with existing models and conventions.</p>
 
                 <h3>Animation</h3>
 
@@ -244,7 +244,7 @@ const MentalModel = () => {
                     </div>
                 </p>
 
-                <p>Consider this example of a mental model. The web address bar was designed for users to type in the name of a web site they already knew. If they wanted to search for a web site, they used a search box like the one on the Google homepage. Many people confused the two. Instead of telling them they were wrong, the Chrome browser began to allow users to accept either a site address or, if the entry wasn't an address, search for matches. The new model caught on, and all browsers now work this way.</p>
+                <p>Consider this example. The browser address bar was designed for users to type in the name of a web site they already knew. If they wanted to search for a web site, they used a search box like the one on the Google homepage. Many people confused the two. The Chrome address bar was adapted to return either the requested page or search for a match. The new model caught on, and all browsers now work this way.</p>
 
                 <h2>Web applications</h2>
 
@@ -252,7 +252,7 @@ const MentalModel = () => {
 
                 <p>Websites like Facebook and Gmail have few pages but many ways to interact. For this reason they are often called web applications, or web apps, and rely on JavaScript for their functionality (although you can run a non-JavaScript version of Gmail). Under the hood they are still web pages composed of HTML elements.</p>
 
-                <p>Because of their complexity, scope and number of users, <Links.EL link={{source:'https://www.facebook.com/help/accessibility'}}>Facebook</Links.EL> and <Links.EL link={{source:'https://support.google.com/mail/answer/6115187'}}>Google</Links.EL> have websites dedicated to using their apps.</p>
+                <p>JavaScript used wisely can enhance a page. Interactive graphs are a good example. But JavaScript should not be relied upon for a page to work.</p>
 
                 <h2>Summing up</h2>
 
@@ -264,7 +264,7 @@ const MentalModel = () => {
                 
                 <p>A site that functions without CSS and JavaScript is likely to be well-structured, well-designed, and accessible.</p>
 
-                <p>If you prefer a more ascetic experience, the <Links.EL link={{source:'http://lynx.browser.org/'}}>Lynx text browser</Links.EL> might appeal to you.</p>
+                {/* <p>If you prefer a more ascetic experience, the <Links.EL link={{source:'http://lynx.browser.org/'}}>Lynx text browser</Links.EL> might appeal to you.</p> */}
 
                 <Top></Top>
 

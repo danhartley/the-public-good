@@ -8,15 +8,21 @@ const Accordion = ({
     children
 }) => {
 
-    const [ state, setState ] = useState(false);
+    const [ isOpen, setIsOpen ] = useState(false);
 
     const toggle = toggledState => {     
-        setState(toggledState);
+        setIsOpen(toggledState);
     };
 
+    const id = Array.from(header).reduce((str:string,x:string) => x !== ' ' ? str+x : str) as string;
+    const contentId = 'content' + id;
+
     const content = <p>
-        <button type="button" id="accordionBtn" aria-controls="accordionContent" aria-expanded={state} aria-label={`Toggle view for additional information on ${header}`} onClick={e => toggle(!state)} class={styles.accordionBtn}><span class={state ? styles.down : styles.up}></span><span>{ header }</span></button>
-        <div id="accordionContent" role="region" aria-labelledby="accordionBtn" class={state ? styles.show : styles.hide}>
+        <div class={styles.accordion}>
+            <span class={isOpen ? styles.open : styles.closed}></span><button type="button" id={id} aria-controls={contentId} aria-label={`Toggle view for additional information on ${header}`} onClick={e => toggle(!isOpen)}><span>{ header }</span></button>
+        </div>
+        <noscript /> 
+        <div id={contentId} role="region" aria-labelledby={id} class={isOpen ? styles.show : styles.hide}>
         { children }
         </div>
     </p>
@@ -24,9 +30,6 @@ const Accordion = ({
     return (
         <> 
        {content}
-        <p>
-            <noscript>{children}</noscript>
-        </p>
         </>
     )
 };

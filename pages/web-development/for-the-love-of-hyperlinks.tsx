@@ -122,7 +122,7 @@ const Hyperlinks = () => {
                 </p>
 
                 <p>
-                    <div>Meaningful and distinguishable link text is essential for users of screen readers who may scan links independently of other content. If the text is too long, alternative text can be placed in an <Links.EL link={{label: 'MDN Using the aria-label attribute', source: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute'}}>aria-label attribute</Links.EL> which will not be seen by sighted readers.</div>
+                    <div>Meaningful and distinguishable link text is essential for users of screen readers who may scan links independently of other content. If the link text is insufficient, alternative text can be placed in an <Links.EL link={{label: 'MDN Using the aria-label attribute', source: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute'}}>aria-label attribute</Links.EL> which will not be seen by sighted readers.</div>
                 </p>
 
                 <p>In order to minimise distraction some sites gather links in one place. In a short article this may be at the end of the piece. Some BBC articles group and list links as they go along, a technique which keeps the links close to the text they support.</p>
@@ -167,7 +167,7 @@ const Hyperlinks = () => {
 
                 <p>According to a <Links.EL link={{source:'https://try.alexa.com/resources/website-traffic-sources'}}>report on what drives web traffic</Links.EL> from the data analytics company Alexa, between 30% and 50% of website visits come about by users entering the address they want in the address bar. The figure is at the higher end for business websites, and sectors where trust is important such as personal finance.</p>
 
-                <p>Where they are visible web addresses provide useful information and should be human readable and screen-reader friendly.</p>
+                <p>When visible web addresses provide useful information and should be human readable and screen-reader friendly.</p>
 
                 <p>They provide insight on the structure of the web site and where <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Glossary/Breadcrumb'}}>breadcrumbs</Links.EL> are used there should be consistency between the two.</p>
 

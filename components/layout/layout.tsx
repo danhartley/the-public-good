@@ -78,7 +78,7 @@ const Layout = ({
 
                     <Link href={'/'}>
                         <a class={styles.title} aria-label="Home page">
-                            <nav aria-label="Header link to home page">The Public Good</nav>
+                            <nav id="top" aria-label="Header link to home page">The Public Good</nav>
                             <div><em>This website will not empower you.</em></div>
                         </a>
                     </Link>
@@ -92,7 +92,7 @@ const Layout = ({
 
                     { rt.length > 0 
                         ? <div class={styles.author}>
-                            <img src="https://avatars.githubusercontent.com/u/264690?s=60&amp;v=4" height="50px" width="50px" />
+                            <img alt="The author, Daniel Hartley" src="https://avatars.githubusercontent.com/u/264690?s=60&amp;v=4" height="50px" width="50px" />
                             <div>
                                 <div>Daniel Hartley</div>
                                 <div>Reading time: {rt} minutes</div>

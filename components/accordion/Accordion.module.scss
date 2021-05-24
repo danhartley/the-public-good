@@ -1,32 +1,33 @@
 @import 'styles/mixins.scss';
 
-.accordionBtn {
-    border: none;
-    background-color: initial;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: smaller;
+.accordion {
     display: flex;
     align-items: center;
-    border: .1rem solid transparent;
-    color: rgba(var(--fg),1);
-    margin-left: -.5rem;
-    &:hover, &:focus {
-        border: .1rem dashed rgba(var(--fg),.5);
-        outline: none;
+    button {
+        border: none;
+        background-color: initial;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: smaller;
+        border: .1rem solid transparent;
+        color: rgba(var(--fg),1);
+        margin-left: -.5rem;
+        &:hover, &:focus {
+            border: .1rem dashed rgba(var(--fg),.5);
+            outline: none;
+        }
+    }    
+    & > span {
+        pointer-events: none;        
     }
-    span {
-        pointer-events: none;
-        display: inline-block;
-    }
-    .up {
+    .closed {
         &:first-child:after {
             content: '\002B';            
             font-size: 1.4em;
             margin-right: .5rem;
         }
     }    
-    .down {
+    .open {
         &:first-child::after {
             content: '\2212';
             font-size: 1.4em;
@@ -41,10 +42,12 @@
     transition: max-height .25s;
     transition: opacity .75s;
     padding: 0 .5rem;
+    // display: initial; // for screen readers
 }
 .hide {
     overflow: hidden;
     opacity: 0;
     max-height: 0;
     transition: max-height .1s;
+    // display: none; // for screen readers
 }

@@ -62,7 +62,7 @@ const Sustainability = () => {
                 <p><Carbonbadge darkMode={false} /></p>
             </section>
             <section>
-                <p class={styles.centre}>
+                <p class={styles.centred}>
                     <img src="https://api.thegreenwebfoundation.org/greencheckimage/www.the-public-good.com?nocache=true" alt="Checked by thegreenwebfoundation.org" />
                 </p>
             </section>
