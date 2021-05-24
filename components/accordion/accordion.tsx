@@ -21,7 +21,6 @@ const Accordion = ({
         <div class={styles.accordion}>
             <span class={isOpen ? styles.open : styles.closed}></span><button type="button" id={id} aria-controls={contentId} aria-label={`Toggle view for additional information on ${header}`} onClick={e => toggle(!isOpen)}><span>{ header }</span></button>
         </div>
-        <noscript /> 
         <div id={contentId} role="region" aria-labelledby={id} class={isOpen ? styles.show : styles.hide}>
         { children }
         </div>
