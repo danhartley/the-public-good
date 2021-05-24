@@ -90,31 +90,35 @@ const MentalModel = () => {
                         <ul class={styles.nestedElements}>
                             <li>head</li>
                             <li>body
-                                <li>
-                                    <strong>header</strong> 
-                                    <ul>
-                                        <li>nav</li>
-                                    </ul>
-                                </li>                                                                    
-                                <li>
-                                    <strong>main</strong>
-                                    <ul>
-                                        <li>
-                                            article
-                                            <ul>
-                                                <li><em>h1</em> <span>Following the rules to a well-structured web page</span></li>
-                                                <li>p <span>Web pages take many forms…</span></li>
-                                                <li>p…</li>
-                                                <li><em>h2</em> <span>HTML elements and tags</span></li>
-                                                <li>p…</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <ul>
+                                    <li>
+                                        <strong>header</strong> 
+                                        <ul>
+                                            <li>nav</li>
+                                        </ul>
+                                    </li>                                                                    
+                                    <li>
+                                        <strong>main</strong>
+                                        <ul>
+                                            <li>
+                                                article
+                                                <ul>
+                                                    <li><em>h1</em> <span>Following the rules to a well-structured web page</span></li>
+                                                    <li>p <span>Web pages take many forms…</span></li>
+                                                    <li>p…</li>
+                                                    <li><em>h2</em> <span>HTML elements and tags</span></li>
+                                                    <li>p…</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <li><strong>footer</strong></li>
-                                <li></li>
+                                <ul>
+                                    <li><strong>footer</strong></li>
+                                    <li></li>
+                                </ul>
                             </li>
                         </ul>
                     </p>
@@ -202,6 +206,7 @@ const MentalModel = () => {
                         <li>Mac: ⌘ + left/right arrow key</li>
                         <li>Windows & Linux: Alt + left/right arrow key</li>
                     </ul>
+                    On a tablet or trackpad, you can swipe left and right.
                 </p>
 
                 <h2>The primary goal of a page is to be understood</h2>
@@ -223,7 +228,7 @@ const MentalModel = () => {
                     </div>
                 </p>
 
-                <p>When we visit a new page for the first time we do not bring a fresh eye to it; we have a stack of preconceptions fashioned by all the other pages we have seen. Upsetting our expectations makes us work harder to understand the basics when out attention should be focused on what makes the page unique.</p>
+                <p>When we visit a new page for the first time we do not bring a fresh eye to it; we have a stack of preconceptions fashioned by all the other pages we have seen. Upsetting our expectations makes us work harder to understand the basics when our attention should be focused on what makes the page unique.</p>
 
                 <p>Innovation and originality should not play fast and loose with existing models and conventions.</p>
 
