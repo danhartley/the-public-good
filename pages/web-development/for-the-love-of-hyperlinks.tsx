@@ -40,7 +40,7 @@ const Hyperlinks = () => {
 
                 <p>The hyperlink, or link, needs only our command to initiate a series of requests and responses which fly around the world before depositing us at our destination.</p>
 
-                <p>Hyperlinks are simple, and although few understand how they work, everyone understands what they do. </p>
+                <p>Hyperlinks are simple to use, and designers and developers must keep it that way. </p>
 
                 <h3>It's good to connect</h3>
 
@@ -58,7 +58,7 @@ const Hyperlinks = () => {
                     <div>To increase the security of a site and to avoid endorsing the source of a link the attributes <Links.EL link={{source:'https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/'}}>noopener, noreferrer and nofollow</Links.EL> can be added. Google has introduced 'sponsored' and 'user-generated content' attributes to <Links.EL link={{source:'https://developers.google.com/search/docs/advanced/guidelines/qualify-outbound-links'}}>qualify outbound links</Links.EL> to site sponsors and for links added by users in comments and forums.</div>
                 </p>
 
-                <p>If you don't want to upset your reader, you must be more explicit.</p>
+                <p>If you don't want to upset your reader, make clear that a link leads to content that is sponsored, biased, or damaging.</p>
 
                 <h3>Is blue the warmest colour?</h3>
 
@@ -156,6 +156,8 @@ const Hyperlinks = () => {
                         <li>Windows & Linux: Ctrl + link</li>
                     </ul>
                 </p>
+
+                <p>On a tablet, mobile, trackpad or mouse press to focus on the link and select your preferred option.</p>
 
                 <p>One objection to opening external links in the same tab is that clicking the back button causes the page to reload. Since this behaviour is more sustainable (the energy required to resend the page is saved), you may choose to favour this approach over one that promotes accessibility. This website employs <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API'}}>service workers</Links.EL> so that, for the majority of users, the page loads from a local cache when they go back.</p>
 

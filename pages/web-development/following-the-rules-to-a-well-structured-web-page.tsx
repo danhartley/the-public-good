@@ -206,7 +206,7 @@ const MentalModel = () => {
                         <li>Mac: ⌘ + left/right arrow key</li>
                         <li>Windows & Linux: Alt + left/right arrow key</li>
                     </ul>
-                    On a tablet or trackpad, you can swipe left and right.
+                    On a tablet, mobile or trackpad swipe left or right.
                 </p>
 
                 <h2>The primary goal of a page is to be understood</h2>
