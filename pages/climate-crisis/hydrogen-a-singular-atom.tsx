@@ -161,6 +161,9 @@ const Hydrogen = () => {
 
                 <p>
                     <div>Fuel cells can be used at a wide range of scales from a power station to a laptop. They work like batteries but do not run down, producing electricity as long as there is fuel. They are also efficient, converting chemical energy to electrical energy at around 60% efficiency; this compares well to an average of <Links.EL link={{source:'https://cefrc.princeton.edu/sites/cefrc/files/reitz_princeton-day1-hour1-2018.pdf'}}>16% efficiency for gas combustion engines</Links.EL>.</div>
+                </p>
+
+                <p>
                     <div class={styles.inset}><strong>How fuel cells work</strong></div>
                     <div class={styles.quote}>                        
                         <span>A fuel, such as hydrogen, is fed to the anode, and air is fed to the cathode. In a hydrogen fuel cell, a catalyst at the anode separates hydrogen molecules into protons and electrons, which take different paths to the cathode. The electrons go through an external circuit, creating a flow of electricity.</span>
