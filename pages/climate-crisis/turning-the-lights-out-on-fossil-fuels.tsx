@@ -20,7 +20,7 @@ const Change = () => {
                 <h3>The IPCC is established</h3>
 
                 <p>
-                    In 1988 the World Meteorological Organisation <Links.EL link={{source:'https://en.wikipedia.org/wiki/World_Meteorological_Organization'}}>WMO</Links.EL> established the Intergovernmental Panel on Climate Change <Links.EL link={{source:'https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change'}}>IPCC</Links.EL>. The IPCC was charged with reporting to the United Nations Framework Convention on Climate Change <Links.EL link={{source:'https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change'}}>UNFCCC</Links.EL> whose objective was to,
+                    In 1988 the World Meteorological Organisation <Links.EL link={{source:'https://en.wikipedia.org/wiki/World_Meteorological_Organization'}}>WMO</Links.EL> and the United Nations Environment Programme UNEP established the Intergovernmental Panel on Climate Change <Links.EL link={{source:'https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change'}}>IPCC</Links.EL>. The IPCC was charged with reporting to the United Nations Framework Convention on Climate Change <Links.EL link={{source:'https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change'}}>UNFCCC</Links.EL> whose objective was to,
                     <div class={styles.quote}>
                         Stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous anthropogenic (human-induced) interference with the climate system.
                     </div> 
