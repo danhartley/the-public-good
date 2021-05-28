@@ -221,7 +221,7 @@ const CarbonFootprint = () => {
             <section id="discrepancy">
                 <p>* There is a discrepancy hidden in these figures: 
                     <div class={styles.quote}>
-                        4.73 tonnes * 7.55 billion = 35.70 billion tonnes of CO2
+                        4.73 tonnes &#215; 7.55 billion = 35.70 billion tonnes of CO2
                     </div>
                     And yet,
                     <div class={styles.quote}>

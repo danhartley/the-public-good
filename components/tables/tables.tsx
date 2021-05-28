@@ -70,7 +70,7 @@ const EnergyDensities = () => {
                 <th>Energy density</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class={styles.externalLink}>
             { fuels }
         </tbody>
     </table>);
@@ -136,7 +136,7 @@ const PowerDensities = () => {
                 <th>Power density W/m2 median+</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class={styles.externalLink}>
             { vs }
         </tbody>
     </table>);    
@@ -196,7 +196,7 @@ const FuelEmissions = () => {
                 <th>Emis­sions kgCO2/GJ</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class={styles.externalLink}>
             { fuels }
         </tbody>
     </table>);
@@ -236,7 +236,7 @@ const CumulativeEmissions = () => {
                     <th>Cumulative emissions (billions of tonnes)</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class={styles.externalLink}>
                 { emissions }
             </tbody>
         </table>);
@@ -349,7 +349,7 @@ const Humans = () => {
                 <th>Notes</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class={styles.externalLink}>
             { humans }
         </tbody>
     </table>);
@@ -420,7 +420,7 @@ const Geology = () => {
                 <th>Notes</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class={styles.externalLink}>
             { geology }
         </tbody>
     </table>);
@@ -562,7 +562,7 @@ const Calculators = ({withScores = false}) => {
                     <th class={styles.wideOnly}>Other</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class={styles.externalLink}>
                 { rows }
             </tbody>
             </table>
@@ -620,7 +620,7 @@ const EmissionsDates = () => {
                 <th></th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class={styles.externalLink}>
             { edates }
         </tbody>
     </table>);
