@@ -38,9 +38,9 @@ const Accessibility = () => {
                     Not everyone has perfect eyesight, especially in poor light. Poor contrast can be tested, together with other accessibility issues, using the web accessibility evaluation tool, <Links.EL link={{source:'https://wave.webaim.org/'}}>WAVE</Links.EL>, or by inspecting an element using browser tools.
                     <p>A summary of WAVE's <Links.EL link={{source:'https://webaim.org/resources/contrastchecker/explanation'}}>of the WCAG</Links.EL> (Web Content Accessibility Guidelines):</p>
                     <dl class={styles.dataTable}>
-                        <dt>WCAG Level AAA</dt><dd>A contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.</dd>
-                        <dt>WCAG 2.0 level AA</dt><dd>A contrast ratio of at least 4.5:1 for normal text and 3:1 for large text.</dd>
-                        <dt>WCAG 2.1</dt><dd>A contrast ratio of at least 3:1 for graphics and user interface components.</dd>
+                        <dt><strong>WCAG Level AAA</strong></dt><dd>A contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.</dd>
+                        <dt><strong>WCAG 2.0 level AA</strong></dt><dd>A contrast ratio of at least 4.5:1 for normal text and 3:1 for large text.</dd>
+                        <dt><strong>WCAG 2.1</strong></dt><dd>A contrast ratio of at least 3:1 for graphics and user interface components.</dd>
                     </dl>
                 </p>
                 <p><span class={styles.published}>Last updated: {new Date('Fri 19 March 2021').toDateString()}</span></p>

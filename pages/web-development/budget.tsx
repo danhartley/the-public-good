@@ -5,7 +5,7 @@ const Budget = () => {
     return (
         <Layout header="Budget" title="Budget" description={'Budget'}>
             <p>
-                <span class={styles.big}>BIG</span>
+                <span>BIG</span>
             </p>
         </Layout>
     )

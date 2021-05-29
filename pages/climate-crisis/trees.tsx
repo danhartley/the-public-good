@@ -2,6 +2,7 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Formula from 'components/tools/formula';
 import styles from 'pages/pages.module.scss';
+import { linkSync } from 'node:fs';
 
 const Trees = () => {
 
@@ -13,17 +14,17 @@ const Trees = () => {
     ];
 
     return (
-        <Layout header="Trees" title="Trees" description={'Trees'}>
+        <Layout header="Carbon capture and storage in trees - part I" title="Carbon-capture-and-storage-in-trees-part-one" description={'Trees'}>
 
         <section>
 
-            <h2>Where we look at the weight of trees, the carbon they store, converting C to <Formula>CO2</Formula> and back, and relate carbon sequestration to human per capita emissions.</h2>
+            <h2>The weight of trees, the carbon they store, converting C to <Formula>CO2</Formula> and back, and carbon sequestration related to human per capita emissions.</h2>
 
             <p>In an article on the <Links.EL link={{source:'https://theconversation.com/there-arent-enough-trees-in-the-world-to-offset-societys-carbon-emissions-and-there-never-will-be-158181'}}>role of trees in offsetting carbon emissions</Links.EL> , the ecologist Bonnie Waring makes a comparison between the carbon stored in a tree and the carbon emitted during a flight.</p>
             <blockquote>
                 [A] single passenger on a round trip flight from Melbourne to New York City will emit roughly twice as much carbon <strong>(1600 kg C)</strong> as is contained in an oak tree half a meter in diameter (750 kg C).
             </blockquote>
-            <p>The figure for emissions for the flight was calculated using <Links.EL link={{source:'https://co2.myclimate.org/en/portfolios?calculation_id=4021628'}}>myclimate</Links.EL>.</p>
+            <p>The figure for emissions for the flight was calculated using <Links.EL link={{source:'https://co2.myclimate.org/en/portfolios?calculation_id=4021628'}}>myclimate</Links.EL>. Here are their figures.</p>
             <blockquote>
                 <div>Your flight: From: Victoria (AU), AVV to: New York (US), JFK, Roundtrip, Economy Class, ca. 33,500 km, 1 traveller</div>
                 <div><strong>CO2 amount: 6.0 t</strong></div>
@@ -39,16 +40,17 @@ const Trees = () => {
             </p>
 
             <blockquote>
-                <div>The atomic mass of carbon is 12. The atomic mass of oxygen is 16.</div>
-                <div>The ratio of <Formula>CO2</Formula> to C is therefore 44/12 (1&#215;12 + 2&#215;16 / 12) or ~3.67.</div>
+                <div>The atomic mass of carbon is <strong>12</strong>. The atomic mass of oxygen is <strong>16</strong>.</div>
+                <div>The atomic mass of <Formula>CO2</Formula> is therefore 1&#215;<strong>12</strong> + 2&#215;<strong>16</strong> = <strong>44</strong> </div>
+                <div>The ratio of <Formula>CO2</Formula> to C is therefore <strong>44</strong> &#247; 12 or <strong>3<span class={styles.fraction}>&#8532;</span></strong>.</div>
             </blockquote>
 
-            <p>From this we see that 1.6 tonnes of <strong>C</strong> &#215; 3.67 = ~ 6 tonnes <strong><Formula>CO2</Formula></strong>.</p>
+            <p>From this we see that 1.6 tonnes of <strong>C</strong> &#215; 3<span class={styles.fraction}>&#8532;</span> = ~ 6 tonnes <strong><Formula>CO2</Formula></strong>.</p>
 
             <p>Dr Waring gave her answer in tonnes of carbon, myclimate in tonnes of carbon dioxide.</p>
 
             <p>
-                <div class={styles.takeaway}><span>To convert a mass in carbon to <Formula>CO2</Formula> multiple by 3&#8532; or ~4.</span></div>
+                <div class={styles.takeaway}><span>To convert a mass in carbon C to <Formula>CO2</Formula> multiple by 3<span class={styles.fraction}>&#8532;</span></span></div>
             </p>
 
             <h3>How much does a tree weigh?</h3>
@@ -59,7 +61,7 @@ const Trees = () => {
 
             <h3>How much carbon does a tree contain?</h3>
 
-            <p>Once we know the weight of a tree it is straightforward to calculate how much carbon it contains. Let's sick with our imaginary oak tree as an example. 1 tonne is equal to 1000 kg.</p>
+            <p>Once we know the weight of a tree it is straightforward to calculate how much carbon it contains. Let's stick with our imaginary oak tree as an example. 1 tonne is equal to 1000 kg.</p>
 
             <dl>
                 <dt><strong>Total weight</strong></dt><dd>3000 kg</dd>                
@@ -70,25 +72,96 @@ const Trees = () => {
             <p>We can simplify this further. The dry weight of a tree is half its total weight (the rest is water). And approximately half the matter in the tree is carbon.</p>
 
             <p>
+                <div class={styles.takeaway}><span>Approximately &#188; of a tree's dry weight is carbon</span></div>
+            </p>
+
+            <p>
                 Therefore our 3 tonne oak tree locks up carbon to the value of 3 tonnes of carbon dioxide.                
             </p>
 
             <dl>
-                <dt><strong><Formula>CO2</Formula> in 3 tonne tree</strong></dt>
-                <dd>3 &#215; &#189; &#215; &#189; &#215; 4 = 3 tonnes</dd>
+                <dt><strong><Formula>CO2</Formula> in our 3 tonne oak tree</strong></dt>
+                <dd>3 &#215; &#188; &#215; 3<span class={styles.fraction}>&#8532;</span> = 2.75 tonnes</dd>
             </dl>
 
-            <p>When working out how much carbon a tree can sequester, we can use this approximation:</p>
+            <p>When working out how much carbon a tree sequesters, we can use this approximation:</p>
 
             <p>
-                <div class={styles.takeaway}><span>weight of <Formula>CO2</Formula> sequestered = weight of the tree</span></div>
+                <div class={styles.takeaway}><span>A tree sequesters a value for <Formula>CO2</Formula> roughly equal to its weight</span></div>
             </p>
 
-            <h3><Formula>CO2</Formula>e in human terms</h3>
+            <h3>What a difference an e makes</h3>
 
             <p>We emit around 35 billion tonnes of <Formula>CO2</Formula> each year. If we include other gases including methane, nitrous oxide, and ozone the figure is <Links.EL link={{source:'https://ourworldindata.org/greenhouse-gas-emissions'}}>50 billion tonnes of <Formula>CO2</Formula>e</Links.EL> every year.</p>
 
             <p>Carbon dioxide <strong>equivalents</strong> (<Formula>CO2</Formula><strong>e</strong>) are used to account for all greenhouse gases by converting them to <Formula>CO2</Formula>.</p>
+
+            <p>Carbon Brief provides insight into a variety of <Links.EL link={{source:'https://ourworldindata.org/greenhouse-gas-emissions'}}>greenhouse gas emissions</Links.EL> and how conversions to carbon dioxide equivalents are made.</p>
+
+            <p>Both emissions in <Formula>CO2</Formula> and <Formula>CO2</Formula>e are used, and sometimes muddled. In a Yale article on <Links.EL link={{source:'https://e360.yale.edu/digest/uk-is-now-halfway-toward-meeting-its-zero-carbon-goal-by-2050'}}>falling UK emissions</Links.EL> total emissions are given as 389 million tons in 2020.</p>
+
+            <p>The article then states that per capita emissions in the UK are now 4.5 tons. The UK population in 2019 was 66.65 million.</p>
+
+            <dl>
+                <dt><strong>UK population</strong></dt>
+                <dd>67 million</dd>
+                <dt><strong>Total emissions</strong></dt>
+                <dd>389 million tonnes <Formula>CO2</Formula>e</dd>
+                <dt><strong>Per capita emissions</strong></dt>
+                <dd>389 &#247; 67 = 5.8 tonnes</dd>
+            </dl>
+
+            <p>Which is correct, 4.5 tons or 5.8 tonnes per person? The article links to a Carbon Brief article in which both figures used in the calculation appear. But in the original, 389 is given in millions of <em>tonnes</em> (not tons!) of <Formula>CO2</Formula> equivalent, and 4.5 is given in <em>tonnes</em> of <Formula>CO2</Formula>.</p>
+
+            <p>
+                <div>In a separate article published two weeks earlier, Carbon Brief puts UK emissions at <Links.EL link={{source:''}}>5.3 tonnes in 2019</Links.EL> and total emissions at 354 million tonnes.</div>
+            </p>
+
+            <p>
+                For the record, based on <Links.EL link={{source:'https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/957687/2019_Final_emissions_statistics_one_page_summary.pdf'}}>UK government figures on ghg emissions</Links.EL> (PDF):
+            </p>            
+
+            <dl>
+                <dt><strong>Total emissions for all ghgs</strong></dt>
+                <dd>454.8 tonnes <Formula>CO2</Formula>e</dd>
+                <dt><strong>Total emissions for <Formula>CO2</Formula></strong></dt>
+                <dd>365.1 tonnes</dd>
+            </dl>
+
+            <p>These figures do not include international aviation and shipping both of which the UK is an above average beneficiary.</p>
+
+            <p>If we once more take the population to be 67 million, our new per capita emissions figures are:</p>
+
+            <dl>
+                <dt><strong>Per capita ghg emissions</strong></dt>
+                <dd>454.8 &#247; 67 = 6.78 tonnes <Formula>CO2</Formula>e</dd>
+                <dt><strong>Per capita <Formula>CO2</Formula> emissions</strong></dt>
+                <dd>365.1 &#247; 67 = 5.45 tonnes <Formula>CO2</Formula></dd>
+            </dl>
+
+            <p>Does the difference between these figures sound about right? We can compare the ratios with global values.</p>
+
+            <dl>
+                <dt><strong>Global ratio</strong></dt>
+                <dd>(50-36) &#247; 36 &#215; 100 = 38.9%</dd>
+                <dt><strong>Global ratio</strong></dt>
+                <dd>(6.78-5.45) &#247; 5.45 &#215; 100 = 24.4%</dd>
+            </dl>
+
+            <p>The difference can mostly be explained by the exclusion of <Links.EL link={{source:'https://lloydslist.maritimeintelligence.informa.com/LL1136518/Shipping-added-to-new-UK-emissions-targets#:~:text=The%20Committee%20on%20Climate%20Change%20had%20reported%20in%20December%20that,emitted%20by%20the%20whole%20sector.'}}>international shipping</Links.EL> at around 3% and <Links.EL link={{source:'https://commonslibrary.parliament.uk/research-briefings/cbp-8826/'}}>aviation</Links.EL> at around 8%.</p>
+
+            <p>For the record, the <Links.EL link={{source:'https://www.gov.uk/government/news/uk-enshrines-new-target-in-law-to-slash-emissions-by-78-by-2035'}}>UK's emissions reductions targets</Links.EL> now include international shipping and aviation.</p>
+
+            <p>That was a long digression. I had intended to explain the difference between <Formula>CO2</Formula> and <Formula>CO2</Formula>e emissions values but it was difficult to find accurate, and/or consistent figures.</p>
+
+            <p>The simple takeaway is:</p>
+
+            <p>
+                <div class={styles.takeaway}><span><Formula>CO2</Formula> only values are ~40% lower than <Formula>CO2</Formula>e values (all ghgs)</span></div>
+            </p>
+
+
+            <h3>Global per capita emissions</h3>
 
             <p>
                 <div>The world population is <Links.EL link={{source:'https://www.worldometers.info/world-population/'}}>almost 8 billion</Links.EL>.</div>
@@ -96,10 +169,21 @@ const Trees = () => {
 
             <dl>
                 <dt><strong>Per capita emissions <Formula>CO2</Formula></strong></dt>
-                <dd>35/8 = 4.375 = ~4.5 tonnes of <Formula>CO2</Formula> emitted per person per annum</dd>
-                <dt><strong>Per capita emissions all ghgs</strong></dt>
-                <dd>50/8 = 6.25 = ~6 tonnes of <Formula>CO2</Formula>e emitted per person per annum</dd>
+                <dd>36 &#247; 8 = 4.375 = ~4.5 tonnes of <Formula>CO2</Formula> emitted per person per annum</dd>
+                <dt><strong>Per capita emissions for all greenhouse gases (ghgs)</strong></dt>
+                <dd>50 &#247; 8 = 6.25 = ~6 tonnes of <Formula>CO2</Formula><strong>e</strong> emitted per person per annum</dd>
             </dl>
+
+            <p>In other words, per capita emissions accounting for all greenhouse gases, the figure we need to worry about, is <strong>&#8531;</strong> higher than the figure for carbon dioxide emissions alone.</p>
+
+            <dl>
+                <dt><strong>Calculate percentage difference between <Formula>CO2</Formula> and all ghg emissions</strong></dt>
+                <dd>(6-4.5) &#247; 4.5 &#215; 100 = 33.33% or &#8531;</dd>
+            </dl>
+
+            <p>
+                <div class={styles.takeaway}><span>Per capita we emit ~6 tonnes of <Formula>CO2</Formula>e each year</span></div>
+            </p>
 
             <h3><Formula>CO2</Formula>e in tree terms</h3>
 
@@ -108,7 +192,7 @@ const Trees = () => {
                 <dd>6 tonnes = 2 &#215; 3 tonne trees</dd>
             </dl> */}
 
-            <p>If you live in a rich, industrialised country, eat meat, own a car, and fly, you probaby need to double that number of trees.</p>
+            {/* <p>If you live in a rich, industrialised country, eat meat, own a car, and fly, you probably need to double that number of trees.</p> */}
 
             <p>50 billion tonnes of <Formula>CO2</Formula>e is the equivalent of 50 billion trees.</p>
 
@@ -132,35 +216,35 @@ const Trees = () => {
 
             <p>Trees vary greatly in size and weight by species, and throughout their lives. We can make a guess at the average weight by dividing the total weight of trees by their number.</p>
 
-            <p>
-            To estimate the weight of trees we can combine a couple of figures from a 2018 census.
+            <p>To estimate the weight of trees we can combine a couple of figures from a 2018 census.</p>
+
                 <blockquote>                
                 <div>The sum of the biomass across all taxa on Earth is ≈550 Gt C, of which ≈80% (≈450 Gt C) are plants, dominated by land plants (embryophytes).</div>
-                <div> Plant biomass includes ≈70% stems and tree trunks.</div>
                 <div><Links.EL link={{source:'https://www.pnas.org/content/115/25/6506'}}>The biomass distribution on Earth</Links.EL></div>
+                <div>Forest ecosystems account for around 45% of all the carbon stored on land.</div>
+                <div><Links.EL link={{ source:'https://spiral.imperial.ac.uk:8443/bitstream/10044/1/80271/6/What%20role%20can%20forests%20play%20in%20tackling%20climate%20change.pdf'}}>What role can forests play in tackling climate change?</Links.EL> (PDF)</div>
                 </blockquote>
 
-                <div>A Gigatonne, or Gt, is equal to one billion tonnes.</div>
-            </p>
+            <p>A Gigatonne, or Gt, is equal to one billion tonnes.</p>
 
             <dl>
                 <dt><strong>Weight of carbon in all trees</strong></dt>
-                <dd>450 &#215; 70% = 315 Gigatonnes of carbon</dd>
+                <dd>450 &#215; 50% = 225 Gigatonnes of carbon</dd>
             </dl>
 
             <p>                
                 <div>To convert the carbon weight to the total weight of the tree, we need to multiply by 4. Why? Carbon accounts for roughly half of the organic matter in a tree, and a living tree contains 50% water.</div>
-                <div class={styles.inset}>Therefore total weight of all trees = 315 &#215; 4 = ~1260 Gt.</div>
+                <div class={styles.inset}>Therefore total weight of all trees = 225 &#215; 4 = ~900 Gt.</div>
             </p>
 
             <dl>
                 <dt><strong>Number of trees</strong></dt><dd>~3 trillion</dd>
                 <dt><strong>Total weight of trees</strong></dt><dd>~1260 Gt = ~1.26 trillion tonnes</dd>
-                <dt><strong>Average weight of a tree</strong></dt><dd>3 trillion trees / 1.26 trilion tonnes = ~ 2.5 tonnes</dd>
+                <dt><strong>Average weight of a tree</strong></dt><dd>3 trillion trees &#247; 900 Gt = ~ 3.3 tonnes</dd>
             </dl>   
 
             <p>
-                <div class={styles.takeaway}><span>The average weight of a tree is ~2.5 tonnes</span></div>
+                <div class={styles.takeaway}><span>The average weight of a tree is ~3.3 tonnes</span></div>
             </p>
 
             <h3>What does our average tree look like?</h3>
@@ -172,7 +256,7 @@ const Trees = () => {
                 <dt><strong>Branches</strong></dt><dd>11% &nbsp;&nbsp; 10%</dd>
                 <dt><strong>Stem</strong></dt><dd>62% &nbsp;&nbsp; 63%</dd>
                 <dt><strong>Roots</strong></dt><dd>26% &nbsp;&nbsp; 21%</dd>
-                <dt>Left source</dt><dd><Links.EL link={{ source:'https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf'}}>A one tonne carbon tree</Links.EL></dd>
+                <dt>Left source</dt><dd><Links.EL link={{ source:'https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf'}}>A one tonne carbon tree</Links.EL> (PDF)</dd>
                 <dt>Right source</dt><dd><Links.EL link={{ source:'https://www.researchgate.net/figure/Proportion-of-the-tree-biomass-from-the-trunk-the-branch-the-leaf-and-the-root-in_fig12_299376027'}}>Proportion of the tree biomass from the trunk the branch the leaf and the root</Links.EL></dd>
             </dl>
 
@@ -188,7 +272,7 @@ const Trees = () => {
             </dl>
 
             <p>
-                <div><Links.EL link={{source:'https://ourworldindata.org/contributed-most-global-co2'}}>Since 1751 the world has emitted over 1.5 trillion tonnes of CO2</Links.EL>. We know this equates to roughly 400 billion or 400 Gigatonnes of carbon (1.5 trillion / 3.67).</div>
+                <div><Links.EL link={{source:'https://ourworldindata.org/contributed-most-global-co2'}}>Since 1751 the world has emitted over 1.5 trillion tonnes of CO2</Links.EL>. We know this equates to roughly 400 billion tonnes/400 Gigatonnes of carbon (1.5 trillion &#247; 3<span class={styles.fraction}>&#8532;</span>).</div>
             </p>
 
             {/* <p>Can we verify this figure? We will return to this question in part II when we consider carbon storage by area of forested land.</p> */}
@@ -213,7 +297,7 @@ const Trees = () => {
             <Links.ExternalLinksList links={references} />
         </section>
 
-        <Links.RelatedLinks links={[{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
+        <Links.RelatedLinks links={[{value:'climate-crisis/carbon-capture-and-storage-in-trees-part-two',text:'Carbon capture and storage in trees - part II'},{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
     </Layout>
     )
 };
