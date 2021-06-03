@@ -67,6 +67,8 @@ const Carbon = () => {
                     </div>
                 </Accordion>
 
+                {/* <img src="https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg" alt="" /> */}
+
                 <p>Carbon atoms are formed in dying stars under extreme and improbable conditions during a set of nuclear fusion reactions known as the <Links.EL link={{label:'Stanford article on the triple-alpha process', source:'http://large.stanford.edu/courses/2017/ph241/udit2/'}}>triple-alpha process</Links.EL>.</p>
                 
                 <p>On collapse of the star, in a supernova, the atoms are blown out, eventually forming new star systems such as our own.</p>
