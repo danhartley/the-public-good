@@ -54,7 +54,7 @@ const Trees = () => {
             <p>How do we calculate the mass of carbon dioxide given a mass of carbon?</p>
 
             <aside>                
-                <h4>Workings</h4>
+                <h4><Formula>CO2</Formula> to C</h4>
                 <dl>
                     <dt><strong>The atomic mass of carbon and oxygen</strong></dt>
                     <dd>Carbon 12 &nbsp;&nbsp;Oxygen 16</dd>
@@ -116,7 +116,7 @@ const Trees = () => {
             <p>The <Links.EL link={{source:'http://www.fao.org/forestry/17111/en/'}}>carbon content of vegetation</Links.EL> including trees is surprisingly constant, at around 47.5%.</p>
 
             <aside>
-                <h4>Workings</h4>
+                <h4>Carbon in a 2 tonne tree</h4>
                 <dl>
                     <dt><strong>Total weight</strong></dt><dd>2000 kg</dd>                
                     <dt><strong>Dry weight</strong></dt><dd>2000 kg &#215; .7 = 1400 kg</dd>
@@ -241,7 +241,7 @@ const Trees = () => {
             <p>A selection of other sources, quote average sequestration rates of <Links.EL link={{suorce:'https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references#seedlings'}}>6</Links.EL>, <Links.EL link={{source:'https://www.eea.europa.eu/articles/forests-health-and-climate-change/key-facts/'}}>22</Links.EL>, <Links.EL link={{source:'https://greenearthappeal.org/co2-verification/'}}>25</Links.EL> and <Links.EL link={{source:'https://ecotree.green/en/how-much-co2-does-a-tree-absorb'}}>30 kg</Links.EL>.</p>
 
             <aside>
-                <h4>Workings</h4>
+                <h4>Number of trees to absorb current ghg emissions</h4>
                 <div>We will assume an average of 25 kg per year.</div>
                 <dl>
                     <dt><strong>Total emissions</strong></dt><dd>50 Gt</dd>
@@ -255,7 +255,7 @@ const Trees = () => {
             <p>Forests absorb an estimated <Links.EL link={{source:'https://www.wri.org/insights/forests-absorb-twice-much-carbon-they-emit-each-year'}}>16 billion tonnes of <Formula>CO2</Formula></Links.EL> annually.</p>
 
             <aside>
-                <h4>Workings</h4>
+                <h4><Formula>CO2</Formula> absorbed per tree</h4>
                 <dl>
                     <dt><strong>Total annual emissions absorbed</strong></dt><dd>16 billion tonnes <Formula>CO2</Formula></dd>
                     <dt><strong>Number of trees</strong></dt><dd>~3 trillion</dd>
@@ -274,7 +274,7 @@ const Trees = () => {
              <p>Note the units! The figure is for carbon sequestered during the lifetime of the trees, not in one year. Let's allow 29 years, that is from the beginning of this year, 2021 until 2050 when several countries have pledged to go carbon neutral.</p>
 
              <aside>
-                <h4>Workings</h4>
+                <h4>% of carbon absorbed by the new trees</h4>
                 <dl>
                     <dt><strong>Current emissions in carbon</strong></dt>
                     <dd>50 Gt &#247; 3<span class={styles.fraction}>&#8532;</span> = 13.6 Gt</dd>

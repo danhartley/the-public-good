@@ -298,18 +298,13 @@
         }
     }
     aside {
-        // font-style: italic;
-        // font-size: calc(1.1rem + .25vw);
-        // &::before, &::after {
-        //     content: '~';
-        //     font-size: 2rem;
-        //     vertical-align: sub;
-        //     line-height: 1;
-        //     padding: 0 .5rem;
-        // }
         padding: 0 calc(.5rem + 1vw);
         background-color: rgba(255, 192, 203,.2);
-        border: 3px dashed rgb(255, 192, 203);
+        border: .15rem dashed rgba(var(--key),.8);
+        margin: calc(.5rem + 1vw) 0;
+        h4 + div {
+            margin-top: calc(.5rem + 1vw);
+        }
         div:last-child {
             margin-bottom: calc(.5rem + 1vw);
         }
