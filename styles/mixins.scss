@@ -289,6 +289,9 @@
     }
     blockquote {
         margin: 1rem 0 0 2rem;
+        div { 
+            margin-top: 1rem ;
+        }
         div:last-child {
             margin-bottom: .25rem;
         }
@@ -298,15 +301,22 @@
         }
     }
     aside {
+        font-family: sans-serif;
         padding: 0 calc(.5rem + 1vw);
-        background-color: rgba(255, 192, 203,.2);
-        border: .15rem dashed rgba(var(--key),.8);
-        margin: calc(.5rem + 1vw) 0;
+        border-top: .2rem solid rgba(var(--key),.4);
+        border-bottom: .2rem solid rgba(var(--key),.4);
+        margin: calc(.5rem + 3vh) 0;
+        p, th, td, dt, dd {
+            font-size: .9em;
+        }
+        h4 {
+            margin: calc(.5rem + .5vw) 0 0 0;
+        }
         h4 + div {
-            margin-top: calc(.5rem + 1vw);
+            margin-top: calc(.5rem + 1vh);
         }
         div:last-child {
-            margin-bottom: calc(.5rem + 1vw);
+            margin-bottom: calc(.5rem + 1.5vh);
         }
     }
     .btn {

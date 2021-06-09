@@ -24,14 +24,14 @@
         &:first-child:after {
             content: '\002B';            
             font-size: 1.4em;
-            margin-right: .5rem;
+            margin-right: .75rem;
         }
     }    
     .open {
         &:first-child::after {
             content: '\2212';
             font-size: 1.4em;
-            margin-right: .5rem;
+            margin-right: .75rem;
         }
     }
 }

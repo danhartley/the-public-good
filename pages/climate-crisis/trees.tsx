@@ -70,7 +70,7 @@ const Trees = () => {
 
             <p>Dr Waring gave her answer in tonnes of carbon, myclimate in tonnes of carbon dioxide.</p>
 
-            {/* <aside>To convert a mass in carbon C to <Formula>CO2</Formula> multiple by 3<span class={styles.fraction}>&#8532;</span></aside> */}
+             <aside>To convert a mass in carbon C to <Formula>CO2</Formula> multiple by 3<span class={styles.fraction}>&#8532;</span></aside> 
 
             <p>Now we know how to convert carbon to carbon dioxide, we need to work out how much carbon a tree contains. To do this we first need to know its weight.</p>
 
@@ -130,7 +130,7 @@ const Trees = () => {
 
             <p>Trees with lower densities such as the pines are often called softwoods. Broad-leaved trees, like oak, beech and maple, are also known as hardwoods, and have high wood densities.</p>
 
-            {/* <aside>Approximately &#189; the mass of the dry matter in a tree is carbon</aside> */}
+             <aside>Approximately &#189; the mass of the dry matter in a tree is carbon</aside> 
 
             <h3>The difference between <Formula>CO2</Formula> and <Formula>CO2</Formula>e</h3>
 
@@ -150,9 +150,9 @@ const Trees = () => {
 
             <p>It pays to check the units used; even the best sites sometimes fail to distinguish between carbon dioxide emissions, and emissions that account for all greenhouse gases. Even third party figures for country emissions often exclude international shipping and aviation which add up to an additional 10% for some countries.</p>
 
-            {/* <aside><Formula>CO2</Formula> only values are ~40% lower than <Formula>CO2</Formula>e values (all ghgs)</aside> */}
+             <aside><Formula>CO2</Formula> only values are ~40% lower than <Formula>CO2</Formula>e values (all ghgs)</aside> 
 
-            {/* <h3>Global per capita emissions</h3>
+             <h3>Global per capita emissions</h3>
 
             <p>What is the average annual emissions, or carbon footprint, of a person?</p>
 
@@ -164,7 +164,7 @@ const Trees = () => {
                 <dd>50 &#247; 8 = 6.25 tonnes of <Formula>CO2</Formula><strong>e</strong> emitted per person per annum</dd>
             </dl>
 
-            <aside>Per capita we emit ~6<span class={styles.fraction}>&#188;</span> tonnes of <Formula>CO2</Formula>e each year</aside> */}
+            <aside>Per capita we emit ~6<span class={styles.fraction}>&#188;</span> tonnes of <Formula>CO2</Formula>e each year</aside> 
 
             <h3>How many trees would we need to sequester all of our emissions?</h3>
 
@@ -176,7 +176,7 @@ const Trees = () => {
                 </div>
             </p>
 
-            {/* <aside>There are approximately 3 trillion trees</aside> */}
+             <aside>There are approximately 3 trillion trees</aside> 
 
             <p>How many more could we plant?</p>
 
@@ -190,7 +190,7 @@ const Trees = () => {
 
             <p>How many trees do we actually need? To answer that we must know how much carbon a tree can sequester.</p>
 
-            {/* <h3>What is the average weight of a tree?</h3>
+            <h3>What is the average weight of a tree?</h3>
 
             <p>To answer that question, we need to know how big trees are on average, or more importantly, how heavy they are.</p>
 
@@ -231,7 +231,7 @@ const Trees = () => {
             <p>200 kgs still seems a low value. In 2005, <Links.EL link={{source:'https://www.sciencemag.org/news/2015/09/earth-home-3-trillion-trees-half-many-when-human-civilization-arose'}}>the number of trees was estimated to be 400 billion</Links.EL> which would push up the average weight to 1.5 tonnes.</p>
 
             <p>What a tree looks like is easy to image, although what people imagine across the world may differ, and our idea of an average tree may be inaccurate.</p>
-             */}
+            
             <h3>How much carbon dioxide can a tree sequester in a year?</h3>
 
             <p>Trees sequester carbon more rapidly in the tropics, and species grow at different rates; softwoods are particularly good at putting on weight rapidly in the first ten to twenty years, old trees add weight in their branches.</p>
@@ -291,21 +291,7 @@ const Trees = () => {
 
             <p>Crowther's estimate came from figures his lab had put out in, <Links.EL link={{source:'https://science.sciencemag.org/content/365/6448/76'}}>The global tree restoration potential</Links.EL>. This article refers to trees in the context of forests, as part of a whole, and it is in that vein that we will proceed in <Links.IL link={{source:'climate-crisis/trees2'}}>Part II</Links.IL>.</p>
 
-        </section>
-
-        <section>   
-            <h2>References</h2>
-            <Links.ExternalLinksList links={references} />
-        </section>
-
-        <Links.RelatedLinks links={[{value:'climate-crisis/carbon-capture-and-storage-in-trees-part-two',text:'Carbon capture and storage in trees - part II'},{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
-    </Layout>
-    )
-};
-
-export default Trees;
-
-{/* <p>In an article on the <Links.EL link={{source:'https://theconversation.com/there-arent-enough-trees-in-the-world-to-offset-societys-carbon-emissions-and-there-never-will-be-158181'}}>role of trees in offsetting carbon emissions</Links.EL>, the ecologist Bonnie Waring makes a comparison between the carbon stored in a tree and the carbon emitted during a flight.</p>
+<p>In an article on the <Links.EL link={{source:'https://theconversation.com/there-arent-enough-trees-in-the-world-to-offset-societys-carbon-emissions-and-there-never-will-be-158181'}}>role of trees in offsetting carbon emissions</Links.EL>, the ecologist Bonnie Waring makes a comparison between the carbon stored in a tree and the carbon emitted during a flight.</p>
             
 <blockquote cite='https://theconversation.com/there-arent-enough-trees-in-the-world-to-offset-societys-carbon-emissions-and-there-never-will-be-158181'>
     <div>[A] single passenger on a round trip flight from Melbourne to New York City will emit roughly twice as much carbon <strong>(1600 kg C)</strong> as is contained in an oak tree half a meter in diameter (750 kg C).</div>
@@ -320,11 +306,11 @@ export default Trees;
 </blockquote>
 <cite><Links.EL link={{source:'https://co2.myclimate.org/en/portfolios?calculation_id=4021628'}}>myclimate</Links.EL></cite>
 
-<p>How to explain the discrepancy between the two figures, 1600 kg - 1.6 tonnes - and 6 tonnes?</p> */}
+<p>How to explain the discrepancy between the two figures, 1600 kg - 1.6 tonnes - and 6 tonnes?</p> 
 
 
 
-{/* <p>Both emissions in <Formula>CO2</Formula> and <Formula>CO2</Formula>e are used, and sometimes muddled. In a Yale article on <Links.EL link={{source:'https://e360.yale.edu/digest/uk-is-now-halfway-toward-meeting-its-zero-carbon-goal-by-2050'}}>falling UK emissions</Links.EL> total emissions are given as 389 million tons in 2020.</p>
+<p>Both emissions in <Formula>CO2</Formula> and <Formula>CO2</Formula>e are used, and sometimes muddled. In a Yale article on <Links.EL link={{source:'https://e360.yale.edu/digest/uk-is-now-halfway-toward-meeting-its-zero-carbon-goal-by-2050'}}>falling UK emissions</Links.EL> total emissions are given as 389 million tons in 2020.</p>
 
 <p>The article then states that per capita emissions in the UK are now 4.5 tons.</p>
 
@@ -382,48 +368,61 @@ export default Trees;
 
 <p>For the record, the <Links.EL link={{source:'https://www.gov.uk/government/news/uk-enshrines-new-target-in-law-to-slash-emissions-by-78-by-2035'}}>UK's emissions reductions targets</Links.EL> now include international shipping and aviation which is important because they are high; <Links.EL link={{source:'https://lloydslist.maritimeintelligence.informa.com/LL1136518/Shipping-added-to-new-UK-emissions-targets#:~:text=The%20Committee%20on%20Climate%20Change%20had%20reported%20in%20December%20that,emitted%20by%20the%20whole%20sector.'}}>international shipping</Links.EL> represents around 3% of UK emissions and <Links.EL link={{source:'https://commonslibrary.parliament.uk/research-briefings/cbp-8826/'}}>aviation</Links.EL> 8%.</p>
 
-<p>That was a long digression. I had intended to explain the difference between <Formula>CO2</Formula> and <Formula>CO2</Formula>e emissions values but it was difficult to find accurate, and/or consistent figures.</p> */}
+<p>That was a long digression. I had intended to explain the difference between <Formula>CO2</Formula> and <Formula>CO2</Formula>e emissions values but it was difficult to find accurate, and/or consistent figures.</p> 
 
 
-{/* <p>Mass and weight are used interchangeably in every day speech so I will use metric tonnes when talking about how much trees weigh. </p>
+<p>Mass and weight are used interchangeably in every day speech so I will use metric tonnes when talking about how much trees weigh. </p>
 
-<p>(NB A US ton is slightly lighter, and an imperial (British) ton slightly heaver.)</p> */}
+<p>(NB A US ton is slightly lighter, and an imperial (British) ton slightly heaver.)</p> 
 
-{/* <p>In other words, per capita emissions accounting for all greenhouse gases, the figure we need to worry about, is <strong>&#8531;</strong> higher than the figure for carbon dioxide emissions alone.</p>
+<p>In other words, per capita emissions accounting for all greenhouse gases, the figure we need to worry about, is <strong>&#8531;</strong> higher than the figure for carbon dioxide emissions alone.</p>
 
 <dl>
     <dt><strong>Calculate percentage difference between <Formula>CO2</Formula> and all ghg emissions</strong></dt>
     <dd>(6-4.5) &#247; 4.5 &#215; 100 = 33.33% or &#8531;</dd>
-</dl> */}
+</dl>
 
-{/* <p>During the 2019 UK general election, the three main parties vied to outdo one another as to <Links.EL link={{source:'https://friendsoftheearth.uk/system-change/general-election-party-pledges-tree-planting'}}>the number of trees they committed to plant</Links.EL>. The Conservatives pledged 30 million a year, Labour and the Liberal Democrats 60 million. The Greens went further - they pledged to plant 70 million trees a year.</p>
+<p>During the 2019 UK general election, the three main parties vied to outdo one another as to <Links.EL link={{source:'https://friendsoftheearth.uk/system-change/general-election-party-pledges-tree-planting'}}>the number of trees they committed to plant</Links.EL>. The Conservatives pledged 30 million a year, Labour and the Liberal Democrats 60 million. The Greens went further - they pledged to plant 70 million trees a year.</p>
 
-<p>Carbon offsetting schemes often measure contributions in trees.</p> */}
-
-
-{/* <p>Can we verify this figure? We will return to this question in part II when we consider carbon storage by area of forested land.</p>
-            <p>The efficacy of planting trees is a subject of continuing debate.</p> */}
-
-            // <h3><Formula>CO2</Formula>e in tree terms</h3>
-
-            // <p>50 billion tonnes of <Formula>CO2</Formula>e is the equivalent of 50 billion tonnes of trees.</p>
-
-            // <p>The current estimate for the number of trees in the world is 3 trillion, or 375 trees per person.</p>
-
-            // <p>If we wanted to offset our greenhouse gase emissions with trees alone, we would have to double the number of trees on the planet in 60 years.</p>
-
-            // <h3>Trees in popular discourse</h3>
-
-            // <p>Thinking about individual trees is a useful way to get a feeling for some of the figures discussed in relation to the climate crisis.</p>
+<p>Carbon offsetting schemes often measure contributions in trees.</p> 
 
 
-            // <h3>Trees take time to grow</h3>
+<p>Can we verify this figure? We will return to this question in part II when we consider carbon storage by area of forested land.</p>
+            <p>The efficacy of planting trees is a subject of continuing debate.</p>
 
-            // <dl>
-            //     <dt><strong>Plant 50 billion trees every year</strong></dt><dd>Only by the 40th year would this compensate for our emissions</dd>
-            //     <dt><strong>Plant 40 &#215; 50 billion trees in the first year</strong></dt><dd>2 trillion in the first year, less in each subsequent year</dd>
-            // </dl>
+ <h3><Formula>CO2</Formula>e in tree terms</h3>
 
-            // <p>
-            //     <div><Links.EL link={{source:'https://ourworldindata.org/contributed-most-global-co2'}}>Since 1751 the world has emitted over 1.5 trillion tonnes of CO2</Links.EL>. We know this equates to roughly 400 billion tonnes/400 Gigatonnes of carbon (1.5 trillion &#247; 3<span class={styles.fraction}>&#8532;</span>).</div>
-            // </p>
+ <p>50 billion tonnes of <Formula>CO2</Formula>e is the equivalent of 50 billion tonnes of trees.</p>
+
+ <p>The current estimate for the number of trees in the world is 3 trillion, or 375 trees per person.</p>
+
+ <p>If we wanted to offset our greenhouse gase emissions with trees alone, we would have to double the number of trees on the planet in 60 years.</p>
+
+ <h3>Trees in popular discourse</h3>
+
+ <p>Thinking about individual trees is a useful way to get a feeling for some of the figures discussed in relation to the climate crisis.</p>
+
+
+ <h3>Trees take time to grow</h3>
+
+ <dl>
+     <dt><strong>Plant 50 billion trees every year</strong></dt><dd>Only by the 40th year would this compensate for our emissions</dd>
+     <dt><strong>Plant 40 &#215; 50 billion trees in the first year</strong></dt><dd>2 trillion in the first year, less in each subsequent year</dd>
+ </dl>
+
+ <p>
+     <div><Links.EL link={{source:'https:ourworldindata.org/contributed-most-global-co2'}}>Since 1751 the world has emitted over 1.5 trillion tonnes of CO2</Links.EL>. We know this equates to roughly 400 billion tonnes/400 Gigatonnes of carbon (1.5 trillion &#247; 3<span class={styles.fraction}>&#8532;</span>).</div>
+ </p>
+        </section>
+
+        <section>   
+            <h2>References</h2>
+            <Links.ExternalLinksList links={references} />
+        </section>
+
+        <Links.RelatedLinks links={[{value:'climate-crisis/carbon-capture-and-storage-in-trees-part-two',text:'Carbon capture and storage in trees - part II'},{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
+    </Layout>
+    )
+};
+
+export default Trees;

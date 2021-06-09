@@ -626,6 +626,69 @@ const EmissionsDates = () => {
     </table>);
 };
 
+const MetricPrefixes = () => {
+
+    const prefixes = [
+        {
+            name: 'peta',
+            symbol: 'P',
+            base: 15
+        },
+        {
+            name: 'tera',
+            symbol: 'T',
+            base: 12
+        },
+        {
+            name: 'giga',
+            symbol: 'G',
+            base: 9
+        },
+        {
+            name: 'mega',
+            symbol: 'M',
+            base: 6
+        },
+        {
+            name: 'kilo',
+            symbol: 'k',
+            base: 3
+        },
+        {
+            name: 'hecto',
+            symbol: 'h',
+            base: 2
+        },
+        {
+            name: 'deca',
+            symbol: 'da',
+            base: 1
+        },
+    ];
+
+    const ps = prefixes.map(p => {
+        return (
+            <tr>
+                <td>{p.name}</td>
+                <td>{p.symbol}</td>
+                <td>10<span class={styles.super}>{p.base}</span></td>
+            </tr>
+        )
+    });
+
+    return(<table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Base</th>
+            </tr>
+        </thead>
+        <tbody class={styles.externalLink}>
+            { ps }
+        </tbody>
+    </table>);
+};
 
 const Tables = {
     EnergyDensities,
@@ -635,7 +698,8 @@ const Tables = {
     Humans,
     Geology,
     Calculators,
-    EmissionsDates
+    EmissionsDates,
+    MetricPrefixes
 };
 
 export default Tables;

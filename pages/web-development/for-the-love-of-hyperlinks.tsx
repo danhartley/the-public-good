@@ -36,7 +36,7 @@ const Hyperlinks = () => {
 
                 <h2>The Hyperlink is a defining feature of the web, a tiny digital instruction that transports us like a magic carpet to far off lands.</h2>
 
-                <p>The far off lands are news stories, videos, applications, images, maps, and a multiplicity of other data each with its own, unique uniform resource locator, or <Links.EL link={{source:'https://en.wikipedia.org/wiki/URL'}}>URL</Links.EL>, colloquially known as a web address.</p>
+                <p>The far off lands are news stories, videos, applications, images, maps, and a multiplicity of other data each with its own, unique uniform resource locator - <Links.EL link={{source:'https://en.wikipedia.org/wiki/URL'}}>URL</Links.EL> - colloquially known as a web address.</p>
 
                 <p>The hyperlink, or link, needs only our command to initiate a series of requests and responses which fly around the world before depositing us at our destination.</p>
 
