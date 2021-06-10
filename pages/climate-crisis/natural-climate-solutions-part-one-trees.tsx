@@ -77,8 +77,6 @@ const NCSPartOne = () => {
                 Planting trees has quickly emerged as a seemingly simple way to soak up carbon emissions. Everybody likes it: Environmentalists, politicians, and corporations alike are pushing for a rapid expansion of reforestation efforts to help meet climate goals.
                 </blockquote>
                 <cite><Links.EL link={{source:'https://www.nationalgeographic.com/environment/article/planting-trees-helps-fight-climate-change-but-we-need-billions-more-seedlings'}}>National Geographic 2021</Links.EL> </cite>
-                <p><em>Planting trees is a useful proxy for a complex set of solutions. To understand the viability and appropriateness of those solutions requires familiarity with big numbers, some basic science, and interest in a variety of fields.</em></p>
-                <p><em>This is a lot to ask of anyone who is not a specialist or paid to know about these things. The reward for the layperson is the ability to criticise and analyse policy, proposals and arguments which will play a large part in our lives for years to come.</em></p>
                 <p>We emit around <Links.EL link={{source:'https://ourworldindata.org/greenhouse-gas-emissions'}}>37 billion tonnes of carbon dioxide</Links.EL> each year. The most rational way to reduce or eliminate these emissions is to stop burning fossil fuels and use land appropriately.</p>
                 <p>To offset emissions from those sectors that are hard to decarbonise it will be necessary to actively remove carbon dioxide from the atmosphere using <Links.EL link={{source:'https://www.ipcc.ch/sr15/faq/faq-chapter-4/'}}>negative emissions</Links.EL> solutions.</p>
                 <p>There are broadly two forms of negative emissions, those that rely on technological innovation such as artificial direct air capture - <Links.EL link={{source:'https://www.iea.org/reports/direct-air-capture'}}> DAC</Links.EL> - and natural climate solutions - NCS. Bioenergy with carbon capture & storage - BECCS - is a combination of the two.</p>                        
@@ -98,11 +96,12 @@ const NCSPartOne = () => {
                 <p>Natural Climate Solutions tend not to receive the headlines. Tree planting is an exception. Many countries have promised to plant trees, and large scale projects in Ethiopia, Pakistan, India, China and elsewhere have taken place.</p>                
                 {/* <p>The German Government launched the <Links.EL link={{source:'https://www.bonnchallenge.org/about'}}>Bonn Challenge</Links.EL> to restore 350 million hectares of degraded or deforested landscapes by 2030.</p> */}
                 <p>There are several high profile global campaigns including <Links.EL link={{source:'https://www.1t.org/'}}>1 trillion trees</Links.EL> backed by the World Economic Forum, and <Links.EL link={{source:'https://trilliontrees.org/home'}}>Trillion Trees</Links.EL>.</p>       
-                <p>These projects are framed in such a way as to attract public attention by describing problems and solutions in terms of something familiar. But are trees a good unit of measurement?</p>
+                <p>These projects are framed in such a way as to attract public attention by describing problems and solutions in terms of something familiar.</p>
+                <p>But are trees a good unit of measurement?</p>
                 <p>Scientists generally talk about forests rather than trees, and measure them in hectares. It is when bringing their findings to public attention that they switch to talking about trees. Campaigners, politicians, and protesters similarly prefer trees over hectares.</p>
                 <p><Links.IL link={{source:'climate-crisis/natural-climate-solutions-part-two-forests'}}>Part II</Links.IL> looks at the role of forests, and how they compare to other NCS actions. But this review of natural currency solutions begins with the most popular currency, trees.</p>
                 <h3>What is a tree?</h3>
-                <p>There is no formal definition.  Trees are not part of a taxonomic group but a variety of species that have evolved similar characteristics.</p>
+                <p>There is no formal definition.  Trees are not part of a taxonomic group but a lose collection of families and species that have evolved similar characteristics.</p>
                 <h4>Typical characteristics of a tree</h4>
                 <ul class={styles.dashedItemsList}>
                     <li>Perennial plant (lives more than 2 years).</li>
@@ -116,7 +115,12 @@ const NCSPartOne = () => {
                 <p>The <Links.EL link={{source:'https://ourworldindata.org/grapher/number-of-trees'}}>distribution of trees</Links.EL> varies. Russia has a high number of trees whereas North Africa, the Middle East and Europe have relatively few.</p>                
                 <h3>How to measure a tree</h3>
                 <p>The process by which characteristics of a tree, such as its height and weight, are calculated from relatively easy to measure dimensions is called <Links.EL link={{source:'https://en.wikipedia.org/wiki/Tree_allometry'}}>tree allometry</Links.EL>.</p>
-                <p>Here is one simple way to measure the height of a tree on level ground. Cut a stick the length of your arm. Extend your arm fully in front with the stick held vertically. Walk towards the tree until the top and bottom of the stick line up with the top and bottom of the tree. The distance to the tree approximates to its height.</p>
+                <p>Here is one simple way to measure the height of a tree on level ground.</p>
+                <p>
+                    <div class={styles.inset}>
+                    Cut a stick the length of your arm. Extend your arm fully in front with the stick held vertically. Walk towards the tree until the top and bottom of the stick line up with the top and bottom of the tree. The distance to the tree approximates to its height.
+                    </div>
+                </p>
                 <p>There are many other, more precise ways to <Links.EL link={{source:'https://en.wikipedia.org/wiki/Tree_height_measurement'}}>measure a tree's height</Links.EL>, and a number of smartphone apps.</p>
                 <aside>
                     <h4>How to calculate the weight of a tree</h4>
@@ -129,11 +133,11 @@ const NCSPartOne = () => {
                     <div>Scientists in Edinburgh demonstrate how to use these values to <Links.EL link={{source:"https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf"}}>determine the weight of a sycamore</Links.EL> close to their office.</div>
                 </aside>
                 <p>The weight of a tree is spread throughout its trunk, branches, leaves, and roots.</p>                
-                <p>In a mature tree the bulk of its weight - 60+% - is in the trunk, 10% in the branches, and a few percent in the leaves. The weight of a tree's roots varies between 20% and 30%.</p>
+                <p>In a mature tree the bulk of its weight - 60+% - is in the trunk, 10% in the branches, and a few percent in the leaves. The weight of a tree's roots varies between 20% and 30% of the whole.</p>
                 <p>These ratios make it possible to calculate the total weight of a living tree from one value, usually the weight of the trunk.</p>
                 <p>The distribution of weight varies between species, and over time; younger trees usually have a greater proportion of leaf mass, and a relatively small trunk.</p>                
                 
-                <p>The method used to find the weight of a tree can be extended to calculate the amount of carbon captured and its equivalent value of carbon dioxide. </p>
+                <p>The method used to find the weight of a tree can be extended to calculate the amount of carbon captured by a tree through photosythesis and its equivalent value of carbon dioxide. </p>
                 
                 <h3>How to calculate the carbon in a tree</h3>
                 <p>Trees remove carbon from the atmosphere by photosynthesis.</p>
@@ -142,15 +146,13 @@ const NCSPartOne = () => {
                     <div>Photosynthesis is the process by which energy from the sun is used to convert carbon dioxide and water into sugars that are used to build organic matter in plants.</div>
                     <p>6<Formula>CO2</Formula> + 6<Formula>H2O</Formula> + sunlight → <Formula>C6H12O6</Formula> + 6<Formula>O2</Formula></p>
                 </aside>
-                <p>The amount of carbon dioxide a tree can store is directly proportional to the density of its wood. This value ranges from 14% (<Links.EL link={{source:'https://en.wikipedia.org/wiki/Ochroma'}}>balsa wood</Links.EL>) to 140% (<Links.EL link={{source:'Krugiodendron ferreum'}}>black ironwood</Links.EL>).</p>
-                <p><strong>Example</strong>: repeat the calculation made for the sycamore - <em>Acer pseudoplatanus</em> - in the Edinburgh experiment.</p>
+                <p>The amount of carbon dioxide stored by weight of a tree is directly proportional to the density of its wood. This value ranges from 14% (<Links.EL link={{source:'https://en.wikipedia.org/wiki/Ochroma'}}>balsa wood</Links.EL>) to 140% (<Links.EL link={{source:'Krugiodendron ferreum'}}>black ironwood</Links.EL>).</p>
+                <p><strong>Example</strong>: repeat the calculation made for the sycamore - <em>Acer pseudoplatanus</em> - in the Edinburgh <Links.EL link={{source:"https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf"}}>experiment</Links.EL> referred to above.</p>
                 <aside>
                     <h4>Wood density</h4>
                     <div>Wood density and wood <Links.EL link={{source:'https://en.wikipedia.org/wiki/Relative_density'}}>specific gravity</Links.EL> both indicate the amount of actual wood substance - biomass - present in a unit volume of wood.</div>
-                    <p>
                     <div>The unit of density is kg/m<span class={styles.super}>3</span>.</div>
                     <div>Specific gravity is the ratio of a material's density to that of water at 4 °C. It has no unit.</div>
-                    </p>
                 </aside>
                 <p>In the original experiment the value for wood density used is 620 kg/m3. However, no adjustment is made for water in the tree.</p>
                 <blockquote cite='https://www.britannica.com/science/wood-plant-tissue/Hygroscopicity'>
@@ -171,7 +173,7 @@ const NCSPartOne = () => {
                     </dl>
                     <div>1 tonne is equal to 1000 kg.</div>
                 </aside>     
-
+                <p>A 2 tonne sycamore tree has absorbed the carbon component of roughly 1.75 tonnes of carbon dioxide.</p>
                 <p>Although values for carbon emissions are sometimes given in tonnes of <em>carbon</em>, they are more often given in tonnes of carbon <em>dioxide</em>; if a given figure looks suspiciously low, check the units being used.</p>
 
                 <p>Converting from tonnes of carbon to tonnes of <Formula>CO2</Formula> is straightforward.</p>
@@ -185,54 +187,56 @@ const NCSPartOne = () => {
                         <dt><strong>And the ratio of <Formula>CO2</Formula> to C</strong></dt>
                         <dd>44 &#247; 12 = 3<span class={styles.fraction}>&#8532;</span></dd>
                         <dt><strong>Converting C to <Formula>CO2</Formula></strong></dt>
-                        <dd>Example 2 tonnes C to <Formula>CO2</Formula>: 2 &#215; 3<span class={styles.fraction}>&#8532;</span> = 7<span class={styles.fraction}>&#8531;</span> t</dd>
+                        <dd>Example: 475 kg C to <Formula>CO2</Formula>:  475 &#215; 3<span class={styles.fraction}>&#8532;</span> = 1741<span class={styles.fraction}>&#8532;</span> kg</dd>
                     </dl>
                     <div>For the atomic mass of carbon and oxygen see <Links.EL link={{source:'https://chemistrygod.com/periodic-table'}}>The Periodic Table</Links.EL>.</div>
                 </aside>
+                <p>A 2 tonne tree </p>
                 <p>The standard unit of measurement is the metric <em>tonne</em>. A US ton is slightly lighter, an imperial (British) ton slightly heavier. Some articles confuse or conflate these units.</p>
                 <h3>How much carbon dioxide can a tree sequester in a year?</h3>
                 <p>Trees sequester carbon more rapidly in the tropics, and species grow at different rates; softwoods are particularly good at putting on weight rapidly in the first ten to twenty years, old trees add weight in their branches.</p>
                 <p>In a study of trees in the Auburn University campus and the Davis Arboretum the <Links.EL link={{source:'https://www.researchgate.net/figure/Average-carbon-sequestration-per-tree-kg-year-by-diameter-class-cm-for-the-Auburn_tbl2_254220260'}}>average carbon sequestration</Links.EL> ranged from 3 kg to 59 kg per year, and increased with age (the top age given was 77+).</p>
-                <p>A selection of other sources, quote average sequestration rates of <Links.EL link={{suorce:'https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references#seedlings'}}>6</Links.EL>, <Links.EL link={{source:'https://www.eea.europa.eu/articles/forests-health-and-climate-change/key-facts/'}}>22</Links.EL>, <Links.EL link={{source:'https://greenearthappeal.org/co2-verification/'}}>25</Links.EL> and <Links.EL link={{source:'https://ecotree.green/en/how-much-co2-does-a-tree-absorb'}}>30 kg</Links.EL>.</p>
-                <p>A reasonable average is 25 kg per tree per year.</p>
+                <p>A selection of other sources have sequestration rates of <Links.EL link={{suorce:'https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references#seedlings'}}>6</Links.EL>, <Links.EL link={{source:'https://www.eea.europa.eu/articles/forests-health-and-climate-change/key-facts/'}}>22</Links.EL>, <Links.EL link={{source:'https://greenearthappeal.org/co2-verification/'}}>25</Links.EL> and <Links.EL link={{source:'https://ecotree.green/en/how-much-co2-does-a-tree-absorb'}}>30 kg</Links.EL>.</p>
+                <p>A reasonable average is 20 kg per tree per year.</p>
                 <aside>
-                    <h4>How many trees would be needed to absorb all ghg emissions?</h4>
-                    <div>We will assume an average of 25 kg per tree per year.</div>
+                    <h4>Calculate number of trees to absorb annual net ghg emissions</h4>
                     <div>Natural sinks (oceans and land) take up <Links.EL link={{source:'https://www.globalcarbonproject.org/carbonbudget/20/highlights.htm'}}> ~50% of <Formula>CO2</Formula> emitted</Links.EL>.</div>
                     <dl>
                         <dt><strong>Total emissions</strong></dt><dd>50 Gt</dd>
                         <dt><strong>Total net emissions</strong></dt><dd>25 Gt</dd>
-                        <dt><strong>Carbon stored per tree</strong></dt><dd>25 kg</dd>
-                        <dt><strong>Number of trees required</strong></dt><dd>25 Gigatonnes &#247; .025 tonnes = 1 trillion</dd>
+                        <dt><strong>Carbon stored per tree per year</strong></dt><dd>20 kg</dd>
+                        <dt><strong>Number of trees required</strong></dt><dd>25 Gigatonnes &#247; .02 tonnes = 1.25 trillion trees</dd>
                     </dl>
                 </aside>
-                <p>The example leaves out one critical dimension - the time it takes a tree to grow.</p>
-                <p>We can look at the problem another way.</p>
+                <p>The example leaves out one critical dimension - the time it takes a tree to grow. Whether a tree reaches maturity in 10, 20 or even 30 years depends on its species and habitat.</p>
+                <p>The produt of this calculation - 1.25 trillion trees - can be checked by working backwards from the amount of carbon dioxide that is currently absorbed by the world's forests.</p>
                 <p>Forests absorb roughly <Links.EL link={{source:'https://www.nature.com/articles/s41558-020-00976-6'}}>7.6 billion tonnes of <Formula>CO2</Formula></Links.EL> annually, around 15% of total greenhouse gas emissions.</p>                
-                <p>If 3 trillion trees sequester 7.6 billion tonnes, 1 trillion trees could absorb about 2.5 billion tonnes, just one tenth of annual emissions remaining in the atmosphere.</p>
-                <p>This does not take into account other forest sinks (see <Links.IL link={{source:'climate-crisis/natural-climate-solutions-part-two-forests'}}>part II</Links.IL>).</p>
-                <p>The cumulative figure by the end of the century (almost 80 years) would be 80 &#215; 2.5 = 200 tonnes.</p>
+                <p>If 3 trillion trees sequester 7.6 billion tonnes, 1 trillion trees sequesters roughly 2.5 billion tonnes.</p>
+                <p>That is just <em>one tenth</em> of annual <em>net</em> emissions. Which suggests trees absorb on average 2.5 kg annually, not 25 kg.</p>            
+                <h4>Cumulative emissions absorbed by the end of the century</h4>
+                <p>The projected cumulative value for sequestered carbon by the end of the century (almost 80 years) is 80 &#215; 2.5 billion tonnes = 200 billion tonnes.</p>
                 <p>Thomas Crowther claimed in September 2019 that the Earth could sustain an additional <Links.EL link={{source:'https://www.nature.com/articles/d41586-019-02846-4'}}>1.2 trillion trees</Links.EL> able to absorb 200 gigatonnes of carbon by the end of the century.</p>                
-                <p>The final figures tally but they are starting to feel a little too rough, conjectures rather than assertions.</p>
+                <p>These final figures tally - a gigatonne is the same as one billion tonnes - but the calculations are starting to feel a little too rough, conjectures rather than assertions.</p>
                 <p>This vagueness is amplified by uncertainty as to the data - the <Links.EL link={{source:'https://science.sciencemag.org/content/365/6448/76'}}>research</Links.EL> on which Crowther based his conclusion has been the subject of healthy scientific debate. The paper from Bastin et al. has been criticised by <Links.EL link={{source:'https://science.sciencemag.org/content/366/6463/eaaz0388'}}>Lewis et al.</Links.EL>, <Links.EL link={{source:'https://science.sciencemag.org/content/366/6463/eaay8060?ijkey=4941132eebc36136e6c4b1ccea847d2fdddb01ad&keytype2=tf_ipsecsha'}}>Friedlingstein et al.</Links.EL>, and <Links.EL link={{source:'https://science.sciencemag.org/content/366/6463/eaay7976?ijkey=866eac34ce3783e0f1f6d537b68f296534f4faf3&keytype2=tf_ipsecsha'}}>Veldman et al.</Links.EL> The authors have <Links.EL link={{source:'https://science.sciencemag.org/content/366/6463/eaay8108'}}>responded</Links.EL>.</p>                
                 <p>This debate between scientists is illustrative; there is consensus on climate change, but the data in many areas are wanting or at best informed guesses.</p>
                 <h3>Negative emissions per person</h3>
-                <p>At a small scale, in relation to individuals, trees can be a useful yardstick.</p>
+                <p>One of the first activities to offer the option to offset emissions was flying. Many offset schemes now focus on a wide variety of projects designed to reduce carbon emissions but planting trees is still a popular metric.</p>
                 <aside>
                     <h4>Trees per person</h4>
                     <p>Total emissions for all greenhouse gases is around <Links.EL link={{source:'https://ourworldindata.org/greenhouse-gas-emissions'}}>50 billion tonnes of <Formula>CO2</Formula>e</Links.EL> every year. Given a population of 8 billion, that equates to 6.25 tonnes per person per year.</p>
                     <dl>
                         <dt><strong>Annual carbon sequestration per tree</strong></dt>
-                        <dd>25 kg</dd>
+                        <dd>20 kg</dd>
                         <dt><strong>Average per capita emissions</strong></dt>
                         <dd>6.5 tonnes <Formula>CO2</Formula>e</dd>
                         <dt><strong>Trees per person</strong></dt>
-                        <dd>6.5 tonnes &#247; 25 kg = 250 trees</dd>
+                        <dd>6.5 tonnes &#247; 20 kg = 325 trees</dd>
                     </dl>
                 </aside>
-                <p>Trees are a popular but vague measure for calculating potential carbon sequestration. Not only are they difficult to count, they represent only part of the biomass, and part of the carbon sink, on the land they occupy but share.</p>            
-                <p>Where it does make some sense to talk in terms of trees is in urban settings, and new plantations where trees are planted as a monocrop for timber, as a source of bioenergy, or other forms of carbon sequestration.</p>
-                <p>In <Links.IL link={{source:'climate-crisis/natural-climate-solutions-part-two-forests'}}>part II</Links.IL> forests take centre stage.</p>
+                <h3>Conclusion</h3>
+                <p>Trees are a popular but vague measure for calculating potential carbon sequestration. Their rate of absorbing carbon dioxide varies considerably according to species and habitat. Individual lifespan and survival rates are unpredictable.</p>            
+                <p>Although trees are used as proxies for forests they represent a small fraction of the total biomass found in forests, and are only one of many sources and sinks of carbon.</p>                
+                <p>In <Links.IL link={{source:'climate-crisis/natural-climate-solutions-part-two-forests'}}>part II</Links.IL> the focus switches from trees to forests.</p>
             </section>
             <section>   
                 <h2>References</h2>
