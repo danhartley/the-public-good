@@ -2,7 +2,7 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Formula from 'components/tools/formula';
 import styles from 'pages/pages.module.scss';
-import Accordion from 'components/accordion/accordion';
+import Link from 'next/link';
 
 const references = [
     {
@@ -72,6 +72,13 @@ const NCSPartOne = () => {
         <Layout header="Natural climate solutions - Trees" rt="8 to 9" title="natural-climate-solutions-part-one-trees" description={'Trees'}>
             <section>
                 <h2>Is planting trees a good way to remove carbon dioxide from the atmosphere?</h2>
+
+                <blockquote cite='https://www.nationalgeographic.com/environment/article/planting-trees-helps-fight-climate-change-but-we-need-billions-more-seedlings'>
+                Planting trees has quickly emerged as a seemingly simple way to soak up carbon emissions. Everybody likes it: Environmentalists, politicians, and corporations alike are pushing for a rapid expansion of reforestation efforts to help meet climate goals.
+                </blockquote>
+                <cite><Links.EL link={{source:'https://www.nationalgeographic.com/environment/article/planting-trees-helps-fight-climate-change-but-we-need-billions-more-seedlings'}}>National Geographic 2021</Links.EL> </cite>
+                <p><em>Planting trees is a useful proxy for a complex set of solutions. To understand the viability and appropriateness of those solutions requires familiarity with big numbers, some basic science, and interest in a variety of fields.</em></p>
+                <p><em>This is a lot to ask of anyone who is not a specialist or paid to know about these things. The reward for the layperson is the ability to criticise and analyse policy, proposals and arguments which will play a large part in our lives for years to come.</em></p>
                 <p>We emit around <Links.EL link={{source:'https://ourworldindata.org/greenhouse-gas-emissions'}}>37 billion tonnes of carbon dioxide</Links.EL> each year. The most rational way to reduce or eliminate these emissions is to stop burning fossil fuels and use land appropriately.</p>
                 <p>To offset emissions from those sectors that are hard to decarbonise it will be necessary to actively remove carbon dioxide from the atmosphere using <Links.EL link={{source:'https://www.ipcc.ch/sr15/faq/faq-chapter-4/'}}>negative emissions</Links.EL> solutions.</p>
                 <p>There are broadly two forms of negative emissions, those that rely on technological innovation such as artificial direct air capture - <Links.EL link={{source:'https://www.iea.org/reports/direct-air-capture'}}> DAC</Links.EL> - and natural climate solutions - NCS. Bioenergy with carbon capture & storage - BECCS - is a combination of the two.</p>                        
@@ -153,9 +160,9 @@ const NCSPartOne = () => {
                 {/* <p>Oaks are broad-leaved trees which, since they have high wood densities, are also known as hardwoods. Trees with lower densities like pines are often called softwoods.</p> */}
                 <p>The <Links.EL link={{source:'https://www.wagnermeters.com/specific-gravity/s/'}}>wood density for <em>Acer pseudoplatanus</em></Links.EL> wth 12% moisture content is 0.57, close to 0.5 with no water.</p>
                 <p>The <Links.EL link={{source:'http://www.fao.org/forestry/17111/en/'}}>carbon content of vegetation</Links.EL> including trees is surprisingly constant, at around 47.5%.</p>
-                <p>Finally, when calculating the weight of a living tree must also take into account how much water it contains. </p>
+                {/* <p>Finally, when calculating the weight of a living tree must also take into account how much water it contains. </p> */}
                 <aside>
-                    <h4>Carbon & <Formula>CO2</Formula> in a 2 t sycamore tree</h4>
+                    <h4>Carbon & <Formula>CO2</Formula> in a 2 tonne sycamore tree</h4>
                     <dl>
                         <dt><strong>Total weight</strong></dt><dd>2000 kg</dd>                
                         <dt><strong>Dry weight</strong></dt><dd>2000 kg &#215; 0.5 = 1000 kg</dd>
@@ -203,7 +210,7 @@ const NCSPartOne = () => {
                 <p>We can look at the problem another way.</p>
                 <p>Forests absorb roughly <Links.EL link={{source:'https://www.nature.com/articles/s41558-020-00976-6'}}>7.6 billion tonnes of <Formula>CO2</Formula></Links.EL> annually, around 15% of total greenhouse gas emissions.</p>                
                 <p>If 3 trillion trees sequester 7.6 billion tonnes, 1 trillion trees could absorb about 2.5 billion tonnes, just one tenth of annual emissions remaining in the atmosphere.</p>
-                <p>This does not take into account other forests sinks (see <Links.IL link={{source:'climate-crisis/natural-climate-solutions-part-two-forests'}}>part II</Links.IL>).</p>
+                <p>This does not take into account other forest sinks (see <Links.IL link={{source:'climate-crisis/natural-climate-solutions-part-two-forests'}}>part II</Links.IL>).</p>
                 <p>The cumulative figure by the end of the century (almost 80 years) would be 80 &#215; 2.5 = 200 tonnes.</p>
                 <p>Thomas Crowther claimed in September 2019 that the Earth could sustain an additional <Links.EL link={{source:'https://www.nature.com/articles/d41586-019-02846-4'}}>1.2 trillion trees</Links.EL> able to absorb 200 gigatonnes of carbon by the end of the century.</p>                
                 <p>The final figures tally but they are starting to feel a little too rough, conjectures rather than assertions.</p>
