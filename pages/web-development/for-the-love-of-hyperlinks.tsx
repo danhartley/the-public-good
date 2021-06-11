@@ -30,7 +30,7 @@ const Hyperlinks = () => {
     ];
 
     return (
-        <Layout header="For the love of hyperlinks" rt="8 to 9" title="Web development | For the love of hyperlinks" description={'Hyperlink good practices explained. How to create accessible links with respect to size, colour, un/visited, internal/external states.'}>
+        <Layout header="For the love of hyperlinks" rt="8 to 9" title="Web development | For the love of hyperlinks" description={'Hyperlink good practices explained. How to create accessible links with respect to size, colour, un/visited, internal/external states.'} image='https://live.staticflickr.com/65535/51143928462_2fec2d283e_z_d.jpg'>
             
             <section>
 

@@ -45,6 +45,10 @@ const references = [
         name: "Limits to growth of forest biomass carbon sink under climate change Zhu et al. 2018",
         source: "https://www.nature.com/articles/s41467-018-05132-5"
     },
+    {
+        name: "How ‘natural climate solutions’ can reduce the need for BECCS | Carbon Brief",
+        source: "https://www.carbonbrief.org/analysis-how-natural-climate-solutions-can-reduce-the-need-for-beccs"
+    },
 ];
 
 const NCSPartTwo = () => {

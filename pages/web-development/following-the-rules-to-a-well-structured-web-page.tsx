@@ -71,7 +71,7 @@ const MentalModel = () => {
     };
 
     return (
-        <Layout header="Following the rules to a well-structured web page" rt="6 to 7" title="Web development - following the rules to a well-structured web page" description={'Web development - the shared structure of web pages'}>
+        <Layout header="Following the rules to a well-structured web page" rt="6 to 7" title="Web development - following the rules to a well-structured web page" description={'Web development - the shared structure of web pages'} image='https://live.staticflickr.com/65535/51239910633_a100a905a3_c_d.jpg'>
             
             <section>                
 
