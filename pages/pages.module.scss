@@ -25,18 +25,17 @@
 
 .fakeBtns {
     display: flex;
+    justify-content: space-evenly;
+    max-width: 80ch;
     button, div {
         @include button();
         font-family: Elena, 'PT Serif', serif;
-        font-size: 1rem;
-        max-width: 10rem;
-        width: calc((100vw - 3rem)/2);
+        font-size: 1rem;        
         display: flex;
         align-items: center;
         justify-content: center;
-        &:nth-child(1) {
-            margin-right: .5rem;
-        }
+        flex-basis: calc(50% - 10vw);
+        box-sizing: content-box;
     }
 }
 

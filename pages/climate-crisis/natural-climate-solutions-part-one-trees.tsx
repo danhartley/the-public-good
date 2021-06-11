@@ -2,7 +2,7 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Formula from 'components/tools/formula';
 import styles from 'pages/pages.module.scss';
-import Link from 'next/link';
+import Accordion from 'components/accordion/accordion';
 
 const references = [
     {
@@ -118,6 +118,7 @@ const NCSPartOne = () => {
                     </div>
                 </p>
                 <p>There are many other, more precise ways to <Links.EL link={{source:'https://en.wikipedia.org/wiki/Tree_height_measurement'}}>measure a tree's height</Links.EL>, and a number of smartphone apps.</p>
+                <Accordion header='How to calculate the weight of a tree'>
                 <aside>
                     <h4>How to calculate the weight of a tree</h4>
                     <div>The weight of a tree can be calculated from three values:</div>
@@ -128,6 +129,7 @@ const NCSPartOne = () => {
                     </ul>
                     <div>Scientists in Edinburgh demonstrate how to use these values to <Links.EL link={{source:"https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf"}}>determine the weight of a sycamore</Links.EL> close to their office.</div>
                 </aside>
+                </Accordion>
                 <p>The weight of a tree is spread throughout its trunk, branches, leaves, and roots.</p>                
                 <p>In a mature tree the bulk of its weight - 60+% - is in the trunk, 10% in the branches, and a few percent in the leaves. The weight of a tree's roots varies between 20% and 30% of the whole.</p>
                 <p>These ratios make it possible to calculate the total weight of a living tree from one value, usually the weight of the trunk.</p>
@@ -137,11 +139,13 @@ const NCSPartOne = () => {
                 
                 <h3>How to calculate the carbon in a tree</h3>
                 <p>Trees remove carbon from the atmosphere by photosynthesis.</p>
+                <Accordion header='Photosynthesis'>
                 <aside>
                     <h4>Photosynthesis</h4>
                     <div>Photosynthesis is the process by which energy from the sun is used to convert carbon dioxide and water into sugars that are used to build organic matter in plants.</div>
                     <p>6<Formula>CO2</Formula> + 6<Formula>H2O</Formula> + sunlight → <Formula>C6H12O6</Formula> + 6<Formula>O2</Formula></p>
                 </aside>
+                </Accordion>
                 <p>The amount of carbon dioxide stored by weight of a tree is directly proportional to the density of its wood. This value ranges from 14% (<Links.EL link={{source:'https://en.wikipedia.org/wiki/Ochroma'}}>balsa wood</Links.EL>) to 140% (<Links.EL link={{source:'Krugiodendron ferreum'}}>black ironwood</Links.EL>).</p>
                 <p>
                     <div><strong>Example</strong>: repeat the calculation made for the sycamore - <em>Acer pseudoplatanus</em> - in the Edinburgh <Links.EL link={{source:"https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf"}}>experiment</Links.EL> referred to above.</div>
@@ -157,10 +161,9 @@ const NCSPartOne = () => {
                     The moisture content of the wood of living trees varies from about 30 to 300 percent depending on species, position of the wood in the tree, and season of the year.
                 </blockquote>
                 <cite><Links.EL link={{source:'https://www.britannica.com/science/wood-plant-tissue/Hygroscopicity'}}>Hygroscopicity | Encyclopedia Britannica</Links.EL> </cite>
-                {/* <p>Oaks are broad-leaved trees which, since they have high wood densities, are also known as hardwoods. Trees with lower densities like pines are often called softwoods.</p> */}
                 <p>The <Links.EL link={{source:'https://www.wagnermeters.com/specific-gravity/s/'}}>wood density for <em>Acer pseudoplatanus</em></Links.EL> wth 12% moisture content is 0.57, close to 0.5 with no water.</p>
                 <p>The <Links.EL link={{source:'http://www.fao.org/forestry/17111/en/'}}>carbon content of vegetation</Links.EL> including trees is surprisingly constant, at around 47.5%.</p>
-                {/* <p>Finally, when calculating the weight of a living tree must also take into account how much water it contains. </p> */}
+                <Accordion header='Carbon & carbon dioxide in a 2 tonne sycamore tree'>
                 <aside>
                     <h4>Carbon & <Formula>CO2</Formula> in a 2 tonne sycamore tree</h4>
                     <dl>
@@ -170,7 +173,8 @@ const NCSPartOne = () => {
                         <dt><strong>Weight of <Formula>CO2</Formula></strong></dt><dd>475 kg &#215; 3<span class={styles.fraction}>&#8532;</span> = 1741<span class={styles.fraction}>&#8532;</span> kg</dd>
                     </dl>
                     <div>1 tonne is equal to 1000 kg.</div>
-                </aside>     
+                </aside>  
+                </Accordion>   
                 <p>A 2 tonne sycamore tree has absorbed the carbon component of roughly 1.75 tonnes of carbon dioxide.</p>
                 <p>Although values for carbon emissions are sometimes given in tonnes of <em>carbon</em>, they are more often given in tonnes of carbon <em>dioxide</em>; if a given figure looks suspiciously low, check the units being used.</p>
 

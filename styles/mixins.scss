@@ -303,8 +303,8 @@
     aside {
         font-family: sans-serif;
         padding: 0 calc(.5rem + 1vw);
-        border-top: .2rem solid rgba(var(--key),.4);
-        border-bottom: .2rem solid rgba(var(--key),.4);
+        border-top: .2rem solid rgba(var(--key),1);
+        border-bottom: .2rem solid rgba(var(--key),1);
         margin: calc(.5rem + 3vh) 0;
         p, th, td, dt, dd {
             font-size: .9em;
