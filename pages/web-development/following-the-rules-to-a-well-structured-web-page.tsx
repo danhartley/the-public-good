@@ -84,7 +84,7 @@ const MentalModel = () => {
                 <p>Using elements correctly helps users create an accurate model of the page and its contents.</p>     
 
                 <p>
-                    <Accordion header="Schema of the document structure for this page">
+                    <Accordion header="Schema of this page's document structure">
                     The head contains meta information about the document such as its author. The content of the page appears in the body.
                     <p>
                         <ul class={styles.nestedElements}>

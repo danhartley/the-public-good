@@ -2,7 +2,7 @@
 
 .accordion {
     display: flex;
-    align-items: center;
+    align-items: center;    
     button {
         border: none;
         background-color: initial;
@@ -27,27 +27,28 @@
             margin-right: .75rem;
         }
     }    
-    .open {
+    .open {        
         &:first-child::after {
             content: '\2212';
             font-size: 1.4em;
             margin-right: .75rem;
         }
     }
+    & + div {
+        width: calc(100vw - 5rem);
+    }
 }
 
 .show {
     opacity: 1;
-    max-height: 1000px;
+    max-height: 2000px;
     transition: max-height .25s;
     transition: opacity .75s;
     padding: 0 .5rem;
-    // display: initial; // for screen readers
 }
 .hide {
     overflow: hidden;
     opacity: 0;
     max-height: 0;
     transition: max-height .1s;
-    // display: none; // for screen readers
 }
