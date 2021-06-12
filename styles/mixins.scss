@@ -301,13 +301,13 @@
         }
     }
     aside {
-        font-family: sans-serif;
         padding: 0 calc(.5rem + 1vw);
-        border-top: .2rem solid rgba(var(--key),1);
-        border-bottom: .2rem solid rgba(var(--key),1);
+        border-top: .2rem solid rgba(var(--fg),1);
+        border-bottom: .2rem solid rgba(var(--fg),1);
         margin: calc(.5rem + 3vh) 0;
-        p, th, td, dt, dd {
-            font-size: .9em;
+        div, p, th, td, dt, dd, li {
+            font-size: .8em;
+            line-height: 2;
         }
         h4 {
             margin: calc(.5rem + .5vw) 0 0 0;

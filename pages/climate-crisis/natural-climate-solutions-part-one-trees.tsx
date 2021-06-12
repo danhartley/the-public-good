@@ -135,7 +135,7 @@ const NCSPartOne = () => {
                 <p>These ratios make it possible to calculate the total weight of a living tree from one value, usually the weight of the trunk.</p>
                 <p>The distribution of weight varies between species, and over time; younger trees usually have a greater proportion of leaf mass, and a relatively small trunk.</p>                
                 
-                <p>The method used to find the weight of a tree can be extended to calculate the amount of carbon captured by a tree through photosythesis and its equivalent value of carbon dioxide. </p>
+                <p>The method used to find the weight of a tree can be extended to calculate the amount of carbon captured by a tree through photosynthesis and its equivalent value of carbon dioxide. </p>
                 
                 <h3>How to calculate the carbon in a tree</h3>
                 <p>Trees remove carbon from the atmosphere by photosynthesis.</p>
@@ -146,24 +146,26 @@ const NCSPartOne = () => {
                     <p>6<Formula>CO2</Formula> + 6<Formula>H2O</Formula> + sunlight → <Formula>C6H12O6</Formula> + 6<Formula>O2</Formula></p>
                 </aside>
                 </Accordion>
-                <p>The amount of carbon dioxide stored by weight of a tree is directly proportional to the density of its wood. This value ranges from 14% (<Links.EL link={{source:'https://en.wikipedia.org/wiki/Ochroma'}}>balsa wood</Links.EL>) to 140% (<Links.EL link={{source:'Krugiodendron ferreum'}}>black ironwood</Links.EL>).</p>
-                <p>
-                    <div><strong>Example</strong>: repeat the calculation made for the sycamore - <em>Acer pseudoplatanus</em> - in the Edinburgh <Links.EL link={{source:"https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf"}}>experiment</Links.EL> referred to above.</div>
-                </p>
+                <p>The amount of carbon dioxide stored by weight of a tree is directly proportional to the density of its wood. This value ranges from 14% (<Links.EL link={{source:'https://en.wikipedia.org/wiki/Ochroma'}}>balsa wood</Links.EL>) to 140% (<Links.EL link={{source:'Krugiodendron ferreum'}}>black ironwood</Links.EL>).</p>                
+                <Accordion header='Wood density'>
                 <aside>
                     <h4>Wood density</h4>
                     <div>Wood density and wood <Links.EL link={{source:'https://en.wikipedia.org/wiki/Relative_density'}}>specific gravity</Links.EL> both indicate the amount of actual wood substance - biomass - present in a unit volume of wood.</div>
                     <div>The unit of density is kg/m<span class={styles.super}>3</span>.</div>
                     <div>Specific gravity is the ratio of a material's density to that of water at 4°C. It has no unit.</div>
                 </aside>
+                </Accordion>
+                <p>
+                    <div><strong>Example</strong>: repeat the calculation made for the sycamore - <em>Acer pseudoplatanus</em> - in the Edinburgh <Links.EL link={{source:"https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf"}}>experiment</Links.EL> referred to above.</div>
+                </p>
                 <p>In the original experiment the value for wood density used is 620 kg/m3. However, no adjustment is made for water in the tree.</p>
                 <blockquote cite='https://www.britannica.com/science/wood-plant-tissue/Hygroscopicity'>
                     The moisture content of the wood of living trees varies from about 30 to 300 percent depending on species, position of the wood in the tree, and season of the year.
                 </blockquote>
                 <cite><Links.EL link={{source:'https://www.britannica.com/science/wood-plant-tissue/Hygroscopicity'}}>Hygroscopicity | Encyclopedia Britannica</Links.EL> </cite>
-                <p>The <Links.EL link={{source:'https://www.wagnermeters.com/specific-gravity/s/'}}>wood density for <em>Acer pseudoplatanus</em></Links.EL> wth 12% moisture content is 0.57, close to 0.5 with no water.</p>
+                <p>The <Links.EL link={{source:'https://www.wagnermeters.com/specific-gravity/s/'}}>wood density for <em>Acer pseudoplatanus</em></Links.EL> - sycamore - with 12% moisture content is 0.57, close to 0.5 with no water.</p>
                 <p>The <Links.EL link={{source:'http://www.fao.org/forestry/17111/en/'}}>carbon content of vegetation</Links.EL> including trees is surprisingly constant, at around 47.5%.</p>
-                <Accordion header='Carbon & carbon dioxide in a 2 tonne sycamore tree'>
+                <Accordion header='Carbon in a sycamore tree'>
                 <aside>
                     <h4>Carbon & <Formula>CO2</Formula> in a 2 tonne sycamore tree</h4>
                     <dl>
@@ -173,12 +175,14 @@ const NCSPartOne = () => {
                         <dt><strong>Weight of <Formula>CO2</Formula></strong></dt><dd>475 kg &#215; 3<span class={styles.fraction}>&#8532;</span> = 1741<span class={styles.fraction}>&#8532;</span> kg</dd>
                     </dl>
                     <div>1 tonne is equal to 1000 kg.</div>
-                </aside>  
+                </aside> 
                 </Accordion>   
                 <p>A 2 tonne sycamore tree has absorbed the carbon component of roughly 1.75 tonnes of carbon dioxide.</p>
                 <p>Although values for carbon emissions are sometimes given in tonnes of <em>carbon</em>, they are more often given in tonnes of carbon <em>dioxide</em>; if a given figure looks suspiciously low, check the units being used.</p>
 
                 <p>Converting from tonnes of carbon to tonnes of <Formula>CO2</Formula> is straightforward.</p>
+                <p>Multiply the carbon weight by 3<span class={styles.fraction}>&#8532;</span> or 3.67.</p>
+                <Accordion header='Converting carbon to carbon dioxide'>
                 <aside>                
                     <h4>Converting C to <Formula>CO2</Formula></h4>
                     <dl>
@@ -189,10 +193,11 @@ const NCSPartOne = () => {
                         <dt><strong>The ratio of <Formula>CO2</Formula> to C</strong></dt>
                         <dd>44 &#247; 12 = 3<span class={styles.fraction}>&#8532;</span></dd>
                         <dt><strong>Converting C to <Formula>CO2</Formula></strong></dt>
-                        <dd>Example: 475 kg C to <Formula>CO2</Formula>:  475 &#215; 3<span class={styles.fraction}>&#8532;</span> = 1741<span class={styles.fraction}>&#8532;</span> kg</dd>
+                        <dd>Example: 475 kg C to <Formula>CO2</Formula>: 475 &#215; 3<span class={styles.fraction}>&#8532;</span> = 1741<span class={styles.fraction}>&#8532;</span> kg</dd>
                     </dl>
                     <div>For the atomic mass of carbon and oxygen see <Links.EL link={{source:'https://chemistrygod.com/periodic-table'}}>The Periodic Table</Links.EL>.</div>
                 </aside>
+                </Accordion>
                 <p>The standard unit of measurement is the metric <em>tonne</em>. A US ton is slightly lighter, an imperial (British) ton slightly heavier. Some articles confuse or conflate these units.</p>
                 <h3>How much carbon dioxide can a tree sequester in a year?</h3>
                 <p>Trees sequester carbon more rapidly in the tropics, and species grow at different rates; softwoods are particularly good at putting on weight rapidly in the first ten to twenty years, old trees add weight in their branches.</p>
@@ -200,8 +205,9 @@ const NCSPartOne = () => {
                     <div>Because of natural variability there is no typical value for the annual rate of carbon dioxide sequestration. A representative range extends from <Links.EL link={{source:'https://www.eea.europa.eu/articles/forests-health-and-climate-change/key-facts/'}}>22</Links.EL>, through <Links.EL link={{source:'https://greenearthappeal.org/co2-verification/'}}>25</Links.EL> and <Links.EL link={{source:'https://ecotree.green/en/how-much-co2-does-a-tree-absorb'}}>30</Links.EL> to <Links.EL link={{source:'https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references#seedlings'}}>60</Links.EL> kg.</div>
                 </p>
                 <p>A conservative estimate is 20 kg per tree per year.</p>
+                <Accordion header='Trees to absorb all GHG emissions'>
                 <aside>
-                    <h4>Calculate number of trees needed to absorb annual net ghg emissions</h4>
+                    <h4>Trees to absorb all GHG emissions</h4>
                     <div>Natural sinks (oceans and land) take up <Links.EL link={{source:'https://www.globalcarbonproject.org/carbonbudget/20/highlights.htm'}}> ~50% of <Formula>CO2</Formula> emitted</Links.EL>.</div>
                     <dl>
                         <dt><strong>Total emissions</strong></dt><dd>50 Gt</dd>
@@ -210,8 +216,10 @@ const NCSPartOne = () => {
                         <dt><strong>Number of trees required</strong></dt><dd>25 Gigatonnes &#247; .02 tonnes = 1.25 trillion trees</dd>
                     </dl>
                 </aside>
-                <p>The example leaves out one critical dimension - the time it takes a tree to grow. Whether a tree reaches maturity in 10, 20 or even 30 years depends on its species and habitat.</p>
-                <p>The product of this calculation - 1.25 trillion trees - can be checked by working backwards from the amount of carbon dioxide that is currently absorbed by the world's forests.</p>
+                </Accordion>
+                <p>A rough estimate of the number of trees needed to compensate for all net greenhouse gas emissions is 1.25 trillion.</p>
+                <p>This estimate leaves out one critical dimension - the time it takes a tree to grow. Whether a tree reaches maturity in 10, 20 or even 30 years depends on its species and habitat.</p>
+                <p>The estimate can be checked by working backwards from the amount of carbon dioxide that is currently absorbed by the world's forests.</p>
                 <p>Forests absorb roughly <Links.EL link={{source:'https://www.nature.com/articles/s41558-020-00976-6'}}>7.6 billion tonnes of <Formula>CO2</Formula></Links.EL> annually - just over 15% of total greenhouse gas emissions.</p>                
                 <p>If 3 trillion trees sequester 7.6 billion tonnes, 1 trillion trees sequester roughly 2.5 billion tonnes.</p>
                 <p>That is just <em>one tenth</em> of annual <em>net</em> emissions. Which suggests trees absorb on average 2.5 kg annually, not 25 kg.</p>            
@@ -223,6 +231,7 @@ const NCSPartOne = () => {
                 <p>This debate between scientists is illustrative; there is consensus on climate change, but the data in many areas are wanting or at best informed guesses.</p>
                 <h3>Negative emissions per person</h3>
                 <p>One of the first activities to offer the option to offset emissions was flying. Many offset schemes now focus on a wide variety of projects designed to reduce carbon emissions but planting trees is still a popular metric.</p>
+                <Accordion header='Tree carbon sequestration per person'>
                 <aside>
                     <h4>Trees per person</h4>
                     <p>Total emissions for all greenhouse gases is around <Links.EL link={{source:'https://ourworldindata.org/greenhouse-gas-emissions'}}>50 billion tonnes of <Formula>CO2</Formula>e</Links.EL> every year. Given a population of 8 billion, that equates to 6.25 tonnes per person per year.</p>
@@ -235,6 +244,8 @@ const NCSPartOne = () => {
                         <dd>6.5 tonnes &#247; 20 kg = 325 trees</dd>
                     </dl>
                 </aside>
+                </Accordion>
+                <p>325 mature trees would be needed for each person in order to absorb the net carbon dioxide added to the atmosphere.</p>
                 <h3>Conclusion</h3>
                 <p>Trees are a popular but vague measure for calculating potential carbon sequestration. Their rate of absorbing carbon dioxide varies considerably according to species and habitat. Individual lifespan and survival rates are unpredictable.</p>            
                 <p>Although trees are used as proxies for forests they represent a small fraction of the total biomass found there, and are only one of many sources and sinks of carbon.</p>                
