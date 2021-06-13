@@ -21,8 +21,8 @@ export default function Home() {
         <section>
             <h2>The climate crisis</h2>
             
-            <Links.ILBlock link={{'value': 'climate-crisis/natural-climate-solutions-part-one-trees', 'text': 'Natural climate solutions - Part I Trees'}}></Links.ILBlock>
-            {/* <Links.ILBlock link={{'value': 'climate-crisis/natural-climate-solutions-part-two-forests', 'text': 'Natural climate solutions - Part II Forests'}}></Links.ILBlock> */}
+            <Links.ILBlock link={{'value': 'climate-crisis/natural-climate-solutions-trees', 'text': 'Natural climate solutions - Part I Trees'}}></Links.ILBlock>
+            <Links.ILBlock link={{'value': 'climate-crisis/natural-climate-solutions-part-two-forests', 'text': 'Natural climate solutions - Part II Forests'}}></Links.ILBlock>
             <Links.ILBlock link={{'value': 'climate-crisis/carbon-element-of-life', 'text': 'Carbon - element of life'}}></Links.ILBlock>
             <Links.ILBlock link={{'value': 'climate-crisis/hydrogen-a-singular-atom', 'text': 'Hydrogen - a singular atom'}}></Links.ILBlock>
             <Links.ILBlock link={{'value': 'climate-crisis/turning-the-lights-out-on-fossil-fuels', 'text': 'Turning the lights out on fossil fuels'}}></Links.ILBlock>

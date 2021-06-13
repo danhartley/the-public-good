@@ -1,7 +1,7 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Formula from 'components/tools/formula';
-import Tables from 'components/tables/tables';
+import Accordion from 'components/accordion/accordion';
 import styles from 'pages/pages.module.scss';
 
 const references = [
@@ -56,9 +56,10 @@ const NCSPartTwo = () => {
         <Layout header="Natural climate solutions - Forests" rt="9 to 10" title="natural-climate-solutions-part-one-forests" description={'Forests'}>
             <section>
             <h2>What part will forests play in combating the climate crisis?</h2>
-            <p>In <Links.IL link={{source:'climate-crisis/natural-climate-solutions-part-one-trees'}}>part I</Links.IL> trees were the focus. They have the benefit of being familiar but as a unit they are imprecise and cannot be readily compared to other forms of sequestration.</p>
+            <p>In <Links.IL link={{source:'climate-crisis/natural-climate-solutions-trees'}}>part I</Links.IL> trees were the focus. They have the benefit of being familiar but as a unit they are imprecise and cannot be readily compared to other forms of sequestration.</p>
             
             <p>Trees also represent a relatively small fraction of the carbon sequestered in many woodlands and forests. The amount of carbon stored in soil is striking. In the case of a temperate forest it is 72% but all forests contain high amounts of carbon in their soils, and the older the forest, the more carbon is locked up underground.</p>            
+            <Accordion header='Carbon storage in temperate forests'>
             <aside>
                 <h4>Where carbon is stored in a typical temperate forest</h4>
                 <dl>
@@ -72,17 +73,18 @@ const NCSPartTwo = () => {
                     <Links.EL link={{source:'https://spiral.imperial.ac.uk:8443/bitstream/10044/1/80271/6/What%20role%20can%20forests%20play%20in%20tackling%20climate%20change.pdf'}}>What role can forests play in tackling climate change?</Links.EL> (PDF) | Waring et al.
                 </div>
             </aside>
+            </Accordion>
             <p>Grassland and savanna also store carbon in their soils, and although the weight of above-ground carbon is minimal compared to that stored in the trunks and branches of forest trees, disturbing the soil and replacing natural vegetation with trees leads to a net loss of <Formula>CO2</Formula> to the atmosphere; a process which takes years to reverse.</p>
-            <p>An example of inappropriate land use change occurred in Flow Country in the north of Scotland. 20% of peatlands in Flow Country were drained and planted with non-native conifers, a process that accelerated between 1950 and 1980.</p>
+            {/* <p>An example of inappropriate land use change occurred in Flow Country in the north of Scotland. 20% of peatlands in Flow Country were drained and planted with non-native conifers, a process that accelerated between 1950 and 1980.</p>
             <blockquote cite='https://www.theflowcountry.org.uk/flow-facts/flow-fact-1/'>
             Many peatlands have been growing undisturbed for thousands of years, so although they cover just 3% of the world’s land area, they hold nearly 30% of all the carbon stored on land. The Flow Country’s peat bogs alone store about 400 million tonnes – more than double the amount in all of Britain’s woodlands.
             </blockquote>
-            <cite><Links.EL link={{source:'https://www.theflowcountry.org.uk/flow-facts/flow-fact-1/'}}>Flow Country | Climate change</Links.EL> </cite>
+            <cite><Links.EL link={{source:'https://www.theflowcountry.org.uk/flow-facts/flow-fact-1/'}}>Flow Country | Climate change</Links.EL> </cite> */}
             <p>In order to compare land use a common unit is needed; the hectare is the unit most widely used for measuring land area.</p>
             <h3>Hectares</h3>                
-            <p>It's useful to have a sense of what a hectare looks like. In a city a hectare can cover several streets or blocks and contain hundreds, or thousands of people.</p>
-            {/* <p>Competitive sports fields are typically between 1 and 2 hectares in size.</p> */}
-            <p>But urban areas account for only <Links.EL link={{source:'https://ourworldindata.org/land-use'}}>one percent</Links.EL> of land use.</p>
+            {/* <p>It's useful to have a sense of what a hectare looks like. In a city a hectare can cover several streets or blocks and contain hundreds, or thousands of people.</p>
+            <p>But urban areas account for only <Links.EL link={{source:'https://ourworldindata.org/land-use'}}>one percent</Links.EL> of land use.</p> */}
+            <Accordion header='Hectare equivalents'>
             <aside>
                 <h4>Hectare - ha</h4>
                 <dd>The hectare, although not a unit of SI, is the only named unit of area that is accepted for use with SI units.</dd>
@@ -97,12 +99,14 @@ const NCSPartTwo = () => {
                     <Links.EL link={{source:'https://en.wikipedia.org/wiki/Hectare'}}>Hectare | Wikipedia</Links.EL>
                 </div>
             </aside>
-            <p>Most farms are small and family-run. Those under 2 hectares <Links.EL link={{source:'https://www.sciencedirect.com/science/article/pii/S0305750X15002703'}}> operate about 12% of the world’s agricultural land</Links.EL>. Large farms can be thousands, or tens of thousands of hectares.</p>
+            </Accordion>
+            {/* <p>Most farms are small and family-run. Those under 2 hectares <Links.EL link={{source:'https://www.sciencedirect.com/science/article/pii/S0305750X15002703'}}> operate about 12% of the world’s agricultural land</Links.EL>. Large farms can be thousands, or tens of thousands of hectares.</p> */}
             <p>Though forests cover over 4 billion hectares, their minimum size is surprisingly small. The UNFCCC defines a forest as <Links.EL link={{source:'https://www.nature.com/articles/news.2009.842'}}>an area of land 0.05–1 hectare in size, of which more than 10–30% is covered by tree canopy</Links.EL>.</p>
             <h3>Land use</h3>
-                <p>71% of the Earth's surface is Ocean. The remaining 29% occupied by land covers 104 million square kilometres or 10,400 million hectares.</p>
+                <p>71% of the Earth's surface is Ocean. The remaining 29% occupied by land covers 104 million square kilometres - 10,400 million hectares.</p>
                 <p>10% of the land is covered in glaciers, and a further 19% is barren. The remainder is deemed habitable.</p>
                 <p>Competition for habitable land is intense; its management critical for food, biodiversity, and natural services.</p>
+                <Accordion header='Habitable land use'>
                 <aside>
                     <h4>Habitable land use</h4>
                     <dl>
@@ -120,14 +124,16 @@ const NCSPartTwo = () => {
                     <div>
                         <Links.EL link={{source:'https://ourworldindata.org/land-use'}}>Land Use | Our World in Data</Links.EL>
                     </div>
-                </aside>                
+                </aside>    
+                </Accordion>            
+                <p>37% of land is occupied by forests. 50% by agriculture.</p>
                 <h3>Are forests sinks or sources of <Formula>CO2</Formula>?</h3>
                 {/* <p>We can compare land use today with land use 10,000 years ago.</p>
                 <blockquote cite='https://ourworldindata.org/world-lost-one-third-forests'>
                 <div>10,000 years ago 57% of the world’s habitable land was covered by forest. That’s 6 billion hectares.  Today, only 4 billion hectares are left. The world has lost one-third of its forest – an area twice the size of the United States.</div>
                 </blockquote>
                 <cite><Links.EL link={{source:'https://ourworldindata.org/world-lost-one-third-forests'}}>The world has lost one-third of its forest Our World in Data</Links.EL></cite> */}
-                <p>In <Links.IL link={{source:'climate-crisis/natural-climate-solutions-part-one-trees'}}>Part I</Links.IL> it was estimated that 200 gigatonnes of carbon could be sequestered by the end of the century.</p>
+                <p>In <Links.IL link={{source:'climate-crisis/natural-climate-solutions-trees'}}>Part I</Links.IL> it was estimated that 200 gigatonnes of carbon could be sequestered by the end of the century.</p>
                 <p>The Grantham Institute suggests a realistic estimate is <Links.EL link={{source:'https://spiral.imperial.ac.uk:8443/bitstream/10044/1/80271/6/What%20role%20can%20forests%20play%20in%20tackling%20climate%20change.pdf'}}>40-60 gigatons</Links.EL>.</p>
                 <blockquote cite='https://spiral.imperial.ac.uk:8443/bitstream/10044/1/80271/6/What%20role%20can%20forests%20play%20in%20tackling%20climate%20change.pdf'>
                     <div>
@@ -138,14 +144,18 @@ const NCSPartTwo = () => {
                     </div>
                 </blockquote>
 
-                <p>Forests are both a source of carbon and a carbon sink. Carbon is primarily lost when forests are degraded or cleared, but all plants, including trees, also release <Formula>CO2</Formula> during respiration.</p>
+                <p>Forests are both a source of carbon and a carbon sink. Carbon is primarily lost when forests are degraded or cleared, but all plants, including trees, also release <Formula>CO2</Formula> during cellular respiration.</p>
+                <Accordion header='Cellular respiration'>
                 <aside>
                     <h4>Cellular respiration</h4>
                     <div>Cellular respiration is in a way the reverse of photosynthesis. Respiration is associated with humans and other animals but plants also respire.</div>
                     <p><Formula>C6H12O6</Formula> + 6<Formula>O2</Formula> → 6<Formula>CO2</Formula> + 6<Formula>H2O</Formula> + heat</p>
                 </aside>
+                </Accordion>
                 <p>A paper in Nature on <Links.EL link={{source:'https://www.nature.com/articles/s41558-020-00976-6'}}>forest carbon fluxes</Links.EL> found that between 2001 and 2019 global forests emitted 8.1 billion tonnes of <Formula>CO2</Formula> into the atmosphere, and absorbed 16 billion tonnes. Their data new data combined ground measurements with satellite observations.</p>
-                <p>In a supporting article for the <Links.EL link={{source:'https://www.wri.org/insights/forests-absorb-twice-much-carbon-they-emit-each-year'}}>World Resources Institute</Links.EL>, the authors state that of the 3 major rainforests only the Congo River Basin has enough forest standing to remain a carbon sink. The forests of Southeast Asia are collectively a source of carbon, and the Amazon Basin is teetering on the edge of becoming a source.</p>
+                <p>
+                    <div>In a supporting article for the <Links.EL link={{source:'https://www.wri.org/insights/forests-absorb-twice-much-carbon-they-emit-each-year'}}>World Resources Institute</Links.EL>, the authors state that of the 3 major rainforests only the Congo River Basin has enough forest standing to remain a carbon sink. The forests of Southeast Asia are collectively a source of carbon, and the Amazon Basin is teetering on the edge of becoming a source.</div>
+                </p>
                 <p>Tropical rainforests are far and away the most important ecosystems for mitigating climate change. New forest planted since the turn of the century represent less than 5% of the current global forest carbon sink.</p>
                 <blockquote cite='https://www.wri.org/insights/forests-absorb-twice-much-carbon-they-emit-each-year'>
                 Overall, the data show that keeping existing forests standing remains our best hope for maintaining the vast amount of carbon forests store and continuing the carbon sequestration that, if halted, will worsen the effects of climate change.
@@ -168,6 +178,7 @@ const NCSPartTwo = () => {
                 </blockquote>
                 <h3>Limiting factors</h3>       
                 <p>Plant growth is dependent on many factors. Some are caused by climate change - rising temperatures and water shortages. Others are a consequence of human activity such as elevated levels of nitrogen resulting from the addition of fertilisers.</p>         
+                <Accordion header='Limiting factors'>
                 <aside>
                     <h4>Limiting factors</h4>
                     <dl>
@@ -187,11 +198,13 @@ const NCSPartTwo = () => {
                         <dd>In addition to nitrogen, plants are dependent on a number of minerals including potassium, calcium, sulfur, magnesium, copper, zinc and iron.</dd>
                     </dl>
                 </aside>
+                </Accordion>
                 <p>Climate change is also affecting plants in more general ways. Phenology - the timing of events in the lifecycle of a plant - is affected by seasonal variation, temperature, rainfall, and interaction with other species - such as pollinators and seed spreading animals - which are themselves affected by these variations. This can lead to the life cycles of mutually dependent species getting out of sync.</p>
                 <p>Planting the right trees in the right place is fundamental to the success of many restoration, reforestation and afforestation projects. In complex managed and unmanaged forests native trees are better adapted to available ecological niches and therefore more resilient.</p>
                 <p>Planting trees where established peatland or grassland is in place leads to an increase in emissions, in either the short, or long term. The albedo effect is an unintended consequence of planting trees that grow slowly because of short growing seasons on land that previously radiated sunlight from snow, ice or less dark soils and vegetation.</p>
+                <Accordion header='The albedo effect'>
                 <aside>
-                    <h4>Albedo</h4>
+                    <h4>The albedo effect</h4>
                     <div>
                     <blockquote cite='https://www.carbonbrief.org/explainer-10-ways-negative-emissions-could-slow-climate-change'>
                         A measure of how much of the sun's energy is reflected by a surface. It is derived from the Latin word albus, meaning white. Albedo is measured as a percentage or fraction of the sun’s energy that is reflected away. Snow and ice tend to have a higher albedo than, for example, soil, forests and open water.
@@ -199,16 +212,19 @@ const NCSPartTwo = () => {
                     <cite><Links.EL link={{source:'https://www.carbonbrief.org/explainer-10-ways-negative-emissions-could-slow-climate-change'}}>Albedo | Carbon Brief</Links.EL> </cite>
                     </div>
                 </aside>
+                </Accordion>
                 <p>Whilst the tropics has remained a carbon sink, deforestation has lead to increased emissions. There has been forest regrowth in the temperate zones, and parts of the boreal zone.</p>
                 <blockquote cite="https://www.wri.org/insights/forests-absorb-twice-much-carbon-they-emit-each-year">
                     Although important to give these young forests the chance to grow into old ones, protecting primary and mature secondary forests today is most important for curbing climate change.
                 </blockquote>
                 <cite><Links.EL link={{source:'https://www.wri.org/insights/forests-absorb-twice-much-carbon-they-emit-each-year'}}>Forests Absorb Twice As Much Carbon As They Emit Each Year</Links.EL></cite>
+                
                 <p>Available… IPCC… Crowther, etc…</p>
                 <h3>Natural services</h3>
                 <p>Keystone species…</p>
                 <p>Transpiration…</p>
                 <p>Additional benefits to humans…</p>
+                <Accordion header='Benefits of trees'>
                 <aside>
                     <h4>Benefits of trees</h4>
                     <ul class={styles.unorderedList}>
@@ -220,6 +236,7 @@ const NCSPartTwo = () => {
                         <li>Fallen leaves, flowers, fruits or other tree parts form mulches. These provide a natural filter for polluted rainwater, supplying clean water to other plants in the vicinity as well as our rivers and oceans.</li>
                     </ul>
                 </aside>
+                </Accordion>
                 <h3>Bioenergy with Carbon Capture & Storage BECCS</h3>
                 <p>BECSS is…</p>
                 <p>In theory…</p>
@@ -234,7 +251,7 @@ const NCSPartTwo = () => {
                 <h2>References</h2>
                 <Links.ExternalLinksList links={references} />
             </section>
-            <Links.RelatedLinks links={[{value:'climate-crisis/natural-climate-solutions-part-one-trees',text:'Natural climate solutions - Trees'},{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'climate-crisis/natural-climate-solutions-trees',text:'Natural climate solutions - Trees'},{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
