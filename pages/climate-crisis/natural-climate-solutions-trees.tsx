@@ -130,12 +130,10 @@ const NCSPartOne = () => {
                 <p>The paper <Links.EL link={{source:'https://www.pnas.org/content/114/44/11645'}}>Natural climate solutions</Links.EL> by Griscom et al. identifies 20 actions that increase carbon storage and/or mitigate emissions, including reforestation, trees in cropland, and fire management.</p>
                 <p>Most NCS actions <q>also offer water filtration, flood buffering, soil health, biodiversity habitat, and enhanced climate resilience</q>.</p>
                 <p>Natural Climate Solutions tend not to receive the headlines. Tree planting is an exception. Many countries have promised to plant trees, and large scale projects in Ethiopia, Pakistan, India, China and elsewhere have taken place.</p>                
-                {/* <p>The German Government launched the <Links.EL link={{source:'https://www.bonnchallenge.org/about'}}>Bonn Challenge</Links.EL> to restore 350 million hectares of degraded or deforested landscapes by 2030.</p> */}
                 <p>There are several high profile global campaigns including <Links.EL link={{source:'https://www.1t.org/'}}>1 trillion trees</Links.EL> backed by the World Economic Forum, and <Links.EL link={{source:'https://trilliontrees.org/home'}}>Trillion Trees</Links.EL>.</p>       
                 <p>These projects are framed in such a way as to attract public attention by describing problems and solutions in terms of something familiar.</p>
                 <p>But are trees a good unit of measurement?</p>
                 <p>Scientists generally talk about forests rather than trees, and measure them in hectares. It is when bringing their findings to public attention that they switch to talking about trees. Campaigners, politicians, and protesters similarly prefer trees over hectares.</p>
-                <p>In <Links.IL link={{source:'climate-crisis/natural-climate-solutions-part-two-forests'}}>Part II</Links.IL> I look at the role of forests, and how they compare to other NCS actions. But this review of natural currency solutions begins with the most popular currency, trees.</p>
                 <h3>What is a tree?</h3>
                 <p>There is no formal definition.  Trees are not part of a taxonomic group but a loose collection of families and species that have evolved similar characteristics.</p>
                 <h4>Typical characteristics of a tree</h4>
