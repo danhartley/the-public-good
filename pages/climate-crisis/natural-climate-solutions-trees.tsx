@@ -444,7 +444,7 @@ const NCSPartOne = () => {
                 <h2>References</h2>
                 <Links.ExternalLinksList links={references} />
             </section>
-            <Links.RelatedLinks links={[{value:'climate-crisis/natural-climate-solutions-part-two-forests',text:'Natural climate solutions - Forests'},{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
