@@ -3,6 +3,7 @@ import Layout from 'components/layout/layout';
 import Formula from 'components/tools/formula';
 import styles from 'pages/pages.module.scss';
 import Accordion from 'components/accordion/accordion';
+import Top from 'components/top/top';   
 
 const references = [
     {
@@ -355,10 +356,10 @@ const NCSPartOne = () => {
                 <p>In 2016 NASA reported significant greening in the previous 35 years, 70% of which was attributed to <Formula>CO2</Formula> fertilisation.</p>
                 <p>These findings fit with evidence that <Links.EL link={{source:'https://sos.noaa.gov/datasets/ocean-atmosphere-co2-exchange/'}}>25% of carbon dioxide emissions are absorbed by land plants and trees</Links.EL> of which forests absorb roughly <Links.EL link={{source:'https://www.nature.com/articles/s41558-020-00976-6'}}>7.6 billion tonnes of <Formula>CO2</Formula></Links.EL> or 15% of all emissions annually.</p>
                 <p>
-                    <div>Gabriel Popkin presents a review of the current thinking in his article at Yale Environment, <Links.EL link={{source:'https://e360.yale.edu/features/will-climate-change-upend-projections-of-future-forest-growth'}}>Will Climate Change Upend Projections of Future Forest Growth?</Links.EL> He concludes:</div>
+                    <div>The <Formula>CO2</Formula> fertilisation hsa been extensively studided in closed environments. Gabriel Popkin presents a review of the latest field studies and computer models in his article at Yale Environment, <Links.EL link={{source:'https://e360.yale.edu/features/will-climate-change-upend-projections-of-future-forest-growth'}}>Will Climate Change Upend Projections of Future Forest Growth?</Links.EL> He summarises this work:</div>
                 </p>
                 <blockquote cite='https://e360.yale.edu/features/will-climate-change-upend-projections-of-future-forest-growth'>
-                The bottom line is that the changing climate is already hammering forests around the world, and future impacts could become severe enough to negate forests’ ability to sequester carbon altogether.
+                Their results seem to be converging on bad news: Higher CO2 concentrations do not necessarily accelerate forest growth, warming soils seem to emit substantially more CO2 than previously believed, and climate-driven scourges threaten to kill trees faster than they can grow, turning forests globally into sources, not sinks, of carbon.
                 </blockquote>
                 <h3>Limiting factors</h3>       
                 <p>Plant growth is dependent on many factors. Some are caused by climate change - rising temperatures and water shortages. Others are a consequence of human activity such as elevated levels of nitrogen resulting from the addition of fertilisers.</p>         
@@ -369,7 +370,7 @@ const NCSPartOne = () => {
                         <dt><strong>Nitrogen</strong></dt>
                         <dd>
                             <blockquote cite='https://www.nps.gov/subjects/air/nature-nitrogensulfur.htm'>
-                            Nitrogen is an essential plant nutrient but, excess nitrogen from atmospheric deposition can stress ecosystems. Excess nitrogen acts as a fertilizer, favoring some plants and leaving others at a competitive disadvantage.
+                            Nitrogen is an essential plant nutrient but excess nitrogen from atmospheric deposition can stress ecosystems. Excess nitrogen acts as a fertilizer, favoring some plants and leaving others at a competitive disadvantage.
                             </blockquote>
                             <cite><Links.EL link={{source:'https://www.nps.gov/subjects/air/nature-nitrogensulfur.htm'}}>National Park Service</Links.EL> </cite>
                             <p>Burning fossil fuels and agricultural practices have increased the levels of atmospheric nitrogen. Nitrogen deposited in forests in the form of reactive nitrate can act as a fertiliser, increasing carbon dioxide sequestration, but excess nitrogen has a detrimental effect on soil fertility.</p>
@@ -385,7 +386,8 @@ const NCSPartOne = () => {
                 </Accordion>
                 <p>Climate change is also affecting plants in more general ways. Phenology - the timing of events in the lifecycle of a plant - is affected by seasonal variation, temperature, rainfall, and interaction with other species - such as pollinators and seed spreading animals - which are themselves affected by these variations. This can lead to the life cycles of mutually dependent species getting out of sync.</p>
                 <p>Planting the right trees in the right place is fundamental to the success of many restoration, reforestation and afforestation projects. In complex managed and unmanaged forests native trees are better adapted to available ecological niches and therefore more resilient.</p>
-                <p>Planting trees where established peatland or grassland is in place leads to an increase in emissions, in either the short, or long term. The albedo effect is an unintended consequence of planting trees that grow slowly because of short growing seasons on land that previously radiated sunlight from snow, ice or less dark soils and vegetation.</p>
+                <p>Planting trees where established peatland or grassland is in place leads to an increase in emissions, in either the short, or long term.</p>
+                <p>The albedo effect is an unintended consequence of planting trees that grow slowly because of short growing seasons on land that previously radiated sunlight from snow, ice or less dark soils and vegetation.</p>
                 <Accordion header='The albedo effect'>
                 <aside>
                     <h4>The albedo effect</h4>
@@ -437,6 +439,7 @@ const NCSPartOne = () => {
                 <cite><Links.EL link={{source:'https://ourworldindata.org/deforestation'}}>Deforestation and Forest Loss | Our World in Data</Links.EL> </cite>
                 <p>Many solutions will be required to curb and offset our carbon dioxide emissions. Maintaining and restoring the world's existing forests preserves natural sinks upon which we are heavily dependent for reducing carbon dioxide in the atmosphere. They also provide a range of additional services far beyond one dimensional technological fixes. Tropical forests alone <Links.EL link={{source:'https://www.pnas.org/content/114/23/5775'}}>support two thirds of species</Links.EL> on less than 10% of the Earth's land surface.</p>
                 <p>Technology is being used to map and record natural resources including forests. A record of what exists and the ability to monitor the effects of climate change and land use change is key for assessing the value of the natural world, and preserving it.</p>
+                <Top></Top>
             </section>
             <section>   
                 <h2>References</h2>

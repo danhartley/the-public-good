@@ -5,7 +5,6 @@ import styles from 'pages/pages.module.scss';
 import Links from 'components/links/Links';
 import Top from 'components/top/top';
 import Quiz from 'components/quiz/quiz';
-import Link from 'next/link';
 
 const externalLinks = [    
     {

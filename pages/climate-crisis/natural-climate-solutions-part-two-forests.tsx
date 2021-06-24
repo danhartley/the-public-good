@@ -185,7 +185,7 @@ const NCSPartTwo = () => {
                         <dt><strong>Nitrogen</strong></dt>
                         <dd>
                             <blockquote cite='https://www.nps.gov/subjects/air/nature-nitrogensulfur.htm'>
-                            Nitrogen is an essential plant nutrient but, excess nitrogen from atmospheric deposition can stress ecosystems. Excess nitrogen acts as a fertilizer, favoring some plants and leaving others at a competitive disadvantage.
+                            Nitrogen is an essential plant nutrient but excess nitrogen from atmospheric deposition can stress ecosystems. Excess nitrogen acts as a fertilizer, favoring some plants and leaving others at a competitive disadvantage.
                             </blockquote>
                             <cite><Links.EL link={{source:'https://www.nps.gov/subjects/air/nature-nitrogensulfur.htm'}}>National Park Service</Links.EL> </cite>
                             <p>Burning fossil fuels and agricultural practices have increased the levels of atmospheric nitrogen. Nitrogen deposited in forests in the form of reactive nitrate can act as a fertiliser, increasing carbon dioxide sequestration, but excess nitrogen has a detrimental effect on soil fertility.</p>
