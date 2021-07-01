@@ -14,7 +14,9 @@ const Projects = () => {
                         <ul class={styles.dashedItemsList}>
                             <p>The switch to <Links.EL link={{source:'https://webpack.js.org'}}>webpack</Links.EL> from <Links.EL link={{source:'https://gruntjs.com/'}}>Grunt</Links.EL> for bundling and optimising files.</p>
                             <p>A shift from building <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Glossary/SPA'}}>Single Page Apps</Links.EL> to <Links.EL link={{source:'web.dev/progressive-web-apps/'}}>Progressive Web Apps</Links.EL>.</p>
-                            <p>Hosting the site on <a href="https://cloud.google.com/">Google's Cloud Platform</a> and adding <Links.EL link={{source:'https://firebase.google.com/docs/functions'}}>serverless functions</Links.EL>.</p>
+                            <p>
+                                <div>Hosting the site on <Links.EL link={{source:'https://cloud.google.com'}}>Google's Cloud Platform</Links.EL> and adding <Links.EL link={{source:'https://firebase.google.com/docs/functions'}}>serverless functions</Links.EL>.</div>
+                            </p>
                             <p>Increased testing, using <Links.EL link={{source:'https://jestjs.io/'}}>Jest</Links.EL>, and, at times, <Links.EL link={{source:'https://www.freecodecamp.org/news/test-driven-development-what-it-is-and-what-it-is-not-41fa6bca02a2/'}}>Test Driven Development</Links.EL>.</p>
                         </ul>
                         <p>I also reduced my dependency on runtime libraries, including <Links.EL link={{source:'https://getbootstrap.com/'}}>Bootstrap</Links.EL>. I have mixed feelings about <Links.EL link={{source:'https://redux.js.org/'}}>Redux</Links.EL> which is a simple and effective approach to state management but is hard to tame. Intrinsic to Redux, however, is functional programming which is an excellent fit for the web. I am grateful to <Links.EL link={{source:'https://overreacted.io/'}}>Dan Abramov</Links.EL>, who created Redux, and <Links.EL link={{source:'https://www.youtube.com/c/funfunfunction'}}>mpj</Links.EL> for their thoughts and instruction on this subject.</p>

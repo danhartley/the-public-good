@@ -57,13 +57,13 @@
             margin-left: inherit;
             font-size: .9rem;
             img {
-                width: 3rem;
-                height: 3rem;
+                width: 60px;
+                height: 60px;
                 filter: grayscale(1);
                 border-radius: 50%;
             }
             & > div {
-                height: 3rem;
+                height: 60px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;

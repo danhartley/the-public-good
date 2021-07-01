@@ -16,6 +16,9 @@ export default function Home() {
 
             <p>I write about the climate crisis and responsible web development.</p>
 
+            <p>
+                <div>The site is designed according to a set of principles set out in a <Links.IL link={{source:'web-development/sociable-contract'}}>sociable contract</Links.IL>.</div>
+            </p>
         </section>
 
         <section>

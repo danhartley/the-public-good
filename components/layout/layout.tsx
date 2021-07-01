@@ -92,7 +92,7 @@ const Layout = ({
 
                     { rt.length > 0 
                         ? <div class={styles.author}>
-                            <img alt="The author, Daniel Hartley" src="https://avatars.githubusercontent.com/u/264690?s=60&amp;v=4" height="50px" width="50px" />
+                            <img alt="The author, Daniel Hartley" src="https://avatars.githubusercontent.com/u/264690?s=60&amp;v=4" />
                             <div>
                                 <div>Daniel Hartley</div>
                                 <div>Reading time: {rt} minutes</div>
