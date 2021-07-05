@@ -23,7 +23,7 @@ const Layout = ({
     const router = useRouter();
 
     const btnMode = useRef(null) as any;
-    const bytesTransferred = useRef(null);
+    const bytesTransferred = useRef(null) as any;
 
     useEffect(() => {
         // run this code to reset to dark mode when page is refreshed and dark mode 
