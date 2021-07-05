@@ -39,6 +39,14 @@ const externalLinks = [
         "name": "Mightybytes | Ecograder and Your Website Sustainability Score",
         "source": "https://www.mightybytes.com/blog/how-ecograder-totals-web-sustainability/"
     },
+    {
+        "name": "WebKit | How Web Content Can Affect Power Usage",
+        "source": "https://webkit.org/blog/8970/how-web-content-can-affect-power-usage/"
+    },
+    {
+        "name": "Wholegrain Digital | 17 (+3!) ways to make your website more energy efficient",
+        "source": "https://www.wholegraindigital.com/blog/website-energy-efficiency/"
+    },
 ];
 
 const Sustainability = () => {
