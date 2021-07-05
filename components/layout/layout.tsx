@@ -22,7 +22,7 @@ const Layout = ({
 
     const router = useRouter();
 
-    const btnMode = useRef(null);
+    const btnMode = useRef(null) as any;
     const bytesTransferred = useRef(null);
 
     useEffect(() => {
