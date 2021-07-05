@@ -63,8 +63,8 @@ const MentalModel = () => {
         },
     ];
 
-    const saved = useRef(null);
-    const notSaved = useRef(null);
+    const saved = useRef(null) as any;
+    const notSaved = useRef(null) as any;
 
     const saveMe = (msg, ref) => {
         ref.current.innerHTML = msg;
