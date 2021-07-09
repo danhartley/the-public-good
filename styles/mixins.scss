@@ -309,6 +309,9 @@
             font-size: .8em;
             line-height: 2;
         }
+        dd p {
+            font-size: inherit;
+        }
         h4 {
             margin: calc(.5rem + .5vw) 0 0 0;
         }

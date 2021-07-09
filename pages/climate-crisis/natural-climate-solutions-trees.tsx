@@ -106,7 +106,7 @@ const references = [
 
 const NCSPartOne = () => {
     return (
-        <Layout header="Natural climate solutions - Trees" rt="15" title="natural-climate-solutions-trees" description={'Trees'}>
+        <Layout header="Natural climate solutions - Trees" rt="10-15" title="natural-climate-solutions-trees" description={'Trees'}>
             <section>
                 <h2>Is planting trees a good way to remove carbon dioxide from the atmosphere?</h2>
 
@@ -335,7 +335,7 @@ const NCSPartOne = () => {
                     <p><Formula>C6H12O6</Formula> + 6<Formula>O2</Formula> → 6<Formula>CO2</Formula> + 6<Formula>H2O</Formula> + heat</p>
                 </aside>
                 </Accordion>
-                <p>A paper in Nature on <Links.EL link={{source:'https://www.nature.com/articles/s41558-020-00976-6'}}>forest carbon fluxes</Links.EL> found that between 2001 and 2019 global forests emitted 8.1 billion tonnes of <Formula>CO2</Formula> into the atmosphere, and absorbed 16 billion tonnes. Their data new data combined ground measurements with satellite observations.</p>
+                <p>A paper in Nature on <Links.EL link={{source:'https://www.nature.com/articles/s41558-020-00976-6'}}>forest carbon fluxes</Links.EL> found that between 2001 and 2019 global forests emitted 8.1 billion tonnes of <Formula>CO2</Formula> into the atmosphere, and absorbed 16 billion tonnes. Their data combined ground measurements with satellite observations.</p>
                 <p>
                     <div>In a supporting article for the <Links.EL link={{source:'https://www.wri.org/insights/forests-absorb-twice-much-carbon-they-emit-each-year'}}>World Resources Institute</Links.EL>, the authors state that of the 3 major rainforests only the Congo River Basin has enough forest standing to remain a carbon sink. The forests of Southeast Asia are collectively a source of carbon, and the Amazon Basin is teetering on the edge of becoming a source.</div>
                 </p>
@@ -356,7 +356,7 @@ const NCSPartOne = () => {
                 <p>In 2016 NASA reported significant greening in the previous 35 years, 70% of which was attributed to <Formula>CO2</Formula> fertilisation.</p>
                 <p>These findings fit with evidence that <Links.EL link={{source:'https://sos.noaa.gov/datasets/ocean-atmosphere-co2-exchange/'}}>25% of carbon dioxide emissions are absorbed by land plants and trees</Links.EL> of which forests absorb roughly <Links.EL link={{source:'https://www.nature.com/articles/s41558-020-00976-6'}}>7.6 billion tonnes of <Formula>CO2</Formula></Links.EL> or 15% of all emissions annually.</p>
                 <p>
-                    <div>The <Formula>CO2</Formula> fertilisation hsa been extensively studided in closed environments. Gabriel Popkin presents a review of the latest field studies and computer models in his article at Yale Environment, <Links.EL link={{source:'https://e360.yale.edu/features/will-climate-change-upend-projections-of-future-forest-growth'}}>Will Climate Change Upend Projections of Future Forest Growth?</Links.EL> He summarises this work:</div>
+                    <div>The <Formula>CO2</Formula> fertilisation has been extensively studied in closed environments. Gabriel Popkin presents a review of the latest field studies and computer models in his article at Yale Environment, <Links.EL link={{source:'https://e360.yale.edu/features/will-climate-change-upend-projections-of-future-forest-growth'}}>Will Climate Change Upend Projections of Future Forest Growth?</Links.EL> He summarises this work:</div>
                 </p>
                 <blockquote cite='https://e360.yale.edu/features/will-climate-change-upend-projections-of-future-forest-growth'>
                 Their results seem to be converging on bad news: Higher CO2 concentrations do not necessarily accelerate forest growth, warming soils seem to emit substantially more CO2 than previously believed, and climate-driven scourges threaten to kill trees faster than they can grow, turning forests globally into sources, not sinks, of carbon.
