@@ -32,6 +32,10 @@ const onlineTools = [
         "name": "surfgreen.dev (beta)",
         "source": "https://surfgreen.dev/"
     },
+    {
+        "name": "EcoPing",
+        "source": "https://ecoping.earth/app/reports"
+    },
 ];
 
 const externalLinks = [
