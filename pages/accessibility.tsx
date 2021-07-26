@@ -16,12 +16,16 @@ const links = [
         "source": "https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
     },
     {
-        "name": "GreenIT-Analysis - Web Accessibility Testing Chrome extension",
+        "name": "GreenIT-Analysis - Web Accessibility Testing (Chrome extension)",
         "source": "https://chrome.google.com/webstore/detail/greenit-analysis/mofbfhffeklkbebfclfaiifefjflcpad?hl=en"
     },
     {
         "name": "Color Contrast Accessibility Validator",
         "source": "https://color.a11y.com/"
+    },
+    {
+        "name": "NoCoffee vision simulator (Firefox)",
+        "source": "https://addons.mozilla.org/en-US/firefox/addon/nocoffee/"
     },
 ];
 

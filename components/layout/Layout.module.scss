@@ -9,7 +9,7 @@
             height: 0;
         }
         width: 100vw; 
-        background-color: rgb(77, 68, 61);
+        background-color: rgba(var(--fg),.9);
         margin-bottom: 1rem;
         &:focus-visible {
             outline: none;
@@ -19,7 +19,7 @@
             font-size: calc(1.5rem + 2.5vw);
             &, &:visited {
                 @include internalLink();
-                color: white;
+                color: rgb(var(--bg));
                 text-decoration: none;
             }
             display: flex;
@@ -59,7 +59,7 @@
             img {
                 width: 60px;
                 height: 60px;
-                filter: grayscale(1);
+                // filter: grayscale(1);
                 border-radius: 50%;
             }
             & > div {
@@ -93,16 +93,16 @@
 }
 
 .dark {
-    color: white;
     &::after {
         content: "\25D0";    
+        color: rgb(var(--bg));
     }
 }
 
 .light {
-    color: white;
     &::after {
         content: "\25D1";
+        color: rgb(var(--bg));
     }
 }
 

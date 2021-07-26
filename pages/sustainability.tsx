@@ -21,8 +21,8 @@ const onlineTools = [
         "source": "https://ecograder.com/"
     },
     {
-        "name": "EcoIndex Chrome extension",
-        "source": "https://chrome.google.com/webstore/detail/greenit-analysis/mofbfhffeklkbebfclfaiifefjflcpad/related?hl=en"
+        "name": "GreenIT-Analysis - Web Sustainability Testing (Chrome extension)",
+        "source": "https://chrome.google.com/webstore/detail/greenit-analysis/mofbfhffeklkbebfclfaiifefjflcpad?hl=en"
     },
     {
         "name": "EcoIndex Firefox extension",
@@ -50,6 +50,10 @@ const externalLinks = [
     {
         "name": "Wholegrain Digital | 17 (+3!) ways to make your website more energy efficient",
         "source": "https://www.wholegraindigital.com/blog/website-energy-efficiency/"
+    },
+    {
+        "name": "The intro guide to digital eco-design",
+        "source": "https://eco-conception.designersethiques.org/guide/en/content/0-introduction.html"
     },
 ];
 

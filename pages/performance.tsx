@@ -47,6 +47,10 @@ const perfLinks = [
         "name": "Moz | Domain Authority",
         "source": "https://moz.com/domain-analysis#index"
     },
+    {
+        "name": "Performance Budget Calculator",
+        "source": "https://www.performancebudget.io/"
+    },
 ];
 
 const Performance = () => {

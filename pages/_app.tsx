@@ -21,7 +21,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             --il-fw:bold;
             --h1:218, 217, 205;
             --em:255, 255, 0;
-            --key:255, 255, 255; 
+            --key:45, 45, 45; 
         ` 
         : 
         `
@@ -34,7 +34,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             --il-fw:bold;
             --h1:218, 217, 205;
             --em:155, 0, 0;
-            --key:77, 68, 61;
+            --key:45, 45, 45;
         ` as any;
         return _style;
     };
