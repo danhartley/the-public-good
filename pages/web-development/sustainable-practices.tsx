@@ -2,7 +2,6 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Published from 'components/published/published';
 import Top from 'components/top/top';
-import styles from 'pages/pages.module.scss';
 
 const ResponsibleDevelopment = () => {
 
@@ -38,7 +37,7 @@ const ResponsibleDevelopment = () => {
     ];
 
     return (
-        <Layout header="Responsible development" rt="4" title="Web development | Responsible web development" description={'Responsible web development - building fast, accessible, sustainable web sites.'} image='https://live.staticflickr.com/65535/51338545428_06af07500a_c_d.jpg'>
+        <Layout header="Sustainable practices" rt="4" title="Web development | Sustainable practices" description={'Setting sustainable goals is the responsibility of everyone involved in creating a digital product.'} image='https://live.staticflickr.com/65535/51338545428_06af07500a_c_d.jpg'>
 
             <section>
 
@@ -87,7 +86,7 @@ const ResponsibleDevelopment = () => {
 
                 <p>As a percentage of world energy consumption, digital is rising. Companies will have to account for their own carbon emissions, and those of their energy suppliers (Scope 1 and Scope 2). Emissions from everything else - infrastructure, transport, general services (Scope 3) - is harder to account for. But companies that make things, trade, or sell physical goods may in time become accountable through regulation. In some sectors it will be driven by the expectations of their customers - and their employees.</p>
 
-                <p>As data related to carbon emissions, water usage, land use change and the political and social conditions under which products are made becomes available, companies will have a choice as to how transparent they wish to be.</p>
+                <p>As data related to carbon emissions, water usage, land use change and the political and social conditions under which products are made become available, companies will have a choice as to how transparent they wish to be.</p>
 
                 <p>A rich stream of product data is an opportunity to extend customer contact throughout the lifecycle of that product.</p>
 
