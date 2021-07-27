@@ -12,6 +12,10 @@ const perfLinks = [
         "source": "https://www.webpagetest.org/"
     },
     {
+        "name": "Measure | Google",
+        "source": "https://web.dev/measure/"
+    },
+    {
         "name": "Think With Google",
         "source": "https://www.thinkwithgoogle.com/feature/testmysite/"
     },

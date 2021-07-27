@@ -59,8 +59,8 @@
             img {
                 width: 60px;
                 height: 60px;
-                // filter: grayscale(1);
                 border-radius: 50%;
+                filter: grayscale(1);
             }
             & > div {
                 height: 60px;
