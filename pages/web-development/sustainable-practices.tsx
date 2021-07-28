@@ -2,6 +2,7 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Published from 'components/published/published';
 import Top from 'components/top/top';
+import Link from 'next/link';
 
 const ResponsibleDevelopment = () => {
 
@@ -44,9 +45,9 @@ const ResponsibleDevelopment = () => {
                 <h2>Accounting for carbon emissions is more than a box ticking exercise.</h2>
 
                 <p>ESG - Environmental, Social, and Corporate Governance - is a set of metrics used to assess a company's social standing. Sustainability is a key factor in determining how successful a company is in this respect.</p>
-                <p>Regulation, public scrutiny and the concerns of employees and users mean fewer companies can ignore the impact of their products on the planet.</p>
+                <p>Regulation, public scrutiny and the concerns of employees and users mean fewer companies can ignore the effect of their products on others or the <Links.EL link={{source:'https://en.wikipedia.org/wiki/Planetary_boundaries'}}>9 planetary boundaries</Links.EL>.</p>
 
-                <p>Web and app developers monitor and report on the performance of software running on the Internet, set budgets against which a changing codebase can be checked, monitor progress using browser tools and extensions to review a range of metrics, and report on data from live sites to assess performance outside lab conditions.</p>
+                <p>Web and app developers monitor and report on the performance of software running on the Internet, set budgets against which a changing codebase can be checked, monitor progress using browser tools and extensions to review a range of metrics, and report on data from live sites (RUM - Real User Measurements) to assess performance outside lab conditions.</p>
 
                 <p>But the performance of a website reflects upon everyone who contributes to it. Design, marketing, and product decisions all affect the 3 pillars of responsible development: performance, accessibility, and sustainability.</p>
 
@@ -71,12 +72,15 @@ const ResponsibleDevelopment = () => {
 
                 <h3>Setting a budget</h3>
                 <p>Budgets involve everyone responsible for digital products. Adding new features places a load on every part of the system - more meetings, more designs, more code to maintain, more data to analyse, more bytes running over networks and on devices, the upsetting of users’ mental models, and the penalty of unwinding it all if things don’t work out. Digital products may be lighter than air but they weigh us down.</p>
+                <p>Establishing a budget means first knowing your site's current performance. This can be set against that of your competitors or exemplary sites. Making the budget a shared responsibility is important. An affiliate script, a large gif, or a reference to a code library can instantly undo the good work of others.</p>
+                <p>Team discussions on the sources and costs of a poorly performing site are segues to reflection on energy usage, the wider digital environment, and the responsibility companies and individuals have to act sustainably.</p>
 
                 <p><Links.EL link={{source:'https://web.dev/use-lighthouse-for-performance-budgets/'}}>How to set a budget.</Links.EL></p>                
-                <p><Links.EL link={{source:'https://web.dev/measure/'}}>Measure the performance of your website.</Links.EL></p>
+                <p><Links.EL link={{source:'https://github.com/WPO-Foundation/webpagetest-docs'}}>Automating WebPageTest.</Links.EL></p>                
+                <p><Links.EL link={{source:'https://web.dev/measure/'}}>Measure the general performance of your website.</Links.EL></p>
 
                 <h3>Sustainability</h3>
-                <p>Websites and native apps have been growing in size, making greater demands on servers, networks, and user devices. The toll a piece of software makes on the environment depends on where the boundaries of its energy use are drawn. Study of this complex problem is in its infancy.</p>
+                <p>Websites and native apps have been growing in size, making greater demands on servers, networks, and user devices. The toll a piece of software makes on the environment depends on where the <Links.EL link={{source:'https://www.wholegraindigital.com/blog/website-energy-consumption/'}}>boundaries of energy consumption</Links.EL> are drawn. Study of this complex problem is in its infancy.</p>
                 <p>In recent years, the additional energy cost of Internet use has been mitigated by the improved efficiency of data centres, networks and devices. The cost of moving bytes around is cheap to creators. For customers with poor connectivity, data limits, low end devices or old devices, bloated sites hurt. And we all pay a price in increased carbon emissions.</p>
 
                 <p><Links.EL link={{source:'https://www.thegreenwebfoundation.org/green-web-check'}}>How sustainable is your site host?</Links.EL> </p>
@@ -95,7 +99,7 @@ const ResponsibleDevelopment = () => {
                 <p><Links.IL link={{source:'sustainability'}}>More on sustainability</Links.IL></p>
 
                 <h3>Setting up a green team</h3>                
-                <p>You don't need permission to gather together like-minded people who want to decarbonise your company's website, or to introduce practices that reduce its impact on the planet.</p>
+                <p>You don't need permission to gather together like-minded people who want to decarbonise your company's website, or to introduce practices that reduce its consumption of natural resources.</p>
                 <p>Green teams are groups of people acting - with or without the support or blessing of their company - to improve the sustainable practices of the organisation of which they are a part.</p>
                 
                 <p><Links.EL link={{source:'https://green.harvard.edu/tools-resources/how/10-tips-successful-green-team'}}>Harvard | 10 tips for a successful Green Team.</Links.EL> </p>
