@@ -387,8 +387,9 @@ const NCSPartOne = () => {
                 <p>Climate change is also affecting plants in more general ways. Phenology - the timing of events in the lifecycle of a plant - is affected by seasonal variation, temperature, rainfall, and interaction with other species - such as pollinators and seed spreading animals - which are themselves affected by these variations. This can lead to the life cycles of mutually dependent species getting out of sync.</p>
                 <p>Planting the right trees in the right place is fundamental to the success of many restoration, reforestation and afforestation projects. In complex managed and unmanaged forests native trees are better adapted to available ecological niches and therefore more resilient.</p>
                 <p>Planting trees where established peatland or grassland is in place leads to an increase in emissions, in either the short, or long term.</p>
+                <h4>Albedo effect</h4>
                 <p>The albedo effect is an unintended consequence of planting trees that grow slowly because of short growing seasons on land that previously radiated sunlight from snow, ice or less dark soils and vegetation.</p>
-                <Accordion header='The albedo effect'>
+                <Accordion header='Definition'>
                 <aside>
                     <h4>The albedo effect</h4>
                     <div>
@@ -434,7 +435,7 @@ const NCSPartOne = () => {
                 <p>Deforestation rates fall as countries become wealthier. At a certain point forest area begins to increase, as has occurred in Europe and the US. If richer countries stop contributing to deforestation in poorer countries, and actively support local people to maintain forests, global deforestation can be halted.</p>
                 <p>Forests have been cleared for timber and especially to make way for crops. 37% of land is occupied by forests. 50% by agriculture. We have become, however, more efficient in our use of land.</p>
                 <blockquote cite='https://ourworldindata.org/deforestation'>
-                Since 1961, the amount of land we use for agriculture increased by only 7%. Meanwhile, the global population increased by 147% – from 3.1 to 7.6 billion.4 This means that agricultural land per person more than halved, from 1.45 to 0.63 hectares. 
+                Since 1961, the amount of land we use for agriculture increased by only 7%. Meanwhile, the global population increased by 147% – from 3.1 to 7.6 billion. This means that agricultural land per person more than halved, from 1.45 to 0.63 hectares. 
                 </blockquote>
                 <cite><Links.EL link={{source:'https://ourworldindata.org/deforestation'}}>Deforestation and Forest Loss | Our World in Data</Links.EL> </cite>
                 <p>Many solutions will be required to curb and offset our carbon dioxide emissions. Maintaining and restoring the world's existing forests preserves natural sinks upon which we are heavily dependent for reducing carbon dioxide in the atmosphere. They also provide a range of additional services far beyond one dimensional technological fixes. Tropical forests alone <Links.EL link={{source:'https://www.pnas.org/content/114/23/5775'}}>support two thirds of species</Links.EL> on less than 10% of the Earth's land surface.</p>
