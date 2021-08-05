@@ -25,7 +25,7 @@ const Contract = () => {
     ]
 
     return (
-        <Layout header="The sociable contract" title="Web development | the sociable contract" description={'Where Daniel Hartley introduces the sociable contract; a set of promises intended to keep this site user-friendly.'}>
+        <Layout header="The sociable contract" title="Web development | the sociable contract" description={'Where Daniel Hartley introduces the sociable contract; a set of promises intended to keep this site user-friendly.'} image='https://live.staticflickr.com/65535/51359273974_848606c323_c_d.jpg'>
             
             <section>
 
