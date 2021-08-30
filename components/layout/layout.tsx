@@ -7,7 +7,7 @@ import ModeContext from 'components/contexts/ModeContext';
 import Links from 'components/links/Links';
 import styles from 'components/layout/Layout.module.scss';
 
-let ts = 0, dbs = 0;
+let ts = 0;
 
 const Layout = ({
   children,

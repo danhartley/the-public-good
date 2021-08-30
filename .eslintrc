@@ -1,0 +1,32 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    //   , "functional"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": { 
+        "no-console": 2, // Remember, this means error!
+    
+        // "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"]
+        // "functional/prefer-readonly-type": [
+        //     "warn",
+        //     {
+        //       "allowLocalMutation": true,
+        //       "allowMutableReturnType": true,
+        //       "ignoreClass": true
+        //     }
+        //   ]
+    },
+    "settings": {
+        "import/resolver": {
+        "typescript": {}
+        }
+    }
+  }

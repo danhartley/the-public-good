@@ -95,6 +95,16 @@
    https://github.com/ai/size-limit
    for timings add: npm install --save-dev size-limit @size-limit/time
 
+ 22 axe Accessibility Linter added: 
+    https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter&ssr=false#review-details
+
+ 23 add support for ts/tsx eslint
+    https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/    
+    https://andrebnassis.medium.com/setting-eslint-on-a-react-typescript-project-2021-1190a43ffba
+    e.g. npx eslint pages/**
+    NB Do not add rules for extenions or jsx filenames
+
+
 ---------- below this line is the original README.md ----------
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

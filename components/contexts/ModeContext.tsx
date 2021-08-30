@@ -1,8 +1,7 @@
 import { createContext } from 'preact';
 
 const mode = { isDark: true, style: ``};
-const toggleMode = () => {};
 
-const ModeContext = createContext({mode, toggleMode});
+const ModeContext = createContext({mode});
 
 export default ModeContext;

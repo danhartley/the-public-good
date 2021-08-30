@@ -1,6 +1,7 @@
 import Layout from 'components/layout/layout';
 import Links from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
+import { FunctionalComponent } from 'preact';
 
 const links = [
     {
@@ -27,16 +28,20 @@ const links = [
         "name": "NoCoffee vision simulator (Firefox)",
         "source": "https://addons.mozilla.org/en-US/firefox/addon/nocoffee/"
     },
+    {
+        "name": "axe Accessibility Linter | Deque",
+        "source": "https://www.deque.com/blog/shift-further-left-with-deques-axe-linter-for-vs-code/"
+    },
 ];
 
-const Accessibility = () => {
+const Accessibility: FunctionalComponent = () => {
+
     return (
         <Layout header="Accessibility" title="Web accessibility" description={'Web accessibility'}>
             <section>
 
                 <h2>Tools</h2>
-                <Links.ExternalLinksList links={links} />
-            
+                <Links.ExternalLinksList links={links} />                
                 <p>
                     <h2>Colour contrast</h2>
                     Not everyone has perfect eyesight, especially in poor light. Poor contrast can be tested, together with other accessibility issues, using the web accessibility evaluation tool, <Links.EL link={{source:'https://wave.webaim.org/'}}>WAVE</Links.EL>, or by inspecting an element using browser tools.
