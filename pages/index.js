@@ -39,12 +39,11 @@ export default function Home() {
             <Links.ILBlock link={{'value': 'web-development/following-the-rules-to-a-well-structured-web-page', 'text': 'Following the rules to a well-structured web page'}}></Links.ILBlock>
             <Links.ILBlock link={{'value': 'web-development/for-the-love-of-hyperlinks', 'text': 'For the love of hyperlinks'}}></Links.ILBlock>
 
-            <p>I specialise in 3 areas: performance, accessibility, and sustainability. Together with security they comprise responsible web development.</p>
-            {/* <p>I specialise in 4 areas: ethics, performance, accessibility, and sustainability. Together with security they comprise responsible web development.</p> */}
+            <p>I specialise in 4 areas: ethics, performance, accessibility, and sustainability. Together with security they comprise responsible web development.</p>
 
-            {/* <h3>Ethics</h3>
+            <h3>Ethics</h3>
             <p>Web developers are responsible for the wellbeing of their users and colleagues, and are mindful of the impact of their work on their company, their profession, and the planet.</p>
-            <p><Links.IL link={{source:'ethics'}}>Read more about ethical web development</Links.IL></p> */}
+            <p><Links.IL link={{source:'ethics'}}>Read more about ethical web development</Links.IL></p>
 
             <h3>Performance</h3>
             <p>Having a <Links.EL link={{label:'Mozilla Internet Health Report 2019 states that the slowest mobile broadband internet in the world is also the least affordable', source:'https://internethealthreport.org/2019/the-worlds-slowest-internet-is-the-least-affordable/'}}>slow connection</Links.EL> is not unusual.</p>
