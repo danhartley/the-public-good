@@ -37,7 +37,18 @@ const Ethics = () => {
         <Layout header="Ethical web development" title="Ethical web development" description={'Ethical web development'}>
                 
             <section>
-                <p>Bla di bla</p>    
+                <p>How do you introduce ethics into web design and development?</p>
+                <p>The problem is one of approach rather than details.</p>
+                <p>A conventional Kanban board used for developing new features typically has lists with headings like Backlog, Coding, Reviewing, Done.</p>
+                <p>Here is a set of alternative list headings:
+                    <ul>
+                        <li>What are we adding, and who is it for?</li>
+                        <li>What will be the effect on those that make and maintain it?</li>
+                        <li>What standards are we imposing, encouraging, or spreading?</li>
+                        <li>What will be the result of these changes?</li>
+                        <li>How will we maintain it, and handle feedback and issues?</li>
+                    </ul>
+                </p>
             </section>
             <section>
                 <h2>Links to external references</h2>

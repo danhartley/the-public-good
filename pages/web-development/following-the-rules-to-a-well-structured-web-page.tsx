@@ -61,6 +61,10 @@ const MentalModel = () => {
             "name": "Heydonworks | Responses To The Screen Reader Strategy Survey 2016",
             "source": "https://heydonworks.com/article/responses-to-the-screen-reader-strategy-survey/"
         },
+        {
+            "name": "Jeremy Keith | Resilient Web Design",
+            "source": "https://resilientwebdesign.com/"
+        },
     ];
 
     const saved = useRef(null) as any;
