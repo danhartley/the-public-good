@@ -104,6 +104,11 @@
     e.g. npx eslint pages/**
     NB Do not add rules for extenions or jsx filenames
 
+ 24 add support for github actions for lighthouse: 
+    https://www.foo.software/lighthouse
+    https://github.com/foo-software/lighthouse-check-action
+    https://docs.github.com/en/actions/quickstart
+
 
 ---------- below this line is the original README.md ----------
 
