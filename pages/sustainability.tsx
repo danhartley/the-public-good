@@ -36,6 +36,30 @@ const onlineTools = [
         "name": "EcoPing",
         "source": "https://ecoping.earth/app/reports"
     },
+    {
+        "name": "Carbonalyser | TheShiftProject (Chrome extension)",
+        "source": "https://chrome.google.com/webstore/detail/carbonalyser/oblfkaonopplpldppkjdhnlcmkhgbcok"
+    },
+    {
+        "name": "Carbonalyser | TheShiftProject (Firefox extension)",
+        "source": "https://addons.mozilla.org/en-GB/firefox/addon/carbonalyser/"
+    },
+    {
+        "name": "Ecodiag calculator | EcoInfo (French)",
+        "source": "https://ecoinfo.cnrs.fr/ecodiag-calcul/"
+    },
+    {
+        "name": "ecometer",
+        "source": "http://ecometer.org/"
+    },
+    {
+        "name": "Greenspector",
+        "source": "https://greenspector.com/en/home/"
+    },
+    {
+        "name": "Green Frame",
+        "source": "https://greenframe.io/"
+    },
 ];
 
 const externalLinks = [
