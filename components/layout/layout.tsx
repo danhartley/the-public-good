@@ -77,7 +77,7 @@ const Layout = ({
                     <div class={styles.skiptocontent}><Links.EL link={{source:'#main'}}>skip to main content</Links.EL></div>
 
                     <Link href={'/'}>
-                        <a class={styles.title} aria-label="Home page">
+                        <a class={styles.title} aria-label="Home page" href="/">
                             <nav id="top" aria-label="Header link to home page">The Public Good</nav>
                             <div><em>This website will not empower you.</em></div>
                         </a>
