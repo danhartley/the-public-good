@@ -1,5 +1,6 @@
 import { useContext, useEffect, useRef } from 'preact/hooks';
 import { useRouter } from 'next/router';
+import { funcs } from 'components/functions/functions';
 
 import Link from 'next/link';
 import Head from 'next/head';
@@ -39,18 +40,25 @@ const Layout = ({
     });
 
     useEffect(() => {
-        if (typeof window !== "undefined" && typeof window.performance !== "undefined") {
-            const requests = Array.from(window.performance.getEntriesByType("resource")) as any[];    
-            const reducer = (accumulator: number, currentValue: number) => {     
-                return accumulator + Math.round((currentValue / 1000));
-            };
-            const transferSize = requests.map(r => r.transferSize || 0).reduce(reducer, 0);
-            const bytes = transferSize - ts;
-            ts = transferSize;
-            if(bytesTransferred.current && !isNaN(bytes) && transferSize) {
+
+        const transferSize = funcs.requestReducer(window);
+
+        const bytes = transferSize - ts;
+        
+        ts = transferSize;
+
+        switch(ts) {
+            case -1:
+                bytesTransferred.current.innerText = 'Page weight could not be calculated.';
+                break;     
+            case 0:
+                bytesTransferred.current.innerText = 'This page was served from your local cache.';
+                break;     
+            default:
                 bytesTransferred.current.innerText = `${bytes}Kb transferred to load this page.`;
-            }
+                break;     
         }
+
     }, []);
 
     return (        
