@@ -1,4 +1,4 @@
-const requestReducer = window => {
+const totalBytesTransferredInSession = window => {
 
     let transferSize: number;
 
@@ -24,5 +24,5 @@ const requestReducer = window => {
 };
 
 export const funcs = {
-    requestReducer
+    totalBytesTransferredInSession
 }
