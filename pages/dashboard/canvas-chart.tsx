@@ -4,7 +4,7 @@ import * as ChartAnnotation from 'chartjs-plugin-annotation';
 import { Chart } from 'chart.js';
 import annotationPlugin from 'chartjs-plugin-annotation';
 
-import { ChartType } from 'pages/dashboard/enums';
+import { ChartType } from 'lib/enums';
 
 Chart.register(annotationPlugin);
 

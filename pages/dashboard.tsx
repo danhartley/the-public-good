@@ -3,7 +3,7 @@ import CanvasChart from 'pages/dashboard/canvas-chart';
 
 import { useEffect, useState } from 'preact/hooks';
 import { getLocalStorageState } from 'hooks/local-storage';
-import { ChartType } from 'pages/dashboard/enums';
+import { ChartType } from 'lib/enums';
 
 import styles from 'pages/dashboard/Dashboard.module.scss';
 
