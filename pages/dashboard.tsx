@@ -5,7 +5,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { getLocalStorageState } from 'hooks/local-storage';
 import { ChartType } from 'pages/dashboard/enums';
 
-import styles from 'pages/dashboard/dashboard.module.scss';
+import styles from 'pages/dashboard/Dashboard.module.scss';
 
 const Dashboard = () => {
 

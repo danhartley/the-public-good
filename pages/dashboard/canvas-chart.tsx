@@ -10,7 +10,7 @@ Chart.register(annotationPlugin);
 
 import { useRef } from 'preact/hooks';
 
-import styles from 'pages/dashboard/dashboard.module.scss';
+import styles from 'pages/dashboard/Dashboard.module.scss';
 
   const CanvasChart = ({type, data, plugins, options, scales}) => {
 
