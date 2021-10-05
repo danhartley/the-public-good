@@ -34,7 +34,7 @@ const onlineTools = [
     },
     {
         "name": "EcoPing",
-        "source": "https://ecoping.earth/app/reports"
+        "source": "https://ecoping.earth"
     },
     {
         "name": "Carbonalyser | TheShiftProject (Chrome extension)",

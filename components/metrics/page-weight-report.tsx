@@ -1,12 +1,4 @@
-import { useContext, useEffect, useRef, useState } from 'preact/hooks';
-import { MetricsContext, CounterContext } from 'components/contexts/MetricsContext';
-
-
-export const PageWeightReport = (metrics) => {
-
-    // const { metrics } = useContext(MetricsContext);
-
-    console.log('PageWeightReport', metrics);
+export const PageWeightReport = metrics => {
 
     let report;
 
@@ -18,13 +10,9 @@ export const PageWeightReport = (metrics) => {
             report = 'This page was served from your local cache.';
             break;     
         default:
-            report = `${metrics.page.bytes}Kb transferred to load this page.`;
+            report = `${metrics.page.bytes} Kb transferred to load this page.`;
             break;     
     }
 
-    return <div><em>my {report}</em></div>
-};
-
-export const PageCounter = counter => {    
-    return <div>counter: {counter}</div>
+    return <div><em>{report}</em></div>
 };

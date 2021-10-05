@@ -1,46 +1,12 @@
 import "preact/devtools";
 import type { AppProps } from 'next/app';
 import { useEffect, useState } from 'preact/hooks';
-import { MetricsContext, MetricsContextProvider, useGlobalState} from 'components/contexts/MetricsContext';
-import { MetricsContextState, Page, Metrics } from 'components/shared/types';
 import { useLocalStorageState } from 'hooks/local-storage';
 import { funcs } from 'components/functions/functions';
 
 import ModeContext from 'components/contexts/ModeContext';
 
-// const SiteMetrics = ()=> {
-    
-//     const { state, setState } = useGlobalState(MetricsContext) as MetricsContextState;
-
-//     const [cumulativeBytes, setCumulativeBytes] = useState(0);
-    
-//     let totalBytes, pageBytes;
-
-//     useEffect(() => {
-        
-//         totalBytes = funcs.totalBytesTransferredInSession(window);
-//         pageBytes = totalBytes - cumulativeBytes;
-        
-//         setState({
-//             ...state,
-//             page: {
-//                 title: 'title',
-//                 bytes: pageBytes
-//             },
-//             cumulativeBytes: totalBytes
-//         });
-        
-//         setCumulativeBytes(totalBytes);
-
-//         console.log(`state after: `, state);   
-//         console.log(`state.page.bytes: `, state.page.bytes);   
-        
-//     }, []);
-
-//     return ( <div>{state.page.bytes === 0 ? state.cumulativeBytes : state.page.bytes } | {state.cumulativeBytes}</div>)
-// };
-
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
 
     const [darkMode, setDarkMode] = useLocalStorageState({ key: 'is-dark-mode', defaultValue: false });
 
@@ -87,15 +53,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     return (
         <ModeContext.Provider value={{mode, toggleMode}}>
             <Component {...pageProps}></Component>
-            {/* <MetricsContextProvider>
-                <SiteMetrics />                
-            </MetricsContextProvider> */}
         </ModeContext.Provider>
         
     )
 }
 
-export default MyApp;
+export default PublicGoodApp;
 
 export function reportWebVitals(metric) {
     if (metric.label === 'web-vital') {

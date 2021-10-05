@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from 'preact/hooks';
+import { useContext, useEffect, useRef } from 'preact/hooks';
 import { useRouter } from 'next/router';
 import { funcs } from 'components/functions/functions';
 import { useLocalStorageState } from 'hooks/local-storage';
@@ -6,70 +6,46 @@ import { useLocalStorageState } from 'hooks/local-storage';
 import Link from 'next/link';
 import Head from 'next/head';
 import ModeContext from 'components/contexts/ModeContext';
-import { MetricsContext, MetricsContextProvider, useGlobalState } from 'components/contexts/MetricsContext';
-import { MetricsContextState, Page, Metrics } from 'components/shared/types';
-import { PageWeightReport, PageCounter } from 'components/metrics/page-weight-report';
+import { PageWeightReport } from 'components/metrics/page-weight-report';
 import Links from 'components/links/Links';
 import styles from 'components/layout/Layout.module.scss';
 
-const SiteMetrics = title => {
+const SiteMetrics = ({title}) => {
 
-    const [metrics, setMetrics] = useLocalStorageState({ key: 'metrics', defaultValue: { page: { title: '', bytes: 0 }, cumulativeBytes: 0, pages: [] } as unknown as boolean });
+    const [metrics, setMetrics] = useLocalStorageState({ key: 'metrics', defaultValue: { page: { title: '', bytes: 0, requests: 0 }, cumulativeBytes: 0, cumulativeRequests: 0, pages: [] } as unknown as boolean });
     
     useEffect(() => {
 
-        const _totalBytes = funcs.totalBytesTransferredInSession(window);
-        const _pageBytes = _totalBytes > metrics.cumulativeBytes ? (_totalBytes - metrics.cumulativeBytes) : _totalBytes;
+        const {transferSize: _totalBytes, requests: _requests } = funcs.sessionData(window);
+
+        const _pageBytes = _totalBytes >= metrics.cumulativeBytes ? (_totalBytes - metrics.cumulativeBytes) : _totalBytes;
+        const _pageRequests = _requests >= metrics.cumulativeRequests ? (_requests - metrics.cumulativeRequests) : _requests;
       
         const _metrics = {
             ...metrics,
             page: {
                 title: title,
-                bytes: _pageBytes
+                bytes: _pageBytes,
+                requests: _pageRequests
             },
             cumulativeBytes: _totalBytes,
+            cumulativeRequests: _requests,
             pages: [
                 ...metrics.pages,
                 {
                     title: title,
-                    bytes: _pageBytes
+                    bytes: _pageBytes,
+                    requests: _pageRequests
                 },
             ]
         };
 
         setMetrics(_metrics);
-        
+
     }, []);
 
-    return ( <div>{metrics.page.bytes === 0 ? metrics.cumulativeBytes : metrics.page.bytes } | {metrics.cumulativeBytes}</div>)
+    return ( PageWeightReport(metrics)  );
 };
-
-// const SiteMetrics = title => {
-    
-//     const { state, setState } = useGlobalState(MetricsContext) as MetricsContextState;
-    
-//     let totalBytes, pageBytes;
-
-//     useEffect(() => {
-        
-//         totalBytes = funcs.totalBytesTransferredInSession(window);
-//         pageBytes = totalBytes - state.cumulativeBytes;
-        
-//         setState({
-//             ...state,
-//             page: {
-//                 title: title,
-//                 bytes: pageBytes
-//             },
-//             cumulativeBytes: totalBytes
-//         });
-//         console.log(`state after: `, state);   
-//         console.log(`state.page.bytes: `, state.page.bytes);   
-        
-//     }, [state.page.title]);
-
-//     return ( <div>{state.page.bytes === 0 ? state.cumulativeBytes : state.page.bytes } | {state.cumulativeBytes}</div>)
-// };
 
 const Layout = ({
   children,
@@ -154,11 +130,9 @@ const Layout = ({
                 <footer role="contentinfo" class={styles.footer}>
                     <div><span>© <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL> 2021. All rights reserved.</span></div>
                     <div class={styles.externalList}><Links.EL link={{source:'https://www.linkedin.com/in/danhartley/'}}>LinkedIn</Links.EL> | <Links.EL link={{source:'https://danhartley.github.io/snapdragon-redux/wiki/'}}>CV</Links.EL></div>
-                    <MetricsContextProvider>
-                        <SiteMetrics title={title} />
-                    </MetricsContextProvider>
+                    <SiteMetrics title={title} />
                 </footer>
-            </div>
+            </div>            
         </div>
     )
 };
