@@ -22,13 +22,14 @@ const useGlobalState = context => {
 const AppContext = createContext(null);
 
 export function AppWrapper({ children }) {
-  let sharedState = {/* whatever you want */}
+  
+    const sharedState = {};
 
-  return (
-    <AppContext.Provider value={sharedState}>
-      {children}
-    </AppContext.Provider>
-  );
+    return (
+        <AppContext.Provider value={sharedState}>
+        {children}
+        </AppContext.Provider>
+    );
 }
 
 const useAppContext = () => {
