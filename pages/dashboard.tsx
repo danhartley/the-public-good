@@ -1,136 +1,27 @@
 import Layout from 'components/layout/layout';
-import CanvasChart from 'pages/dashboard/canvas-chart';
-
-import { useEffect, useState } from 'preact/hooks';
-import { getLocalStorageState } from 'hooks/local-storage';
-import { ChartType } from 'lib/enums';
+import Links from 'components/links/Links';
+import BytesPerPage from 'pages/dashboard/bytes-per-page';
+import RequestsPerPage from 'pages/dashboard/requests-per-page';
 
 import styles from 'pages/dashboard/Dashboard.module.scss';
 
 const Dashboard = () => {
 
-    const title = 'Dashboard';
-
-    const [data, setData] = useState(null);
-    const [plugins, setPlugins] = useState(null);
-    const [type, setType] = useState(ChartType.Bar);
-    const [options, setOptions] = useState({maintainAspectRatio: false});
-    const [scales, setScales] = useState(null);
-
-    const [metrics, setMetrics] = useState(getLocalStorageState('metrics'));
-    
-    const colour = 'rgba(255, 99, 132, .8)';
-
-    useEffect(() => {
-
-        console.log('dashboard metrics: ', metrics);
-
-        if(metrics && metrics.page.title === title) {
-
-            switch(type) {
-                case ChartType.Line:
-                    setData({
-                        labels: [
-                            ...metrics.pages.map(p => p.title)
-                        ],
-                        datasets: [
-                            {
-                                indexAxis: 'x',
-                                label: ' Page weight (bytes) ',
-                                backgroundColor: 'rgb(255, 99, 132)',
-                                borderColor: 'rgb(255, 99, 132)',
-                                data: [
-                                    ...metrics.pages.map(p => p.bytes)
-                                ],
-                            }
-                        ]
-                    });
-            
-                    setPlugins({
-                        autocolors: false,
-                        annotation: {
-                            annotations: {
-                                median: {
-                                    type: ChartType.Line,
-                                    indexAxis: 'x',
-                                    xMin: 0,
-                                    xMax: metrics.pages.length - 1,
-                                    yMin: 1900,
-                                    yMax: 1900,
-                                    borderColor: 'rgba(34, 101, 203, .8)',
-                                    borderWidth: 3,
-                                    // label: {
-                                    //     content: (ctx) => 'Median ' + 1900 + ' bytes',
-                                    //     enabled: true,
-                                    //     backgroundColor: 'rgb(255, 255, 255)',
-                                    //     color: 'rgba(34, 101, 203, 1)',
-                                    // },
-                                }
-                            }
-                        }
-                        
-                    });
-                    break;
-                case ChartType.Bar:
-                    setData(
-                        {
-                        labels: [
-                            ...metrics.pages.map(p => p.title), 'Median'
-                        ],
-                        label: 'bar',
-                        datasets: [
-                            {
-                            indexAxis: 'y',
-                            label: ' Kbs transferred per page ',
-                            plugins: {
-                                legend: {
-                                position: 'right',
-                                },
-                            },
-                            data: [...metrics.pages.map(p => p.bytes), 1900],
-                            backgroundColor: [ ...metrics.pages.map(p => colour), 'rgba(255, 99, 132, .4)'],
-                            barPercentage: 1
-                            
-                        },
-                    ]
-                    });
-
-                    setScales({
-                        x: {
-                            type: 'linear',
-                            min: 0,
-                            max: 2000,
-                            ticks: {                                
-                                stepSize: 400
-                            },
-                            title: {
-                                display: true,
-                                text: 'Bytes transferred',
-                                padding: { top: 12 }
-                            },
-                            offset: false,
-                        }
-                    })
-                break;    
-            }
-        } else {
-            setTimeout(() => {
-                setMetrics(getLocalStorageState('metrics'));
-            },200);
-        }
-
-    }, [metrics]);
-
     return (
         <div class={styles.wrapper}>
-            <Layout header={title} title={title} description={title}>
-                <div class={styles.dashboard}>
-                {
-                    data === null 
-                    ? <div>Sorry, there is no data!</div> 
-                    : <CanvasChart type={type} data={data} plugins={plugins} options={options} scales={scales} />
-                }
-                </div>
+            <Layout header={'Dashboard'} title={'Dashboard'} description={'Dashboard'}>
+                <p>As you navigate this website, data are collected on the performance of each page (including this one).</p>
+                <h2>Data</h2>
+                <p>
+                    <div>Data are derived using the window.performance API.</div>
+                    <div>Median page weight and requests are taken from the <Links.EL link={{source:'https://almanac.httparchive.org/en/2019/page-weight#introduction'}}>HTTP Archive Page Weight</Links.EL> and <Links.EL link={{source:'https://whatdoesmysitecost.com/'}}>What Does My Site Cost?</Links.EL></div>
+                </p>
+                <h2>Technology stack</h2>
+                <p>The stack used for this website can be verified at <Links.EL link={{source:'https://www.wappalyzer.com/lookup/the-public-good.com'}}>Wappalyzer</Links.EL> (registration required).</p>
+                <h2>Kilobytes transferred per page</h2>
+                <BytesPerPage />
+                <h2>Requests per page</h2>
+                <RequestsPerPage />
             </Layout>
         </div>
     )

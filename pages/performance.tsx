@@ -53,7 +53,15 @@ const perfLinks = [
     },
     {
         "name": "Performance Budget Calculator",
-        "source": "https://www.performancebudget.io/"
+        "source": "https://www.performancebudget.io"
+    },
+    {
+        "name": "What Does My Site Cost?",
+        "source": "https://www.whatdoesmysitecost"
+    },
+    {
+        "name": "Wappalyzer (registratin required) | Tech stack analysis",
+        "source": "https://www.wappalyzer.com/"
     },
 ];
 
