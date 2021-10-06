@@ -11,7 +11,7 @@ describe('page weight tests', () => {
     });
 
     it('should return 0 if the requests array contains one request with no transfer size', () => {
-        let window1 = {};
+        const window1 = {};
         Object.defineProperty(window1, 'performance', {
             value: {
               getEntriesByType: jest.fn().mockReturnValue([{ transferSize:null }])
@@ -21,7 +21,7 @@ describe('page weight tests', () => {
     });
     
     it('should return 1000 Kb if the requests array contains one request with transfer size of 1000000 bytes', () => {
-        let window2 = {};
+        const window2 = {};
         Object.defineProperty(window2, 'performance', {
             value: {
               getEntriesByType: jest.fn().mockReturnValue([{ transferSize:1000000 }])
@@ -31,7 +31,7 @@ describe('page weight tests', () => {
     });
     
     it('should return 1500 Kb if the requests array contains one request with transfer size of 1500000 bytes', () => {
-        let window3 = {};
+        const window3 = {};
         Object.defineProperty(window3, 'performance', {
             value: {
               getEntriesByType: jest.fn().mockReturnValue([{ transferSize:1000000 }, { transferSize:500000 }])
