@@ -1,8 +1,6 @@
 import "preact/devtools";
 import type { AppProps } from 'next/app';
-import { useEffect, useState } from 'preact/hooks';
 import { useLocalStorageState } from 'hooks/local-storage';
-import { funcs } from 'components/functions/functions';
 
 import ModeContext from 'components/contexts/ModeContext';
 

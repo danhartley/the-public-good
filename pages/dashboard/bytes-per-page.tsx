@@ -19,8 +19,6 @@ const BytesPerPage = () => {
 
     useEffect(() => {
 
-        console.log('dashboard metrics: ', metrics);
-
         if(metrics && metrics.page.title === 'Dashboard') {
 
             switch(type) {

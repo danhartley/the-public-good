@@ -27,8 +27,6 @@ import styles from 'pages/dashboard/Dashboard.module.scss';
     if(plugins) config.plugins = plugins;
     if(scales) config.scales = scales;
 
-    console.log(config);
-    
     return (
         
         type === ChartType.Line 
