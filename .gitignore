@@ -42,3 +42,5 @@ yarn-error.log*
 
 /pages/thinking.tsx
 /pages/nature.tsx
+
+MetricsContext.tsx
