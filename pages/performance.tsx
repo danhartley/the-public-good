@@ -63,6 +63,18 @@ const perfLinks = [
         "name": "Wappalyzer (registratin required) | Tech stack analysis",
         "source": "https://www.wappalyzer.com/"
     },
+    {
+        "name": "Google | web-vitals library",
+        "source": "https://github.com/GoogleChrome/web-vitals/"
+    },
+    {
+        "name": "Zifera | carbon test",
+        "source": "https://www.zifera.io/carbon-test"
+    },
+    // {
+    //     "name": "Web Vitals Report",
+    //     "source": "https://web-vitals-report.web.app/"
+    // },
 ];
 
 const Performance = () => {
@@ -88,7 +100,7 @@ const Performance = () => {
 
                 <p><Links.EL link={{source:'https://en.wikipedia.org/wiki/Perceived_performance'}}>Perceived performance</Links.EL> is a user's subjective impression of how quickly a website is ready. Google finds ways to measure user perception by identifying key events: <Links.EL link={{source:'https://web.dev/fcp/'}}>First Contentful Paint</Links.EL> is when a user first sees something on the screen; <Links.EL link={{source:'https://web.dev/interactive/'}}>Time to Interactive</Links.EL> measures when they can interact with a page. Google currently uses <Links.EL link={{spurce:'https://web.dev/metrics/'}}>six metrics</Links.EL>.</p> 
 
-                <p>A website can score relatively well on Google's performance tool Lighthouse through trickery. I used all sorts of techniques to push up the score for my website <Links.EL link={{source:'https://www.learn-the-planet.com/'}}>Learn the Planet</Links.EL> I now concentrate on absolute, measurable performance in bytes before addressing, if necessary, perceived performance.</p>
+                <p>A website can score relatively well on Google's performance tool Lighthouse through trickery. I used all sorts of techniques to push up the score for my website <Links.EL link={{source:'https://www.learn-the-planet.com/'}}>Learn the Planet</Links.EL>. I now concentrate on absolute, measurable performance in bytes before addressing, if necessary, perceived performance.</p>
 
                 <p>Both <Links.EL link={{source:'https://web.dev/rail/'}}>Google</Links.EL> (Chrome) and <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Learn/Performance/Perceived_performance'}}>Mozilla</Links.EL> (Firefox) cover this topic in detail.</p>
 

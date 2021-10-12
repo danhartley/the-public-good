@@ -1,4 +1,4 @@
-import { Line, Bar } from 'react-chartjs-2';
+import { Line, Bar, Doughnut } from 'react-chartjs-2';
 import * as ChartAnnotation from 'chartjs-plugin-annotation';
 
 import { Chart } from 'chart.js';
@@ -31,9 +31,9 @@ import styles from 'pages/dashboard/Dashboard.module.scss';
         
         type === ChartType.Line 
             ? <div class={styles.canvas}><Line ref={canvas} data={data} options={config} /></div>
-            : <div class={styles.canvas}><Bar ref={canvas} data={data} options={config} /></div>
-
-        // <div class={styles.canvas}><Line ref={canvas} data={data} options={config} plugins={[ChartAnnotation]} /></div>
+            : type === ChartType.Bar
+                ? <div class={styles.canvas}><Bar ref={canvas} data={data} options={config} /></div>
+                : <div class={styles.canvas}><Doughnut ref={canvas} data={data} options={config} /></div>
     );
 
   };

@@ -109,25 +109,27 @@ const BytesPerPage = () => {
             }
         } else {
             setTimeout(() => {
-                setMetrics(getLocalStorageState('metrics'));
-            },200);
+                setMetrics(getLocalStorageState('metrics'));        
+            });
         }
 
-        const servedPages = metrics.pages.filter(p => p.bytes > 0).map(p => p.bytes);
+        if(metrics) {
+            const servedPages = metrics.pages.filter(p => p.bytes > 0).map(p => p.bytes);
 
-        average.current.innerText = `~${Math.round((servedPages.reduce((x,y) => x + y, 0) * 100) / 100 / servedPages.length) as unknown as string} Kbs`;
+            average.current.innerText = `~${Math.round((servedPages.reduce((x,y) => x + y, 0) * 100) / 100 / servedPages.length) as unknown as string} Kbs`;
+        }
 
     }, [metrics]);
 
     return (
         <>
-        {
+        {            
             data === null 
             ? <div>Sorry, there is no data!</div> 
             : <CanvasChart type={type} data={data} plugins={plugins} options={options} scales={scales} />
         }
         <p>
-            <div>Average bytes tranferred per page (excluding cached pages): <span ref={average}></span></div>
+            <div>Average bytes transferred per page (excluding cached pages): <span ref={average}></span></div>
         </p>   
         </>
 

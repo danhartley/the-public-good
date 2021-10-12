@@ -1,5 +1,36 @@
-.wrapper main {
-    max-width: 800px;
+@import 'styles/mixins.scss';
+
+.wrapper { 
+    main {
+        max-width: 800px !important;
+    }
+    @include radioButtons();
+    table td {
+        height: 2rem;
+        & > div {
+            height: inherit;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .selectedData {
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        label, input {
+            margin-right: 1rem;
+        }
+        input {
+            width: 3rem;
+        }
+    }
+    .calculatedValues {
+        padding-left: 1rem;
+    }
+    p {
+        border: none;
+    }
 }
 
 .dashboard {

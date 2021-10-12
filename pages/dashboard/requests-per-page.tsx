@@ -64,16 +64,17 @@ const RequestsPerPage = () => {
                     })
                 break;    
             }
-        } else {
+        } else {            
             setTimeout(() => {
                 setMetrics(getLocalStorageState('metrics'));
-            },200);
+            });
         }
 
-        const servedPages = metrics.pages.filter(p => p.requests > 0).map(p => p.requests);
-
-        average.current.innerText = `${Math.round((servedPages.reduce((x,y) => x + y, 0) * 100) / 100 / servedPages.length) as unknown as string}`;
-
+        if(metrics) {
+            const servedPages = metrics.pages.filter(p => p.requests > 0).map(p => p.requests);
+    
+            average.current.innerText = `${Math.round((servedPages.reduce((x,y) => x + y, 0) * 100) / 100 / servedPages.length) as unknown as string}`;
+        }
 
     }, [metrics]);
 

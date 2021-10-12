@@ -109,6 +109,7 @@
     https://github.com/foo-software/lighthouse-check-action
     https://docs.github.com/en/actions/quickstart
 
+  25 Install chart.js and react-chartjs-2
 
 ---------- below this line is the original README.md ----------
 

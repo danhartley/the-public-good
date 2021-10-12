@@ -32,6 +32,14 @@ const links = [
         "name": "axe Accessibility Linter | Deque",
         "source": "https://www.deque.com/blog/shift-further-left-with-deques-axe-linter-for-vs-code/"
     },
+    {
+        "name": "Assistant RGAA | Chrome | French",
+        "source": "https://chrome.google.com/webstore/detail/assistant-rgaa/cgpmofepeeiaaljkcclfldhaalfpcand/related?hl=fr"
+    },
+    {
+        "name": "Assistant RGAA | Firefox | French",
+        "source": "https://addons.mozilla.org/fr/firefox/addon/assistant-rgaa/"
+    },
 ];
 
 const Accessibility: FunctionalComponent = () => {

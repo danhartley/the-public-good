@@ -1,7 +1,7 @@
 export const PageWeightReport = metrics => {
 
     let report;
-
+    
     switch(metrics.cumulativeBytes) {
         case -1:
             report = 'Page weight could not be calculated.';

@@ -1,4 +1,5 @@
 export enum ChartType {
     Line = 'line',
-    Bar = 'bar'
+    Bar = 'bar',
+    Doughnut = 'doughnut'
 }
