@@ -7,6 +7,8 @@ import { ChartType } from 'lib/enums';
 
 const Table = ({dataSources, setParentState}) => {
 
+    if(!dataSources) return <div>No data!</div>
+
     const [active, setActive] = useState(dataSources[0] as any); // add type!
 
     const updateStates = state => {
