@@ -2,9 +2,6 @@ import { useState, useEffect } from 'preact/hooks';
 
 export const useLocalStorageState = ({key, defaultValue = true}) => {
 
-    console.log(defaultValue);
-    
-
     const [state, setState] = useState(() => {
         
         const localStorageValue = typeof window !== 'undefined' ? window.localStorage.getItem(key) : null;
