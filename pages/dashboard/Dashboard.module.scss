@@ -1,35 +1,155 @@
 @import 'styles/mixins.scss';
 
+$results-color: black;
+
 .wrapper { 
     main {
         max-width: 800px !important;
     }
     @include radioButtons();
-    table td {
-        height: 2rem;
-        & > div {
-            height: inherit;
-            display: flex;
-            align-items: center;
+    table {
+        margin: 0;
+        td {
+            padding: .5rem 1rem 0 0;
+            &:nth-child(1) {
+                padding-right: .25rem;
+            }
+            height: 1.75rem;
+            & > div {            
+                height: 1.75rem;
+                display: flex;
+                align-items: center;
+                &.checked {
+                    color: $results-color;
+                }
+            }        
+            input[type="radio"] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              
+                border-radius: 50%;
+                width: 1rem;
+                height: 1rem;
+                            
+                border: .2rem solid #999;
+                transition: 0.2s all linear;
+              
+                margin: 0;
+                &:checked {
+                    border: .3rem solid #999;
+                    background-color: $results-color;             
+                }                
+            }
+            label {
+                cursor: pointer;
+            }
+        }        
+        th {
+            border-bottom: .1rem solid lightgrey;
+        }
+        td:nth-child(3) > div, td:nth-child(4) > div {            
+            justify-content: center;
         }
     }
 
-    .selectedData {
-        display: flex;
-        align-items: center;
-        padding-left: 1rem;
-        label, input {
-            margin-right: 1rem;
+    .results {        
+        margin: 2rem 0;
+        & > div {
+            margin-top: 1rem;
+            font-size: 1.5rem;
         }
-        input {
-            width: 3rem;
+        & > div:nth-child(1) {
+            margin-bottom: 1rem;
+        }
+    }
+    .inputDataFixedPosition {
+        @media (min-width:1025px) {        
+            width: calc((100vw - 800px) / 2);
+            position: fixed;
+            left: 0;
+            top: 30vh;
+            display: flex;
+            justify-content: center;            
+        }
+    }
+    .inputData {
+        display: flex;                
+        font-size: .9rem;
+        flex-direction: column; 
+        & > div {
+            width: calc((100vw - 800px) / 3);
+            margin: .5rem 0 0 0;    
+        }
+        input[type="number"] {
+            outline: none;
+            width: 4rem;
+            border: .1rem solid #bebebe;
+            margin: 0 .5rem 0 0;
+            padding: .5rem;
+            border-radius: .25rem;
+            &:focus {
+                border: .1rem solid $results-color;
+            }
+        }
+        @media (min-width:1025px) {       
+            padding: 0; 
+            label, input {
+                align-self: flex-start;
+                margin: 0 0 .25rem 0;                
+            }
+            input {
+                margin-bottom: 1rem;
+            }
         }
     }
     .calculatedValues {
-        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        & > div:nth-child(1) {            
+            flex: 1;
+            font-style: italic;
+            padding: 1rem;
+            border: .05rem solid lightgray;
+            width: fit-content;
+        }
+        & > div:nth-child(2) {
+            flex: 1;
+            font-size: 1.2rem;
+        }
+        @media (min-width:1025px) {       
+            flex-direction: row;
+            align-items: center;            
+            & > div:nth-child(2) {
+                padding: 0 2rem;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
     }
     p {
         border: none;
+    }
+    .btn {
+        @include button();
+        font-size: .8rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+    figure {
+        margin: 2rem 0 0 0;
+    }
+    figcaption {
+        display: flex;
+        justify-content: center;        
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & > span:nth-child(2) {
+                font-size: .8rem;
+            }
+        }
     }
 }
 
@@ -37,9 +157,8 @@
     margin: 2rem auto;
 }
 
-.canvas {
-    max-width: 800px;
-    width: 80vw;
-    height: 400px;
-    margin: auto;
+.canvas {    
+    margin: 0 auto 2rem auto;    
+    width: calc(100vw/2);
+    max-width: 500px;
 }

@@ -95,18 +95,18 @@
 }
 
 @mixin button {    
-        color: rgb(var(--fg));
-        background-color: transparent;
-        padding: .5rem;
-        border: .125rem solid lightgray;
-        border-radius: .5rem;
-        font-size: 1rem;
-        letter-spacing: .25px;
-        cursor: pointer;
-        &:hover, &:focus {
-            border-color: rgba(var(--fg),.5);
-            outline: none;
-        }
+    color: rgb(var(--fg));
+    background-color: transparent;
+    padding: .5rem;
+    border: .125rem solid lightgray;
+    border-radius: .5rem;
+    font-size: 1rem;
+    letter-spacing: .25px;
+    cursor: pointer;
+    &:hover, &:focus {
+        border-color: rgba(var(--fg),.5);
+        outline: none;
+    }
 }
 
 .internalLink {

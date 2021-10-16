@@ -5,8 +5,10 @@ import { Chart } from 'chart.js';
 import annotationPlugin from 'chartjs-plugin-annotation';
 
 import { ChartType } from 'lib/enums';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 Chart.register(annotationPlugin);
+Chart.register(ChartDataLabels);
 
 import { useRef } from 'preact/hooks';
 

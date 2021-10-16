@@ -102,6 +102,12 @@ const Sustainability = () => {
                 <p><Carbonbadge darkMode={false} /></p>
             </section>
             <section>
+                <p>
+                    <div id="dbb"></div>
+                    <script async defer src="https://digitalbeacon.co/js/badge.min.js"></script>
+                </p>
+            </section>
+            <section>
                 <p class={styles.centred}>
                     <img src="https://api.thegreenwebfoundation.org/greencheckimage/www.the-public-good.com?nocache=true" alt="Checked by thegreenwebfoundation.org" />
                 </p>

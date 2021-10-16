@@ -5,6 +5,8 @@ import Links from 'components/links/Links';
 
 import { ChartType } from 'lib/enums';
 
+import styles from 'pages/dashboard/Dashboard.module.scss';
+
 const Table = ({dataSources, setParentState}) => {
 
     if(!dataSources) return <div>No data!</div>
@@ -18,7 +20,7 @@ const Table = ({dataSources, setParentState}) => {
 
     useEffect(() => {
         setParentState(dataSources[0]);
-    },[]);
+    },[active]);
 
     const rows = dataSources.map(e => <tr>
         <td>
@@ -26,9 +28,12 @@ const Table = ({dataSources, setParentState}) => {
                 <input type="radio" checked={e.id === active.id} onClick={() => updateStates(dataSources[e.id - 1])} id={e.id} name="rbSource"></input>
             </div>
         </td>
-        <td><Links.EL link={{source:e.src}}>{e.name}</Links.EL></td>
-        <td>{e.energy}</td>
-        <td>{e.emissions}</td>
+        <td>
+            <div class={e.id === active.id ? styles.checked : null}><label htmlFor={e.id}>{e.name}</label></div>
+        </td>
+        <td><div class={e.id === active.id ? styles.checked : null}>{e.energy}</div></td>
+        <td><div class={e.id === active.id ? styles.checked : null}>{e.emissions}</div></td>
+        {/* <td><Links.EL link={{source:e.link}}>link</Links.EL></td> */}
     </tr>);
 
     return (<table>
