@@ -8,7 +8,7 @@ const perfLinks = [
         "source": "https://observatory.mozilla.org/"
     },
     {
-        "name": "WebPageTest",
+        "name": "WebPageTest | Catchpoint",
         "source": "https://www.webpagetest.org/"
     },
     {
@@ -68,8 +68,8 @@ const perfLinks = [
         "source": "https://github.com/GoogleChrome/web-vitals/"
     },
     {
-        "name": "Zifera | carbon test",
-        "source": "https://www.zifera.io/carbon-test"
+        "name": "Sitechecker | Web Page Size Checker",
+        "source": "https://sitechecker.pro/page-size/"
     },
     // {
     //     "name": "Web Vitals Report",

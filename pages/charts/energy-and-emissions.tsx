@@ -20,7 +20,7 @@ const Table = ({dataSources, setParentState}) => {
 
     useEffect(() => {
         setParentState(dataSources[0]);
-    },[active]);
+    },[]);
 
     const rows = dataSources.map(e => <tr>
         <td>

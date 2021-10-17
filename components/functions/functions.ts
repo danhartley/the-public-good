@@ -19,7 +19,7 @@ const sessionData = window => {
         };
         
         const resources = Array.from(window.performance.getEntriesByType("resource")) as any[];
-        
+
         transferSize = resources.map(r => r.transferSize || 0).reduce(reducer, 0);
 
         requests = resources.length;

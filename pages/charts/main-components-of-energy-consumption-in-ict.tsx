@@ -34,6 +34,23 @@ const PieChartComponentEnergyConsumption = () => {
         },
     ];
 
+    // https://www.greenit.fr/impacts-environnementaux-du-numerique-en-france/
+
+    const components2 = [
+        {
+            component: 'Devices',
+            percentage: 46
+        },
+        {
+            component: 'Networks',
+            percentage: 32
+        },
+        {
+            component: 'Data centres',
+            percentage: 22
+        },
+    ];
+
     // https://venngage.com/blog/color-blind-friendly-palette/
     const elegant = [
         '#382119',

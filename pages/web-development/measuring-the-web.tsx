@@ -8,13 +8,13 @@ import Formula from 'components/tools/formula';
 
 import styles from 'pages/dashboard/Dashboard.module.scss';
 
-const Results = ({inputs}) => {
+const Output = ({inputs}) => {
 
     const calculatedEnergyValue = useRef<HTMLSpanElement>(null);
     const calculatedEmissionsValue = useRef<HTMLSpanElement>(null);
 
     useEffect(() => {
-        calculatedEnergyValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * 1000) / 1000).toLocaleString();
+        calculatedEnergyValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * 10000) / 10000).toFixed(4).toLocaleString();
         calculatedEmissionsValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * inputs.emissions * 100) / 100).toLocaleString();
     });
     
@@ -77,7 +77,7 @@ const NumbersAndUnits = () => {
             link: 'https://www.websitecarbon.com/how-does-it-work/',
             energy: 1.8,
             emissions: 33.4,
-            selected: true
+            selected: false
         },
         {
             id: 4,
@@ -95,6 +95,14 @@ const NumbersAndUnits = () => {
             emissions: 26,
             selected: false
         },
+        // {
+        //     id: 4,
+        //     name: 'marmelab',
+        //     link: 'https://marmelab.com/blog/2021/03/04/argos-comparing-the-energy-consumption-of-two-web-stacks.html',
+        //     energy: 0.011,
+        //     emissions: ??,
+        //     selected: false
+        // },
         // {
         //     id: 5,
         //     name: 'Anders Andrae (fixed 2020)',
@@ -218,6 +226,7 @@ const NumbersAndUnits = () => {
     ];
 
     const [inputs, setInputs] = useState({ bytes: 1 } as any); // ad type!
+    const [showOutputs, setShowOutputs] = useState(false);
 
     const setParentState = updatedInputs => {                
         setInputs({ ...inputs, ...updatedInputs });
@@ -251,39 +260,61 @@ const NumbersAndUnits = () => {
             calculatedEmissionsRatio.current.innerText = (Math.round(((averageMonthlyTrafficPerUser * 12 * inputs.energy * inputs.emissions) / 1000 / 1000 / averageAnnualCarbonFootprint ) * 100 * 100)/ 100).toLocaleString();
         }
 
-    }, [inputs]);
+    }, [inputs, showOutputs]);
 
     const onChangeInput = ({ prop, value}) => {        
         setInputs({ ...inputs, [prop]: value});
     };
 
+    useEffect(() => {
+        
+        if(typeof window === 'undefined') return;
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const inputs = document.getElementById('inputs').offsetTop;
+            if(inputs - (window.innerHeight / 2) < scrollPosition) {    
+                setShowOutputs(true);
+            }
+        }, false);
+        
+    }, []);
+
     return (
         <div class={styles.wrapper}>
-            <Layout header={'Energy & Emissions'} title={'Energy & Emissions'} description={'Energy use and carbon emissions as applied to the Internet in numbers and units.'}>
+            <Layout header={'Measuring the web'} title={'Measuring the web'} description={'Measuring page weight, the impact of streaming video, energy intensity and carbon emissions as applied to the Internet in numbers and units.'}>
                 <section>
+                    <p><strong>In order to build more sustainable websites and apps, we first need to measure the energy they use, and the carbon for which they are responsible.</strong></p>
+                    <p>The CO<span class={styles.sub}>2</span> emissions associated with a web page depend on many factors and vary depending on which are taken into account. <Links.EL link={{source:'https://www.wholegraindigital.com/blog/website-energy-consumption/'}}>Tom Greenwood</Links.EL> describes this problem and explains how the <Links.EL link={{source:'https://www.websitecarbon.com/'}}>website carbon calculator</Links.EL> measures a site's emissions.</p>
+                    <p>As we will see there is a range of values for all of the factors contributing to energy intensity and emissions levels. The aim here is to get a feel for which numbers are important, the units used, and calculate some ballpark values.</p>                                             
+                    <h2>Units</h2>
+                    <p>The data that makes up a web page or a video is measured in <strong>bytes</strong>. For video this value is typically expressed in gigabytes (a billion bytes). For example, <Links.EL link={{source:'https://help.netflix.com/en/node/87'}}>Netflix</Links.EL> equates 1 hour's viewing at 'Standard Definition' to 1 GB.</p>
+                    <p>Web pages are measured in thousands (kilobytes or KBs) or millions of bytes. The <Links.EL link={{source:'https://httparchive.org/reports/page-weight'}}>http archive</Links.EL> puts the current mean 'page weight' or 'page size' at {medianKBsTransferred.toLocaleString()}KBs (desktop), or approximately 2.2 megabytes (2.2 million bytes of information). For mobile the value is {(1942).toLocaleString()}KBs.</p>
+                    <p>
+                        <strong>A kilowatt-hour (kWh)</strong> is the energy consumed by a {(1000).toLocaleString()}-watt or 1-kilowatt electrical appliance operating for 1 hour. It is commonly used as the billing unit for business and domestic users.
+                    </p>
+                    <p>Kilowatt-hours are useful for aggregating electricity use from multiple sources. For example, a toaster rated at {(1000).toLocaleString()} watts on for 15 minutes a day will use .25kWh. A small fridge might use .5kWhs per day (manufacturers provide annual values because fridges don't use electricity all the time). The energy use of domestic appliances (the toaster, the fridge etc.), or the laptop, router, transmission towers, data centre, etc. which contribute to streaming a video, or downloading a web page, can be combined in a single value measured in kWhs. </p>
                     <p>
                         <blockquote cite="https://www.researchgate.net/publication/266968141_The_Energy_Intensity_of_the_Internet_Home_and_Access_Networks/link/543ff39c0cf21227a11b9d78/download">
-                            The energy intensity of the Internet, expressed as energy consumed to transmit a given volume of data, is one of the most controversial issues. Existing studies of the Internet energy intensity give results ranging from 136 kWh/GB down to 0.0064 kWh/GB, a factor of more than 20,000.
+                            The energy intensity of the Internet, expressed as energy consumed to transmit a given volume of data, is one of the most controversial issues. Existing studies of the Internet energy intensity give Output ranging from 136 kWh/GB down to 0.0064 kWh/GB, a factor of more than 20,000.
                         </blockquote>
                         <cite><Links.EL link={{source:'https://www.researchgate.net/publication/266968141_The_Energy_Intensity_of_the_Internet_Home_and_Access_Networks/link/543ff39c0cf21227a11b9d78/download'}}>The Energy Intensity of the Internet: Home and Access Networks</Links.EL> </cite>
                     </p>
-                    {/* <p>ICT (Internet and Communications Technology) accounts for around 1% of global energy demand, and is responsible for 2% of global CO<span class={styles.sub}>2</span>e emissions. According to Nature, both figures are <Links.EL link={{source:'https://www.nature.com/articles/d41586-018-06610-y'}}>likely to rise</Links.EL>.</p> */}
-                    {/* <p>Despite exponential growth in data usage, electricity demand has remained nearly flat thanks to increased efficiences in devices, networks, and data centres. According to Anders Andrae this looks set to change. In a best case scenario, ICT will consume 8% of global electricity use by 2030; in a worst case scenario this rises to 21%, with the majority of the increase expected to come from data centres and networks.</p>
-                    <p>A counter view from, among others, Eric Masanet, is that newfound efficiencies will continue to account for increases, and that a proliferation of smaller devices may lead to a fall in demand.</p> */}
-                    <p><strong>How can we reduce the impact of individual websites and apps?</strong></p>
-                    <p>First we measure.</p>
-                    {/* <p><strong>In order to build more sustainable websites and apps, we first need to measure the energy they use, and the carbon for which they are responsible.</strong></p> */}
-                    {/* <h2>Page impact</h2>
-                    <p>The CO<span class={styles.sub}>2</span> emissions associated with a web page depend on many factors and vary depending on which are taken into account. <Links.EL link={{source:'https://www.wholegraindigital.com/blog/website-energy-consumption/'}}>Tom Greenwood</Links.EL> describes this problem and explains how the <Links.EL link={{source:'https://www.websitecarbon.com/'}}>website carbon calculator</Links.EL> measures a site's emissions.</p> */}
-                    {/* <p>The aim here is to get a feel for what numbers are important, the units used, and ballpark values.</p>                     */}
-                    <h2>Measuring electricity & emissions</h2>
+                    <p><strong>Greenhouse gas emission intensity (g<Formula>CO2</Formula>e/kWh)</strong> is measured in grammes of <Formula>CO2</Formula>e emitted per kilowatt-hour. This figure was <Links.EL link={{source:'https://www.eea.europa.eu/data-and-maps/indicators/overview-of-the-electricity-production-3/assessment-1'}}>255</Links.EL> grammes in the EU in 2019 and, if pledges to decarbonise electricity are honoured, this will fall to 0 in 2050. The figure for France was just 56 grammes, a consequence of their reliance on nuclear energy.</p>
+                    <p>
+                        <aside>
+                            <h4><Formula>CO2</Formula>e</h4>
+                            <div>The <strong>e</strong> in <Formula>CO2</Formula><strong>e</strong> stands for <strong>equivalent</strong>, and is used to compare emissions from different greenhouse gases (GHGs). Annual global <Formula>CO2</Formula> emissions are 36.44Gt (2019) but <Formula>CO2</Formula><strong>e</strong> (including emissions from other GHGs such as methane and nitrous oxide) are over <Links.EL link={{source:'https://ourworldindata.org/greenhouse-gas-emissions'}}>50Gt</Links.EL> - 50 gigatonnes or 50 billion tonnes.</div>
+                        </aside>
+                    </p>               
+                    <h2 id="inputs">Measuring electricity & emissions</h2>
                     <div>            
                         <Table dataSources={dataSources} setParentState={setParentState} />
                     </div>
 
                     <h3>Output values</h3>
             
-                    <p class={styles.results}>
+                    {showOutputs ? <p>
                                             
                         <div></div>
                         <div class={styles.inputDataFixedPosition}>
@@ -303,35 +334,18 @@ const NumbersAndUnits = () => {
                                     <input id="selectedCarbon" ref={selectedCarbon} type="number" onChange={e => onChangeInput({prop: 'emissions', value: e.target.value })} />
                                     <label htmlFor="selectedCarbon">g<Formula>CO2</Formula>e/kWh</label>
                                 </div>
-                                <Results inputs={inputs} />
+                                <Output inputs={inputs} />
                             </div>
 
                         </div>
 
                         <div class={styles.calculatedValues}>
-                            <Results inputs={inputs} />
+                            <Output inputs={inputs} />
                             <div>
                                 What do these output values mean, and what do they tell us about our input values?
                             </div>
                         </div>
-                    </p>
-
-                    <h3>Units</h3>
-
-                    <p>The data that makes up a web page or a video is measured in <strong>bytes</strong>. For video this value is typically expressed in gigabytes (a billion bytes). For example, <Links.EL link={{source:'https://help.netflix.com/en/node/87'}}>Netflix</Links.EL> equates 1 hour's viewing at 'Standard Definition' to 1 GB.</p>
-                    <p>Web pages are measured in thousands (kilobytes or KBs) or millions of bytes. The <Links.EL link={{source:'https://httparchive.org/reports/page-weight'}}>http archive</Links.EL> puts the current mean 'page weight' or 'page size' at {medianKBsTransferred.toLocaleString()}KBs (desktop), or approximately 2.2 megabytes (2.2 million bytes of information). For mobile the value is {(1942).toLocaleString()}KBs.</p>
-                    <p>
-                        <strong>A kilowatt-hour (kWh)</strong> is the energy consumed by a {(1000).toLocaleString()}-watt or 1-kilowatt electrical appliance operating for 1 hour. It is commonly used as the billing unit for business and domestic users.
-                    </p>
-                    <p>Kilowatt-hours are useful for aggregating electricity use from multiple sources. For example, a toaster rated at {(1000).toLocaleString()} watts on for 15 minutes a day will use .25kWh. A small fridge might use .5kWhs per day (manufacturers provide annual values because fridges don't use electricity all the time). The energy use of domestic appliances (the toaster, the fridge etc.), or the laptop, router, transmission towers, data centre, etc. which contribute to streaming a video, or downloading a web page, can be combined in a single value measured in kWhs. </p>
-        
-                    <p><strong>Greenhouse gas emission intensity (g<Formula>CO2</Formula>e/kWh)</strong> is measured in grammes of <Formula>CO2</Formula>e emitted per kilowatt-hour. This figure was <Links.EL link={{source:'https://www.eea.europa.eu/data-and-maps/indicators/overview-of-the-electricity-production-3/assessment-1'}}>255</Links.EL> grammes in the EU in 2019 and, if pledges to decarbonise electricity are honoured, this will fall to 0 in 2050. The figure for France was just 56 grammes, a consequence of their reliance on nuclear energy.</p>
-                    <p>
-                        <aside>
-                            <h4><Formula>CO2</Formula>e</h4>
-                            <div>The <strong>e</strong> in <Formula>CO2</Formula><strong>e</strong> stands for <strong>equivalent</strong>, and is used to compare emissions from different greenhouse gases (GHGs). Annual global <Formula>CO2</Formula> emissions are 36.44Gt (2019) but <Formula>CO2</Formula><strong>e</strong> (including emissions from other GHGs such as methane and nitrous oxide) are over <Links.EL link={{source:'https://ourworldindata.org/greenhouse-gas-emissions'}}>50Gt</Links.EL> - 50 gigatonnes or 50 billion tonnes.</div>
-                        </aside>
-                    </p>
+                    </p> : null}
 
                     <h2>Are these figures accurate?</h2>
 
@@ -378,7 +392,7 @@ const NumbersAndUnits = () => {
                     {/* <h2>Differences of opinion</h2>
 
                     <blockquote cite="https://www.bbc.co.uk/rd/blog/2021-06-bbc-carbon-footprint-energy-envrionment-sustainability">  
-                        The results and comparisons here reveal just how challenging it can be to model complex systems. This is clear from the differences between the Carbon Trust and iPlayer estimates that resulted from alternative assumptions – which are necessary ingredients to any model. However, despite these differences, our results show good accordance with the Carbon Trust study. Research in this area highlights the value of using robust science to enhance awareness of the carbon impact of TV services. This is essential if we are to reduce our emissions as an industry and would not be possible without the continued collaboration of media organisations and academics.
+                        The Output and comparisons here reveal just how challenging it can be to model complex systems. This is clear from the differences between the Carbon Trust and iPlayer estimates that resulted from alternative assumptions – which are necessary ingredients to any model. However, despite these differences, our Output show good accordance with the Carbon Trust study. Research in this area highlights the value of using robust science to enhance awareness of the carbon impact of TV services. This is essential if we are to reduce our emissions as an industry and would not be possible without the continued collaboration of media organisations and academics.
                     </blockquote>
                     <cite><Links.EL link={{source:'https://www.bbc.co.uk/rd/blog/2021-06-bbc-carbon-footprint-energy-envrionment-sustainability'}}>The carbon impact of streaming: an update on BBC TV's energy footprint</Links.EL></cite> */}
 
@@ -410,3 +424,7 @@ const NumbersAndUnits = () => {
 };
 
 export default NumbersAndUnits;
+
+                    {/* <p>ICT (Internet and Communications Technology) accounts for around 1% of global energy demand, and is responsible for 2% of global CO<span class={styles.sub}>2</span>e emissions. According to Nature, both figures are <Links.EL link={{source:'https://www.nature.com/articles/d41586-018-06610-y'}}>likely to rise</Links.EL>.</p> */}
+                    {/* <p>Despite exponential growth in data usage, electricity demand has remained nearly flat thanks to increased efficiences in devices, networks, and data centres. According to Anders Andrae this looks set to change. In a best case scenario, ICT will consume 8% of global electricity use by 2030; in a worst case scenario this rises to 21%, with the majority of the increase expected to come from data centres and networks.</p>
+                    <p>A counter view from, among others, Eric Masanet, is that newfound efficiencies will continue to account for increases, and that a proliferation of smaller devices may lead to a fall in demand.</p> */}
