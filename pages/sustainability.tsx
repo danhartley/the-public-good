@@ -28,10 +28,10 @@ const onlineTools = [
         "name": "EcoIndex Firefox extension",
         "source": "https://addons.mozilla.org/fr/firefox/addon/ecoindex/"
     },
-    {
-        "name": "surfgreen.dev (beta)",
-        "source": "https://surfgreen.dev/"
-    },
+    // {
+    //     "name": "surfgreen.dev (beta)",
+    //     "source": "https://surfgreen.dev/"
+    // },
     {
         "name": "EcoPing",
         "source": "https://ecoping.earth"
@@ -53,9 +53,13 @@ const onlineTools = [
         "source": "http://ecometer.org/"
     },
     {
-        "name": "Greenspector",
-        "source": "https://greenspector.com/en/home/"
+        "name": "EcoIndex.fr",
+        "source": "http://www.ecoindex.fr/"
     },
+    // {
+    //     "name": "Greenspector",
+    //     "source": "https://greenspector.com/en/home/"
+    // },
     {
         "name": "Green Frame",
         "source": "https://greenframe.io/"

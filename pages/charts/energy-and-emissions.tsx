@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'preact/hooks';
 
 import CanvasChart from 'pages/dashboard/canvas-chart';
-import Links from 'components/links/Links';
 
 import { ChartType } from 'lib/enums';
 
 import styles from 'pages/dashboard/Dashboard.module.scss';
 
-const Table = ({dataSources, setParentState}) => {
+const EnergyAndEmissionsTable = ({dataSources, setParentState}) => {
 
     if(!dataSources) return <div>No data!</div>
 
@@ -24,23 +23,19 @@ const Table = ({dataSources, setParentState}) => {
 
     const rows = dataSources.map(e => <tr>
         <td>
-            <div>
+            <div class={e.id === active.id ? styles.checked : null}>
                 <input type="radio" checked={e.id === active.id} onClick={() => updateStates(dataSources[e.id - 1])} id={e.id} name="rbSource"></input>
+                <label htmlFor={e.id}>{e.name}</label>
             </div>
-        </td>
-        <td>
-            <div class={e.id === active.id ? styles.checked : null}><label htmlFor={e.id}>{e.name}</label></div>
         </td>
         <td><div class={e.id === active.id ? styles.checked : null}>{e.energy}</div></td>
         <td><div class={e.id === active.id ? styles.checked : null}>{e.emissions}</div></td>
-        {/* <td><Links.EL link={{source:e.link}}>link</Links.EL></td> */}
     </tr>);
 
     return (<table>
         <thead>
             <tr>
-                <th></th>
-                <th></th>
+                <th>Provider</th>
                 <th>kWh/GB</th>
                 <th>gCO2e/kWh</th>
             </tr>
@@ -128,4 +123,4 @@ const BarChart = ({dataSources}) => {
     )
 };
 
-export default Table;
+export default EnergyAndEmissionsTable;

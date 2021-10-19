@@ -40,3 +40,26 @@ describe('page weight tests', () => {
         expect(funcs.sessionData(window3)).toStrictEqual( {"requests": 2, "transferSize": 1500});
     });
 });
+
+describe('decimal places to display', () => {
+
+    it('should return fixed value of 4 for value less than or equal to 0.001', () => {
+        expect(funcs.fixedPlaces(0.001)).toBe(4);
+    });
+
+    it('should return fixed value of 3 for value less than or equal to 0.01', () => {
+        expect(funcs.fixedPlaces(0.01)).toBe(3);
+    });
+
+    it('should return fixed value of 2 for value less than or equal to 0.1', () => {
+        expect(funcs.fixedPlaces(0.1)).toBe(2);
+    });
+
+    it('should return fixed value of 1 for value less than or equal to 1', () => {
+        expect(funcs.fixedPlaces(1)).toBe(1);
+    });
+
+    it('should return fixed value of 0 for value greater 1', () => {
+        expect(funcs.fixedPlaces(1.1)).toBe(0);
+    });
+});

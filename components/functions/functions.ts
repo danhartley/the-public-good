@@ -28,6 +28,19 @@ const sessionData = window => {
     return { transferSize, requests };
 };
 
+const fixedPlaces = value => {
+    
+    let fixed = 0;
+
+    if(value <= 1) fixed = 1;
+    if(value <= 0.1) fixed = 2;
+    if(value <= 0.01) fixed = 3;
+    if(value <= 0.001) fixed = 4;
+
+    return fixed;
+};
+
 export const funcs = {
-    sessionData
+    sessionData,
+    fixedPlaces
 }

@@ -35,7 +35,11 @@ import styles from 'pages/dashboard/Dashboard.module.scss';
             ? <div class={styles.canvas}><Line ref={canvas} data={data} options={config} /></div>
             : type === ChartType.Bar
                 ? <div class={styles.canvas}><Bar ref={canvas} data={data} options={config} /></div>
-                : <div class={styles.canvas}><Doughnut ref={canvas} data={data} options={config} /></div>
+                : <div class={styles.canvas}>
+                    <Doughnut ref={canvas} data={data} options={config}>
+                    <p>Hello Fallback World</p>
+                    </Doughnut>
+                </div>
     );
 
   };
