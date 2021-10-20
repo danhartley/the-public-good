@@ -1,6 +1,6 @@
 @import 'styles/mixins.scss';
 
-$results-color: black;
+$results-color: #0f5566;
 
 .wrapper { 
     main {
@@ -9,6 +9,10 @@ $results-color: black;
     @include radioButtons();
     table {
         margin: 0;
+        caption {
+            margin: 1rem;
+            font-style: italic;
+        }
         td {
             padding: .5rem 1rem 0 0;
             height: 1.75rem;
@@ -130,8 +134,6 @@ $results-color: black;
     .btn {
         @include button();
         font-size: .8rem;
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
     }
     figure {
         margin: 2rem 0 0 0;
@@ -139,6 +141,7 @@ $results-color: black;
     figcaption {
         display: flex;
         justify-content: center;        
+        font-style: italic;
         div {
             display: flex;
             flex-direction: column;
@@ -157,5 +160,26 @@ $results-color: black;
 .canvas {    
     margin: 0 auto 2rem auto;    
     width: calc(100vw/2);
-    max-width: 500px;
+    max-width: 500px;    
 }
+
+.mini {
+    .canvas {
+        width: calc(100vw/2);
+        max-width: 240px;    
+    }
+}
+
+.pie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .9rem;
+        width: 30%;
+    }
+}
+    

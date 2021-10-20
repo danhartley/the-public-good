@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 
 import CanvasChart from 'pages/dashboard/canvas-chart';
+import Formula from 'components/tools/formula';
 
 import { ChartType } from 'lib/enums';
 
@@ -33,6 +34,7 @@ const EnergyAndEmissionsTable = ({dataSources, setParentState}) => {
     </tr>);
 
     return (<table>
+        <caption><strong>Energy intensity & <Formula>CO2</Formula> emissions</strong></caption>
         <thead>
             <tr>
                 <th>Provider</th>

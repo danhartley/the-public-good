@@ -1,5 +1,4 @@
-import { Line, Bar, Doughnut } from 'react-chartjs-2';
-import * as ChartAnnotation from 'chartjs-plugin-annotation';
+import { Line, Bar, Doughnut, Bubble } from 'react-chartjs-2';
 
 import { Chart } from 'chart.js';
 import annotationPlugin from 'chartjs-plugin-annotation';
@@ -35,11 +34,17 @@ import styles from 'pages/dashboard/Dashboard.module.scss';
             ? <div class={styles.canvas}><Line ref={canvas} data={data} options={config} /></div>
             : type === ChartType.Bar
                 ? <div class={styles.canvas}><Bar ref={canvas} data={data} options={config} /></div>
-                : <div class={styles.canvas}>
-                    <Doughnut ref={canvas} data={data} options={config}>
-                    <p>Hello Fallback World</p>
-                    </Doughnut>
-                </div>
+                : type === ChartType.Doughnut
+                    ? <div class={styles.canvas}>
+                        <Doughnut ref={canvas} data={data} options={config}>
+                        <p>Hello Fallback World</p>
+                        </Doughnut>
+                      </div>
+                    : <div class={styles.canvas}>
+                        <Bubble ref={canvas} data={data} options={config}>
+                            <p>Hello Fallback World</p>
+                        </Bubble>
+                      </div>                
     );
 
   };
