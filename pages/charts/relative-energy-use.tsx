@@ -76,7 +76,7 @@ const MiniPieChart = ({energyUses}) => {
             }]
         });
 
-    }, []);
+    }, [energyUses]);
 
     return (
         <>
@@ -92,4 +92,84 @@ const MiniPieChart = ({energyUses}) => {
 
 };
 
-export default MiniPieChart;
+const MiniBarChart = ({dataSources}) => {
+
+    console.log(dataSources.find(ds => ds.source === 'Internet').value);
+    
+
+    if(isNaN(dataSources.find(ds => ds.source === 'Internet').value)) return;
+    // https://venngage.com/blog/color-blind-friendly-palette/
+    const elegant = [
+        '#CCBE9F',
+        '#ABC3C9',
+        '#382119',
+        '#E0DCD3',
+    ]
+
+    const [data, setData] = useState(null);
+    const [type, setType] = useState(ChartType.Bar);
+    const [options, setOptions] = useState({});
+    const [plugins, setPlugins] = useState(null);
+    const [scales, setScales] = useState(null);
+
+    const colour = '#ABC3C9';
+
+    useEffect(() => {
+        setData(
+            {
+                labels: [
+                    ...dataSources.map(d => `${d.source}    `)
+                ],
+                label: 'bar',
+                datasets: [
+                    {
+                        indexAxis: 'y',
+                        label: ' kWh ',
+                        plugins: {
+                            legend: {
+                            position: 'right',
+                            },
+                        },
+                        data: dataSources.map(d => d.value),
+                        backgroundColor: [ ...dataSources.map(d => colour), 'rgba(255, 99, 132, .4)'],
+                        barPercentage: 1,
+                        minBarLength: 10
+                    }
+                ]
+            }
+        );
+    
+        setScales({
+            x: {
+                type: 'linear',
+                min: 0,
+                max: 2,
+                title: {
+                    display: true,
+                    text: 'kWh',
+                    padding: { top: 12 }
+                },
+                ticks: {                                
+                    // stepSize: .1
+                },
+                offset: false,
+            }
+        });
+    
+    }, [dataSources]);
+
+    return (
+        <>
+        { data === null 
+            ? <div>No do!</div>
+            : <div>
+                <CanvasChart type={type} data={data} plugins={plugins} options={options} scales={null} /> 
+            </div>
+            
+        }
+        </>
+    )
+
+};
+
+export default MiniBarChart;

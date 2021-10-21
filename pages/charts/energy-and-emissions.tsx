@@ -10,7 +10,7 @@ import styles from 'pages/dashboard/Dashboard.module.scss';
 const EnergyAndEmissionsTable = ({dataSources, setParentState}) => {
 
     if(!dataSources) return <div>No data!</div>
-
+    
     const [active, setActive] = useState(dataSources[0] as any); // add type!
 
     const updateStates = state => {

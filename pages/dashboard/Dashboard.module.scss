@@ -124,7 +124,6 @@ $results-color: #0f5566;
             & > div:nth-child(2) {
                 padding: 0 2rem;
                 font-size: 1rem;
-                font-weight: bold;
             }
         }
     }
@@ -180,6 +179,12 @@ $results-color: #0f5566;
         justify-content: center;
         font-size: .9rem;
         width: 30%;
+    }
+}
+
+.inset {
+    span { 
+        display: inline;
     }
 }
     
