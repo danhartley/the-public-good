@@ -2,9 +2,11 @@ import { useEffect, useState, useRef } from 'preact/hooks';
 
 import Layout from 'components/layout/layout';
 import Links from 'components/links/Links';
-import EnergyAndEmissionsTable from 'pages/charts/energy-and-emissions';
-import PieChartComponentEnergyConsumption from 'pages/charts/main-components-of-energy-consumption-in-ict';
-import MiniBarChart from 'pages/charts/relative-energy-use';
+import EnergyAndEmissionsTable from 'pages/charts/energy-intensity-and-emissions-table';
+import WebsiteEnergyAndEmissionsTable from 'pages/charts/examples-of-website-energy-and-emissions-table';
+import UKDataOptionsTable from 'pages/charts/examples-of-internet-data-usage-table';
+import PieChartComponentEnergyConsumption from 'pages/charts/main-components-of-energy-consumption-in-ict-pie-chart';
+import MiniBarChart from 'pages/charts/uk-per-capita-data-bar-chart';
 import Formula from 'components/tools/formula';
 
 import { funcs } from 'components/functions/functions';
@@ -24,15 +26,14 @@ const Output = ({inputs}) => {
     });
     
     return (
-        <div>
-            {/* <div><strong>Output values</strong></div> */}
+        <>
             <div>
                 <span ref={calculatedEnergyValue}></span> <span>kWh of energy</span>
             </div>
             <div>
                 <span ref={calculatedEmissionsValue}></span> <span>g of <Formula>CO2</Formula> emissions</span>
             </div>
-        </div>
+        </>
     );
 };
 
@@ -59,86 +60,6 @@ const NumbersAndUnits = () => {
         },
     ];
 
-    const dataSources = [
-        {
-            id: 1,
-            name: 'Website Carbon (grey power)',
-            link: 'https://www.websitecarbon.com/how-does-it-work/',
-            energy: 1.8,
-            emissions: 475,
-            selected: true
-        },
-        {
-            id: 2,
-            name: 'The Shift Project (EU)',
-            link: 'https://theshiftproject.org/en/carbonalyser-browser-extension/',
-            energy: 0.23,
-            emissions: 276,
-            selected: false
-        },
-        {
-            id: 3,
-            name: 'Website Carbon (green power)',
-            link: 'https://www.websitecarbon.com/how-does-it-work/',
-            energy: 1.8,
-            emissions: 33.4,
-            selected: false
-        },
-        {
-            id: 4,
-            name: 'IEA',
-            link: 'https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines',
-            energy: 0.077,
-            emissions: 475,
-            selected: false
-        },
-        {
-            id: 5,
-            name: 'IEA (France)',
-            link: 'https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines',
-            energy: 0.077,
-            emissions: 26,
-            selected: false
-        },
-        // {
-        //     id: 4,
-        //     name: 'marmelab',
-        //     link: 'https://marmelab.com/blog/2021/03/04/argos-comparing-the-energy-consumption-of-two-web-stacks.html',
-        //     energy: 0.011,
-        //     emissions: ??,
-        //     selected: false
-        // },
-        // {
-        //     id: 5,
-        //     name: 'Anders Andrae (fixed 2020)',
-        //     link: 'https://www.researchgate.net/profile/Anders-Andrae/publication/342643762_New_perspectives_on_internet_electricity_use_in_2030/links/5efe34a3299bf18816fb82eb/New-perspectives-on-internet-electricity-use-in-2030.pdf',
-        //     energy: '.085',
-        //     emissions: '1',
-        //     selected: false
-        // },
-        // {
-        //     id: 6,
-        //     name: 'Anders Andrae (wireless 2020)',
-        //     link: 'https://www.researchgate.net/profile/Anders-Andrae/publication/342643762_New_perspectives_on_internet_electricity_use_in_2030/links/5efe34a3299bf18816fb82eb/New-perspectives-on-internet-electricity-use-in-2030.pdf',
-        //     energy: '0.195',
-        //     emissions: '1',
-        //     selected: false
-        // },
-
-        // {
-        //     id: 5,
-        //     name: 'Electricity Intensity of Internet Data Transmission',
-        //     link: 'https://www.researchgate.net/publication/318845230_Electricity_Intensity_of_Internet_Data_Transmission_Untangling_the_Estimates_Electricity_Intensity_of_Data_Transmission',
-        //     energy: '0.06',
-        //     // {
-        //     //     low: '0.015',
-        //     //     high: '0.06'
-        //     // },
-        //     emissions: '',
-        //     selected: false
-        // },
-    ];
-
     const broadcastDefinitions = {
         sd: 720,
         uhd: 1080,
@@ -162,7 +83,7 @@ const NumbersAndUnits = () => {
                 }
             },
             {
-                provider: 'Netlfix',
+                provider: 'Netflix',
                 mobile: {},
                 desktop: {                    
                     sd: 0,
@@ -256,22 +177,29 @@ const NumbersAndUnits = () => {
 
     const [inputs, setInputs] = useState({ bytes: 1 } as any); // ad type!
     const [showOutputs, setShowOutputs] = useState(false);
-    // const [comparisons, setComparison] = useState({energy: 0, emissions: 0 });
-    // const [comparisons, setComparison] = useState({energyPercentage: 0, emissionsPercentage: 0 });
 
-    const setParentState = updatedInputs => {                
+    const setEnergyAndEmissionsState = updatedInputs => {                
         setInputs({ ...inputs, ...updatedInputs });
+    };
+
+    const setDataOptionsState = data => {
+        if(inputs.id === undefined) return;    
+        setInputs({ ...inputs, bytes: data.gigabytes as any as number });
+    };
+
+    const setWebsiteState = data => {
+        if(inputs.id === undefined) return;    
+        setInputs({ ...inputs, bytes: data.gigabytes as any as number });
     };
 
     const selectedSource = useRef<HTMLSpanElement>(null);
     const selectedBytes = useRef<HTMLInputElement>(null);
     const selectedEnergy = useRef<HTMLInputElement>(null);
     const selectedCarbon = useRef<HTMLInputElement>(null);
+
     const calculatedCiscoPerUserEnergyValue = useRef<HTMLSpanElement>(null);
     const calculatedCiscoPerUserGrammesValue = useRef<HTMLSpanElement>(null);
     const calculatedCiscoPerUserTonnesValue = useRef<HTMLSpanElement>(null);
-    const calculatedEnergyRatio = useRef<HTMLSpanElement>(null);
-    const calculatedEmissionsRatio = useRef<HTMLSpanElement>(null);
 
     useEffect(() => {
 
@@ -282,25 +210,12 @@ const NumbersAndUnits = () => {
             selectedSource.current.innerText = inputs.name;            
             selectedEnergy.current.value = inputs.energy;
             selectedCarbon.current.value = inputs.emissions;            
+
+            let fixed = funcs.fixedPlaces(inputs.bytes * inputs.energy);
             
-            calculatedCiscoPerUserEnergyValue.current.innerText = (Math.round(averageMonthlyTrafficPerUser * 12 * inputs.energy * 100) / 100).toLocaleString();
-            calculatedCiscoPerUserGrammesValue.current.innerText = (Math.round(averageMonthlyTrafficPerUser * 12 * inputs.energy * inputs.emissions * 100) / 100).toLocaleString();
-            calculatedCiscoPerUserTonnesValue.current.innerText = (Math.round(averageMonthlyTrafficPerUser * 12 * inputs.energy * inputs.emissions / 1000 / 1000 * 100 )/ 100).toLocaleString();
-
-            // const energyPercentage = Math.round(((averageMonthlyTrafficPerUser * 12 * inputs.energy) / averageAnnualElectricty ) * 100 * 100)/100;
-            // const emissionsPercentage = Math.round(((averageMonthlyTrafficPerUser * 12 * inputs.energy * inputs.emissions) / 1000 / 1000 / averageAnnualCarbonFootprint) * 100 * 100)/ 100;
-
-            // setComparison({
-            //     energy: inputs.energy,
-            //     emissions: inputs.emissions
-            // })
-            // setComparison({
-            //     energyPercentage: energyPercentage,
-            //     emissionsPercentage: emissionsPercentage
-            // })
-
-            // calculatedEnergyRatio.current.innerText = (energyPercentage).toLocaleString();
-            // calculatedEmissionsRatio.current.innerText = (emissionsPercentage).toLocaleString();
+            calculatedCiscoPerUserEnergyValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * 10000) / 10000).toFixed(fixed).toLocaleString();
+            calculatedCiscoPerUserGrammesValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * inputs.emissions * 100) / 100).toLocaleString();
+            calculatedCiscoPerUserTonnesValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * inputs.emissions * 100) / 100 / 1000 / 1000).toLocaleString();
         }
 
     }, [inputs, showOutputs]);
@@ -321,6 +236,12 @@ const NumbersAndUnits = () => {
             if(inputs - (window.innerHeight / 2) < scrollPosition) {    
                 setShowOutputs(true);
             }
+            const sourcesHeading = document.getElementById('sources');
+            if(!sourcesHeading) return;
+            const sources = sourcesHeading.offsetTop;
+            if(scrollPosition > sources) {
+                setShowOutputs(false);
+            }
         }, false);
 
     }, []);
@@ -329,10 +250,10 @@ const NumbersAndUnits = () => {
         <div class={styles.wrapper}>
             <Layout rt="7 to 8" header={'Measuring the web'} title={'Measuring the web'} description={'Measuring page weight, the impact of streaming video, energy intensity and carbon emissions as applied to the Internet in numbers and units.'}>
                 <section>
-                    <p><strong>In order to build more sustainable websites and apps, we first need to measure the energy they use, and the carbon for which they are responsible.</strong></p>
+                    <h2>In order to build more sustainable websites and apps, we first need to measure the energy they use, and the carbon emissions for which they are responsible.</h2>
                     <p>The CO<span class={styles.sub}>2</span> emissions associated with a web page depend on many factors and vary depending on which are taken into account. <Links.EL link={{source:'https://www.wholegraindigital.com/blog/website-energy-consumption/'}}>Tom Greenwood</Links.EL> describes this problem and explains how the <Links.EL link={{source:'https://www.websitecarbon.com/'}}>website carbon calculator</Links.EL> measures a site's emissions.</p>
                     <p>As we will see there is a range of values for all of the factors contributing to how we measure the energy intensity and the knock-on carbon emissions of websites. The aim here is to get a feel for which numbers are important, the units used, and calculate some ballpark values.</p>                                             
-                    <h2>Units</h2>
+                    <h3>Units</h3>
                     <p>The data that makes up a web page or a video are measured in <strong>bytes</strong>. For video this value is typically expressed in gigabytes (a billion bytes). For example, <Links.EL link={{source:'https://help.netflix.com/en/node/87'}}>Netflix</Links.EL> equates 1 hour's viewing at 'Standard Definition' to 1 GB.</p>
                     <p>Web pages are measured in thousands (kilobytes or KBs) or millions of bytes. The <Links.EL link={{source:'https://httparchive.org/reports/page-weight'}}>http archive</Links.EL> puts the current mean 'page weight' or 'page size' at {medianKBsTransferred.toLocaleString()}KBs (desktop), or approximately 2.2 megabytes (2.2 million bytes of information). For mobile the value is {(1942).toLocaleString()}KBs.</p>                    
                     <p>
@@ -354,18 +275,18 @@ const NumbersAndUnits = () => {
                     <p>
                         There are many online tools and APIs for measuring the carbon emissions associated with Internet data. There is a list on the <Links.IL link={{source:'sustainability'}}>sustainability</Links.IL> page.                         
                     </p>
-                    <p>The table below sets out values used by two popular calculators and a range provided by the International energy Agency (IEA).</p>
-                    <p>The selected values proliferate throughout the page.</p>
+                    <p>The table below sets out values used by two popular calculators and a range provided by the International Energy Agency (IEA).</p>
+                    <p>The selected values proliferate throughout the page. The default data amount is 1GB, a good starting point for streaming.</p>
                     <p>
-                        <div>The default data amount is 1GB, a good starting point for streaming. If you are more interested in web pages &nbsp;<button class={styles.btn} onClick={e => onChangeInput({prop: 'bytes', value: 0.002198 })}> Set data input to median web page weight </button></div>
+                        If you are more interested in web pages &nbsp;<button class={styles.btn} onClick={e => onChangeInput({prop: 'bytes', value: 0.002198 })}> Set data input to median web page weight </button>
                     </p>
                     <p>
-                        <div class={styles.centred}>            
-                            <EnergyAndEmissionsTable dataSources={dataSources} setParentState={setParentState} />
+                        <div class={styles.inset}>
+                            <EnergyAndEmissionsTable setEnergyAndEmissionsState={setEnergyAndEmissionsState} />
                         </div>
                     </p>
 
-                    <h3>Output values</h3>
+                    <h4>Output values</h4>
             
                     {showOutputs ? <p>
                                             
@@ -392,37 +313,43 @@ const NumbersAndUnits = () => {
 
                         </div>
 
-                        <div class={styles.calculatedValues}>
-                            <Output inputs={inputs} />
-                            <div>
-                                What do these output values mean, and what do they tell us about our input values?
+                        <p>
+                            <div class={styles.calculatedValues}>
+                                <Output inputs={inputs} />
                             </div>
-                        </div>
+                        </p>
                     </p> : null}
 
-                    <h2>Are these figures accurate?</h2>
+                    <h3>Are these figures accurate?</h3>
 
                     <p>Calculating electricity use and emissions currently relies on assumptions and averages. Averages are useful for smoothing out values but they can also disguise distortions - this is why the http archive uses <Links.EL link={{source:'https://almanac.httparchive.org/en/2020/methodology'}}>median rather than average values</Links.EL> when reporting page size. The average can be affected by very small and very large page sizes, whereas the median expresses typical page size - 50% of values fall either side of the median. </p>
-                    <h3>Are there comparable data?</h3>
 
+                    <p>Scope …</p>
+
+                    <h3>Are there comparable data?</h3>
+                    <p>In order to see if our results make sense, we can use values derived for regional figures - such as those for the UK - from which average individual estimates can be reasoned.</p>
+                    <h4>The individual</h4>
                     <p>We can compare our values for Internet use with annual per capita averages.</p>
                     <blockquote id="cisco" cite="https://www.cisco.com/c/dam/m/en_us/solutions/service-provider/vni-forecast-highlights/pdf/United_Kingdom_2021_Forecast_Highlights.pdf">
                         In the United Kingdom, the average Internet user will generate 140 Gigabytes of Internet traffic per month in 2021, up 159% from 54.0 Gigabytes per month in 2016…
                     </blockquote>
                     <cite><Links.EL link={{source:'https://www.cisco.com/c/dam/m/en_us/solutions/service-provider/vni-forecast-highlights/pdf/United_Kingdom_2021_Forecast_Highlights.pdf'}}>Cisco</Links.EL> (PDF)</cite>
                     <p>
+                        Using Cisco's figure value for gigabytes of data gives an annual value of ({averageMonthlyTrafficPerUser}*12) {(1680).toLocaleString()} GBs. 
+                    </p>
+                    <p>
+                        <div class={styles.inset}>                        
+                            <UKDataOptionsTable setDataOptionsState={setDataOptionsState} />
+                        </div>
+                    </p>
+                    <h4>Output values</h4>
+                    <p>
                         <div class={styles.calculatedValues}>
                             <div>
-                                <div>
-                                    <span ref={calculatedCiscoPerUserEnergyValue}></span> <span>kWhs of energy</span>
-                                </div>
-                                <div>
-                                    <span ref={calculatedCiscoPerUserGrammesValue}></span> <span>g</span> <span>(<span ref={calculatedCiscoPerUserTonnesValue}></span> tonnes)</span> <span> of <Formula>CO2</Formula></span>
-                                </div>
+                                <span ref={calculatedCiscoPerUserEnergyValue}></span> <span>kWhs of energy</span>
                             </div>
                             <div>
-                                Using Cisco's figure value for gigabytes of data gives an annual value of ({averageMonthlyTrafficPerUser}*12) {(1680).toLocaleString()} GBs. 
-                                <button class={styles.btn} onClick={e => onChangeInput({prop: 'bytes', value: 1680 })}> Set data input to 1680GBs </button>
+                                <span ref={calculatedCiscoPerUserGrammesValue}></span> <span>g</span> <span>(<span ref={calculatedCiscoPerUserTonnesValue}></span> tonnes)</span> <span> of <Formula>CO2</Formula></span>
                             </div>
                         </div>
                     </p>
@@ -432,12 +359,10 @@ const NumbersAndUnits = () => {
                         </div>                            
                     </p>
                     <p>
-                        <div class={styles.pie}>
+                        <div>
                             <div>
-                            <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualElectricty }, { source:'Internet', value: (inputs.bytes * inputs.energy) } ]} />
-                            {/* <MiniPieChart dataSources={[ { source:'Total', percentage:(100-comparisons.energyPercentage)}, { source:'Internet', percentage:(comparisons.energyPercentage)} ]} /> */}
+                                <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualElectricty }, { source:'Internet', value: (inputs.bytes * inputs.energy) } ]} config={{colours:['#CCBE9F','#ABC3C9'], units:'kWhs'}} />
                             </div>
-                            {/* <div><div>Internet <strong>electricity</strong> use relative to total electricity use: <span ref={calculatedEnergyRatio}></span><span>%</span></div></div> */}
                         </div>
                     </p>
                     <p>
@@ -448,18 +373,18 @@ const NumbersAndUnits = () => {
                         </div>
                     </p>
                     <p>
-                        <div class={styles.pie}>
+                        <div>
                             <div>
-                                {/* <MiniPieChart dataSources={[ { source:'Total', percentage:(100-comparisons.emissionsPercentage)}, { source:'Internet', percentage:(comparisons.emissionsPercentage)} ]} /> */}
-                                <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualCarbonFootprint }, { source:'Internet', value: ((inputs.bytes * inputs.energy * inputs.emissions)/1000000).toFixed(2) } ]} />
-                            </div>
-                            <div>
-                                {/* <div>Internet <strong><Formula>CO2</Formula> emissions</strong> relative to total annual per capita <Formula>CO2</Formula> emissions: <span ref={calculatedEmissionsRatio}></span><span>%</span></div> */}
+                                <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualCarbonFootprint }, { source:'Internet', value: ((inputs.bytes * inputs.energy * inputs.emissions)/1000000).toFixed(2) } ]}  config={{colours:['#CCBE9F','#ABC3C9'], units:'Tonnes'}} />
                             </div>
                         </div>
                     </p>
+
+                    {/* <h4>The business</h4>
+
+                    <WebsiteEnergyAndEmissionsTable setWebsiteState={setWebsiteState} /> */}
                     
-                    <h2>Sources of truth</h2>
+                    <h3 id="sources">Sources of truth</h3>
                     <p>Calculations for energy intensity and carbon emissions are complex, factoring in multiple data sets from different sectors and times. Authors chose different units - machine hours versus kWhs, and scopes - some do not include devices - some models exclude the cost of manufacturing and disposing of hardware whereas others use device LCAs (Life cycle assessments).</p>
                     <p>There is also a paucity of sources. Not only do many website carbon emissions calculators refer to a handful of papers, the majority of the most popular calculators are built on common APIs: </p>
                     <p>
@@ -482,13 +407,25 @@ const NumbersAndUnits = () => {
                     </blockquote>
                     <cite><Links.EL link={{source:'https://www.bbc.co.uk/rd/blog/2021-06-bbc-carbon-footprint-energy-envrionment-sustainability'}}>The carbon impact of streaming: an update on BBC TV's energy footprint</Links.EL></cite>
                     
-                    <p>Despite exponential growth in data usage, electricity demand has remained nearly flat thanks to increased efficiences in devices, networks, and data centres. According to Anders Andrae this looks set to change. In a best case scenario, ICT will consume 8% of global electricity use by 2030; in a worst case scenario this rises to 21%, with the majority of the increase expected to come from data centres and networks.</p>
+                    <p>Despite exponential growth in data usage, electricity demand has remained nearly flat because devices, networks, and data centres operate more efficiently. According to Anders Andrae this looks set to change. In a best case scenario, ICT will consume 8% of global electricity use by 2030; in a worst case scenario this rises to 21%, with the majority of the increase expected to come from data centres and networks.</p>
                     <p>A counter view from, among others, Eric Masanet, is that newfound efficiencies will continue to account for increases, and that a proliferation of smaller devices may lead to a fall in demand.</p>
 
-                    <h2>The changing picture</h2>
+                    <h3>Energy consumption</h3>
 
-                    <p>The relatively low climate impact of streaming video today is thanks to rapid improvements in the energy efficiency of data centres, networks and devices. But slowing efficiency gains, rebound effects and new demands from emerging technologies, including artificial intelligence (AI) and blockchain, raise increasing concerns about the overall environmental impacts of the sector over the coming decades.</p>
+                    <p>
+                        <figure>
+                            <figcaption>
+                                <div>
+                                <span><strong>Main components of ICT energy consumption (2021)</strong></span>
+                                <Links.EL link={{source:'https://www.greenit.fr/impacts-environnementaux-du-numerique-en-france/'}}>GreenIT - iNUM : impacts environnementaux du numérique en France</Links.EL>
+                                </div>
+                            </figcaption>
+                            <PieChartComponentEnergyConsumption model={'greenIT'} />
+                        </figure>
+                    </p>
 
+                    <p>Climate care includes the energy used to manufacture the hardware.</p>
+  
                     <p>
                         <figure>
                             <figcaption>
@@ -497,9 +434,14 @@ const NumbersAndUnits = () => {
                                 <Links.EL link={{source:'https://www.climatecare.org/resources/news/infographic-carbon-footprint-internet/'}}>climate care - The carbon footprint of the Internet</Links.EL>
                                 </div>
                             </figcaption>
-                            <PieChartComponentEnergyConsumption />
+                            <PieChartComponentEnergyConsumption model={'climateCare'} />
                         </figure>
                     </p>
+
+                    <h3>The changing picture</h3>
+
+                    <p>The relatively low climate impact of streaming video today is thanks to rapid improvements in the energy efficiency of data centres, networks and devices. But slowing efficiency gains, rebound effects and new demands from emerging technologies, including artificial intelligence (AI) and blockchain, raise increasing concerns about the overall environmental impacts of the sector over the coming decades.</p>
+
 
                 </section>
                 <section>

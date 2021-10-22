@@ -11,11 +11,11 @@ import { ChartType } from 'lib/enums';
 // ranging from 76% for iPlayer to near-100% for satellite
 // https://www.bbc.co.uk/rd/blog/2021-06-bbc-carbon-footprint-energy-envrionment-sustainability
 
-const PieChartComponentEnergyConsumption = () => {
+const PieChartComponentEnergyConsumption = ({model}) => {
 
     // https://www.climatecare.org/resources/news/infographic-carbon-footprint-internet/
 
-    const components = [
+    const climateCare = [
         {
             component: 'Devices',
             percentage: 34
@@ -36,7 +36,7 @@ const PieChartComponentEnergyConsumption = () => {
 
     // https://www.greenit.fr/impacts-environnementaux-du-numerique-en-france/
 
-    const components2 = [
+    const greenIT = [
         {
             component: 'Devices',
             percentage: 46
@@ -50,6 +50,8 @@ const PieChartComponentEnergyConsumption = () => {
             percentage: 22
         },
     ];
+
+    let components = model === 'climateCare' ? climateCare : greenIT;
 
     // https://venngage.com/blog/color-blind-friendly-palette/
     const elegant = [
@@ -96,7 +98,7 @@ const PieChartComponentEnergyConsumption = () => {
                 },
                 color: function(context) {
                     var value = context.dataset.data[context.dataIndex];
-                    return value === 34 ? 'rgb(255,255,255)' : 'rgb(55,55,55)'
+                    return (value === 34 || value === 46) ? 'rgb(255,255,255)' : 'rgb(55,55,55)'
                 }                
               },
             },
@@ -122,8 +124,7 @@ const PieChartComponentEnergyConsumption = () => {
         <>
         { data === null 
             ? <div>No do!</div>
-            : <CanvasChart type={type} data={data} plugins={plugins} options={options} scales={null} /> 
-            
+            : <CanvasChart type={type} data={data} plugins={plugins} options={options} scales={null} />            
         }
         </>
     )

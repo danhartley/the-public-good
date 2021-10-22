@@ -1,6 +1,6 @@
 @import 'styles/mixins.scss';
 
-$results-color: #0f5566;
+$results-color: black;
 
 .wrapper { 
     main {
@@ -21,7 +21,7 @@ $results-color: #0f5566;
                 display: flex;
                 align-items: center;
                 &.checked {
-                    color: $results-color;
+                    color: rgba(var(--fg),1);              
                 }
             }        
             input[type="radio"] {
@@ -39,7 +39,7 @@ $results-color: #0f5566;
                 margin: 0 .5rem 0 0;
                 &:checked {
                     border: .3rem solid #999;
-                    background-color: $results-color;             
+                    background-color: rgba(var(--fg),1);
                 }                
             }
             label {
@@ -89,6 +89,9 @@ $results-color: #0f5566;
             margin: 0 .5rem 0 0;
             padding: .5rem;
             border-radius: .25rem;
+            &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+                opacity: 1;
+            }
             &:focus {
                 border: .1rem solid $results-color;
             }
@@ -107,24 +110,9 @@ $results-color: #0f5566;
     .calculatedValues {
         display: flex;
         flex-direction: column;
-        & > div:nth-child(1) {            
-            flex: 1;
-            font-style: italic;
-            padding: 1rem;
-            border: .05rem solid lightgray;
-            width: fit-content;
-        }
-        & > div:nth-child(2) {
-            flex: 1;
-            font-size: 1.2rem;
-        }
-        @media (min-width:1025px) {       
-            flex-direction: row;
-            align-items: center;            
-            & > div:nth-child(2) {
-                padding: 0 2rem;
-                font-size: 1rem;
-            }
+        font-style: italic;
+        & > div > span:nth-child(1) {
+            font-weight: bold;
         }
     }
     p {
@@ -159,7 +147,7 @@ $results-color: #0f5566;
 .canvas {    
     margin: 0 auto 2rem auto;    
     width: calc(100vw/2);
-    max-width: 500px;    
+    max-width: 400px;    
 }
 
 .mini {

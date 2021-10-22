@@ -92,7 +92,7 @@ const MiniPieChart = ({energyUses}) => {
 
 };
 
-const MiniBarChart = ({dataSources}) => {
+const MiniBarChart = ({dataSources, config}) => {
 
     console.log(dataSources.find(ds => ds.source === 'Internet').value);
     
@@ -112,8 +112,6 @@ const MiniBarChart = ({dataSources}) => {
     const [plugins, setPlugins] = useState(null);
     const [scales, setScales] = useState(null);
 
-    const colour = '#ABC3C9';
-
     useEffect(() => {
         setData(
             {
@@ -124,14 +122,14 @@ const MiniBarChart = ({dataSources}) => {
                 datasets: [
                     {
                         indexAxis: 'y',
-                        label: ' kWh ',
+                        label: ` ${config.units} `,
                         plugins: {
                             legend: {
                             position: 'right',
                             },
                         },
                         data: dataSources.map(d => d.value),
-                        backgroundColor: [ ...dataSources.map(d => colour), 'rgba(255, 99, 132, .4)'],
+                        backgroundColor: config.colours,
                         barPercentage: 1,
                         minBarLength: 10
                     }
