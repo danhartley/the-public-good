@@ -14,6 +14,9 @@ import { ChartType } from 'lib/enums';
 const PieChartComponentEnergyConsumption = ({model}) => {
 
     // https://www.climatecare.org/resources/news/infographic-carbon-footprint-internet/
+    // https://www.researchgate.net/figure/a-Total-energy-consumption-of-the-ICT-in-TWh-yr-and-b-Main-components-of-energy_fig2_323835314
+    // https://www.researchgate.net/publication/255923829_Emerging_Trends_in_Electricity_Consumption_for_Consumer_ICT
+    // https://www.researchgate.net/figure/The-worldwide-electricity-consumption-of-ICT-during-operation-redrawn-from-Pickavet_fig1_269571452
 
     const climateCare = [
         {

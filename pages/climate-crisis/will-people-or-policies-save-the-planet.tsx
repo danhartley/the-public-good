@@ -234,7 +234,7 @@ const CarbonFootprint = () => {
                     This is explained by the 'bunker fuels', or 'International transport', that is emissions for which no one has taken credit.
 
                     <div>
-                        <Links.EL link={{source:'#data'}}>Return to current emissions</Links.EL>
+                        <Links.IL link={{source:'climate-crisis/will-people-or-policies-save-the-planet/#data'}}>Return to current emissions</Links.IL>
                     </div>
                 </p>
             </section>
@@ -258,7 +258,7 @@ const CarbonFootprint = () => {
                         <li>4 hours flying per year</li>
                     </ul>
                     <div>
-                        <Links.EL link={{source:'#table'}}>Return to emissions table</Links.EL>
+                        <Links.IL link={{source:'climate-crisis/will-people-or-policies-save-the-planet/#table'}}>Return to emissions table</Links.IL>
                     </div>
                 </p>
             </section>

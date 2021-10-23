@@ -21,8 +21,8 @@ const UKDataOptionsTable = ({setDataOptionsState}) => {
         },
         {
             id: 102,
-            title: `${(12000).toLocaleString()} typical web pages in a year`,
-            gigabytes: 1000 * medianKBsTransferred * 12 / 1000 / 1000
+            title: `${(120000).toLocaleString()} typical web pages in a year`,
+            gigabytes: 10000 * medianKBsTransferred * 12 / 1000 / 1000
         },
         {
             id: 103,

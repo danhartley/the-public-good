@@ -6,6 +6,8 @@ import { ChartType } from 'lib/enums';
 
 import styles from 'pages/dashboard/Dashboard.module.scss';
 
+import { funcs } from 'components/functions/functions';
+
 const MiniPieChart = ({energyUses}) => {
 
     if(energyUses[0].percentage === 100) return <div></div>;
@@ -94,9 +96,6 @@ const MiniPieChart = ({energyUses}) => {
 
 const MiniBarChart = ({dataSources, config}) => {
 
-    console.log(dataSources.find(ds => ds.source === 'Internet').value);
-    
-
     if(isNaN(dataSources.find(ds => ds.source === 'Internet').value)) return;
     // https://venngage.com/blog/color-blind-friendly-palette/
     const elegant = [
@@ -116,7 +115,7 @@ const MiniBarChart = ({dataSources, config}) => {
         setData(
             {
                 labels: [
-                    ...dataSources.map(d => `${d.source}    `)
+                    ...dataSources.map(d => `${d.source}`)
                 ],
                 label: 'bar',
                 datasets: [
@@ -128,7 +127,7 @@ const MiniBarChart = ({dataSources, config}) => {
                             position: 'right',
                             },
                         },
-                        data: dataSources.map(d => d.value),
+                        data: dataSources.map(d => parseFloat(d.value).toFixed(funcs.fixedPlaces(d.value))),
                         backgroundColor: config.colours,
                         barPercentage: 1,
                         minBarLength: 10

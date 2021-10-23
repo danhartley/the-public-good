@@ -30,7 +30,7 @@ const sessionData = window => {
 
 const fixedPlaces = value => {
     
-    let fixed = 0;
+    let fixed = 1;
 
     if(value <= 1) fixed = 1;
     if(value <= 0.1) fixed = 2;
