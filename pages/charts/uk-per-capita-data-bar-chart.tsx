@@ -70,7 +70,7 @@ const MiniPieChart = ({energyUses}) => {
     useEffect(() => {
 
         setData({
-            labels: energyUses.map(e => ` ${e.source} `),
+            labels: [ ...energyUses.map(e => ` ${e.source} `) ],
             datasets: [{
                 radius: '90%',                                
                 data: energyUses.map(e => e.percentage),

@@ -114,7 +114,7 @@ const PieChartComponentEnergyConsumption = ({model}) => {
     useEffect(() => {
 
         setData({
-            labels: components.map(c => ` ${c.component} `),
+            labels: [ ...components.map(c => ` ${c.component} `) ],
             datasets: [{
                 radius: '90%',
                 data: components.map(d => d.percentage),
