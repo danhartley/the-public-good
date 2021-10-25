@@ -146,9 +146,6 @@ const MiniBarChart = ({dataSources, config}) => {
                     text: 'kWh',
                     padding: { top: 12 }
                 },
-                ticks: {                                
-                    // stepSize: .1
-                },
                 offset: false,
             }
         });
