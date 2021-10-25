@@ -9,7 +9,7 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 Chart.register(annotationPlugin);
 Chart.register(ChartDataLabels);
 
-import { useRef } from 'preact/hooks';
+// import { useRef } from 'preact/hooks';
 
 import styles from 'pages/dashboard/Dashboard.module.scss';
 
@@ -17,7 +17,7 @@ import styles from 'pages/dashboard/Dashboard.module.scss';
 
     // Chart.defaults.font.size = 12;   
 
-    const canvas = useRef<HTMLCanvasElement>(null);
+    // const canvas = useRef<HTMLCanvasElement>(null);
 
     const config = {        
         type: type,
@@ -31,17 +31,17 @@ import styles from 'pages/dashboard/Dashboard.module.scss';
     return (
         
         type === ChartType.Line 
-            ? <div class={styles.canvas}><Line ref={canvas} data={data} options={config} /></div>
+            ? <div class={styles.canvas}><Line data={data} options={config} /></div>
             : type === ChartType.Bar
-                ? <div class={styles.canvas}><Bar ref={canvas} data={data} options={config} /></div>
+                ? <div class={styles.canvas}><Bar data={data} options={config} /></div>
                 : type === ChartType.Doughnut
                     ? <div class={styles.canvas}>
-                        <Doughnut ref={canvas} data={data} options={config}>
+                        <Doughnut data={data} options={config}>
                         <p>Hello Fallback World</p>
                         </Doughnut>
                       </div>
                     : <div class={styles.canvas}>
-                        <Bubble ref={canvas} data={data} options={config}>
+                        <Bubble data={data} options={config}>
                             <p>Hello Fallback World</p>
                         </Bubble>
                       </div>                

@@ -35,6 +35,7 @@ export default function Home() {
         <section>
 
             <h2>Responsible web development</h2>
+            <Links.ILBlock link={{'value': 'web-development/measuring-the-web', 'text': 'Measuring the web'}}></Links.ILBlock>
             <Links.ILBlock link={{'value': 'web-development/sustainable-practices', 'text': 'Sustainable practices'}}></Links.ILBlock>
             <Links.ILBlock link={{'value': 'web-development/following-the-rules-to-a-well-structured-web-page', 'text': 'Following the rules to a well-structured web page'}}></Links.ILBlock>
             <Links.ILBlock link={{'value': 'web-development/for-the-love-of-hyperlinks', 'text': 'For the love of hyperlinks'}}></Links.ILBlock>
