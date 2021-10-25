@@ -28,10 +28,10 @@ const Output = ({inputs}) => {
     
     return (
         <>
-            <div>
+            <div class={styles.widescreen}>
                 <span ref={calculatedEnergyValue}></span> <span>kWh of energy</span>
             </div>
-            <div>
+            <div class={styles.widescreen}>
                 <span ref={calculatedEmissionsValue}></span> <span>g of <Formula>CO2</Formula> emissions</span>
             </div>
         </>
@@ -192,11 +192,6 @@ const MeasuringTheWeb = () => {
         setInputs({ ...inputs, bytes: data.gigabytes as any as number });
     };
 
-    const setWebsiteState = data => {
-        if(inputs.id === undefined) return;    
-        setInputs({ ...inputs, bytes: data.gigabytes as any as number });
-    };
-
     const selectedSource = useRef<HTMLSpanElement>(null);
     const selectedBytes = useRef<HTMLInputElement>(null);
     const selectedEnergy = useRef<HTMLInputElement>(null);
@@ -256,15 +251,17 @@ const MeasuringTheWeb = () => {
             <Layout rt="7 to 8" header={'Measuring the web'} title={'Measuring the web'} description={'Measuring page weight, the impact of streaming video, energy intensity and carbon emissions as applied to the Internet in numbers and units.'}>
                 <section>
                     <h2>In order to build more sustainable websites and apps, we first need to measure the energy they use, and the carbon emissions for which they are responsible.</h2>
-                    <p>The CO<span class={styles.sub}>2</span> emissions associated with a web page depend on many factors and vary depending on which are taken into account. <Links.EL link={{source:'https://www.wholegraindigital.com/blog/website-energy-consumption/'}}>Tom Greenwood</Links.EL> describes this problem and explains how the <Links.EL link={{source:'https://www.websitecarbon.com/'}}>website carbon calculator</Links.EL> measures a site's emissions.</p>
-                    <p>As we will see there is a range of values for all of the factors contributing to how we measure the energy intensity and the knock-on carbon emissions of websites. The aim here is to get a feel for which numbers are important, the units used, and calculate some ballpark values.</p>                                             
+                    <p>The CO<span class={styles.sub}>2</span> emissions associated with digital products and services depends on many factors and varies depending on which are taken into account.</p>
+                    <p>I am going to concentrate on websites, including web apps, and briefly cover streaming video. The aim is to get a feel for which numbers are important, the units used, and calculate some ballpark values.</p>                                             
                     <h3>Units</h3>
                     <p>The data that makes up a web page or a video are measured in <strong>bytes</strong>. For video this value is typically expressed in gigabytes (a billion bytes). For example, <Links.EL link={{source:'https://help.netflix.com/en/node/87'}}>Netflix</Links.EL> equates 1 hour's viewing at 'Standard Definition' to 1 GB.</p>
-                    <p>Web pages are measured in thousands (kilobytes or KBs) or millions of bytes. The <Links.EL link={{source:'https://httparchive.org/reports/page-weight'}}>http archive</Links.EL> puts the current mean 'page weight' or 'page size' at {medianKBsTransferred.toLocaleString()}KBs (desktop), or approximately 2.2 megabytes (2.2 million bytes of information). For mobile the value is {(1942).toLocaleString()}KBs.</p>                    
+                    <p>Web pages are measured in thousands (kilobytes or KBs), or millions of bytes (megabytes, or MBs). The <Links.EL link={{source:'https://httparchive.org/reports/page-weight'}}>http archive</Links.EL> puts the current mean 'page weight' or 'page size' at {medianKBsTransferred.toLocaleString()}KBs (desktop), or approximately 2.2 megabytes (2.2 million bytes of information). For mobile the value is {(1942).toLocaleString()}KBs.</p>                    
                     <p>
                         <strong>A kilowatt-hour (kWh)</strong> is the energy consumed by a {(1000).toLocaleString()}-watt or 1-kilowatt electrical appliance operating for 1 hour. It is commonly used as the billing unit for business and domestic users.
                     </p>
-                    <p>Kilowatt-hours are useful for aggregating electricity use from multiple sources. For example, a toaster rated at {(1000).toLocaleString()} watts on for 15 minutes a day will use .25kWh. A small fridge might use .5kWhs per day (manufacturers provide annual values because fridges don't use electricity all the time). The energy use of domestic appliances (the toaster, the fridge, etc.), or the laptop, router, transmission tower, data centre, etc. which contribute to streaming a video, or downloading a web page, can be combined in a single value measured in kWhs. </p>
+                    <p>Kilowatt-hours are useful for aggregating electricity use from multiple sources. For example, a toaster rated at {(1000).toLocaleString()} watts on for 15 minutes a day will use .25kWh. A small fridge might use .5kWhs per day (manufacturers provide annual values because fridges don't use electricity all the time).</p>
+                    <p>The energy use of domestic appliances (the toaster, the fridge, etc.), or the laptop, router, transmission tower, data centre, etc. which contribute to streaming a video, or downloading a web page, can be combined in a single value measured in kWhs.</p>
+                    <p>The cost (measured in energy intensity or carbon dioxide emissions) of downloading a web page, or streaming a video must account for multiple systems and devices. Coming up with a single figure is tricky, and controversial.</p>
                     <blockquote cite="https://www.researchgate.net/publication/266968141_The_Energy_Intensity_of_the_Internet_Home_and_Access_Networks/link/543ff39c0cf21227a11b9d78/download">
                             The energy intensity of the Internet, expressed as energy consumed to transmit a given volume of data, is one of the most controversial issues. Existing studies of the Internet energy intensity give results ranging from 136 kWh/GB down to 0.0064 kWh/GB, a factor of more than 20,000.
                         </blockquote>
@@ -340,8 +337,14 @@ const MeasuringTheWeb = () => {
                     Chris Adams' <Links.EL link={{source:'https://www.thegreenwebfoundation.org/news/understanding-trends-at-the-layer-below-the-internet-stack/'}}> introduction to marginal costs, energy grids, and computational demands</Links.EL> is well worth reading if you want to examine your development stack in detail.
                     </p>
 
+                    <p>
+                        <div>
+                        <Links.EL link={{source:'https://www.wholegraindigital.com/blog/website-energy-consumption/'}}>Tom Greenwood</Links.EL> describes the problem of where to set emissions' boundaries, and explains how the <Links.EL link={{source:'https://www.websitecarbon.com/'}}>website carbon calculator</Links.EL> measures a site's emissions.
+                        </div>
+                    </p>
+
                     <h3>Are there data we can compare our figures with?</h3>
-                    <p>In order to see if our results make sense, it is useful to look for comparable data. For example, we can use values derived for regional figures - such as those for the UK - from which per capita values can be estimated.</p>
+                    <p>In order to see if our results make sense, it is useful to look for comparable data. For example, we can use values derived for regional figures - such as those for the UK - from which per capita values are estimated.</p>
                     <p>Let's compare our values for Internet use with annual per capita averages for the UK.</p>
                     <blockquote id="cisco" cite="https://www.cisco.com/c/dam/m/en_us/solutions/service-provider/vni-forecast-highlights/pdf/United_Kingdom_2021_Forecast_Highlights.pdf">
                         In the United Kingdom, the average Internet user will generate 140 Gigabytes of Internet traffic per month in 2021, up 159% from 54.0 Gigabytes per month in 2016…
@@ -397,8 +400,15 @@ const MeasuringTheWeb = () => {
 
                     <WebsiteEnergyAndEmissionsTable setWebsiteState={setWebsiteState} /> */}
                     
+                    <p>The energy and emissions associated with websites and streaming is divided between the user (this value is included in their bill), the content provider and myriad intermediaries, so direct comparison means little. But comparing data does provide a sense of scale, and an idea of what is typical.</p>
+
                     <h3 id="sources">Sources of truth</h3>
-                    <p>Calculations for energy intensity and carbon emissions are complex, factoring in multiple data sets from different sectors and times. Authors chose different units - machine hours versus kWhs, and scopes - some do not include devices - and other models exclude the cost of manufacturing and disposing of hardware whereas others, <Links.EL link={{source:'http://gauthierroussilhe.com/post/digital-sustainability-french.html'}}> especially in France</Links.EL>, use device LCAs (Life cycle assessments).</p>
+                    <p>Calculations for energy intensity and carbon emissions are complex and must combine contemporary and historical data sets from multiple sectors. There are also differences between authors. Most use kWhs but some prefer machine hours (especially for streaming). There is wide variance in how inclusive models are (the scope).</p>
+                    <p>In his <Links.EL link={{source:'http://gauthierroussilhe.com/post/digital-sustainability-french.html'}}>update on French sustainability accounting</Links.EL>, Gauthier Roussilhe explains how French modelling includes a full Life Cycle Assessments (LCAs) of a service, not only its immediate energy and emissions requirements.</p>
+                    <blockquote cite="http://gauthierroussilhe.com/post/digital-sustainability-french.html">
+                        To sum up, French designers and developers tend to develop sustainable digital services knowing that they must aim to reduce these four factors: GHG emissions, water consumption, consumption of resources and consumption of primary energy.
+                    </blockquote>
+                    <cite><Links.EL link={{source:'http://gauthierroussilhe.com/post/digital-sustainability-french.html'}}>Digital Sustainability: a French update</Links.EL></cite>
                     <p>There is also a paucity of sources. Not only do many website carbon emissions calculators refer to a handful of papers, the majority of the most popular calculators are built on common APIs: </p>
                     <p>
                         <Links.EL link={{source:'https://www.mightybytes.com/blog/ecograder-internet-sustainability-stats/'}}>Mightybytes</Links.EL> and <Links.EL link={{source:'https://www.wholegraindigital.com/blog/carbon-calculator-v2/'}}>Wholegrain Digital</Links.EL> collaborate at <Links.EL link={{source:'https://sustainablewebdesign.org/'}}>Sustainable Web Design</Links.EL>, and provide the community with two free calculators, <Links.EL link={{source:'https://ecograder.com/'}}>EcoGrader</Links.EL>, and the <Links.EL link={{source:'https://www.websitecarbon.com/'}}>Website Carbon Calculator</Links.EL>. 
@@ -408,23 +418,24 @@ const MeasuringTheWeb = () => {
                         The <Links.EL link={{source:'https://theshiftproject.org/en/carbonalyser-browser-extension/'}}>Carbonalyser</Links.EL> browser extensions, <Links.EL link={{source:'https://ecoinfo.cnrs.fr/ecodiag-calcul/'}}>EcoInfo</Links.EL>, <Links.EL link={{source:'http://ecometer.org/'}}>ecometer</Links.EL>, and <Links.EL link={{source:'http://www.ecoindex.fr/'}}>EcoIndex.fr</Links.EL> rely on data and models from <Links.EL link={{source:'https://theshiftproject.org/en/home/'}}>The Shift Project</Links.EL>.                            
                     </p>
                     <p>
-                        Collaboration is healthy - these companies have put a great deal of effort into understanding the problem, sharing resources, and building useful, and extensible tools. I recommend trying them all (each one has unique features), and reading the authors' discussions on methodology.                         
+                        Collaboration is healthy - these companies have put a great deal of effort into understanding the problem, sharing resources, and building useful, and extensible tools. I recommend trying them all (each one has unique features), and reading their authors' discussions on methodology and practice.                         
                     </p>
-                    <p>If you use a website carbon calculator, question its findings, and verify its sources. Understand that the field is changing quickly - more data, new patterns of consumption, more devices, more users, different users, changes in hardware efficiency, and shifting programming paradigms.</p>
-                    <p>Develop a feeling for the numbers and units involved.</p>
+                    <p>But if you use a website carbon calculator, question its findings, and verify its sources. Understand that the field is changing quickly - more data, new patterns of consumption, more devices, more users, different users, changes in hardware efficiency, and shifting programming paradigms.</p>
+                    <p>Develop a feel for the numbers and units involved.</p>
 
                     <p>The spat between The Shift Project and Carbon Brief and the IEA is a salutary example as to why we should <Links.EL link={{source:'https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines'}}>question assumptions</Links.EL>. The trouble arose over the carbon emissions attributable to watching Netflix. The parties involved scrutinised the data, and resolved their differences, providing a useful insight into methodology, rigour, and the scientific method. Unfortunately, misleading data got out and spread quickly. Authoritative websites including the BBC and The Guardian maintain stories with inaccurate information.</p>
 
-                    <p>The BBC themselves report on emissions resulting from their programmes, including interesting comparisons with other forms of digital broadcasting (analogue TV was switched off in 2012).</p>
+                    <p>The BBC themselves report on emissions resulting from their programmes, including interesting comparisons with other forms of digital broadcasting (analogue TV was switched off in the UK in 2012).</p>
                     <blockquote cite="https://www.bbc.co.uk/rd/blog/2021-06-bbc-carbon-footprint-energy-envrionment-sustainability">  
                         The results and comparisons here reveal just how challenging it can be to model complex systems. This is clear from the differences between the Carbon Trust and iPlayer estimates that resulted from alternative assumptions – which are necessary ingredients to any model. However, despite these differences, our results show good accordance with the Carbon Trust study. <strong>Research in this area highlights the value of using robust science to enhance awareness of the carbon impact of TV services. This is essential if we are to reduce our emissions as an industry and would not be possible without the continued collaboration of media organisations and academics.</strong> <em>(Ed. emphasis mine)</em>
                     </blockquote>
                     <cite><Links.EL link={{source:'https://www.bbc.co.uk/rd/blog/2021-06-bbc-carbon-footprint-energy-envrionment-sustainability'}}>The carbon impact of streaming: an update on BBC TV's energy footprint</Links.EL></cite>
                     
+                    <h3>What next?</h3>
+
                     <p>Despite exponential growth in data usage, electricity demand has remained nearly flat because devices, networks, and data centres operate more efficiently year on year. According to <Links.EL link={{source:'https://www.mdpi.com/2078-1547/6/1/117#abstract'}}> Andrae and Edler</Links.EL> this looks set to change. In a best case scenario, ICT will consume 8% of global electricity use by 2030; in a worst case scenario this rises to 21%, with the majority of the increase expected to come from data centres and networks.</p>
                     <p>A counter view from, among others, <Links.EL link={{source:'https://www.sciencedirect.com/science/article/abs/pii/S2542435121002117'}}> Koomey and Masanet</Links.EL>, is that newfound efficiencies will continue to account for increases, and that a proliferation of smaller devices may lead to a fall in demand.</p>
 
-                    <h3>The changing picture</h3>
 
                     <p>The relatively low climate impact of streaming video today is thanks to rapid improvements in the energy efficiency of data centres, networks and devices. But slowing efficiency gains, rebound effects and new demands from emerging technologies, including artificial intelligence (AI), <Links.EL link={{source:'https://www.researchgate.net/publication/323835314_Greening_Trends_in_Energy-Efficiency_of_IoT-based_Heterogeneous_Wireless_Nodes'}}> IoT</Links.EL>, and blockchain, raise increasing concerns about the overall environmental impacts of the sector over the coming decades.</p>
 

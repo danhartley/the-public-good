@@ -95,7 +95,13 @@ $results-color: black;
                 border: .1rem solid $results-color;
             }
         }
+        .widescreen {
+            display: none;
+        }
         @media (min-width:1025px) {       
+            .widescreen {
+                display: initial;
+            }
             & > div {
                 width: calc((100vw - 800px) / 3);
             }
