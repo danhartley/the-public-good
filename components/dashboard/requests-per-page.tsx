@@ -1,4 +1,4 @@
-import CanvasChart from 'pages/dashboard/canvas-chart';
+import CanvasChart from 'components/dashboard/canvas-chart';
 
 import { useEffect, useState, useRef } from 'preact/hooks';
 import { getLocalStorageState } from 'hooks/local-storage';

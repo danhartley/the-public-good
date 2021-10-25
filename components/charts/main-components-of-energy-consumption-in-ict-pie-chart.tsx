@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'preact/hooks';
 
-import CanvasChart from 'pages/dashboard/canvas-chart';
+import CanvasChart from 'components/dashboard/canvas-chart';
 
 import { ChartType } from 'lib/enums';
 
-// import styles from 'pages/dashboard/Dashboard.module.scss';
+// import styles from 'components/dashboard/Dashboard.module.scss';
 
 
 // Across the total chain, consumption (which accounts for consumer devices and home routers) used the largest amount of energy at 94%, 

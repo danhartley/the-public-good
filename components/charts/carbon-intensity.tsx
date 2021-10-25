@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'preact/hooks';
 
-import CanvasChart from 'pages/dashboard/canvas-chart';
+import CanvasChart from 'components/dashboard/canvas-chart';
 import Links from 'components/links/Links';
 
 import { ChartType } from 'lib/enums';
 
-import styles from 'pages/dashboard/Dashboard.module.scss';
+import styles from 'components/dashboard/Dashboard.module.scss';
 
 const CarbonIntensity = () => {
 

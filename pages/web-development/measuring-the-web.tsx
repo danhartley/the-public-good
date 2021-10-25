@@ -2,17 +2,17 @@ import { useEffect, useState, useRef } from 'preact/hooks';
 
 import Layout from 'components/layout/layout';
 import Links from 'components/links/Links';
-import EnergyAndEmissionsTable from 'pages/charts/energy-intensity-and-emissions-table';
-import WebsiteEnergyAndEmissionsTable from 'pages/charts/examples-of-website-energy-and-emissions-table';
-import UKDataOptionsTable from 'pages/charts/examples-of-internet-data-usage-table';
-import PieChartComponentEnergyConsumption from 'pages/charts/main-components-of-energy-consumption-in-ict-pie-chart';
-import MiniBarChart from 'pages/charts/uk-per-capita-data-bar-chart';
+import EnergyAndEmissionsTable from 'components/charts/energy-intensity-and-emissions-table';
+import WebsiteEnergyAndEmissionsTable from 'components/charts/examples-of-website-energy-and-emissions-table';
+import UKDataOptionsTable from 'components/charts/examples-of-internet-data-usage-table';
+import PieChartComponentEnergyConsumption from 'components/charts/main-components-of-energy-consumption-in-ict-pie-chart';
+import MiniBarChart from 'components/charts/uk-per-capita-data-bar-chart';
 import Formula from 'components/tools/formula';
 import Top from 'components/top/top';
 
 import { funcs } from 'components/functions/functions';
 
-import styles from 'pages/dashboard/Dashboard.module.scss';
+import styles from 'components/dashboard/Dashboard.module.scss';
 
 const Output = ({inputs}) => {
 

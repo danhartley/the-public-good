@@ -9,7 +9,7 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 Chart.register(annotationPlugin);
 Chart.register(ChartDataLabels);
 
-import styles from 'pages/dashboard/Dashboard.module.scss';
+import styles from 'components/dashboard/Dashboard.module.scss';
 
   const CanvasChart = ({type, data, plugins, options, scales}) => {
 

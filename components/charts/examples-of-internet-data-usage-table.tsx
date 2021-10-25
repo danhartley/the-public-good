@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
 
-import styles from 'pages/dashboard/Dashboard.module.scss';
+import styles from 'components/dashboard/Dashboard.module.scss';
 
 const UKDataOptionsTable = ({setDataOptionsState}) => {
 

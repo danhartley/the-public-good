@@ -1,4 +1,4 @@
-import CanvasChart from 'pages/dashboard/canvas-chart';
+import CanvasChart from 'components/dashboard/canvas-chart';
 
 import { useEffect, useState, useRef } from 'preact/hooks';
 import { ChartType } from 'lib/enums';
@@ -17,10 +17,8 @@ const BytesPerDeviceAndActivity = ({datasources}) => {
     
     useEffect(() => {
 
-        // console.log(datasources.map(b => b.megabytes));
-
         setData({
-            labels: datasources.map(b => b.megabytes),
+            labels: [...datasources.map(b => b.megabytes)],
             datasets: [
                 {
                     indexAxis: 'y',

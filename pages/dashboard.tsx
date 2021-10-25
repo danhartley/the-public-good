@@ -1,9 +1,9 @@
 import Layout from 'components/layout/layout';
 import Links from 'components/links/Links';
-import BytesPerPage from 'pages/dashboard/bytes-per-page';
-import RequestsPerPage from 'pages/dashboard/requests-per-page';
+import BytesPerPage from 'components/dashboard/bytes-per-page';
+import RequestsPerPage from 'components/dashboard/requests-per-page';
 
-import styles from 'pages/dashboard/Dashboard.module.scss';
+import styles from 'components/dashboard/Dashboard.module.scss';
 
 const Dashboard = () => {
 
