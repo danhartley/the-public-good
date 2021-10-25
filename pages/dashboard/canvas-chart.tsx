@@ -15,7 +15,7 @@ import styles from 'pages/dashboard/Dashboard.module.scss';
 
   const CanvasChart = ({type, data, plugins, options, scales}) => {
 
-    Chart.defaults.font.size = 12;
+    // Chart.defaults.font.size = 12;   
 
     const canvas = useRef<HTMLCanvasElement>(null);
 
