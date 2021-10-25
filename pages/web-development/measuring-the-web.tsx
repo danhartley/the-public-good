@@ -453,7 +453,7 @@ const MeasuringTheWeb = () => {
                                 <Links.EL link={{source:'https://www.greenit.fr/impacts-environnementaux-du-numerique-en-france/'}}>GreenIT - iNUM : impacts environnementaux du numérique en France</Links.EL>
                                 </div>
                             </figcaption>
-                            <PieChartComponentEnergyConsumption model={'greenIT'} />
+                            {/* <PieChartComponentEnergyConsumption model={'greenIT'} /> */}
                         </figure>
                     </p>
 
@@ -467,7 +467,7 @@ const MeasuringTheWeb = () => {
                                 <Links.EL link={{source:'https://www.climatecare.org/resources/news/infographic-carbon-footprint-internet/'}}>climate care - The carbon footprint of the Internet</Links.EL>
                                 </div>
                             </figcaption>
-                            <PieChartComponentEnergyConsumption model={'climateCare'} />
+                            {/* <PieChartComponentEnergyConsumption model={'climateCare'} /> */}
                         </figure>
                     </p>
 
