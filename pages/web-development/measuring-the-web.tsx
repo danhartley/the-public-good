@@ -377,7 +377,7 @@ const MeasuringTheWeb = () => {
                     <p>
                         <div>
                             <div>
-                                <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualElectricty }, { source:'Internet', value: (inputs.bytes * inputs.energy) } ]} config={{colours:['#CCBE9F','#ABC3C9'], units:'kWhs'}} />
+                                {/* <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualElectricty }, { source:'Internet', value: (inputs.bytes * inputs.energy) } ]} config={{colours:['#CCBE9F','#ABC3C9'], units:'kWhs'}} /> */}
                             </div>
                         </div>
                     </p>
@@ -391,7 +391,7 @@ const MeasuringTheWeb = () => {
                     <p>
                         <div>
                             <div>
-                                <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualCarbonFootprint }, { source:'Internet', value: ((inputs.bytes * inputs.energy * inputs.emissions)/1000000).toFixed(2) } ]}  config={{colours:['#CCBE9F','#ABC3C9'], units:'Tonnes'}} />
+                                {/* <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualCarbonFootprint }, { source:'Internet', value: ((inputs.bytes * inputs.energy * inputs.emissions)/1000000).toFixed(2) } ]}  config={{colours:['#CCBE9F','#ABC3C9'], units:'Tonnes'}} /> */}
                             </div>
                         </div>
                     </p>
