@@ -273,7 +273,7 @@ const MeasuringTheWeb = () => {
                             <div>The <strong>e</strong> in <Formula>CO2</Formula><strong>e</strong> stands for <strong>equivalent</strong>, and is used to compare - and aggregate - emissions from different greenhouse gases (GHGs). Annual global <Formula>CO2</Formula> emissions are 36.44Gt (2019) but <Formula>CO2</Formula><strong>e</strong> (including emissions from other GHGs such as methane and nitrous oxide) are over <Links.EL link={{source:'https://ourworldindata.org/greenhouse-gas-emissions'}}>50Gt</Links.EL> - 50 gigatonnes or 50 billion tonnes.</div>
                         </aside>
                     </p>               
-                    <h2 id="inputs">Measuring electricity & emissions</h2>
+                    <h3 id="inputs">Measuring electricity & emissions</h3>
                     <p>
                         There are many online tools and APIs for measuring the carbon emissions associated with Internet data. I maintain a list on the <Links.IL link={{source:'sustainability'}}>sustainability</Links.IL> page.                         
                     </p>
