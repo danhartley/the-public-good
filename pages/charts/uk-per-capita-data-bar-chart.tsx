@@ -96,7 +96,7 @@ const MiniPieChart = ({energyUses}) => {
 
 const MiniBarChart = ({dataSources, config}) => {
 
-    if(isNaN(dataSources.find(ds => ds.source === 'Internet').value)) return;
+    if(!dataSources || isNaN(dataSources.find(ds => ds.source === 'Internet').value)) return;
     // https://venngage.com/blog/color-blind-friendly-palette/
     const elegant = [
         '#CCBE9F',
