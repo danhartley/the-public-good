@@ -19,7 +19,7 @@ const Output = ({inputs}) => {
     const calculatedEnergyValue = useRef<HTMLSpanElement>(null);
     const calculatedEmissionsValue = useRef<HTMLSpanElement>(null);
 
-    let fixed = funcs.fixedPlaces(inputs.bytes * inputs.energy);
+    const fixed = funcs.fixedPlaces(inputs.bytes * inputs.energy);
 
     useEffect(() => {
         calculatedEnergyValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * 10000) / 10000).toFixed(fixed).toLocaleString();
@@ -211,7 +211,7 @@ const MeasuringTheWeb = () => {
             selectedEnergy.current.value = inputs.energy;
             selectedCarbon.current.value = inputs.emissions;            
 
-            let fixed = funcs.fixedPlaces(inputs.bytes * inputs.energy);
+            const fixed = funcs.fixedPlaces(inputs.bytes * inputs.energy);
             
             calculatedCiscoPerUserEnergyValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * 10000) / 10000).toFixed(fixed).toLocaleString();
             calculatedCiscoPerUserGrammesValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * inputs.emissions * 100) / 100).toLocaleString();

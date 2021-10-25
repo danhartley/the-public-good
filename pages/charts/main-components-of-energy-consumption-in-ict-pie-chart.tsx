@@ -54,7 +54,7 @@ const PieChartComponentEnergyConsumption = ({model}) => {
         },
     ];
 
-    let components = model === 'climateCare' ? climateCare : greenIT;
+    const components = model === 'climateCare' ? climateCare : greenIT;
 
     // https://venngage.com/blog/color-blind-friendly-palette/
     const elegant = [
@@ -100,7 +100,7 @@ const PieChartComponentEnergyConsumption = ({model}) => {
                     }
                 },
                 color: function(context) {
-                    var value = context.dataset.data[context.dataIndex];
+                    const value = context.dataset.data[context.dataIndex];
                     return (value === 34 || value === 46) ? 'rgb(255,255,255)' : 'rgb(55,55,55)'
                 }                
               },

@@ -56,7 +56,7 @@ const MiniPieChart = ({energyUses}) => {
                     }
                 },
                 color: function(context) {
-                    var value = context.dataset.data[context.dataIndex];
+                    const value = context.dataset.data[context.dataIndex];
                     return 'rgb(55,55,55)'
                 }                
               },
