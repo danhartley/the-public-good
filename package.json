@@ -24,7 +24,7 @@
   "dependencies": {
     "@next/bundle-analyzer": "^10.2.0",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
-    "@typescript-eslint/parser": "^4.29.1",    
+    "@typescript-eslint/parser": "^4.29.1",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "next-compose-plugins": "^2.2.1",
@@ -41,8 +41,8 @@
     "@types/react": "^17.0.2",
     "chart.js": "^3.5.1",
     "chartjs-plugin-annotation": "^1.0.2",
-    "chartjs-plugin-labels": "^1.1.0",
     "chartjs-plugin-datalabels": "^2.0.0",
+    "chartjs-plugin-labels": "^1.1.0",
     "cypress": "^8.3.1",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-functional": "^3.6.0",
@@ -58,7 +58,7 @@
     "react-chartjs-2": "^3.0.5",
     "size-limit": "^4.10.2",
     "ts-jest": "^26.5.2",
-    "typescript": "^4.2.2",
+    "typescript": "^4.4.4",
     "webpack": "^4.46.0"
   }
 }

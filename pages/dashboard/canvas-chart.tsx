@@ -9,15 +9,9 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 Chart.register(annotationPlugin);
 Chart.register(ChartDataLabels);
 
-// import { useRef } from 'preact/hooks';
-
 import styles from 'pages/dashboard/Dashboard.module.scss';
 
   const CanvasChart = ({type, data, plugins, options, scales}) => {
-
-    // Chart.defaults.font.size = 12;   
-
-    // const canvas = useRef<HTMLCanvasElement>(null);
 
     const config = {        
         type: type,
