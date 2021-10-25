@@ -180,7 +180,7 @@ const MeasuringTheWeb = () => {
         },
     ];
 
-    const [inputs, setInputs] = useState({ bytes: 1 } as any); // ad type!
+    const [inputs, setInputs] = useState({ bytes: 1, energy: 1, emissions: 1 } as any); // ad type!
     const [showOutputs, setShowOutputs] = useState(false);
 
     const setEnergyAndEmissionsState = updatedInputs => {                
