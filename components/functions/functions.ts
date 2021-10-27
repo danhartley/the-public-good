@@ -41,8 +41,8 @@ const fixedPlaces = value => {
 };
 
 const multiplyInputs = (args: Array<number>) => {
-    let total:number = args.reduce((x,y) => x * y);    
-    const fixed = funcs.fixedPlaces(total);
+    const total = args.reduce((x,y) => x * y);    
+    const fixed = fixedPlaces(total);
     return total;
 };
 
