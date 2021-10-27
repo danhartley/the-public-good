@@ -52,7 +52,7 @@ const RequestsPerPage = () => {
                             min: 0,
                             max: 100,
                             ticks: {                                
-                                stepSize: 10
+                                stepSize: 10,
                             },
                             title: {
                                 display: true,

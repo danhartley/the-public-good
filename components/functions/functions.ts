@@ -30,7 +30,7 @@ const sessionData = window => {
 
 const fixedPlaces = value => {
     
-    let fixed = 1;
+    let fixed:number = 1;
 
     if(value <= 1) fixed = 1;
     if(value <= 0.1) fixed = 2;
@@ -40,7 +40,14 @@ const fixedPlaces = value => {
     return fixed;
 };
 
+const multiplyInputs = (args: Array<number>) => {
+    let total:number = args.reduce((x,y) => x * y);    
+    const fixed = funcs.fixedPlaces(total);
+    return total;
+};
+
 export const funcs = {
     sessionData,
-    fixedPlaces
+    fixedPlaces,
+    multiplyInputs
 }

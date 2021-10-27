@@ -62,7 +62,7 @@ const MiniPieChart = ({energyUses}) => {
               },
             },
             formatter: function(value, context) {
-                return `${value.toFixed(2)}%`;
+                return `${funcs.multiplyInputs([value])}%`;
             }
         }      
       });
@@ -115,19 +115,14 @@ const MiniBarChart = ({dataSources, config}) => {
         setData(
             {
                 labels: [
-                    ...dataSources.map(d => `${d.source}`)
+                    ...dataSources.map(d => `${d.source}      `)
                 ],
                 label: 'bar',
                 datasets: [
                     {
                         indexAxis: 'y',
                         label: ` ${config.units} `,
-                        plugins: {
-                            legend: {
-                            position: 'right',
-                            },
-                        },
-                        data: dataSources.map(d => parseFloat(d.value).toFixed(funcs.fixedPlaces(d.value))),
+                        data: dataSources.map(d => funcs.multiplyInputs([d.value])),
                         backgroundColor: config.colours,
                         barPercentage: 1,
                         minBarLength: 10
@@ -145,8 +140,12 @@ const MiniBarChart = ({dataSources, config}) => {
                     display: true,
                     text: 'kWh',
                     padding: { top: 12 }
-                },
-                offset: false,
+                }                                
+            },
+            y: {
+                ticks: {
+                    padding: 100
+                }
             }
         });
     

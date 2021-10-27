@@ -19,11 +19,9 @@ const Output = ({inputs}) => {
     const calculatedEnergyValue = useRef<HTMLSpanElement>(null);
     const calculatedEmissionsValue = useRef<HTMLSpanElement>(null);
 
-    const fixed = funcs.fixedPlaces(inputs.bytes * inputs.energy);
-
     useEffect(() => {
-        calculatedEnergyValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * 10000) / 10000).toFixed(fixed).toLocaleString();
-        calculatedEmissionsValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * inputs.emissions * 100) / 100).toLocaleString();
+        calculatedEnergyValue.current.innerText = funcs.multiplyInputs([inputs.bytes,inputs.energy]).toLocaleString();
+        calculatedEmissionsValue.current.innerText = funcs.multiplyInputs([inputs.bytes, inputs.energy, inputs.emissions]).toLocaleString();
     });
     
     return (
@@ -211,11 +209,9 @@ const MeasuringTheWeb = () => {
             selectedEnergy.current.value = inputs.energy;
             selectedCarbon.current.value = inputs.emissions;            
 
-            const fixed = funcs.fixedPlaces(inputs.bytes * inputs.energy);
-            
-            calculatedCiscoPerUserEnergyValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * 10000) / 10000).toFixed(fixed).toLocaleString();
-            calculatedCiscoPerUserGrammesValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * inputs.emissions * 100) / 100).toLocaleString();
-            calculatedCiscoPerUserTonnesValue.current.innerText = (Math.round(inputs.bytes * inputs.energy * inputs.emissions * 100) / 100 / 1000 / 1000).toLocaleString();
+            calculatedCiscoPerUserEnergyValue.current.innerText = funcs.multiplyInputs([inputs.bytes, inputs.energy]).toLocaleString();
+            calculatedCiscoPerUserGrammesValue.current.innerText = funcs.multiplyInputs([inputs.bytes, inputs.energy, inputs.emissions]).toLocaleString();
+            calculatedCiscoPerUserTonnesValue.current.innerText = funcs.multiplyInputs([inputs.bytes, inputs.energy, inputs.emissions, .001]).toLocaleString();            
         }
 
     }, [inputs, showOutputs]);
@@ -248,7 +244,7 @@ const MeasuringTheWeb = () => {
 
     return (
         <div class={styles.wrapper}>
-            <Layout rt="7 to 8" header={'Measuring the web'} title={'Measuring the web'} description={'Measuring page weight, the impact of streaming video, energy intensity and carbon emissions as applied to the Internet in numbers and units.'}>
+            <Layout rt="7 to 8" header={'Measuring the web'} title={'Measuring the web'} description={'Measuring page weight, the impact of streaming video, energy intensity and carbon emissions as applied to the Internet in numbers and units.'} image="https://live.staticflickr.com/65535/51239910633_a100a905a3_c_d.jpg">
                 <section>
                     <h2>In order to build more sustainable websites and apps, we first need to measure the energy they use, and the carbon emissions for which they are responsible.</h2>
                     <p>The CO<span class={styles.sub}>2</span> emissions associated with digital products and services depends on many factors and varies depending on which are taken into account.</p>
@@ -377,7 +373,7 @@ const MeasuringTheWeb = () => {
                     <p>
                         <div>
                             <div>
-                                <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualElectricty }, { source:'Internet', value: (inputs.bytes * inputs.energy) } ]} config={{colours:['#CCBE9F','#ABC3C9'], units:'kWhs'}} />
+                                <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualElectricty }, { source:'Internet', value: funcs.multiplyInputs([inputs.bytes, inputs.energy]) } ]} config={{colours:['#CCBE9F','#ABC3C9'], units:'kWhs'}} />
                             </div>
                         </div>
                     </p>
@@ -391,7 +387,7 @@ const MeasuringTheWeb = () => {
                     <p>
                         <div>
                             <div>
-                                <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualCarbonFootprint }, { source:'Internet', value: ((inputs.bytes * inputs.energy * inputs.emissions)/1000000).toFixed(2) } ]}  config={{colours:['#CCBE9F','#ABC3C9'], units:'Tonnes'}} />
+                                <MiniBarChart dataSources={[ { source:'Total', value: averageAnnualCarbonFootprint }, { source:'Internet', value: funcs.multiplyInputs([inputs.bytes, inputs.energy, inputs.emissions, .000001]) } ]}  config={{colours:['#CCBE9F','#ABC3C9'], units:'Tonnes'}} />
                             </div>
                         </div>
                     </p>

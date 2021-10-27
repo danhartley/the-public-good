@@ -60,6 +60,14 @@ describe('decimal places to display', () => {
     });
 
     it('should return fixed value of 0 for value greater 1', () => {
-        expect(funcs.fixedPlaces(1.1)).toBe(0);
+        expect(funcs.fixedPlaces(1.1)).toBe(1);
+    });
+});
+
+describe('energy and emissions values', () => {
+    it('should return combined data and energy value with approproate rounding', () => {
+        expect(funcs.multiplyInputs([1, 1.8])).toBe(1.8);
+        expect(funcs.multiplyInputs([1.5, 1.8])).toBe(2.7);
+        expect(funcs.multiplyInputs([1, 1.8, 475])).toBe(855);
     });
 });
