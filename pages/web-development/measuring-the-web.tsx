@@ -244,7 +244,7 @@ const MeasuringTheWeb = () => {
 
     return (
         <div class={styles.wrapper}>
-            <Layout rt="7 to 8" header={'Measuring the web'} title={'Measuring the web'} description={'Measuring page weight, the impact of streaming video, energy intensity and carbon emissions as applied to the Internet in numbers and units.'} image="https://live.staticflickr.com/65535/51239910633_a100a905a3_c_d.jpg">
+            <Layout rt="7 to 8" header={'Measuring the web'} title={'Measuring the web'} description={'In order to build more sustainable websites and apps, we first need to measure the energy they use, and the carbon emissions for which they are responsible.'} image="https://live.staticflickr.com/65535/51239910633_a100a905a3_c_d.jpg">
                 <section>
                     <h2>In order to build more sustainable websites and apps, we first need to measure the energy they use, and the carbon emissions for which they are responsible.</h2>
                     <p>The CO<span class={styles.sub}>2</span> emissions associated with digital products and services depends on many factors and varies depending on which are taken into account.</p>
