@@ -24,19 +24,29 @@ import styles from 'components/dashboard/Dashboard.module.scss';
 
     return (
         
+        // required: proper accessibility solution e.g. tables 
+        // https://www.w3.org/WAI/PF/HTML/wiki/Canvas_Accessibility_Use_Cases
+        // https://pauljadam.com/demos/canvas.html
+
         type === ChartType.Line 
-            ? <div class={styles.canvas}><Line data={data} options={config} /></div>
+            ? <div class={styles.canvas}>
+                <Line data={data} options={config} >
+                    <div>Hello Fallback World</div>
+                </Line></div>
             : type === ChartType.Bar
-                ? <div class={styles.canvas}><Bar data={data} options={config} /></div>
+                ? <div class={styles.canvas}>
+                    <Bar data={data} options={config}>
+                        <div>Hello Fallback World</div>
+                    </Bar></div>
                 : type === ChartType.Doughnut
                     ? <div class={styles.canvas}>
                         <Doughnut data={data} options={config}>
-                        <p>Hello Fallback World</p>
+                            <div>Hello Fallback World</div>
                         </Doughnut>
                       </div>
                     : <div class={styles.canvas}>
                         <Bubble data={data} options={config}>
-                            <p>Hello Fallback World</p>
+                            <div>Hello Fallback World</div>
                         </Bubble>
                       </div>                
     );

@@ -126,7 +126,7 @@ const PieChartComponentEnergyConsumption = ({model}) => {
     return (
         <>
         { data === null 
-            ? <div>No do!</div>
+            ? <div>There is either no data, or you have disabled JavaScript which is necessary to view charts on this site.</div>
             : <CanvasChart type={type} data={data} plugins={plugins} options={options} scales={null} />            
         }
         </>

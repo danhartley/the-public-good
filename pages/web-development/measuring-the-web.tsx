@@ -494,9 +494,10 @@ const MeasuringTheWeb = () => {
                 </section>
                 
                 <section>
-                <h2>References</h2>
-                <Links.ExternalLinksList links={externalLinks} />
-            </section>
+                    <h2>References</h2>
+                    <Links.ExternalLinksList links={externalLinks} />
+                </section>
+                <Links.RelatedLinks links={[{value:'sustainability',text:'Sustainability'}, {value:'web-development/sustainable-practices',text:'Sustainable practices'}]}></Links.RelatedLinks>
             </Layout>
         </div>
     )
