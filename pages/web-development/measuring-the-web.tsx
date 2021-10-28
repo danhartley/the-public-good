@@ -137,6 +137,10 @@ const MeasuringTheWeb = () => {
             "source": "https://httparchive.org/reports/page-weight"
         },
         {
+            "name": "A demand curve for compute | Chris Adams | The Green Web Foundation",
+            "source": "https://www.thegreenwebfoundation.org/news/a-demand-curve-for-compute/"
+        },
+        {
             "name": "New perspectives on internet electricity use in 2030 | Anders S.G. Andrae (PDF)",
             "source": "https://www.researchgate.net/profile/Anders-Andrae/publication/342643762_New_perspectives_on_internet_electricity_use_in_2030/links/5efe34a3299bf18816fb82eb/New-perspectives-on-internet-electricity-use-in-2030.pdf"
         },
@@ -330,7 +334,9 @@ const MeasuringTheWeb = () => {
                     <cite><Links.EL link={{source:'https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines'}}>George Kamiya | IEA</Links.EL> </cite>
 
                     <p>
-                    Chris Adams' <Links.EL link={{source:'https://www.thegreenwebfoundation.org/news/understanding-trends-at-the-layer-below-the-internet-stack/'}}> introduction to marginal costs, energy grids, and computational demands</Links.EL> is well worth reading if you want to examine your development stack in detail.
+                        <div>
+                        Chris Adams' <Links.EL link={{source:'https://www.thegreenwebfoundation.org/news/understanding-trends-at-the-layer-below-the-internet-stack/'}}> introduction to marginal costs, energy grids, and computational demands</Links.EL> is well worth reading if you want to examine your development stack in detail.
+                        </div>
                     </p>
 
                     <p>
