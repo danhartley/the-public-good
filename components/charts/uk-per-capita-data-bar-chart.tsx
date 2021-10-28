@@ -124,8 +124,8 @@ const MiniBarChart = ({dataSources, config}) => {
                         label: ` ${config.units} `,
                         data: dataSources.map(d => funcs.multiplyInputs([d.value])),
                         backgroundColor: config.colours,
-                        barPercentage: 1,
-                        minBarLength: 10
+                        // barPercentage: 1,
+                        // minBarLength: 10
                     }
                 ]
             }

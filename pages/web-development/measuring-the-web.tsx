@@ -430,7 +430,7 @@ const MeasuringTheWeb = () => {
                     <h3>What next?</h3>
 
                     <p>Despite exponential growth in data usage, electricity demand has remained nearly flat because devices, networks, and data centres operate more efficiently year on year.</p>
-                    <p>According to <Links.EL link={{source:'https://www.mdpi.com/2078-1547/6/1/117#abstract'}}> Andrae and Edler</Links.EL> this looks set to change. In a best case scenario, ICT will consume 8% of global electricity use by 2030; in a worst case scenario this rises to 21%, with the majority of the increase expected to come from data centres and networks.</p>
+                    <p>According to <Links.EL link={{source:'https://www.mdpi.com/2078-1547/6/1/117#abstract'}}> Andrae and Edler</Links.EL> this looks set to change. In a best case scenario, ICT (Information and Communication Technology) will consume 8% of global electricity use by 2030; in a worst case scenario this rises to 21%, with the majority of the increase expected to come from data centres and networks.</p>
                     <p>A counter view from, among others, <Links.EL link={{source:'https://www.sciencedirect.com/science/article/abs/pii/S2542435121002117'}}> Koomey and Masanet</Links.EL>, is that newfound efficiencies will continue to account for increases, and that a proliferation of smaller devices may lead to a fall in demand.</p>
 
 
