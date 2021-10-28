@@ -47,6 +47,14 @@ const EnergyAndEmissionsTable = ({setEnergyAndEmissionsState}) => {
             emissions: 26,
             selected: false
         },
+        {
+            id: 6,
+            name: 'Sustainable Web Design',
+            link: 'https://sustainablewebdesign.org/calculating-digital-emissions/',
+            energy: 0.81,
+            emissions: 475,
+            selected: false
+        },
         // {
         //     id: 4,
         //     name: 'marmelab',

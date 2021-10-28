@@ -180,6 +180,10 @@ const MeasuringTheWeb = () => {
             "name": "Argos: Comparing the Energy Consumption of Two Web Stacks",
             "source": "https://marmelab.com/blog/2021/03/04/argos-comparing-the-energy-consumption-of-two-web-stacks.html"
         },
+        {
+            "name": "Calculating Digital Emissions | Sustainable Web Design",
+            "source": "https://sustainablewebdesign.org/calculating-digital-emissions/"
+        },
     ];
 
     const [inputs, setInputs] = useState({ bytes: 1, energy: 1, emissions: 1 } as any); // ad type!
