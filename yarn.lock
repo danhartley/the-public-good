@@ -6312,6 +6312,11 @@
   "resolved" "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz"
   "version" "2.0.2"
 
+"resize-observer@^1.0.2":
+  "integrity" "sha512-X0lHFNsxItpBRIRsdwOTkl/VguTaLGx7Gz9xoTGix9ObBN3jRYq9J/rSIuYDrey8AdU3IkfgIMpCeVSEW1QS0Q=="
+  "resolved" "https://registry.npmjs.org/resize-observer/-/resize-observer-1.0.2.tgz"
+  "version" "1.0.2"
+
 "resolve-cwd@^3.0.0":
   "integrity" "sha512-OrZaX2Mb+rJCpH/6CpSqt9xFVpN++x01XnN2ie9g6P5/3xelLAkXWVADpdz1IHD/KFfEXyE6V0U01OQ3UO2rEg=="
   "resolved" "https://registry.npmjs.org/resolve-cwd/-/resolve-cwd-3.0.0.tgz"

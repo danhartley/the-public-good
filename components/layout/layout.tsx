@@ -10,11 +10,17 @@ import { PageWeightReport } from 'components/metrics/page-weight-report';
 import Links from 'components/links/Links';
 import styles from 'components/layout/Layout.module.scss';
 
+import { install } from "resize-observer";
+
+
+
 const SiteMetrics = ({title}) => {
 
     const [metrics, setMetrics] = useLocalStorageState({ key: 'metrics', defaultValue: { page: { title: '', bytes: 0, requests: 0 }, cumulativeBytes: 0, cumulativeRequests: 0, pages: [] } as unknown as boolean });
     
     useEffect(() => {
+
+        install();
 
         const {transferSize: _totalBytes, requests: _requests } = funcs.sessionData(window);
 
