@@ -110,6 +110,8 @@
     https://docs.github.com/en/actions/quickstart
 
   25 Install chart.js and react-chartjs-2
+  26 The issue is most likely that the version of Safari doesn't support ResizeObserver. It needs to be at least 13.1 on desktop and 13.4 on iOS.for:
+     https://github.com/nerdyman/react-compare-slider/issues/27 
 
 ---------- below this line is the original README.md ----------
 
