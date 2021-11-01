@@ -11,7 +11,7 @@ const EnergyAndEmissionsTable = ({setEnergyAndEmissionsState}) => {
             id: 1,
             name: 'Website Carbon (grey power)',
             link: 'https://www.websitecarbon.com/how-does-it-work/',
-            energy: 1.8,
+            energy: 0.81,
             emissions: 475,
             selected: true
         },
@@ -27,7 +27,7 @@ const EnergyAndEmissionsTable = ({setEnergyAndEmissionsState}) => {
             id: 3,
             name: 'Website Carbon (green power)',
             link: 'https://www.websitecarbon.com/how-does-it-work/',
-            energy: 1.8,
+            energy: 0.81,
             emissions: 33.4,
             selected: false
         },
@@ -47,14 +47,14 @@ const EnergyAndEmissionsTable = ({setEnergyAndEmissionsState}) => {
             emissions: 26,
             selected: false
         },
-        {
-            id: 6,
-            name: 'Sustainable Web Design',
-            link: 'https://sustainablewebdesign.org/calculating-digital-emissions/',
-            energy: 0.81,
-            emissions: 475,
-            selected: false
-        },
+        // {
+        //     id: 6,
+        //     name: 'Sustainable Web Design',
+        //     link: 'https://sustainablewebdesign.org/calculating-digital-emissions/',
+        //     energy: 0.81,
+        //     emissions: 475,
+        //     selected: false
+        // },
         // {
         //     id: 4,
         //     name: 'marmelab',
