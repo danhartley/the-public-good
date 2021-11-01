@@ -345,7 +345,7 @@ const MeasuringTheWeb = () => {
 
                     <p>
                         <div>
-                            <Links.EL link={{source:'https://www.wholegraindigital.com/blog/website-energy-consumption/'}}>Tom Greenwood</Links.EL> describes the problem of where to set emissions' boundaries, and explains how the <Links.EL link={{source:'https://www.websitecarbon.com/'}}>website carbon calculator</Links.EL> measures a site's emissions. Tom uses an energy intensity of 1.8 kWhs in his article but I understand the website carbon calculator is now using a value of 0.81 kWhs in line with <Links.EL link={{source:'https://sustainablewebdesign.org/calculating-digital-emissions/'}}>Sustainable Web Design</Links.EL>. 
+                            <Links.EL link={{source:'https://www.wholegraindigital.com/blog/website-energy-consumption/'}}>Tom Greenwood</Links.EL> describes the problem of where to set emissions' boundaries, and explains how the <Links.EL link={{source:'https://www.websitecarbon.com/'}}>website carbon calculator</Links.EL> measures a site's emissions. Tom uses a value for emissions intensity of 1.8 kWh/GB in his article but I understand the website carbon calculator is now using a value of 0.81 kWh/GB in line with <Links.EL link={{source:'https://sustainablewebdesign.org/calculating-digital-emissions/'}}>Sustainable Web Design</Links.EL>. 
                         </div>
                     </p>
 
