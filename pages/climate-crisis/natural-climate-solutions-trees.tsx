@@ -1,6 +1,7 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Formula from 'components/tools/formula';
+import Published from 'components/published/published';
 import styles from 'pages/pages.module.scss';
 import Accordion from 'components/accordion/accordion';
 import Top from 'components/top/top';   
@@ -440,12 +441,17 @@ const NCSPartOne = () => {
                 <cite><Links.EL link={{source:'https://ourworldindata.org/deforestation'}}>Deforestation and Forest Loss | Our World in Data</Links.EL> </cite>
                 <p>Many solutions will be required to curb and offset our carbon dioxide emissions. Maintaining and restoring the world's existing forests preserves natural sinks upon which we are heavily dependent for reducing carbon dioxide in the atmosphere. They also provide a range of additional services far beyond one dimensional technological fixes. Tropical forests alone <Links.EL link={{source:'https://www.pnas.org/content/114/23/5775'}}>support two thirds of species</Links.EL> on less than 10% of the Earth's land surface.</p>
                 <p>Technology is being used to map and record natural resources including forests. A record of what exists and the ability to monitor the effects of climate change and land use change is key for assessing the value of the natural world, and preserving it.</p>
+                <p>There are good reasons to plant trees where there were none - afforestation - when doing so is not at the expense of healthy ecosystems, and for planting native trees, or allowing natural rewilding, where they have been lost - reforestation. In addition to planting trees, existing forests must be left intact.</p>
+                <p>The ecosystems which trees foster are critical for life, and together with other natural climate solutions such as peatland and the three main marine ecosystems - seagrass, mangroves and salt marshes - they are integral to conserving biodiversity, human health and mitigating negative aspects of climate change.</p>
                 <Top></Top>
             </section>
             <section>   
                 <h2>References</h2>
                 <Links.ExternalLinksList links={references} />
             </section>
+
+            <Published strDate='Thu 24 June 2021' edited={[{strDate:'Tue 9 Nov 2021'}]}></Published>
+
             <Links.RelatedLinks links={[{value:'climate-crisis/carbon-element-of-life',text:'Carbon - element of life'}, {value:'climate-crisis/facts',text:'Facts'}]}></Links.RelatedLinks>
         </Layout>
     )
