@@ -48,8 +48,10 @@ const Change = () => {
 
                 <p>Commitments have not been honoured.
                     <div class={styles.quote}>
-                    After a year disrupted by the Covid-19 pandemic, nations representing only around 28% of global emissions registered new or updated “nationally determined contributions” (NDCs) on the UN’s official registry by the end of the year. Some big emitters did register their NDCs in time, including the UK and EU. But major absences included the US, India and China.
-                    <Links.EL link={{source:'https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition'}}>Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?</Links.EL>
+                        After a year disrupted by the Covid-19 pandemic, nations representing only around 28% of global emissions registered new or updated “nationally determined contributions” (NDCs) on the UN’s official registry by the end of the year. Some big emitters did register their NDCs in time, including the UK and EU. But major absences included the US, India and China.
+                    <div>
+                        <Links.EL link={{source:'https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition'}}>Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?</Links.EL>
+                    </div>
                     </div>
                 </p>
 
@@ -128,7 +130,7 @@ const Change = () => {
 
                 <p>Business as usual is a vague term for, unless it is merely a proxy for cynical profiteering, it assumes stasis, whereas ideas, companies, plans, people, and markets are constantly in flux. What we are contemplating is novel, and extraordinary, arguably counter to our energy demands, because we wish to replace our existing sources with others that are, at least in the short term, less efficient. This problem is not intractable, but resistance to change comes not only from protectionism and self interest, but from practical considerations that encompass physics, technology, time, resources, knowledge and ability.</p>
                     
-                <p>We can expect change to be unpredictable, jagged and with effects that are unequally distributed. A counter argument can be made that unprecedented action is required, and that more equality will help us to make the right decisions, for by accounting for everyone, on equal terms, rich and powerful countries will no longer be able to export their responsibility, or turn a blind eye to the effects of consumption which are realised elsewhere, and thereby come to accept solutions for living that are balanced and manageable over time.</p>
+                <p>We can expect change to be unpredictable, jagged and with effects that are unequally distributed. A counter argument can be made that unprecedented action is required, and that greater equity will help us to make the right decisions, for by accounting for everyone, on equal terms, rich and powerful countries will no longer be able to export their responsibility, or turn a blind eye to the effects of consumption which are realised elsewhere, and thereby come to accept solutions for living that are balanced and manageable over time.</p>
                 
                 <p>All other life on the planet has reason to see our species as a single, homogenous threat, and may regard our internecine problems as irrelevant when faced with their own unprecedented extinction. As a species we have done nothing for the planet, but it is possible that one day intelligent, disruptive humanity may prove its worth by, for example, preventing an asteroid from hitting the earth.</p>
 
