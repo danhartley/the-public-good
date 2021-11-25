@@ -2,7 +2,8 @@
 
 $results-color: black;
 
-.wrapper { 
+@mixin wrapper {
+     
     main {
         max-width: 800px !important;
     }
@@ -148,6 +149,28 @@ $results-color: black;
     }
 }
 
+.wrapper {
+    @include wrapper();
+}
+
+.wideWrapper {
+    @include wrapper();
+    main {
+        max-width: calc(60vw) !important;
+        h1 {
+            font-size: calc(1rem + 1.25vw);
+        }
+        h2 {
+            font-size: calc(1rem + .5vw);
+            margin: calc(.5rem + .25vw) 0 calc(.5rem + .25vw) 0;
+        }
+    }
+    section {
+        margin: 0 0 1rem 0;
+        padding: 0 0 2rem 0;
+    }
+}
+
 .dashboard {
     margin: 2rem auto;
 }
@@ -186,4 +209,71 @@ $results-color: black;
         display: inline;
     }
 }
+
+.work {    
+
+    table {
+        td:nth-child(1) {
+            font-style: italic;
+        }
+        td:nth-child(1), td:nth-child(2) {
+            white-space: nowrap;
+        }
+        td:nth-child(2), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+            font-size: .8rem;
+        }
+        td span {
+            cursor: pointer;
+            padding-bottom: .25rem;
+            border-bottom: .1rem solid transparent;
+            &:hover {                
+                border-bottom: .1rem solid darkgray;
+            }
+        }
+        td.showBlurb {
+            white-space: pre-wrap;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-weight: bold;
+        }
+        td.hideBlurb {
+            white-space: pre-wrap;
+            display: none;
+        }
+    }
+}
+
+.skills {
+    margin: 0 auto 2rem auto;    
+    width: calc(80vw);
+    @media (min-width:1025px) {       
+        width: calc(100vw/2);    
+    }
+}
+
+
+@media print {    
+    .wideWrapper {
+        header, footer, nav, .download {
+            display: none;
+        }
+        main {
+            max-width: 800px !important;
+        }        
+    }
+}
     
+@media screen and (max-width: 600px) {
+    .wideWrapper {
+        table thead {
+            display: none;
+          }
+          table td {
+            display: flex;
+            height: initial;
+          }
+          td:nth-child(1) {
+              font-weight: bold;
+          }
+    }
+}

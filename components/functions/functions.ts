@@ -44,8 +44,24 @@ const multiplyInputs = (args: Array<number>) => {
     return args.reduce((x,y) => x * y);
 };
 
-export const funcs = {
+const sortBy = (arr, prop, dir = 'asc') => {
+    return dir === 'asc' 
+        ? arr.sort((a, b) => parseFloat(a[prop]) - parseFloat(b[prop]))
+        : arr.sort((a, b) => parseFloat(b[prop]) - parseFloat(a[prop]));  
+};
+
+const download = (element, content, fileName, contentType) => {
+    const file = new Blob([content], {type: contentType});
+    element.href = URL.createObjectURL(file);
+    element.download = fileName;
+};
+
+const funcs = {
     sessionData,
     fixedPlaces,
-    multiplyInputs
-}
+    multiplyInputs,
+    sortBy,
+    download
+};
+
+export default funcs;

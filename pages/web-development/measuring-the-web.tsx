@@ -10,7 +10,7 @@ import MiniBarChart from 'components/charts/uk-per-capita-data-bar-chart';
 import Formula from 'components/tools/formula';
 import Top from 'components/top/top';
 
-import { funcs } from 'components/functions/functions';
+import funcs from 'components/functions/functions';
 
 import styles from 'components/dashboard/Dashboard.module.scss';
 

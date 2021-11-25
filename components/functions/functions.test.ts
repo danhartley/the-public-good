@@ -1,4 +1,4 @@
-import { funcs } from 'components/functions/functions';
+import funcs from 'components/functions/functions';
 
 describe('page weight tests', () => {
     

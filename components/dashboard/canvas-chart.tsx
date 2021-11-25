@@ -16,10 +16,13 @@ import styles from 'components/dashboard/Dashboard.module.scss';
     const config = {        
         type: type,
         data: data, 
-        options: options,                    
+        options: options, 
+        plugins: true
     } as any;
 
-    if(plugins) config.plugins = plugins;
+    console.log(plugins)
+
+    if(plugins === "false") config.plugins = false;
     if(scales) config.scales = scales;
 
     return (

@@ -6,7 +6,7 @@ import { ChartType } from 'lib/enums';
 
 import styles from 'components/dashboard/Dashboard.module.scss';
 
-import { funcs } from 'components/functions/functions';
+import funcs from 'components/functions/functions';
 
 const MiniPieChart = ({energyUses}) => {
 

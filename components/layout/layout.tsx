@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef } from 'preact/hooks';
 import { useRouter } from 'next/router';
-import { funcs } from 'components/functions/functions';
+import funcs from 'components/functions/functions';
 import { useLocalStorageState } from 'hooks/local-storage';
 
 import Link from 'next/link';
@@ -59,7 +59,9 @@ const Layout = ({
   description = 'The Public Good',
   image = 'https://inaturalist-open-data.s3.amazonaws.com/photos/97465767/medium.jpeg?1601194277',
   header = null,
-  rt = ''
+  rt = '',
+  main = 'The Public Good',
+  strapline = 'This website will not empower you.'
 }) => {
   
     const { mode, toggleMode } = useContext(ModeContext);
@@ -106,8 +108,8 @@ const Layout = ({
 
                     <Link href={'/'}>
                         <a class={styles.title} aria-label="Home page" href="/">
-                            <nav id="top" aria-label="Header link to home page">The Public Good</nav>
-                            <div><em>This website will not empower you.</em></div>
+                            <nav id="top" aria-label="Header link to home page">{main}</nav>
+                            <div><em>{strapline}</em></div>
                         </a>
                     </Link>
                     <p class={styles.description}>                            
