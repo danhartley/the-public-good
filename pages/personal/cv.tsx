@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'preact/hooks';
 
 import Layout from 'components/layout/layout';
+import Links from 'components/links/Links';
 import FloatingBarChart from 'pages/personal/charts/floating-bar-charts';
 
 import data from 'pages/personal/cv.json';
 import styles from 'components/dashboard/Dashboard.module.scss';
 import funcs from 'components/functions/functions';
-
 
 const now = 2021;
 
@@ -61,11 +61,28 @@ const Companies = () => {
 
     });
 
+    const projectLinks = projects => {
+        
+        if(!projects) return null;
+
+        return projects.map(p => {
+            return (
+                <>
+                    <br />
+                    <a class={styles.externalLink} href={p.src}>{p.title}</a>
+                </>
+            )
+        })
+    }
+
     const rows = data.companies.map(c =>
         <>
             <tr>
-                <td><span>{c.name}</span></td>
-                <td>{ new Date(c.dates.start).toLocaleDateString() + "-" + (c.dates.end ? (new Date(c.dates.end)).toLocaleDateString() : "") }</td>
+                <td>
+                    <span>{c.name}</span>
+                    { projectLinks(c.projects) }
+                </td>
+                <td>{ new Date(c.dates.start).toLocaleDateString() + " - " + (c.dates.end ? (new Date(c.dates.end)).toLocaleDateString() : "") }</td>
                 <td>{c.roles.join(', ')}</td>
                 <td>{c.languages.join(', ')}</td>
                 <td>{c.technologies.join(', ')}</td>
@@ -101,7 +118,6 @@ const CurriculumVitae = () => {
 
     const languages = getSkills('languages');
     const hosting = getSkills('hosting');
-    const sourceControl = getSkills('source control');
     const frameworks = getSkills('frameworks');
     const tooling = getSkills('tooling');
 
@@ -109,26 +125,39 @@ const CurriculumVitae = () => {
 
         <div class={styles.wideWrapper}>
             <Layout main={'Daniel Hartley'} strapline={'Web developer'} header={'Curriculum Vitae'} title={'Curriculum Vitae'} description={'Curriculum Vitae'}>
+                <p>
+                    I am a web developer with 20+ years experience. I love to code, to design, and to build functional, simple, interfaces.
+                </p>
+                <p>
+                    I am an advocate of responsible web development - building high performance websites that are sustainable, accessible and fast. As a core contributor on the open source project <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL>, I work on practices and tools to improve decision making and promote thoughtful programming and design.
+                </p>
+                <p>
+                    At <Links.IL link={{source: '/'}}>The Public Good</Links.IL> I write articles on the climate crisis and responsible web development.
+                </p>
                 <Companies />
-                <h2>Web languages</h2>
+                <h2>Web languages & formats</h2>
                 <section>
-                    <FloatingBarChart dataSources={languages} config={{colours:zesty[2], units:'Languages'}} />
+                    <FloatingBarChart dataSources={languages} config={{colours:zesty[2], units:'Languages & formats'}} />
                 </section>
-                <h2>Frameworks & Preprocessors</h2>
+                <h2>Frameworks, preprocessors, patterns & libraries</h2>
                 <section>
-                    <FloatingBarChart dataSources={frameworks} config={{colours:zesty[1], units:'Languages'}} />
+                    <FloatingBarChart dataSources={frameworks} config={{colours:zesty[1], units:'Frameworks & preprocessors'}} />
                 </section>
-                <h2>Testing & building</h2>
+                <h2>Task runners, testing frameworks & source control</h2>
                 <section>
-                    <FloatingBarChart dataSources={tooling} config={{colours:zesty[0], units:'Languages'}} />
+                    <FloatingBarChart dataSources={tooling} config={{colours:zesty[0], units:'Tools'}} />
                 </section>
-                <h2>Web hosting & CDNs</h2>
+                <h2>Web hosting, DBs & CDNs</h2>
                 <section>
-                    <FloatingBarChart dataSources={hosting} config={{colours:zesty[3], units:'Hosting'}} />
+                    <FloatingBarChart dataSources={hosting} config={{colours:zesty[3], units:'Services'}} />
                 </section>
-                <h2>Source control</h2>
                 <section>
-                    <FloatingBarChart dataSources={sourceControl} config={{colours:zesty[0], units:'Hosting'}} />
+                <h2>Education</h2>
+                    {
+                        data.education.map(e => {
+                            return <div>{e}</div>
+                        })
+                    }
                 </section>
                 <p class={styles.download}>
                     <h3>Do you need to download the raw data?</h3>

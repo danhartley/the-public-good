@@ -4,9 +4,9 @@ $results-color: black;
 
 @mixin wrapper {
      
-    main {
-        max-width: 800px !important;
-    }
+    // main {
+    //     max-width: 800px !important;
+    // }
     @include radioButtons();
     table {
         margin: 0;
@@ -162,7 +162,7 @@ $results-color: black;
         }
         h2 {
             font-size: calc(1rem + .5vw);
-            margin: calc(.5rem + .25vw) 0 calc(.5rem + .25vw) 0;
+            margin: calc(1.5rem + .25vw) 0 calc(.5rem + .25vw) 0;
         }
     }
     section {
@@ -243,6 +243,13 @@ $results-color: black;
     }
 }
 
+.externalLink {
+    color: inherit;
+    font-size: .8rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(var(--l), .4);
+}
+
 .skills {
     margin: 0 auto 2rem auto;    
     width: calc(80vw);
@@ -259,12 +266,22 @@ $results-color: black;
         }
         main {
             max-width: 800px !important;
-        }        
-    }
+        }
+        a, a:visited {
+            padding-bottom: 0.15rem;
+            text-decoration: none;
+            color: rgb(var(--il));
+            border-bottom: 1px dashed rgb(var(--il));
+            font-weight: var(--il-fw);
+        }
+    }    
 }
     
 @media screen and (max-width: 600px) {
     .wideWrapper {
+        main {
+            max-width: initial !important;
+        }
         table thead {
             display: none;
           }

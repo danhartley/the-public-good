@@ -38,7 +38,7 @@ const FloatingBarChart = ({dataSources, config}) => {
             x: {
                 type: 'linear',
                 min: 1995,
-                max: 2025,
+                max: 2022,
                 ticks: {
                     callback: value => {
                         return `${value}`;

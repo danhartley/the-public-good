@@ -1,8 +1,13 @@
 {
     "companies": [
         {
-            "name": "Responsible Tech Work",
-            "projects": ["website", "challenge toolbox"],
+            "name": "ResponsibleTech.Work",
+            "projects": [
+                {
+                    "title": "Framework",
+                    "src": "https://responsibletech.work/"
+                }
+            ],
             "industry": "Open source",
             "dates": {
                 "start": "2021-09-1"
@@ -14,7 +19,6 @@
         },
         {
             "name": "The Public Good",
-            "projects": ["website", "blog"],
             "industry": "Blog",
             "dates": {
                 "start": "2021-02-1"
@@ -22,11 +26,24 @@
             "languages": [ "HTML", "JS", "CSS", "TS" ],
             "technologies": [ "Jamstack", "Preact", "TypeScript", "Sass", "Next.js", "Netlify", "GitHub", "Jest", "webpack", "Lighthouse budget", "axe Accessibility Linter", "ts/tsx eslint", "Chart.js" ],
             "roles": ["writer", "front-end developer"],
-            "blurb": "Where I write about climate crisis and responsible web development. The site demonstrates best practice website optimisation, performance and accessibility. There are links to online tools, an overview of the services I offer, and an example of a sociable contract."
+            "blurb": "Where I write about the climate crisis and responsible web development. The site demonstrates best practice website optimisation, performance and accessibility. There are links to online tools, an overview of the services I offer, and an example of a sociable contract."
         },
         {
             "name": "Venga Vamos",
-            "projects": ["learn the planet", "snapdragon retrieval", "the verb"],
+            "projects": [
+                {
+                    "title": "learn the planet",
+                    "src": "https://www.learn-the-planet.com "
+                }, 
+                {
+                    "title": "snapdragon retrieval",
+                    "src": "https://snapdragon-retrieval.netlify.app/providers"
+                }, 
+                {
+                    "title": "the verb",
+                    "src": "https://danhartley.github.io/snapdragon-verbs"
+                }
+            ],
             "industry": "Blog",
             "dates": {
                 "start": "2013-04-1"
@@ -34,11 +51,10 @@
             "languages": [ "HTML", "JS", "CSS" ],
             "technologies": [ "Jamstack", "Preact", "TypeScript", "Sass", "Next.js", "Netlify", "GitHub", "Jest", "webpack", "Bootstrap", "Material Design", "Netlify CMS", "Fauna", "GraphQL", "Enzyme", "Redux", "Functional JS", "Modern ES", "CSS Grid", "CSS Flexbox", "Sentry", "Google Cloud Platform", "Google Cloud Firestore", "MongoDB", "Formik", "Downshift" ],
             "roles": ["full stack developer", "UI developer", "director"],
-            "blurb": "The Public Good /nA site demonstrating responsible web practices with articles on climate change and web development. /n /nSnapdragon Retrieval /nMVP demonstrating how quick lessons and flashcards can be used to encourage and enable long term understanding of new material; site can be embedded as a widget to support articles and podcasts containing definitive and/or evergreen content. 100% Lighthouse scores across the board. /nhttps://snapdragon-retrieval.netlify.app/providers /n /nLearn the Planet /nGuides to species, complementary information and tests. Climate change flashcards. /nhttps://www.learn-the-planet.com /n /nThe Verb /nDrills and tests for Portuguese and Spanish verbs. /nhttps://danhartley.github.io/snapdragon-verbs"
+            "blurb": "The Public Good \nA site demonstrating responsible web practices with articles on climate change and web development. \n \nSnapdragon Retrieval \nMVP demonstrating how quick lessons and flashcards can be used to encourage and enable long term understanding of new material; site can be embedded as a widget to support articles and podcasts containing definitive and/or evergreen content. 100% Lighthouse scores across the board. \n \nLearn the Planet \nGuides to species, complementary information and tests. Climate change flashcards.\n \nThe Verb \nDrills and tests for Portuguese and Spanish verbs."
         },
         {
             "name": "Tippstr",
-            "projects": ["website"],
             "industry": ["B2B", "B2C"],
             "dates": {
                 "start": "2013-02-1",
@@ -47,11 +63,10 @@
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ "Grunt", "Cucumber", "Angular 2", "Bootstrap", "ngScenario", "Karma", "Protractor", "D3" ],
             "roles": ["team lead", "project manager", "front-end developer"],
-            "blurb": "As Lead Developer: \nResearched and prototyped several frameworks suitable to the project before selecting Angular 1.x \nWrote wiki guidelines and presented walkthroughs for other members of the team (and other teams)\nEstablished naming conventions for files, types, directories, etc. and defined guidelines for common scenarios e.g. use of strict mode, avoiding global variables, templates for tests. \nSet up Grunt task management for running code updates, running lints, running tests, reports and deployment to multiple environments \nCombined Protractor and Cucumber (I later dropped Cucumber and followed practices adopted by the Google Angular team) \nSteadily reduced the use of controllers in anticipation of Angular 2 (and because they encourage lazy coding) \nImplemented support for versioning (language and currency) \nCompleted 3 version updates for Angular (and dependencies including the move to Bootstrap 3) \nCreated bespoke functions for business-specific logic and common utilities \nCreated templates for common page types (services, controllers, directives, etc) to speed up development and encourage and hone good practices and patterns \nTrialled generators (but found them too cumbersome) \nCreated dedicated APIs for the core business types (we were able to adapt quickly to changes on the server API) and core business types (prototypes) \n\nAs Team Leader: \nPut in place a TDD approach. The team wrote 500+ unit tests and 500+ functional tests (Jasmine, ngScenario, Karma, Cucumber and Protractor) \nOversaw the addition of D3 charts for visual representation \nInterviewed candidates \nEncouraged developers to challenge existing practices \nEncouraged developers to take on more responsibility and to speak out (and lead) team meetings (standups) \n\nAs Project Manager: \nRevised and updated schedules for all project applications (JIRA) \nReviewed state of play and projections with team members across all applications \nLed scrums \nPrepared documentation for potential investors"
+            "blurb": "As Lead Developer: \nResearched and prototyped several frameworks suitable to the project before selecting Angular 1.x. \nWrote wiki guidelines and presented walkthroughs for other members of the team (and other teams).\nEstablished naming conventions for files, types, directories, etc. and defined guidelines for common scenarios e.g. use of strict mode, avoiding global variables, templates for tests. \nSet up Grunt task management for running code updates, running lints, running tests, reports and deployment to multiple environments. \nCombined Protractor and Cucumber (I later dropped Cucumber and followed practices adopted by the Google Angular team). \nSteadily reduced the use of controllers in anticipation of Angular 2 (and because they encourage lazy coding). \nImplemented support for versioning (language and currency). \nCompleted 3 version updates for Angular (and dependencies including the move to Bootstrap 3). \nCreated bespoke functions for business-specific logic and common utilities. \nCreated templates for common page types (services, controllers, directives, etc) to speed up development and encourage and hone good practices and patterns. \nTrialled generators (but found them too cumbersome). \nCreated dedicated APIs for the core business types (we were able to adapt quickly to changes on the server API) and core business types (prototypes). \n\nAs Team Leader: \nPut in place a TDD approach. The team wrote 500+ unit tests and 500+ functional tests (Jasmine, ngScenario, Karma, Cucumber and Protractor) \nOversaw the addition of D3 charts for visual representation \nInterviewed candidates \nEncouraged developers to challenge existing practices \nEncouraged developers to take on more responsibility and to speak out (and lead) team meetings (standups) \n\nAs Project Manager: \nRevised and updated schedules for all project applications (JIRA) \nReviewed state of play and projections with team members across all applications \nLed scrums \nPrepared documentation for potential investors"
         },
         {
             "name": "Seatwave | Ticketmaster",
-            "projects": ["website", "cms"],
             "industry": ["B2C"],
             "dates": {
                 "start": "2011-05-1",
@@ -60,11 +75,10 @@
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ "ASP.NET", "Razor" ],
             "roles": ["web developer"],
-            "blurb": "During this period I moved from working on backend development to frontend development. I started on the project in London and then worked remotely from Barcelona for about one year. \nTogether with the Architect created a specification for the API which we built in tandem \nCreated Service and Repository layers and introduced DI (and potentially testing) as part of a site-wide review of our architecture \nBuilt client-side mobile version of the site using the new API and native JavaScript and jQuery. Within days this site was handling a high volume of transactions \nOnce the new pattern and API were proven the main site moved to use this refactored version"
+            "blurb": "During this period I moved from working on backend development to frontend development. I started on the project in London and then worked remotely from Barcelona for about one year. \nTogether with the Architect created a specification for the API which we built in tandem. \nCreated Service and Repository layers and introduced DI (and potentially testing) as part of a site-wide review of our architecture. \nBuilt client-side mobile version of the site using the new API and native JavaScript and jQuery. Within days this site was handling a high volume of transactions. \nOnce the new pattern and API were proven the main site moved to use this refactored version."
         },
         {
             "name": "Digital & Direct",
-            "projects": ["website", "interactive game"],
             "industry": ["B2C"],
             "dates": {
                 "start": "2011-01-1",
@@ -77,7 +91,6 @@
         },
         {
             "name": "Mastercard partner",
-            "projects": ["website", "interactive game"],
             "industry": ["B2C"],
             "dates": {
                 "start": "2010-12-1",
@@ -90,7 +103,6 @@
         },
         {
             "name": "Enteraction",
-            "projects": ["website", "interactive game"],
             "industry": ["B2C"],
             "dates": {
                 "start": "2010-08-1",
@@ -99,11 +111,10 @@
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#", "LINQ" ],
             "technologies": [ "WCF/RESTful services", "Facebook APIs (Graph, FQL, FBML, OAuth)", "Windows Azure Cloud Platform", "ASP.NET 4.0", "LINQ", "C# 4", "Subversion", "MS Unit Testing", "Moq", "Ninject", "Resharper", "OData" ],
             "roles": ["full stack developer", "middle tier architect"],
-            "blurb": "Member of the exceptional team which helped Seatwave become the leading secondary ticket exchange in Europe. Seatwave was recently named the number one Tech Media 100 Company for 2009. \nTogether with the architect, designers and UI specialists created and evolved an extensible, multi-language framework. \nCollaborated with the senior designer on the specification and implementation of a flexible architecture for a variety of co-branded versions of the site for clients including MSN and Virgin Media. \nWorked with the Marketing Director to develop an extensive affiliate programme. \nWorked with the Senior Product Manager to create a system for A/B testing. \nRan 50+ software releases during a period in which Seatwave sales grow nearly 500%. \nFrequently presented new ideas and potential changes to the site."
+            "blurb": "Member of the exceptional team which helped Seatwave become the leading secondary ticket exchange in Europe. Seatwave was named the number one Tech Media 100 Company for 2009. \nTogether with the architect, designers and UI specialists created and evolved an extensible, multi-language framework. \nCollaborated with the senior designer on the specification and implementation of a flexible architecture for a variety of co-branded versions of the site for clients including MSN and Virgin Media. \nWorked with the Marketing Director to develop an extensive affiliate programme. \nWorked with the Senior Product Manager to create a system for A/B testing. \nRan 50+ software releases during a period in which Seatwave sales grew nearly 500%. \nFrequently presented new ideas and potential changes to the site."
         },
         {
             "name": "MyBridge Media",
-            "projects": ["website"],
             "industry": ["B2C"],
             "dates": {
                 "start": "2009-11-1",
@@ -112,11 +123,10 @@
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ ],
             "roles": ["team lead", "product manager", "director", "architect", "project manager", "full stack developer"],
-            "blurb": "MyBridge Media is a global booking platform that helps exhibitors and digital content owners negotiate screening terms quickly and economically. \nWe are a dedicated team with wide experience in film and television production and the Internet. \nMy role combines site and database architecture, product design and implementation, project manager, company strategy and copy editing. It is fair to say I am kept pretty bus"
+            "blurb": "MyBridge Media was a global booking platform that helped exhibitors and digital content owners negotiate screening terms quickly and economically. \nWe were a dedicated team with wide experience in film and television production and the Internet. \nMy role combined site and database architecture, product design and implementation, project management, company strategy and copy editing."
         },
         {
             "name": "Seatwave | Ticketmaster",
-            "projects": ["website", "cms"],
             "industry": ["B2C"],
             "dates": {
                 "start": "2006-10-1",
@@ -129,7 +139,6 @@
         },
         {
             "name": "Arc Interactive",
-            "projects": ["website"],
             "industry": ["B2C"],
             "dates": {
                 "start": "2006-05-1",
@@ -142,7 +151,6 @@
         },
         {
             "name": "ABT",
-            "projects": ["website", "cms"],
             "industry": ["B2C", "B2B"],
             "dates": {
                 "start": "2002-04-1",
@@ -155,7 +163,6 @@
         },
         {
             "name": "Victor Chandler",
-            "projects": ["technology review"],
             "industry": ["B2B"],
             "dates": {
                 "start": "2005-05-1",
@@ -168,7 +175,6 @@
         },
         {
             "name": "Betfair",
-            "projects": ["api"],
             "industry": ["B2B"],
             "dates": {
                 "start": "2005-03-1",
@@ -181,7 +187,6 @@
         },
         {
             "name": "Snai International",
-            "projects": ["website", "cms"],
             "industry": ["B2C"],
             "dates": {
                 "start": "2000-04-1",
@@ -191,6 +196,18 @@
             "technologies": [ "Classic ASP" ],
             "roles": ["team lead", "project manager", "full stack developer"],
             "blurb": "I set up and ran a 5 person team responsible for building an on-line betting system for a Chinese client. Snai is the number betting company in Italy and is listed on the Italian stock exchange."
+        },
+        {
+            "name": "TV Producer",
+            "industry": ["B2C"],
+            "dates": {
+                "start": "1993-09-1",
+                "end": "1999-09-1"
+            },
+            "languages": [  ],
+            "technologies": [  ],
+            "roles": [ "producer", "production coordinator", "production manager", "researcher"],
+            "blurb": "Six years production experience on programmes commissioned by the BBC, Channel 4 and ITV. \n \nAs Production Manager I frequently oversaw large teams. I wrote budgets, negotiated with Channel 4 and produced itineraries, hired both internal production staff and contracted technicians. \n \nAs Producer I specialised on the war and its aftermath in the Former Yugoslavia. \n \nWorked on a variety of programmes - light entertainment, documentary, studio and drama. \n \nI set up a website for independent producers which stimulated my interest in the Internet and prompted me to take my MSc."
         }
     ],
     "skills": [
@@ -208,6 +225,10 @@
                 {
                     "name": "CSS",
                     "start": "1997-01-1"
+                },
+                {
+                    "name": "JSON",
+                    "start": "2010-01-1"
                 },
                 {
                     "name": "Java",
@@ -239,6 +260,11 @@
                     "end": "2010-01-1"
                 },
                 {
+                    "name": "GraphQL",
+                    "start": "2019-06-1",
+                    "end": "2020-01-1"
+                },
+                {
                     "name": "SQL",
                     "start": "1997-06-1",
                     "end": "2013-06-1"
@@ -251,6 +277,21 @@
                 {
                     "name": "Google Cloud Platform",
                     "start": "2017-01-1"
+                },
+                {
+                    "name": "Microsoft IIS",
+                    "start": "1997-01-1",
+                    "end": "2012-01-1"
+                },
+                {
+                    "name": "SQL Server",
+                    "start": "1997-01-1",
+                    "end": "2012-01-1"
+                },
+                {
+                    "name": "MongoDB",
+                    "start": "2013-04-1",
+                    "end": "2014-01-1"
                 },
                 {
                     "name": "Google Cloud Firestore",
@@ -266,15 +307,76 @@
                     "end": "2011-01-1"
                 },
                 {
-                    "name": "MongoDB",
-                    "start": "2012-12-1",
-                    "end": "2013-10-1"
+                    "name": "Fauna",
+                    "start": "2018-08-1",
+                    "end": "2020-01-1"
+                },
+                {
+                    "name": "mLab",
+                    "start": "2013-04-1",
+                    "end": "2014-01-1"
                 }
             ]
         },
         {
-            "type": "source control",
+            "type": "tooling",
             "set": [
+                {
+                    "name": "Jest",
+                    "start": "2018-09-1"
+                },
+                {
+                    "name": "Cucumber",
+                    "start": "2013-05-1",
+                    "end": "2014-01-1"
+                },
+                {
+                    "name": "Cucumber",
+                    "start": "2021-11-1"
+                },
+                {
+                    "name": "Protractor",
+                    "start": "2013-05-1",
+                    "end": "2017-01-1"
+                },
+                {
+                    "name": "Grunt",
+                    "start": "2016-10-1",
+                    "end": "2017-4-1"
+                },
+                {
+                    "name": "MSBuild",
+                    "start": "2007-1-1",
+                    "end": "2011-1-1"
+                },
+                {
+                    "name": "MS Unit Testing",
+                    "start": "2010-1-1",
+                    "end": "2012-1-1"
+                },
+                {
+                    "name": "webpack",
+                    "start": "2017-04-1"
+                },
+                {
+                    "name": "Jasmine",
+                    "start": "2013-11-1",
+                    "end": "2017-03-1"
+                },
+                {
+                    "name": "ngScenario",
+                    "start": "2013-11-1",
+                    "end": "2017-03-1"
+                },
+                {
+                    "name": "Karma",
+                    "start": "2013-11-1",
+                    "end": "2017-03-1"
+                },
+                {
+                    "name": "Sentry Logging",
+                    "start": "2015-01-1"
+                },
                 {
                     "name": "Git",
                     "start": "2013-01-1"
@@ -290,26 +392,7 @@
                 },
                 {
                     "name": "GitLab",
-                    "start": "2021-09-1",
-                    "end": "2022-01-1"
-                }
-            ]
-        },
-        {
-            "type": "tooling",
-            "set": [
-                {
-                    "name": "Jest",
-                    "start": "2018-09-1"
-                },
-                {
-                    "name": "Jasmine",
-                    "start": "2013-11-1",
-                    "end": "2017-03-1"
-                },
-                {
-                    "name": "Sentry Logging",
-                    "start": "2015-01-1"
+                    "start": "2021-09-1"
                 }
             ]
         },
@@ -321,21 +404,35 @@
                     "start": "2020-09-1"
                 },
                 {
+                    "name": "HTML (JS) (CSS)",
+                    "start": "1997-01-1"
+                },
+                {
+                    "name": "Classic ASP",
+                    "start": "1997-01-1",
+                    "end": "2002-01-1"
+                },
+                {
+                    "name": "ASP.NET",
+                    "start": "2002-01-1",
+                    "end": "2010-01-1"
+                },
+                {
+                    "name": "ASP.NET MVC",
+                    "start": "2010-10-1",
+                    "end": "2012-12-1"
+                },
+                {
                     "name": "React",
                     "start": "2020-09-1"
                 },
                 {
                     "name": "Jekyll",
-                    "start": "2021-09-1",
-                    "end": "2022-01-1"
+                    "start": "2021-09-1"
                 },
                 {
                     "name": "Next.js",
                     "start": "2019-09-1"
-                },
-                {
-                    "name": "Redux",
-                    "start": "2017-05-1"
                 },
                 {
                     "name": "Less",
@@ -352,20 +449,28 @@
                     "end": "2012-09-1"
                 },
                 {
-                    "name": "JSON",
-                    "start": "2010-01-1"
+                    "name": "Redux",
+                    "start": "2017-05-1"
                 },
                 {
-                    "name": "GraphQL",
-                    "start": "2019-06-1",
-                    "end": "2020-01-1"
+                    "name": "Repository-Service pattern",
+                    "start": "2011-05-1",
+                    "end": "2012-12-1"
+                },
+                {
+                    "name": "Dependency injection",
+                    "start": "2011-05-1",
+                    "end": "2012-12-1"
                 },
                 {
                     "name": "Chart.js",
-                    "start": "2021-09-1",
-                    "end": "2022-01-1"
+                    "start": "2021-09-1"
                 }
             ]
         }
+    ],
+    "education": [
+        "MA English Literature Edinburgh University",
+        "MSc Object Oriented Software Systems City University"        
     ]
 }
