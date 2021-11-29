@@ -88,7 +88,7 @@ const Companies = () => {
                 <td>{c.technologies.join(', ')}</td>
             </tr>
             <tr>
-                <td id={c.name} class={c.name === company ? styles.showBlurb : styles.hideBlurb} colSpan="5">{c.blurb}</td>
+                <td id={c.name} class={c.name === company ? styles.showBlurb : styles.hideBlurb} colSpan={5} >{c.blurb}</td>
             </tr>
         </>
     );
