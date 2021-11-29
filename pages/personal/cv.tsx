@@ -135,7 +135,7 @@ const CurriculumVitae = () => {
                     I am an advocate of responsible web development - building high performance websites that are sustainable, accessible and fast. As a core contributor on the open source project <a class={styles.externalLink} href="https://responsibletech.work/">ResponsibleTech.Work</a>, I work on practices and tools to improve decision making and promote thoughtful programming and design.
                 </p>
                 <p>
-                    At <Links.IL link={{source: '/'}}>The Public Good</Links.IL> I write articles on the climate crisis and responsible web development.
+                    At <Links.IL link={{source: ''}}>The Public Good</Links.IL> I write articles on the climate crisis and responsible web development.
                 </p>
                 <p>
                     At Venga Vamos I imagine, design and build web apps.
@@ -167,9 +167,9 @@ const CurriculumVitae = () => {
                 </section>
                 <section>
                     <h2>Contact</h2>
-                    <p><div class={styles.internalLink}>Profile: <a target="_blank" href="https://www.linkedin.com/in/danhartley/">linkedin.com/in/danhartley</a></div></p>
+                    <p><div class={styles.internalLink}>Profile: <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/danhartley/">linkedin.com/in/danhartley</a></div></p>
                     <p><div>Mobile: <span>+351 967 256 941</span></div></p>
-                    <p><div class={styles.internalLink}>Email: <a target="_blank" href="mailto:danhartleybcn@gmail.com?subject=Web%20development%20enquiry">Web development enquiry</a></div></p>
+                    <p><div class={styles.internalLink}>Email: <a rel="noreferrer" target="_blank" href="mailto:danhartleybcn@gmail.com?subject=Web%20development%20enquiry">Web development enquiry</a></div></p>
                 </section>
                 <p class={styles.download}>
                     <h3>Do you need to download the raw data?</h3>
