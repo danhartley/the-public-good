@@ -56,7 +56,7 @@ const Companies = () => {
         const clickableCells = Array.from(document.querySelectorAll('td span'));
 
         clickableCells.forEach(cell => {
-            cell.addEventListener('click', () => toggleBlurb(cell.innerText));
+            cell.addEventListener('click', () => toggleBlurb((cell as HTMLElement).innerText));
         });
 
     });
