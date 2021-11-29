@@ -8,18 +8,16 @@
                     "src": "https://responsibletech.work/"
                 }
             ],
-            "industry": "Open source",
             "dates": {
                 "start": "2021-09-1"
             },
             "languages": [ "HTML", "JS", "CSS" ],
-            "technologies": [ "Trello Power-Ups", "Figma", "Outline", "Trello", "Whereby", "GitHub", "GitLab", "Jekyll", "Parcel", "Yarn" ],
-            "roles": [ "core contributor", "developer", "planner", "strategist"],
+            "technologies": [ "Trello Power-Ups", "Figma", "Outline", "Trello", "Whereby", "GitHub", "GitLab", "Jekyll", "Parcel", "Yarn", "JSON Typedef" ],
+            "roles": [ "core contributor", "r&d", "developer" ],
             "blurb": "As a core contributor on the open source project ResponsibleTech.Work, I work on practices and tools to improve decision making, and promote thoughtful programming and design."
         },
         {
             "name": "The Public Good",
-            "industry": "Blog",
             "dates": {
                 "start": "2021-02-1"
             },
@@ -44,42 +42,38 @@
                     "src": "https://danhartley.github.io/snapdragon-verbs"
                 }
             ],
-            "industry": "Blog",
             "dates": {
                 "start": "2013-04-1"
             },
             "languages": [ "HTML", "JS", "CSS" ],
-            "technologies": [ "Jamstack", "Preact", "TypeScript", "Sass", "Next.js", "Netlify", "GitHub", "Jest", "webpack", "Bootstrap", "Material Design", "Netlify CMS", "Fauna", "GraphQL", "Enzyme", "Redux", "Functional JS", "Modern ES", "CSS Grid", "CSS Flexbox", "Sentry", "Google Cloud Platform", "Google Cloud Firestore", "MongoDB", "Formik", "Downshift" ],
+            "technologies": [ "Jamstack", "Preact", "TypeScript", "Node JS", "Sass", "Next.js", "Netlify", "GitHub", "Jest", "webpack", "Bootstrap", "Material Design", "Netlify CMS", "Fauna", "GraphQL", "Enzyme", "Redux", "Functional JS", "Modern ES", "CSS Grid", "CSS Flexbox", "Sentry", "Google Cloud Platform", "Google Cloud Firestore", "MongoDB", "Formik", "Downshift" ],
             "roles": ["full stack developer", "UI developer", "director"],
-            "blurb": "The Public Good \nA site demonstrating responsible web practices with articles on climate change and web development. \n \nSnapdragon Retrieval \nMVP demonstrating how quick lessons and flashcards can be used to encourage and enable long term understanding of new material; site can be embedded as a widget to support articles and podcasts containing definitive and/or evergreen content. 100% Lighthouse scores across the board. \n \nLearn the Planet \nGuides to species, complementary information and tests. Climate change flashcards.\n \nThe Verb \nDrills and tests for Portuguese and Spanish verbs."
+            "blurb": "The Public Good \nA site demonstrating responsible web practices with articles on climate change and web development. \n \nSnapdragon Retrieval \nMVP demonstrating how quick lessons and flashcards can be used to encourage and enable long term understanding of new material; site can be embedded as a widget to support articles and podcasts containing definitive and/or evergreen content. \n \nLearn the Planet \nGuides to species, complementary information and tests. Climate change flashcards.\n \nThe Verb \nDrills and tests for Portuguese and Spanish verbs."
         },
         {
             "name": "Tippstr",
-            "industry": ["B2B", "B2C"],
             "dates": {
                 "start": "2013-02-1",
                 "end": "2017-03-1"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
-            "technologies": [ "Grunt", "Cucumber", "Angular 2", "Bootstrap", "ngScenario", "Karma", "Protractor", "D3" ],
-            "roles": ["team lead", "project manager", "front-end developer"],
-            "blurb": "As Lead Developer: \nResearched and prototyped several frameworks suitable to the project before selecting Angular 1.x. \nWrote wiki guidelines and presented walkthroughs for other members of the team (and other teams).\nEstablished naming conventions for files, types, directories, etc. and defined guidelines for common scenarios e.g. use of strict mode, avoiding global variables, templates for tests. \nSet up Grunt task management for running code updates, running lints, running tests, reports and deployment to multiple environments. \nCombined Protractor and Cucumber (I later dropped Cucumber and followed practices adopted by the Google Angular team). \nSteadily reduced the use of controllers in anticipation of Angular 2 (and because they encourage lazy coding). \nImplemented support for versioning (language and currency). \nCompleted 3 version updates for Angular (and dependencies including the move to Bootstrap 3). \nCreated bespoke functions for business-specific logic and common utilities. \nCreated templates for common page types (services, controllers, directives, etc) to speed up development and encourage and hone good practices and patterns. \nTrialled generators (but found them too cumbersome). \nCreated dedicated APIs for the core business types (we were able to adapt quickly to changes on the server API) and core business types (prototypes). \n\nAs Team Leader: \nPut in place a TDD approach. The team wrote 500+ unit tests and 500+ functional tests (Jasmine, ngScenario, Karma, Cucumber and Protractor) \nOversaw the addition of D3 charts for visual representation \nInterviewed candidates \nEncouraged developers to challenge existing practices \nEncouraged developers to take on more responsibility and to speak out (and lead) team meetings (standups) \n\nAs Project Manager: \nRevised and updated schedules for all project applications (JIRA) \nReviewed state of play and projections with team members across all applications \nLed scrums \nPrepared documentation for potential investors"
+            "technologies": [ "Grunt", "Cucumber", "Angular 2", "Bootstrap", "ngScenario", "Karma", "Protractor", "D3", "JIRA" ],
+            "roles": ["front-end architect", "front-end team lead"],
+            "blurb": "I set up the project, tooling and practices for this greenfield startup website.\nI interviewed and appointed team members, then led the team."
         },
         {
             "name": "Seatwave | Ticketmaster",
-            "industry": ["B2C"],
             "dates": {
                 "start": "2011-05-1",
                 "end": "2012-12-1"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ "ASP.NET", "Razor" ],
-            "roles": ["web developer"],
-            "blurb": "During this period I moved from working on backend development to frontend development. I started on the project in London and then worked remotely from Barcelona for about one year. \nTogether with the Architect created a specification for the API which we built in tandem. \nCreated Service and Repository layers and introduced DI (and potentially testing) as part of a site-wide review of our architecture. \nBuilt client-side mobile version of the site using the new API and native JavaScript and jQuery. Within days this site was handling a high volume of transactions. \nOnce the new pattern and API were proven the main site moved to use this refactored version."
+            "roles": ["full stack developer"],
+            "blurb": "Full stack developer for this high volume ecommerce site.\nRefactored code (service layer pattern) to enable a public API and testing.\nBuilt the web version of the site for mobile users.\nOversaw production builds."
         },
         {
             "name": "Digital & Direct",
-            "industry": ["B2C"],
             "dates": {
                 "start": "2011-01-1",
                 "end": "2011-03-1"
@@ -91,7 +85,6 @@
         },
         {
             "name": "Mastercard partner",
-            "industry": ["B2C"],
             "dates": {
                 "start": "2010-12-1",
                 "end": "2011-01-1"
@@ -103,7 +96,6 @@
         },
         {
             "name": "Enteraction",
-            "industry": ["B2C"],
             "dates": {
                 "start": "2010-08-1",
                 "end": "2010-11-1"
@@ -111,11 +103,10 @@
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#", "LINQ" ],
             "technologies": [ "WCF/RESTful services", "Facebook APIs (Graph, FQL, FBML, OAuth)", "Windows Azure Cloud Platform", "ASP.NET 4.0", "LINQ", "C# 4", "Subversion", "MS Unit Testing", "Moq", "Ninject", "Resharper", "OData" ],
             "roles": ["full stack developer", "middle tier architect"],
-            "blurb": "Member of the exceptional team which helped Seatwave become the leading secondary ticket exchange in Europe. Seatwave was named the number one Tech Media 100 Company for 2009. \nTogether with the architect, designers and UI specialists created and evolved an extensible, multi-language framework. \nCollaborated with the senior designer on the specification and implementation of a flexible architecture for a variety of co-branded versions of the site for clients including MSN and Virgin Media. \nWorked with the Marketing Director to develop an extensive affiliate programme. \nWorked with the Senior Product Manager to create a system for A/B testing. \nRan 50+ software releases during a period in which Seatwave sales grew nearly 500%. \nFrequently presented new ideas and potential changes to the site."
+            "blurb": "Middle-tier architect and developer on the official Coronation Street Facebook game."
         },
         {
             "name": "MyBridge Media",
-            "industry": ["B2C"],
             "dates": {
                 "start": "2009-11-1",
                 "end": "2010-03-1"
@@ -127,7 +118,6 @@
         },
         {
             "name": "Seatwave | Ticketmaster",
-            "industry": ["B2C"],
             "dates": {
                 "start": "2006-10-1",
                 "end": "2010-04-1"
@@ -135,11 +125,10 @@
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ "ASP.NET", "Razor" ],
             "roles": ["full stack developer"],
-            "blurb": "Member of the exceptional team which helped Seatwave become the leading secondary ticket exchange in Europe. Seatwave was recently named the number one Tech Media 100 Company for 2009. \nTogether with the architect, designers and UI specialists created and evolved an extensible, multi-language framework. \nCollaborated with the senior designer on the specification and implementation of a flexible architecture for a variety of co-branded versions of the site for clients including MSN and Virgin Media. \nWorked with the Marketing Director to develop an extensive affiliate programme. \nWorked with the Senior Product Manager to create a system for A/B testing. \nRan 50+ software releases during a period in which Seatwave sales grow nearly 500%. \nFrequently presented new ideas and potential changes to the site."
+            "blurb": "Member of the exceptional team which helped Seatwave become the leading secondary ticket exchange in Europe (named the number one Tech Media 100 Company in 2009).\nTogether with the architect, designers and UI specialists created and evolved an extensible, multi-language framework. \nCollaborated with the senior designer on the specification and implementation of a flexible architecture for a variety of co-branded versions of the site for clients including MSN and Virgin Media. \nWorked with the Marketing Director to develop an extensive affiliate programme. \nWorked with the Senior Product Manager to create a system for A/B testing. \nRan 50+ software releases during a period in which Seatwave sales grew nearly 500%."
         },
         {
             "name": "Arc Interactive",
-            "industry": ["B2C"],
             "dates": {
                 "start": "2006-05-1",
                 "end": "2006-09-1"
@@ -151,7 +140,6 @@
         },
         {
             "name": "ABT",
-            "industry": ["B2C", "B2B"],
             "dates": {
                 "start": "2002-04-1",
                 "end": "2006-02-1"
@@ -163,7 +151,6 @@
         },
         {
             "name": "Victor Chandler",
-            "industry": ["B2B"],
             "dates": {
                 "start": "2005-05-1",
                 "end": "2005-07-1"
@@ -175,7 +162,6 @@
         },
         {
             "name": "Betfair",
-            "industry": ["B2B"],
             "dates": {
                 "start": "2005-03-1",
                 "end": "2005-05-1"
@@ -187,7 +173,6 @@
         },
         {
             "name": "Snai International",
-            "industry": ["B2C"],
             "dates": {
                 "start": "2000-04-1",
                 "end": "2002-02-1"
@@ -199,14 +184,13 @@
         },
         {
             "name": "TV Producer",
-            "industry": ["B2C"],
             "dates": {
                 "start": "1993-09-1",
                 "end": "1999-09-1"
             },
             "languages": [  ],
             "technologies": [  ],
-            "roles": [ "producer", "production coordinator", "production manager", "researcher"],
+            "roles": [ "producer", "production coordinator", "production manager", "researcher", "runner"],
             "blurb": "Six years production experience on programmes commissioned by the BBC, Channel 4 and ITV. \n \nAs Production Manager I frequently oversaw large teams. I wrote budgets, negotiated with Channel 4 and produced itineraries, hired both internal production staff and contracted technicians. \n \nAs Producer I specialised on the war and its aftermath in the Former Yugoslavia. \n \nWorked on a variety of programmes - light entertainment, documentary, studio and drama. \n \nI set up a website for independent producers which stimulated my interest in the Internet and prompted me to take my MSc."
         }
     ],
@@ -331,6 +315,15 @@
                     "end": "2014-01-1"
                 },
                 {
+                    "name": "Jira",
+                    "start": "2013-02-1",
+                    "end": "2017-03-1"
+                },
+                {
+                    "name": "Trello",
+                    "start": "2021-08-1"
+                },
+                {
                     "name": "Cucumber",
                     "start": "2021-11-1"
                 },
@@ -447,6 +440,11 @@
                     "name": "jQuery",
                     "start": "2007-10-1",
                     "end": "2012-09-1"
+                },
+                {
+                    "name": "Bootstrap",
+                    "start": "2013-02-1",
+                    "end": "2018-09-1"
                 },
                 {
                     "name": "Redux",

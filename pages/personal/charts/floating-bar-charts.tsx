@@ -29,6 +29,7 @@ const FloatingBarChart = ({dataSources, config}) => {
                         label: ` ${config.units} `,
                         data: dataSources.map(d => d.values),
                         backgroundColor: config.colours,
+                        minBarLength: 1
                     }
                 ]
             }

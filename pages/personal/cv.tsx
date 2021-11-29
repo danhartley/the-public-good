@@ -124,15 +124,21 @@ const CurriculumVitae = () => {
     return (
 
         <div class={styles.wideWrapper}>
-            <Layout main={'Daniel Hartley'} strapline={'Web developer'} header={'Curriculum Vitae'} title={'Curriculum Vitae'} description={'Curriculum Vitae'}>
+            <Layout main={'Daniel Hartley'} strapline={'Web developer & writer'} header={'Curriculum Vitae'} title={'Curriculum Vitae'} description={'Curriculum Vitae'}>
                 <p>
-                    I am a web developer with 20+ years experience. I love to code, to design, and to build functional, simple, interfaces.
+                    I am a web developer with 20+ years experience. I love to code, to design, and to build web sites and apps that are useful and beneficial.
+                </p>
+                <p>
+                    I initiate and enable new projects, and improve existing ones.
                 </p>
                 <p>
                     I am an advocate of responsible web development - building high performance websites that are sustainable, accessible and fast. As a core contributor on the open source project <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL>, I work on practices and tools to improve decision making and promote thoughtful programming and design.
                 </p>
                 <p>
                     At <Links.IL link={{source: '/'}}>The Public Good</Links.IL> I write articles on the climate crisis and responsible web development.
+                </p>
+                <p>
+                    At Venga Vamos I imagine, design and build web apps.
                 </p>
                 <Companies />
                 <h2>Web languages & formats</h2>
@@ -143,7 +149,7 @@ const CurriculumVitae = () => {
                 <section>
                     <FloatingBarChart dataSources={frameworks} config={{colours:zesty[1], units:'Frameworks & preprocessors'}} />
                 </section>
-                <h2>Task runners, testing frameworks & source control</h2>
+                <h2>Task runners, testing, tracking & source control</h2>
                 <section>
                     <FloatingBarChart dataSources={tooling} config={{colours:zesty[0], units:'Tools'}} />
                 </section>
@@ -158,6 +164,12 @@ const CurriculumVitae = () => {
                             return <div>{e}</div>
                         })
                     }
+                </section>
+                <section>
+                    <h2>Contact</h2>
+                    <p><div class={styles.internalLink}>Profile: <a target="_blank" href="https://www.linkedin.com/in/danhartley/">linkedin.com/in/danhartley</a></div></p>
+                    <p><div>Mobile: <span>+351 967 256 941</span></div></p>
+                    <p><div class={styles.internalLink}>Email: <a target="_blank" href="mailto:danhartleybcn@gmail.com?subject=Web%20development%20enquiry">Web development enquiry</a></div></p>
                 </section>
                 <p class={styles.download}>
                     <h3>Do you need to download the raw data?</h3>
