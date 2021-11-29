@@ -20,7 +20,7 @@ import styles from 'components/dashboard/Dashboard.module.scss';
         plugins: true
     } as any;
 
-    console.log(plugins)
+    // console.log(plugins)
 
     if(plugins === "false") config.plugins = false;
     if(scales) config.scales = scales;
