@@ -280,7 +280,7 @@ $results-color: black;
 @media screen and (max-width: 600px) {
     .wideWrapper {
         main {
-            max-width: initial !important;
+            max-width: calc(90vw) !important;
         }
         table thead {
             display: none;
@@ -288,6 +288,7 @@ $results-color: black;
           table td {
             display: flex;
             height: initial;
+            flex-direction: column;
           }
           td:nth-child(1) {
               font-weight: bold;

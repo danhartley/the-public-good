@@ -50,7 +50,7 @@ const FloatingBarChart = ({dataSources, config}) => {
 
     }, [dataSources]);
 
-    const options = { scales };
+    const options = { scales, responsive: true };
 
     return (
         <>
