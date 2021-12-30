@@ -40,7 +40,7 @@ const Services = () => {
                     <span class={styles.internalLink}>I have selected and tested this development stack over the course of <Link href={'/projects'}><a>4 projects</a></Link>.</span>
                 </p>
                 <p>If you would like to discuss an idea or a project, please contact me at <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL>.</p>           
-                <p>For a complete picture of the web technologies I use, this is my <Links.EL link={{source:'https://danhartley.github.io/snapdragon-redux/wiki/'}}>curriculum vitae</Links.EL>.</p>            
+                <p>For a complete picture of the web technologies I use, this is my <Links.IL link={{source:'personal/cv'}}>curriculum vitae</Links.IL>.</p>            
             </section>  
             <Links.RelatedLinks links={[{value:'web-development/sociable-contract',text:'Sociable contract'}]}></Links.RelatedLinks>
         </Layout>
