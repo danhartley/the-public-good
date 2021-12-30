@@ -23,7 +23,8 @@ module.exports = withPWA({
 });
 
 module.exports = {
-    excludeFile: (str) => /\*.{spec,test}.ts/.test(str)
+    excludeFile: (str) => /\*.{spec,test}.ts/.test(str),
+    distDir: 'out'
 }
 
 // full redirect to new url
