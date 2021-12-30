@@ -16,6 +16,7 @@ class MyDocument extends Document {
         <body style={"background-color:rgb(255, 255, 255); margin: 0 calc(.75rem + 1vw) .5rem calc(.75rem + 1vw);" as React.CSSProperties}>
           <Main />
           <NextScript />
+          <script async defer src="https://scripts.withcabin.com/hello.js"></script>
         </body>
       </Html>
     )
