@@ -62,7 +62,7 @@ const Accessibility: FunctionalComponent = () => {
                 </p>
                 <p><span class={styles.published}>Last updated: {new Date('Fri 19 March 2021').toDateString()}</span></p>
             </section>
-            <Links.RelatedLinks links={[{value:'architecture',text:'Architecture'},{value:'performance',text:'Performance'},{value:'sustainability',text:'Sustainability'},{value:'performance',text:'Performance'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'architecture',text:'Architecture'},{value:'performance',text:'Performance'},{value:'sustainability',text:'Sustainability'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
