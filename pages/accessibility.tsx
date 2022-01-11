@@ -40,6 +40,14 @@ const links = [
         "name": "Assistant RGAA | Firefox | French",
         "source": "https://addons.mozilla.org/fr/firefox/addon/assistant-rgaa/"
     },
+    {
+        "name": "Siteimprove | Dutch | Requires email | Stores user data",
+        "source": "https://siteimprove.com/"
+    },
+    {
+        "name": "Tenon.io | Limited free service | Stores user data",
+        "source": "https://tenon.io/"
+    },
 ];
 
 const Accessibility: FunctionalComponent = () => {

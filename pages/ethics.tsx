@@ -30,6 +30,14 @@ const externalLinks = [
         "name": "Ethical Web Development | Adam Scott",
         "source": "https://www.ethicalweb.org/"
     },
+    {
+        "name": "The Ethical Centre",
+        "source": "https://ethics.org.au/"
+    },
+    {
+        "name": "Data Ethics Framework | GOV.UK",
+        "source": "https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-2020"
+    },
 ];
 
 const Ethics = () => {

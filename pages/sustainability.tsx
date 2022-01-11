@@ -87,6 +87,14 @@ const externalLinks = [
         "name": "The intro guide to digital eco-design",
         "source": "https://eco-conception.designersethiques.org/guide/en/content/0-introduction.html"
     },
+    {
+        "name": "Ethics whitepaper - The state of green software practices in 2021 | The Coed:Ethics Community",
+        "source": "https://docs.google.com/document/d/1Lym55mXRVO8pldUfrcpRqFKvE9biX93jhz-HLi_c99Y/edit#"
+    },
+    {
+        "name": "Energy Patterns for Mobile Apps",
+        "source": "https://tqrg.github.io/energy-patterns/#/"
+    },
 ];
 
 const Sustainability = () => {
