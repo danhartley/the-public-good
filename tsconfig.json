@@ -26,7 +26,8 @@
     , "index.test.js"
 , "public/_app.js"    ],
     "exclude": [
-      "node_modules"
+      "node_modules",
+      "**/*.spec.js"
     ]
   }
   
