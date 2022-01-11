@@ -27,7 +27,7 @@ const PDDIntro = () => {
 
                 <p>We set about examining the everyday tools and processes used in development with an eye to making room for ethics. We wanted a method that was easy to explain, simple to execute, and that could be incorporated whole or partially into existing philosophies (waterfall, agile), methodologies (Scrum, Kanban), and practices (DDD, BDD, and TDD) - but that required no tools or training.</p>
 
-                <p>After a few months back and forth, research, experimentation, and weekly catchups, we came up with an approach we call <strong>Pledge Driven Development</strong>.</p>
+                <p>After a few months back and forth, research, experimentation, and weekly catch ups, we came up with an approach we call <strong>Pledge Driven Development</strong>.</p>
 
                 <p><em>Pledges + Requirements = Ethical solution</em></p>
 
@@ -83,9 +83,9 @@ const PDDIntro = () => {
 
                 <p>In our examples, we might decide that saving money is paramount, at the risk of breaking our pledges, or opt to do nothing. Since we as a team both created the wishlist and the pledges we are conducting a negotiation between our consciences - expressed in the form of pledges - and our goals.</p>
 
-                <p>Oftentimes, the negotiation will occur between those in one department, such as marketing, requesting more data, and those responsible for obtaining it, such as the development team. Ethics may not play a part in the negotiation - there may agreement on what is right and wrong - or those involved in the tradeoff may respond to a shared pledge in different ways.</p>
+                <p>Oftentimes, the negotiation will occur between those in one department, such as marketing, requesting more data, and those responsible for obtaining it, such as the development team. Ethics may not play a part in the negotiation - there be may agreement on what is right and wrong - or those involved in the tradeoff may respond to a shared pledge in different ways.</p>
 
-                <p>The decision matrix is an open document to which anyone can contribute to; the aim is to capture essential requirements, and to flag any requirement which may cause us to break a pledge.</p>
+                <p>The decision matrix is an open document to which anyone can contribute; the aim is to capture essential requirements, and to flag any requirement which may cause us to break a pledge.</p>
 
                 <p>If our decision leads to a pledge being broken, we vote on whether to accept it. This happens rarely and is sufficiently serious to warrant attention from the whole team.</p>
 
@@ -111,9 +111,9 @@ const PDDIntro = () => {
 
                 <p>We decide against using Google Analytics for tracking users, and against LinkedIn for our forum because whilst both are free, familiar, and popular they share user data. On the other hand, XXX and Discourse are too pricey for us.</p>
 
-                <p>For the RTW website we selected GitHub Discussions as the forum for discussion and questions. This forum does not allow for anonymous comments (you have to create an account), and may put off users who feel it is too tech-oriented. However, it is free, well maintained, easy to set up and maintain, and does not commit us. At this stage we are looking for people or companies interested in adopting or trialing PDD and they are likley to be familiar with GitHub and already have an account.</p>
+                <p>For the RTW website we selected GitHub Discussions as the forum for discussion and questions. This forum does not allow for anonymous comments (you have to create an account), and may put off users who feel it is too tech-oriented. However, it is free, well maintained, easy to set up and maintain, and does not commit us. At this stage we are looking for people or companies interested in adopting or trialling PDD and they are likely to be familiar with GitHub and already have an account.</p>
 
-                <p>We don't need detailed analytics but it would be useful to know the number of visitors we get to the site, and which pages they view. RTW is currently only available in English but we would like to reach wider audience, so user location is relevant.</p>
+                <p>We don't need detailed analytics but it would be useful to know the number of visitors we get to the site, and which pages they view. RTW is currently only available in English but we would like to reach a wider audience, so user location is relevant.</p>
 
                 <p>The version of PDD that we use fits with traditional agile software development, and we've used all of its parts: principles and professional codes of conduct, project pledges, a decision matrix, and team voting.</p>
 
