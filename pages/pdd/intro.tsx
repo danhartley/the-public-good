@@ -25,23 +25,39 @@ const PDDIntro = () => {
 
                 <p>We wanted to engage with big problems in our day to day work.</p>
 
-                <p>We set about examining the everyday tools and processes used in development with an eye to making room for ethics. We wanted a method that was easy to explain, simple to execute, and that could be incorporated whole or partially into existing philosophies (waterfall, agile), methodologies (Scrum, Kanban), and practices (DDD, BDD, and TDD) - but that required no tools or training.</p>
+                <p>We set about examining the everyday tools and processes used in software development with an eye to making room for ethics. We wanted a method that was easy to explain, simple to execute, and that could be incorporated whole or partially into existing philosophies (waterfall, agile), methodologies (Scrum, Kanban), and practices (DDD, BDD, and TDD) - but that required no tools or training.</p>
 
                 <p>After a few months back and forth, research, experimentation, and weekly catch ups, we came up with an approach we call <strong>Pledge Driven Development</strong>.</p>
 
-                <p><em>Pledges + Requirements = Ethical solution</em></p>
+                <p>Rather than keeping ethics and practice at a distance, we examine intended actions through the lens of principles encoded in pledges.</p>
+
+                <p><em>Pledges + Requirements = Decisions</em></p>
 
                 <h3>Pledge Driven Development in practice</h3>
 
-                <p>At the outset of a project, we create a list of pledges which we derive from our own <Links.EL link={{source:'https://responsibletech.work/responsible-pledges/'}}>RTW pledges</Links.EL>, professional codes of conduct, manifestos, and any other principles and promises with which we are in agreement. We keep a <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1317309901'}}>list</Links.EL> of these for reference.</p>
+                {/* <p>PDD is a relatively loose set of practices. </p> */}
 
-                <p>From this Sustainable Web Manifesto promise:</p>
+                <p>We created PDD to solve a conundrum we had faced repeatedly in our work: how to act in accordance with our principles. Principles are general and abstract, work is specific and concrete.</p>
+
+                <h4>Step 1: Define your scope</h4>
+
+                <p>PDD Pledges are specific to a situation or need: company or organisational pledges, team pledges, professional or personal pledges, and pledges based on scoped work, such as project and requirement pledges.</p>
+
+                <p>We have a simple requirement: promote PDD. </p>
+
+                <h4>Step 2: Pledges</h4>
+
+                <p>Since we have some idea about how we want to promote PDD, we create a list of relevant pledges. These can be added to and modified later, when we know more.</p>
+
+                <p>We derive pledges from our own <Links.EL link={{source:'https://responsibletech.work/responsible-pledges/'}}>RTW pledges</Links.EL>, professional codes of conduct, manifestos, and any other principles and promises which are pertinent. We keep a <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1317309901'}}>list</Links.EL> of these for reference.</p>
+
+                <p>From the Sustainable Web Manifesto:</p>
                 <blockquote cite='https://www.sustainablewebmanifesto.com/'>
                     The products and services we provide will be accessible, allow for the open exchange of information, and allow users to control their data.                    
                 </blockquote>                
                 <cite><Links.EL link={{source:'https://www.sustainablewebmanifesto.com/'}}>Sustainable Web Manifesto</Links.EL></cite>
 
-                <p>We derived this project pledge:</p>
+                <p>We derive this pledge:</p>
                 <blockquote cite=''>
                     <div>We pledge not to sell, exchange or exploit END USER data.</div>
                 </blockquote>
@@ -54,17 +70,19 @@ const PDDIntro = () => {
                 </blockquote>                
                 <cite><Links.EL link={{source:'https://www.acm.org/code-of-ethics'}}>ACM Code of Ethics and Professional Conduct</Links.EL></cite>
 
-                <p>We derived this project pledge:</p>
+                <p>We derive this pledge:</p>
                 <blockquote cite='https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1294958642'>
                     <div>We pledge not to undertake new work without first evaluating its cost.</div>
                 </blockquote>
                 <cite><Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1294958642'}}>RTW Technical Pledges</Links.EL></cite>
 
-                <h4>Requirements</h4>
+                <h4>Step 3: Requirements</h4>
 
-                <p>Pledges determine how we work, providing safeguards and encouragement to do what we do better.</p>
+                <p>Pledges determine how we work, providing safeguards and encouraging us to do what we do better.</p>
 
-                <p>In order to promote PDD, we want to know more about visitors to our websites, and to offer a forum or comment section for feedback. As an open source project, we also need to keep down costs. Here is our mini marketing wishlist:</p>
+                <p>Requirements are the things we want done. We set out the details of our requirements mindful of the pledges we have made.</p>
+
+                <p>In order to promote PDD, we want to know more about visitors to our websites, and to offer a forum or comment section for feedback. As an open source project, we also need to keep down costs. Here are our requirements:</p>
                     
                 <blockquote cite='https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1882839689'>
                     <div>We want to add analytics to our site, and pay nothing, or very little.</div>
@@ -75,19 +93,23 @@ const PDDIntro = () => {
 
                 <p>How do we get what we want whilst honouring our pledge on user data, and not breaking our pledge to know the cost of new work (in this case self-hosting the services we need)?</p>
 
-                <p>To reconcile our goals with our pledges, we use a <em>decision matrix</em>. We make certain our requirements don't break our pledges. When necessary we add details - a <em>pledge checklist</em> - to the pledge to help determine whether or not a requirement falls foul of the pledge.</p>
+                <h4>Step 4: The decision matrix</h4>
+
+                <p>When there is a risk of breaking a pledge or pledges, we create a <em>decision matrix</em>, which we use to compare potential solutions against requirements and pledges.</p>
+
+                <p>We add more detail to our pledges in the form of a <em>pledge checklist</em> - items which can more easily be verified or checked off. We now have a complete list of requirements - derived from pledges and wishes. The full list of requirements is ordered in terms of priority - items which are non-negotiable appear at the top.</p>
             
-                <p>The sum of requirements and pledges is what we agree to do - our ethical solution.</p>
+                <p>The sum of requirements and pledges is what we agree to do - our decision.</p>
 
-                <p><em>Pledges + Requirements = Ethical solution</em></p>
+                <p><em>Pledges + Requirements = Decisions</em></p>
 
-                <p>In our examples, we might decide that saving money is paramount, at the risk of breaking our pledges, or opt to do nothing. Since we as a team both created the wishlist and the pledges we are conducting a negotiation between our consciences - expressed in the form of pledges - and our goals.</p>
+                {/* <p>In our examples, we might decide that saving money is paramount, at the risk of breaking our pledges, or opt to do nothing. Since we as a team both created the wishlist and the pledges we are conducting a negotiation between our consciences - expressed in the form of pledges - and our goals.</p> */}
 
-                <p>Oftentimes, the negotiation will occur between those in one department, such as marketing, requesting more data, and those responsible for obtaining it, such as the development team. Ethics may not play a part in the negotiation - there be may agreement on what is right and wrong - or those involved in the tradeoff may respond to a shared pledge in different ways.</p>
+                {/* <p>Oftentimes, the negotiation will occur between those in one department, such as marketing, requesting more data, and those responsible for obtaining it, such as the development team. Ethics may not play a part in the negotiation - there be may agreement on what is right and wrong - or those involved in the tradeoff may respond to a shared pledge in different ways.</p> */}
 
-                <p>The decision matrix is an open document to which anyone can contribute; the aim is to capture essential requirements, and to flag any requirement which may cause us to break a pledge.</p>
+                <p>The decision matrix is an open document to which anyone can contribute; the aim is to capture essential requirements, and to flag anything which may cause us to break a pledge.</p>
 
-                <p>If our decision leads to a pledge being broken, we vote on whether to accept it. This happens rarely and is sufficiently serious to warrant attention from the whole team.</p>
+                <p>If a decision leads to a pledge being broken, we vote on whether to accept it. This happens rarely and is sufficiently serious to warrant attention from the whole team.</p>
 
                 {/* <p>The signficance of the vote is determined by the team, company, community, etc. A majority vote against could lead to us stalling, or scrapping a request for a new feature or product.</p> */}
 
@@ -104,6 +126,8 @@ const PDDIntro = () => {
                     </ul>
                 </blockquote>
                 <cite><Links.EL link={{source:'https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-2020'}}>Data Ethics Framework | UK Government</Links.EL></cite>
+
+                <p>If we don't know the impact of a change, we wait until we do.</p>
 
                 <h3>Our decision</h3>
 
