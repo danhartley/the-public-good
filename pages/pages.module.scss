@@ -42,3 +42,29 @@
 .externalLink {
     @include externalLink();
 }
+
+.decisionMatrix {
+    td {
+        font-size: calc(.5rem + .5vw) !important;
+    }
+
+    td:nth-child(3), td:nth-child(4) {
+        text-align: center;
+    }
+    thead td {
+        font-weight: bold;
+    }
+    tbody td {
+        font-size: calc(.4rem + .5vw) !important;
+    }
+    tfoot {
+        font-weight: bold;
+    }
+}
+
+.diagram img {
+    width: initial;
+    height: calc(80vh);
+    border: .1rem solid rgba(var(--fg),.25);
+    padding: 1rem;
+}

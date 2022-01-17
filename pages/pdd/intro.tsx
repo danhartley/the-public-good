@@ -1,5 +1,7 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
+import DecisionMatrix from 'pages/pdd/decision-matrix';
+
 import styles from 'pages/pages.module.scss';
 
 const PDDIntro = () => {
@@ -19,29 +21,35 @@ const PDDIntro = () => {
         <Layout header="Responsible Design & Development" title="Responsible Design & Development" description={'Responsible Design & Development'}> {/* image? */}            
             <section>
 
-                <h2>Stress-testing ethical frameworks and sustainable initiatives.</h2>
+                <h2>Stress-testing ethical frameworks, sustainability pledges, and good intentions.</h2>
 
                 <h3>The inspiration for RD&D</h3>
 
-                <p>The collaborators at <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL> wanted to engage with big problems in our day to day work.</p>
+                <p>As collaborators at <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL>, we were looking for a way to work more responsibly.</p>
 
-                <p>We wanted a method that was easy to explain, simple to execute, and that could work with existing philosophies, and practices widely used in software development  - but that required no tools or training.</p>
+                <p>We wanted an approach that was easy to explain, simple to execute, and that could work with existing philosophies and practices widely used in software development  - but that required little or no training, and was not reliant on new tools.</p>
 
-                <p>After a few months back and forth, research, experimentation, and weekly catch ups, we came up with an approach we call <strong>Responsible Design & Development</strong>.</p>
+                <p>After a few months of research, experimentation, and weekly catch ups, we came up with an approach we call <strong>Responsible Design & Development</strong>.</p>
 
-                <p>Rather than avoiding challenging questions, we look at the requirements of a new request through the lens of principles encoded in pledges.</p>
+                <p>Rather than avoiding challenging questions, we look at the requirements of each new request through the lens of principles encoded in pledges, before reaching a decision.</p>
 
-                <p><em>Pledges + Requirements = Decisions</em></p>
+                <p><em>Pledges + Requirements = Decision</em></p>
 
-                <h3>Responsible Design & Development in practice</h3>
+                <h3>Responsible Design & Development in practice</h3>       
+
+                {/* <p class={styles.diagram}>
+                    <img src="https://live.staticflickr.com/65535/51827077289_1009232acc_k_d.jpg" alt="Decision matrix" />
+                </p> */}
 
                 <p>We created RD&D to solve a conundrum we face repeatedly in our work: how to act in accordance with our principles. Principles are general and abstract, work is specific and concrete.</p>
 
-                <p>RD&D consists of 6 parts which we follow in order to get started, then move between as necessary.</p>
+                <p>RD&D consists of 7 parts, any of which may be used in isolation, or left out. We iterate between the parts, or jump from one to another, but to get started, we recommend following them in the order set out here.</p>
+
+                <p>To help the exposition, I will refer to an example based on our own work.</p>
 
                 <h4>1. Explaining the project</h4>
 
-                <p>We are at a stage in the development of RD&D when we want to tell people about it, and receive feedback. As an open source project, we also need to keep down costs. These are our requests:</p>
+                <p>We are at a stage in the development of RD&D when we want to tell people about it, and receive feedback. As an open source project, we also need to keep down costs. These are our requests (high level requirements):</p>
 
                 <blockquote cite='https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1882839689'>
                     <div>We want to add analytics to our site, and pay nothing, or very little.</div>
@@ -52,15 +60,13 @@ const PDDIntro = () => {
 
                 <h4>2. Defining the scope</h4>
 
-                <p>Defining the scope of a project is important in order to focus on pledges that are relevant, and which we can address directly in our solutions.</p>
+                <p>Defining the scope of a project is important in order to focus on pledges that are relevant, and will affect our decisions.</p>
 
-                <p>Because we want to find out more about our users, and interact with them, data security and privacy will be key areas of concern.</p>
+                <p>Because we want to find out more about our users, and interact with them, data security and privacy are key areas of concern. Together with our requests, these define our scope.</p>
 
                 <h4>3. Writing pledges</h4>
 
-                <p>We write pledges specific to the project or task we are working on. We can also draw on existing pledges such as company or technical pledges. We will return to organisational and role-based pledges.</p>
-
-                <p>Pledges can be added to and modified when we know more about the requirements and begin reviewing our solutions.</p>
+                <p>We start by writing pledges based on the scope. We will add more later when we write our list of detailed requirements.</p>
 
                 <p>We derive pledges from our own <Links.EL link={{source:'https://responsibletech.work/responsible-pledges/'}}>RTW pledges</Links.EL>, professional codes of conduct, manifestos, and any other principles and promises which are pertinent. We keep a <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1317309901'}}>list</Links.EL> of these for reference.</p>
 
@@ -89,33 +95,49 @@ const PDDIntro = () => {
                 </blockquote>
                 <cite><Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1294958642'}}>RTW Technical Pledges</Links.EL></cite>
 
-                <p>We also draw on <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1Am4eOdTEoro6xY0c-lr7iVm17V-zcJ1_hHsa8b-0wJk/edit#gid=1813580571'}}>ready-made pledges</Links.EL> common to all our projects.</p>
+                <p>To these we add three more pledges:</p>
 
+                <blockquote>
+                    <div>We pledge to consider the risks and consequences of using third party services.</div>
+                    <div>We pledge to assess the carbon emissions of third parties.</div>
+                    <div>We pledge to make user data transparent by default.</div>
+                </blockquote>
+             
                 <h4>4. Listing our requirements</h4>
 
                 <p>Requirements are the detailed breakdown of the things we need to know and do to satisfy a request. For example, we need to know whether an analytics service provides support, offers self-hosting, and how accurate their data are.</p>
 
-                <h4>5. Creating decision matrices</h4>
+                <p>If you practice a form of agile development such as Scrum or Kanban, you will add these requirements to cards or tasks.</p>
 
-                <p>When there is a risk of breaking a pledge or pledges, we create a <em>decision matrix</em>, which we use to consider solutions against requirements and pledges.</p>
+                <p>To compare different solutions, especially those that are likely to challenge our pledges, we set up a <em>decision matrix</em>.</p>
 
-                <p>In addition to our initial requirements, we have requirements derived from pledges; once again we are matching principles to concrete issues. When can now order our list in terms of priority - items which are more important appear higher up - and give them an appropriately weighted score.</p>
+                <h4>5. Creating a decision matrix</h4>
+
+                <p>A simplified example of the Decision Matrix that we used for choosing our analytics provider:</p>
+
+                <DecisionMatrix></DecisionMatrix>
+
+                <div><em>Source: <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=137244074'}}>Analytics Decision Matrix for RTW website</Links.EL> </em></div>
+
+                <p>A <em>decision matrix</em> lets us compare different solutions against with reference to our requirements, both those specific to the request, and those derived from pledges.</p>
+
+                <p>We order our list in terms of priority - from more to less important - and give each one an appropriately weighted score.</p>
             
-                <p>The scores are a guide to our choice of solution.</p>
+                <p>These scores are a guide to our decision.</p>
 
-                <p><em>Pledges + Requirements = Decisions</em></p>
+                <p><em>Pledges + Requirements + Scores = Decision</em></p>
 
                 <p>The decision matrix is an open document to which anyone can contribute; the aim is to capture essential requirements, and to flag anything which may cause us to break a pledge.</p>
 
-                <p>If a decision leads to a pledge being broken, we vote on whether to accept it. This happens rarely and is sufficiently serious to warrant attention from the whole team.</p>
+                <p>If a decision leads to a pledge being broken, we vote on whether to accept it.</p>
 
                 <h4>6. Voting</h4>
 
-                <p>Voting is warranted when the decision is made to break a pledge because shuould not be done lightly. Voting should be sufficiently rare to cause minimal disruption.</p>
+                <p>Voting should be sufficiently rare to cause minimal disruption.</p>
 
                 <p>In some cases there may be a good reason for breaking a pledge - we may be forced to break one pledge in favour of another. If that is the case we use other criteria to resolve the problem. We can evaluate alternative solutions in terms of their <Links.EL link={{source:'https://www.interaction-design.org/literature/article/from-prototype-to-product-ensuring-your-solution-is-feasible-and-viable'}}>desirability, feasibility, and viabilty</Links.EL> or <Links.EL link={{source:'https://www.mindtheproduct.com/socially-preferable-by-nathan-kinch/'}}>social preferability</Links.EL>.</p>
 
-                <p>An alternate scoring from the UK.GOV website is to score options on a sliding scale:</p>
+                <p>The UK.GOV website scores options on a sliding scale:</p>
 
                 <blockquote cite='https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-2020'>
                     <ul>
@@ -125,21 +147,27 @@ const PDDIntro = () => {
                 </blockquote>
                 <cite><Links.EL link={{source:'https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-2020'}}>Data Ethics Framework | UK Government</Links.EL></cite>
 
-                <p>If we don't know the impact of a change, we wait until we do.</p>
+                <p>If we cannot reach a decision, or vote against it, we place it in <em>quarantine</em>. We also do this if we cannot gauge the impact of our decision. This honours one of our key, organisationl pledges:</p>
 
-                <h3>Our decisions</h3>
+                <blockquote>
+                    We pledge not to break a pledge if we are ignorant of the consequences.
+                </blockquote>
 
-                <p>We have a reasoned list of requirements, a decision, and a verdict on whether we are honouring our pledge.</p>
+                <p>What quarantine looks like is up to you. We either label or tag our decision, or card, or place it in a quarantine bucket or list.</p>
 
-                <p>We decide against using Google Analytics for tracking users because whilst free, it profits from user data, and against Discourse because it is too expensive.</p>
+                <p>If we are in agreement, we are ready to put our decision into effect.</p>
+
+                <h4>7. Putting the decision into effect</h4>
+
+                <p>We decided against using Google Analytics for tracking users because whilst free, it profits from user data, and against Discourse because it is too expensive.</p>
 
                 <p>For the RTW website we selected GitHub Discussions as the forum for discussion and questions. This forum does not allow for anonymous comments (you have to create an account), and may put off users who feel it is too tech-oriented. However, it is free, well maintained, easy to set up and maintain, and does not commit us. At this stage we are looking for people or companies interested in adopting or trialling RD&D and they are likely to be familiar with GitHub and already have an account.</p>
 
                 <p>Plausible is the best candidate for analytics but we will wait to see if we really need it.</p>
 
-                <h4>Conclusions</h4>
+                <h3>Conclusion</h3>
 
-                <p>The version of RD&D described here fits with traditional agile software development, and we've used all of its parts: principles and professional codes of conduct, project pledges, a decision matrix, and team voting.</p>
+                <p>The version of RD&D described here fits with traditional agile software development, and we've used all of its parts: project definition and scope, requirements, pledges, decision matrices, and voting.</p>
 
                 <p>We recommend using only the parts of RD&D you find helpful. There are no hard and fast naming conventions, or strict rules; RD&D is not a prescriptive practice. Start with barebones RD&D and adopt more of it as necessary.</p>
 
