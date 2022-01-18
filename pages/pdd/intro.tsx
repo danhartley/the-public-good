@@ -100,7 +100,7 @@ const PDDIntro = () => {
                 <blockquote>
                     <div>We pledge to consider the risks and consequences of using third party services.</div>
                     <div>We pledge to assess the carbon emissions of third parties.</div>
-                    <div>We pledge to make user data transparent by default.</div>
+                    <div>We pledge to make data about us transparent by default.</div>
                 </blockquote>
              
                 <h4>4. Listing our requirements</h4>
@@ -119,7 +119,7 @@ const PDDIntro = () => {
 
                 <div><em>Source: <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=137244074'}}>Analytics Decision Matrix for RTW website</Links.EL> </em></div>
 
-                <p>A <em>decision matrix</em> lets us compare different solutions against with reference to our requirements, both those specific to the request, and those derived from pledges.</p>
+                <p>A <em>decision matrix</em> lets us compare different solutions with reference to our requirements, both those specific to the request, and those derived from pledges.</p>
 
                 <p>We order our list in terms of priority - from more to less important - and give each one an appropriately weighted score.</p>
             
