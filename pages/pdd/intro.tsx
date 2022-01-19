@@ -3,8 +3,6 @@ import Layout from 'components/layout/layout';
 import DecisionMatrix from 'pages/pdd/decision-matrix';
 import Workflow from 'pages/pdd/workflow';
 
-import styles from 'pages/pages.module.scss';
-
 const PDDIntro = () => {
 
     const perfLinks = [

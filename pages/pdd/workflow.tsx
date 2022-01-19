@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from 'preact/hooks';
-// import mermaid from 'mermaid';
 
 const config = {
     startOnLoad:false,
@@ -71,33 +70,6 @@ const Workflow = () => {
     return (
         loaded && svg ? <div dangerouslySetInnerHTML={{ __html: svg }} /> : null
     )
-};
-
-const Workflow2 = () => {
-
-    // https://github.com/mermaidjs/mermaid-webpack-demo/blob/master/index.html
-    // https://mermaid-js.github.io/mermaid/#/usage?id=usage-with-webpack
-
-    const [svg, setSvg] = useState(null);
-
-    useEffect(() => {
-
-        mermaid.mermaidAPI.initialize({
-            startOnLoad:false
-        });
-
-        const insertSvg = svgCode => {
-            setSvg(svgCode);
-            console.log("svgCode")
-        };
-    
-        mermaid.mermaidAPI.render('graphDiv', graph, insertSvg);
-
-    }, []);
-
-    return (
-        svg ? <div class='mermaid'>{svg}</div> : null
-    );
 };
 
 export default Workflow;
