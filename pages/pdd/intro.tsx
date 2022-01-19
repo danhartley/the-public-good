@@ -1,6 +1,7 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import DecisionMatrix from 'pages/pdd/decision-matrix';
+import Workflow from 'pages/pdd/workflow';
 
 import styles from 'pages/pages.module.scss';
 
@@ -40,6 +41,14 @@ const PDDIntro = () => {
                 {/* <p class={styles.diagram}>
                     <img src="https://live.staticflickr.com/65535/51827077289_1009232acc_k_d.jpg" alt="Decision matrix" />
                 </p> */}
+
+
+                    <figure>
+                        <Workflow></Workflow>
+                        <figcaption>
+                            <div><em>Figure 1: Simplified Responsible Design & Development workflow</em></div>
+                        </figcaption>
+                    </figure>
 
                 <p>We created RD&D to solve a conundrum we face repeatedly in our work: how to act in accordance with our principles. Principles are general and abstract, work is specific and concrete.</p>
 
@@ -115,9 +124,12 @@ const PDDIntro = () => {
 
                 <p>A simplified example of the Decision Matrix that we used for choosing our analytics provider:</p>
 
-                <DecisionMatrix></DecisionMatrix>
-
-                <div><em>Source: <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=137244074'}}>Analytics Decision Matrix for RTW website</Links.EL> </em></div>
+                <figure>
+                    <DecisionMatrix></DecisionMatrix>
+                    <figcaption>
+                        <em>Figure 2: Simplified Decision Matrix (see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=137244074'}}>Analytics Decision Matrix for RTW website</Links.EL>)</em>
+                    </figcaption>
+                </figure>
 
                 <p>A <em>decision matrix</em> lets us compare different solutions with reference to our requirements, both those specific to the request, and those derived from pledges.</p>
 

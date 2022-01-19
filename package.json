@@ -48,6 +48,7 @@
     "eslint-plugin-functional": "^3.6.0",
     "jest": "^27.4.7",
     "jest-preset-preact": "^4.0.2",
+    "mermaid": "^7.1.2",
     "next": "^11.1.2",
     "next-plugin-preact": "^3.0.4",
     "next-pwa": "^5.2.21",
