@@ -45,6 +45,10 @@ const graphDefinition = `
         class J quarantine;
 `;
 
+declare global {
+    interface Window { mermaid: any; }
+}
+
 const Workflow = () => {
 
     // useful ref: https://github.com/DanShai/useMermaid-hook
@@ -60,9 +64,11 @@ const Workflow = () => {
     }, []);
 
     useEffect(() => {
-        if(!loaded) return;
-        mermaid.initialize(config);
-        mermaid.mermaidAPI.render('id', graphDefinition, svGraph => {
+        if(!loaded) return;                
+        window.mermaid = window.mermaid || {};
+        (window as any).mermaid = window.mermaid as any || {};
+        window.mermaid.initialize(config);
+        window.mermaid.mermaidAPI.render('id', graphDefinition, svGraph => {
             setSvg(svGraph);
         });
     }, [loaded]);
