@@ -24,7 +24,7 @@
             "languages": [ "HTML", "JS", "CSS", "TS" ],
             "technologies": [ "Jamstack", "Preact", "TypeScript", "Sass", "Next.js", "Netlify", "GitHub", "Jest", "webpack", "Lighthouse budget", "axe Accessibility Linter", "ts/tsx eslint", "Chart.js" ],
             "roles": ["writer", "front-end developer"],
-            "blurb": "Where I write about the climate crisis and responsible web development. The site demonstrates best practice website optimisation, performance and accessibility. There are links to online tools, an overview of the services I offer, and an example of a sociable contract."
+            "blurb": "Where I write about the climate crisis and responsible web development. The site shows best practice website optimisation, performance and accessibility. There are links to online tools, an overview of the services I offer, and an example of a sociable contract."
         },
         {
             "name": "Venga Vamos",

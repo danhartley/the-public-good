@@ -167,7 +167,7 @@ const NCSPartOne = () => {
                         <li>Diameter of the tree at 1.3 metres. (Diameter at Breast Height - <Links.EL link={{source:'https://en.wikipedia.org/wiki/Diameter_at_breast_height'}}>DBH</Links.EL>).</li>
                         <li>Height of the stem or trunk in metres.</li>
                     </ul>
-                    <div>Scientists in Edinburgh demonstrate how to use these values to <Links.EL link={{source:"https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf"}}>determine the weight of a sycamore</Links.EL> close to their office.</div>
+                    <div>Scientists in Edinburgh show how to use these values to <Links.EL link={{source:"https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf"}}>determine the weight of a sycamore</Links.EL> close to their office.</div>
                 </aside>
                 </Accordion>
                 <p>The weight of a tree is spread throughout its trunk, branches, leaves, and roots.</p>                

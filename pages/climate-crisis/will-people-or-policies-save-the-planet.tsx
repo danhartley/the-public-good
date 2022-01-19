@@ -113,7 +113,7 @@ const CarbonFootprint = () => {
                 <p>
                     <ul class={styles.dashedItemsList}>
                         <li>Provide a basic framework for how to think about climate change numbers.</li>
-                        <li>Demonstrate our dependency on fossil fuels.</li>
+                        <li>Show our dependency on fossil fuels.</li>
                         <li>Can establish good practices and measurable outcomes e.g. the <Links.EL link={{source:'https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf'}}>Ecological Footprint Standards</Links.EL> (PDF)</li>
                     </ul>
                 </p>

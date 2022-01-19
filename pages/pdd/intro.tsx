@@ -17,7 +17,7 @@ const PDDIntro = () => {
     ];
 
     return (
-        <Layout header="Responsible Design & Development" title="Responsible Design & Development" description={'Responsible Design & Development'}> {/* image? */}            
+        <Layout header="Responsible Design & Development"  rt="6 to 7" title="Responsible Design and Development" description={'Responsible Design & Development'}> {/* image? */}            
             <section>
 
                 <h2>Stress-testing ethical frameworks, sustainability pledges, and good intentions.</h2>
@@ -28,7 +28,7 @@ const PDDIntro = () => {
 
                 <p>We wanted an approach that was easy to explain, simple to execute, and that could work with existing philosophies and practices widely used in software development  - but that required little or no training, and was not reliant on new tools.</p>
 
-                <p>After a few months of research, experimentation, and weekly catch ups, we came up with an approach we call <strong>Responsible Design & Development</strong>.</p>
+                <p>After <Links.EL link={{source:"https://responsibletechwork.getoutline.com/doc/how-we-developed-pdd-3mPXjbNly0"}}>six months of research and experiment</Links.EL>, we came up with an approach we call <strong>Responsible Design & Development</strong>.</p>
 
                 <p>Rather than avoiding challenging questions, we look at the requirements of each new request through the lens of principles encoded in pledges, before reaching a decision.</p>
 
@@ -52,7 +52,7 @@ const PDDIntro = () => {
 
                 <p>RD&D consists of 7 parts, any of which may be used in isolation, or left out. We iterate between the parts, or jump from one to another, but to get started, we recommend following them in the order set out here.</p>
 
-                <p>To help the exposition, I will refer to an example based on our own work.</p>
+                <p>I use a real example in the hope this will make the process clearer.</p>
 
                 <h4>1. Explaining the project</h4>
 
@@ -143,9 +143,9 @@ const PDDIntro = () => {
 
                 <h4>6. Voting</h4>
 
-                <p>Voting should be sufficiently rare to cause minimal disruption.</p>
+                <p>We think putting time aside for voting is worthwhile. If we break a pledge, we want to know why, and agree on whether it is acceptable. We record our decision so that we can review it later.</p>
 
-                <p>In some cases there may be a good reason for breaking a pledge - we may be forced to break one pledge in favour of another. If that is the case we use other criteria to resolve the problem. We can evaluate alternative solutions in terms of their <Links.EL link={{source:'https://www.interaction-design.org/literature/article/from-prototype-to-product-ensuring-your-solution-is-feasible-and-viable'}}>desirability, feasibility, and viabilty</Links.EL> or <Links.EL link={{source:'https://www.mindtheproduct.com/socially-preferable-by-nathan-kinch/'}}>social preferability</Links.EL>.</p>
+                <p>There may be a good reason for breaking a pledge - we may be forced to break one pledge in favour of another. If that is the case we use other criteria to resolve the problem. We can evaluate alternative solutions in terms of their <Links.EL link={{source:'https://www.interaction-design.org/literature/article/from-prototype-to-product-ensuring-your-solution-is-feasible-and-viable'}}>desirability, feasibility, and viability</Links.EL> or <Links.EL link={{source:'https://www.mindtheproduct.com/socially-preferable-by-nathan-kinch/'}}>social preferability</Links.EL>.</p>
 
                 <p>The UK.GOV website scores options on a sliding scale:</p>
 
@@ -157,7 +157,7 @@ const PDDIntro = () => {
                 </blockquote>
                 <cite><Links.EL link={{source:'https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-2020'}}>Data Ethics Framework | UK Government</Links.EL></cite>
 
-                <p>If we cannot reach a decision, or vote against it, we place it in <em>quarantine</em>. We also do this if we cannot gauge the impact of our decision. This honours one of our key, organisationl pledges:</p>
+                <p>If we cannot reach a decision, or vote against it, we place it in <em>quarantine</em>. We also do this if we cannot gauge the impact of our decision. This honours one of our key, organisational pledges:</p>
 
                 <blockquote>
                     We pledge not to break a pledge if we are ignorant of the consequences.
@@ -169,11 +169,11 @@ const PDDIntro = () => {
 
                 <h4>7. Putting the decision into effect</h4>
 
-                <p>We decided against using Google Analytics for tracking users because whilst free, it profits from user data, and against Discourse because it is too expensive.</p>
+                <p>We decided against using <Links.EL link={{source:'https://analytics.google.com/analytics/'}}>Google Analytics</Links.EL> for tracking users because whilst free, it profits from user data, and against <Links.EL link={{source:"https://www.discourse.org/"}}>Discourse</Links.EL> because it is too expensive.</p>
 
-                <p>For the RTW website we selected GitHub Discussions as the forum for discussion and questions. This forum does not allow for anonymous comments (you have to create an account), and may put off users who feel it is too tech-oriented. However, it is free, well maintained, easy to set up and maintain, and does not commit us. At this stage we are looking for people or companies interested in adopting or trialling RD&D and they are likely to be familiar with GitHub and already have an account.</p>
+                <p>For the RTW website we selected <Links.EL link={{source:"https://docs.github.com/en/discussions"}}>GitHub Discussions</Links.EL> as the forum for discussion and questions. This forum does not allow for anonymous comments (you have to create an account), and may put off users who feel it is too tech-oriented. However, it is free, well maintained, easy to set up and maintain, and does not commit us. At this stage we are looking for people or companies interested in adopting or trialling RD&D - they are likely to be familiar with GitHub, and already have an account.</p>
 
-                <p>Plausible is the best candidate for analytics but we will wait to see if we really need it.</p>
+                <p><Links.EL link={{source:"https://plausible.io/"}}>Plausible</Links.EL> is the best candidate for analytics but we will wait to see if we really need it.</p>
 
                 <h3>Conclusion</h3>
 
@@ -190,6 +190,12 @@ const PDDIntro = () => {
                 <p>We have added pledges for other roles based on our research but we would be glad of help in refining and adding to them.</p>
 
                 <p>Role-based pledges reveal interests, duties and biases. They also have a practical function - a discussion between representatives is generally easier than one between individuals.</p>
+
+                <h3>Why we practice RD&D</h3>
+
+                <p>Responsible Design & Development is a tool for collaboration that favours ideas over individuals. We use RD&D to give weight to our principles by making pledges that affect our day to day work. Our pledges challenge us to address awkward questions that we might prefer to sideline. As a result, we feel better about our decisions, and put into effect more robust solutions.</p>
+
+                <p>Links to start up case study and personal pledges…</p>
 
                 <Links.ExternalLinksList links={perfLinks} />   
 
