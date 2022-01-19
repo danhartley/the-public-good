@@ -54,7 +54,7 @@ const Workflow = () => {
     // useful ref: https://github.com/DanShai/useMermaid-hook
 
     const [loaded, setLoaded] = useState(false);
-    const [svg, setSvg] = useState(false);
+    const [svg, setSvg] = useState<string>('');
 
     useEffect(() => {                    
             const scriptTag = document.createElement('script');
