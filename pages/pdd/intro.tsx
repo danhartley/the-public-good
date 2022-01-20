@@ -22,11 +22,11 @@ const PDDIntro = () => {
 
                 <h2>Stress-testing ethical frameworks, sustainability pledges, and good intentions.</h2>
 
-                <h3>The inspiration for RD&D</h3>
+                <h3>How we came up with RD&D</h3>
 
-                <p>As collaborators at <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL>, we were looking for a way to work more responsibly.</p>
+                <p>As collaborators at <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL>, we look for ways to work more responsibly. We began by challenging how we develop sofware.</p>
 
-                <p>We wanted an approach that was easy to explain, simple to execute, and that could work with existing philosophies and practices widely used in software development  - but that required little or no training, and was not reliant on new tools.</p>
+                <p>We wanted an approach that was easy to explain, simple to execute, and that could work with existing philosophies and practices widely used in software development but that required little or no training, and was not reliant on new tools.</p>
 
                 <p>After <Links.EL link={{source:"https://responsibletechwork.getoutline.com/doc/how-we-developed-pdd-3mPXjbNly0"}}>six months of research and experiment</Links.EL>, we came up with an approach we call <strong>Responsible Design & Development</strong>.</p>
 
@@ -36,17 +36,13 @@ const PDDIntro = () => {
 
                 <h3>Responsible Design & Development in practice</h3>       
 
-                {/* <p class={styles.diagram}>
-                    <img src="https://live.staticflickr.com/65535/51827077289_1009232acc_k_d.jpg" alt="Decision matrix" />
-                </p> */}
-
-
-                    <figure>
-                        <Workflow></Workflow>
-                        <figcaption>
-                            <div><em>Figure 1: Simplified Responsible Design & Development workflow</em></div>
-                        </figcaption>
-                    </figure>
+                <figure>
+                    {/* <Workflow></Workflow> */}
+                    <img src="/workflow.svg" alt="" />
+                    <figcaption>
+                        <div><em>Figure 1: Simplified Responsible Design & Development workflow</em></div>
+                    </figcaption>
+                </figure>
 
                 <p>We created RD&D to solve a conundrum we face repeatedly in our work: how to act in accordance with our principles. Principles are general and abstract, work is specific and concrete.</p>
 
@@ -167,13 +163,13 @@ const PDDIntro = () => {
 
                 <p>If we are in agreement, we are ready to put our decision into effect.</p>
 
-                <h4>7. Putting the decision into effect</h4>
+                <h4>7. Making decisions</h4>
 
                 <p>We decided against using <Links.EL link={{source:'https://analytics.google.com/analytics/'}}>Google Analytics</Links.EL> for tracking users because whilst free, it profits from user data, and against <Links.EL link={{source:"https://www.discourse.org/"}}>Discourse</Links.EL> because it is too expensive.</p>
 
-                <p>For the RTW website we selected <Links.EL link={{source:"https://docs.github.com/en/discussions"}}>GitHub Discussions</Links.EL> as the forum for discussion and questions. This forum does not allow for anonymous comments (you have to create an account), and may put off users who feel it is too tech-oriented. However, it is free, well maintained, easy to set up and maintain, and does not commit us. At this stage we are looking for people or companies interested in adopting or trialling RD&D - they are likely to be familiar with GitHub, and already have an account.</p>
+                <p>For the RTW website we selected <Links.EL link={{source:"https://docs.github.com/en/discussions"}}>GitHub Discussions</Links.EL> as the forum for discussion and questions. This forum does not allow for anonymous comments (you have to create an account), and may put off users who feel it is too tech-oriented. However, it is free, well maintained, easy to set up and maintain, and does not commit us. At this stage we are looking for people or companies interested in adopting or trialling RD&D - they are likely to be familiar with GitHub, and already have an account. We will implement GitHub Discussions.</p>
 
-                <p><Links.EL link={{source:"https://plausible.io/"}}>Plausible</Links.EL> is the best candidate for analytics but we will wait to see if we really need it.</p>
+                <p><Links.EL link={{source:"https://plausible.io/"}}>Plausible</Links.EL> is the best candidate for analytics but we will wait to see if we really need it. We place Plausible in quarantine.</p>
 
                 <h3>Conclusion</h3>
 
