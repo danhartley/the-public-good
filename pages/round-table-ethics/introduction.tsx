@@ -1,7 +1,9 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
-import DecisionMatrix from 'pages/pdd/decision-matrix';
-import Workflow from 'pages/pdd/workflow';
+import DecisionMatrix from 'pages/round-table-ethics/decision-matrix';
+import Workflow from 'pages/round-table-ethics/workflow';
+
+import styles from 'pages/pages.module.scss';
 
 const PDDIntro = () => {
 
@@ -17,42 +19,44 @@ const PDDIntro = () => {
     ];
 
     return (
-        <Layout header="Responsible Design & Development"  rt="6 to 7" title="Responsible Design and Development" description={'Responsible Design & Development'}> {/* image? */}            
+        <Layout header="Round Table Ethics"  rt="6 to 7" title="Responsible Design and Development" description={'Round Table Ethics'}> {/* image? */}            
             <section>
 
                 <h2>Stress-testing ethical frameworks, sustainability pledges, and good intentions.</h2>
 
-                <h3>How we came up with RD&D</h3>
+                <h3>The raison d'être of Round Table Ethics</h3>
 
-                <p>As collaborators at <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL>, we look for ways to work more responsibly. We began by challenging how we develop sofware.</p>
+                <p>As collaborators at <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL>, we look for ways to work more responsibly. We began by challenging how we develop software.</p>
 
                 <p>We wanted an approach that was easy to explain, simple to execute, and that could work with existing philosophies and practices widely used in software development but that required little or no training, and was not reliant on new tools.</p>
 
-                <p>After <Links.EL link={{source:"https://responsibletechwork.getoutline.com/doc/how-we-developed-pdd-3mPXjbNly0"}}>six months of research and experiment</Links.EL>, we came up with an approach we call <strong>Responsible Design & Development</strong>.</p>
+                <p>Over six months we came up with an approach to responsible design and development we call <strong>Round Table Ethics</strong>.</p>
 
-                <p>Rather than avoiding challenging questions, we look at the requirements of each new request through the lens of principles encoded in pledges, before reaching a decision.</p>
+                <p>Rather than avoiding challenging questions, we look at the requirements of each new piece of work through the lens of principles encoded in pledges, before reaching a decision.</p>
 
                 <p><em>Pledges + Requirements = Decision</em></p>
 
-                <h3>Responsible Design & Development in practice</h3>       
+                <h3>Round Table Ethics in practice</h3>       
 
                 <figure>
                     {/* <Workflow></Workflow> */}
-                    <img src="/workflow.svg" alt="" />
+                    <div class={styles.centred}>
+                        <img src="/workflow.svg" alt="" />
+                    </div>
                     <figcaption>
-                        <div><em>Figure 1: Simplified Responsible Design & Development workflow</em></div>
+                        <div><em>Figure 1: Simplified Round Table Ethics workflow</em></div>
                     </figcaption>
                 </figure>
 
-                <p>We created RD&D to solve a conundrum we face repeatedly in our work: how to act in accordance with our principles. Principles are general and abstract, work is specific and concrete.</p>
+                <p>We created RTE to solve a conundrum we face repeatedly in our work: how to act in accordance with our principles. Principles are general and abstract, work is specific and concrete.</p>
 
-                <p>RD&D consists of 7 parts, any of which may be used in isolation, or left out. We iterate between the parts, or jump from one to another, but to get started, we recommend following them in the order set out here.</p>
+                <p>RTE consists of 7 parts, any of which may be used in isolation, or left out. We iterate between the parts, circle back on ourselves or jump around, but to get started, we recommend following them in the order set out here.</p>
 
                 <p>I use a real example in the hope this will make the process clearer.</p>
 
                 <h4>1. Explaining the project</h4>
 
-                <p>We are at a stage in the development of RD&D when we want to tell people about it, and receive feedback. As an open source project, we also need to keep down costs. These are our requests (high level requirements):</p>
+                <p>We are at a stage in the development of RTE when we want to tell people about it, and receive feedback. As an open source project, we also need to keep down costs. These are our requests (high level requirements):</p>
 
                 <blockquote cite='https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1882839689'>
                     <div>We want to add analytics to our site, and pay nothing, or very little.</div>
@@ -167,15 +171,15 @@ const PDDIntro = () => {
 
                 <p>We decided against using <Links.EL link={{source:'https://analytics.google.com/analytics/'}}>Google Analytics</Links.EL> for tracking users because whilst free, it profits from user data, and against <Links.EL link={{source:"https://www.discourse.org/"}}>Discourse</Links.EL> because it is too expensive.</p>
 
-                <p>For the RTW website we selected <Links.EL link={{source:"https://docs.github.com/en/discussions"}}>GitHub Discussions</Links.EL> as the forum for discussion and questions. This forum does not allow for anonymous comments (you have to create an account), and may put off users who feel it is too tech-oriented. However, it is free, well maintained, easy to set up and maintain, and does not commit us. At this stage we are looking for people or companies interested in adopting or trialling RD&D - they are likely to be familiar with GitHub, and already have an account. We will implement GitHub Discussions.</p>
+                <p>For the RTW website we selected <Links.EL link={{source:"https://docs.github.com/en/discussions"}}>GitHub Discussions</Links.EL> as the forum for discussion and questions. This forum does not allow for anonymous comments (you have to create an account), and may put off users who feel it is too tech-oriented. However, it is free, well maintained, easy to set up and maintain, and does not commit us. At this stage we are looking for people or companies interested in adopting or trialling RTE - they are likely to be familiar with GitHub, and already have an account. We will implement GitHub Discussions.</p>
 
                 <p><Links.EL link={{source:"https://plausible.io/"}}>Plausible</Links.EL> is the best candidate for analytics but we will wait to see if we really need it. We place Plausible in quarantine.</p>
 
                 <h3>Conclusion</h3>
 
-                <p>The version of RD&D described here fits with traditional agile software development, and we've used all of its parts: project definition and scope, requirements, pledges, decision matrices, and voting.</p>
+                <p>The version of RTE described here fits with traditional agile software development, and we've used all of its parts: project definition and scope, requirements, pledges, decision matrices, and voting.</p>
 
-                <p>We recommend using only the parts of RD&D you find helpful. There are no hard and fast naming conventions, or strict rules; RD&D is not a prescriptive practice. Start with barebones RD&D and adopt more of it as necessary.</p>
+                <p>We recommend using only the parts of RTE you find helpful. There are no hard and fast naming conventions, or strict rules; RTE is not a prescriptive practice. Start with barebones RTE and adopt more of it as necessary.</p>
 
                 <h3>Organisational and role-based pledges</h3>
 
@@ -187,9 +191,9 @@ const PDDIntro = () => {
 
                 <p>Role-based pledges reveal interests, duties and biases. They also have a practical function - a discussion between representatives is generally easier than one between individuals.</p>
 
-                <h3>Why we practice RD&D</h3>
+                <h3>Why we practice RTE</h3>
 
-                <p>Responsible Design & Development is a tool for collaboration that favours ideas over individuals. We use RD&D to give weight to our principles by making pledges that affect our day to day work. Our pledges challenge us to address awkward questions that we might prefer to sideline. As a result, we feel better about our decisions, and put into effect more robust solutions.</p>
+                <p>Round Table Ethics is a tool for collaboration that favours ideas over individuals. We use RTE to give weight to our principles by making pledges that affect our day to day work. Our pledges challenge us to address awkward questions that we might prefer to sideline. As a result, we feel better about our decisions, and put into effect more robust solutions.</p>
 
                 <p>Links to start up case study and personal pledges…</p>
 

@@ -68,3 +68,7 @@
     border: .1rem solid rgba(var(--fg),.25);
     padding: 1rem;
 }
+
+figure .centred img {
+    width: calc(50vw);
+}

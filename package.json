@@ -15,6 +15,7 @@
     "export": "next export",
     "test": "jest",
     "play": "jest play/responsible.test.ts",
+    "plays": "jest play/generics.test.ts",
     "funcs": "jest components/functions/functions.test.ts",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
