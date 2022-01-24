@@ -14,7 +14,7 @@ const Aligned = () => {
 
     useEffect(() => {
 
-        const chart = venn.VennDiagram({ symmetricalTextCentre: true }).width(300).height(200);;
+        const chart = venn.VennDiagram({ symmetricalTextCentre: true }).width(300).height(200);
 
         select("#venn2").datum(sets).call(chart);
                     

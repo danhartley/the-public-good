@@ -17,7 +17,7 @@ const NonAligned = () => {
 
     useEffect(() => {
 
-        const chart = venn.VennDiagram({ symmetricalTextCentre: true }).width(300).height(200);;
+        const chart = venn.VennDiagram({ symmetricalTextCentre: true }).width(300).height(200);
 
         select("#venn").datum(sets).call(chart);
                     
