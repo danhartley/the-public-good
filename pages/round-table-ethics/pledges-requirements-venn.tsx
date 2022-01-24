@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "preact/hooks";
-import * as d3 from "d3";
+import { select, selectAll } from "d3";
+// import { select, selectAll } from 'd3-selection';
 import * as venn from "venn.js";
 
 // https://github.com/upsetjs/venn.js
@@ -19,12 +20,12 @@ const V1 = () => {
 
         const chart = venn.VennDiagram({ symmetricalTextCentre: true }).width(300).height(200);;
 
-        d3.select("#venn").datum(sets).call(chart);
+        select("#venn").datum(sets).call(chart);
                     
-        d3.selectAll("#venn .venn-circle path")
+        selectAll("#venn .venn-circle path")
             .style("fill-opacity", .8);
 
-        d3.selectAll("#venn text")
+        selectAll("#venn text")
             .style("fill", "black")
             .style("font-size", "18px");
 
@@ -48,13 +49,13 @@ const V2 = () => {
 
         const chart = venn.VennDiagram({ symmetricalTextCentre: true }).width(300).height(200);;
 
-        d3.select("#venn2").datum(sets).call(chart);
+        select("#venn2").datum(sets).call(chart);
                     
-        d3.selectAll("#venn2 .venn-circle path")
+        selectAll("#venn2 .venn-circle path")
             .style("fill", "red")
             .style("fill-opacity", .4);
 
-        d3.selectAll("#venn2 text")
+        selectAll("#venn2 text")
             .style("fill", "black")            
             .style("font-size", "18px");
 

@@ -46,6 +46,7 @@
     "chartjs-plugin-datalabels": "^2.0.0",
     "cypress": "^8.3.1",
     "d3": "^7.3.0",
+    "d3-selection": "^3.0.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-functional": "^3.6.0",
     "jest": "^27.4.7",
