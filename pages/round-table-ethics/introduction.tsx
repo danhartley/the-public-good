@@ -1,6 +1,6 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
-import DecisionMatrix from 'pages/round-table-ethics/decision-matrix';
+import { AnalyticsProvider } from 'pages/round-table-ethics/decision-matrix';
 import Workflow from 'pages/round-table-ethics/workflow';
 
 import styles from 'pages/pages.module.scss';
@@ -19,7 +19,7 @@ const PDDIntro = () => {
     ];
 
     return (
-        <Layout header="Round Table Ethics"  rt="6 to 7" title="Responsible Design and Development" description={'Round Table Ethics'}> {/* image? */}            
+        <Layout header="Round Table Ethics"  rt="6 to 7" title="Round Table Ethics" description={'Round Table Ethics'}> {/* image? */}            
             <section>
 
                 <h2>Stress-testing ethical frameworks, sustainability pledges, and good intentions.</h2>
@@ -123,7 +123,7 @@ const PDDIntro = () => {
                 <p>A simplified example of the Decision Matrix that we used for choosing our analytics provider:</p>
 
                 <figure>
-                    <DecisionMatrix></DecisionMatrix>
+                    <AnalyticsProvider></AnalyticsProvider>
                     <figcaption>
                         <em>Figure 2: Simplified Decision Matrix (see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=137244074'}}>Analytics Decision Matrix for RTW website</Links.EL>)</em>
                     </figcaption>
@@ -199,8 +199,7 @@ const PDDIntro = () => {
 
                 <Links.ExternalLinksList links={perfLinks} />   
 
-            </section>
-        
+            </section>            
             <section>
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
