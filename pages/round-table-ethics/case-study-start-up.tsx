@@ -1,7 +1,9 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
-import VennDiagrams from 'pages/round-table-ethics/pledges-requirements-venn';
-import { CostPerTonne } from 'pages/round-table-ethics/decision-matrix';
+import Aligned from 'pages/round-table-ethics/venn-aligned';
+import NonAligned from 'pages/round-table-ethics/venn-non-aligned';
+
+import CostPerTonne from 'pages/round-table-ethics/decision-matrix-cost-per-tonne';
 
 import styles from 'pages/pages.module.scss';
 
@@ -121,7 +123,7 @@ const CaseStudyStartUp = () => {
                     }
                 </ul>
                 <figure>
-                    <VennDiagrams.V1></VennDiagrams.V1>
+                    <NonAligned></NonAligned>
                     <figcaption><em>Figure 1: The gap between intent and reality</em></figcaption>
                 </figure>
                 <h4>The decision matrix</h4>
@@ -148,7 +150,7 @@ const CaseStudyStartUp = () => {
                     The founders set a price of $65 per tonne. This is far higher than the majority of their competitors but their survey suggests a niche market willing to pay more for what they consider a fair price.
                 </p>
                 <figure>
-                    <VennDiagrams.V2></VennDiagrams.V2>
+                    <Aligned></Aligned>  
                     <figcaption><em>Figure 2: Intent and reality aligned</em></figcaption>
                 </figure>
                 <h3>Conclusion</h3>

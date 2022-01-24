@@ -1,6 +1,6 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
-import { AnalyticsProvider } from 'pages/round-table-ethics/decision-matrix';
+import AnalyticsProvider from 'pages/round-table-ethics/decision-matrix-analytics-provider';
 import Workflow from 'pages/round-table-ethics/workflow';
 
 import styles from 'pages/pages.module.scss';
