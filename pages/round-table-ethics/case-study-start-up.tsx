@@ -63,10 +63,10 @@ const CaseStudyStartUp = () => {
                     I will use a fictitious company selling carbon offsets to explain this process.
                 </p>
                 <p>
-                    Our company founders want to make decisions that reflect their values, and earn a living. They believe these needs are complementary.
+                    Our company founders want to make decisions that reflect their values, and earn a living. They believe these goals are complementary.
                 </p>
                 <p>
-                    Following the methods set out in Round Table Ethics, they draw up a foundational list of core, organisational pledges which will act as their ethical backstop.
+                    Following methods set out in Round Table Ethics, they draw up a foundational list of core, organisational pledges which will act as their ethical backstop.
                 </p>
                 <h3>Core pledges</h3>
                 <p>                    
@@ -116,7 +116,7 @@ const CaseStudyStartUp = () => {
                 <p>
                     Among the European competitors to our startup are <Links.EL link={{surce:'https://www.mossy.earth/'}}>Mossy Earth</Links.EL>, <Links.EL link={{source:"https://www.myclimate.org/"}}>myclimate</Links.EL>, and <Links.EL link={{source:"https://ecologi.com/"}}>Ecologi</Links.EL>.
                 </p>
-                But offsetting is <Links.EL link={{source:"https://www.carbonbrief.org/guest-post-why-co2-removal-is-not-equal-and-opposite-to-reducing-emissions"}}>controversial</Links.EL>. The founders will need to demonstrate that the offset operations they support would not otherwise happen (additionality), and that any benefits are irreversible (permanence).
+                But offsetting is <Links.EL link={{source:"https://www.carbonbrief.org/guest-post-why-co2-removal-is-not-equal-and-opposite-to-reducing-emissions"}}>controversial</Links.EL>. The founders will need to demonstrate that the offset operations they support would not otherwise happen (additionality), and that any benefits are not reversible (permanence).
                 </p>
                 <p>
                     
@@ -176,7 +176,7 @@ const CaseStudyStartUp = () => {
                     </figcaption>
                 </figure>
                 <p>
-                    But since the outcome of the decision matrix is unclear, and a recent Reuters <Links.EL link={{source:"https://www.reuters.com/business/cop/carbon-needs-cost-least-100tonne-now-reach-net-zero-by-2050-2021-10-25/"}}>poll of climate economists</Links.EL>  puts the mean value of offsetting a tonne of carbon at $100 if we are to reach net zero by 2050, the founders commissioned a marketing survey of their target audience.
+                    But since the outcome of the decision matrix is unclear, and a recent Reuters <Links.EL link={{source:"https://www.reuters.com/business/cop/carbon-needs-cost-least-100tonne-now-reach-net-zero-by-2050-2021-10-25/"}}>poll of climate economists</Links.EL>  puts the mean value of offsetting a tonne of carbon at $100 if we are to reach net zero by 2050, the founders commission a marketing survey of their target audience.
                 </p>
                 <p>
                     They publish their thinking, including the decision matrix, in line with their pledge to expose their methods to scrutiny. They also hope this may balance the confirmation bias startup founders are subject to.
