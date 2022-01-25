@@ -123,7 +123,8 @@ const CaseStudyStartUp = () => {
                     }
                 </ul>
                 <figure>
-                    <NonAligned></NonAligned>
+                    {/* <NonAligned></NonAligned> */}
+                    <div id="venn"><svg width="300" height="200"><g class="venn-area venn-circle" data-venn-sets="Proposed cost per tonne"><path d="M 81.83168316831683 100 m -66.83168316831683 0 a 66.83168316831683 66.83168316831683 0 1 0 133.66336633663366 0 a 66.83168316831683 66.83168316831683 0 1 0 -133.66336633663366 0" style="fill-opacity: 0.8; fill: rgb(31, 119, 180);"></path><text class="label" text-anchor="middle" dy=".35em" x="81" y="100" style="fill: black; font-size: 18px;"><tspan x="81" y="100" dy="-0.7500000000000001em">Proposed</tspan><tspan x="81" y="100" dy="0.35em">cost per</tspan><tspan x="81" y="100" dy="1.4500000000000002em">tonne</tspan></text></g><g class="venn-area venn-circle" data-venn-sets="True cost"><path d="M 218.1683168316832 100 m -66.83168316831683 0 a 66.83168316831683 66.83168316831683 0 1 0 133.66336633663366 0 a 66.83168316831683 66.83168316831683 0 1 0 -133.66336633663366 0" style="fill-opacity: 0.8; fill: rgb(255, 127, 14);"></path><text class="label" text-anchor="middle" dy=".35em" x="218" y="100" style="fill: black; font-size: 18px;"><tspan x="218" y="100" dy="0.35em">True cost</tspan></text></g><g class="venn-area venn-intersection" data-venn-sets="Proposed cost per tonne_True cost"><path d="M 0 0" style="fill-opacity: 0;"></path><text class="label" text-anchor="middle" dy=".35em" x="0" y="-1000" style="fill: black; font-size: 18px;"><tspan x="0" y="-1000" dy="0.35em"></tspan></text></g></svg></div>
                     <figcaption><em>Figure 1: The gap between intent and reality</em></figcaption>
                 </figure>
                 <h4>The decision matrix</h4>
@@ -150,7 +151,8 @@ const CaseStudyStartUp = () => {
                     The founders set a price of $65 per tonne. This is far higher than the majority of their competitors but their survey suggests a niche market willing to pay more for what they consider a fair price.
                 </p>
                 <figure>
-                    <Aligned></Aligned>  
+                    {/* <Aligned></Aligned>   */}
+                    <div id="venn2"><svg width="300" height="200"><g class="venn-area venn-circle" data-venn-sets="Fair cost per tonne $65"><path d="M 150 100 m -85 0 a 85 85 0 1 0 170 0 a 85 85 0 1 0 -170 0" style="fill-opacity: 0.4; fill: red;"></path><text class="label" text-anchor="middle" dy=".35em" x="150" y="100" style="fill: black; font-size: 18px;"><tspan x="150" y="100" dy="-0.7500000000000001em">Fair cost</tspan><tspan x="150" y="100" dy="0.35em">per tonne</tspan><tspan x="150" y="100" dy="1.4500000000000002em">$65</tspan></text></g></svg></div>
                     <figcaption><em>Figure 2: Intent and reality aligned</em></figcaption>
                 </figure>
                 <h3>Conclusion</h3>
