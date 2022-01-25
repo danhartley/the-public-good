@@ -41,7 +41,7 @@ const PDDIntro = () => {
                 <figure>
                     {/* <Workflow></Workflow> */}
                     <div class={styles.centred}>
-                        <img src="/workflow.svg" alt="" />
+                        <img src="/svg/workflow.svg" alt="Workflow" />
                     </div>
                     <figcaption>
                         <div><em>Figure 1: Simplified Round Table Ethics workflow</em></div>

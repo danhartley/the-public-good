@@ -69,7 +69,7 @@ const CaseStudyStartUp = () => {
                 <p>
                     Their core pledges define how they want to behave in the world. This includes their relationship to and responsibility towards future employees, customers, partners, providers of services, and abstract entities such as society and the planet. 
                 </p>
-                <ul className={styles.bulletList}>
+                <ul class={styles.bulletList}>
                     {
                         corePledges.map(pledge => {
                             return <li>{pledge}</li>
@@ -83,7 +83,7 @@ const CaseStudyStartUp = () => {
                     As others join, they will introduce pledges specific to their profession or job. Role-based pledges are used by individuals and teams to guide their own work and to highlight issues, and risks, not previously considered.
                 </p>
                 <h4>Role-based pledges</h4>
-                <ul className={styles.bulletList}>
+                <ul class={styles.bulletList}>
                     {
                         roleBasedPledges.map(pledge => {
                             return <li>{pledge}</li>
@@ -103,10 +103,10 @@ const CaseStudyStartUp = () => {
                 <h4>Project pledges</h4>
                 <p>
                     Our founders build a basic version of their website to test the market.
-                    Key to their project is the carbon offset cost per tonne<span className={styles.super}><a href="#carbon">*</a></span> they will charge their customers. They know the value their competitors typically use but are sceptical - they think an artificially low figure is being used so as not to put people off.
+                    Key to their project is the carbon offset cost per tonne<span class={styles.super}><a href="#carbon">*</a></span> they will charge their customers. They know the value their competitors typically use but are sceptical - they think an artificially low figure is being used so as not to put people off.
                 </p>
                 <h5>Proposal:</h5>
-                <ul className={styles.bulletList}>
+                <ul class={styles.bulletList}>
                     {
                         projectProposals.map(pledge => {
                             return <li>{pledge}</li>
@@ -115,7 +115,7 @@ const CaseStudyStartUp = () => {
                 </ul>
                 <p>They stress test the offset cost per tonne against their project pledges using a <em>decision matrix</em>. Relevant project pledges throw a spotlight on the concrete proposal.</p>
                 <h5>Pledges:</h5>
-                <ul className={styles.bulletList}>
+                <ul class={styles.bulletList}>
                     {
                         productPledges.map(pledge => {
                             return <li>{pledge}</li>
@@ -124,7 +124,9 @@ const CaseStudyStartUp = () => {
                 </ul>
                 <figure>
                     {/* <NonAligned></NonAligned> */}
-                    <div id="venn"><svg width="300" height="200"><g className="venn-area venn-circle" data-venn-sets="Proposed cost per tonne"><path d="M 81.83168316831683 100 m -66.83168316831683 0 a 66.83168316831683 66.83168316831683 0 1 0 133.66336633663366 0 a 66.83168316831683 66.83168316831683 0 1 0 -133.66336633663366 0" style="fill-opacity: 0.8; fill: rgb(31, 119, 180);"></path><text className="label" text-anchor="middle" dy=".35em" x="81" y="100" style="fill: black; font-size: 18px;"><tspan x="81" y="100" dy="-0.7500000000000001em">Proposed</tspan><tspan x="81" y="100" dy="0.35em">cost per</tspan><tspan x="81" y="100" dy="1.4500000000000002em">tonne</tspan></text></g><g className="venn-area venn-circle" data-venn-sets="True cost"><path d="M 218.1683168316832 100 m -66.83168316831683 0 a 66.83168316831683 66.83168316831683 0 1 0 133.66336633663366 0 a 66.83168316831683 66.83168316831683 0 1 0 -133.66336633663366 0" style="fill-opacity: 0.8; fill: rgb(255, 127, 14);"></path><text className="label" text-anchor="middle" dy=".35em" x="218" y="100" style="fill: black; font-size: 18px;"><tspan x="218" y="100" dy="0.35em">True cost</tspan></text></g><g className="venn-area venn-intersection" data-venn-sets="Proposed cost per tonne_True cost"><path d="M 0 0" style="fill-opacity: 0;"></path><text className="label" text-anchor="middle" dy=".35em" x="0" y="-1000" style="fill: black; font-size: 18px;"><tspan x="0" y="-1000" dy="0.35em"></tspan></text></g></svg></div>
+                    <div id="venn">
+                        <img src="/svg/venn-nonaligned.svg" alt="Venn diageam: The gap between intent and reality" />
+                    </div>                
                     <figcaption><em>Figure 1: The gap between intent and reality</em></figcaption>
                 </figure>
                 <h4>The decision matrix</h4>
@@ -151,8 +153,10 @@ const CaseStudyStartUp = () => {
                     The founders set a price of $65 per tonne. This is far higher than the majority of their competitors but their survey suggests a niche market willing to pay more for what they consider a fair price.
                 </p>
                 <figure>
-                    {/* <Aligned></Aligned>   */}
-                    <div id="venn2"><svg width="300" height="200"><g className="venn-area venn-circle" data-venn-sets="Fair cost per tonne $65"><path d="M 150 100 m -85 0 a 85 85 0 1 0 170 0 a 85 85 0 1 0 -170 0" style="fill-opacity: 0.4; fill: red;"></path><text className="label" text-anchor="middle" dy=".35em" x="150" y="100" style="fill: black; font-size: 18px;"><tspan x="150" y="100" dy="-0.7500000000000001em">Fair cost</tspan><tspan x="150" y="100" dy="0.35em">per tonne</tspan><tspan x="150" y="100" dy="1.4500000000000002em">$65</tspan></text></g></svg></div>
+                    {/* <Aligned></Aligned> */}
+                    <div id="venn2">
+                        <img src="/svg/venn-aligned.svg" alt="Venn diagram: Intent and reality aligned" />
+                    </div>
                     <figcaption><em>Figure 2: Intent and reality aligned</em></figcaption>
                 </figure>
                 <h3>Conclusion</h3>
