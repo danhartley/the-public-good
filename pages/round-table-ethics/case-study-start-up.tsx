@@ -18,13 +18,19 @@ const CaseStudyStartUp = () => {
             "name": "Carbon needs to cost at least $100/tonne | Reuters poll",
             "source": "https://www.reuters.com/business/cop/carbon-needs-cost-least-100tonne-now-reach-net-zero-by-2050-2021-10-25/"
         },
+        {
+            "name": "A Comparison of Carbon Offset Standards | WWF",
+            "source": "https://www.globalcarbonproject.org/global/pdf/WWF_2008_A%20comparison%20of%20C%20offset%20Standards.pdf"
+        },
     ];
 
     const corePledges = [
           "We pledge to maintain high standards of professional competence, conduct, and ethical practice."
         , "We pledge to provide products and services that support an economy that nourishes people and the planet."
-        , "We pledge to tackle conflicts of interest."
+        , "We pledge to address conflicts of interest between ourselves and our customers."
         , "We pledge not to break a pledge if we are ignorant of the consequences."
+        , "We pledge to make our pledges public."
+        , "We pledge to come clean if we break a pledge."
     ];
 
     const roleBasedPledges = [
@@ -48,7 +54,7 @@ const CaseStudyStartUp = () => {
     ];
 
     return (
-        <Layout header="Case study - The Startup"  rt="4" title="Case study - the startup" description={'Once a startup has established its purpose, it is ready to write the pledges that will guide its work.'}> {/* image? */}
+        <Layout header="Case study - The Startup"  rt="5 to 6" title="Case study - the startup" description={'Once a startup has established its purpose, it is ready to write the pledges that will guide its work.'}> {/* image? */}
             <section>
                 <h2>
                     Once a startup has established its purpose, it is ready to write the pledges that will guide its work.
@@ -57,7 +63,7 @@ const CaseStudyStartUp = () => {
                     I will use a fictitious company selling carbon offsets to explain this process.
                 </p>
                 <p>
-                    Our company founders want to make decisions that reflect their principles, and earn a living. They believe these needs are complementary.
+                    Our company founders want to make decisions that reflect their values, and earn a living. They believe these needs are complementary.
                 </p>
                 <p>
                     Following the methods set out in Round Table Ethics, they draw up a foundational list of core, organisational pledges which will act as their ethical backstop.
@@ -80,7 +86,7 @@ const CaseStudyStartUp = () => {
                     These pledges are general and apply to everything the company does. They are in addition to their strategy for achieving equality and diversity.
                 </p>
                 <p>
-                    As others join, they will introduce pledges specific to their profession or job. Role-based pledges are used by individuals and teams to guide their own work and to highlight issues, and risks, not previously considered.
+                    As others join, they will introduce pledges specific to their profession or job. Role-based pledges are used by individuals and teams to guide their own work and to highlight issues, and risks, not previously considered. It is worth taking time to make sure role-based pledges align with core pledges.
                 </p>
                 <h4>Role-based pledges</h4>
                 <ul class={styles.bulletList}>
@@ -90,12 +96,27 @@ const CaseStudyStartUp = () => {
                         })
                     }
                 </ul>
-                <p>
-                    Our founders promise to make their pledges public, and to come clean if they break a pledge. They turn these promises into pledges.
-                </p>
                 <h4>The purpose of the company</h4>
                 <p>
-                    The startup provides carbon offset services to small businesses and individuals. But offsetting is <Links.EL link={{source:"https://www.carbonbrief.org/guest-post-why-co2-removal-is-not-equal-and-opposite-to-reducing-emissions"}}>controversial</Links.EL>. The founders want to demonstrate that the offset operations they support would not otherwise happen (additionality), and that any benefits are irreversible (permanence).
+                    The startup plans to provide carbon offset services to small businesses and individuals.
+                </p>
+                <blockquote cite='https://en.wikipedia.org/wiki/Carbon_offset'>
+                    <strong>A carbon offset</strong> is a reduction or removal of emissions of carbon dioxide or other greenhouse gases made in order to compensate for emissions made elsewhere. Offsets are measured in tonnes of carbon dioxide-equivalent (CO2e).
+                </blockquote>
+                <cite><Links.EL link={{source:'https://en.wikipedia.org/wiki/Carbon_offset'}}>Wikipedia | Carbon offset</Links.EL> </cite>
+                <blockquote cite="https://www.theguardian.com/environment/2011/sep/16/carbon-offset-projects-carbon-emissions">
+                    <strong>Carbon offset schemes</strong> allow individuals and companies to invest in environmental projects around the world in order to balance out their own carbon footprints.
+                </blockquote>
+                <cite><Links.EL link={{source:"https://www.theguardian.com/environment/2011/sep/16/carbon-offset-projects-carbon-emissions"}}>The Guardian | A complete guide to carbon offsetting</Links.EL> </cite>
+                <blockquote cite='https://www.globalcarbonproject.org/global/pdf/WWF_2008_A%20comparison%20of%20C%20offset%20Standards.pdf'>
+                    <strong>Certification</strong> is the written assurance by a third party that, during a specified time period, a project activity achieved the reductions in anthropogenic emissions by sources of greenhouse gases (GHG) as verified
+                </blockquote>
+                <cite><Links.EL link={{source:"https://www.globalcarbonproject.org/global/pdf/WWF_2008_A%20comparison%20of%20C%20offset%20Standards.pdf"}}>WWF | Making Sense of the Voluntary Carbon Market</Links.EL> </cite>
+                <p>
+                <p>
+                    Among the European competitors to our startup are <Links.EL link={{surce:'https://www.mossy.earth/'}}>Mossy Earth</Links.EL>, <Links.EL link={{source:"https://www.myclimate.org/"}}>myclimate</Links.EL>, and <Links.EL link={{source:"https://ecologi.com/"}}>Ecologi</Links.EL>.
+                </p>
+                But offsetting is <Links.EL link={{source:"https://www.carbonbrief.org/guest-post-why-co2-removal-is-not-equal-and-opposite-to-reducing-emissions"}}>controversial</Links.EL>. The founders will need to demonstrate that the offset operations they support would not otherwise happen (additionality), and that any benefits are irreversible (permanence).
                 </p>
                 <p>
                     
@@ -103,7 +124,9 @@ const CaseStudyStartUp = () => {
                 <h4>Project pledges</h4>
                 <p>
                     Our founders build a basic version of their website to test the market.
+                    <div>
                     Key to their project is the carbon offset cost per tonne<span class={styles.super}><a href="#carbon">*</a></span> they will charge their customers. They know the value their competitors typically use but are sceptical - they think an artificially low figure is being used so as not to put people off.
+                    </div>
                 </p>
                 <h5>Proposal:</h5>
                 <ul class={styles.bulletList}>
@@ -125,16 +148,26 @@ const CaseStudyStartUp = () => {
                 <figure>
                     {/* <NonAligned></NonAligned> */}
                     <div id="venn">
-                        <img src="/svg/venn-nonaligned.svg" alt="Venn diageam: The gap between intent and reality" />
+                        <img src="/svg/venn-nonaligned.svg" alt="Venn diagram: The gap between intent and reality" />
                     </div>                
                     <figcaption><em>Figure 1: The gap between intent and reality</em></figcaption>
                 </figure>
-                <h4>The decision matrix</h4>
+                <h4>The decision matrix</h4>                
+                <p>
+                    A <span class={styles.reset}><Links.EL link={{source:"https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1748215232"}}>decision matrix</Links.EL></span> is a way to decide between several options. Criteria are derived from business requirements such as profitability, and from pledges. Options either meet or fail criteria.                    
+                </p>
+                <p>
+                    The criteria are reordered from most (1) to least important (10). Criteria that are met are given a score of 1, criteria that are not, a score of 0. Weighted scores are automatically calculated using the equation:
+                    <div class={styles.inset}>
+                        <span><strong>Score = (1/Importance * Met)*100</strong></span>
+                    </div>                    
+                </p>
+                <p>The options our founders must decide between are prices of $25, $50 and $100 per tonne of carbon.</p>
                 <p>
                     The price at which the company sells offsets is determined by the price of carbon credits. That price is volatile, varies widely, and is likely to rise steeply.
                 </p>
                 <p>
-                    The company must set a price which is profitable, competitive, future proof, and satisfies criteria based on its project pledges. The <Links.EL link={{source:"https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1748215232"}}>weighted scores</Links.EL>  favour a price of $50. These prices are just a guide, so the founders could compromise on a price between $35 and $40.
+                    The company must set a price which is profitable, competitive, future proof, and satisfies criteria based on its project pledges. The weighted scores favour a price of $50. These prices are just a guide, so the founders could compromise on a price between $35 and $40.
                 </p>
                 <figure>
                     <CostPerTonne></CostPerTonne>
@@ -143,7 +176,7 @@ const CaseStudyStartUp = () => {
                     </figcaption>
                 </figure>
                 <p>
-                    But since the outcome of the decision matrix is unclear, and a recent Reuters <Links.EL link={{source:"https://www.reuters.com/business/cop/carbon-needs-cost-least-100tonne-now-reach-net-zero-by-2050-2021-10-25/"}}>poll of climate economists</Links.EL>  puts the mean value of offsetting a tonne of carbon at $100 if we are to reach net zero by 2050, the founders commission a marketing survey of their target audience.
+                    But since the outcome of the decision matrix is unclear, and a recent Reuters <Links.EL link={{source:"https://www.reuters.com/business/cop/carbon-needs-cost-least-100tonne-now-reach-net-zero-by-2050-2021-10-25/"}}>poll of climate economists</Links.EL>  puts the mean value of offsetting a tonne of carbon at $100 if we are to reach net zero by 2050, the founders commissioned a marketing survey of their target audience.
                 </p>
                 <p>
                     They publish their thinking, including the decision matrix, in line with their pledge to expose their methods to scrutiny. They also hope this may balance the confirmation bias startup founders are subject to.
