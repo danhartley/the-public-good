@@ -1,7 +1,7 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
-import Aligned from 'pages/round-table-ethics/venn-aligned';
-import NonAligned from 'pages/round-table-ethics/venn-non-aligned';
+// import Aligned from 'pages/round-table-ethics/venn-aligned';
+// import NonAligned from 'pages/round-table-ethics/venn-non-aligned';
 
 import CostPerTonne from 'pages/round-table-ethics/decision-matrix-cost-per-tonne';
 
