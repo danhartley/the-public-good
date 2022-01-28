@@ -68,6 +68,10 @@ const onlineTools = [
         "name": "Zifera | carbon test",
         "source": "https://www.zifera.io/carbon-test"
     },
+    {
+        "name": "climatiq | Calculate the carbon emission of cloud services",
+        "source": "https://docs.climatiq.io/guides/cloud"
+    },
 ];
 
 const externalLinks = [

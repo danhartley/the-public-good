@@ -154,7 +154,7 @@ const CaseStudyStartUp = () => {
                 </figure>
                 <h4>The decision matrix</h4>                
                 <p>
-                    A <span class={styles.reset}><Links.EL link={{source:"https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1748215232"}}>decision matrix</Links.EL></span> is a way to decide between several options. Criteria are derived from business requirements such as profitability, and from pledges. Options either meet or fail criteria.                    
+                    A decision matrix is a way to decide between several options. Criteria are derived from business requirements such as profitability, and from pledges. Options either meet or fail criteria.                    
                 </p>
                 <p>
                     The criteria are reordered from most (1) to least important (10). Criteria that are met are given a score of 1, criteria that are not, a score of 0. Weighted scores are automatically calculated using the equation:
@@ -172,7 +172,7 @@ const CaseStudyStartUp = () => {
                 <figure>
                     <CostPerTonne></CostPerTonne>
                     <figcaption>
-                        <em>Figure 2: Simplified Decision Matrix (see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1748215232'}}>Carbon price per tonne</Links.EL>)</em>
+                        <em>Figure 2: Simplified Decision Matrix (see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGzyoiKqybpBObNoC0Z5Ex6obRb3uFY8AsoEakMF_nZUYZdc5o9jyxwrDdk5ok8Nup9hC8Va-M34HI/pubhtml?gid=1748215232&single=true'}}>Carbon price per tonne</Links.EL>)</em>
                     </figcaption>
                 </figure>
                 <p>

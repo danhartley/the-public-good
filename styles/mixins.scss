@@ -228,7 +228,8 @@
 
 @mixin table() {
     table {    
-        margin: 1rem 0;    
+        margin: 1rem 0;
+        max-width: calc(90vw - 0.75rem + 1vw);
         li {
             font-size: smaller;
         }
@@ -364,6 +365,7 @@
     }
     img {
         width: 80ch;
+        max-width: calc(90vw - 0.75rem + 1vw);
     }
     @include table();
 }

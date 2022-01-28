@@ -85,7 +85,7 @@ const PDDIntro = () => {
 
                 <p>We derive this pledge:</p>
                 <blockquote cite=''>
-                    <div>We pledge not to sell, exchange or exploit END USER data.</div>
+                    <div>We pledge not to sell, exchange or exploit user data.</div>
                 </blockquote>
 
                 <p>From the ACM code of conduct:</p>
