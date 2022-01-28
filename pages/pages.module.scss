@@ -72,3 +72,14 @@
 figure .centred img {
     width: calc(50vw);
 }
+
+.bulletList {
+    margin: 0.25rem 0;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 0.5rem solid rgb(166, 209, 238);
+    li {
+        display: block;
+        line-height: 2;
+    }
+}

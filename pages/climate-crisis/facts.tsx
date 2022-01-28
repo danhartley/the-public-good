@@ -67,7 +67,7 @@ const Facts = () => {
                     </span>
                 </p>
 
-                <h2>Time</h2>
+                <h2 id="time">Time</h2>
 
                 <h3>Geologic time</h3>
 
@@ -155,7 +155,7 @@ const Facts = () => {
                     Comparing horses and humans,
                     <div class={styles.inset}>
                         <div>A horse can reach a peak of ~11kW over a period of a few seconds.</div>
-                        <div>A horse can reach a peak of ~1kW over a period of a few seconds.</div>
+                        <div>A human can reach a peak of ~1kW over a period of a few seconds.</div>
                     </div>
                     Over time,
                     <div class={styles.inset}>
