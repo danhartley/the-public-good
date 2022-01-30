@@ -7,7 +7,7 @@ const CostPerTonne = () => {
             <table>
                 <thead>
                     <tr>
-                        <td>#</td><td>Criteria</td><td><div>$25/t</div><span>Score</span></td><td><div>$50/t</div><span>Score</span></td><td><div>$100/t</div><span>Score</span></td>
+                        <td>Rank</td><td>Criteria</td><td><div>$25/t</div><span>Weighted score</span></td><td><div>$50/t</div><span>Weighted score</span></td><td><div>$100/t</div><span>Weighted score</span></td>
                     </tr>                
                 </thead>
                 <tbody>

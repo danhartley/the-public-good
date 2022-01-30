@@ -39,7 +39,7 @@ const WritingPledges = () => {
                 <p>
                     Their core pledges define how they want to behave in the world. This includes their relationship to and responsibility towards future employees, customers, partners, providers of services, and abstract entities such as society and the planet. 
                 </p>
-                <ul class={styles.bulletList}>
+                <ul class={styles.standoutList}>
                     {
                         corePledges.map(pledge => {
                             return <li>{pledge}</li>
@@ -53,7 +53,7 @@ const WritingPledges = () => {
                     As others join, they will introduce pledges specific to their profession or job. Role-based pledges are used by individuals and teams to guide their own work and to highlight issues, and risks, not previously considered. It is worth taking time to make sure role-based pledges align with core pledges.
                 </p>
                 <h4>Role-based pledges</h4>
-                <ul class={styles.bulletList}>
+                <ul class={styles.standoutList}>
                     {
                         roleBasedPledges.map(pledge => {
                             return <li>{pledge}</li>
@@ -63,7 +63,7 @@ const WritingPledges = () => {
 
                 <h5>Pledges</h5>
                 An example of pledges our company founders might use.
-                <ul class={styles.bulletList}>
+                <ul class={styles.standoutList}>
                     {
                         productPledges.map(pledge => {
                             return <li>{pledge}</li>

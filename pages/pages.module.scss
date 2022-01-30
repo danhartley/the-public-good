@@ -48,7 +48,7 @@
         font-size: calc(.5rem + .5vw) !important;
     }
 
-    td:nth-child(3), td:nth-child(4) {
+    td:nth-child(1), td:nth-child(3), td:nth-child(4) {
         text-align: center;
     }
     thead td {
@@ -73,13 +73,20 @@ figure .centred img {
     width: calc(50vw);
 }
 
-.bulletList {
-    margin: 0.25rem 0;
-    margin-left: 1rem;
+.standoutList {
+    margin: 0.25rem 0;    
     padding-left: 1rem;
     border-left: 0.5rem solid rgb(166, 209, 238);
+    @media (min-width: 601px) {
+        margin-left: 1rem;
+    }   
     li {
         display: block;
         line-height: 2;
+        margin: .5rem 0;
     }
+}
+
+.multiply:after {
+    content: "\00D7";
 }

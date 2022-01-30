@@ -76,7 +76,7 @@ const CaseStudyStartUp = () => {
                 <p>
                     Their core pledges define how they want to behave in the world. This includes their relationship to and responsibility towards future employees, customers, partners, providers of services, and abstract entities such as society and the planet. 
                 </p>
-                <ul class={styles.bulletList}>
+                <ul class={styles.standoutList}>
                     {
                         corePledges.map(pledge => {
                             return <li>{pledge}</li>
@@ -125,7 +125,7 @@ const CaseStudyStartUp = () => {
                     Based on their understanding of the market they initially set the price at $25. They decide to stress test this price against their project pledges using a <em>decision matrix</em>.
                 </p>
                 {/* <h5>Proposal:</h5> */}
-                {/* <ul class={styles.bulletList}>
+                {/* <ul class={styles.standoutList}>
                     {
                         projectProposals.map(pledge => {
                             return <li>{pledge}</li>
@@ -137,7 +137,7 @@ const CaseStudyStartUp = () => {
                 {/* <h5>Pledges</h5> */}
                 <p>At this stage the founders write project pledges. These are more specific than their core pledges and harder to ignore. The founders use them to keep their decisions in line with their values.</p>
                 <p>Examples of pledges our company founders might use to help them make a decision.</p>
-                <ul class={styles.bulletList}>
+                <ul class={styles.standoutList}>
                     {
                         productPledges.map(pledge => {
                             return <li>{pledge}</li>
@@ -151,7 +151,7 @@ const CaseStudyStartUp = () => {
                 <p>
                     The criteria are reordered from most (1) to least important (10). Criteria that are met are given a score of 1, criteria that are not, a score of 0. Weighted scores are automatically calculated using the equation:
                     <div class={styles.inset}>
-                        <span><strong>Score = (1/Importance * Met)*100</strong></span>
+                        <span><strong>Weighted score = (1/Rank <span class={styles.multiply}></span> Score) <span class={styles.multiply}></span> 100</strong></span>
                     </div>                    
                 </p>
                 <p>Our founders decide to compare three prices: $25, $50 and $100 per tonne of carbon.</p>                
