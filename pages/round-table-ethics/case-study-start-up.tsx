@@ -1,12 +1,9 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
-// import Aligned from 'pages/round-table-ethics/venn-aligned';
-// import NonAligned from 'pages/round-table-ethics/venn-non-aligned';
 
 import CostPerTonne from 'pages/round-table-ethics/decision-matrix-cost-per-tonne';
 
 import styles from 'pages/pages.module.scss';
-import { LinearScale } from 'chart.js';
 
 const CaseStudyStartUp = () => {
 
@@ -34,19 +31,11 @@ const CaseStudyStartUp = () => {
         , "We pledge to come clean if we break a pledge."
     ];
 
-    const roleBasedPledges = [
-          "We pledge to develop human resources, not consume them (HR)."
-        , "We pledge to write accessible copy because we want to treat all users fairly and equally (Marketing)."
-        , "We pledge to provide evidence that we have considered climate change in our accounts (Accounts)."
-        , "We pledge to balance the privacy and security of customers with the demands of the business for improved productivity (Business analysis)." 
-    ];
-
     const productPledges = [
           "We pledge to measure success in terms of tonnes of emissions prevented."        
         , "We pledge to present data that support our claims."
         , "We pledge to verify claims made by our partners and third party vendors."
         , "We pledge to expose our methods to external scrutiny."
-        // , "We pledge not to misrepresent content."        
     ];
 
     const projectProposals = [
@@ -85,7 +74,6 @@ const CaseStudyStartUp = () => {
                 </ul>          
                 <p>
                     These pledges are general and apply to everything the company does.
-                    {/* They are in addition to their strategy for achieving equality and diversity. */}
                 </p>
                 <h4>The purpose of the company</h4>
                 <p>
@@ -103,12 +91,8 @@ const CaseStudyStartUp = () => {
                     <strong>Certification</strong> is the written assurance by a third party that, during a specified time period, a project activity achieved the reductions in anthropogenic emissions by sources of greenhouse gases (GHG) as verified
                 </blockquote>
                 <cite><Links.EL link={{source:"https://www.globalcarbonproject.org/global/pdf/WWF_2008_A%20comparison%20of%20C%20offset%20Standards.pdf"}}>WWF | Making Sense of the Voluntary Carbon Market</Links.EL> </cite>
-                <p>
-                <p>
-                    {/* Among the European competitors to our startup are <Links.EL link={{surce:'https://www.mossy.earth/'}}>Mossy Earth</Links.EL>, <Links.EL link={{source:"https://www.myclimate.org/"}}>myclimate</Links.EL>, and <Links.EL link={{source:"https://ecologi.com/"}}>Ecologi</Links.EL>. */}
-                </p>
-                Carbon offsetting is controversial. Our founders will need to demonstrate that the offset operations they support would not otherwise happen (additionality), and that any benefits are not reversible (permanence). They will also need to set a fair price per tonne of carbon offset.<span class={styles.super}><a href="#carbon">*</a></span>
-                {/* and is <Links.EL link={{source:"https://www.carbonbrief.org/guest-post-why-co2-removal-is-not-equal-and-opposite-to-reducing-emissions"}}>different than not emitting carbon</Links.EL> */}
+                <p>                
+                    Carbon offsetting is controversial. Our founders will need to demonstrate that the offset operations they support would not otherwise happen (additionality), and that any benefits are not reversible (permanence). They will also need to set a fair price per tonne of carbon offset.<span class={styles.super}><a href="#carbon">*</a></span>                
                 </p>
                 <p>
                     
@@ -118,23 +102,8 @@ const CaseStudyStartUp = () => {
                     The price at which the company sells offsets is determined by the price of carbon credits. That price is volatile, varies widely, and is likely to rise steeply. Our founders need to consider these factors.
                 </p>
                 <p>
-                    {/* Our founders build a basic version of their website to test the market. */}
-                    {/* <div>
-                    Key to the project is the carbon offset cost per tonne our founders will charge customers<span class={styles.super}><a href="#carbon">*</a></span>. They know what their competitors typically charge but are sceptical - they think they are using an artificially low figure so as to attract investors and customers.
-                    </div> */}
                     Based on their understanding of the market they initially set the price at $25. They decide to stress test this price against their project pledges using a <em>decision matrix</em>.
                 </p>
-                {/* <h5>Proposal:</h5> */}
-                {/* <ul class={styles.standoutList}>
-                    {
-                        projectProposals.map(pledge => {
-                            return <li>{pledge}</li>
-                        })
-                    }
-                </ul> */}
-                {/* Relevant project pledges throw a spotlight on the concrete proposal. */}
-                
-                {/* <h5>Pledges</h5> */}
                 <p>At this stage the founders write project pledges. These are more specific than their core pledges and harder to ignore. The founders use them to keep their decisions in line with their values.</p>
                 <p>Examples of pledges our company founders might use to help them make a decision.</p>
                 <ul class={styles.standoutList}>
@@ -157,19 +126,17 @@ const CaseStudyStartUp = () => {
                 <p>Our founders decide to compare three prices: $25, $50 and $100 per tonne of carbon.</p>                
                 <p>
                     The company must set a price which is profitable, competitive, future proof, and satisfies criteria based on its project pledges. The weighted scores favour a price of $50.
-                    {/* These prices are just a guide, so the founders could compromise on a price between $35 and $40. */}
                 </p>
                 <figure>
                     <CostPerTonne></CostPerTonne>
                     <figcaption>
-                        <em>Figure 2: Simplified Decision Matrix (see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGzyoiKqybpBObNoC0Z5Ex6obRb3uFY8AsoEakMF_nZUYZdc5o9jyxwrDdk5ok8Nup9hC8Va-M34HI/pubhtml?gid=1748215232&single=true'}}>Carbon price per tonne</Links.EL>)</em>
+                        <em>Figure 2: Simplified Decision Matrix (see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGzyoiKqybpBObNoC0Z5Ex6obRb3uFY8AsoEakMF_nZUYZdc5o9jyxwrDdk5ok8Nup9hC8Va-M34HI/pub?gid=1748215232&single=true&output=pdf'}}>Carbon price per tonne</Links.EL> PDF)</em>
                     </figcaption>
                 </figure>
                 <p>
                     Since the outcome of the decision matrix is unclear, and a recent Reuters <Links.EL link={{source:"https://www.reuters.com/business/cop/carbon-needs-cost-least-100tonne-now-reach-net-zero-by-2050-2021-10-25/"}}>poll of climate economists</Links.EL>  puts the mean value of offsetting a tonne of carbon at $100 if we are to reach net zero by 2050, the founders commission a marketing survey of their target audience.
                 </p>
                 <figure>
-                    {/* <NonAligned></NonAligned> */}
                     <div id="venn">
                         <img src="/svg/venn-nonaligned.svg" alt="Venn diagram: The gap between intent and reality" />
                     </div>                
@@ -177,14 +144,12 @@ const CaseStudyStartUp = () => {
                 </figure>
                 <p>
                     They publish their thinking, including the decision matrix, in line with their pledge to expose their methods to scrutiny.
-                    {/* They also hope this may balance the confirmation bias startup founders are subject to. */}
                 </p>
                 <h4>The decision</h4>
                 <p>
                     The founders set a price of $65 per tonne. This is far higher than the majority of their competitors but their survey suggests a niche market willing to pay more for what they consider a fair price.
                 </p>
                 <figure>
-                    {/* <Aligned></Aligned> */}
                     <div id="venn2">
                         <img src="/svg/venn-aligned.svg" alt="Venn diagram: Intent and reality aligned" />
                     </div>
