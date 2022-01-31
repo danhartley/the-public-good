@@ -19,7 +19,7 @@ const Introduction = () => {
     ];
 
     return (
-        <Layout header="Introductionduction to Pledge Works"  rt="5" title="Pledge Works" description={'Pledge Works: Stress-testing good intentions.'}> {/* image? */}            
+        <Layout header="Introduction to Pledge Works"  rt="5" title="Pledge Works" description={'Pledge Works: Stress-testing good intentions.'}> {/* image? */}            
             <section>
 
                 <h2>Stress-testing good intentions.</h2>
