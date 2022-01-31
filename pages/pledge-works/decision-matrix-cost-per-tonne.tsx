@@ -29,7 +29,7 @@ const CostPerTonne = () => {
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td></td><td>Score</td><td>217</td><td>219</td><td>119</td>
+                        <td></td><td>Total score</td><td>217</td><td>219</td><td>119</td>
                     </tr>
                 </tfoot>
             </table>

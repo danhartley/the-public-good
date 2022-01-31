@@ -7,7 +7,7 @@ const AnalyticsProvider = () => {
             <table>
                 <thead>
                     <tr>
-                        <td>#</td><td>Requirement</td><td><div>Google Analytics</div><span>Score</span></td><td><div>Plausible</div><span>Score</span></td>                    
+                        <td>Rank</td><td>Criteria</td><td><div>Google Analytics</div><span>Weighted score</span></td><td><div>Plausible</div><span>Weighted score</span></td>                    
                     </tr>                
                 </thead>
                 <tbody>
@@ -29,7 +29,7 @@ const AnalyticsProvider = () => {
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td></td><td>Score</td><td>188</td><td>267</td>
+                        <td></td><td>Total score</td><td>188</td><td>267</td>
                     </tr>
                 </tfoot>
             </table>
