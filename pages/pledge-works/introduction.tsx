@@ -7,10 +7,6 @@ import styles from 'pages/pages.module.scss';
 
 const Introduction = () => {
 
-    const perfLinks = [
-        
-    ];
-
     const externalLinks = [
         {
             "name": "Self-Review Questionnaire: Security and Privacy | W3C",
@@ -19,7 +15,7 @@ const Introduction = () => {
     ];
 
     return (
-        <Layout header="Introduction to Pledge Works"  rt="5" title="Pledge Works" description={'Pledge Works: Stress-testing good intentions.'}> {/* image? */}            
+        <Layout header="Introduction to Pledge Works"  rt="5 to 6" title="Pledge Works" description={'Pledge Works: Stress-testing good intentions.'}> {/* image? */}            
             <section>
 
                 <h2>Stress-testing good intentions.</h2>
@@ -28,7 +24,7 @@ const Introduction = () => {
 
                 <p>As collaborators at <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL>, we look for ways to work more responsibly. We began by challenging how we develop software.</p>
 
-                <p>We wanted an approach that was easy to explain, simple to execute, and that could work with existing philosophies and practices widely used in software development, that required little or no training, and was not dependent on software tools.</p>
+                <p>We wanted an approach that was easy to explain, simple to execute, that worked with existing philosophies and practices widely used in software development, but that required little or no training, and was software independent.</p>
 
                 <p>Over six months we came up with an approach to responsible design and development we call <strong>Pledge Works</strong>.</p>
 
@@ -49,7 +45,7 @@ const Introduction = () => {
 
                 <p>We created Pledge Works to solve a conundrum we face repeatedly in our work: how to act in accordance with our principles. Principles are general and abstract, work is specific and concrete.</p>
 
-                <p>Rather than covering the full inventory in one go, I'll use three Pledge Works ideas: <em>Writing pledges, The decision matrix, and Voting</em>.</p>
+                <p>Rather than covering the full inventory in one go, I'll use what is at the heart of Pledge Works: <em>Writing pledges, Sticking to pledges, and Voting</em>.</p>
 
                 <p>I use a real example in the hope this will make the process clearer. The actions are ordered for clarity but in practice we jump between them.</p>
 
@@ -84,15 +80,19 @@ const Introduction = () => {
                     </ul>                    
                 </blockquote>
              
-                <h4>4. Listing our requirements</h4>
+                <h4>4. Listing requirements</h4>
 
                 <p>Requirements are the detailed breakdown of the things we need to know and do. For example, we need to know whether an analytics service provides support, offers self-hosting, and how accurate their data are.</p>
 
                 <p>To compare different solutions, especially those that are likely to challenge our pledges, we set up a decision matrix.</p>
 
-                <h4><em>5. The decision matrix</em></h4>
+                <h4><em>5. Sticking to pledges</em></h4>
+            
+                <p>The work we take on is guided by our pledges. As we draw up a list of detailed requirements, we add <em>ethical</em> requirements which are either based on existing pledges or written from scratch. Ethical requirements challenge us to stick to our pledges.</p>
 
-                <p>We convert out requirements and pledges into criteria which we use to compare alternative solutions.</p>
+                <p>We use a <strong>pledge checklist</strong> for creating or building things, and a <strong>decision matrix</strong> for selecting them.</p>
+
+                <p>Since we are selecting between competing services, we convert our requirements and pledges into criteria for a decision matrix.</p>
 
                 <figure>
                     <AnalyticsProvider></AnalyticsProvider>
@@ -106,6 +106,10 @@ const Introduction = () => {
                 <p>The decision matrix is an open document to which anyone can contribute; the aim is to capture essential requirements, and to flag anything which may cause us to break a pledge.</p>
 
                 <p>If a decision leads to a pledge being broken, we vote on whether to accept it.</p>
+
+                <h5>That sounds like a lot of work!</h5>
+                <p>We have written a cascade of pledges starting at the organisational level down through projects such as Pledge Works to individual pieces of work. Pledges catch unwanted behaviour and undesirable actions along the way - as long as we stick to them. They become embedded in our practice. As a consequence we don't create a decision matrix or pledge checklist often.</p>
+                <p>You don't need to disrupt your existing processes to use Pledge Works tactics. You can add them piecemeal, and slowly, and they will still make an impact.</p>
 
                 <h4><em>6. Voting</em></h4>
 
@@ -140,17 +144,15 @@ const Introduction = () => {
                 <p>Pledge Works is a tool for collaboration that favours ideas over individuals. We use Pledge Works to give weight to our principles by making pledges that affect our day to day work. Our pledges challenge us to address awkward questions that we might prefer to sideline. As a result, we feel better about our decisions, and put into effect more robust solutions.</p>
 
                 <p>
-                    See a <Links.EL link={{source:"/pledge-works/case-study-startup"}}>case study</Links.EL> for using Pledge Works at a startup.
+                    See a <Links.IL link={{source:"/pledge-works/case-study-startup"}}>case study</Links.IL> for using Pledge Works at a startup.
                 </p>
-
-                <Links.ExternalLinksList links={perfLinks} />   
 
             </section>            
             <section>
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:'ethics',text:'Ethical web development'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'pledge-works/case-study-startup', text:'Startup case study'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

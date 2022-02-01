@@ -40,6 +40,7 @@ const Inventory = () => {
                     <div><input id="b" type='checkbox'></input><label htmlFor="b">Check the contrast for all normal-sized text</label></div>
                     <div><input id="a" type='checkbox'></input><label htmlFor="a">Make sure that media does not autoplay</label></div>
                 </blockquote>
+                <p>Sometimes there are shortcuts. The <Links.EL link={{source:"https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter"}}>axe Accessibility Linter</Links.EL> automatically checks for code that breaks its accessibility rules. They've also created a <Links.EL link={{source:"https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"}}>Chrome extension</Links.EL>.</p>
                 <h3>Writing pledges</h3>     
                 <p>We write pledges that force us to make decisions. If a pledge is too vague, we write one that is more specific.</p>
                 <blockquote>
@@ -65,11 +66,17 @@ const Inventory = () => {
                 <h4>Democracy at work</h4>
                 <p>We favour a democratic approach to ethical oversight. The more perspectives we include the less likely we are to make mistakes and incur risk.</p>
                 <p>Pledges that challenge unethical behaviour are best written by the people that must honour them. We write pledges as individuals, teams, professionals, and organisations, then hold ourselves accountable. If we fail, we do so openly and honestly.</p>
+                <p>Decisions can be reached quickly with or without a decision matrix or pledge checklist. When pledges are broken, or when there is no clear course of action, voting determines what happens next.</p>
+                <p>A pledge makes implicit why it should not be broken. For example, it should be clear to people why <Links.EL link={{source:"https://www.darkpatterns.org/"}}>dark patterns</Links.EL> in website design are unethical. But where there is doubt or uncertainty, add links or an explicit reason.</p>
+                <blockquote>
+                    We pledge not to use practices identified as dark patterns <em><strong>because they are dishonest, disrespect users, and may be harmful</strong></em>.
+                </blockquote>
             </section>
             <section>
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
+            <Links.RelatedLinks links={[{value:'pledge-works/introduction',text:'Introduction to Pledge Works'}, {value:'pledge-works/case-study-startup', text:'Startup case study'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

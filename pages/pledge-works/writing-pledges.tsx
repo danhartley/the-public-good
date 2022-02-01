@@ -50,7 +50,7 @@ const WritingPledges = () => {
                     These pledges are general and apply to everything the company does. They are in addition to their strategy for achieving equality and diversity.
                 </p>
                 <p>
-                    As others join, they will introduce pledges specific to their profession or job. Role-based pledges are used by individuals and teams to guide their own work and to highlight issues, and risks, not previously considered. It is worth taking time to make sure role-based pledges align with core pledges.
+                    As others join, they will introduce pledges specific to their profession or job. Role-based pledges are used by individuals and teams to guide their own work and to highlight issues, risks, and opportunities not previously considered. It is worth taking time to make sure role-based pledges align with core pledges.
                 </p>
                 <h4>Role-based pledges</h4>
                 <ul class={styles.standoutList}>

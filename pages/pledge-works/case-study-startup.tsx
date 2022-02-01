@@ -38,13 +38,8 @@ const CaseStudyStartUp = () => {
         , "We pledge to expose our methods to external scrutiny."
     ];
 
-    const projectProposals = [
-            "Set the cost per tonne of carbon dioxide offsets at 25€."
-          , 
-    ];
-
     return (
-        <Layout header="Case study - The Startup"  rt="4 to 5" title="Case study - the startup" description={'Once a startup has established its purpose, it is ready to write the pledges that will guide its work.'}> {/* image? */}
+        <Layout header="Startup case study"  rt="4 to 5" title="Case study - the startup" description={'Once a startup has established its purpose, it is ready to write the pledges that will guide its work.'}> {/* image? */}
             <section>
                 <h2>
                     Once a startup has established its purpose, it is ready to write the pledges that will guide its work.
@@ -166,7 +161,7 @@ const CaseStudyStartUp = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:'pledge-works/introduction',text:'Introduction to Pledge Works'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'pledge-works/introduction',text:'Introduction to Pledge Works'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
         </Layout>
     )
 

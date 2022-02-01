@@ -24,16 +24,14 @@ const graphDefinition = `
         B([Request]);
         C([Requirements]);
         D([Pledges]);
-        E([Decision Martix]);
+        E([Decision Matrix or Pledge Checklist]);
         F([Vote]);
         G([Honours Pledge]);
         H([Breaks Pledge]);
         I([Implementation]);
         J([Quarantine]);
-        %% A --> B;
         B --> C;
         B --> D;
-        %% C <--> D;
         C --> E;
         D --> E;
         E --> F;
