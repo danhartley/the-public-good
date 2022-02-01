@@ -30,7 +30,7 @@ const Inventory = () => {
                     <ul>
                         <li>Do we have the resources for this strategy?</li>
                         <li>Can we recruit and train the necessary staff?</li>
-                        <li>Will we be able to retain out existing clients?</li>
+                        <li>Will we be able to retain our existing clients?</li>
                         <li>Does this benefit us and our customers?</li>
                     </ul>
                 </blockquote>
@@ -55,10 +55,16 @@ const Inventory = () => {
                 <p>
                     Pledges are more effective when they are written with a specific context in mind. They can be organisational, applying to everything and everyone, or to a single piece of work however small.
                 </p>
+                <h4>Pledge sources</h4>
+                <p>Writing our own pledges gives us less wriggle room. We find it hard to ignore what we have committed to. But we look around for inspiration.</p>
+                <p>There are many sources, from professional codes of conduct through oaths, pledges, and promises, to manifestos. RTW has its own list of <Links.EL link={{source:"https://responsibletech.work/responsible-pledges/"}}>pledges</Links.EL>.</p>
+                <p>We maintain a list of <Links.EL link={{source:"https://docs.google.com/spreadsheets/d/e/2PACX-1vSZcoudvThs0sZU-L87_ylopljM5Gh3Mq66KcWOvFK0gQ3G8krcxwR7TpvoGWkyKH6comq3xG1AR7-p/pubhtml?gid=1753280922&single=true"}}>public declarations</Links.EL>.</p>
                 <h4>Role-based pledges</h4>
-                <p>We write role-based pledges from scratch and adapt others from ethical principles, professional codes of conduct, and best practices.</p>
-                <p>They are highly portable and easily shared. If you are at an organisation that is not open to addressing ethical questions, introducing pledges will be tough, but outside support from peers may help.</p>
-                <p>We maintain a list of <Links.EL link={{source:"https://docs.google.com/spreadsheets/d/e/2PACX-1vSZcoudvThs0sZU-L87_ylopljM5Gh3Mq66KcWOvFK0gQ3G8krcxwR7TpvoGWkyKH6comq3xG1AR7-p/pubhtml?gid=1753280922&single=true"}}>public promises, oaths, pledges, manifestos, codes of conduct, and more</Links.EL>.</p>
+                <p>Looking at ethical questions from a professional standpoint is productive. People working in PR, HR, development, design, management, and analytics have different responsibilities and concerns. Pledges written with a specific role in mind are relevant to everyone. When it comes to making decisions they have equal weight.</p>
+                <p>Role-based pledges can be reused from place to place, and if you are at an organisation that is not open to addressing ethical questions, outside support from peers may help.</p>
+                <h4>Democracy at work</h4>
+                <p>We favour a democratic approach to ethical oversight. The more perspectives we include the less likely we are to make mistakes and incur risk.</p>
+                <p>Pledges that challenge unethical behaviour are best written by the people that must honour them. We write pledges as individuals, teams, professionals, and organisations, then hold ourselves accountable. If we fail, we do so openly and honestly.</p>
             </section>
             <section>
                 <h2>External Links</h2>
