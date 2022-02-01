@@ -34,8 +34,6 @@ const Introduction = () => {
 
                 <p>Rather than avoiding challenging questions, we look at the requirements of each new piece of work through the lens of principles encoded in pledges, before reaching a decision.</p>
 
-                {/* <p><em>Pledges + Requirements = Decision</em></p> */}
-
                 <h3>Pledge Works in practice</h3>       
 
                 <figure>
@@ -76,37 +74,6 @@ const Introduction = () => {
 
                 <p>We start by writing pledges based on the scope of the task at hand.</p>
 
-                {/* We will add more later when we write our list of detailed requirements. */}
-
-                {/* <p>We derive pledges from our own <Links.EL link={{source:'https://responsibletech.work/responsible-pledges/'}}>RTW pledges</Links.EL>, professional codes of conduct, manifestos, and any other principles and promises which are pertinent. We keep a <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1317309901'}}>list</Links.EL> of these for reference.</p> */}
-{/* 
-                <p>From the Sustainable Web Manifesto:</p>
-                <blockquote cite='https://www.sustainablewebmanifesto.com/'>
-                    The products and services we provide will be accessible, allow for the open exchange of information, and allow users to control their data.                    
-                </blockquote>                
-                <cite><Links.EL link={{source:'https://www.sustainablewebmanifesto.com/'}}>Sustainable Web Manifesto</Links.EL></cite>
-
-                <p>We derive this pledge:</p>
-                <blockquote cite=''>
-                    <div>We pledge not to sell, exchange or exploit user data.</div>
-                </blockquote>
-
-                <p>From the ACM code of conduct:</p>
-
-                <blockquote cite='https://www.acm.org/code-of-ethics'>
-                    <div>Give comprehensive and thorough evaluations of computer systems and their impacts, including analysis of possible risks.</div>
-                    <div>Perform work only in areas of competence.</div>
-                </blockquote>                
-                <cite><Links.EL link={{source:'https://www.acm.org/code-of-ethics'}}>ACM Code of Ethics and Professional Conduct</Links.EL></cite>
-
-                <p>We derive this pledge:</p>
-                <blockquote cite='https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1294958642'>
-                    <div>We pledge not to undertake new work without first evaluating its cost.</div>
-                </blockquote>
-                <cite><Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1WY--FcQeEikLxqWtvKdY_MYcd1Ukzvi0eN2Ufl_YHaY/edit#gid=1294958642'}}>RTW Technical Pledges</Links.EL></cite> */}
-
-                {/* <p>We create five pledges:</p> */}
-
                 <blockquote>
                     <ul class={styles.standoutList}>
                         <li>We pledge not to undertake new work without first evaluating its cost.</li>
@@ -121,15 +88,11 @@ const Introduction = () => {
 
                 <p>Requirements are the detailed breakdown of the things we need to know and do. For example, we need to know whether an analytics service provides support, offers self-hosting, and how accurate their data are.</p>
 
-                {/* <p>If you practice a form of agile development such as Scrum or Kanban, you will add these requirements to cards or tasks.</p> */}
-
                 <p>To compare different solutions, especially those that are likely to challenge our pledges, we set up a decision matrix.</p>
 
                 <h4><em>5. The decision matrix</em></h4>
 
                 <p>We convert out requirements and pledges into criteria which we use to compare alternative solutions.</p>
-
-                {/* <p>A simplified example of the Decision Matrix that we used for choosing our analytics provider:</p> */}
 
                 <figure>
                     <AnalyticsProvider></AnalyticsProvider>
@@ -138,11 +101,7 @@ const Introduction = () => {
                     </figcaption>
                 </figure>
 
-                {/* <p>A <em>decision matrix</em> lets us compare different solutions with reference to our requirements, both those specific to the request, and those derived from pledges.</p> */}
-
-                <p>We order our list in terms of priority - from more to less important - and give each one an appropriately weighted score.</p>
-            
-                {/* <p><em>Pledges + Requirements + Scores = Decision</em></p> */}
+                <p>We order our list in terms of priority - from most to least important - and give each one an appropriately weighted score.</p>
 
                 <p>The decision matrix is an open document to which anyone can contribute; the aim is to capture essential requirements, and to flag anything which may cause us to break a pledge.</p>
 
@@ -151,20 +110,6 @@ const Introduction = () => {
                 <h4><em>6. Voting</em></h4>
 
                 <p>We think putting time aside for voting is worthwhile. If we break a pledge, we want to know why, and agree on whether it is acceptable. We record our decision so that we can review it later.</p>
-
-                {/* <p>There may be a good reason for breaking a pledge - we may be forced to break one pledge in favour of another. If that is the case we use other criteria to resolve the problem.</p> */}
-
-                {/* We can evaluate alternative solutions in terms of their <Links.EL link={{source:'https://www.interaction-design.org/literature/article/from-prototype-to-product-ensuring-your-solution-is-feasible-and-viable'}}>desirability, feasibility, and viability</Links.EL> or <Links.EL link={{source:'https://www.mindtheproduct.com/socially-preferable-by-nathan-kinch/'}}>social preferability</Links.EL>. */}
-
-                {/* <p>The UK.GOV website scores options on a sliding scale:</p>
-
-                <blockquote cite='https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-2020'>
-                    <ul>
-                        <li>0 means public benefit and user need are not clearly defined or understood</li>
-                        <li>5 means public benefit and user need are well defined and understood by all team member</li>
-                    </ul>
-                </blockquote>
-                <cite><Links.EL link={{source:'https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-2020'}}>Data Ethics Framework | UK Government</Links.EL></cite> */}
 
                 <p>If we cannot reach a decision, or vote against it, we place it in <em>quarantine</em>. We also do this if we cannot gauge the impact of our decision. This honours one of our key, organisational pledges:</p>
 
@@ -190,16 +135,6 @@ const Introduction = () => {
 
                 <p>We recommend using only the parts of Pledge Works you find helpful. There are no hard and fast naming conventions, or strict rules; Pledge Works is not a prescriptive practice. Start with barebones Pledge Works and adopt more of it as necessary.</p>
 
-                {/* <h3>Organisational and role-based pledges</h3>
-
-                <p>There is a set of pledges on our website. We refer to these, and principles, promises, oaths and professional codes from many sources, when creating concrete pledges for a project or task. These pledges act as a baseline, a core set of pledges that we must all adhere to.</p>
-
-                <p>None of us at RTW are members of an institute or body; we are not professionals. But we are cognisant of the codes of conduct laid out by professional bodies in our field, and we act, we hope, in a professional manner. These codes permeate our organisation and are the foundation for role-based pledges. We have a library of role-based pledges relevant to many software projects which reflect our backgrounds in programming and design.</p>
-
-                <p>We have added pledges for other roles based on our research but we would be glad of help in refining and adding to them.</p>
-
-                <p>Role-based pledges reveal interests, duties and biases. They also have a practical function - a discussion between representatives is generally easier than one between individuals.</p>
- */}
                 <h3>Why we practice Pledge Works</h3>
 
                 <p>Pledge Works is a tool for collaboration that favours ideas over individuals. We use Pledge Works to give weight to our principles by making pledges that affect our day to day work. Our pledges challenge us to address awkward questions that we might prefer to sideline. As a result, we feel better about our decisions, and put into effect more robust solutions.</p>

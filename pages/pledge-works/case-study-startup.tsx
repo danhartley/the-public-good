@@ -118,7 +118,7 @@ const CaseStudyStartUp = () => {
                     A decision matrix is a way to decide between several options. Criteria are derived from business requirements such as profitability, and from pledges. Options either meet or fail criteria.                    
                 </p>
                 <p>
-                    The criteria are reordered from most to least important. Criteria that are met are given a score of 1, criteria that are not, a score of 0. Weighted scores are calculated using the equation:                    
+                    The criteria are reordered from most to least important. Criteria that are met are given a score of 1, criteria that are not a score of 0. Weighted scores are calculated using the equation:                    
                 </p>
                 <p class={styles.inset}>
                         <span><strong>Weighted score = (1/Rank <span class={styles.multiply}></span> Score) <span class={styles.multiply}></span> 100</strong></span>
@@ -134,7 +134,7 @@ const CaseStudyStartUp = () => {
                     </figcaption>
                 </figure>
                 <p>
-                    Since the outcome of the decision matrix is unclear, and a recent Reuters <Links.EL link={{source:"https://www.reuters.com/business/cop/carbon-needs-cost-least-100tonne-now-reach-net-zero-by-2050-2021-10-25/"}}>poll of climate economists</Links.EL>  puts the mean value of offsetting a tonne of carbon at $100 if we are to reach net zero by 2050, the founders commission a market survey.
+                    Since the scores for $25 and $50 are close, and a recent Reuters <Links.EL link={{source:"https://www.reuters.com/business/cop/carbon-needs-cost-least-100tonne-now-reach-net-zero-by-2050-2021-10-25/"}}>poll of climate economists</Links.EL>  puts the mean value of offsetting a tonne of carbon at $100 if we are to reach net zero by 2050, the founders commission a market survey.
                 </p>
                 <figure>
                     <div id="venn">
