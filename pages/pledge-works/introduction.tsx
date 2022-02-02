@@ -73,7 +73,7 @@ const Introduction = () => {
 
                 <h4><em>2. Writing pledges</em></h4>
 
-                <p>We write pledges that are relevant. The <Links.EL link={{source:"https://responsibletech.work/responsible-pledges/"}}>pledges</Links.EL> Alija wrote when setting up ResponsibleTech.Work are broad and inclusive. They set the tone.</p>
+                <p>We write pledges that are relevant. The <Links.EL link={{source:"https://responsibletech.work/responsible-pledges/"}}>pledges</Links.EL> Alja wrote when setting up ResponsibleTech.Work are broad and inclusive. They set the tone.</p>
 
                 <p>At this stage we want to write pledges tailored to selecting third-party software that handles user data.</p>
 
