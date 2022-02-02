@@ -19,7 +19,7 @@ const Inventory = () => {
             <section>
                 <h2>A list of things and how to use them.</h2>
                 <p>There is no right or wrong way to use Pledge Works. These are the methods we use, and some examples of how we use them.</p>
-                <h3>Decision matrix or pledge checklist?</h3>
+                <h3>Decision matrix or Pledge Checklist?</h3>
                 <p>A <strong>decision matrix</strong> is suitable when you are choosing between two or more candidates, such as between analytics or discussion services, hardware or software products, or programming languages and frameworks.</p>
                 <blockquote>
                     <div>Should we use React, Preact, Angular or Vanilla JavaScript for this project?</div>
@@ -34,7 +34,7 @@ const Inventory = () => {
                         <li>Does this benefit us and our customers?</li>
                     </ul>
                 </blockquote>
-                <p>A <strong>pledge checklist</strong> helps you live up to your pledges when you create things. If you are building a website, you want its content to be accessible to everyone, and to avoid upsetting people.</p>
+                <p>A <strong>Pledge Checklist</strong> helps you live up to your pledges when you create things. If you are building a website, you want its content to be accessible to everyone, and to avoid upsetting people.</p>
                 <blockquote>
                     <div><input id="c" type='checkbox'></input><label htmlFor="c">Use plain language and avoid figures of speech, idioms, and complicated metaphors.</label></div>
                     <div><input id="b" type='checkbox'></input><label htmlFor="b">Check the contrast for all normal-sized text</label></div>
@@ -66,7 +66,7 @@ const Inventory = () => {
                 <h4>Democracy at work</h4>
                 <p>We favour a democratic approach to ethical oversight. The more perspectives we include the less likely we are to make mistakes and incur risk.</p>
                 <p>Pledges that challenge unethical behaviour are best written by the people that must honour them. We write pledges as individuals, teams, professionals, and organisations, then hold ourselves accountable. If we fail, we do so openly and honestly.</p>
-                <p>Decisions can be reached quickly with or without a decision matrix or pledge checklist. When pledges are broken, or when there is no clear course of action, voting determines what happens next.</p>
+                <p>Decisions can be reached quickly with or without a decision matrix or Pledge Checklist. When pledges are broken, or when there is no clear course of action, voting determines what happens next.</p>
                 <p>A pledge makes implicit why it should not be broken. For example, it should be clear to people why <Links.EL link={{source:"https://www.darkpatterns.org/"}}>dark patterns</Links.EL> in website design are unethical. But where there is doubt or uncertainty, add links or an explicit reason.</p>
                 <blockquote>
                     We pledge not to use practices identified as dark patterns <em><strong>because they are dishonest, disrespect users, and may be harmful</strong></em>.

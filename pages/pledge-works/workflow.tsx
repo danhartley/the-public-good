@@ -17,30 +17,40 @@ const config = {
 const graphDefinition = `
     flowchart TB;
     classDef default stroke-width:0px, height:50px, line-height:1.8, y:-26px;
-    classDef matrix fill:powderblue;
+    classDef optional fill:powderblue;
     classDef implementation fill:palegreen;
     classDef quarantine fill:pink;
-        %% A([Project]);
-        B([Work]);
-        C([Requirements]);
-        D([Pledges]);
-        E([Decision Matrix or Pledge Checklist]);
-        F([Vote]);
-        G([Honours Pledge]);
-        H([Breaks Pledge]);
+        
+        T([Thinking, Planning, Doing]);
+        PC([Pledge checklist]);
         I([Implementation]);
-        J([Quarantine]);
-        B --> C;
-        B --> D;
-        C --> E;
-        D --> E;
-        E --> F;
-        F --> G & H;
-        G --> I;
-        H --> J;
-        class E matrix;
-        class I implementation;
-        class J quarantine;
+        Q([Quarantine]);
+        
+        S([Selecting, Filtering]);
+        C([Pledges & requirements]);
+        DM([Decision matrix]);
+        V([Voting]);
+        HP([Honours pledge]);
+        BP([Breaks pledge]);
+        I2([Implementation]);
+        Q2([Quarantine]);
+        
+        T --> PC;
+        PC --> I;  
+        PC --> Q;  
+        %% T --> I;
+        
+        S --> C;
+        S --> I2;
+        C --> DM;
+        DM --> V;
+        V --> BP & HP;
+        BP --> Q2;
+        HP --> I2;
+
+        class DM,PC,V,BP,HP optional;
+        class I,I2 implementation;
+        class Q,Q2 quarantine;
 `;
 
 declare global {
@@ -49,7 +59,8 @@ declare global {
 
 const Workflow = () => {
 
-    // useful ref: https://github.com/DanShai/useMermaid-hook
+    // useful ref: https://mermaid-js.github.io/mermaid/#/README
+    // syntax: https://mermaid-js.github.io/mermaid/#/theming
 
     const [loaded, setLoaded] = useState(false);
     const [svg, setSvg] = useState<string>('');
