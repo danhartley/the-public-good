@@ -134,7 +134,7 @@ const Carbon = () => {
                     <p>
                         <div class={styles.inset}>
                             <div>C<span class={styles.sub}>4</span>H<span class={styles.sub}>10</span> - butane and C<span class={styles.sub}>8</span>H<span class={styles.sub}>18</span> - octane are pure hydrocarbons. Petrol is a mixture of many hydrocarbons.</div>
-                            <div>Naturally occurring, unrefined fossil fuels, such as crude oil and coal, contain impurities which are released when they are burnt. Coal, for example, is of variable quality; higher grade forms such as anthracite have a higher ratio of carbon to other elements, including oxygen - O, nitrogen - N and sulfur - S.</div>
+                            <div>Naturally occurring, unrefined fossil fuels, such as crude oil and coal, contain impurities which are released when they are burnt. Coal is of variable quality; higher grade forms such as anthracite have a higher ratio of carbon to other elements, including oxygen - O, nitrogen - N and sulfur - S.</div>
                             <div>Low grade <strong>bituminous</strong> coal has the formula <strong>C<span class={styles.sub}>137</span>H<span class={styles.sub}>97</span>O<span class={styles.sub}>9</span>NS</strong>.</div>
                             <div>High grade <strong>anthracite</strong> has the formula <strong>C<span class={styles.sub}>240</span>H<span class={styles.sub}>99</span>O<span class={styles.sub}>4</span>NS</strong>.</div>
                         </div>

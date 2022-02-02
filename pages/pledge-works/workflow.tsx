@@ -21,7 +21,7 @@ const graphDefinition = `
     classDef implementation fill:palegreen;
     classDef quarantine fill:pink;
         %% A([Project]);
-        B([Request]);
+        B([Work]);
         C([Requirements]);
         D([Pledges]);
         E([Decision Matrix or Pledge Checklist]);

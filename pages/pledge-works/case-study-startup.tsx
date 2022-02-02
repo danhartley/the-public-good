@@ -97,10 +97,10 @@ const CaseStudyStartUp = () => {
                     The price at which the company sells offsets is determined by the price of carbon credits. That price is volatile, varies widely, and is likely to rise steeply. Our founders need to consider these factors.
                 </p>
                 <p>
-                    Based on their understanding of the market they initially set the price at $25. They decide to stress test this price against their project pledges using a decision matrix.
+                    Based on their understanding of the market they initially set the price at $25. They stress test this price against their project pledges using a decision matrix.
                 </p>
                 <p>At this stage the founders write project pledges. These are more specific than their core pledges and harder to ignore. The founders use them to keep their decisions in line with their values.</p>
-                <p>Examples of pledges our company founders might use to help them make a decision.</p>
+                <p>Examples of pledges our company founders might use to make a decision.</p>
                 <ul class={styles.standoutList}>
                     {
                         productPledges.map(pledge => {
@@ -118,7 +118,7 @@ const CaseStudyStartUp = () => {
                 <p class={styles.inset}>
                         <span><strong>Weighted score = (1/Rank <span class={styles.multiply}></span> Score) <span class={styles.multiply}></span> 100</strong></span>
                     </p>
-                <p>Our founders decide to compare three prices: $25, $50 and $100 per tonne of carbon.</p>                
+                <p>Our founders compare three prices: $25, $50 and $100 per tonne of carbon.</p>                
                 <p>
                     The company must set a price which is profitable, competitive, future proof, and satisfies criteria based on its project pledges. The weighted scores favour a price of $50.
                 </p>

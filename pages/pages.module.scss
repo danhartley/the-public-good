@@ -74,11 +74,10 @@ figure .centred img {
 }
 
 .standoutList {
-    margin: 0.25rem 0;    
+    margin: 0.25rem 0 0 -2rem;    
     padding-left: 1rem;
-    border-left: 0.5rem solid rgb(166, 209, 238);
     @media (min-width: 601px) {
-        margin-left: 1rem;
+        margin-left: -1rem;
     }   
     li {
         display: block;

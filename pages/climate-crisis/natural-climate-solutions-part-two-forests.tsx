@@ -230,7 +230,7 @@ const NCSPartTwo = () => {
                     <ul class={styles.unorderedList}>
                         <li>Clean the air of harmful pollutants (such as carbon monoxide, ammonia and sulphur dioxide through their leaves, barks and roots).</li>
                         <li>Limit the effects of urban heat islands, reducing air conditioning needs.</li>
-                        <li>Control land erosion, reduce landslides and control surface water, and help mitigate flood damage.</li>
+                        <li>Control land erosion, reduce landslides and control surface water, and mitigate flood damage.</li>
                         <li>Boost biodiversity in cities.</li>
                         <li>Green spaces in urban areas can contribute to stronger communities and improved wellbeing.</li>
                         <li>Fallen leaves, flowers, fruits or other tree parts form mulches. These provide a natural filter for polluted rainwater, supplying clean water to other plants in the vicinity as well as our rivers and oceans.</li>

@@ -4,7 +4,7 @@ import styles from 'pages/pages.module.scss';
 
 const Population = () => {
     return (
-        <Layout header="The problem of population" title="Climate crisis | The problem of population" description={'Does the world have too many people? Would reducing the population help bring down greenhouse emissions?'}>
+        <Layout header="The problem of population" title="Climate crisis | The problem of population" description={'Does the world have too many people? Would reducing the population bring down greenhouse emissions?'}>
             <section>
                 <p>Does the world have too many people, and should reducing the population, over time, be considered one of the means by which greenhouse gas emissions are brought down?</p>
                 <p>It is a reasonable discussion to have once everyone is in the same boat; <Links.EL link={{label:'Data for children per woman provided by Our World in Data', source:'https://ourworldindata.org/grapher/children-per-woman-un?country=~OWID_WRL'}}>children per woman</Links.EL> is at its highest in Niger, at 6.4, but the <Links.EL link={{label:'Data for per capita emissions provided by Our World in Data', source:'https://ourworldindata.org/grapher/co-emissions-per-capita'}}>carbon footprint</Links.EL> of each person is 0.09 tonnes per year. In the US, the comparable figures are 1.77 (3.6 times lower) and 16.06 (178.4 time higher). Combining these figures, we find that to effect the same emissions reduction requires one person from the US or 49.36 people from Niger.</p>

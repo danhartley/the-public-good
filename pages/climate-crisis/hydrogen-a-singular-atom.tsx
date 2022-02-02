@@ -85,7 +85,7 @@ const Hydrogen = () => {
                 </p>
 
                 <p>
-                    <div>The bonds in these compounds are polar. In a molecule of water, for example, the shared electrons spend more time near the (more electronegative) oxygen atom, which therefore takes on a partial negative charge. The hydrogen end of the molecule, where the electron spends less time, takes on a partial positive charge. Molecules of water position themselves in response to these partial charges; the hydrogen of one molecule being attracted to the oxygen of another (unlike charges attract), to form a <strong>hydrogen bond</strong>.</div>
+                    <div>The bonds in these compounds are polar. In a molecule of water, the shared electrons spend more time near the (more electronegative) oxygen atom, which therefore takes on a partial negative charge. The hydrogen end of the molecule, where the electron spends less time, takes on a partial positive charge. Molecules of water position themselves in response to these partial charges; the hydrogen of one molecule being attracted to the oxygen of another (unlike charges attract), to form a <strong>hydrogen bond</strong>.</div>
                 </p>
 
                 <p>Hydrogen bonds explain cohesion (why water molecules 'bead'), and the relatively high boiling point of water - energy is needed to break apart the hydrogen bonds.</p>

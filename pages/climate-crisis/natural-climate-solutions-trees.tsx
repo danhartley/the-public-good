@@ -112,7 +112,7 @@ const NCSPartOne = () => {
                 <h2>Is planting trees a good way to remove carbon dioxide from the atmosphere?</h2>
 
                 <blockquote cite='https://www.nationalgeographic.com/environment/article/planting-trees-helps-fight-climate-change-but-we-need-billions-more-seedlings'>
-                Planting trees has quickly emerged as a seemingly simple way to soak up carbon emissions. Everybody likes it: Environmentalists, politicians, and corporations alike are pushing for a rapid expansion of reforestation efforts to help meet climate goals.
+                Planting trees has quickly emerged as a seemingly simple way to soak up carbon emissions. Everybody likes it: Environmentalists, politicians, and corporations alike are pushing for a rapid expansion of reforestation efforts to meet climate goals.
                 </blockquote>
                 <cite><Links.EL link={{source:'https://www.nationalgeographic.com/environment/article/planting-trees-helps-fight-climate-change-but-we-need-billions-more-seedlings'}}>National Geographic 2021</Links.EL> </cite>
                 <p>We emit around <Links.EL link={{source:'https://ourworldindata.org/greenhouse-gas-emissions'}}>37 billion tonnes of carbon dioxide</Links.EL> each year. The most rational way to reduce or eliminate these emissions is to stop burning fossil fuels and use land appropriately.</p>
@@ -301,7 +301,7 @@ const NCSPartOne = () => {
                     <ul class={styles.unorderedList}>
                         <li>Clean the air of harmful pollutants (such as carbon monoxide, ammonia and sulphur dioxide through their leaves, barks and roots).</li>
                         <li>Limit the effects of urban heat islands, reducing air conditioning needs.</li>
-                        <li>Control land erosion, reduce landslides and control surface water, and help mitigate flood damage.</li>
+                        <li>Control land erosion, reduce landslides and control surface water, and mitigate flood damage.</li>
                         <li>Boost biodiversity in cities.</li>
                         <li>Green spaces in urban areas can contribute to stronger communities and improved wellbeing.</li>
                         <li>Fallen leaves, flowers, fruits or other tree parts form mulches. These provide a natural filter for polluted rainwater, supplying clean water to other plants in the vicinity as well as our rivers and oceans.</li>
