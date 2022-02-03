@@ -15,7 +15,7 @@ const Inventory = () => {
     ];
 
     return (
-        <Layout header="Pledge Works Inventory" title="Pledge Works Inventory" description={'Pledge Works: The good parts.'}> {/* image? */}            
+        <Layout header="Pledge Works Inventory" rt="4 to 5" title="Pledge Works Inventory" description={'Pledge Works: The good parts.'}> {/* image? */}            
             <section>
                 <h2>A list of things and how to use them.</h2>
                 <p>There is no right or wrong way to use Pledge Works. These are the methods we use, and some examples of how we use them.</p>
@@ -71,6 +71,17 @@ const Inventory = () => {
                 <blockquote>
                     We pledge not to use practices identified as dark patterns <em><strong>because they are dishonest, disrespect users, and may be harmful</strong></em>.
                 </blockquote>
+                <h4>Voting</h4>
+                <p>In agile software development teams allocate time to review recent work. Some use retrospectives to look at how things are done, and what could be improved. Both reviews and retrospectives use voting to canvas opinion.</p>
+                <p>In Behaviour Driven Development - a form of agile development - everyone involved directly on a project discusses new products and features, and votes on them before ideas are implemented.</p>
+                <p>Voting is often used by teams to estimate how long a piece of work will take.</p>
+                <p>
+                    <em>Where software teams have autonomy, voting is common.</em>                    
+                </p>
+                <p>A team using Pledge Works votes when a planned piece of work or decision breaks one of its pledges.</p>
+                <p>This can happen at the outset of a project or after team members have reviewed a piece of work in detail using a pledge checklist or decision matrix. If the team has the authority, it can block a piece of work until the reason it breaks a pledge has been resolved. If a solution is unclear, the solution is put in quarantine.</p>
+                <p>Even if the team is not the ultimate arbiter - if they are overruled - their objection is placed on record. The objection may lead to nothing, it may lead to change. At the very least the team, and the individuals in it, have voiced their opinion.</p>
+                <p>Voting on whether to accept work or plans that break pledges is an expression of the team's conscience.</p>
             </section>
             <section>
                 <h2>External Links</h2>
