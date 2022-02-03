@@ -17,7 +17,7 @@ const Appendix = () => {
         <>
             <h3 id="appendix">Appendix</h3>
             <blockquote>
-                <strong>Pledge Works</strong> is a <strong>ResponsibleTech.Work</strong> collaboration by Alja Isaković, Daniel Hartley & Chris Oram.
+                <strong>Pledge Works</strong> is a <strong>ResponsibleTech.Work</strong> collaboration between Alja Isaković, Daniel Hartley & Chris Oram.
             </blockquote>
             <Links.ExternalLinksList links={links}></Links.ExternalLinksList>
         </>
