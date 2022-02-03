@@ -95,7 +95,7 @@ const Introduction = () => {
 
                 <h4><em>4. Stress testing</em></h4>
 
-                <p>Criteria for a decision matrix are mainly <Links.EL link={{source:"https://en.wikipedia.org/wiki/Non-functional_requirement"}}>non-functional</Links.EL> requirements. They describe how the system should behave. We want the anyaltics tool we choose to <em>be</em> GDPR compliant<span class={styles.super}><a href="#carbon">+</a></span> but we don't need to know how it does this.</p>
+                <p>Criteria for a decision matrix are mainly <Links.EL link={{source:"https://en.wikipedia.org/wiki/Non-functional_requirement"}}>non-functional</Links.EL> requirements. They describe how the system should behave. We want the analytics tool we choose to <em>be</em> GDPR compliant<span class={styles.super}><a href="#carbon">+</a></span> but we don't need to know how it does this.</p>
                 <p>The criteria are a mix of project requirements - the service must be free or cheap - and pledges converted into criteria so that we can answer yes or no as to whether they have been met. We think of these criteria as <em>ethical</em> requirements.</p>
 
                 <figure>
