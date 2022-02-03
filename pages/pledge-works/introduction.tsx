@@ -28,7 +28,7 @@ const Introduction = () => {
 
                 <h2>Stress-testing good intentions.</h2>
 
-                <p>As collaborators at <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL>, we look for ways to work more responsibly. Since we are designers and programmers we began by challenging how we develop software.</p>
+                <p>At <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL> we want to find ways to work more responsibly. Since we are designers and programmers we began by challenging how we develop software.</p>
 
                 <p>We wanted an approach that was easy to explain, simple to execute, that worked with existing philosophies and practices widely used in software development, but that required little or no training, and was platform independent.</p>
 
@@ -55,7 +55,7 @@ const Introduction = () => {
 
                 <p>Rather than covering everything in one go, I'll take three key parts of Pledge Works, <em>Writing pledges, Stress testing</em>, and <em>Voting</em>, and look at how they fit with common practices.</p>
 
-                <p>When using this process, I run through steps in order, then jump around.</p>
+                <p>The order shown here helps for getting started but isn't fixed.</p>
 
                 <h4>1. Defining the work and its scope</h4>
 
@@ -63,8 +63,8 @@ const Introduction = () => {
 
                 <blockquote>
                     <ul class={styles.standoutList}>
-                        <li>We want to add analytics to our site, and pay nothing, or very little.</li>
-                        <li>We want to add a discussion platform to our site, and pay nothing, or very little.</li>
+                        <li>We want to add analytics to our site, and it must be free or cheap.</li>
+                        <li>We want to add a discussion platform to our site, and it must be free or cheap.</li>
                     </ul>
                 </blockquote>         
 
@@ -88,16 +88,15 @@ const Introduction = () => {
              
                 <h4>3. Requirements</h4>
 
-                <p>Requirements are the detailed breakdown of the things we need to know and do. We need to know whether an analytics service provides support, offers self-hosting, and how accurate their data are.</p>
+                <p>Requirements are the things we need to know and do. We need to know whether an analytics service provides support, offers self-hosting, and how accurate their data are. We need to know how to add a service or set it up if we are going to host it ourselves.</p>
 
-                <p>When working on a new product or idea, we keep to the ethical tracks using a <em>pledge checklist</em>.</p>
-                <p><em>Decision matrices</em> are for selecting between options which is what we want in this case.</p>
+                <p>When working on a new product or idea, we use a <em>pledge checklist</em> to keep our thinking in line with our commitments.</p>
+                <p>We use a <em>decision matrix</em> when we are selecting between options as in this case.</p>
 
                 <h4><em>4. Stress testing</em></h4>
-        
-                <p>We find it helpful to turn some of our pledges into <em>ethical</em> requirements that we add to our general requirements. We make no distinction between functional and <Links.EL link={{source:"https://en.wikipedia.org/wiki/Non-functional_requirement"}}>non-functional</Links.EL> requirements. </p>
 
-                <p>This is a simplified version of our decision matrix for selecting a website analytics tool. These work by running scripts on every page capturing data about the user including where they are from, how long they stayed.</p>
+                <p>Criteria for a decision matrix are mainly <Links.EL link={{source:"https://en.wikipedia.org/wiki/Non-functional_requirement"}}>non-functional</Links.EL> requirements. They describe how the system should behave. We want the anyaltics tool we choose to <em>be</em> GDPR compliant<span class={styles.super}><a href="#carbon">+</a></span> but we don't need to know how it does this.</p>
+                <p>The criteria are a mix of project requirements - the service must be free or cheap - and pledges converted into criteria so that we can answer yes or no as to whether they have been met. We think of these criteria as <em>ethical</em> requirements.</p>
 
                 <figure>
                     <AnalyticsProvider></AnalyticsProvider>
@@ -106,14 +105,16 @@ const Introduction = () => {
                     </figcaption>
                 </figure>
 
+                <p>This is a simplified version of a decision matrix for selecting a website analytics tool. Analytics tools work by running scripts on every page to capture data about the user including where they are from, and how long they stayed.</p>
+
                 <p>We order our criteria by priority from most to least important and give each an appropriately weighted score.</p>
 
-                <p>The decision matrix and Pledge Checklist are open documents to which anyone can contribute; the aim is to capture essential requirements, and to flag anything which may cause us to break a pledge.</p>
+                <p>The decision matrix and pledge checklist are open documents to which anyone can contribute; the aim is to capture essential requirements, and to flag anything which may cause us to break a pledge.</p>
 
                 <p>If a decision leads to a pledge being broken, we vote on whether to accept it.</p>
 
                 <h5>That sounds like a lot of work!</h5>
-                <p>At RTW have written a cascade of pledges starting at the organisational level down through projects such as Pledge Works to individual pieces of work. Pledges catch unwanted behaviour and undesirable actions along the way - as long as we stick to them. They become embedded in our practice. As a consequence we don't create decision matrices or Pledge Checklists often.</p>
+                <p>At RTW we have written a cascade of pledges starting at the organisational level down through projects such as Pledge Works to individual pieces of work. Pledges catch unwanted behaviour and undesirable actions along the way - as long as we stick to them. They become embedded in our practice. As a consequence we don't create decision matrices or pledge checklists often.</p>
                 <p>You don't need to disrupt your existing processes to use Pledge Works tactics. You can add them piecemeal, and slowly, and they will still make an impact.</p>
 
                 <h4><em>5. Voting</em></h4>

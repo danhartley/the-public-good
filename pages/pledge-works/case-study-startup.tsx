@@ -87,7 +87,7 @@ const CaseStudyStartUp = () => {
                 </blockquote>
                 <cite><Links.EL link={{source:"https://www.globalcarbonproject.org/global/pdf/WWF_2008_A%20comparison%20of%20C%20offset%20Standards.pdf"}}>WWF | Making Sense of the Voluntary Carbon Market</Links.EL> </cite>
                 <p>                
-                    Carbon offsetting is controversial. Our founders will need to demonstrate that the offset operations they support would not otherwise happen (additionality), and that any benefits are not reversible (permanence). They will also need to set a fair price per tonne of carbon offset.<span class={styles.super}><a href="#carbon">*</a></span>                
+                    Carbon offsetting is controversial. Our founders will need to demonstrate that the offset operations they support would not otherwise happen (additionality), and that any benefits are not reversible (permanence). They will also need to set a fair price per tonne of carbon offset.<span class={styles.super}><a href="#carbon">+</a></span>
                 </p>
                 <p>
                     
@@ -155,7 +155,7 @@ const CaseStudyStartUp = () => {
                 <p>The process of writing requirements and checking them against pledges will continue to help guide their decisions, whether selecting offset projects, utility providers, or third party software services.</p>
             </section>
             <section id="carbon">
-                Carbon credits are per tonne of <em>carbon dioxide</em>, not carbon. <Links.IL link={{source:"climate-crisis/facts"}}>There is a difference!</Links.IL>
+                + Carbon credits are per tonne of <em>carbon dioxide</em>, not carbon. <Links.IL link={{source:"climate-crisis/facts"}}>There is a difference!</Links.IL>
             </section>
             <section>
                 <h2>External Links</h2>
