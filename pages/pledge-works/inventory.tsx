@@ -84,12 +84,15 @@ const Inventory = () => {
                     <em>Where software teams have autonomy, voting is common.</em>                    
                 </p>
                 <p>A team using Pledge Works votes when a planned piece of work or decision breaks one of its pledges.</p>
-                <p>This can happen at the outset of a project or after team members have reviewed a piece of work in detail using a pledge checklist or decision matrix. If the team has the authority, it can block a piece of work until the reason it breaks a pledge has been resolved. If a solution is unclear, the solution is put in quarantine.</p>
-                <p>Even if the team is not the ultimate arbiter - if they are overruled - their objection is placed on record. The objection may lead to nothing, it may lead to change. At the very least the team, and the individuals in it, have voiced their opinion.</p>
+                <p>This can happen at the outset of a project or after team members have reviewed a piece of work in detail using a pledge checklist or decision matrix. If the team has the authority, it can block a piece of work until the reason it breaks a pledge has been resolved. If it isn't clear what to do, the idea is put in quarantine.</p>
+                <p>Even if the team is not the ultimate arbiter - if they are overruled - their objection is placed on record. The objection may lead to nothing, or to change. At the very least the team, and the individuals in it, have voiced their opinion.</p>
                 <p>Voting on whether to accept work or plans that break pledges is an expression of the team's conscience.</p>
                 <h4>Challenging</h4>
                 <p>Software teams often consider edge cases. But there are classes of potential problems that are missed because it is impossible to imagine every context in which someone uses a product.</p>
                 <p>We don't know the mistakes we are going to make, but we promise to address them. If you want to challenge any of our decisions please do so on our GitHub Discussions board.</p>
+                <h4>Transparency</h4>
+                <p>The Pledge Works team has pledged to be transparent by default. We will make public our decisions and how we reached them. If we don't, we will say why.</p>
+                <p>Transparency is generally a good thing but individuals especially can be vulnerable to unfair treatment. Transparency should be approached with caution and offered, not expected.</p>
                 <Appendix></Appendix>
             </section>
             <section>
