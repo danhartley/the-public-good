@@ -39,10 +39,10 @@ const CaseStudyStartUp = () => {
     ];
 
     return (
-        <Layout header="Startup case study"  rt="4 to 5" title="Case study - the startup" description={'Once a startup has established its purpose, it is ready to write the pledges that will guide its work.'}> {/* image? */}
+        <Layout header="Startup case study"  rt="4 to 5" title="Case study - the startup" description={'Once a startup has established its purpose, it\'s ready to write the pledges that will guide its work.'}> {/* image? */}
             <section>
                 <h2>
-                    Once a startup has established its purpose, it is ready to write the pledges that will guide its work.
+                    Once a startup has established its purpose, it's ready to write the pledges that will guide its work.
                 </h2>
                 <p>
                     I will use a fictitious company selling carbon offsets to explain this process.
@@ -51,7 +51,7 @@ const CaseStudyStartUp = () => {
                     Our company founders want to make decisions that reflect their values, and earn a living. They believe these goals are complementary.
                 </p>
                 <p>
-                    Following methods set out in <Links.EL link={{source:"/pledge-works/introduction"}}>Pledge Works</Links.EL>, they draw up a foundational list of core pledges which will act as their ethical backstop.
+                    Following methods set out in <Links.IL link={{source:"/pledge-works/introduction"}}>Pledge Works</Links.IL>, they draw up a foundational list of core pledges which will act as their ethical backstop.
                 </p>
                 <h3>Core pledges</h3>
                 <p>                    

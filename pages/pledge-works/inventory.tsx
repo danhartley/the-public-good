@@ -19,7 +19,7 @@ const Inventory = () => {
             <section>
                 <h2>A list of things and how to use them.</h2>
                 <p>There is no right or wrong way to use Pledge Works. These are the methods we use, and some examples of how we use them.</p>
-                <h3>Decision matrix or Pledge Checklist?</h3>
+                <h3>Decision matrix or pledge checklist?</h3>
                 <p>A <strong>decision matrix</strong> is suitable when you are choosing between two or more candidates, such as between analytics or discussion services, hardware or software products, or programming languages and frameworks.</p>
                 <blockquote>
                     <div>Should we use React, Preact, Angular or Vanilla JavaScript for this project?</div>
