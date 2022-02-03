@@ -1,6 +1,6 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
-
+import Appendix from 'pages/pledge-works/artefacts';
 import CostPerTonne from 'pages/pledge-works/decision-matrix-cost-per-tonne';
 
 import styles from 'pages/pages.module.scss';
@@ -66,7 +66,7 @@ const CaseStudyStartUp = () => {
                             return <li>{pledge}</li>
                         })
                     }
-                </ul>          
+                </ul>
                 <p>
                     These pledges are general and apply to everything the company does.
                 </p>
@@ -157,6 +157,7 @@ const CaseStudyStartUp = () => {
             <section id="carbon">
                 + Carbon credits are per tonne of <em>carbon dioxide</em>, not carbon. <Links.IL link={{source:"climate-crisis/facts"}}>There is a difference!</Links.IL>
             </section>
+            <Appendix></Appendix>
             <section>
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />

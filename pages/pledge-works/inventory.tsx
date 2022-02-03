@@ -1,5 +1,6 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
+import Appendix from 'pages/pledge-works/artefacts';
 
 const Inventory = () => {
 
@@ -82,6 +83,7 @@ const Inventory = () => {
                 <p>This can happen at the outset of a project or after team members have reviewed a piece of work in detail using a pledge checklist or decision matrix. If the team has the authority, it can block a piece of work until the reason it breaks a pledge has been resolved. If a solution is unclear, the solution is put in quarantine.</p>
                 <p>Even if the team is not the ultimate arbiter - if they are overruled - their objection is placed on record. The objection may lead to nothing, it may lead to change. At the very least the team, and the individuals in it, have voiced their opinion.</p>
                 <p>Voting on whether to accept work or plans that break pledges is an expression of the team's conscience.</p>
+                <Appendix></Appendix>
             </section>
             <section>
                 <h2>External Links</h2>

@@ -1,6 +1,7 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import AnalyticsProvider from 'pages/pledge-works/decision-matrix-analytics-provider';
+import Appendix from 'pages/pledge-works/artefacts';
 import Workflow from 'pages/pledge-works/workflow';
 
 import styles from 'pages/pages.module.scss';
@@ -152,7 +153,7 @@ const Introduction = () => {
                 <p>
                     See a <Links.IL link={{source:"/pledge-works/case-study-startup"}}>case study</Links.IL> for using Pledge Works at a startup.
                 </p>
-
+                <Appendix></Appendix>
             </section>            
             <section>
                 <h2>External Links</h2>
