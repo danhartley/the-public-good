@@ -13,10 +13,14 @@ const Inventory = () => {
             "name": "Front-End Performance Checklist | Smashing Magazine",
             "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRCK9RfdPzVm9kUyZwnkR1W3hD79dk8U5JS1XymFPkFejpFPGRkWqlLL8RKO8sAOXrS4h2VzDOnQ7-Q/pub?gid=344266283&single=true&output=pdf"
         },
+        {
+            "name": "An Ethical Toolkit for Engineering/Design Practice | Markkula Center for Applied Ethics",
+            "source": "https://www.scu.edu/ethics-in-technology-practice/ethical-toolkit/"
+        },
     ];
 
     return (
-        <Layout header="Pledge Works Inventory" rt="4 to 5" title="Pledge Works Inventory" description={'Pledge Works: The good parts.'}> {/* image? */}            
+        <Layout header="Pledge Works Inventory" rt="4 to 5" title="Pledge Works Inventory" description={'Pledge Works: The good parts.'} discussions='/categories/pledge-works'> {/* image? */}            
             <section>
                 <h2>A list of things and how to use them.</h2>
                 <p>There is no right or wrong way to use Pledge Works. These are the methods we use, and some examples of how we use them.</p>
@@ -83,6 +87,9 @@ const Inventory = () => {
                 <p>This can happen at the outset of a project or after team members have reviewed a piece of work in detail using a pledge checklist or decision matrix. If the team has the authority, it can block a piece of work until the reason it breaks a pledge has been resolved. If a solution is unclear, the solution is put in quarantine.</p>
                 <p>Even if the team is not the ultimate arbiter - if they are overruled - their objection is placed on record. The objection may lead to nothing, it may lead to change. At the very least the team, and the individuals in it, have voiced their opinion.</p>
                 <p>Voting on whether to accept work or plans that break pledges is an expression of the team's conscience.</p>
+                <h4>Challenging</h4>
+                <p>Software teams often consider edge cases. But there are classes of potential problems that are missed because it is impossible to imagine every context in which someone uses a product.</p>
+                <p>We don't know the mistakes we are going to make, but we promise to address them. If you want to challenge any of our decisions please do so on our GitHub Discussions board.</p>
                 <Appendix></Appendix>
             </section>
             <section>

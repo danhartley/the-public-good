@@ -13,7 +13,7 @@ const RoleBasedPledges = () => {
   ];
 
     return (
-        <Layout header="Role-based Pledges" title="Role-based Pledges" description={'How to write role-based pledges'}> {/* image? */}            
+        <Layout header="Role-based Pledges" title="Role-based Pledges" description={'How to write role-based pledges'} discussions='/categories/pledge-works'> {/* image? */}            
             <section>
 
                 <p>They are bla bla bla…</p>

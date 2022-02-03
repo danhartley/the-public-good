@@ -61,7 +61,8 @@ const Layout = ({
   header = null,
   rt = '',
   main = 'The Public Good',
-  strapline = 'This website will not empower you.'
+  strapline = 'This website will not empower you.',
+  discussions = ''
 }) => {
   
     const { mode, toggleMode } = useContext(ModeContext);
@@ -136,8 +137,8 @@ const Layout = ({
                     { router.pathname === '/' ? null : <nav aria-label="Published link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
                 </main>
                 <footer role="contentinfo" class={styles.footer}>
-                    <div><span>© <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL> 2021. All rights reserved.</span></div>
-                    <div class={styles.externalList}><Links.EL link={{source:'https://www.linkedin.com/in/danhartley/'}}>LinkedIn</Links.EL> | <Links.IL link={{source:'personal/cv'}}>CV</Links.IL></div>
+                    <div><span>© <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL> 2022. All rights reserved.</span></div>
+                    <div class={styles.externalList}><Links.EL link={{source:'https://www.linkedin.com/in/danhartley/'}}>LinkedIn</Links.EL> | <Links.IL link={{source:'personal/cv'}}>CV</Links.IL> | <Links.EL link={{source:`https://github.com/danhartley/the-public-good/discussions${discussions}`}}>Comment</Links.EL></div>
                     <SiteMetrics title={title} />
                 </footer>
             </div>            
