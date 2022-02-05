@@ -1,7 +1,8 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import AnalyticsProvider from 'pages/pledge-works/decision-matrix-analytics-provider';
-import Appendix from 'pages/pledge-works/artefacts';
+import Top from 'components/top/top';
+import Appendix from 'pages/pledge-works/appendix';
 import Workflow from 'pages/pledge-works/workflow';
 
 import styles from 'pages/pages.module.scss';
@@ -24,10 +25,10 @@ const Introduction = () => {
     ];
 
     return (
-        <Layout header="Introduction to Pledge Works"  rt="5 to 6" title="Pledge Works" description={'Pledge Works: Stress-testing good intentions.'} discussions='/categories/pledge-works'> {/* image? */}            
+        <Layout header="Pledge Works" rt="4 to 5" title="Pledge Works" description={'Pledge Works: Writing pledges for better outcomes.'} discussions='/categories/pledge-works'> {/* image? */}            
             <section>
 
-                <h2>Stress-testing good intentions.</h2>
+                <h2>Writing pledges for better outcomes.</h2>
 
                 <p>At <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL> we want to find ways to work more responsibly. Since we are designers and programmers we began by challenging how we develop software.</p>
 
@@ -35,32 +36,21 @@ const Introduction = () => {
 
                 <p>Over six months we came up with an approach to responsible design and development we call <strong>Pledge Works</strong>.</p>
 
-                <p>Rather than avoiding challenging questions, we check that the requirements of each new piece of work match our pledges before acting.</p>
+                <p>We write pledges that challenge us to do better and we fit these pledges into the workflows and practices we use every day.</p>
 
                 <h3>Pledge Works</h3>       
+                <p>
+                    Principles are general and abstract, work is specific and concrete. We have three practices for bridging this gap:
+                    <ul class={styles.dashedList}>
+                        <li>Writing pledges</li>
+                        <li>Challenging decisions</li>
+                        <li>Voting</li>
+                    </ul>
+                </p>
 
-                <p>There are a number of possible workflows. The blue nodes from Pledge Works are all optional.</p>
+                <h4>The idea</h4>
 
-                <figure>
-                    {/* <Workflow></Workflow> */}
-                    <div class={styles.centred}>
-                        <img src="/svg/workflow.svg" alt="Workflow" />
-                    </div>
-                    <figcaption>
-                        <br />
-                        <div><em>Figure 1: Overview of the Pledge Works workflow</em></div>
-                    </figcaption>
-                </figure>
-
-                <p>We created Pledge Works to solve a conundrum we face repeatedly in our work: how to act in accordance with our principles. Principles are general and abstract, work is specific and concrete. We use pledges to bridge this gap.</p>                
-
-                <p>Rather than covering everything in one go, I'll take three key parts of Pledge Works, <em>Writing pledges, Stress testing</em>, and <em>Voting</em>, and look at how they fit with common practices.</p>
-
-                <p>The order shown here helps for getting started but isn't fixed.</p>
-
-                <h4>1. Defining the work and its scope</h4>
-
-                <p>We are at a stage in the development of Pledge Works when we want to tell people about it, and receive feedback. As an open source project, we also need to keep down costs. These are our high level requirements:</p>
+                <p>We are at a stage in the development of Pledge Works when we want to tell people about it, and receive feedback. As an open source project, we also need to keep down costs.</p>
 
                 <blockquote>
                     <ul class={styles.standoutList}>
@@ -70,13 +60,12 @@ const Introduction = () => {
                 </blockquote>         
 
                 <p>Because we'll be handling user data, we need to think carefully about data security and privacy. Since we will be reliant on another organisation's services, we will scrutinise their products and motives as well as our own.</p>
-                <p>We know what we want to do, we've defined the scope, and are aware of the ethical risks. We're ready to write pledges.</p>
 
-                <h4><em>2. Writing pledges</em></h4>
+                <h4><em>Writing pledges</em></h4>
 
-                <p>We write pledges that are relevant. The <Links.EL link={{source:"https://responsibletech.work/responsible-pledges/"}}>pledges</Links.EL> Alja wrote when setting up ResponsibleTech.Work are broad and inclusive. They set the tone.</p>
+                <p>We write pledges that are relevant. ResponsibleTech.Work <Links.EL link={{source:"https://responsibletech.work/responsible-pledges/"}}>pledges</Links.EL> are broad and inclusive. They set the tone.</p>
 
-                <p>At this stage we want to write pledges tailored to selecting third-party software that handles user data.</p>
+                <p>To select third-party software that handles user data responsibly we add context-specific pledges.</p>
 
                 <blockquote>
                     <ul class={styles.standoutList}>
@@ -87,16 +76,17 @@ const Introduction = () => {
                     </ul>                    
                 </blockquote>
              
-                <h4>3. Requirements</h4>
+                <h4>Requirements</h4>
 
-                <p>Requirements are the things we need to know and do. We need to know whether an analytics service provides support, offers self-hosting, and how accurate their data are. We need to know how to add a service or set it up if we are going to host it ourselves.</p>
+                <p>Requirements are the things we need to know and do. We need to know whether an analytics service provides support, offers self-hosting, and whether their data are accurate. We need to know how to add a service or set it up if we are going to host it ourselves.</p>
 
-                <p>When working on a new product or idea, we use a <em>pledge checklist</em> to keep our thinking in line with our commitments.</p>
-                <p>We use a <em>decision matrix</em> when we are selecting between options as in this case.</p>
+                <p>To select the best outcome from several options we use a tool from the <Links.IL link={{source:"pledge-works/tools/decision-toolbox"}}>decision toolbox</Links.IL> - the <em>decision matrix</em>.</p>
 
-                <h4><em>4. Stress testing</em></h4>
+                <h4><em>Challenging decisions</em></h4>
 
-                <p>Criteria for a decision matrix are mainly <Links.EL link={{source:"https://en.wikipedia.org/wiki/Non-functional_requirement"}}>non-functional</Links.EL> requirements. They describe how the system should behave. We want the analytics tool we choose to <em>be</em> GDPR compliant<span class={styles.super}><a href="#carbon">+</a></span> but we don't need to know how it does this.</p>
+                <p>
+                    <div>Criteria for a decision matrix are mainly <Links.EL link={{source:"https://en.wikipedia.org/wiki/Non-functional_requirement"}}>non-functional</Links.EL> requirements. They describe how the system should behave. We want the analytics tool we choose to <em>be</em> GDPR compliant<span class={styles.super}><a href="#carbon">+</a></span> but we don't need to know <em>how</em> it does this.</div>
+                </p>
                 <p>The criteria are a mix of project requirements - the service must be free or cheap - and pledges converted into criteria so that we can answer yes or no as to whether they have been met. We think of these criteria as <em>ethical</em> requirements.</p>
 
                 <figure>
@@ -110,15 +100,11 @@ const Introduction = () => {
 
                 <p>We order our criteria by priority from most to least important and give each an appropriately weighted score.</p>
 
-                <p>The decision matrix and pledge checklist are open documents to which anyone can contribute; the aim is to capture essential requirements, and to flag anything which may cause us to break a pledge.</p>
+                <p>The decision matrix is an open document to which anyone can contribute; the aim is to capture essential requirements, and to flag anything which may cause us to break a pledge.</p>
 
                 <p>If a decision leads to a pledge being broken, we vote on whether to accept it.</p>
 
-                <h5>That sounds like a lot of work!</h5>
-                <p>At RTW we have written a cascade of pledges starting at the organisational level down through projects such as Pledge Works to individual pieces of work. Pledges catch unwanted behaviour and undesirable actions along the way - as long as we stick to them. They become embedded in our practice. As a consequence we don't create decision matrices or pledge checklists often.</p>
-                <p>You don't need to disrupt your existing processes to use Pledge Works tactics. You can add them piecemeal, and slowly, and they will still make an impact.</p>
-
-                <h4><em>5. Voting</em></h4>
+                <h4><em>Voting</em></h4>
 
                 <p>We think putting time aside for voting is worthwhile. If we break a pledge, we want to know why, and agree on whether it is acceptable.</p>
 
@@ -130,9 +116,9 @@ const Introduction = () => {
 
                 <p>What quarantine looks like is up to you. We either label or tag our decision, or card, or place it in a quarantine bucket or list.</p>
 
-                <p>If we are in agreement, we are ready to put our decision into effect.</p>
+                <p>If we accept a decision, we are ready to put it into effect.</p>
 
-                <h3>The decision</h3>
+                <h4>The decision</h4>
 
                 <p>We decided against using <Links.EL link={{source:'https://analytics.google.com/analytics/'}}>Google Analytics</Links.EL> for tracking users because whilst free, it profits from user data, and against <Links.EL link={{source:"https://www.discourse.org/"}}>Discourse</Links.EL> because it is too expensive.</p>
 
@@ -142,19 +128,21 @@ const Introduction = () => {
 
                 <h3>Conclusion</h3>
 
-                <p>The version of Pledge Works described here fits with traditional agile software development. From the Pledge Works <Links.IL link={{source:"/pledge-works/inventory"}}>inventory</Links.IL> we used <em>Writing pledges, Stress testing, and Voting</em>.</p>
+                <p>The version of Pledge Works described here fits with traditional agile software development. From the Pledge Works <Links.IL link={{source:"pledge-works/inventory"}}>inventory</Links.IL> we used <em>Writing pledges, Challenging decisions, and Voting</em>.</p>
 
-                <p>We recommend using only the parts of Pledge Works you find helpful. There are no hard and fast naming conventions, or strict rules; Pledge Works is not a prescriptive practice. Start with barebones Pledge Works and adopt more of it as necessary.</p>
+                <p>We recommend using only those parts of Pledge Works you find helpful. There are no hard and fast naming conventions, or strict rules; Pledge Works is not a prescriptive practice. Start with barebones Pledge Works and adopt more of it as necessary.</p>
 
                 <h3>Why we practice Pledge Works</h3>
 
-                <p>Pledge Works is a tool for collaboration that favours ideas and people over titles and hierarchies. We use Pledge Works to give weight to our principles by making pledges that affect our day to day work. Our pledges challenge us to address awkward questions that we might prefer to sideline. As a result, we feel better about our decisions, and put into effect more robust solutions.</p>
+                <p>Pledge Works is a tool for collaboration that favours ideas and people over titles and hierarchies. We use Pledge Works to give weight to our principles by making pledges that affect our day to day work.</p>
+                <p>Our pledges challenge us to address awkward questions that we might prefer to sideline. As a result, we feel better about our decisions, and put into effect more robust solutions.</p>
 
                 <p>
-                    See a <Links.IL link={{source:"/pledge-works/case-study-startup"}}>case study</Links.IL> for using Pledge Works at a startup.
+                    See a <Links.IL link={{source:"pledge-works/case-study-startup"}}>case study</Links.IL> for using Pledge Works at a startup.
                 </p>
-                <Appendix></Appendix>
+                <Top></Top>
             </section>            
+            <Appendix></Appendix>
             <section>
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />

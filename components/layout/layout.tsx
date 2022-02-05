@@ -110,7 +110,7 @@ const Layout = ({
                     <Link href={'/'}>
                         <a class={styles.title} aria-label="Home page" href="/">
                             <nav id="top" aria-label="Header link to home page">{main}</nav>
-                            <div><em>{strapline}</em></div>
+                            <div>{strapline}</div>
                         </a>
                     </Link>
                     <p class={styles.description}>                            

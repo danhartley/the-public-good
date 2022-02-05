@@ -14,7 +14,7 @@ const config = {
     themeCSS:'.label { font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif, font-size: 16px; }'
 };
 
-const graphDefinition = `
+const workflowGraphDefinition = `
     flowchart TB;
     classDef default stroke-width:0px, height:50px, line-height:1.8, y:-26px;
     classDef optional fill:powderblue;
@@ -28,7 +28,7 @@ const graphDefinition = `
         
         S([Selecting, Filtering]);
         C([Pledges & requirements]);
-        DM([Decision matrix]);
+        DM([decision matrix]);
         V([Voting]);
         HP([Honours pledge]);
         BP([Breaks pledge]);
@@ -52,6 +52,25 @@ const graphDefinition = `
         class I,I2 implementation;
         class Q,Q2 quarantine;
 `;
+
+const pledgeWorksGraphDefinition = `
+
+    flowchart LR;
+
+    classDef default stroke-width:0px, height:60px, line-height:1.5, y:-30px, fill:powderblue;
+
+    R[Requirements];
+    P{Pledges};
+    O((Outcome));
+
+    R --> P;
+    P --> O;
+
+`;
+
+// const graphDefinition = workflowGraphDefinition;
+const graphDefinition = pledgeWorksGraphDefinition;
+
 
 declare global {
     interface Window { mermaid: any; }

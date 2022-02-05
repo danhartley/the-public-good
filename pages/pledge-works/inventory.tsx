@@ -1,6 +1,7 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
-import Appendix from 'pages/pledge-works/artefacts';
+import Top from 'components/top/top';
+import Appendix from 'pages/pledge-works/appendix';
 
 const Inventory = () => {
 
@@ -93,8 +94,9 @@ const Inventory = () => {
                 <h4>Transparency</h4>
                 <p>The Pledge Works team has pledged to be transparent by default. We will make public our decisions and how we reached them. If we don't, we will say why.</p>
                 <p>Transparency is generally a good thing but individuals especially can be vulnerable to unfair treatment. Transparency should be approached with caution and offered, not expected.</p>
-                <Appendix></Appendix>
+                <Top></Top>
             </section>
+            <Appendix></Appendix>
             <section>
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />

@@ -73,7 +73,7 @@ figure .centred img {
     width: calc(50vw);
 }
 
-.standoutList {
+@mixin list {
     margin: 0.25rem 0 0 -1rem;    
     padding-left: 1rem;
     @media (min-width: 601px) {
@@ -83,6 +83,23 @@ figure .centred img {
         display: block;
         line-height: 2;
         margin: .5rem 0;
+    }
+}
+
+.standoutList {
+    @include list();
+}
+
+.dashedList {
+    @include list();
+    li {
+        display: block;
+        font-style: italic;
+        line-height: 1.6;
+        font-size: 1.3rem;
+        &:before {
+            content: '- ';
+        }
     }
 }
 

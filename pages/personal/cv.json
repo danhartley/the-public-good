@@ -12,7 +12,7 @@
                 "start": "2021-09-1"
             },
             "languages": [ "HTML", "JS", "CSS" ],
-            "technologies": [ "Trello Power-Ups", "Figma", "Outline", "Trello", "Whereby", "GitHub", "GitLab", "Jekyll", "Parcel", "Yarn", "JSON Typedef" ],
+            "technologies": [ "Trello Power-Ups", "Figma", "Mural", "Mermaid", "venn.js", "Outline", "Trello", "Whereby", "GitHub", "GitLab", "Jekyll", "Parcel", "Yarn", "JSON Typedef" ],
             "roles": [ "core contributor", "r&d", "developer" ],
             "blurb": "As a core contributor on the open source project ResponsibleTech.Work, I work on practices and tools to improve decision making, and promote thoughtful programming and design."
         },

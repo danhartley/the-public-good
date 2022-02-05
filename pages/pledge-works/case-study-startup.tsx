@@ -1,6 +1,7 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
-import Appendix from 'pages/pledge-works/artefacts';
+import Top from 'components/top/top';
+import Appendix from 'pages/pledge-works/appendix';
 import CostPerTonne from 'pages/pledge-works/decision-matrix-cost-per-tonne';
 
 import styles from 'pages/pages.module.scss';
@@ -51,7 +52,7 @@ const CaseStudyStartUp = () => {
                     Our company founders want to make decisions that reflect their values, and earn a living. They believe these goals are complementary.
                 </p>
                 <p>
-                    Following methods set out in <Links.IL link={{source:"/pledge-works/introduction"}}>Pledge Works</Links.IL>, they draw up a foundational list of core pledges which will act as their ethical backstop.
+                    Following methods set out in <Links.IL link={{source:"pledge-works/introduction"}}>Pledge Works</Links.IL>, they draw up a foundational list of core pledges which will act as their ethical backstop.
                 </p>
                 <h3>Core pledges</h3>
                 <p>                    
@@ -157,6 +158,7 @@ const CaseStudyStartUp = () => {
             <section id="carbon">
                 + Carbon credits are per tonne of <em>carbon dioxide</em>, not carbon. <Links.IL link={{source:"climate-crisis/facts"}}>There is a difference!</Links.IL>
             </section>
+            <Top></Top>
             <Appendix></Appendix>
             <section>
                 <h2>External Links</h2>

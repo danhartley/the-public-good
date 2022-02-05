@@ -376,3 +376,9 @@
     }
     @include table();
 }
+
+section.appendix {
+    h3 {
+        margin: calc(0rem + .5vw) 0 .5rem 0;
+    }        
+}

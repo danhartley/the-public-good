@@ -1,5 +1,7 @@
 import Links from 'components/links/Links';
 
+import styles from 'pages/pages.module.scss';
+
 const Appendix = () => {
 
     const links = [
@@ -14,13 +16,13 @@ const Appendix = () => {
     ];
 
     return (
-        <>
-            <h3 id="appendix">Appendix</h3>
-            <blockquote>
-                <strong>Pledge Works</strong> is a <strong>ResponsibleTech.Work</strong> collaboration between Alja Isaković, Daniel Hartley & Chris Oram.
-            </blockquote>
-            <Links.ExternalLinksList links={links}></Links.ExternalLinksList>
-        </>
+        <section class={styles.appendix}>
+            <h3>Appendix: Pledge Works Tools & Assets</h3>     
+            <div>
+            <strong>Pledge Works</strong> is a <strong>ResponsibleTech.Work</strong> collaboration licensed under a <Links.EL link={{source:"https://creativecommons.org/licenses/by-sa/4.0/"}}>Creative Commons Attribution-ShareAlike 4.0 International License</Links.EL>.
+            <div><Links.ExternalLinksList links={links}></Links.ExternalLinksList></div>
+            </div>
+        </section>
     )
 };
 
