@@ -18,7 +18,7 @@ const RoleBasedPledges = () => {
 
                 <p>They are bla bla bla…</p>
             
-                <ul class={styles.standoutList}>
+                <ul>
                     {
                         roleBasedPledges.map(pledge => {
                             return <li>{pledge}</li>

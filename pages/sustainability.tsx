@@ -72,6 +72,10 @@ const onlineTools = [
         "name": "climatiq | Calculate the carbon emission of cloud services",
         "source": "https://docs.climatiq.io/guides/cloud"
     },
+    {
+        "name": "Globemallow (Chrome extension)",
+        "source": "https://chrome.google.com/webstore/detail/globemallow/jibhiolaefbcfiahgolfpmngjefngdmd"
+    },
 ];
 
 const externalLinks = [

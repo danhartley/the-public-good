@@ -86,23 +86,6 @@ figure .centred img {
     }
 }
 
-.standoutList {
-    @include list();
-}
-
-.dashedList {
-    @include list();
-    li {
-        display: block;
-        font-style: italic;
-        line-height: 1.6;
-        font-size: 1.3rem;
-        &:before {
-            content: '- ';
-        }
-    }
-}
-
 .multiply:after {
     content: "\00D7";
 }

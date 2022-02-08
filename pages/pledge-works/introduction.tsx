@@ -30,9 +30,9 @@ const Introduction = () => {
 
                 <h2>Writing pledges for better outcomes.</h2>
 
-                <p>At <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL> we want to find ways to work more responsibly. Since we are designers and programmers we began by challenging how we develop software.</p>
+                <p>At <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL> we find ways to work more responsibly. Since we are designers and programmers we began by challenging how we develop software.</p>
 
-                <p>We wanted an approach that was easy to explain, simple to execute, that worked with existing philosophies and practices widely used in software development, but that required little or no training, and was platform independent.</p>
+                <p>We wanted an approach that was easy to explain, simple to execute, that worked with existing philosophies and practices widely used in software development, but that required little or no training.</p>
 
                 <p>Over six months we came up with an approach to responsible design and development we call <strong>Pledge Works</strong>.</p>
 
@@ -41,11 +41,13 @@ const Introduction = () => {
                 <h3>Pledge Works</h3>       
                 <p>
                     Principles are general and abstract, work is specific and concrete. We have three practices for bridging this gap:
-                    <ul class={styles.dashedList}>
+                    <em>
+                    <ul class={styles.dashedItemsList}>
                         <li>Writing pledges</li>
                         <li>Challenging decisions</li>
                         <li>Voting</li>
                     </ul>
+                    </em>
                 </p>
 
                 <h4>The idea</h4>
@@ -53,7 +55,7 @@ const Introduction = () => {
                 <p>We are at a stage in the development of Pledge Works when we want to tell people about it, and receive feedback. As an open source project, we also need to keep down costs.</p>
 
                 <blockquote>
-                    <ul class={styles.standoutList}>
+                    <ul class={styles.dashedItemsList}>
                         <li>We want to add analytics to our site, and it must be free or cheap.</li>
                         <li>We want to add a discussion platform to our site, and it must be free or cheap.</li>
                     </ul>
@@ -68,7 +70,7 @@ const Introduction = () => {
                 <p>To select third-party software that handles user data responsibly we add context-specific pledges.</p>
 
                 <blockquote>
-                    <ul class={styles.standoutList}>
+                    <ul class={styles.dashedItemsList}>
                         <li>We pledge not to undertake new work without first evaluating its cost.</li>
                         <li>We pledge not to sell, exchange or exploit user data.</li>
                         <li>We pledge to consider the risks and consequences of using third party services.</li>
@@ -80,7 +82,7 @@ const Introduction = () => {
 
                 <p>Requirements are the things we need to know and do. We need to know whether an analytics service provides support, offers self-hosting, and whether their data are accurate. We need to know how to add a service or set it up if we are going to host it ourselves.</p>
 
-                <p>To select the best outcome from several options we use a tool from the <Links.IL link={{source:"pledge-works/tools/decision-toolbox"}}>decision toolbox</Links.IL> - the <em>decision matrix</em>.</p>
+                <p>To select the best outcome from several options we use a tool from the Pledge Works <Links.IL link={{source:"pledge-works/tools/decision-toolbox"}}>decision toolbox</Links.IL> - the <em>decision matrix</em>.</p>
 
                 <h4><em>Challenging decisions</em></h4>
 

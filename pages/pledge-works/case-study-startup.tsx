@@ -21,6 +21,14 @@ const CaseStudyStartUp = () => {
             "name": "A Comparison of Carbon Offset Standards | WWF",
             "source": "https://www.globalcarbonproject.org/global/pdf/WWF_2008_A%20comparison%20of%20C%20offset%20Standards.pdf"
         },
+        {
+            "name": "Giving (carbon) credit where it’s due | Climate Tech VC",
+            "source": "https://climatetechvc.substack.com/p/-giving-carbon-credit-where-its-due"
+        },
+        {
+            "name": "Carbon Dioxide Removal project | Microsoft & Stripe",
+            "source": "https://carbonplan.org/research/cdr-database"
+        },
     ];
 
     const corePledges = [
@@ -61,7 +69,7 @@ const CaseStudyStartUp = () => {
                 <p>
                     Their core pledges define how they want to behave in the world. This includes their relationship to and responsibility towards future employees, customers, partners, providers of services, and abstract entities such as society and the planet. 
                 </p>
-                <ul class={styles.standoutList}>
+                <ul class={styles.dashedItemsList}>
                     {
                         corePledges.map(pledge => {
                             return <li>{pledge}</li>
@@ -102,7 +110,7 @@ const CaseStudyStartUp = () => {
                 </p>
                 <p>At this stage the founders write project pledges. These are more specific than their core pledges and harder to ignore. The founders use them to keep their decisions in line with their values.</p>
                 <p>Examples of pledges our company founders might use to make a decision.</p>
-                <ul class={styles.standoutList}>
+                <ul class={styles.dashedItemsList}>
                     {
                         productPledges.map(pledge => {
                             return <li>{pledge}</li>
@@ -121,7 +129,7 @@ const CaseStudyStartUp = () => {
                     </p>
                 <p>Our founders compare three prices: $25, $50 and $100 per tonne of carbon.</p>                
                 <p>
-                    The company must set a price which is profitable, competitive, future proof, and satisfies criteria based on its project pledges. The weighted scores favour a price of $50.
+                    The company must set a price that is profitable, competitive, future proof, and satisfies criteria based on its project pledges. The weighted scores favour a price of $50.
                 </p>
                 <figure>
                     <CostPerTonne></CostPerTonne>
@@ -143,7 +151,7 @@ const CaseStudyStartUp = () => {
                 </p>
                 <h4>The decision</h4>
                 <p>
-                    The founders set a price of $65 per tonne. This is far higher than the majority of their competitors but their survey suggests there is a niche market willing to pay more for what they consider a fair price.
+                    The founders set a price of $65 per tonne. This is far higher than the majority of their competitors but their survey suggests there is a niche market willing to pay more for what they consider a fair price. The high price also guarantees carbon removal in addition to carbon offsetting.
                 </p>
                 <figure>
                     <div id="venn2">
@@ -152,8 +160,9 @@ const CaseStudyStartUp = () => {
                     <figcaption><em>Figure 2: Intent and reality aligned</em></figcaption>
                 </figure>
                 <h3>Conclusion</h3>
-                <p>Writing pledges and integrating them into the decision making process helped the founders set a value on carbon dioxide emissions they hope will support a profitable and ethical company.</p>
+                <p>Writing pledges and integrating them into the decision making process helped the founders set a value on carbon dioxide emissions they think will support a profitable and ethical company.</p>
                 <p>The process of writing requirements and checking them against pledges will continue to help guide their decisions, whether selecting offset projects, utility providers, or third party software services.</p>
+                <p>For more details on aspects of Pledge Works, see the <Links.IL link={{source:"pledge-works/inventory"}}>inventory</Links.IL>.</p>
             </section>
             <section id="carbon">
                 + Carbon credits are per tonne of <em>carbon dioxide</em>, not carbon. <Links.IL link={{source:"climate-crisis/facts"}}>There is a difference!</Links.IL>

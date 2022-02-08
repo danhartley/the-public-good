@@ -18,10 +18,10 @@ const AnalyticsProvider = () => {
                         <td>2</td><td>Free limited plan</td><td>50</td><td>0</td>
                     </tr>
                     <tr>
-                        <td>3</td><td>Full control over data</td><td>0</td><td>33</td>
+                        <td>3</td><td><em>No cross-site or cross-device tracking</em></td><td>0</td><td>33</td>
                     </tr>
                     <tr>
-                        <td>4</td><td>GDPR compliant (no cookies)</td><td>0</td><td>25</td>
+                        <td>4</td><td><em>GDPR compliant</em></td><td>0</td><td>25</td>
                     </tr>
                     <tr>
                         <td>…</td><td>…</td><td>…</td><td>…</td>

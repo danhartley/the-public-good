@@ -508,6 +508,10 @@ const Calculators = ({withScores = false}) => {
             "source": "https://www.nature.org/en-us/get-involved/how-to-help/carbon-footprint-calculator/"
         },
         {
+            "name": "Native (US only)",
+            "source": "https://native.eco/for-individuals/calculators/"
+        },
+        {
             "name": "US Environmental Protection Agency (US only)",
             "source": "https://www3.epa.gov/carbon-footprint-calculator/"
         },
