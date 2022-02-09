@@ -2,7 +2,8 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Top from 'components/top/top';
 import Appendix from 'pages/pledge-works/appendix';
-import CascadeOfPledges from 'pages/pledge-works/figures/cascade-of-pledges';
+import Concrete from 'pages/pledge-works/figures/cascade-of-pledges-concrete';
+import Abstract from 'pages/pledge-works/figures/cascade-of-pledges-abstract';
 
 import styles from 'pages/pages.module.scss';
 
@@ -44,9 +45,9 @@ const Argument = () => {
                     <h3>The ethical ratchet</h3>
                     <p>Ethical questions are often difficult to answer because their frame of reference is vague and cause and effect is unclear. Where there is doubt and uncertainty it is appealing to do nothing.</p>
                     <p>We can move from one ethical position to the next, at each stage providing more detail in a cascade of inherited statements.</p>
-                    <CascadeOfPledges.Abstract></CascadeOfPledges.Abstract>
+                    <Abstract></Abstract>
                     <p>As we proceed, we learn more of the problem domain and commit ourselves further. The pledges perform the role of ethical teeth that prevent us from backsliding.</p>
-                    <CascadeOfPledges.Concrete></CascadeOfPledges.Concrete>
+                    <Concrete></Concrete>
                     <p>Pledge Works is a loosely configured set of methods, processes and tools designed to ally moral intent with organisational and project requirements.</p>
                     <p><Links.IL link={{source:"pledge-works/case-study-pledge-works"}}>Pledge Works</Links.IL>.</p>
                     <Top></Top>

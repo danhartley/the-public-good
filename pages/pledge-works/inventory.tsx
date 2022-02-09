@@ -2,7 +2,8 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Top from 'components/top/top';
 import Appendix from 'pages/pledge-works/appendix';
-import CascadeOfPledges from 'pages/pledge-works/figures/cascade-of-pledges';
+import Concrete from 'pages/pledge-works/figures/cascade-of-pledges-concrete';
+import Abstract from 'pages/pledge-works/figures/cascade-of-pledges-abstract';
 
 import styles from 'pages/pages.module.scss';
 
@@ -71,11 +72,11 @@ const Inventory = () => {
                 </p>
                 <p>When I start a new piece of work, and as requirements become clearer, I write pledges that are increasingly specific. I stop when the consequences of a decision can be verified or measured.</p>
 
-                <CascadeOfPledges.Concrete></CascadeOfPledges.Concrete>
+                <Concrete></Concrete>
 
                 <p>The wording is less important than matching the statement to the situation or scope.</p>
 
-                <CascadeOfPledges.Abstract></CascadeOfPledges.Abstract>
+                <Abstract></Abstract>
                 
                 <h4>Pledge sources</h4>
                 <p>Writing our own pledges gives us less wriggle room. We find it hard to ignore what we have committed to. But we look around for inspiration.</p>
