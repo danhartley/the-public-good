@@ -19,7 +19,7 @@ const Appendix = () => {
         <section class={styles.appendix}>
             <h3>Appendix: Pledge Works Tools & Assets</h3>     
             <div>
-            <strong>Pledge Works</strong> is a <strong>ResponsibleTech.Work</strong> collaboration licensed under a <Links.EL link={{source:"https://creativecommons.org/licenses/by-sa/4.0/"}}>Creative Commons Attribution-ShareAlike 4.0 International License</Links.EL>.
+            <strong>Pledge Works</strong> is a <strong>ResponsibleTech.Work</strong> collaboration.
             <div><Links.ExternalLinksList links={links}></Links.ExternalLinksList></div>
             </div>
         </section>

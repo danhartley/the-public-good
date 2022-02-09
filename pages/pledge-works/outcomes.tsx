@@ -16,7 +16,7 @@ const Outcomes = () => {
             "name": "The Newsroom Beta | Chrome extension",
             "source": "https://chrome.google.com/webstore/detail/the-newsroom-beta/pgfokhpgehbmeifbpdhegfnpaahabfja"
         },
-    ]
+    ];
 
     return (
         <>
@@ -106,7 +106,7 @@ const Outcomes = () => {
                     <h2>External Links</h2>
                     <Links.ExternalLinksList links={externalLinks} />
                 </section>
-                <Links.RelatedLinks links={[{value:'pledge-works/introduction',text:'Introduction to Pledge Works'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
+                <Links.RelatedLinks links={[{value:'pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
             </Layout>           
         </>
     );

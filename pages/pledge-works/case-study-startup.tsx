@@ -48,7 +48,7 @@ const CaseStudyStartUp = () => {
     ];
 
     return (
-        <Layout header="Startup case study" rt="4 to 5" title="Case study - the startup" description={'Once a startup has established its purpose, it\'s ready to write the pledges that will guide its work.'} discussions='/categories/pledge-works'> {/* image? */}
+        <Layout header="Pledge Works for Startups" rt="4 to 5" title="Case study - the startup" description={'Once a startup has established its purpose, it\'s ready to write the pledges that will guide its work.'} discussions='/categories/pledge-works'> {/* image? */}
             <section>
                 <h2>
                     Once a startup has established its purpose, it's ready to write the pledges that will guide its work.
@@ -60,7 +60,7 @@ const CaseStudyStartUp = () => {
                     Our company founders want to make decisions that reflect their values, and earn a living. They believe these goals are complementary.
                 </p>
                 <p>
-                    Following methods set out in <Links.IL link={{source:"pledge-works/introduction"}}>Pledge Works</Links.IL>, they draw up a foundational list of core pledges which will act as their ethical backstop.
+                    Following methods set out in <Links.IL link={{source:"pledge-works/case-study-pledge-works"}}>Pledge Works</Links.IL>, they draw up a foundational list of core pledges which will act as their ethical backstop.
                 </p>
                 <h3>Core pledges</h3>
                 <p>                    
@@ -173,7 +173,7 @@ const CaseStudyStartUp = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:'pledge-works/introduction',text:'Introduction to Pledge Works'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'pledge-works/the-case-for-pledge-works',text:'The Case for Pledge Works'},{value:'pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
         </Layout>
     )
 

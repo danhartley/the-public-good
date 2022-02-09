@@ -149,7 +149,7 @@ const Introduction = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:'pledge-works/case-study-startup', text:'Startup case study'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'pledge-works/the-case-for-pledge-works',text:'The Case for Pledge Works'},{value:'pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

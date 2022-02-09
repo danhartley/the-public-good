@@ -2,6 +2,7 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Top from 'components/top/top';
 import Appendix from 'pages/pledge-works/appendix';
+import CascadeOfPledges from 'pages/pledge-works/figures/cascade-of-pledges';
 
 import styles from 'pages/pages.module.scss';
 
@@ -70,33 +71,12 @@ const Inventory = () => {
                 </p>
                 <p>When I start a new piece of work, and as requirements become clearer, I write pledges that are increasingly specific. I stop when the consequences of a decision can be verified or measured.</p>
 
-                <figure>
-                    <ul class={styles.dashedItemsList}>
-                        <li>Respect people I build products for and treat them as friends, not users.</li>
-                        <ul class={styles.dashedItemsList}>
-                            <li>We pledge not to sell, exchange or exploit user data.</li>
-                            <ul class={styles.dashedItemsList}>
-                                <li>No cross-site or cross-device tracking.</li>
-                            </ul>
-                        </ul>
-                    </ul>
-                    <figcaption><em>The cascade of pledges: how to choose a website analytics provider.</em></figcaption>
-                </figure>
+                <CascadeOfPledges.Concrete></CascadeOfPledges.Concrete>
 
                 <p>The wording is less important than matching the statement to the situation or scope.</p>
 
-                <figure>
-                    <ul class={styles.dashedItemsList}>
-                        <li>Organisational principles.</li>
-                        <ul class={styles.dashedItemsList}>
-                            <li>Project pledges.</li>
-                            <ul class={styles.dashedItemsList}>
-                                <li>Verifiable outcomes.</li>
-                            </ul>
-                        </ul>
-                    </ul>
-                    <figcaption><em>The cascade of pledges: increasingly concrete.</em></figcaption>
-                </figure>
+                <CascadeOfPledges.Abstract></CascadeOfPledges.Abstract>
+                
                 <h4>Pledge sources</h4>
                 <p>Writing our own pledges gives us less wriggle room. We find it hard to ignore what we have committed to. But we look around for inspiration.</p>
                 <p>There are many sources, from professional codes of conduct through oaths, pledges, and promises, to manifestos. RTW has its own list of <Links.EL link={{source:"https://responsibletech.work/responsible-pledges/"}}>pledges</Links.EL>.</p>
@@ -136,7 +116,7 @@ const Inventory = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:'pledge-works/introduction',text:'Introduction to Pledge Works'}, {value:'pledge-works/case-study-startup', text:'Startup case study'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'pledge-works/the-case-for-pledge-works',text:'The Case for Pledge Works'},{value:'pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'pledge-works/case-study-startup', text:'Pledge Works for Startups'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
