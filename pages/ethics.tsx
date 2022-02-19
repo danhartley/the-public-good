@@ -7,6 +7,10 @@ const onlineTools = [
         "name": "The Green Web Foundation",
         "source": "https://www.thegreenwebfoundation.org/"
     },
+    {
+        "name": "Website Scanner | CookiePro | Requires email",
+        "source": "https://kiosk.cookiepro.com/start-scan"
+    },
 ];
 
 const externalLinks = [

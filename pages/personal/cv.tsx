@@ -82,7 +82,7 @@ const Companies = () => {
                     <span>{c.name}</span>
                     { projectLinks(c.projects) }
                 </td>
-                <td>{ new Date(c.dates.start).toLocaleDateString() + " - " + (c.dates.end ? (new Date(c.dates.end)).toLocaleDateString() : "") }</td>
+                <td>{ new Date(c.dates.start).toLocaleDateString('en-GB') + " - " + (c.dates.end ? (new Date(c.dates.end)).toLocaleDateString('en-GB') : "") }</td>
                 <td>{c.roles.join(', ')}</td>
                 <td>{c.languages.join(', ')}</td>
                 <td>{c.technologies.join(', ')}</td>

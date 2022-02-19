@@ -36,7 +36,7 @@ const Argument = () => {
                     <div>Unconscious of his wife's shriek, the old man smiled faintly, put out his hands like a sightless man, and dropped, a senseless heap, to the floor.</div>
                     </blockquote>
                     <cite><Links.EL link={{source:"https://www.sfu.ca/~swartz/monkeys_paw.htm"}}>The Monkey's Paw by W. W. Jacobs</Links.EL></cite>
-                    <p>The solution to a problem solved by AI sits in a black box. Even if we had access to its inner workings, the speed with which information is processed and it's inhuman logic would likely defeat our attempts to understand what is happening.</p>
+                    <p>The solution to a problem solved by AI sits in a black box. Even when we have access to its inner workings, the speed with which information is processed and it's inhuman logic defeat our attempts to understand what is happening.</p>
                     <blockquote cite="https://nissenbaum.tech.cornell.edu/papers/Wiener.pdf">
                         We had better be quite sure that the purpose put into the machine is the purpose which we really desire.
                     </blockquote>

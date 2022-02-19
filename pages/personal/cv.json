@@ -9,7 +9,7 @@
                 }
             ],
             "dates": {
-                "start": "2021-09-1"
+                "start": "2021-09-01"
             },
             "languages": [ "HTML", "JS", "CSS" ],
             "technologies": [ "Trello Power-Ups", "Figma", "Mural", "Mermaid", "venn.js", "Outline", "Trello", "Whereby", "GitHub", "GitLab", "Jekyll", "Parcel", "Yarn", "JSON Typedef" ],
@@ -19,7 +19,7 @@
         {
             "name": "The Public Good",
             "dates": {
-                "start": "2021-02-1"
+                "start": "2021-02-01"
             },
             "languages": [ "HTML", "JS", "CSS", "TS" ],
             "technologies": [ "Jamstack", "Preact", "TypeScript", "Sass", "Next.js", "Netlify", "GitHub", "Jest", "webpack", "Lighthouse budget", "axe Accessibility Linter", "ts/tsx eslint", "Chart.js" ],
@@ -43,7 +43,7 @@
                 }
             ],
             "dates": {
-                "start": "2013-04-1"
+                "start": "2013-04-01"
             },
             "languages": [ "HTML", "JS", "CSS" ],
             "technologies": [ "Jamstack", "Preact", "TypeScript", "Node JS", "Sass", "Next.js", "Netlify", "GitHub", "Jest", "webpack", "Bootstrap", "Material Design", "Netlify CMS", "Fauna", "GraphQL", "Enzyme", "Redux", "Functional JS", "Modern ES", "CSS Grid", "CSS Flexbox", "Sentry", "Google Cloud Platform", "Google Cloud Firestore", "MongoDB", "Formik", "Downshift" ],
@@ -53,8 +53,8 @@
         {
             "name": "Tippstr",
             "dates": {
-                "start": "2013-02-1",
-                "end": "2017-03-1"
+                "start": "2013-02-01",
+                "end": "2017-03-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ "Grunt", "Cucumber", "Angular 2", "Bootstrap", "ngScenario", "Karma", "Protractor", "D3", "JIRA" ],
@@ -64,8 +64,8 @@
         {
             "name": "Seatwave | Ticketmaster",
             "dates": {
-                "start": "2011-05-1",
-                "end": "2012-12-1"
+                "start": "2011-05-01",
+                "end": "2012-12-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ "ASP.NET", "Razor" ],
@@ -75,8 +75,8 @@
         {
             "name": "Digital & Direct",
             "dates": {
-                "start": "2011-01-1",
-                "end": "2011-03-1"
+                "start": "2011-01-01",
+                "end": "2011-03-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#", "LINQ" ],
             "technologies": [ "XFBML", "Fluent NHibernate", ".Net 4.0", "LINQ", "Ninject", "Automapper", "FB Graph API", "Subversion" ],
@@ -86,8 +86,8 @@
         {
             "name": "Mastercard partner",
             "dates": {
-                "start": "2010-12-1",
-                "end": "2011-01-1"
+                "start": "2010-12-01",
+                "end": "2011-01-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#", "LINQ" ],
             "technologies": [ "XFBML", "Fluent NHibernate", ".Net 4.0", "LINQ", "Ninject", "Automapper", "FB Graph API", "Subversion" ],
@@ -97,8 +97,8 @@
         {
             "name": "Enteraction",
             "dates": {
-                "start": "2010-08-1",
-                "end": "2010-11-1"
+                "start": "2010-08-01",
+                "end": "2010-11-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#", "LINQ" ],
             "technologies": [ "WCF/RESTful services", "Facebook APIs (Graph, FQL, FBML, OAuth)", "Windows Azure Cloud Platform", "ASP.NET 4.0", "LINQ", "C# 4", "Subversion", "MS Unit Testing", "Moq", "Ninject", "Resharper", "OData" ],
@@ -108,8 +108,8 @@
         {
             "name": "MyBridge Media",
             "dates": {
-                "start": "2009-11-1",
-                "end": "2010-03-1"
+                "start": "2009-11-01",
+                "end": "2010-03-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ ],
@@ -119,8 +119,8 @@
         {
             "name": "Seatwave | Ticketmaster",
             "dates": {
-                "start": "2006-10-1",
-                "end": "2010-04-1"
+                "start": "2006-10-01",
+                "end": "2010-04-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ "ASP.NET", "Razor" ],
@@ -130,8 +130,8 @@
         {
             "name": "Arc Interactive",
             "dates": {
-                "start": "2006-05-1",
-                "end": "2006-09-1"
+                "start": "2006-05-01",
+                "end": "2006-09-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ "ASP.NET" ],
@@ -141,8 +141,8 @@
         {
             "name": "ABT",
             "dates": {
-                "start": "2002-04-1",
-                "end": "2006-02-1"
+                "start": "2002-04-01",
+                "end": "2006-02-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
             "technologies": [ "Classic ASP", "ASP.NET" ],
@@ -152,8 +152,8 @@
         {
             "name": "Victor Chandler",
             "dates": {
-                "start": "2005-05-1",
-                "end": "2005-07-1"
+                "start": "2005-05-01",
+                "end": "2005-07-01"
             },
             "languages": [ ],
             "technologies": [ ],
@@ -163,8 +163,8 @@
         {
             "name": "Betfair",
             "dates": {
-                "start": "2005-03-1",
-                "end": "2005-05-1"
+                "start": "2005-03-01",
+                "end": "2005-05-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL", "C#", "XML" ],
             "technologies": [ ],
@@ -174,8 +174,8 @@
         {
             "name": "Snai International",
             "dates": {
-                "start": "2000-04-1",
-                "end": "2002-02-1"
+                "start": "2000-04-01",
+                "end": "2002-02-01"
             },
             "languages": [ "HTML", "JS", "CSS", "SQL" ],
             "technologies": [ "Classic ASP" ],
@@ -185,8 +185,8 @@
         {
             "name": "TV Producer",
             "dates": {
-                "start": "1993-09-1",
-                "end": "1999-09-1"
+                "start": "1993-09-01",
+                "end": "1999-09-01"
             },
             "languages": [  ],
             "technologies": [  ],
@@ -200,58 +200,58 @@
             "set": [
                 {
                     "name": "HTML",
-                    "start": "1997-01-1"
+                    "start": "1997-01-01"
                 },
                 {
                     "name": "JavaScript",
-                    "start": "1997-01-1"
+                    "start": "1997-01-01"
                 },
                 {
                     "name": "CSS",
-                    "start": "1997-01-1"
+                    "start": "1997-01-01"
                 },
                 {
                     "name": "JSON",
-                    "start": "2010-01-1"
+                    "start": "2010-01-01"
                 },
                 {
                     "name": "Java",
-                    "start": "2000-07-1",
-                    "end": "2001-07-1"
+                    "start": "2000-07-01",
+                    "end": "2001-07-01"
                 },
                 {
                     "name": "C++",
-                    "start": "2000-07-1",
-                    "end": "2001-07-1"
+                    "start": "2000-07-01",
+                    "end": "2001-07-01"
                 },
                 {
                     "name": "C#",
-                    "start": "2003-06-1",
-                    "end": "2017-07-1"
+                    "start": "2003-06-01",
+                    "end": "2017-07-01"
                 },
                 {
                     "name": "TypeScript",
-                    "start": "2019-06-1"
+                    "start": "2019-06-01"
                 },
                 {
                     "name": "XML",
-                    "start": "2000-01-1",
-                    "end": "2005-01-1"
+                    "start": "2000-01-01",
+                    "end": "2005-01-01"
                 },
                 {
                     "name": "LINQ",
-                    "start": "2008-01-1",
-                    "end": "2010-01-1"
+                    "start": "2008-01-01",
+                    "end": "2010-01-01"
                 },
                 {
                     "name": "GraphQL",
-                    "start": "2019-06-1",
-                    "end": "2020-01-1"
+                    "start": "2019-06-01",
+                    "end": "2020-01-01"
                 },
                 {
                     "name": "SQL",
-                    "start": "1997-06-1",
-                    "end": "2013-06-1"
+                    "start": "1997-06-01",
+                    "end": "2013-06-01"
                 }
             ]
         },
@@ -260,45 +260,45 @@
             "set": [
                 {
                     "name": "Google Cloud Platform",
-                    "start": "2017-01-1"
+                    "start": "2017-01-01"
                 },
                 {
                     "name": "Microsoft IIS",
-                    "start": "1997-01-1",
-                    "end": "2012-01-1"
+                    "start": "1997-01-01",
+                    "end": "2012-01-01"
                 },
                 {
                     "name": "SQL Server",
-                    "start": "1997-01-1",
-                    "end": "2012-01-1"
+                    "start": "1997-01-01",
+                    "end": "2012-01-01"
                 },
                 {
                     "name": "MongoDB",
-                    "start": "2013-04-1",
-                    "end": "2014-01-1"
+                    "start": "2013-04-01",
+                    "end": "2014-01-01"
                 },
                 {
                     "name": "Google Cloud Firestore",
-                    "start": "2017-01-1"
+                    "start": "2017-01-01"
                 },                
                 {
                     "name": "Netlify",
-                    "start": "2019-1-1"
+                    "start": "2019-1-01"
                 },
                 {
                     "name": "Azure Cloud Platform",
-                    "start": "2010-08-1",
-                    "end": "2011-01-1"
+                    "start": "2010-08-01",
+                    "end": "2011-01-01"
                 },
                 {
                     "name": "Fauna",
-                    "start": "2018-08-1",
-                    "end": "2020-01-1"
+                    "start": "2018-08-01",
+                    "end": "2020-01-01"
                 },
                 {
                     "name": "mLab",
-                    "start": "2013-04-1",
-                    "end": "2014-01-1"
+                    "start": "2013-04-01",
+                    "end": "2014-01-01"
                 }
             ]
         },
@@ -307,85 +307,85 @@
             "set": [
                 {
                     "name": "Jest",
-                    "start": "2018-09-1"
+                    "start": "2018-09-01"
                 },
                 {
                     "name": "Cucumber",
-                    "start": "2013-05-1",
-                    "end": "2014-01-1"
+                    "start": "2013-05-01",
+                    "end": "2014-01-01"
                 },
                 {
                     "name": "Jira",
-                    "start": "2013-02-1",
-                    "end": "2017-03-1"
+                    "start": "2013-02-01",
+                    "end": "2017-03-01"
                 },
                 {
                     "name": "Trello",
-                    "start": "2021-08-1"
+                    "start": "2021-08-01"
                 },
                 {
                     "name": "Cucumber",
-                    "start": "2021-11-1"
+                    "start": "2021-11-01"
                 },
                 {
                     "name": "Protractor",
-                    "start": "2013-05-1",
-                    "end": "2017-01-1"
+                    "start": "2013-05-01",
+                    "end": "2017-01-01"
                 },
                 {
                     "name": "Grunt",
-                    "start": "2016-10-1",
-                    "end": "2017-4-1"
+                    "start": "2016-10-01",
+                    "end": "2017-4-01"
                 },
                 {
                     "name": "MSBuild",
-                    "start": "2007-1-1",
-                    "end": "2011-1-1"
+                    "start": "2007-1-01",
+                    "end": "2011-1-01"
                 },
                 {
                     "name": "MS Unit Testing",
-                    "start": "2010-1-1",
-                    "end": "2012-1-1"
+                    "start": "2010-1-01",
+                    "end": "2012-1-01"
                 },
                 {
                     "name": "webpack",
-                    "start": "2017-04-1"
+                    "start": "2017-04-01"
                 },
                 {
                     "name": "Jasmine",
-                    "start": "2013-11-1",
-                    "end": "2017-03-1"
+                    "start": "2013-11-01",
+                    "end": "2017-03-01"
                 },
                 {
                     "name": "ngScenario",
-                    "start": "2013-11-1",
-                    "end": "2017-03-1"
+                    "start": "2013-11-01",
+                    "end": "2017-03-01"
                 },
                 {
                     "name": "Karma",
-                    "start": "2013-11-1",
-                    "end": "2017-03-1"
+                    "start": "2013-11-01",
+                    "end": "2017-03-01"
                 },
                 {
                     "name": "Sentry Logging",
-                    "start": "2015-01-1"
+                    "start": "2015-01-01"
                 },
                 {
                     "name": "Git",
-                    "start": "2013-01-1"
+                    "start": "2013-01-01"
                 },
                 {
                     "name": "Subversion",
-                    "start": "2009-01-1",
-                    "end": "2013-01-1"
+                    "start": "2009-01-01",
+                    "end": "2013-01-01"
                 },
                 {
                     "name": "GitHub",
-                    "start": "2013-01-1"
+                    "start": "2013-01-01"
                 },
                 {
                     "name": "GitLab",
-                    "start": "2021-09-1"
+                    "start": "2021-09-01"
                 }
             ]
         },
@@ -394,75 +394,75 @@
             "set": [
                 {
                     "name": "Preact",
-                    "start": "2020-09-1"
+                    "start": "2020-09-01"
                 },
                 {
                     "name": "HTML (JS) (CSS)",
-                    "start": "1997-01-1"
+                    "start": "1997-01-01"
                 },
                 {
                     "name": "Classic ASP",
-                    "start": "1997-01-1",
-                    "end": "2002-01-1"
+                    "start": "1997-01-01",
+                    "end": "2002-01-01"
                 },
                 {
                     "name": "ASP.NET",
-                    "start": "2002-01-1",
-                    "end": "2010-01-1"
+                    "start": "2002-01-01",
+                    "end": "2010-01-01"
                 },
                 {
                     "name": "ASP.NET MVC",
-                    "start": "2010-10-1",
-                    "end": "2012-12-1"
+                    "start": "2010-10-01",
+                    "end": "2012-12-01"
                 },
                 {
                     "name": "React",
-                    "start": "2020-09-1"
+                    "start": "2020-09-01"
                 },
                 {
                     "name": "Jekyll",
-                    "start": "2021-09-1"
+                    "start": "2021-09-01"
                 },
                 {
                     "name": "Next.js",
-                    "start": "2019-09-1"
+                    "start": "2019-09-01"
                 },
                 {
                     "name": "Less",
-                    "start": "2013-11-1",
-                    "end": "2017-03-1"
+                    "start": "2013-11-01",
+                    "end": "2017-03-01"
                 },
                 {
                     "name": "SCSS",
-                    "start": "2017-05-1"
+                    "start": "2017-05-01"
                 },
                 {
                     "name": "jQuery",
-                    "start": "2007-10-1",
-                    "end": "2012-09-1"
+                    "start": "2007-10-01",
+                    "end": "2012-09-01"
                 },
                 {
                     "name": "Bootstrap",
-                    "start": "2013-02-1",
-                    "end": "2018-09-1"
+                    "start": "2013-02-01",
+                    "end": "2018-09-01"
                 },
                 {
                     "name": "Redux",
-                    "start": "2017-05-1"
+                    "start": "2017-05-01"
                 },
                 {
                     "name": "Repository-Service pattern",
-                    "start": "2011-05-1",
-                    "end": "2012-12-1"
+                    "start": "2011-05-01",
+                    "end": "2012-12-01"
                 },
                 {
                     "name": "Dependency injection",
-                    "start": "2011-05-1",
-                    "end": "2012-12-1"
+                    "start": "2011-05-01",
+                    "end": "2012-12-01"
                 },
                 {
                     "name": "Chart.js",
-                    "start": "2021-09-1"
+                    "start": "2021-09-01"
                 }
             ]
         }
