@@ -82,7 +82,7 @@ const Introduction = () => {
 
                 <p>Requirements are the things we need to know and do. We need to know whether an analytics service provides support, offers self-hosting, and whether their data are accurate. We need to know how to add a service or set it up if we are going to host it ourselves.</p>
 
-                <p>To select the best outcome from several options we use a tool from the Pledge Works <Links.IL link={{source:"pledge-works/tools/decision-toolbox"}}>decision toolbox</Links.IL> - the <em>decision matrix</em>.</p>
+                <p>To select the best outcome from several options we use a tool from the Pledge Works decision toolbox - the <em>decision matrix</em>.</p>
 
                 <h4><em>Challenging decisions</em></h4>
 
@@ -149,7 +149,7 @@ const Introduction = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:'pledge-works/the-case-for-pledge-works',text:'The Case for Pledge Works'},{value:'pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:'pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

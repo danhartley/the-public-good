@@ -17,6 +17,8 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <script async defer src="https://scripts.withcabin.com/hello.js"></script>
+          {/* <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="danhartley" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://pt.linkedin.com/in/danhartley?trk=profile-badge">Daniel Hartley</a></div>               */}
         </body>
       </Html>
     )
