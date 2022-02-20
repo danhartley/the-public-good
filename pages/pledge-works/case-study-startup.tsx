@@ -2,7 +2,7 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Top from 'components/top/top';
 import Appendix from 'pages/pledge-works/appendix';
-import CostPerTonne from 'pages/pledge-works/decision-matrix-cost-per-tonne';
+import CostPerTonne from 'pages/pledge-works/figures/decision-matrix-cost-per-tonne';
 
 import styles from 'pages/pages.module.scss';
 
@@ -173,7 +173,7 @@ const CaseStudyStartUp = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:'pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
         </Layout>
     )
 

@@ -54,7 +54,7 @@ MetricsContext.tsx
 # To clear this warning, remove package-lock.json.
 package-lock.json
 
-play
+play/
 venn-diagrams
 
 # Unused svgs
@@ -63,4 +63,4 @@ logo2.svg
 tpg.svg
 
 # unused pledge works
-pages/pledge-works/tools
+pages/pledge-works/tools/*.tsx
