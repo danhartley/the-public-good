@@ -17,15 +17,18 @@ const Pledges = () => {
     ];
 
     const pledges = [
+        "I pledge to support opinions and statements with data.",
+        "I pledge to provide links to sources.",
+        "I pledge to follow web standards.",
         "I pledge to use third party code only when it adds demonstrable value to the project.",
         "I pledge to write software for all devices and browsers.",
         "I pledge not to use practices identified as dark patterns.",
         "I pledge to balance privacy, security, and usability.",
-        "I pledge not to sell, exchange or exploit user data."
+        "I pledge not to sell, exchange or exploit user data.",
     ];
 
     const pledges2 = [
-        "I pledge to speak to people in other teams in order to understand what their role and needs.",
+        "I pledge to speak to people in other teams in order to understand their work and needs.",
         "I pledge to document decisions critical to the project.",
         "I pledge to be fair to and supportive of team members.",
         "I pledge to share my experience and knowledge with team members.",
@@ -42,9 +45,9 @@ const Pledges = () => {
         <>
             <Layout header="Ethics at work"  rt="3" title="Ethics at work" description={'It is impossible to defend ethical behaviour on economic grounds; nor is it necessary.'} discussions='/categories/pledge-works'> {/* image? */}
                 <section>
-                    <h2>Pledges relevant to The Public Good</h2>
-                    <p>These pledges are specific to this website. Since I am the only one working on it, they are primarily directed towards readers or relate to principles of responsible development.</p>
-                    <p>I also stand by the pledges espoused by <Links.EL link={{source:"https://responsibletech.work/responsible-pledges/"}}>ResponsibleTech.Work</Links.EL>.</p>
+                    <h2>Writing pledges makes it harder to ignore the things I say I believe in.</h2>
+                    <h3>The Public Good</h3>
+                    <p>These pledges are specific to this website. Since I'm working alone, and the site is simple, the focus is on better outcomes for readers.</p>                    
                     <ul class={styles.dashedItemsList}>
                         {
                             pledges.map(p => {
@@ -52,6 +55,9 @@ const Pledges = () => {
                             })
                         }
                     </ul>
+                    <h3>ResponsibleTech.Work</h3>
+                    <p>I stand by the pledges espoused by <Links.EL link={{source:"https://responsibletech.work/responsible-pledges/"}}>ResponsibleTech.Work</Links.EL>.</p>
+                    <h3>Professional pledges</h3>
                     <p>When working with others, I make the following commitments:</p>
                     <ul class={styles.dashedItemsList}>
                         {
