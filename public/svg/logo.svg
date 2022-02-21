@@ -1,0 +1,14 @@
+<svg id="id" width="351" height="351" viewBox="0 0 351 351" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+    <style>
+        .pledge { fill: #333; }
+        .works { fill: #333; }
+    </style>   
+    <circle cx="175.5" cy="175.5" r="175" stroke="#555555" />
+    <rect x="53.5" y="54.5" width="243" height="243" stroke="#555555" />
+    <text fill="#555555" xml:space="preserve" style="white-space: pre" font-family="Elena, 'PT Serif', serif" font-size="56" letter-spacing="0.05em" class="pledge">
+        <tspan x="85" y="155">pledge</tspan>
+    </text>
+    <text fill="#555555" xml:space="preserve" style="white-space: pre" font-family="Elena, 'PT Serif', serif" font-size="58" letter-spacing="0.09em" class="works">
+        <tspan x="87" y="230">works</tspan>
+    </text>
+</svg>
