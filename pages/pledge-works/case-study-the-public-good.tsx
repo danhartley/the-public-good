@@ -17,9 +17,9 @@ const Argument = () => {
 
     return (
         <>
-            <Layout header="Ethics at work"  rt="2" title="Ethics at work" description={'It is impossible to defend ethical behaviour on economic grounds; nor is it necessary.'} discussions='/categories/pledge-works'> {/* image? */}
+            <Layout header="Ethics at work"  rt="2" title="Ethics at Work" description={'Ethical practice does not require a grand plan'} discussions='/categories/pledge-works' image='svg/logo.svg'> {/* image? */}
                 <section>
-                    <h2>Considering the consequence of my actions, and changing my behaviour accordingly, did not require a grand plan or overhaul of working practices. </h2>
+                    <h2>Considering the consequence of my actions, and changing my behaviour accordingly, did not require a grand plan or overhaul of working practices.</h2>
                     <p>The workplace is an appropriate environment for applied ethics. We frequently consider risk, undesirable consequences, and competing outcomes. Processes exist to communicate, share information, save time, and measure progress.</p>
                     <p><strong>Pledge Works</strong> adapts these processes in return for outcomes that improve upon business as usual defaults.</p>
                     <p>The idea is simple; we write pledges that frame or guide our work. Pledges are specific to a company, team or individual, and to a context. They contain just enough character to be meaningful without being dogmatic.</p>                    
