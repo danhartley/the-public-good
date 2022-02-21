@@ -17,12 +17,16 @@ const Argument = () => {
 
     return (
         <>
-            <Layout header="Ethics at work"  rt="2" title="Ethics at Work" description={'No grand plan required.'} discussions='/categories/pledge-works' image='svg/logo.svg'> {/* image? */}
+            <Layout header="Ethics at work"  rt="2" title="Ethics at Work" description={'No grand plan required.'} discussions='/categories/pledge-works' image='https://live.staticflickr.com/65535/51895028558_9130a3402b_w_d.jpg'>
                 <section>
                     <h2>Considering the consequence of my actions, and changing my behaviour accordingly, did not require a grand plan or overhaul of working practices.</h2>
                     <p>The workplace is an appropriate environment for applied ethics. We frequently consider risk, undesirable consequences, and competing outcomes. Processes exist to communicate, share information, save time, and measure progress.</p>
                     <p><strong>Pledge Works</strong> adapts these processes in return for outcomes that improve upon business as usual defaults.</p>
-                    <p>The idea is simple; we write pledges that frame or guide our work. Pledges are specific to a company, team or individual, and to a context. They contain just enough character to be meaningful without being dogmatic.</p>                    
+                    <p>The idea is simple; we write pledges that frame or guide our work in a given context. The context is everything related to the work needed doing, including the people responsible, the time and budget available, and the scope. Pledges need to have enough character to be meaningful without being dogmatic.</p>                    
+                    <figure>
+                        <div><img src="/pw-formula.png" alt="The Pledge Works Formula: better outcomes + context = pledges" /></div>
+                        <figcaption><em>The Pledge Works Formula: pledges + context = better outcomes</em></figcaption>
+                    </figure>
                     <h3>Getting started</h3>                
                     <p>To begin, it's enough to write pledges with a product or use case in mind. When I was considering which analytics service to use for this website, I read up on user rights and developer responsibilities.</p>
                     <p>I drew on two <Links.EL link={{source:"https://www.w3.org/2001/tag/doc/ethical-web-principles/"}}>W3C</Links.EL>  principles: <q>Security and privacy are essential</q> and <q>The web must enhance individuals' control and power</q> to write two pledges of my own:</p>

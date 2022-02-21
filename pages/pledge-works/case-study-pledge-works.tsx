@@ -30,7 +30,7 @@ const Introduction = () => {
 
                 <h2>Writing pledges for better outcomes.</h2>
 
-                <p>At <Links.EL link={{source:'https://responsibletech.work/'}}>ResponsibleTech.Work</Links.EL> we find ways to work more responsibly. Since we are designers and programmers we began by challenging how we develop software.</p>
+                <p>At <Links.EL link={{source:'https://responsibletech.work'}}>ResponsibleTech.Work</Links.EL> we find ways to work more responsibly. Since we are designers and programmers we began by challenging how we develop software.</p>
 
                 <p>We wanted an approach that was easy to explain, simple to execute, that worked with existing philosophies and practices widely used in software development, but that required little or no training.</p>
 

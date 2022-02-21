@@ -387,7 +387,7 @@
     }
     img {
         width: 80ch;
-        max-width: calc(90vw - 0.75rem + 1vw);
+        max-width: calc(90vw - 0.75rem + 1vw);        
     }
     @include table();
 }

@@ -23,7 +23,7 @@ const ExternalLinksList = ({links}) => {
 const IL = ({link, children}) => {
     return  <span class={styles.internalLink}>                
                 <Link href={`/${link.source}`}>
-                    <a>{children}</a>
+                    <a href={`/${link.source}`}>{children}</a>
                 </Link>
             </span>            
 };
@@ -52,10 +52,16 @@ const Home = ({ textAlign = 'left' }) => {
 
 const RelatedLinks = ({links}) => {
 
-    const list = links.map(link => {
-        return <li>
+    const list = links.map(link => {        
+        return link.value.indexOf('http') > -1
+        ? 
+        <li class={styles.externalLink}>
+            <a href={`${link.value}`}>{link.text}</a>
+        </li>
+        :
+        <li>
             <Link href={`/${link.value}`}>
-                <a>{link.text}</a>
+                <a href={`/${link.value}`}>{link.text}</a>
             </Link>
         </li>
     });
