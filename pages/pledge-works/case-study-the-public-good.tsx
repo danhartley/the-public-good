@@ -17,7 +17,7 @@ const Argument = () => {
 
     return (
         <>
-            <Layout header="Ethics at work"  rt="2" title="Ethics at Work" description={'No grand plan required.'} discussions='/categories/pledge-works' image='https://live.staticflickr.com/65535/51895028558_9130a3402b_w_d.jpg'>
+            <Layout header="Ethics at work"  rt="2" title="Ethics at Work" description={'No grand plan required.'} discussions='/categories/pledge-works' image='https://live.staticflickr.com/65535/51895028558_9130a3402b_q_d.jpg'>
                 <section>
                     <h2>Considering the consequence of my actions, and changing my behaviour accordingly, did not require a grand plan or overhaul of working practices.</h2>
                     <p>The workplace is an appropriate environment for applied ethics. We frequently consider risk, undesirable consequences, and competing outcomes. Processes exist to communicate, share information, save time, and measure progress.</p>
