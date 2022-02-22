@@ -103,6 +103,10 @@ const externalLinks = [
         "name": "Energy Patterns for Mobile Apps",
         "source": "https://tqrg.github.io/energy-patterns/#/"
     },
+    {
+        "name": "Are my third parties green?",
+        "source": "https://aremythirdpartiesgreen.com/"
+    },
 ];
 
 const Sustainability = () => {
