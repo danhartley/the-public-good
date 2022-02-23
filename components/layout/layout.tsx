@@ -101,6 +101,7 @@ const Layout = ({
                 
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="manifest" href="/manifest.json" />
+                {/* <link rel="stylesheet" href="/perf-diagnostics.css" /> */}
             </Head>
             <div id="container" style={mode.style as any} class={styles.container}>                
                 <header>
@@ -123,7 +124,7 @@ const Layout = ({
 
                     { rt.length > 0 
                         ? <div class={styles.author}>
-                            <img alt="The author, Daniel Hartley" src="https://avatars.githubusercontent.com/u/264690?s=60&amp;v=4" />
+                            <img width="60px" height="60px" alt="The author, Daniel Hartley" src="https://avatars.githubusercontent.com/u/264690?s=60&amp;v=4" />
                             <div>
                                 <div>Daniel Hartley</div>
                                 <div>Reading time: {rt} minutes</div>

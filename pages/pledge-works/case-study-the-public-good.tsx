@@ -23,10 +23,10 @@ const Argument = () => {
                     <p>The workplace is an appropriate environment for applied ethics. We frequently consider risk, undesirable consequences, and competing outcomes. Processes exist to communicate, share information, save time, and measure progress.</p>
                     <p><strong>Pledge Works</strong> adapts these processes in return for outcomes that improve upon business as usual defaults.</p>
                     <p>The idea is simple; we write pledges that frame or guide our work in a given context. The context is everything related to the work needed doing, including the people responsible, the time and budget available, and the scope. Pledges need to have enough character to be meaningful without being dogmatic.</p>                    
-                    {/* <figure>
+                    <figure>
                         <div><img src="/pw-formula.png" alt="The Pledge Works Formula: pledges + context = pledge works" /></div>
                         <figcaption><em>The Pledge Works Formula: pledges + context = pledge works</em></figcaption>
-                    </figure> */}
+                    </figure>
                     <h3>Getting started</h3>                
                     <p>To begin, it's enough to write pledges with a product or use case in mind. When I was considering which analytics service to use for this website, I read up on user rights and developer responsibilities.</p>
                     <p>I drew on two <Links.EL link={{source:"https://www.w3.org/2001/tag/doc/ethical-web-principles/"}}>W3C</Links.EL>  principles: <q>Security and privacy are essential</q> and <q>The web must enhance individuals' control and power</q> to write two pledges of my own:</p>
