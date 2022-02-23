@@ -20,6 +20,8 @@ const Pledges = () => {
         "I pledge to support opinions and statements with data.",
         "I pledge to provide links to sources.",
         "I pledge to follow web standards.",
+        "I pledge to test performance using third party tools.",
+        "I pledge to set performance and sustainability budgets.",
         "I pledge to use third party code only when it adds demonstrable value to the project.",
         "I pledge to write software for all devices and browsers.",
         "I pledge not to use practices identified as dark patterns.",

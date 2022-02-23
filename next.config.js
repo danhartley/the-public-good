@@ -8,10 +8,27 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.ANALYZE === 'true'
 });
 
+const SizePlugin = require('size-plugin');
+
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+
+const smp = new SpeedMeasurePlugin();
+
+// https://developers.google.com/web/fundamentals/performance/webpack/monitor-and-analyze
+// https://github.com/FormidableLabs/webpack-dashboard/
+// const DashboardPlugin = require("webpack-dashboard/plugin");
+
 module.exports = withPreact({
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     }
+});
+
+module.exports = smp.wrap({
+    plugins: [
+        new SizePlugin()
+        // , new DashboardPlugin()
+    ]
 });
 
 module.exports = withPWA({
@@ -80,4 +97,4 @@ module.exports = withPWA({
 //     },
 // }
 
-// module.exports = withBundleAnalyzer({});
+module.exports = withBundleAnalyzer({});
