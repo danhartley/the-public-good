@@ -5,11 +5,11 @@ import Links from 'components/links/Links';
 import EnergyAndEmissionsTable from 'components/charts/energy-intensity-and-emissions-table';
 import WebsiteEnergyAndEmissionsTable from 'components/charts/examples-of-website-energy-and-emissions-table';
 import UKDataOptionsTable from 'components/charts/examples-of-internet-data-usage-table';
-import dynamic from "next/dynamic";
-const PieChartComponentEnergyConsumption = dynamic(() => import('components/charts/main-components-of-energy-consumption-in-ict-pie-chart'));
-const MiniBarChart = dynamic(() => import('components/charts/uk-per-capita-data-bar-chart'));
-// import PieChartComponentEnergyConsumption from 'components/charts/main-components-of-energy-consumption-in-ict-pie-chart';
-// import MiniBarChart from 'components/charts/uk-per-capita-data-bar-chart';
+// import dynamic from "next/dynamic";
+// const PieChartComponentEnergyConsumption = dynamic(() => import('components/charts/main-components-of-energy-consumption-in-ict-pie-chart'));
+// const MiniBarChart = dynamic(() => import('components/charts/uk-per-capita-data-bar-chart'));
+import PieChartComponentEnergyConsumption from 'components/charts/main-components-of-energy-consumption-in-ict-pie-chart';
+import MiniBarChart from 'components/charts/uk-per-capita-data-bar-chart';
 import Formula from 'components/tools/formula';
 import Top from 'components/top/top';
 
