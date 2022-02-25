@@ -71,6 +71,10 @@ const perfLinks = [
         "name": "Sitechecker | Web Page Size Checker",
         "source": "https://sitechecker.pro/page-size/"
     },
+    {
+        "name": "Page Speed Test | EXPERTE.com",
+        "source": "https://www.experte.com/pagespeed"
+    },
     // {
     //     "name": "Web Vitals Report",
     //     "source": "https://web-vitals-report.web.app/"

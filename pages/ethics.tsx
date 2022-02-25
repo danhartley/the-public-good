@@ -42,6 +42,18 @@ const externalLinks = [
         "name": "Data Ethics Framework | GOV.UK",
         "source": "https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-2020"
     },
+    {
+        "name": "ethical web dev  | European Digital Rights EDRi (PDF)",
+        "source": "https://edri.org/files/ethical_web_dev_web.pdf"
+    },
+    {
+        "name": "Online Ethics Canvas",
+        "source": "https://www.ethicscanvas.org/canvas/index.php"
+    },
+    {
+        "name": "Ethics in the Software Development Process | Gogoll, Zuber et al (PDF)",
+        "source": "https://arxiv.org/pdf/2011.03016.pdf"
+    },
 ];
 
 const Ethics = () => {

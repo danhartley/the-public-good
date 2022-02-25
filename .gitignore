@@ -57,8 +57,9 @@ package-lock.json
 play/
 venn-diagrams
 tools
-# Unused svgs
+quiz/
 
+# Unused svgs
 logo2.svg
 tpg.svg
 

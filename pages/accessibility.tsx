@@ -1,6 +1,7 @@
 import Layout from 'components/layout/layout';
 import Links from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
+import Published from 'components/published/published';
 import { FunctionalComponent } from 'preact';
 
 const links = [
@@ -48,6 +49,14 @@ const links = [
         "name": "Tenon.io | Limited free service | Stores user data",
         "source": "https://tenon.io/"
     },
+    {
+        "name": "Accessibility Checker (multiple pages) | EXPERTE.com",
+        "source": "https://www.experte.com/accessibility"
+    },
+    {
+        "name": "Lighthouse",
+        "source": "https://developers.google.com/web/tools/lighthouse"
+    },
 ];
 
 const Accessibility: FunctionalComponent = () => {
@@ -68,8 +77,12 @@ const Accessibility: FunctionalComponent = () => {
                         <dt><strong>WCAG 2.1</strong></dt><dd>A contrast ratio of at least 3:1 for graphics and user interface components.</dd>
                     </dl>
                 </p>
-                <p><span class={styles.published}>Last updated: {new Date('Fri 19 March 2021').toDateString()}</span></p>
+                <h3>Practice</h3>
+                <p>I use Deque's <Links.EL link={{source:"https://www.deque.com/blog/shift-further-left-with-deques-axe-linter-for-vs-code/"}}>axe linter</Links.EL>  to catch mistakes as I make them. It is available as a VS Code extension and checks React (or Preact), Vue, HTML, and Markdown files. Support for more frameworks is being considered.</p>
+                <p><Links.EL link={{source:"https://developers.google.com/web/tools/lighthouse"}}>Lighthouse</Links.EL> can be run in a number of environments. The accessibility score is unaffected by other activity so it is not necessary to run it in incognito mode.</p>
+                <p>If you want to check accessibility across your site, I recommend EXPERTE.com's <Links.EL link={{source:"https://www.experte.com/accessibility"}}>accessibility checker</Links.EL>. It is perfect for a site like this which uses a static site generator (Next.js).</p>                
             </section>
+            <Published strDate='Thu 24 June 2021' edited={[{strDate:'Fri 19 March 2021'},{strDate:'Fri 25 February 2022'}]}></Published>
             <Links.RelatedLinks links={[{value:'architecture',text:'Architecture'},{value:'performance',text:'Performance'},{value:'sustainability',text:'Sustainability'}]}></Links.RelatedLinks>
         </Layout>
     )
