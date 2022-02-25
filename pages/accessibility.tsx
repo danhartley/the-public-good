@@ -80,7 +80,7 @@ const Accessibility: FunctionalComponent = () => {
                 <h3>Practice</h3>
                 <p>I use Deque's <Links.EL link={{source:"https://www.deque.com/blog/shift-further-left-with-deques-axe-linter-for-vs-code/"}}>axe linter</Links.EL>  to catch mistakes as I make them. It is available as a VS Code extension and checks React (or Preact), Vue, HTML, and Markdown files. Support for more frameworks is being considered.</p>
                 <p><Links.EL link={{source:"https://developers.google.com/web/tools/lighthouse"}}>Lighthouse</Links.EL> can be run in a number of environments. The accessibility score is unaffected by other activity so it is not necessary to run it in incognito mode.</p>
-                <p>If you want to check accessibility across your site, I recommend EXPERTE.com's <Links.EL link={{source:"https://www.experte.com/accessibility"}}>accessibility checker</Links.EL>. It is perfect for a small site, like this one, built using a static site generator (Next.js).</p>                
+                <p>If you want to check accessibility across your site, I recommend EXPERTE.com's <Links.EL link={{source:"https://www.experte.com/accessibility"}}>accessibility checker</Links.EL>. It is based on Lighthouse but will crawl up to a maximum of 500 pages. It is ideal for a small site, such as this one, made up of HTML pages created by a static site generator (Next.js).</p>
             </section>
             <Published strDate='Thu 10 Feb 2021' edited={[{strDate:'Fri 19 March 2021'},{strDate:'Fri 25 February 2022'}]}></Published>
             <Links.RelatedLinks links={[{value:'architecture',text:'Architecture'},{value:'performance',text:'Performance'},{value:'sustainability',text:'Sustainability'}]}></Links.RelatedLinks>
