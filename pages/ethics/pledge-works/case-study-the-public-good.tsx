@@ -1,7 +1,7 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Top from 'components/top/top';
-import Appendix from 'pages/pledge-works/appendix';
+import Appendix from 'pages/ethics/pledge-works/appendix';
 
 import styles from 'pages/pages.module.scss';
 
@@ -24,8 +24,10 @@ const Argument = () => {
                     <p><strong>Pledge Works</strong> adapts these processes in return for outcomes that improve upon business as usual defaults.</p>
                     <p>The idea is simple; we write pledges that frame or guide our work in a given context. The context is everything related to the work needed doing, including the people responsible, the time and budget available, and the scope. Pledges need to have enough character to be meaningful without being dogmatic.</p>                    
                     <figure>
-                        <div><img src="/pw-formula.png" alt="The Pledge Works Formula: pledges + context = pledge works" /></div>
-                        <figcaption><em>The Pledge Works Formula: pledges + context = pledge works</em></figcaption>
+                        <div><img src="/pw-formula.png" alt="The Pledge Works Formula: values + context = Pledge Works" /></div>
+                        <figcaption>
+                            <div><em>The Pledge Works Formula: values + context = Pledge Works</em></div>
+                        </figcaption>
                     </figure>
                     <h3>Getting started</h3>                
                     <p>To begin, it's enough to write pledges with a product or use case in mind. When I was considering which analytics service to use for this website, I read up on user rights and developer responsibilities.</p>
@@ -74,7 +76,7 @@ const Argument = () => {
                     <h2>External Links</h2>
                     <Links.ExternalLinksList links={externalLinks} />
                 </section>
-                <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}, {value:'pledge-works/pledges', text:'Pledges'}]}></Links.RelatedLinks>
+                <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'ethics/pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'ethics/pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'ethics/pledge-works/inventory', text:'Pledge Works Inventory'}, {value:'ethics/pledge-works/pledges', text:'Pledges'},{value:'ethics', text:'Ethics'}]}></Links.RelatedLinks>
             </Layout>            
         </>
     )

@@ -1,9 +1,9 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Top from 'components/top/top';
-import Appendix from 'pages/pledge-works/appendix';
-import Concrete from 'pages/pledge-works/figures/cascade-of-pledges-concrete';
-import Abstract from 'pages/pledge-works/figures/cascade-of-pledges-abstract';
+import Appendix from 'pages/ethics/pledge-works/appendix';
+import Concrete from 'pages/ethics/pledge-works/figures/cascade-of-pledges-concrete';
+import Abstract from 'pages/ethics/pledge-works/figures/cascade-of-pledges-abstract';
 
 import styles from 'pages/pages.module.scss';
 
@@ -75,7 +75,7 @@ const Pledges = () => {
                     <h2>External Links</h2>
                     <Links.ExternalLinksList links={externalLinks} />
                 </section>
-                <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"}, {value:'pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}]}></Links.RelatedLinks>
+                <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"}, {value:'ethics/pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'ethics/pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'ethics/pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'ethics/pledge-works/inventory', text:'Pledge Works Inventory'},{value:'ethics', text:'Ethics'}]}></Links.RelatedLinks>
             </Layout>
         </>
     )

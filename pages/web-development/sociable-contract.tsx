@@ -41,7 +41,7 @@ const Contract = () => {
                     <ul class={styles.dashedItemsList}>
                         <li>
                         <span>The site will satisfy Web Content Accessibility Guidelines <Links.EL link={{source:'https://webaim.org/resources/contrastchecker/'}}>WCAG Level AAA</Links.EL> in light mode; WCAG Level AA in dark mode, Level AA for larger text.</span>
-                        <div><em><Links.EL link={{source:'https://wave.webaim.org/report#/https://www.the-public-good.com/'}}>Check</Links.EL></em> if this is true.</div>
+                        <div><em><Links.EL link={{source:'https://wave.webaim.org/report#/https://www.the-public-good.com/'}}>Check</Links.EL>&nbsp;if this is true.</em></div>
                         </li>
                         <li>
                         The site will score at least 95% for Performance, Accessibility, Best Practices and SEO on <Links.EL link={{source:'https://developers.google.com/web/tools/lighthouse'}}>Lighthouse</Links.EL>, on both Desktop and Mobile.

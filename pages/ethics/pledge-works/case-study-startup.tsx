@@ -1,8 +1,8 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Top from 'components/top/top';
-import Appendix from 'pages/pledge-works/appendix';
-import CostPerTonne from 'pages/pledge-works/figures/decision-matrix-cost-per-tonne';
+import Appendix from 'pages/ethics/pledge-works/appendix';
+import CostPerTonne from 'pages/ethics/pledge-works/figures/decision-matrix-cost-per-tonne';
 
 import styles from 'pages/pages.module.scss';
 
@@ -60,7 +60,7 @@ const CaseStudyStartUp = () => {
                     Our company founders want to make decisions that reflect their values, and earn a living. They believe these goals are complementary.
                 </p>
                 <p>
-                    Following methods set out in <Links.IL link={{source:"pledge-works/case-study-pledge-works"}}>Pledge Works</Links.IL>, they draw up a foundational list of core pledges which will act as their ethical backstop.
+                    Following methods set out in <Links.EL link={{source:"https://responsibletech.work/"}}>Pledge Works</Links.EL>, they draw up a foundational list of core pledges which will act as their ethical backstop.
                 </p>
                 <h3>Core pledges</h3>
                 <p>                    
@@ -134,7 +134,7 @@ const CaseStudyStartUp = () => {
                 <figure>
                     <CostPerTonne></CostPerTonne>
                     <figcaption>
-                        <em>Figure 2: Simplified Decision Matrix (see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGzyoiKqybpBObNoC0Z5Ex6obRb3uFY8AsoEakMF_nZUYZdc5o9jyxwrDdk5ok8Nup9hC8Va-M34HI/pub?gid=1748215232&single=true&output=pdf'}}>Carbon price per tonne</Links.EL> PDF)</em>
+                        <div><em>Figure 2: Simplified Decision Matrix (see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGzyoiKqybpBObNoC0Z5Ex6obRb3uFY8AsoEakMF_nZUYZdc5o9jyxwrDdk5ok8Nup9hC8Va-M34HI/pub?gid=1748215232&single=true&output=pdf'}}>Carbon price per tonne</Links.EL> PDF)</em></div>
                     </figcaption>
                 </figure>
                 <p>
@@ -144,7 +144,9 @@ const CaseStudyStartUp = () => {
                     <div id="venn">
                         <img src="/svg/venn-nonaligned.svg" alt="Venn diagram: The gap between intent and reality" />
                     </div>                
-                    <figcaption><em>Figure 1: The gap between intent and reality</em></figcaption>
+                    <figcaption>
+                        <div><em>Figure 1: The gap between intent and reality</em></div>
+                    </figcaption>
                 </figure>
                 <p>
                     They publish their findings, and the decision matrix, in line with their pledge to expose their methods to scrutiny.
@@ -157,12 +159,14 @@ const CaseStudyStartUp = () => {
                     <div id="venn2">
                         <img src="/svg/venn-aligned.svg" alt="Venn diagram: Intent and reality aligned" />
                     </div>
-                    <figcaption><em>Figure 2: Intent and reality aligned</em></figcaption>
+                    <figcaption>
+                        <div><em>Figure 2: Intent and reality aligned</em></div>
+                    </figcaption>
                 </figure>
                 <h3>Conclusion</h3>
                 <p>Writing pledges and integrating them into the decision making process helped the founders set a value on carbon dioxide emissions they think will support a profitable and ethical company.</p>
                 <p>The process of writing requirements and checking them against pledges will continue to help guide their decisions, whether selecting offset projects, utility providers, or third party software services.</p>
-                <p>For more details on aspects of Pledge Works, see the <Links.IL link={{source:"pledge-works/inventory"}}>inventory</Links.IL>.</p>
+                <p>For more details on aspects of Pledge Works, see the <Links.IL link={{source:"ethics/pledge-works/inventory"}}>inventory</Links.IL>.</p>
             </section>
             <section id="carbon">
                 + Carbon credits are per tonne of <em>carbon dioxide</em>, not carbon. <Links.IL link={{source:"climate-crisis/facts"}}>There is a difference!</Links.IL>
@@ -173,7 +177,7 @@ const CaseStudyStartUp = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}, {value:'pledge-works/pledges', text:'Pledges'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'ethics/pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'ethics/pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'ethics/pledge-works/inventory', text:'Pledge Works Inventory'}, {value:'ethics/pledge-works/pledges', text:'Pledges'},{value:'ethics', text:'Ethics'}]}></Links.RelatedLinks>
         </Layout>
     )
 

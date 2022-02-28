@@ -65,3 +65,9 @@ tpg.svg
 
 # unused pledge works
 pages/pledge-works/tools/*.tsx
+
+case-study-ai.tsx
+gdpr-compliance.tsx
+role-based-pledges.tsx
+ethics-old.tsx
+outcomes.tsx

@@ -24,7 +24,7 @@
       "**/*.ts",
       "**/*.tsx"
     , "index.test.js"
-, "public/_app.js"    ],
+, "public/_app.js", "pages/ethics/pledge-works/index.js"    ],
     "exclude": [
       "node_modules",
       "**/*.spec.js"

@@ -1,9 +1,8 @@
 import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
-import AnalyticsProvider from 'pages/pledge-works/figures/decision-matrix-analytics-provider';
+import AnalyticsProvider from 'pages/ethics/pledge-works/figures/decision-matrix-analytics-provider';
 import Top from 'components/top/top';
-import Appendix from 'pages/pledge-works/appendix';
-import Workflow from 'pages/pledge-works/workflow';
+import Appendix from 'pages/ethics/pledge-works/appendix';
 
 import styles from 'pages/pages.module.scss';
 
@@ -94,7 +93,7 @@ const Introduction = () => {
                 <figure>
                     <AnalyticsProvider></AnalyticsProvider>
                     <figcaption>
-                        <em>Figure 2: Simplified Decision Matrix (see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGzyoiKqybpBObNoC0Z5Ex6obRb3uFY8AsoEakMF_nZUYZdc5o9jyxwrDdk5ok8Nup9hC8Va-M34HI/pubhtml?gid=137244074&single=true'}}>Analytics Decision Matrix for RTW website</Links.EL>)</em>
+                        <div><em>Figure 2: Simplified Decision Matrix (see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGzyoiKqybpBObNoC0Z5Ex6obRb3uFY8AsoEakMF_nZUYZdc5o9jyxwrDdk5ok8Nup9hC8Va-M34HI/pubhtml?gid=137244074&single=true'}}>Analytics Decision Matrix for RTW website</Links.EL>)</em></div>
                     </figcaption>
                 </figure>
 
@@ -130,7 +129,7 @@ const Introduction = () => {
 
                 <h3>Conclusion</h3>
 
-                <p>The version of Pledge Works described here fits with traditional agile software development. From the Pledge Works <Links.IL link={{source:"pledge-works/inventory"}}>inventory</Links.IL> we used <em>Writing pledges, Challenging decisions, and Voting</em>.</p>
+                <p>The version of Pledge Works described here fits with traditional agile software development. From the Pledge Works <Links.IL link={{source:"ethics/pledge-works/inventory"}}>inventory</Links.IL> we used <em>Writing pledges, Challenging decisions, and Voting</em>.</p>
 
                 <p>We recommend using only those parts of Pledge Works you find helpful. There are no hard and fast naming conventions, or strict rules; Pledge Works is not a prescriptive practice. Start with barebones Pledge Works and adopt more of it as necessary.</p>
 
@@ -149,7 +148,7 @@ const Introduction = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'},{value:'pledge-works/pledges', text:'Pledges'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'ethics/pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'ethics/pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'ethics/pledge-works/inventory', text:'Pledge Works Inventory'},{value:'ethics/pledge-works/pledges', text:'Pledges'},{value:'ethics', text:'Ethics'}]}></Links.RelatedLinks>
         </Layout>
     )
 };
