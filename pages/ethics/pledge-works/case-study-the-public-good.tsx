@@ -24,7 +24,7 @@ const Argument = () => {
                     <p><strong>Pledge Works</strong> adapts these processes in return for outcomes that improve upon business as usual defaults.</p>
                     <p>The idea is simple; we write pledges that frame or guide our work in a given context. The context is everything related to the work needed doing, including the people responsible, the time and budget available, and the scope. Pledges need to have enough character to be meaningful without being dogmatic.</p>                    
                     <figure>
-                        <div><img src="/pw-formula.png" alt="The Pledge Works Formula: values + context = Pledge Works" alt="Pledge Works formula: values + context = pledges. Values are drawn as a blue circle, context as a black square, and they combine into a purple square within a circle to illustrate the Pledge Works approach." /></div>
+                        <div><img src="/pw-formula.png" alt="Pledge Works formula: values + context = pledges. Values are drawn as a blue circle, context as a black square, and they combine into a purple square within a circle to illustrate the Pledge Works approach." /></div>
                         <figcaption>
                             <div><em>The Pledge Works Formula: values + context = Pledge Works</em></div>
                         </figcaption>
