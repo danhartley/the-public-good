@@ -129,7 +129,7 @@ const Introduction = () => {
 
                 <h3>Conclusion</h3>
 
-                <p>The version of Pledge Works described here fits with traditional agile software development. From the Pledge Works <Links.IL link={{source:"ethics/pledge-works/inventory"}}>inventory</Links.IL> we used <em>Writing pledges, Challenging decisions, and Voting</em>.</p>
+                <p>The version of Pledge Works described here fits with traditional agile software development. From the Pledge Works <Links.IL link={{source:"ethics/pledge-works/inventory"}}>Inventory</Links.IL> we used <em>Writing pledges, Challenging decisions, and Voting</em>.</p>
 
                 <p>We recommend using only those parts of Pledge Works you find helpful. There are no hard and fast naming conventions, or strict rules; Pledge Works is not a prescriptive practice. Start with barebones Pledge Works and adopt more of it as necessary.</p>
 
@@ -139,7 +139,7 @@ const Introduction = () => {
                 <p>Our pledges challenge us to address awkward questions that we might prefer to sideline. As a result, we feel better about our decisions, and put into effect more robust solutions.</p>
 
                 <p>
-                    See a <Links.IL link={{source:"pledge-works/case-study-startup"}}>case study</Links.IL> for using Pledge Works at a startup.
+                    See a <Links.IL link={{source:"ethics/pledge-works/case-study-startup"}}>case study</Links.IL> for using Pledge Works at a startup.
                 </p>
                 <Top></Top>
             </section>            

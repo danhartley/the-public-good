@@ -24,7 +24,7 @@ const Argument = () => {
                     <p><strong>Pledge Works</strong> adapts these processes in return for outcomes that improve upon business as usual defaults.</p>
                     <p>The idea is simple; we write pledges that frame or guide our work in a given context. The context is everything related to the work needed doing, including the people responsible, the time and budget available, and the scope. Pledges need to have enough character to be meaningful without being dogmatic.</p>                    
                     <figure>
-                        <div><img src="/pw-formula.png" alt="The Pledge Works Formula: values + context = Pledge Works" /></div>
+                        <div><img src="/pw-formula.png" alt="The Pledge Works Formula: values + context = Pledge Works" alt="Pledge Works formula: values + context = pledges. Values are drawn as a blue circle, context as a black square, and they combine into a purple square within a circle to illustrate the Pledge Works approach." /></div>
                         <figcaption>
                             <div><em>The Pledge Works Formula: values + context = Pledge Works</em></div>
                         </figcaption>
@@ -68,7 +68,7 @@ const Argument = () => {
                         <figcaption><em>The cascade of pledges: how to choose a website analytics provider.</em></figcaption>
                     </figure>
                     <p>Pledges perform the role of ethical teeth preventing me from backsliding. I first commit to pledges that are relevant to the scope or complexity of a problem or domain, and as I learn more, I add detail, in search of a still better outcome. </p>                    
-                    <p><Links.IL link={{source:"pledge-works/case-study-pledge-works"}}>Pledge Works</Links.IL>.</p>
+                    <p>Case study: <Links.IL link={{source:"ethics/pledge-works/case-study-pledge-works"}}>Pledge Works</Links.IL>.</p>
                     <Top></Top>
                 </section>
                 <Appendix></Appendix>

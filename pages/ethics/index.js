@@ -81,7 +81,7 @@ const Ethics = () => {
                 <p>When the context imposes constraints - time, money, people - we need to learn how to adapt our values without watering them down. We must decide what kind of world we want in order to know whether our product favours it.</p>
                 <p>Given a set of values, and a context, we write pledges.</p>
                 <figure>
-                    <div><img src="/pw-formula.png" alt="The Pledge Works Formula: values + context = Pledge Works" /></div>
+                    <div><img src="/pw-formula.png" alt="The Pledge Works Formula: values + context = Pledge Works" alt="Pledge Works formula: values + context = pledges. Values are drawn as a blue circle, context as a black square, and they combine into a purple square within a circle to illustrate the Pledge Works approach." /></div>
                     <figcaption>
                         <div><em>The Pledge Works Formula: values + context = Pledge Works</em></div>
                     </figcaption>

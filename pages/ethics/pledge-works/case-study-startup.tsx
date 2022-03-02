@@ -142,10 +142,10 @@ const CaseStudyStartUp = () => {
                 </p>
                 <figure>
                     <div id="venn">
-                        <img src="/svg/venn-nonaligned.svg" alt="Venn diagram: The gap between intent and reality" />
+                        <img src="/svg/venn-nonaligned.svg" alt="On the left there is a blue circle containing the words 'Proposed cost per tonne', and on the right an orange circle containing the words 'True cost'. There is no overlap between the circles." />
                     </div>                
                     <figcaption>
-                        <div><em>Figure 1: The gap between intent and reality</em></div>
+                        <div><em>Figure 1: The gap between intent and reality.</em></div>
                     </figcaption>
                 </figure>
                 <p>
@@ -157,7 +157,7 @@ const CaseStudyStartUp = () => {
                 </p>
                 <figure>
                     <div id="venn2">
-                        <img src="/svg/venn-aligned.svg" alt="Venn diagram: Intent and reality aligned" />
+                        <img src="/svg/venn-aligned.svg" alt="One pink circle containing the words ''Fair cost per tonne $65." />
                     </div>
                     <figcaption>
                         <div><em>Figure 2: Intent and reality aligned</em></div>
@@ -166,7 +166,7 @@ const CaseStudyStartUp = () => {
                 <h3>Conclusion</h3>
                 <p>Writing pledges and integrating them into the decision making process helped the founders set a value on carbon dioxide emissions they think will support a profitable and ethical company.</p>
                 <p>The process of writing requirements and checking them against pledges will continue to help guide their decisions, whether selecting offset projects, utility providers, or third party software services.</p>
-                <p>For more details on aspects of Pledge Works, see the <Links.IL link={{source:"ethics/pledge-works/inventory"}}>inventory</Links.IL>.</p>
+                <p>For more details on aspects of Pledge Works, see the <Links.IL link={{source:"ethics/pledge-works/inventory"}}>Inventory</Links.IL>.</p>
             </section>
             <section id="carbon">
                 + Carbon credits are per tonne of <em>carbon dioxide</em>, not carbon. <Links.IL link={{source:"climate-crisis/facts"}}>There is a difference!</Links.IL>
