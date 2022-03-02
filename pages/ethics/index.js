@@ -72,7 +72,7 @@ const Ethics = () => {
                 I shall now therefore humbly propose my own thoughts, which I hope will not be liable to the least objection.                 
                 </blockquote>
                 <cite> <Links.EL link={{source:"https://www.gutenberg.org/files/1080/1080-h/1080-h.htm"}}>A Modest Proposal by Jonathan Swift</Links.EL> </cite> */}
-                <p>They propose an approach called Ethical Deliberation in Agile Processes. An existing alternative is the open source project <Links.EL link={{source:"https://responsibletech.work/"}}>Pledge Works</Links.EL>.</p>
+                <p>They propose an approach called Ethical Deliberation in Agile Processes. An existing alternative is the open source project <Links.EL link={{source:"https://responsibletech.work/tools/development/pledge-works/"}}>Pledge Works</Links.EL>.</p>
                 <h3>Pledge Works</h3>
                 <p>Pledge Works is a response to the need for <q>a skill that has to be practiced and can be embedded deeply into the software development process.</q></p>
                 <p>The Pledge Works' tagline is: <strong>writing pledges for better outcomes</strong>. What does this mean?</p>
@@ -101,7 +101,7 @@ const Ethics = () => {
                 <h2>Links to external references</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'ethics/pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'ethics/pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'},{value:'ethics/pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'ethics/pledge-works/inventory', text:'Pledge Works Inventory'},{value:'ethics/pledge-works/pledges', text:'Pledges'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:"https://responsibletech.work/blog/2022/3/1/pledge-works-writing-pledges-for-better-outcomes/", text:"Writing Pledges for Better Outcomes"},{value:'ethics/pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'ethics/pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'},{value:'ethics/pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'ethics/pledge-works/inventory', text:'Pledge Works Inventory'},{value:'ethics/pledge-works/pledges', text:'Pledges'}]}></Links.RelatedLinks>
         </Layout>
     )
 };

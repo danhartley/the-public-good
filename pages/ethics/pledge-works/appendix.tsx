@@ -6,12 +6,16 @@ const Appendix = () => {
 
     const links = [
         {
-            "name": "ResponsibleTech.Work Pledges",
-            "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSZcoudvThs0sZU-L87_ylopljM5Gh3Mq66KcWOvFK0gQ3G8krcxwR7TpvoGWkyKH6comq3xG1AR7-p/pubhtml?gid=232094584&single=true"
+            "name": "Writing Pledges for Better Outcomes",
+            "source": "https://responsibletech.work/blog/2022/3/1/pledge-works-writing-pledges-for-better-outcomes/"
         },
         {
-            "name": "Project pledges for Pledge Works",
-            "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSZcoudvThs0sZU-L87_ylopljM5Gh3Mq66KcWOvFK0gQ3G8krcxwR7TpvoGWkyKH6comq3xG1AR7-p/pubhtml?gid=622127635&single=true"
+            "name": "Pledge Works Tools",
+            "source": "https://responsibletech.work/tools/development/pledge-works/"
+        },
+        {
+            "name": "Pledge Toolbox",
+            "source": "https://responsibletech.work/tools/business/pledge-toolbox/"
         },
     ];
 

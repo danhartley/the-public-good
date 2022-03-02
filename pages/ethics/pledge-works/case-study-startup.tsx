@@ -60,7 +60,7 @@ const CaseStudyStartUp = () => {
                     Our company founders want to make decisions that reflect their values, and earn a living. They believe these goals are complementary.
                 </p>
                 <p>
-                    Following methods set out in <Links.EL link={{source:"https://responsibletech.work/"}}>Pledge Works</Links.EL>, they draw up a foundational list of core pledges which will act as their ethical backstop.
+                    Following methods set out in <Links.EL link={{source:"https://responsibletech.work/tools/development/pledge-works/"}}>Pledge Works</Links.EL>, they draw up a foundational list of core pledges which will act as their ethical backstop.
                 </p>
                 <h3>Core pledges</h3>
                 <p>                    
@@ -177,7 +177,7 @@ const CaseStudyStartUp = () => {
                 <h2>External Links</h2>
                 <Links.ExternalLinksList links={externalLinks} />
             </section>
-            <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'ethics/pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'ethics/pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'ethics/pledge-works/inventory', text:'Pledge Works Inventory'}, {value:'ethics/pledge-works/pledges', text:'Pledges'},{value:'ethics', text:'Ethics'}]}></Links.RelatedLinks>
+            <Links.RelatedLinks links={[{value:"https://responsibletech.work/blog/2022/3/1/pledge-works-writing-pledges-for-better-outcomes/", text:"Writing Pledges for Better Outcomes"},{value:'ethics/pledge-works/case-study-the-public-good',text:'Pledge Works for The Public Good'},{value:'ethics/pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'ethics/pledge-works/inventory', text:'Pledge Works Inventory'}, {value:'ethics/pledge-works/pledges', text:'Pledges'},{value:'ethics', text:'Ethics'}]}></Links.RelatedLinks>
         </Layout>
     )
 
