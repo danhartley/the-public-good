@@ -16,7 +16,7 @@ const Appendix = () => {
         {
             "name": "Pledge Toolbox",
             "source": "https://responsibletech.work/tools/business/pledge-toolbox/"
-        },
+        }
     ];
 
     return (
