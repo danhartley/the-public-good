@@ -48,7 +48,7 @@ const CaseStudyStartUp = () => {
     ];
 
     return (
-        <Layout header="Pledge Works for Startups" rt="4 to 5" title="Case study - the startup" description={'Once a startup has established its purpose, it\'s ready to write the pledges that will guide its work.'} discussions='/categories/pledge-works'> {/* image? */}
+        <Layout header="Pledge Works for Startups" rt="4 to 5" title="Case study - the startup" description={'Once a startup has established its purpose, it\'s ready to write the pledges that will guide its work.'} discussions='/categories/pledge-works'  image='https://live.staticflickr.com/65535/51895028558_9130a3402b_q_d.jpg'>
             <section>
                 <h2>
                     Once a startup has established its purpose, it's ready to write the pledges that will guide its work.
