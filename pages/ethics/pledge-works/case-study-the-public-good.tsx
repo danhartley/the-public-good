@@ -43,27 +43,35 @@ const Argument = () => {
                     <p>Once I'd written a few pledges, I saw they formed a cascade, from high-level principles or pledges appropriate for a responsible project, to detailed pledges relevant to specific tasks. I found it straightforward to convert concrete pledges into requirements that lead to unambiguous actions.</p>
                     <h4>In general terms</h4>
                     <figure>
-                        <ul class={styles.dashedItemsList}>
+                        <ul class={styles.dashedCascadedItemsList}>
                             <li>Personal principles.</li>
-                            <ul class={styles.dashedItemsList}>
-                                <li>Project pledges.</li>
-                                <ul class={styles.dashedItemsList}>
-                                    <li>Verifiable actions.</li>
-                                </ul>
-                            </ul>
+                            <li>
+                                <ol type="A" class={styles.dashedCascadedItemsList}>
+                                    <li>Project pledges.</li>
+                                    <li>
+                                        <ol type="i" class={styles.dashedCascadedItemsList}>
+                                            <li>Verifiable actions.</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
                         </ul>
                         <figcaption><em>The cascade of pledges: increasingly concrete.</em></figcaption>
                     </figure>                  
                     <h4>In specific terms</h4>
                     <figure>
-                        <ul class={styles.dashedItemsList}>
+                        <ul class={styles.dashedCascadedItemsList}>
                             <li>Security and privacy are essential.</li>
-                            <ul class={styles.dashedItemsList}>
-                                <li>I pledge not to sell, exchange or exploit user data.</li>
-                                <ul class={styles.dashedItemsList}>
-                                    <li>No cross-site or cross-device tracking.</li>
-                                </ul>
-                            </ul>
+                            <li>
+                                <ol type="A" class={styles.dashedCascadedItemsList}>
+                                    <li>I pledge not to sell, exchange or exploit user data.</li>
+                                    <li>
+                                        <ol type="i" class={styles.dashedCascadedItemsList}>
+                                            <li>No cross-site or cross-device tracking.</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
                         </ul>
                         <figcaption><em>The cascade of pledges: how to choose a website analytics provider.</em></figcaption>
                     </figure>

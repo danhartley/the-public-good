@@ -133,14 +133,14 @@
     @include externalLink();
 }
 
-.dashedItemsList {
+@mixin dashedItemsList() {
     @include unorderedList();
     font-size: calc(.75rem + .25vw);
     color: black;
     @media (min-width: 601px) {
         padding-left: 1rem;
     }
-    li:before {
+    li:first-child:before {
         content: '- ';
         margin-left: -0.5rem;
     }
@@ -150,6 +150,18 @@
             padding-left: 1rem;
         }
     }
+}
+
+.dashedItemsList {
+    @include dashedItemsList();
+    li:before {
+        content: '- ';
+        margin-left: -0.5rem;
+    }
+}
+
+.dashedCascadedItemsList {
+    @include dashedItemsList();    
 }
 
 .toc {
@@ -330,10 +342,7 @@
         ul {
             padding: 0;
             margin: .25rem;
-        }
-        @media (min-width: 601px) {
-            margin: 1rem 0 0 2rem;
-        }
+        }        
         div { 
             margin-top: 1rem ;
         }
@@ -341,8 +350,14 @@
             margin-bottom: .25rem;
         }
         & + cite {
-            margin: 0 0 0 2rem;
+            margin: 1rem 0 0 0rem;
             font-style: normal;
+        }
+        @media (min-width: 601px) {
+            margin: 0 0 0 2rem;
+            & + cite {
+                margin: 0 0 0 2rem;
+            }
         }
     }
     q {
