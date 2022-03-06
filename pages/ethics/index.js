@@ -89,7 +89,7 @@ const Ethics = () => {
                 <p>Ethical deliberation takes thought, discussion and time. Pledge writing can, and probably should, be introduced in an incremental, piecemeal way so as not to unnecessarily disrupt your work.</p>
                 <h3>Outcomes</h3>
                 <p>The payoff for our effort is an outcome that is at least as good as the business as usual default, if not better. Better outcomes, not perfect ones.</p>
-                <p>I like to write lots of pledges. When I can't tell whether I've broken a pledge - when the outcome is unclear - I narrow the context. My preference is for pledges that read like requirements; given sufficient exposition, I can take the subjective sting out of the decision. This won't always be case but a purely value-based defence is my last resort.</p>
+                <p>I like to write lots of pledges. When I can't tell whether I've broken a pledge - when the outcome is unclear - I narrow the context. My preference is for pledges that read like requirements; given sufficient exposition, I can take the subjective sting out of the decision.</p>
                 <p>I hope to develop a more systematic approach to Pledge Works but for now I learn as I go along, and do a little better with each effort.</p>                
             </section>
             <section>
