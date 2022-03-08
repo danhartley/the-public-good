@@ -50,7 +50,7 @@ const externalLinks = [
 
 const Ethics = () => {
     return (
-        <Layout header="Ethical web development" rt="3 to 4" title="Ethical web development" description={'Ethical web development'} image="https://live.staticflickr.com/65535/51632564726_aa1ffe9e56_w_d.jpg">
+        <Layout header="Ethical web development" rt="3 to 4" title="Ethical web development" description={'When you build a thing you cannot merely build that thing in isolation, but must also repair the world around it.'} image="https://live.staticflickr.com/65535/51632564726_aa1ffe9e56_w_d.jpg">
                 
             <section>
                 <h2>The examined working life is worth living.                    
