@@ -42,6 +42,10 @@ const externalLinks = [
         "name": "Ethics in the Software Development Process | Gogoll, Zuber et al (PDF)",
         "source": "https://arxiv.org/pdf/2011.03016.pdf"
     },
+    {
+        "name": "Directory of ethics tools and techniques | Tethix",
+        "source": "https://tethix.co/ethics-tools-directory/"
+    },
 ];
 
 const Ethics = () => {

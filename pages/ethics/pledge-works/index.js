@@ -29,7 +29,7 @@ const pwLinks = [
 
 const PledgeWorks = () => {
     return (
-        <Layout header="Pledge Works" title="Pledge Works" description={'Pledge Works'} image='https://live.staticflickr.com/65535/51895028558_9130a3402b_q_d.jpg'>                
+        <Layout header="Pledge Works" title="Pledge Works" description={'A practical tool that invites you to write pledges for better outcomes as part of your existing product development processes.'} image='https://live.staticflickr.com/65535/51895028558_9130a3402b_q_d.jpg'>                
             <section>
                 <p>
                     For an introduction to the open source project, please go to <Links.EL link={{source:"https://responsibletech.work/tools/development/pledge-works/"}}>Pledge Works</Links.EL>.                    
