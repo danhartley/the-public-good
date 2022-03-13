@@ -184,6 +184,14 @@ const MeasuringTheWeb = () => {
             "name": "Calculating Digital Emissions | Sustainable Web Design",
             "source": "https://sustainablewebdesign.org/calculating-digital-emissions/"
         },
+        {
+            "name": "ClimateCare Carbon Calculator",
+            "source": "https://www.climatecare.org/calculator/"
+        },
+        {
+            "name": "Mobile efficiency index | Greenspector",
+            "source": "https://mobile-efficiency-index.com/en/"
+        },
     ];
 
     const [inputs, setInputs] = useState({ bytes: 1, energy: 1, emissions: 1 } as any); // ad type!
