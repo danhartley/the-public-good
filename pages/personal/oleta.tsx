@@ -7,7 +7,11 @@ const Oleta = () => {
         <Layout header="Oleta" title="Oleta" description={'Oleta'}>
             <section>
             <p>
-                Oleta wanted to see the donkeys. Our parents said she could on condition Alfredo went with her and when he agreed to go I said I would too. We kept our bicycles behind the restaurant bins in a lean-to with a corrugated iron roof. No matter how much care we took putting them back we always returned to a tangle of handle bars; when we wrestled them apart the pedals caught in the spokes. I was the least patient. Oleta said I should let Alfredo get them out because we had to be quiet; if we made a lot of noise the old man on the ground floor would bang on his window. Some days he came up the stairs and talked to our father about it. Father didn't tell us off but reminded us to be considerate of others. “He doesn't sleep well. Noise makes him irritated so just remember that.”
+                Oleta wanted to see the donkeys. Our parents said she could on condition Alfredo went with her and when he agreed to go I said I would too.
+            </p>
+
+            <p>
+                We kept our bicycles behind the restaurant bins in a lean-to with a corrugated iron roof. No matter how much care we took putting them back we always returned to a tangle of handle bars; when we wrestled them apart the pedals caught in the spokes. I was the least patient. Oleta said I should let Alfredo get them out because we had to be quiet; if we made a lot of noise the old man on the ground floor would bang on his window. Some days he came up the stairs and talked to our father about it. Father didn't tell us off but reminded us to be considerate of others. “He doesn't sleep well. Noise makes him irritated so just remember that.”
             </p>
 
             <p>
@@ -39,7 +43,7 @@ const Oleta = () => {
             </p>
 
             <p>
-                There are certain slots in a family and they get filled or not but they can't be filled twice. Alfredo liked to take long walks with no particular purpose. Our mother said some people needed space to think and others not so much. Some days Alfredo was gone all day not returning until evening. It was the way it was and Oleta and I accepted it. I knew it wouldn't do any good to ask if I could go with him. When I went off on my own it was because I couldn't untangle the thoughts in my head. But most of the time the three of us stuck together. Alredo and I enjoyed looking out for her. He said we were responsible and that made us proud though I didn't know why. 
+                There are certain slots in a family and they get filled or not but they can't be filled twice. Alfredo liked to take long walks with no particular purpose. Our mother said some people needed space to think and others not so much. Some days Alfredo was gone all day not returning until evening. It was the way it was and Oleta and I accepted it. I knew it wouldn't do any good to ask if I could go with him. When I went off on my own it was because I couldn't untangle the thoughts in my head. But most of the time the three of us stuck together. Alfredo and I enjoyed looking out for Oleta. He said we were responsible and that made us proud though I didn't know why. 
             </p>
 
             <p>
@@ -81,7 +85,7 @@ const Oleta = () => {
                 <div>“Do you feel different now? That the world has changed.”</div>
                 <div>“Kind of,” I said.</div>
                 <div>“I don't,” said Oleta, “at all.”</div>
-                <div>“You know you'll remember this afternoon; even if you spend the rest of your life trying to figure out why.”</div>
+                <div>“You won't forget this afternoon. It doesn't matter you don't know why.”</div>
             </p>
             <p>
                 Oleta said she wanted to go home. We walked round the side of the field even though there was no crop. After a few minutes Alfredo hoisted Oleta onto his shoulders. He kept having to stop to wake her up.
