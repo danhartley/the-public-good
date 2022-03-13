@@ -39,7 +39,7 @@ const Oleta = () => {
             </p>
 
             <p>
-                On the way back my chain came lose. When I tried to jink it back into place the links folded tighter together their teeth meshing in a rigid puzzle. Alfredo offered to help but I managed it on my own. It took ten minutes to straighten it out and feed the loop onto the gears. I wiped my hands on the long white grass leaving ugly smears of dirty brown oil up and down the stalks. We got up speed and freewheeled the rest of the way home.
+                On the way back my chain came loose. When I tried to jink it back into place the links folded tighter together their teeth meshing in a rigid puzzle. Alfredo offered to help but I managed it on my own. It took ten minutes to straighten it out and feed the loop onto the gears. I wiped my hands on the long white grass leaving ugly smears of dirty brown oil up and down the stalks. We got up speed and freewheeled the rest of the way home.
             </p>
 
             <p>
