@@ -22,7 +22,6 @@ const DashboardControls = () => {
     const [activeTab, setActiveTab] = useState(options[0]);
 
     const handleDisplayOptionChange = e => {
-        console.log(e.target.innerText)
         e.disabled = true;
     }
 

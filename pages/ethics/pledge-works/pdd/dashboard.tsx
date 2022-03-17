@@ -22,15 +22,12 @@ const ResponsibilityDashboard = () => {
         setData(_data);
         const _localValuesData = await api.getInMemoryPledgesByValueData();
         const _valuesData = await api.getDashboardData({data:_localValuesData.values});
-        console.log(_valuesData)
         setBrokenPledgesData(_valuesData);
     }
 
     useEffect(() => {
         getData();
     }, []);
-
-    console.log(data)
 
     return (        
         <>

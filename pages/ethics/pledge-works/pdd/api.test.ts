@@ -47,7 +47,6 @@ describe('Dashboard API Tests', () => {
     });
     it('Should return pledges by value data', async () => {
         expect.assertions(1);
-        console.log(_dataByValues);
         const data = await api.getDashboardData({data:_dataByValues.values});
         data.source = _dataByValues.source;
         expect(data.source).toBe('RTW')
