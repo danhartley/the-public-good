@@ -17,17 +17,18 @@
       "resolveJsonModule": true,
       "isolatedModules": true,
       "jsx": "preserve",
-      "baseUrl": "."
+      "baseUrl": ".",
+      "experimentalDecorators": true      
     },
     "include": [
       "next-env.d.ts",
       "**/*.ts",
       "**/*.tsx"
     , "index.test.js"
-, "public/_app.js", "pages/ethics/pledge-works/index.js"    ],
+, "public/_app.js", "pages/ethics/pledge-works/index.js", "pages/ethics/features/step_definitions/bank-account.steps.mts"    ],
     "exclude": [
       "node_modules",
       "**/*.spec.js"
-    ]
+    ]    
   }
   

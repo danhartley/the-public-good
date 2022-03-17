@@ -129,6 +129,12 @@
     @include unorderedList();
 }
 
+.unorderedHorizontalList {
+    @include unorderedList();
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .externalList {
     @include externalLink();
 }

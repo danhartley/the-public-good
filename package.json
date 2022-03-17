@@ -16,11 +16,14 @@
     "test": "jest",
     "play": "jest play/responsible.test.ts",
     "plays": "jest play/generics.test.ts",
+    "pdd": "jest pages/ethics/pledge-works/pdd/*.test.ts",
     "funcs": "jest components/functions/functions.test.ts",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
-    "size": "npm run build && size-limit"
+    "size": "npm run build && size-limit",
+    "cucumber": "./node_modules/.bin/cucumber-js cypress/integration/dashboard/**/*.feature",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^10.2.0",
@@ -36,6 +39,8 @@
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.2",
     "@size-limit/file": "^4.10.2",
     "@size-limit/time": "^4.10.2",
     "@types/jest": "^27.4.0",
@@ -44,7 +49,8 @@
     "chart.js": "^3.5.1",
     "chartjs-plugin-annotation": "^1.0.2",
     "chartjs-plugin-datalabels": "^2.0.0",
-    "cypress": "^8.3.1",
+    "cypress": "^9.5.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "d3": "^7.3.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-functional": "^3.6.0",
@@ -63,9 +69,12 @@
     "size-plugin": "^3.0.0",
     "speed-measure-webpack-plugin": "^1.5.0",
     "ts-jest": "^27.1.2",
-    "typescript": "^4.4.4",
+    "typescript": "^4.6.2",
     "venn.js": "^0.2.20",
     "webpack": "^5.61.0",
     "webpack-dashboard": "^3.3.7"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false
   }
 }
