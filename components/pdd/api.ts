@@ -1,4 +1,4 @@
-import { AssistedTechnology, DashboardStyle } from 'pages/ethics/pledge-works/pdd/enums';
+import { AssistedTechnology, DashboardStyle } from 'components/pdd/enums';
 
 const getDashboard = (at?: AssistedTechnology) => {
     

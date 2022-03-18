@@ -3,11 +3,11 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Appendix from 'pages/ethics/pledge-works/appendix';
 
-import DashboardTable from 'pages/ethics/pledge-works/pdd/dashboard-table';
-import DashboardPledgesByValueTable from 'pages/ethics/pledge-works/pdd/dashboard-pledges-by-value-table';
-import DashboardControls from 'pages/ethics/pledge-works/pdd/dashboard-controls';
+import DashboardTable from 'components/pdd/dashboard-table';
+import DashboardPledgesByValueTable from 'components/pdd/dashboard-pledges-by-value-table';
+import DashboardControls from 'components/pdd/dashboard-controls';
 
-import api from 'pages/ethics/pledge-works/pdd/api';
+import api from 'components/pdd/api';
 
 import styles from 'components/dashboard/Dashboard.module.scss';
 

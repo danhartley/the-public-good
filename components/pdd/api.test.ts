@@ -1,6 +1,6 @@
-import { AssistedTechnology, DashboardStyle } from 'pages/ethics/pledge-works/pdd/enums';
+import { AssistedTechnology, DashboardStyle } from 'components/pdd/enums';
 
-import api from 'pages/ethics/pledge-works/pdd/api';
+import api from 'components/pdd/api';
 
 describe('Dashboard API Tests', () => {
 
