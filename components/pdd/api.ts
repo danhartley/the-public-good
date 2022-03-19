@@ -62,42 +62,51 @@ const getInMemoryPledgesByValueData = () => {
                     broken: 7,
                     honoured: 21,
                     features: 10,
-                    time: 3
+                    time: 3,
+                    pledges: []
                 },
                 {
                     name: 'Sustainability',
                     broken: 4,
                     honoured: 3,
                     features: 10,
-                    time: 3
+                    time: 3,
+                    pledges: [
+                        "We pledge to submit, maintain and display a page weight budget.",
+                        "We pledge to submit, maintain and display a site emissions budget."
+                    ]
                 },
                 {
                     name: 'Safety',
                     broken: 1,
                     honoured: 7,
                     features: 10,
-                    time: 3
+                    time: 3,
+                    pledges: []
                 },
                 {
                     name: 'Duty',
                     broken: 1,
                     honoured: 10,
                     features: 5,
-                    time: 3
+                    time: 3,
+                    pledges: []
                 },
                 {
                     name: 'Trust',
                     broken: 1,
                     honoured: 3,
                     features: 10,
-                    time: 3
+                    time: 3,
+                    pledges: []
                 },
                 {
                     name: 'Cooperation',
                     broken: 0,
                     honoured: 2,
                     features: 2,
-                    time: 3
+                    time: 3,
+                    pledges: []
                 },
             ]
     };

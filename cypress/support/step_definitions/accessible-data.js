@@ -1,6 +1,6 @@
 import { Before, After, Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 
-const url = 'ethics/pledge-works/pdd/dashboard'
+const url = 'ethics/pledge-works/dashboard'
 Given('Chamamanda visits the dashboard', () => {
     cy.visit(url);
 });

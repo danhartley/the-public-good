@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'preact/hooks';
+
 import styles from 'components/dashboard/Dashboard.module.scss';
 
 const DashboardPledgesByValueTable = ({data}) => {
@@ -7,7 +9,28 @@ const DashboardPledgesByValueTable = ({data}) => {
         broken: data.reduce((total, next) => total + next.broken, 0),
         features: data.reduce((total, next) => total + next.features, 0),
         time: data[0].time,
-    } : null
+    } : null;
+
+    const handleValueClick = ({event, colspan, pledges}) => {
+        
+        const row = event.target.parentNode.parentNode;
+        const table = row.parentNode;
+        const index = row.rowIndex;
+
+        const detailsRow = table.insertRow(index - 1);
+        const detailsCell = detailsRow.insertCell(0);
+        const detailsList = document.createElement('ul');
+        
+        pledges.forEach(pledge => {
+            const li = document.createElement('li');
+            const text = document.createTextNode(pledge);
+            li.appendChild(text);
+            detailsList.appendChild(li);
+        });
+
+        detailsCell.appendChild(detailsList);
+            detailsCell.colSpan = colspan;
+    };
 
     return (!data ? null : 
     
@@ -30,7 +53,7 @@ const DashboardPledgesByValueTable = ({data}) => {
             { data.map(d => {
                 return(
                 <tr>
-                    <td>{d.name}</td>
+                    <td><button class={styles.value} onClick={e => handleValueClick({event: e, colspan:5, pledges: d.pledges})}>{d.name}</button></td>
                     <td class={styles.number}>{d.honoured}</td>
                     <td class={styles.number}>{d.broken}</td>
                     <td class={styles.number}>{d.features}</td>

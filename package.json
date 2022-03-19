@@ -22,7 +22,7 @@
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
     "size": "npm run build && size-limit",
-    "cucumber": "./node_modules/.bin/cucumber-js cypress/integration/dashboard/**/*.feature",
+    "cucumber": "./node_modules/.bin/cucumber-js cypress/integration/dashboard/**/*.feature --import cypress/support/step_definitions/**/*.js",
     "cypress:open": "cypress open"
   },
   "dependencies": {

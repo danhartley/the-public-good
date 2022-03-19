@@ -59,6 +59,11 @@ $results-color: black;
         th.number, td.number {
             text-align: center;
         }
+        td button.value {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
     }
 
     .results {        
