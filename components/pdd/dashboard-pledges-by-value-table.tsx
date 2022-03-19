@@ -2,7 +2,24 @@ import { useEffect, useState } from 'preact/hooks';
 
 import styles from 'components/dashboard/Dashboard.module.scss';
 
+const showPledges = ({pledges, colSpan}) => {
+
+    const list = pledges.map(p => {
+        return <li>{p}</li>
+    })
+
+    return (
+        <tr>
+            <td colSpan={colSpan}>
+                <ul class={styles.unorderedList}>{list}</ul>
+            </td>
+        </tr>
+    )
+};
+
 const DashboardPledgesByValueTable = ({data}) => {
+
+    const [selectedRow, setSelectedRow] = useState(null);
 
     const totals = data ? {
         honoured: data.reduce((total, next) => total + next.honoured, 0),
@@ -11,25 +28,11 @@ const DashboardPledgesByValueTable = ({data}) => {
         time: data[0].time,
     } : null;
 
-    const handleValueClick = ({event, colspan, pledges}) => {
-        
-        const row = event.target.parentNode.parentNode;
-        const table = row.parentNode;
-        const index = row.rowIndex;
-
-        const detailsRow = table.insertRow(index - 1);
-        const detailsCell = detailsRow.insertCell(0);
-        const detailsList = document.createElement('ul');
-        
-        pledges.forEach(pledge => {
-            const li = document.createElement('li');
-            const text = document.createTextNode(pledge);
-            li.appendChild(text);
-            detailsList.appendChild(li);
-        });
-
-        detailsCell.appendChild(detailsList);
-            detailsCell.colSpan = colspan;
+    const handleClick = e => {
+        const id = e.target.id;
+        id !== selectedRow
+            ? setSelectedRow(id)
+            : setSelectedRow(null);
     };
 
     return (!data ? null : 
@@ -42,7 +45,7 @@ const DashboardPledgesByValueTable = ({data}) => {
                 <th colSpan={2}>Project</th>
             </tr>
             <tr>
-                <th>&nbsp;</th>
+                <th></th>
                 <th>Honoured</th>
                 <th>Broken</th>
                 <th>Features</th>
@@ -51,14 +54,22 @@ const DashboardPledgesByValueTable = ({data}) => {
         </thead>
         <tbody>
             { data.map(d => {
-                return(
-                <tr>
-                    <td><button class={styles.value} onClick={e => handleValueClick({event: e, colspan:5, pledges: d.pledges})}>{d.name}</button></td>
-                    <td class={styles.number}>{d.honoured}</td>
-                    <td class={styles.number}>{d.broken}</td>
-                    <td class={styles.number}>{d.features}</td>
-                    <td class={styles.number}>{d.time}</td>
-                </tr>)
+                return (
+                <>
+                    <tr>
+                        <td><button id={d.name} class={styles.value} onClick={handleClick}>{d.name}</button></td>
+                        <td class={styles.number}>{d.honoured}</td>
+                        <td class={styles.number}>{d.broken}</td>
+                        <td class={styles.number}>{d.features}</td>
+                        <td class={styles.number}>{d.time}</td>
+                    </tr>
+                    {
+                        d.name === selectedRow 
+                            ? showPledges({pledges: d.pledges, colSpan: 5})
+                            : null
+                    }
+                </>
+                )
             }) }
         </tbody>
         <tfoot>

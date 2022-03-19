@@ -51,10 +51,4 @@ describe('Dashboard API Tests', () => {
         data.source = _dataByValues.source;
         expect(data.source).toBe('RTW')
     });
-    // it('Should returb pledges by value', async () => {
-    //     const value = 'Sustainability';
-    //     expect.assertions(1);
-    //     const data = await api.getPledgesByValue(value);
-    //     expect(data.pledges.length).toBe(2);
-    // });
 });
