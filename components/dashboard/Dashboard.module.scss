@@ -4,18 +4,16 @@ $results-color: black;
 
 @mixin wrapper {
      
-    // main {
-    //     max-width: 800px !important;
-    // }
     @include radioButtons();
     table {
+        min-width: 40rem;
         margin: 0;
         caption {
             margin: 1rem;
             font-style: italic;
         }
-        td {
-            padding: .5rem 1rem 0 0;
+        th, td {
+            
             height: 1.75rem;
             & > div {            
                 height: 1.75rem;
@@ -46,7 +44,10 @@ $results-color: black;
             label {
                 cursor: pointer;
             }
-        }        
+        }    
+        tr:nth-child(2) th {
+            padding-top: 0;
+        }    
         tr:not(:first-child) th {
             border-bottom: .1rem solid lightgrey;   
         }
@@ -56,8 +57,8 @@ $results-color: black;
         td:nth-child(3) > div, td:nth-child(4) > div {            
             justify-content: center;
         }
-        th.number, td.number {
-            text-align: center;
+        td button {
+            font-size: inherit;
         }
         td button.value {
             border: none;
@@ -68,9 +69,40 @@ $results-color: black;
             border-bottom: .1rem solid transparent;
             font-family: Elena, "PT Serif", serif;
             &:hover {
-                border-bottom: .1rem solid rgba(var(--fg),.3);
+                color: rgba(var(--fg),1);
+                border-bottom: 1px solid rgba(var(--fg),.4);
             }
         }
+        th.centredText, td.centredText {
+            text-align: center;
+        }
+        td.cross::after {
+            content: '✗';
+        }
+        td.tick::after {
+            content: '✓';
+        }
+        td.inlineHeader {
+            color: rgba(var(--fg),1);
+            button {
+                color: rgba(var(--fg),1)
+            }
+        }
+        &.fade {
+            color:rgba(var(--fg), .2);
+            button {
+                color:rgba(var(--fg), .2);
+            }
+            th {
+                color: rgba(var(--fg),1);    
+            }
+        }
+        table {
+            color: rgba(var(--fg),1);
+            padding: 0;
+            width: 100%;
+            font-size: .9em;
+        }        
     }
 
     .results {        
@@ -175,6 +207,19 @@ $results-color: black;
 
 .wrapper {
     @include wrapper();
+    table.pledgesByType {
+        td { 
+            width: 20%;             
+        }
+        td:nth-child(1) {
+            width: 50%;
+            table td:nth-child(1) {
+                font-style: italic;
+                font-family: sans-serif;
+                font-size: .9em;
+            }
+        }
+    }
 }
 
 .wideWrapper {

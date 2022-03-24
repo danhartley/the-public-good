@@ -60,7 +60,7 @@ const perfLinks = [
         "source": "https://www.whatdoesmysitecost"
     },
     {
-        "name": "Wappalyzer (registratin required) | Tech stack analysis",
+        "name": "Wappalyzer (registration required) | Tech stack analysis",
         "source": "https://www.wappalyzer.com/"
     },
     {

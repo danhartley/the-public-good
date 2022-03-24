@@ -7,7 +7,7 @@ const AnalyticsProvider = () => {
             <table>
                 <thead>
                     <tr>
-                        <td>Rank</td><td>Criteria</td><td><div>Google Analytics</div><span>Weighted score</span></td><td><div>Plausible</div><span>Weighted score</span></td>                    
+                        <td>Rank</td><td>Criteria</td><td class={styles.centredText}><div>Google Analytics</div><span>Weighted score</span></td><td><div>Plausible</div><span>Weighted score</span></td>                    
                     </tr>                
                 </thead>
                 <tbody>

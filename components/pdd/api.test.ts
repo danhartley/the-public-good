@@ -1,14 +1,14 @@
-import { AssistedTechnology, DashboardStyle } from 'components/pdd/enums';
+import { AssistedTechnology, DashboardStyle, Source } from 'components/pdd/enums';
 
 import api from 'components/pdd/api';
 
 describe('Dashboard API Tests', () => {
 
-    let _data, _dataByValues;
+    let featuresData, valuesData;
 
     const getData = async () => {
-        _data = await api.getInMemoryData();
-        _dataByValues = await api.getInMemoryPledgesByValueData();
+        featuresData = await api.getPledgesByFeatures({source: Source.Test});
+        valuesData = await api.getPledgesByValues({source: Source.Test});
     }
 
     getData();
@@ -27,28 +27,27 @@ describe('Dashboard API Tests', () => {
     });
     it('Should return development data', async () => {
         expect.assertions(1);
-        const data = await api.getDashboardData({data:_data});
-        expect(data[0].source).toBe('RTW')
+        const data = await api.getDashboardData({data:featuresData});
+        expect(data.source).toBe('Trustworthy AI')
     });
     it('Should multiple feature records', async () => {
         expect.assertions(1);
-        const data = await api.getDashboardData({data:_data});
-        expect(data.length).toBeGreaterThan(1);
+        const data = await api.getDashboardData({data:featuresData});
+        expect(data.items.length).toBeGreaterThan(1);
     });
     it('Should return filtered data', async () => {
         expect.assertions(1);
-        const data = await api.getDashboardData({data:_data, filter: data => data.pledges.broken > 5});
-        expect(data.length).toBe(1);
+        const data = await api.getDashboardData({data:featuresData, filter: data => data.honoured > 5});
+        expect(data.items.length).toBe(1);
     });
     it('Should return filtered and mapped data', async () => {
         expect.assertions(1);
-        const data = await api.getDashboardData({data:_data, filter:data => data.pledges.broken > 5, map:data => data.feature});
-        expect(data[0]).toBe('Dashboard');
+        const data = await api.getDashboardData({data:featuresData, filter:data => data.honoured > 5, map:data => data.name});
+        expect(data.items[0]).toBe('Technical robustness and safety');
     });
     it('Should return pledges by value data', async () => {
         expect.assertions(1);
-        const data = await api.getDashboardData({data:_dataByValues.values});
-        data.source = _dataByValues.source;
-        expect(data.source).toBe('RTW')
+        const data = await api.getDashboardData({data:valuesData});
+        expect(data.source).toBe('Trustworthy AI')
     });
 });

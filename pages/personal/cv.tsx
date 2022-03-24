@@ -132,7 +132,10 @@ const CurriculumVitae = () => {
                     I initiate and enable new projects, and improve existing ones.
                 </p>
                 <p>
-                    I am an advocate of responsible web development - building high performance websites that are sustainable, accessible and fast. As a core contributor on the open source project <a class={styles.externalLink} href="https://responsibletech.work/">ResponsibleTech.Work</a>, I work on practices and tools to improve decision making and promote thoughtful programming and design.
+                    I am an advocate of responsible web development - building high performance websites that are sustainable, accessible and fast.
+                </p>
+                <p>
+                As a core contributor on the open source project <Links.EL link={{source:"https://responsibletech.work/"}}>ResponsibleTech.Work</Links.EL>, I work on practices and tools to improve decision making and promote thoughtful programming and design.
                 </p>
                 <p>
                     At <Links.IL link={{source: ''}}>The Public Good</Links.IL> I write articles on the climate crisis and responsible web development.

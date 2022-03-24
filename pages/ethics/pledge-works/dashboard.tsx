@@ -3,9 +3,11 @@ import Links from 'components/links/Links';
 import Layout from 'components/layout/layout';
 import Appendix from 'pages/ethics/pledge-works/appendix';
 
-import DashboardTable from 'components/pdd/dashboard-table';
-import DashboardPledgesByValueTable from 'components/pdd/dashboard-pledges-by-value-table';
+import DashboardFeaturesTable from 'components/pdd/dashboard-features-table';
+import DashboardValuesTable from 'components/pdd/dashboard-values-table';
 import DashboardControls from 'components/pdd/dashboard-controls';
+
+import { Source } from 'components/pdd/enums';
 
 import api from 'components/pdd/api';
 
@@ -13,37 +15,49 @@ import styles from 'components/dashboard/Dashboard.module.scss';
 
 const ResponsibilityDashboard = () => {
 
-    const [data, setData] = useState(null);
-    const [brokenPledgesData, setBrokenPledgesData] = useState(null);
+    const [featuresData, setFeaturesData] = useState(null);
+    const [ValuesData, setValuesData] = useState(null);
+    const [activeSnapShot, setActiveSnapShot] = useState('');
 
     const getData = async () => {
-        const _localData = await api.getInMemoryData();
-        const _data = await api.getDashboardData({data:_localData});
-        setData(_data);
-        const _localValuesData = await api.getInMemoryPledgesByValueData();
-        const _valuesData = await api.getDashboardData({data:_localValuesData.values});
-        setBrokenPledgesData(_valuesData);
+        console.log(activeSnapShot)
+        const features = await api.getPledgesByFeatures({source:Source.Test, snapShot: activeSnapShot});
+        const featuresView = await api.getDashboardData({data:features});
+        setFeaturesData(featuresView);
+        const values = await api.getPledgesByValues({source:Source.Test});
+        const valuesView = await api.getDashboardData({data:values});
+        setValuesData(valuesView);        
     }
 
     useEffect(() => {
         getData();
-    }, []);
+    }, [activeSnapShot]);
 
     return (        
         <>
             <div class={styles.wrapper}>
-                <Layout header="PDD Dashboard" title="PDD Dashboard" description={''} discussions='/categories/pledge-works'>
+                <Layout header="Responsibility Dashboard" title="Responsibility Dashboard" description={''} discussions='/categories/pledge-works'>
                     <section>
-                        <h2>Public data</h2>                        
+                        <h2>Trustworthy AI</h2>                        
                         <figure class={styles.boxed}>
-                            <DashboardTable data={data}></DashboardTable>
-                            <DashboardControls></DashboardControls>
-                            <figcaption><em>Summary of Dashboard Requirements Progress</em></figcaption>
+                            {
+                                !featuresData ? null :
+                                <>
+                                <DashboardFeaturesTable data={featuresData.items}></DashboardFeaturesTable>
+                                <DashboardControls snapShot={featuresData.snapShot} snapShots={featuresData.snapShots} setActiveSnapShot={setActiveSnapShot}></DashboardControls>
+                                <figcaption><em>{featuresData.source} Pledges By Feature</em></figcaption>
+                                </>
+                            }
                         </figure>
                         <figure class={styles.boxed}>
-                            <DashboardPledgesByValueTable data={brokenPledgesData}></DashboardPledgesByValueTable>
-                            <DashboardControls></DashboardControls>
-                            <figcaption><em>Summary of Pledges by Value</em></figcaption>
+                            {
+                                !ValuesData ? null :
+                                <>
+                                <DashboardValuesTable data={ValuesData.items}></DashboardValuesTable>
+                                {/* <DashboardControls></DashboardControls> */}
+                                <figcaption><em>{ValuesData.source} Pledges By Values</em></figcaption>
+                                </>
+                            }                            
                         </figure> 
                     </section>
                     <Appendix></Appendix>

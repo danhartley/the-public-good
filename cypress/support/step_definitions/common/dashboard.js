@@ -1,6 +1,7 @@
-import { Before, After, Given, Then } from "cypress-cucumber-preprocessor/steps";
+import { Given } from "cypress-cucumber-preprocessor/steps";
 
-const url = 'ethics/pledge-works/dashboard'
-Given('Chimamanda visits the dashboard URL', () => {
+const url = 'ethics/pledge-works/dashboard';
+
+Given('{string} visits the dashboard URL', function(user) {
   cy.visit(url);
 });

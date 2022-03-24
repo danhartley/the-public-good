@@ -18,7 +18,8 @@
       "isolatedModules": true,
       "jsx": "preserve",
       "baseUrl": ".",
-      "experimentalDecorators": true      
+      "experimentalDecorators": true,
+    //   "types": ["cypress", "@testing-library/cypress", "types/jest", "@types/node", "jest-preset-preact", "jest"]
     },
     "include": [
       "next-env.d.ts",
