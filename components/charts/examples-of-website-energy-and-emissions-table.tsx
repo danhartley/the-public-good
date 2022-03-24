@@ -8,6 +8,19 @@ const WebsiteEnergyAndEmissionsTable = ({setWebsiteState}) => {
 
     // https://www.statista.com/statistics/1201880/most-visited-websites-worldwide/
 
+    type Source = {
+        id: number,
+        title: string,
+        bytes: number,
+        gigabytes: number,
+        kWh: number,
+        energyIntensity: number,
+        carbonIntensity: number,
+        pageEmissions: number,
+        emissions: number, 
+        green: boolean
+    }
+
     const dataSources = [
         {
             id: 1000,
@@ -83,7 +96,7 @@ const WebsiteEnergyAndEmissionsTable = ({setWebsiteState}) => {
         },
     ];
     
-    const [selectedDataSource, setSelectedDataSource] = useState(dataSources[0] as any); // add type!
+    const [selectedDataSource, setSelectedDataSource] = useState<Source>(dataSources[0]);
 
     const updateRBStates = (e, state) => {
         setSelectedDataSource(state);

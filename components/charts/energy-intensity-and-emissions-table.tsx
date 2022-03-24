@@ -6,7 +6,16 @@ import styles from 'components/dashboard/Dashboard.module.scss';
 
 const EnergyAndEmissionsTable = ({setEnergyAndEmissionsState}) => {
 
-    const dataSources = [
+    type Source  = {
+        id: number,
+        name: string,
+        link: string,
+        energy: number,
+        emissions: number,
+        selected: boolean
+    }
+
+    const dataSources: Array<Source> = [
         {
             id: 1,
             name: 'Website Carbon (grey power)',
@@ -94,7 +103,7 @@ const EnergyAndEmissionsTable = ({setEnergyAndEmissionsState}) => {
         // },
     ];
     
-    const [active, setActive] = useState(dataSources[0] as any); // add type!
+    const [active, setActive] = useState<Source>(dataSources[0]);
 
     const updateStates = state => {
         setActive(state);

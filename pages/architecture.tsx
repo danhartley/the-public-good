@@ -2,7 +2,7 @@ import Layout from 'components/layout/layout';
 import Links from 'components/links/Links';
 import styles from 'pages/pages.module.scss';
 
-const Architecture = () => {
+const Architecture = (): JSX.Element => {
     return (
         <Layout header="Architecture" title="Web architecture" description={'Web architecture'}>
             <section>

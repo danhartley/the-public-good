@@ -6,7 +6,7 @@ import { useLocalStorageState } from 'hooks/local-storage';
 
 import ModeContext from 'components/contexts/ModeContext';
 
-const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
+const PublicGoodApp = ({ Component, pageProps }: AppProps): JSX.Element => {
 
     const [darkMode, setDarkMode] = useLocalStorageState({ key: 'is-dark-mode', defaultValue: false });
 

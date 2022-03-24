@@ -1,4 +1,4 @@
-export default function Custom404() {
+const Custom404 = () => {
     return (
         <section style={'margin:2rem;'}>
             <h1>404 - Page Not Found</h1>
@@ -7,4 +7,6 @@ export default function Custom404() {
             </p>
         </section>
     )
-}
+};
+
+export default Custom404;

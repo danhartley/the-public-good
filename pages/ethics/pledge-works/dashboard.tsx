@@ -19,8 +19,7 @@ const ResponsibilityDashboard = () => {
     const [ValuesData, setValuesData] = useState(null);
     const [activeSnapShot, setActiveSnapShot] = useState('');
 
-    const getData = async () => {
-        console.log(activeSnapShot)
+    const getData = async () => {        
         const features = await api.getPledgesByFeatures({source:Source.Test, snapShot: activeSnapShot});
         const featuresView = await api.getDashboardData({data:features});
         setFeaturesData(featuresView);

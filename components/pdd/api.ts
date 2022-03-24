@@ -1,6 +1,7 @@
 import testData from 'components/pdd/api-test-data';
 
 import { AssistedTechnology, DashboardStyle, Source } from 'components/pdd/enums';
+import { Feature } from 'components/pdd/interfaces';
 
 const getDashboard = (at?: AssistedTechnology) => {
     
@@ -31,18 +32,16 @@ const getDashboardData = async ({data, filter = (Object) => Object, map = (Objec
     return await _data;
 };
 
-const getPledgesByFeatures = ({source, snapShot=null}) => {
+const getPledgesByFeatures = async ({source, snapShot=null}): Promise<Feature> => {
 
-    let data = null;
-
-    console.log(snapShot)
+    let data: Feature = null;
 
     switch(source) {
         case Source.Test:
-            data = testData.getPledgesByFeatures({snapShot});
+            data = await testData.getPledgesByFeatures({snapShot});
             break;
         default:
-            data = testData.getPledgesByFeatures({snapShot});
+            data = await testData.getPledgesByFeatures({snapShot});
     }
 
     return data;

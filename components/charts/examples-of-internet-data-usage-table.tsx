@@ -8,7 +8,13 @@ const UKDataOptionsTable = ({setDataOptionsState}) => {
     const averageAnnualTrafficPerUser = 1680;
     const averageAnnualStreaming = 432; // https://www.ofcom.org.uk/__data/assets/pdf_file/0010/200503/media-nations-2020-uk-report.pdf
 
-    const dataSources = [
+    type Source = {
+        id: number,
+        title: string,
+        gigabytes: number
+    }
+
+    const dataSources: Array<Source> = [
         {
             id: 100,
             title: '1 GB',
@@ -36,7 +42,7 @@ const UKDataOptionsTable = ({setDataOptionsState}) => {
         },
     ];
     
-    const [selectedDataSource, setSelectedDataSource] = useState(dataSources[0] as any); // add type!
+    const [selectedDataSource, setSelectedDataSource] = useState<Source>(dataSources[0]);
 
     const updateRBStates = (e, state) => {
         setSelectedDataSource(state);
