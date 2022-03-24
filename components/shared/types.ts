@@ -15,3 +15,8 @@ export type MetricsContextState = {
     state: Metrics,
     setState: Dispatch<SetStateAction<Metrics>>
 }
+
+export type PageMetrics = {
+    bytes: number,
+    requests: number    
+}

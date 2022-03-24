@@ -67,8 +67,8 @@ const MentalModel = () => {
         },
     ];
 
-    const saved = useRef(null) as any;
-    const notSaved = useRef(null) as any;
+    const saved = React.useRef<HTMLButtonElement>(null);
+    const notSaved = React.useRef<HTMLDivElement>(null);
 
     const saveMe = (msg, ref) => {
         ref.current.innerHTML = msg;
@@ -159,7 +159,7 @@ const MentalModel = () => {
 
                 <p>
                     <div class={styles.fakeBtns}>
-                        <button ref={saved} onClick={() => saveMe('You\'re saved!', saved)}>Salvation</button> <div ref={notSaved} onClick={() => saveMe('Too bad!', notSaved)}>Salvation</div>
+                        <button ref={saved} onClick={() => saveMe('You\'re saved!', saved)}>Salvation</button> <div role='button' ref={notSaved} onKeyDown={() => saveMe('Too bad!', notSaved)} onClick={() => saveMe('Too bad!', notSaved)}>Salvation</div>
                     </div>
                 </p>
 

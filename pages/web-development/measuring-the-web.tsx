@@ -194,7 +194,15 @@ const MeasuringTheWeb = () => {
         },
     ];
 
-    const [inputs, setInputs] = useState({ bytes: 1, energy: 1, emissions: 1 } as any); // ad type!
+    type outputs = {
+        id: number,
+        name: string,
+        bytes: number, 
+        energy: number, 
+        emissions: number,
+    }
+
+    const [inputs, setInputs] = useState<outputs>({ id:0, name: '', bytes:1, energy:1, emissions:1 });
     const [showOutputs, setShowOutputs] = useState(false);
 
     const setEnergyAndEmissionsState = updatedInputs => {                
@@ -221,9 +229,9 @@ const MeasuringTheWeb = () => {
 
             if(!inputs.energy) return;
 
-            selectedSource.current.innerText = inputs.name;            
-            selectedEnergy.current.value = inputs.energy;
-            selectedCarbon.current.value = inputs.emissions;            
+            selectedSource.current.innerText = inputs.name as any as string;       
+            selectedEnergy.current.value = inputs.energy as any as string;
+            selectedCarbon.current.value = inputs.emissions as any as string;            
 
             calculatedCiscoPerUserEnergyValue.current.innerText = funcs.multiplyInputs([inputs.bytes, inputs.energy]).toLocaleString();
             calculatedCiscoPerUserGrammesValue.current.innerText = funcs.multiplyInputs([inputs.bytes, inputs.energy, inputs.emissions]).toLocaleString();

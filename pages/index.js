@@ -14,7 +14,7 @@ export default function Home() {
 
             <p>I will <Links.IL link={{source:'services'}}>help you</Links.IL><span class={styles.internalLink}></span> create fast, accessible and secure websites.</p>
 
-            <p>I write about the climate crisis, responsible web development, and <Links.IL link={{source:"/personal/oleta"}}>other things</Links.IL>.</p>
+            <p>I write about the climate crisis, responsible web development, and <Links.IL link={{source:"personal/oleta"}}>other things</Links.IL>.</p>
 
             <p>
                 <div>The site is designed according to a set of principles set out in a <Links.IL link={{source:'web-development/sociable-contract'}}>sociable contract</Links.IL>.</div>

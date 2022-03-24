@@ -1,16 +1,17 @@
+import { PageMetrics } from 'components/shared/types'; 
+
 const sessionData = window => {
 
-    let transferSize: number;
-    let requests: number; 
+    const pm:PageMetrics = { bytes: 0, requests: 0 };
 
     if(typeof window === "undefined") {
-        transferSize = -1;
-        requests = 0;
+        pm.bytes = -1;
+        pm.requests = 0;
     }
 
     else if(typeof window.performance == "undefined") {
-        transferSize = -1;
-        requests = 0;
+        pm.bytes = -1;
+        pm.requests = 0;
     }
     
     else {
@@ -18,14 +19,14 @@ const sessionData = window => {
             return accumulator + Math.round((currentValue / 1000));
         };
         
-        const resources = Array.from(window.performance.getEntriesByType("resource")) as any[];
+        const pms:Array<PageMetrics> = Array.from(window.performance.getEntriesByType("resource"));
 
-        transferSize = resources.map(r => r.transferSize || 0).reduce(reducer, 0);
+        pm.bytes = pms.map(r => r.bytes || 0).reduce(reducer, 0);
 
-        requests = resources.length;
+        pm.requests = pms.length;
     }
 
-    return { transferSize, requests };
+    return pm;
 };
 
 const fixedPlaces = value => {

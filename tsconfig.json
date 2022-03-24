@@ -19,6 +19,7 @@
       "jsx": "preserve",
       "baseUrl": ".",
       "experimentalDecorators": true,
+    //   "strictNullChecks": trueF
     //   "noImplicitAny": true
     //   "types": ["cypress", "@testing-library/cypress", "types/jest", "@types/node", "jest-preset-preact", "jest"]
     },
