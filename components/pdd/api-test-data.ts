@@ -412,7 +412,7 @@ const getPledgesByFeatures = ({snapShot=''}) => {
 
     return new Promise<Feature>((resolve, reject) => {
         data 
-            ? resolve({ ...data.filter(d => d.snapShot === _snapShot), snapShots: data.map(d => d.snapShot)}[0])
+            ? resolve({ ...data.filter(d => d.snapShot === _snapShot)[0], snapShots: data.map(d => d.snapShot)})
             : reject({
                 error: 'No data'            
             });

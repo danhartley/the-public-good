@@ -60,7 +60,7 @@ const ResponsibilityDashboard = () => {
                         </figure> 
                     </section>
                     <Appendix></Appendix>
-                    <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'pledge-works/inventory', text:'Pledge Works Inventory'}, {value:'pledge-works/pledges', text:'Pledges'}]}></Links.RelatedLinks>
+                    <Links.RelatedLinks links={[{value:"https://responsibletech.work/", text:"Pledge Works Introduction (on RTW)"},{value:'ethics/pledge-works/case-study-pledge-works',text:'Pledge Works for Pledge Works'}, {value:'ethics/pledge-works/case-study-startup', text:'Pledge Works for Startups'}, {value:'ethics/pledge-works/inventory', text:'Pledge Works Inventory'}, {value:'ethics/pledge-works/pledges', text:'Pledges'}]}></Links.RelatedLinks>
                 </Layout>
             </div>
         </>

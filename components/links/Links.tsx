@@ -32,7 +32,7 @@ const ILBlock = ({link}) => {
     return  <p>
                 <span class={styles.internalLink}>                
                     <Link href={`/${link.value}`}>
-                        <a>{link.text}</a>
+                        <a href={`/${link.value}`}>{link.text}</a>
                     </Link>
                 </span>
             </p>
@@ -40,10 +40,10 @@ const ILBlock = ({link}) => {
 
 const Home = ({ textAlign = 'left' }) => {
     return (
-        <section class={styles.internalLinkBlock} style={`text-align:${textAlign}` as React.CSSProperties}>
+        <section class={styles.internalLinkBlock} style={`text-align:${textAlign}`}>
             <p class={styles.internalLink}>
                 <Link href={'/'}>
-                    <a>The PG Home</a>
+                    <a href={'/'}>The PG Home</a>
                 </Link>
             </p>
         </section>

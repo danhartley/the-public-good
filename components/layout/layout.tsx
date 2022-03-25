@@ -52,6 +52,18 @@ const SiteMetrics = ({title}) => {
     return ( PageWeightReport(metrics)  );
 };
 
+type LayoutType = {
+    children?: any;
+    title?: any;
+    description?: string;
+    image?: string;
+    header?: any;
+    rt?: string;
+    main?: string;
+    strapline?: string;
+    discussions?: string
+}
+
 const Layout = ({
   children,
   title,
@@ -62,7 +74,7 @@ const Layout = ({
   main = 'The Public Good',
   strapline = 'This website will not empower you.',
   discussions = ''
-}) => {
+}:LayoutType) => {
   
     const { mode, toggleMode } = useContext(ModeContext);
 
