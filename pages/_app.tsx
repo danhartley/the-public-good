@@ -2,15 +2,16 @@ import "preact/devtools";
 import { useEffect } from 'preact/hooks';
 import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'web-vitals';
 import type { AppProps } from 'next/app';
+import { Mode } from 'components/shared/types';
 import { useLocalStorageState } from 'hooks/local-storage';
 
 import ModeContext from 'components/contexts/ModeContext';
 
-const PublicGoodApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
 
     const [darkMode, setDarkMode] = useLocalStorageState({ key: 'is-dark-mode', defaultValue: false });
 
-    const getStyle = (_darkMode:boolean) => {        
+    const getStyle = (_darkMode:boolean): string => {        
         const _style:string = _darkMode 
         ? `
             --m:dark;
@@ -41,7 +42,7 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         return _style;
     };
 
-    const mode = { isDark: darkMode, style: getStyle(darkMode) };
+    const mode:Mode = { isDark: darkMode, style: getStyle(darkMode) };
 
     const toggleMode = () => {
         setDarkMode(!darkMode);
@@ -59,7 +60,7 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     });
 
     return (
-        <ModeContext.Provider value={{mode, toggleMode}}>
+        <ModeContext.Provider value={{mode, toggleMode}} children={null}>
             <Component {...pageProps}></Component>
         </ModeContext.Provider>
         

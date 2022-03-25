@@ -20,3 +20,8 @@ export type PageMetrics = {
     bytes: number,
     requests: number    
 }
+
+export type Mode = {
+    isDark: boolean,
+    style: string
+}

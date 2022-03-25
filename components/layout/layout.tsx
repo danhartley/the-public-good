@@ -71,13 +71,11 @@ const Layout = ({
     const btnMode = useRef<HTMLButtonElement>(null);
 
     useEffect(() => {
-        // run this code to reset to dark mode when page is refreshed and dark mode 
-        // is the user's default. Downside is the screen flickers; comment out to revert to light mode,
-        // ignoring user's previous preference
-        const container:any = document.querySelector('#container');
-        type Mode = { value?: string };
-        const darkMode:Mode = { value: getComputedStyle(container && container.getPropertyValue('--m')) as any as string };
-        if(darkMode.value === 'light' && mode.isDark) {
+        
+        const container = document.querySelector('#container');
+        const option = container ? getComputedStyle(container).getPropertyValue('--m') : '';
+
+        if(option === 'light' && mode.isDark) {
             btnMode.current.click();
             setTimeout(() => {
                 btnMode.current.click();
@@ -87,7 +85,7 @@ const Layout = ({
 
     return (        
         <div>
-            <Head>
+            <Head children={null}>
                 <title>{title}</title>
 
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"></meta>
