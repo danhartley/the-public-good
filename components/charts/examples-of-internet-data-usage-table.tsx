@@ -55,12 +55,12 @@ const UKDataOptionsTable = ({setDataOptionsState}) => {
 
     const rows = dataSources.map(ds => <tr>
         <td>
-            <div class={ds.id === selectedDataSource.id ? styles.checked : null}>
+            <div class={ds.id === selectedDataSource.id ? styles.checked : undefined}>
                 <input type="radio" checked={ds.id === selectedDataSource.id} onClick={e => updateRBStates(e, dataSources[ds.id - 100])} id={ds.id.toString()} name="rbSource"></input>
                 <label htmlFor={ds.id.toString()}>{ds.title}</label>
             </div>
         </td>
-        <td><div class={ds.id === selectedDataSource.id ? styles.checked : null}>{(ds.gigabytes).toLocaleString()}</div></td>
+        <td><div class={ds.id === selectedDataSource.id ? styles.checked : ''}>{(ds.gigabytes).toLocaleString()}</div></td>
     </tr>);
 
     return (<table>

@@ -62,9 +62,18 @@ const PieChartComponentEnergyConsumption = ({model}) => {
         '#ABC3C9',
         '#E0DCD3',
         '#CCBE9F',
-    ]
+    ];
 
-    const [data, setData] = useState(null);
+    type Activity = {
+        labels: Array<string>,
+        datasets: Array<{
+            radius: string,
+            data: Array<number>,
+            backgroundColor: Array<string>
+        }>
+    }
+
+    const [data, setData] = useState<Activity>({ labels:[], datasets:[]});
     const [type, setType] = useState(ChartType.Doughnut);
     const [options, setOptions] = useState({});
     const [plugins, setPlugins] = useState({

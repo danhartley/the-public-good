@@ -74,8 +74,10 @@ const Layout = ({
         // run this code to reset to dark mode when page is refreshed and dark mode 
         // is the user's default. Downside is the screen flickers; comment out to revert to light mode,
         // ignoring user's previous preference
-        const strMode = getComputedStyle(document.querySelector('#container')).getPropertyValue('--m');                
-        if(strMode === 'light' && mode.isDark) {
+        const container:any = document.querySelector('#container');
+        type Mode = { value?: string };
+        const darkMode:Mode = { value: getComputedStyle(container && container.getPropertyValue('--m')) as any as string };
+        if(darkMode.value === 'light' && mode.isDark) {
             btnMode.current.click();
             setTimeout(() => {
                 btnMode.current.click();

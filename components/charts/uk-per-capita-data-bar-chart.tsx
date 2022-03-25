@@ -8,6 +8,8 @@ import styles from 'components/dashboard/Dashboard.module.scss';
 
 import funcs from 'components/functions/functions';
 
+import { Coordinates, ChartProps } from 'components/charts/chart-types';
+
 const MiniPieChart = ({energyUses}) => {
 
     if(energyUses[0].percentage === 100) return <div></div>;
@@ -18,9 +20,18 @@ const MiniPieChart = ({energyUses}) => {
         '#ABC3C9',
         '#382119',
         '#E0DCD3',
-    ]
+    ];
 
-    const [data, setData] = useState(null);
+    type Activity = {
+        labels: Array<string>,
+        datasets: Array<{
+            radius: string,
+            data: Array<number>,
+            backgroundColor: Array<string>
+        }>
+    }
+
+    const [data, setData] = useState<Activity>({ labels:[], datasets:[]});
     const [type, setType] = useState(ChartType.Doughnut);
     const [options, setOptions] = useState({});
     const [plugins, setPlugins] = useState({
@@ -97,19 +108,14 @@ const MiniPieChart = ({energyUses}) => {
 const MiniBarChart = ({dataSources, config}) => {
 
     if(!dataSources || isNaN(dataSources.find(ds => ds.source === 'Internet').value)) return <div></div>;
-    // https://venngage.com/blog/color-blind-friendly-palette/
-    const elegant = [
-        '#CCBE9F',
-        '#ABC3C9',
-        '#382119',
-        '#E0DCD3',
-    ]
 
-    const [data, setData] = useState(null);
+    const [data, setData] = useState<ChartProps>({ labels: [], label: "", datasets: [{ indexAxis: "", label: "", data: [], backgroundColor: [] }] });
     const [type, setType] = useState(ChartType.Bar);
     const [options, setOptions] = useState({});
     const [plugins, setPlugins] = useState(null);
-    const [scales, setScales] = useState(null);
+    const [scales, setScales] = useState<Coordinates>({
+        x: { type: '', min: 0, max: 0, title: { display: false, text: '', padding: { top: 0}}}, y: {ticks: {padding: 0}}
+    });
 
     useEffect(() => {
         setData(

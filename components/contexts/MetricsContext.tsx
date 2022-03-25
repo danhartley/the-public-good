@@ -23,7 +23,7 @@ const AppContext = createContext(null);
 
 export function AppWrapper({ children }) {
   
-    const sharedState = {};
+    const sharedState = null;
 
     return (
         <AppContext.Provider value={sharedState}>

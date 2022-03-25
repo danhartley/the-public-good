@@ -3,14 +3,24 @@ import CanvasChart from 'components/dashboard/canvas-chart';
 import { useEffect, useState, useRef } from 'preact/hooks';
 import { getLocalStorageState } from 'hooks/local-storage';
 import { ChartType } from 'lib/enums';
+import { Coordinates, ChartProps, PluginProps } from 'components/charts/chart-types';
 
 const BytesPerPage = () => {
 
-    const [data, setData] = useState(null);
-    const [plugins, setPlugins] = useState(null);
+    const [data, setData] = useState<ChartProps>({ labels: [], datasets: [{ indexAxis: "", label: "", data: [], backgroundColor: [], borderColor: "", barPercentage: 0 }] });
+    const [plugins, setPlugins] = useState<PluginProps>({
+        autocolors: false,
+        annotation: { 
+            annotations: { 
+                median: { 
+                    type: ChartType.Line, indexAxis: "", xMin: 0, xMax: 0, yMin: 0, yMax: 0, borderColor: "", borderWidth: 0
+                }
+            }
+        }
+    });
     const [type, setType] = useState(ChartType.Bar);
     const [options, setOptions] = useState({maintainAspectRatio: false});
-    const [scales, setScales] = useState(null);
+    const [scales, setScales] = useState<Coordinates>({});
 
     const [metrics, setMetrics] = useState(getLocalStorageState('metrics'));
     
@@ -31,7 +41,7 @@ const BytesPerPage = () => {
                             {
                                 indexAxis: 'x',
                                 label: ' Page weight (bytes) ',
-                                backgroundColor: 'rgb(255, 99, 132)',
+                                backgroundColor: ['rgb(255, 99, 132)'],
                                 borderColor: 'rgb(255, 99, 132)',
                                 data: [
                                     ...metrics.pages.map(p => p.bytes)

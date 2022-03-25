@@ -67,8 +67,8 @@ const MentalModel = () => {
         },
     ];
 
-    const saved = React.useRef<HTMLButtonElement>(null);
-    const notSaved = React.useRef<HTMLDivElement>(null);
+    const saved = useRef<HTMLButtonElement>(null);
+    const notSaved = useRef<HTMLDivElement>(null);
 
     const saveMe = (msg, ref) => {
         ref.current.innerHTML = msg;

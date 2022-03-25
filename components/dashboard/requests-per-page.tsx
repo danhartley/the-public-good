@@ -3,14 +3,15 @@ import CanvasChart from 'components/dashboard/canvas-chart';
 import { useEffect, useState, useRef } from 'preact/hooks';
 import { getLocalStorageState } from 'hooks/local-storage';
 import { ChartType } from 'lib/enums';
+import { Coordinates, ChartProps, PluginProps } from 'components/charts/chart-types';
 
 const RequestsPerPage = () => {
 
-    const [data, setData] = useState(null);
+    const [data, setData] = useState<ChartProps>({});
     const [plugins, setPlugins] = useState(null);
     const [type, setType] = useState(ChartType.Bar);
     const [options, setOptions] = useState({maintainAspectRatio: false});
-    const [scales, setScales] = useState(null);
+    const [scales, setScales] = useState<Coordinates>({});
 
     const [metrics, setMetrics] = useState(getLocalStorageState('metrics'));
     

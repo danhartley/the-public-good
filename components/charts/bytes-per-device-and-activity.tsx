@@ -7,7 +7,18 @@ const BytesPerDeviceAndActivity = ({datasources}) => {
     
     if(!datasources) return <div></div>
 
-    const [data, setData] = useState(null);
+    type Activity = {
+        labels: Array<number>,
+        datasets: Array<{
+            indexAxis: string,
+            label: string,
+            backgroundColor: string,
+            borderColor: string,
+            data: Array<number>,
+        }>
+    }
+
+    const [data, setData] = useState<Activity>({ labels:[], datasets:[]});
     const [plugins, setPlugins] = useState(null);
     const [type, setType] = useState(ChartType.Bar);
     const [options, setOptions] = useState({maintainAspectRatio: false});

@@ -11,7 +11,7 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     const [darkMode, setDarkMode] = useLocalStorageState({ key: 'is-dark-mode', defaultValue: false });
 
     const getStyle = (_darkMode:boolean) => {        
-        const _style = _darkMode 
+        const _style:string = _darkMode 
         ? `
             --m:dark;
             --fg:250, 250, 250; 
@@ -37,7 +37,7 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps): JSX.Element => {
             --h1:218, 217, 205;
             --em:155, 0, 0;
             --key:45, 45, 45;
-        ` as any;
+        `;
         return _style;
     };
 

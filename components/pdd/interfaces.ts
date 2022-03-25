@@ -27,5 +27,13 @@ export interface Item {
 export interface Feature {
     source: string;
     snapShot: string;
+    snapShots?: Array<string>,
+    items: Item[];
+}
+
+
+export interface Value {
+    source: string;
+    snapShot?: string;
     items: Item[];
 }

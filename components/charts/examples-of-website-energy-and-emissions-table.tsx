@@ -109,14 +109,13 @@ const WebsiteEnergyAndEmissionsTable = ({setWebsiteState}) => {
 
     const rows = dataSources.map(ds => <tr>
         <td>
-            <div class={ds.id === selectedDataSource.id ? styles.checked : null}>
-                {/* <input type="radio" checked={ds.id === selectedDataSource.id} onClick={e => updateRBStates(e, dataSources[ds.id - 1000])} id={ds.id.toString()} name="rbWebsiteSource"></input> */}
+            <div class={ds.id === selectedDataSource.id ? styles.checked : undefined}>
                 <label htmlFor={ds.id.toString()}>{ds.title}</label>
             </div>
         </td>
-        <td><div class={ds.id === selectedDataSource.id ? styles.checked : null}>{(ds.kWh).toLocaleString()}</div></td>
-        <td><div class={ds.id === selectedDataSource.id ? styles.checked : null}>{(ds.emissions).toLocaleString()}</div></td>
-        <td><div class={ds.id === selectedDataSource.id ? styles.checked : null}>{ds.green ? 'true' : 'false'}</div></td>
+        <td><div class={ds.id === selectedDataSource.id ? styles.checked : ''}>{(ds.kWh).toLocaleString()}</div></td>
+        <td><div class={ds.id === selectedDataSource.id ? styles.checked : ''}>{(ds.emissions).toLocaleString()}</div></td>
+        <td><div class={ds.id === selectedDataSource.id ? styles.checked : ''}>{ds.green ? 'true' : 'false'}</div></td>
     </tr>);
 
     return (<table>
