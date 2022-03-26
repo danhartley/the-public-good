@@ -67,7 +67,7 @@ describe('responsible framework', () => {
 });
 
 const log = (str, colour) => {
-    console.log(colour, str);
+    // console.log(colour, str);
 }
 
 const consoleLogDisplay = actions => {

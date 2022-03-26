@@ -24,11 +24,14 @@
     //   "types": ["cypress", "@testing-library/cypress", "types/jest", "@types/node", "jest-preset-preact", "jest"]
     },
     "include": [
-      "next-env.d.ts",
-      "**/*.ts",
-      "**/*.tsx"
-    , "index.test.js"
-, "public/_app.js", "pages/ethics/pledge-works/index.js", "pages/ethics/features/step_definitions/bank-account.steps.mts"    ],
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx"
+        , "index.test.js"
+        , "public/_app.js"
+        , "pages/ethics/pledge-works/index.js"
+        , "pages/ethics/features/step_definitions/bank-account.steps.mts"
+    ],
     "exclude": [
       "node_modules",
       "**/*.spec.js"

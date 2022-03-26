@@ -6,7 +6,7 @@ import Appendix from 'pages/ethics/pledge-works/appendix';
 import DashboardFeaturesTable from 'components/pdd/dashboard-features-table';
 import DashboardValuesTable from 'components/pdd/dashboard-values-table';
 import DashboardControls from 'components/pdd/dashboard-controls';
-
+import { useQueryClient } from "react-query";
 import { Source } from 'components/pdd/enums';
 
 import api from 'components/pdd/api';
@@ -14,6 +14,10 @@ import api from 'components/pdd/api';
 import styles from 'components/dashboard/Dashboard.module.scss';
 
 const ResponsibilityDashboard = () => {
+
+    const queryClient = useQueryClient();
+
+    console.log(queryClient);
 
     const [featuresData, setFeaturesData] = useState(null);
     const [ValuesData, setValuesData] = useState(null);

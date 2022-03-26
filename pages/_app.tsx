@@ -7,6 +7,11 @@ import { useLocalStorageState } from 'hooks/local-storage';
 
 import ModeContext from 'components/contexts/ModeContext';
 
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
+
+const queryClient = new QueryClient();
+
 const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
 
     const [darkMode, setDarkMode] = useLocalStorageState({ key: 'is-dark-mode', defaultValue: false });
@@ -61,7 +66,9 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
 
     return (
         <ModeContext.Provider value={{mode, toggleMode}} children={null}>
-            <Component {...pageProps}></Component>
+            <QueryClientProvider client={queryClient}>
+                <Component {...pageProps}></Component>
+            </QueryClientProvider>
         </ModeContext.Provider>
         
     )
