@@ -97,7 +97,7 @@ const Layout = ({
 
     return (        
         <div>
-            <Head children={null}>
+            <Head>
                 <title>{title}</title>
 
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"></meta>

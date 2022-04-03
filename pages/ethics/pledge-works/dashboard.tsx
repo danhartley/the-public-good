@@ -17,8 +17,6 @@ const ResponsibilityDashboard = () => {
 
     const queryClient = useQueryClient();
 
-    console.log(queryClient);
-
     const [featuresData, setFeaturesData] = useState(null);
     const [ValuesData, setValuesData] = useState(null);
     const [activeSnapShot, setActiveSnapShot] = useState('');

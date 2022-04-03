@@ -40,7 +40,8 @@ const ILBlock = ({link}) => {
 
 const Home = ({ textAlign = 'left' }) => {
     return (
-        <section class={styles.internalLinkBlock} style={`text-align:${textAlign}`}>
+        <section class={styles.internalLinkBlock}>
+        {/* <section class={styles.internalLinkBlock} style={`text-align:${textAlign}`}> */}
             <p class={styles.internalLink}>
                 <Link href={'/'}>
                     <a href={'/'}>The PG Home</a>

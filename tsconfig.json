@@ -1,40 +1,40 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "lib": [
-        "dom",
-        "dom.iterable",
-        "esnext"
-      ],
-      "allowJs": true,
-      "skipLibCheck": true,
-      "strict": false,
-      "forceConsistentCasingInFileNames": true,
-      "noEmit": true,
-      "esModuleInterop": true,
-      "module": "esnext",
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
-      "isolatedModules": true,
-      "jsx": "preserve",
-      "baseUrl": ".",
-      "experimentalDecorators": true,
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    // "jsxImportSource": "preact",
+    "baseUrl": ".",
+    "experimentalDecorators": true
     //   "strictNullChecks": true
     //   "noImplicitAny": true
     //   "types": ["cypress", "@testing-library/cypress", "types/jest", "@types/node", "jest-preset-preact", "jest"]
-    },
-    "include": [
-        "next-env.d.ts",
-        "**/*.ts",
-        "**/*.tsx"
-        , "index.test.js"
-        , "public/_app.js"
-        , "pages/ethics/pledge-works/index.js"
-        , "pages/ethics/features/step_definitions/bank-account.steps.mts"
-    ],
-    "exclude": [
-      "node_modules",
-      "**/*.spec.js"
-    ]    
-  }
-  
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "index.test.js",
+    "public/_app.js",
+    "pages/ethics/pledge-works/index.js",
+    "pages/ethics/features/step_definitions/bank-account.steps.mts"
+, "components/pdd/hidden-message.test.tsx", "components/pdd/hidden-message.tsx", "components/pdd/simple.jsx", "components/pdd/simple.test.js"  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.js"
+  ]
+}

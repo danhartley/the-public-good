@@ -34,7 +34,7 @@ const DashboardControls = ({snapShots, snapShot, setActiveSnapShot}) => {
             </ul>
             <p>
                 <div>
-                    <Slider intialState={snapShot} range={snapShots} updateState={setActiveSnapShot}></Slider>    
+                    <Slider intialState={snapShot} range={snapShots} onChange={setActiveSnapShot}></Slider>    
                 </div>           
             </p>
         </nav>

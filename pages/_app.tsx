@@ -65,7 +65,7 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
     });
 
     return (
-        <ModeContext.Provider value={{mode, toggleMode}} children={null}>
+        <ModeContext.Provider value={{mode, toggleMode}}>
             <QueryClientProvider client={queryClient}>
                 <Component {...pageProps}></Component>
             </QueryClientProvider>
