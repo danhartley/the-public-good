@@ -18,7 +18,11 @@ const Transparency = () => {
         },
         {
             "name": "Cabin analytics for The Public Good",
-            "source": "https://withcabin.com/public/the-public-good.com"
+            "source": "https://withcabin.com/dashboard/the-public-good.com"
+        },
+        {
+            "name": "Fathom | Website analytics without compromise",
+            "source": "https://usefathom.com/"
         },
     ];
 

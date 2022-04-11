@@ -68,6 +68,7 @@
     "next-secure-headers": "^2.2.0",
     "preact": "^10.5.13",
     "preact-render-to-string": "^5.1.19",
+    "prettier": "2.6.2",
     "react-carbonbadge": "^1.0.1",
     "react-chartjs-2": "^3.0.5",
     "resize-observer": "^1.0.2",

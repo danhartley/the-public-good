@@ -22,6 +22,10 @@ const links = [
         "source": "https://chrome.google.com/webstore/detail/greenit-analysis/mofbfhffeklkbebfclfaiifefjflcpad?hl=en"
     },
     {
+        "name": "Accessibility Insights (Chrome extension)",
+        "source": "https://accessibilityinsights.io/en/"
+    },
+    {
         "name": "Color Contrast Accessibility Validator",
         "source": "https://color.a11y.com/"
     },
@@ -56,6 +60,18 @@ const links = [
     {
         "name": "Lighthouse",
         "source": "https://developers.google.com/web/tools/lighthouse"
+    },
+    {
+        "name": "AccessLint | GitHub App",
+        "source": "https://accesslint.com/"
+    },
+    {
+        "name": "Accessibility for Teams | US Govt.",
+        "source": "https://accessibility.digital.gov/"
+    },
+    {
+        "name": "Reach UI | React-based design",
+        "source": "https://reach.tech/"
     },
 ];
 

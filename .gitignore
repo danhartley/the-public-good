@@ -71,3 +71,9 @@ gdpr-compliance.tsx
 role-based-pledges.tsx
 ethics-old.tsx
 outcomes.tsx
+
+# ethical dashboard related inc. testing
+
+pages/ethics/pledge-works/dashboard.tsx
+cypress/
+pages/ethics/pledge-works/features
