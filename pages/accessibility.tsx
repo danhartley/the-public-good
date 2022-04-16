@@ -70,6 +70,10 @@ const links = [
         "source": "https://accessibility.digital.gov/"
     },
     {
+        "name": "Accessibility | React",
+        "source": "https://reactjs.org/docs/accessibility.html"
+    },
+    {
         "name": "Reach UI | React-based design",
         "source": "https://reach.tech/"
     },

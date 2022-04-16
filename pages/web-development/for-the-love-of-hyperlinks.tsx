@@ -24,6 +24,10 @@ const Hyperlinks = () => {
             "source": "https://webaim.org/resources/contrastchecker/"
         },
         {
+            "name": "Colour Contrast Analyser (CCA) | TPGi",
+            "source": "https://www.tpgi.com/color-contrast-checker/"
+        },
+        {
             "name": "sitepoint | Making Accessible Links",
             "source": "https://www.sitepoint.com/15-rules-making-accessible-links/"
         },

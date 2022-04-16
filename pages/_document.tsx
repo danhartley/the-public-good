@@ -9,7 +9,7 @@ class MyDocument extends Document {
   render() {
 
     return (
-      <Html lang="en" dir="ltr">
+      <Html lang="en-GB" dir="ltr">
         <Head>
             <meta http-equiv="content-type" content="text/html;"></meta>
         </Head>

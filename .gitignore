@@ -77,3 +77,5 @@ outcomes.tsx
 pages/ethics/pledge-works/dashboard.tsx
 cypress/
 pages/ethics/pledge-works/features
+
+# to remove comitted code e.g. git rm -r --cached play
