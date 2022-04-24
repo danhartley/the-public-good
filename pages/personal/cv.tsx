@@ -8,7 +8,7 @@ import data from 'pages/personal/cv.json';
 import styles from 'components/dashboard/Dashboard.module.scss';
 import funcs from 'components/functions/functions';
 
-const now = 2021;
+const now = 2022;
 
 // https://venngage.com/blog/color-blind-friendly-palette/
 const zesty = [

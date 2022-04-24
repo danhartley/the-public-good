@@ -33,34 +33,34 @@ const Contract = () => {
             <p>Its purpose is to meet these <Links.IL link={{source:'web-development/sociable-contract-aims'}}>aims and aspirations</Links.IL>.</p>
 
             <h2>The Contract</h2>
-            <p>Between <em>The Public Good</em> & <em>the User</em>.</p>
+            <p>Between <em>The Public Good</em> & <em>the World</em>.</p>
             <p>
 
                     <h3>Terms</h3>
 
                     <ul class={styles.dashedItemsList}>
                         <li>
-                        <span>The site will satisfy Web Content Accessibility Guidelines <Links.EL link={{source:'https://webaim.org/resources/contrastchecker/'}}>WCAG Level AAA</Links.EL> in light mode; WCAG Level AA in dark mode, Level AA for larger text.</span>
+                        <span>The site satisfies Web Content Accessibility Guidelines <Links.EL link={{source:'https://webaim.org/resources/contrastchecker/'}}>WCAG Level AAA</Links.EL> in light mode; WCAG Level AA in dark mode, and Level AA for larger text.</span>
                         <div><em><Links.EL link={{source:'https://wave.webaim.org/report#/https://www.the-public-good.com/'}}>Check</Links.EL>&nbsp;if this is true.</em></div>
                         </li>
                         <li>
-                        The site will score at least 95% for Performance, Accessibility, Best Practices and SEO on <Links.EL link={{source:'https://developers.google.com/web/tools/lighthouse'}}>Lighthouse</Links.EL>, on both Desktop and Mobile.
+                        The site scores at least 95% for Performance, Accessibility, Best Practices and SEO on <Links.EL link={{source:'https://developers.google.com/web/tools/lighthouse'}}>Lighthouse</Links.EL>, on both Desktop and Mobile.
                         <div><em>Find out how to use <Links.IL link={{source:'performance#howTo'}}>Lighthouse</Links.IL> to check these scores.</em></div>
                         </li>
                         <li>
-                        The site will score 'Cleaner than 85% of pages tested' using <Links.EL link={{source:'https://www.websitecarbon.com/'}}>Website Carbon</Links.EL>.
+                        The site scores 'Cleaner than 85% of pages tested' using <Links.EL link={{source:'https://www.websitecarbon.com/'}}>Website Carbon</Links.EL>.
                         </li>
                         <li>
-                        This site will contain no advertising.
+                        The site contains no advertising.
                         </li>
                         <li>
-                        This site will not use cookies to track you.
+                        The site does not use cookies to track you.
                         </li>
                         <li>
-                        It will use local storage variable 'is-dark-mode' to store your preference for light or dark mode.
+                        It does use local storage variable 'is-dark-mode' to store your preference for light or dark mode.
                         </li>
                         <li>
-                        Support IE11 and all modern browsers (Edge, Firefox, Chrome, Safari, Opera, et al) based on <Links.EL link={{source:'https://nextjs.org/docs/basic-features/supported-browsers-features'}}>Next.js support</Links.EL>
+                        Supports IE11 and all modern browsers (Edge, Firefox, Chrome, Safari, Opera, et al) based on <Links.EL link={{source:'https://nextjs.org/docs/basic-features/supported-browsers-features'}}>Next.js support</Links.EL>
                         </li>
                         <li>
                         Content or pages that are freely accessible will remain freely accessible in perpetuity.

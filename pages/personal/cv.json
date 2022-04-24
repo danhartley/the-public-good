@@ -1,6 +1,17 @@
 {
     "companies": [
         {
+            "name": "Dashboard",
+            
+            "dates": {
+                "start": "2022-04-01"
+            },
+            "languages": [ "HTML", "TS", "CSS" ],
+            "technologies": [ "React", "Typescript", "Cypress", "Cucumber.js", "Jest", "React Testing Library", "React Query", "MSW", "json-server", "Tailwind CSS", "PostCSS", "Reach UI", "GitHub" ],
+            "roles": [ "core contributor", "r&d", "developer" ],
+            "blurb": "Responsible dashboard that illustrates the outcome of company pledges, broken down by principles, values and requirement checklists."
+        },
+        {
             "name": "ResponsibleTech.Work",
             "projects": [
                 {
@@ -386,6 +397,10 @@
                 {
                     "name": "GitLab",
                     "start": "2021-09-01"
+                },
+                {
+                    "name": "Testing Library",
+                    "start": "2020-04-01"
                 }
             ]
         },
@@ -448,7 +463,8 @@
                 },
                 {
                     "name": "Redux",
-                    "start": "2017-05-01"
+                    "start": "2017-05-01",
+                    "end": "2020-05-01"
                 },
                 {
                     "name": "Repository-Service pattern",
@@ -463,6 +479,22 @@
                 {
                     "name": "Chart.js",
                     "start": "2021-09-01"
+                }, 
+                {
+                    "name": "React Query",
+                    "start": "2022-04-01"
+                },    
+                {
+                    "name": "Tailwind CSS",
+                    "start": "2022-04-01"
+                },
+                {
+                    "name": "Mock Service Workers (MSW)",
+                    "start": "2022-04-01"
+                },
+                {
+                    "name": "json-server",
+                    "start": "2022-04-01"
                 }
             ]
         }
