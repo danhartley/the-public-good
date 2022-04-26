@@ -1,8 +1,13 @@
 {
     "companies": [
         {
-            "name": "Dashboard",
-            
+            "name": "RTW & TPG",
+            "projects": [
+              {
+                  "title": "Dashboard",
+                  "src": "https://danhartley.github.io/dashboard"
+              }
+          ],
             "dates": {
                 "start": "2022-04-01"
             },
