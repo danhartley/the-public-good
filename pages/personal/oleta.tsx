@@ -83,8 +83,8 @@ const Oleta = () => {
                 <div>“It's not something you have to understand; you just have to be aware that it exists.”</div>
                 <div>“But what is it?”</div>
                 <div>“Do you feel different now? That the world has changed.”</div>
-                <div>“Kind of,” I said.</div>
-                <div>“I don't,” said Oleta, “at all.”</div>
+                <div>“I understand,” I said.</div>
+                <div>“I want to go back to the donkeys,” said Oleta.”</div>
                 <div>“You won't forget this afternoon. It doesn't matter you don't know why.”</div>
             </p>
             <p>
