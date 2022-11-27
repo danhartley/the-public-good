@@ -24,7 +24,8 @@
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
     "size": "npm run build && size-limit",
     "cucumber": "./node_modules/.bin/cucumber-js cypress/integration/dashboard/**/*.feature --import cypress/support/step_definitions/**/*.js",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "prettier-format": "prettier --config .prettierrc 'pages/**/*.tsx' --write"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^10.2.0",
@@ -83,5 +84,5 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false
-  }
+  }  
 }

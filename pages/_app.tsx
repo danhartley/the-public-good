@@ -1,24 +1,23 @@
-import "preact/devtools";
-import { useEffect } from 'preact/hooks';
-import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'web-vitals';
-import type { AppProps } from 'next/app';
-import { Mode } from 'components/shared/types';
-import { useLocalStorageState } from 'hooks/local-storage';
+import 'preact/devtools'
+import { useEffect } from 'preact/hooks'
+import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'web-vitals'
+import type { AppProps } from 'next/app'
+import { Mode } from 'components/shared/types'
+import { useLocalStorageState } from 'hooks/local-storage'
 
-import ModeContext from 'components/contexts/ModeContext';
+import ModeContext from 'components/contexts/ModeContext'
 
-import { QueryClient, QueryClientProvider } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient()
 
 const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
+  const [darkMode, setDarkMode] = useLocalStorageState({ key: 'is-dark-mode', defaultValue: false })
 
-    const [darkMode, setDarkMode] = useLocalStorageState({ key: 'is-dark-mode', defaultValue: false });
-
-    const getStyle = (_darkMode:boolean): string => {        
-        const _style:string = _darkMode 
-        ? `
+  const getStyle = (_darkMode: boolean): string => {
+    const _style: string = _darkMode
+      ? `
             --m:dark;
             --fg:250, 250, 250; 
             --bg:45, 45, 45;
@@ -30,9 +29,8 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
             --h1:218, 217, 205;
             --em:255, 255, 0;
             --key:45, 45, 45; 
-        ` 
-        : 
         `
+      : `
             --m:light;
             --fg:12, 12, 12;
             --bg:255 255 255;
@@ -43,46 +41,45 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
             --h1:218, 217, 205;
             --em:155, 0, 0;
             --key:45, 45, 45;
-        `;
-        return _style;
-    };
+        `
+    return _style
+  }
 
-    const mode:Mode = { isDark: darkMode, style: getStyle(darkMode) };
+  const mode: Mode = { isDark: darkMode, style: getStyle(darkMode) }
 
-    const toggleMode = () => {
-        setDarkMode(!darkMode);
-        mode.isDark = darkMode;
-        mode.style = getStyle(darkMode) as any;
-        document.body.style.backgroundColor = darkMode ? 'rgb(255 255 255)' : 'rgb(45, 45, 45)';
-    };
+  const toggleMode = () => {
+    setDarkMode(!darkMode)
+    mode.isDark = darkMode
+    mode.style = getStyle(darkMode) as any
+    document.body.style.backgroundColor = darkMode ? 'rgb(255 255 255)' : 'rgb(45, 45, 45)'
+  }
 
-    useEffect(() => {
-        // getCLS(console.log);
-        // getFCP(console.log);
-        // getFID(console.log);
-        // getLCP(console.log);
-        // getTTFB(console.log);
-    });
+  useEffect(() => {
+    // getCLS(console.log);
+    // getFCP(console.log);
+    // getFID(console.log);
+    // getLCP(console.log);
+    // getTTFB(console.log);
+  })
 
-    return (
-        <ModeContext.Provider value={{mode, toggleMode}}>
-            <QueryClientProvider client={queryClient}>
-                <Component {...pageProps}></Component>
-            </QueryClientProvider>
-        </ModeContext.Provider>
-        
-    )
+  return (
+    <ModeContext.Provider value={{ mode, toggleMode }}>
+      <QueryClientProvider client={queryClient}>
+        <Component {...pageProps}></Component>
+      </QueryClientProvider>
+    </ModeContext.Provider>
+  )
 }
 
-export default PublicGoodApp;
+export default PublicGoodApp
 
 export function reportWebVitals(metric) {
-    if (metric.label === 'web-vital') {
-        // console.log(metric) // The metric object ({ id, name, startTime, value, label }) is logged to the console
-    }
-    if (metric.label === 'custom') {
-        // console.log(metric) // The metric object ({ id, name, startTime, value, label }) is logged to the console
-    }
+  if (metric.label === 'web-vital') {
+    // console.log(metric) // The metric object ({ id, name, startTime, value, label }) is logged to the console
+  }
+  if (metric.label === 'custom') {
+    // console.log(metric) // The metric object ({ id, name, startTime, value, label }) is logged to the console
+  }
 }
 
 // TypeScript version
