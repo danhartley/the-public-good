@@ -113,7 +113,7 @@ const Brothers = () => {
           <div>“I didn't want to tell you until I was sure. I'm going to start painting again.”</div>
           <div>“Oh.”</div>
           <div>“I've had a few ideas.”</div>
-          <div>“How's it going?” Alfredo straightened a few items on the table.</div>
+          <div>“That's promising.” Alfredo straightened a few items on the table.</div>
           <div>
             “I haven't done anything yet. I have to do a bit of thinking first. I might be going in a new direction.”
           </div>
