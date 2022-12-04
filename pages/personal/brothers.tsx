@@ -191,6 +191,7 @@ const Brothers = () => {
         links={[
           { value: 'personal/extracts', text: 'Extracts' },
           { value: 'personal/oleta', text: 'Oleta' },
+          { value: 'personal/works', text: 'Works' },
         ]}
       ></Links.RelatedLinks>
     </Layout>

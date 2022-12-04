@@ -155,6 +155,7 @@ const Oleta = () => {
         links={[
           { value: 'personal/extracts', text: 'Extracts' },
           { value: 'personal/brothers', text: 'Brothers' },
+          { value: 'personal/works', text: 'Works' },
         ]}
       ></Links.RelatedLinks>
     </Layout>
