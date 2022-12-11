@@ -26,11 +26,11 @@ const Works = () => {
           <div>“Good morning, Sr. Ratton. I thought it was you.”</div>
           <div>He held out a soft warm hand. His infinitely lined face was covered in white dust.</div>
           <div>“Are you here about the accident?” I moved my coat from one arm to the other.</div>
-          <div>"How did it happen?"</div>
-          <div>"He was up a ladder. It wasn't his fault." I nodded.</div>
-          <div>"I'm speaking to the insurers next week."</div>
-          <div>"He did nothing wrong. None of us did. It's the ceiling lights; we can't reach them any other way."</div>
-          <div>"I understand."</div>
+          <div>“How did it happen?”</div>
+          <div>“He was up a ladder. It wasn't his fault." I nodded.</div>
+          <div>“I'm speaking to the insurers next week.”</div>
+          <div>“He did nothing wrong. None of us did. It's the ceiling lights; we can't reach them any other way.”</div>
+          <div>“I understand.”</div>
         </p>
         <p>
           <div>
@@ -52,7 +52,7 @@ const Works = () => {
           <div>
             He rested his coffee on the pavement while he tore open the sugar. He emptied out the packet and stirred.
           </div>
-          <div>"Anything I need to worry about?"</div>
+          <div>“Anything I need to worry about?”</div>
           <div>“No.” He straightened up.</div>
           <div>He looked up the street. Asking himself whether he should trust me.</div>
           <div>“Right then. You want to look around?”</div>
@@ -61,16 +61,16 @@ const Works = () => {
           <div>
             The foreman left me in the show flat. The walls of the living room were yellow. They had been painted in
             readiness for a sale's pitch to a group from China. Two waitresses had served canapés and prosecco. It had
-            seemed then that the building was almost finished. When the pandemic hit interest dropped off. Work
-            slowed, and we overran a few more months.
+            seemed then that the building was almost finished. When the pandemic hit interest dropped off. Work slowed,
+            and we overran a few more months.
           </div>
         </p>
         <p>
           <div>
-            There were black scuff marks on the walls and dents by the hallway door and around the French
-            windows. Paper bags, Styrofoam takeaway boxes, and plastic bags were scattered on the floor. Where the men had
-            leant against the wall to eat their lunch their dirty work coats had left greasy stains. The walls would
-            have to be repainted.
+            There were black scuff marks on the walls and dents by the hallway door and around the French windows. Paper
+            bags, Styrofoam takeaway boxes, and plastic bags were scattered on the floor. Where the men had leant
+            against the wall to eat their lunch their dirty work coats had left greasy stains. The walls would have to
+            be repainted.
           </div>
         </p>
         <p>
@@ -91,30 +91,34 @@ const Works = () => {
             Men were playing cards in the Jardim França Borges. They had taped cardboard to the table to provide a dry
             surface and a place to keep score. I joined the onlookers.
           </div>
-          <div>"What are they playing?"</div>
-          <div>"Copas." A man with soft shoes, and worn Cords. As he spoke, he held one hand against his jaw as though he had a sore tooth.</div>
+          <div>“What are they playing?”</div>
+          <div>
+            “Copas." A man with soft shoes, and worn Cords. As he spoke, he held one hand against his jaw as though he
+            had a sore tooth.
+          </div>
         </p>
         <p>
           The men at the table had wiry, dull hair and beards as thick and coarse as wire wool. They wore caps and
-          glasses. Two were chewing, one had a small cigar in his mouth. The four men in the
-          watching group were all retired, all younger than me. The dealer had thin black hair combed flat. His skin was blemished and
-          weathered and he played with exaggerated gestures. He threw his cards down with a flourish and won the round.
-          Some of the men laughed. A new line was added to the scores.
+          glasses. Two were chewing, one had a small cigar in his mouth. The four men in the watching group were all
+          retired, all younger than me. The dealer had thin black hair combed flat. His skin was blemished and weathered
+          and he played with exaggerated gestures. He threw his cards down with a flourish and won the round. Some of
+          the men laughed. A new line was added to the scores.
         </p>
         <p>
           <div>
             Feral young men in baggy trousers and puffa jackets. One was black with slender dreadlocks, two were white
-            with scruffy beards and pale arms. One was no more than fourteen or fifteen. They joked, jostled, stood close to one another, always moving,
-            showing their worth, bigging themselves up. They smoked. A car arrived and two of them broke off. They needed numbers here to protect their patch, at all
-            hours of the day. It was a good patch and they were young and ready to defend it.
+            with scruffy beards and pale arms. One was no more than fourteen or fifteen. They joked, jostled, stood
+            close to one another, always moving, showing their worth, bigging themselves up. They smoked. A car arrived
+            and two of them broke off. They needed numbers here to protect their patch, at all hours of the day. It was
+            a good patch and they were young and ready to defend it.
           </div>
-          <div>"All right?"</div> I nodded. He handed me my keys. I placed a note in his open hand.
+          <div>“All right?”</div> I nodded. He handed me my keys. I placed a note in his open hand.
         </p>
         <p>
           <div>
             I drove past the building again, the leather steering wheel warm in my hands. The foreman was standing
-            outside talking to a woman with a clipboard. She pointed to several places, listened to his answers, and took
-            notes. They did not turn, and did not witness my exit.
+            outside talking to a woman with a clipboard. She pointed to several places, listened to his answers, and
+            took notes. They did not turn, and did not witness my exit.
           </div>
         </p>
         <p>
@@ -127,6 +131,7 @@ const Works = () => {
           { value: 'personal/extracts', text: 'Extracts' },
           { value: 'personal/oleta', text: 'Oleta' },
           { value: 'personal/brothers', text: 'Brothers' },
+          { value: 'personal/works', text: 'Julio' },
         ]}
       ></Links.RelatedLinks>
     </Layout>

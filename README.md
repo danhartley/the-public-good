@@ -8,3 +8,7 @@ npm install --legacy-peer-deps
 npm install --save-dev prettier    
 
 npm run prettier-format
+
+## Deploy
+
+https://app.netlify.com/sites/the-public-good/overview

@@ -21,6 +21,9 @@ const Extracts = () => {
           <li>
             <Links.IL link={{ source: 'personal/works' }}>Works</Links.IL>
           </li>
+          <li>
+            <Links.IL link={{ source: 'personal/julio' }}>Júlio</Links.IL>
+          </li>
         </ul>
       </section>
     </Layout>
