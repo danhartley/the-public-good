@@ -67,8 +67,8 @@ const Julio = () => {
           other young men and quickly abandoned it – too male, too earnest – and was indulging a little in the nightlife
           of the city. But whatever the hour he returned home he was to be found in his studio by seven the next
           morning; and if he came straight from the street, which he did at least once a week, so be it. It was during
-          this time that he began to develop his style, and it took a form that woke something in me though it was many
-          years passed before we spoke of this, and I understood why.
+          this time that he began to develop the style he became known for. Many years passed before I understood why
+          the paintings made such an impression on me, and before Alfredo and I discussed the reason.
         </p>
         <p>
           Alfredo found an agent, or rather an agent found him, and his early work - all done before he left for London
