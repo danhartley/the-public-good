@@ -7,29 +7,29 @@ const Julio = () => {
       <section>
         <p>
           For the tenants of the building on the street of the Fallen Leaves the landlord was no more than a name on
-          their lease. Rui claimed he had seen the owner. One summer afternoon he had been sitting on the step up to the
-          front door when a large car - probably a Rolls Royce - had stopped outside, and the passenger window had wound
-          down. An old man - who looked like a vulture - had peered out, sniffed the air, and then disappeared into the
-          dark recesses of the car. In some tellings the man was the father of the current owner, in others a woman, but
-          the audience remained indifferent; Rui had been a little boy at the time, full of mischief and imagination,
-          and there was no one to vouch for his tale. The years passed, tenants came and went, and the building remained
-          unchanged: a solid, detached block with a large, communal garden, overshadowed by a brick chimney belonging to
-          the bakery next door.
+          their lease. Rui claimed he had once seen the owner. One summer afternoon he had been sitting on the step up
+          to the front door when a large car - probably a Rolls Royce - had stopped outside, and the passenger window
+          had wound down. An old man - who looked like a vulture - had peered out, sniffed the air, and then disappeared
+          into the dark recesses of the car. In some tellings the man was the father of the current owner, in others a
+          woman, but the audience remained indifferent; Rui had been a little boy at the time, full of mischief and
+          imagination, and there was no one to vouch for his tale. The years passed, tenants came and went, and the
+          building remained unchanged: a solid, detached block with a large, communal garden, overshadowed by a brick
+          chimney belonging to the bakery next door.
         </p>
         <p>
           The tenants had been accustomed to paying their rent on the first Monday of each month at the offices of the
-          owner’s solicitor, a firm with impressive, or at least, expensive offices on a leafy street off Avenida. The
-          name written in gold over the door was Ratton and Martinho. As a junior solicitor recently put in charge of
-          the property, and only a year out of law school, I was anxious to escape my desk no matter the task, so I made
-          a point of calling on the firm’s clients whenever I had the opportunity.
+          owner’s solicitor, a firm with impressive - or at least expensive - offices on a leafy street off Avenida. The
+          name written in gold over the door was Ratton and Martinho. As a junior solicitor recently put in charge of a
+          number of properties, and only a year out of law school, I was anxious to escape my desk no matter the task,
+          so I made a point of calling on the firm’s clients whenever I had the chance.
         </p>
         <p>
           The house on the street of the Fallen Leaves was in a quarter I knew well from my student days, and it was my
           habit to eat lunch at one or other of the local tascas before my visit. But summer brought a change to my
-          ways, and perhaps also to my tastes, and I began to eat at a little restaurant around the corner from the
-          office. Whenever there was a breeze, I sat outside with my back to the hill, and my wine glass at an alarming
-          tilt. And so it came about that my visit to the house on the street of the Fallen Leaves fell in step with my
-          other visits, and took place at the end of the day.
+          ways, and also to my tastes, and I began to eat at a little restaurant around the corner from the office.
+          Whenever there was a breeze, I sat outside, at rickety table, with my back to the hill, and my wine glass at
+          an alarming tilt. So it came about that my visit to the house on the street of the Fallen Leaves fell in step
+          with my other visits, and took place at the end of the day.
         </p>
         <p>
           On this particular evening, I opened the heavy outer doors - the concierge had already disappeared - and
@@ -62,28 +62,26 @@ const Julio = () => {
           diligence not a retreat into drudgery.
         </p>
         <p>
-          It was Alfredo who recognised and then pulled me from my malaise. He had not long returned from London; though
+          It was Alfredo who recognised and then pulled me from my funk. He had not long returned from London; though
           the experience had been liberating, the city was too cold, and too grey. He formed a collective with some
           other young men and quickly abandoned it – too male, too earnest – and was indulging a little in the nightlife
           of the city. But whatever the hour he returned home he was to be found in his studio by seven the next
-          morning; and if he came straight from the street, which he did at least once a week, so be it. It was during
-          this time that he began to develop the style he became known for. Many years passed before I understood why
-          the paintings made such an impression on me, and before Alfredo and I discussed the reason.
+          morning; and if he came straight from the street, which he did at least once a week, so be it.
         </p>
         <p>
           Alfredo found an agent, or rather an agent found him, and his early work - all done before he left for London
-          - began to attract attention. It was at his second exhibition - the occasion on which I met Agustina Távora -
-          that his new work was presented.
+          - began to attract attention from the critics. But it was his Yellow Phase (such names were de rigeur at that
+          time), that brought wider recognition, and soon enough his name found its way into print. It was at his second
+          exhibition - the occasion on which I met Agustina Távora - that his new work was presented.
         </p>
         <p>
           There was already a large crowd when I arrived, spilling out from the tiny gallery onto the narrow, poorly lit
           street. Most of the men, including the artists, were dressed in jackets and ties and wore the type of glasses
           favoured by left wing French intellectuals. It was a group exhibition for six up-and-coming painters.
           According to a small text by the door they were confronting the challenges presented by a fractured society
-          whose fault lines had been exposed by colonial imperialism. Alfredo assured me that it was drivel and that
-          anyway the best artists like Paula Rego had moved to Paris or London. To me, who was both partial and
-          unsophisticated, Alfredo's paintings stood out and in this the public agreed, for the number of stickers
-          besides his pictures grew steadily during the evening, and far exceeded those of the rest of the group.
+          whose fault lines had been exposed by colonial imperialism. Alfredo assured me that this was nonsense, had
+          only been tacked on to win approval from the town hall, and that anyway the best artists like Paula Rego had
+          moved to Paris or London.
         </p>
         <p>
           Since Alfredo was in demand and the wine out of reach I wandered back up the street to a little bar where I
@@ -92,13 +90,17 @@ const Julio = () => {
           her hand and introduced herself. Agustina was a journalist at one of the national papers. Her request to cover
           the war had been turned down – too young, a woman. In response she was starting a war of words back home; her
           criticism of the regime was – it was claimed - seditious and had earned her a personal rebuke from the paper's
-          owner. One more mis-step would see her fired or in prison, or both.
+          owner. One more mis-step would see her fired or in prison, or both. She had little interest in painting.
         </p>
         <p>
           I walked home from the gallery slowly, full of the high hopes and cheerful spirits that accompany a drunken
           young man with the world before him. I delighted in the swirls of the black calçada on the Avenida da
           Liberdade and felt that anyone who had seen them both could not fail to notice the resemblance between the
           perfect white squares of calçada and the perfect white teeth of Agustina Távora.
+        </p>
+        <p>
+          Many years passed before Alfredo and I spoke of the paintings he showed that night, and of the events which
+          inspired them.
         </p>
       </section>
       <Links.RelatedLinks
