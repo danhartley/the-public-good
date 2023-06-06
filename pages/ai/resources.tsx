@@ -1,0 +1,204 @@
+import Links from 'components/links/Links'
+import Layout from 'components/layout/layout'
+
+const AIOResources = () => {
+  return (
+    <Layout
+      header="AI Resources"
+      title="AI Resources"
+      description={
+        'AI Resources'
+      }
+    >
+      <section>
+        <h3>Ethics</h3>
+        <div>
+          <Links.EL link={{ source: 'https://dl.acm.org/doi/pdf/10.1145/3442188.3445922' }}>
+          On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?
+          </Links.EL>
+        </div>
+        <div>Shmargaret Shmitchell et al.</div>
+        <div>
+          <Links.EL link={{ source: 'https://knightcolumbia.org/content/understanding-social-media-recommendation-algorithms' }}>
+          Understanding Social Media Recommendation Algorithms
+          </Links.EL>
+        </div>
+        <div>Arvind Narayanan</div>
+        <div>
+          <Links.EL link={{ source: 'https://cdn.openai.com/papers/gpt-4-system-card.pdf' }}>
+          GPT-4 System Card
+          </Links.EL>
+        </div>
+        <div>OpenAI</div>
+        <div>
+          <Links.EL link={{ source: 'https://trust.openai.com/' }}>
+          Security Portal
+          </Links.EL>
+        </div>
+        <div>OpenAI</div>
+
+        <h3>Sustainability</h3>
+        <div>
+          <Links.EL link={{ source: 'https://towardsdatascience.com/the-carbon-footprint-of-chatgpt-66932314627d' }}>
+          The Carbon Footprint of ChatGPT
+          </Links.EL>
+        </div>
+        <div>Kasper Groes Albin Ludvigsen (https://towardsdatascience.com/)</div>
+        <div>
+          <Links.EL link={{ source: 'https://towardsdatascience.com/chatgpts-electricity-consumption-7873483feac4' }}>
+          ChatGPT’s Electricity Consumption I
+          </Links.EL>
+        </div>
+        <div>Kasper Groes Albin Ludvigsen (https://towardsdatascience.com/)</div>
+        <div>
+          <Links.EL link={{ source: 'https://kaspergroesludvigsen.medium.com/chatgpts-electricity-consumption-pt-ii-225e7e43f22b' }}>
+          ChatGPT’s Electricity Consumption II
+          </Links.EL>
+        </div>
+        <div>Kasper Groes Albin Ludvigsen (https://towardsdatascience.com/)</div>
+        <div>
+          <Links.EL link={{ source: 'https://ourworldindata.org/grapher/imagenet-training-cost' }}>
+          Cost to train an AI system to equivalent performance on ImageNet
+          </Links.EL>
+        </div>
+        <div>Our World in Data</div>
+        <div>
+          <Links.EL link={{ source: 'https://ourworldindata.org/grapher/artificial-intelligence-training-computation' }}>
+          Computation used to train notable artificial intelligence systems
+          </Links.EL>
+        </div>
+        <div>Our World in Data</div>
+
+        <h3>Arcticles</h3>
+        <div>
+          <Links.EL link={{ source: 'https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/' }}>
+          What Is ChatGPT Doing … and Why Does It Work?
+          </Links.EL>
+          <div>Stephen Wolfram</div>
+        </div>
+
+        <h3>Technical</h3>
+        <div>
+          <Links.EL link={{ source: 'https://arxiv.org/pdf/1706.03762.pdf' }}>
+          Attention Is All You Need: Transformer Architecture
+          </Links.EL>
+          <div>Ashish Vaswani et al. (Google at al.)</div>
+        </div>
+      
+        <h3>AIs</h3>
+        <div>
+          <Links.EL link={{ source: 'https://www.anthropic.com/' }}>
+          Claude (Anthropic)
+          </Links.EL>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://openai.com/' }}>
+          OpenAI (GPT)
+          </Links.EL>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://bard.google.com/' }}>
+          Bard (Google)
+          </Links.EL>
+        </div>
+
+        <h4>Tools</h4>
+        <div>
+          <Links.EL link={{ source: 'https://redis.com/blog/chatgpt-memory-project/' }}>
+          Introducing the ChatGPT Memory Project
+          </Links.EL>
+        </div>
+        <div>Shahrukh Khan and Navdeeppal Singh (Redis)</div>
+        <div>
+          <Links.EL link={{ source: 'https://platform.openai.com/playground' }}>
+          OpenAI Playground
+          </Links.EL>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://platform.openai.com/tokenizer' }}>
+          OpenAI Tokenizer
+          </Links.EL>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://platform.openai.com/account/api-keys' }}>
+          OpenAI API
+          </Links.EL>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://medium.com/gimz/how-to-install-whisper-on-mac-openais-speech-to-text-recognition-system-1f6709db6010' }}>
+          How to install Whisper on Mac, an amazing OpenAI’s speech-to-text recognition system
+          </Links.EL>
+        </div>
+        <div>Egor Menyaylo</div>
+
+        <h4>Video Instruction</h4>
+        <div>
+          <Links.EL link={{ source: 'https://learn.deeplearning.ai/chatgpt-prompt-eng' }}>
+          ChatGPT Prompt Engineering for Developers (Deeplearning.ai + OpenAI)
+          </Links.EL>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://www.youtube.com/watch?v=bZQun8Y4L2A' }}>
+          State of GPT | BRK216HFS
+          </Links.EL>
+        </div>
+        <div>Microsoft + Andrej Karpathy</div>
+        <div>
+          <Links.EL link={{ source: 'https://www.youtube.com/watch?v=-3Olw-C4FN4' }}>
+          Introduction to Machine Learning on Vertex AI
+          </Links.EL>
+        </div>
+        <div>Google</div>
+        <div>
+          <Links.EL link={{ source: 'https://www.youtube.com/watch?v=G2fqAlgmoPo' }}>
+          Introduction to Generative AI
+          </Links.EL>
+        </div>
+        <div>Google</div>
+        <div>
+          <Links.EL link={{ source: 'https://www.youtube.com/watch?v=zizonToFXDs' }}>
+          Introduction to Large Language Models
+          </Links.EL>
+        </div>
+        <div>Google</div>
+
+        <h3>Tips</h3>
+        <div>
+          <Links.EL link={{ source: 'https://medium.com/@avra42/how-to-build-a-chatbot-with-chatgpt-api-and-a-conversational-memory-in-python-8d856cda4542' }}>
+          How to build a Chatbot with ChatGPT API and a Conversational Memory in Python
+          </Links.EL>
+        </div>
+        <div>Avra</div>
+
+        <h3>Reports & References</h3>
+        <div>
+          <Links.EL link={{ source: 'https://blog.ialja.com/2023/05/31/resources-are-all-you-need-for-the-generative-ai-tsunami/' }}>
+          Resources Are All You Need (to demystify ChatGPT and the generative AI tsunami)
+          </Links.EL>
+        </div>
+        <div>Alja Isaković</div>
+        <div>
+          <Links.EL link={{ source: 'https://ourworldindata.org/artificial-intelligence ' }}>
+          Artificial Intelligence (to demystify ChatGPT and the generative AI tsunami)
+          </Links.EL>
+        </div>
+        <div>Charlie Giattino, Edouard Mathieu, Julia Broden and Max Roser (Our World in Data)</div>
+        <div>
+          <Links.EL link={{ source: 'https://crfm.stanford.edu/ecosystem-graphs/' }}>
+          ecosystem graphs
+          </Links.EL>
+        </div>
+        <div>Standford</div>
+        <div>
+          <Links.EL link={{ source: 'https://aiindex.stanford.edu/report/' }}>
+          Measuring trends in Artificial Intelligence
+          </Links.EL>
+        </div>
+        <div>Standford</div>
+      
+      </section>
+    </Layout>
+  )
+}
+
+export default AIOResources

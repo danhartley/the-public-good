@@ -32,6 +32,12 @@ export default function Home() {
         </section>
 
         <section>
+            <h2>AI</h2>
+            
+            <Links.ILBlock link={{'value': 'ai/resources', 'text': 'AI - Resources'}}></Links.ILBlock>
+        </section>
+
+        <section>
 
             <h2>Responsible web development</h2>
             <Links.ILBlock link={{'value': 'web-development/measuring-the-web', 'text': 'Measuring the web'}}></Links.ILBlock>

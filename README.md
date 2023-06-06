@@ -3,6 +3,12 @@
 
 ## I write about the climate crisis and responsible web development.
 
+## Run local
+
+npm run dev
+
+## Ops
+
 npm install --legacy-peer-deps     
 
 npm install --save-dev prettier    
