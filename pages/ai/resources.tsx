@@ -218,13 +218,13 @@ const AIOResources = () => {
           ecosystem graphs
           </Links.EL>
         </div>
-        <div>Standford</div>
+        <div>Stanford</div>
         <div>
           <Links.EL link={{ source: 'https://aiindex.stanford.edu/report/' }}>
           Measuring trends in Artificial Intelligence
           </Links.EL>
         </div>
-        <div>Standford</div>
+        <div>Stanford</div>
         <div>
           <Links.EL link={{ source: 'https://mlu-explain.github.io/' }}>
           Visual explanations of core machine learning concepts
