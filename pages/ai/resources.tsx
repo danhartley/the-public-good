@@ -39,6 +39,12 @@ const AIOResources = () => {
 
         <h3>Sustainability</h3>
         <div>
+          <Links.EL link={{ source: 'https://arxiv.org/pdf/2211.02001.pdf' }}>
+          Estimating the carbon footprint of Bloom, a 176b parameter language model (PDF)
+          </Links.EL>
+        </div>
+        <div>Alexandra Sasha Luccioni (Hugging Face), Sylvain Viguier (Graphcore), Anne-Laure Ligozat (LISN & ENSIIE)</div>
+        <div>
           <Links.EL link={{ source: 'https://towardsdatascience.com/the-carbon-footprint-of-chatgpt-66932314627d' }}>
           The Carbon Footprint of ChatGPT
           </Links.EL>
@@ -69,18 +75,36 @@ const AIOResources = () => {
         </div>
         <div>Our World in Data</div>
 
-        <h3>Arcticles</h3>
+        <h3>Articles</h3>
         <div>
           <Links.EL link={{ source: 'https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/' }}>
           What Is ChatGPT Doing … and Why Does It Work?
           </Links.EL>
           <div>Stephen Wolfram</div>
         </div>
+        <div>
+          <Links.EL link={{ source: 'https://www.semianalysis.com/p/google-we-have-no-moat-and-neither' }}>
+          Google "We Have No Moat, And Neither Does OpenAI"
+          </Links.EL>
+          <div>Dylan Patel and Afzal Ahmad</div>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://huyenchip.com/2023/04/11/llm-engineering.html#prompt_engineering_challenges' }}>
+          Building LLM applications for production
+          </Links.EL>
+          <div>Chip Huyen</div>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://hbr.org/2023/04/generative-ai-has-an-intellectual-property-problem?ab=hero-main-text' }}>
+          Generative AI Has an Intellectual Property Problem
+          </Links.EL>
+          <div>Gil Appel, Juliana Neelbauer, and David A. Schweidel (Harvard Business Review)</div>
+        </div>
 
         <h3>Technical</h3>
         <div>
           <Links.EL link={{ source: 'https://arxiv.org/pdf/1706.03762.pdf' }}>
-          Attention Is All You Need: Transformer Architecture
+          Attention Is All You Need: Transformer Architecture (PDF)
           </Links.EL>
           <div>Ashish Vaswani et al. (Google at al.)</div>
         </div>
@@ -161,6 +185,12 @@ const AIOResources = () => {
           </Links.EL>
         </div>
         <div>Google</div>
+        <div>
+          <Links.EL link={{ source: 'https://www.youtube.com/watch?v=5jL5wRGrCvk' }}>
+          Improving Deep Reinforcement Learning via Quality Diversity, Open-Ended and AI-Generating Algorithms
+          </Links.EL>
+          <div>MIT</div>
+        </div>
 
         <h3>Tips</h3>
         <div>
@@ -195,6 +225,12 @@ const AIOResources = () => {
           </Links.EL>
         </div>
         <div>Standford</div>
+        <div>
+          <Links.EL link={{ source: 'https://mlu-explain.github.io/' }}>
+          Visual explanations of core machine learning concepts
+          </Links.EL>
+        </div>
+        <div>MLU-Explain</div>
       
       </section>
     </Layout>
