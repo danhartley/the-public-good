@@ -100,6 +100,12 @@ const AIOResources = () => {
           </Links.EL>
           <div>Gil Appel, Juliana Neelbauer, and David A. Schweidel (Harvard Business Review)</div>
         </div>
+        <div>
+          <Links.EL link={{ source: 'https://nuvalence.io/insights/inside-chatgpt-plugins-how-they-work-and-areas-for-improvement/' }}>
+          Inside ChatGPT Plugins: How They Work (And Areas for Improvement)
+          </Links.EL>
+          <div>Dan Hernandez (Nuvalence)</div>
+        </div>
 
         <h3>Technical</h3>
         <div>
@@ -107,6 +113,12 @@ const AIOResources = () => {
           Attention Is All You Need: Transformer Architecture (PDF)
           </Links.EL>
           <div>Ashish Vaswani et al. (Google at al.)</div>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://github.com/Mooler0410/LLMsPracticalGuide' }}>
+          The Practical Guides for Large Language Models (GitHub repo)
+          </Links.EL>
+          <div>Cornell University</div>
         </div>
       
         <h3>AIs</h3>
@@ -231,6 +243,12 @@ const AIOResources = () => {
           </Links.EL>
         </div>
         <div>MLU-Explain</div>
+        <div>
+          <Links.EL link={{ source: 'https://www.cloudskillsboost.google/paths/118' }}>
+          Generative AI learning path
+          </Links.EL>
+        </div>
+        <div>Google Cloud Skills Boost</div>
       
       </section>
     </Layout>
