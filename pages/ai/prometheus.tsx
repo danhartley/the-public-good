@@ -25,8 +25,17 @@ const Prometheus = () => {
         </figure>
 
         <p>
-          Novelty, wonder, apprehension, and fear. 
+          There are parallels between AI and electricity. Both were greeted with a mixture of wonder, apprehension, and fear. They transformed multiple industries and societies, yet both remain unevenly distributed. 
+          They are enigmatic, used by many but understood by few, and mysterious even to those responsible for their proliferation. One can kill you outright, the other has the potential to destroy lives and possibly societies. 
+          AI may become ubiquitous, a fundamental service without which we would struggle to function, a foundation upon which industry, technology and other services will be built.                     
         </p>        
+        <p>
+          Electricity is a natural phenomenon, but it requires work, and resources. 
+          Electricity consumes about 20% of the energy used. AI consumes a fraction of this and may come from renewable as well as extractive sources but will increase. 
+        </p>
+        <p>
+          Is AI sustainable, and how should we use it?
+        </p>
       </section>
       </Layout>
   )
