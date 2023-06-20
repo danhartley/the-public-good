@@ -26,19 +26,19 @@ const Prometheus = () => {
 
         <h3>Context</h3>
         <p>
-          The problem with making a pledge is that you're supposed to stick to it, sometimes forever. So it was as a relief when my colleague Alija and I at RTW, decided to make pledges time sensitive. 
+          The problem with making a pledge is that you're supposed to stick to it, sometimes forever. So it was a relief when my colleague Alija and I at RTW, decided to make pledges time sensitive. 
           Principles are rocks which change, if at all, imperceptibly, but pledges are like eddies in the surrounding waters, to be navigated until we are clear of immediate danger.
         </p>
         <p>Having a moral window in which to act also shifts emphasis from the doer to the thing being done. Acts are transitory but people, and circumstances, change.</p>
         <p>I've been using ChatGPT a lot this year, and talking and thinking about it more. 
-          Does the provenance of an idea or work of art matter, do memories exist (or are they simply re-reuns though the model of the brain), and is AI (or not AI), a distraction we cannot afford? 
+          Does the provenance of an idea or work of art matter, do memories exist (or are they simply re-reruns through the model of the brain), and is AI (or not AI), a distraction we cannot afford? 
         </p>
         <p></p>
         <p>
           <h3>Pledges</h3>
           <p>
             <div class={styles.inset}>
-              <div>To prevent myself being distracted by advances in AI, I pledge to return my focus to other things.</div>
+              <div>To prevent myself from being distracted by advances in AI, I pledge to return my focus to other things.</div>
               <div><strong>Pledge checkpoint: end of July 2023</strong></div>
             </div>
           </p>
