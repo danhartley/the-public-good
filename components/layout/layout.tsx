@@ -149,7 +149,7 @@ const Layout = ({
                     { router.pathname === '/' ? null : <nav aria-label="Published link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
                 </main>
                 <footer role="contentinfo" class={styles.footer}>
-                    <div><span>© <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL> 2022. All rights reserved.</span></div>
+                    <div><span>© <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL> 2023. All rights reserved.</span></div>
                     <div class={styles.externalList}><Links.EL link={{source:'https://www.linkedin.com/in/danhartley/'}}>LinkedIn</Links.EL> | <Links.IL link={{source:'personal/cv'}}>CV</Links.IL> | <Links.EL link={{source:`https://github.com/danhartley/the-public-good/discussions${discussions}`}}>Comment</Links.EL></div>
                     <SiteMetrics title={title} />
                 </footer>
