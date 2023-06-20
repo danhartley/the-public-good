@@ -1,4 +1,5 @@
 import Layout from 'components/layout/layout'
+import Links from 'components/links/Links'
 import styles from 'pages/pages.module.scss'
 
 const Prometheus = () => {
@@ -27,13 +28,14 @@ const Prometheus = () => {
         <h3>Context</h3>
         <p>
           The problem with making a pledge is that you're supposed to stick to it, sometimes forever. So it was a relief when my colleague Alija and I at RTW, decided to make pledges time sensitive. 
-          Principles are rocks which change, if at all, imperceptibly, but pledges are like eddies in the surrounding waters, to be navigated until we are clear of immediate danger.
+          Principles are rocks which change imperceptibly, if at all, but pledges are like eddies in the surrounding waters, to be navigated until we are clear of immediate danger.
         </p>
         <p>Having a moral window in which to act also shifts emphasis from the doer to the thing being done. Acts are transitory but people, and circumstances, change.</p>
         <p>I've been using ChatGPT a lot this year, and talking and thinking about it more. 
           Does the provenance of an idea or work of art matter, do memories exist (or are they simply re-reruns through the model of the brain), and is AI (or not AI), a distraction we cannot afford? 
         </p>
-        <p></p>
+        <p>At RTW we are launching a Responsible AI Pledge Challenge because AI affects all of us, and if we act collectively, sharing our problems and solutions, we may find a way to make good use of it.</p>        
+        <p>Here are my contributions.</p>
         <p>
           <h3>Pledges</h3>
           <p>
@@ -48,10 +50,26 @@ const Prometheus = () => {
               <div><strong>Pledge checkpoint: end of summer 2023</strong></div>
             </div>
           </p>
+          <p>
+            <div class={styles.inset}>
+              <div>To share what I learn about AI, and to provide links to the materials, sources, and people that have helped me.</div>
+              <div><strong>Pledge checkpoint: tricky, but I'll check in on this one at the end of the summer too</strong></div>
+            </div>
+          </p>
         </p>
-        <p>          
+        <p>
+          <h3>Contributors</h3>
+          <p>
+          With thanks in no particular order to Alja, Carl, JP, Franca, Christina, Carla, Pierre, Anne and Bernard, and my former colleagues at Altruistiq with whom I have shared many conversations about the upsides, downsides, and conundrums of recent developments in AI.         
+          </p>
         </p>
       </section>
+
+      <Links.RelatedLinks
+        links={[
+          { value: 'ai/resources', text: 'AI - Resources' },
+        ]}
+      ></Links.RelatedLinks>
       </Layout>
   )
 }
