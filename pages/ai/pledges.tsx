@@ -14,27 +14,42 @@ const Prometheus = () => {
     >
       <section>
         <h2>
-          "Quote." <span class={styles.attribution}> Author</span>
+          "If anyone is feeling anxious, worried or maybe you just want a chat, please, please do not come crying to me." <span class={styles.attribution}>Sister Michael, Derry Girls</span>
         </h2>        
         <figure>
           <div>
           <a title="Aubrey Beardsley, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Beardsley-peacockskirt.PNG">
-            <img class={styles.externalImg} width="172px" height="240px" alt="Beardsley-peacockskirt" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Aubrey_Beardsley_-_Edgar_Poe_3.jpg/392px-Aubrey_Beardsley_-_Edgar_Poe_3.jpg" />
+            <img class={styles.externalImg} width="172px" height="240px" alt="Beardsley-peacockskirt" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Beardsley-peacockskirt.PNG/430px-Beardsley-peacockskirt.PNG" />
           </a>
           </div>
         </figure>
 
+        <h3>Context</h3>
         <p>
-          
-        </p>        
-        <p>
-          <h3>Context</h3>
-          <div class={styles.inset}>Inset</div>
-          <h3>Pledges</h3>
-          <div class={styles.inset}>Inset</div>
+          The problem with making a pledge is that you're supposed to stick to it, sometimes forever. So it was as a relief when my colleague Alija and I at RTW, decided to make pledges time sensitive. 
+          Principles are rocks which change, if at all, imperceptibly, but pledges are like eddies in the surrounding waters, to be navigated until we are clear of immediate danger.
         </p>
+        <p>Having a moral window in which to act also shifts emphasis from the doer to the thing being done. Acts are transitory but people, and circumstances, change.</p>
+        <p>I've been using ChatGPT a lot this year, and talking and thinking about it more. 
+          Does the provenance of an idea or work of art matter, do memories exist (or are they simply re-reuns though the model of the brain), and is AI (or not AI), a distraction we cannot afford? 
+        </p>
+        <p></p>
         <p>
-          Is AI sustainable, and how should we use it?
+          <h3>Pledges</h3>
+          <p>
+            <div class={styles.inset}>
+              <div>To prevent myself being distracted by advances in AI, I pledge to return my focus to other things.</div>
+              <div><strong>Pledge checkpoint: end of July 2023</strong></div>
+            </div>
+          </p>
+          <p>
+            <div class={styles.inset}>
+              <div>To compensate for the water use of my chats with ChatGPT, I pledge to use grey water for my plants.</div>
+              <div><strong>Pledge checkpoint: end of summer 2023</strong></div>
+            </div>
+          </p>
+        </p>
+        <p>          
         </p>
       </section>
       </Layout>

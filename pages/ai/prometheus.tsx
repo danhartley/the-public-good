@@ -18,7 +18,7 @@ const Prometheus = () => {
         </h2>        
         <figure>
           <div>
-          <a title="Aubrey Beardsley, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Beardsley-peacockskirt.PNG">
+          <a title="Aubrey Beardsley, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/w/index.php?curid=188018">
             <img class={styles.externalImg} width="172px" height="240px" alt="Beardsley-peacockskirt" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Aubrey_Beardsley_-_Edgar_Poe_3.jpg/392px-Aubrey_Beardsley_-_Edgar_Poe_3.jpg" />
           </a>
           </div>
