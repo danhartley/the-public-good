@@ -35,7 +35,7 @@ export default function Home() {
             <h2>AI</h2>
             
             <Links.ILBlock link={{'value': 'ai/resources', 'text': 'AI - Resources'}}></Links.ILBlock>
-            <Links.ILBlock link={{'value': 'ai/prometheus', 'text': 'AI - Prometheus'}}></Links.ILBlock>
+            {/* <Links.ILBlock link={{'value': 'ai/prometheus', 'text': 'AI - Prometheus'}}></Links.ILBlock> */}
         </section>
 
         <section>
