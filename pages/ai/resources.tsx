@@ -107,6 +107,14 @@ const AIOResources = () => {
           <div>Dan Hernandez (Nuvalence)</div>
         </div>
 
+        <h3>Design</h3>
+        <div>
+          <Links.EL link={{ source: 'https://www.nngroup.com/articles/ai-paradigm/' }}>
+          AI: First New UI Paradigm in 60 Years
+          </Links.EL>
+          <div>Jakob Nielsen</div>
+        </div>
+
         <h3>Technical</h3>
         <div>
           <Links.EL link={{ source: 'https://arxiv.org/pdf/1706.03762.pdf' }}>

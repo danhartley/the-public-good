@@ -13,16 +13,16 @@ const Extracts = () => {
       <section>
         <ul class={styles.unorderedList}>
           <li>
-            <Links.IL link={{ source: 'personal/brothers' }}>Brothers</Links.IL>
-          </li>
-          <li>
             <Links.IL link={{ source: 'personal/oleta' }}>Oleta</Links.IL>
           </li>
           <li>
-            <Links.IL link={{ source: 'personal/works' }}>Works</Links.IL>
+            <Links.IL link={{ source: 'personal/brothers' }}>Brothers</Links.IL>
           </li>
           <li>
             <Links.IL link={{ source: 'personal/julio' }}>Júlio</Links.IL>
+          </li>
+          <li>
+            <Links.IL link={{ source: 'personal/works' }}>Works</Links.IL>
           </li>
         </ul>
       </section>

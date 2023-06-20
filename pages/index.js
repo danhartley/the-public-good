@@ -13,7 +13,7 @@ export default function Home() {
 
             <p>I will <Links.IL link={{source:'services'}}>help you</Links.IL> create fast, accessible and secure websites.</p>
 
-            <p>I write about the climate crisis, responsible web development. There are extracts from <Links.IL link={{source:"personal/extracts"}}>Walking somehow from the sun</Links.IL>.</p>
+            <p>I write about the climate crisis, responsible web development, and occasionaly <Links.IL link={{source:"personal/extracts"}}>things I made up</Links.IL>.</p>
 
             <p>
                 <div>The site is designed according to a set of principles set out in a <Links.IL link={{source:'web-development/sociable-contract'}}>sociable contract</Links.IL>.</div>
@@ -35,6 +35,7 @@ export default function Home() {
             <h2>AI</h2>
             
             <Links.ILBlock link={{'value': 'ai/resources', 'text': 'AI - Resources'}}></Links.ILBlock>
+            {/* <Links.ILBlock link={{'value': 'ai/pledges', 'text': 'Responsible AI Pledge Challenge'}}></Links.ILBlock> */}
             {/* <Links.ILBlock link={{'value': 'ai/prometheus', 'text': 'AI - Prometheus'}}></Links.ILBlock> */}
         </section>
 
