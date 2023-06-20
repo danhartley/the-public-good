@@ -27,7 +27,7 @@ const Prometheus = () => {
         'Responsible AI Pledge Challenge'
       }
       rt="2"
-      image="https://commons.wikimedia.org/wiki/File:Beardsley-peacockskirt.PNG"
+      image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Beardsley-peacockskirt.PNG/430px-Beardsley-peacockskirt.PNG"
     >
       <section>
         <h2>
