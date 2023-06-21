@@ -54,7 +54,7 @@ const Pledges = () => {
         <p>I've been using ChatGPT a lot this year, and talking and thinking about it more. 
           Does the provenance of an idea or work of art matter, do memories exist (or are they simply re-reruns through the model of the brain), and is AI (or not AI), a distraction we cannot afford? I've also been asking myself what the cost is to use AI, to our privacy, to people's rights, and to the environment.
         </p>
-        <p>I will return to those questions in later posts, but for now, here are my pledges.</p>
+        <p>I will return to these questions in later posts, but for now, here are my pledges.</p>
         <p>
           <h3>Pledges</h3>
           <p>
