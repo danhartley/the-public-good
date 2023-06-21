@@ -110,6 +110,14 @@ const AIOResources = () => {
         <h3>Design</h3>
         <div>
           <Links.EL link={{ source: 'https://www.nngroup.com/articles/ai-paradigm/' }}>
+          Self-healing code is the future of software development
+          </Links.EL>
+          <div>Ben Popper (Stackoverflow)</div>
+        </div>
+
+        <h3>Development</h3>
+        <div>
+          <Links.EL link={{ source: 'https://stackoverflow.blog/2023/06/07/self-healing-code-is-the-future-of-software-development/' }}>
           AI: First New UI Paradigm in 60 Years
           </Links.EL>
           <div>Jakob Nielsen</div>
@@ -146,7 +154,7 @@ const AIOResources = () => {
           </Links.EL>
         </div>
 
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <div>
           <Links.EL link={{ source: 'https://redis.com/blog/chatgpt-memory-project/' }}>
           Introducing the ChatGPT Memory Project
@@ -175,7 +183,7 @@ const AIOResources = () => {
         </div>
         <div>Egor Menyaylo</div>
 
-        <h4>Video Instruction</h4>
+        <h3>Video Instruction</h3>
         <div>
           <Links.EL link={{ source: 'https://learn.deeplearning.ai/chatgpt-prompt-eng' }}>
           ChatGPT Prompt Engineering for Developers (Deeplearning.ai + OpenAI)

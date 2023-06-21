@@ -18,7 +18,7 @@ const references = [
   },
 ]
 
-const Prometheus = () => {
+const Pledges = () => {
   return (
     <Layout
       header="Responsible AI Pledge Challenge"
@@ -41,17 +41,20 @@ const Prometheus = () => {
           </div>
         </figure>
 
-        <h3>Context</h3>
+        <h3>The challenge</h3>
+        <p>The open source project ResponsibleTechWork has <Links.EL link={{ source: 'https://responsibletech.work/blog/2023/6/20/announcing-the-responsible-ai-pledge-challenge/' }}> challenged</Links.EL> users of AI to contribute to its future best practices by making<Links.EL link={{ source: 'https://responsibletech.work/tools/development/pledge-works/' }}> pledges</Links.EL>.</p>
+        <p>Our argument - I am a contributor to RTW - is that if we act collectively, sharing our concerns and aspirations, we have a better chance of putting AI to good use.</p>
+
+        <h3>My response</h3>
         <p>
-          The problem with making a pledge is that you're supposed to stick to it, sometimes forever. So it was a relief when my colleague Alja and I at <Links.EL link={{ source: 'https://responsibletech.work/' }}>RTW</Links.EL>, decided to make pledges time sensitive. 
+          The problem with making pledges is the understanding that you're supposed to stick to them in perpetuity. So it was a relief when my colleague Alja and I at RTW realised that pledges, like humans, can be sensitive to time.
           Principles are rocks which change imperceptibly, if at all, but pledges are like eddies in the surrounding waters, to be navigated until we are clear of immediate danger.
         </p>
-        <p>Having a moral window in which to act also shifts emphasis from the doer to the thing being done. Acts are transitory but people, and circumstances, change.</p>
+        <p>Having a moral window in which to act also shifts the emphasis from the doer to the thing being done. Acts are transitory but people, and circumstances, change.</p>
         <p>I've been using ChatGPT a lot this year, and talking and thinking about it more. 
-          Does the provenance of an idea or work of art matter, do memories exist (or are they simply re-reruns through the model of the brain), and is AI (or not AI), a distraction we cannot afford? 
+          Does the provenance of an idea or work of art matter, do memories exist (or are they simply re-reruns through the model of the brain), and is AI (or not AI), a distraction we cannot afford? I've also been asking myself what the cost is to use AI, to our privacy, to people's rights, and to the environment.
         </p>
-        <p>At RTW we are launching <Links.EL link={{ source: 'https://responsibletech.work/blog/2023/6/20/announcing-the-responsible-ai-pledge-challenge/' }}>The Responsible AI Pledge Challenge</Links.EL>  because AI affects all of us, and if we act collectively, sharing our problems and solutions, we may find a way to make good use of it.</p>        
-        <p>Here are my intial pledges.</p>
+        <p>I will return to those questions in later posts, but for now, here are my pledges.</p>
         <p>
           <h3>Pledges</h3>
           <p>
@@ -69,12 +72,12 @@ const Prometheus = () => {
           <p>
             <div class={styles.inset}>
               <div>To share what I learn about AI, I pledge to provide links to the materials, sources, and people that have helped me.</div>
-              <div><strong>Pledge checkpoint: tricky, but I'll review in on this one at the end of the summer too</strong></div>
+              <div><strong>Pledge checkpoint: tricky, but I'll review this one at the end of the summer too</strong></div>
             </div>
           </p>
         </p>
         <p>
-          <h3>Contributors</h3>
+          <h3>Influences</h3>
           <p>
           With thanks to <Links.EL link={{ source: 'https://ialja.com/' }}>Alja</Links.EL>, Carl, <Links.EL link={{ source: 'https://noisewrangler.bandcamp.com/' }}>JP</Links.EL>, Franca, Christina, Carla, Pierre, Anne and Bernard, and my former colleagues at <Links.EL link={{ source: 'https://www.altruistiq.com/our-team' }}>Altruistiq</Links.EL>  with all of whom I have shared many conversations about the upsides, downsides, and conundrums of recent developments in AI.         
           </p>
@@ -107,4 +110,4 @@ const Prometheus = () => {
   )
 }
 
-export default Prometheus
+export default Pledges
