@@ -44,7 +44,7 @@ const Hyperlinks = () => {
     >
       <section>
         <h2>
-          The Hyperlink is a defining feature of the web, a tiny digital instruction that transports us like a magic
+          The Hyperlink is a defining feature of the web, a tiny digital instruction that transports as if on a magic
           carpet to far off lands.
         </h2>
 
