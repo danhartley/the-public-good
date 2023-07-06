@@ -94,6 +94,12 @@
             }         
         }
     }
+
+    ins {
+        text-decoration: none;
+        padding-bottom: .1rem;
+        border-bottom: 1px solid rgba(var(--l-v), 0.8);
+    }
 }
 
 .mode {

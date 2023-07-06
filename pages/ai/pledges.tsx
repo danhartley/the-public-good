@@ -59,7 +59,12 @@ const Pledges = () => {
           <h3>Pledges</h3>
           <p>
             <div class={styles.inset}>
-              <div>To prevent myself from being distracted by advances in AI, I pledge to return my focus to other things.</div>
+              <div>
+                <del>To prevent myself from being distracted by advances in AI, I pledge to return my focus to other things.</del>                
+              </div>
+              <div>
+                <ins>I pledge to stop using ChatGPT until I have a better understanding of its impact on resources and people.</ins> <span> [Updated 6 July 2023]</span>
+              </div>
               <div><strong>Pledge checkpoint: end of July 2023</strong></div>
             </div>
           </p>
