@@ -17,7 +17,13 @@ const AIOResources = () => {
           On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?
           </Links.EL>
         </div>
-        <div>Shmargaret Shmitchell et al.</div>
+        <div>PDF | Emily M. Bender, Timnit Gebru, Angelina McMillan-Major & Shmargaret Shmitchell</div>
+        <div>
+          <Links.EL link={{ source: 'https://www.youtube.com/watch?v=jAHRbFetqII' }}>
+          A.I. and Stochastic Parrots
+          </Links.EL>
+        </div>
+        <div>PDF | Emily M. Bender & Timnit Gebru</div>
         <div>
           <Links.EL link={{ source: 'https://knightcolumbia.org/content/understanding-social-media-recommendation-algorithms' }}>
           Understanding Social Media Recommendation Algorithms
@@ -38,6 +44,12 @@ const AIOResources = () => {
         <div>OpenAI</div>
 
         <h3>Sustainability</h3>
+        <div>
+          <Links.EL link={{ source: 'https://arxiv.org/pdf/1906.02243.pdf' }}>
+          Energy and Policy Considerations for Deep Learning in NLP (PDF)
+          </Links.EL>
+        </div>
+        <div>Emma Strubell Ananya Ganesh Andrew McCallum (University of Massachusetts Amherst)</div>
         <div>
           <Links.EL link={{ source: 'https://arxiv.org/pdf/2211.02001.pdf' }}>
           Estimating the carbon footprint of Bloom, a 176b parameter language model (PDF)

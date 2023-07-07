@@ -18,6 +18,8 @@ export default function Home() {
             {/* <p>
                 <div>The site is designed according to a set of principles set out in a <Links.IL link={{source:'web-development/sociable-contract'}}>sociable contract</Links.IL>.</div>
             </p> */}
+
+            <Links.ILBlock link={{'value': 'notes/2023/july', 'text': 'July 2023 notes'}}></Links.ILBlock>
         </section>
 
         <section>

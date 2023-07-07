@@ -1,4 +1,5 @@
 import Layout from 'components/layout/layout'
+import Links from 'components/links/Links';
 import styles from 'pages/pages.module.scss'
 
 const Prometheus = () => {
@@ -30,8 +31,7 @@ const Prometheus = () => {
           AI may become ubiquitous, a fundamental service without which we would struggle to function, a foundation upon which industry, technology and other services will be built.                     
         </p>        
         <p>
-          Electricity is a natural phenomenon, but it requires work, and resources. 
-          Electricity consumes about 20% of the energy used. AI consumes a fraction of this and may come from renewable as well as extractive sources but will increase. 
+          Electricity is a natural phenomenon, but it requires work, and resources. <Links.EL link={{'label': 'Share of electricity in total final energy consumption', 'source': 'https://yearbook.enerdata.net/electricity/share-electricity-final-consumption.html'}} >Electricity's share of energy consumption is about 20%</Links.EL>. AI's <Links.EL link={{'label': 'Energy and Policy Considerations for Deep Learning in NLP', 'source': 'https://arxiv.org/pdf/1906.02243.pdf'}}> consumption of electricity</Links.EL> (and other resources including water) is small but increasing. 
         </p>
         <p>
           Is AI sustainable, and how should we use it?

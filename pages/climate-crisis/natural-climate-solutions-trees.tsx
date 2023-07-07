@@ -8,6 +8,10 @@ import Top from 'components/top/top'
 
 const references = [
   {
+    name: 'In-depth Q&A: How trees benefit nature, people and the climate | CarbonBrief, Orla Dwyer, ',
+    source: 'https://www.carbonbrief.org/in-depth-qa-how-trees-benefit-nature-people-and-the-climate/',
+  },
+  {
     name: 'Natural climate solutions | Griscom et al.',
     source: 'https://www.pnas.org/content/114/44/11645',
   },
@@ -17,11 +21,11 @@ const references = [
       'https://theconversation.com/there-arent-enough-trees-in-the-world-to-offset-societys-carbon-emissions-and-there-never-will-be-158181',
   },
   {
-    name: '10 ways ‘negative emissions’ could slow climate change | Carbon Brief',
+    name: '10 ways ‘negative emissions’ could slow climate change | CarbonBrief',
     source: 'https://www.carbonbrief.org/explainer-10-ways-negative-emissions-could-slow-climate-change',
   },
   {
-    name: 'Experts assess the feasibility of ‘negative emissions’ | Carbon Brief',
+    name: 'Experts assess the feasibility of ‘negative emissions’ | CarbonBrief',
     source: 'https://www.carbonbrief.org/in-depth-experts-assess-the-feasibility-of-negative-emissions',
   },
   {
@@ -103,7 +107,7 @@ const references = [
     source: 'https://www.nature.com/articles/s41467-018-05132-5',
   },
   {
-    name: 'How ‘natural climate solutions’ can reduce the need for BECCS | Carbon Brief',
+    name: 'How ‘natural climate solutions’ can reduce the need for BECCS | CarbonBrief',
     source: 'https://www.carbonbrief.org/analysis-how-natural-climate-solutions-can-reduce-the-need-for-beccs',
   },
 ]
@@ -982,7 +986,7 @@ const NCSPartOne = () => {
                       'https://www.carbonbrief.org/explainer-10-ways-negative-emissions-could-slow-climate-change',
                   }}
                 >
-                  Albedo | Carbon Brief
+                  Albedo | CarbonBrief
                 </Links.EL>{' '}
               </cite>
             </div>
