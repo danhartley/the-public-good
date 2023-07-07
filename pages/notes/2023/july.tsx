@@ -15,6 +15,26 @@ const July = () => {
     >
       <section>
         <strong>
+          Saturday 01 July 2023
+        </strong>        
+
+        <p>AI & Electricity</p>
+
+        <p>
+          There are parallels between AI and electricity. Both were greeted with a mixture of wonder, apprehension, and fear. They transformed multiple industries and societies, yet both remain unevenly distributed. 
+          They are enigmatic, used by many but understood by few, and mysterious even to those responsible for their proliferation. One can kill you outright, the other has the potential to destroy lives and possibly societies. 
+          AI may become ubiquitous, a fundamental service without which we would struggle to function, a foundation upon which industry, technology and other services will be built.                     
+        </p>        
+        <p>
+          Electricity is a natural phenomenon, but it requires work, and resources. <Links.EL link={{'label': 'Share of electricity in total final energy consumption', 'source': 'https://yearbook.enerdata.net/electricity/share-electricity-final-consumption.html'}} >Electricity's share of energy consumption is about 20%</Links.EL>. AI's <Links.EL link={{'label': 'Energy and Policy Considerations for Deep Learning in NLP', 'source': 'https://arxiv.org/pdf/1906.02243.pdf'}}> consumption of electricity</Links.EL> (and other resources including water) is small but increasing. 
+        </p>
+        <p>
+          Is AI sustainable, and how should we use it?
+        </p>
+        
+        <br />
+        
+        <strong>
           Thursday 06 July 2023
         </strong>        
         
@@ -130,8 +150,21 @@ const July = () => {
           <li>Timnit Gebru raises serious questions about thinking persuasive in the AI community that has roots in eugenics</li>
           <li>Generally both dismissive of AI - but is this fair? (And is it not assumed that the term AI is often used casually as a catch-all)</li>
           <li>Stochastic parrots quoted but they were not consulted on the <Links.EL link={{source: 'https://futureoflife.org/open-letter/pause-giant-ai-experiments/', label:'Pause Giant AI Experiments: An Open Letter'}}>open letter</Links.EL> calling for a six month moratorium on training of AI systems</li>
-          <li>Frank speech and openness to discussion, uncertainty and clear on power of markets/money to corrupt, they provide welcome relief to the plastic, seamless bros they criticise.</li>
+          <li>Frank speech and openness to discussion, uncertainty but clear on power of markets/money to corrupt, they provide welcome relief to the plastic, seamless bros they criticise.</li>
+          <li>Both critical about Arxiv</li>
         </ul>
+
+        <div>
+          <Links.EL link={{ source: 'https://www.theguardian.com/technology/2023/jul/07/ai-for-good-artificial-intelligence-conference', label: '‘You can do both’: experts seek ‘good AI’ while attempting to avoid the bad'}}>
+          ‘You can do both’: experts seek ‘good AI’ while attempting to avoid the bad
+          </Links.EL>
+        </div>
+        <div>The Guardian | Hannah Devlin</div>
+
+        <p>
+          <q>Mass discrimination, the black box problem, data protection violations, large-scale unemployment and environmental harms - these are the actual existential risks. We need to focus on these issues right now and not get distracted by hypothetical risks. This is a disservice to the people who are already suffering under the impact of AI.</q>
+          <div> Prof Sandra Wachter | University of Oxford</div>
+        </p>
 
         <br />
 
