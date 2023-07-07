@@ -32,7 +32,7 @@ const July = () => {
         </ul> 
 
         <div>
-          <Links.EL link={{ source: 'https://en.wikisource.org/wiki/Leviathan/The_First_Part#Chapter_III:_Of_the_Consequence_or_Train_of_Imagination' }}>
+          <Links.EL link={{ source: 'https://en.wikisource.org/wiki/Leviathan/The_First_Part#Chapter_III:_Of_the_Consequence_or_Train_of_Imagination', label:'Thomas Hobbes: Chapter III: Of the Consequence or Train of Imagination' }}>
           Thomas Hobbes: Chapter III: Of the Consequence or Train of Imagination
           </Links.EL>
         </div>
@@ -40,7 +40,7 @@ const July = () => {
         <p>CarbonBrief report on the importance of trees</p>
 
         <div>
-          <Links.EL link={{ 'label': 'In-depth Q&A: How trees benefit nature, people and the climate', source: 'https://www.carbonbrief.org/in-depth-qa-how-trees-benefit-nature-people-and-the-climate/' }}>
+          <Links.EL link={{ label: 'In-depth Q&A: How trees benefit nature, people and the climate', source: 'https://www.carbonbrief.org/in-depth-qa-how-trees-benefit-nature-people-and-the-climate/' }}>
           In-depth Q&A: How trees benefit nature, people and the climate
           </Links.EL>
         </div>
@@ -57,7 +57,7 @@ const July = () => {
         </p>
 
         <div>
-          <Links.EL link={{ source: 'https://openai.com/blog/introducing-superalignment' }}>
+          <Links.EL link={{ source: 'https://openai.com/blog/introducing-superalignment', label:'Introducing Superalignment' }}>
           Introducing Superalignment
           </Links.EL>
         </div>
@@ -68,7 +68,7 @@ const July = () => {
         </p>
 
         <div>
-          <Links.EL link={{ source: 'https://dl.acm.org/doi/pdf/10.1145/3442188.3445922' }}>
+          <Links.EL link={{ source: 'https://dl.acm.org/doi/pdf/10.1145/3442188.3445922', label:'On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?' }}>
           On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?
           </Links.EL>
         </div>
@@ -118,7 +118,7 @@ const July = () => {
         </ul>
 
         <div>
-          <Links.EL link={{'value': 'https://www.youtube.com/watch?v=jAHRbFetqII'}}>
+          <Links.EL link={{ source: 'https://www.youtube.com/watch?v=jAHRbFetqII', label:'A.I. and Stochastic Parrots | FACTUALLY with Emily Bender and Timnit Gebru'}}>
           A.I. and Stochastic Parrots | FACTUALLY with Emily Bender and Timnit Gebru
           </Links.EL>
         </div>
@@ -129,7 +129,7 @@ const July = () => {
           <li>Emily Bender describes text UI as marketing gimmick for ChatGPT; is this true? Language as an interface seems revolutionary (or at the least, a great UI)</li>
           <li>Timnit Gebru raises serious questions about thinking persuasive in the AI community that has roots in eugenics</li>
           <li>Generally both dismissive of AI - but is this fair? (And is it not assumed that the term AI is often used casually as a catch-all)</li>
-          <li>Stochastic parrots quoted but they were not consulted on the <Links.EL link={{'value': 'https://futureoflife.org/open-letter/pause-giant-ai-experiments/'}}>open letter</Links.EL> calling for a six month moratorium on training of AI systems</li>
+          <li>Stochastic parrots quoted but they were not consulted on the <Links.EL link={{source: 'https://futureoflife.org/open-letter/pause-giant-ai-experiments/', label:'Pause Giant AI Experiments: An Open Letter'}}>open letter</Links.EL> calling for a six month moratorium on training of AI systems</li>
           <li>Frank speech and openness to discussion, uncertainty and clear on power of markets/money to corrupt, they provide welcome relief to the plastic, seamless bros they criticise.</li>
         </ul>
 
@@ -138,7 +138,7 @@ const July = () => {
         <p>The end of capitalism</p>
 
         <div>
-          <Links.EL link={{'value': 'http://naturalcapitalcoalition.org/wp-content/uploads/2016/07/Trucost-Nat-Cap-at-Risk-Final-Report-web.pdf'}}>
+          <Links.EL link={{ source: 'http://naturalcapitalcoalition.org/wp-content/uploads/2016/07/Trucost-Nat-Cap-at-Risk-Final-Report-web.pdf', label: 'Natural capital at risk: the top 100 externalities of business'}}>
           Natural capital at risk: the top 100 externalities of business
           </Links.EL>
         </div>
