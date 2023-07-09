@@ -228,6 +228,150 @@ const July = () => {
           </li>
         </ul>
 
+
+        <br />
+
+        <strong>
+            Sunday 09 July 2023
+        </strong>        
+
+        <p>
+          The old switcheroo
+        </p>
+
+        <p>
+          Why is it that companies making godlike claims for their tech are unable to show their workings?
+        </p>
+        <p>
+          For example, it is left to third parties to determine the GHG emissions cost of training and running bots such as ChatGPT. 
+        </p>
+
+        <p>
+          OpenAI, the creators of ChatGPT, boast of how quickly they release code. 
+        </p>
+
+        <p>
+          Could this be in part because they have not considered the consequence of their actions; that they have willfully, or carelessly, responded to pressure from competitors rather than considering the impact of releasing code the effect of which is unknown and which cannot be predicted in advance?
+        </p>
+
+        <p>
+          The dangers were forseen. On what grounds to they take it upon themselves to ignore the warnings?
+        </p>
+
+        <p>
+          Here are people doing OpenAI's work for them.
+        </p>
+
+        <ul>
+          <li>
+            <div>
+              <Links.EL link={{ source: 'https://arxiv.org/pdf/1906.02243.pdf' }}>
+              Energy and Policy Considerations for Deep Learning in NLP (PDF)
+              </Links.EL>
+            </div>
+            <div>Emma Strubell Ananya Ganesh Andrew McCallum (University of Massachusetts Amherst)</div>                
+          </li>
+          <li>
+            <div>
+              <Links.EL link={{ source: 'https://arxiv.org/pdf/2211.02001.pdf' }}>
+              Estimating the carbon footprint of Bloom, a 176b parameter language model (PDF)
+              </Links.EL>
+            </div>
+            <div>Alexandra Sasha Luccioni (Hugging Face), Sylvain Viguier (Graphcore), Anne-Laure Ligozat (LISN & ENSIIE)</div>
+          </li>
+          <li>
+            <div>
+              <Links.EL link={{ source: 'https://towardsdatascience.com/the-carbon-footprint-of-chatgpt-66932314627d' }}>
+              The Carbon Footprint of ChatGPT
+              </Links.EL>
+            </div>
+            <div>Kasper Groes Albin Ludvigsen (https://towardsdatascience.com/)</div>
+          </li>
+          <li>
+            <div>
+              <Links.EL link={{ source: 'https://arxiv.org/ftp/arxiv/papers/2104/2104.10350.pdf', label: 'Aligning artificial intelligence with climate change mitigation' }}>
+              Aligning artificial intelligence with climate change mitigation
+              </Links.EL>
+            </div>
+            <div>Lynn H. Kaack et al. PDF | nature climaate change</div>
+          </li>
+          <li>
+            <div>
+              <Links.EL link={{ source: 'https://www.nature.com/articles/s41558-022-01377-7.epdf?sharing_token=VNkvWalL1KVrxYte7VHfTtRgN0jAjWel9jnR3ZoTv0PFrrDwT9y68ah6oNg1ZvjBfcIb3Kbp_v5VihLBWDydbfc5jhcVPwJLve592DM4ofdyb9-AdB37nZsc6NVbVb-fttOlElGgXuHDhQRUp82Rwc9buEoGydxnCgU609qUgUY%3D', label: 'Carbon Emissions and Large Neural Network Training' }}>
+              Carbon Emissions and Large Neural Network Training 
+              </Links.EL>
+            </div>
+            <div>Patterson et al. PDF</div>
+          </li>
+        </ul>
+
+        <p>
+          <blockquote cite="https://www.technologyreview.com/2023/03/14/1069823/gpt-4-is-bigger-and-better-chatgpt-openai/">
+          “That’s something that, you know, we can’t really comment on at this time,” said OpenAI’s chief scientist, Ilya Sutskever, when I spoke to members of the GPT-4 team in a video call an hour after the announcement. “It’s pretty competitive out there.”
+          </blockquote>
+          <cite>
+            <Links.EL
+              link={{ source: 'https://www.technologyreview.com/2023/03/14/1069823/gpt-4-is-bigger-and-better-chatgpt-openai/' }}
+            >
+              GPT-4 is bigger and better than ChatGPT—but OpenAI won’t say why
+            </Links.EL>
+          </cite>
+        </p>
+        <p>And yet they found the time to enter ChatGPT and GPT4 in the Uniform Bar Exam and show off their impressive scores.</p>
+        <p>
+          <blockquote cite="https://www.technologyreview.com/2023/03/14/1069823/gpt-4-is-bigger-and-better-chatgpt-openai/">
+          But OpenAI has chosen not to reveal how large GPT-4 is. In a departure from its previous releases, the company is giving away nothing about how GPT-4 was built—not the data, the amount of computing power, or the training techniques. “OpenAI is now a fully closed company with scientific communication akin to press releases for products,” says Wolf.
+          </blockquote>
+          <cite>
+            <Links.EL
+              link={{ source: 'https://www.technologyreview.com/2023/03/14/1069823/gpt-4-is-bigger-and-better-chatgpt-openai/' }}
+            >
+              GPT-4 is bigger and better than ChatGPT—but OpenAI won’t say why
+            </Links.EL>
+          </cite>
+        </p>
+        <p>
+          <blockquote cite="https://www.technologyreview.com/2023/03/14/1069823/gpt-4-is-bigger-and-better-chatgpt-openai/">
+          Even Sutskever suggests that going slower with releases might sometimes be preferable: “It would be highly desirable to end up in a world where companies come up with some kind of process that allows for slower releases of models with these completely unprecedented capabilities.”
+          </blockquote>
+          <cite>
+            <Links.EL
+              link={{ source: 'https://www.technologyreview.com/2023/03/14/1069823/gpt-4-is-bigger-and-better-chatgpt-openai/' }}
+            >
+              GPT-4 is bigger and better than ChatGPT—but OpenAI won’t say why
+            </Links.EL>
+          </cite>
+        </p>
+        
+        <br />
+
+        <strong>
+          Budgets & net postive effects
+        </strong>
+
+        <p>
+          Ideally there should be budgets for emissions, water, etc. and sectors (companies and regions) should be responsible for:
+          <ul>
+            <li>
+              Working out the sustainable budget
+            </li>
+            <li>
+              Providing the means (technical and financial) for accounting
+            </li>
+            <li>
+            Providing the means (technical and financial) for fining or excluding rule breakers
+            </li>
+            <li>
+              Dividing the budget fairly and equitably
+            </li>            
+          </ul>
+          If they want a share.
+        </p>
+
+        <p>
+          In the short term, while budgets are assessed, companies take on the responsibility for showing all their costs and making a case for net gain.
+        </p>
+
         </section>
         
       </Layout>
