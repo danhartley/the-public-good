@@ -176,6 +176,58 @@ const July = () => {
           </Links.EL>
         </div>
 
+        <br />
+
+        <strong>
+            Saturday 08 July 2023
+        </strong>        
+
+        <p>
+          On AI & Exploitation
+        </p>
+
+        <div>
+          <Links.EL link={{ source: 'https://www.noemamag.com/the-exploited-labor-behind-artificial-intelligence/', label:'The Exploited Labor Behind Artificial Intelligence' }}>
+          The Exploited Labor Behind Artificial Intelligence
+          </Links.EL>
+          <div>Nash Weerasekera for Noema Magazine</div>
+        </div>
+
+        <ul>
+          <li>Exploitation of workers in the gig economy through low wages and surveillance</li>
+          <li>Abuse widespread inc. universities</li>
+          <li>Roles are highly repetitive and without context inc. labelers, delivery drivers and content moderators</li>
+          <li>Companies e.g. Amazon treat its workers like machines</li>
+          <li>
+            <div>
+              <Links.EL link={{ source: 'https://dl.acm.org/doi/abs/10.1145/2470654.2470742', label:'Turkopticon: interrupting worker invisibility in amazon mechanical turk' }}>
+              Turkopticon: interrupting worker invisibility in amazon mechanical turk
+              </Links.EL>
+            </div>
+          </li>
+          <li>
+            <div>
+              <Links.EL link={{ source: 'https://www.alphabetworkersunion.org/', label:'Alphabet workers union' }}>
+              Alphabet workers union
+              </Links.EL>
+            </div>
+          </li>
+          <li>
+            <div>
+              <Links.EL link={{ source: 'https://amazonemployees4climatejustice.medium.com/', label:'Amazon Employees for Climate Justice' }}>
+              Amazon Employees for Climate Justice
+              </Links.EL>
+            </div>
+          </li>
+          <li>
+            <div>
+              <Links.EL link={{ source: 'https://www.gigeconomydata.org/basics/how-many-gig-workers-are-there', label:'How many gig workers are there?' }}>
+              How many gig workers are there?
+              </Links.EL>
+            </div>
+          </li>
+        </ul>
+
         </section>
         
       </Layout>

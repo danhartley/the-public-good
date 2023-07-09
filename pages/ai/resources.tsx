@@ -23,7 +23,13 @@ const AIOResources = () => {
           A.I. and Stochastic Parrots
           </Links.EL>
         </div>
-        <div>PDF | Emily M. Bender & Timnit Gebru</div>
+        <div>Video | Emily M. Bender & Timnit Gebru</div>
+        <div>
+          <Links.EL link={{ source: 'https://www.dair-institute.org/' }}>
+          Distributed AI Research Institute
+          </Links.EL>
+        </div>
+        <div>Timnit Gebru</div>
         <div>
           <Links.EL link={{ source: 'https://knightcolumbia.org/content/understanding-social-media-recommendation-algorithms' }}>
           Understanding Social Media Recommendation Algorithms
@@ -88,6 +94,12 @@ const AIOResources = () => {
         <div>Our World in Data</div>
 
         <h3>Articles</h3>
+        <div>
+          <Links.EL link={{ source: 'https://www.noemamag.com/the-exploited-labor-behind-artificial-intelligence/', label:'The Exploited Labor Behind Artificial Intelligence' }}>
+          The Exploited Labor Behind Artificial Intelligence
+          </Links.EL>
+          <div>Nash Weerasekera for Noema Magazine</div>
+        </div>
         <div>
           <Links.EL link={{ source: 'https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/' }}>
           What Is ChatGPT Doing … and Why Does It Work?
