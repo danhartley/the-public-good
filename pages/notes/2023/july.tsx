@@ -293,7 +293,7 @@ const July = () => {
               Aligning artificial intelligence with climate change mitigation
               </Links.EL>
             </div>
-            <div>Lynn H. Kaack et al. PDF | nature climaate change</div>
+            <div>Lynn H. Kaack et al. PDF | nature climate change</div>
           </li>
           <li>
             <div>
@@ -346,7 +346,7 @@ const July = () => {
         <br />
 
         <strong>
-          Budgets & net postive effects
+          Budgets & net positive effects
         </strong>
 
         <p>
