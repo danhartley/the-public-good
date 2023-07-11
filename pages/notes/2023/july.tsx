@@ -35,8 +35,8 @@ const July = () => {
         <h2>On providing supporting evidence to my arguments</h2>
         
         <ul>
-          <li>Create new components: Train (for train of thought), and Car (for link in the train) to describle context and present arguments.</li>
-          <li>Human converstaions require context (something that may be missing when communicating with e.g. ChatGPT). Compare documentation for LLMs.</li>
+          <li>Create new components: Train (for train of thought), and Car (for link in the train) to describe context and present arguments.</li>
+          <li>Human conversations require context (something that may be missing when communicating with e.g. ChatGPT). Compare documentation for LLMs.</li>
           <li>Could there be proof for LLMs? And what proof could humans use (cf. philosophical proofs) e.g. for an article.</li>
           <li>Potential for 'pure ideas'; ideas that always behave the same way, and can be used and reused by others in new situations.</li>
           <li>Reference Thomas Hobbes' Train of Imagination: <q>When a man thinketh on anything whatsoever, his next thought after is not altogether so casual as it seems to be.</q> </li>
@@ -82,7 +82,7 @@ const July = () => {
           <li>
             <q>While the average human is responsible for an estimated 5t per year, the authors trained a Transformer (big) model with neural architecture search and estimated that the training procedure emitted 284t.</q>
           </li>
-          <li>Access to NLP research not equitable (because of cost of training)</li>
+          <li>Access to NLP research is not equitable (because of cost of training)</li>
           <li>
             <q>The amount of compute used to train the largest deep learning models (for NLP and other applications) has increased 300,000x in 6 years.</q>
           </li>
@@ -314,9 +314,7 @@ const July = () => {
         
         <br />
 
-        <strong>
-          Budgets & net positive effects
-        </strong>
+        <h4>Budgets & net positive effects</h4>
 
         <p>
           Ideally there should be budgets for emissions, water, etc. and sectors (companies and regions) should be responsible for:
