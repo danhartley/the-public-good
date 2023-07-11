@@ -228,7 +228,6 @@ const July = () => {
           </li>
         </ul>
 
-
         <br />
 
         <strong>
@@ -255,7 +254,7 @@ const July = () => {
         </p>
 
         <p>
-          The dangers were forseen. On what grounds to they take it upon themselves to ignore the warnings?
+          The dangers were forseen. On what grounds do they take it upon themselves to ignore the warnings?
         </p>
 
         <p>
@@ -371,6 +370,145 @@ const July = () => {
         <p>
           In the short term, while budgets are assessed, companies take on the responsibility for showing all their costs and making a case for net gain.
         </p>
+
+        <br />
+
+        <strong>
+            Monday 10 July 2023
+        </strong>        
+
+        <p>
+          Stochastic parrots again
+        </p>
+
+        <div>
+          <Links.EL link={{ source: 'https://techwontsave.us/episode/163_chatgpt_is_not_intelligent_w_emily_m_bender', label: 'ChatGPT Is Not Intelligent' }}>
+          ChatGPT Is Not Intelligent
+          </Links.EL>
+        </div>
+        <div>Emily M. Bender interviewed by Paris Marx for techwontsave</div>
+
+        <ul>
+          <li>
+            Bender frustrated at being presented as the critic
+          </li>
+          <li>
+            Presents positive reaction to ChatGPT as falling for the hype with insufficient scepticism
+          </li>
+          <li>
+            Criticises failure by reporters to question what is being presented; and of relying on the opinion of vested, non-expert opinion
+          </li>
+          <li>
+            'Pause letter': part of narrative that posits AI as autonomous agents (and that they are somehow accountable, not those who built them)
+          </li>
+          <li>
+            Many good sources mentioned - and linked to at the end - throughout the interview e.g. <Links.EL link={{source: 'https://incidentdatabase.ai/'}}>AI Incident Database</Links.EL> and <Links.EL link={{source: 'https://www.ajl.org/', label: 'Algorithmic Justice League'}}>Algorithmic Justice League</Links.EL>
+          </li>
+          <li>
+            Ridicules idea that humans are stochastic parrots which is fine, but no explanation as to why
+          </li>
+        </ul>
+
+        <br />
+
+        <strong>
+            Tuesday 11 July 2023
+        </strong>        
+
+        <p>
+          Cost of ML
+        </p>
+
+        <div>
+          <Links.EL link={{ source: 'https://www.nature.com/articles/s41558-022-01377-7.epdf?sharing_token=VNkvWalL1KVrxYte7VHfTtRgN0jAjWel9jnR3ZoTv0PFrrDwT9y68ah6oNg1ZvjBfcIb3Kbp_v5VihLBWDydbfc5jhcVPwJLve592DM4ofdyb9-AdB37nZsc6NVbVb-fttOlElGgXuHDhQRUp82Rwc9buEoGydxnCgU609qUgUY%3D', label: 'Carbon Emissions and Large Neural Network Training' }}>
+          Carbon Emissions and Large Neural Network Training 
+          </Links.EL>
+        </div>
+        <div>Patterson et al. PDF</div>
+
+        <ul>
+          <li>
+            3 categories of emissions
+            <ul>              
+              <li>
+                GHG emissions resulting from computing, caused by both the electricity used for ML computations and the embodied emissions associated with computing hardware. ML models differ drastically in energy they consume and consumption is spread across the model life-cycle - training, development, tuning and inference (use).
+                Standardised reporting across the life-cycle is essential but not practiced.
+              </li>
+              <li>
+                'Immediate' GHG emissions effects tied to the short-term outcomes of applications of ML
+              </li>
+              <li>
+                Structural or 'system-level' GHG effects induced by these applications
+              </li>
+            </ul>            
+          </li>
+        </ul>
+
+        <p>
+          Vast majority of ML research and development still focuses on improving model accuracy, rather than balancing accuracy and energy usage.
+        </p>
+
+        ICT sector currently accounts for ~1.4% global GHG emissions
+        <ul>
+          <li><span class={styles.fraction}>&#8532;</span> operational energy use (Scope 1 & 2)</li>
+          <li><span class={styles.fraction}>&#8531;</span> materials extraction, manufacturing, transportation and end-of-life phase (Scope 3)</li>
+          <li>Cloud and hyperscale data centres account for ~.1-.2% global GHG emissions of which ML less than <span class={styles.fraction}>&#188;</span></li>
+          <li>Energy for training and using ML is growing rapidly but so is efficiency (overall ICT energy rose 6% 2010-2018 with 550% growth in workloads)</li>
+          <li>Greater efficiency can come at the cost of greater Scope 3 emissions - embodied emissions in computing hardware and data centre construction</li>
+        </ul>
+
+        <strong>Immediate 'positive' application impacts for climate</strong>
+        <ul>
+          <li>Via data mining and remote sensing translates raw data into useable data</li>
+          <li>Tracking deforestation can inform policy</li>
+          <li>Forecasting crop yields, power production, and transportation demands</li>
+          <li>Controlling and improving operational efficiency of complex systems can save energy and resources</li>
+          <li>Improve speed and efficiency of climate modelling</li>
+        </ul>
+
+        <strong> Immediate 'negative' application impacts for climate</strong>
+        <ul>
+          <li>Decrease cost of emissions-intensive activities e.g. oil and gas exploration thereby potentially increasing their consumption</li>
+          <li>The 'Internet of Cows'</li>
+        </ul>
+
+        <p>Impact of ML is hard to assess due to lack of data (and reporting).</p>
+
+        <strong>System-level impacts</strong>
+
+        <p>
+        Impact of many societal ML applications may not be clear. They are hard to quantify but may be of greater significance than immediate application impacts. One example where outcome is hard to determine is the rebound effect e.g. efficient, shared autonomous vehicles may lead to more journeys. And ML technology in this field may lock us into private transport, preventing a move to greater use of public transport.
+        </p>
+
+        <p>Regulation is required around ML-driven technologies so that they (or their creators) demonstrate as fully as possible immediate and long term effects.</p>
+
+        <strong>Roadmap for assessing and forecasting impacts</strong>
+
+        <ul>
+          <li>
+            New reporting standards, more data collection, novel measurement methodologies and benchmarking frameworks, and new approaches for developing forecasts and scenarios
+          </li>
+          <li>ML merits new methodologies built on existing LCAs</li>
+          <li>Consider impact in relation to non-ML solutions</li>
+        </ul>
+
+        Requirements
+        <ul>
+          <li>Better access to information is crucial including fine-grained detail as to cost of training, inference, etc. and percentage use of data centres by ML</li>
+          <li>Sufficient data to assess a priori cost of switching to ML or introducing new ML-dependent technology</li>
+          <li>Reviews and reports based on synthesised data and generalised case studies</li>
+          <li>Ways to study system-level impacts when digital effects let alone ML are often ignored in high-level studies e.g. SSPs</li>
+        </ul>
+
+        <strong>Aligning ML with climate mitigation</strong>
+
+        <ul>
+          <li>ML applications that are beneficial to the climate</li>
+          <li>Transparency and accountability as to use of ML</li>
+          <li>Employing climate aware technology for assessing ML uses</li>
+          <li>Strategies to combat concentration of ML in a few hands, and algorithmic biases</li>
+          <li>Standards and shift from private to public entities, and enforced interoperability</li>
+        </ul>
 
         </section>
         
