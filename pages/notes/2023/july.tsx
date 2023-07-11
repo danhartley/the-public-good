@@ -14,11 +14,9 @@ const July = () => {
       image="https://lh3.googleusercontent.com/xYJeSlYaHX6cb3Jv7V7HxYZDTmT6vQQT6BoLAeC-c2F8GH1O9F0Mz1x2e1KGLY1Qx8HlfCIU2GLbC4HqHwOEfWNqauMXesTRJHNRtZFPnOLX7IEPJnK7HhFjzHQ4RhwVsli_fynV-9yuZJkIyiv3TyNRNvp3S1nXZkccrszVcNzTDKlsK4DaOIXQpf6R0opkJxRQWfxRcrcCckA85H8MYwzsGD1-w-o0S6MXaIlaMH37wS1-pvnG-xWkwCUyVyFllTwXMhcFTxyRaHiuNYqfbXTfk4gfOwhgrvJHHEqch096v5nCxvguBtKgqQ0kgtobozubuKxM3-23oRrWlou2vDu5G4FAsqPhx5wVrvvJ2cvv1HGdtsga7O4_1-65Ad9AuXlj_bTYuA-jKsiqkrc8PbI9C27KiJhYbxQumhLUMoh7AVgrfe0VdWPxSJwYikpo8pXUgnC5G9Qmv7TxQ8-msgv_Yhl_nj0Cw_yGvszlrzkswxhTabP00JBx-c7nm91HWnjNP_mRt35iYx65yrlbE72wgE5qPpS8WJ2PHeMe5l6JXKLE2qlHEAvixXTqIt3e2VNMVQC390FE4b1soXkr4iy7MbHae714nvNLYjxFHNh0AUqc84kvJ7FYFdSVSTGVQgFzL1pEQzTWuDLbccu-x9GHdbfLtNdC7Hxf3M3CETOyItBmywTXyo0WMjcASOu-FydECxSYLbcr22SCY9AF3mo=w1078-h721-no?authuser=0"
     >
       <section>
-        <strong>
-          Saturday 01 July 2023
-        </strong>        
+        <span class={styles.date}>Saturday 01 July 2023</span>
 
-        <p>AI & Electricity</p>
+        <h2>AI & Electricity</h2>
 
         <p>
           There are parallels between AI and electricity. Both were greeted with a mixture of wonder, apprehension, and fear. They transformed multiple industries and societies, yet both remain unevenly distributed. 
@@ -30,17 +28,11 @@ const July = () => {
         </p>
         <p>
           Is AI sustainable, and how should we use it?
-        </p>
+        </p>      
         
-        <br />
+        <div class={styles.date}>Thursday 06 July 2023</div>
         
-        <strong>
-          Thursday 06 July 2023
-        </strong>        
-        
-        <p>
-          On providing supporting evidence to my arguments
-        </p>
+        <h2>On providing supporting evidence to my arguments</h2>
         
         <ul>
           <li>Create new components: Train (for train of thought), and Car (for link in the train) to describle context and present arguments.</li>
@@ -57,7 +49,7 @@ const July = () => {
           </Links.EL>
         </div>
 
-        <p>CarbonBrief report on the importance of trees</p>
+        <h3>CarbonBrief report on the importance of trees</h3>
 
         <div>
           <Links.EL link={{ label: 'In-depth Q&A: How trees benefit nature, people and the climate', source: 'https://www.carbonbrief.org/in-depth-qa-how-trees-benefit-nature-people-and-the-climate/' }}>
@@ -66,15 +58,9 @@ const July = () => {
         </div>
         <div>CarbonBrief | Orla Dwyer</div>
 
-        <br />
-
-        <strong>
-            Friday 07 July 2023
-        </strong>        
+        <div class={styles.date}>Friday 07 July 2023</div>
         
-        <p>
-          On Superalignment
-        </p>
+        <h3>On Superalignment</h3>
 
         <div>
           <Links.EL link={{ source: 'https://openai.com/blog/introducing-superalignment', label:'Introducing Superalignment' }}>
@@ -83,9 +69,7 @@ const July = () => {
         </div>
         <div>OpenAI, Jan Leike & Ilya Sutskever</div>
         
-        <p>
-          On AI training
-        </p>
+        <h3>On AI training</h3>
 
         <div>
           <Links.EL link={{ source: 'https://dl.acm.org/doi/pdf/10.1145/3442188.3445922', label:'On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?' }}>
@@ -166,9 +150,7 @@ const July = () => {
           <div> Prof Sandra Wachter | University of Oxford</div>
         </p>
 
-        <br />
-
-        <p>The end of capitalism</p>
+        <h3>The end of capitalism</h3>
 
         <div>
           <Links.EL link={{ source: 'http://naturalcapitalcoalition.org/wp-content/uploads/2016/07/Trucost-Nat-Cap-at-Risk-Final-Report-web.pdf', label: 'Natural capital at risk: the top 100 externalities of business'}}>
@@ -176,15 +158,9 @@ const July = () => {
           </Links.EL>
         </div>
 
-        <br />
+        <span class={styles.date}>Saturday 08 July 2023</span>
 
-        <strong>
-            Saturday 08 July 2023
-        </strong>        
-
-        <p>
-          On AI & Exploitation
-        </p>
+        <h3>On AI & Exploitation</h3>
 
         <div>
           <Links.EL link={{ source: 'https://www.noemamag.com/the-exploited-labor-behind-artificial-intelligence/', label:'The Exploited Labor Behind Artificial Intelligence' }}>
@@ -228,15 +204,9 @@ const July = () => {
           </li>
         </ul>
 
-        <br />
+        <span class={styles.date}>Sunday 09 July 2023</span>
 
-        <strong>
-            Sunday 09 July 2023
-        </strong>        
-
-        <p>
-          The old switcheroo
-        </p>
+        <h3>The old switcheroo</h3>
 
         <p>
           Why is it that companies making godlike claims for their tech are unable to show their workings?
@@ -371,15 +341,9 @@ const July = () => {
           In the short term, while budgets are assessed, companies take on the responsibility for showing all their costs and making a case for net gain.
         </p>
 
-        <br />
-
-        <strong>
-            Monday 10 July 2023
-        </strong>        
-
-        <p>
-          Stochastic parrots again
-        </p>
+        <span class={styles.date}>Monday 10 July 2023</span>
+        
+        <h3>Stochastic parrots again</h3>
 
         <div>
           <Links.EL link={{ source: 'https://techwontsave.us/episode/163_chatgpt_is_not_intelligent_w_emily_m_bender', label: 'ChatGPT Is Not Intelligent' }}>
@@ -409,15 +373,9 @@ const July = () => {
           </li>
         </ul>
 
-        <br />
+        <span class={styles.date}>Tuesday 11 July 2023</span>
 
-        <strong>
-            Tuesday 11 July 2023
-        </strong>        
-
-        <p>
-          Cost of ML
-        </p>
+        <h3>Cost of ML</h3>
 
         <div>
           <Links.EL link={{ source: 'https://www.nature.com/articles/s41558-022-01377-7.epdf?sharing_token=VNkvWalL1KVrxYte7VHfTtRgN0jAjWel9jnR3ZoTv0PFrrDwT9y68ah6oNg1ZvjBfcIb3Kbp_v5VihLBWDydbfc5jhcVPwJLve592DM4ofdyb9-AdB37nZsc6NVbVb-fttOlElGgXuHDhQRUp82Rwc9buEoGydxnCgU609qUgUY%3D', label: 'Carbon Emissions and Large Neural Network Training' }}>
@@ -426,29 +384,25 @@ const July = () => {
         </div>
         <div>Patterson et al. PDF</div>
 
-        <ul>
-          <li>
-            3 categories of emissions
-            <ul>              
-              <li>
-                GHG emissions resulting from computing, caused by both the electricity used for ML computations and the embodied emissions associated with computing hardware. ML models differ drastically in energy they consume and consumption is spread across the model life-cycle - training, development, tuning and inference (use).
-                Standardised reporting across the life-cycle is essential but not practiced.
-              </li>
-              <li>
-                'Immediate' GHG emissions effects tied to the short-term outcomes of applications of ML
-              </li>
-              <li>
-                Structural or 'system-level' GHG effects induced by these applications
-              </li>
-            </ul>            
-          </li>
+        <p>3 categories of emissions</p>
+        <ul>          
+            <li>
+              GHG emissions resulting from computing, caused by both the electricity used for ML computations and the embodied emissions associated with computing hardware. ML models differ drastically in energy they consume and consumption is spread across the model life-cycle - training, development, tuning and inference (use).
+              Standardised reporting across the life-cycle is essential but not practiced.
+            </li>
+            <li>
+              'Immediate' GHG emissions effects tied to the short-term outcomes of applications of ML
+            </li>
+            <li>
+              Structural or 'system-level' GHG effects induced by these applications
+            </li>
         </ul>
 
         <p>
           Vast majority of ML research and development still focuses on improving model accuracy, rather than balancing accuracy and energy usage.
         </p>
 
-        ICT sector currently accounts for ~1.4% global GHG emissions
+        <p>ICT sector currently accounts for ~1.4% global GHG emissions</p>
         <ul>
           <li><span class={styles.fraction}>&#8532;</span> operational energy use (Scope 1 & 2)</li>
           <li><span class={styles.fraction}>&#8531;</span> materials extraction, manufacturing, transportation and end-of-life phase (Scope 3)</li>
@@ -457,7 +411,9 @@ const July = () => {
           <li>Greater efficiency can come at the cost of greater Scope 3 emissions - embodied emissions in computing hardware and data centre construction</li>
         </ul>
 
-        <strong>Immediate 'positive' application impacts for climate</strong>
+        <h3>Application impacts</h3>
+
+        <h4>Immediate 'positive' application impacts for climate</h4>
         <ul>
           <li>Via data mining and remote sensing translates raw data into useable data</li>
           <li>Tracking deforestation can inform policy</li>
@@ -466,7 +422,7 @@ const July = () => {
           <li>Improve speed and efficiency of climate modelling</li>
         </ul>
 
-        <strong> Immediate 'negative' application impacts for climate</strong>
+        <h4>Immediate 'negative' application impacts for climate</h4>
         <ul>
           <li>Decrease cost of emissions-intensive activities e.g. oil and gas exploration thereby potentially increasing their consumption</li>
           <li>The 'Internet of Cows'</li>
@@ -474,7 +430,7 @@ const July = () => {
 
         <p>Impact of ML is hard to assess due to lack of data (and reporting).</p>
 
-        <strong>System-level impacts</strong>
+        <h3>System-level impacts</h3>
 
         <p>
         Impact of many societal ML applications may not be clear. They are hard to quantify but may be of greater significance than immediate application impacts. One example where outcome is hard to determine is the rebound effect e.g. efficient, shared autonomous vehicles may lead to more journeys. And ML technology in this field may lock us into private transport, preventing a move to greater use of public transport.
@@ -482,7 +438,7 @@ const July = () => {
 
         <p>Regulation is required around ML-driven technologies so that they (or their creators) demonstrate as fully as possible immediate and long term effects.</p>
 
-        <strong>Roadmap for assessing and forecasting impacts</strong>
+        <h3>Roadmap for assessing and forecasting impacts</h3>
 
         <ul>
           <li>
@@ -492,7 +448,7 @@ const July = () => {
           <li>Consider impact in relation to non-ML solutions</li>
         </ul>
 
-        Requirements
+        <h4>Requirements</h4>
         <ul>
           <li>Better access to information is crucial including fine-grained detail as to cost of training, inference, etc. and percentage use of data centres by ML</li>
           <li>Sufficient data to assess a priori cost of switching to ML or introducing new ML-dependent technology</li>
@@ -500,7 +456,7 @@ const July = () => {
           <li>Ways to study system-level impacts when digital effects let alone ML are often ignored in high-level studies e.g. SSPs</li>
         </ul>
 
-        <strong>Aligning ML with climate mitigation</strong>
+        <h3>Aligning ML with climate mitigation</h3>
 
         <ul>
           <li>ML applications that are beneficial to the climate</li>
