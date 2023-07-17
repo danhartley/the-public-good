@@ -51,6 +51,12 @@ const AIOResources = () => {
 
         <h3>Sustainability</h3>
         <div>
+          <Links.EL link={{ source: 'https://arxiv.org/pdf/2302.08476.pdf' }}>
+          Counting Carbon: A Survey of Factors Influencing the Emissions of Machine Learning (PDF)
+          </Links.EL>
+        </div>
+        <div>Alexandra Sasha Luccioni (Hugging Face), Alex Hernandez-Garcia</div>        
+        <div>
           <Links.EL link={{ source: 'https://arxiv.org/pdf/1906.02243.pdf' }}>
           Energy and Policy Considerations for Deep Learning in NLP (PDF)
           </Links.EL>

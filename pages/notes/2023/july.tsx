@@ -2,6 +2,7 @@ import Layout from 'components/layout/layout'
 import Links from 'components/links/Links'
 import Accordion from 'components/accordion/accordion'
 import styles from 'pages/pages.module.scss'
+import { median } from 'ramda'
 
 const July = () => {
   return (
@@ -521,6 +522,8 @@ const July = () => {
               <br />
               <br />
               In simple terms, RLHF trains AI models by learning from responses by humans about its performance. 
+              <br />
+              <Links.EL link={{source:'https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback'}}>Reinforcement learning from human feedback | Wikipedia</Links.EL>              
             </p>
           </aside>
           </Accordion>
@@ -562,6 +565,340 @@ const July = () => {
             </aside>
           </Accordion>
         
+
+        </div>
+
+        <div class={styles.day}>
+
+          <span class={styles.date}>Monday 17 July 2023</span>
+
+          <h3>Sustainable AI</h3>
+
+          <p>Another paper co-authored by Alexandra Sasha Luccioni (Hugging Face)</p>
+
+          <h4>The paper tackles 4 questions</h4>
+
+          <ol>
+            <li>What are the main sources of energy used for training ML models?</li>
+            <li>What is the order of magnitude of CO2 emissions produced by training ML models?</li>
+            <li>How do the CO2 emissions produced by training ML models evolve over time?</li>
+            <li>Does more energy and CO2 lead to better model performance?</li>
+          </ol>
+
+          <h4>Summary of starting position</h4>
+
+          <ul>
+            <li><q>On a global scale, electricity generation represents over a quarter of the global GHG emissions, adding up to 33.1 gigatonnes of CO2 in 2019</q></li>
+            <li><q>Recent estimates put the contribution of the information and communications technology (ICT) sector – which includes the data centers, devices and networks used for training and deploying ML models – at 2–6 % of global GHG emissions</q></li>
+            <li><q>There is limited information about the overall energy consumption and carbon footprint of our field, how it is evolving, and how it correlates with performance on different tasks.</q></li>
+          </ul>
+
+          <div>
+            <Links.EL link={{ source: 'https://arxiv.org/pdf/2302.08476.pdf' }}>
+            Counting Carbon: A Survey of Factors Influencing the Emissions of Machine Learning (PDF)
+            </Links.EL>
+          </div>
+          <div>Alexandra Sasha Luccioni (Hugging Face), Alex Hernandez-Garcia</div>
+
+          <h4>Ways of measuring</h4>
+
+          <ul>
+            <li>
+              Empirical studies on carbon emissions
+              <ul>
+                <li>e.g. <Links.EL link={{ source: 'https://arxiv.org/pdf/1906.02243.pdf' }}>Strubell et al.</Links.EL> which estimated that the emissions of training and fine-tuning a large Transformer model produced 284,019 kg of CO2 (see above).</li>
+                <li>Involves the analysis of the carbon footprint of different neural network architectures and the relative efficiency of different methods.</li>
+                <li>These studies are sparse, favour NLP and leave many questions unanswered.</li>
+              </ul>
+            </li>
+            <li>
+              Tools and approaches for measuring carbon emissions
+              <ul>
+                <li>Standards include the <Links.EL link={{source:"https://github.com/mlco2/codecarbon"}}>Code Carbon</Links.EL> (see local set up below) and the Experiment Impact Tracker</li>
+                <li>There is no single, accepted approach for estimating the carbon emissions </li>
+              </ul>
+            </li>
+            <li>
+              Broader impacts of ML models
+              <ul>
+                <li>Environmental impacts have yet to be consistently tracked and reported (with few exceptions, see e.g. <Links.EL link={{ source: 'https://arxiv.org/pdf/2211.02001.pdf' }}>Luccioni et al.</Links.EL>)</li>
+              </ul>
+            </li>
+            <li>
+              Efficient algorithms and hardware
+              <ul>
+                <li>More efficient model architectures and approaches are being developed resulting in greater computing efficiency, enabling faster training and inference (use), which results in less energy usage and, indirectly, less carbon emissions, during model training</li>
+                <li>Efficiency has yet to be a central consideration when it comes to evaluating and comparing models but benchmarks have been proposed e.g. HULK.</li>
+              </ul>
+            </li>
+            <li>
+              Other aspects of the carbon impact of ML
+              <ul>
+                <li>the overall carbon footprint of the field of ML, including in-person versus virtual conference attendance, the manufacturing of computing hardware, life cycle analysis of the entire ML development and deployment cycle, as well as some initial studies regarding the carbon footprint of model deployment in production settings.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h4>Methods</h4>
+
+          <p>Data sets for 5 tasks:</p>
+          <ul>            
+            <li>Image Classification</li>
+            <li>Object Detection</li>
+            <li>Machine Translation</li>
+            <li>Question Answering</li>
+            <li>Named Entity Recognition</li>
+          </ul>
+
+          <p>The sample (95 models from 77 papers) represents the largest amount of information regarding the carbon footprint of ML model training to date.</p>
+
+          <p>The units of measurement are gCO<span class={styles.sub}>2</span>eq/kWh.</p>
+
+          <p>
+            <i>C = P x T X I = E X I</i>
+
+            <br />
+            <br />
+            <dfn>C :</dfn> The amount of CO2eq emitted during model training
+            <br />
+            <dfn>P :</dfn> The power consumption of the hardware used
+            <br />
+            <dfn>T :</dfn> The training time
+            <br />
+            <dfn>I :</dfn> The carbon intensity of the energy grid
+            <br />
+            <dfn>E :</dfn> The energy consumed
+            <br />
+            <br />
+
+            e.g. a model trained on a single GPU consuming 300 W for 100 hours on a grid that emits 500 gCO2eq/kWh
+            <br />
+            <br />
+            <i>0.3 kW × 100 h × 500 g/kWh = 15000 g = 15 kg of CO<span class={styles.sub}>2</span>eq</i>
+          </p>          
+
+          <p>The authors of papers on model training were contacted. <q>In our email to authors, we asked them to provide the details we needed to carry out this calculation, i.e the location of the computer or server where their model was trained (either cloud or local), the hardware used, and the total model training time.</q> </p>
+
+          <ul>
+            <li>
+              <dfn>Carbon Intensity:</dfn> based on public sources (e.g. IEA, EIA) and varies by region (US) up to country level (China), using yearly averages, or from internal figures or publicly available data from commercial platforms (e.g. AWS, Google Cloud)
+            </li>            
+            <li>
+              <dfn>Hardware power:</dfn> based on Thermal Design Power (energy required under the maximum theoretical load)
+            </li>
+            <li>
+              <dfn>Training Time:</dfn> total number of hardware hours, e.g. if 16 GPUs for 24 hours, this equals a training time of 384 GPU hours
+            </li>
+          </ul>
+
+          <h4>Data analysis</h4>
+
+          <h5>What are the main sources of energy used for training ML models?</h5>
+
+          <p>The primary energy source used for powering an electricity grid is the single biggest influence on the carbon intensity of that grid.</p>
+
+          <dl>
+            <dt class={styles.mb}><strong>Low carbon intensity</strong></dt>
+            <dd class={styles.ml}>hydroelectricity, solar and wind <strong>11 to 147 gCO<span class={styles.sub}>2</span>eq/kWh</strong></dd>
+          </dl>
+
+          <dl>
+            <dt class={styles.mb}><strong>High(er) carbon intensity</strong></dt>
+            <dd class={styles.ml}>coal, natural gas and oil <strong>360 to 680 gCO<span class={styles.sub}>2</span>eq/kWh</strong></dd>
+          </dl>
+          
+          <p><q>Which means the energy source that powers the hardware to train ML models can result in differences of up to 60 times more CO2eq in terms of total emissions.</q></p>
+
+          <table>
+            <caption>Main Energy Sources for the models analyzed and their carbon intensities</caption>
+            <thead>
+              <tr>
+                <th class={styles.medium}><u>Main</u> energy source</th>
+                <th class={styles.medium}>Number of Models</th>
+                <th class={styles.medium}>Low-Carbon?</th>
+                <th class={styles.medium}>Average Carbon Intensity <span class={styles.small}>gCO<span class={styles.sub}>2</span>eq/kWh</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Coal</td><td>38</td><td>No</td><td>512.3</td>
+              </tr>
+              <tr>
+                <td>Oil</td><td>12</td><td>No</td><td>453.6</td>
+              </tr>
+              <tr>
+                <td>Natural Gas</td><td>23</td><td>No</td><td>350.5</td>
+              </tr>
+              <tr>
+                <td>Nuclear</td><td>3</td><td>Yes</td><td>147.2</td>
+              </tr>
+              <tr>
+                <td>Hydroelectricity</td><td>19</td><td>Yes</td><td>100.6</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <caption>Models trained by country</caption>
+            <thead>
+              <tr>
+                <th class={styles.medium}>Country</th>
+                <th class={styles.medium}>Number of models</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>USA</td><td>48</td></tr>
+              <tr><td>China</td><td>18</td></tr>
+              <tr><td>Canada</td><td>5</td></tr>
+              <tr><td>UK</td><td>4</td></tr>
+              <tr><td>Japan</td><td>4</td></tr>
+              <tr><td>Israel</td><td>2</td></tr>
+              <tr><td>Spain</td><td>2</td></tr>
+              <tr><td>Australia</td><td>2</td></tr>
+              <tr><td>Russia</td><td>1</td></tr>
+              <tr><td>UAE</td><td>1</td></tr>
+              <tr><td>South Korea</td><td>1</td></tr>
+            </tbody>
+          </table>
+
+          <h5>What is the order of magnitude of CO2 emissions produced by training ML models?</h5>
+
+          <p class={styles.fontDefault}>
+            <q>The relationship between energy consumed and carbon emitted is largely linear.</q>
+            <br />
+            <q>Models trained using hydroelectricity are about two orders of magnitude lower in terms of carbon emissions than models that consumed similar amounts of energy from more carbon-intensive sources such as coal and gas.</q>
+            <br />
+            <q>The choice of hardware has a relatively small influence.</q>
+            <br />
+            <q>The remaining factor responsible for the large variation in both energy and carbon emissions in our sample is therefore the training time.</q>
+          </p>
+
+          <h5>How do the CO2 emissions produced by training ML models evolve over time?</h5>
+
+          <p>
+            Observations
+            <ul>
+              <li>There is large variability in the carbon emissions from ML models</li>
+              <li>From 2021 to 2023 carbon emissions from training have increased by two orders of magnitude</li>
+              <li>Training Transformer models creates emissions several orders of magnitudes higher than training previous models </li>
+              <li>NAS (Neural Architecture Search) is computationally expensive</li>
+            </ul>
+          </p>
+
+          <h5>Does more energy and CO2 lead to better model performance?</h5>
+
+          <p>
+            Observations
+            <ul>
+              <li><q>The only task in which better performance accuracy has systematically yielded more CO2 is image classification on ImageNet</q></li>
+              <li>There is not currently a clear correlation between carbon intensity and model performance</li>
+            </ul>
+          </p>
+
+          <h4>Discussion and future work</h4>
+
+          <h5>Discussion of Results</h5>
+
+          <p>
+            Observations
+            <ul>
+              <li>It is important for the ML community to have a better understanding of its environmental footprint and to reduce it</li>
+              <li>Total emissions from training is significant ~253 tons of CO<span class={styles.sub}>2</span>eq</li>
+              <li>Emissions per model trained is rising, from an average of 487 tons CO<span class={styles.sub}>2</span>eq in 2015-16 to 2020 tons CO<span class={styles.sub}>2</span>eq in 2020-22</li>
+              <li>Overall emissions due to ML model training are rising</li>
+              <li>The main sources of variance in the amount of emissions associated with training machine learning models is due to the carbon intensity of the primary energy source and the training time</li>
+              <li>Better performance is not generally achieved by using more energy. In other words, good performance can be achieved with limited carbon emissions because progress in recent years has brought the possibility to train machine learning models efficiently</li>
+              <li>Image Classification is the task with the strongest correlation between performance and emissions</li>
+            </ul>
+          </p>
+
+          <p>
+            Training numbers
+            <dl>
+              <dt class={styles.mb}><strong>Range</strong></dt>
+              <dd class={styles.ml}>15 minutes to 400,000 hours (total GPU/TPU time)</dd>
+              <dt class={styles.mb}><strong>Median</strong></dt>
+              <dd class={styles.ml}>72 hours (total GPU/TPU time)</dd>
+              <dt class={styles.mb}><strong>Maximum in sample</strong></dt>
+              <dd class={styles.ml}>400,000 GPU hours (equivalent to about 170 days with 100 GPUs)</dd>
+              <dt class={styles.mb}><strong>GPT 3 (not in sample)</strong></dt>
+              <dd class={styles.ml}>est. 3.5 million GPU hours (equivalent to about 14.8 days with 10,000 GPUs, or 1,480 days if had been trained using 100 GPUs)</dd>
+              <dt class={styles.mb}><strong>GPT 4 (not in sample)</strong></dt>
+              <dd class={styles.ml}>Unknown</dd>
+            </dl>
+          </p>
+
+          <h5>Limitations</h5>
+
+          <ul>
+            <li>Sample is not fully representative of the field as a whole</li>
+            <li>Only 15% of authors from the initial sample of 500 were willing to share relevant information</li>
+            <li>Data Power Usage Effectiveness (PUE) of the data centers used for model training (i.e. the overhead used for heating, cooling, Internet etc.) is not available</li>
+            <li>Real-time energy consumption of the hardware used for training is not available</li>
+            <li>Numbers do not account for carbon offsets and power purchase agreements</li>
+            <li>Missing cost of carbon emissions for: data processing, data transfer, and data storage, and the carbon footprint of manufacturing and maintaining the hardware used for training ML models</li>
+          </ul>
+
+          <h5>Future Work</h5>
+
+          <ul>
+            <li>
+              Additional empirical studies
+              <ul>
+                <li>Relative contribution of added parameters of ML to their energy consumption and carbon footprint</li>
+                <li>Proportion of energy used for pre-training versus fine-tuning ML models for different tasks and architectures</li>
+              </ul>
+            </li>
+            <li>
+              Widening the scope of ML life-cycle emissions
+              <ul>
+                <li>To include upstream emissions i.e. those incurred by manufacturing and transporting the required computing equipment</li>
+                <li>To include downstream emissions i.e. the emissions of model deployment</li>
+              </ul>
+            </li>
+            <li>
+              Increased standardization and transparency in carbon emissions reporting
+              <ul>
+                <li>There is a lot of variability in carbon reporting</li>
+                <li>A standardized approach e.g. ISO standards, would help</li>
+              </ul>
+            </li>
+            <li>
+              Considering the trade-off between sustainability and fairness.
+              <ul>
+                <li>Little or no consideration of the environmental impacts of ML approaches when benchmarking models</li>
+                <li>cognizance of the broader societal impacts: energy consumption,  attribution of computing resources and the influence of corporate interests on research directions</li>
+              </ul>
+            </li>
+          </ul>
+
+          <br />
+          <hr />
+
+          <h4>Running codecarbon locally</h4>
+
+          <p>
+            <div class={styles.fontDefault}>
+            Instructions <Links.EL link={{source:"https://github.com/mlco2/codecarbon"}}>Code Carbon</Links.EL>. 
+            <br />
+            - Note to self: paths not updated so after installing python used: 
+            <br />
+            <code>python3 -m pip install codecarbon</code>
+            <br />
+            - Added <code>.codecarbon.config</code> file to root of this project
+            </div>
+          </p>
+
+          <p>Example output</p>
+
+          <code class={styles.small}>
+            <div>[codecarbon INFO @ 12:02:29] Energy consumed for RAM : 0.000100 kWh. RAM Power : 6.0 W</div>
+            <div>[codecarbon DEBUG @ 12:02:29] RAM : 6.00 W during 10.00 s [measurement time: 0.0004]</div>
+            <div>[codecarbon INFO @ 12:02:29] Energy consumed for all CPUs : 0.000083 kWh. Total CPU Power : 5.0 W</div>
+            <div>[codecarbon DEBUG @ 12:02:29] CPU : 5.00 W during 10.00 s [measurement time: 0.0002]</div>
+            <div>[codecarbon INFO @ 12:02:29] 0.000183 kWh of electricity used since the beginning.</div>
+            <div>[codecarbon DEBUG @ 12:02:29] last_duration=10.004925012588501</div>
+          </code>
 
         </div>
 
