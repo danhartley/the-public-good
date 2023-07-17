@@ -101,6 +101,18 @@ const AIOResources = () => {
 
         <h3>Articles</h3>
         <div>
+          <Links.EL link={{ source: 'https://www.nngroup.com/articles/ai-tools-productivity-gains/', label:'AI Improves Employee Productivity by 66%' }}>
+          AI Improves Employee Productivity by 66%
+          </Links.EL>
+          <div>Jakob Nielsen | Nielsen Norman Group</div>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://restofworld.org/2023/ai-revolution-outsourced-workers/', label:'The workers at the frontlines of the AI revolution' }}>
+          The workers at the frontlines of the AI revolution
+          </Links.EL>
+          <div>Andrew Deck for rest of world</div>
+        </div>
+        <div>
           <Links.EL link={{ source: 'https://www.noemamag.com/the-exploited-labor-behind-artificial-intelligence/', label:'The Exploited Labor Behind Artificial Intelligence' }}>
           The Exploited Labor Behind Artificial Intelligence
           </Links.EL>
@@ -168,6 +180,16 @@ const AIOResources = () => {
         </div>
       
         <h3>AIs</h3>
+        <div>
+          <Links.EL link={{ source: 'https://heypi.com/', label:'Pi' }}>
+          Pi
+          </Links.EL>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://inflection.ai/', label:'Inflection' }}>
+          Inflection
+          </Links.EL>
+        </div>
         <div>
           <Links.EL link={{ source: 'https://www.anthropic.com/' }}>
           Claude (Anthropic)

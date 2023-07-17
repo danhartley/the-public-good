@@ -900,6 +900,24 @@ const July = () => {
             <div>[codecarbon DEBUG @ 12:02:29] last_duration=10.004925012588501</div>
           </code>
 
+          <br />
+          <hr />
+
+          <h3>Other articles</h3>
+
+          <div>
+            <Links.EL link={{ source: 'https://www.nngroup.com/articles/ai-tools-productivity-gains/', label:'AI Improves Employee Productivity by 66%' }}>
+            AI Improves Employee Productivity by 66%
+            </Links.EL>
+            <div>Jakob Nielsen | Nielsen Norman Group</div>
+          </div>
+          <div>
+            <Links.EL link={{ source: 'https://restofworld.org/2023/ai-revolution-outsourced-workers/', label:'The workers at the frontlines of the AI revolution' }}>
+            The workers at the frontlines of the AI revolution
+            </Links.EL>
+            <div>Andrew Deck for rest of world</div>
+          </div>          
+
         </div>
 
       </section>
