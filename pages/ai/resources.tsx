@@ -51,6 +51,18 @@ const AIOResources = () => {
 
         <h3>Sustainability</h3>
         <div>
+          <Links.EL link={{ source: 'https://medium.com/@chrispointon/the-carbon-footprint-of-chatgpt-e1bc14e4cc2a', label:'The carbon footprint of ChatGPT' }}>
+          The carbon footprint of ChatGPT
+          </Links.EL>
+        </div>
+        <div>Chris Pointon</div>
+        <div>
+          <Links.EL link={{ source: 'https://hotcarbon.org/2023/pdf/a11-chien.pdf' }}>
+          Reducing the Carbon Impact of Generative AI Inference (today and in 2035) (PDF)
+          </Links.EL>
+        </div>
+        <div>Andrew A. Chien et al.</div>
+        <div>
           <Links.EL link={{ source: 'https://arxiv.org/pdf/2302.08476.pdf' }}>
           Counting Carbon: A Survey of Factors Influencing the Emissions of Machine Learning (PDF)
           </Links.EL>
@@ -180,6 +192,11 @@ const AIOResources = () => {
         </div>
       
         <h3>AIs</h3>
+        <div>
+          <Links.EL link={{ source: 'https://www.typingmind.com/', label:'TypingMind ChatGPT UI' }}>
+          TypingMind ChatGPT UI
+          </Links.EL>
+        </div>
         <div>
           <Links.EL link={{ source: 'https://heypi.com/', label:'Pi' }}>
           Pi

@@ -2,7 +2,6 @@ import Layout from 'components/layout/layout'
 import Links from 'components/links/Links'
 import Accordion from 'components/accordion/accordion'
 import styles from 'pages/pages.module.scss'
-import { median } from 'ramda'
 
 const July = () => {
   return (
@@ -917,6 +916,120 @@ const July = () => {
             </Links.EL>
             <div>Andrew Deck for rest of world</div>
           </div>          
+
+        </div>
+
+        <div class={styles.day}>
+
+        <span class={styles.date}>Tuesday 18 July 2023</span>
+
+        <h3>The cost of using generative AI</h3>
+
+        <p>Study that creates a workload model to assess the power use and carbon impacts of generative AI e.g. ChatGPT, Dall-E 2, and Stable Diffusion.</p>
+
+        <blockquote cite='https://hotcarbon.org/2023/pdf/a11-chien.pdf'>
+          <strong>Abstract</strong>
+          <br />
+          Our workload model shows that for ChatGPT-like services, inference dominates emissions, in one year producing 25x the carbon emissions of training GPT-3.
+          <br />
+          <br />
+          CarbonMin can keep emissions increase to only 20% compared to 2022 levels for 55x greater workload.
+          <br />
+          <br />
+          CarbonMin reduces 2035 emissions by 71%.
+        <cite>
+          <br />
+          <Links.EL link={{ source: 'https://hotcarbon.org/2023/pdf/a11-chien.pdf' }}>
+            Reducing the Carbon Impact of Generative AI Inference (today and in 2035) (PDF)
+          </Links.EL>
+          <br />
+          <span>Andrew A. Chien et al.</span>
+        </cite>
+        </blockquote>
+
+        <p>
+          This paper examines the impact of AI inference (use). Their starting point is that generative AI-backed search can cost as much as 5 times more compute request than traditional search. 
+        </p>
+
+        <p>
+          One Google search emits about 0.2g of CO<span class={styles.sub}>2</span>e
+        </p>
+
+        <blockquote cite='https://weareyard.com/insights/the-carbon-impact-of-ai-vs-search-engines'>
+          Google themselves reported that they emit an estimated 0.2g CO2e per search, but when you pair that with the landing page emitting an average of 1.15g per page view (where multiple pages can be visited to find the right answer) then it quickly becomes a much bigger issue.
+          <br />
+          <br />
+          …averaging 2 searches and 3 page visits means that per answer, a user would emit an average of 3.85g. 
+          <br />
+          <br />
+          [For ChatGPT] the emission of a single response to be 4.14g… With most conversations consisting of around 5 responses, the estimated total on average rises to around 20.72g. 
+          <br />
+          <br />
+        </blockquote>
+        <cite>
+          <Links.EL link={{source:'https://weareyard.com/insights/the-carbon-impact-of-ai-vs-search-engines'}}>Chris Butterworth | weareyard</Links.EL>
+        </cite>
+
+        <p>
+          This comparison does not take into account the cost of visiting sites - including sites hosting video - where an answer to the user's question is not returned with the results (a single date, weather forecast, market statistic).
+        </p>
+
+        <p>
+          Carbon impact
+          <ul>
+            <li>workload characteristics, such as compute per request</li>
+            <li>latency requirement</li>
+            <li>location of users</li>
+          </ul>
+        </p>
+
+        <p>
+          Assumptions
+          <ul>
+            <li>A ChatGPT-like application with estimated use of 11 million requests/hour produces emissions of 12.8k metric ton CO<span class={styles.sub}>2</span>/year</li>
+            <li>This is 25 times the cost of training GPT-3</li>
+            <li>The authors can demonstrate that CarbonMin, an algorithm that directs requests to low-carbon regions, reduces carbon emissions by 35% in today’s power grids</li>
+          </ul>
+        </p>
+
+        <p>
+          The problem
+          <ul>
+            <li><q>What is generative AI inference’s workload and user response requirements?</q></li>
+            <li><q>What is its carbon emissions impact today? and how might it grow?</q></li>
+            <li><q>Can inference serving be directed to reduce carbon impact today? in the future?</q></li>
+          </ul>
+        </p>
+
+        <p>
+          The situation
+          <ul>
+            <li>ChatGPT load is predominantly human-generated and therefore follows a diurnal structure. Based on 1.6 billion visits in March 2023, the assumption of 5 queries per visit produces 0.27 billions requests/day</li>
+            <li>Load is dominated by USA (39%) and European Countries (35%), reflecting their higher ChatGPT usage.</li>
+            <li>To project future load, we scale usage up to match Google search request rates (88.6 billion/month), using 5 queries per visit</li>
+          </ul>
+        </p>
+
+        <table>
+          <caption>Annual Compute for Inference and Model Training, various workload models (A100 GPU-hrs)</caption>
+          <thead>
+            <tr>
+              <th class={styles.medium}>Workload Model</th>
+              <th class={styles.medium}>Inference Cost (GPU-hrs)</th>
+              <th class={styles.medium}>Training Cost (GPU-hrs)</th>
+              <th class={styles.medium}>Inference/Training</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>ChatGPT-RR</td><td>55,966,667</td><td>2,236,467</td><td>25x</td></tr>
+            <tr><td>Google-RR</td><td>3,099,154,167 </td><td>2,236,467</td><td>1386x</td></tr>
+          </tbody>
+        </table>
+
+        <h4>Summary</h4>
+        <blockquote>
+          We have estimated the carbon cost of serving a generative AI model, showing that its emissions can be reduced with intelligent request direction algorithms, tied to power grid carbon information. More importantly, this optimization is possible with user-response latencies. In the future, the benefits of this approach are even greater.
+        </blockquote>
 
         </div>
 
