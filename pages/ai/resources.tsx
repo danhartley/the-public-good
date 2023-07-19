@@ -190,8 +190,25 @@ const AIOResources = () => {
           </Links.EL>
           <div>Cornell University</div>
         </div>
+        <div>
+          <Links.EL link={{ source: 'https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/', label:'Llama 2: Open Foundation and Fine-Tuned Chat Models' }}>
+          Llama 2: Open Foundation and Fine-Tuned Chat Models
+          </Links.EL>
+          <div>Meta</div>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://arxiv.org/abs/2303.08774', label:'GPT-4 Technical Report' }}>
+            GPT-4 Technical Report
+          </Links.EL>
+          <div>OpenAI</div>
+        </div>
       
         <h3>AIs</h3>
+        <div>
+          <Links.EL link={{ source: 'https://ai.meta.com/llama/', label:'Llama 2' }}>
+          Llama 2
+          </Links.EL>
+        </div>
         <div>
           <Links.EL link={{ source: 'https://www.typingmind.com/', label:'TypingMind ChatGPT UI' }}>
           TypingMind ChatGPT UI

@@ -1031,6 +1031,36 @@ const July = () => {
           We have estimated the carbon cost of serving a generative AI model, showing that its emissions can be reduced with intelligent request direction algorithms, tied to power grid carbon information. More importantly, this optimization is possible with user-response latencies. In the future, the benefits of this approach are even greater.
         </blockquote>
 
+        <h3>Hugging Face Model Carbon Emissions</h3>
+
+        <p>Practical <Links.EL link={{source:'https://huggingface.co/docs/hub/model-cards-co2', label:'Displaying carbon emissions for your model'}}>proposals</Links.EL> for providing carbon emissions</p>
+
+        <ul>
+          <li>where the model was trained (in terms of location)</li>
+          <li>the hardware used — e.g. GPU, TPU, or CPU, and how many</li>
+          <li>training type: pre-training or fine-tuning</li>
+          <li>the estimated carbon footprint of the model, calculated in real-time with the <Links.EL link={{source:'https://github.com/mlco2/codecarbon', label:'Code Carbon'}}>Code Carbon</Links.EL> package or after training using the <Links.EL link={{source:'https://mlco2.github.io/impact/', label:'ML CO2 Calculator'}}>ML CO<span class={styles.sub}>2</span> Calculator</Links.EL> .</li>
+        </ul>
+
+        </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Wednesday 19 July 2023</span>
+
+          <h3>Llama 2</h3>
+
+          <div>
+            <Links.EL link={{ source: 'https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/', label:'Llama 2: Open Foundation and Fine-Tuned Chat Models' }}>
+              Llama 2: Open Foundation and Fine-Tuned Chat Models
+            </Links.EL>
+            <div>Meta</div>
+          </div>
+
+          <ul>
+            <li><q>In this work, we develop and release Llama 2, a collection of pretrained and fine-tuned large language models (LLMs) ranging in scale from 7 billion to 70 billion parameters. Our fine-tuned LLMs, called Llama 2-Chat, are optimized for dialogue use cases.</q></li>
+            <li><q> Testing conducted to date has been in English and has not — and could not — cover all scenarios.</q></li>
+          </ul>
+
         </div>
 
       </section>
