@@ -20,10 +20,10 @@ const Oleta = () => {
         </p>
 
         <p>
-          The sun was not yet up when we wheeled the bikes across the dirt square where the people who came to eat parked.
-          The backwards whir of the chains mixed with the broken static of waking birds. The fields and the sky were
-          flat and grey. In the distance beyond the black shell of the unfinished hotel Oleta said she could hear the
-          sea.
+          The sun was not yet up when we wheeled the bikes across the dirt square where the people who came to eat
+          parked. The backwards whir of the chains mixed with the broken static of waking birds. The fields and the sky
+          were flat and grey. In the distance beyond the black shell of the unfinished hotel Oleta said she could hear
+          the sea.
         </p>
 
         <p>

@@ -23,36 +23,71 @@ const Pledges = () => {
     <Layout
       header="Responsible AI Pledge Challenge"
       title="Responsible AI Pledge Challenge"
-      description={
-        'Responsible AI Pledge Challenge'
-      }
+      description={'Responsible AI Pledge Challenge'}
       rt="2"
       image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Beardsley-peacockskirt.PNG/430px-Beardsley-peacockskirt.PNG"
     >
       <section>
         <h2>
-          "If anyone is feeling anxious, worried or maybe you just want a chat, please, please do not come crying to me." <span class={styles.attribution}>Sister Michael, Derry Girls</span>
-        </h2>        
+          "If anyone is feeling anxious, worried or maybe you just want a chat, please, please do not come crying to
+          me." <span class={styles.attribution}>Sister Michael, Derry Girls</span>
+        </h2>
         <figure>
           <div>
-          <a title="Aubrey Beardsley - The Peacock Skirt, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Beardsley-peacockskirt.PNG">
-            <img class={styles.externalImg} width="172px" height="240px" alt="Beardsley-peacockskirt" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Beardsley-peacockskirt.PNG/430px-Beardsley-peacockskirt.PNG" />
-          </a>
+            <a
+              title="Aubrey Beardsley - The Peacock Skirt, Public domain, via Wikimedia Commons"
+              href="https://commons.wikimedia.org/wiki/File:Beardsley-peacockskirt.PNG"
+            >
+              <img
+                class={styles.externalImg}
+                width="172px"
+                height="240px"
+                alt="Beardsley-peacockskirt"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Beardsley-peacockskirt.PNG/430px-Beardsley-peacockskirt.PNG"
+              />
+            </a>
           </div>
         </figure>
 
         <h3>The challenge</h3>
-        <p>The open source project ResponsibleTechWork has <Links.EL link={{ source: 'https://responsibletech.work/blog/2023/6/20/announcing-the-responsible-ai-pledge-challenge/' }}> challenged</Links.EL> users of AI to contribute to its best practices by making<Links.EL link={{ source: 'https://responsibletech.work/tools/development/pledge-works/' }}> pledges</Links.EL>.</p>
-        <p>Our argument - I am a contributor to RTW - is that if we act collectively, sharing our concerns and aspirations, we have a better chance of putting AI to good use.</p>
+        <p>
+          The open source project ResponsibleTechWork has{' '}
+          <Links.EL
+            link={{
+              source: 'https://responsibletech.work/blog/2023/6/20/announcing-the-responsible-ai-pledge-challenge/',
+            }}
+          >
+            {' '}
+            challenged
+          </Links.EL>{' '}
+          users of AI to contribute to its best practices by making
+          <Links.EL link={{ source: 'https://responsibletech.work/tools/development/pledge-works/' }}>
+            {' '}
+            pledges
+          </Links.EL>
+          .
+        </p>
+        <p>
+          Our argument - I am a contributor to RTW - is that if we act collectively, sharing our concerns and
+          aspirations, we have a better chance of putting AI to good use.
+        </p>
 
         <h3>My response</h3>
         <p>
-          The problem with making pledges is that you're supposed to stick to them in perpetuity. So it was a relief when my colleague Alja and I at RTW realised that pledges, like humans, are sensitive to time.
-          Principles are rocks which change imperceptibly, if at all, but pledges are like eddies in the surrounding waters, to be navigated until we are clear of immediate danger.
+          The problem with making pledges is that you're supposed to stick to them in perpetuity. So it was a relief
+          when my colleague Alja and I at RTW realised that pledges, like humans, are sensitive to time. Principles are
+          rocks which change imperceptibly, if at all, but pledges are like eddies in the surrounding waters, to be
+          navigated until we are clear of immediate danger.
         </p>
-        <p>Having a moral window in which to act also shifts the emphasis from the doer to the thing being done. Acts are transitory but people, and circumstances, change.</p>
-        <p>I've been using ChatGPT a lot this year, and talking and thinking about it more. 
-          Does the provenance of an idea or work of art matter, do memories exist (or are they simply re-reruns through the model of the brain), and is AI (or not AI), a distraction we cannot afford? I've also been asking myself what the cost is to use AI, to our privacy, to people's rights, and to the environment.
+        <p>
+          Having a moral window in which to act also shifts the emphasis from the doer to the thing being done. Acts are
+          transitory but people, and circumstances, change.
+        </p>
+        <p>
+          I've been using ChatGPT a lot this year, and talking and thinking about it more. Does the provenance of an
+          idea or work of art matter, do memories exist (or are they simply re-reruns through the model of the brain),
+          and is AI (or not AI), a distraction we cannot afford? I've also been asking myself what the cost is to use
+          AI, to our privacy, to people's rights, and to the environment.
         </p>
         <p>I will return to these questions in later posts, but for now, here are my pledges.</p>
         <p>
@@ -60,31 +95,53 @@ const Pledges = () => {
           <p>
             <div class={styles.inset}>
               <div>
-                <del>To prevent myself from being distracted by advances in AI, I pledge to return my focus to other things.</del>                
+                <del>
+                  To prevent myself from being distracted by advances in AI, I pledge to return my focus to other
+                  things.
+                </del>
               </div>
               <div>
-                <ins>I pledge to stop using ChatGPT until I have a better understanding of its impact on resources and people.</ins> <span> [Updated 6 July 2023]</span>
+                <ins>
+                  I pledge to stop using ChatGPT until I have a better understanding of its impact on resources and
+                  people.
+                </ins>{' '}
+                <span> [Updated 6 July 2023]</span>
               </div>
-              <div><strong>Pledge checkpoint: end of July 2023</strong></div>
+              <div>
+                <strong>Pledge checkpoint: end of July 2023</strong>
+              </div>
             </div>
           </p>
           <p>
             <div class={styles.inset}>
-              <div>To compensate for the water use of my chats with ChatGPT, I pledge to use grey water for my plants.</div>
-              <div><strong>Pledge checkpoint: end of summer 2023</strong></div>
+              <div>
+                To compensate for the water use of my chats with ChatGPT, I pledge to use grey water for my plants.
+              </div>
+              <div>
+                <strong>Pledge checkpoint: end of summer 2023</strong>
+              </div>
             </div>
           </p>
           <p>
             <div class={styles.inset}>
-              <div>To share what I learn about AI, I pledge to provide links to the materials, sources, and people that have helped me.</div>
-              <div><strong>Pledge checkpoint: tricky, but I'll review this one at the end of the summer too</strong></div>
+              <div>
+                To share what I learn about AI, I pledge to provide links to the materials, sources, and people that
+                have helped me.
+              </div>
+              <div>
+                <strong>Pledge checkpoint: tricky, but I'll review this one at the end of the summer too</strong>
+              </div>
             </div>
           </p>
         </p>
         <p>
           <h3>Influences</h3>
           <p>
-          With thanks to <Links.EL link={{ source: 'https://ialja.com/' }}>Alja</Links.EL>, Carl, <Links.EL link={{ source: 'https://noisewrangler.bandcamp.com/' }}>JP</Links.EL>, Franca, Christina, Carla, Pierre, Anne and Bernard, and my former colleagues at <Links.EL link={{ source: 'https://www.altruistiq.com/our-team' }}>Altruistiq</Links.EL>  with all of whom I have shared conversations about the upsides, downsides, and conundrums of recent developments in AI.         
+            With thanks to <Links.EL link={{ source: 'https://ialja.com/' }}>Alja</Links.EL>, Carl,{' '}
+            <Links.EL link={{ source: 'https://noisewrangler.bandcamp.com/' }}>JP</Links.EL>, Franca, Christina, Carla,
+            Pierre, Anne and Bernard, and my former colleagues at{' '}
+            <Links.EL link={{ source: 'https://www.altruistiq.com/our-team' }}>Altruistiq</Links.EL> with all of whom I
+            have shared conversations about the upsides, downsides, and conundrums of recent developments in AI.
           </p>
         </p>
       </section>
@@ -110,8 +167,7 @@ const Pledges = () => {
           { value: 'ethics', text: 'Ethics' },
         ]}
       />
-      
-      </Layout>
+    </Layout>
   )
 }
 
