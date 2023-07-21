@@ -1758,90 +1758,171 @@ const July = () => {
               </ul>
             </li>
           </ul>
+        
+          <h3>Climate Change AI</h3>
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://openletter.worldethicaldata.org/en/openletter/',
+                label: 'Tackling Climate Change with Machine Learning',
+              }}
+            >
+              Tackling Climate Change with Machine Learning
+            </Links.EL>
+          </div>
+          <div>
+            David Rolnick et al. |{' '}
+            <Links.EL link={{ source: 'https://www.climatechange.ai/', label: 'Climate Change AI' }}>
+              Climate Change AI
+            </Links.EL>
+          </div>
+          <ul>
+            <li>
+              <q>
+                An overview of where ML can be applied with high impact in the fight against climate change, through
+                either effective engineering or innovative research. The strategies we highlight include climate
+                mitigation and adaptation, as well as meta-level tools that enable other strategies.
+              </q>
+            </li>
+            <li>
+              <q>Collaboration is also essential to ensure that innovations will be deployed with the intended impact.</q>
+            </li>
+            <li>
+              <q>
+                We emphasize that ML is not a silver bullet. The applications we highlight are impactful, but no one
+                solution will “fix” climate change. There are also many areas of action where ML is inapplicable, and we
+                omit these entirely. Moreover, while we focus here on ways in which ML can help address climate change, ML
+                can also be applied in ways that make climate change worse.
+              </q>
+            </li>
+            <li>
+              <q>
+                Technology is not in itself enough to solve climate change, nor is it a replacement for other aspects of
+                climate action such as policy.
+              </q>
+            </li>
+          </ul>
+          3 targets
+          <ul>
+            <li>High leverage</li>
+            <li>Long term</li>
+            <li>Uncertain impact</li>
+          </ul>
+          <ul>
+            <li>
+              Electricity systems (responsible for about a quarter of human-caused GHG emissions each year).
+              <br />
+              Contributions include accelerating the development of clean energy technologies, improving forecasts of
+              demand and clean energy, improving electricity system optimization, and enhancing system monitoring
+              <br />
+              <strong>High leverage</strong>
+            </li>
+            <li>
+              Reducing Current-System Impacts
+              <br />
+              Cutting emissions from fossil fuels, reducing waste from electricity delivery, and flexibly managing demand
+              to minimize its emissions impacts
+              <br />
+              <strong>Uncertain impact - High leverage</strong>
+            </li>
+            <li>
+              Ensuring Global Impact
+              <br />
+              To ensure global impact, ML can help improve electricity access and translate electricity system insights
+              from high-data to low-data contexts.
+              <br />
+              Innovations that seek to reduce GHG emissions in the oil and gas industries could actually increase
+              emissions by making them cheaper to emit.
+              <br />
+              Since many modern electric grids are not data-abundant (although they may be data-driven), understanding how
+              to apply data-driven insights to these grids may be the next grand challenge for ML in electricity systems.
+              <br />
+              <strong>High leverage</strong>
+            </li>
+          </ul>
+          <div>Note: reached Transportation. TBC.</div>
         </div>
-        <h3>Climate Change AI</h3>
+        <div class={styles.day}>
+          <span class={styles.date}>Friday 21 July 2023</span>
+
+          <h3>Interactive fiction</h3>
+
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://www.youtube.com/watch?v=rYs6HM8ly40',
+                label: 'The past, present, and future of Interactive fiction',
+              }}
+            >
+              The past, present, and future of Interactive fiction (Video)
+            </Links.EL>
+          </div>
+          <div>Chris Chinchilla</div>
+
+          History
+          <ul>
+            <li>Books: Choose Your Own Adventure (Edward Packard) - turn to page 24, etc., younger readers</li>
+            <li>Books: Fighting fantasy (Steve Jackson) - combat, magic systems, slightly older readers</li>
+            <li>Books: Lone Wolf (Joe Dever) - include option to level up between books</li>
+            <li>Computers: Colossal Cave Adventure (Willie Crowther & Don Woods)</li>
+            <li>Computers: Monkey Island</li>
+            <li>Computers: Telltale Games</li>
+            <li>Computers: Inkle Sudios e.g. 80 days</li>
+            <li>Computers: Depression Quest, built in Twine. The text-driven interior monologue style of the game was criticized as boring: <Links.EL link={{source:'https://www.britannica.com/topic/Gamergate-campaign', label:'Gamergate'}}>Gamergate</Links.EL>. It uses an interior monologue.</li>
+            <li>Commnuities & tools: Twine, Itch</li>
+            <li>Dungeon AI (GPT-3)</li>
+            <li>Video: Bandersnatch</li>
+            <li>Audio: Codename Sickness</li>
+          </ul>
+
+          Current tools
+          <ul>
+            <li>Tuesday</li>
+            <li>Articy Draft 3, can export to Unity or Unreal e.g. used for Disco Elysium (Windows only!)</li>
+            <li>ink from Inkle (80 days), designed to import into Unity, else as HTML (+ custom JS)</li>
+            <li>Inform: text-based, typed responses; designed to interact with language model rather than clicking on options; potential; powerful; open source</li>
+            <li>Twine; defined indie world; has programming power (HTML, CSS, JS); mark up language</li>
+          </ul>
+
+          The future
+          <ul>
+            <li>Publishing: IFDB, Itch (all games), or as webpage in HTML</li>
+          </ul>
+        </div>
+
         <div>
           <Links.EL
             link={{
-              source: 'https://openletter.worldethicaldata.org/en/openletter/',
-              label: 'Tackling Climate Change with Machine Learning',
+              source: 'https://www.youtube.com/watch?v=mW7uquJgwg4',
+              label: '6 macOS native generative AI tools to try',
             }}
           >
-            Tackling Climate Change with Machine Learning
+            6 macOS native generative AI tools to try (Video)
           </Links.EL>
         </div>
+        <div>Chris Chinchilla</div>
+
+        <ul>
+          <li>Photoshop beta</li>
+          <li>Text Assistant</li>
+          <li>MacGPT</li>
+          <li>Writers Brew</li>
+          <li>Amazing AI</li>
+          <li>Mac Whisper</li>
+        </ul>
+
         <div>
-          David Rolnick et al. |{' '}
-          <Links.EL link={{ source: 'https://www.climatechange.ai/', label: 'Climate Change AI' }}>
-            Climate Change AI
+          <Links.EL
+            link={{
+              source: 'https://www.youtube.com/watch?v=qUjbH_OPDeQ',
+              label: 'Joe Dever\'s Lone Wolf, Flight from the Dark Live play',
+            }}
+          >
+            Joe Dever's Lone Wolf, Flight from the Dark Live play (Video)
           </Links.EL>
         </div>
-        <ul>
-          <li>
-            <q>
-              An overview of where ML can be applied with high impact in the fight against climate change, through
-              either effective engineering or innovative research. The strategies we highlight include climate
-              mitigation and adaptation, as well as meta-level tools that enable other strategies.
-            </q>
-          </li>
-          <li>
-            <q>Collaboration is also essential to ensure that innovations will be deployed with the intended impact.</q>
-          </li>
-          <li>
-            <q>
-              We emphasize that ML is not a silver bullet. The applications we highlight are impactful, but no one
-              solution will “fix” climate change. There are also many areas of action where ML is inapplicable, and we
-              omit these entirely. Moreover, while we focus here on ways in which ML can help address climate change, ML
-              can also be applied in ways that make climate change worse.
-            </q>
-          </li>
-          <li>
-            <q>
-              Technology is not in itself enough to solve climate change, nor is it a replacement for other aspects of
-              climate action such as policy.
-            </q>
-          </li>
-        </ul>
-        3 targets
-        <ul>
-          <li>High leverage</li>
-          <li>Long term</li>
-          <li>Uncertain impact</li>
-        </ul>
-        <ul>
-          <li>
-            Electricity systems (responsible for about a quarter of human-caused GHG emissions each year).
-            <br />
-            Contributions include accelerating the development of clean energy technologies, improving forecasts of
-            demand and clean energy, improving electricity system optimization, and enhancing system monitoring
-            <br />
-            <strong>High leverage</strong>
-          </li>
-          <li>
-            Reducing Current-System Impacts
-            <br />
-            Cutting emissions from fossil fuels, reducing waste from electricity delivery, and flexibly managing demand
-            to minimize its emissions impacts
-            <br />
-            <strong>Uncertain impact - High leverage</strong>
-          </li>
-          <li>
-            Ensuring Global Impact
-            <br />
-            To ensure global impact, ML can help improve electricity access and translate electricity system insights
-            from high-data to low-data contexts.
-            <br />
-            Innovations that seek to reduce GHG emissions in the oil and gas industries could actually increase
-            emissions by making them cheaper to emit.
-            <br />
-            Since many modern electric grids are not data-abundant (although they may be data-driven), understanding how
-            to apply data-driven insights to these grids may be the next grand challenge for ML in electricity systems.
-            <br />
-            <strong>High leverage</strong>
-          </li>
-        </ul>
-        <div>Note: reached Transportation. TBC.</div>
-        <br />
+        <div>Chris Chinchilla</div>
+
       </section>
     </Layout>
   )
