@@ -1923,6 +1923,27 @@ const July = () => {
         </div>
         <div>Chris Chinchilla</div>
 
+        Other games that may be of interest:
+        <ul>
+          <li><Links.EL link={{source:'https://www.nomanssky.com/', label:'No man\'s sky'}}>No man's sky</Links.EL></li>
+        </ul>
+
+        <h3>Emily M. Bender puts her case</h3>
+
+        <div>
+          <Links.EL
+            link={{
+              source: 'https://medium.com/@emilymenonbender/talking-about-a-schism-is-ahistorical-3c454a77220f',
+              label: 'Talking about a ‘schism’ is ahistorical',
+            }}
+          >
+            Talking about a ‘schism’ is ahistorical
+          </Links.EL>
+        </div>
+        <div>Emily M. Bender</div>
+
+        
+
       </section>
     </Layout>
   )
