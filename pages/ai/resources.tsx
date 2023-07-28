@@ -268,6 +268,12 @@ const AIOResources = () => {
 
         <h3>AIs</h3>
         <div>
+          <Links.EL link={{ source: 'https://chat.lmsys.org/?arena', label: 'Chatbot Arena' }}>Chatbot Arena</Links.EL>
+        </div>
+        <div>
+          <Links.EL link={{ source: 'https://tome.app/', label: 'Llama 2' }}>Tome</Links.EL>
+        </div>
+        <div>
           <Links.EL link={{ source: 'https://ai.meta.com/llama/', label: 'Llama 2' }}>Llama 2</Links.EL>
         </div>
         <div>

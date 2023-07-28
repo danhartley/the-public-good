@@ -1888,60 +1888,95 @@ const July = () => {
           <ul>
             <li>Publishing: IFDB, Itch (all games), or as webpage in HTML</li>
           </ul>
+        
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://www.youtube.com/watch?v=mW7uquJgwg4',
+                label: '6 macOS native generative AI tools to try',
+              }}
+            >
+              6 macOS native generative AI tools to try (Video)
+            </Links.EL>
+          </div>
+          <div>Chris Chinchilla</div>
+
+          <ul>
+            <li>Photoshop beta</li>
+            <li>Text Assistant</li>
+            <li>MacGPT</li>
+            <li>Writers Brew</li>
+            <li>Amazing AI</li>
+            <li>Mac Whisper</li>
+          </ul>
+
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://www.youtube.com/watch?v=qUjbH_OPDeQ',
+                label: 'Joe Dever\'s Lone Wolf, Flight from the Dark Live play',
+              }}
+            >
+              Joe Dever's Lone Wolf, Flight from the Dark Live play (Video)
+            </Links.EL>
+          </div>
+          <div>Chris Chinchilla</div>
+
+          Other games that may be of interest:
+          <ul>
+            <li><Links.EL link={{source:'https://www.nomanssky.com/', label:'No man\'s sky'}}>No man's sky</Links.EL></li>
+          </ul>
+
+          <h3>Emily M. Bender puts her case</h3>
+
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://medium.com/@emilymenonbender/talking-about-a-schism-is-ahistorical-3c454a77220f',
+                label: 'Talking about a ‘schism’ is ahistorical',
+              }}
+            >
+              Talking about a ‘schism’ is ahistorical
+            </Links.EL>
+          </div>
+          <div>Emily M. Bender</div>
         </div>
 
-        <div>
-          <Links.EL
-            link={{
-              source: 'https://www.youtube.com/watch?v=mW7uquJgwg4',
-              label: '6 macOS native generative AI tools to try',
-            }}
-          >
-            6 macOS native generative AI tools to try (Video)
-          </Links.EL>
+        <div class={styles.day}>
+          <span class={styles.date}>Thursday 27 July 2023</span>
+
+          <h3>Fun</h3>
+
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://waxy.org/2023/07/vote-on-the-tiny-awards/',
+                label: 'Tiny Awards, a celebration of the small, playful, and heartfelt web',
+              }}
+            >
+              Tiny Awards, a celebration of the small, playful, and heartfelt web
+            </Links.EL>
+          </div>        
+          <div>Waxy.org | Andy Baio</div>
         </div>
-        <div>Chris Chinchilla</div>
 
-        <ul>
-          <li>Photoshop beta</li>
-          <li>Text Assistant</li>
-          <li>MacGPT</li>
-          <li>Writers Brew</li>
-          <li>Amazing AI</li>
-          <li>Mac Whisper</li>
-        </ul>
+        <div class={styles.day}>
+          <span class={styles.date}>Friday 28 July 2023</span>
 
-        <div>
-          <Links.EL
-            link={{
-              source: 'https://www.youtube.com/watch?v=qUjbH_OPDeQ',
-              label: 'Joe Dever\'s Lone Wolf, Flight from the Dark Live play',
-            }}
-          >
-            Joe Dever's Lone Wolf, Flight from the Dark Live play (Video)
-          </Links.EL>
+          <h3>AI & Democracy</h3>
+
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://www.theguardian.com/commentisfree/2023/jul/28/artificial-intelligence-powering-politics-reboot-democracy',
+                label: 'Artificial intelligence is powering politics – but it could also reboot democracy',
+              }}
+            >
+              Artificial intelligence is powering politics – but it could also reboot democracy
+            </Links.EL>
+          </div>        
+          <div>The Guardian | Polly Curtis | Demos</div>
         </div>
-        <div>Chris Chinchilla</div>
-
-        Other games that may be of interest:
-        <ul>
-          <li><Links.EL link={{source:'https://www.nomanssky.com/', label:'No man\'s sky'}}>No man's sky</Links.EL></li>
-        </ul>
-
-        <h3>Emily M. Bender puts her case</h3>
-
-        <div>
-          <Links.EL
-            link={{
-              source: 'https://medium.com/@emilymenonbender/talking-about-a-schism-is-ahistorical-3c454a77220f',
-              label: 'Talking about a ‘schism’ is ahistorical',
-            }}
-          >
-            Talking about a ‘schism’ is ahistorical
-          </Links.EL>
-        </div>
-        <div>Emily M. Bender</div>
-
         
 
       </section>
