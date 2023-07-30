@@ -145,13 +145,34 @@ const July = () => {
             <li>Union (with LTP species)</li>
           </ul>
 
+          </div>
+
+          <div class={styles.day}>
+          <span class={styles.date}>Friday 28 July 2023</span>
+
           Research
           <ul>
             <li><Links.EL link={{source:'https://ebird.org/quiz/', label:'eBird Photo + Sound Quiz'}}>eBird Photo + Sound Quiz</Links.EL></li>
             <li><Links.EL link={{source:'https://app.memrise.com/course/160/trees-of-britain-leaves/', label:'Trees of Britain ~ Leaves'}}>Trees of Britain ~ Leaves | memrise</Links.EL></li>
             <li><Links.EL link={{source:'https://forum.inaturalist.org/t/quiz-game-development-opportunity/6822', label:'Quiz Game Development Opportunity'}}>Quiz Game Development Opportunity | iNat forum</Links.EL></li>
           </ul>
-        </div>
+
+          </div>
+
+          <div class={styles.day}>
+            <span class={styles.date}>Saturday 29 July 2023</span>
+
+            Objectives
+            <ul>
+              <li><strong>Mark start of phase</strong></li>
+              <li>Basic version using raw iNat data</li>
+              <li>Create standard, universal, calls and arguments</li>
+              <li>Ask for feedback based on this UI</li>
+              <li><strong>Mark end of phase</strong></li>
+            </ul>
+
+          </div>
+        
       </section>
     </Layout>
   )

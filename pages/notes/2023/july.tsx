@@ -1977,6 +1977,47 @@ const July = () => {
           </div>        
           <div>The Guardian | Polly Curtis | Demos</div>
         </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Saturday 29 July 2023</span>
+
+          <h3>Climate change</h3>
+
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://www.youtube.com/watch?v=rxk1Yfg5hOw',
+                label: 'Greenwashing: All You Need to Know',
+              }}
+            >
+              Greenwashing: All You Need to Know
+            </Links.EL>
+          </div>        
+          <div>Sabine Hossenfelder | YouTube Video</div>
+          <br />
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://ec.europa.eu/commission/presscorner/detail/en/ip_23_1692',
+                label: 'Consumer protection: enabling sustainable choices and ending greenwashing',
+              }}
+            >
+              Consumer protection: enabling sustainable choices and ending greenwashing
+            </Links.EL>
+          </div>        
+          <div>EU Commission</div>
+          <br />
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://planetwild.com/',
+                label: 'Planet Wild',
+              }}
+            >
+              Planet Wild
+            </Links.EL>
+          </div>        
+        </div> 
         
 
       </section>
