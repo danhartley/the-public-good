@@ -2017,9 +2017,21 @@ const July = () => {
               Planet Wild
             </Links.EL>
           </div>        
-        </div> 
-        
-
+          <br />
+          <p>
+            Transparency can extend to the price paid to producers. Companies in France include "Faire France", "Les éleveurs vous disent merci", "En direct des éleveurs", "Les 20 fermes", "CantAveyLot", "Juste et Vendéen", Oui, merci" and "C'est qui le patron?!" (Thank you, JP!)
+          </p>
+          <div>
+            <Links.EL
+              link={{
+                source: 'https://cestquilepatron.com/produits/lait/',
+                label: 'C\'est qui le patron?!',
+              }}
+            >
+              C'est qui le patron?!
+            </Links.EL>
+          </div>        
+        </div>         
       </section>
     </Layout>
   )

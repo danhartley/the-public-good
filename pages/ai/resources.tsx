@@ -7,6 +7,23 @@ const AIOResources = () => {
       <section>
         <h3>Ethics</h3>
         <div>
+          <Links.EL link={{source: 'https://dl.acm.org/doi/10.1145/3531146.3533088', label:'Taxonomy of Risks posed by Language Models'}}>
+            Taxonomy of Risks posed by Language Models
+          </Links.EL>
+        </div>
+        <div>Laura Weidinger et al.</div>
+        <div>
+          <Links.EL
+            link={{
+              source: 'https://arxiv.org/pdf/2304.03271.pdf',
+              label: 'Making AI Less “Thirsty”: Uncovering and Addressing the Secret Water Footprint of AI Models',
+            }}
+          >
+            Making AI Less “Thirsty”: Uncovering and Addressing the Secret Water Footprint of AI Models )PDF)
+          </Links.EL>
+        </div>
+        <div>Pengfei Li et al.</div>
+        <div>
           <Links.EL
             link={{
               source: 'https://openletter.worldethicaldata.org/en/openletter/',

@@ -20,6 +20,7 @@ export default function Home() {
             </p> */}
 
             <Links.ILBlock link={{'value': 'notes/2023/july', 'text': 'July 2023 notes'}}></Links.ILBlock>
+            <Links.ILBlock link={{'value': 'notes/2023/august', 'text': 'August 2023 notes'}}></Links.ILBlock>
         </section>
 
         <section>
