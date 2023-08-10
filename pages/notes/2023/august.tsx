@@ -142,6 +142,57 @@ const August = () => {
           </div>
           <div>Laura Weidinger et al.</div>
 
+          <br />
+
+          <div>
+            <Links.EL link={{source: 'https://www.youtube.com/watch?v=oqu5DjzOBF8', label:'I Misunderstood the Greenhouse Effect. Here\'s How It Works.'}}>
+            I Misunderstood the Greenhouse Effect. Here's How It Works. 
+            </Links.EL>
+          </div>
+          <div>Sabine Hossenfelder | YouTube</div>
+
+        </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Thursday 10 August 2023</span>
+
+          <h3>Problem solving</h3>
+
+          McKinsey's 7 steps
+          <ol>
+            <li>Define the problem: <em>why not what</em></li>
+            <li>Disaggregate it (ie broken down into component parts or issues)</li>
+            <li>Prioritize which of these elements has the biggest impact on the problem</li>
+            <li>Build a workplan</li>
+            <li>Conduct critical analysis (gather data)</li>
+            <li>Synthesize findings (this is where team work makes a difference)</li>
+            <li>Communicate a storyline</li>
+          </ol>
+
+          Random response
+          <ul>
+            <li>Is there a problem?</li>
+            <li>Does a solution already exist?</li>
+            <li>Introduce problem to a wider or different context</li>
+            <li>Prioritise skills of those working on the problem (fit solution)</li>
+            <li>Oversee building of a plan</li>
+            <li>Welcome criticism</li>
+            <li>Question each step and repeat</li>
+          </ul>
+
+          Spitballing
+          <ul>
+            <li>Recursive acronym</li>
+            <li>Universal sockets, filters, pure ideas, etc. (creating common denominators)</li>
+            <li>The 2 hour meeting</li>
+            <li>Questionning until the problem is simplified (and to continue until it is sometimes no more…) AKA dissolve the problem</li>
+            <li>Count up the things that won't work, or are dead-ends</li>
+            <li>Provide what cannot do (time, expertise, opportunity) or will not do (pay, conditions)</li>
+            <li>Mismatch job and candidate; failure to expose real need, express true desires</li>
+            <li>Short term v long term; superficial/profund; durable/throw away</li>
+            <li>Meta: test our own tools on ourselves</li>
+            <li>Work that is hard to reproduce (yet still open source/data/community)</li>
+          </ul>
         </div>
       </section>
     </Layout>

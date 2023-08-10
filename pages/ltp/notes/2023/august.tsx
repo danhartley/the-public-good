@@ -12,7 +12,7 @@ const August = () => {
     >
       <section>
         <div class={styles.day}>
-          <span class={styles.date}>Tuesday 25 August 2023</span>        
+          <span class={styles.date}>Tuesday 1 August 2023</span>        
 
           <h3>Code decisions</h3>
 
@@ -31,6 +31,32 @@ const August = () => {
             <li>Latin or common name or both, selected or entered (6 variations)</li>
             <li>Image to match latin or common name or both (3 variations)</li>
           </ul>
+        </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Wednesday 9 August 2023</span>        
+
+          Features
+          <ul>
+            <li>Species list (iNat has only observation list)</li>
+            <li>Multiple origins (default iNat)</li>
+            <li>Observation count (iNat only)</li>
+            <li>Single species</li>
+            <li>
+              Single species details
+              <ul>
+                <li>Detail drawer</li>
+                <li>native</li>
+                <li>Photo rights</li>
+                <li>day | month | year</li>
+                <li>User (user_id)</li>
+                <li>lat | lng + radius</li>
+                <li>place_id</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Code decisions</h3>
         </div>
       </section>
     </Layout>

@@ -234,7 +234,7 @@ const AIOResources = () => {
 
         <h3>Design</h3>
         <div>
-          <Links.EL link={{ source: 'https://www.nngroup.com/articles/ai-paradigm/' }}>
+          <Links.EL link={{ source: 'https://stackoverflow.blog/2023/06/07/self-healing-code-is-the-future-of-software-development/' }}>
             Self-healing code is the future of software development
           </Links.EL>
           <div>Ben Popper (Stackoverflow)</div>
@@ -242,9 +242,20 @@ const AIOResources = () => {
 
         <h3>Development</h3>
         <div>
+            <Links.EL
+              link={{
+                source: 'https://arxiv.org/pdf/2212.08073.pdf',
+                label: 'Constitutional AI: Harmlessness from AI Feedback',
+              }}
+            >
+              Constitutional AI: Harmlessness from AI Feedback (PDF)
+            </Links.EL>
+          </div>
+        <div>Yuntao Bai et al. Anthropic</div>
+        <div>
           <Links.EL
             link={{
-              source: 'https://stackoverflow.blog/2023/06/07/self-healing-code-is-the-future-of-software-development/',
+              source: 'https://www.nngroup.com/articles/ai-paradigm/',
             }}
           >
             AI: First New UI Paradigm in 60 Years
