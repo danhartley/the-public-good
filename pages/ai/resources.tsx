@@ -7,6 +7,12 @@ const AIOResources = () => {
       <section>
         <h3>Ethics</h3>
         <div>
+          <Links.EL link={{source: 'https://arxiv.org/abs/2307.15043', label:'Universal and Transferable Adversarial Attacks on Aligned Language Models'}}>
+          Universal and Transferable Adversarial Attacks on Aligned Language Models
+          </Links.EL>
+        </div>
+        <div>Andy Zou et al.</div>
+        <div>
           <Links.EL link={{source: 'https://dl.acm.org/doi/10.1145/3531146.3533088', label:'Taxonomy of Risks posed by Language Models'}}>
             Taxonomy of Risks posed by Language Models
           </Links.EL>
