@@ -163,9 +163,9 @@ const August = () => {
             <li>Define the problem: <em>why not what</em></li>
             <li>Disaggregate it (ie broken down into component parts or issues)</li>
             <li>Prioritize which of these elements has the biggest impact on the problem</li>
-            <li>Build a workplan</li>
+            <li>Build a work plan</li>
             <li>Conduct critical analysis (gather data)</li>
-            <li>Synthesize findings (this is where team work makes a difference)</li>
+            <li>Synthesize findings (this is where teamwork makes a difference)</li>
             <li>Communicate a storyline</li>
           </ol>
 
@@ -185,7 +185,7 @@ const August = () => {
             <li>Recursive acronym</li>
             <li>Universal sockets, filters, pure ideas, etc. (creating common denominators)</li>
             <li>The 2 hour meeting</li>
-            <li>Questionning until the problem is simplified (and to continue until it is sometimes no more…) AKA dissolve the problem</li>
+            <li>Questioning until the problem is simplified (and to continue until it is sometimes no more…) AKA dissolve the problem</li>
             <li>Count up the things that won't work, or are dead-ends</li>
             <li>Provide what cannot do (time, expertise, opportunity) or will not do (pay, conditions)</li>
             <li>Mismatch job and candidate; failure to expose real need, express true desires</li>
