@@ -169,12 +169,12 @@ const August = () => {
             <li>Communicate a storyline</li>
           </ol>
 
-          Random response
+          Random response (somewhat contradictory)
           <ul>
             <li>Is there a problem?</li>
             <li>Does a solution already exist?</li>
             <li>Introduce problem to a wider or different context</li>
-            <li>Prioritise skills of those working on the problem (fit solution)</li>
+            <li>Prioritise skills of those working on the problem (fit solution to people not vice versa)</li>
             <li>Oversee building of a plan</li>
             <li>Welcome criticism</li>
             <li>Question each step and repeat</li>
@@ -182,16 +182,17 @@ const August = () => {
 
           Spitballing
           <ul>
-            <li>Recursive acronym</li>
-            <li>Universal sockets, filters, pure ideas, etc. (creating common denominators)</li>
-            <li>The 2 hour meeting</li>
-            <li>Questioning until the problem is simplified (and to continue until it is sometimes no more…) AKA dissolve the problem</li>
-            <li>Count up the things that won't work, or are dead-ends</li>
-            <li>Provide what cannot do (time, expertise, opportunity) or will not do (pay, conditions)</li>
-            <li>Mismatch job and candidate; failure to expose real need, express true desires</li>
-            <li>Short term v long term; superficial/profund; durable/throw away</li>
+            <li>Recursive acronym e.g. GNU</li>
+            <li>Universal sockets (NASA), filters, pure ideas, etc. (creating <strong>common denominators</strong>)</li>
+            <li><strong>Tweaks</strong> over overhauls?</li>
+            <li><strong>The 2 hour meeting</strong> and parallels with the (chamber) orchestra/quartet (resonance, wavelength)</li>
+            <li>Questioning until the problem is simplified (and to continue until it is sometimes no more…) AKA <strong>dissolve the problem</strong></li>
+            <li>Count up the things that won't work, or are <strong>useful dead-ends</strong> (using <strong>decision trees</strong>)?</li>
+            <li>Provide what others cannot do (time, expertise, opportunity) or will not do (pay, conditions)</li>
+            <li>Mismatch job and candidate (or requirement and service, required change and policy); failure to expose real need, express true desires</li>
+            <li>Short term v long term; superficial/profound; durable/disposable</li>
             <li>Meta: test our own tools on ourselves</li>
-            <li>Work that is hard to reproduce (yet still open source/data/community)</li>
+            <li>Work that is <strong>hard to reproduce</strong> yet will tools/data/access available to all (open source/data/community)</li>
           </ul>
         </div>
       </section>

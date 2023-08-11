@@ -54,9 +54,8 @@ const August = () => {
                 <li>place_id</li>
               </ul>
             </li>
+            <li><strong>Oral history tellers</strong>(cf. combination of coach for language and participant level)</li>
           </ul>
-
-          <h3>Code decisions</h3>
         </div>
       </section>
     </Layout>
