@@ -7,6 +7,12 @@ const AIOResources = () => {
       <section>
         <h3>Ethics</h3>
         <div>
+          <Links.EL link={{source: 'https://www.rollingstone.com/culture/culture-features/women-warnings-ai-danger-risk-before-chatgpt-1234804367/', label:'These Women Tried to Warn Us About AI'}}>
+          These Women Tried to Warn Us About AI
+          </Links.EL>
+        </div>
+        <div>Lorena O'Neil | Rolling Stone</div>
+        <div>
           <Links.EL link={{source: 'https://arxiv.org/abs/2307.15043', label:'Universal and Transferable Adversarial Attacks on Aligned Language Models'}}>
           Universal and Transferable Adversarial Attacks on Aligned Language Models
           </Links.EL>
@@ -162,6 +168,11 @@ const AIOResources = () => {
         <div>Our World in Data</div>
 
         <h3>Articles</h3>
+        <div>
+          <Links.EL link={{source:'https://simonwillison.net/2023/Aug/27/wordcamp-llms/', label:'Making Large Language Models work for you'}}>Making Large Language Models work for you</Links.EL>
+          <div>Simon Willison</div>
+          <div>A good recap of LLM models and releases, interesting examples of how to use prompts and context windows, and some ethical pledges.</div>
+        </div>
         <div>
           <Links.EL
             link={{

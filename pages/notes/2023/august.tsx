@@ -195,6 +195,122 @@ const August = () => {
             <li>Work that is <strong>hard to reproduce</strong> yet will tools/data/access available to all (open source/data/community)</li>
           </ul>
         </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Friday 11 August 2023</span>
+          <h3>Working group</h3>
+          Seed ideas
+          <ul>
+            <li>Thinktanks (cf open source or open collaboration working groups)</li>
+            <li>Are we taking on too much? Both a new business (in what area?) and new practices?</li>
+            <li>Academic papers aim for 10-15% new material</li>
+            <li>Compare the <em>therapeutic alliance</em> aka the rules of engagement</li>
+          </ul>
+
+          Aims
+          <ul>
+            <li>Decide to concentrate on how we do things e.g company structure, including equal pay, shifting titles (or none)</li>
+            <li>Tacking against the wind - not always heading straight for where we want to go.</li>
+            <li>Instead of asking <em>Why are we doing this</em>?, asking <em>What makes us do this</em>? Ideal self, intent to work together, artistic fulfilment</li>
+          </ul>
+
+          For next time
+          <ul>
+            <li>Define ideal self</li>
+            <li>Come up with a common plan for achieving each of our ideal selves</li>
+            <li>Explain what makes us want to work together</li>
+          </ul>
+        </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Friday 11 August 2023</span>
+
+          <h3>Unethical AI</h3>
+
+          <div>
+            <Links.EL link={{source: 'https://www.rollingstone.com/culture/culture-features/women-warnings-ai-danger-risk-before-chatgpt-1234804367/', label:'These Women Tried to Warn Us About AI'}}>
+            These Women Tried to Warn Us About AI
+            </Links.EL>
+          </div>
+          <div>Lorena O'Neil | Rolling Stone</div>
+
+          <blockquote>
+            <br />
+            “There were no Black people — literally no Black people,” says Gebru, who was born and raised in Ethiopia. “I would go to academic conferences in AI, and I would see four or five Black people out of five, six, seven thousand people internationally.… I saw who was building the AI systems and their attitudes and their points of view. I saw what they were being used for, and I was like, ‘Oh, my God, we have a problem.’”
+            <br />
+            <br />
+            Gebru and her colleagues have also expressed concern about the exploitation of heavily surveilled and low-wage workers helping support AI systems; content moderators and data annotators are often from poor and underserved communities, like refugees and incarcerated people. Content moderators in Kenya have reported experiencing severe trauma, anxiety, and depression from watching videos of child sexual abuse, murders, rapes, and suicide in order to train ChatGPT on what is explicit content. Some of them take home as little as $1.32 an hour to do so.
+            <br />
+            <br />
+            “It is unsurprising that if you look at the race and, generally, gender demographics of Doomer or existentialist people, they look a particular way, they are of a particular income level. Because they don’t often suffer structural inequality — they’re either wealthy enough to get out of it, or white enough to get out of it, or male enough to get out of it,” says Chowdhury. “So for these individuals, they think that the biggest problems in the world are can AI set off a nuclear weapon?” 
+          </blockquote>
+          
+          <h3>Nothing to worry about!</h3>
+
+          <div>
+            <Links.EL link={{source: 'https://openai.com/blog/introducing-superalignment', label:'Introducing Superalignment'}}>
+            Introducing Superalignment
+            </Links.EL>
+          </div>
+          <div>OpenAI</div>
+          <blockquote cite='https://openai.com/blog/introducing-superalignment'>
+            Superintelligence will be the most impactful technology humanity has ever invented, and could help us solve many of the world’s most important problems. But the vast power of superintelligence could also be very dangerous, and could lead to the disempowerment of humanity or even human extinction.
+          </blockquote>
+
+          <p>
+            <div>Follow up from Alja: <Links.EL link={{source:'https://dougbelshaw.com/'}}>Doug Belshaw</Links.EL>.</div>
+
+            <div>And from him to <Links.EL link={{source: 'https://www.workers.coop/resource/casestudy-workerscoop/'}}>Case study: workers.coop</Links.EL>.</div>
+          </p>
+
+        </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Wednesday 23 August 2023</span>
+        </div>
+
+        <h3>Ethics</h3>
+
+        <Links.EL link={{source:'https://www.technologyreview.com/2023/08/16/1077490/collective-action-tech-work/', label:'Tech is broken—can collective action fix it?'}}>Tech is broken—can collective action fix it?</Links.EL>
+        <Links.EL link={{source:'https://www.wired.com/story/prosecraft-backlash-writers-ai/', label:'Why the Great AI Backlash Came for a Tiny Startup You’ve Probably Never Heard Of'}}>Why the Great AI Backlash Came for a Tiny Startup You’ve Probably Never Heard Of</Links.EL>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Friday 25 August 2023</span>
+          <h3>Working group</h3>
+          Response from last time
+          <ul>
+            <li>
+              <div>
+                Ideal self
+              </div>
+              <ul>
+                <li><strong>Consolation of knowledge</strong> and <strong>process over goal</strong></li>
+                <li>Knowledge has depth e.g. MB biome is not original but product of anthropogenic change</li>
+                <li>Internet tools (HTML, JavaScript & CSS) are one form of foundational knowledgeable cf. knowledge of ICE.</li>
+                <li>Evolution is a process; it describes something, it does not explain it (in the sense of defining a purpose or goal - we often make it explicitly clear it does not have a goal).</li>
+                <li>The ideal is a compromise; shuffling the things that make us satisfied; a way of navigating rather than a destination.</li>
+                <li>It is worth looking for things that have lasting value: technical skills, domain knowledge, character (ethics, fortitude); cf. Pledge Works which can make a job more meaningful if we discover within it challenges meaningful to us (as perhaps union members do, in discovering camaraderie, resilience, purpose, meaning beyond their job).</li>
+                <li><strong>Succession</strong>: climax of a process (evolution) and a goal (stable state of the succession)</li>
+              </ul>
+              <div>
+                Helping achieve our ideal selves and how working together can help
+              </div>
+              <ul>
+                <li>Sharing a role: practically satisfies permanence for employer/service and permits greater freedom</li>
+                <li>Create something that gives us autonomy</li>
+                <li>Working together requires (internal) logistics, planning, compromise, etc. Can use this as a blueprint for working with others (outsiders)</li>
+              </ul>
+            </li>
+          </ul>
+          <div>Action</div>
+          <ul>
+            <li>Identifiy ourselves cf. RTW or a union</li>
+            <li>Commit to concrete action (pledges)</li>
+            <li>Keep a record</li>
+            <li>Do things that are useful in themselves - not a business plan, or career plan but acts</li>
+          </ul>
+        </div>
+
       </section>
     </Layout>
   )
