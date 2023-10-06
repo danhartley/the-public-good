@@ -119,6 +119,14 @@ const September = () => {
         </div>
 
       </section>
+
+      <Links.RelatedLinks
+            links={[
+              { value: 'notes/2023/august', text: 'August' },            
+              { value: 'notes/2023/july', text: 'July' },            
+              { value: 'notes/2023/june', text: 'June' },
+            ]}
+        ></Links.RelatedLinks>
     </Layout>
   )
 }

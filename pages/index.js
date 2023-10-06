@@ -11,16 +11,10 @@ export default function Home() {
 
             <p>Our ability to mitigate the threats we pose to the planet depends on individual and collective action.</p>
 
-            {/* <p>I will <Links.IL link={{source:'services'}}>help you</Links.IL> create fast, accessible and secure websites.</p> */}
-
             <p>I write about the climate crisis, responsible web development, and occasionally <Links.IL link={{source:"personal/extracts"}}>things I made up</Links.IL>.</p>
 
-            {/* <p>
-                <div>The site is designed according to a set of principles set out in a <Links.IL link={{source:'web-development/sociable-contract'}}>sociable contract</Links.IL>.</div>
-            </p> */}
-
-            <Links.ILBlock link={{'value': 'notes/2023/august', 'text': 'August 2023 notes'}}></Links.ILBlock>
             <Links.ILBlock link={{'value': 'notes/2023/september', 'text': 'September 2023 notes'}}></Links.ILBlock>
+            <Links.ILBlock link={{'value': 'ltp/notes/2023/october', 'text': 'Learn the Planet October 2023 notes'}}></Links.ILBlock>
         </section>
 
         <section>

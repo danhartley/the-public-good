@@ -474,6 +474,14 @@ const August = () => {
         <p>Recommended by Alja: Memory and the Mediterranean by Fernand Braudel. Currentle reading sample from The Mediterranean in the Ancient World.</p>
 
       </section>
+      
+      <Links.RelatedLinks
+            links={[
+            { value: 'ltp/notes/2023/october', text: 'October' },            
+            { value: 'ltp/notes/2023/september', text: 'September' },            
+            { value: 'ltp/notes/2023/july', text: 'July' },            
+            ]}
+        ></Links.RelatedLinks>
     </Layout>
   )
 }

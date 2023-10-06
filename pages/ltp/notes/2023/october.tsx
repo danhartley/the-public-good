@@ -21,7 +21,7 @@ const October = () => {
           <blockquote>
             <div>The Mediterranean region is warming 20% faster than the world as a whole, raising concerns about the impacts that climate change and other environmental upheaval will have on ecosystems, agriculture and the region’s 542 million people.</div>
             <div>Heat waves, drought, extreme weather and sea-level rise are among the impacts that the region can expect to see continue through the end of the century, and failing to stop emissions of carbon dioxide and other greenhouse gases could make these issues worse.</div>
-            <div>Charting a course that both mitigates climate change and bolsters adaption to its effects is further complicated by the Mediterranean’s mix of countries, cultures and socioeconomics, leading to wide gaps in vulnerability in the region.</div>
+            <div>Charting a course that both mitigates climate change and bolsters adaptation to its effects is further complicated by the Mediterranean’s mix of countries, cultures and socioeconomics, leading to wide gaps in vulnerability in the region.</div>
           </blockquote>
 
           <ul>
@@ -56,15 +56,15 @@ const October = () => {
           <p>Mediterranean climate has a Köppen climate classification of Csa/Csb (Temperate/Semi-arid/Hot summer or Warm summer).</p>
         </div>
 
-        <h3>Unimagined</h3>
-
-        <p>My thoughts break in two directions - towards despondency (that my archetypal landscape is artificial, a consequence of millenia of human disruption) - and towards hope (that this counterfeit is a savage-benign successor to the original).</p>
-        <p>It is perfect and imperfect, a human place, made by us for us; an example of what is best for us and a reflection of what is best in us.</p>
-        <p>We need to turn things around; not congratulate ourselves for small sacrificies. Instead we must describe how we should behave, and to reveal every step backwards for the failure that it is.</p>
-        <p>We do not like to say must; but we must. We must be clear-eyed in our observations and we must categorical in demands (both those we make of ourselves and those we make of others).</p>
-
         <div class={styles.day}>
-          <span class={styles.date}>Monday 02 October 2023</span>
+          <span class={styles.date}>Tuesday 03 October 2023</span>
+
+          <h3>Unimagined</h3>
+
+          <p>My thoughts break in two directions - towards despondency (that my archetypal landscape is artificial, a consequence of millenia of human disruption) - and towards hope (that this counterfeit is a savage-benign successor to the original).</p>
+          <p>It is perfect and imperfect, a human place, made by us for us; an example of what is best for us and a reflection of what is best in us.</p>
+          <p>We need to turn things around; not congratulate ourselves for small sacrifices. Instead we must describe how we should behave, and to reveal every step backwards for the failure that it is.</p>
+          <p>We do not like to say must; but we must. We must be clear-eyed in our observations and we must be categorical in our demands (both those we make of ourselves and those we make of others).</p>
 
           <h3>Mediterranean climate on a retrograde rotating Earth</h3>
 
@@ -106,7 +106,7 @@ const October = () => {
 
           <blockquote>
             <div>Olive (Olea europaea L.) is a widely spread tree species in the Mediterranean.</div>
-            <div>In the last decades, olive farming has known major management changes with high economic and environmental impacts. The fast track expansion of this modern olive farming in these recent years casts doubts on the sustainability of such important tree plantation across the Mediterranean.</div>
+            <div>In the last decades, olive farming has known major management changes with high economic and environmental impacts. The fast track expansion of this modern olive farming in recent years casts doubts on the sustainability of such important tree plantations across the Mediterranean.</div>
             <div>
               Main olive grove types
               <ul>
@@ -143,10 +143,12 @@ const October = () => {
             <div>Current water scarcity in traditional olive-growing regions, like Alentejo, along with the expected increase in heat waves and droughts caused by climate change [16,19,20], imply an urgent need to reduce the use of water for irrigation of crops in these regions and to adopt measures to avoid the degradation of soil resources and biodiversity.</div>
           </blockquote>
 
+          <h5>The Olive Orchard Mosaic</h5>
+
           Traditional Olive Orchards (TD)
           <ul>
             <li>Management of cover crops is conducted by tillage or total herbicide coverage. Grain crops were traditionally grown within olives as primary sources of farmers' income. Soil erosion can be dramatic and temperature of the soil's top layer is high in the summer (over 40 °C). Although olive is a well-adapted species to drought conditions, the soil's exposure to direct sun and the lack of canopy shade over the tree root zone leads to water and heat stress, and can induce summer dormancy in the trees.</li>
-            <li>Farmers use few fertilizers and apply a reduced number of chemical pest and disease treatments in the olive groves. They are pruned every four years by chain saw, and the pruning residue is generally burned. The alternate bearing is very strong, with a sparse yield in the year following pruning. Since these orchards are rainfed, the biodiversity of species is sometimes low due to the lack of water and cover crops.</li>
+            <li>Farmers use few fertilizers and apply a reduced number of chemical pest and disease treatments in the olive groves. They are pruned every four years by chainsaw, and the pruning residue is generally burned. The alternate bearing is very strong, with a sparse yield in the year following pruning. Since these orchards are rainfed, the biodiversity of species is sometimes low due to the lack of water and cover crops.</li>
             <li>Traditionally, the harvest is performed by hand with wood sticks, although nowadays, some growers use portable backpack shakers with or without nets covering the floor.</li>
             <li>Net production of these olive ecosystems is less than 3t ha<span class={styles.super}>-1</span> of fruits</li>
           </ul>
@@ -165,9 +167,87 @@ const October = () => {
 
           The High- (HD) and Super-High-Density (SHD) Olive Orchards
           <ul>
+            <li>The success of the higher-density olive agricultural systems is based on water availability.</li>
+            <li>The olive tree is an evergreen species with a remarkable water control process that manages water losses, requiring less water in the summer than in the remaining period of the year.</li>
+            <li>Nevertheless, in a region with 562 mm year<span class={styles.super}>-1</span> of average rainfall [44], 250 mm to 500 mm year<span class={styles.super}>-1</span> of supplemental irrigation water are the necessary values for the trees to achieve their maximum productivity.</li>
+            <li>This demand is lower when compared to the 500–800 mm year<span class={styles.super}>-1</span> required by other perennial species. Under these conditions, higher densities lead to increased productivity.</li>
+            <li>For soil management, the soil is normally covered with spontaneous or sowed herbaceous vegetation to minimize soil erosion. The sowed cover species could be <strong>Fabaceae</strong> sp., like <strong>Medicago sativa</strong>, <strong>Vicia</strong> sp. or <strong>Trifolium</strong> spp., which are quite important nitrogen recyclers.</li>
+            <li>Spontaneous or sowed cover crops are also important refuges for beneficial insects or pollinators, which improve the general biodiversity of HD and SHD orchards.</li>
+            <li>Inter-row weed management is usually carried out by shredding 3 to 5 times a year to keep the weeds below 0.5 m in height. The shredding also recycles the pruning residues left in the topsoil of these orchards.</li>
+            <li>One advantage of HD and SHD olive orchards is the soil temperature. In the same location, the temperature of the topsoil in the summer, measured with a FLIR (Forward Looking InfraRed) device, was about 20 °C lower at the top of the cover grass when compared to bare topsoil.</li>
+            <li>Harvests in HD and SHD olive orchards require tractor trunk shakers with wraps around the tree collectors or over-the-row self-propelled machines. The latter can harvest up to one hectare per 1 h (12–22 t of fruits). As the fruits are never in contact with the ground, they are quite suitable for virgin or extra-virgin oil production.</li>
+            <li>In Portugal, the harvest is restricted to the period from sunrise to sunset in order to prevent involuntary bird losses, since these animals often use olive trees as refuges overnight.</li>          
+          </ul>     
+
+          <h5>Water Management</h5>     
+
+          <ul>
+            <li>Crop water requirements (CWR) are defined as the amounts of water needed to replace the water lost through evapotranspiration by a disease-free crop growing in large fields under no limitations regarding soil conditions, including soil water and fertility, and achieving full production potential in the given growing environment.</li>
+            <li>In the case of irrigated crops, the concept of irrigation water requirement (IWR) must be considered. The IWR is the amount of water that is required to be applied to a crop to fully satisfy its specific crop water requirement whenever rainfall, soil water storage, and groundwater contributions are insufficient.</li>
+            <li>Olive trees' water requirements are a function of cultivar characteristics, management, and environmental demands. Olive trees withstand long periods of drought and can survive in very sparse plantings, even in climates with very low annual rainfall: values of 150–200-250mm year<span class={styles.super}>-1</span>.</li>
+            <li>However, for economic production, much higher precipitation or irrigation are required: an average annual precipitation or irrigation 600-950mm year<span class={styles.super}>-1</span>, in soils with good water-holding capacity, is needed for successful cultivation.</li>
+            <li>Water needs throughout the year (budding, flowering) and at different points in the life cycle (young, old) of the tree.</li>
+            <li>Vegetative development, yield, and fruit quality are affected by water availability and controlled by irrigation.</li>
+            <li>In Sustained Deficit Irrigation (SDI), the irrigation water used at any moment during the season is below the crop evapotranspiration demand. This is based on the idea of allotting the water deficit uniformly over the entire growing season. Thereby, the water deficit increases progressively as the season advances due to a combination of the uniform application of a reduced amount of water and the depletion of available soil water. This allows water stress to develop slowly and for the plants to adapt to the water deficits when the soil presents significant water storage capacity.</li>
+            <li>
+              Times when water needs of the tree must be met
+              <ul>
+                <li>From the last stages of floral development to full bloom, normally in mid-April, when water stress can affect flower fertilization.</li>
+                <li>At the end of the first stage of fruit development, normally in June, when water stress causes reductions in fruit size.</li>
+                <li>After the midsummer period, normally from late August to mid-September, when a marked increase in oil accumulation occurs.</li>
+              </ul>
+            </li>
             <li>Net production of HD ecosystems is 6-12t ha<span class={styles.super}>-1</span> of fruits</li>
             <li>Net production of SHD ecosystems is 12-22t ha<span class={styles.super}>-1</span> of fruits</li>
-          </ul>          
+          </ul>
+
+          <h5>Agroecological Practices</h5>
+
+          Non-Tillage, Cover Crops and Herbicide Reduction
+          <ul>
+            <li>Semi-arid Mediterranean regions are among the most productive areas in the world [118]. However, the soil has a low carbon content and is susceptible to degradation.</li>
+            <li>Tillage increases CO2 emission at the expense of organic matter, contributing to global climate change.</li>
+            <li>In irrigated olive orchards such as HD or SHD, it is possible for non-tillage practices to be implemented.</li>
+            <li>Non-tillage system avoids the propagation of soil-borne diseases such as <strong>Verticillium dahliae</strong>, the main soil-borne disease for this perennial species worldwide. Preventing soil disturbance and minimizing the contact of fungus mycelia from root to root decreases the infection rate.</li>
+            <li>Herbaceous vegetation can have a positive impact on erosion reduction, especially in orchards planted on slopes, contributing to carbon and nitrogen sequestration and acting as a nutrient buffer.</li>
+            <li> Herbaceous cover also provides shelter and food for many beneficial and pollinator insects.</li>
+            <li>Vectors for the bacteria <strong>Xylella fastidiosa</strong> could also live and feed on orchard weeds.</li>
+            <li>The generalized application of herbicides dramatically decreases the number of species, plants, animals, and other living organisms present in an olive orchard ecosystem. For instance, the abundance and diversity of nematodes is lower in bare soils treated with herbicides, and is intermediate in non-herbicide areas. Normally, tillage reduces the number of arthropod species.</li>
+            <li>The use of herbicides in the total area of an orchard increases the rainwater runoff and contributes to faster soil erosion and lower nutrient availability. The use of herbicides sprayed in stripes, as in rows of trees, seems to have a lower impact on soil erosion.</li>
+            <li> Weed species present on an olive orchard’s floor, like <strong>Conyza</strong> sp., present significant challenges nowadays, as they are not effectively controlled by glyphosate spray treatment. The eventual withdrawal of this herbicide will lead to the implementation of other non-herbicide solutions for orchard floor management.</li>
+          </ul>
+
+          Pruning Biomass Recycling
+          <ul>
+            <li>
+              In HD and SHD olive orchards, the pruning wood is normally shredded together with the cover weeds, and its nutrients are slowly released over time. This is a way to recycle nutrients and organic matter. The presence of chopped wood pieces and weed residues on the orchard floor has four main benefits.
+              <ul>
+                <li>Decreases the rainwater runoff speed and helps to prevent erosion.</li>
+                <li>Promotes the rainwater infiltration rate, which is quite important in the case of heavy rain events.</li>
+                <li>Improves machines’ traction, preventing tractor or harvesters’ wheels from sliding.</li>
+                <li>Crossed chopped wood pieces act as a physical barrier over the floor, preventing soil compaction.</li>
+                <li>High tree density has an impact on biodiversity e.g. bird population reduction. Heavier machinery and increased fertilizer, pesticide, and water usage are also said to negatively impact ecosystems’ biodiversity. The generalized adoption of drip irrigation increases the <strong>Verticillium dahliae</strong> in the soil. The inoculum density in all experiments was higher in wet than in dry areas, and after 4 months of watering, the soil pathogen population increased considerably in both wet and dry areas. The inoculum density remained higher in the wet soil.</li>
+              </ul>
+            </li>
+          </ul>
+
+          Conclusion
+          <ul>
+            <li>The increase in tree densities, the introduction of irrigation, and the development of new training systems to facilitate mechanical pruning and harvesting have contributed significantly to the intensification and expansion of olive oil and table olive production. In recent years, concerns about the potential detrimental impacts of high-density olive cultivation have emerged, bringing into question the trade-offs between production benefits and environmental costs.</li>
+            <li>Water-saving irrigation practices and more sustainable soil management or other agroecological practices can mitigate the negative effects of climate change and improve the ecosystem services of dense irrigated olive cultivation.</li>
+          </ul>
+
+          <h4>Cradle to grave study on 6 production methods</h4>
+
+          <Links.EL link={{source:'https://www.mdpi.com/2073-4395/10/3/416/htm', label:'Environmental Impact Assessment of Organic vs. Integrated Olive-Oil Systems in Mediterranean Context'}}>Environmental Impact Assessment of Organic vs. Integrated Olive-Oil Systems in Mediterranean Context</Links.EL>
+          <div>Angela Maffia at al | agronomy journal</div>
+
+          <p>The above is worth following up if I want to go deeper on this subject e.g. bottling contributes most to emissions.</p>
+
+          <Links.EL link={{source:'https://sustainabilitynook.com/is-olive-oil-eco-friendly/', label:'Is olive oil sustainable?'}}>Is olive oil sustainable?</Links.EL>
+          <div>H L Noss | Sustainability Nook</div>
+
+          <p>Considers e.g. use of chemicals during oil production and polluted wastewater, and water availability.</p>
 
           <h3>Industry articles</h3>
 
@@ -180,7 +260,210 @@ const October = () => {
           <div>Salvatore Campose | Agromillora</div>
         </div>
 
+        <div class={styles.day}>
+          <span class={styles.date}>Wednesday 04 October 2023</span>
+
+          <h3>The Mediterranean - naturalised home of the olive tree</h3>
+
+          <Links.EL link={{source:'https://landarchconcepts.wordpress.com/the-naturalised-environment-of-the-olive-tree-the-maquis-and-associated-biomes/', label: 'The Naturalised Environment of the Olive Tree: The Maquis and Associated Biomes'}}>The Naturalised Environment of the Olive Tree: The Maquis and Associated Biomes</Links.EL>
+          <div></div>
+
+          <blockquote>
+            <div>The Mediterranean Basin is the cradle of civilisation and has thus been heavily influenced by man over the last 6,000 years or so.</div>
+            <div>Devoid of man’s intervention the Mediterranean Basin would typically be a climax of evergreen sclerophyllous forest dominated by evergreen oaks or pines. Below this dominant tree layer would be found a mixed evergreen sclerophyllous shrub layer and below this a perennial herbaceous layer.</div>
+            <div>Around the Mediterranean due to man’s interactions this primaeval climax community is now fairly rare and it can be found only in isolated patches in the valleys and hills.</div>
+            <div>The rare original Mediterranean evergreen forests now represent only 1.8% of world’s forested areas.</div>
+          </blockquote>
+
+          <table>
+            <thead>
+              <tr>
+                <th class={styles.medium}>Forest Zone</th>
+                <th class={styles.medium}>Metres above sea level</th>
+                <th class={styles.medium}>Trees</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class={styles.medium}>Carob and olive (hot dry climate)</td>
+                <td class={styles.medium}>0-100</td>
+                <td class={styles.medium}>Carob, olive</td>
+              </tr>
+              <tr>
+                <td class={styles.medium}>Evergreen forest</td>
+                <td class={styles.medium}>100-700</td>
+                <td class={styles.medium}>Aleppo pine (Steppe), Cork oak, Kermes oak (Garrigue), Holm oak (Maquis)</td>
+              </tr>
+              <tr>
+                <td class={styles.medium}>Deciduous forest</td>
+                <td class={styles.medium}>700-1500</td>
+                <td class={styles.medium}>Sweet chestnut, Deciduous oak, Beech</td>
+              </tr>
+              <tr>
+                <td class={styles.medium}>Coniferous forest</td>
+                <td class={styles.medium}>1500-2000</td>
+                <td class={styles.medium}>Pine, Silver fir</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <blockquote>
+            <div>Climax communities are stable, but once the forest trees are cleared for whatever reason rapid degeneration follows (though it may be reversed).</div>
+            <div>Evergreen forest --> Maquis --> Garrigue --> Steppe</div>
+            <h5>Evergreen Forest</h5>
+            <div>The dominant evergreen forest in the Western Mediterranean is Holm Oak (Quercus ilex), which grows on all the Mediterranean soils and occasionally forms dense forests, but is more commonly seen in scattered groups now.</div>
+            <div> In the Eastern Mediterranean the Kermes Oak (Quercus coccifera) replaces the Holm Oak, but there it does not form forests except in Crete and the rest of the Peloponnese.</div>
+            <div>
+              These forests are rarely seen in their climax state: dense dark woodlands up to 15 metres high, with an understory shrub layer of:
+              <ul class={styles.dashedItemsList}>
+                <li>Strawberry Trees (<strong>Arbutus unedo</strong>)</li>
+                <li>Green Olive Tree (<strong>Phillyrea angustifolia</strong>)</li>
+                <li>Mock Privet (<strong>Phillyrea latifolia</strong>)</li>
+                <li>Buckthorn (<strong>Rhamnus alaternus</strong>)</li>
+                <li>Laurustinus (<strong>Viburnum tinus</strong>)</li>
+                <li>Climbers (<strong>Clematis flammula, Clematis cirrhosa, Clematis viticella</strong>)</li>
+                <li>Honeysuckle (<strong>Lonicera spp</strong>)</li>
+                <li>Sarsaparille (<strong>Smilax aspera</strong>)</li>
+                <li>Black Bryony (<strong>Tamus communis</strong>)</li>
+              </ul>
+            </div>
+            <div>Typically, in their climax state there is little light reaching the ground if these forests are dense, and so there is no herb layer, but they are sparse now and it is more usual to see scattered trees with a well-developed Maquis vegetation below.</div>
+            <div>Cork Oak (<strong>Quercus suber</strong>) forests can be found in the Central and Western Mediterranean, as well as Portugal, but only on siliceous soils in warmer and maritime zones. The Cork Oak forests have been carefully managed by man for decades and so are typically more open occasionally with a Maquis layer beneath.</div>
+            <div>The Aleppo Pine (<strong>Pinus halepensis</strong>) forests are dominant in the hotter and drier Mediterranean zones, forming climax vegetation on limestone and littoral soils. It’s drought tolerance is remarkable and it can be found at altitudes of 1,000 metres above sea level. These forests are however open rather than dense, again with Maquais vegetation beneath.</div>
+            <div>There is a climax of cultivated and wild Olive, (<strong>Olea europea subsp. europea var. europea</strong> and <strong>Olea europea subsp. europea var. sylvestris</strong> respectively), and numerous feral forms plus Carob (<strong>Ceratonia siliqua</strong>) in hot and arid zones and the Aleppo Pine is fond scattered here too.</div>
+            <div>In Mediterranean North Africa to this association one can also find the Drawf Palm (<strong>Chamaerops humilis</strong>).</div>
+            <div>The Maritime Pine (<strong>Pinus pinaster</strong>) forms pure stands only in maritime locations on siliceous outcrops and these can be seen in Spain, France and Italy especially.</div>
+            <div>The Umbrella or Stone Pine (<strong>Pinus pinea</strong>) have a wider distribution on sandy littoral dunes, and typically these have a luxurious undergrowth.</div>
+            <div>Cypress (<strong>Cupressus sempervirens</strong>) occur as scattered tress with evergreen undergrowth and some Garrigue species, notably on: Crete, Rhodes and Cyprus.</div>
+            <div>Laurel (<strong>Laurus nobilis</strong>) woods are found in Greece, Crete and the Balkans.</div>
+
+            <h5>The Maquis Biome</h5>
+            <div>Two distinct and major Maquis variations have been determined by ecologists. One is referred to as PRIMARY Maquis and the other is referred to as SECONDARY Maquis. It is not possible to know if the Maquis is the highest expression of vegetative development, or whether it is a climax developing under certain conditions intrinsic to the Mediterranean. The Primary Maquis is probably the highest form, but because of the long intervention of man in the Mediterranean, in most cases the Maquis is a Secondary Maquis, that is the result of felling the primaeval evergreen forests.</div>
+            <div>Products:</div>
+            <ul class={styles.dashedItemsList}>
+              <li>Resins</li>
+              <li>Tannins</li>
+              <li>Gums</li>
+              <li>Dyes</li>
+              <li>Charcoal</li>
+              <li>Fibres</li>
+            </ul>
+            <div>Humans constantly cut down the vegetation and cultivate the ground for pasture or/and orchards and vineyards, only to abandon these at some later time. This has been a cyclic operation, (review again the model presented earlier in the discussion,) and consequently the Maquis has numerous variations which defy complete organisational categorisation.</div>
+          </blockquote>
+
+          <blockquote>
+            <div>After Polunin and Huxley's "Flowers of the Mediterranean"</div>
+            <div>
+              <strong>High Maquis</strong>: Tall shrubby formations to 4 or 5 metres in height of the meso- and thermo-Mediterranean zones of the Mediterranean basin. Generally the High Maquis has a more or less closed canopy with a dominant stratum of: Tree Heather (Erica arborea), Strawberry Tree (Arbutus unedo), Greek Strawberry Tree (Arbutus andrachne), Holm Oak (Quercus ilex), Kermes Oak (Quercus coccifera), Olive (Olea spp), Judas Tree (Cercis siliquastrum), Phoenician Juniper (Juniperus phoenicea), Aleppo Pine (Pinus halepensis), Wig Tree (Phillyrea media), Spanish Broom (Spartium junceum), and Mastic Tree or Lentisk (Pistacia lentiscus), but sometimes the emergent Oaks are few or missing altogether. NB: Between this High Maquis and the Low Maquis (documented below) there are many gradations;
+            </div>
+            <div>
+              <strong>Low Maquis</strong>: Very shrubby formations usually between 1.5 and 2 metres in height, with a distinct lack of tall tree species. This formation has associations of, Wig Tree (Phillyrea media), Mastic Tree or Lentisk (Pistacia lentiscus), Rosemary (Rosmarinus officinalis), Jerusalem Sage (Phlomis fruticosa), Butcher’s Broom (Ruscus aculeatus), Jerusalem Thorn (Paliurus spina-christi), Sage-leaved Rock-rose (Cistus salviaefolius), Montpellier Cistus (Cistus monspielensis), Hairy Rockrose (Cistus villosus) and numerous Heathers (Erica spp.). In open zones low herbaceous perennials and sub-terranean bulbous and tuberous species can also be found along with many annuals.
+            </div>
+            <div>
+              <strong>Cistus Maquis</strong>: is a variant of the Low Maquis, widespread in hot arid zones, Montpellier Cistus (Cistus monspielensis) is often dominant in the Western Mediterranean, while Hairy Rockrose (Cistus villosus) dominates in the Eastern Mediterranean, and this biome tolerates heavy grazing, it often appears on abandoned land which had previously been cultivated;
+            </div>
+            <div>
+              <strong>Mixed (Lentisk-Carob-Myrtle) Maquis</strong>: occurs on hot arid maritime hillsides especially in the Eastern Mediterranean. This association itself has many variants and contains many different species, such as: Kermes Oak (Quercus coccifera), Hawthorn (Crataegus azarolus), Spiney Broom (Calicotome spinosa), Terebinth (Pistacia terebinthus), Italian Buckthorn (Rhamnus alaternus).
+            </div>
+            <div>
+            In the Mediterranean landscape the wild olive, (Olea europea spp europaea var. sylvestris) is now naturally found in the sclerophyllous and heathland shrubby biome called the: Maquis (French), Macchia (Italian), Chaparral (Portuguese) Matorral (Spanish), Phrygana (Greek), Garig (Croatian), Batha (Hebrew). Feral forms of the domesticated Olive are here also. Feral forms of olive arise from cultivar crosses and cultivar and wild olive crosses.
+            </div>
+          </blockquote>
+
+          <blockquote>
+            <h5>Wildfires in the Maquis</h5>
+
+            <div>Thanks to its lignotuber the olives can recover from some of these types of wildfires and all that scrubby congested inner weedy branch structure which wild untended olives possess is removed – this is natural pruning.</div>
+            <div>The olive tree (wild and domesticated) typically has around 82% leaf moisture during the dry season and around 86% during the wet seasons, and that is not much of a variance illustrating its immense water retention capacity. This becomes clearer when you compare it to other non-sclerophyllous Mediterranean species like, Hawthorn (Crataegus monogyna) which has 58% leaf moisture in the dry season and 114% in the wet season.</div>
+            <div>In furnace trials at 750° C the ignition delay of olive leaves was between: 2.77 and 4.36 seconds during the dry season, and between: 4.07 and 6.43 seconds in the wet season. If we compare that to the Hawthorn (Crataegus monogyna) which had an ignition delay of between: 2.62 – 1.98 seconds in the dry season, and between: 2.18 and 3.63 seconds in the wet season we can see that the resistance of the olive leaf to fire is high.</div>
+            <div>Of the 45 Mediterranean species in the trial the Hawthorn was ranked at position 4 (wet and dry season) making it very fire susceptible, while the olive was at position 25 (dry season) and 33 (wet season), placing it in the middle and top division of the study. The full report PDF entitled: ‘Mediterranean Forest Ecosystems, Wildland Fires, Cypress and Fire-Resistant Forests’ by: Tuncay Neyisci of the Akdeniz University can be found online.</div>            
+            <div>Throwing in a general note of interest on the Maquis, as well as lignotubers many species produce seeds which generally require stratification by fire to break seed dormancy, for example the Spanish Broom (Spartium junceum), which not only requires fire to stratify the seeds, the seed pods actually explode with heat and projects the seeds outwards in all directions – seed dispersal by fire.</div>
+
+            <h5>Garrigue</h5>
+
+            <div>Found on shallow limestone and marl stony slopes, rarely higher than half a metre.</div>
+            <div>Many of the species habiting these regions are: spiny, heath-like, and often possess woolly grey leaves, they are xerophytic species adapted for drought stress.</div>            
+            <div>Plants aromatic herbs with medicinal and culinary uses such as: Lavander (Lavandula officinalis), Tarragon (Artemisia dracunculus), Sage, (Salvia officinalis), Rosemary (Rosmarinus officinalis), Thyme (Thymus vulgaris), Oregano (Origanum vulgare), Majoram (Origanum marjorana), Rue (Ruta graveolens), Savoy (Satureja montana), Hyssop (Hyssopus officinalis), Garlic (Allium sativum).</div>
+            <div>And bulbous and tuberous species also. Species like: Tulips, Crocus, Iris, Hyacinth, Fritillaries, and the Star of Bethlehem for example.</div>
+            <div>The Eastern Garrigue has plants like: Conehead Thyme (Coridothymus capitatus), Sparrow-Wort (Thymelelaea tartonraira), Yitran (Thymelelaea hirsuta), Genista acanthoclados, Greek Spiny Spurge (Euphorbia acanthothamnos), and St john’s Wort (Hypericum empetrifolim and other H. spp).</div>
+
+            <h5>Steppe</h5>
+
+            <div>The term steppe designates a mosaic of open, low plant formations composed of xerophytic, herbaceous and ligneous vegetation, often in scattered clumps and devoid of trees.</div>
+            <div>May often represent the final stage of landscape degeneration caused by humans (disputed).</div>
+            <div>Natural steppe is found where rainfall is too low to support a forest, but high enough to not create a desert. Mediterranean steppe varies tremendously according to rainfall from north and south, and from east and west.  It is often found on interior plateaus and mountain ranges where natural vegetation has been cleared or/and extensive grazing has removed most of the vegetation.</div>
+            <div>When all the arborescent shrubs which play an important role in building up soils and creating protection for herbaceous species have been removed what remains are annuals and the tough herbaceous perennials which can survive the hostile droughts of the Mediterranean summers.</div>
+            <div>Grasses, Irises, Poppies and members of Composite family exist on the steppe where low rainfall (100-300mm paer annum) and high temperatures (to 40°C).</div>
+
+            <h5>Diet</h5>
+            
+            <div>Tomatoes, Potatoes, Peppers (Sweet and Chili), Sweet Corn and Green Beans all came from South America fairly late in the history of the Mediterranean, after the Spanish conquests there commencing in 1492.</div>
+            <div>Citrus (Oranges, Limes, Grapefruits, Tangerines and Lemons) originate in Asia, along with the Aubergine (Eggplant).</div>
+            <div> Vines, Olives, Figs, Dates, Citrus and Pomegranates originate in the Levant.</div>
+          </blockquote>
+
+          <h5><Links.EL link={{source:'https://landarchconcepts.wordpress.com/why-do-olive-trees-live-so-long/', label:'Why Do Olive Trees Live So Long?'}}>Why Do Olive Trees Live So Long?</Links.EL></h5>
+          <blockquote>
+          <div>The olive tree has a very effective lignotuber allowing it to regrow after fire and frost and this equals continuation via rapid regeneration. In the Mediterranean, forest fires are a normal part of the ecosystem, and frosts though rarely harsh, as they are in the cold temperate zones do occur in the Mediterranean if infrequently. If the leaves and small aerial parts of the tree are burned off by fire or killed by frost, regrowth is rapid because the root system remains intact and full of stored energy and vigour to power the regrowth. So, what would kill a tree from another species is merely a form of natural pruning to an olive, and in some respects it’s an advantage because olives benefit from quite hard pruning.</div>
+            <div>The olive tree and its numerous cultivars are evergreen xerophytic (drought hardy) trees possessing hypostomatic leaves covered with trichomes (glandular hairs) on both sides. These epidermal trichomes conserve moisture and humidity around the stoma thus allowing them to stay open for prolonged respiration and photosynthesis in harsh arid conditions.</div>
+            <div>These evergreen leaves are also sclerophyllous (hard and heat resistant) to further conserve moisture. The leaves are ever present meaning photosynthesis can commence at any time when conditions are right. So, working together the trichomes and sclerophyllous leaves allow the olive tree to tolerate severe drought and harsh solar conditions which would kill other tress.</div>
+            <div>The extended photosynthesis allows for sugars to become more concentrated in the cells and thus the cells are more resistant to freezing. This is a common factor with many species from all the Mediterranean zones around the world. For example, a -5°C will kill certain Mediterranean species in the UK, but the same temperature will not kill that same species in the Mediterranean because the cell sap is denser wither sugars, and thus resists freezing.</div>
+            <div>Olive trees are slow growing hardwoods and the olive root system is wide spreading and shallow to exploit surface water (i.e., dew) again preventing desiccation and death in an otherwise hostile environment.</div>
+            <div>Once established its secondary thickened root plate is extremely hard like its trunk, the wood of which has a crushing strength of 11,180 lbf/in2 (77.1 MPa) and thus it is more difficult for pathogens to penetrate. It doesn’t stop pathogens completely, but it certainly does diminish their efficacy.</div>
+            <div>In its native environment soils are poor shallow and stony, thus in conjunction with the arid aerial environment leaf systems, the vegetative growth of olive trees are further slowed down and this results in even harder denser heartwood. These native soils also have high alkaline pH levels and many pathogenic fungi favour moist acidic soil pH, so the pathogens in the natural environment are to some extent restricted also by the environment.</div>
+          </blockquote>
+        </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Friday 06 October 2023</span>
+
+          <h3>Fire</h3>
+
+          <div>
+            <Links.EL link={{source:'https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.12921', label: 'Evolutionary ecology of resprouting and seeding in fire-prone ecosystems'}}>Evolutionary ecology of resprouting and seeding in fire-prone ecosystems</Links.EL>
+            <div>Juli G. Pausas, Jon E. Keeley | New Phytologist</div>
+          </div>
+
+          <blockquote>
+            <div>There are two broad mechanisms by which plant populations persist under recurrent disturbances: resprouting from surviving tissues, and seedling recruitment. Species can have one of these mechanisms or both.</div>
+          </blockquote>
+
+          <h4>Postfire regeneration traits</h4>          
+          <ul>
+            <li><strong>Postfire resprouting</strong> The ability to generate new shoots from dormant buds after stems have been fully scorched by fire. This term is preferable to sprouting, which refers to initiation of new shoots throughout the life cycle of a plant. Species are typically classified as resprouters or nonresprouters depending on this ability. There are different types of resprouting depending on the location of the buds (epicormic, lignotuber, rhizome, roots, etc.)</li>
+            <li><strong>Postfire seeding</strong> The ability to generate a fire-resistant seed bank with seeds that germinate profusely after fires (fire-cued germination). Typically, such species restrict recruitment to a single pulse after a fire. Seeds may be stored in the soil or in the canopy (seed bank; Box 3). Species are typically classified as seeders or nonseeders (or fire-dependent/fire-independent recruiters) depending on this ability. There are different types of postfire seeding.</li>
+          </ul>
+
+          <h4>Postfire strategies</h4>
+          <ul>
+            <li><strong>Obligate resprouter</strong> Plants that rely on resprouting to regenerate after fire (resprouters without postfire seeding ability). These plants do not germinate after fire because they lack a fire-resistant seed bank. Note that obligate resprouters might reproduce by seeds during the fire-free interval, but the terminology of seeders and resprouters refers to the postfire conditions.</li>
+            <li><strong>Facultative seeders</strong> Plants that have both mechanisms for regenerating after fire, that is, they are able to resprout and to germinate after fire.</li>
+            <li><strong>Obligate seeders</strong> Plants that do not resprout and rely on seeding to regenerate their population after fire (nonresprouters with postfire seeding ability). Because they tend to recruit massively once in their lifespan (after fire) and fire kills the adults and typically exhausts their seed bank, they can be considered semelparous species with nonoverlapping generations and a monopyric life cycle. Note that the term ‘seeders’ refers strictly to postfire conditions, and cannot be attributed to plants that regenerate by seeds in other conditions.</li>
+            <li><strong>Postfire colonizers</strong> Plants that lack a mechanism for local postfire persistence, but they recruit after fire by seeds dispersed from unburned patches or from populations outside the fire perimeter (metapopulation dynamics).</li>
+          </ul>
+
+          <h4>Life cycle in relation to fire</h4>
+          <ul>
+            <li><strong>Monopyric</strong> Species that perform all their life cycle within a fire cycle. In plants, examples are annual and biennial species, postfire obligate seeders and some bamboos.</li>
+            <li><strong>Polypyric</strong> Species that perform all their life cycle through multiple fire cycles. In plants, examples are those with postfire resprouting capacity as well as trees with other survival strategies such as very thick bark.</li>
+          </ul>
+
+          <h4>Basic fire regimes</h4>
+          <ul>
+            <li><strong>Surface fires</strong> Fires that spread in the herbaceous or litter layer, such as the understory of some forests and in savannas and grasslands. These fires are usually of relatively low intensity and high frequency.</li>
+            <li><strong>Crown-fires</strong> Fires in woody-dominated ecosystems that affect all vegetation including crowns. They are typically of high intensity. Examples are fires in some Mediterranean-type forest and shrublands and in closed-cone pine forests.</li>
+          </ul>
+        </div>
+
       </section>
+      
+      <Links.RelatedLinks
+            links={[
+            { value: 'ltp/notes/2023/september', text: 'September' },            
+            { value: 'ltp/notes/2023/august', text: 'August' },            
+            { value: 'ltp/notes/2023/july', text: 'July' },            
+            ]}
+        ></Links.RelatedLinks>
     </Layout>
   )
 }

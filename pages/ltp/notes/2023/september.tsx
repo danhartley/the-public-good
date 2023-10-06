@@ -214,6 +214,14 @@ const September = () => {
         </blockquote>
 
       </section>
+
+      <Links.RelatedLinks
+            links={[
+            { value: 'ltp/notes/2023/october', text: 'October' },            
+            { value: 'ltp/notes/2023/august', text: 'August' },            
+            { value: 'ltp/notes/2023/july', text: 'July' },            
+            ]}
+        ></Links.RelatedLinks>
     </Layout>
   )
 }
