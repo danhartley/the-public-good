@@ -377,7 +377,7 @@ const October = () => {
             <div>The olive tree (wild and domesticated) typically has around 82% leaf moisture during the dry season and around 86% during the wet seasons, and that is not much of a variance illustrating its immense water retention capacity. This becomes clearer when you compare it to other non-sclerophyllous Mediterranean species like, Hawthorn (Crataegus monogyna) which has 58% leaf moisture in the dry season and 114% in the wet season.</div>
             <div>In furnace trials at 750° C the ignition delay of olive leaves was between: 2.77 and 4.36 seconds during the dry season, and between: 4.07 and 6.43 seconds in the wet season. If we compare that to the Hawthorn (Crataegus monogyna) which had an ignition delay of between: 2.62 – 1.98 seconds in the dry season, and between: 2.18 and 3.63 seconds in the wet season we can see that the resistance of the olive leaf to fire is high.</div>
             <div>Of the 45 Mediterranean species in the trial the Hawthorn was ranked at position 4 (wet and dry season) making it very fire susceptible, while the olive was at position 25 (dry season) and 33 (wet season), placing it in the middle and top division of the study. The full report PDF entitled: ‘Mediterranean Forest Ecosystems, Wildland Fires, Cypress and Fire-Resistant Forests’ by: Tuncay Neyisci of the Akdeniz University can be found online.</div>            
-            <div>Throwing in a general note of interest on the Maquis, as well as lignotubers many species produce seeds which generally require stratification by fire to break seed dormancy, for example the Spanish Broom (Spartium junceum), which not only requires fire to stratify the seeds, the seed pods actually explode with heat and projects the seeds outwards in all directions – seed dispersal by fire.</div>
+            <div>Throwing in a general note of interest on the Maquis, as well as <strong>lignotubers</strong> many species produce seeds which generally require stratification by fire to break seed dormancy, for example the Spanish Broom (Spartium junceum), which not only requires fire to stratify the seeds, the seed pods actually explode with heat and projects the seeds outwards in all directions – seed dispersal by fire.</div>
 
             <h5>Garrigue</h5>
 
@@ -453,6 +453,321 @@ const October = () => {
             <li><strong>Surface fires</strong> Fires that spread in the herbaceous or litter layer, such as the understory of some forests and in savannas and grasslands. These fires are usually of relatively low intensity and high frequency.</li>
             <li><strong>Crown-fires</strong> Fires in woody-dominated ecosystems that affect all vegetation including crowns. They are typically of high intensity. Examples are fires in some Mediterranean-type forest and shrublands and in closed-cone pine forests.</li>
           </ul>
+        </div>
+
+        <h4>Habitat</h4>
+
+        <Links.EL link={{source:'https://en.wikipedia.org/wiki/Habitat', label: 'Habitat'}}>Habitat</Links.EL>
+        
+        <Links.EL link={{source:'https://www.nature.com/articles/s41598-022-15218-2', label: 'Decision-making of citizen scientists when recording species observations'}}>Decision-making of citizen scientists when recording species observations</Links.EL>
+        <div>Diana E. Bowler et al. | Scientific Reports</div>
+
+        <blockquote>
+          <div>Citizen scientists—or volunteers contributing to scientific projects—increasingly take part in biodiversity monitoring by reporting species observations. In Europe, for example, 87% of the participants in species monitoring are volunteers3. Chandler et al.2 estimated over half of the data in the Global Biodiversity Information Facility (GBIF)—the largest global biodiversity database—comes from citizen science platforms.</div>
+          <div>Citizen scientists make many decisions—before, during, and after observing species—that can affect different aspects of the data that they collect and report.</div>
+          <div>The majority of species occurrence data come from unstructured citizen science projects.</div>
+          <div>Many previous studies to understand the data collection decisions of citizen scientists have taken a data-driven approach by analysing the patterns in the available data e.g. spatial patterns of the data, for example finding evidence for higher sampling effort near human settlements and roads.</div>
+          <div>An alternative approach to understanding citizen science data is by directly asking citizen scientists about their data collection activities.</div>
+
+          <h5>Questions</h5>
+
+          <ul>
+            <li><strong>Experience</strong> Number of years collecting data and frequency of data collection, and, in a later section, on membership of natural history societies, formal knowledge of biodiversity monitoring and participation in any large-scale structured monitoring schemes.</li>
+            <li><strong>Motivations</strong> Rate the importance of ten different aspects about why they record biodiversity on a 5-point Likert scale ranging from 'not important at all' to 'very important'. Our selection of motivation factors was guided by similar ones included in other studies, including both intrinsic factors (motivated directly by enjoyment of the activity) and extrinsic factors (motivated for reasons outside of enjoyment of the activity itself). For instance, we included ‘have fun exploring’ as an intrinsic motivation and ‘support conservation’ as an extrinsic motivation.</li>
+            <li><strong>Survey types</strong> Report what proportion of their species observations come from different species survey types: active and planned species surveys (i.e., going to a place with the intention of looking for species), opportunistic observations not seen during an active search or observations made using traps—on a 5-point Likert scale ranging from ‘none’ to ‘all’.</li>
+            <li><strong>Active searches</strong> Rate the frequency with which they reported different kinds of species (e.g., all observed species or rare species only) on a 5-point Likert scale ranging from ‘never’ to ‘very often’ during an active and planned search and how long they typically spend looking for species (answering in minutes or hours).</li>
+            <li><strong>Opportunistic observations</strong> Rate the frequency with which different scenarios (e.g., observations of rare species or simultaneous observations of many species) triggered opportunistic observations on a 5-point Likert scale ranging from ‘never’ to ‘very often’.</li>
+            <li><strong>Trap use</strong> If participants previously indicated that they used traps, they were asked to rate the frequency with which they reported different kinds of species collected in their traps on a 5-point Likert scale ranging from ‘never’ to ‘very often’ and how long the traps were left active (answering in hours or days).</li>
+            <li><strong>Species ID uncertainty</strong> The frequency with which they dealt with uncertainty about the taxonomic identification in different ways (e.g., not report or guess), on a 5-point Likert scale ranging from ‘never’ to ‘very often’.</li>
+            <li><strong>Locations</strong> Rate how often they looked for species in different habitats (e.g., forests, grasslands) on a 5-point Likert scale ranging from ‘never’ to ‘very often’.</li>
+            <li><strong>Consecutive surveys</strong> Rate how likely they were to report seeing a species again in the same place according to different time-periods since the previous detection of the same species, on a 5-point Likert scale ranging from ‘not at all likely’ to ‘very likely’.</li>
+          </ul>
+
+        </blockquote>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Thursday 19 October 2023</span>
+
+          <h3>Revisions</h3>
+
+          <ul>
+            <li>Rename guides to <strong>waymarks</strong></li>
+            <li>Make all waymarks personal (<em>narratives</em>)</li>
+            <li>Add option to toggle between species count and observations; and other params?</li>
+            <li>Get both taxa list <em>and</em> observations (by date range e.g. one day).</li>
+            <li>Include both the default image (check rights) and user observation (cf. <strong>specimen</strong> against the 'standard' or typical <strong>species</strong>)</li>            
+          </ul>
+
+          <ul>
+            <li><strong>Specimen</strong> over species</li>
+            <li><strong>Observation</strong> over type</li>
+            <li><strong>Particular</strong> over general</li>
+            <li><strong>Account</strong> over abstraction</li>
+          </ul>
+        </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Monday 23 October 2023</span>
+
+          <h3>Fire</h3>
+
+          <h4>Eucalyptus globulus in Portugal</h4>
+
+          <Links.EL link={{source:'https://pt.wikipedia.org/wiki/Eucalyptus_globulus', label:'Eucalyptus globulus'}}>Eucalyptus globulus</Links.EL>        
+
+          <blockquote>
+            <div>Também em Portugal esta árvore se comporta como uma espécie invasora embora nenhuma medida de erradicação tenha sido levada a cabo sobretudo devido ao valor económico da espécie. Contudo, dado que o eucalipto consegues absorver grandes quantidades de água no verão, apresenta vantagem competitiva sobre as demais espécies vegetais, com consequências nefastas para a biodiversidade das florestas.</div>
+            <div>Outra polémica em torno desta espécie prende-se com os fogos florestais, um flagelo recorrente em Portugal na época de verão. E assim, o Governo português começou a estabelecer limites para as de eucalipto no país a fim de conter a expansão da espécie e incentivar o plantio de espécies de árvores nativas europeias, porém não nativas de Portugal, que também possuem importância económica e cultural quanto a espécie invasora possui, mesmo assim a medida se baseou na controversa da plantação de Eucalyptus globulus e das outras espécies de eucalipto em Portugal.</div>
+          </blockquote>
+          
+          <Links.EL link={{source:'https://www.themonthly.com.au/issue/2013/june/1370181600/michaela-mcguire/eucalypt-invasion-portugal', label:'The eucalypt invasion of Portugal'}}>The eucalypt invasion of Portugal</Links.EL>          
+
+          <blockquote>
+            <div>“By the early ’70s Portugal was fighting wars in three African countries, so we needed the money. Special laws were created for the expansion of the eucalyptus.”<strong>Pedro Bingre, Quercus</strong></div>
+            <div>The exotic blue gum is the most abundant tree in Portugal, covering about 7% of the land.</div>
+            <div>Plantation eucalypts are grown in rotation periods of 12 years, during which time the undergrowth is cleared at least twice. “In a native oak forest you’d find, in one hectare of woodland, at least 70 or 80 species of plant,” says Bingre. “In a eucalyptus forest, you would hardly find more than 15.”</div>
+          </blockquote>
+
+          <Links.EL link={{source:'https://www.portugalwildfires.com/flammable-trees-of-portugal/', label:'The Flammable Trees of Portugal'}}>The Flammable Trees of Portugal</Links.EL>
+
+          <ul>
+            <li>23% eucalyptus</li>
+            <li>27% maritime pine</li>
+            <li>23% cork oak</li>
+            <li>27% other tree species</li>
+          </ul>
+
+          <p>Main culprits are small landowners</p>
+
+          <blockquote>
+            <ul>
+              <li>The rural exodus had, and still is having, relevant effects on forest management.</li>
+              <li>Decrease in the demand for flammable forest sub-products generated from pine resin = increased risk of forest fires. (Resin tapping yielded an average of 115243 tons / year in the 1980’s decreased to 21326 tons in the period 1996 – 2002).</li>
+              <li>The scarcity of workers capable and available to undertake forest maintenance operations increases the labour costs to forest owners, leading to…</li>
+              <li>Forest owners are less willing to hire workers to clean their forest holdings, leading to…</li>
+              <li>The direct consequence of abandonment of forest land by the owners due to low forest revenues unable to cover the high maintenance costs = increased risk of forest fires.</li>
+              <li>Urban lifestyle and the distance the owner’s residence and their forest holding also contributes to abandoned forests, left to regenerate naturally.</li>
+            </ul>
+
+            <p>Where eucalyptus is primary</p>
+
+            <ul>
+              <li>Do not perform cleaning and stand tending, and the average number of types of silvicultural practices they exhibit is practically zero.</li>
+              <li>Harvesting is outsourced to the product’s buyer charged with mobilising the required workforce and equipment.</li>
+              <li>The forest establishment results from wild germination and seedlings.</li>
+              <li>They correspond to the group of owners who least apply their own or their family’s labour.</li>
+              <li>They are the oldest ( &lt;70 years of age) owners, with a comparatively higher rate of female ownership (30%), and lower proportion of owners living in the same parish where the forest is located (73%), and having a farm (64%).</li>
+              <li>Their properties are very small ( &lt;1 ha), small (1 to  &lt;5 ha) and medium (5 to  &lt;20 ha) sized.</li>
+              <li>Forest is viewed as a Property Reserve (54%) where owners do not invest or implement silvicultural practices and forest is viewed as a reserve where harvest timing is mainly decided by criteria other than profitability, OR as an Investment Reserve (25%) where owners invest and harvest themselves but do not carry out silvicultural practices.</li>
+            </ul>
+
+            <p>Where maritime pines are primary</p>
+
+            <ul>
+              <li>The owners carry out silvicultural practices using mainly their own or their family’s labour and equipment, and a clearing saw when it comes to bush cleaning.</li>
+              <li>They stand out for the highest number of types of silvicultural practices, about half of the owners performing three, four, or five types of practices.</li>
+              <li>However, they do not harvest during the reference period and show the lowest rate of forest establishment.</li>
+              <li>They mostly own very small (&lt;1 ha) forest properties.</li>
+              <li>These owners are distinguished by a stronger presence of male ownership (80%), with wages from industry and services as chief source of income beyond the forest (18%).</li>
+              <li>Owners permanently living in the same civil parish where the forest is located (87%), and daily attendance to it is 83%.</li>
+              <li>The forest is seen as a Labour Reserve (59%) where owners carry out silvicultural practices but do not invest in the forest, which is seen as a reserve, OR as a Holding Reserve (26%)  where owners invest and carry out silvicultural practices and tend to view forests as a reserve where they can harvest mainly without profitability criteria.</li>
+            </ul>
+
+            <p>Eucalyptus in wildfires</p>
+
+            <div>With reference to Pedrógão Grande</div>
+
+            <ul>
+              <li>The whole eucalyptus tree is full of flammable oil which has the distinct smell commonly used in decongestant products.</li>
+              <li>This oil is not only in the trunk, it is in the leaves and long bark strips which peel off and collect on the forest floor or remain suspended on the trees. Essentially, left to its own devices, the eucalyptus stands in a pile of its own debris, ready to burn, and so continue its life-cycle (fire opens the seed pods).</li>
+              <li>This debris ignites like gasoline drawing the super hot ground flames into the canopy where the fire may spread on a second high and fast moving front – crown to crown.</li>
+              <li>With the atmospheric phenomena that occurred on 17 June, a ‘normal’ forest wildfire can turn into a terrifying, explosive firestorm in minutes where it attains such intensity that it creates and sustains its own wind system, flinging out flaming embers which ignite new fires.</li>
+              <li>The steep eucalyptus and pine clad hillsides of Central Portugal further facilitate fire spread…depending on the gradient, the oil-fuelled, wind-driven fires will double or quadruple their speed going uphill, also further increasing the heat intensity.</li>
+              <li>In very hot air temperatures, the eucalyptus oil gives off fumes or vapour similar to petrol which can explosively ignite, occasionally blowing the burning crown off to travel through the air to start a new ignition point miles away. In Australia there are records of secondary outbreaks within 20 km of the original fire front.</li>
+            </ul>
+
+            <p>Eucalyptus after a wildfire</p>
+
+            <ul>
+              <li>Depending on the severity of the fire, the eucalyptus re-sprouts readily post-fire even if the tree is destroyed above ground (top-killed). It sends up new shoots from <strong>lignotubers</strong> (woody growths at ground level or underground) and/or from epicormic buds on the trunk. These epicormic buds are stored deep in the trunk where the bark is thickest.</li>
+              <li>The proportion of pine trees in the eucalyptus stand in a wildfire positively affects mortality and top-kill of the eucalyptus.</li>
+              <li>In a managed eucalyptus stands the burned trees are usually cut and the basal re-sprouts may be retained for coppicing.</li>
+              <li>The seeds of a eucalyptus are stored in woody capsules in the canopy where they are safer from fire heat damage as ground fire temperatures are higher than those at the canopy. If seed capsules are on the ground in a fire they will burn like everything else.</li>
+              <li>The heat of a fire triggers the capsule to split (dehiscence), which allows for germination (in its original region) in the optimal post-fire conditions and when the risk of new fire is low.</li>
+            </ul>
+
+            <p>Is the eucalyptus to blame for the 2017 fire tragedy?</p>
+
+          </blockquote>
+          
+          <blockquote>
+            <div>The answer has to be no. It is the extraordinary level of neglect and mismanagement of the eucalyptus by man that is to blame, allowing the unchecked accumulation of fuel. Man has permitted the unimpeded spread of continuous forests and the ‘double jeopardy’ of these forests composed of mixed flammable eucalyptus and pine, right to the very edges of our roads, houses and villages.</div>
+            <div>The flammable eucalyptus tree is demonised for many reasons but especially when it comes to wildfires by causing them to spread and burn faster. However, there is not one scrap of empirical scientific evidence that demonstrates this despite all the articles written to the contrary and repeated so often that everyone believes it.</div>
+            <div>It has been demonstrated that any unmanaged forest plantation with a high density of undergrowth, brushwood or scrub responds to fire in a similar manner, regardless of the dominant species, compared to the fire behaviour of other plantations with intense management of the understorey vegetation. So, whenever there is eucalyptus, pines or cork oak stands without understorey management, fires can burn for days.</div>
+            <div>Given a ‘choice’ a fire, by far, ‘prefers’ to burn scrubland over forest. In a forest area however, a fire will avoid Ceratonia siliqua (Carob tree), evergreen oaks and Pinus pinea (Stone pines) in favour of Pinus pinaster (Maritime pine), Eucalyptus globulus and deciduous oaks. Further analysis showed maritime pine stands are more fire prone than all other forest types, including eucalyptus.</div>
+            <div>Eucalyptus also gets a lot of stick for using excessive amounts of water, consequently drying out the ecosystem and thereby increasing the wildfire risk. Research from Australia has reported the remarkable finding that all eucalyptus measured across Australia used the same amount of water for a given amount of leaf material – other tree species use various different amounts of water. Estimations of the amount of eucalyptus tree cover at a given location using satellite images of the leaves can help calculate how much water the entire forest or catchment area uses. Of course controlling eucalyptus water consumption by reducing leaf material would require additional forest management measures, the basics of which are lacking in most areas of Portugal.</div>
+          </blockquote>
+
+          <blockquote>
+            <p>Maritime pine trees in wildfires</p>
+
+            <div>A mature maritime pine can usually survive a low to moderate intensity surface fire because it has thick, fissured bark.</div>
+            <div>However, a pine rarely survives when it is in the path or head of an exceptionally hot, intense wildfire such as in 2017. Where you see the trunk completely charred from top to bottom, the tree is likely to be dead. Young maritime pines nearly always perish in fierce forest fires as they have thinner bark and not having reached a mature height, they burn as understorey vegetation. As intense wildfires happen more frequently than they did in the past, the pine forests are decreasing in size. In their place there is the progressive substitution of eucalyptus in the region.</div>
+
+            <ul>
+              <li>The needles and wood litter of the maritime pine is prone to easy ignition, fast and complete combustion and high heat release.</li>
+              <li>The close density of the pines (often mixed with eucalyptus) in unmanaged forests makes for extreme amounts of surface fuel that exacerbates the potential for conflagrations. The canopies are also close or overlapping which facilitates crown-to-crown ignition.</li>
+              <li>Like the eucalyptus, pines produce their own volatile compounds (such as α-pinene) which are present in pine needles. These compounds are released when temperatures reach around 150-175 º C. They accumulate locally in the air around the trees and when ignited as the flames reach the area, burn rapidly and intensively possibly causing the phenomena of a fire ‘flash-over’ or explosion.</li>
+              <li>Where there are more frequent successive fires in a maritime pine forest area, the trees become even more of a fire hazard because the new young pine trees can never reach maturity and act like understorey shrubs that greatly increase the probability of fire.</li>
+              <li>Stands of maritime pine commonly grow on the steep hillsides of Central Portugal so the speed and heat intensity of the fire  increases as it travels uphill and at the crest. This also makes fighting the fire very difficult.</li>
+              <li>It must be noted that where stands of pines have been thinned, there will be increased wind movement and litter drying which may aggravate a future ground fire.</li>
+            </ul>
+
+            <p>Maritime pine trees after a fire</p>
+
+            <ul>
+              <li>The pine is partially serotinous and seeds stored in cones in the canopy are the major source for the post-fire regeneration of the tree.</li>
+              <li>Cone serotiny (closed cones which require heat to open) may vary among individual trees in the same population – particularly found in the younger trees.</li>
+              <li>The serotinous cones of maritime pine begin opening at temperatures around 50º C.</li>
+              <li>The cones open gradually in the two or three days that follow the thermal shock such that when seed dispersion begins the fire is extinct and seeds land on a cool bed of ash.</li>
+              <li>Adult trees are often killed by fire, depending on the degree of crown and cambium damage, and there is no re-sprouting in the species.</li>
+              <li>Typically the burned trees are salvage logged and natural regeneration from seeds occurs.</li>
+            </ul>
+
+            <div>Where pines have been cut, thinned or pruned, the crown branches with attached needles are frequently left on site which significantly increases the risk of future fires – less shade on surface fuels, increased wind speeds, reduction of relative humidity, increased fuel temperature and reduced fuel moisture. Immediately after the 2017 fires, there was a rush to cut the dead pines before they lost weight and became less valuable, and later cutting to comply with the land cleaning deadlines. In many cases the owners have left vast piles of pine debris which will not decompose any time soon. It can take more than 7 years for pine litter to completely decompose – longer, if there are prolonged spells of dry weather which slow the action of fungi, bacteria and gastropods etc.</div>
+            <div>In the forests away from human habitation, it may be that the debris is deliberately spread across a cut site in order to mitigate the effects of erosion. This is an common method of erosion control after a fire. However, some experts believe that due to climate change, ‘mega-fire’ events will become more frequent in the near future, essentially becoming the new ‘normal’ wildfire. This then makes extensive salvage logging and leaving debris in situ look to be a decidedly dangerous option.</div>
+          </blockquote>
+
+          <p>Mitigation</p>
+
+          <div>“The best management solutions for the mitigation of forest fires is forest diversification and the use of species that create less fuel formations, in particular deciduous hardwoods, such as oak, chestnut or other hardwoods, because they have a high content of humidity.</div>
+          <div>These species are not conducive to tree fires and should, therefore, be considered in mixtures with other species or in strategic areas for prevent the spread of fires.”</div>
+          
+          <h4>Cercis siliquastrum and Ceratonia siliqua</h4>
+
+          <Links.EL link={{source:'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9289549/', label:'Vicariance Between Cercis siliquastrum L. and Ceratonia siliqua L. Unveiled by the Physical–Chemical Properties of the Leaves’ Epicuticular Waxes'}}>Vicariance Between Cercis siliquastrum L. and Ceratonia siliqua L. Unveiled by the Physical–Chemical Properties of the Leaves’ Epicuticular Waxes</Links.EL>          
+
+          <blockquote>
+            <div>Classically, vicariant phenomena have been essentially identified on the basis of biogeographical and ecological data. Here, we report unequivocal evidences that demonstrate that a physical–chemical characterization of the epicuticular waxes of the surface of plant leaves represents a very powerful strategy to get rich insight into vicariant events. We found vicariant similarity between Cercis siliquastrum L. (family Fabaceae, subfamily Cercidoideae) and Ceratonia siliqua L. (family Fabaceae, subfamily Caesalpinoideae). Both taxa converge in the Mediterranean basin (C. siliquastrum on the north and C. siliqua across the south), in similar habitats (sclerophyll communities of maquis) and climatic profiles.</div>
+            <div>These species are the current representation of their subfamilies in the Mediterranean basin, where they overlap. Because of this biogeographic and ecological similarity, the environmental pattern of both taxa was found to be very significant. The physical–chemical analysis performed on the epicuticular waxes of C. siliquastrum and C. siliqua leaves provided relevant data that confirm the functional proximity between them.</div>
+            <div>A striking resemblance was found in the epicuticular waxes of the abaxial surfaces of C. siliquastrum and C. siliqua leaves in terms of the dominant chemical compounds (1-triacontanol (C30) and 1-octacosanol (C28), respectively), morphology (intricate network of randomly organized nanometer-thick and micrometer-long plates), wettability (superhydrophobic character, with water contact angle values of 167.5 ± 0.5° and 162 ± 3°, respectively), and optical properties (in both species the light reflectance/absorptance of the abaxial surface is significantly higher/lower than that of the adaxial surface, but the overall trend in reflectance is qualitatively similar). These results enable us to include for the first time C. siliqua in the vicariant process exhibited by C. canadensis L., C. griffithii L., and C. siliquastrum.</div>
+          </blockquote>
+
+          <h4>Fire resistant trees</h4>
+
+          <Links.EL link={{source:'https://www.permaportugal.com/post/10-fire-resistant-trees-to-plant-on-your-land', label:'10 Fire Resistant Trees To Plant On Your Land in Portugal'}}>10 Fire Resistant Trees To Plant On Your Land in Portugal</Links.EL>
+
+          <ul>
+            <li>Mediterranean Cypress ( Cupressus sempervirens)</li>
+            <li>Mulberry ( Morus alba / nigra )</li>
+            <li>Willow ( Salix spp.)</li>
+            <li>Fig ( Ficus carica )</li>
+            <li>Paulownia ( Paulownia tormentosa)</li>
+            <li>Cork Oak ( Quercus suber)</li>
+            <li>Strawberry Tree ( Arbutus unedo )</li>
+            <li>Carob ( Ceratonia siliqua )</li>
+            <li>Sweet Chestnut ( Castanea sativa )</li>
+            <li>Turkish Hazel ( Corylus colurna )</li>
+          </ul>
+
+        </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Tuesday 24 October 2023</span>
+
+          <h3>Fieldnotes</h3>
+
+          <div>Maine Natural History Observatory</div>
+
+          <Links.EL link={{source:'https://www.mainenaturalhistory.org/observer-submissions', label:'Observer submissions'}}>Observer submissions</Links.EL>
+
+          <h4>Field Note</h4>
+          <ul>
+            <li>Field Notes should be under 500 words.  Species lists may exceed the 500 word limit.</li>
+            <li>If you wish, Field Notes may consist of photos, drawings, or videos only.</li>
+            <li>Unlike articles, Field Notes may be (but don't have to be) very limited in scope, e.g. describing a single observation, musings about the natural world, or photos/descriptions of a species you weren't able to identify.</li>
+          </ul>
+
+          <h4>Article</h4>
+          <ul>
+            <li>Articles may be over 500 words.</li>
+            <li>Articles should explore a topic, species, group of species, habitat, region, or study in some depth.  Including a "Literature Cited" section at the end of your article is encouraged if appropriate but not required.</li>
+          </ul>
+
+        <h3>Habitats</h3>
+
+        <div>Environment & Resource Authority (Malta)</div>
+
+        <Links.EL link={{source:'https://era.org.mt/topic/terrestrial-habitats/', label:'Terrestrial habitats'}}>Terrestrial habitats</Links.EL>
+
+        <blockquote>
+          <h4>Succession</h4>
+
+          <div>Ecosystems are formed by the interactions between a community of living organisms and the physical environment that surrounds them. These ecosystems undergo ecological succession in response to changes in environmental conditions; this is a natural process of change over time that is brought about by progressive replacement of one plant or animal community with another.</div>
+          <div>This process starts with what is called as the “pioneer community”, and eventually leads to the development of a stable and mature community, referred to as the “climax community”. The process of succession can halt at a pre-climax stage when some factor is limiting; such as when the organism needed to bring about the necessary changes that lead to the creation of the following community is absent. Apart from biotic factors (living), limiting factors may also be abiotic (non-living), such as lack of water.</div>
+
+          <ul>
+            <li><strong>Primary succession</strong> Begins when pioneer species, like mosses and lichens, colonise barren substrate, such as rock, sand or soil, which has never before supported any vegetation</li>
+            <li><strong>Secondary succession</strong> Occurs in areas where natural vegetation has been disturbed or destroyed. The latter type is generally less species rich.</li>
+          </ul>
+
+          <div>Habitats that form part of the process of succession:</div>
+          <ul>
+            <li>Steppe</li>
+            <li>Garrigue</li>
+            <li>Phrygana</li>
+            <li>Pre-desert scrub</li>
+            <li>Maquis</li>
+            <li>Woodland</li>
+          </ul>
+
+          <div><strong>Steppe</strong></div>
+          <div>Steppe is considered as the first stage in the ecological succession process. It is derived from maquis and garrigue as a result of some form of degradation, such as that caused by fire or animal grazing. It is widespread, and is characterised by herbaceous plants, especially grasses.</div>
+          <div><em>Umbellifers (Foeniculum vulgare), Daucus carota, Legumes (Vicia sativa subsp. nigra), Tuberous or bulbous species (Ornithogalum narbonense)</em></div>
+
+          <div>This habitat is generally devoid of shrubs, and is mainly comprised of annuals, that is, plants that live up to one year. During the dry season, this habitat type appears dry and impoverished because most plant species will, at the time, exist in the form of seeds. In contrast, the wet season brings about a change in this habitat type, which results in steppe being entirely covered by a large variety of herbaceous plants.</div>
+          <div>One also finds other types of steppe locally, including some natural ones. These are formed through climatic factors, and include the rocky steppe and the clay slope steppe.</div>
+          <div>Steppes may also be characterised by: <em>Stipa capensis, Carlina involucrata, Galactites tomentosa, geophytes (Asphdelus aestivus), Drimia pancration</em></div>
+       
+          <div><strong>Garrigue</strong></div>
+          <div>The second stage in ecological succession is garrigue. It is characterised by limestone rocky ground with a rugged surface, known as <strong>karst</strong>, and is heavily exposed to the brute force of the elements. Garrigue is typified by low-lying, usually aromatic and spiny woody shrubs that are resistant to drought and exposure. This type of habitat appears desolate, and is often referred to as wasteland. Nevertheless, it is probably the most species-diverse habitat in the Maltese Islands, and is of great importance not only to biodiversity, but also to ecosystem services.</div>
+          <div><em>Euphorbia dendroides, Periploca angustifolia, sages, rockroses, Rosmarinus officinalis, Thymbra capitata</em></div>
+       
+          <div><strong>Maquis</strong></div>
+          <div>Maquis is the stage following that of the pre-desert scrub in the ecological succession. It is usually characterised by small trees and large shrubs, consisting mostly of an evergreen shrub community, reaching a height of up to 5m, often more. It occurs along the sides of valleys, along slopes and other areas, which are inaccessible to man, and relatively sheltered from the wind.</div>
+          <div><em>Myrtus communis, Ceratonia siliqua, Olea europaea, Pistacia lentiscus, Ficus carica, Prunus dulcis, Laurus nobilis, Hedera helix, Asparagus aphyllus, Rubia peregrina, Tamus communis, Acanthus mollis, Arisarum vulgare</em></div>
+
+          <div><strong>Mediterranean woodland</strong></div>
+          <div>Mediterranean woodlands are characterised by sclerophyllous (hard-leaved, evergreen) trees with an undergrowth of smaller shrubs. This is the highest type of vegetation that can develop in the Mediterranean climatic regime, in other words, the climax of the ecological succession. This habitat type develops from maquis, in the absence of disturbance caused by man.</div>
+          <div>In Malta, this habitat was virtually exterminated, following colonisation by man and through the grazing effects of introduced sheep and goats.</div>
+          <div><em>Quercus ilex, Pinus halepensis, Ceratonia siliqua, Olea europaea</em></div>
+
+          <div><strong>Saline marshlands</strong></div>
+          <div>Saline marshlands are transitional areas that form at the interface between the marine, freshwater and terrestrial environments. Saline marshlands are dynamic systems and undergo annual cycles of changes in salinity. The salt content changes depending on rainfall, whereas in winter the saline content is low due to a diluting effect of the rain, in summer, the salt content is more concentrated as water levels drop. Salinity in the salt marsh also depends on how close this is to sea and the influx of seawater into the system.</div>
+          <div><em>Limbarda crithmoides, Arthrocnemum macrostachyum, Salicornia ramosissima, tamarisks</em></div>
+          <div>Vegetation patterns are observed in saline marshlands that reflect differences in chemical and physical conditions. Areas that remain dry or moist harbour those plants that are not aquatic, such as the smooth-leaved saltwort (Salsola soda). Shallow parts of the salt marsh that hold a small volume of water for several days, are colonised by plants, which although not aquatic, are still able to withstand short periods of inundation until the water dries up or evaporates. Deeper areas, which remain filled with water for longer periods, only support aquatic and semi-aquatic plants.</div>
+          <div>Some coastal wetlands appear to be transitional between freshwater wetlands and saline marshlands, in the sense that, the biotic assemblages they support consist of species typical of both freshwater and saline habitats. Such wetlands have been termed ‘transitional coastal wetlands’, such as when wetlands arise when rainwater collects in depressions close to the sea.</div>
+
+          <div><strong>Rainwater rock pools</strong></div>
+          <div>The movement or flow of acidified water derived from precipitation and runoff, leads to the gradual erosion of limestone substratum and the eventual formation of hollows or kamenitzas. The latter collect rainwater in winter, forming shallow freshwater rock pools, which provide a suitable habitat for a number of rare species. Freshwater rock pools are ephemeral, that is, last for only a short period, because in summer these dry up completely and may become colonised by terrestrial vegetation.</div>
+          <div>Species that are specialised to this habitat type remain dormant in the soil during the dry stage, and emerge during the wet stage. Other species move out of the rock pool, when this is in the dry state, and return when conditions become favourable.</div>
+          <div>The duration of how long the rock pool remains with water determines the species richness of that particular rock pool.</div>
+
+          <div><strong>Sand dunes</strong></div>
+          <div>Sand dunes are dynamic systems that form by a slow process of accretion, that is, the build-up of sand because of natural wave action. Sandy beaches are backed by dune systems, which provide an essential role in the stability, as well as in the defence of coastal communities. The formation of sand dunes depends on the sand that is carried inland by wind from the beach. Subsequently, sand is deposited and trapped upon encountering clumps of vegetation or some other form of obstacle.</div>
+          <div>Dune vegetation is adapted to the harsh conditions present in this type of habitat. Such conditions include high temperatures, dryness, occasional inundation by seawater and accumulation of sand. Plant adaptations include extensive root systems that provide efficient anchorage in the porous and mobile substrate and other distinctive morphological features, such as fleshy leaves to limit water loss, and the presence of short white hairs to help in temperature regulation.</div>
+          <div>Vegetation type changes across the dune system with distance from the beach, forming a typical zonation pattern.</div>
+
+          <div><strong>Valley watercourses & riparian communities</strong></div>
+          <div>Valley watercourses are one of the most species-rich habitats on a national scale. Yet, they are considered as one of the most endangered habitats in the Maltese Islands.</div>
+          <div>In gently sloping valleys, the watercourse community is similar to that of the valley sides, whereas in steep-sided valleys there is a clear distinction between communities along the <strong>watercourse</strong> and those vegetating <strong>valley-sides</strong>. Where the terrain permits, the valley sides are terraced and cultivated. The construction of man-made dams in certain valley systems has intentionally retarded the water flow for irrigation purposes. Such dams have created new freshwater habitats where varieties of aquatic and semi-aquatic species thrive.</div>
+          <div>The watercourse community is by nature dynamic, and its integrity depends on the amount and frequency of rainfall as well as other abiotic factors, such as the rate of siltation. Valleys are dry for some months of the year and water only flows during the wet season. However, some local valleys drain springs originating from the perched aquifers and retain some surface water even during the dry season.</div>
+          <div>In general, the greater part of local plant and animal species reliant of water during some part of their life cycle are found in valley watercourses.</div>
+
+          <div><strong>Caves</strong></div>
+          <div><strong>Cliffs & screes</strong></div>
+        </blockquote>
+        
         </div>
 
       </section>
