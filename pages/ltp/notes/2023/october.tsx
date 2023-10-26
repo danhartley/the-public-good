@@ -767,7 +767,13 @@ const October = () => {
           <div><strong>Caves</strong></div>
           <div><strong>Cliffs & screes</strong></div>
         </blockquote>
-        
+              
+        </div>
+
+        <div class={styles.day}>
+          <span class={styles.date}>Wednesday 25 October 2023</span>
+
+          <div>Good resource: </div><Links.EL link={{source:'https://www.researchgate.net/publication/308037314_Mediterranean_Biomes_Evolution_of_Their_Vegetation_Floras_and_Climate', label:'Mediterranean Biomes: Evolution of Their Vegetation, Floras, and Climate'}}>Mediterranean Biomes: Evolution of Their Vegetation, Floras, and Climate</Links.EL>
         </div>
 
       </section>
