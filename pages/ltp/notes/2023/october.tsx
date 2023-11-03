@@ -780,9 +780,10 @@ const October = () => {
       
       <Links.RelatedLinks
             links={[
-            { value: 'ltp/notes/2023/september', text: 'September' },            
+            { value: 'ltp/notes/2023/november', text: 'November' },
+            { value: 'ltp/notes/2023/september', text: 'September' },
             { value: 'ltp/notes/2023/august', text: 'August' },            
-            { value: 'ltp/notes/2023/july', text: 'July' },            
+            { value: 'ltp/notes/2023/july', text: 'July' },       
             ]}
         ></Links.RelatedLinks>
     </Layout>
