@@ -1673,9 +1673,7 @@ const July = () => {
         </div>
         <div class={styles.day}>
           <span class={styles.date}>Thursday 20 July 2023</span>
-
           <h3>Open letter</h3>
-
           <div>
             <Links.EL
               link={{
@@ -1687,9 +1685,7 @@ const July = () => {
             </Links.EL>
           </div>
           <div>World Ethical Data Foundation</div>
-
           <br />
-
           <blockquote cite="https://openletter.worldethicaldata.org/en/openletter/">
             <q>
               This is an Open Suggestion designed to clarify the process of building AI by exposing the steps that go
@@ -1704,7 +1700,6 @@ const July = () => {
               actors who engage in the process to help clarify the importance of silo reduction: Me, We, It.
             </q>
           </blockquote>
-
           <ul>
             <li>
               Actors
@@ -1758,7 +1753,6 @@ const July = () => {
               </ul>
             </li>
           </ul>
-        
           <h3>Climate Change AI</h3>
           <div>
             <Links.EL
@@ -1785,14 +1779,16 @@ const July = () => {
               </q>
             </li>
             <li>
-              <q>Collaboration is also essential to ensure that innovations will be deployed with the intended impact.</q>
+              <q>
+                Collaboration is also essential to ensure that innovations will be deployed with the intended impact.
+              </q>
             </li>
             <li>
               <q>
                 We emphasize that ML is not a silver bullet. The applications we highlight are impactful, but no one
                 solution will “fix” climate change. There are also many areas of action where ML is inapplicable, and we
-                omit these entirely. Moreover, while we focus here on ways in which ML can help address climate change, ML
-                can also be applied in ways that make climate change worse.
+                omit these entirely. Moreover, while we focus here on ways in which ML can help address climate change,
+                ML can also be applied in ways that make climate change worse.
               </q>
             </li>
             <li>
@@ -1820,8 +1816,8 @@ const July = () => {
             <li>
               Reducing Current-System Impacts
               <br />
-              Cutting emissions from fossil fuels, reducing waste from electricity delivery, and flexibly managing demand
-              to minimize its emissions impacts
+              Cutting emissions from fossil fuels, reducing waste from electricity delivery, and flexibly managing
+              demand to minimize its emissions impacts
               <br />
               <strong>Uncertain impact - High leverage</strong>
             </li>
@@ -1834,8 +1830,9 @@ const July = () => {
               Innovations that seek to reduce GHG emissions in the oil and gas industries could actually increase
               emissions by making them cheaper to emit.
               <br />
-              Since many modern electric grids are not data-abundant (although they may be data-driven), understanding how
-              to apply data-driven insights to these grids may be the next grand challenge for ML in electricity systems.
+              Since many modern electric grids are not data-abundant (although they may be data-driven), understanding
+              how to apply data-driven insights to these grids may be the next grand challenge for ML in electricity
+              systems.
               <br />
               <strong>High leverage</strong>
             </li>
@@ -1844,9 +1841,7 @@ const July = () => {
         </div>
         <div class={styles.day}>
           <span class={styles.date}>Friday 21 July 2023</span>
-
           <h3>Interactive fiction</h3>
-
           <div>
             <Links.EL
               link={{
@@ -1858,7 +1853,6 @@ const July = () => {
             </Links.EL>
           </div>
           <div>Chris Chinchilla</div>
-
           History
           <ul>
             <li>Books: Choose Your Own Adventure (Edward Packard) - turn to page 24, etc., younger readers</li>
@@ -1868,27 +1862,34 @@ const July = () => {
             <li>Computers: Monkey Island</li>
             <li>Computers: Telltale Games</li>
             <li>Computers: Inkle Sudios e.g. 80 days</li>
-            <li>Computers: Depression Quest, built in Twine. The text-driven interior monologue style of the game was criticized as boring: <Links.EL link={{source:'https://www.britannica.com/topic/Gamergate-campaign', label:'Gamergate'}}>Gamergate</Links.EL>. It uses an interior monologue.</li>
+            <li>
+              Computers: Depression Quest, built in Twine. The text-driven interior monologue style of the game was
+              criticized as boring:{' '}
+              <Links.EL link={{ source: 'https://www.britannica.com/topic/Gamergate-campaign', label: 'Gamergate' }}>
+                Gamergate
+              </Links.EL>
+              . It uses an interior monologue.
+            </li>
             <li>Commnuities & tools: Twine, Itch</li>
             <li>Dungeon AI (GPT-3)</li>
             <li>Video: Bandersnatch</li>
             <li>Audio: Codename Sickness</li>
           </ul>
-
           Current tools
           <ul>
             <li>Tuesday</li>
             <li>Articy Draft 3, can export to Unity or Unreal e.g. used for Disco Elysium (Windows only!)</li>
             <li>ink from Inkle (80 days), designed to import into Unity, else as HTML (+ custom JS)</li>
-            <li>Inform: text-based, typed responses; designed to interact with language model rather than clicking on options; potential; powerful; open source</li>
+            <li>
+              Inform: text-based, typed responses; designed to interact with language model rather than clicking on
+              options; potential; powerful; open source
+            </li>
             <li>Twine; defined indie world; has programming power (HTML, CSS, JS); mark up language</li>
           </ul>
-
           The future
           <ul>
             <li>Publishing: IFDB, Itch (all games), or as webpage in HTML</li>
           </ul>
-        
           <div>
             <Links.EL
               link={{
@@ -1900,7 +1901,6 @@ const July = () => {
             </Links.EL>
           </div>
           <div>Chris Chinchilla</div>
-
           <ul>
             <li>Photoshop beta</li>
             <li>Text Assistant</li>
@@ -1909,26 +1909,24 @@ const July = () => {
             <li>Amazing AI</li>
             <li>Mac Whisper</li>
           </ul>
-
           <div>
             <Links.EL
               link={{
                 source: 'https://www.youtube.com/watch?v=qUjbH_OPDeQ',
-                label: 'Joe Dever\'s Lone Wolf, Flight from the Dark Live play',
+                label: "Joe Dever's Lone Wolf, Flight from the Dark Live play",
               }}
             >
               Joe Dever's Lone Wolf, Flight from the Dark Live play (Video)
             </Links.EL>
           </div>
           <div>Chris Chinchilla</div>
-
           Other games that may be of interest:
           <ul>
-            <li><Links.EL link={{source:'https://www.nomanssky.com/', label:'No man\'s sky'}}>No man's sky</Links.EL></li>
+            <li>
+              <Links.EL link={{ source: 'https://www.nomanssky.com/', label: "No man's sky" }}>No man's sky</Links.EL>
+            </li>
           </ul>
-
           <h3>Emily M. Bender puts her case</h3>
-
           <div>
             <Links.EL
               link={{
@@ -1956,7 +1954,7 @@ const July = () => {
             >
               Tiny Awards, a celebration of the small, playful, and heartfelt web
             </Links.EL>
-          </div>        
+          </div>
           <div>Waxy.org | Andy Baio</div>
         </div>
 
@@ -1968,13 +1966,14 @@ const July = () => {
           <div>
             <Links.EL
               link={{
-                source: 'https://www.theguardian.com/commentisfree/2023/jul/28/artificial-intelligence-powering-politics-reboot-democracy',
+                source:
+                  'https://www.theguardian.com/commentisfree/2023/jul/28/artificial-intelligence-powering-politics-reboot-democracy',
                 label: 'Artificial intelligence is powering politics – but it could also reboot democracy',
               }}
             >
               Artificial intelligence is powering politics – but it could also reboot democracy
             </Links.EL>
-          </div>        
+          </div>
           <div>The Guardian | Polly Curtis | Demos</div>
         </div>
 
@@ -1992,7 +1991,7 @@ const July = () => {
             >
               Greenwashing: All You Need to Know
             </Links.EL>
-          </div>        
+          </div>
           <div>Sabine Hossenfelder | YouTube Video</div>
           <br />
           <div>
@@ -2004,7 +2003,7 @@ const July = () => {
             >
               Consumer protection: enabling sustainable choices and ending greenwashing
             </Links.EL>
-          </div>        
+          </div>
           <div>EU Commission</div>
           <br />
           <div>
@@ -2016,31 +2015,33 @@ const July = () => {
             >
               Planet Wild
             </Links.EL>
-          </div>        
+          </div>
           <br />
           <p>
-            Transparency can extend to the price paid to producers. Companies in France include "Faire France", "Les éleveurs vous disent merci", "En direct des éleveurs", "Les 20 fermes", "CantAveyLot", "Juste et Vendéen", Oui, merci" and "C'est qui le patron?!" (Thank you, JP!)
+            Transparency can extend to the price paid to producers. Companies in France include "Faire France", "Les
+            éleveurs vous disent merci", "En direct des éleveurs", "Les 20 fermes", "CantAveyLot", "Juste et Vendéen",
+            Oui, merci" and "C'est qui le patron?!" (Thank you, JP!)
           </p>
           <div>
             <Links.EL
               link={{
                 source: 'https://cestquilepatron.com/produits/lait/',
-                label: 'C\'est qui le patron?!',
+                label: "C'est qui le patron?!",
               }}
             >
               C'est qui le patron?!
             </Links.EL>
-          </div>        
-        </div>         
+          </div>
+        </div>
       </section>
 
       <Links.RelatedLinks
-            links={[
-              { value: 'notes/2023/september', text: 'September' },            
-              { value: 'notes/2023/august', text: 'August' },            
-              { value: 'notes/2023/june', text: 'June' },
-            ]}
-        ></Links.RelatedLinks>
+        links={[
+          { value: 'notes/2023/september', text: 'September' },
+          { value: 'notes/2023/august', text: 'August' },
+          { value: 'notes/2023/june', text: 'June' },
+        ]}
+      ></Links.RelatedLinks>
     </Layout>
   )
 }

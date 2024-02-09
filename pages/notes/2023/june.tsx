@@ -68,12 +68,12 @@ const June = () => {
       </section>
 
       <Links.RelatedLinks
-            links={[
-              { value: 'notes/2023/september', text: 'September' },            
-              { value: 'notes/2023/august', text: 'August' },            
-              { value: 'notes/2023/july', text: 'July' },
-            ]}
-        ></Links.RelatedLinks>
+        links={[
+          { value: 'notes/2023/september', text: 'September' },
+          { value: 'notes/2023/august', text: 'August' },
+          { value: 'notes/2023/july', text: 'July' },
+        ]}
+      ></Links.RelatedLinks>
     </Layout>
   )
 }

@@ -93,12 +93,13 @@ const Pledges = () => {
         <p>
           <h3>Pledges</h3>
           <p>
-            <div class={styles.inset}>            
+            <div class={styles.inset}>
               <div>
-                  I pledge to stop using ChatGPT until the conditions and rights of employees involved in outsourced work have been addressed.
+                I pledge to stop using ChatGPT until the conditions and rights of employees involved in outsourced work
+                have been addressed.
               </div>
               <div>
-                <strong>Pledge checkpoint: end of August 2023</strong>                
+                <strong>Pledge checkpoint: end of August 2023</strong>
               </div>
             </div>
           </p>
@@ -118,7 +119,7 @@ const Pledges = () => {
                 <span> [Updated 6 July 2023]</span>
               </div>
               <div>
-                <strong>Pledge checkpoint: end of July 2023</strong>                
+                <strong>Pledge checkpoint: end of July 2023</strong>
               </div>
               <div>
                 <em>Pledge report: pledge fulfilled</em>
