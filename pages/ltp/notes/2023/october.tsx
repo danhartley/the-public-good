@@ -309,7 +309,7 @@ const October = () => {
 
           <blockquote>
             <div>Climax communities are stable, but once the forest trees are cleared for whatever reason rapid degeneration follows (though it may be reversed).</div>
-            <div>Evergreen forest --> Maquis --> Garrigue --> Steppe</div>
+            <div>Evergreen forest -- Maquis -- Garrigue -- Steppe</div>
             <h5>Evergreen Forest</h5>
             <div>The dominant evergreen forest in the Western Mediterranean is Holm Oak (Quercus ilex), which grows on all the Mediterranean soils and occasionally forms dense forests, but is more commonly seen in scattered groups now.</div>
             <div> In the Eastern Mediterranean the Kermes Oak (Quercus coccifera) replaces the Holm Oak, but there it does not form forests except in Crete and the rest of the Peloponnese.</div>
