@@ -156,7 +156,7 @@ const Oleta = () => {
           { value: 'personal/extracts', text: 'Extracts' },
           { value: 'personal/brothers', text: 'Brothers' },
           { value: 'personal/works', text: 'Works' },
-          { value: 'personal/works', text: 'Julio' },
+          { value: 'personal/julio', text: 'Julio' },
         ]}
       ></Links.RelatedLinks>
     </Layout>

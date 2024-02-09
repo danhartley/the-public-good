@@ -131,7 +131,7 @@ const Works = () => {
           { value: 'personal/extracts', text: 'Extracts' },
           { value: 'personal/oleta', text: 'Oleta' },
           { value: 'personal/brothers', text: 'Brothers' },
-          { value: 'personal/works', text: 'Julio' },
+          { value: 'personal/julio', text: 'Julio' },
         ]}
       ></Links.RelatedLinks>
     </Layout>
