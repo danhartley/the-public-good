@@ -15,19 +15,25 @@ const October = () => {
         <div class={styles.day}>
           <span class={styles.date}>Friday 01 October 2023</span>
 
-          <Links.EL link={{source:'https://www.w3.org/blog/2023/introducing-web-sustainability-guidelines/', label:'Introducing Web Sustainability Guidelines'}}>Introducing Web Sustainability Guidelines</Links.EL>
+          <Links.EL
+            link={{
+              source: 'https://www.w3.org/blog/2023/introducing-web-sustainability-guidelines/',
+              label: 'Introducing Web Sustainability Guidelines',
+            }}
+          >
+            Introducing Web Sustainability Guidelines
+          </Links.EL>
         </div>
-
       </section>
 
       <Links.RelatedLinks
-            links={[
-              { value: 'notes/2023/september', text: 'September' },
-              { value: 'notes/2023/august', text: 'August' },
-              { value: 'notes/2023/july', text: 'July' },            
-              { value: 'notes/2023/june', text: 'June' },
-            ]}
-        ></Links.RelatedLinks>
+        links={[
+          { value: 'notes/2023/september', text: 'September' },
+          { value: 'notes/2023/august', text: 'August' },
+          { value: 'notes/2023/july', text: 'July' },
+          { value: 'notes/2023/june', text: 'June' },
+        ]}
+      ></Links.RelatedLinks>
     </Layout>
   )
 }

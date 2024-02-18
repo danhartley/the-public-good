@@ -13,8 +13,7 @@ export default function Home() {
 
             <p>I write about the climate crisis, responsible web development, and occasionally <Links.IL link={{source:"personal/extracts"}}>things I made up</Links.IL>.</p>
 
-            <Links.ILBlock link={{'value': 'notes/2023/september', 'text': 'September 2023 notes'}}></Links.ILBlock>
-            <Links.ILBlock link={{'value': 'ltp/notes/2023/october', 'text': 'Learn the Planet October 2023 notes'}}></Links.ILBlock>
+            <Links.ILBlock link={{'value': 'notes/2024/february', 'text': 'February 2024 notes'}}></Links.ILBlock>
         </section>
 
         <section>

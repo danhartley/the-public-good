@@ -7,19 +7,35 @@ const AIOResources = () => {
       <section>
         <h3>Ethics</h3>
         <div>
-          <Links.EL link={{source: 'https://www.rollingstone.com/culture/culture-features/women-warnings-ai-danger-risk-before-chatgpt-1234804367/', label:'These Women Tried to Warn Us About AI'}}>
-          These Women Tried to Warn Us About AI
+          <Links.EL
+            link={{
+              source:
+                'https://www.rollingstone.com/culture/culture-features/women-warnings-ai-danger-risk-before-chatgpt-1234804367/',
+              label: 'These Women Tried to Warn Us About AI',
+            }}
+          >
+            These Women Tried to Warn Us About AI
           </Links.EL>
         </div>
         <div>Lorena O'Neil | Rolling Stone</div>
         <div>
-          <Links.EL link={{source: 'https://arxiv.org/abs/2307.15043', label:'Universal and Transferable Adversarial Attacks on Aligned Language Models'}}>
-          Universal and Transferable Adversarial Attacks on Aligned Language Models
+          <Links.EL
+            link={{
+              source: 'https://arxiv.org/abs/2307.15043',
+              label: 'Universal and Transferable Adversarial Attacks on Aligned Language Models',
+            }}
+          >
+            Universal and Transferable Adversarial Attacks on Aligned Language Models
           </Links.EL>
         </div>
         <div>Andy Zou et al.</div>
         <div>
-          <Links.EL link={{source: 'https://dl.acm.org/doi/10.1145/3531146.3533088', label:'Taxonomy of Risks posed by Language Models'}}>
+          <Links.EL
+            link={{
+              source: 'https://dl.acm.org/doi/10.1145/3531146.3533088',
+              label: 'Taxonomy of Risks posed by Language Models',
+            }}
+          >
             Taxonomy of Risks posed by Language Models
           </Links.EL>
         </div>
@@ -169,9 +185,19 @@ const AIOResources = () => {
 
         <h3>Articles</h3>
         <div>
-          <Links.EL link={{source:'https://simonwillison.net/2023/Aug/27/wordcamp-llms/', label:'Making Large Language Models work for you'}}>Making Large Language Models work for you</Links.EL>
+          <Links.EL
+            link={{
+              source: 'https://simonwillison.net/2023/Aug/27/wordcamp-llms/',
+              label: 'Making Large Language Models work for you',
+            }}
+          >
+            Making Large Language Models work for you
+          </Links.EL>
           <div>Simon Willison</div>
-          <div>A good recap of LLM models and releases, interesting examples of how to use prompts and context windows, and some ethical pledges.</div>
+          <div>
+            A good recap of LLM models and releases, interesting examples of how to use prompts and context windows, and
+            some ethical pledges.
+          </div>
         </div>
         <div>
           <Links.EL
@@ -251,7 +277,11 @@ const AIOResources = () => {
 
         <h3>Design</h3>
         <div>
-          <Links.EL link={{ source: 'https://stackoverflow.blog/2023/06/07/self-healing-code-is-the-future-of-software-development/' }}>
+          <Links.EL
+            link={{
+              source: 'https://stackoverflow.blog/2023/06/07/self-healing-code-is-the-future-of-software-development/',
+            }}
+          >
             Self-healing code is the future of software development
           </Links.EL>
           <div>Ben Popper (Stackoverflow)</div>
@@ -259,15 +289,15 @@ const AIOResources = () => {
 
         <h3>Development</h3>
         <div>
-            <Links.EL
-              link={{
-                source: 'https://arxiv.org/pdf/2212.08073.pdf',
-                label: 'Constitutional AI: Harmlessness from AI Feedback',
-              }}
-            >
-              Constitutional AI: Harmlessness from AI Feedback (PDF)
-            </Links.EL>
-          </div>
+          <Links.EL
+            link={{
+              source: 'https://arxiv.org/pdf/2212.08073.pdf',
+              label: 'Constitutional AI: Harmlessness from AI Feedback',
+            }}
+          >
+            Constitutional AI: Harmlessness from AI Feedback (PDF)
+          </Links.EL>
+        </div>
         <div>Yuntao Bai et al. Anthropic</div>
         <div>
           <Links.EL

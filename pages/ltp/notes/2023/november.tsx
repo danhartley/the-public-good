@@ -15,32 +15,58 @@ const November = () => {
         <div class={styles.day}>
           <span class={styles.date}>Wednesday 01 November 2023</span>
 
-          <Links.EL link={{source:'https://www.youtube.com/playlist?list=PLybg94GvOJ9E5VK94UujanWk45qM8rQuz', label:'Geology'}}>Geology</Links.EL>
+          <Links.EL
+            link={{
+              source: 'https://www.youtube.com/playlist?list=PLybg94GvOJ9E5VK94UujanWk45qM8rQuz',
+              label: 'Geology',
+            }}
+          >
+            Geology
+          </Links.EL>
           <div>Professor Dave</div>
 
           <h3>Characteristics of Sedimentary Rocks: Size, Provenance, and Composition</h3>
 
           <ul>
-            <li>Recycled materials (diverse materials from different times; rock, sea creatures, organic, other sediments)</li>
+            <li>
+              Recycled materials (diverse materials from different times; rock, sea creatures, organic, other sediments)
+            </li>
             <li>Comprised of sediments (naturally occurring unconsolidated material)</li>
             <li>Formed by being compacted and cemented over time</li>
             <li>Characterised by: size, provenance and composition</li>
             <li>Clay, silt, sand and gravel (in ascending order of size). Size can help determine provenance</li>
             <li>Silt + clay = mud</li>
-            <li>Most sediments deposited by fluid (water or air); size indicates where deposited e.g. calm or turbulent water</li>
-            <li>Terrigenous sediments (silicate minerals), biogenic sediments (organism exoskeletons made from calcites in marine environments), volcanogenic sediments (feldspar, glass)</li>
-            <li>Climate affects e.g. in arid conditions, salts precipitate out and form deposts (chemogenic sediments)</li>
+            <li>
+              Most sediments deposited by fluid (water or air); size indicates where deposited e.g. calm or turbulent
+              water
+            </li>
+            <li>
+              Terrigenous sediments (silicate minerals), biogenic sediments (organism exoskeletons made from calcites in
+              marine environments), volcanogenic sediments (feldspar, glass)
+            </li>
+            <li>
+              Climate affects e.g. in arid conditions, salts precipitate out and form deposts (chemogenic sediments)
+            </li>
           </ul>
 
           <h3>Mineralogy of Sedimentary Rocks: Weathering and Diagenesis</h3>
 
           <ul>
             <li>Terrigenous (silici/clastic); made of weather/eroded pieces of existing rocks</li>
-            <li>Changed by acidic precipitation and groundwater, therefore remaining minerals relatively non-reactive e.g. quartz and clay and will be well sorted and rounded</li>
+            <li>
+              Changed by acidic precipitation and groundwater, therefore remaining minerals relatively non-reactive e.g.
+              quartz and clay and will be well sorted and rounded
+            </li>
             <li>Breccia: relatively angular (feldspar) and poorly sorted, the result of landslides and lahars</li>
-            <li>Diagenisis: chemical and physical changes that occur during and after the burial of sediment (in basins or low lying area)</li>
+            <li>
+              Diagenisis: chemical and physical changes that occur during and after the burial of sediment (in basins or
+              low lying area)
+            </li>
             <li>Pore space determined by depth (pressure)</li>
-            <li>Cementation: precipitation of minerals into the pore space of sediment; commonly quartz (silicate) or calcite (calcium carbonate)</li>
+            <li>
+              Cementation: precipitation of minerals into the pore space of sediment; commonly quartz (silicate) or
+              calcite (calcium carbonate)
+            </li>
           </ul>
 
           <h3>Classification of Sedimentary Rocks Part 1: Terrigenous/Siliciclastic Rocks</h3>
@@ -50,7 +76,10 @@ const November = () => {
             <li>Use ternary diagrams to classifiy rocks based on mix of grain sizes</li>
             <li>Rock makeup: grain (framework), matrix, cement (pore space)</li>
             <li>Lithification: cementation + compaction</li>
-            <li>Sandstone: framework (sand-sized grains - quartz/feldspar, or lithic fragments) + matrix (in different proportions)</li>
+            <li>
+              Sandstone: framework (sand-sized grains - quartz/feldspar, or lithic fragments) + matrix (in different
+              proportions)
+            </li>
             <li>Use quartenary diagrma to determine type of sandstone</li>
             <li>Conglomerates: at least 30% gravel</li>
             <li>Breccia has more angular grains (clasts) than typical conglomerates; clast-supported</li>
@@ -58,66 +87,109 @@ const November = () => {
             <li>Diamictite: (muddy) matrix-supported and poorly sorted grains</li>
             <li>Classification usually dictated by lithic fragment types: sedimentary, igneous or metamorphic</li>
             <li>More stable when stable clasts</li>
-            <li>Mudstones/shales: 50% all sandstones (occurring in low energy environments e.g. lake or ocean depths)</li>
+            <li>
+              Mudstones/shales: 50% all sandstones (occurring in low energy environments e.g. lake or ocean depths)
+            </li>
           </ul>
 
           <h3>Classification of Sedimentary Rocks Part 2: Biogenic Rocks</h3>
 
-          <li>Most common are carbonate rocks (limestone) in two polymorphs, calcite (most common over time) and aragonite (most common now); this depends on the Mg/Ca ratio of seawater</li>
-          <li>Carbonate sediment is derived from biological organisms (with some rounding and sorting during transport)</li>
+          <li>
+            Most common are carbonate rocks (limestone) in two polymorphs, calcite (most common over time) and aragonite
+            (most common now); this depends on the Mg/Ca ratio of seawater
+          </li>
+          <li>
+            Carbonate sediment is derived from biological organisms (with some rounding and sorting during transport)
+          </li>
           <li>Grains come in all shapes and sizes</li>
           <li>Mostly commonly formed from skeletal fragements (fossils)</li>
         </div>
 
         <div class={styles.day}>
           <span class={styles.date}>Thursday 02 November 2023</span>
-        <h3>Pinheiros</h3>
+          <h3>Pinheiros</h3>
 
-        <Links.EL link={{source:'https://florestas.pt/conhecer/pinheiro-bravo-a-conifera-mais-abundante-em-portugal/'}}>Florestas: Pinheiro-bravo</Links.EL>
+          <Links.EL
+            link={{ source: 'https://florestas.pt/conhecer/pinheiro-bravo-a-conifera-mais-abundante-em-portugal/' }}
+          >
+            Florestas: Pinheiro-bravo
+          </Links.EL>
 
-        <ul>
-          <li>Lifespan up to 200 years</li>
-          <li>Height to 30m (exceptional 40)</li>
-          <li>Prefers silaceous soils, adaptable but cannot tolerate high levels of salt or calcium</li>          
-          <li>Pioneer species widely planted to prevent soil erosion on the coasts and on wastlands</li>
-          <li>Common in the Setúbal area</li>
-          <li>Used by local people for firewood, lighting fires and bedding for animals</li>
-          <li>Resin sold as an income</li>
-          <li>Numbers have dimished (from 40 to 25% of trees) due to replacement, urbanisation and fires.</li>
-          <li>Industrial uses include ship building, construction, and packaging</li>
-        </ul>
+          <ul>
+            <li>Lifespan up to 200 years</li>
+            <li>Height to 30m (exceptional 40)</li>
+            <li>Prefers silaceous soils, adaptable but cannot tolerate high levels of salt or calcium</li>
+            <li>Pioneer species widely planted to prevent soil erosion on the coasts and on wastlands</li>
+            <li>Common in the Setúbal area</li>
+            <li>Used by local people for firewood, lighting fires and bedding for animals</li>
+            <li>Resin sold as an income</li>
+            <li>Numbers have dimished (from 40 to 25% of trees) due to replacement, urbanisation and fires.</li>
+            <li>Industrial uses include ship building, construction, and packaging</li>
+          </ul>
 
-        <Links.EL link={{source:'https://florestas.pt/conhecer/pinheiro-manso-a-especie-pioneira-que-lembra-um-guarda-sol/'}}>Florestas: Pinheiro-manso</Links.EL>
+          <Links.EL
+            link={{
+              source: 'https://florestas.pt/conhecer/pinheiro-manso-a-especie-pioneira-que-lembra-um-guarda-sol/',
+            }}
+          >
+            Florestas: Pinheiro-manso
+          </Links.EL>
 
-        <ul>
-          <li>Except for on the Iberrian, found on the coast</li>
-          <li>Pionner species able to adapt to poor, marginal soils and where desertification occurs (where it is planted to comabt this)</li>
-          <li>Xerophytic, thermophilic and very heliophytic</li>
-          <li>Prefers loose sands and podzols; sensitive to poorly drained and calcareous soils</li>
-          <li>Plays an important role in protecting soils from erosion, fixing coastal dunes and enriching poor, marginal and desertified land, where it helps to establish conditions for the reappearance of more demanding species such as the cork oak or holm oak.</li>
-          <li>Height to 20m (exceptional 25-30)</li>
-          <li>Stone pine have male flowers, the catkins, and female flowers, the strobiles, a characteristic that includes it in the group of monoecious species.</li>
-          <li>With both male and female flowers, the stone pine benefits from cross-pollination by the wind, although the fertilisation process takes a long time. It takes three years for the pine cone to form and mature.</li>
-          <li>Stone pines start producing pine cones at around 8 to 10 years of age, but its maturation cycle and the small initial quantity means that it is only between 15 and 20 years of age that the quantity of pine cones produced justifies commercial interest in harvesting. The quantity of pine cones increases as the tree ages.</li>
-        </ul>
+          <ul>
+            <li>Except for on the Iberrian, found on the coast</li>
+            <li>
+              Pionner species able to adapt to poor, marginal soils and where desertification occurs (where it is
+              planted to comabt this)
+            </li>
+            <li>Xerophytic, thermophilic and very heliophytic</li>
+            <li>Prefers loose sands and podzols; sensitive to poorly drained and calcareous soils</li>
+            <li>
+              Plays an important role in protecting soils from erosion, fixing coastal dunes and enriching poor,
+              marginal and desertified land, where it helps to establish conditions for the reappearance of more
+              demanding species such as the cork oak or holm oak.
+            </li>
+            <li>Height to 20m (exceptional 25-30)</li>
+            <li>
+              Stone pine have male flowers, the catkins, and female flowers, the strobiles, a characteristic that
+              includes it in the group of monoecious species.
+            </li>
+            <li>
+              With both male and female flowers, the stone pine benefits from cross-pollination by the wind, although
+              the fertilisation process takes a long time. It takes three years for the pine cone to form and mature.
+            </li>
+            <li>
+              Stone pines start producing pine cones at around 8 to 10 years of age, but its maturation cycle and the
+              small initial quantity means that it is only between 15 and 20 years of age that the quantity of pine
+              cones produced justifies commercial interest in harvesting. The quantity of pine cones increases as the
+              tree ages.
+            </li>
+          </ul>
         </div>
 
         <div class={styles.day}>
           <span class={styles.date}>Friday 03 November 2023</span>
 
-          <Links.EL link={{source:'https://dwc.tdwg.org/terms/'}}>Darwin Core Quick Reference Guide</Links.EL>
+          <Links.EL link={{ source: 'https://dwc.tdwg.org/terms/' }}>Darwin Core Quick Reference Guide</Links.EL>
 
           <h3>Existing apps and tools</h3>
-          
+
           <ul>
             <li>
-              <Links.EL link={{source:'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6711348/figure/aps311284-fig-0001/'}}>The collBook user interface</Links.EL>
+              <Links.EL
+                link={{ source: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6711348/figure/aps311284-fig-0001/' }}
+              >
+                The collBook user interface
+              </Links.EL>
             </li>
             <li>
-              <Links.EL link={{source:'https://oit.williams.edu/about/ats/project-group/digital-field-notebooks/'}}>Digital Field Notebooks (from 2014: no longer supported)</Links.EL>
+              <Links.EL link={{ source: 'https://oit.williams.edu/about/ats/project-group/digital-field-notebooks/' }}>
+                Digital Field Notebooks (from 2014: no longer supported)
+              </Links.EL>
             </li>
             <li>
-              <Links.EL link={{source:'https://www.mobot.org/mobot/molib/fieldtechbook/pdf/handbook.pdf'}}>Field Techniques Used by Missouri Botanical Garden</Links.EL>
+              <Links.EL link={{ source: 'https://www.mobot.org/mobot/molib/fieldtechbook/pdf/handbook.pdf' }}>
+                Field Techniques Used by Missouri Botanical Garden
+              </Links.EL>
 
               <blockquote>
                 <strong>Field data should contain the following information at a minimum:</strong>
@@ -125,9 +197,14 @@ const November = () => {
                 <div>Locality Data:</div>
                 <ul>
                   <li>Country: State, province or county. </li>
-                  <li>Distance and direction (km or mi, N-S-E-W not "from", or "near") from nearest city or major landmark that would appear on a map (smaller geographical localities are not on most maps). </li>
+                  <li>
+                    Distance and direction (km or mi, N-S-E-W not "from", or "near") from nearest city or major landmark
+                    that would appear on a map (smaller geographical localities are not on most maps).{' '}
+                  </li>
                   <li>Habitat or vegetation type. Dominant, typical, or associated species if possible.</li>
-                  <li>Note if plants were preserved in alcohol, or received any other chemical treatment before drying.</li>
+                  <li>
+                    Note if plants were preserved in alcohol, or received any other chemical treatment before drying.
+                  </li>
                   <li>Latitude/Longitude and/or Township/Range; altitude (m or ft); GPS reading if available.</li>
                   <li> Date.</li>
                   <li>Collector(s).</li>
@@ -137,30 +214,39 @@ const November = () => {
 
                 <ul>
                   <li>FAMILY (capitalized).</li>
-                  <li>Genus species Author (Leave space if unidentified, and for future changes); det. by:
+                  <li>
+                    Genus species Author (Leave space if unidentified, and for future changes); det. by:
                     <ul>
-                      <li>Tree, shrub, liana, vine, etc. Flower and/or fruit color, scent, height, and unusual features, such as shaggy bark, buttressed trunk, colored sap, any attribute which cannot be obtained from the prepared specimen.</li>
-                      <li>More specific notes on locality and habitat (near stream, on rock, in water, etc. [information that is specific to this number]).</li>
+                      <li>
+                        Tree, shrub, liana, vine, etc. Flower and/or fruit color, scent, height, and unusual features,
+                        such as shaggy bark, buttressed trunk, colored sap, any attribute which cannot be obtained from
+                        the prepared specimen.
+                      </li>
+                      <li>
+                        More specific notes on locality and habitat (near stream, on rock, in water, etc. [information
+                        that is specific to this number]).
+                      </li>
                     </ul>
                   </li>
                 </ul>
 
-                <div>Marginal Notes for Each Collection: (<em>not summarised here</em>)</div>                
+                <div>
+                  Marginal Notes for Each Collection: (<em>not summarised here</em>)
+                </div>
               </blockquote>
             </li>
           </ul>
-        </div>        
-
+        </div>
       </section>
 
       <Links.RelatedLinks
-            links={[
-              { value: 'ltp/notes/2023/october', text: 'October' },
-              { value: 'ltp/notes/2023/september', text: 'September' },
-              { value: 'ltp/notes/2023/august', text: 'August' },            
-              { value: 'ltp/notes/2023/july', text: 'July' },       
-            ]}
-        ></Links.RelatedLinks>
+        links={[
+          { value: 'ltp/notes/2023/october', text: 'October' },
+          { value: 'ltp/notes/2023/september', text: 'September' },
+          { value: 'ltp/notes/2023/august', text: 'August' },
+          { value: 'ltp/notes/2023/july', text: 'July' },
+        ]}
+      ></Links.RelatedLinks>
     </Layout>
   )
 }

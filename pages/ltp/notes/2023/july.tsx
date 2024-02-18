@@ -12,21 +12,35 @@ const July = () => {
     >
       <section>
         <div class={styles.day}>
-          <span class={styles.date}>Tuesday 25 July 2023</span>        
-
+          <span class={styles.date}>Tuesday 25 July 2023</span>
           <h3>Borrowed concepts</h3>
-
           <ul>
-            <li><dfn><Links.EL link={{source:'https://en.wikipedia.org/wiki/Biome', label:'Biome'}}>Biome</Links.EL></dfn>: a biogeographical unit consisting of a biological community that has formed in response to the physical environment</li>
             <li>
-              <dfn><Links.EL link={{source:'https://en.wikipedia.org/wiki/Climate', label:'Climate'}}>Climate</Links.EL></dfn>: the long-term weather pattern in a region, typically averaged over 30 years. More rigorously, it is the mean and variability of meteorological variables over a time spanning from months to millions of years.
+              <dfn>
+                <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Biome', label: 'Biome' }}>Biome</Links.EL>
+              </dfn>
+              : a biogeographical unit consisting of a biological community that has formed in response to the physical
+              environment
+            </li>
+            <li>
+              <dfn>
+                <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Climate', label: 'Climate' }}>
+                  Climate
+                </Links.EL>
+              </dfn>
+              : the long-term weather pattern in a region, typically averaged over 30 years. More rigorously, it is the
+              mean and variability of meteorological variables over a time spanning from months to millions of years.
               meteorological variables
               <ul>
-                <li><strong>temperature</strong></li>
+                <li>
+                  <strong>temperature</strong>
+                </li>
                 <li>humidity</li>
                 <li>atmospheric pressure</li>
                 <li>wind</li>
-                <li><strong>precipitation</strong></li>
+                <li>
+                  <strong>precipitation</strong>
+                </li>
               </ul>
               climate system
               <ul>
@@ -34,28 +48,44 @@ const July = () => {
                 <li>hydrosphere</li>
                 <li>cryosphere</li>
                 <li>lithosphere</li>
-                <li><strong>biosphere</strong></li>
+                <li>
+                  <strong>biosphere</strong>
+                </li>
               </ul>
             </li>
           </ul>
-
           <h4>The Genesis Project</h4>
-
-          The <Links.EL link={{source:'https://link.springer.com/article/10.1007/s10509-016-2911-0', label:'The Genesis project'}}>Genesis project</Links.EL> consists of three steps.
+          The{' '}
+          <Links.EL
+            link={{
+              source: 'https://link.springer.com/article/10.1007/s10509-016-2911-0',
+              label: 'The Genesis project',
+            }}
+          >
+            Genesis project
+          </Links.EL>{' '}
+          consists of three steps.
           <ul>
             <li>Searching for transiently habitable planets.</li>
             <li>Sending interstellar robotic crafts for detailed investigations.</li>
             <li>Seeding the candidate planet with in situ synthesized lifeforms.</li>
           </ul>
-
           <h4>World building</h4>
-
-          <Links.EL link={{source:'https://worldbuilding.stackexchange.com/questions/6867/how-long-would-it-take-to-terraform-a-lifeless-but-somewhat-earthlike-planet-usi', label:'Worldbuilding'}}>Worldbuilding</Links.EL>  on stack exchange 
-
-
+          <Links.EL
+            link={{
+              source:
+                'https://worldbuilding.stackexchange.com/questions/6867/how-long-would-it-take-to-terraform-a-lifeless-but-somewhat-earthlike-planet-usi',
+              label: 'Worldbuilding',
+            }}
+          >
+            Worldbuilding
+          </Links.EL>{' '}
+          on stack exchange
           <h4>Terraforming</h4>
-
-          <Links.EL link={{source:'https://en.wikipedia.org/wiki/Terraforming', label:'Terraforming'}}>Terraforming</Links.EL> habitability requirements
+          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Terraforming', label: 'Terraforming' }}>
+            Terraforming
+          </Links.EL>{' '}
+          habitability requirements
           <ul>
             <li>Temperature</li>
             <li>Water</li>
@@ -66,26 +96,27 @@ const July = () => {
 
         <div class={styles.day}>
           <span class={styles.date}>Thursday 27 July 2023</span>
-
           <h3>Motivation</h3>
-
           Pros
           <ul>
             <li>Familiarity in environment e.g. when hiking better able to see/perceive what is there</li>
             <li>Sense of greater awareness and acuity (visual and to a lesser extent, auditory)</li>
             <li>Some kind of 'deeper' (atavistic) knowledge, or satisfaction/relief</li>
             <li>Record of observations (iNaturalist) shows progress, expresses knowledge</li>
-            <li>Context: knowledge has meaning in place; knowledge in situ equates to control/power/meaning/security/comfort</li>            
+            <li>
+              Context: knowledge has meaning in place; knowledge in situ equates to
+              control/power/meaning/security/comfort
+            </li>
           </ul>
-
           Cons
           <ul>
             <li>Context: mismatch between knowledge and needs when needs satisified by global supply chains</li>
             <li>Frustration: knowledge has little or no purpose day to day (and for essentials of life)</li>
             <li>Unease: species that are of daily use are often non-native</li>
-            <li>Powerless: little or no control over necessities of daily life; which may be fine until things go wrong</li>
+            <li>
+              Powerless: little or no control over necessities of daily life; which may be fine until things go wrong
+            </li>
           </ul>
-
           Domain
           <ul>
             <li>
@@ -101,13 +132,29 @@ const July = () => {
               </ul>
             </li>
           </ul>
-
           Origin in food
           <ul>
-            <li><Links.EL link={{source:'https://royalsocietypublishing.org/doi/10.1098/rspb.2016.0792', label:'Origins of food crops connect countries worldwide'}}>Origins of food crops connect countries worldwide | The Royal Society</Links.EL> </li>
-            <li><Links.EL link={{source:'https://www.glotechrepairs.co.uk/news/the-uks-top-food-imports-and-where-they-come-from/', label:'The UK’s Top Food Imports And Where They Come From'}}>The UK’s Top Food Imports And Where They Come From</Links.EL> </li>
+            <li>
+              <Links.EL
+                link={{
+                  source: 'https://royalsocietypublishing.org/doi/10.1098/rspb.2016.0792',
+                  label: 'Origins of food crops connect countries worldwide',
+                }}
+              >
+                Origins of food crops connect countries worldwide | The Royal Society
+              </Links.EL>{' '}
+            </li>
+            <li>
+              <Links.EL
+                link={{
+                  source: 'https://www.glotechrepairs.co.uk/news/the-uks-top-food-imports-and-where-they-come-from/',
+                  label: 'The UK’s Top Food Imports And Where They Come From',
+                }}
+              >
+                The UK’s Top Food Imports And Where They Come From
+              </Links.EL>{' '}
+            </li>
           </ul>
-
           Starting position
           <ul>
             <li>
@@ -121,11 +168,12 @@ const July = () => {
                 <li>Request species/observations</li>
                 <li>Compare observed species with supported species; determine what options are available</li>
                 <li>Basic test limited to name, common name, visual identification</li>
-                <li>Possible additional tests for commonality (#observations), the parent group (?) and location (atlas)</li>
+                <li>
+                  Possible additional tests for commonality (#observations), the parent group (?) and location (atlas)
+                </li>
               </ul>
             </li>
           </ul>
-
           Filter options for iNaturalist request
           <ul>
             <li>Number of items</li>
@@ -135,7 +183,6 @@ const July = () => {
             <li>Optional incorrect answers</li>
             <li>User feedback: tag poor images</li>
           </ul>
-
           Filter options for iNaturalist response
           <ul>
             <li>Number of items</li>
@@ -143,53 +190,76 @@ const July = () => {
             <li>Taxa</li>
             <li>Union (with LTP species)</li>
           </ul>
+        </div>
 
-          </div>
-
-          <div class={styles.day}>
+        <div class={styles.day}>
           <span class={styles.date}>Friday 28 July 2023</span>
-
           Research
           <ul>
-            <li><Links.EL link={{source:'https://ebird.org/quiz/', label:'eBird Photo + Sound Quiz'}}>eBird Photo + Sound Quiz</Links.EL></li>
-            <li><Links.EL link={{source:'https://app.memrise.com/course/160/trees-of-britain-leaves/', label:'Trees of Britain ~ Leaves'}}>Trees of Britain ~ Leaves | memrise</Links.EL></li>
-            <li><Links.EL link={{source:'https://forum.inaturalist.org/t/quiz-game-development-opportunity/6822', label:'Quiz Game Development Opportunity'}}>Quiz Game Development Opportunity | iNat forum</Links.EL></li>
+            <li>
+              <Links.EL link={{ source: 'https://ebird.org/quiz/', label: 'eBird Photo + Sound Quiz' }}>
+                eBird Photo + Sound Quiz
+              </Links.EL>
+            </li>
+            <li>
+              <Links.EL
+                link={{
+                  source: 'https://app.memrise.com/course/160/trees-of-britain-leaves/',
+                  label: 'Trees of Britain ~ Leaves',
+                }}
+              >
+                Trees of Britain ~ Leaves | memrise
+              </Links.EL>
+            </li>
+            <li>
+              <Links.EL
+                link={{
+                  source: 'https://forum.inaturalist.org/t/quiz-game-development-opportunity/6822',
+                  label: 'Quiz Game Development Opportunity',
+                }}
+              >
+                Quiz Game Development Opportunity | iNat forum
+              </Links.EL>
+            </li>
           </ul>
-          </div>
+        </div>
 
-          <div class={styles.day}>
-            <span class={styles.date}>Saturday 29 July 2023</span>
+        <div class={styles.day}>
+          <span class={styles.date}>Saturday 29 July 2023</span>
+          Objectives
+          <ul>
+            <li>
+              <strong>Mark start of phase</strong>
+            </li>
+            <li>Basic version using raw iNat data</li>
+            <li>Create standard, universal, calls and arguments</li>
+            <li>Ask for feedback based on this UI</li>
+            <li>
+              <strong>Mark end of phase</strong>
+            </li>
+          </ul>
+        </div>
 
-            Objectives
-            <ul>
-              <li><strong>Mark start of phase</strong></li>
-              <li>Basic version using raw iNat data</li>
-              <li>Create standard, universal, calls and arguments</li>
-              <li>Ask for feedback based on this UI</li>
-              <li><strong>Mark end of phase</strong></li>
-            </ul>
-          </div>
-
-          <div class={styles.day}>
-            <span class={styles.date}>Sunday 30 July 2023</span>
-
-            Objectives continued…
-            <ul>
-              <li>Least number of clicks or keyboard shortcuts to acheive aim cf. <em>The Verb</em></li>
-              <li>Trial different UIs</li>
-              <li>Vanilla JS?</li>
-            </ul>
-          </div>        
-        
+        <div class={styles.day}>
+          <span class={styles.date}>Sunday 30 July 2023</span>
+          Objectives continued…
+          <ul>
+            <li>
+              Least number of clicks or keyboard shortcuts to acheive aim cf. <em>The Verb</em>
+            </li>
+            <li>Trial different UIs</li>
+            <li>Vanilla JS?</li>
+          </ul>
+        </div>
       </section>
 
       <Links.RelatedLinks
-            links={[
-            { value: 'ltp/notes/2023/october', text: 'October' },            
-            { value: 'ltp/notes/2023/september', text: 'September' },            
-            { value: 'ltp/notes/2023/august', text: 'August' },
-            ]}
-        ></Links.RelatedLinks>
+        links={[
+          { value: 'ltp/notes/2023/october', text: 'October' },
+          { value: 'ltp/notes/2023/september', text: 'September' },
+          { value: 'ltp/notes/2023/august', text: 'August' },
+        ]}
+      ></Links.RelatedLinks>
     </Layout>
   )
 }
