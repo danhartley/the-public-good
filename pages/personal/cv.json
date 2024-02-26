@@ -13,7 +13,7 @@
             },
             "languages": [ "HTML", "JS", "CSS" ],
             "technologies": [ "Vanilla JS", "Firebase" ],
-            "roles": [ "frontend developer, designer, product owner" ],
+            "roles": [ "frontend developer", "designer", "product owner" ],
             "blurb": "Digital wildlife fieldnotes."
         },
         {
@@ -30,8 +30,8 @@
             },
             "languages": [ "HTML", "TS", "CSS" ],
             "technologies": [ "Vue", "Vite", "Pinia", "Vuex", "vee-validate", "vue/test-utils", "vitest/ui", "Storybook", "MSW", "Typescript", "Cypress", "Jest", "GitLab", "GitHub", "Pug", "handlebars", "lodash" ],
-            "roles": [ "frontend developer" ],
-            "blurb": "Building tools for companies to measure and evaluate the carbon emissions of their products and in their supply chains. \n \n Pushed for introduction of client-side testing, introduced MSW for proxy data\n \n Helped with move from JS to TS"
+            "roles": [ "senior frontend developer" ],
+            "blurb": "Building tools for companies to measure and evaluate the carbon emissions of their products and in their supply chains.\n \nPushed for introduction of client-side testing, introduced MSW for proxy data\n \nHelped with move from JS to TS."
         },
         {
             "name": "RTW & TPG",
@@ -92,7 +92,8 @@
                 }
             ],
             "dates": {
-                "start": "2013-04-01"
+                "start": "2013-04-01",
+                "end": "2022-05-31"
             },
             "languages": [ "HTML", "JS", "CSS" ],
             "technologies": [ "Jamstack", "Preact", "TypeScript", "Node JS", "Sass", "Next.js", "Netlify", "GitHub", "Jest", "webpack", "Bootstrap", "Material Design", "Netlify CMS", "Fauna", "GraphQL", "Enzyme", "Redux", "Functional JS", "Modern ES", "CSS Grid", "CSS Flexbox", "Sentry", "Google Cloud Platform", "Google Cloud Firestore", "MongoDB", "Formik", "Downshift" ],
