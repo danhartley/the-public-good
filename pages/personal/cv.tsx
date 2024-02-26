@@ -8,7 +8,7 @@ import data from 'pages/personal/cv.json'
 import styles from 'components/dashboard/Dashboard.module.scss'
 import funcs from 'components/functions/functions'
 
-const now = 2022
+const now = 2024
 
 // https://venngage.com/blog/color-blind-friendly-palette/
 const zesty = ['#F5793A', '#A95AA1', '#85C0F9', '#0F2080']

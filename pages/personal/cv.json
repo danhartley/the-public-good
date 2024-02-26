@@ -1,6 +1,39 @@
 {
     "companies": [
         {
+            "name": "The Public Good",
+            "projects": [
+              {
+                  "title": "iFieldnotes",
+                  "src": "https://ifieldnotes.org/"
+              }
+          ],
+            "dates": {
+                "start": "2022-07-01"
+            },
+            "languages": [ "HTML", "JS", "CSS" ],
+            "technologies": [ "Vanilla JS", "Firebase" ],
+            "roles": [ "frontend developer, designer, product owner" ],
+            "blurb": "Digital wildlife fieldnotes."
+        },
+        {
+            "name": "Altruistiq",
+            "projects": [
+              {
+                  "title": "Altruistiq",
+                  "src": "https://www.altruistiq.com/"
+              }
+          ],
+            "dates": {
+                "start": "2022-06-05"
+                , "end": "2023-06-30"
+            },
+            "languages": [ "HTML", "TS", "CSS" ],
+            "technologies": [ "Vue", "Typescript", "Cypress", "Jest", "GitHub" ],
+            "roles": [ "frontend developer" ],
+            "blurb": "Building tools for companies to measure and evaluate the carbon emissions of their products and in their supply chains."
+        },
+        {
             "name": "RTW & TPG",
             "projects": [
               {
@@ -337,7 +370,8 @@
                 },
                 {
                     "name": "Trello",
-                    "start": "2021-08-01"
+                    "start": "2021-08-01",
+                    "end": "2022-06-01"
                 },
                 {
                     "name": "Cucumber",
@@ -365,7 +399,12 @@
                 },
                 {
                     "name": "webpack",
-                    "start": "2017-04-01"
+                    "start": "2017-04-01",
+                    "end": "2022-06-01"
+                },
+                {
+                    "name": "Parcel",
+                    "start": "2021-09-01"
                 },
                 {
                     "name": "Jasmine",
@@ -384,7 +423,8 @@
                 },
                 {
                     "name": "Sentry Logging",
-                    "start": "2015-01-01"
+                    "start": "2015-01-01",
+                    "end": "2023-07-01"
                 },
                 {
                     "name": "Git",
@@ -401,11 +441,13 @@
                 },
                 {
                     "name": "GitLab",
-                    "start": "2021-09-01"
+                    "start": "2021-09-01",
+                    "end": "2022-06-01"
                 },
                 {
                     "name": "Testing Library",
-                    "start": "2020-04-01"
+                    "start": "2020-04-01",
+                    "end": "2022-06-01"
                 }
             ]
         },
@@ -414,7 +456,8 @@
             "set": [
                 {
                     "name": "Preact",
-                    "start": "2020-09-01"
+                    "start": "2020-09-01",
+                    "end": "2022-06-01"
                 },
                 {
                     "name": "HTML (JS) (CSS)",
@@ -437,15 +480,23 @@
                 },
                 {
                     "name": "React",
-                    "start": "2020-09-01"
+                    "start": "2020-09-01",
+                    "end": "2022-06-01"
+                },
+                {
+                    "name": "Vue",
+                    "start": "2022-06-01",
+                    "end": "2023-07-01"
                 },
                 {
                     "name": "Jekyll",
-                    "start": "2021-09-01"
+                    "start": "2021-09-01",
+                    "end": "2021-12-01"
                 },
                 {
                     "name": "Next.js",
-                    "start": "2019-09-01"
+                    "start": "2019-09-01",
+                    "end": "2022-06-01"
                 },
                 {
                     "name": "Less",
@@ -454,7 +505,8 @@
                 },
                 {
                     "name": "SCSS",
-                    "start": "2017-05-01"
+                    "start": "2017-05-01",
+                    "end": "2022-06-01"
                 },
                 {
                     "name": "jQuery",
@@ -483,23 +535,28 @@
                 },
                 {
                     "name": "Chart.js",
-                    "start": "2021-09-01"
+                    "start": "2021-09-01",
+                    "end": "2022-02-01"
                 }, 
                 {
                     "name": "React Query",
-                    "start": "2022-04-01"
+                    "start": "2022-04-01",
+                    "end": "2022-12-01"
                 },    
                 {
                     "name": "Tailwind CSS",
-                    "start": "2022-04-01"
+                    "start": "2022-04-01",
+                    "end": "2022-12-01"
                 },
                 {
                     "name": "Mock Service Workers (MSW)",
-                    "start": "2022-04-01"
+                    "start": "2022-04-01",
+                    "end": "2023-07-01"
                 },
                 {
                     "name": "json-server",
-                    "start": "2022-04-01"
+                    "start": "2022-04-01",
+                    "end": "2023-07-01"
                 }
             ]
         }
