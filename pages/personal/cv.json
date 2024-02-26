@@ -1,7 +1,7 @@
 {
     "companies": [
         {
-            "name": "The Public Good",
+            "name": "Venga Vamos",
             "projects": [
               {
                   "title": "iFieldnotes",
@@ -29,9 +29,9 @@
                 , "end": "2023-06-30"
             },
             "languages": [ "HTML", "TS", "CSS" ],
-            "technologies": [ "Vue", "Typescript", "Cypress", "Jest", "GitHub" ],
+            "technologies": [ "Vue", "Vite", "Pinia", "Vuex", "vee-validate", "vue/test-utils", "vitest/ui", "Storybook", "MSW", "Typescript", "Cypress", "Jest", "GitLab", "GitHub", "Pug", "handlebars", "lodash" ],
             "roles": [ "frontend developer" ],
-            "blurb": "Building tools for companies to measure and evaluate the carbon emissions of their products and in their supply chains."
+            "blurb": "Building tools for companies to measure and evaluate the carbon emissions of their products and in their supply chains. \n \n Pushed for introduction of client-side testing, introduced MSW for proxy data\n \n Helped with move from JS to TS"
         },
         {
             "name": "RTW & TPG",
@@ -448,6 +448,31 @@
                     "name": "Testing Library",
                     "start": "2020-04-01",
                     "end": "2022-06-01"
+                },
+                {
+                    "name": "vee-validate",
+                    "start": "2022-06-01",
+                    "end": "2023-07-01"
+                },
+                {
+                    "name": "vitest/ui",
+                    "start": "2022-06-01",
+                    "end": "2023-07-01"
+                },
+                {
+                    "name": "vue/test-utils",
+                    "start": "2022-06-01",
+                    "end": "2023-07-01"
+                },
+                {
+                    "name": "Mock Service Workers (MSW)",
+                    "start": "2022-04-01",
+                    "end": "2023-07-01"
+                },
+                {
+                    "name": "json-server",
+                    "start": "2022-04-01",
+                    "end": "2023-07-01"
                 }
             ]
         },
@@ -485,6 +510,21 @@
                 },
                 {
                     "name": "Vue",
+                    "start": "2022-06-01",
+                    "end": "2023-07-01"
+                },
+                {
+                    "name": "Vite",
+                    "start": "2022-06-01",
+                    "end": "2023-07-01"
+                },
+                {
+                    "name": "Pinia",
+                    "start": "2022-06-01",
+                    "end": "2023-07-01"
+                },
+                {
+                    "name": "Vuex",
                     "start": "2022-06-01",
                     "end": "2023-07-01"
                 },
@@ -547,16 +587,6 @@
                     "name": "Tailwind CSS",
                     "start": "2022-04-01",
                     "end": "2022-12-01"
-                },
-                {
-                    "name": "Mock Service Workers (MSW)",
-                    "start": "2022-04-01",
-                    "end": "2023-07-01"
-                },
-                {
-                    "name": "json-server",
-                    "start": "2022-04-01",
-                    "end": "2023-07-01"
                 }
             ]
         }
