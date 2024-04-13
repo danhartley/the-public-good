@@ -18,19 +18,21 @@ const OnProgramming = () => {
       </section>
 
       <section>
-        <p>Can we take satisfaction from creating when the object on which we work is never complete? Some web developers - designers and programmers - talk about the craft involved in assembling the raw materials of the web - HTML, JavaScript and CSS - or they used to; their numbers are dwindling. Websites are updated, refreshed or simply torn down and their earlier incarnations lost; there are relics of the past if you look - or time travel - but they are curiosities of little value, no longer able, or allowed, to satisfy their function.</p>
+        <p>Can we take satisfaction from creating when the object on which we work is never complete? Some web developers - designers and programmers - talk about the craft involved in assembling the raw materials of the web - HTML, JavaScript and CSS - or they used to; their numbers are dwindling.</p>
+        <p>Websites are updated, refreshed or simply torn down and their earlier incarnations lost; there are relics of the past if you look - or time travel - but they are curiosities of little value, no longer able, or allowed, to satisfy their function.</p>
         <p>Web development was not naive and fun for long, it was quickly drawn into the maw of company thinking, succumbing to mechanised accounting and the creation of roles designed to make processes more efficient but which constrained imagination, collaboration and excellence; the result is mediocre uniformity.</p>
       </section>
 
       <section>
         <p>Web developers have gorged themselves on libraries, frameworks and a multitude of tools and techniques for limiting their thinking and for controlling their environment; in the pursuit of perfection, they have ceded interest and influence over what it is they are making.</p>
         <p>The next revolution in web development - the first since it began, the rest was activity not change - will be under the aegis of AI. I cannot imagine the machines will tolerate for long the thousand and one elaborate solutions we have devised for simple problems. I would like to think that the core of the Internet - HTML, JavaScript and CSS - will persist as the target for their work.</p>
-        <p>But I suspect data and design will be wrapped up and presented on demand on the device and format of the user’s choosing - or to meet the preferences of the user’s avatar.</p>
+        <p>But I suspect data and design will be wrapped up and presented on demand for the device and in a format of the user’s choosing - or to meet the preferences of the user’s avatar.</p>
       </section>
 
       <section>
-        <p>What does a programmer who builds websites and apps call themselves? I’ve gone by multiple names over the years but the one I favoured was web developer. Carpenters never faced this problem. The make of lathe or saw did not, and does not, determine their competency.</p>
-        <p>My most recent site I built in the triumvirate of web technologies, those old war horses which once cantered beneath the surface of the web but now too often trudge beneath their burden of superfluity. It brought me a strange joy; part discovery and part nostalgia. I can remember when they first came into being, and can foresee their death.</p>
+        <p>What does a programmer who builds websites and apps call themselves?</p>
+        <p>I’ve gone by multiple names over the years but the one I favoured was web developer. Carpenters never faced this problem. The make of lathe or saw did not, and does not, determine their competency.</p>
+        <p>My most recent site I built using the triumvirate of web technologies, those old war horses which once cantered beneath the surface of the web but now too often trudge beneath their burden of superfluity. It brought me a strange joy; part discovery and part nostalgia. I can remember when they first came into being, and can foresee their death.</p>
         <p>If you have never worked unassisted by a framework or library, I encourage you to give it a go, you might wonder why you permit other’s code to stand between you and what you want to make; React, Vue, etc. offer you control while they take away your authority, your authorship.</p>
       </section>
     </Layout>
