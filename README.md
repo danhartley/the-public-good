@@ -18,3 +18,7 @@ npm run prettier-format
 ## Deploy
 
 https://app.netlify.com/sites/the-public-good/overview
+
+### Current fix for local
+
+Run `export NODE_OPTIONS=--openssl-legacy-provider` at the command line
