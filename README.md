@@ -19,6 +19,13 @@ npm run prettier-format
 
 https://app.netlify.com/sites/the-public-good/overview
 
-### Current fix for local
+## To manage different versions of node
 
-Run `export NODE_OPTIONS=--openssl-legacy-provider` at the command line
+See https://www.digitalocean.com/community/tutorials/nodejs-node-version-manager
+
+### To run project locally
+
+1. For this project: nvm use lts/dubnium
+To switch back to the default: nvm use default
+2. Delete .next folder and rebuild project (success)
+
