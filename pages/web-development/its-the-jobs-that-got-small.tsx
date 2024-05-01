@@ -1,16 +1,7 @@
-import Link from 'next/link'
 import Links from 'components/links/Links'
 import Layout from 'components/layout/layout'
-import styles from 'pages/pages.module.scss'
 
 const Itsthejobsthatgotsmall = () => {
-  const externalLinks = [
-    {
-      name: 'Norma Desmond in Sunset Boulevard | `I Am Big, It\'s the Pictures That Got Small`',
-      source: 'https://www.youtube.com/watch?v=UvD-F5hqLU8',
-    },
-  ]
-
   return (
     <Layout header="It's the jobs that got small" title="It's the jobs that got small" description={'It\'s the jobs that got small'}>
       <section>
@@ -36,33 +27,10 @@ const Itsthejobsthatgotsmall = () => {
           <li>Releasing code</li>
           <li>Pausing and reflecting</li>
         </ul>
-        <p>I'm going to talk about long meetings first because while I think they are a good thing this is not a truth universally acknowledged. I'll return to the other items in later posts.</p>
-        <h2>Long meetings</h2>
-        <p>A long meeting should last at least two hours.</p>
-        <p>I've been holding meetings like this with colleagues for about four years. In the beginning, we didn't know long meetings were going to be productive; the meetings were long because we caught up once a week and had a lot to get through.</p>
-        <p>After a while we realised our meetings fitted a pattern. We had plenty to say but because we weren't rushed we spoke in turn and listened.</p>
-        <p>After an hour or so, we'd established the current state of the project, and we had a good idea of what our colleagues were thinking.</p>
-        <p>After an hour and a half we began to think as one, no longer concerned - if we could remember - as to who had thought of what. We became impartial, or partial only to what appeared the best solution.</p>
-        <p>At this point, as we became tired, and began to stretch our new consensus, we considered stopping.</p>
-        <p>But because we'd allocated two hours for our meeting, we carried on, and to our surprise we frequently reached a satisfactory conclusion.</p>
-        <p>By the end of the meeting we were fluent in the problem and had a plan.</p>
-        <p>A week later we repeated the process building on work we'd done since the last meeting.</p>
-        <p>One project we approached in this way was <Links.EL link={{source:'https://responsibletech.work/tools/development/pledge-works/', text: 'A practical tool that invites you to write pledges for better outcomes as part of your existing product development processes.'}}>Pledge Works</Links.EL>. It was a ten meeting problem.</p>
-        <p>Other benefits of long meetings:</p>
-        <ul>
-          <li>Job titles become less important</li>
-          <li>Everyone has the chance to speak</li>
-          <li>Solutions bubble up as workable ideas replace opinions</li>
-          <li>Consensus is derived not imposed</li>
-          <li>New thinking emerges</li>
-        </ul>
-      </section>      
-      <section>
-        <h2>External Links</h2>
-        <Links.ExternalLinksList links={externalLinks} />
+        <p><Links.IL link={{source:'web-development/practice/meetings'}}>In praise of long meetings</Links.IL> </p>
       </section>
       <Links.RelatedLinks
-        links={[{ value: 'ethics', text: 'Ethical software development' }]}
+        links={[{ value: 'web-development/practice/meetings', text: 'Meetings' }]}
       ></Links.RelatedLinks>
     </Layout>
   )
