@@ -6,7 +6,7 @@ import styles from 'pages/pages.module.scss'
 const Itsthejobsthatgotsmall = () => {
   const externalLinks = [
     {
-      name: 'Norma Desmond in Sunsent Boulevard | `I Am Big, It\'s the Pictures That Got Small`',
+      name: 'Norma Desmond in Sunset Boulevard | `I Am Big, It\'s the Pictures That Got Small`',
       source: 'https://www.youtube.com/watch?v=UvD-F5hqLU8',
     },
   ]
@@ -53,7 +53,7 @@ const Itsthejobsthatgotsmall = () => {
           <li>Job titles become less important</li>
           <li>Everyone has the chance to speak</li>
           <li>Solutions bubble up as workable ideas replace opinions</li>
-          <li>Consensus is dervied not imposed</li>
+          <li>Consensus is derived not imposed</li>
           <li>New thinking emerges</li>
         </ul>
       </section>      
