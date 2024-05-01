@@ -94,12 +94,15 @@ const Ethics = () => {
                 <h3>Outcomes</h3>
                 <p>The payoff for our effort is an outcome that is at least as good as the business as usual default, if not better. Better outcomes, not perfect ones.</p>
                 <p>I like to write lots of pledges. When I can't tell whether I've broken a pledge - when the outcome is unclear - I narrow the context. My preference is for pledges that read like requirements; given sufficient exposition, I can take the subjective sting out of the decision.</p>
-                <p>I hope to develop a more systematic approach to Pledge Works but for now I learn as I go along, and do a little better with each effort.</p>                
+                <p>I hope to develop a more systematic approach to Pledge Works but for now I learn as I go along, and do a little better with each effort.</p>
+                <h3>Update Wed 1 May 2024</h3>
+                <p>We (the Pledge Works collaborators) discovered it is helpful to set an end time for a pledge. This requires us to check back on our pledges to see if we've honoured them. Some practices become ingrained, some are unworkable or unachieveable. Letting pledges go also lets us write new pledges.</p>
+                <p>We are human, we aim for better outcomes, not perfect ones. A time unlimited pledge feels like an attempt at perfection (which will likely fail).</p>
             </section>
             <section>
                 <p>Pledge Works has guidance on how to get started and tools for writing and evaluating pledges, but it has no hard and fast rules. I've written a couple of simple case studies, one for <Links.IL link={{source:"ethics/pledge-works/case-study-the-public-good"}}>The Public Good</Links.IL>, the other for an imaginary <Links.IL link={{source:"ethics/pledge-works/case-study-startup"}}>Startup</Links.IL>, as examples of how I adapt Pledge Works.</p>
                 <p><strong><em>Disclosure: I am a collaborator on Pledge Works. The flavour of Pledge Works I describe here is my own.</em></strong></p>
-                {/* <p>I find it useful to express my values in the form of <Links.IL link={{source:"ethics/pledge-works/pledges"}}>pledges</Links.IL>. These tend to be more specific than principles.</p> */}
+                <p>I find it useful to express my values in the form of <Links.IL link={{source:"ethics/pledge-works/pledges"}}>pledges</Links.IL>. These tend to be more specific than principles.</p>
             </section>
             <section>
                 <h2>Links to external references</h2>

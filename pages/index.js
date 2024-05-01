@@ -12,8 +12,8 @@ export default function Home() {
             <p>Our ability to mitigate the threats we pose to the planet depends on individual and collective action.</p>
 
             <p>I write about the climate crisis, responsible web development, and occasionally <Links.IL link={{source:"personal/extracts"}}>things I made up</Links.IL>.</p>
-
-            <Links.ILBlock link={{'value': 'notes/2024/february', 'text': 'February 2024 notes'}}></Links.ILBlock>
+            
+            <p>Latest post, <Links.IL link={{ source:'web-development/its-the-jobs-that-got-small'}}>It's the jobs that got small</Links.IL>.</p>            
         </section>
 
         <section>
