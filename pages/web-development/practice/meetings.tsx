@@ -11,7 +11,7 @@ const Meetings = () => {
         <p>A colleague and I discovered this by chance while we were collaborating on an open source project. Our meetings were long because we only had time to catch up once a week and because we had a lot to get through.</p>
         <p>After a while we noticed our meetings fitted a pattern.</p>
         <p>We would both run through our thoughts while the other listened. About an hour into the meeting, and after several shorter exchanges, we were up to speed on the other's thinking.</p>
-        <p>Our ideas were now common property and we were free to criticise them without prejudice. We'd build up and knock down new solutions. No sooner we reached a consensus than we'd find fault with it.</p>
+        <p>Our ideas were now common property and we were free to criticise them without prejudice because they belonged to no one. Together we'd knock together all kinds of ideas in the hope of smoothing and polishing them.</p>
         <p>We were usually tired and hungry by this point. But after several meetings, we noticed that something always happened as we approached the end of the second hour. A rush of new ideas invariably tumbled us into a new and better plan.</p>
         <p>We repeated this process every week until the project, <Links.EL link={{source:'https://responsibletech.work/tools/development/pledge-works/', text: 'A practical tool that invites you to write pledges for better outcomes as part of your existing product development processes.'}}>Pledge Works</Links.EL>, was finished. Having multiple long meetings was key to the success of the project.</p>
         <p>Other benefits of long meetings:</p>
