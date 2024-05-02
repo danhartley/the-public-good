@@ -24,6 +24,14 @@ const Roles = () => {
       name: 'The Product-Minded Software Engineer | Gergely Orosz',
       source: 'https://blog.pragmaticengineer.com/the-product-minded-engineer/',
     },
+    {
+      name: 'Product Design Is Lost | Rune Madsen ',
+      source: 'https://designsystems.international/ideas/product-design-is-lost/',
+    },
+    {
+      name: 'Jennifer Brook',
+      source: 'http://jenniferbrook.com',
+    },
   ]
   return (
     <Layout header="roles" title="" description={'roles'}>

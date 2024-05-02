@@ -3,6 +3,12 @@ import Layout from 'components/layout/layout'
 import styles from 'pages/pages.module.scss'
 
 const Meetings = () => {
+  const externalLinks = [
+    {
+      name: 'Is it better to live in ‘clock time’ or ‘event time’? | Shayla Love | Psyche',
+      source: 'https://psyche.co/ideas/is-it-better-to-live-in-clock-time-or-event-time',
+    },
+  ]
   return (
     <Layout header="meetings" title="" description={'meetings'}>
       <section>
@@ -27,6 +33,10 @@ const Meetings = () => {
         <p><Links.IL link={{source:'web-development/practice/titles'}}>Titles</Links.IL></p>
         <p class={styles.medium}>NB There are times when short meetings are appropriate.</p>
       </section>      
+      <section>
+        <h2>External Links</h2>
+        <Links.ExternalLinksList links={externalLinks} />
+      </section> 
       <Links.RelatedLinks
         links={[
             { value: 'web-development/its-the-jobs-that-got-small', text: 'It\'s the jobs that got small' }
