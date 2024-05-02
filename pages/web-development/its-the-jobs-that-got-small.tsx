@@ -2,6 +2,12 @@ import Links from 'components/links/Links'
 import Layout from 'components/layout/layout'
 
 const Itsthejobsthatgotsmall = () => {
+  const externalLinks = [
+    {
+      name: 'Norma Desmond in Sunset Boulevard | `I Am Big, It\'s the Pictures That Got Small`',
+      source: 'https://www.youtube.com/watch?v=UvD-F5hqLU8',
+    },
+  ]
   return (
     <Layout header="It's the jobs that got small" title="It's the jobs that got small" description={'It\'s the jobs that got small'}>
       <section>
@@ -28,6 +34,10 @@ const Itsthejobsthatgotsmall = () => {
           <li>Pausing and reflecting</li>
         </ul>
         <p><Links.IL link={{source:'web-development/practice/meetings'}}>In praise of long meetings</Links.IL> </p>
+      </section>      
+      <section>
+        <h2>External Links</h2>
+        <Links.ExternalLinksList links={externalLinks} />
       </section>
       <Links.RelatedLinks
         links={[{ value: 'web-development/practice/meetings', text: 'Meetings' }]}
