@@ -23,11 +23,18 @@ const Meetings = () => {
           <li>New thinking emerges</li>          
           <li>Collaboration improves between a fixed group of people</li>
         </ul>      
-        <p>We've had purposefully long or open ended meetings with others with similiar positive results. We know this approach works with three people; it probably won't work well with more than five - everyone has to put their cards on the table before they're free to listen to what others have to say.</p>
+        <p>We've had purposefully long or open ended meetings with others with similar positive results. We know this approach works with three people; it probably won't work well with more than five - everyone has to put their cards on the table before they're free to listen to what others have to say.</p>
+        <p><Links.IL link={{source:'web-development/practice/titles'}}>Titles</Links.IL></p>
         <p class={styles.medium}>NB There are times when short meetings are appropriate.</p>
       </section>      
       <Links.RelatedLinks
-        links={[{ value: 'web-development/its-the-jobs-that-got-small', text: 'It\'s the jobs that got small' }]}
+        links={[
+            { value: 'web-development/its-the-jobs-that-got-small', text: 'It\'s the jobs that got small' }
+          , { value: 'web-development/practice/titles', text: 'Titles' }
+          , { value: 'web-development/practice/roles', text: 'Roles' }
+          , { value: 'web-development/practice/artifacts', text: 'Artifacts' }
+          , { value: 'web-development/practice/domains', text: 'Domains' }
+        ]}
       ></Links.RelatedLinks>
     </Layout>
   )

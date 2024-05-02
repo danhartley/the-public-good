@@ -12,10 +12,10 @@ const Itsthejobsthatgotsmall = () => {
     <Layout header="It's the jobs that got small" title="It's the jobs that got small" description={'It\'s the jobs that got small'}>
       <section>
         <p>I started building websites in 1997. They didn't contain my first code - I'd written BASIC on a BBC Micro as a boy - but they marked a new direction after working in film and television.</p>
-        <p>This was at the peak of the first dot-com boom when anything seemed possible. I had an idea for an app that let you hail a taxi wherever you were. Another required massive screens to be installed in public venues - such as cafes and bars - for people to leave messages on. (I still prefer the latter).</p>
+        <p>This was at the peak of the first dot-com boom when anything seemed possible. I had an idea for an app that let you hail a taxi wherever you were. Another required massive screens to be installed in public venues - such as cafes and bars - for people to leave messages on.</p>
         <p>To my surprise I'm still writing code 25 years later.</p>
-        <p>Job titles in web software development are quicksilver. Some describe roles - webmaster, web developer, full stack, front or back end developer - others are merely descriptive of the immediate tools to hand - .NET developer, React developer.</p>
-        <p>Titles are required for a contract and are a useful shorthand for what a person needs to know and do but they fall short of describing how people interact, what interests them, and their purview.</p>
+        <p>Job titles in web software development are quicksilver. Some describe roles - webmaster, web developer, full stack, front or back end developer, product engineer - others are merely descriptive of the immediate tools to hand - .NET developer, React developer.</p>
+        <p>Titles are required for a contract and are a useful shorthand for what a person needs to know and do but they fall short of describing how people interact, what interests them, and their know-how.</p>
         <p>I am currently scouring job boards for a new position but I'm not finding any matches.</p>
         <p>Here are some things I enjoy doing and that I'm good at:</p>
         <ul>
@@ -40,7 +40,13 @@ const Itsthejobsthatgotsmall = () => {
         <Links.ExternalLinksList links={externalLinks} />
       </section>
       <Links.RelatedLinks
-        links={[{ value: 'web-development/practice/meetings', text: 'Meetings' }]}
+        links={[
+          { value: 'web-development/practice/meetings', text: 'Meetings' }
+        , { value: 'web-development/practice/titles', text: 'Titles' }
+        , { value: 'web-development/practice/roles', text: 'Roles' }
+        , { value: 'web-development/practice/artifacts', text: 'Artifacts' }
+        , { value: 'web-development/practice/domains', text: 'Domains' }
+      ]}
       ></Links.RelatedLinks>
     </Layout>
   )
