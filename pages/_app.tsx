@@ -20,7 +20,7 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
       ? `
             --m:dark;
             --fg:250, 250, 250; 
-            --bg:45, 45, 45;
+            --bg:67, 85, 45;
             --l:0, 220, 249;
             --l-v:231, 143, 255;
             --il:255, 165, 0;

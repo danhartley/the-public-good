@@ -44,7 +44,7 @@ const Itsthejobsthatgotsmall = () => {
           { value: 'web-development/practice/meetings', text: 'Meetings' }
         , { value: 'web-development/practice/titles', text: 'Titles' }
         , { value: 'web-development/practice/roles', text: 'Roles' }
-        , { value: 'web-development/practice/artifacts', text: 'Artifacts' }
+        , { value: 'web-development/practice/artefacts', text: 'Artefacts' }
         , { value: 'web-development/practice/domains', text: 'Domains' }
       ]}
       ></Links.RelatedLinks>

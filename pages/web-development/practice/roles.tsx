@@ -54,7 +54,7 @@ const Roles = () => {
         <p>It's fine to build tested components and unify design but tools and processes and tiny pieces of functioning code are not web development. If they are, AI will do it better and soon.</p>
         <p>Code isn't agnostic. And it's not important if it's built in React or Vue, its purpose is to enable the creation of a web site or app that people enjoy using.</p>
         <p>I'm nearing the end of my development life. I'm going to update my CV one last time. For want of a better term, I'm going to call myself a product engineer. It's the best available title that captures (see below) my ability to make correct judgments about how to build software for the web.</p>
-        <p><Links.IL link={{source:'web-development/practice/artifacts'}}>Working software</Links.IL></p>
+        <p><Links.IL link={{source:'web-development/practice/artefacts'}}>Working software</Links.IL></p>
       </section>     
       <section>
         <h2>External Links</h2>
@@ -65,7 +65,7 @@ const Roles = () => {
             { value: 'web-development/its-the-jobs-that-got-small', text: 'It\'s the jobs that got small' }
           , { value: 'web-development/practice/meetings', text: 'Meetings' }
           , { value: 'web-development/practice/titles', text: 'Titles' }
-          , { value: 'web-development/practice/artifacts', text: 'Artifacts' }
+          , { value: 'web-development/practice/artefacts', text: 'Artefacts' }
           , { value: 'web-development/practice/domains', text: 'Domains' }
         ]}
       ></Links.RelatedLinks>
