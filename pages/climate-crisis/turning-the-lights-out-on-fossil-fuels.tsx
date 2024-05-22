@@ -185,7 +185,7 @@ const Change = () => {
               Green New Deal
             </Links.EL>{' '}
             in the US (PDF),{' '}
-            <Links.EL link={{ source: 'Technology Zero Carbon Britain' }}>Technology Zero Carbon Britain</Links.EL>, and{' '}
+            <Links.EL link={{ source: 'https://cat.org.uk/info-resources/zero-carbon-britain/research-reports/zero-carbon-britain-rising-to-the-climate-emergency/', label:'Technology Zero Carbon Britain' }}>Technology Zero Carbon Britain</Links.EL>, and{' '}
             <Links.EL
               link={{
                 source:
@@ -265,7 +265,7 @@ const Change = () => {
               <li>Coal - 24</li>
               <li>Crude oil - 44</li>
               <li>
-                <Links.IL link={{ source: 'facts#energy' }}>Energy densities</Links.IL>
+                <Links.IL link={{ source: 'climate-crisis/facts#energy' }}>Energy densities</Links.IL>
               </li>
             </ul>
           </div>
@@ -693,7 +693,7 @@ const Change = () => {
           burnt. In this respect, wood is less innocent than coal, and natural gas and oil an improvement on coal. This
           has led to the disingenuous claim that gas is a 'clean' fossil fuel.
           <div>
-            <Links.IL link={{ source: 'facts#fuel_emissions' }}>Fuel emissions</Links.IL>
+            <Links.IL link={{ source: 'climate-crisis/facts#fuel_emissions' }}>Fuel emissions</Links.IL>
           </div>
         </p>
 

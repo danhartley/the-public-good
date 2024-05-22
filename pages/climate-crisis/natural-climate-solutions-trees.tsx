@@ -363,7 +363,7 @@ const NCSPartOne = () => {
           The amount of carbon dioxide stored by weight of a tree is directly proportional to the density of its wood.
           This value ranges from 14% (
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Ochroma' }}>balsa wood</Links.EL>) to 140% (
-          <Links.EL link={{ source: 'Krugiodendron ferreum' }}>black ironwood</Links.EL>).
+          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Krugiodendron', label:'Krugiodendron ferreum' }}>black ironwood</Links.EL>).
         </p>
         <Accordion header="Wood density">
           <aside>

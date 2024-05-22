@@ -332,7 +332,7 @@ const Hydrogen = () => {
           <span>
             <em>high</em>
           </span>{' '}
-          energy <Links.IL link={{ source: 'facts#energy' }}>density</Links.IL> by mass) for transportation by road or
+          energy <Links.IL link={{ source: 'climate-crisis/facts#energy' }}>density</Links.IL> by mass) for transportation by road or
           rail.
         </p>
 
@@ -378,7 +378,7 @@ const Hydrogen = () => {
             link={{
               label: 'FCHO PDF report Hydrogen molecule market',
               source:
-                'href="https://www.fchobservatory.eu/sites/default/files/reports/Chapter_2_Hydrogen_Molecule_Market_070920.pdf',
+                'https://observatory.clean-hydrogen.europa.eu/sites/default/files/2023-05/Chapter_2_Hydrogen_Molecule_Market_070920.pdf',
             }}
           >
             0.1%

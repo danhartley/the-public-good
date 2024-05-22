@@ -171,7 +171,8 @@ const August = () => {
             Refers to{' '}
             <Links.EL
               link={{
-                source:
+                source: 'https://www.hackerone.com/knowledge-center/why-you-need-responsible-disclosure-and-how-get-started',
+                label:
                   'Responsible disclosure is a process that allows security researchers to safely report found vulnerabilities to your team.',
               }}
             >
