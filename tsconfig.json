@@ -28,11 +28,12 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.xml",
     "index.test.js",
     "public/_app.js",
     "pages/ethics/pledge-works/index.js",
-    "pages/ethics/features/step_definitions/bank-account.steps.mts"
-, "components/pdd/hidden-message.test.tsx", "components/pdd/hidden-message.tsx", "components/pdd/simple.jsx", "components/pdd/simple.test.js"  ],
+    "pages/ethics/features/step_definitions/bank-account.steps.mts",
+    "components/pdd/hidden-message.test.tsx", "components/pdd/hidden-message.tsx", "components/pdd/simple.jsx", "components/pdd/simple.test.js"  ],
   "exclude": [
     "node_modules",
     "**/*.spec.js"

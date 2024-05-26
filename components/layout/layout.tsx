@@ -138,7 +138,7 @@ const Layout = ({
                             <img width="60px" height="60px" alt="The author, Daniel Hartley" src="https://avatars.githubusercontent.com/u/264690?s=60&amp;v=4" />
                             <div>
                                 <div>Daniel Hartley</div>
-                                <div>Reading time: {rt} minutes</div>
+                                <div>Reading time: {rt} { rt.length === 1 ? 'minute' : 'minutes'}</div>
                             </div>
                             </div>
                         : null

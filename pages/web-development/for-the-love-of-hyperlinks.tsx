@@ -459,6 +459,10 @@ const Hyperlinks = () => {
             value: 'web-development/following-the-rules-to-a-well-structured-web-page',
             text: 'Following the rules to a well-structured web page',
           },
+          { 
+            value: 'web-development/for-the-love-of-urls', 
+            text: 'For the love of urls' 
+          }
         ]}
       ></Links.RelatedLinks>
     </Layout>
