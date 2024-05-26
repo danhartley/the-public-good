@@ -449,7 +449,13 @@ const MentalModel = () => {
         <Links.ExternalLinksList links={externalLinks} />
       </section>
       <Links.RelatedLinks
-        links={[{ value: 'web-development/for-the-love-of-hyperlinks', text: 'For the love of hyperlinks' }]}
+        links={[
+          { value: 'web-development/for-the-love-of-hyperlinks', text: 'For the love of hyperlinks' },
+          { 
+            value: 'web-development/for-the-love-of-urls', 
+            text: 'For the love of urls' 
+          }
+        ]}
       ></Links.RelatedLinks>
     </Layout>
   )
