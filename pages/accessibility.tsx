@@ -94,7 +94,7 @@ const Accessibility: FunctionalComponent = () => {
           browser tools.
           <p>
             A summary of WAVE's{' '}
-            <Links.EL link={{ source: 'https://webaim.org/resources/contrastchecker/explanation' }}>
+            <Links.EL link={{ source: 'https://webaim.org/resources/contrastchecker' }}>
               of the WCAG
             </Links.EL>{' '}
             (Web Content Accessibility Guidelines):

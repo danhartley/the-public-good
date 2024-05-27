@@ -462,7 +462,11 @@ const Hyperlinks = () => {
           { 
             value: 'web-development/for-the-love-of-urls', 
             text: 'For the love of urls' 
-          }
+          },
+          { 
+            value: 'web-development/sustainable-reporting-and-tooling', 
+            text: 'Sustainable reporting and tooling' 
+          },
         ]}
       ></Links.RelatedLinks>
     </Layout>

@@ -11,7 +11,6 @@ const Domains = () => {
   return (
     <Layout header="Domains" title="Domains" description={'Domains'}>
       <section>
-        <h2> Build a heaven</h2>    
         <p>For companies that build products or services, it's crazy to restrict the developers to coding. They should be domain experts.</p>
         <ul>
           <li>Set them up with accounts on all your products during onboarding</li>

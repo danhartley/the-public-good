@@ -254,6 +254,10 @@ const ResponsibleDevelopment = () => {
           { value: 'sustainability', text: 'Sustainability' },
           { value: 'performance', text: 'Performance' },
           { value: 'web-development/sociable-contract', text: 'The sociable contract' },
+          { 
+            value: 'web-development/sustainable-reporting-and-tooling', 
+            text: 'Sustainable reporting and tooling' 
+          },
         ]}
       ></Links.RelatedLinks>
     </Layout>

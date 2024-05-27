@@ -33,7 +33,7 @@ const Itsthejobsthatgotsmall = () => {
           <li>Releasing code</li>
           <li>Pausing and reflecting</li>
         </ul>
-        <p><Links.IL link={{source:'web-development/practice/meetings'}}>In praise of long meetings</Links.IL> </p>
+        <p><Links.IL link={{source:'web-development/practice/meetings'}}>In praise of long meetings</Links.IL></p>
       </section>      
       <section>
         <h2>External Links</h2>
