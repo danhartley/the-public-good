@@ -126,7 +126,7 @@ const SustainableReportingAndTooling = () => {
         <p>Every section is relevant to developers. A review of your site's sustainability credentials forces a re-examination of how your site works, what it offers and for whom.</p>
 
         <h3>Don't hide in the IDE</h3>
-        <p>It is important that developers and designers are among the people using the production code running in the browser. There are plenty of <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1zNBeu9C-I4gay-EHwZJ328gnv1KT8NVAZ8zgnBYGvDo/edit?usp=sharing'}}>tools</Links.EL> for measuring website performance, emissions and accessibility. It is equally important to use the site or app as others see it. Create accounts and use them as fully and as realistically as possible.</p>
+        <p>It is important that developers and designers are among the people using production code running in the browser. There are plenty of <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1zNBeu9C-I4gay-EHwZJ328gnv1KT8NVAZ8zgnBYGvDo/edit?usp=sharing'}}>tools</Links.EL> for measuring website performance, emissions and accessibility. It is equally important to use the site or app as others see it. Create accounts and use them as fully and as realistically as possible.</p>
 
         <p>Spending time looking at code running in the browser is critical because current practice often focuses on software or code architecture at the expense of Information Architecture (IA).</p>
 
