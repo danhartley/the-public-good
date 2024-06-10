@@ -10,6 +10,7 @@ The emissions tracker has 2 dependencies:
 ```
 npm install @tgwf/co2
 npm i puppeteer
+npm i lighthouse
 npm install emissions-tracker
 ```
 

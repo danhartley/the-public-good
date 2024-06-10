@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer'
 
-import { sortBy, pause } from '../tests/test-utils.js'
+import { sortBy, pause } from './test-utils.js'
 import { getDomainFromURL, getLighthouseReport } from './emissions-tracker-utils.js'
 import { EmissionsTracker } from './emissions-tracker.js'
 
