@@ -17,14 +17,17 @@ const Accordion = ({
     const id = Array.from(header).reduce((str:string,x:string) => x !== ' ' ? str+x : str) as string;
     const contentId = 'content' + id;
 
-    const content = <p>
+    const content = <div>
         <div class={styles.accordion}>
-            <span class={isOpen ? styles.open : styles.closed}></span><button type="button" id={id} aria-controls={contentId} aria-label={`Toggle view for additional information on ${header}`} onClick={e => toggle(!isOpen)}><span>{ header }</span></button>
+            <span class={isOpen ? styles.open : styles.closed}></span>
+            <button type="button" id={id} aria-controls={contentId} aria-label={`Toggle view for additional information on ${header}`} onClick={e => toggle(!isOpen)}>
+                <span class={styles.header}>{ header }</span>
+            </button>
         </div>
         <div id={contentId} role="region" aria-labelledby={id} class={isOpen ? styles.show : styles.hide}>
         { children }
         </div>
-    </p>
+    </div>
 
     return (
         <> 

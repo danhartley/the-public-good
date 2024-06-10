@@ -145,6 +145,10 @@ const SustainableReportingAndTooling = () => {
       <Links.RelatedLinks
         links={[
           {
+            value: 'web-development/sustainable-reporting-emissions',
+            text: 'Sustainable Reporting - Emissions',
+          },
+          {
             value: 'web-development/sustainable-practices',
             text: 'Sustainable practices',
           },

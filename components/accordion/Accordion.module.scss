@@ -20,6 +20,9 @@
     & > span {
         pointer-events: none;        
     }
+    .header {
+        font-size: 1.1rem;
+    }
     .closed {
         &:first-child:after {
             content: '\002B';            

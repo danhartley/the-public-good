@@ -140,3 +140,59 @@ figure .centred img {
     border-bottom: 1px solid #333;
     border-bottom-style: dotted;
 }
+
+.tablepadded {    
+    caption {
+        caption-side: bottom;
+        margin-top: .5rem;
+    }
+    thead th {
+        padding: 0 .25rem;
+        font-size: .85rem;
+        vertical-align: top;
+    }
+    tbody td {
+        padding: .25rem .5rem;
+        font-size: .85rem;
+    }
+}
+    
+.report {    
+    table {
+        margin: 1rem auto 0 auto;
+    }
+    pre {
+        margin: .5rem 0 0 0;
+        padding: .25rem .75rem;
+        background-color: #d3d3d34f;
+        border-radius: 3px;
+    }
+    code {
+        font-size: .75rem;
+    }
+}
+
+.subheader {
+    font-size: .6rem !important;
+    width: 3rem;
+}
+
+.hideheader {
+    visibility: hidden;
+}
+
+.bgbodybrown {
+    background-color: rgba(var(--table-bg-brown), .8);
+}
+
+.bgbodyblue {
+    background-color: rgba(var(--table-bg-blue), .8);
+}
+
+.textCentre {
+    text-align: center !important;
+}
+
+.textRight {
+    text-align: right !important;
+}

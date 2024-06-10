@@ -26,7 +26,8 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
             --il:255, 165, 0;
             --il-v:255, 165, 0;
             --il-fw:bold;
-            --h1:218, 217, 205;
+            --table-bg-brown:204, 190, 159;
+            --table-bg-blue:171, 195, 201;
             --em:255, 255, 0;
             --key:45, 45, 45; 
         `
@@ -38,7 +39,8 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
             --l-v:78, 44, 146;
             --il:50, 50, 50;
             --il-fw:bold;
-            --h1:218, 217, 205;
+            --table-bg-brown:204, 190, 159;
+            --table-bg-blue:171, 195, 201;
             --em:155, 0, 0;
             --key:45, 45, 45;
         `

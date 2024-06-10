@@ -352,14 +352,14 @@ $results-color: black;
         }
         table thead {
             display: none;
-          }          
-          table td {
+        }  
+        table td {
             display: flex;
             height: initial;
             flex-direction: column;
-          }
-          td:nth-child(1) {
-              font-weight: bold;
-          }
+        }
+        td:nth-child(1) {
+            font-weight: bold;
+        }
     }
 }
