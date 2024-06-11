@@ -178,6 +178,12 @@ export class EmissionsTracker {
 
         if (headers['content-length']) {
           transferSize = parseInt(headers['content-length'], 10)
+        } else {    
+          const buffer = await response.buffer() || null
+                    
+          if(buffer) {
+            transferSize = parseInt(buffer.byteLength, 10)
+          }                       
         }
 
         const target = isSameOrigen
@@ -423,7 +429,7 @@ export class EmissionsTracker {
 
     // Calculate emissions per byte trace
     if(this.#byteOptions) {
-      this.#byteOptions.gridIntensity = data[this.#options.countryCode]      
+      this.#byteOptions.gridIntensity = data[this.#options.countryCode]
       this.#logPerByteTrace({
           bytes
         , green: this.#hosting?.green
@@ -549,10 +555,30 @@ export class EmissionsTracker {
       })
     }
 
-    if(this.#options.lighthouse.log) {
+    if(this.#options.lighthouse.log) {      
       this.#summary.push({
           metric: 'Lighthouse total resource transfer size in kBs'
         , value: Number((this.#options.lighthouse.summary.totalResourceTransferSize / 1000).toFixed(1))
+      })
+      
+      this.#summary.push({
+          metric: 'Lighthouse byte weight in kBs'
+        , value: Number((this.#options.lighthouse.summary.totalByteWeight / 1000).toFixed(1))
+      })
+      
+      this.#summary.push({
+          metric: 'Lighthouse request count'
+        , value: this.#options.lighthouse.summary.requestCount
+      })
+      
+      this.#summary.push({
+          metric: 'Lighthouse observed load'
+        , value: this.#options.lighthouse.summary.observedLoad
+      })
+      
+      this.#summary.push({
+          metric: 'Lighthouse observed DOM content loaded'
+        , value: this.#options.lighthouse.summary.observedDomContentLoaded
       })
 
       this.#summary.push({
@@ -575,9 +601,11 @@ export class EmissionsTracker {
       , data: [
         {
             DOMSize: this.#options.lighthouse.summary.DOMSize
-          , domContentLoaded: this.#options.lighthouse.summary.domContentLoaded
+          , observedLoad: this.#options.lighthouse.summary.observedLoad
+          , observedDomContentLoaded: this.#options.lighthouse.summary.observedDomContentLoaded
           , totalThirdPartyResourceTransferSize: Number((this.#options.lighthouse.summary.thirdPartySummary.totalTransferSize / 1000).toFixed(1))
           , totalResourceTransferSize: Number((this.#options.lighthouse.summary.totalResourceTransferSize / 1000).toFixed(1))
+          , requestCount: this.#options.lighthouse.summary.requestCount
           , totalByteWeight: Number((this.#options.lighthouse.summary.totalByteWeight / 1000).toFixed(1))
         },
       ]
@@ -586,8 +614,6 @@ export class EmissionsTracker {
 
   // Public methods
   async getReport() {
-    // await this.#page.evaluateOnNewDocument(this.#logResources())
-    // await this.#page.evaluateOnNewDocument(this.#logPerformanceEntriesObserved())
     await this.#logPerformanceEntries()
     await this.#printSummary()
     await this.#printLighthouseSummary()

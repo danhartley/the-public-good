@@ -79,3 +79,6 @@ cypress/
 pages/ethics/pledge-works/features
 
 # to remove comitted code e.g. git rm -r --cached play
+
+# emissions tracker node
+public/emissions-tracker/node_modules

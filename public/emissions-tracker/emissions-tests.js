@@ -27,14 +27,6 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
       }
   })
 
-  if(!domain) {
-    console.log('Please check your command line flags:')
-    console.log('Correct: -u {url value} -v {verbose}')
-    console.log('Correct: --url {url value} --verbose {verbose}')
-    console.log('Incorrect: -url {url value} --v {verbose}')
-    return
-  }
-
   if(runLighthouse) {
     const lhReport = await getLighthouseReport({
         lighthouse
@@ -96,7 +88,17 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
         }
       }, 0)
   } catch(e) {
-    console.log(e)
+    console.log(`
+      Please check the names and values of your node flags. 
+      \n
+      These are your options:
+      -u or --url { url value } 
+      -v or --verbose { verbose boolean }
+      -lh or --lighthouse { lighthouse boolean } 
+      \n
+      e.g. node emissions-tests.js -u https://www.theguardian.com/uk -v -lh
+    `)
+    process.exit(1)
   } finally {
     // await browser.close()
   }

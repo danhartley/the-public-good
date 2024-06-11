@@ -27,7 +27,11 @@ export const getDomainFromURL = ({url}) => {
 }
 
 export const getLighthouseReport = async ({lighthouse, chromeLauncher, url}) => {    
-    const chrome = await chromeLauncher.launch({chromeFlags: ['--headless']})
+    const chrome = await chromeLauncher.launch({
+      chromeFlags: [ 
+          '--headless'
+      ]
+    })
     const options = {logLevel: 'info', output: 'html', onlyCategories: ['performance'], port: chrome.port}
     const runnerResult = await lighthouse(url, options)
     const lh = runnerResult.lhr
@@ -74,9 +78,10 @@ export const getLighthouseReport = async ({lighthouse, chromeLauncher, url}) => 
 
     const summary = {
           totalResourceTransferSize: report.audits['resource-summary'].find(r => r.resourceType === "total").transferSize
+        , requestCount: report.audits['resource-summary'].find(r => r.resourceType === "total").requestCount
         , resources: report.audits['resource-summary'].filter(r => r.resourceType !== "total")
-        , observedDomContentLoaded: report.audits.metrics['firstContentfulPaint']?.observedDomContentLoaded || 0
-        , domContentLoaded: report.audits['user-timings']?.id?.find(ut => ut.name === 'dom-content-loaded')?.startTime || 0
+        , observedDomContentLoaded: report.audits.metrics[0]?.observedDomContentLoaded || 0
+        , observedLoad: report.audits.metrics[0].observedLoad || 0
         , thirdPartySummary: {
             totalTransferSize: report.audits['third-party-summary'].reduce((total, tp) => total + tp.transferSize, 0)
           , entities: report.audits['third-party-summary'].map(tp => { return { entity: tp.entity, transferSize: tp.transferSize }})

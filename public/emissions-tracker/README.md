@@ -6,6 +6,7 @@ Monitor the carbon emissions of websites and web apps.
 The emissions tracker has 2 dependencies:
 - [@tgwf/co2](https://github.com/thegreenwebfoundation/co2.js/)
 - [puppeteer](https://github.com/puppeteer/puppeteer)
+- 
 
 ```
 npm install @tgwf/co2
