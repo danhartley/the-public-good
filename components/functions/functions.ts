@@ -2,15 +2,15 @@ import { PageMetrics } from 'components/shared/types';
 
 const sessionData = window => {
 
-    const pm:PageMetrics = { bytes: 0, requests: 0 };
+    const pm:PageMetrics = { transferSize: 0, requests: 0 };
 
     if(typeof window === "undefined") {
-        pm.bytes = -1;
+        pm.transferSize = -1;
         pm.requests = 0;
     }
 
     else if(typeof window.performance == "undefined") {
-        pm.bytes = -1;
+        pm.transferSize = -1;
         pm.requests = 0;
     }
     
@@ -21,7 +21,7 @@ const sessionData = window => {
         
         const pms:Array<PageMetrics> = Array.from(window.performance.getEntriesByType("resource"));
 
-        pm.bytes = pms.map(r => r.bytes || 0).reduce(reducer, 0);
+        pm.transferSize = pms.map(r => r.transferSize || 0).reduce(reducer, 0);
 
         pm.requests = pms.length;
     }

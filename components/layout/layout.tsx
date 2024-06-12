@@ -23,7 +23,7 @@ const SiteMetrics = ({title}) => {
 
         const request: PageMetrics = funcs.sessionData(window);
 
-        const _pageBytes = request.bytes >= metrics.cumulativeBytes ? (request.bytes - metrics.cumulativeBytes) : request.bytes;
+        const _pageBytes = request.transferSize >= metrics.cumulativeBytes ? (request.transferSize - metrics.cumulativeBytes) : request.transferSize;
         const _pageRequests = request.requests >= metrics.cumulativeRequests ? (request.requests - metrics.cumulativeRequests) : request.requests;
       
         const _metrics = {
@@ -33,7 +33,7 @@ const SiteMetrics = ({title}) => {
                 bytes: _pageBytes,
                 requests: _pageRequests
             },
-            cumulativeBytes: request.bytes,
+            cumulativeBytes: request.transferSize,
             cumulativeRequests: request.requests,
             pages: [
                 ...metrics.pages,

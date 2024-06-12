@@ -17,7 +17,7 @@ export type MetricsContextState = {
 }
 
 export type PageMetrics = {
-    bytes: number,
+    transferSize: number,
     requests: number    
 }
 
