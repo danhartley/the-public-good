@@ -63,20 +63,34 @@ const SustainableReportingEmissions = () => {
             <th class={styles.textRight}>mg/CO<sub>2</sub></th>
           </tr>
           </thead>
-          <tbody class={styles.bgbodyblue}>
+          <tbody>
             <tr>
-              <td>the-public-good.com</td>
-              <td class={styles.textRight}>24</td>
-              <td class={styles.textRight}>462</td>
-              <td class={styles.textRight}>983</td>
-              <td class={styles.textRight}>99</td>              
+              <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>457</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>49</td>              
             </tr>
             <tr>
-              <td>theguardian.com/uk</td>              
-              <td class={styles.textRight}>110</td>
-              <td class={styles.textRight}>2092</td>
-              <td class={styles.textRight}>1533</td>
-              <td class={styles.textRight}>320</td>              
+              <td class={styles.bgbodydomain}>the-public-good.com</td>
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>66</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>462</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99</td>              
+            </tr>
+            <tr>
+              <td class={styles.bgbodydomain}>theguardian.com/uk</td>              
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2092</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>320</td>              
+            </tr>
+            <tr>
+              <td class={styles.bgbodydomain}>inaturalist.org</td>       
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>1930</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771</td>              
             </tr>
           </tbody>
         </table>
@@ -92,33 +106,40 @@ const SustainableReportingEmissions = () => {
           </tr>
           <tr>
             <th class={styles.hideheader}>-</th>
-            <th>ET</th>
-            <th>EG</th>
-            <th>CN</th>
-            <th>WC</th>
+            <th class={`${styles.subheader} ${styles.textRight}`}>ET</th>
+            <th class={`${styles.subheader} ${styles.textRight}`}>EG</th>
+            <th class={`${styles.subheader} ${styles.textRight}`}>CN</th>
+            <th class={`${styles.subheader} ${styles.textRight}`}>WC</th>
           </tr>
           </thead>
-          <tbody class={styles.bgbodyblue}>
+          <tbody>
             <tr>
-              <td>thegreenwebfoundation.org</td>
-              <td class={styles.textRight}>49</td>
-              <td class={styles.textRight}><Links.EL link={{source:'https://ecograder.com/report/wZaeBWX7zR9ktdPm7Ps4rcVc'}}>50</Links.EL></td>
-              <td class={styles.textRight}>14</td>
-              <td class={styles.textRight}>4<Links.EL link={{source:'https://www.websitecarbon.com/website/the-public-good-com/'}}>60</Links.EL></td>
+              <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>49</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/wZaeBWX7zR9ktdPm7Ps4rcVc'}}>50</Links.EL></td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>14</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/the-public-good-com/'}}>460</Links.EL></td>
             </tr>
             <tr>
-              <td>the-public-good.com</td>
-              <td class={styles.textRight}>99</td>
-              <td class={styles.textRight}><Links.EL link={{source:'https://ecograder.com/report/6sC1v7QNPIhoAsVrXeVzgDFf'}}>90</Links.EL></td>
-              <td class={styles.textRight}>9</td>
-              <td class={styles.textRight}><Links.EL link={{source:'https://www.websitecarbon.com/website/the-public-good-com/'}}>60</Links.EL></td>
+              <td class={styles.bgbodydomain}>the-public-good.com</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/6sC1v7QNPIhoAsVrXeVzgDFf'}}>90</Links.EL></td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>9</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/the-public-good-com/'}}>60</Links.EL></td>
             </tr>
             <tr>
-              <td>theguardian.com/uk</td>
-              <td class={styles.textRight}>320</td>
-              <td class={styles.textRight}><Links.EL link={{source:'https://ecograder.com/report/624S3IReW0M3HhgAUNm5wkB2'}}>1069</Links.EL></td>
-              <td class={styles.textRight}>296</td>
-              <td class={styles.textRight}><Links.EL link={{source:'https://www.websitecarbon.com/website/theguardian-com-uk/'}}>1060</Links.EL></td>  
+              <td class={styles.bgbodydomain}>theguardian.com/uk</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>320</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/624S3IReW0M3HhgAUNm5wkB2'}}>1069</Links.EL></td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>296</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/theguardian-com-uk/'}}>1060</Links.EL></td>  
+            </tr>
+            <tr>
+              <td class={styles.bgbodydomain}>inaturalist.org</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/cX5zkGvSYFOt8j7c1FnloAfp'}}>570</Links.EL></td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>259</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/inaturalist-org/'}}>630</Links.EL></td>  
             </tr>
           </tbody>
         </table>
@@ -127,7 +148,7 @@ const SustainableReportingEmissions = () => {
           ET: Emissions Tracker, EC: Ecograder, CN: Carbon Neutral Website, WC: Website Carbon
         </div>
 
-        <p>We can compare the bytes transferred value fo the Emissions Tracker with Chrome DevTools (DT) and Lighthouse (LH).</p>
+        <p>We can compare the bytes transferred value of the Emissions Tracker with Chrome DevTools (DT) and Lighthouse (LH).</p>
 
         <table class={styles.tablepadded}>
           <caption>Bytes transferred</caption>
@@ -143,24 +164,30 @@ const SustainableReportingEmissions = () => {
             <th class={`${styles.subheader} ${styles.textRight}`}>LH</th>
           </tr>
           </thead>
-          <tbody class={styles.bgbodybrown}>
+          <tbody>
             <tr>
-              <td>thegreenwebfoundation.org</td>
-              <td class={styles.textRight}>457</td>
-              <td class={styles.textRight}>417</td>
-              <td class={styles.textRight}>141</td>        
+              <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>457</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>417</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>141</td>        
             </tr>
             <tr>
-              <td>the-public-good.com</td>
-              <td class={styles.textRight}>462</td>
-              <td class={styles.textRight}>224</td>
-              <td class={styles.textRight}>169</td>                     
+              <td class={styles.bgbodydomain}>the-public-good.com</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>462</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>224</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>169</td>                     
             </tr>
             <tr>
-              <td>theguardian.com/uk</td>
-              <td class={styles.textRight}>2092</td>
-              <td class={styles.textRight}>2200</td>
-              <td class={styles.textRight}>2259</td>   
+              <td class={styles.bgbodydomain}>theguardian.com/uk</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2092</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2200</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2259</td>   
+            </tr>
+            <tr>
+              <td class={styles.bgbodydomain}>inaturalist.org</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>1930</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2400</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2925</td>   
             </tr>
           </tbody>
         </table>
@@ -189,33 +216,42 @@ const SustainableReportingEmissions = () => {
             <th class={`${styles.subheader} ${styles.textRight}`}>LH</th>
           </tr>
           </thead>
-          <tbody class={styles.bgbodybrown}>
+          <tbody>
             <tr>
-            <td>thegreenwebfoundation.org</td>
-              <td class={styles.textRight}>24</td>          
-              <td class={styles.textRight}>21</td>          
-              <td class={styles.textRight}>23</td>          
-              <td class={styles.textRight}>938</td>
-              <td class={styles.textRight}>1002</td>            
-              <td class={styles.textRight}>983</td>                           
+              <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>          
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>21</td>          
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>23</td>          
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1002</td>            
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>                           
             </tr>
             <tr>
-              <td>the-public-good.com</td>
-              <td class={styles.textRight}>66</td>          
-              <td class={styles.textRight}>56</td>          
-              <td class={styles.textRight}>49</td>          
-              <td class={styles.textRight}>983</td>
-              <td class={styles.textRight}>877</td>            
-              <td class={styles.textRight}>1345</td>                           
+              <td class={styles.bgbodydomain}>the-public-good.com</td>
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>66</td>          
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>56</td>          
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>49</td>          
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>877</td>            
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1345</td>                           
             </tr>
             <tr>
-              <td>theguardian.com/uk</td>
-              <td class={styles.textRight}>110</td> 
-              <td class={styles.textRight}>114</td>          
-              <td class={styles.textRight}>123</td>          
-              <td class={styles.textRight}>1533</td>      
-              <td class={styles.textRight}>1240</td>
-              <td class={styles.textRight}>1480</td>
+              <td class={styles.bgbodydomain}>theguardian.com/uk</td>
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td> 
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>114</td>          
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>123</td>          
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>      
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1240</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1480</td>
+            </tr>
+            <tr>
+              <td class={styles.bgbodydomain}>inaturalist.org</td>
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td> 
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>44</td>          
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>57</td>          
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>      
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>6000</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>3931</td>
             </tr>
           </tbody>
         </table>

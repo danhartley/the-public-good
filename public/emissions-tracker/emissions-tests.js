@@ -49,9 +49,6 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
   // Create a page
   const page = await browser.newPage()
 
-  // Set the viewport dimensions
-  // await page.setViewport({ width: 1280, height: 1024 })
-
   try {
       // Create instance of emissions tracker 
       emissionsTracker = new EmissionsTracker({
@@ -78,8 +75,10 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
       // Navigate to site
       await page.goto(url)
       
-      const footer = await page.$('footer')      
-      await footer.scrollIntoView({behavior: 'smooth'})
+      // Scrolling to the bottom of the page
+      await page.evaluate(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+      })
 
       // Get performance report
       await pause({
@@ -98,6 +97,7 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
       \n
       e.g. node emissions-tests.js -u https://www.theguardian.com/uk -v -lh
     `)
+    console.log(e)
     process.exit(1)
   } finally {
     // await browser.close()
