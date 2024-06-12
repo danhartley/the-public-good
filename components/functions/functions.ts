@@ -18,8 +18,9 @@ const sessionData = window => {
         const reducer = (accumulator: number, currentValue: number) => {     
             return accumulator + Math.round((currentValue / 1000));
         };
-        
-        const pms:Array<PageMetrics> = Array.from(window.performance.getEntriesByType("resource"));
+        const required = ['resource', 'navigation'];
+        const entries = window.performance.getEntries().filter(e => required.includes(e.entryType))
+        const pms:Array<PageMetrics> = Array.from(entries);
 
         pm.transferSize = pms.map(r => r.transferSize || 0).reduce(reducer, 0);
 

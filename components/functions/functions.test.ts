@@ -7,14 +7,14 @@ describe('page weight tests', () => {
     });
     
     it('should return -1 if the window performance object is unavailable', () => {
-        expect(funcs.sessionData({performance: undefined})).toStrictEqual({"transferSize": 0, "transferSize": -1});
+        expect(funcs.sessionData({performance: undefined})).toStrictEqual({"requests": 0, "transferSize": -1});
     });
 
     it('should return 0 if the requests array contains one request with no transfer size', () => {
         const window1 = {};
         Object.defineProperty(window1, 'performance', {
             value: {
-              getEntriesByType: jest.fn().mockReturnValue([{ bytes:null }])
+              getEntries: jest.fn().mockReturnValue([{ bytes:null, entryType: 'resource' }])
             },
         });
         expect(funcs.sessionData(window1)).toStrictEqual({"requests": 1, "transferSize": 0});
@@ -24,7 +24,7 @@ describe('page weight tests', () => {
         const window2 = {};
         Object.defineProperty(window2, 'performance', {
             value: {
-              getEntriesByType: jest.fn().mockReturnValue([{ transferSize:1000000 }])
+                getEntries: jest.fn().mockReturnValue([{ transferSize:1000000, entryType: 'resource' }])
             },
         });
         expect(funcs.sessionData(window2)).toStrictEqual({"requests": 1, "transferSize": 1000});
@@ -34,7 +34,7 @@ describe('page weight tests', () => {
         const window3 = {};
         Object.defineProperty(window3, 'performance', {
             value: {
-              getEntriesByType: jest.fn().mockReturnValue([{ bytes:1000000 }, { bytes:500000 }])
+                getEntries: jest.fn().mockReturnValue([{ transferSize:1000000, entryType: 'resource' }, { transferSize:500000, entryType: 'resource' }])
             },
         });
         expect(funcs.sessionData(window3)).toStrictEqual( {"requests": 2, "transferSize": 1500});

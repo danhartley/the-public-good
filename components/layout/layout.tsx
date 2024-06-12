@@ -26,22 +26,20 @@ const SiteMetrics = ({title}) => {
         const _pageBytes = request.transferSize >= metrics.cumulativeBytes ? (request.transferSize - metrics.cumulativeBytes) : request.transferSize;
         const _pageRequests = request.requests >= metrics.cumulativeRequests ? (request.requests - metrics.cumulativeRequests) : request.requests;
       
+        const _page = {
+            title: title,
+            bytes: _pageBytes,
+            requests: _pageRequests
+        }
+
         const _metrics = {
             ...metrics,
-            page: {
-                title: title,
-                bytes: _pageBytes,
-                requests: _pageRequests
-            },
+            page: _page,
             cumulativeBytes: request.transferSize,
             cumulativeRequests: request.requests,
             pages: [
-                ...metrics.pages,
-                {
-                    title: title,
-                    bytes: _pageBytes,
-                    requests: _pageRequests
-                },
+                ...metrics.pages.filter(p => p.title !== _page.title),
+                _page
             ]
         };
 

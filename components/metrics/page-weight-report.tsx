@@ -10,7 +10,7 @@ export const PageWeightReport = metrics => {
             report = 'This page was served from your local cache.';
             break;     
         default:
-            report = `${metrics.page.bytes} Kb transferred to load this page.`;
+            report = `${metrics.page.bytes} Kb transferred from same origin to load this page.`;
             break;     
     }
 
