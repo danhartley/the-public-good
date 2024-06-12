@@ -179,11 +179,15 @@ export class EmissionsTracker {
         if (headers['content-length']) {
           transferSize = parseInt(headers['content-length'], 10)
         } else {    
-          const buffer = await response.buffer() || null
+          try {
+            const buffer = await response.buffer() || null
                     
-          if(buffer) {
-            transferSize = parseInt(buffer.byteLength, 10)
-          }                       
+            if(buffer) {
+              transferSize = parseInt(buffer.byteLength, 10)
+            }
+          } catch(e) {
+            console.log(e)
+          }                
         }
 
         const target = isSameorigin

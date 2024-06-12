@@ -8,6 +8,14 @@ import styles from 'pages/pages.module.scss'
 const SustainableReportingEmissions = () => {
   const externalLinks = [
     {
+      name: 'Sustainability | HTTP Archive',
+      source: 'https://almanac.httparchive.org/en/2022/sustainability#carbon-emissions',
+    },
+    {
+      name: 'Digital Carbon Footprint: The Current State of Measuring Tools | marmelab',
+      source: 'https://marmelab.com/blog/2022/04/05/greenframe-compare.html',
+    },
+    {
       name: 'Estimating Digital Emissions | Sustainable Web Design',
       source: 'https://sustainablewebdesign.org/estimating-digital-emissions/',
     },
@@ -16,8 +24,12 @@ const SustainableReportingEmissions = () => {
       source: 'https://developers.thegreenwebfoundation.org/co2js/overview/',
     },
     {
-      name: 'Web Performance Recipes With Puppeteer | Addy OsmaniDesign',
+      name: 'Web Performance Recipes With Puppeteer | Addy Osmani',
       source: 'https://addyosmani.com/blog/puppeteer-recipes/',
+    },
+    {
+      name: 'Digital Life Cycle Assessments | Mightybytes',
+      source: 'https://www.mightybytes.com/blog/digital-life-cycle-assessment/',
     },
   ]
 
@@ -27,20 +39,48 @@ const SustainableReportingEmissions = () => {
       rt="2 to 3"
       title="Sustainable web development"
       description={
-        'Tracking emissions from websites and web apps when running end-to-end test.'
+        'Tracking emissions from websites and web apps when running end-to-end tests.'
       }
       image="https://live.staticflickr.com/65535/51143928462_2fec2d283e_z_d.jpg"
     >
       <section class={styles.report}>
         <h2 class={styles.mt0}>
-          A quick and easy way to track carbon emissions during tests.
+          Tracking carbon emissions in end-to-end tests.
         </h2>
 
-        <p>To measure carbon emissions for a website or web app, we need to know two things:</p>
-        <ul>
-          <li>The number of bytes of data transferred</li>
-          <li>Whether or not the site is green hosted</li>
-        </ul>
+        <p>Measuring carbon emissions associated with websites and apps is in its infancy but there are immediate benefits to doing so.</p>
+
+        <p>The first is an appreciation for how emissions relate to bytes transferred.</p>
+
+        <p>The second is seeing how emissions change over time. This can be done by recording emissions during end to end tests.</p>
+
+        <p>It's also an opportunity for developers to pay attention to code running in the browser which is where others interact with it and to consider factors beyond their control but which they can influence: the emissions created on the server, the network, and devices, as well as the emissions resulting from manufacture.</p>
+
+        <p>In addition, developers, or the companies they work for, can elect to host their sites on servers running on renewable energy.</p>
+
+        <p>And finally there are uncosted resources such as water and land which are typically excluded because reliable figures are hard to come by. Only a Digital Life Cycle Assessment (DCLA) can capture the full impact on the planet.</p>
+
+        <h3>Emissions per byte</h3>
+
+        <p>In order to measure carbon emissions for this website, I'm using <Links.EL link={{source:'https://developers.thegreenwebfoundation.org/co2js/overview/'}}>CO2.js</Links.EL> from The Green Web Foundation (GWF). The simplest call to their API needs only a byte value.</p>
+
+        <p>If the site is hosted on servers running on renewable energy the emissions will be lower. The <abbr class={styles.abbr} title='The Green Web Foundation'>GBF</abbr> provides a helper function for checking if your site is hosted green.</p>
+
+        <p>The code looks something like this:</p>
+
+        <pre>
+          <code>
+            <div>const green = hosting.check('the-public-good.com').green</div>
+            <div>const co2Emission = new co2()</div>
+            <div>const bytes = 2299</div>
+            <div>const emissions = co2Emission.perByte(bytes, green)</div>
+            <br />
+            <div>// emissions is ~783mg/CO<sub>2</sub> for a site running on renewable energy</div>
+            <div>// emissions is ~905mg/CO<sub>2</sub> for a site not running on renewable energy</div>
+          </code>
+        </pre>
+        
+        <h3>End-to-end testing</h3>
 
         <h3>Transfer size and emissions</h3>
 
@@ -119,6 +159,7 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/wZaeBWX7zR9ktdPm7Ps4rcVc'}}>50</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>14</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/the-public-good-com/'}}>460</Links.EL></td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=6d3cf8ca-c529-43c1-a300-49c1a4e6ae64'}}>1640</Links.EL></td>
             </tr>
             <tr>
               <td class={styles.bgbodydomain}>the-public-good.com</td>
@@ -126,6 +167,7 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/6sC1v7QNPIhoAsVrXeVzgDFf'}}>90</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>9</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/the-public-good-com/'}}>60</Links.EL></td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=4e4a80c3-3419-493b-b399-093de3b14667'}}>1620</Links.EL></td>
             </tr>
             <tr>
               <td class={styles.bgbodydomain}>theguardian.com/uk</td>
@@ -133,13 +175,15 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/624S3IReW0M3HhgAUNm5wkB2'}}>1069</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>296</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/theguardian-com-uk/'}}>1060</Links.EL></td>  
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=ffaa8359-f00d-4b38-b4ad-221183bdf6df'}}>2780</Links.EL></td>  
             </tr>
             <tr>
               <td class={styles.bgbodydomain}>inaturalist.org</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/cX5zkGvSYFOt8j7c1FnloAfp'}}>570</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>259</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/inaturalist-org/'}}>630</Links.EL></td>  
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/inaturalist-org/'}}>630</Links.EL></td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=0b8ba74d-4a68-46cc-ad1a-a6862b254d23'}}>1980</Links.EL></td>
             </tr>
           </tbody>
         </table>
@@ -199,18 +243,14 @@ const SustainableReportingEmissions = () => {
         <p>We can compare the number of requests value for the Emissions Tracker with Chrome DevTools (DT) and Lighthouse (LH).</p>
 
         <table class={styles.tablepadded}>
-          <caption>Request count and load time</caption>
+          <caption>Request count</caption>
           <thead>
           <tr>
             <th>URL</th>
             <th colSpan={3} class={styles.textCentre}>Requests</th>            
-            <th colSpan={3} class={styles.textCentre}>Load (ms)</th>
           </tr>
           <tr>
             <th class={styles.hideheader}>-</th>
-            <th class={`${styles.subheader} ${styles.textRight}`}>ET</th>
-            <th class={`${styles.subheader} ${styles.textRight}`}>DT</th>
-            <th class={`${styles.subheader} ${styles.textRight}`}>LH</th>
             <th class={`${styles.subheader} ${styles.textRight}`}>ET</th>
             <th class={`${styles.subheader} ${styles.textRight}`}>DT</th>
             <th class={`${styles.subheader} ${styles.textRight}`}>LH</th>
@@ -221,34 +261,68 @@ const SustainableReportingEmissions = () => {
               <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>21</td>          
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>23</td>          
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1002</td>            
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>                           
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>23</td>                              
             </tr>
             <tr>
               <td class={styles.bgbodydomain}>the-public-good.com</td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>66</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>56</td>          
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>49</td>          
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>877</td>            
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1345</td>                           
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>49</td>                              
             </tr>
             <tr>
               <td class={styles.bgbodydomain}>theguardian.com/uk</td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td> 
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>114</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>123</td>          
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>      
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1240</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1480</td>
             </tr>
             <tr>
               <td class={styles.bgbodydomain}>inaturalist.org</td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td> 
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>44</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>57</td>          
+            </tr>
+          </tbody>
+        </table>
+
+        <div class={`${styles.small} ${styles.textCentre}`}>
+          ET: Emissions Tracker, DT: Chrome DevTools, LH: lighthouse API
+        </div>
+
+        <table class={styles.tablepadded}>
+          <caption>Load time</caption>
+          <thead>
+          <tr>
+            <th>URL</th>   
+            <th colSpan={3} class={styles.textCentre}>Load (ms)</th>
+          </tr>
+          <tr>
+            <th class={styles.hideheader}>-</th>
+            <th class={`${styles.subheader} ${styles.textRight}`}>ET</th>
+            <th class={`${styles.subheader} ${styles.textRight}`}>DT</th>
+            <th class={`${styles.subheader} ${styles.textRight}`}>LH</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1002</td>            
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>                           
+            </tr>
+            <tr>
+              <td class={styles.bgbodydomain}>the-public-good.com</td>      
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>877</td>            
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1345</td>                           
+            </tr>
+            <tr>
+              <td class={styles.bgbodydomain}>theguardian.com/uk</td>    
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>      
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1240</td>
+              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1480</td>
+            </tr>
+            <tr>
+              <td class={styles.bgbodydomain}>inaturalist.org</td>      
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>      
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>6000</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>3931</td>

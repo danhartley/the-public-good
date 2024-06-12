@@ -3,18 +3,16 @@
 
 Monitor the carbon emissions of websites and web apps. 
 
-The emissions tracker has 2 dependencies:
+An end-to-end test using the emissions tracker has 3 external dependencies:
 - [@tgwf/co2](https://github.com/thegreenwebfoundation/co2.js/)
 - [puppeteer](https://github.com/puppeteer/puppeteer)
-- 
+- [lighthouse](https://github.com/GoogleChrome/lighthouse)
 
 ```
 npm install @tgwf/co2
 npm i puppeteer
 npm i lighthouse
-npm install emissions-tracker
 ```
-
 
 ## Integration tests
 
@@ -32,13 +30,17 @@ const testSite = async () => {
     // Launch the browser
     const browser = await puppeteer.launch({
         headless: false
+      , devtools: true
+      , defaultViewport: null
     })
 
     // Create a page
     const page = await browser.newPage()
 
     // Specify options
-    const options = {…}
+    const options = {
+      // e.g. country code for grid intensity (see working example)
+    }}
 
     // Create a new instance of the emissions tracker
     const emissionsTracker = new EmissionsTracker({ page, options })
@@ -46,22 +48,15 @@ const testSite = async () => {
     // Navigate to site
     await page.goto('https://www.example.com/')
 
+    // Many pages continue to load as the user scrolls down.
+    await page.evaluate(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    })
+
     // Run the report
     const { summary, details } = await emissionsTracker.getReport()
 
-    // Log the summary or details objects…
-}
-
-
-```
-
-## Lighthouse
-
-You can include lighthouse reports.
-
-```
-import lighthouse from 'lighthouse'
-import * as chromeLauncher from 'chrome-launcher'
+    // Do something with the report summary and details…
 ```
 
 ## Flags
@@ -70,25 +65,11 @@ import * as chromeLauncher from 'chrome-launcher'
 - -u or --url
 - -lh or --lighthouse
 
-### Parsing command line flags
+### Example
 
 ```
-  const verboseArgs = ['-v', '--verbose']
-  const urlArgs = ['-u', '--url']
-  const lighthouseArgs = ['-lh', '--lighthouse']
-
-  process.argv.forEach((val, index) => { 
-      if(verboseArgs.includes(val)) verbose = true
-      if(lighthouseArgs.includes(val)) runLighthouse = true
-      if(urlArgs.includes(val)) {
-        const nextArg = index + 1
-        if(nextArg < process.argv.length) {
-          url = process.argv[nextArg]
-          domain = getDomainFromURL({url})
-        }
-      }
-  })
-  ```
+node public/emissions-tracker/emissions-tests.js -u the-public-good.com -v -lh 
+```
 
 ## References
 
@@ -97,6 +78,8 @@ import * as chromeLauncher from 'chrome-launcher'
 [Web Performance Recipes With Puppeteer | Addy Osmani
 ](https://addyosmani.com/blog/puppeteer-recipes/)
 
-// curl -X 'GET' \
-//  'https://api.thegreenwebfoundation.org/api/v3/greencheck/bbc.co.uk' \
-//  -H 'accept: application/json'
+```
+curl -X 'GET' \
+'https://api.thegreenwebfoundation.org/api/v3/greencheck/bbc.co.uk' \
+-H 'accept: application/json'
+```
