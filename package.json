@@ -36,7 +36,6 @@
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "next-compose-plugins": "^2.2.1",
-    "puppeteer": "^22.10.0",
     "ramda": "^0.28.0",
     "react": "npm:@preact/compat@0.0.4",
     "react-dom": "npm:@preact/compat@0.0.4",
