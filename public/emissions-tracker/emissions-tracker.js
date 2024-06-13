@@ -165,7 +165,7 @@ export class EmissionsTracker {
 
         // Check resource is one we want to measure
         const isValidMethod = methods.includes(response.request().method())
-        const isSameorigin = getDomainFromURL({url}) === this.#options.domain
+        const isSameOrigin = getDomainFromURL({url}) === this.#options.domain
         const isValidStatus = logStatuses.length ? logStatuses.includes(response.status()) : true
         const isValidType = logTypes.length ? logTypes.includes(resourceType) : true
         const isValidResource = isValidMethod && isValidType && isValidStatus
@@ -190,7 +190,7 @@ export class EmissionsTracker {
           }                
         }
 
-        const target = isSameorigin
+        const target = isSameOrigin
           ? this.#sameoriginEntries
           : this.#thirdPartyEntries
 

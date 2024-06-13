@@ -95,7 +95,7 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
       -v or --verbose { verbose boolean }
       -lh or --lighthouse { lighthouse boolean } 
       \n
-      e.g. node emissions-tests.js -u https://www.theguardian.com/uk -v -lh
+      e.g. node emissions-by-url.js -u https://www.theguardian.com/uk -v -lh
     `)
     console.log(e)
     process.exit(1)

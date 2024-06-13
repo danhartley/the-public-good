@@ -76,29 +76,33 @@ const SustainableReportingEmissions = () => {
 
         <p>The Information Architecture (IA) of a web site and how individuals navigate it affects bytes transferred and processing time and resources.</p>
 
-        <p>For example, this blog uses a static site generator (netlify) which preloads linked pages. The home page has a lot of internal links which significantly increase its page weight (the number of bytes transferred).</p>
+        <p>For example, this blog uses a static site generator (netlify) which preloads linked pages. The home page has a lot of internal links which significantly increase its page weight (a mix of the number of bytes transferred and the number of requests).</p>
 
-        <p>But if you click on a visible link (above the fold) to internal content, you will see that page loads almost instantly with very few bytes being transferred. Reload the page, and you will see its true page weight. The difference can be between just a few kilobytes (kBs) to more than a hundred depending on the article.</p>
+        <p>But if you click on a visible link (above the fold) to internal content, you will see that page loads almost instantly with very few bytes being transferred. Reload the page, and you will see its true page weight. The difference is between a few kilobytes (kBs) to more than a hundred depending on the article.</p>
 
         <p>I also cache pages. If you return to a page (without reloading) it is served from a local cache and the only network traffic will be to third parties (such as cabin analytics).</p>
 
-        <p>Whether this is a good strategy depends on how people use the site; whether they move between pages, or indeed whether they read more than one article in a single session. It's quite possible they won't read more than one but they may jump from page to page. (To observe this open the Network tab in the developer tools of any browser).</p>
+        <p>The efficacy of this strategy depends on how people use the site; whether they move between pages, or indeed whether they read more than one article in a single session. It's quite possible they won't read more than one but they may jump from page to page.</p>
+
+        <p>To observe this behaviour, open the Network tab in the developer tools of any browser.</p>
 
         <p>Knowing how and when bytes are transferred and emissions accrued helps developers make good decisions about their <abbr class={styles.abbr} title="Information Architecture">IA</abbr>, especially as a site is modified, extended, and refactored.</p>
 
-        <p>I'm less convinced displaying emissions is useful for site visitors. In time they may establish a heuristic for quantifying emissions based on browsing behaviour but some actions - watching YouTube videos or streaming Netflix - will dwarf other activity including AI chats.</p>
+        <p>I'm less convinced displaying emissions is useful for site visitors. They may gain a feeling for what causes emissions but sources of very high emissions such as watching YouTube videos or streaming Netflix could make savings elsewhere appear trivial.</p>
+
+        <p>On the other hand, if was easy to set budgets, we'd see the deleterious effect of devious or deceptive patterns such as Facebook's infinite scroll.</p>
 
         <h3>Emissions per byte</h3>
 
         <p>In order to measure carbon emissions for this website, I'm using <Links.EL link={{source:'https://developers.thegreenwebfoundation.org/co2js/overview/'}}>CO2.js</Links.EL> from The Green Web Foundation (GWF). The simplest call to their API needs only a byte value.</p>
 
-        <p>If the site is hosted on servers running on renewable energy the emissions will be lower. The <abbr class={styles.abbr} title='The Green Web Foundation'>GBF</abbr> provides a helper function for checking if your site is hosted green.</p>
+        <p>If the site is hosted on servers running on renewable energy the emissions will be lower. The <abbr class={styles.abbr} title='The Green Web Foundation'>GBF</abbr> provides a helper function for <Links.EL link={{source:'https://developers.thegreenwebfoundation.org/co2js/tutorials/check-hosting/'}}>checking if a site is hosted green</Links.EL>.</p>
 
-        <p>The code looks something like this:</p>
+        <p>For a website of median <Links.EL link={{source:'https://almanac.httparchive.org/en/2022/page-weight'}}>page weight</Links.EL>, the simplest request is a few lines:</p>
 
         <pre>
           <code>
-            <div>const green = hosting.check('the-public-good.com').green</div>
+            <div>const green = hosting.check('median-website.com').green</div>
             <div>const co2Emission = new co2()</div>
             <div>const bytes = 2299</div>
             <div>const emissions = co2Emission.perByte(bytes, green)</div>
@@ -114,9 +118,17 @@ const SustainableReportingEmissions = () => {
 
         <p>I record these values whilst running an end-to-end test. This allows me to monitor the effect of changes to pages.</p>
 
-        <p>I also created a <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/public/emissions-tracker/emissions-tests.js'}}>generic test</Links.EL> which takes a URL passed to it on the command line. This is an additional boolean flag for verbosity and another which, if included, generates <Links.EL link={{source:'https://github.com/GoogleChrome/lighthouse'}}>Lighthouse</Links.EL> metrics.</p>
+        <p>I also created a <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/public/emissions-tracker/emissions-by-url.js'}}>generic test</Links.EL> which takes a URL passed to it on the command line. This is an additional boolean flag for verbosity and another which, if included, generates <Links.EL link={{source:'https://github.com/GoogleChrome/lighthouse'}}>Lighthouse</Links.EL> metrics.</p>
 
         <p>The test environment is Chrome under the control of <Links.EL link={{source:'https://github.com/puppeteer/puppeteer'}}>Puppeteer</Links.EL>.</p>
+
+        <pre>
+          <code>
+          node public/emissions-tracker/emissions-by-url.js -u https://www.theguardian.com/uk -v -lh
+          </code>
+        </pre>
+
+        <h3>Report</h3>
 
         <p>Here are the results from a few sites including this one.</p>
 
@@ -362,77 +374,48 @@ const SustainableReportingEmissions = () => {
           ET: Emissions Tracker, DT: Chrome DevTools, LH: lighthouse API
         </div>
 
-        <section>
-          <h2>Appendix</h2>
+        <h3>Performance API</h3>
 
-          <h3>CO<sub>2</sub></h3>
-
-          <Accordion header="Sustainable Web Design Model">
-          <p>Internally, the Sustainable Web Design Model (SWDM) uses a value of 494g/kWh for carbon intensity.</p>
-
-          <h3>System Segments</h3>
-          <blockquote cite='https://sustainablewebdesign.org/estimating-digital-emissions/'>
-          <dl>
-            <dt><strong>Data centers</strong></dt>
-            <dd>Energy required to house and serve data - 22%</dd>
-            <dt><strong>Networks</strong></dt>
-            <dd>An allocation of energy used by networks to transfer data - 24%</dd>
-            <dt><strong>User devices</strong></dt>
-            <dd>Energy used by end users interacting with a product or service - 54%</dd>
-          </dl>
-          </blockquote>
-
-          <h3>Operational and embodied emissions</h3>
-
-          <p>EaDT system segment is further broken down into two categories:</p>
-
-          <blockquote cite='https://sustainablewebdesign.org/estimating-digital-emissions/'>
-          <dl>
-            <dt><strong>Operational</strong></dt>
-            <dd>The emissions attributed to the use of the devices in a segment.</dd>
-            <dt><strong>Embodied</strong></dt>
-            <dd>The emissions attributed to the production of the devices in a segment.</dd>
-          </dl>
-
-          <table><tbody><tr><td></td><td><strong>Data centers</strong></td><td><strong>Networks</strong></td><td><strong>User devices</strong></td></tr><tr><td><strong>Operational</strong></td><td>82%</td><td>82%</td><td>49%</td></tr><tr><td><strong>Embodied</strong></td><td>18%</td><td>18%</td><td>51%</td></tr></tbody></table>
-          </blockquote>
-
-        </Accordion>
-
-          <h3>DevTools</h3>
-
-          <p>
-          DevTools can be run simulataneously with the emissions tracker in Puppeteer:
-          <pre>
-              <code>
-                const browser = await puppeteer.launDT(&#123; devtools: true &#125;)
-              </code>
-            </pre>
-          </p>
-
-          <h3>Running the Emssions Tracker from an end-to-end test</h3>
-
-          <p>I run the Emissions Tracker (ET) from a simple test.</p>
-
-          <pre>
-            <code>
-            node public/emissions-tracker/emissions-tests.js -u https://www.theguardian.com/uk -v -lh
-            </code>
-          </pre>
-
-          <p>There are 3 flags:
-            <ul>
-              <li><code>-u or --url</code> for the website url (or domain)</li>
-              <li><code>-v or --verbose</code> when set logs all tracking data to the console (the default log out only the summarised report)</li>
-              <li><code>-lh or --lighthouse</code> when set runs a query against the lighthouse API</li>
-            </ul>
-          </p>
-        </section>
+        <p>I initially used values from the <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Performance_API'}}>Performance API</Links.EL> (a more recent alternative is the PerformanceObserver API) but this returns a value of 0 bytes for requests to third parties.</p>
 
         <Top></Top>
       </section>      
 
       <Published strDate="Wed 12 June 2024"></Published>
+
+
+      <section>
+        <h2>Appendix</h2>
+
+        <p>Internally, the Sustainable Web Design Model (SWDM) uses a value of 494g/kWh for carbon intensity.</p>
+
+        <h3>System Segments</h3>
+        <blockquote cite='https://sustainablewebdesign.org/estimating-digital-emissions/'>
+        <dl>
+          <dt><strong>Data centers</strong></dt>
+          <dd>Energy required to house and serve data - 22%</dd>
+          <dt><strong>Networks</strong></dt>
+          <dd>An allocation of energy used by networks to transfer data - 24%</dd>
+          <dt><strong>User devices</strong></dt>
+          <dd>Energy used by end users interacting with a product or service - 54%</dd>
+        </dl>
+        </blockquote>
+
+        <h3>Operational and embodied emissions</h3>
+
+        <p>Each system segment is further broken down into two categories:</p>
+
+        <blockquote cite='https://sustainablewebdesign.org/estimating-digital-emissions/'>
+        <dl>
+          <dt><strong>Operational</strong></dt>
+          <dd>The emissions attributed to the use of the devices in a segment.</dd>
+          <dt><strong>Embodied</strong></dt>
+          <dd>The emissions attributed to the production of the devices in a segment.</dd>
+        </dl>
+
+        <table><tbody><tr><td></td><td><strong>Data centers</strong></td><td><strong>Networks</strong></td><td><strong>User devices</strong></td></tr><tr><td><strong>Operational</strong></td><td>82%</td><td>82%</td><td>49%</td></tr><tr><td><strong>Embodied</strong></td><td>18%</td><td>18%</td><td>51%</td></tr></tbody></table>
+        </blockquote>
+      </section>
 
       <section>
         <h2>Links to external references</h2>

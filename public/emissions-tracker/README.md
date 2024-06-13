@@ -68,7 +68,7 @@ const testSite = async () => {
 ### Example
 
 ```
-node public/emissions-tracker/emissions-tests.js -u the-public-good.com -v -lh 
+node public/emissions-tracker/emissions-by-url.js -u the-public-good.com -v -lh 
 ```
 
 ## References
