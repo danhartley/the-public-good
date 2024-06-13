@@ -31,6 +31,18 @@ const SustainableReportingEmissions = () => {
       name: 'Digital Life Cycle Assessments | Mightybytes',
       source: 'https://www.mightybytes.com/blog/digital-life-cycle-assessment/',
     },
+    {
+      name: 'Why We Don’t Report Website Carbon Emissions | DebugBear',
+      source: 'https://www.debugbear.com/blog/website-carbon-emissions',
+    },
+    {
+      name: 'Measure and reduce your website\'s CO2 emissions | GreenFrame',
+      source: 'https://greenframe.io/',
+    },
+    {
+      name: 'Why web perf tools should be reporting website carbon emissions | Fershad Irani',
+      source: 'https://calendar.perfplanet.com/2023/why-web-perf-tools-should-be-reporting-website-carbon-emissions/',
+    },
   ]
 
   return (    
@@ -48,17 +60,33 @@ const SustainableReportingEmissions = () => {
           Tracking carbon emissions in end-to-end tests.
         </h2>
 
-        <p>Measuring carbon emissions associated with websites and apps is in its infancy but there are immediate benefits to doing so.</p>
+        <p>Measuring carbon emissions associated with websites and apps is in its infancy but there are benefits to doing so.</p>
 
         <p>The first is an appreciation for how emissions relate to bytes transferred.</p>
 
-        <p>The second is seeing how emissions change over time. This can be done by recording emissions during end to end tests.</p>
+        <p>The second is seeing how emissions fluctuate in response to changes in design and code. This can be done by recording emissions during end-to-end (E2E) tests.</p>
 
-        <p>It's also an opportunity for developers to pay attention to code running in the browser which is where others interact with it and to consider factors beyond their control but which they can influence: the emissions created on the server, the network, and devices, as well as the emissions resulting from manufacture.</p>
+        <p>Emissions created on the server, the network, and devices, as well as the emissions resulting from manufacture are beyond developers immediate control but we can elect to host our sites on servers running on renewable energy.</p>
 
-        <p>In addition, developers, or the companies they work for, can elect to host their sites on servers running on renewable energy.</p>
+        <p>But emissions reflect only part of a website's impact. For a profound assessment, a Digital Life Cycle Assessment (DCLA) is necessary. This will take into account many other factors including water and land usage.</p>      
 
-        <p>And finally there are uncosted resources such as water and land which are typically excluded because reliable figures are hard to come by. Only a Digital Life Cycle Assessment (DCLA) can capture the full impact on the planet.</p>
+        <h3>Don't hide in the IDE</h3>
+
+        <p>The greatest benefit to me from measuring bytes and emissions was that I paid more attention to code running where others see and interact with it, in the browser.</p>
+
+        <p>The Information Architecture (IA) of a web site and how individuals navigate it affects bytes transferred and processing time and resources.</p>
+
+        <p>For example, this blog uses a static site generator (netlify) which preloads linked pages. The home page has a lot of internal links which significantly increase its page weight (the number of bytes transferred).</p>
+
+        <p>But if you click on a visible link (above the fold) to internal content, you will see that page loads almost instantly with very few bytes being transferred. Reload the page, and you will see its true page weight. The difference can be between just a few kilobytes (kBs) to more than a hundred depending on the article.</p>
+
+        <p>I also cache pages. If you return to a page (without reloading) it is served from a local cache and the only network traffic will be to third parties (such as cabin analytics).</p>
+
+        <p>Whether this is a good strategy depends on how people use the site; whether they move between pages, or indeed whether they read more than one article in a single session. It's quite possible they won't read more than one but they may jump from page to page. (To observe this open the Network tab in the developer tools of any browser).</p>
+
+        <p>Knowing how and when bytes are transferred and emissions accrued helps developers make good decisions about their <abbr class={styles.abbr} title="Information Architecture">IA</abbr>, especially as a site is modified, extended, and refactored.</p>
+
+        <p>I'm less convinced displaying emissions is useful for site visitors. In time they may establish a heuristic for quantifying emissions based on browsing behaviour but some actions - watching YouTube videos or streaming Netflix - will dwarf other activity including AI chats.</p>
 
         <h3>Emissions per byte</h3>
 
@@ -82,15 +110,15 @@ const SustainableReportingEmissions = () => {
         
         <h3>End-to-end testing</h3>
 
-        <h3>Transfer size and emissions</h3>
-
-        <p>For each site, we check for the number of requests, the total transfer size of these requests in kilobytes (kBs), how long the page took to load in milliseconds (ms), and the associated emissions in milligrammes of carbon dioxide.</p>
+        <p>I created a simple helper class, <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/public/emissions-tracker/emissions-tracker.js'}}>EmissionsTracker</Links.EL>, which returns a summary of page metrics relevant to its emissions. The data include: the total transfer size of these requests in kilobytes (kBs), how long the page took to load in milliseconds (ms), and the associated emissions in milligrammes of carbon dioxide.</p>
 
         <p>I record these values whilst running an end-to-end test. This allows me to monitor the effect of changes to pages.</p>
 
-        <p>I also created a test which takes a URL passed to it on the command line. This is an additional boolean flag for verbosity and another which, if included, gets <Links.EL link={{source:'https://github.com/GoogleChrome/lighthouse'}}>Lighthouse</Links.EL> metrics.</p>
+        <p>I also created a <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/public/emissions-tracker/emissions-tests.js'}}>generic test</Links.EL> which takes a URL passed to it on the command line. This is an additional boolean flag for verbosity and another which, if included, generates <Links.EL link={{source:'https://github.com/GoogleChrome/lighthouse'}}>Lighthouse</Links.EL> metrics.</p>
 
-        <p>The test environment is Chrome or Firefox under the control of <Links.EL link={{source:'https://github.com/puppeteer/puppeteer'}}>Puppeteer</Links.EL>.</p>
+        <p>The test environment is Chrome under the control of <Links.EL link={{source:'https://github.com/puppeteer/puppeteer'}}>Puppeteer</Links.EL>.</p>
+
+        <p>Here are the results from a few sites including this one.</p>
 
         <table class={styles.tablepadded}>
           <caption>Emissions Tracker Summary</caption>
@@ -135,7 +163,7 @@ const SustainableReportingEmissions = () => {
           </tbody>
         </table>
 
-        <p>We can compare emissions with online tools</p>
+        <p>Here is a comparison with the results of some popular online tools.</p>
 
         <table class={styles.tablepadded}>
           <caption>Emissions</caption>
