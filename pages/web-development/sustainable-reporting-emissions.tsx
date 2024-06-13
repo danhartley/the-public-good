@@ -374,18 +374,29 @@ const SustainableReportingEmissions = () => {
           ET: Emissions Tracker, DT: Chrome DevTools, LH: lighthouse API
         </div>
 
-        <h3>Performance API</h3>
+        <h3>Conclusion</h3>
 
-        <p>I initially used values from the <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Performance_API'}}>Performance API</Links.EL> (a more recent alternative is the PerformanceObserver API) but this returns a value of 0 bytes for requests to third parties.</p>
+        <p>Monitoring how a site behaves in the browser is critical to assessing the code and infrastructure that underpins it but its more useful to frame findings within information architecture than within software architecture.</p>
+
+        <p>Moreover, emissions tracking and digital sustainability in general cannot be viewed in isolation, but needs to be considered alongside accessibility, performance, ethical factors and security.</p>
+
+        <p>And whilst some comparison with similar sites is useful, most is gained by observing change within a site. The best feature is sometimes the one that doesn't get built.</p>
+
+        <p>A snapshot of a page or even the entirety of a site is insufficient to judge its worth, which is determined over time. The platform for recording observations of nature, <Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL>, scores poorly in some respects but the site has changed little in fifteen years, a testament to good information architecture and clear aims. Perhaps they will begin to use WebP format for images but they have a legacy of images in the hundreds, if not thousands, of millions which cannot easily be converted.</p>
 
         <Top></Top>
       </section>      
 
       <Published strDate="Wed 12 June 2024"></Published>
 
-
       <section>
         <h2>Appendix</h2>
+
+        <h3>Performance API</h3>
+
+        <p>I initially used values from the <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Performance_API'}}>Performance API</Links.EL> (a more recent alternative is the PerformanceObserver API) but this returns a value of 0 bytes for requests to third parties.</p>
+
+        <h3>Sustainable Web Design</h3>
 
         <p>Internally, the Sustainable Web Design Model (SWDM) uses a value of 494g/kWh for carbon intensity.</p>
 
