@@ -85,8 +85,5 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false
-  },
-  "engines": {
-    "node": "v10.13.0"
   }
 }
