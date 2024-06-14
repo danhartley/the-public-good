@@ -2,7 +2,8 @@ import styles from 'components/tools/Formula.module.scss';
 
 const Formula = ({children}) => {
 
-    const elements = Array.from(children);
+    let elements = []
+    elements = Array.from(children);
 
     const formula = elements.map(element => {
         return isNaN(element as any) 
