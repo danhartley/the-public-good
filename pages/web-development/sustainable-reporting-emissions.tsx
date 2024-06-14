@@ -105,7 +105,7 @@ const SustainableReportingEmissions = () => {
         <h3>End-to-end testing</h3>
 
         <p>In order to record requests and calculate emissions, I created a simple helper class <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/emissions-tracker/emissions-tracker.js'}}>EmissionsTracker</Links.EL>.</p>
-        <p>An instance returns a summary of page metrics relevant to its emissions. The data include:</p>
+        <p>A call to the instance's single public method returns a summary of page metrics relevant to its emissions including:</p>
 
         <ul>
           <li>
@@ -130,7 +130,7 @@ const SustainableReportingEmissions = () => {
 
         <p>These values can be persisted and used to monitor the effect of code or design changes.</p>
 
-        <p>I also created a <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/public/emissions-tracker/emissions-by-url.js'}}>test</Links.EL> that can report on any website (it simply loads the given page).</p>
+        <p>I also created a <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/public/emissions-tracker/emissions-by-url.js'}}>test</Links.EL> that can report on any website (it simply loads the given page). By default I scroll to the bottom of the page which may give a more honest account of what is happening.</p>
 
         <pre>
           <div>
@@ -240,7 +240,6 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/wZaeBWX7zR9ktdPm7Ps4rcVc'}}>50</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>14</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/the-public-good-com/'}}>460</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=6d3cf8ca-c529-43c1-a300-49c1a4e6ae64'}}>1640</Links.EL></td>
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
@@ -248,7 +247,6 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/6sC1v7QNPIhoAsVrXeVzgDFf'}}>90</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>9</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/the-public-good-com/'}}>60</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=4e4a80c3-3419-493b-b399-093de3b14667'}}>1620</Links.EL></td>
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>
@@ -256,7 +254,6 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/624S3IReW0M3HhgAUNm5wkB2'}}>1069</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>296</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/theguardian-com-uk/'}}>1060</Links.EL></td>  
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=ffaa8359-f00d-4b38-b4ad-221183bdf6df'}}>2780</Links.EL></td>  
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL></td>
@@ -264,7 +261,6 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/cX5zkGvSYFOt8j7c1FnloAfp'}}>570</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>259</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/inaturalist-org/'}}>630</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=0b8ba74d-4a68-46cc-ad1a-a6862b254d23'}}>1980</Links.EL></td>
             </tr>
           </tbody>
         </table>
@@ -449,7 +445,7 @@ const SustainableReportingEmissions = () => {
 
         <p>I was less convinced displaying emissions would be useful for site visitors until I checked what happened when I scrolled through the posts on my Facebook home page. Since posts are added quicker than I can scroll, this is literally infinite. The initial page load was about 9MBs. After one minute of scrolling, I had downloaded:</p>
 
-        <p class={styles.huge}>170MBs</p>
+        <p class={styles.huge}>174MBs</p>
           
         <p>I would like to see native emissions counters in browsers that aggregated emissions across sites. Whether this would be over a session or time interval would be up to us, as would the option to set a budget or cap on emissions. It would certainly help highlight the deleterious effect of devious and deceptive patterns like infinite scroll and video autoplay.</p>
 
@@ -466,7 +462,7 @@ const SustainableReportingEmissions = () => {
 
         <p>I initially used values from the <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Performance_API'}}>Performance API</Links.EL> (a more recent alternative is the PerformanceObserver API) but this returns a value of 0 bytes for requests to third parties.</p>
 
-        <h3>Sustainable Web Design</h3>
+        {/* <h3>Sustainable Web Design</h3>
 
         <p>Internally, the Sustainable Web Design Model (SWDM) uses a value of 494g/kWh for carbon intensity.</p>
 
@@ -495,7 +491,7 @@ const SustainableReportingEmissions = () => {
         </dl>
 
         <table><tbody><tr><td></td><td><strong>Data centers</strong></td><td><strong>Networks</strong></td><td><strong>User devices</strong></td></tr><tr><td><strong>Operational</strong></td><td>82%</td><td>82%</td><td>49%</td></tr><tr><td><strong>Embodied</strong></td><td>18%</td><td>18%</td><td>51%</td></tr></tbody></table>
-        </blockquote>
+        </blockquote> */}
       </section>
 
       <section>
