@@ -169,12 +169,17 @@ figure .centred img {
     }
     pre {
         margin: .5rem 0 0 0;
-        padding: .25rem .75rem;
+        padding: .75rem;
         border: 1px solid #DFDFDF;
         border-radius: 3px;
+        text-wrap: wrap;
     }
     code {
         font-size: .75rem;
+    }
+    .huge {
+        font-size: 5rem;
+        text-align: center;
     }
 }
 

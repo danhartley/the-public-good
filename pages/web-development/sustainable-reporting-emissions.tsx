@@ -48,7 +48,7 @@ const SustainableReportingEmissions = () => {
   return (    
     <Layout
       header="Sustainable Reporting - Emissions"
-      rt="2 to 3"
+      rt="3 to 4"
       title="Sustainable web development"
       description={
         'Tracking emissions from websites and web apps when running end-to-end tests.'
@@ -62,81 +62,112 @@ const SustainableReportingEmissions = () => {
 
         <p>Measuring carbon emissions associated with websites and apps is in its infancy but there are benefits to doing so.</p>
 
-        <p>The first is an appreciation for how emissions relate to bytes transferred.</p>
+        <p>The first is an appreciation of how emissions relate to bytes transferred.</p>
 
         <p>The second is seeing how emissions fluctuate in response to changes in design and code. This can be done by recording emissions during end-to-end (E2E) tests.</p>
-
-        <p>Emissions created on the server, the network, and devices, as well as the emissions resulting from manufacture are beyond developers immediate control but we can elect to host our sites on servers running on renewable energy.</p>
-
-        <p>But emissions reflect only part of a website's impact. For a profound assessment, a Digital Life Cycle Assessment (DCLA) is necessary. This will take into account many other factors including water and land usage.</p>      
-
-        <h3>Don't hide in the IDE</h3>
-
-        <p>The greatest benefit to me from measuring bytes and emissions was that I paid more attention to code running where others see and interact with it, in the browser.</p>
-
-        <p>The Information Architecture (IA) of a web site and how individuals navigate it affects bytes transferred and processing time and resources.</p>
-
-        <p>For example, this blog preloads linked pages. The home page has a lot of internal links which significantly increase its page weight (a mix of the number of bytes transferred and the number of requests).</p>
-
-        <p>But if you click on a visible link (above the fold) to internal content, you will see that page loads almost instantly with very few bytes being transferred. Reload the page, and you will see its true page weight. The difference is between a few kilobytes (kBs) to more than a hundred depending on the article.</p>
-
-        <p>I also cache pages. If you return to a page (without reloading) it is served from a local cache and the only network traffic will be to third parties (such as cabin analytics).</p>
-
-        <p>The efficacy of this strategy depends on how people use the site; whether they move between pages, or indeed whether they read more than one article in a single session. It's quite possible they won't read more than one but they may jump from page to page.</p>
-
-        <p>To observe this behaviour, open the Network tab in the developer tools of any browser.</p>
-
-        <p>Knowing how and when bytes are transferred and emissions accrued helps developers make good decisions about their <abbr class={styles.abbr} title="Information Architecture">IA</abbr>, especially as a site is modified, extended, and refactored.</p>
-
-        <p>I'm less convinced displaying emissions is useful for site visitors. They may gain a feeling for what causes emissions but sources of very high emissions such as watching YouTube videos or streaming Netflix could make savings elsewhere appear trivial.</p>
-
-        <p>On the other hand, if was easy to set budgets, we'd see the deleterious effect of devious or deceptive patterns such as Facebook's infinite scroll.</p>
 
         <h3>Emissions per byte</h3>
 
         <p>In order to measure carbon emissions for this website, I'm using <Links.EL link={{source:'https://developers.thegreenwebfoundation.org/co2js/overview/'}}>CO2.js</Links.EL> from The Green Web Foundation (GWF). The simplest call to their API needs only a byte value.</p>
 
-        <p>If the site is hosted on servers running on renewable energy the emissions will be lower. The <abbr class={styles.abbr} title='The Green Web Foundation'>GBF</abbr> provides a helper function for <Links.EL link={{source:'https://developers.thegreenwebfoundation.org/co2js/tutorials/check-hosting/'}}>checking if a site is hosted green</Links.EL>.</p>
+        <p>If the site is hosted on servers running on renewable energy the emissions will be lower. The <abbr class={styles.abbr} title='The Green Web Foundation'>GBF</abbr> provides a helper function for <Links.EL link={{source:'https://developers.thegreenwebfoundation.org/co2js/tutorials/check-hosting/'}}>checking if a site is green hosted</Links.EL>.</p>
 
-        <p>For a website of median <Links.EL link={{source:'https://almanac.httparchive.org/en/2022/page-weight'}}>page weight</Links.EL>, the simplest request is a few lines:</p>
+        <p>Here is an example for a website of median <Links.EL link={{source:'https://almanac.httparchive.org/en/2022/page-weight'}}>page weight</Links.EL>.</p>
 
         <pre>
           <code>
-            <div>const green = hosting.check('median-website.com').green</div>
-            <div>const co2Emission = new co2()</div>
-            <div>const bytes = 2299</div>
-            <div>const emissions = co2Emission.perByte(bytes, green)</div>
+            <div>import &#123; hosting, co2 &#125; from "@tgwf/co2"</div>
             <br />
-            <div>// emissions is ~783mg/CO<sub>2</sub> for a site running on renewable energy</div>
-            <div>// emissions is ~905mg/CO<sub>2</sub> for a site not running on renewable energy</div>
+            <div>const green = hosting.check('median-website.com').green</div>
+            <div>const bytes = 2299</div>
+            <div>const emissions = new co2().perByte(bytes, green)</div>            
           </code>
         </pre>
-        
+
+        <table class={styles.tablepadded}>
+          <caption>Emissions Comparison Green Hosting</caption>
+          <thead>
+            <th>Green web host</th>
+            <th>Carbon dioxide emissions</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class={styles.bgbodydomain}>Yes</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>~783 mg/CO<sub>2</sub></td>
+            </tr>
+            <tr>
+              <td class={styles.bgbodydomain}>No</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>~905 mg/CO<sub>2</sub></td>
+            </tr>
+          </tbody>
+        </table>
+
         <h3>End-to-end testing</h3>
 
-        <p>I created a simple helper class, <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/public/emissions-tracker/emissions-tracker.js'}}>EmissionsTracker</Links.EL>, which returns a summary of page metrics relevant to its emissions. The data include: the total transfer size of these requests in kilobytes (kBs), how long the page took to load in milliseconds (ms), and the associated emissions in milligrammes of carbon dioxide.</p>
+        <p>In order to record requests and calculate emissions, I created a simple helper class <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/emissions-tracker/emissions-tracker.js'}}>EmissionsTracker</Links.EL>.</p>
+        <p>An instance returns a summary of page metrics relevant to its emissions. The data include:</p>
 
-        <p>I record these values whilst running an end-to-end test. This allows me to monitor the effect of changes to pages.</p>
+        <ul>
+          <li>
+            The number of requests
+          </li>
+          <li>
+            Whether the site uses green hosting
+          </li>
+          <li>
+            The grid intensity (either calculated from the request or set manually)
+          </li>
+          <li>
+            The total transfer size of requests in kilobytes (kBs)
+          </li>
+          <li>
+            How long the page took to load in milliseconds (ms)
+          </li>
+          <li>
+            Emissions in milligrams of carbon dioxide
+          </li>
+        </ul>
 
-        <p>I also created a <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/public/emissions-tracker/emissions-by-url.js'}}>generic test</Links.EL> which takes a URL passed to it on the command line. This is an additional boolean flag for verbosity and another which, if included, generates <Links.EL link={{source:'https://github.com/GoogleChrome/lighthouse'}}>Lighthouse</Links.EL> metrics.</p>
+        <p>These values can be persisted and used to monitor the effect of code or design changes.</p>
 
-        <p>The test environment is Chrome under the control of <Links.EL link={{source:'https://github.com/puppeteer/puppeteer'}}>Puppeteer</Links.EL>.</p>
+        <p>I also created a <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/public/emissions-tracker/emissions-by-url.js'}}>test</Links.EL> that can report on any website (it simply loads the given page).</p>
 
         <pre>
-          <code>
-          node public/emissions-tracker/emissions-by-url.js -u https://www.theguardian.com/uk -v -lh
-          </code>
+          <div>
+            <code>
+            node emissions-tracker/emissions-by-url.js -u https://www.theguardian.com/uk -v -lh
+            </code>
+          </div>
+          <br />
+          <div>// -u website url or domain</div>
+          <div>// -v: verbosity</div>
+          <div>// -lh: to also run a <Links.EL link={{source:'https://github.com/GoogleChrome/lighthouse'}}>Lighthouse</Links.EL> report</div>
         </pre>
+
+        <p>The test environment is Chrome under the control of <Links.EL link={{source:'https://github.com/puppeteer/puppeteer'}}>Puppeteer</Links.EL>.</p>
 
         <h3>Report</h3>
 
         <p>Here are the results from a few sites including this one.</p>
 
+        <Accordion header={'Websites'}>
+          <dl>
+            <dt>The GWF</dt>
+            <dd>The Green Web Foundation</dd>
+            <dt>The PG</dt>
+            <dd>The Public Good</dd>
+            <dt>The Guardian</dt>
+            <dd>The Guardian newspaper</dd>
+            <dt>iNaturalist</dt>
+            <dd>iNaturalist</dd>
+          </dl>
+        </Accordion>
+
         <table class={styles.tablepadded}>
           <caption>Emissions Tracker Summary</caption>
           <thead>
           <tr>
-            <th>Domain</th>
+            <th>Wesbite</th>
             <th class={styles.textRight}>Requests</th>
             <th class={styles.textRight}>kBs</th>
             <th class={styles.textRight}>ms</th>
@@ -145,28 +176,28 @@ const SustainableReportingEmissions = () => {
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.thegreenwebfoundation.org/'}}>The GWF</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>457</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>49</td>              
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>the-public-good.com</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>66</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>462</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99</td>              
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>theguardian.com/uk</td>              
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2092</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>320</td>              
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>inaturalist.org</td>       
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>1930</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>
@@ -175,13 +206,23 @@ const SustainableReportingEmissions = () => {
           </tbody>
         </table>
 
-        <p>Here is a comparison with the results of some popular online tools.</p>
+        <p>Here is a comparison with the results of some popular online carbon calculators.</p>
+
+        <Accordion header='Website carbon calculators'>
+          <ul>
+            <li><Links.EL link={{source:'https://www.websitecarbon.com/'}}>Website Carbon Calculator</Links.EL></li>
+            <li><Links.EL link={{source:'https://ecograder.com/'}}>Ecograder</Links.EL></li>
+            <li><Links.EL link={{source:'https://carbonneutralwebsite.org/calculate'}}>Carbon Neutral Website</Links.EL></li>
+          </ul>
+
+          <div>For more website carbon evaluation tools see <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1zNBeu9C-I4gay-EHwZJ328gnv1KT8NVAZ8zgnBYGvDo/edit?gid=319367759#gid=319367759'}}>The PG: website metrics</Links.EL>.</div>
+        </Accordion>
 
         <table class={styles.tablepadded}>
           <caption>Emissions</caption>
           <thead>
           <tr>
-            <th>Domain</th>
+            <th>Wesbite</th>
             <th colSpan={4} class={styles.textCentre}>mg/CO<sub>2</sub></th>
           </tr>
           <tr>
@@ -194,7 +235,7 @@ const SustainableReportingEmissions = () => {
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.thegreenwebfoundation.org/'}}>The GWF</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>49</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/wZaeBWX7zR9ktdPm7Ps4rcVc'}}>50</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>14</td>
@@ -202,7 +243,7 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=6d3cf8ca-c529-43c1-a300-49c1a4e6ae64'}}>1640</Links.EL></td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>the-public-good.com</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/6sC1v7QNPIhoAsVrXeVzgDFf'}}>90</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>9</td>
@@ -210,7 +251,7 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=4e4a80c3-3419-493b-b399-093de3b14667'}}>1620</Links.EL></td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>theguardian.com/uk</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>320</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/624S3IReW0M3HhgAUNm5wkB2'}}>1069</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>296</td>
@@ -218,7 +259,7 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=ffaa8359-f00d-4b38-b4ad-221183bdf6df'}}>2780</Links.EL></td>  
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>inaturalist.org</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/cX5zkGvSYFOt8j7c1FnloAfp'}}>570</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>259</td>
@@ -232,13 +273,13 @@ const SustainableReportingEmissions = () => {
           ET: Emissions Tracker, EC: Ecograder, CN: Carbon Neutral Website, WC: Website Carbon
         </div>
 
-        <p>We can compare the bytes transferred value of the Emissions Tracker with Chrome DevTools (DT) and Lighthouse (LH).</p>
+        <p>We can compare the bytes transferred value of the Emissions Tracker (ET) with Chrome DevTools (DT) and Lighthouse (LH).</p>
 
         <table class={styles.tablepadded}>
           <caption>Bytes transferred</caption>
           <thead>
           <tr>
-            <th>URL</th>
+            <th>Website</th>
             <th colSpan={3} class={styles.textCentre}>Kilobytes</th>
           </tr>
           <tr>
@@ -250,25 +291,25 @@ const SustainableReportingEmissions = () => {
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.thegreenwebfoundation.org/'}}>The GWF</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>457</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>417</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>141</td>        
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>the-public-good.com</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>462</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>224</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>169</td>                     
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>theguardian.com/uk</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2092</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2200</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2259</td>   
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>inaturalist.org</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>1930</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2400</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2925</td>   
@@ -280,13 +321,13 @@ const SustainableReportingEmissions = () => {
           ET: Emissions Tracker, DT: Chrome DevTools, LH: lighthouse API
         </div>
 
-        <p>We can compare the number of requests value for the Emissions Tracker with Chrome DevTools (DT) and Lighthouse (LH).</p>
+        <p>The number of requests.</p>
 
         <table class={styles.tablepadded}>
           <caption>Request count</caption>
           <thead>
           <tr>
-            <th>URL</th>
+            <th>Website</th>
             <th colSpan={3} class={styles.textCentre}>Requests</th>            
           </tr>
           <tr>
@@ -298,25 +339,25 @@ const SustainableReportingEmissions = () => {
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.thegreenwebfoundation.org/'}}>The GWF</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>21</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>23</td>                              
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>the-public-good.com</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>66</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>56</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>49</td>                              
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>theguardian.com/uk</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td> 
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>114</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>123</td>          
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>inaturalist.org</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td> 
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>44</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>57</td>          
@@ -328,11 +369,13 @@ const SustainableReportingEmissions = () => {
           ET: Emissions Tracker, DT: Chrome DevTools, LH: lighthouse API
         </div>
 
+        <p>And load time.</p>
+
         <table class={styles.tablepadded}>
           <caption>Load time</caption>
           <thead>
           <tr>
-            <th>URL</th>   
+            <th>Website</th>   
             <th colSpan={3} class={styles.textCentre}>Load (ms)</th>
           </tr>
           <tr>
@@ -344,25 +387,25 @@ const SustainableReportingEmissions = () => {
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>thegreenwebfoundation.org</td>
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.thegreenwebfoundation.org/'}}>The GWF</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>1002</td>            
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>                           
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>the-public-good.com</td>      
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>      
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>877</td>            
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>1345</td>                           
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>theguardian.com/uk</td>    
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>    
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>      
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>1240</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>1480</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>inaturalist.org</td>      
+              <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL></td>      
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>      
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>6000</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>3931</td>
@@ -374,20 +417,47 @@ const SustainableReportingEmissions = () => {
           ET: Emissions Tracker, DT: Chrome DevTools, LH: lighthouse API
         </div>
 
-        <h3>Conclusion</h3>
+        <h3>Code in the wild</h3>
 
-        <p>Monitoring how a site behaves in the browser is critical to assessing the code and infrastructure that underpins it but its more useful to frame findings within information architecture than within software architecture.</p>
+        <p>The greatest benefit to me from measuring bytes and emissions was that I paid more attention to code running where others see and interact with it - in the browser.</p>
 
-        <p>Moreover, emissions tracking and digital sustainability in general cannot be viewed in isolation, but needs to be considered alongside accessibility, performance, ethical factors and security.</p>
+        <p>The Information Architecture (IA) of a web site and how individuals navigate it affects bytes transferred and processing time and resources.</p>
+
+        <p>For example, this blog preloads linked pages. The home page has a lot of internal links which significantly increase its page weight (a mix of the number of bytes transferred and the number of requests).</p>
+
+        <p>But if you click on a visible link (above the fold) to internal content, you will see that page loads almost instantly with very few bytes being transferred. A hard refresh will reload all the page's resources; for some articles this is over 100kBs.</p>
+
+        <p>I also cache pages. If you return to a page (without reloading) it is served from a local cache and the only network traffic will be to third parties (such as cabin analytics).</p>
+
+        <p>The effectiveness of this strategy depends on how people use the site; whether they move between pages, or indeed whether they read more than one article in a single session. It's quite possible they won't read more than one but they may jump from page to page.</p>
+
+        <p>To observe this behaviour, open the Network tab in the developer tools of any browser.</p>
+        
+        <h3>Summary</h3>
+
+        <p>Recording performance and sustainability metrics during end-to-end tests in (or similar to) the production environment is a way for developers to get closer to the experience of people using their site. It is more meaningful to engage with the living information architecture in the browser than dead <Links.IL link={{source:'web-development/practice/artefacts'}}>artefacts</Links.IL>.</p>
+
+        <p>Emissions tracking and digital sustainability in general cannot be viewed, however, in isolation, but should be considered alongside accessibility, performance, ethical factors and security.</p>
 
         <p>And whilst some comparison with similar sites is useful, most is gained by observing change within a site. The best feature is sometimes the one that doesn't get built.</p>
 
-        <p>A snapshot of a page or even the entirety of a site is insufficient to judge its worth, which is determined over time. The platform for recording observations of nature, <Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL>, scores poorly in some respects but the site has changed little in fifteen years, a testament to good information architecture and clear aims. Perhaps they will begin to use WebP format for images but they have a legacy of images in the hundreds, if not thousands, of millions which cannot easily be converted.</p>
+        <p>A snapshot of a page or even the entirety of a site is insufficient to judge its merit. The platform for recording observations of nature, for example, <Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL>, scores poorly in some respects but the site has changed little in fifteen years, a testament to good information architecture and clear aims.</p>
 
+        <h3>Conclusion</h3>
+
+        <p>Knowing how and when bytes are transferred and emissions accrued helps developers make good decisions about site architecture, especially as a site is modified and extended and code is refactored.</p>
+
+        <p>I was less convinced displaying emissions would be useful for site visitors until I checked what happened when I scrolled through the posts on my Facebook home page. Since posts are added quicker than I can scroll, this is literally infinite. The initial page load was about 9MBs. After one minute of scrolling, I had downloaded:</p>
+
+        <p class={styles.huge}>170MBs</p>
+          
+        <p>I would like to see native emissions counters in browsers that aggregated emissions across sites. Whether this would be over a session or time interval would be up to us, as would the option to set a budget or cap on emissions. It would certainly help highlight the deleterious effect of devious and deceptive patterns like infinite scroll and video autoplay.</p>
+
+        <p>Finally, emissions reflect only a fraction of a website's impact on its environment. A full Digital Life Cycle Assessment (DCLA) would be needed to take into account water and land usage and adverse effects on people and nature to name only a few considerations.</p>      
         <Top></Top>
       </section>      
 
-      <Published strDate="Wed 12 June 2024"></Published>
+      <Published strDate="Fri 14 June 2024"></Published>
 
       <section>
         <h2>Appendix</h2>
@@ -442,7 +512,8 @@ const SustainableReportingEmissions = () => {
           {
             value: 'web-development/sustainable-practices',
             text: 'Sustainable practices',
-          },
+          }
+          , { value: 'web-development/practice/artefacts', text: 'Artefacts' }
         ]}
       ></Links.RelatedLinks>
     </Layout>

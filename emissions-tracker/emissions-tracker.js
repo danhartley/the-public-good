@@ -8,7 +8,7 @@ export class EmissionsTracker {
   #byteOptions = null
   #visitOptions = null
   #entries = []
-  #sameoriginEntries = []
+  #sameOriginEntries = []
   #thirdPartyEntries = []
   #cumulativeBytes = 0
   #timeToRender = {}    
@@ -164,10 +164,10 @@ export class EmissionsTracker {
         const resourceType = response.request().resourceType()
 
         // Check resource is one we want to measure
-        const isValidMethod = methods.includes(response.request().method())
-        const isSameOrigin = getDomainFromURL({url}) === this.#options.domain
+        const isValidMethod = methods.includes(response.request().method())        
         const isValidStatus = logStatuses.length ? logStatuses.includes(response.status()) : true
         const isValidType = logTypes.length ? logTypes.includes(resourceType) : true
+
         const isValidResource = isValidMethod && isValidType && isValidStatus
 
         if(!isValidResource) return
@@ -190,8 +190,10 @@ export class EmissionsTracker {
           }                
         }
 
+        const isSameOrigin = getDomainFromURL({url}) === this.#options.domain
+
         const target = isSameOrigin
-          ? this.#sameoriginEntries
+          ? this.#sameOriginEntries
           : this.#thirdPartyEntries
 
         target.push({
@@ -201,8 +203,9 @@ export class EmissionsTracker {
         })      
 
         // Calculate cumulative bytes and emissions
-        const sobytes = this.#sameoriginEntries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
+        const sobytes = this.#sameOriginEntries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
         const tpbytes = this.#thirdPartyEntries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
+        
         this.#cumulativeBytes = sobytes + tpbytes 
       })
 
@@ -212,7 +215,7 @@ export class EmissionsTracker {
         if(recordedBytes === bytes) return
         const emissions = co2Emission.perByte(bytes, true)
         EmissionsTracker.logOut({
-          title: 'Cumulative bytes in kBs and emissions in mg/CO2. Polled every 5 seconds.'
+          title: 'Cumulative bytes in kBs and emissions in mg/CO2. Runs every 5 seconds.'
             , data: [{
                 kBs: Number((bytes / 1000).toFixed(1))
               , emissions: Number((emissions * 1000).toFixed(3))
@@ -227,7 +230,7 @@ export class EmissionsTracker {
 
   async #printSummary() {
 
-    // Calculate green hosting
+    // Check for green hosting
     try {
       if(this.#options.domain) {
         await this.#checkHosting({ 
@@ -264,7 +267,7 @@ export class EmissionsTracker {
 
     // Calculate total bytes transferred
     const bytes = this.#entries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
-    const sobytes = this.#sameoriginEntries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
+    const sobytes = this.#sameOriginEntries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
     const tpbytes = this.#thirdPartyEntries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
     const kBs = Number(((sobytes + tpbytes) / 1000).toFixed(1))
     
@@ -296,6 +299,7 @@ export class EmissionsTracker {
 
     EmissionsTracker.logOut(byteDataBySource)
 
+    // Calculate grid intensity
     const gridData = {
         title: 'Grid intensity in gCO2e per kWh'
       , data: [{
@@ -336,12 +340,13 @@ export class EmissionsTracker {
       })
     }
 
-    // Save emissions per byte
+    // Save emissions per byte in mg
     this.#summary.push({
         metric: 'Page emissions per byte in mg/CO2'
       , value: Number((this.#emissionsPerByte * 1000).toFixed(3))
     })
 
+    // Save emissions per byte in g
     this.#summary.push({
         metric: 'Page emissions per byte in g/CO2'
       , value: Number(this.#emissionsPerByte.toFixed(3))
@@ -544,7 +549,7 @@ export class EmissionsTracker {
       // Print bytes per request from response
       data = this.#options?.sort?.sortBy
         ? this.#options.sort.sortBy({
-              arr: this.#sameoriginEntries
+              arr: this.#sameOriginEntries
             , prop: 'transferSizeInBytes'
             , dir: this.#options.sort.direction
         }) 
