@@ -9,11 +9,16 @@ import * as chromeLauncher from 'chrome-launcher'
 
 const testSite = async ({byteOptions = null, visitOptions = null}) => {
 
-  let emissionsTracker, url, domain, verbose = false, report, summary, runLighthouse = false
+  let emissionsTracker, url, domain, verbose = false, report, summary, runLighthouse = false, ratios = {
+      css: 6
+    , js: 2
+    , other: 5
+  }
 
   const verboseArgs = ['-v', '--verbose']
   const urlArgs = ['-u', '--url']
   const lighthouseArgs = ['-lh', '--lighthouse']
+  const ratioArgs = ['-r', '--ratios']
 
   process.argv.forEach((val, index) => { 
       if(verboseArgs.includes(val)) verbose = true
@@ -23,6 +28,17 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
         if(nextArg < process.argv.length) {
           url = process.argv[nextArg].includes('http') ? process.argv[nextArg] : `https://${process.argv[nextArg]}`
           domain = getDomainFromURL({url})
+        }        
+      }
+      if(ratioArgs.includes(val)) {
+        const nextArg = index + 1
+        if(nextArg < process.argv.length) {
+          const values = process.argv[nextArg].split(',')
+          ratios = {
+              css: Number(values[0])
+            , js: Number(values[1])
+            , other: Number(values[2])
+          }
         }
       }
   })
@@ -67,6 +83,7 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
           , markDOMLoaded: 'DOM loaded'
           , markStart: 'fetch-field-notes: start'
           , markEnd: 'fetch-field-notes: end'      
+          , ratios
         }
         , byteOptions
         , visitOptions
@@ -77,7 +94,10 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
       
       // Scrolling to the bottom of the page
       await page.evaluate(() => {
-        window.scrollTo(0, document.body.scrollHeight);
+        window.scrollTo({
+            top: document.body.scrollHeight
+          , behavior: 'smooth'
+        })
       })
 
       // Get performance report

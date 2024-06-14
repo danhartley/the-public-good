@@ -63,7 +63,8 @@ const testSite = async () => {
 
 - -v or --verbose
 - -u or --url
-- -lh or --lighthouse
+- -lh or --lighthouse\
+- -r or --ratios for compression ratios
 
 ### Example
 

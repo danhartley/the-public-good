@@ -153,7 +153,7 @@ export class EmissionsTracker {
   async #logResources() {
     if(this.#options.includeThirdPartyResources) {
       const methods = ['GET', 'POST']
-      const logTypes = ['image', 'xhr', 'script', 'document', 'stylesheet', 'other', 'fetch', 'ping']
+      const logTypes = ['image', 'xhr', 'script', 'document', 'stylesheet', 'ping', 'fetch', 'font', 'other']
       const logStatuses = [200]
 
       const co2Emission = new co2()
@@ -170,9 +170,24 @@ export class EmissionsTracker {
 
         const isValidResource = isValidMethod && isValidType && isValidStatus
 
-        if(!isValidResource) return
+        if(!isValidResource) {
+          console.log(url)
+          return
+        }
 
         const headers = response.headers()
+
+        const isJS = url.includes('.js')
+        const isCSS = url.includes('.css')
+        // We want to exlude CSS for prefetched pages
+        if(isCSS) {
+          const age = headers['age']
+          if(age) {
+            if(Number(age) === 0) return
+          } else {
+            return
+          }        
+        }
 
         let transferSize = 0
 
@@ -184,6 +199,15 @@ export class EmissionsTracker {
                     
             if(buffer) {
               transferSize = parseInt(buffer.byteLength, 10)
+              // We need to work out the transfer size given the (unzipped) resource size
+              if(isCSS) {
+                transferSize = transferSize / this.#options.ratios.css
+              }
+              else if(isJS) {
+                transferSize = transferSize / this.#options.ratios.js
+              } else {
+                transferSize = transferSize / this.#options.ratios.other
+              }
             }
           } catch(e) {
             console.log(e)
@@ -195,6 +219,9 @@ export class EmissionsTracker {
         const target = isSameOrigin
           ? this.#sameOriginEntries
           : this.#thirdPartyEntries
+
+        // Remove duplicates
+        if(target.find(t => t.name === EmissionsTracker.parseName(url))) return
 
         target.push({
             name: EmissionsTracker.parseName(url)

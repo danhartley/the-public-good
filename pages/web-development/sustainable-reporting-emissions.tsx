@@ -178,28 +178,28 @@ const SustainableReportingEmissions = () => {
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.thegreenwebfoundation.org/'}}>The GWF</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>457</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>487</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>49</td>              
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>66</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>462</td>
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>86</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>343</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99</td>              
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2092</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2291</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>320</td>              
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>897</td>              
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>1930</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2798</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771</td>              
             </tr>
@@ -239,7 +239,7 @@ const SustainableReportingEmissions = () => {
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>49</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/wZaeBWX7zR9ktdPm7Ps4rcVc'}}>50</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>14</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/the-public-good-com/'}}>460</Links.EL></td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/thegreenwebfoundation-org/'}}>40</Links.EL></td>
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
@@ -250,7 +250,7 @@ const SustainableReportingEmissions = () => {
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>320</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>897</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/624S3IReW0M3HhgAUNm5wkB2'}}>1069</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>296</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/theguardian-com-uk/'}}>1060</Links.EL></td>  
@@ -271,6 +271,8 @@ const SustainableReportingEmissions = () => {
 
         <p>We can compare the bytes transferred value of the Emissions Tracker (ET) with Chrome DevTools (DT) and Lighthouse (LH).</p>
 
+        <p>N.B. Figures for Lighthouse are low for requests because only the page above the fold is analysed. When I run the Emissions Tracker, I scroll smoothly to the end of the page.</p>
+
         <table class={styles.tablepadded}>
           <caption>Bytes transferred</caption>
           <thead>
@@ -288,25 +290,25 @@ const SustainableReportingEmissions = () => {
           <tbody>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.thegreenwebfoundation.org/'}}>The GWF</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>457</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>487</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>417</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>141</td>        
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>462</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>343</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>224</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>169</td>                     
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2092</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2291</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2200</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2259</td>   
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>1930</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2798</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2400</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2925</td>   
             </tr>
@@ -342,7 +344,7 @@ const SustainableReportingEmissions = () => {
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>66</td>          
+              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>86</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>56</td>          
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>49</td>                              
             </tr>
@@ -458,40 +460,19 @@ const SustainableReportingEmissions = () => {
       <section>
         <h2>Appendix</h2>
 
+        <h3>Content length</h3>
+
+        <p>When the content length is unavailable, I use the response byte length. However, this is the uncompressed value, and compression ratios are variable.</p>
+
+        <p>In order to compensate, I set pass ratios for CSS (6), JS (2) and Other (5). These values can be overridden using command line variables.</p>
+
         <h3>Performance API</h3>
 
         <p>I initially used values from the <Links.EL link={{source:'https://developer.mozilla.org/en-US/docs/Web/API/Performance_API'}}>Performance API</Links.EL> (a more recent alternative is the PerformanceObserver API) but this returns a value of 0 bytes for requests to third parties.</p>
 
-        {/* <h3>Sustainable Web Design</h3>
-
-        <p>Internally, the Sustainable Web Design Model (SWDM) uses a value of 494g/kWh for carbon intensity.</p>
-
-        <h3>System Segments</h3>
-        <blockquote cite='https://sustainablewebdesign.org/estimating-digital-emissions/'>
-        <dl>
-          <dt><strong>Data centers</strong></dt>
-          <dd>Energy required to house and serve data - 22%</dd>
-          <dt><strong>Networks</strong></dt>
-          <dd>An allocation of energy used by networks to transfer data - 24%</dd>
-          <dt><strong>User devices</strong></dt>
-          <dd>Energy used by end users interacting with a product or service - 54%</dd>
-        </dl>
+        <blockquote cite='https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/Resource_timing#coping_with_cors'>
+          When CORS is in effect, many of the timing properties' values are returned as zero unless the server's access policy permits these values to be shared. This requires the server providing the resource to send the Timing-Allow-Origin HTTP response header with a value specifying the origin or origins which are allowed to get the restricted timestamp values.
         </blockquote>
-
-        <h3>Operational and embodied emissions</h3>
-
-        <p>Each system segment is further broken down into two categories:</p>
-
-        <blockquote cite='https://sustainablewebdesign.org/estimating-digital-emissions/'>
-        <dl>
-          <dt><strong>Operational</strong></dt>
-          <dd>The emissions attributed to the use of the devices in a segment.</dd>
-          <dt><strong>Embodied</strong></dt>
-          <dd>The emissions attributed to the production of the devices in a segment.</dd>
-        </dl>
-
-        <table><tbody><tr><td></td><td><strong>Data centers</strong></td><td><strong>Networks</strong></td><td><strong>User devices</strong></td></tr><tr><td><strong>Operational</strong></td><td>82%</td><td>82%</td><td>49%</td></tr><tr><td><strong>Embodied</strong></td><td>18%</td><td>18%</td><td>51%</td></tr></tbody></table>
-        </blockquote> */}
       </section>
 
       <section>
