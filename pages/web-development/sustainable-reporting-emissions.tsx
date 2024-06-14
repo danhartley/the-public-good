@@ -76,7 +76,7 @@ const SustainableReportingEmissions = () => {
 
         <p>The Information Architecture (IA) of a web site and how individuals navigate it affects bytes transferred and processing time and resources.</p>
 
-        <p>For example, this blog uses a static site generator (netlify) which preloads linked pages. The home page has a lot of internal links which significantly increase its page weight (a mix of the number of bytes transferred and the number of requests).</p>
+        <p>For example, this blog preloads linked pages. The home page has a lot of internal links which significantly increase its page weight (a mix of the number of bytes transferred and the number of requests).</p>
 
         <p>But if you click on a visible link (above the fold) to internal content, you will see that page loads almost instantly with very few bytes being transferred. Reload the page, and you will see its true page weight. The difference is between a few kilobytes (kBs) to more than a hundred depending on the article.</p>
 
