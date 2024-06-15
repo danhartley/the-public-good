@@ -417,7 +417,7 @@ const SustainableReportingEmissions = () => {
                 
         <p>There are discrepancies in the results. There are discrepancies between runs using the same measure. One of the largest - an order of magnitude - is between the results given by the <Links.EL link={{source:'https://carbonneutralwebsite.org/calculate'}}>Carbon Neutral website</Links.EL> and other calculators. The only calculator that gives similar results is <Links.EL link={{source:'https://greenframe.io/'}}>GreenFrame</Links.EL> but that requires local installation or a subscription. Another site, ecoIndex, gives values an order of magnitude <em>higher</em> than the average. For example, for the Public Good, the emissions are calculated to be <Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=ec506c10-0474-4160-8338-bf4134a3164c'}}>1620 m/CO<sub>2</sub></Links.EL>.</p>
 
-        <p>Until there is consensus and certainty around numbers, I think we should be careful publishing them. It is too often the case that a single figure gets picked up and repeated endlessly, as happened with the <Links.IL link={{source:'web-development/measuring-the-web'}}> carbon emissions attributable to watching Netflix</Links.IL>.</p>
+        <p>Until there is consensus and certainty around numbers, I think we should be careful publishing them. It is too often the case that a single figure gets picked up and repeated endlessly, as happened with <Links.IL link={{source:'web-development/measuring-the-web'}}> carbon emissions attributed to watching Netflix</Links.IL>.</p>
 
         <h3>Living information architecture</h3>
 
