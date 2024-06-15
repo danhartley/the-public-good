@@ -48,7 +48,7 @@ const SustainableReportingEmissions = () => {
   return (    
     <Layout
       header="Sustainable Reporting - Emissions"
-      rt="3 to 4"
+      rt="4 to 5"
       title="Sustainable web development"
       description={
         'Tracking emissions from websites and web apps when running end-to-end tests.'
@@ -414,8 +414,12 @@ const SustainableReportingEmissions = () => {
         <div class={`${styles.small} ${styles.textCentre}`}>
           ET: Emissions Tracker, DT: Chrome DevTools, LH: lighthouse API
         </div>
+                
+        <p>There are discrepancies in the results. There are discrepancies between runs using the same measure. One of the largest - an order of magnitude - is between the results given by the <Links.EL link={{source:'https://carbonneutralwebsite.org/calculate'}}>Carbon Neutral website</Links.EL> and other calculators. The only calculator that gives similar results is <Links.EL link={{source:'https://greenframe.io/'}}>GreenFrame</Links.EL> but that requires local installation or a subscription. Another site, ecoIndex, gives values an order of magnitude <em>higher</em> than the average. For example, for the Public Good, the emissions are calculated to be <Links.EL link={{source:'https://www.ecoindex.fr/resultat/?id=ec506c10-0474-4160-8338-bf4134a3164c'}}>1620 m/CO<sub>2</sub></Links.EL>.</p>
 
-        <h3>Code in the wild</h3>
+        <p>Until there is consensus and certainty around numbers, I think we should be careful publishing them. It is too often the case that a single figure gets picked up and repeated endlessly, as happened with the <Links.IL link={{source:'web-development/measuring-the-web'}}> carbon emissions attributable to watching Netflix</Links.IL>.</p>
+
+        <h3>Living information architecture</h3>
 
         <p>The greatest benefit to me from measuring bytes and emissions was that I paid more attention to code running where others see and interact with it - in the browser.</p>
 
@@ -423,9 +427,9 @@ const SustainableReportingEmissions = () => {
 
         <p>For example, this blog preloads linked pages. The home page has a lot of internal links which significantly increase its page weight (a mix of the number of bytes transferred and the number of requests).</p>
 
-        <p>But if you click on a visible link (above the fold) to internal content, you will see that page loads almost instantly with very few bytes being transferred. A hard refresh will reload all the page's resources; for some articles this is over 100kBs.</p>
+        <p>But if you click on a visible link (above the fold) to internal content, you will see that page loads almost instantly with very few bytes being transferred.</p>
 
-        <p>I also cache pages. If you return to a page (without reloading) it is served from a local cache and the only network traffic will be to third parties (such as cabin analytics).</p>
+        <p>I also cache pages. If you return to a page it is served from a local cache and the only network traffic will be to third parties (such as cabin analytics).</p>
 
         <p>The effectiveness of this strategy depends on how people use the site; whether they move between pages, or indeed whether they read more than one article in a single session. It's quite possible they won't read more than one but they may jump from page to page.</p>
 
@@ -449,7 +453,7 @@ const SustainableReportingEmissions = () => {
 
         <p class={styles.huge}>174MBs</p>
           
-        <p>I would like to see native emissions counters in browsers that aggregated emissions across sites. Whether this would be over a session or time interval would be up to us, as would the option to set a budget or cap on emissions. It would certainly help highlight the deleterious effect of devious and deceptive patterns like infinite scroll and video autoplay.</p>
+        <p>I would like to see native emissions counters in browsers that aggregate emissions across sites. Whether this would be over a session or time interval would be up to us, as would the option to set a budget or cap on emissions. It would certainly help highlight the deleterious effect of devious and deceptive patterns like infinite scroll and video autoplay.</p>
 
         <p>Finally, emissions reflect only a fraction of a website's impact on its environment. A full Digital Life Cycle Assessment (DCLA) would be needed to take into account water and land usage and adverse effects on people and nature to name only a few considerations.</p>      
         <Top></Top>
@@ -464,7 +468,7 @@ const SustainableReportingEmissions = () => {
 
         <p>When the content length is unavailable, I use the response byte length. However, this is the uncompressed value, and compression ratios are variable.</p>
 
-        <p>In order to compensate, I set pass ratios for CSS (6), JS (2) and Other (5). These values can be overridden using command line variables.</p>
+        <p>In order to compensate, I set default ratios for CSS (6), JS (2) and Other (5). These values can be overridden using command line variables.</p>
 
         <h3>Performance API</h3>
 
