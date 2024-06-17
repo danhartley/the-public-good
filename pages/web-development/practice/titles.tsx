@@ -50,6 +50,7 @@ const Titles = () => {
           , { value: 'web-development/practice/roles', text: 'Roles' }
           , { value: 'web-development/practice/artefacts', text: 'Artefacts' }
           , { value: 'web-development/practice/domains', text: 'Domains' }
+          , { value: 'web-development/on-programming', text: 'On Programming' }
         ]}
       ></Links.RelatedLinks>
     </Layout>

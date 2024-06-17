@@ -1,6 +1,5 @@
 import Layout from 'components/layout/layout'
 import Links from 'components/links/Links'
-import styles from 'pages/pages.module.scss'
 
 const OnProgramming = () => {
   return (
@@ -35,6 +34,17 @@ const OnProgramming = () => {
         <p>My most recent site I built using the triumvirate of web technologies, those old war horses which once cantered beneath the surface of the web but now too often trudge beneath their burden of superfluity. It brought me a strange joy; part discovery and part nostalgia. I can remember when they first came into being, and can foresee their death.</p>
         <p>If you have never worked unassisted by a framework or library, I encourage you to give it a go, you might wonder why you permit other’s code to stand between you and what you want to make; React, Vue, etc. offer you control while they take away your authority, your authorship.</p>
       </section>
+
+      <Links.RelatedLinks
+        links={[
+            { value: 'web-development/its-the-jobs-that-got-small', text: 'It\'s the jobs that got small' }
+          , { value: 'web-development/practice/meetings', text: 'Meetings' }
+          , { value: 'web-development/practice/titles', text: 'Titles' }
+          , { value: 'web-development/practice/roles', text: 'Roles' }
+          , { value: 'web-development/practice/artefacts', text: 'Artefacts' }
+          , { value: 'web-development/practice/domains', text: 'Domains' }
+        ]}
+      ></Links.RelatedLinks>
     </Layout>
   )
 }

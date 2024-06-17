@@ -28,6 +28,7 @@ const Domains = () => {
           , { value: 'web-development/practice/titles', text: 'Titles' }
           , { value: 'web-development/practice/roles', text: 'Roles' }
           , { value: 'web-development/practice/artefacts', text: 'Artefacts' }
+          , { value: 'web-development/on-programming', text: 'On Programming' }
         ]}
       ></Links.RelatedLinks>
     </Layout>
