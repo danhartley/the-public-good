@@ -130,7 +130,7 @@ const SustainableReportingEmissions = () => {
 
         <p>These values can be persisted and used to monitor the effect of code or design changes.</p>
 
-        <p>I also created a <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/public/emissions-tracker/emissions-by-url.js'}}>test</Links.EL> that can report on any website (it simply loads the given page). By default I scroll to the bottom of the page which may give a more honest account of what is happening.</p>
+        <p>I also created a <Links.EL link={{source:'https://github.com/danhartley/the-public-good/blob/main/emissions-tracker/emissions-by-url.js'}}>test</Links.EL> that can report on any website (it simply loads the given page). By default I scroll to the bottom of the page which may give a more honest account of what is happening.</p>
 
         <pre>
           <div>
