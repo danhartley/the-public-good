@@ -50,7 +50,7 @@ const testSite = async () => {
 
     // Many pages continue to load as the user scrolls down.
     await page.evaluate(() => {
-      window.scrollTo(0, document.body.scrollHeight);
+      window.scrollTo(0, document.body.scrollHeight)
     })
 
     // Run the report

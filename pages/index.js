@@ -1,5 +1,6 @@
 import Layout from 'components/layout/layout';
 import Links from 'components/links/Links';
+import styles from 'pages/pages.module.scss';
 
 export default function Home() {
   return (
@@ -13,7 +14,14 @@ export default function Home() {
 
             <p>I write about the climate crisis, responsible web development, and occasionally <Links.IL link={{source:"personal/extracts"}}>things I made up</Links.IL>.</p>
             
-            <p>Latest post, <Links.IL link={{ source:'web-development/sustainable-reporting-emissions'}}>Sustainable reporting of emissions</Links.IL>.</p>            
+            <p>Recent posts:</p>
+            <ul class={styles.dashedItemsList}>
+                <li><Links.IL link={{ source:'web-development/sustainable-reporting-emissions'}}>Sustainable reporting of emissions</Links.IL></li>
+                <li><Links.IL link={{ source:'web-development/sustainable-reporting-and-tooling'}}>Sustainable reporting and tooling</Links.IL></li>
+                <li><Links.IL link={{ source:'web-development/its-the-jobs-that-got-small'}}>It's the jobs that got small</Links.IL></li>
+                <li><Links.IL link={{ source:'web-development/on-programming'}}>On programming</Links.IL></li>
+            </ul>
+
         </section>
 
         <section>
