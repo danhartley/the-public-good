@@ -293,10 +293,11 @@ export class EmissionsTracker {
     }
 
     // Calculate total bytes transferred
-    const bytes = this.#entries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
+    const perfBytes = this.#entries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
     const sobytes = this.#sameOriginEntries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
     const tpbytes = this.#thirdPartyEntries.reduce((accumulator, currentValue) => accumulator + currentValue.transferSizeInBytes, 0)
-    const kBs = Number(((sobytes + tpbytes) / 1000).toFixed(1))
+    const bytes = sobytes + tpbytes
+    const kBs = Number((bytes / 1000).toFixed(1))
     
     // Get country specific grid intensities
     const { data, type, year } = averageIntensity
@@ -307,7 +308,7 @@ export class EmissionsTracker {
       , data: [
         {
             source: 'Performance API: third party excluded'
-          , bytes: Number((bytes / 1000).toFixed(1))
+          , bytes: Number((perfBytes / 1000).toFixed(1))
         },
         {
             source: 'Response object: same origin'

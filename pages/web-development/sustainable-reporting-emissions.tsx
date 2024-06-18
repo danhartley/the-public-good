@@ -178,35 +178,35 @@ const SustainableReportingEmissions = () => {
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.thegreenwebfoundation.org/'}}>The GWF</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>487</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>533</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>49</td>              
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>137 (45)</td>              
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>86</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>343</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99</td>              
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99 (35)</td>              
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2291</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>897</td>              
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>897 (828)</td>              
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2798</td>
               <td class={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771</td>              
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771 (664)</td>              
             </tr>
           </tbody>
         </table>
 
-        <p>Here is a comparison with the results of some popular online carbon calculators.</p>
+        <p>Here is a comparison with the results of some popular online carbon calculators. All the values given using the Emissions Tracker are based on an automated scroll to the bottom of the page. The emissions values without scrolling are given in brackets. This distinction is important and one often ignored or not explored.</p>
 
         <Accordion header='Website carbon calculators'>
           <ul>
@@ -236,28 +236,28 @@ const SustainableReportingEmissions = () => {
           <tbody>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.thegreenwebfoundation.org/'}}>The GWF</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>49</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>137 (45)</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/wZaeBWX7zR9ktdPm7Ps4rcVc'}}>50</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>14</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/thegreenwebfoundation-org/'}}>40</Links.EL></td>
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.the-public-good.com/'}}>The PG</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99 (35)</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/6sC1v7QNPIhoAsVrXeVzgDFf'}}>90</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>9</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/the-public-good-com/'}}>60</Links.EL></td>
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.theguardian.com/'}}>The Guardian</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>897</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>897 (828)</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/624S3IReW0M3HhgAUNm5wkB2'}}>1069</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>296</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/theguardian-com-uk/'}}>1060</Links.EL></td>  
             </tr>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.inaturalist.org/'}}>iNaturalist</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771</td>
+              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771 (664)</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://ecograder.com/report/cX5zkGvSYFOt8j7c1FnloAfp'}}>570</Links.EL></td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>259</td>
               <td class={`${styles.textRight} ${styles.bgbodyemissions}`}><Links.EL link={{source:'https://www.websitecarbon.com/website/inaturalist-org/'}}>630</Links.EL></td>
@@ -290,8 +290,8 @@ const SustainableReportingEmissions = () => {
           <tbody>
             <tr>
               <td class={styles.bgbodydomain}><Links.EL link={{source:'https://www.thegreenwebfoundation.org/'}}>The GWF</Links.EL></td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>487</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>417</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>533</td>
+              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>508</td>
               <td class={`${styles.textRight} ${styles.bgbodybytes}`}>141</td>        
             </tr>
             <tr>
