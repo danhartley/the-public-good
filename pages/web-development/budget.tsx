@@ -2,12 +2,8 @@ import Layout from 'components/layout/layout'
 import styles from 'pages/pages.module.scss'
 
 const Budget = () => {
-  return (
-    <Layout header="Budget" title="Budget" description={'Budget'}>
-      <p>
-        <span>BIG</span>
-      </p>
-    </Layout>
+  return (    
+    <Layout header="Empty page" title="Empty page" description={'Empty page'} />
   )
 }
 

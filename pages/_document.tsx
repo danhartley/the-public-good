@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en-GB" dir="ltr">
         <Head>
-          <meta http-equiv="content-type" content="text/html;"></meta>
+          <meta http-equiv="content-type" content="text/html" />
         </Head>
         <body
           style={
