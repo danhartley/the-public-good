@@ -94,3 +94,47 @@ export const getLighthouseReport = async ({lighthouse, chromeLauncher, url}) => 
     
     return { report, summary }
 }
+
+export const parseTrackerArguments = ({args, argOptions}) => {
+  const { verboseArgs, urlArgs, lighthouseArgs, ratioArgs } = argOptions 
+  
+  let url, domain, verbose = false, runLighthouse = false, ratios = {
+      css: 6
+    , js: 2
+    , other: 5
+  }
+
+  const argLength = args.length
+  
+  for (let i = 0; i < argLength; i++) {
+      const val = args[i]
+      const nextArg = i + 1 < argLength ? args[i + 1] : null
+
+      if (verboseArgs.includes(val)) {
+          verbose = true
+      }
+
+      if(lighthouseArgs.includes(val)) {
+        runLighthouse = true
+      }
+      
+      if (nextArg) {
+          if (urlArgs.includes(val)) {
+              url = nextArg.includes('http') ? nextArg : `https://${nextArg}`
+              domain = getDomainFromURL({ url })
+          } 
+          if (ratioArgs.includes(val)) {
+              const values = nextArg.split(',')
+              if (values.length === 3) {
+                  ratios = {
+                      css: Number(values[0]),
+                      js: Number(values[1]),
+                      other: Number(values[2])
+                  }
+              }
+          }
+      }
+  }
+
+  return { url, domain, verbose, runLighthouse, ratios }
+}

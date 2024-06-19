@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer'
 
 import { sortBy, pause } from './test-utils.js'
-import { getDomainFromURL, getLighthouseReport } from './emissions-tracker-utils.js'
+import { parseTrackerArguments, getLighthouseReport } from './emissions-tracker-utils.js'
 import { EmissionsTracker } from './emissions-tracker.js'
 
 import lighthouse from 'lighthouse'
@@ -9,39 +9,16 @@ import * as chromeLauncher from 'chrome-launcher'
 
 const testSite = async ({byteOptions = null, visitOptions = null}) => {
 
-  let emissionsTracker, url, domain, verbose = false, report, summary, runLighthouse = false, ratios = {
-      css: 6
-    , js: 2
-    , other: 5
+  let emissionsTracker, report, summary
+
+  const argOptions = {
+      verboseArgs: ['-v', '--verbose']
+    , urlArgs: ['-u', '--url']
+    , lighthouseArgs: ['-lh', '--lighthouse']
+    , ratioArgs: ['-r', '--ratios']
   }
 
-  const verboseArgs = ['-v', '--verbose']
-  const urlArgs = ['-u', '--url']
-  const lighthouseArgs = ['-lh', '--lighthouse']
-  const ratioArgs = ['-r', '--ratios']
-
-  process.argv.forEach((val, index) => { 
-      if(verboseArgs.includes(val)) verbose = true
-      if(lighthouseArgs.includes(val)) runLighthouse = true
-      if(urlArgs.includes(val)) {
-        const nextArg = index + 1
-        if(nextArg < process.argv.length) {
-          url = process.argv[nextArg].includes('http') ? process.argv[nextArg] : `https://${process.argv[nextArg]}`
-          domain = getDomainFromURL({url})
-        }        
-      }
-      if(ratioArgs.includes(val)) {
-        const nextArg = index + 1
-        if(nextArg < process.argv.length) {
-          const values = process.argv[nextArg].split(',')
-          ratios = {
-              css: Number(values[0])
-            , js: Number(values[1])
-            , other: Number(values[2])
-          }
-        }
-      }
-  })
+  const { url, domain, verbose, runLighthouse, ratios } = parseTrackerArguments({ args: process.argv, argOptions })
 
   if(runLighthouse) {
     const lhReport = await getLighthouseReport({

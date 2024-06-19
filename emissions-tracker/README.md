@@ -14,6 +14,8 @@ npm i puppeteer
 npm i lighthouse
 ```
 
+The tracker scrolls to the bottom of the page. This can have a dramatic effect on page weight, emissions, etc.
+
 ## Integration tests
 
 Create a new integration test with puppeteer. Create a new instance of the EmissionsTracker and call its public method, getReport.
@@ -78,6 +80,8 @@ node emissions-tracker/emissions-by-url.js -u the-public-good.com -v -lh
 
 [Web Performance Recipes With Puppeteer | Addy Osmani
 ](https://addyosmani.com/blog/puppeteer-recipes/)
+
+### Query for a single domain
 
 ```
 curl -X 'GET' \
