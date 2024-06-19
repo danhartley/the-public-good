@@ -57,9 +57,6 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
           }
           , verbose
           , lighthouse: { log: runLighthouse, report, summary }    
-          , markDOMLoaded: 'DOM loaded'
-          , markStart: 'fetch-field-notes: start'
-          , markEnd: 'fetch-field-notes: end'      
           , ratios
         }
         , byteOptions
