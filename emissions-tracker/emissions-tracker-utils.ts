@@ -98,7 +98,7 @@ export const getLighthouseReport = async ({lighthouse, chromeLauncher, url}) => 
 export const parseTrackerArguments = ({args, argOptions}) => {
   const { verboseArgs, urlArgs, lighthouseArgs, ratioArgs } = argOptions 
   
-  let url, domain, verbose = false, runLighthouse = false, ratios = {
+  let url, domain, verbose = false, lighthouse = false, ratios = {
       css: 6
     , js: 2
     , other: 5
@@ -115,7 +115,7 @@ export const parseTrackerArguments = ({args, argOptions}) => {
       }
 
       if(lighthouseArgs.includes(val)) {
-        runLighthouse = true
+        lighthouse = true
       }
       
       if (nextArg) {
@@ -136,5 +136,5 @@ export const parseTrackerArguments = ({args, argOptions}) => {
       }
   }
 
-  return { url, domain, verbose, runLighthouse, ratios }
+  return { url, domain, verbose, lighthouse, ratios }
 }

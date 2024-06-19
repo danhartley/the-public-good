@@ -18,9 +18,9 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
     , ratioArgs: ['-r', '--ratios']
   }
 
-  const { url, domain, verbose, runLighthouse, ratios } = parseTrackerArguments({ args: process.argv, argOptions })
+  const { url, domain, verbose, lighthouse, ratios } = parseTrackerArguments({ args: process.argv, argOptions })
 
-  if(runLighthouse) {
+  if(lighthouse) {
     const lhReport = await getLighthouseReport({
         lighthouse
       , chromeLauncher
@@ -56,7 +56,7 @@ const testSite = async ({byteOptions = null, visitOptions = null}) => {
             , direction: 'desc'
           }
           , verbose
-          , lighthouse: { log: runLighthouse, report, summary }    
+          , lighthouse: { log: lighthouse, report, summary }    
           , ratios
         }
         , byteOptions
