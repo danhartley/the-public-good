@@ -21,18 +21,18 @@
         color: rgb(var(--l));
     }
     a:hover, a:focus {
-        border-bottom: 1px solid rgba(var(--l), 1);
+        border-bottom: 1px solid rgb(var(--l));
         padding-bottom: .125rem;
-        outline: .125rem dotted rgba(var(--l), 1);
+        outline: .125rem dotted rgb(var(--l));
         outline-offset: .25rem;
     }
     a:visited {
         color: rgb(var(--l-v));
-        border-bottom: 1px solid rgba(var(--l-v), .8);
+        border-bottom: 1px solid rgb(var(--l-v));
     }
     a:visited:hover, a:visited:focus {
-        border-bottom: 1px solid rgba(var(--l-v), .8);
-        outline: .125rem dotted rgba(var(--l-v), 1);
+        border-bottom: 1px solid rgb(var(--l-v));
+        outline: .125rem dotted rgb(var(--l-v));
         outline-offset: .25rem;
     }
     @media print { 
@@ -85,11 +85,11 @@
     }
     a:visited {
         color: rgb(var(--l-v));
-        border-bottom: 1px solid rgba(var(--l-v), .8);
+        border-bottom: 1px solid rgb(var(--l-v));
     }
     a:visited:hover, a:visited:focus {
-        border-bottom: 1px solid rgba(var(--l-v), .8);
-        outline: .125rem dotted rgba(var(--l-v), 1);
+        border-bottom: 1px solid rgb(var(--l-v));
+        outline: .125rem dotted rgb(var(--l-v));
         outline-offset: .25rem;
     }
 }
