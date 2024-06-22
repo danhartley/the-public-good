@@ -34,7 +34,7 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
       : `
             --m:light;
             --fg:12, 12, 12;
-            --bg:251, 246, 239;
+            --bg:249, 249, 249;
             --l:28, 83, 120;
             --l-v:78, 44, 146;
             --il:50, 50, 50;
@@ -53,7 +53,7 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
     setDarkMode(!darkMode)
     mode.isDark = darkMode
     mode.style = getStyle(darkMode) as any
-    document.body.style.backgroundColor = darkMode ? 'rgb(251, 246, 239)' : 'rgb(45, 45, 45)'
+    document.body.style.backgroundColor = darkMode ? 'rgb(249, 249, 249)' : 'rgb(45, 45, 45)'
   }
 
   useEffect(() => {
