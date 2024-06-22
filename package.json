@@ -28,6 +28,7 @@
     "prettier-format": "prettier --config .prettierrc 'pages/**/*.tsx' --write"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^10.2.0",
     "@tgwf/co2": "^0.15.0",
     "@types/ramda": "^0.28.1",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
