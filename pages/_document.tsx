@@ -14,7 +14,7 @@ class MyDocument extends Document {
         </Head>
         <body
           style={
-            'background-color:rgb(248 238 206); margin: 0 calc(.75rem + 1vw) .5rem calc(.75rem + 1vw);' as React.CSSProperties
+            'background-color:rgb(251, 246, 239); margin: 0 calc(.75rem + 1vw) .5rem calc(.75rem + 1vw);' as React.CSSProperties
           }
         >
           <Main />
