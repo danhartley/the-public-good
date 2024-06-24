@@ -28,10 +28,10 @@ const onlineTools = [
     name: 'EcoIndex Firefox extension',
     source: 'https://addons.mozilla.org/fr/firefox/addon/ecoindex/',
   },
-  // {
-  //     "name": "surfgreen.dev (beta)",
-  //     "source": "https://surfgreen.dev/"
-  // },
+  {
+      name: 'Pilosa quick scan',
+      source: 'https://quick-scan.pilosa.io/'
+  },
   {
     name: 'EcoPing',
     source: 'https://ecoping.earth',
