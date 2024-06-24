@@ -29,3 +29,8 @@ See https://www.digitalocean.com/community/tutorials/nodejs-node-version-manager
 To switch back to the default: nvm use default
 2. Delete .next folder and rebuild project (success)
 
+### Sitemaps
+To generate a new sitemap
+```
+node siteMapGenerator.js
+```
