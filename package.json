@@ -47,6 +47,7 @@
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.2",
     "@cucumber/pretty-formatter": "^1.0.0-alpha.2",
+    "@sergeymyssak/nextjs-sitemap": "^2.0.3",
     "@size-limit/file": "^4.10.2",
     "@size-limit/time": "^4.10.2",
     "@testing-library/cypress": "^8.0.2",
