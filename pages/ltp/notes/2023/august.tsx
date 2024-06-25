@@ -82,7 +82,9 @@ const August = () => {
             <li>Create themed stories linking events to species (putting species in context)</li>
             <li>
               e.g. Regeneration (
-              <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Secondary_succession', label: 'Secondary succession' }}>
+              <Links.EL
+                link={{ source: 'https://en.wikipedia.org/wiki/Secondary_succession', label: 'Secondary succession' }}
+              >
                 Secondary succession
               </Links.EL>
               ): Arrábida after the fire

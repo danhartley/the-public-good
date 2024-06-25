@@ -185,7 +185,16 @@ const Change = () => {
               Green New Deal
             </Links.EL>{' '}
             in the US (PDF),{' '}
-            <Links.EL link={{ source: 'https://cat.org.uk/info-resources/zero-carbon-britain/research-reports/zero-carbon-britain-rising-to-the-climate-emergency/', label:'Technology Zero Carbon Britain' }}>Technology Zero Carbon Britain</Links.EL>, and{' '}
+            <Links.EL
+              link={{
+                source:
+                  'https://cat.org.uk/info-resources/zero-carbon-britain/research-reports/zero-carbon-britain-rising-to-the-climate-emergency/',
+                label: 'Technology Zero Carbon Britain',
+              }}
+            >
+              Technology Zero Carbon Britain
+            </Links.EL>
+            , and{' '}
             <Links.EL
               link={{
                 source:

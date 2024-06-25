@@ -332,8 +332,8 @@ const Hydrogen = () => {
           <span>
             <em>high</em>
           </span>{' '}
-          energy <Links.IL link={{ source: 'climate-crisis/facts#energy' }}>density</Links.IL> by mass) for transportation by road or
-          rail.
+          energy <Links.IL link={{ source: 'climate-crisis/facts#energy' }}>density</Links.IL> by mass) for
+          transportation by road or rail.
         </p>
 
         <h3>Hydrogen fuel cells</h3>

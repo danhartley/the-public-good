@@ -23,9 +23,7 @@ const URLs = () => {
       image="https://live.staticflickr.com/65535/51143928462_2fec2d283e_z_d.jpg"
     >
       <section>
-        <h2>
-          URLs are at the frontline of information architecture.
-        </h2>
+        <h2>URLs are at the frontline of information architecture.</h2>
 
         <p>URLs are often the first contact someone has with your website.</p>
 
@@ -61,13 +59,13 @@ const URLs = () => {
             value: 'web-development/following-the-rules-to-a-well-structured-web-page',
             text: 'Following the rules to a well-structured web page',
           },
-          { 
-            value: 'web-development/for-the-love-of-hyperlinks', 
-            text: 'For the love of hyperlinks' 
+          {
+            value: 'web-development/for-the-love-of-hyperlinks',
+            text: 'For the love of hyperlinks',
           },
-          { 
-            value: 'web-development/sustainable-reporting-and-tooling', 
-            text: 'Sustainable reporting and tooling' 
+          {
+            value: 'web-development/sustainable-reporting-and-tooling',
+            text: 'Sustainable reporting and tooling',
           },
         ]}
       ></Links.RelatedLinks>

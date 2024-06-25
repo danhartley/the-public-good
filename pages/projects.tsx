@@ -28,7 +28,11 @@ const Projects = () => {
                 <Links.EL link={{ source: 'https://developer.mozilla.org/en-US/docs/Glossary/SPA' }}>
                   Single Page Apps
                 </Links.EL>{' '}
-                to <Links.EL link={{ source: 'https://web.dev/explore/progressive-web-apps' }}>Progressive Web Apps</Links.EL>.
+                to{' '}
+                <Links.EL link={{ source: 'https://web.dev/explore/progressive-web-apps' }}>
+                  Progressive Web Apps
+                </Links.EL>
+                .
               </li>
               <li>
                 Hosting the site on{' '}

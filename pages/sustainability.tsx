@@ -29,8 +29,8 @@ const onlineTools = [
     source: 'https://addons.mozilla.org/fr/firefox/addon/ecoindex/',
   },
   {
-      name: 'Pilosa quick scan',
-      source: 'https://quick-scan.pilosa.io/'
+    name: 'Pilosa quick scan',
+    source: 'https://quick-scan.pilosa.io/',
   },
   {
     name: 'EcoPing',

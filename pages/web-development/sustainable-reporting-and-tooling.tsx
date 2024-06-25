@@ -75,25 +75,40 @@ const SustainableReportingAndTooling = () => {
       image="https://live.staticflickr.com/65535/51143928462_2fec2d283e_z_d.jpg"
     >
       <section>
-        <h2>
-          Assessing a website for sustainability reveals more than its environmental impact. 
-        </h2>
+        <h2>Assessing a website for sustainability reveals more than its environmental impact.</h2>
 
-        <p>Websites are unregulated in regards to the resources they use. And the numbers as reported by <Links.EL link={{source:'https://httparchive.org/'}}>The HTTP Archive</Links.EL> are up again.</p>
+        <p>
+          Websites are unregulated in regards to the resources they use. And the numbers as reported by{' '}
+          <Links.EL link={{ source: 'https://httparchive.org/' }}>The HTTP Archive</Links.EL> are up again.
+        </p>
 
         <p>But we don't have to stand idly by.</p>
 
-        <p>Sustainability has a lot in common with accessibility. The Web Sustainability Guidelines (WSG) are analogous to the Web Content Accessibility Guidelines (WCAG) and there is plenty of common ground between the two. The intention is that the <abbr class={styles.abbr} title="Web Sustainability Guidelines">WSG</abbr> will follow a similar path to acceptance and adoption supported by tooling and best practices. Websites will minimise their:</p>
-        
-        <blockquote cite='https://w3c.github.io/sustyweb/'>
-          <p>Environmental impact through a mixture of user-centered design, performant web development, renewable infrastructure, sustainable business strategy, and (with metrics) various combinations of those mentioned.</p>
-          <p>Following these guidelines will often make Web content more accessible, usable, and performant as a by-product.</p>
+        <p>
+          Sustainability has a lot in common with accessibility. The Web Sustainability Guidelines (WSG) are analogous
+          to the Web Content Accessibility Guidelines (WCAG) and there is plenty of common ground between the two. The
+          intention is that the{' '}
+          <abbr class={styles.abbr} title="Web Sustainability Guidelines">
+            WSG
+          </abbr>{' '}
+          will follow a similar path to acceptance and adoption supported by tooling and best practices. Websites will
+          minimise their:
+        </p>
+
+        <blockquote cite="https://w3c.github.io/sustyweb/">
+          <p>
+            Environmental impact through a mixture of user-centered design, performant web development, renewable
+            infrastructure, sustainable business strategy, and (with metrics) various combinations of those mentioned.
+          </p>
+          <p>
+            Following these guidelines will often make Web content more accessible, usable, and performant as a
+            by-product.
+          </p>
         </blockquote>
         <cite>
           <Links.EL
             link={{
-              source:
-                'https://w3c.github.io/sustyweb/',
+              source: 'https://w3c.github.io/sustyweb/',
             }}
           >
             Web Sustainability Guidelines (WSG) 1.0
@@ -101,19 +116,33 @@ const SustainableReportingAndTooling = () => {
         </cite>
         <h3>Sustainable Tooling And Reporting (STAR)</h3>
 
-        <p>
-          Sustainable Tooling And Reporting (STAR) 1.0 is a supplement to the guidelines which provides:
-        </p>
+        <p>Sustainable Tooling And Reporting (STAR) 1.0 is a supplement to the guidelines which provides:</p>
         <ul>
-            <li>Implementation advice</li>
-            <li>An evaluation methodology</li>
-            <li>A categorised series of techniques</li>
-            <li>A test suite</li>
-          </ul>
-          
-        <p><abbr class={styles.abbr} title="Sustainable Tooling And Reporting">STAR</abbr> has over 150 items for evaluation and it requires a painstaking review of a website or app.</p>
+          <li>Implementation advice</li>
+          <li>An evaluation methodology</li>
+          <li>A categorised series of techniques</li>
+          <li>A test suite</li>
+        </ul>
 
-        <p>To help you get started, I've created a set of <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1JqPELIRe0-Jvxi2XOdpZLKrJvO5vNbBD6jeHxtQVkKw/edit?usp=sharing'}}>STAR templates</Links.EL>.</p>
+        <p>
+          <abbr class={styles.abbr} title="Sustainable Tooling And Reporting">
+            STAR
+          </abbr>{' '}
+          has over 150 items for evaluation and it requires a painstaking review of a website or app.
+        </p>
+
+        <p>
+          To help you get started, I've created a set of{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://docs.google.com/spreadsheets/d/1JqPELIRe0-Jvxi2XOdpZLKrJvO5vNbBD6jeHxtQVkKw/edit?usp=sharing',
+            }}
+          >
+            STAR templates
+          </Links.EL>
+          .
+        </p>
 
         <p>Tools and reporting are broken down into 4 sections:</p>
         <ul>
@@ -123,14 +152,44 @@ const SustainableReportingAndTooling = () => {
           <li>Business Strategy and Product Management</li>
         </ul>
 
-        <p>Every section is relevant to developers. A review of your site's sustainability credentials forces a re-examination of how your site works, what it offers and for whom.</p>
+        <p>
+          Every section is relevant to developers. A review of your site's sustainability credentials forces a
+          re-examination of how your site works, what it offers and for whom.
+        </p>
 
         <h3>Don't hide in the IDE</h3>
-        <p>It is important that developers and designers are among the people using production code running in the browser. There are plenty of <Links.EL link={{source:'https://docs.google.com/spreadsheets/d/1zNBeu9C-I4gay-EHwZJ328gnv1KT8NVAZ8zgnBYGvDo/edit?usp=sharing'}}>tools</Links.EL> for measuring website performance, emissions and accessibility. It is equally important to use the site or app as others see it. Create accounts and use them as fully and as realistically as possible.</p>
+        <p>
+          It is important that developers and designers are among the people using production code running in the
+          browser. There are plenty of{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://docs.google.com/spreadsheets/d/1zNBeu9C-I4gay-EHwZJ328gnv1KT8NVAZ8zgnBYGvDo/edit?usp=sharing',
+            }}
+          >
+            tools
+          </Links.EL>{' '}
+          for measuring website performance, emissions and accessibility. It is equally important to use the site or app
+          as others see it. Create accounts and use them as fully and as realistically as possible.
+        </p>
 
-        <p>Spending time looking at code running in the browser is critical because current practice often focuses on software or code architecture at the expense of Information Architecture (IA).</p>
+        <p>
+          Spending time looking at code running in the browser is critical because current practice often focuses on
+          software or code architecture at the expense of Information Architecture (IA).
+        </p>
 
-        <p>It is essential to have an <abbr class={styles.abbr} title="Information Architecture">IA</abbr> model or design and to revisit it frequently. A comparison of your <abbr class={styles.abbr} title="Information Architecture">IA</abbr>, your software architecture, and the living app is a good subject for a <Links.IL link={{source:'web-development/practice/meetings'}}>long meeting</Links.IL>.</p>
+        <p>
+          It is essential to have an{' '}
+          <abbr class={styles.abbr} title="Information Architecture">
+            IA
+          </abbr>{' '}
+          model or design and to revisit it frequently. A comparison of your{' '}
+          <abbr class={styles.abbr} title="Information Architecture">
+            IA
+          </abbr>
+          , your software architecture, and the living app is a good subject for a{' '}
+          <Links.IL link={{ source: 'web-development/practice/meetings' }}>long meeting</Links.IL>.
+        </p>
 
         <Top></Top>
       </section>
@@ -156,14 +215,14 @@ const SustainableReportingAndTooling = () => {
             value: 'web-development/following-the-rules-to-a-well-structured-web-page',
             text: 'Following the rules to a well-structured web page',
           },
-          { 
-            value: 'web-development/for-the-love-of-hyperlinks', 
-            text: 'For the love of hyperlinks' 
+          {
+            value: 'web-development/for-the-love-of-hyperlinks',
+            text: 'For the love of hyperlinks',
           },
-          { 
-            value: 'web-development/for-the-love-of-urls', 
-            text: 'For the love of urls' 
-          }
+          {
+            value: 'web-development/for-the-love-of-urls',
+            text: 'For the love of urls',
+          },
         ]}
       ></Links.RelatedLinks>
     </Layout>
