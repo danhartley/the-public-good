@@ -115,7 +115,7 @@ const Layout = ({
             <div id="container" style={mode.style as any} class={styles.container}>                
                 <header>
 
-                    <div class={styles.skiptocontent}><Links.EL link={{source:'#main'}}>skip to main content</Links.EL></div>
+                    <div class={styles.skiptocontent}><Links.IL link={{source:'#main'}}>skip to main content</Links.IL></div>
 
                     <Link href={'/'}>
                         <a class={styles.title} aria-label="Home page" href="/">
