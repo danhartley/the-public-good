@@ -22,3 +22,8 @@ To generate a new sitemap
 ```
 node siteMapGenerator.js
 ```
+
+### When starting new session
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
