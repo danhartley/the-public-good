@@ -720,7 +720,7 @@ const SustainableReportingEmissions = () => {
           },
           { value: 'web-development/practice/artefacts', text: 'Artefacts' },
         ]}
-      ></Links.RelatedLinks>      
+      ></Links.RelatedLinks>
     </Layout>
   )
 }

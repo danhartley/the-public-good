@@ -9,7 +9,6 @@ import Head from 'next/head';
 import ModeContext from 'components/contexts/ModeContext';
 import { PageWeightReport } from 'components/metrics/page-weight-report';
 import Links from 'components/links/Links';
-import Emissions from 'components/emissions/emissions';
 import styles from 'components/layout/Layout.module.scss';
 
 import { install } from "resize-observer";
@@ -151,7 +150,6 @@ const Layout = ({
                     <div><span>© <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL> 2024. All rights reserved.</span></div>
                     <div class={styles.externalList}><Links.EL link={{source:'https://www.linkedin.com/in/danhartley/'}}>LinkedIn</Links.EL> | <Links.IL link={{source:'personal/cv'}}>CV</Links.IL> | <Links.EL link={{source:`https://github.com/danhartley/the-public-good/discussions${discussions}`}}>Comment</Links.EL></div>
                     <SiteMetrics title={title} />
-                    <Emissions />
                 </footer>
             </div>            
         </div>
