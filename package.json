@@ -9,7 +9,8 @@
     }
   ],
   "scripts": {
-    "dev": "next dev -p 3001",    
+    "copy-sw": "cp node_modules/@danhartley/emissions/lib/es6/sw.js public/",
+    "dev": "npm run copy-sw && next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "export": "next export",
@@ -70,7 +71,6 @@
     "preact": "^10.22.1",
     "preact-render-to-string": "^6.5.5",
     "prettier": "2.6.2",
-    "react-carbonbadge": "^1.0.1",
     "react-chartjs-2": "^3.0.5",
     "resize-observer": "^1.0.2",
     "size-limit": "^4.10.2",

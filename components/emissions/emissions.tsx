@@ -26,4 +26,4 @@ const Emissions = () => {
   )
 }
 
-export default Emissions``
+export default Emissions
