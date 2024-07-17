@@ -59,10 +59,6 @@ venn-diagrams
 tools
 quiz/
 
-# Unused svgs
-logo2.svg
-tpg.svg
-
 # unused pledge works
 pages/pledge-works/tools/*.tsx
 
@@ -82,3 +78,5 @@ pages/ethics/pledge-works/features
 
 # emissions tracker node
 emissions-tracker/node_modules
+
+public/sw.js

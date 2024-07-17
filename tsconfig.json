@@ -4,7 +4,8 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
+      "webworker"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -33,7 +34,7 @@
     "public/_app.js",
     "pages/ethics/pledge-works/index.js",
     "pages/ethics/features/step_definitions/bank-account.steps.mts",
-    "components/pdd/hidden-message.test.tsx", "components/pdd/hidden-message.tsx", "components/pdd/simple.jsx", "components/pdd/simple.test.js"  ],
+    "components/pdd/hidden-message.test.tsx", "components/pdd/hidden-message.tsx", "components/pdd/simple.jsx", "components/pdd/simple.test.js", "emissions-tracker/emissions-tracker-utils.test.js", "emissions-tracker/emissions-tracker-utils.js"  ],
   "exclude": [
     "node_modules",
     "**/*.spec.js"
