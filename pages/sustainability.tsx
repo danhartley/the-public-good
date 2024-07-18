@@ -1,4 +1,4 @@
-import Carbonbadge from 'react-carbonbadge'
+import { WebsiteCarbonBadge } from 'react-websitecarbon-badge'
 import Layout from 'components/layout/layout'
 import Links from 'components/links/Links'
 import styles from 'pages/pages.module.scss'
@@ -156,7 +156,7 @@ const Sustainability = () => {
       </section>
       <section>
         <p>
-          <Carbonbadge darkMode={false} />
+          <WebsiteCarbonBadge dark={false} />
         </p>
       </section>
       <section>
