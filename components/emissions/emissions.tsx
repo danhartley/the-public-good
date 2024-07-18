@@ -13,6 +13,7 @@ const Emissions = () => {
       const options = {
         hostingOptions: {
           verbose: true,
+          forceGreen: true,
         }
       }
 
