@@ -10,7 +10,13 @@ const Emissions = () => {
       await browser.registerServiceWorker()
     
       const url = window.location.origin
-      const { pageWeight, count, greenHosting, emissions, mgCO2 } = await browser.getPageEmissions(url)
+      const options = {
+        hostingOptions: {
+          verbose: true,
+        }
+      }
+
+      const { pageWeight, count, greenHosting, emissions, mgCO2 } = await browser.getPageEmissions(url, options)
       
       console.log(`Report for ${url}`)
       console.log('Page weight: ', `${pageWeight / 1000} Kbs`)
