@@ -110,6 +110,7 @@ const externalLinks = [
 ]
 
 const Sustainability = () => {
+
   return (
     <Layout header="Sustainability" title="Web sustainability" description={'Web sustainability'}>
       <section>
@@ -155,8 +156,8 @@ const Sustainability = () => {
         </ul>
       </section>
       <section>
-        <p>
-          <WebsiteCarbonBadge dark={false} />
+        <p>          
+          <WebsiteCarbonBadge dark={false} percentage='94' co2='0.06' />          
         </p>
       </section>
       <section>
@@ -170,6 +171,7 @@ const Sustainability = () => {
           <img
             src="https://api.thegreenwebfoundation.org/greencheckimage/www.the-public-good.com?nocache=true"
             alt="Checked by thegreenwebfoundation.org"
+            class={styles.gwf}
           />
         </p>
       </section>
