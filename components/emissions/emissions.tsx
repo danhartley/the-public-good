@@ -6,7 +6,7 @@ import { useEffect } from 'preact/hooks';
 const Emissions = () => {
 
   useEffect(() => {
-    (async () => {
+    (async () => {      
       await browser.registerServiceWorker()
     
       const domain = window.location.host
@@ -18,6 +18,7 @@ const Emissions = () => {
       console.log('Emissions: ', `${mgCO2} mg of CO2`)
       console.log(greenHosting ? 'Hosting: green hosting' : 'Hosting: not green hosting')
   
+      await browser.clearPageEmissions()
     })() 
   })
   
