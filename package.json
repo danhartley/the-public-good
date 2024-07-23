@@ -10,9 +10,10 @@
   ],
   "scripts": {
     "copy-sw": "cp node_modules/@danhartley/emissions/lib/es6/sw.js public/",
+    "copy-sw-next": "cp public/sw.js next",
     "dev": "npm run copy-sw && next dev -p 3001",
     "build": "next build",
-    "start": "next start",
+    "start": "npm run copy-sw-next && next start",
     "export": "next export",
     "tests": "jest",
     "play": "jest play/responsible.test.ts",
