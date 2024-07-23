@@ -24,8 +24,6 @@
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
     "size": "npm run build && size-limit",
-    "cucumber": "./node_modules/.bin/cucumber-js cypress/integration/dashboard/**/*.feature --import cypress/support/step_definitions/**/*.js",
-    "cypress:open": "cypress open",
     "prettier-format": "prettier --config .prettierrc 'pages/**/*.tsx' --write"
   },
   "dependencies": {
@@ -44,12 +42,9 @@
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^7.3.2",
-    "@cucumber/pretty-formatter": "^1.0.0-alpha.2",
     "@sergeymyssak/nextjs-sitemap": "^2.0.3",
     "@size-limit/file": "^4.10.2",
     "@size-limit/time": "^4.10.2",
-    "@testing-library/cypress": "^8.0.2",
     "@testing-library/jest-dom": "^5.16.3",
     "@types/jest": "^27.4.0",
     "@types/node": "^14.14.31",
@@ -57,8 +52,6 @@
     "chart.js": "^3.5.1",
     "chartjs-plugin-annotation": "^1.0.2",
     "chartjs-plugin-datalabels": "^2.0.0",
-    "cypress": "^9.5.2",
-    "cypress-cucumber-preprocessor": "^4.3.1",
     "d3": "^7.3.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-functional": "^3.6.0",
@@ -82,8 +75,5 @@
     "venn.js": "^0.2.20",
     "webpack": "^5.61.0",
     "webpack-dashboard": "^3.3.7"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": false
   }
 }
