@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "copy-sw": "cp node_modules/@danhartley/emissions/lib/es6/sw.js public/",
-    "copy-sw-next": "cp public/sw.js next",
+    "copy-sw-next": "cp public/sw.js .next",
     "dev": "npm run copy-sw && next dev -p 3001",
     "build": "next build",
     "start": "npm run copy-sw-next && next start",

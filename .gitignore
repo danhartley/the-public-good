@@ -53,5 +53,3 @@ emissions-tracker/node_modules
 
 # sw file is generated at runtime (copied from the package)
 public/sw.js
-
-/next
