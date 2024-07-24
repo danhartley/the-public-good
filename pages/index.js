@@ -16,7 +16,7 @@ export default function Home() {
             
             <p>Recent posts:</p>
             <ul class={styles.dashedItemsList}>
-                <li><Links.IL link={{ source:'web-development/sustainable-reporting-emissions'}}>Sustainable reporting of emissions</Links.IL></li>
+                {/* <li><Links.IL link={{ source:'web-development/sustainable-reporting-emissions'}}>Sustainable reporting of emissions</Links.IL></li> */}
                 <li><Links.IL link={{ source:'web-development/sustainable-reporting-and-tooling'}}>Sustainable reporting and tooling</Links.IL></li>
                 <li><Links.IL link={{ source:'web-development/its-the-jobs-that-got-small'}}>It's the jobs that got small</Links.IL></li>
                 <li><Links.IL link={{ source:'web-development/on-programming'}}>On programming</Links.IL></li>
