@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@tgwf/co2": "^0.15.0",
-    "lighthouse": "^12.0.0",
-    "puppeteer": "^11.0.0"
-  },
-  "type": "module"
-}

@@ -48,8 +48,5 @@ yarn-error.log*
 # To clear this warning, remove package-lock.json.
 package-lock.json
 
-# emissions tracker node
-emissions-tracker/node_modules
-
 # sw file is generated at runtime (copied from the package)
 public/sw.js
