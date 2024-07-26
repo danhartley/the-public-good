@@ -17,19 +17,15 @@ const Emissions = () => {
         }
       }
 
-      const { pageWeight, count, greenHosting, emissions, mgCO2, records } = await browser.getPageEmissions(url, options)
+      const { bytes, count, greenHosting, emissions, mgCO2, data } = await browser.getPageEmissions(url, options)
       
       console.log(`Report for ${url}`)
-      console.log('Page weight: ', `${pageWeight / 1000} Kbs`)
+      console.log('Page weight: ', `${bytes / 1000} Kbs`)
       console.log('Requests ', count)  
       console.log('Emissions: ', `${mgCO2} mg of CO2`)
       console.log(greenHosting ? 'Hosting: green hosting' : 'Hosting: not green hosting')
-      console.log('Records ', records)
+      console.log('Data ', data)
 
-      const bytes = records.reduce((acc, curr) => acc + curr.responseBytes, 0)
-
-      console.log('bytes: ', bytes)
-  
       await browser.clearPageEmissions()
     })() 
   })
