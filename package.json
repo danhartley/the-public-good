@@ -28,6 +28,7 @@
     "prettier-format": "prettier --config .prettierrc 'pages/**/*.tsx' --write"
   },
   "dependencies": {
+    "@danhartley/emissions": "^0.1.2",
     "@next/bundle-analyzer": "^10.2.0",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
