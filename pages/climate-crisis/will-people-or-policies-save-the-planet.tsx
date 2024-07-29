@@ -20,7 +20,7 @@ const CarbonFootprint = () => {
           Societal changes are needed to avert the climate crisis but the knowledge of individuals is powerful.
         </h2>
 
-        <p>
+        <div>
           We use measurements to determine our starting point, and to assess progress. According to Our World in Data
           (2017):
           <ul className={styles.dashedItemsList}>
@@ -71,74 +71,69 @@ const CarbonFootprint = () => {
               from Carbon Monitor.
             </span>
           </div>
+        </div>
+
+        <h3>Carbon budgets</h3>
+
+        <p className={styles.quote}>
+          The cumulative amount of carbon dioxide (CO2) emissions permitted over a period of time to keep within a
+          certain temperature threshold.{' '}
+          <Links.EL link={{ source: 'https://carbontracker.org/carbon-budgets-explained/' }}>
+            Carbon Tracker
+          </Links.EL>
+        </p>
+        
+        <p>
+          The{' '}
+          <Links.EL link={{ source: 'https://essd.copernicus.org/articles/12/3269/2020/' }}>
+            global carbon budget
+          </Links.EL>
+          , published annually, provides an account of the balance between carbon sources - emissions - and sinks. The
+          movement of carbon atoms betweens sinks and sources is called the{' '}
+          <Links.EL link={{ source: 'https://oceanservice.noaa.gov/facts/carbon-cycle.html' }}>carbon cycle</Links.EL>
+          , and it is perturbations in this cycle which cause global warming. Since 1950 around{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://www.nature.com/articles/s41598-018-24241-1.pdf?origin=ppub">48±7%</a> of anthropogenic emissions have been taken up by <a href=',
+            }}
+          >
+            natural sinks
+          </Links.EL>
+          , though at variable rates. Due to{' '}
+          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/CO2_fertilization_effect' }}>
+            carbon fertilisation
+          </Links.EL>
+          , and other factors, including increased use of nitrogen, natural sinks have been taking up more carbon
+          dioxide, though{' '}
+          <Links.EL link={{ source: 'https://www.nature.com/articles/d41586-021-00737-1' }}>
+            this upward trend may not continue
+          </Links.EL>
+          .
         </p>
         <p>
-          <h3>Carbon budgets</h3>
-
-          <p>
-            <div className={styles.quote}>
-              The cumulative amount of carbon dioxide (CO2) emissions permitted over a period of time to keep within a
-              certain temperature threshold.{' '}
-              <Links.EL link={{ source: 'https://carbontracker.org/carbon-budgets-explained/' }}>
-                Carbon Tracker
-              </Links.EL>
-            </div>
-          </p>
-
-          <p>
-            The{' '}
-            <Links.EL link={{ source: 'https://essd.copernicus.org/articles/12/3269/2020/' }}>
-              global carbon budget
-            </Links.EL>
-            , published annually, provides an account of the balance between carbon sources - emissions - and sinks. The
-            movement of carbon atoms betweens sinks and sources is called the{' '}
-            <Links.EL link={{ source: 'https://oceanservice.noaa.gov/facts/carbon-cycle.html' }}>carbon cycle</Links.EL>
-            , and it is perturbations in this cycle which cause global warming. Since 1950 around{' '}
-            <Links.EL
-              link={{
-                source:
-                  'https://www.nature.com/articles/s41598-018-24241-1.pdf?origin=ppub">48±7%</a> of anthropogenic emissions have been taken up by <a href=',
-              }}
-            >
-              natural sinks
-            </Links.EL>
-            , though at variable rates. Due to{' '}
-            <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/CO2_fertilization_effect' }}>
-              carbon fertilisation
-            </Links.EL>
-            , and other factors, including increased use of nitrogen, natural sinks have been taking up more carbon
-            dioxide, though{' '}
-            <Links.EL link={{ source: 'https://www.nature.com/articles/d41586-021-00737-1' }}>
-              this upward trend may not continue
-            </Links.EL>
-            .
-          </p>
-          <p>
-            <div>
-              Natural sinks cannot be relied on indefinitely, and become sources of emissions if they are removed or
-              die. IPCC calculations and Nationally Determined Contributions{' '}
-              <Links.EL
-                link={{
-                  source:
-                    'https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs',
-                }}
-              >
-                NDAs
-              </Links.EL>
-              , take into account natural sources.{' '}
-            </div>
-          </p>
-          <p>
-            Negative emissions refer to greenhouse gases, primarily carbon dioxide, removed from the atmosphere, either
-            though biogenic means (including planting trees, and restoring mangrove forests and sea grasses), or by
-            artificial methods such as{' '}
-            <Links.EL link={{ source: 'https://www.iea.org/reports/direct-air-capture' }}>direct air capture</Links.EL>{' '}
-            (DAC).
-          </p>
-          <p>
-            Carbon capture and storage, and carbon offsetting are used, at best, to keep emissions from an activity
-            carbon neutral; they do not reduce carbon already in the atmosphere.
-          </p>
+          Natural sinks cannot be relied on indefinitely, and become sources of emissions if they are removed or
+          die. IPCC calculations and Nationally Determined Contributions{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs',
+            }}
+          >
+            NDAs
+          </Links.EL>
+          , take into account natural sources.{' '}
+        </p>
+        <p>
+          Negative emissions refer to greenhouse gases, primarily carbon dioxide, removed from the atmosphere, either
+          though biogenic means (including planting trees, and restoring mangrove forests and sea grasses), or by
+          artificial methods such as{' '}
+          <Links.EL link={{ source: 'https://www.iea.org/reports/direct-air-capture' }}>direct air capture</Links.EL>{' '}
+          (DAC).
+        </p>
+        <p>
+          Carbon capture and storage, and carbon offsetting are used, at best, to keep emissions from an activity
+          carbon neutral; they do not reduce carbon already in the atmosphere.
         </p>
 
         <h3>CO2e</h3>
@@ -167,17 +162,15 @@ const CarbonFootprint = () => {
 
         <h3>Carbon footprints</h3>
 
-        <p>
-          <div className={styles.quote}>
-            <div>
-              The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or
-              product, expressed as carbon dioxide equivalent.{' '}
-              <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Carbon_footprint' }}>Wikipedia</Links.EL>
-            </div>
+        <div className={styles.quote}>
+          <div>
+            The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or
+            product, expressed as carbon dioxide equivalent.{' '}
+            <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Carbon_footprint' }}>Wikipedia</Links.EL>
           </div>
-        </p>
+        </div>
 
-        <p>
+        <div>
           The climatologist, Michael E Mann, argues that whilst individual action is important, it must not distract
           from policy. In an article for Time,{' '}
           <Links.EL link={{ source: 'https://time.com/5669071/lifestyle-changes-climate-change/' }}>
@@ -187,71 +180,65 @@ const CarbonFootprint = () => {
           <div className={styles.quote}>
             We need systemic changes that will reduce everyone’s carbon footprint, whether or not they care.
           </div>
-        </p>
+        </div>
+        
+        <div>
+          The debate around carbon footprints is often about who is{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://www.bbc.com/future/article/20200618-climate-change-who-is-to-blame-and-why-does-it-matter',
+            }}
+          >
+            responsible
+          </Links.EL>{' '}
+          for carbon emissions.
+        </div>
 
-        <p>
-          <div>
-            The debate around carbon footprints is often about who is{' '}
-            <Links.EL
-              link={{
-                source:
-                  'https://www.bbc.com/future/article/20200618-climate-change-who-is-to-blame-and-why-does-it-matter',
-              }}
-            >
-              responsible
-            </Links.EL>{' '}
-            for carbon emissions.
+        <div>
+          In 2002 BP rebranded itself as 'Beyond Petroleum'; as part of their{' '}
+          <Links.EL link={{ source: 'https://www.nytimes.com/2006/08/14/opinion/14kenney.html' }}>
+            marketing campaign
+          </Links.EL>{' '}
+          they released a carbon footprint calculator which popularised the concept. Following the{' '}
+          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill' }}>
+            Deepwater Horizon disaster
+          </Links.EL>{' '}
+          in 2006, BP sold off its{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://www.reuters.com/article/us-bp-solar/bp-turns-out-lights-at-solar-business-idUSTRE7BK1CC20111221?edition-redirect=uk',
+            }}
+          >
+            solar
+          </Links.EL>{' '}
+          (2011) and{' '}
+          <Links.EL link={{ source: 'https://www.reuters.com/article/us-bp-wind-idUSBRE93208B20130403' }}>
+            wind
+          </Links.EL>{' '}
+          (2013) assets.
+        </div>
+        
+        <div>
+          In his article,{' '}
+          <Links.EL link={{ source: 'https://mashable.com/feature/carbon-footprint-pr-campaign-sham' }}>
+            {' '}
+            The carbon footprint sham
+          </Links.EL>
+          , Mark Kaufman argues the burden of responsibility for global warming must be placed squarely on the fossil
+          fuel industry. He concludes,
+          <div className={styles.quote}>
+            BP wants you to accept responsibility for the globally disrupted climate. Just like beverage
+            industrialists wanted people to feel bad about the amassing pollution created by their plastics and cans,
+            or more sinisterly, tobacco companies blamed smokers for becoming addicted to addictive carcinogenic
+            products. We’ve seen this manipulative playbook before, and BP played it well.
           </div>
-        </p>
-
-        <p>
-          <div>
-            In 2002 BP rebranded itself as 'Beyond Petroleum'; as part of their{' '}
-            <Links.EL link={{ source: 'https://www.nytimes.com/2006/08/14/opinion/14kenney.html' }}>
-              marketing campaign
-            </Links.EL>{' '}
-            they released a carbon footprint calculator which popularised the concept. Following the{' '}
-            <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill' }}>
-              Deepwater Horizon disaster
-            </Links.EL>{' '}
-            in 2006, BP sold off its{' '}
-            <Links.EL
-              link={{
-                source:
-                  'https://www.reuters.com/article/us-bp-solar/bp-turns-out-lights-at-solar-business-idUSTRE7BK1CC20111221?edition-redirect=uk',
-              }}
-            >
-              solar
-            </Links.EL>{' '}
-            (2011) and{' '}
-            <Links.EL link={{ source: 'https://www.reuters.com/article/us-bp-wind-idUSBRE93208B20130403' }}>
-              wind
-            </Links.EL>{' '}
-            (2013) assets.
-          </div>
-        </p>
-
-        <p>
-          <div>
-            In his article,{' '}
-            <Links.EL link={{ source: 'https://mashable.com/feature/carbon-footprint-pr-campaign-sham' }}>
-              {' '}
-              The carbon footprint sham
-            </Links.EL>
-            , Mark Kaufman argues the burden of responsibility for global warming must be placed squarely on the fossil
-            fuel industry. He concludes,
-            <div className={styles.quote}>
-              BP wants you to accept responsibility for the globally disrupted climate. Just like beverage
-              industrialists wanted people to feel bad about the amassing pollution created by their plastics and cans,
-              or more sinisterly, tobacco companies blamed smokers for becoming addicted to addictive carcinogenic
-              products. We’ve seen this manipulative playbook before, and BP played it well.
-            </div>
-          </div>
-        </p>
-
+        </div>
+        
         <h3>Carbon footprint of societies</h3>
 
-        <p>
+        <div>
           <div>
             In 2008 MIT <Links.EL link={{ source: 'https://news.mit.edu/2008/footprint-tt0416' }}>calculated</Links.EL>{' '}
             that even the least extravagant person in the US had a carbon footprint of 8.5 tonnes or 42.5% of the
@@ -277,64 +264,60 @@ const CarbonFootprint = () => {
               </div>
             </p>
           </div>
-        </p>
+        </div>
 
         <h3>Benefits of carbon footprints</h3>
 
-        <p>
-          <ul className={styles.dashedItemsList}>
-            <li>Provide a basic framework for how to think about climate change numbers.</li>
-            <li>Show our dependency on fossil fuels.</li>
-            <li>
-              Can establish good practices and measurable outcomes e.g. the{' '}
-              <Links.EL
-                link={{
-                  source:
-                    'https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf',
-                }}
-              >
-                Ecological Footprint Standards
-              </Links.EL>{' '}
-              (PDF)
-            </li>
-          </ul>
-        </p>
-
+        <ul className={styles.dashedItemsList}>
+          <li>Provide a basic framework for how to think about climate change numbers.</li>
+          <li>Show our dependency on fossil fuels.</li>
+          <li>
+            Can establish good practices and measurable outcomes e.g. the{' '}
+            <Links.EL
+              link={{
+                source:
+                  'https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf',
+              }}
+            >
+              Ecological Footprint Standards
+            </Links.EL>{' '}
+            (PDF)
+          </li>
+        </ul>
+        
         <h3>Downsides of carbon footprints</h3>
 
-        <p>
-          <ul className={styles.dashedItemsList}>
-            <li>
-              Individual profiles are primarily based on averages with minimal personal data.
-              <div>
-                For a comparison compare one{' '}
-                <Links.EL link={{ source: 'https://calculator.farmcarbontoolkit.org.uk/' }}>
-                  carbon footprint calculator for UK farmers
-                </Links.EL>{' '}
-                which takes 30 mins to 2 hours to complete.
-              </div>
-            </li>
-            <li>
-              Tracing back carbon emissions is hard; many calculations are derived from assumptions based on figures for
-              large units, usually countries.
-            </li>
-            <li>
-              The background or implicit value for the region where the user lives is not separated out, although an
-              average for that region is often given.
-            </li>
-            <li>
-              There is no oversight, and no formal process of review; this makes it hard for the public to know which
-              calculators are accurate or reliable.
-            </li>
-            <li>
-              Our good intentions can be undone by{' '}
-              <Links.EL link={{ source: 'https://iopscience.iop.org/article/10.1088/1748-9326/ab9968' }}>
-                primary cognitive biases
-              </Links.EL>
-              .
-            </li>
-          </ul>
-        </p>
+        <ul className={styles.dashedItemsList}>
+          <li>
+            Individual profiles are primarily based on averages with minimal personal data.
+            <div>
+              For a comparison compare one{' '}
+              <Links.EL link={{ source: 'https://calculator.farmcarbontoolkit.org.uk/' }}>
+                carbon footprint calculator for UK farmers
+              </Links.EL>{' '}
+              which takes 30 mins to 2 hours to complete.
+            </div>
+          </li>
+          <li>
+            Tracing back carbon emissions is hard; many calculations are derived from assumptions based on figures for
+            large units, usually countries.
+          </li>
+          <li>
+            The background or implicit value for the region where the user lives is not separated out, although an
+            average for that region is often given.
+          </li>
+          <li>
+            There is no oversight, and no formal process of review; this makes it hard for the public to know which
+            calculators are accurate or reliable.
+          </li>
+          <li>
+            Our good intentions can be undone by{' '}
+            <Links.EL link={{ source: 'https://iopscience.iop.org/article/10.1088/1748-9326/ab9968' }}>
+              primary cognitive biases
+            </Links.EL>
+            .
+          </li>
+        </ul>
 
         <h2 id="calculators">Individual carbon footprint calculators</h2>
 
@@ -449,29 +432,27 @@ const CarbonFootprint = () => {
         </p>
 
         <h3>Recommendations</h3>
-        <p>
-          <ul className={styles.dashedItemsList}>
-            <li>
-              Do not offer the option to share the results of footprints because they are free of important context, and
-              are not comparable; but do share the calculator itself.
-            </li>
-            <li>Show workings and explain assumptions.</li>
-            <li>
-              Follow, or reference,{' '}
-              <Links.EL
-                link={{
-                  source:
-                    'https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf',
-                }}
-              >
-                Ecological Footprint Standards (PDF)
-              </Links.EL>
-              .
-            </li>
-            <li>Indicate the implicit, background carbon footprint.</li>
-            <li>Include and explain carbon dioxide-equivalents.</li>
-          </ul>
-        </p>
+        <ul className={styles.dashedItemsList}>
+          <li>
+            Do not offer the option to share the results of footprints because they are free of important context, and
+            are not comparable; but do share the calculator itself.
+          </li>
+          <li>Show workings and explain assumptions.</li>
+          <li>
+            Follow, or reference,{' '}
+            <Links.EL
+              link={{
+                source:
+                  'https://www.footprintnetwork.org/content/images/uploads/Ecological_Footprint_Standards_2009.pdf',
+              }}
+            >
+              Ecological Footprint Standards (PDF)
+            </Links.EL>
+            .
+          </li>
+          <li>Indicate the implicit, background carbon footprint.</li>
+          <li>Include and explain carbon dioxide-equivalents.</li>
+        </ul>
 
         <h2 id="individualActs">Individual acts</h2>
 

@@ -114,7 +114,7 @@ const Trees = () => {
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Tree_allometry' }}>tree allometry</Links.EL>.
         </p>
 
-        <p>
+        <div>
           The simplest way of calculating the weight requires only the diameter at breast height (known as{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Diameter_at_breast_height' }}>DBH</Links.EL> and
           taken as 1.3m) and the density of the tree's wood. This will give us about 90% accuracy. If we also know the
@@ -124,7 +124,7 @@ const Trees = () => {
             <li>Diameter of the tree at 1.3 metres.</li>
             <li>Height of the tree in metres.</li>
           </ul>
-        </p>
+        </div>
 
         <p>
           A team of scientists in Edinburgh used these values to{' '}

@@ -62,8 +62,8 @@ const Pledges = () => {
             better outcomes for readers.
           </p>
           <ul className={styles.dashedItemsList}>
-            {pledges.map(p => {
-              return <li>{p}</li>
+            {pledges.map((p,i) => {
+              return <li key={i}>{p}</li>
             })}
           </ul>
           <h3>ResponsibleTech.Work</h3>
@@ -77,8 +77,8 @@ const Pledges = () => {
           <h3>Professional pledges</h3>
           <p>When working with others, I make the following commitments:</p>
           <ul className={styles.dashedItemsList}>
-            {pledges2.map(p => {
-              return <li>{p}</li>
+            {pledges2.map((p,i) => {
+              return <li key={i}>{p}</li>
             })}
           </ul>
           <Top></Top>

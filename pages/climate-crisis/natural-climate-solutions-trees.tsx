@@ -290,13 +290,13 @@ const NCSPartOne = () => {
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Tree_allometry' }}>tree allometry</Links.EL>.
         </p>
         <p>Here is one simple way to measure the height of a tree on level ground.</p>
-        <p>
-          <div className={styles.inset}>
-            Cut a stick the length of your arm. Extend your arm fully in front with the stick held vertically. Walk
-            towards the tree until the top and bottom of the stick line up with the top and bottom of the tree. The
-            distance to the tree approximates to its height.
-          </div>
+
+        <p className={styles.inset}>
+          Cut a stick the length of your arm. Extend your arm fully in front with the stick held vertically. Walk
+          towards the tree until the top and bottom of the stick line up with the top and bottom of the tree. The
+          distance to the tree approximates to its height.
         </p>
+
         <p>
           There are many other, more precise ways to{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Tree_height_measurement' }}>
@@ -383,14 +383,12 @@ const NCSPartOne = () => {
           </aside>
         </Accordion>
         <p>
-          <div>
-            <strong>Example</strong>: repeat the calculation made for the sycamore - <em>Acer pseudoplatanus</em> - in
-            the Edinburgh{' '}
-            <Links.EL link={{ source: 'https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf' }}>
-              experiment
-            </Links.EL>{' '}
-            referred to above.
-          </div>
+          <strong>Example</strong>: repeat the calculation made for the sycamore - <em>Acer pseudoplatanus</em> - in
+          the Edinburgh{' '}
+          <Links.EL link={{ source: 'https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf' }}>
+            experiment
+          </Links.EL>{' '}
+          referred to above.
         </p>
         <p>
           In the original experiment the value for wood density used is 620 kg/m3. However, no adjustment is made for
@@ -512,7 +510,6 @@ const NCSPartOne = () => {
           branches.
         </p>
         <p>
-          <div>
             Because of natural variability there is no typical value for the annual rate of carbon dioxide
             sequestration. A representative range extends from{' '}
             <Links.EL
@@ -531,7 +528,6 @@ const NCSPartOne = () => {
               60
             </Links.EL>{' '}
             kg.
-          </div>
         </p>
         <p>A conservative estimate is 20 kg per tree per year.</p>
         <Accordion header="Trees to absorb all GHG emissions">
@@ -805,7 +801,6 @@ const NCSPartOne = () => {
           observations.
         </p>
         <p>
-          <div>
             In a supporting article for the{' '}
             <Links.EL
               link={{ source: 'https://www.wri.org/insights/forests-absorb-twice-much-carbon-they-emit-each-year' }}
@@ -815,7 +810,6 @@ const NCSPartOne = () => {
             , the authors state that of the 3 major rainforests only the Congo River Basin has enough forest standing to
             remain a carbon sink. The forests of Southeast Asia are collectively a source of carbon, and the Amazon
             Basin is teetering on the edge of becoming a source.
-          </div>
         </p>
         <p>
           Tropical rainforests are far and away the most important ecosystems for mitigating climate change. New forest
@@ -878,18 +872,16 @@ const NCSPartOne = () => {
           or 15% of all emissions annually.
         </p>
         <p>
-          <div>
-            The <Formula>CO2</Formula> fertilisation has been extensively studied in closed environments. Gabriel Popkin
-            presents a review of the latest field studies and computer models in his article at Yale Environment,{' '}
-            <Links.EL
-              link={{
-                source: 'https://e360.yale.edu/features/will-climate-change-upend-projections-of-future-forest-growth',
-              }}
-            >
-              Will Climate Change Upend Projections of Future Forest Growth?
-            </Links.EL>{' '}
-            He summarises this work:
-          </div>
+          The <Formula>CO2</Formula> fertilisation has been extensively studied in closed environments. Gabriel Popkin
+          presents a review of the latest field studies and computer models in his article at Yale Environment,{' '}
+          <Links.EL
+            link={{
+              source: 'https://e360.yale.edu/features/will-climate-change-upend-projections-of-future-forest-growth',
+            }}
+          >
+            Will Climate Change Upend Projections of Future Forest Growth?
+          </Links.EL>{' '}
+          He summarises this work:
         </p>
         <blockquote cite="https://e360.yale.edu/features/will-climate-change-upend-projections-of-future-forest-growth">
           Their results seem to be converging on bad news: Higher CO2 concentrations do not necessarily accelerate

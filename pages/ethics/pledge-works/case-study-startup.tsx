@@ -90,8 +90,8 @@ const CaseStudyStartUp = () => {
           such as society and the planet.
         </p>
         <ul className={styles.dashedItemsList}>
-          {corePledges.map(pledge => {
-            return <li>{pledge}</li>
+          {corePledges.map((pledge,i) => {
+            return <li key={i}>{pledge}</li>
           })}
         </ul>
         <p>These pledges are general and apply to everything the company does.</p>
@@ -159,8 +159,8 @@ const CaseStudyStartUp = () => {
         </p>
         <p>Examples of pledges our company founders might use to make a decision.</p>
         <ul className={styles.dashedItemsList}>
-          {productPledges.map(pledge => {
-            return <li>{pledge}</li>
+          {productPledges.map((pledge,i) => {
+            return <li key={i}>{pledge}</li>
           })}
         </ul>
         <h4>The decision matrix</h4>

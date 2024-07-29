@@ -60,15 +60,14 @@ const Introduction = () => {
         <p>
           Principles are general and abstract, work is specific and concrete. We have three practices for bridging this
           gap:
-          <em>
-            <ul className={styles.dashedItemsList}>
-              <li>Writing pledges</li>
-              <li>Challenging decisions</li>
-              <li>Voting</li>
-            </ul>
-          </em>
         </p>
-
+          
+        <ul className={styles.dashedItemsList}>
+          <li>Writing pledges</li>
+          <li>Challenging decisions</li>
+          <li>Voting</li>
+        </ul>
+      
         <h4>The idea</h4>
 
         <p>
@@ -128,18 +127,16 @@ const Introduction = () => {
         </h4>
 
         <p>
-          <div>
-            Criteria for a decision matrix are mainly{' '}
-            <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Non-functional_requirement' }}>
-              non-functional
-            </Links.EL>{' '}
-            requirements. They describe how the system should behave. We want the analytics tool we choose to{' '}
-            <em>be</em> GDPR compliant
-            <span className={styles.super}>
-              <a href="#carbon">+</a>
-            </span>{' '}
-            but we don't need to know <em>how</em> it does this.
-          </div>
+          Criteria for a decision matrix are mainly{' '}
+          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Non-functional_requirement' }}>
+            non-functional
+          </Links.EL>{' '}
+          requirements. They describe how the system should behave. We want the analytics tool we choose to{' '}
+          <em>be</em> GDPR compliant
+          <span className={styles.super}>
+            <a href="#carbon">+</a>
+          </span>{' '}
+          but we don't need to know <em>how</em> it does this.
         </p>
         <p>
           The criteria are a mix of project requirements - the service must be free or cheap - and pledges converted

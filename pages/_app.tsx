@@ -1,4 +1,3 @@
-// import 'preact/devtools'
 import type { AppProps } from 'next/app'
 import { Mode } from 'components/shared/types'
 import { useLocalStorageState } from 'hooks/local-storage'
@@ -6,7 +5,6 @@ import { useLocalStorageState } from 'hooks/local-storage'
 import ModeContext from 'components/contexts/ModeContext'
 
 import { QueryClient, QueryClientProvider } from 'react-query'
-import { ReactQueryDevtools } from 'react-query/devtools'
 
 const queryClient = new QueryClient()
 

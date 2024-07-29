@@ -76,12 +76,10 @@ const Hyperlinks = () => {
         </p>
 
         <p>
-          <div>
-            Connecting to an external resource is like conferring a little bit of praise or, at least, vouching for the
-            worth of the recipient. For this reason it is incumbent on the referrer to check they are not sending
-            readers to sites behind paywalls or that will bombard them with pop-ups, that will not steal their data, and
-            that has little or no advertising.
-          </div>
+          Connecting to an external resource is like conferring a little bit of praise or, at least, vouching for the
+          worth of the recipient. For this reason it is incumbent on the referrer to check they are not sending
+          readers to sites behind paywalls or that will bombard them with pop-ups, that will not steal their data, and
+          that has little or no advertising.
         </p>
 
         <p>
@@ -90,7 +88,6 @@ const Hyperlinks = () => {
         </p>
 
         <p>
-          <div>
             To increase the security of a site and to avoid endorsing the source of a link the attributes{' '}
             <Links.EL link={{ source: 'https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/' }}>
               noopener, noreferrer and nofollow
@@ -102,7 +99,6 @@ const Hyperlinks = () => {
               qualify outbound links
             </Links.EL>{' '}
             to site sponsors and for links added by users in comments and forums.
-          </div>
         </p>
 
         <p>
@@ -118,29 +114,25 @@ const Hyperlinks = () => {
           <Links.EL link={{ source: 'https://www.w3.org/People/Berners-Lee/FAQ.html' }}>it is just a default</Links.EL>.
         </p>
 
-        <p>
-          <div className={styles.quote}>
-            <span>
+        <blockquote>
+            <div>
               The mother of bad web design conventions is the decision to make hypertext links blue. Other colors would
               have been a better choice and would have increased the reading speed of the anchor text by a few percent.
               It is unfortunate to put the most important text on the page in a color that is known to reduce
               readability.
-            </span>
-            <div>
-              <Links.EL
-                link={{ source: 'https://www.nngroup.com/articles/when-bad-design-elements-become-the-standard/' }}
-              >
-                When Bad Design Elements Become the Standard
-              </Links.EL>{' '}
-              <span>Jakob Nielsen</span>
             </div>
-          </div>
-        </p>
+        </blockquote>
+        <cite>
+          <Links.EL
+            link={{ source: 'https://www.nngroup.com/articles/when-bad-design-elements-become-the-standard/' }}
+          >
+            When Bad Design Elements Become the Standard
+          </Links.EL>{' '}
+          <span>Jakob Nielsen</span>
+        </cite>
 
         <p>
-          <div>
-            Dark blue, or <span className={styles.defaultPurple}>purple</span> is used for links the user has clicked on.
-          </div>
+          Dark blue, or <span className={styles.defaultPurple}>purple</span> is used for links the user has clicked on.
         </p>
 
         <p>
@@ -148,11 +140,9 @@ const Hyperlinks = () => {
           already visited. This is especially important if the link is to an external source.
         </p>
 
-        <p>
-          <div>
-            It is tempting to override the defaults for links, and there are sound reasons for doing so. I will come to
-            these.
-          </div>
+        <p>          
+          It is tempting to override the defaults for links, and there are sound reasons for doing so. I will come to
+          these.
         </p>
 
         <p>
@@ -198,13 +188,15 @@ const Hyperlinks = () => {
 
         <p>
           On the other hand, WebAIM warns us not to neglect readers with forms of colour blindness:
-          <div className={styles.quote}>
-            <span>Make sure that colors are not the only method of conveying important information. </span>
-            <Links.EL link={{ source: 'https://webaim.org/articles/visual/colorblind' }}>
-              Designing for Color-blindness
-            </Links.EL>
-          </div>
         </p>
+        <blockquote>
+          <div>Make sure that colors are not the only method of conveying important information. </div>
+        </blockquote>
+        <cite>
+          <Links.EL link={{ source: 'https://webaim.org/articles/visual/colorblind' }}>
+            Designing for Color-blindness
+          </Links.EL>
+        </cite>
 
         <p>
           One way to satisfy both requirements is to remove the default line and create a new one further down, below
@@ -226,12 +218,15 @@ const Hyperlinks = () => {
         <p>
           Evidence suggests that judicious use of links does not impair understanding, or interrupt the reader's
           concentration.
-          <div className={styles.quote}>
+        </p>
+          <blockquote>
             <div>
               In terms of Web design and layouts, the present results highlight the importance of carefully considering
               which words are hyperlinked in webpages. The key lesson for Web designers that we have found here is that
               coloured words do not have any negative impact on reading behaviour.
             </div>
+          </blockquote>
+          <cite>
             <Links.EL
               link={{
                 label: 'Gemma Fitzsimmons | The impact of hyperlinks on reading text',
@@ -240,33 +235,32 @@ const Hyperlinks = () => {
             >
               The impact of hyperlinks on reading text
             </Links.EL>
-          </div>
-        </p>
+          </cite>
+        
 
         <p>
           Solitary links are salient and may be distracting; a sprinkling of links, composed of common words, singly or
           in or short sentences, seems to be the best approach. It is recommended to use words of high frequency (words
           familiar to the target audience). The more relevant, specific and pithy the better.
-          <div className={styles.quote}>
-            <div>
-              Hyperlinks highlight important information and suggest additional content, which for more difficult
-              concepts, invites rereading of the preceding text.
-            </div>
-            <div>
-              <Links.EL
-                link={{
-                  label: 'Gemma Fitzsimmons | The impact of hyperlinks on reading text',
-                  source: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210900',
-                }}
-              >
-                The impact of hyperlinks on reading text
-              </Links.EL>
-            </div>
-          </div>
         </p>
-
-        <p>
+        <blockquote>
           <div>
+            Hyperlinks highlight important information and suggest additional content, which for more difficult
+            concepts, invites rereading of the preceding text.
+          </div>
+        </blockquote>
+        <cite>
+          <Links.EL
+            link={{
+              label: 'Gemma Fitzsimmons | The impact of hyperlinks on reading text',
+              source: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210900',
+            }}
+          >
+            The impact of hyperlinks on reading text
+          </Links.EL>
+        </cite>
+        
+        <p>
             Meaningful and distinguishable link text is essential for users of screen readers who may scan links
             independently of other content. If the link text is insufficient, alternative text can be placed in an{' '}
             <Links.EL
@@ -279,7 +273,6 @@ const Hyperlinks = () => {
               aria-label attribute
             </Links.EL>{' '}
             which will not be seen by sighted readers.
-          </div>
         </p>
 
         <p>
@@ -319,16 +312,18 @@ const Hyperlinks = () => {
 
         <p>
           The W3C (World Wide Web Consortium) recommends that links open in the same window or tab as the current page.
-          <div className={styles.quote}>
-            <div>
-              In general, it is better not to open new windows and tabs since they can be disorienting for people,
-              especially people who have difficulty perceiving visual content.
-            </div>
-            <Links.EL link={{ source: 'https://www.w3.org/TR/WCAG20-TECHS/G200.html' }}>
-              Opening new windows and tabs from a link only when necessary
-            </Links.EL>
-          </div>
         </p>
+          <blockquote>
+          <div>
+            In general, it is better not to open new windows and tabs since they can be disorienting for people,
+            especially people who have difficulty perceiving visual content.
+          </div>
+        </blockquote>
+        <cite>
+          <Links.EL link={{ source: 'https://www.w3.org/TR/WCAG20-TECHS/G200.html' }}>
+            Opening new windows and tabs from a link only when necessary
+          </Links.EL>
+        </cite>
 
         <p>
           Exceptions include opening a help page while completing a form, or to avoid leaving a page where the user is
@@ -339,11 +334,11 @@ const Hyperlinks = () => {
 
         <p>
           If you don't know the keyboard shortcuts, here they are:
-          <ul>
-            <li>Mac: ⌘ + link</li>
-            <li>Windows & Linux: Ctrl + link</li>
-          </ul>
         </p>
+        <ul>
+          <li>Mac: ⌘ + link</li>
+          <li>Windows & Linux: Ctrl + link</li>
+        </ul>
 
         <p>On a tablet, mobile, trackpad or mouse press to focus on the link and select your preferred option.</p>
 

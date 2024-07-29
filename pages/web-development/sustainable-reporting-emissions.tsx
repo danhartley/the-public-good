@@ -108,8 +108,10 @@ const SustainableReportingEmissions = () => {
         <table className={styles.tablepadded}>
           <caption>Emissions Comparison Green Hosting</caption>
           <thead>
-            <th>Green web host</th>
-            <th>Carbon dioxide emissions</th>
+            <tr>
+              <th>Green web host</th>
+              <th>Carbon dioxide emissions</th>
+            </tr>
           </thead>
           <tbody>
             <tr>

@@ -19,7 +19,7 @@ const Services = () => {
         </p>
 
         <h2>New sites</h2>
-        <p>
+        <div>
           <span>The sites I build have the following characteristics:</span>
           <ul className={styles.dashedItemsList}>
             <li>
@@ -39,7 +39,7 @@ const Services = () => {
             I follow <Links.EL link={{ source: 'https://jamstack.org/what-is-jamstack/' }}>Jamstack</Links.EL>{' '}
             principles.
           </span>
-        </p>
+        </div>
 
         <h2>Existing sites</h2>
         <p>
@@ -52,14 +52,12 @@ const Services = () => {
           The sociable contract outlines the principles upon which a website is built. It reflects the efforts of
           everyone who contributes to the project.
         </p>
-
-        <p>
-          <div>
-            I have created a{' '}
-            <Links.IL link={{ source: 'web-development/sociable-contract' }}>sociable contract</Links.IL> for The Public
-            Good.
-          </div>
-        </p>
+        
+        <div>
+          I have created a{' '}
+          <Links.IL link={{ source: 'web-development/sociable-contract' }}>sociable contract</Links.IL> for The Public
+          Good.
+        </div>
 
         <h2>Best practices</h2>
         <p>

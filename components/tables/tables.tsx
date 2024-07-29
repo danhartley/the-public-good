@@ -56,7 +56,7 @@ const EnergyDensities = () => {
         },
     ];
 
-    const fuels = eds.map(ed => <tr>
+    const fuels = eds.map(ed => <tr key={ed.name}>
             <td>{ed.name}</td>
             { ed.value ? <td>{Number(ed.value).toLocaleString()}</td> : <td></td> }
             { ed.volume ? <td>{ed.volume}</td> : <td></td> }
@@ -122,7 +122,7 @@ const PowerDensities = () => {
         },
     ];
 
-    const vs = densities.map(e => <tr>
+    const vs = densities.map(e => <tr key={e.name}>
             <td>{e.name}</td>
             <td>{`${Number(e.low).toLocaleString()}-${Number(e.high).toLocaleString()}`}</td>
             <td>{Number(e.median).toLocaleString()}</td>
@@ -182,7 +182,7 @@ const FuelEmissions = () => {
         }
     ];
 
-    const fuels = fes.map(fe => <tr>
+    const fuels = fes.map(fe => <tr key={fe.name}>
             <td>{fe.name}</td>
             <td>{Number(fe.value).toLocaleString()}</td>
             <td>{fe.value2}</td>
@@ -227,7 +227,7 @@ const CumulativeEmissions = () => {
         }
     ];
 
-    const emissions = ces.map(d => <tr><td>{d.year}</td><td>{Number(d.total).toLocaleString()}</td></tr>);
+    const emissions = ces.map(d => <tr key={d.year}><td>{d.year}</td><td>{Number(d.total).toLocaleString()}</td></tr>);
 
     return (<table>
             <thead>
@@ -327,9 +327,9 @@ const Humans = () => {
         },
     ];
 
-    const humans = humanDates.map(hd => {
+    const humans = humanDates.map((hd,i) => {
         return (
-            <tr>
+            <tr key={i}>
                 { hd.link ? <td><a href={hd.link} aria-label={`${hd.source} article on ${hd.what}`}>{hd.what}</a></td> : <td>{hd.what}</td> }
                 <td>{hd.when}</td>
                 <td>{hd.info}</td>
@@ -404,7 +404,7 @@ const Geology = () => {
 
     const geology = geologicDates.map(gd => {
         return (
-            <tr>
+            <tr key={gd.link}>
                 { gd.link ? <td><a href={gd.link} aria-label={`${gd.source} article on ${gd.what}`}>{gd.what}</a></td> : <td>{gd.what}</td> }
                 <td>{gd.when}</td>
                 <td>{gd.info}</td>

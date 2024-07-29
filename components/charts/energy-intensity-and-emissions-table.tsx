@@ -114,10 +114,10 @@ const EnergyAndEmissionsTable = ({setEnergyAndEmissionsState}) => {
         setEnergyAndEmissionsState(dataSources[0]);
     },[]);
 
-    const rows = dataSources.map(e => <tr>
+    const rows = dataSources.map((e) => <tr key={e.id}>
         <td>
             <div className={e.id === active.id ? styles.checked : ''}>
-                <input type="radio" checked={e.id === active.id} onClick={() => updateStates(dataSources[e.id - 1])} id={e.id.toString()} name="rbBaselines"></input>
+                <input type="radio" checked={e.id === active.id} onChange={() => updateStates(dataSources[e.id - 1])} id={e.id.toString()} name="rbBaselines"></input>
                 <label htmlFor={e.id.toString()}>{e.name}</label>
             </div>
         </td>

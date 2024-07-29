@@ -53,10 +53,10 @@ const UKDataOptionsTable = ({setDataOptionsState}) => {
         setDataOptionsState(dataSources[0]);
     },[]);
 
-    const rows = dataSources.map(ds => <tr>
+    const rows = dataSources.map(ds => <tr key={ds.id}>
         <td>
             <div className={ds.id === selectedDataSource.id ? styles.checked : undefined}>
-                <input type="radio" checked={ds.id === selectedDataSource.id} onClick={e => updateRBStates(e, dataSources[ds.id - 100])} id={ds.id.toString()} name="rbSource"></input>
+                <input type="radio" checked={ds.id === selectedDataSource.id} onChange={e => updateRBStates(e, dataSources[ds.id - 100])} id={ds.id.toString()} name="rbSource"></input>
                 <label htmlFor={ds.id.toString()}>{ds.title}</label>
             </div>
         </td>

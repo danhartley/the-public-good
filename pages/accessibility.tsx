@@ -86,32 +86,32 @@ const Accessibility: FunctionalComponent = () => {
       <section>
         <h2>Tools</h2>
         <Links.ExternalLinksList links={links} />
+        <h2>Colour contrast</h2>
         <p>
-          <h2>Colour contrast</h2>
           Not everyone has perfect eyesight, especially in poor light. Poor contrast can be tested, together with other
           accessibility issues, using the web accessibility evaluation tool,{' '}
           <Links.EL link={{ source: 'https://wave.webaim.org/' }}>WAVE</Links.EL>, or by inspecting an element using
           browser tools.
-          <p>
-            A summary of WAVE's{' '}
-            <Links.EL link={{ source: 'https://webaim.org/resources/contrastchecker' }}>of the WCAG</Links.EL> (Web
-            Content Accessibility Guidelines):
-          </p>
-          <dl className={styles.dataTable}>
-            <dt>
-              <strong>WCAG Level AAA</strong>
-            </dt>
-            <dd>A contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.</dd>
-            <dt>
-              <strong>WCAG 2.0 level AA</strong>
-            </dt>
-            <dd>A contrast ratio of at least 4.5:1 for normal text and 3:1 for large text.</dd>
-            <dt>
-              <strong>WCAG 2.1</strong>
-            </dt>
-            <dd>A contrast ratio of at least 3:1 for graphics and user interface components.</dd>
-          </dl>
         </p>
+        <p>
+          A summary of WAVE's{' '}
+          <Links.EL link={{ source: 'https://webaim.org/resources/contrastchecker' }}>of the WCAG</Links.EL> (Web
+          Content Accessibility Guidelines):
+        </p>
+        <dl className={styles.dataTable}>
+          <dt>
+            <strong>WCAG Level AAA</strong>
+          </dt>
+          <dd>A contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.</dd>
+          <dt>
+            <strong>WCAG 2.0 level AA</strong>
+          </dt>
+          <dd>A contrast ratio of at least 4.5:1 for normal text and 3:1 for large text.</dd>
+          <dt>
+            <strong>WCAG 2.1</strong>
+          </dt>
+          <dd>A contrast ratio of at least 3:1 for graphics and user interface components.</dd>
+        </dl>
         <h3>Practice</h3>
         <p>
           I use Deque's{' '}

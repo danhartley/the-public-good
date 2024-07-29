@@ -9,7 +9,7 @@ const Quiz = ({provider = 'the-public-good', title = 'hydrogen-a-singular-atom',
             ?
                 <>
                 <h2>How much do your remember?</h2>
-                <iframe className={styles.widget} src={src}></iframe>
+                <iframe title='quiz' className={styles.widget} src={src}></iframe>
                 </>
             :
                 <>

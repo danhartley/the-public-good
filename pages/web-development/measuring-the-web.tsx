@@ -404,11 +404,11 @@ const MeasuringTheWeb = () => {
               Set data input to median web page weight{' '}
             </button>
           </p>
-          <p>
-            <div className={styles.inset}>
-              <EnergyAndEmissionsTable setEnergyAndEmissionsState={setEnergyAndEmissionsState} />
-            </div>
-          </p>
+
+          <div className={styles.inset}>
+            <EnergyAndEmissionsTable setEnergyAndEmissionsState={setEnergyAndEmissionsState} />
+          </div>
+
 
           <h4>Output values</h4>
 
@@ -491,7 +491,6 @@ const MeasuringTheWeb = () => {
             laptops, both of which have a considerably smaller energy and carbon footprint than large screen, high
             definition televisions.
           </p>
-
           <blockquote cite="https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines">
             For example, a 50-inch LED television consumes much more electricity than a smartphone (100 times) or laptop
             (5 times). Because phones are extremely energy efficient, data transmission accounts for more than 80% of
@@ -568,32 +567,27 @@ const MeasuringTheWeb = () => {
           <p>
             Using Cisco's figure value for gigabytes of data gives an annual value of ({averageMonthlyTrafficPerUser}
             *12) {(1680).toLocaleString()} GBs.
-          </p>
-          <p>
-            <div className={styles.inset}>
-              <UKDataOptionsTable setDataOptionsState={setDataOptionsState} />
-            </div>
-          </p>
+          </p>          
+          <div className={styles.inset}>
+            <UKDataOptionsTable setDataOptionsState={setDataOptionsState} />
+          </div>        
           <h4>Output values</h4>
-          <p>
-            <div className={styles.calculatedValues}>
-              <div>
-                <span ref={calculatedCiscoPerUserEnergyValue}></span> <span>kWhs of energy</span>
-              </div>
-              <div>
-                <span ref={calculatedCiscoPerUserGrammesValue}></span> <span>g</span>{' '}
-                <span>
-                  (<span ref={calculatedCiscoPerUserTonnesValue}></span> tonnes)
-                </span>{' '}
-                <span>
-                  {' '}
-                  of <Formula>CO2</Formula>
-                </span>
-              </div>
+          <div className={styles.calculatedValues}>
+            <div>
+              <span ref={calculatedCiscoPerUserEnergyValue}></span> <span>kWhs of energy</span>
             </div>
-          </p>
-          <p>
-            <div className={styles.inset}>
+            <div>
+              <span ref={calculatedCiscoPerUserGrammesValue}></span> <span>g</span>{' '}
+              <span>
+                (<span ref={calculatedCiscoPerUserTonnesValue}></span> tonnes)
+              </span>{' '}
+              <span>
+                {' '}
+                of <Formula>CO2</Formula>
+              </span>
+            </div>
+          </div>
+          <div className={styles.inset}>
               How does this compare to <strong>UK average electricity</strong> use per person of{' '}
               <Links.EL
                 link={{
@@ -604,62 +598,50 @@ const MeasuringTheWeb = () => {
                 {averageAnnualElectricty.toLocaleString()} kWhs
               </Links.EL>
               ?
-            </div>
-          </p>
-          <p>
+          </div>
+          <div>
             <div>
-              <div>
-                <MiniBarChart
-                  dataSources={[
-                    { source: 'Total', value: averageAnnualElectricty },
-                    { source: 'Internet', value: funcs.multiplyInputs([inputs.bytes, inputs.energy]) },
-                  ]}
-                  config={{ colours: ['#CCBE9F', '#ABC3C9'], units: 'kWhs' }}
-                />
-              </div>
+              <MiniBarChart
+                dataSources={[
+                  { source: 'Total', value: averageAnnualElectricty },
+                  { source: 'Internet', value: funcs.multiplyInputs([inputs.bytes, inputs.energy]) },
+                ]}
+                config={{ colours: ['#CCBE9F', '#ABC3C9'], units: 'kWhs' }}
+              />
             </div>
-          </p>
-          <p>
-            <div className={styles.inset}>
-              <div>
-                How does this compare to average{' '}
-                <strong>
-                  UK <Formula>CO2</Formula> emissions
-                </strong>{' '}
-                per person of{' '}
-                <Links.EL
-                  link={{
-                    source:
-                      'https://ourworldindata.org/co2/country/united-kingdom#per-capita-how-much-co2-does-the-average-person-emit',
-                  }}
-                >
-                  {averageAnnualCarbonFootprint.toLocaleString()} tonnes
-                </Links.EL>{' '}
-                (2019)?
-              </div>
-            </div>
-          </p>
-          <p>
+          </div>
+          <div className={styles.inset}>
             <div>
-              <div>
-                <MiniBarChart
-                  dataSources={[
-                    { source: 'Total', value: averageAnnualCarbonFootprint },
-                    {
-                      source: 'Internet',
-                      value: funcs.multiplyInputs([inputs.bytes, inputs.energy, inputs.emissions, 0.000001]),
-                    },
-                  ]}
-                  config={{ colours: ['#CCBE9F', '#ABC3C9'], units: 'Tonnes' }}
-                />
-              </div>
+              How does this compare to average{' '}
+              <strong>
+                UK <Formula>CO2</Formula> emissions
+              </strong>{' '}
+              per person of{' '}
+              <Links.EL
+                link={{
+                  source:
+                    'https://ourworldindata.org/co2/country/united-kingdom#per-capita-how-much-co2-does-the-average-person-emit',
+                }}
+              >
+                {averageAnnualCarbonFootprint.toLocaleString()} tonnes
+              </Links.EL>{' '}
+              (2019)?
             </div>
-          </p>
-
-          {/* <h4>The business</h4>
-
-                    <WebsiteEnergyAndEmissionsTable setWebsiteState={setWebsiteState} /> */}
-
+          </div>     
+          <div>
+            <div>
+              <MiniBarChart
+                dataSources={[
+                  { source: 'Total', value: averageAnnualCarbonFootprint },
+                  {
+                    source: 'Internet',
+                    value: funcs.multiplyInputs([inputs.bytes, inputs.energy, inputs.emissions, 0.000001]),
+                  },
+                ]}
+                config={{ colours: ['#CCBE9F', '#ABC3C9'], units: 'Tonnes' }}
+              />
+            </div>
+          </div>
           <p>
             The energy and emissions associated with websites and streaming is divided between the user (this value is
             included in their bill), the content provider and myriad intermediaries, so direct comparison means little.
@@ -839,69 +821,58 @@ const MeasuringTheWeb = () => {
 
         <section id="appendix">
           <h3>Appendix: ICT energy consumption</h3>
-
-          <p>
-            <figure>
-              <figcaption>
-                <div>
-                  <span>
-                    <strong>Main components of ICT energy consumption (2021)</strong>
-                  </span>
-                  <Links.EL
-                    link={{ source: 'https://www.greenit.fr/impacts-environnementaux-du-numerique-en-france/' }}
-                  >
-                    GreenIT - iNUM : impacts environnementaux du numérique en France
-                  </Links.EL>
-                </div>
-              </figcaption>
-              <PieChartComponentEnergyConsumption model={'greenIT'} />
-            </figure>
-          </p>
-
-          <p>Climate care includes the energy used to manufacture the hardware.</p>
-
-          <p>
-            <figure>
-              <figcaption>
-                <div>
-                  <span>
-                    <strong>Main components of ICT energy consumption (2017)</strong>
-                  </span>
-                  <Links.EL
-                    link={{
-                      source: 'https://www.climatecare.org/resources/news/infographic-carbon-footprint-internet/',
-                    }}
-                  >
-                    climate care - The carbon footprint of the Internet
-                  </Links.EL>
-                </div>
-              </figcaption>
-              <PieChartComponentEnergyConsumption model={'climateCare'} />
-            </figure>
-          </p>
-
-          <p>
-            <div>
-              <blockquote cite="https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines">
-                Based on average viewing habits, my updated analysis shows that viewing devices account for the majority
-                of energy use (72%), followed by data transmission (23%) and data centres (5%). In contrast, the Shift
-                Project values show that devices account for less than 2% of total energy use, as a result of
-                underestimating the energy use of devices (4x) while substantially overestimating the energy use of data
-                centres (35x) and data transmission (50x).
-              </blockquote>
-              <cite>
+          <figure>
+            <figcaption>
+              <div>
+                <span>
+                  <strong>Main components of ICT energy consumption (2021)</strong>
+                </span>
+                <Links.EL
+                  link={{ source: 'https://www.greenit.fr/impacts-environnementaux-du-numerique-en-france/' }}
+                >
+                  GreenIT - iNUM : impacts environnementaux du numérique en France
+                </Links.EL>
+              </div>
+            </figcaption>
+            <PieChartComponentEnergyConsumption model={'greenIT'} />
+          </figure>
+          <p>Climate care includes the energy used to manufacture the hardware.</p>          
+          <figure>
+            <figcaption>
+              <div>
+                <span>
+                  <strong>Main components of ICT energy consumption (2017)</strong>
+                </span>
                 <Links.EL
                   link={{
-                    source:
-                      'https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines',
+                    source: 'https://www.climatecare.org/resources/news/infographic-carbon-footprint-internet/',
                   }}
                 >
-                  George Kamiya | IEA
-                </Links.EL>{' '}
-              </cite>
-            </div>
-          </p>
-
+                  climate care - The carbon footprint of the Internet
+                </Links.EL>
+              </div>
+            </figcaption>
+            <PieChartComponentEnergyConsumption model={'climateCare'} />
+          </figure>
+          <div>
+            <blockquote cite="https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines">
+              Based on average viewing habits, my updated analysis shows that viewing devices account for the majority
+              of energy use (72%), followed by data transmission (23%) and data centres (5%). In contrast, the Shift
+              Project values show that devices account for less than 2% of total energy use, as a result of
+              underestimating the energy use of devices (4x) while substantially overestimating the energy use of data
+              centres (35x) and data transmission (50x).
+            </blockquote>
+            <cite>
+              <Links.EL
+                link={{
+                  source:
+                    'https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines',
+                }}
+              >
+                George Kamiya | IEA
+              </Links.EL>{' '}
+            </cite>
+          </div>
           <div className={styles.inset}>
             <Links.IL link={{ source: 'web-development/measuring-the-web/#appendixRef' }}>
               Return to <strong>Are these figures accurate?</strong>

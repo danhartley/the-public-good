@@ -39,7 +39,7 @@ const Facts = () => {
           dioxide multiple by 3.67.
         </p>
 
-        <p>
+        <div>
           How is this number derived?
           <span className={styles.quote}>
             <div>The atomic mass of carbon is 12. The atomic mass of oxygen is 16.</div>
@@ -66,7 +66,7 @@ const Facts = () => {
               Example calculation using weight and moles.
             </Links.EL>
           </div>
-        </p>
+        </div>
 
         <h2 id="co2e">CO2e</h2>
 
@@ -85,7 +85,7 @@ const Facts = () => {
         </p>
 
         <h3>Coal</h3>
-        <p>
+        <div>
           <div className={styles.quote}>
             The formation of coal takes a significant amount of time (on the order of a few million years), and the
             first coal-bearing rock units appeared about 290-360 million years ago, at a time known as the Carboniferous
@@ -98,27 +98,25 @@ const Facts = () => {
               </Links.EL>
             </span>
           </div>
-        </p>
+        </div>
 
         <h3>Oil & Gas</h3>
-        <p>
-          <span className={styles.quote}>
+        <blockquote>
             70% of oil deposits existing today were formed in the Mesozoic age (252 to 66 million years ago), 20% were
             formed in the Cenozoic age (65 million years ago), and only 10% were formed in the Paleozoic age (541 to 252
             million years ago). This is likely because the Mesozoic age was marked by a tropical climate, with large
             amounts of plankton in the ocean.{' '}
-            <span>
-              {' '}
-              <Links.EL link={{ source: 'https://energyeducation.ca/encyclopedia/Oil_formation' }}>
-                Energy Education: oil formation
-              </Links.EL>
-            </span>
-          </span>
-        </p>
+          </blockquote>
+          <cite>
+            {' '}
+            <Links.EL link={{ source: 'https://energyeducation.ca/encyclopedia/Oil_formation' }}>
+              Energy Education: oil formation
+            </Links.EL>
+          </cite>
 
-        <h2 id="time">Time</h2>
+        <h2 id="time" className={`${styles.mt2} ${styles.mb0}`}>Time</h2>
 
-        <h3>Geologic time</h3>
+        <h3 className={styles.mt1}>Geologic time</h3>
 
         <Tables.Geology></Tables.Geology>
 
@@ -134,11 +132,11 @@ const Facts = () => {
 
         <Tables.Humans></Tables.Humans>
 
-        <h2 id="emissions">Emissions</h2>
+        <h2 id="emissions" className={`${styles.mt1} ${styles.mb}`}>Emissions</h2>
 
-        <h3>Emissions since when?</h3>
+        <h3 className={styles.mt1}>Emissions since when?</h3>
 
-        <p>
+        <div>
           <div>
             The IPCC calculates the rise in the global mean surface temperature (GMST) from the beginning of large-scale
             industrial activity. Their{' '}
@@ -173,15 +171,15 @@ const Facts = () => {
             <Tables.CumulativeEmissions></Tables.CumulativeEmissions>
             <p>In 1850 cumulative global emissions were around 0.3% of what they are today.</p>
           </div>
-        </p>
+        </div>
 
         <h3 id="fuel_emissions">Fuel emissions</h3>
 
         <Tables.FuelEmissions></Tables.FuelEmissions>
 
-        <h2 id="energy">Energy</h2>
+        <h2 id="energy" className={`${styles.mt1} ${styles.mb}`}>Energy</h2>
 
-        <h3>Units</h3>
+        <h3 className={styles.mt1}>Units</h3>
 
         <p>
           SI Units:{' '}
@@ -277,7 +275,7 @@ const Facts = () => {
 
         <h3>Horsepower</h3>
 
-        <p>
+        <div>
           <div>
             There are numerous definitions for the value of{' '}
             <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Horsepower' }}>horsepower</Links.EL>; one metric
@@ -299,11 +297,11 @@ const Facts = () => {
             <div>A toaster uses in the range of .8 to 1.5kW of energy.</div>
             <div>An ordinary family salon has ~120 horsepower, and an SUV ~200 horsepower.</div>
           </div>
-        </p>
+        </div>
 
         <h3>Human power</h3>
 
-        <p>
+        <div>
           <div className={styles.quote}>
             <div>
               2000 Calories / 1 day &#215; 1 day / 24 hours &#215; 60 minutes &#215; 60 seconds &#215; 4184 Joules / 1
@@ -315,27 +313,26 @@ const Facts = () => {
               </div>
             </div>
           </div>
-        </p>
+        </div>
 
-        <h2 id="photosynthesis">Photosynthesis</h2>
+        <h2 id="photosynthesis" className={`${styles.mt1} ${styles.mb}`}>Photosynthesis</h2>
 
-        <p>
-          <span className={styles.quote}>
-            Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large
-            space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning
-            electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations
-            the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of
-            magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation.
-            <div>
-              <Links.EL
-                link={{ source: 'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf' }}
-              >
-                Power density primer Vaclav Smil
-              </Links.EL>{' '}
-              (PDF)
-            </div>
-          </span>
-        </p>
+
+        <blockquote>
+          Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large
+          space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning
+          electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations
+          the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of
+          magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation.
+          </blockquote>
+          <cite>
+            <Links.EL
+              link={{ source: 'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf' }}
+            >
+              Power density primer Vaclav Smil
+            </Links.EL>{' '}
+            (PDF)
+          </cite>
 
         {/* <h2>Ocean acidification</h2> */}
       </section>

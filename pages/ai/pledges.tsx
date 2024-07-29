@@ -90,74 +90,66 @@ const Pledges = () => {
           AI, to our privacy, to people's rights, and to the environment.
         </p>
         <p>I will return to these questions in later posts, but for now, here are my pledges.</p>
+        
+        <h3>Pledges</h3>
+        
+        <div className={styles.inset}>
+          <div>
+            I pledge to stop using ChatGPT until the conditions and rights of employees involved in outsourced work
+            have been addressed.
+          </div>
+          <div>
+            <strong>Pledge checkpoint: end of August 2023</strong>
+          </div>      
+        </div>
+        <div className={styles.inset}>
+          <div>
+            <del>
+              To prevent myself from being distracted by advances in AI, I pledge to return my focus to other
+              things.
+            </del>
+          </div>
+          <div>
+            <ins>
+              I pledge to stop using ChatGPT until I have a better understanding of its impact on resources and
+              people.
+            </ins>
+            <span> [Updated 6 July 2023]</span>
+          </div>
+          <div>
+            <strong>Pledge checkpoint: end of July 2023</strong>
+          </div>
+          <div>
+            <em>Pledge report: pledge fulfilled</em>
+          </div>
+        </div>
+        <div className={styles.inset}>
+          <div>
+            To compensate for the water use of my chats with ChatGPT, I pledge to use grey water for my plants.
+          </div>
+          <div>
+            <strong>Pledge checkpoint: end of summer 2023</strong>
+          </div>
+        </div>        
+        <div className={styles.inset}>
+          <div>
+            To share what I learn about AI, I pledge to provide links to the materials, sources, and people that
+            have helped me.
+          </div>
+          <div>
+            <strong>Pledge checkpoint: tricky, but I'll review this one at the end of the summer too</strong>
+          </div>
+        </div>
+
+        <h3>Influences</h3>
         <p>
-          <h3>Pledges</h3>
-          <p>
-            <div className={styles.inset}>
-              <div>
-                I pledge to stop using ChatGPT until the conditions and rights of employees involved in outsourced work
-                have been addressed.
-              </div>
-              <div>
-                <strong>Pledge checkpoint: end of August 2023</strong>
-              </div>
-            </div>
-          </p>
-          <p>
-            <div className={styles.inset}>
-              <div>
-                <del>
-                  To prevent myself from being distracted by advances in AI, I pledge to return my focus to other
-                  things.
-                </del>
-              </div>
-              <div>
-                <ins>
-                  I pledge to stop using ChatGPT until I have a better understanding of its impact on resources and
-                  people.
-                </ins>
-                <span> [Updated 6 July 2023]</span>
-              </div>
-              <div>
-                <strong>Pledge checkpoint: end of July 2023</strong>
-              </div>
-              <div>
-                <em>Pledge report: pledge fulfilled</em>
-              </div>
-            </div>
-          </p>
-          <p>
-            <div className={styles.inset}>
-              <div>
-                To compensate for the water use of my chats with ChatGPT, I pledge to use grey water for my plants.
-              </div>
-              <div>
-                <strong>Pledge checkpoint: end of summer 2023</strong>
-              </div>
-            </div>
-          </p>
-          <p>
-            <div className={styles.inset}>
-              <div>
-                To share what I learn about AI, I pledge to provide links to the materials, sources, and people that
-                have helped me.
-              </div>
-              <div>
-                <strong>Pledge checkpoint: tricky, but I'll review this one at the end of the summer too</strong>
-              </div>
-            </div>
-          </p>
+          With thanks to <Links.EL link={{ source: 'https://ialja.com/' }}>Alja</Links.EL>, Carl,{' '}
+          <Links.EL link={{ source: 'https://noisewrangler.bandcamp.com/' }}>JP</Links.EL>, Franca, Christina, Carla,
+          Pierre, Anne and Bernard, and my former colleagues at{' '}
+          <Links.EL link={{ source: 'https://www.altruistiq.com/our-team' }}>Altruistiq</Links.EL> with all of whom I
+          have shared conversations about the upsides, downsides, and conundrums of recent developments in AI.
         </p>
-        <p>
-          <h3>Influences</h3>
-          <p>
-            With thanks to <Links.EL link={{ source: 'https://ialja.com/' }}>Alja</Links.EL>, Carl,{' '}
-            <Links.EL link={{ source: 'https://noisewrangler.bandcamp.com/' }}>JP</Links.EL>, Franca, Christina, Carla,
-            Pierre, Anne and Bernard, and my former colleagues at{' '}
-            <Links.EL link={{ source: 'https://www.altruistiq.com/our-team' }}>Altruistiq</Links.EL> with all of whom I
-            have shared conversations about the upsides, downsides, and conundrums of recent developments in AI.
-          </p>
-        </p>
+
       </section>
 
       <section>

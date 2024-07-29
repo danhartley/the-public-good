@@ -10,7 +10,7 @@ const EL = ({link, children = null}) => {
 
 const ExternalLinksList = ({links}) => {
     const list = links.map(link => {
-        return <li className={styles.externalLink}>
+        return <li key={link.name} className={styles.externalLink}>
             <a href={`${link.source}`}>{link.name}</a>
         </li>
     });
@@ -59,8 +59,8 @@ const RelatedLinks = ({links}) => {
             <a href={`${link.value}`}>{link.text}</a>
         </li>
         :
-        <li>
-            <Link key={i.toString()} href={`/${link.value}`}>
+        <li key={i.toString()}>
+            <Link href={`/${link.value}`}>
             {link.text}
             </Link>
         </li>
@@ -69,11 +69,11 @@ const RelatedLinks = ({links}) => {
     return (
         <section>
             <h2>Related content</h2>
-            <p className={styles.internalLink}>
+            <div className={styles.internalLink}>
                 <ul className={styles.dashedItemsList}>
                     {list}
                 </ul>
-            </p>                
+            </div>                
         </section>
     )
 };

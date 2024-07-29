@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { PageMetrics } from 'components/shared/types'; 
 import funcs from 'components/functions/functions';
@@ -6,7 +6,6 @@ import { useLocalStorageState } from 'hooks/local-storage';
 
 import Link from 'next/link';
 import Head from 'next/head';
-import ModeContext from 'components/contexts/ModeContext';
 import { PageWeightReport } from 'components/metrics/page-weight-report';
 import Links from 'components/links/Links';
 import styles from 'components/layout/Layout.module.scss';
@@ -75,26 +74,7 @@ const Layout = ({
   discussions = ''
 }:LayoutType) => {
   
-    const { mode, toggleMode } = useContext(ModeContext);
-
     const router = useRouter();
-
-    const btnMode = useRef<HTMLButtonElement>(null);
-
-    const _styles = 
-
-    useEffect(() => {
-        
-        const container = document.querySelector('#container');
-        const option = container ? getComputedStyle(container).getPropertyValue('--m') : '';
-
-        if(option === 'light' && mode.isDark) {
-            btnMode.current.click();
-            setTimeout(() => {
-                btnMode.current.click();
-            });
-        }
-    });
 
     return (        
         <div>
@@ -113,9 +93,7 @@ const Layout = ({
                 
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="manifest" href="/manifest.json" />
-                {/* <link rel="stylesheet" href="/perf-diagnostics.css" /> */}
             </Head>
-            {/* <div id="container" className={`${styles.container}` + `${mode.style as any as Array<React.CSSProperties>}`}> */}
             <div id="container" className={styles.container}>
                 <header>
 
@@ -125,8 +103,7 @@ const Layout = ({
                         <nav id="top" aria-label="Header link to home page">{main}</nav>
                         <div>{strapline}</div>
                     </Link>
-                    <p className={styles.description}>                            
-                        {/* <button aria-label="Toggle the website colour scheme: between light and dark" className={styles.mode} ref={btnMode} onClick={() => toggleMode()}>{mode.isDark ? <span className={styles.light}></span> : <span className={styles.dark}></span>}</button> */}
+                    <p className={styles.description}>
                     </p>
                 </header>
                 <main id="main">               

@@ -40,7 +40,7 @@ const Change = () => {
 
         <h3>The IPCC is established</h3>
 
-        <p>
+        <div>
           In 1988 the World Meteorological Organisation{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/World_Meteorological_Organization' }}>WMO</Links.EL>{' '}
           and the United Nations Environment Programme UNEP established the Intergovernmental Panel on Climate Change{' '}
@@ -58,7 +58,7 @@ const Change = () => {
             Stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous
             anthropogenic (human-induced) interference with the climate system.
           </div>
-        </p>
+        </div>
 
         <h3>Assessment reports</h3>
 
@@ -103,7 +103,7 @@ const Change = () => {
 
         <h3>The Paris Agreement</h3>
 
-        <p>
+        <div>
           In accordance with the{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Paris_Agreement' }}>Paris Agreement</Links.EL>,
           signed at{' '}
@@ -135,28 +135,27 @@ const Change = () => {
             rapid reductions thereafter in accordance with best available science, so as to achieve a balance between
             anthropogenic emissions by sources and removals by sinks of GHGs in the second half of this century.
           </div>
-        </p>
+        </div>
 
         <p>
           Commitments have not been honoured.
-          <div className={styles.quote}>
-            After a year disrupted by the Covid-19 pandemic, nations representing only around 28% of global emissions
-            registered new or updated “nationally determined contributions” (NDCs) on the UN’s official registry by the
-            end of the year. Some big emitters did register their NDCs in time, including the UK and EU. But major
-            absences included the US, India and China.
-            <div>
-              <Links.EL
-                link={{
-                  source:
-                    'https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition',
-                }}
-              >
-                Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?
-              </Links.EL>
-            </div>
-          </div>
         </p>
-
+        <blockquote>
+          After a year disrupted by the Covid-19 pandemic, nations representing only around 28% of global emissions
+          registered new or updated “nationally determined contributions” (NDCs) on the UN’s official registry by the
+          end of the year. Some big emitters did register their NDCs in time, including the UK and EU. But major
+          absences included the US, India and China.
+        </blockquote>
+        <cite>
+        <Links.EL
+            link={{
+              source:
+                'https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition',
+            }}
+          >
+            Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?
+          </Links.EL>
+        </cite>          
         <p>
           As a result,{' '}
           <Links.EL link={{ source: 'https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions' }}>
@@ -179,32 +178,30 @@ const Change = () => {
         </p>
 
         <p>
-          <div>
-            Beyond and since Paris other plans have been drawn up. Among the more radical is the{' '}
-            <Links.EL link={{ source: 'https://www.congress.gov/116/bills/hres109/BILLS-116hres109ih.pdf' }}>
-              Green New Deal
-            </Links.EL>{' '}
-            in the US (PDF),{' '}
-            <Links.EL
-              link={{
-                source:
-                  'https://cat.org.uk/info-resources/zero-carbon-britain/research-reports/zero-carbon-britain-rising-to-the-climate-emergency/',
-                label: 'Technology Zero Carbon Britain',
-              }}
-            >
-              Technology Zero Carbon Britain
-            </Links.EL>
-            , and{' '}
-            <Links.EL
-              link={{
-                source:
-                  'https://web.stanford.edu/group/efmh/jacobson/Articles/I/CountriesWWS.pdf">100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World</a></span>. The EU has put forward the <span><a href=',
-              }}
-            >
-              European Green Deal
-            </Links.EL>
-            .
-          </div>
+          Beyond and since Paris other plans have been drawn up. Among the more radical is the{' '}
+          <Links.EL link={{ source: 'https://www.congress.gov/116/bills/hres109/BILLS-116hres109ih.pdf' }}>
+            Green New Deal
+          </Links.EL>{' '}
+          in the US (PDF),{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://cat.org.uk/info-resources/zero-carbon-britain/research-reports/zero-carbon-britain-rising-to-the-climate-emergency/',
+              label: 'Technology Zero Carbon Britain',
+            }}
+          >
+            Technology Zero Carbon Britain
+          </Links.EL>
+          , and{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://web.stanford.edu/group/efmh/jacobson/Articles/I/CountriesWWS.pdf">100% Clean and Renewable Wind, Water, and Sunlight All-Sector Energy Roadmaps for 139 Countries of the World</a></span>. The EU has put forward the <span><a href=',
+            }}
+          >
+            European Green Deal
+          </Links.EL>
+          .
         </p>
 
         <p>
@@ -243,22 +240,18 @@ const Change = () => {
 
         <h3>The problem of energy density</h3>
 
-        <p></p>
-
-        <p>
-          <div className={styles.quote}>
-            You can start explaining some of the limits and possibilities of everyday life or historical progress by
-            playing with energy densities: the more concentrated sources of energy give you many great advantages in
-            terms of their extraction, portability, transportation and storage costs, and conversion options.
-            <div>
-              <Links.EL
-                link={{ source: 'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf' }}
-              >
-                Vaclav Smil
-              </Links.EL>
-            </div>
-          </div>
-        </p>
+        <blockquote>
+          You can start explaining some of the limits and possibilities of everyday life or historical progress by
+          playing with energy densities: the more concentrated sources of energy give you many great advantages in
+          terms of their extraction, portability, transportation and storage costs, and conversion options.
+        </blockquote>
+        <cite>
+          <Links.EL
+            link={{ source: 'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf' }}
+          >
+            Vaclav Smil
+          </Links.EL>
+        </cite>
 
         <p>
           The energy densities of coal, oil and gas make them useful as fuels. Contemporary fuels, renewables, are those
@@ -266,19 +259,17 @@ const Change = () => {
           carbon, but they have two drawbacks - they are intermittent, and less energy dense.
         </p>
 
-        <p>
-          <div className={styles.quote}>
-            <strong>Energy density in MJ/kg:</strong>
-            <ul className={styles.unorderedList}>
-              <li>Wood - 16</li>
-              <li>Coal - 24</li>
-              <li>Crude oil - 44</li>
-              <li>
-                <Links.IL link={{ source: 'climate-crisis/facts#energy' }}>Energy densities</Links.IL>
-              </li>
-            </ul>
-          </div>
-        </p>
+        <div className={styles.quote}>
+          <strong>Energy density in MJ/kg:</strong>
+          <ul className={styles.unorderedList}>
+            <li>Wood - 16</li>
+            <li>Coal - 24</li>
+            <li>Crude oil - 44</li>
+            <li>
+              <Links.IL link={{ source: 'climate-crisis/facts#energy' }}>Energy densities</Links.IL>
+            </li>
+          </ul>
+        </div>
 
         <h3>Had we but world enough and time</h3>
 
@@ -293,28 +284,26 @@ const Change = () => {
 
         <Tables.PowerDensities></Tables.PowerDensities>
 
-        <p>
-          <div className={styles.inset}>
-            <div>
-              <span>
-                *{' '}
-                <Links.EL
-                  link={{
-                    source: 'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf',
-                  }}
-                >
-                  Power density primer Vaclav Smil
-                </Links.EL>
-              </span>
-            </div>
-            <div>
-              +{' '}
-              <Links.EL link={{ source: 'https://www.sciencedirect.com/science/article/pii/S0301421518305512' }}>
-                The spatial extent of renewable and non-renewable power generation J. van Zalk, P. Behrens
+        <div className={styles.inset}>
+          <div>
+            <span>
+              *{' '}
+              <Links.EL
+                link={{
+                  source: 'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf',
+                }}
+              >
+                Power density primer Vaclav Smil
               </Links.EL>
-            </div>
+            </span>
           </div>
-        </p>
+          <div>
+            +{' '}
+            <Links.EL link={{ source: 'https://www.sciencedirect.com/science/article/pii/S0301421518305512' }}>
+              The spatial extent of renewable and non-renewable power generation J. van Zalk, P. Behrens
+            </Links.EL>
+          </div>
+        </div>
 
         <p>
           Higher values for renewables exist, but they are often in places - deserts, offshore - far from urban
@@ -334,22 +323,20 @@ const Change = () => {
         </p>
 
         <p>
-          <div>
-            A 2021 paper suggests{' '}
-            <Links.EL link={{ source: 'https://iopscience.iop.org/article/10.1088/1748-9326/abde07' }}>
-              the cost of innovation has been overestimated
-            </Links.EL>
-            . The authors predict the transition away from fossil fuels will be{' '}
-            <Links.EL
-              link={{
-                source:
-                  'https://www.carbonbrief.org/guest-post-why-the-low-carbon-transition-may-be-much-cheaper-than-models-predict',
-              }}
-            >
-              cheaper than once thought
-            </Links.EL>
-            .
-          </div>
+          A 2021 paper suggests{' '}
+          <Links.EL link={{ source: 'https://iopscience.iop.org/article/10.1088/1748-9326/abde07' }}>
+            the cost of innovation has been overestimated
+          </Links.EL>
+          . The authors predict the transition away from fossil fuels will be{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://www.carbonbrief.org/guest-post-why-the-low-carbon-transition-may-be-much-cheaper-than-models-predict',
+            }}
+          >
+            cheaper than once thought
+          </Links.EL>
+          .
         </p>
 
         <p>
@@ -386,7 +373,7 @@ const Change = () => {
 
         <h3>Mind the GDP</h3>
 
-        <p>
+        <div>
           Energy demand is falling in rich countries. In the{' '}
           <Links.EL link={{ source: 'https://ourworldindata.org/energy/country/united-states?country=~USA' }}>
             US
@@ -419,7 +406,7 @@ const Change = () => {
               </Links.EL>
             </div>
           </div>
-        </p>
+        </div>
 
         <h3>Historical emissions</h3>
 
@@ -432,7 +419,7 @@ const Change = () => {
           very least, the right to lift their people from want, and to enjoy the benefits of affordable energy.
         </p>
 
-        <p>
+        <div>
           USA vs. Nigeria
           <div className={styles.quote}>
             Nigeria is predicted to be home to more than 1 billion people by 2100. The per capita CO2 emissions (2017)
@@ -456,7 +443,7 @@ const Change = () => {
             </Links.EL>
             ; that is a US citizen, on average, uses almost 24 times the resources of a Nigerian.
           </div>
-        </p>
+        </div>
 
         <h3>Population</h3>
 
@@ -474,22 +461,20 @@ const Change = () => {
         </p>
 
         <p>
-          <div>
-            The majority of studies{' '}
-            <Links.EL link={{ source: 'https://population.un.org/wpp/Graphs/DemographicProfiles/Line/900' }}>
-              predict
-            </Links.EL>{' '}
-            the{' '}
-            <Links.EL
-              link={{
-                source:
-                  'https://ourworldindata.org/world-population-growth#how-has-world-population-growth-changed-over-time',
-              }}
-            >
-              global population
-            </Links.EL>{' '}
-            will continue to grow no matter what.
-          </div>
+          The majority of studies{' '}
+          <Links.EL link={{ source: 'https://population.un.org/wpp/Graphs/DemographicProfiles/Line/900' }}>
+            predict
+          </Links.EL>{' '}
+          the{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://ourworldindata.org/world-population-growth#how-has-world-population-growth-changed-over-time',
+            }}
+          >
+            global population
+          </Links.EL>{' '}
+          will continue to grow no matter what.
         </p>
 
         <p>There is no clear mechanism by which population growth can be slowed or reversed.</p>
@@ -506,7 +491,7 @@ const Change = () => {
           that we are dependent on them, and we have little time in which to overcome our addiction.
         </p>
 
-        <p>
+        <div>
           In 2010 the IPCC published{' '}
           <Links.EL
             link={{ source: 'https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf' }}
@@ -516,40 +501,38 @@ const Change = () => {
           which offers advice on how to represent confidence in how data are collected and the likelihood of their being
           accurate. Describing the problem is hard, predicting what will happen next, harder still. There will be no
           unambiguous signals.
-        </p>
+        </div>
 
         <p>
-          <div>
-            The future is unlikely to be a clear path agreed upon by all, but a hotchpotch of competing ideas, ideals,
-            protest, chicanery and ingenuity. The emergence of citizen's assemblies may play an important part,
-            reflecting popular convictions that traditional, partisan politics are unable to represent. The French
-            government legislated for a{' '}
-            <Links.EL
-              link={{
-                source:
-                  'https://www.theguardian.com/business/2021/apr/12/france-ban-some-domestic-flights-train-available-macron-climate-convention-mps',
-              }}
-            >
-              ban
-            </Links.EL>{' '}
-            on some internal flights, following a (watered down) recommendation proposed by the{' '}
-            <Links.EL link={{ source: 'https://www.conventioncitoyennepourleclimat.fr/' }}>
-              Convention Citoyenne pour le Climat
-            </Links.EL>
-            . The UK government's{' '}
-            <Links.EL
-              link={{
-                source:
-                  'https://www.gov.uk/government/publications/the-ten-point-plan-for-a-green-industrial-revolution',
-              }}
-            >
-              10 point plan on climate change
-            </Links.EL>{' '}
-            echoes, in part, the findings of the{' '}
-            <Links.EL link={{ source: 'https://www.climateassembly.uk/' }}>Climate Assembly UK</Links.EL>. The{' '}
-            <Links.EL link={{ source: 'https://globalassembly.org/' }}>Global Assembly</Links.EL> has a commendably
-            broad constituency but lacks an accountable body.
-          </div>
+          The future is unlikely to be a clear path agreed upon by all, but a hotchpotch of competing ideas, ideals,
+          protest, chicanery and ingenuity. The emergence of citizen's assemblies may play an important part,
+          reflecting popular convictions that traditional, partisan politics are unable to represent. The French
+          government legislated for a{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://www.theguardian.com/business/2021/apr/12/france-ban-some-domestic-flights-train-available-macron-climate-convention-mps',
+            }}
+          >
+            ban
+          </Links.EL>{' '}
+          on some internal flights, following a (watered down) recommendation proposed by the{' '}
+          <Links.EL link={{ source: 'https://www.conventioncitoyennepourleclimat.fr/' }}>
+            Convention Citoyenne pour le Climat
+          </Links.EL>
+          . The UK government's{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://www.gov.uk/government/publications/the-ten-point-plan-for-a-green-industrial-revolution',
+            }}
+          >
+            10 point plan on climate change
+          </Links.EL>{' '}
+          echoes, in part, the findings of the{' '}
+          <Links.EL link={{ source: 'https://www.climateassembly.uk/' }}>Climate Assembly UK</Links.EL>. The{' '}
+          <Links.EL link={{ source: 'https://globalassembly.org/' }}>Global Assembly</Links.EL> has a commendably
+          broad constituency but lacks an accountable body.
         </p>
 
         <p>
@@ -618,7 +601,7 @@ const Change = () => {
 
         <h3>The transition to coal</h3>
 
-        <p>
+        <div>
           The transition from wood to coal is productive; more powerful tools and machinery can be introduced into
           existing setups relatively quickly. Coal was the dominant fuel until well into the twentieth century when new
           oil and gas reserves began to be exploited. Yet extraction today is higher in absolute terms than it has ever
@@ -635,11 +618,11 @@ const Change = () => {
           Coal remains the primary source of energy in China (
           <Links.EL link={{ source: 'https://ourworldindata.org/energy/country/china?country=~CHN' }}>57.64%</Links.EL>
           ).
-        </p>
+        </div>
 
         <h3>First emitter</h3>
 
-        <p>
+        <div>
           <div className={styles.quote}>
             Britain was terribly well endowed with coal: when the Revolution started, the amount of carbon sitting in
             coal under Britain was roughly the same as the amount sitting in oil under Saudi Arabia.{' '}
@@ -655,7 +638,7 @@ const Change = () => {
             3.35%
           </Links.EL>{' '}
           of energy, less than half that of wind power (7.29%).
-        </p>
+        </div>
 
         <h3>The transition to oil</h3>
 
@@ -697,14 +680,14 @@ const Change = () => {
 
         <h3>Powering down, the transition to renewables</h3>
 
-        <p>
+        <div>
           As our energy demands have increased, so have our emissions, but the fuels we favour emit less carbon when
           burnt. In this respect, wood is less innocent than coal, and natural gas and oil an improvement on coal. This
           has led to the disingenuous claim that gas is a 'clean' fossil fuel.
           <div>
             <Links.IL link={{ source: 'climate-crisis/facts#fuel_emissions' }}>Fuel emissions</Links.IL>
           </div>
-        </p>
+        </div>
 
         <p>
           Renewables have far lower emissions even accounting for construction and extraction costs. Hydrogen is for now
@@ -737,7 +720,7 @@ const Change = () => {
           this process has not been straightforward.
         </p>
 
-        <p>
+        <div>
           A comparison with the US reveals how tricky shifts are. Since 2000:
           <div className={styles.quote}>
             <div>The US has reduced its dependence on fossil fuels in primary energy consumption from 84 to 78%.</div>
@@ -764,7 +747,7 @@ const Change = () => {
             Germany has reduced its emissions
           </Links.EL>{' '}
           by phasing out coal, increasing its dependency on gas, and adding more solar and wind to the energy mix.
-        </p>
+        </div>
 
         <h3>Electricity, not energy</h3>
 

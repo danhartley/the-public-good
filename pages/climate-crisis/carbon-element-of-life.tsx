@@ -94,8 +94,6 @@ const Carbon = () => {
           </div>
         </Accordion>
 
-        {/* <img src="https://live.staticflickr.com/65535/51139806123_959226ca4b_c.jpg" alt="" /> */}
-
         <p>
           Carbon atoms are formed in dying stars under extreme and improbable conditions during a set of nuclear fusion
           reactions known as the{' '}
@@ -130,11 +128,9 @@ const Carbon = () => {
         <h3>Allotropes</h3>
 
         <p>
-          <div>
-            Carbon assumes different structural forms -{' '}
-            <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Allotropy' }}>allotropes</Links.EL>. Alternate
-            forms of the same element are created by external forces, such as heat and pressure.
-          </div>
+          Carbon assumes different structural forms -{' '}
+          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Allotropy' }}>allotropes</Links.EL>. Alternate
+          forms of the same element are created by external forces, such as heat and pressure.
         </p>
 
         <p>
@@ -237,9 +233,9 @@ const Carbon = () => {
           heat and pressure over millions of years.
         </p>
 
-        <p>
-          When hydrocarbons are burnt in air they react with oxygen to release the energy stored in their covalent bonds
-          in the form of light and heat.
+        <div>
+          <p>When hydrocarbons are burnt in air they react with oxygen to release the energy stored in their covalent bonds
+          in the form of light and heat.</p>
           <div className={styles.inset}>
             <span>Hydrocarbon + oxygen → carbon dioxide + water + energy (light and heat)</span>
             <span>
@@ -252,7 +248,7 @@ const Carbon = () => {
               </Links.EL>
             </div>
           </div>
-        </p>
+        </div>
 
         <p>
           The amount of energy released depends on the bonds between atoms in a molecule. Methane, which has 4 single
@@ -268,8 +264,7 @@ const Carbon = () => {
         </p>
 
         <Accordion header="Forms and formulae of fossil fuels">
-          <p>
-            <div className={styles.inset}>
+          <div className={styles.inset}>
               <div>
                 C<span className={styles.sub}>4</span>H<span className={styles.sub}>10</span> - butane and C
                 <span className={styles.sub}>8</span>H<span className={styles.sub}>18</span> - octane are pure hydrocarbons.
@@ -296,8 +291,7 @@ const Carbon = () => {
                 </strong>
                 .
               </div>
-            </div>
-          </p>
+          </div>
         </Accordion>
 
         <h3>Polymers</h3>
@@ -365,7 +359,7 @@ const Carbon = () => {
 
         <h3>Carbon emissions and reserves</h3>
 
-        <p>
+        <div>
           Cumulative <Links.EL link={{ source: 'https://ourworldindata.org/co2-emissions' }}>emissions</Links.EL> of
           carbon dioxide to date are ~1.5 trillion tonnes.
           <div className={styles.quote}>
@@ -378,7 +372,7 @@ const Carbon = () => {
               <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Carbon' }}>Wikipedia</Links.EL>
             </div>
           </div>
-        </p>
+        </div>
 
         <h3>The isotopic signature of anthropogenic warming</h3>
 
@@ -422,7 +416,7 @@ const Carbon = () => {
           immediately (by the sun).
         </p>
 
-        <p>
+        <div>
           <div className={styles.inset}>
             <span>Fossil fuels take ~1 million years to form. They have high energy and power densities.</span>
             <span>
@@ -438,7 +432,7 @@ const Carbon = () => {
               <Links.IL link={{ source: 'facts#energy' }}>Values for energy and power densities</Links.IL>
             </div>
           </div>
-        </p>
+        </div>
 
         <p>
           The only energy source not derived from our sun is nuclear which ultimately derives from myriad distant, and
@@ -454,19 +448,15 @@ const Carbon = () => {
         </p>
 
         <p>
-          <div>
             Will we enjoy an equally profitable but more sustainable relationship with{' '}
             <Links.IL link={{ source: 'climate-crisis/hydrogen-a-singular-atom' }}>hydrogen</Links.IL>?
-          </div>
         </p>
 
         <Top></Top>
       </section>
 
       <section>
-        <p>
-          <Quiz title="carbon-element-of-life" link="Take the carbon test"></Quiz>
-        </p>
+        <Quiz title="carbon-element-of-life" link="Take the carbon test"></Quiz>
       </section>
 
       <section>

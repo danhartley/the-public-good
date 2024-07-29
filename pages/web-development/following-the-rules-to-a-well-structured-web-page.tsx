@@ -99,57 +99,53 @@ const MentalModel = () => {
 
         <p>Using elements correctly helps users create an accurate model of the page and its contents.</p>
 
-        <p>
-          <Accordion header="Schema of this page's document structure">
-            The head contains meta information about the document such as its author. The content of the page appears in
-            the body.
-            <p>
-              <ul className={styles.nestedElements}>
-                <li>head</li>
+        <Accordion header="Schema of this page's document structure">
+          The head contains meta information about the document such as its author. The content of the page appears in
+          the body.
+          <ul className={styles.nestedElements}>
+            <li>head</li>
+            <li>
+              body
+              <ul>
                 <li>
-                  body
+                  <strong>header</strong>
                   <ul>
-                    <li>
-                      <strong>header</strong>
-                      <ul>
-                        <li>nav</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>main</strong>
-                      <ul>
-                        <li>
-                          article
-                          <ul>
-                            <li>
-                              <em>h1</em> <span>Following the rules to a well-structured web page</span>
-                            </li>
-                            <li>
-                              p <span>Web pages take many forms…</span>
-                            </li>
-                            <li>p…</li>
-                            <li>
-                              <em>h2</em> <span>HTML elements and tags</span>
-                            </li>
-                            <li>p…</li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
+                    <li>nav</li>
                   </ul>
                 </li>
                 <li>
+                  <strong>main</strong>
                   <ul>
                     <li>
-                      <strong>footer</strong>
+                      article
+                      <ul>
+                        <li>
+                          <em>h1</em> <span>Following the rules to a well-structured web page</span>
+                        </li>
+                        <li>
+                          p <span>Web pages take many forms…</span>
+                        </li>
+                        <li>p…</li>
+                        <li>
+                          <em>h2</em> <span>HTML elements and tags</span>
+                        </li>
+                        <li>p…</li>
+                      </ul>
                     </li>
-                    <li></li>
                   </ul>
                 </li>
               </ul>
-            </p>
-          </Accordion>
-        </p>
+            </li>
+            <li>
+              <ul>
+                <li>
+                  <strong>footer</strong>
+                </li>
+                <li></li>
+              </ul>
+            </li>
+          </ul>
+        </Accordion>
 
         <p>
           An HTML element has an equivalent tag or set of tags which are used to decorate, or mark up text or other
@@ -172,34 +168,28 @@ const MentalModel = () => {
         </p>
 
         <p>
-          <div>
-            <Links.EL link={{ source: 'https://webaim.org/projects/screenreadersurvey7/#braille' }}>One third</Links.EL>{' '}
-            of screen reader users also output content to a{' '}
-            <Links.EL link={{ source: 'https://www.afb.org/node/16207/refreshable-braille-displays' }}>
-              refreshable braille display
-            </Links.EL>
-            .
-          </div>
+          <Links.EL link={{ source: 'https://webaim.org/projects/screenreadersurvey7/#braille' }}>One third</Links.EL>{' '}
+          of screen reader users also output content to a{' '}
+          <Links.EL link={{ source: 'https://www.afb.org/node/16207/refreshable-braille-displays' }}>
+            refreshable braille display
+          </Links.EL>
+          .
         </p>
 
         <h2>Separation of presentation and content</h2>
 
         <p>
-          <div>
-            The basic structure of a page is set out using HTML elements. HTML is also innately semantic; it confers
-            meaning.
-          </div>
+          The basic structure of a page is set out using HTML elements. HTML is also innately semantic; it confers
+          meaning.
         </p>
-
+        
         <p>
-          <div>
-            Visual elaboration of meaning - design - is usually via rules written in a language called{' '}
-            <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/CSS' }}>CSS</Links.EL>. CSS wasn't part of the
-            original specification for web pages but was added later to provide designers and developers with greater
-            control over presentation, formatting, and layout.
-          </div>
+          Visual elaboration of meaning - design - is usually via rules written in a language called{' '}
+          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/CSS' }}>CSS</Links.EL>. CSS wasn't part of the
+          original specification for web pages but was added later to provide designers and developers with greater
+          control over presentation, formatting, and layout.
         </p>
-
+        
         <p>
           CSS can be used to control every aspect of a page from fonts, colours, the look and behaviour of buttons and
           links, to page layout.
@@ -211,22 +201,20 @@ const MentalModel = () => {
 
         <p>Which button would you choose?</p>
 
-        <p>
-          <div className={styles.fakeBtns}>
-            <button ref={saved} onClick={() => saveMe("You're saved!", saved)}>
-              Salvation
-            </button>{' '}
-            <div
-              role="button"
-              ref={notSaved}
-              onKeyDown={() => saveMe('Too bad!', notSaved)}
-              onClick={() => saveMe('Too bad!', notSaved)}
-            >
-              Salvation
-            </div>
+        <div className={styles.fakeBtns}>
+          <button ref={saved} onClick={() => saveMe("You're saved!", saved)}>
+            Salvation
+          </button>{' '}
+          <div
+            role="button"
+            ref={notSaved}
+            onKeyDown={() => saveMe('Too bad!', notSaved)}
+            onClick={() => saveMe('Too bad!', notSaved)}
+          >
+            Salvation
           </div>
-        </p>
-
+        </div>
+        
         <p>If you are using a screen reader you know the answer. There is only one button.</p>
 
         <p>
@@ -256,25 +244,23 @@ const MentalModel = () => {
 
         <p>By convention headers decrease in size.</p>
 
-        <p>
-          <div className={styles.diminishingHeaders}>
-            H1
+        <div className={styles.diminishingHeaders}>
+          H1
+          <span>
+            H2
             <span>
-              H2
+              H3
               <span>
-                H3
+                H4
                 <span>
-                  H4
-                  <span>
-                    H5
-                    <span>H6</span>
-                  </span>
+                  H5
+                  <span>H6</span>
                 </span>
               </span>
             </span>
-          </div>
-        </p>
-
+          </span>
+        </div>
+        
         <p>
           The specification recommends one H1 element per page and so it is often reserved for the title. The author may
           use as many of the other headers as they please provided they are nested correctly - H3 within H2, etc.
@@ -310,14 +296,14 @@ const MentalModel = () => {
           the web.
         </p>
 
-        <p>
+        <div>
           If you don't know the keyboard shortcuts to move back and forwards between pages in the browser, here they
           are:
           <ul>
             <li>Mac: ⌘ + left/right arrow key</li>
             <li>Windows & Linux: Alt + left/right arrow key</li>
           </ul>
-        </p>
+        </div>
 
         <h2>The primary goal of a page is to be understood</h2>
 
@@ -339,16 +325,14 @@ const MentalModel = () => {
 
         <h3>Mental models, conventions, and preconceptions</h3>
 
-        <p>
-          <div className={styles.quote}>
-            <span>Users spend most of their time on other sites. </span>
-            <span>
-              <Links.EL link={{ source: 'https://www.nngroup.com/videos/jakobs-law-internet-ux/' }}>
-                Jakob's Law
-              </Links.EL>
-            </span>
-          </div>
-        </p>
+        <blockquote>
+          <div>Users spend most of their time on other sites.</div>
+        </blockquote>
+        <cite>
+          <Links.EL link={{ source: 'https://www.nngroup.com/videos/jakobs-law-internet-ux/' }}>
+            Jakob's Law
+        </Links.EL>
+        </cite>
 
         <p>
           When we visit a new page for the first time we do not bring a fresh eye to it; we have a stack of
@@ -381,15 +365,13 @@ const MentalModel = () => {
 
         <h3>If your model doesn't fit the user's model, change your model</h3>
 
-        <p>
-          <div className={styles.quote}>
-            <span>A mental model is what the user believes about the system at hand. </span>
-            <div>
-              <Links.EL link={{ source: 'https://www.nngroup.com/articles/mental-models/' }}>Mental Models</Links.EL>{' '}
-              Jakob Nielsen
-            </div>
+        <div className={styles.quote}>
+          <span>A mental model is what the user believes about the system at hand. </span>
+          <div>
+            <Links.EL link={{ source: 'https://www.nngroup.com/articles/mental-models/' }}>Mental Models</Links.EL>{' '}
+            Jakob Nielsen
           </div>
-        </p>
+        </div>
 
         <p>
           Consider this example. The browser address bar was designed for users to type in the name of a web site they
