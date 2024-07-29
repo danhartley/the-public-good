@@ -69,7 +69,7 @@ const Other = () => {
           There is no concensus around the cost, in terms of energy or greenhouse gas emissions, of delivering a web
           page. Or even how to measure it. Where the boundary is drawn is significant; in addition to network and data
           centre costs, there is debate as to whether the energy consumption of the device should be included.
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <strong>
               The decision of whether or not to include end devices influences the result by 1-2 orders of magnitude.
             </strong>

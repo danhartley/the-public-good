@@ -1,6 +1,4 @@
-import 'preact/devtools'
-import { useEffect } from 'preact/hooks'
-import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'web-vitals'
+// import 'preact/devtools'
 import type { AppProps } from 'next/app'
 import { Mode } from 'components/shared/types'
 import { useLocalStorageState } from 'hooks/local-storage'
@@ -55,14 +53,6 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
     mode.style = getStyle(darkMode) as any
     document.body.style.backgroundColor = darkMode ? 'rgb(250, 255, 250)' : 'rgb(45, 45, 45)'
   }
-
-  useEffect(() => {
-    // getCLS(console.log);
-    // getFCP(console.log);
-    // getFID(console.log);
-    // getLCP(console.log);
-    // getTTFB(console.log);
-  })
 
   return (
     <ModeContext.Provider value={{ mode, toggleMode }}>

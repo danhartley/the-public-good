@@ -54,7 +54,7 @@ const Change = () => {
             UNFCCC
           </Links.EL>{' '}
           whose objective was to,
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             Stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous
             anthropogenic (human-induced) interference with the climate system.
           </div>
@@ -125,11 +125,11 @@ const Change = () => {
             NDC
           </Links.EL>{' '}
           which should,
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             …embody efforts by each country to reduce national emissions and adapt to the impacts of climate change.
           </div>
           The agreement continued,
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             Together, these climate actions determine whether the world achieves the long-term goals of the Paris
             Agreement and to reach global peaking of greenhouse gas (GHG) emissions as soon as possible and to undertake
             rapid reductions thereafter in accordance with best available science, so as to achieve a balance between
@@ -139,7 +139,7 @@ const Change = () => {
 
         <p>
           Commitments have not been honoured.
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             After a year disrupted by the Covid-19 pandemic, nations representing only around 28% of global emissions
             registered new or updated “nationally determined contributions” (NDCs) on the UN’s official registry by the
             end of the year. Some big emitters did register their NDCs in time, including the UK and EU. But major
@@ -246,7 +246,7 @@ const Change = () => {
         <p></p>
 
         <p>
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             You can start explaining some of the limits and possibilities of everyday life or historical progress by
             playing with energy densities: the more concentrated sources of energy give you many great advantages in
             terms of their extraction, portability, transportation and storage costs, and conversion options.
@@ -267,9 +267,9 @@ const Change = () => {
         </p>
 
         <p>
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <strong>Energy density in MJ/kg:</strong>
-            <ul class={styles.unorderedList}>
+            <ul className={styles.unorderedList}>
               <li>Wood - 16</li>
               <li>Coal - 24</li>
               <li>Crude oil - 44</li>
@@ -294,7 +294,7 @@ const Change = () => {
         <Tables.PowerDensities></Tables.PowerDensities>
 
         <p>
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <div>
               <span>
                 *{' '}
@@ -401,7 +401,7 @@ const Change = () => {
           a broad set of values and principles rather than focusing on gross domestic product{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Gross_domestic_product' }}>GDP</Links.EL>. The
           Dasgupta report, commissioned by the UK treasury, sets out the following case,
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             The options [set out by this report] for change are geared towards three broad, interconnected transitions,
             requiring humanity to ensure that our demands on Nature do not exceed its supply, and that we increase
             Nature’s supply relative to its current level; change our measures of economic success to guide us on a more
@@ -434,7 +434,7 @@ const Change = () => {
 
         <p>
           USA vs. Nigeria
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             Nigeria is predicted to be home to more than 1 billion people by 2100. The per capita CO2 emissions (2017)
             for Nigeria was{' '}
             <Links.EL
@@ -623,7 +623,7 @@ const Change = () => {
           existing setups relatively quickly. Coal was the dominant fuel until well into the twentieth century when new
           oil and gas reserves began to be exploited. Yet extraction today is higher in absolute terms than it has ever
           been.
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <div>Coal accounts for ~27% of world energy consumption by source. </div>
             <div>Coal provided 43,849 terra-watt hours in 2019, compared to 16,140 terra-watt hours in 1965.</div>
             <div>
@@ -640,7 +640,7 @@ const Change = () => {
         <h3>First emitter</h3>
 
         <p>
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             Britain was terribly well endowed with coal: when the Revolution started, the amount of carbon sitting in
             coal under Britain was roughly the same as the amount sitting in oil under Saudi Arabia.{' '}
             <div>
@@ -739,7 +739,7 @@ const Change = () => {
 
         <p>
           A comparison with the US reveals how tricky shifts are. Since 2000:
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <div>The US has reduced its dependence on fossil fuels in primary energy consumption from 84 to 78%.</div>
             <div>
               Germany has reduced its dependence on fossil fuels in primary energy consumption from 85.7 to 80%.

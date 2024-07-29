@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from 'preact/hooks';
+import { useContext, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import { PageMetrics } from 'components/shared/types'; 
 import funcs from 'components/functions/functions';
@@ -81,6 +81,8 @@ const Layout = ({
 
     const btnMode = useRef<HTMLButtonElement>(null);
 
+    const _styles = 
+
     useEffect(() => {
         
         const container = document.querySelector('#container');
@@ -113,27 +115,26 @@ const Layout = ({
                 <link rel="manifest" href="/manifest.json" />
                 {/* <link rel="stylesheet" href="/perf-diagnostics.css" /> */}
             </Head>
-            <div id="container" style={mode.style as any} class={styles.container}>                
+            {/* <div id="container" className={`${styles.container}` + `${mode.style as any as Array<React.CSSProperties>}`}> */}
+            <div id="container" className={styles.container}>
                 <header>
 
-                    <div class={styles.skiptocontent}><Links.IL link={{source:'#main'}}>skip to main content</Links.IL></div>
+                    <div className={styles.skiptocontent}><Links.IL link={{source:'#main'}}>skip to main content</Links.IL></div>
 
-                    <Link href={'/'}>
-                        <a class={styles.title} aria-label="Home page" href="/">
-                            <nav id="top" aria-label="Header link to home page">{main}</nav>
-                            <div>{strapline}</div>
-                        </a>
+                    <Link href={'/'}  className={styles.title} aria-label="Home page">
+                        <nav id="top" aria-label="Header link to home page">{main}</nav>
+                        <div>{strapline}</div>
                     </Link>
-                    <p class={styles.description}>                            
-                        <button aria-label="Toggle the website colour scheme: between light and dark" class={styles.mode} ref={btnMode} onClick={() => toggleMode()}>{mode.isDark ? <span class={styles.light}></span> : <span class={styles.dark}></span>}</button>
+                    <p className={styles.description}>                            
+                        {/* <button aria-label="Toggle the website colour scheme: between light and dark" className={styles.mode} ref={btnMode} onClick={() => toggleMode()}>{mode.isDark ? <span className={styles.light}></span> : <span className={styles.dark}></span>}</button> */}
                     </p>
                 </header>
                 <main id="main">               
                     <article>
-                    { header ? <div class={styles.h1}><h1>{header}</h1></div> : null }
+                    { header ? <div className={styles.h1}><h1>{header}</h1></div> : null }
 
                     { rt.length > 0 
-                        ? <div class={styles.author}>
+                        ? <div className={styles.author}>
                             <img width="60px" height="60px" alt="The author, Daniel Hartley" src="https://avatars.githubusercontent.com/u/264690?s=60&amp;v=4" />
                             <div>
                                 <div>Daniel Hartley</div>
@@ -147,9 +148,9 @@ const Layout = ({
                     </article>
                     { router.pathname === '/' ? null : <nav aria-label="Published link to home page"><Links.Home textAlign={'right'}></Links.Home></nav> }
                 </main>
-                <footer role="contentinfo" class={styles.footer}>
+                <footer role="contentinfo" className={styles.footer}>
                     <div><span>© <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL> 2024. All rights reserved.</span></div>
-                    <div class={styles.externalList}><Links.EL link={{source:'https://www.linkedin.com/in/danhartley/'}}>LinkedIn</Links.EL> | <Links.IL link={{source:'personal/cv'}}>CV</Links.IL> | <Links.EL link={{source:`https://github.com/danhartley/the-public-good/discussions${discussions}`}}>Comment</Links.EL></div>
+                    <div className={styles.externalList}><Links.EL link={{source:'https://www.linkedin.com/in/danhartley/'}}>LinkedIn</Links.EL> | <Links.IL link={{source:'personal/cv'}}>CV</Links.IL> | <Links.EL link={{source:`https://github.com/danhartley/the-public-good/discussions${discussions}`}}>Comment</Links.EL></div>
                     <SiteMetrics title={title} />
                     <Emissions />
                 </footer>

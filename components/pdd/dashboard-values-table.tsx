@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 
 import styles from 'components/dashboard/Dashboard.module.scss';
 
@@ -15,9 +15,9 @@ const showPledges = ({pledges, colSpan, value}) => {
             <tbody>
                 <tr>                    
                     <td>{p.name}</td>
-                    <td class={getVerdict(p.honoured)}>{p.honoured > 1 ? p.honoured : null}</td>
-                    <td class={getVerdict(p.broken)}>{p.broken > 1 ? p.broken : null}</td>
-                    <td class={styles.centredText}></td>
+                    <td className={getVerdict(p.honoured)}>{p.honoured > 1 ? p.honoured : null}</td>
+                    <td className={getVerdict(p.broken)}>{p.broken > 1 ? p.broken : null}</td>
+                    <td className={styles.centredText}></td>
                 </tr>
             </tbody>
         )
@@ -26,7 +26,7 @@ const showPledges = ({pledges, colSpan, value}) => {
     return (
         <tr>
             <td colSpan={colSpan}>
-                <table data-table-id={value.toLowerCase() + '-pledges'} class={styles.unorderedList}>
+                <table data-table-id={value.toLowerCase() + '-pledges'} className={styles.unorderedList}>
                     {tbody}
                 </table>
             </td>
@@ -59,7 +59,7 @@ const DashboardValuesTable = ({data}) => {
     return (!data ? null :
 
         <>
-        <table class={tableClasses} data-table-id="values">
+        <table className={tableClasses} data-table-id="values">
             <thead>
                 <tr>                
                     <th colSpan={1}></th>
@@ -68,9 +68,9 @@ const DashboardValuesTable = ({data}) => {
                 </tr>
                 <tr>
                     <th>Value</th>
-                    <th class={styles.centredText} scope="col">Honoured</th>
-                    <th class={styles.centredText} scope="col">Broken</th>
-                    <th class={styles.centredText} scope="col">Features</th>
+                    <th className={styles.centredText} scope="col">Honoured</th>
+                    <th className={styles.centredText} scope="col">Broken</th>
+                    <th className={styles.centredText} scope="col">Features</th>
                 </tr>
             </thead>
             <tbody>
@@ -82,10 +82,10 @@ const DashboardValuesTable = ({data}) => {
                     return (
                     <>
                         <tr>
-                            <td class={header}><button data-table-id={d.name.toLowerCase()} class={styles.value} onClick={handleClick}>{d.name}</button></td>
-                            <td class={tdClasses}>{d.honoured}</td>
-                            <td class={tdClasses}>{d.broken}</td>
-                            <td class={tdClasses}>{d.features}</td>
+                            <td className={header}><button data-table-id={d.name.toLowerCase()} className={styles.value} onClick={handleClick}>{d.name}</button></td>
+                            <td className={tdClasses}>{d.honoured}</td>
+                            <td className={tdClasses}>{d.broken}</td>
+                            <td className={tdClasses}>{d.features}</td>
                         </tr>
                         {
                             d.name.toLowerCase() === selectedRow 
@@ -99,9 +99,9 @@ const DashboardValuesTable = ({data}) => {
             <tfoot>
                 <tr>
                     <th scope="row">Totals</th>
-                    <th class={styles.centredText}>{totals.honoured}</th>
-                    <th class={styles.centredText}>{totals.broken}</th>
-                    <th class={styles.centredText}>{totals.features}</th>
+                    <th className={styles.centredText}>{totals.honoured}</th>
+                    <th className={styles.centredText}>{totals.broken}</th>
+                    <th className={styles.centredText}>{totals.features}</th>
                 </tr>
             </tfoot>
         </table>

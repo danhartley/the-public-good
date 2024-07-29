@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 
 import styles from 'components/dashboard/Dashboard.module.scss';
 
@@ -109,13 +109,13 @@ const WebsiteEnergyAndEmissionsTable = ({setWebsiteState}) => {
 
     const rows = dataSources.map(ds => <tr>
         <td>
-            <div class={ds.id === selectedDataSource.id ? styles.checked : undefined}>
+            <div className={ds.id === selectedDataSource.id ? styles.checked : undefined}>
                 <label htmlFor={ds.id.toString()}>{ds.title}</label>
             </div>
         </td>
-        <td><div class={ds.id === selectedDataSource.id ? styles.checked : ''}>{(ds.kWh).toLocaleString()}</div></td>
-        <td><div class={ds.id === selectedDataSource.id ? styles.checked : ''}>{(ds.emissions).toLocaleString()}</div></td>
-        <td><div class={ds.id === selectedDataSource.id ? styles.checked : ''}>{ds.green ? 'true' : 'false'}</div></td>
+        <td><div className={ds.id === selectedDataSource.id ? styles.checked : ''}>{(ds.kWh).toLocaleString()}</div></td>
+        <td><div className={ds.id === selectedDataSource.id ? styles.checked : ''}>{(ds.emissions).toLocaleString()}</div></td>
+        <td><div className={ds.id === selectedDataSource.id ? styles.checked : ''}>{ds.green ? 'true' : 'false'}</div></td>
     </tr>);
 
     return (<table>

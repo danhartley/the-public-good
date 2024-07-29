@@ -255,7 +255,7 @@ const NCSPartOne = () => {
           species that have evolved similar characteristics.
         </p>
         <h4>Typical characteristics of a tree</h4>
-        <ul class={styles.dashedItemsList}>
+        <ul className={styles.dashedItemsList}>
           <li>Perennial plant (lives more than 2 years).</li>
           <li>Elongated single stem or trunk with supporting branches.</li>
           <li>Trunk and branches contain woody tissue for strength.</li>
@@ -291,7 +291,7 @@ const NCSPartOne = () => {
         </p>
         <p>Here is one simple way to measure the height of a tree on level ground.</p>
         <p>
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             Cut a stick the length of your arm. Extend your arm fully in front with the stick held vertically. Walk
             towards the tree until the top and bottom of the stick line up with the top and bottom of the tree. The
             distance to the tree approximates to its height.
@@ -377,7 +377,7 @@ const NCSPartOne = () => {
               both indicate the amount of actual wood substance - biomass - present in a unit volume of wood.
             </div>
             <div>
-              The unit of density is kg/m<span class={styles.super}>3</span>.
+              The unit of density is kg/m<span className={styles.super}>3</span>.
             </div>
             <div>Specific gravity is the ratio of a material's density to that of water at 4°C. It has no unit.</div>
           </aside>
@@ -441,8 +441,8 @@ const NCSPartOne = () => {
                 </strong>
               </dt>
               <dd>
-                475 kg &#215; 3<span class={styles.fraction}>&#8532;</span> = 1741
-                <span class={styles.fraction}>&#8532;</span> kg
+                475 kg &#215; 3<span className={styles.fraction}>&#8532;</span> = 1741
+                <span className={styles.fraction}>&#8532;</span> kg
               </dd>
             </dl>
             <div>1 tonne is equal to 1000 kg.</div>
@@ -459,7 +459,7 @@ const NCSPartOne = () => {
           Converting from tonnes of carbon to tonnes of <Formula>CO2</Formula> is straightforward.
         </p>
         <p>
-          Multiply the carbon weight by 3<span class={styles.fraction}>&#8532;</span> or 3.67.
+          Multiply the carbon weight by 3<span className={styles.fraction}>&#8532;</span> or 3.67.
         </p>
         <Accordion header="Converting carbon to carbon dioxide">
           <aside>
@@ -483,7 +483,7 @@ const NCSPartOne = () => {
                 </strong>
               </dt>
               <dd>
-                44 &#247; 12 = 3<span class={styles.fraction}>&#8532;</span>
+                44 &#247; 12 = 3<span className={styles.fraction}>&#8532;</span>
               </dd>
               <dt>
                 <strong>
@@ -491,8 +491,8 @@ const NCSPartOne = () => {
                 </strong>
               </dt>
               <dd>
-                Example: 475 kg C to <Formula>CO2</Formula>: 475 &#215; 3<span class={styles.fraction}>&#8532;</span> =
-                1741<span class={styles.fraction}>&#8532;</span> kg
+                Example: 475 kg C to <Formula>CO2</Formula>: 475 &#215; 3<span className={styles.fraction}>&#8532;</span> =
+                1741<span className={styles.fraction}>&#8532;</span> kg
               </dd>
             </dl>
             <div>
@@ -704,7 +704,7 @@ const NCSPartOne = () => {
         <Accordion header="Benefits of trees">
           <aside>
             <h4>Benefits of trees</h4>
-            <ul class={styles.unorderedList}>
+            <ul className={styles.unorderedList}>
               <li>
                 Clean the air of harmful pollutants (such as carbon monoxide, ammonia and sulphur dioxide through their
                 leaves, barks and roots).

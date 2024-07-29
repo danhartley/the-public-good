@@ -13,7 +13,7 @@ const Facts = () => {
       }
     >
       <section>
-        <div class={styles.menu}>
+        <div className={styles.menu}>
           <span>
             <Links.EL link={{ source: '#carbon' }}>Carbon</Links.EL>
           </span>
@@ -41,7 +41,7 @@ const Facts = () => {
 
         <p>
           How is this number derived?
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             <div>The atomic mass of carbon is 12. The atomic mass of oxygen is 16.</div>
             <div>The ratio of CO2 to C is therefore 44/12 (1 &#215; 12 + 2 &#215; 16 / 12) or ~3.67.</div>
             <div>
@@ -49,7 +49,7 @@ const Facts = () => {
               carbon it contains. The additional mass comes from the oxygen.
             </div>
             {/* <div>The weight of CO2 is 44 grams per mole (1 x 12 grams/mole for the carbon atom and 2 x 16 grams/mole for the oxygen atoms).</div>                        
-                        <div>The mass of one molecule of CO2 is 7.30×10<span class={styles.super}>−23</span></div> */}
+                        <div>The mass of one molecule of CO2 is 7.30×10<span className={styles.super}>−23</span></div> */}
           </span>
           <div>
             <Links.EL
@@ -73,7 +73,7 @@ const Facts = () => {
         <h3>Peat</h3>
 
         <p>
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             Peat is an accumulation of partially decayed vegetation or organic matter. The IPCC classifies peat as
             neither a fossil fuel nor a renewable fuel, and notes that its emission characteristics are similar to
             fossil fuels.
@@ -86,7 +86,7 @@ const Facts = () => {
 
         <h3>Coal</h3>
         <p>
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             The formation of coal takes a significant amount of time (on the order of a few million years), and the
             first coal-bearing rock units appeared about 290-360 million years ago, at a time known as the Carboniferous
             or "coal-bearing" Period. As well, there are extensive coal deposits from the Cretaceous age - about 65 to
@@ -102,7 +102,7 @@ const Facts = () => {
 
         <h3>Oil & Gas</h3>
         <p>
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             70% of oil deposits existing today were formed in the Mesozoic age (252 to 66 million years ago), 20% were
             formed in the Cenozoic age (65 million years ago), and only 10% were formed in the Paleozoic age (541 to 252
             million years ago). This is likely because the Mesozoic age was marked by a tropical climate, with large
@@ -206,7 +206,7 @@ const Facts = () => {
 
         <Tables.EnergyDensities></Tables.EnergyDensities>
 
-        <span class={styles.quote}>*Solar energy has a density over twenty quadrillion times less than oil</span>
+        <span className={styles.quote}>*Solar energy has a density over twenty quadrillion times less than oil</span>
 
         <div>
           <Links.EL link={{ source: 'https://energyeducation.ca/encyclopedia/Energy_density' }}>
@@ -283,19 +283,19 @@ const Facts = () => {
             <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Horsepower' }}>horsepower</Links.EL>; one metric
             measure is defined as,
           </div>
-          <div class={styles.inset}>The power needed to lift 75 kilograms by 1 metre in 1 second.</div>
+          <div className={styles.inset}>The power needed to lift 75 kilograms by 1 metre in 1 second.</div>
           Comparing horses and humans,
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <div>A horse can reach a peak of ~11kW over a period of a few seconds.</div>
             <div>A human can reach a peak of ~1kW over a period of a few seconds.</div>
           </div>
           Over time,
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <div>A horse can perform sustained activity at a work rate of about 0.75kW.</div>
             <div>A human can perform sustained activity at a work rate of about 0.075kW.</div>
           </div>
           Everyday power requirements,
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <div>A toaster uses in the range of .8 to 1.5kW of energy.</div>
             <div>An ordinary family salon has ~120 horsepower, and an SUV ~200 horsepower.</div>
           </div>
@@ -304,7 +304,7 @@ const Facts = () => {
         <h3>Human power</h3>
 
         <p>
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <div>
               2000 Calories / 1 day &#215; 1 day / 24 hours &#215; 60 minutes &#215; 60 seconds &#215; 4184 Joules / 1
               Calories = 96.85 J/second = 96.85W ≈ 100W
@@ -320,7 +320,7 @@ const Facts = () => {
         <h2 id="photosynthesis">Photosynthesis</h2>
 
         <p>
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large
             space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning
             electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations

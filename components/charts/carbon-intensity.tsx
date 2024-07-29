@@ -1,12 +1,3 @@
-import { useEffect, useState } from 'preact/hooks';
-
-import CanvasChart from 'components/dashboard/canvas-chart';
-import Links from 'components/links/Links';
-
-import { ChartType } from 'lib/enums';
-
-import styles from 'components/dashboard/Dashboard.module.scss';
-
 const CarbonIntensity = () => {
 
     // The UK grid is, on average, more decarbonised than Europe, which means that comparing emissions may be misleading.

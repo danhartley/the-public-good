@@ -15,7 +15,7 @@ export default function Home() {
             <p>I write about the climate crisis, responsible web development, and occasionally <Links.IL link={{source:"personal/extracts"}}>things I made up</Links.IL>.</p>
             
             <p>Recent posts:</p>
-            <ul class={styles.dashedItemsList}>
+            <ul className={styles.dashedItemsList}>
                 {/* <li><Links.IL link={{ source:'web-development/sustainable-reporting-emissions'}}>Sustainable reporting of emissions</Links.IL></li> */}
                 <li><Links.IL link={{ source:'web-development/sustainable-reporting-and-tooling'}}>Sustainable reporting and tooling</Links.IL></li>
                 <li><Links.IL link={{ source:'web-development/its-the-jobs-that-got-small'}}>It's the jobs that got small</Links.IL></li>
@@ -75,7 +75,7 @@ export default function Home() {
 
             <h3>Sustainability</h3>
             <p>
-                <div>There is a <Links.EL link={{source:'https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix/'}}>cost in greenhouse gas emissions</Links.EL> for every page.</div>
+                <span>There is a <Links.EL link={{source:'https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix/'}}>cost in greenhouse gas emissions</Links.EL> for every page.</span>
             </p>
 
             <p><Links.IL link={{source:'sustainability'}}>Read more about sustainability</Links.IL></p>

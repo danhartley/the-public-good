@@ -4,13 +4,13 @@ const Abstract = () => {
   return (
     <>
       <figure>
-        <ul class={styles.dashedCascadedItemsList}>
+        <ul className={styles.dashedCascadedItemsList}>
           <li>Organisational principles.</li>
           <li>
-            <ol type="A" class={styles.dashedCascadedItemsList}>
+            <ol type="A" className={styles.dashedCascadedItemsList}>
               <li>Project pledges.</li>
               <li>
-                <ol type="i" class={styles.dashedCascadedItemsList}>
+                <ol type="i" className={styles.dashedCascadedItemsList}>
                   <li>Verifiable outcomes.</li>
                 </ol>
               </li>

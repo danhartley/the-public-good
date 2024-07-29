@@ -89,7 +89,7 @@ const CaseStudyStartUp = () => {
           responsibility towards future employees, customers, partners, providers of services, and abstract entities
           such as society and the planet.
         </p>
-        <ul class={styles.dashedItemsList}>
+        <ul className={styles.dashedItemsList}>
           {corePledges.map(pledge => {
             return <li>{pledge}</li>
           })}
@@ -139,7 +139,7 @@ const CaseStudyStartUp = () => {
           Carbon offsetting is controversial. Our founders will need to demonstrate that the offset operations they
           support would not otherwise happen (additionality), and that any benefits are not reversible (permanence).
           They will also need to set a fair price per tonne of carbon offset.
-          <span class={styles.super}>
+          <span className={styles.super}>
             <a href="#carbon">+</a>
           </span>
         </p>
@@ -158,7 +158,7 @@ const CaseStudyStartUp = () => {
           to ignore. The founders use them to keep their decisions in line with their values.
         </p>
         <p>Examples of pledges our company founders might use to make a decision.</p>
-        <ul class={styles.dashedItemsList}>
+        <ul className={styles.dashedItemsList}>
           {productPledges.map(pledge => {
             return <li>{pledge}</li>
           })}
@@ -172,11 +172,11 @@ const CaseStudyStartUp = () => {
           The criteria are reordered from most to least important. Criteria that are met are given a score of 1,
           criteria that are not a score of 0. Weighted scores are calculated using the equation:
         </p>
-        <p class={styles.inset}>
+        <p className={styles.inset}>
           <span>
             <strong>
-              Weighted score = (1/Rank <span class={styles.multiply}></span> Score){' '}
-              <span class={styles.multiply}></span> 100
+              Weighted score = (1/Rank <span className={styles.multiply}></span> Score){' '}
+              <span className={styles.multiply}></span> 100
             </strong>
           </span>
         </p>

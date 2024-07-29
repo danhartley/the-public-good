@@ -2,13 +2,13 @@ import styles from 'pages/pages.module.scss'
 
 const AnalyticsProvider = () => {
   return (
-    <div class={styles.decisionMatrix}>
+    <div className={styles.decisionMatrix}>
       <table>
         <thead>
           <tr>
             <td>Rank</td>
             <td>Criteria</td>
-            <td class={styles.centredText}>
+            <td className={styles.centredText}>
               <div>Google Analytics</div>
               <span>Weighted score</span>
             </td>

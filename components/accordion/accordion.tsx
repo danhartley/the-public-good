@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import styles from 'components/accordion/Accordion.module.scss';
 
 // https://www.w3.org/TR/wai-aria-practices-1.2/examples/accordion/accordion.html
@@ -18,13 +18,13 @@ const Accordion = ({
     const contentId = 'content' + id;
 
     const content = <div>
-        <div class={styles.accordion}>
-            <span class={isOpen ? styles.open : styles.closed}></span>
+        <div className={styles.accordion}>
+            <span className={isOpen ? styles.open : styles.closed}></span>
             <button type="button" id={id} aria-controls={contentId} aria-label={`Toggle view for additional information on ${header}`} onClick={e => toggle(!isOpen)}>
-                <span class={styles.header}>{ header }</span>
+                <span className={styles.header}>{ header }</span>
             </button>
         </div>
-        <div id={contentId} role="region" aria-labelledby={id} class={isOpen ? styles.show : styles.hide}>
+        <div id={contentId} role="region" aria-labelledby={id} className={isOpen ? styles.show : styles.hide}>
         { children }
         </div>
     </div>

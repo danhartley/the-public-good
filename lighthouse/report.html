@@ -1580,7 +1580,7 @@ limitations under the License.
 /*# sourceURL=report-styles.css */
 </style>
 </head>
-<body class="lh-root lh-vars">
+<body className="lh-root lh-vars">
   <noscript>Lighthouse report requires JavaScript. Please enable.</noscript>
   <div hidden><!--
 @license
@@ -1601,52 +1601,52 @@ limitations under the License.
 
 <!-- Lighthouse run warnings -->
 <template id="tmpl-lh-warnings--toplevel">
-  <div class="lh-warnings lh-warnings--toplevel">
-    <p class="lh-warnings__msg"></p>
+  <div className="lh-warnings lh-warnings--toplevel">
+    <p className="lh-warnings__msg"></p>
     <ul></ul>
   </div>
 </template>
 
 <!-- Lighthouse score scale -->
 <template id="tmpl-lh-scorescale">
-  <div class="lh-scorescale">
-      <span class="lh-scorescale-range lh-scorescale-range--fail">0&ndash;49</span>
-      <span class="lh-scorescale-range lh-scorescale-range--average">50&ndash;89</span>
-      <span class="lh-scorescale-range lh-scorescale-range--pass">90&ndash;100</span>
+  <div className="lh-scorescale">
+      <span className="lh-scorescale-range lh-scorescale-range--fail">0&ndash;49</span>
+      <span className="lh-scorescale-range lh-scorescale-range--average">50&ndash;89</span>
+      <span className="lh-scorescale-range lh-scorescale-range--pass">90&ndash;100</span>
   </div>
 </template>
 
 <!-- Toggle arrow chevron -->
 <template id="tmpl-lh-chevron">
-  <svg class="lh-chevron" title="See audits" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
-    <g class="lh-chevron__lines">
-      <path class="lh-chevron__line lh-chevron__line-left" d="M10 50h40"></path>
-      <path class="lh-chevron__line lh-chevron__line-right" d="M90 50H50"></path>
+  <svg className="lh-chevron" title="See audits" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
+    <g className="lh-chevron__lines">
+      <path className="lh-chevron__line lh-chevron__line-left" d="M10 50h40"></path>
+      <path className="lh-chevron__line lh-chevron__line-right" d="M90 50H50"></path>
     </g>
   </svg>
 </template>
 
 <!-- Lighthouse category header -->
 <template id="tmpl-lh-category-header">
-  <div class="lh-category-header">
-    <div class="lh-score__gauge" role="heading" aria-level="2"></div>
-    <div class="lh-category-header__description"></div>
+  <div className="lh-category-header">
+    <div className="lh-score__gauge" role="heading" aria-level="2"></div>
+    <div className="lh-category-header__description"></div>
   </div>
 </template>
 
 <!-- Lighthouse clump -->
 <template id="tmpl-lh-clump">
   <!-- TODO: group classes shouldn't be reused for clumps. -->
-  <details class="lh-clump lh-audit-group">
+  <details className="lh-clump lh-audit-group">
     <summary>
-      <div class="lh-audit-group__summary">
-        <div class="lh-audit-group__header">
-          <span class="lh-audit-group__title"></span>
-          <span class="lh-audit-group__itemcount"></span>
+      <div className="lh-audit-group__summary">
+        <div className="lh-audit-group__header">
+          <span className="lh-audit-group__title"></span>
+          <span className="lh-audit-group__itemcount"></span>
           <!-- .lh-audit-group__description will be added here -->
           <!-- .lh-metrics-toggle will be added here -->
         </div>
-        <div class=""></div>
+        <div className=""></div>
       </div>
     </summary>
   </details>
@@ -1654,17 +1654,17 @@ limitations under the License.
 
 <!-- Lighthouse metrics toggle -->
 <template id="tmpl-lh-metrics-toggle">
-  <div class="lh-metrics-toggle">
-    <input class="lh-metrics-toggle__input" type="checkbox" id="toggle-metric-descriptions" aria-label="Toggle the display of metric descriptions">
-    <label class="lh-metrics-toggle__label" for="toggle-metric-descriptions">
-      <div class="lh-metrics-toggle__icon lh-metrics-toggle__icon--less" aria-hidden="true">
+  <div className="lh-metrics-toggle">
+    <input className="lh-metrics-toggle__input" type="checkbox" id="toggle-metric-descriptions" aria-label="Toggle the display of metric descriptions">
+    <label className="lh-metrics-toggle__label" for="toggle-metric-descriptions">
+      <div className="lh-metrics-toggle__icon lh-metrics-toggle__icon--less" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
-          <path class="lh-metrics-toggle__lines" d="M4 9h16v2H4zm0 4h10v2H4z" />
+          <path className="lh-metrics-toggle__lines" d="M4 9h16v2H4zm0 4h10v2H4z" />
         </svg>
       </div>
-      <div class="lh-metrics-toggle__icon lh-metrics-toggle__icon--more" aria-hidden="true">
+      <div className="lh-metrics-toggle__icon lh-metrics-toggle__icon--more" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path class="lh-metrics-toggle__lines" d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z" />
+          <path className="lh-metrics-toggle__lines" d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z" />
         </svg>
       </div>
     </label>
@@ -1673,67 +1673,67 @@ limitations under the License.
 
 <!-- Lighthouse audit -->
 <template id="tmpl-lh-audit">
-  <div class="lh-audit">
-    <details class="lh-expandable-details">
+  <div className="lh-audit">
+    <details className="lh-expandable-details">
       <summary>
-        <div class="lh-audit__header lh-expandable-details__summary">
-          <span class="lh-audit__score-icon"></span>
-          <span class="lh-audit__title-and-text">
-            <span class="lh-audit__title"></span>
-            <span class="lh-audit__display-text"></span>
+        <div className="lh-audit__header lh-expandable-details__summary">
+          <span className="lh-audit__score-icon"></span>
+          <span className="lh-audit__title-and-text">
+            <span className="lh-audit__title"></span>
+            <span className="lh-audit__display-text"></span>
           </span>
-          <div class="lh-chevron-container"></div>
+          <div className="lh-chevron-container"></div>
         </div>
       </summary>
-      <div class="lh-audit__description"></div>
-      <div class="lh-audit__stackpacks"></div>
+      <div className="lh-audit__description"></div>
+      <div className="lh-audit__stackpacks"></div>
     </details>
   </div>
 </template>
 
 <!-- Lighthouse perf metric -->
 <template id="tmpl-lh-metric">
-  <div class="lh-metric">
-    <div class="lh-metric__innerwrap">
-      <span class="lh-metric__title"></span>
-      <div class="lh-metric__value"></div>
-      <div class="lh-metric__description"></div>
+  <div className="lh-metric">
+    <div className="lh-metric__innerwrap">
+      <span className="lh-metric__title"></span>
+      <div className="lh-metric__value"></div>
+      <div className="lh-metric__description"></div>
     </div>
   </div>
 </template>
 
 <!-- Lighthouse perf opportunity -->
 <template id="tmpl-lh-opportunity">
-  <div class="lh-audit lh-audit--load-opportunity">
-    <details class="lh-expandable-details">
+  <div className="lh-audit lh-audit--load-opportunity">
+    <details className="lh-expandable-details">
         <summary>
-          <div class="lh-audit__header lh-expandable-details__summary">
-            <div class="lh-load-opportunity__cols">
-              <div class="lh-load-opportunity__col lh-load-opportunity__col--one">
-                <span class="lh-audit__score-icon"></span>
-                <div class="lh-audit__title"></div>
+          <div className="lh-audit__header lh-expandable-details__summary">
+            <div className="lh-load-opportunity__cols">
+              <div className="lh-load-opportunity__col lh-load-opportunity__col--one">
+                <span className="lh-audit__score-icon"></span>
+                <div className="lh-audit__title"></div>
               </div>
-              <div class="lh-load-opportunity__col lh-load-opportunity__col--two">
-                <div class="lh-load-opportunity__sparkline">
-                  <div class="lh-sparkline"><div class="lh-sparkline__bar"></div></div>
+              <div className="lh-load-opportunity__col lh-load-opportunity__col--two">
+                <div className="lh-load-opportunity__sparkline">
+                  <div className="lh-sparkline"><div className="lh-sparkline__bar"></div></div>
                 </div>
-                <div class="lh-audit__display-text"></div>
-                <div class="lh-chevron-container" title="See resources"></div>
+                <div className="lh-audit__display-text"></div>
+                <div className="lh-chevron-container" title="See resources"></div>
               </div>
             </div>
           </div>
         </summary>
-      <div class="lh-audit__description"></div>
-      <div class="lh-audit__stackpacks"></div>
+      <div className="lh-audit__description"></div>
+      <div className="lh-audit__stackpacks"></div>
     </details>
   </div>
 </template>
 
 <!-- Lighthouse perf opportunity header -->
 <template id="tmpl-lh-opportunity-header">
-  <div class="lh-load-opportunity__header lh-load-opportunity__cols">
-    <div class="lh-load-opportunity__col lh-load-opportunity__col--one"></div>
-    <div class="lh-load-opportunity__col lh-load-opportunity__col--two"></div>
+  <div className="lh-load-opportunity__header lh-load-opportunity__cols">
+    <div className="lh-load-opportunity__col lh-load-opportunity__col--one"></div>
+    <div className="lh-load-opportunity__col lh-load-opportunity__col--two"></div>
   </div>
 </template>
 
@@ -1804,11 +1804,11 @@ limitations under the License.
       contain: none;
     }
   </style>
-  <div class="lh-scores-wrapper">
-    <div class="lh-scores-container">
-      <div class="pyro">
-        <div class="before"></div>
-        <div class="after"></div>
+  <div className="lh-scores-wrapper">
+    <div className="lh-scores-container">
+      <div className="pyro">
+        <div className="before"></div>
+        <div className="after"></div>
       </div>
     </div>
   </div>
@@ -1951,9 +1951,9 @@ limitations under the License.
     }
   </style>
 
-  <div class="lh-topbar">
+  <div className="lh-topbar">
     <!-- Lighthouse logo.  -->
-    <svg class="lh-topbar__logo" viewBox="0 0 24 24">
+    <svg className="lh-topbar__logo" viewBox="0 0 24 24">
       <defs>
         <linearGradient x1="57.456%" y1="13.086%" x2="18.259%" y2="72.322%" id="lh-topbar__logo--a">
           <stop stop-color="#262626" stop-opacity=".1" offset="0%"/>
@@ -1983,25 +1983,25 @@ limitations under the License.
       </g>
     </svg>
 
-    <a href="" class="lh-topbar__url" target="_blank" rel="noopener"></a>
+    <a href="" className="lh-topbar__url" target="_blank" rel="noopener"></a>
 
-    <div class="lh-tools">
-      <button id="lh-tools-button" class="report-icon report-icon--share lh-tools__button" title="Tools menu" aria-label="Toggle report tools menu" aria-haspopup="menu" aria-expanded="false" aria-controls="lh-tools-dropdown">
+    <div className="lh-tools">
+      <button id="lh-tools-button" className="report-icon report-icon--share lh-tools__button" title="Tools menu" aria-label="Toggle report tools menu" aria-haspopup="menu" aria-expanded="false" aria-controls="lh-tools-dropdown">
         <svg width="100%" height="100%" viewBox="0 0 24 24">
             <path d="M0 0h24v24H0z" fill="none"/>
             <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
         </svg>
       </button>
-      <div id="lh-tools-dropdown" role="menu" class="lh-tools__dropdown" aria-labelledby="lh-tools-button">
+      <div id="lh-tools-dropdown" role="menu" className="lh-tools__dropdown" aria-labelledby="lh-tools-button">
          <!-- TODO(i18n): localize tools dropdown -->
-        <a role="menuitem" tabindex="-1" href="#" class="report-icon report-icon--print" data-i18n="dropdownPrintSummary" data-action="print-summary"></a>
-        <a role="menuitem" tabindex="-1" href="#" class="report-icon report-icon--print" data-i18n="dropdownPrintExpanded" data-action="print-expanded"></a>
-        <a role="menuitem" tabindex="-1" href="#" class="report-icon report-icon--copy" data-i18n="dropdownCopyJSON" data-action="copy"></a>
-        <a role="menuitem" tabindex="-1" href="#" class="report-icon report-icon--download" data-i18n="dropdownSaveHTML" data-action="save-html"></a>
-        <a role="menuitem" tabindex="-1" href="#" class="report-icon report-icon--download" data-i18n="dropdownSaveJSON" data-action="save-json"></a>
-        <a role="menuitem" tabindex="-1" href="#" class="report-icon report-icon--open lh-tools--viewer" data-i18n="dropdownViewer" data-action="open-viewer"></a>
-        <a role="menuitem" tabindex="-1" href="#" class="report-icon report-icon--open lh-tools--gist" data-i18n="dropdownSaveGist" data-action="save-gist"></a>
-        <a role="menuitem" tabindex="-1" href="#" class="report-icon report-icon--dark" data-i18n="dropdownDarkTheme" data-action="toggle-dark"></a>
+        <a role="menuitem" tabindex="-1" href="#" className="report-icon report-icon--print" data-i18n="dropdownPrintSummary" data-action="print-summary"></a>
+        <a role="menuitem" tabindex="-1" href="#" className="report-icon report-icon--print" data-i18n="dropdownPrintExpanded" data-action="print-expanded"></a>
+        <a role="menuitem" tabindex="-1" href="#" className="report-icon report-icon--copy" data-i18n="dropdownCopyJSON" data-action="copy"></a>
+        <a role="menuitem" tabindex="-1" href="#" className="report-icon report-icon--download" data-i18n="dropdownSaveHTML" data-action="save-html"></a>
+        <a role="menuitem" tabindex="-1" href="#" className="report-icon report-icon--download" data-i18n="dropdownSaveJSON" data-action="save-json"></a>
+        <a role="menuitem" tabindex="-1" href="#" className="report-icon report-icon--open lh-tools--viewer" data-i18n="dropdownViewer" data-action="open-viewer"></a>
+        <a role="menuitem" tabindex="-1" href="#" className="report-icon report-icon--open lh-tools--gist" data-i18n="dropdownSaveGist" data-action="save-gist"></a>
+        <a role="menuitem" tabindex="-1" href="#" className="report-icon report-icon--dark" data-i18n="dropdownDarkTheme" data-action="toggle-dark"></a>
       </div>
     </div>
   </div>
@@ -2081,8 +2081,8 @@ limitations under the License.
     }
   </style>
 
-  <div class="lh-header-container">
-    <div class="lh-scores-wrapper-placeholder"></div>
+  <div className="lh-header-container">
+    <div className="lh-scores-wrapper-placeholder"></div>
   </div>
 </template>
 
@@ -2131,41 +2131,41 @@ limitations under the License.
       flex: 1;
     }
   </style>
-  <footer class="lh-footer">
+  <footer className="lh-footer">
     <!-- TODO(i18n): localize runtime settings -->
-    <div class="lh-env">
-      <div class="lh-env__title">Runtime Settings</div>
-      <ul class="lh-env__items">
+    <div className="lh-env">
+      <div className="lh-env__title">Runtime Settings</div>
+      <ul className="lh-env__items">
         <template id="tmpl-lh-env__items">
-          <li class="lh-env__item">
-            <span class="lh-env__name"></span>
-            <span class="lh-env__description"></span>
+          <li className="lh-env__item">
+            <span className="lh-env__name"></span>
+            <span className="lh-env__description"></span>
           </li>
         </template>
       </ul>
     </div>
 
-    <div class="lh-generated">
+    <div className="lh-generated">
       <!-- TODO(i18n): use ICU replacement to replace version w/o concatenation. -->
-      Generated by <b>Lighthouse</b> <span class="lh-footer__version"></span> |
-      <a href="https://github.com/GoogleChrome/Lighthouse/issues" target="_blank" rel="noopener" class="lh-footer__version_issue">File an issue</a>
+      Generated by <b>Lighthouse</b> <span className="lh-footer__version"></span> |
+      <a href="https://github.com/GoogleChrome/Lighthouse/issues" target="_blank" rel="noopener" className="lh-footer__version_issue">File an issue</a>
     </div>
   </footer>
 </template>
 
 <!-- Lighthouse score gauge -->
 <template id="tmpl-lh-gauge">
-  <a href="#" class="lh-gauge__wrapper">
+  <a href="#" className="lh-gauge__wrapper">
     <!-- Wrapper exists for the ::before plugin icon. Cannot create pseudo-elements on svgs. -->
-    <div class="lh-gauge__svg-wrapper">
-      <svg viewBox="0 0 120 120" class="lh-gauge">
-        <circle class="lh-gauge-base" r="56" cx="60" cy="60" stroke-width="8"></circle>
-        <circle class="lh-gauge-arc"  r="56" cx="60" cy="60" stroke-width="8"></circle>
+    <div className="lh-gauge__svg-wrapper">
+      <svg viewBox="0 0 120 120" className="lh-gauge">
+        <circle className="lh-gauge-base" r="56" cx="60" cy="60" stroke-width="8"></circle>
+        <circle className="lh-gauge-arc"  r="56" cx="60" cy="60" stroke-width="8"></circle>
       </svg>
     </div>
-    <div class="lh-gauge__percentage"></div>
+    <div className="lh-gauge__percentage"></div>
     <!-- TODO: should likely be an h2  -->
-    <div class="lh-gauge__label"></div>
+    <div className="lh-gauge__label"></div>
   </a>
 </template>
 
@@ -2226,8 +2226,8 @@ limitations under the License.
     }
   </style>
 
-  <a href="#" class="lh-gauge__wrapper lh-gauge--pwa__wrapper">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" class="lh-gauge lh-gauge--pwa">
+  <a href="#" className="lh-gauge__wrapper lh-gauge--pwa__wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" className="lh-gauge lh-gauge--pwa">
       <defs>
         <linearGradient id="lh-gauge--pwa__check-circle__gradient" x1="50%" y1="0%" x2="50%" y2="100%">
           <stop stop-color="#00C852" offset="0%"></stop>
@@ -2254,30 +2254,30 @@ limitations under the License.
 
       <g stroke="none" fill-rule="nonzero">
         <!-- Background and PWA logo (color by default) -->
-        <circle class="lh-gauge--pwa__disc" cx="30" cy="30" r="30"></circle>
-        <g class="lh-gauge--pwa__logo">
-          <path class="lh-gauge--pwa__logo--secondary-color" d="M35.66 19.39l.7-1.75h2L37.4 15 38.6 12l3.4 9h-2.51l-.58-1.61z"/>
-          <path class="lh-gauge--pwa__logo--primary-color" d="M33.52 21l3.65-9h-2.42l-2.5 5.82L30.5 12h-1.86l-1.9 5.82-1.35-2.65-1.21 3.72L25.4 21h2.38l1.72-5.2 1.64 5.2z"/>
-          <path class="lh-gauge--pwa__logo--secondary-color" fill-rule="nonzero" d="M20.3 17.91h1.48c.45 0 .85-.05 1.2-.15l.39-1.18 1.07-3.3a2.64 2.64 0 0 0-.28-.37c-.55-.6-1.36-.91-2.42-.91H18v9h2.3V17.9zm1.96-3.84c.22.22.33.5.33.87 0 .36-.1.65-.29.87-.2.23-.59.35-1.15.35h-.86v-2.41h.87c.52 0 .89.1 1.1.32z"/>
+        <circle className="lh-gauge--pwa__disc" cx="30" cy="30" r="30"></circle>
+        <g className="lh-gauge--pwa__logo">
+          <path className="lh-gauge--pwa__logo--secondary-color" d="M35.66 19.39l.7-1.75h2L37.4 15 38.6 12l3.4 9h-2.51l-.58-1.61z"/>
+          <path className="lh-gauge--pwa__logo--primary-color" d="M33.52 21l3.65-9h-2.42l-2.5 5.82L30.5 12h-1.86l-1.9 5.82-1.35-2.65-1.21 3.72L25.4 21h2.38l1.72-5.2 1.64 5.2z"/>
+          <path className="lh-gauge--pwa__logo--secondary-color" fill-rule="nonzero" d="M20.3 17.91h1.48c.45 0 .85-.05 1.2-.15l.39-1.18 1.07-3.3a2.64 2.64 0 0 0-.28-.37c-.55-.6-1.36-.91-2.42-.91H18v9h2.3V17.9zm1.96-3.84c.22.22.33.5.33.87 0 .36-.1.65-.29.87-.2.23-.59.35-1.15.35h-.86v-2.41h.87c.52 0 .89.1 1.1.32z"/>
         </g>
 
         <!-- No badges. -->
-        <rect class="lh-gauge--pwa__component lh-gauge--pwa__na-line" fill="#FFFFFF" x="20" y="32" width="20" height="4" rx="2"></rect>
+        <rect className="lh-gauge--pwa__component lh-gauge--pwa__na-line" fill="#FFFFFF" x="20" y="32" width="20" height="4" rx="2"></rect>
 
         <!-- Just fast and reliable. -->
-        <g class="lh-gauge--pwa__component lh-gauge--pwa__fast-reliable-badge" transform="translate(20, 29)">
+        <g className="lh-gauge--pwa__component lh-gauge--pwa__fast-reliable-badge" transform="translate(20, 29)">
           <path fill="url(#lh-gauge--pwa__fast-reliable__shadow-gradient)" d="M33.63 19.49A30 30 0 0 1 16.2 30.36L3 17.14 17.14 3l16.49 16.49z"/>
           <use href="#lh-gauge--pwa__fast-reliable-badge" />
         </g>
 
         <!-- Just installable. -->
-        <g class="lh-gauge--pwa__component lh-gauge--pwa__installable-badge" transform="translate(20, 29)">
+        <g className="lh-gauge--pwa__component lh-gauge--pwa__installable-badge" transform="translate(20, 29)">
           <path fill="url(#lh-gauge--pwa__installable__shadow-gradient)" d="M33.629 19.487c-4.272 5.453-10.391 9.39-17.415 10.869L3 17.142 17.142 3 33.63 19.487z"/>
           <use href="#lh-gauge--pwa__installable-badge" />
         </g>
 
         <!-- Fast and reliable and installable. -->
-        <g class="lh-gauge--pwa__component lh-gauge--pwa__fast-reliable-installable-badges">
+        <g className="lh-gauge--pwa__component lh-gauge--pwa__fast-reliable-installable-badges">
           <g transform="translate(8, 29)"> <!-- fast and reliable -->
             <path fill="url(#lh-gauge--pwa__fast-reliable__shadow-gradient)" d="M16.321 30.463L3 17.143 17.142 3l22.365 22.365A29.864 29.864 0 0 1 22 31c-1.942 0-3.84-.184-5.679-.537z"/>
             <use href="#lh-gauge--pwa__fast-reliable-badge" />
@@ -2289,20 +2289,20 @@ limitations under the License.
         </g>
 
         <!-- Full PWA. -->
-        <g class="lh-gauge--pwa__component lh-gauge--pwa__check-circle" transform="translate(18, 28)">
+        <g className="lh-gauge--pwa__component lh-gauge--pwa__check-circle" transform="translate(18, 28)">
           <circle fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
           <path fill="url(#lh-gauge--pwa__check-circle__gradient)" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
         </g>
       </g>
     </svg>
 
-    <div class="lh-gauge__label"></div>
+    <div className="lh-gauge__label"></div>
   </a>
 </template>
 
 <!-- Lighthouse crtiical request chains component -->
 <template id="tmpl-lh-crc">
-  <div class="lh-crc-container">
+  <div className="lh-crc-container">
     <style>
       .lh-crc .tree-marker {
         width: 12px;
@@ -2354,19 +2354,19 @@ limitations under the License.
       }
     </style>
     <div>
-      <div class="lh-crc__summary-value">
-        <span class="lh-crc__longest_duration_label"></span> <b class="lh-crc__longest_duration"></b>
+      <div className="lh-crc__summary-value">
+        <span className="lh-crc__longest_duration_label"></span> <b className="lh-crc__longest_duration"></b>
       </div>
     </div>
-    <div class="lh-crc">
-      <div class="crc-initial-nav"></div>
+    <div className="lh-crc">
+      <div className="crc-initial-nav"></div>
       <!-- stamp for each chain -->
       <template id="tmpl-lh-crc__chains">
-        <div class="crc-node">
-          <span class="crc-node__tree-marker">
+        <div className="crc-node">
+          <span className="crc-node__tree-marker">
 
           </span>
-          <span class="crc-node__tree-value">
+          <span className="crc-node__tree-value">
 
           </span>
         </div>
@@ -2391,17 +2391,17 @@ limitations under the License.
       text-decoration: line-through;
     }
   </style>
-  <div class="lh-3p-filter">
-    <label class="lh-3p-filter-label">
-      <input type="checkbox" class="lh-3p-filter-input" checked />
-      <span class="lh-3p-ui-string">Show 3rd party resources</span> (<span class="lh-3p-filter-count"></span>)
+  <div className="lh-3p-filter">
+    <label className="lh-3p-filter-label">
+      <input type="checkbox" className="lh-3p-filter-input" checked />
+      <span className="lh-3p-ui-string">Show 3rd party resources</span> (<span className="lh-3p-filter-count"></span>)
     </label>
   </div>
 </template>
 
 <!-- Lighthouse snippet component -->
 <template id="tmpl-lh-snippet">
-    <div class="lh-snippet">
+    <div className="lh-snippet">
       <style>
           :root {
             --snippet-highlight-light: #fbf1f2;
@@ -2512,24 +2512,24 @@ limitations under the License.
         }
       </style>
       <template id="tmpl-lh-snippet__header">
-        <div class="lh-snippet__header">
-          <div class="lh-snippet__title"></div>
-          <div class="lh-snippet__node"></div>
-          <button class="lh-snippet__toggle-expand">
-            <span class="lh-snippet__btn-label-collapse lh-snippet__show-if-expanded"></span>
-            <span class="lh-snippet__btn-label-expand lh-snippet__show-if-collapsed"></span>
+        <div className="lh-snippet__header">
+          <div className="lh-snippet__title"></div>
+          <div className="lh-snippet__node"></div>
+          <button className="lh-snippet__toggle-expand">
+            <span className="lh-snippet__btn-label-collapse lh-snippet__show-if-expanded"></span>
+            <span className="lh-snippet__btn-label-expand lh-snippet__show-if-collapsed"></span>
           </button>
         </div>
       </template>
       <template id="tmpl-lh-snippet__content">
-        <div class="lh-snippet__snippet">
-          <div class="lh-snippet__snippet-inner"></div>
+        <div className="lh-snippet__snippet">
+          <div className="lh-snippet__snippet-inner"></div>
         </div>
       </template>
       <template id="tmpl-lh-snippet__line">
-          <div class="lh-snippet__line">
-            <div class="lh-snippet__line-number"></div>
-            <div class="lh-snippet__line-icon"></div>
+          <div className="lh-snippet__line">
+            <div className="lh-snippet__line-number"></div>
+            <div className="lh-snippet__line-icon"></div>
             <code></code>
           </div>
         </template>

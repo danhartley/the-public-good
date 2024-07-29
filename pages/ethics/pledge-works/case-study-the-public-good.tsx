@@ -66,7 +66,7 @@ const Argument = () => {
             principles: <q>Security and privacy are essential</q> and{' '}
             <q>The web must enhance individuals' control and power</q> to write two pledges of my own:
           </p>
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             <li>
               <strong>I pledge not to sell, exchange or exploit user data.</strong>
             </li>
@@ -110,13 +110,13 @@ const Argument = () => {
           </p>
           <h4>In general terms</h4>
           <figure>
-            <ul class={styles.dashedCascadedItemsList}>
+            <ul className={styles.dashedCascadedItemsList}>
               <li>Personal principles.</li>
               <li>
-                <ol type="A" class={styles.dashedCascadedItemsList}>
+                <ol type="A" className={styles.dashedCascadedItemsList}>
                   <li>Project pledges.</li>
                   <li>
-                    <ol type="i" class={styles.dashedCascadedItemsList}>
+                    <ol type="i" className={styles.dashedCascadedItemsList}>
                       <li>Verifiable actions.</li>
                     </ol>
                   </li>
@@ -129,13 +129,13 @@ const Argument = () => {
           </figure>
           <h4>In specific terms</h4>
           <figure>
-            <ul class={styles.dashedCascadedItemsList}>
+            <ul className={styles.dashedCascadedItemsList}>
               <li>Security and privacy are essential.</li>
               <li>
-                <ol type="A" class={styles.dashedCascadedItemsList}>
+                <ol type="A" className={styles.dashedCascadedItemsList}>
                   <li>I pledge not to sell, exchange or exploit user data.</li>
                   <li>
-                    <ol type="i" class={styles.dashedCascadedItemsList}>
+                    <ol type="i" className={styles.dashedCascadedItemsList}>
                       <li>No cross-site or cross-device tracking.</li>
                     </ol>
                   </li>

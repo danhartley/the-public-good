@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 
 import styles from 'components/dashboard/Dashboard.module.scss';
 
@@ -55,12 +55,12 @@ const UKDataOptionsTable = ({setDataOptionsState}) => {
 
     const rows = dataSources.map(ds => <tr>
         <td>
-            <div class={ds.id === selectedDataSource.id ? styles.checked : undefined}>
+            <div className={ds.id === selectedDataSource.id ? styles.checked : undefined}>
                 <input type="radio" checked={ds.id === selectedDataSource.id} onClick={e => updateRBStates(e, dataSources[ds.id - 100])} id={ds.id.toString()} name="rbSource"></input>
                 <label htmlFor={ds.id.toString()}>{ds.title}</label>
             </div>
         </td>
-        <td><div class={ds.id === selectedDataSource.id ? styles.checked : ''}>{(ds.gigabytes).toLocaleString()}</div></td>
+        <td><div className={ds.id === selectedDataSource.id ? styles.checked : ''}>{(ds.gigabytes).toLocaleString()}</div></td>
     </tr>);
 
     return (<table>

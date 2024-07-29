@@ -64,11 +64,11 @@ const Carbon = () => {
       <section>
         <h2>
           Carbon is essential to all life, but its rapid release into the atmosphere in the molecular form CO
-          <span class={styles.sub}>2</span> is upsetting equilibria established over millions of years.
+          <span className={styles.sub}>2</span> is upsetting equilibria established over millions of years.
         </h2>
 
         <Accordion header="Carbon basics">
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <span>
               Symbol <strong>C</strong>; atomic number <strong>6</strong>; atomic mass <strong>12.011u</strong>
             </span>
@@ -155,7 +155,7 @@ const Carbon = () => {
         <h3>Diamond</h3>
 
         <Accordion header="Covalent bonds">
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <div>
               Electrons are arranged in orbitals about the nucleus of an atom. An electron in the outermost or valence
               orbital is able to form a pair with a valence electron from another atom.
@@ -240,11 +240,11 @@ const Carbon = () => {
         <p>
           When hydrocarbons are burnt in air they react with oxygen to release the energy stored in their covalent bonds
           in the form of light and heat.
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <span>Hydrocarbon + oxygen → carbon dioxide + water + energy (light and heat)</span>
             <span>
-              e.g. CH<span class={styles.sub}>4</span> + 2O<span class={styles.sub}>2</span> → 2H
-              <span class={styles.sub}>2</span>O + CO<span class={styles.sub}>2</span> + energy
+              e.g. CH<span className={styles.sub}>4</span> + 2O<span className={styles.sub}>2</span> → 2H
+              <span className={styles.sub}>2</span>O + CO<span className={styles.sub}>2</span> + energy
             </span>
             <div>
               <Links.EL link={{ source: 'https://energyeducation.ca/encyclopedia/Hydrocarbon_combustion' }}>
@@ -262,17 +262,17 @@ const Carbon = () => {
 
         <p>
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Acetylene' }}>Acetylene</Links.EL> C
-          <span class={styles.sub}>2</span>H<span class={styles.sub}>2</span> burns at around 3,330°C in pure oxygen
+          <span className={styles.sub}>2</span>H<span className={styles.sub}>2</span> burns at around 3,330°C in pure oxygen
           (oxyacetylene process) making it suitable for welding and cutting metals. The bulk of the energy released from
           acetylene is derived from the triple bond that exists between the two carbon atoms in each molecule.
         </p>
 
         <Accordion header="Forms and formulae of fossil fuels">
           <p>
-            <div class={styles.inset}>
+            <div className={styles.inset}>
               <div>
-                C<span class={styles.sub}>4</span>H<span class={styles.sub}>10</span> - butane and C
-                <span class={styles.sub}>8</span>H<span class={styles.sub}>18</span> - octane are pure hydrocarbons.
+                C<span className={styles.sub}>4</span>H<span className={styles.sub}>10</span> - butane and C
+                <span className={styles.sub}>8</span>H<span className={styles.sub}>18</span> - octane are pure hydrocarbons.
                 Petrol is a mixture of many hydrocarbons.
               </div>
               <div>
@@ -283,16 +283,16 @@ const Carbon = () => {
               <div>
                 Low grade <strong>bituminous</strong> coal has the formula{' '}
                 <strong>
-                  C<span class={styles.sub}>137</span>H<span class={styles.sub}>97</span>O
-                  <span class={styles.sub}>9</span>NS
+                  C<span className={styles.sub}>137</span>H<span className={styles.sub}>97</span>O
+                  <span className={styles.sub}>9</span>NS
                 </strong>
                 .
               </div>
               <div>
                 High grade <strong>anthracite</strong> has the formula{' '}
                 <strong>
-                  C<span class={styles.sub}>240</span>H<span class={styles.sub}>99</span>O
-                  <span class={styles.sub}>4</span>NS
+                  C<span className={styles.sub}>240</span>H<span className={styles.sub}>99</span>O
+                  <span className={styles.sub}>4</span>NS
                 </strong>
                 .
               </div>
@@ -368,7 +368,7 @@ const Carbon = () => {
         <p>
           Cumulative <Links.EL link={{ source: 'https://ourworldindata.org/co2-emissions' }}>emissions</Links.EL> of
           carbon dioxide to date are ~1.5 trillion tonnes.
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <span>Remaining reserves in tonnes: 900 coal, 150 oil, 105 gas, 540 shale gas, etc. = 1.695 trillion.</span>
             <div>
               Carbon is also found in methane hydrates in polar regions and under the seas. Estimates vary between 500
@@ -423,7 +423,7 @@ const Carbon = () => {
         </p>
 
         <p>
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <span>Fossil fuels take ~1 million years to form. They have high energy and power densities.</span>
             <span>
               Renewables are constantly replenished by the sun's energy. They have low energy and power densities.

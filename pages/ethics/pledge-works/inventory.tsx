@@ -45,7 +45,7 @@ const Inventory = () => {
           frameworks.
         </p>
         <blockquote>
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             <li>Should we use React, Preact, Angular or Vanilla JavaScript for this project?</li>
             <li>Should we use Google Analytics or Plausible?</li>
           </ul>
@@ -55,7 +55,7 @@ const Inventory = () => {
           clients, or everyone? These are questions you'd want to answer yes to.
         </p>
         <blockquote>
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             <li>Do we have the resources for this strategy?</li>
             <li>Can we recruit and train the necessary staff?</li>
             <li>Will we be able to retain our existing clients?</li>
@@ -67,7 +67,7 @@ const Inventory = () => {
           building a website, you want its content to be accessible to everyone, and to avoid upsetting people.
         </p>
         <blockquote>
-          <ul class={styles.unorderedList}>
+          <ul className={styles.unorderedList}>
             <li>
               <div>
                 <input id="c" type="checkbox"></input>

@@ -1,6 +1,6 @@
 import CanvasChart from 'components/dashboard/canvas-chart';
 
-import { useEffect, useState, useRef } from 'preact/hooks';
+import { useEffect, useState, useRef } from 'react';
 import { ChartType } from 'lib/enums';
 
 const BytesPerDeviceAndActivity = ({datasources}) => {

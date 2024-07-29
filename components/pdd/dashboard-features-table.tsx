@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 
 import styles from 'components/dashboard/Dashboard.module.scss';
 
@@ -15,8 +15,8 @@ const showPledges = ({pledges, colSpan, value}) => {
             <tbody>
                 <tr>                    
                     <td>{p.name}</td>
-                    <td class={getVerdict(p.honoured)}>{p.honoured > 1 ? p.honoured : null}</td>
-                    <td class={getVerdict(p.broken)}>{p.broken > 1 ? p.broken : null}</td>
+                    <td className={getVerdict(p.honoured)}>{p.honoured > 1 ? p.honoured : null}</td>
+                    <td className={getVerdict(p.broken)}>{p.broken > 1 ? p.broken : null}</td>
                 </tr>
             </tbody>
         )
@@ -25,7 +25,7 @@ const showPledges = ({pledges, colSpan, value}) => {
     return (
         <tr>
             <td colSpan={colSpan}>
-                <table data-table-id={value.toLowerCase() + '-pledges'} class={styles.unorderedList}>
+                <table data-table-id={value.toLowerCase() + '-pledges'} className={styles.unorderedList}>
                     {tbody}
                 </table>
             </td>
@@ -57,7 +57,7 @@ const DashboardFeaturesTable = ({data}) => {
     return (!data ? null : 
         
         <>
-        <table class={tableClasses} data-table-id="features">
+        <table className={tableClasses} data-table-id="features">
             <thead>
                 <tr>
                     <th></th>
@@ -65,8 +65,8 @@ const DashboardFeaturesTable = ({data}) => {
                 </tr>
                 <tr>
                     <th>Feature</th>
-                    <th class={styles.centredText} scope="col">Honoured</th>
-                    <th class={styles.centredText} scope="col">Broken</th>
+                    <th className={styles.centredText} scope="col">Honoured</th>
+                    <th className={styles.centredText} scope="col">Broken</th>
                 </tr>
             </thead>
             <tbody>
@@ -81,9 +81,9 @@ const DashboardFeaturesTable = ({data}) => {
                     return(
                     <>
                         <tr>
-                            <td class={header}><button data-table-id={d.name.toLowerCase()} class={styles.value} onClick={handleClick}>{d.name}</button></td>                        
-                            <td class={getClasses()}>{d.honoured}</td>
-                            <td class={getClasses()}>{d.broken}</td>
+                            <td className={header}><button data-table-id={d.name.toLowerCase()} className={styles.value} onClick={handleClick}>{d.name}</button></td>                        
+                            <td className={getClasses()}>{d.honoured}</td>
+                            <td className={getClasses()}>{d.broken}</td>
                         </tr>
                         {
                             d.name.toLowerCase() === selectedRow 
@@ -97,8 +97,8 @@ const DashboardFeaturesTable = ({data}) => {
             <tfoot>
                 <tr>
                     <th scope="row">Totals</th>
-                    <th class={styles.centredText}>{totals.honoured}</th>
-                    <th class={styles.centredText}>{totals.broken}</th>
+                    <th className={styles.centredText}>{totals.honoured}</th>
+                    <th className={styles.centredText}>{totals.broken}</th>
                 </tr>
             </tfoot>
         </table>

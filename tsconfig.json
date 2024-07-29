@@ -24,6 +24,8 @@
     //   "strictNullChecks": true
     //   "noImplicitAny": true
     //   "types": ["cypress", "@testing-library/cypress", "types/jest", "@types/node", "jest-preset-preact", "jest"]
+    ,
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
@@ -34,7 +36,11 @@
     "public/_app.js",
     "pages/ethics/pledge-works/index.js",
     "pages/ethics/features/step_definitions/bank-account.steps.mts",
-    "components/pdd/hidden-message.test.tsx", "components/pdd/hidden-message.tsx", "components/pdd/simple.jsx", "components/pdd/simple.test.js"  ],
+    "components/pdd/hidden-message.test.tsx",
+    "components/pdd/hidden-message.tsx",
+    "components/pdd/simple.jsx",
+    "components/pdd/simple.test.js"
+  ],
   "exclude": [
     "node_modules",
     "**/*.spec.js"

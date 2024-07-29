@@ -14,7 +14,7 @@ const Prometheus = () => {
       <section>
         <h2>
           "Beware; for I am fearless, and therefore powerful."{' '}
-          <span class={styles.attribution}> Mary Shelley, Frankenstein</span>
+          <span className={styles.attribution}> Mary Shelley, Frankenstein</span>
         </h2>
         <figure>
           <div>
@@ -23,7 +23,7 @@ const Prometheus = () => {
               href="https://commons.wikimedia.org/w/index.php?curid=188018"
             >
               <img
-                class={styles.externalImg}
+                className={styles.externalImg}
                 width="172px"
                 height="240px"
                 alt="Beardsley-peacockskirt"

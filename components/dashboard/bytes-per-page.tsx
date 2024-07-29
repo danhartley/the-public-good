@@ -1,6 +1,6 @@
 import CanvasChart from 'components/dashboard/canvas-chart';
 
-import { useEffect, useState, useRef } from 'preact/hooks';
+import { useEffect, useState, useRef } from 'react';
 import { getLocalStorageState } from 'hooks/local-storage';
 import { ChartType } from 'lib/enums';
 import { Coordinates, ChartProps, PluginProps } from 'components/charts/chart-types';

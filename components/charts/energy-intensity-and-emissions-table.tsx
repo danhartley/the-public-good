@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 
 import Formula from 'components/tools/formula';
 
@@ -116,13 +116,13 @@ const EnergyAndEmissionsTable = ({setEnergyAndEmissionsState}) => {
 
     const rows = dataSources.map(e => <tr>
         <td>
-            <div class={e.id === active.id ? styles.checked : ''}>
+            <div className={e.id === active.id ? styles.checked : ''}>
                 <input type="radio" checked={e.id === active.id} onClick={() => updateStates(dataSources[e.id - 1])} id={e.id.toString()} name="rbBaselines"></input>
                 <label htmlFor={e.id.toString()}>{e.name}</label>
             </div>
         </td>
-        <td><div class={e.id === active.id ? styles.checked : ''}>{e.energy}</div></td>
-        <td><div class={e.id === active.id ? styles.checked : ''}>{e.emissions}</div></td>
+        <td><div className={e.id === active.id ? styles.checked : ''}>{e.energy}</div></td>
+        <td><div className={e.id === active.id ? styles.checked : ''}>{e.emissions}</div></td>
     </tr>);
 
     return (<table>

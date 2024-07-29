@@ -11,7 +11,7 @@ const Extracts = () => {
     >
       <h2>Extracts from a novel</h2>
       <section>
-        <ul class={styles.unorderedList}>
+        <ul className={styles.unorderedList}>
           <li>
             <Links.IL link={{ source: 'personal/oleta' }}>Oleta</Links.IL>
           </li>

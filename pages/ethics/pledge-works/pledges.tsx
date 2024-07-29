@@ -61,7 +61,7 @@ const Pledges = () => {
             These pledges are specific to this website. Since I'm working alone, and the site is simple, the focus is on
             better outcomes for readers.
           </p>
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             {pledges.map(p => {
               return <li>{p}</li>
             })}
@@ -76,7 +76,7 @@ const Pledges = () => {
           </p>
           <h3>Professional pledges</h3>
           <p>When working with others, I make the following commitments:</p>
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             {pledges2.map(p => {
               return <li>{p}</li>
             })}

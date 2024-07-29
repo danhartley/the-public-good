@@ -1,6 +1,7 @@
 @import 'styles/mixins.scss';
 
 .container {    
+    @include vars();
     header {    
         .skiptocontent a, .skiptocontent a:visited {
             position: absolute;

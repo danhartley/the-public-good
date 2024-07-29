@@ -1,12 +1,13 @@
-import { useEffect, useState } from 'preact/hooks'
+import { useEffect, useState } from 'react'
 
 import { Bar } from 'react-chartjs-2'
-import { Chart } from 'chart.js'
+import { Chart, registerables } from 'chart.js';
 
 import styles from 'components/dashboard/Dashboard.module.scss'
 
 import annotationPlugin from 'chartjs-plugin-annotation'
 
+Chart.register(...registerables);
 Chart.register(annotationPlugin)
 
 const FloatingBarChart = ({ dataSources, config }) => {
@@ -53,7 +54,7 @@ const FloatingBarChart = ({ dataSources, config }) => {
         </div>
       ) : (
         <div>
-          <div class={styles.skills}>
+          <div className={styles.skills}>
             <Bar data={data} options={options}>
               <div>Hello Fallback World</div>
             </Bar>

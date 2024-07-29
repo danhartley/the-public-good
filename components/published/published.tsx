@@ -4,13 +4,13 @@ const Published = ({strDate, edited = null}) => {
 
     const updates = Array.isArray(edited)
                         ? edited.map(e => {
-                                return <div class={styles.published}>Edited: {e.text === undefined ? '' : e.text} {new Date(e.strDate).toDateString()}</div>
+                                return <div className={styles.published}>Edited: {e.text === undefined ? '' : e.text} {new Date(e.strDate).toDateString()}</div>
                             })
                         : null;
 
     return (
         <section>
-            <p class={styles.published}>
+            <p className={styles.published}>
                 <div>
                     <div>Published: {new Date(strDate).toDateString()}</div>
                     {updates}

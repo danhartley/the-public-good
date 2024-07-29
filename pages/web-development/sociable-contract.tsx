@@ -46,7 +46,7 @@ const Contract = () => {
         <p>
           <h3>Terms</h3>
 
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             <li>
               <span>
                 The site satisfies Web Content Accessibility Guidelines{' '}
@@ -91,7 +91,7 @@ const Contract = () => {
 
           <h3>Fulfilment</h3>
 
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             <li>Any breach or contravention of the terms of this contract will be put right in a timely fashion.</li>
             <li>
               Breaches or contraventions of the terms of this contract, including their length and severity, will be

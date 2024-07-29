@@ -26,7 +26,7 @@ const BigNumbers = () => {
         </div>
         <p>
           Some values are fixed. To convert a mass of carbon to <Formula>CO2</Formula> multiplying by 3.67 or 3
-          <span class={styles.fraction}>&#8532;</span> will return a pretty accurate answer. Calculating an
+          <span className={styles.fraction}>&#8532;</span> will return a pretty accurate answer. Calculating an
           approximation in your head you might quite reasonably mutliple by 4 instead of 3.67 and adjust the result. But
           since there are manifold uncertainties about measuring the present, and predicting the future, copper-bottomed
           numbers are not to be treated lightly.
@@ -53,7 +53,7 @@ const BigNumbers = () => {
               </strong>
             </dt>
             <dd>
-              44 &#247; 12 = 3<span class={styles.fraction}>&#8532;</span>
+              44 &#247; 12 = 3<span className={styles.fraction}>&#8532;</span>
             </dd>
             <dt>
               <strong>
@@ -61,8 +61,8 @@ const BigNumbers = () => {
               </strong>
             </dt>
             <dd>
-              Example 2 tonnes C to <Formula>CO2</Formula>: 2 &#215; 3<span class={styles.fraction}>&#8532;</span> = 7
-              <span class={styles.fraction}>&#8531;</span> t
+              Example 2 tonnes C to <Formula>CO2</Formula>: 2 &#215; 3<span className={styles.fraction}>&#8532;</span> = 7
+              <span className={styles.fraction}>&#8531;</span> t
             </dd>
           </dl>
           <div>

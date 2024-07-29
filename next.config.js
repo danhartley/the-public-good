@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-var-requires */
-const withPreact = require('next-plugin-preact');
 const path = require('path');
 
 const withPWA = require('next-pwa');
@@ -19,12 +18,6 @@ const smp = new SpeedMeasurePlugin();
 // https://developers.google.com/web/fundamentals/performance/webpack/monitor-and-analyze
 // https://github.com/FormidableLabs/webpack-dashboard/
 // const DashboardPlugin = require("webpack-dashboard/plugin");
-
-module.exports = withPreact({
-    sassOptions: {
-        includePaths: [path.join(__dirname, 'styles')],
-    }
-});
 
 module.exports = smp.wrap({
     plugins: [

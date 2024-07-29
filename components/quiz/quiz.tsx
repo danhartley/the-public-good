@@ -9,12 +9,12 @@ const Quiz = ({provider = 'the-public-good', title = 'hydrogen-a-singular-atom',
             ?
                 <>
                 <h2>How much do your remember?</h2>
-                <iframe class={styles.widget} src={src}></iframe>
+                <iframe className={styles.widget} src={src}></iframe>
                 </>
             :
                 <>
                 <h2>How much do your remember?</h2>
-                <div class={styles.externalLink}>
+                <div className={styles.externalLink}>
                     <a href={src}>{link !== '' ? link : title}</a>
                 </div>
                 </>

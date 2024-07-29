@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'preact/hooks'
+import { useEffect, useState, useRef } from 'react'
 
 const config = {
   startOnLoad: false,

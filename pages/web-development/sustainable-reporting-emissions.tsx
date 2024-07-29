@@ -53,8 +53,8 @@ const SustainableReportingEmissions = () => {
       description={'Tracking emissions from websites and web apps when running end-to-end tests.'}
       image="https://live.staticflickr.com/65535/51143928462_2fec2d283e_z_d.jpg"
     >
-      <section class={styles.report}>
-        <h2 class={styles.mt0}>Tracking carbon emissions in end-to-end tests.</h2>
+      <section className={styles.report}>
+        <h2 className={styles.mt0}>Tracking carbon emissions in end-to-end tests.</h2>
 
         <p><em>This tooling used in this report has been superseded by the npm package <Links.EL link={{source:'https://github.com/danhartley/emissions'}}>@danhartley/emissions</Links.EL> [24 July 2024].</em></p>
 
@@ -80,7 +80,7 @@ const SustainableReportingEmissions = () => {
 
         <p>
           If the site is hosted on servers running on renewable energy the emissions will be lower. The{' '}
-          <abbr class={styles.abbr} title="The Green Web Foundation">
+          <abbr className={styles.abbr} title="The Green Web Foundation">
             GBF
           </abbr>{' '}
           provides a helper function for{' '}
@@ -105,7 +105,7 @@ const SustainableReportingEmissions = () => {
           </code>
         </pre>
 
-        <table class={styles.tablepadded}>
+        <table className={styles.tablepadded}>
           <caption>Emissions Comparison Green Hosting</caption>
           <thead>
             <th>Green web host</th>
@@ -113,14 +113,14 @@ const SustainableReportingEmissions = () => {
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>Yes</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>
+              <td className={styles.bgbodydomain}>Yes</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>
                 ~783 mg/CO<sub>2</sub>
               </td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>No</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>
+              <td className={styles.bgbodydomain}>No</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>
                 ~905 mg/CO<sub>2</sub>
               </td>
             </tr>
@@ -204,55 +204,55 @@ const SustainableReportingEmissions = () => {
           </dl>
         </Accordion>
 
-        <table class={styles.tablepadded}>
+        <table className={styles.tablepadded}>
           <caption>Emissions Tracker Summary</caption>
           <thead>
             <tr>
               <th>Wesbite</th>
-              <th class={styles.textRight}>Requests</th>
-              <th class={styles.textRight}>kBs</th>
-              <th class={styles.textRight}>ms</th>
-              <th class={styles.textRight}>
+              <th className={styles.textRight}>Requests</th>
+              <th className={styles.textRight}>kBs</th>
+              <th className={styles.textRight}>ms</th>
+              <th className={styles.textRight}>
                 mg/CO<sub>2</sub>
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.thegreenwebfoundation.org/' }}>The GWF</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>533</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>137 (45)</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>533</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>137 (45)</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.the-public-good.com/' }}>The PG</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>86</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>343</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99 (35)</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>86</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>343</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>99 (35)</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.theguardian.com/' }}>The Guardian</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2291</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>897 (828)</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>2291</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>897 (828)</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.inaturalist.org/' }}>iNaturalist</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2798</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771 (664)</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>2798</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>771 (664)</td>
             </tr>
           </tbody>
         </table>
@@ -292,82 +292,82 @@ const SustainableReportingEmissions = () => {
           </div>
         </Accordion>
 
-        <table class={styles.tablepadded}>
+        <table className={styles.tablepadded}>
           <caption>Emissions</caption>
           <thead>
             <tr>
               <th>Wesbite</th>
-              <th colSpan={4} class={styles.textCentre}>
+              <th colSpan={4} className={styles.textCentre}>
                 mg/CO<sub>2</sub>
               </th>
             </tr>
             <tr>
-              <th class={styles.hideheader}>-</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>ET</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>EG</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>CN</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>WC</th>
+              <th className={styles.hideheader}>-</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>ET</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>EG</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>CN</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>WC</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.thegreenwebfoundation.org/' }}>The GWF</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>137 (45)</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>137 (45)</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>
                 <Links.EL link={{ source: 'https://ecograder.com/report/wZaeBWX7zR9ktdPm7Ps4rcVc' }}>50</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>14</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>14</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>
                 <Links.EL link={{ source: 'https://www.websitecarbon.com/website/thegreenwebfoundation-org/' }}>
                   40
                 </Links.EL>
               </td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.the-public-good.com/' }}>The PG</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>99 (35)</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>99 (35)</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>
                 <Links.EL link={{ source: 'https://ecograder.com/report/6sC1v7QNPIhoAsVrXeVzgDFf' }}>90</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>9</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>9</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>
                 <Links.EL link={{ source: 'https://www.websitecarbon.com/website/the-public-good-com/' }}>60</Links.EL>
               </td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.theguardian.com/' }}>The Guardian</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>897 (828)</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>897 (828)</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>
                 <Links.EL link={{ source: 'https://ecograder.com/report/624S3IReW0M3HhgAUNm5wkB2' }}>1069</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>296</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>296</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>
                 <Links.EL link={{ source: 'https://www.websitecarbon.com/website/theguardian-com-uk/' }}>1060</Links.EL>
               </td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.inaturalist.org/' }}>iNaturalist</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>771 (664)</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>771 (664)</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>
                 <Links.EL link={{ source: 'https://ecograder.com/report/cX5zkGvSYFOt8j7c1FnloAfp' }}>570</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>259</td>
-              <td class={`${styles.textRight} ${styles.bgbodyemissions}`}>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>259</td>
+              <td className={`${styles.textRight} ${styles.bgbodyemissions}`}>
                 <Links.EL link={{ source: 'https://www.websitecarbon.com/website/inaturalist-org/' }}>630</Links.EL>
               </td>
             </tr>
           </tbody>
         </table>
 
-        <div class={`${styles.small} ${styles.textCentre}`}>
+        <div className={`${styles.small} ${styles.textCentre}`}>
           ET: Emissions Tracker, EC: Ecograder, CN: Carbon Neutral Website, WC: Website Carbon
         </div>
 
@@ -381,175 +381,175 @@ const SustainableReportingEmissions = () => {
           the Emissions Tracker, I scroll smoothly to the end of the page.
         </p>
 
-        <table class={styles.tablepadded}>
+        <table className={styles.tablepadded}>
           <caption>Bytes transferred</caption>
           <thead>
             <tr>
               <th>Website</th>
-              <th colSpan={3} class={styles.textCentre}>
+              <th colSpan={3} className={styles.textCentre}>
                 Kilobytes
               </th>
             </tr>
             <tr>
-              <th class={styles.hideheader}>-</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>ET</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>DT</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>LH</th>
+              <th className={styles.hideheader}>-</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>ET</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>DT</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>LH</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.thegreenwebfoundation.org/' }}>The GWF</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>533</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>508</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>141</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>533</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>508</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>141</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.the-public-good.com/' }}>The PG</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>343</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>224</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>169</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>343</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>224</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>169</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.theguardian.com/' }}>The Guardian</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2291</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2200</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2259</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>2291</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>2200</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>2259</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.inaturalist.org/' }}>iNaturalist</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2798</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2400</td>
-              <td class={`${styles.textRight} ${styles.bgbodybytes}`}>2925</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>2798</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>2400</td>
+              <td className={`${styles.textRight} ${styles.bgbodybytes}`}>2925</td>
             </tr>
           </tbody>
         </table>
 
-        <div class={`${styles.small} ${styles.textCentre}`}>
+        <div className={`${styles.small} ${styles.textCentre}`}>
           ET: Emissions Tracker, DT: Chrome DevTools, LH: lighthouse API
         </div>
 
         <p>The number of requests.</p>
 
-        <table class={styles.tablepadded}>
+        <table className={styles.tablepadded}>
           <caption>Request count</caption>
           <thead>
             <tr>
               <th>Website</th>
-              <th colSpan={3} class={styles.textCentre}>
+              <th colSpan={3} className={styles.textCentre}>
                 Requests
               </th>
             </tr>
             <tr>
-              <th class={styles.hideheader}>-</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>ET</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>DT</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>LH</th>
+              <th className={styles.hideheader}>-</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>ET</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>DT</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>LH</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.thegreenwebfoundation.org/' }}>The GWF</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>21</td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>23</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>24</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>21</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>23</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.the-public-good.com/' }}>The PG</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>86</td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>56</td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>49</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>86</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>56</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>49</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.theguardian.com/' }}>The Guardian</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>114</td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>123</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>110</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>114</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>123</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.inaturalist.org/' }}>iNaturalist</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>44</td>
-              <td class={`${styles.textRight} ${styles.bgbodyrequests}`}>57</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>59</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>44</td>
+              <td className={`${styles.textRight} ${styles.bgbodyrequests}`}>57</td>
             </tr>
           </tbody>
         </table>
 
-        <div class={`${styles.small} ${styles.textCentre}`}>
+        <div className={`${styles.small} ${styles.textCentre}`}>
           ET: Emissions Tracker, DT: Chrome DevTools, LH: lighthouse API
         </div>
 
         <p>And load time.</p>
 
-        <table class={styles.tablepadded}>
+        <table className={styles.tablepadded}>
           <caption>Load time</caption>
           <thead>
             <tr>
               <th>Website</th>
-              <th colSpan={3} class={styles.textCentre}>
+              <th colSpan={3} className={styles.textCentre}>
                 Load (ms)
               </th>
             </tr>
             <tr>
-              <th class={styles.hideheader}>-</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>ET</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>DT</th>
-              <th class={`${styles.subheader} ${styles.textRight}`}>LH</th>
+              <th className={styles.hideheader}>-</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>ET</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>DT</th>
+              <th className={`${styles.subheader} ${styles.textRight}`}>LH</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.thegreenwebfoundation.org/' }}>The GWF</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1002</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>938</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>1002</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.the-public-good.com/' }}>The PG</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>877</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1345</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>983</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>877</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>1345</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.theguardian.com/' }}>The Guardian</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1240</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>1480</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>1533</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>1240</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>1480</td>
             </tr>
             <tr>
-              <td class={styles.bgbodydomain}>
+              <td className={styles.bgbodydomain}>
                 <Links.EL link={{ source: 'https://www.inaturalist.org/' }}>iNaturalist</Links.EL>
               </td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>6000</td>
-              <td class={`${styles.textRight} ${styles.bgbodytime}`}>3931</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>3906</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>6000</td>
+              <td className={`${styles.textRight} ${styles.bgbodytime}`}>3931</td>
             </tr>
           </tbody>
         </table>
 
-        <div class={`${styles.small} ${styles.textCentre}`}>
+        <div className={`${styles.small} ${styles.textCentre}`}>
           ET: Emissions Tracker, DT: Chrome DevTools, LH: lighthouse API
         </div>
 
@@ -652,7 +652,7 @@ const SustainableReportingEmissions = () => {
           is literally infinite. The initial page load was about 9MBs. After one minute of scrolling, I had downloaded:
         </p>
 
-        <p class={styles.huge}>174MBs</p>
+        <p className={styles.huge}>174MBs</p>
 
         <p>
           I would like to see native emissions counters in browsers that aggregate emissions across sites. Whether this

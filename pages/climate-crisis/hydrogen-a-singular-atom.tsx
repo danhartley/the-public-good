@@ -73,12 +73,12 @@ const Hydrogen = () => {
         </h2>
 
         <Accordion header="Hydrogen basics">
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <span>
               Symbol <strong>H</strong>; atomic number <strong>1</strong>; atomic mass <strong>1.0080u</strong>
             </span>
             <span>
-              Nonmetal, naturally occurring as a gas H<span class={styles.sub}>2</span> at room temperature.
+              Nonmetal, naturally occurring as a gas H<span className={styles.sub}>2</span> at room temperature.
             </span>
             <span>
               Derived from greek <em>hydro</em>, "water", and <em>genes</em>, "forming".
@@ -153,10 +153,10 @@ const Hydrogen = () => {
         </p>
 
         <Accordion header="The polarity of water">
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <p>
-              The polarity of water makes it a good solvent. When salt Na<span class={styles.super}>+</span>Cl
-              <span class={styles.super}>-</span> is added to water, it dissolves; positive sodium ions - charged atoms
+              The polarity of water makes it a good solvent. When salt Na<span className={styles.super}>+</span>Cl
+              <span className={styles.super}>-</span> is added to water, it dissolves; positive sodium ions - charged atoms
               are called ions - are attracted to the slightly negative hydrogen end of the water molecule, and positive
               chlorine ions are attracted to the oxygen end, thereby breaking apart, or dissolving, the bonds between
               the sodium and chlorine atoms.
@@ -167,7 +167,7 @@ const Hydrogen = () => {
               <Links.EL link={{ source: 'https://www.youtube.com/watch?v=hiyTfhjeF_U' }}>ionic bond</Links.EL> (video).
               Ionic bonds occur where an electron, or electrons, are transferred from one atom to another, in this case
               from a sodium atom to a chlorine atom. Since the two atoms now have opposite charges they attract. Na
-              becomes Na<span class={styles.super}>+</span> and Cl becomes Cl<span class={styles.super}>-</span>.
+              becomes Na<span className={styles.super}>+</span> and Cl becomes Cl<span className={styles.super}>-</span>.
             </p>
           </div>
         </Accordion>
@@ -191,7 +191,7 @@ const Hydrogen = () => {
         </p>
 
         <Accordion header="Steam-methane reforming reaction">
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <p>
               The methane in natural gas reacts with steam under high pressure in the presence of a catalyst to produce
               hydrogen, carbon monoxide and carbon dioxide.
@@ -205,7 +205,7 @@ const Hydrogen = () => {
               from the gas stream, to leave pure hydrogen.
             </p>
             <p>
-              <div class={styles.inset}>
+              <div className={styles.inset}>
                 <strong>Steam-methane reforming reaction</strong>
                 <span>
                   <Formula>CH4</Formula> + <Formula>H2O</Formula> (+heat) → <Formula>CO</Formula> + 3
@@ -221,12 +221,12 @@ const Hydrogen = () => {
         </Accordion>
 
         <Accordion header="Partial oxidation">
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <p>
               The methane and other hydrocarbons in natural gas react with a limited amount of oxygen to partially
               oxidise the hydrocarbons. The carbon monoxide produced is once again reacted with water in the "water-gas
               shift reaction".
-              <div class={styles.inset}>
+              <div className={styles.inset}>
                 <strong>Partial oxidation of methane reaction</strong>
                 <span>
                   <Formula>CH4</Formula> + <Formula>½O2</Formula> → <Formula>CO</Formula> + <Formula>2H2</Formula> (+
@@ -270,7 +270,7 @@ const Hydrogen = () => {
             varies
           </Links.EL>{' '}
           depending on the electrolyte selected. Oxygen gas forms at the anode, hydrogen gas at the cathode.
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <span>
               <strong>Anode Reaction</strong> <Formula>2H2O</Formula> → <Formula>O2</Formula> + 4H+ + 4e-
             </span>
@@ -353,10 +353,10 @@ const Hydrogen = () => {
         </p>
 
         <p>
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <strong>How fuel cells work</strong>
           </div>
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <span>
               A fuel, such as hydrogen, is fed to the anode, and air is fed to the cathode. In a hydrogen fuel cell, a
               catalyst at the anode separates hydrogen molecules into protons and electrons, which take different paths
@@ -449,7 +449,7 @@ const Hydrogen = () => {
         </p>
 
         <p>
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <span>
               Producing hydrogen from natural gas with carbon capture and storage, so-called blue hydrogen, could also
               be <em>the key to keeping Norwegian gas valuable in a low carbon future</em> [emphasis added].

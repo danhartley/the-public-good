@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'preact/hooks'
+import { useState, useEffect } from 'react'
 
 import Layout from 'components/layout/layout'
 import Links from 'components/links/Links'
@@ -64,7 +64,7 @@ const Companies = () => {
       return (
         <>
           <br />
-          <a class={styles.externalLink} href={p.src}>
+          <a className={styles.externalLink} href={p.src}>
             {p.title}
           </a>
         </>
@@ -91,7 +91,7 @@ const Companies = () => {
       <tr>
         <td
           id={c.name.split(' ').join('')}
-          class={c.name === company ? styles.showBlurb : styles.hideBlurb}
+          className={c.name === company ? styles.showBlurb : styles.hideBlurb}
           colSpan={5}
         >
           {c.blurb}
@@ -101,7 +101,7 @@ const Companies = () => {
   ))
 
   return rows ? (
-    <section class={styles.work}>
+    <section className={styles.work}>
       <h2>Work history</h2>
       <table>
         <thead>
@@ -126,7 +126,7 @@ const CurriculumVitae = () => {
   const tooling = getSkills('tooling')
 
   return (
-    <div class={styles.wideWrapper}>
+    <div className={styles.wideWrapper}>
       <Layout
         main={'Daniel Hartley'}
         strapline={'Web developer & writer'}
@@ -182,7 +182,7 @@ const CurriculumVitae = () => {
         <section>
           <h2>Contact</h2>
           <p>
-            <div class={styles.internalLink}>
+            <div className={styles.internalLink}>
               Profile:{' '}
               <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/danhartley/">
                 linkedin.com/in/danhartley
@@ -195,7 +195,7 @@ const CurriculumVitae = () => {
             </div>
           </p>
           <p>
-            <div class={styles.internalLink}>
+            <div className={styles.internalLink}>
               Email:{' '}
               <a
                 rel="noreferrer"
@@ -207,9 +207,9 @@ const CurriculumVitae = () => {
             </div>
           </p>
         </section>
-        <p class={styles.download}>
+        <p className={styles.download}>
           <h3>Do you need to download the raw data?</h3>
-          <div class={styles.internalLink}>
+          <div className={styles.internalLink}>
             <a id="download" href="https://the-public-good.com/" onClick={download}>
               Download
             </a>

@@ -1,11 +1,12 @@
 import { Line, Bar, Doughnut, Bubble } from 'react-chartjs-2';
 
-import { Chart } from 'chart.js';
+import { Chart, registerables } from 'chart.js';
 import annotationPlugin from 'chartjs-plugin-annotation';
 
 import { ChartType } from 'lib/enums';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
+Chart.register(...registerables);
 Chart.register(annotationPlugin);
 Chart.register(ChartDataLabels);
 
@@ -32,22 +33,22 @@ import styles from 'components/dashboard/Dashboard.module.scss';
         // https://pauljadam.com/demos/canvas.html
 
         type === ChartType.Line 
-            ? <div class={styles.canvas}>
+            ? <div className={styles.canvas}>
                 <Line data={data} options={config} >
                     <div>Hello Fallback World</div>
                 </Line></div>
             : type === ChartType.Bar
-                ? <div class={styles.canvas}>
+                ? <div className={styles.canvas}>
                     <Bar data={data} options={config}>
                         <div>Hello Fallback World</div>
                     </Bar></div>
                 : type === ChartType.Doughnut
-                    ? <div class={styles.canvas}>
+                    ? <div className={styles.canvas}>
                         <Doughnut data={data} options={config}>
                             <div>Hello Fallback World</div>
                         </Doughnut>
                       </div>
-                    : <div class={styles.canvas}>
+                    : <div className={styles.canvas}>
                         <Bubble data={data} options={config}>
                             <div>Hello Fallback World</div>
                         </Bubble>

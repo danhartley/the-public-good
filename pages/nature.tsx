@@ -41,7 +41,7 @@ const Nature = () => {
             The Economics of Biodiversity
           </Links.EL>{' '}
           report comes from the preface,
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             If we care about our common future and the common future of our descendants, we should all in part be
             naturalists.
           </span>

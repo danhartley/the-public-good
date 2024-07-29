@@ -74,7 +74,7 @@ const Population = () => {
             financial cost
           </Links.EL>{' '}
           of not educating girls, to the state and the individual:
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             On average, women with secondary school education earn almost twice as much as those with no education at
             all.
           </span>

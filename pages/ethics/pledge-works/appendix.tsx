@@ -19,7 +19,7 @@ const Appendix = () => {
   ]
 
   return (
-    <section class={styles.appendix}>
+    <section className={styles.appendix}>
       <h3>Appendix: Pledge Works Tools & Assets</h3>
       <div>
         <strong>Pledge Works</strong> is a <strong>ResponsibleTech.Work</strong> collaboration.

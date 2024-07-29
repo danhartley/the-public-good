@@ -12,8 +12,8 @@ const October = () => {
       image="https://lh3.googleusercontent.com/xYJeSlYaHX6cb3Jv7V7HxYZDTmT6vQQT6BoLAeC-c2F8GH1O9F0Mz1x2e1KGLY1Qx8HlfCIU2GLbC4HqHwOEfWNqauMXesTRJHNRtZFPnOLX7IEPJnK7HhFjzHQ4RhwVsli_fynV-9yuZJkIyiv3TyNRNvp3S1nXZkccrszVcNzTDKlsK4DaOIXQpf6R0opkJxRQWfxRcrcCckA85H8MYwzsGD1-w-o0S6MXaIlaMH37wS1-pvnG-xWkwCUyVyFllTwXMhcFTxyRaHiuNYqfbXTfk4gfOwhgrvJHHEqch096v5nCxvguBtKgqQ0kgtobozubuKxM3-23oRrWlou2vDu5G4FAsqPhx5wVrvvJ2cvv1HGdtsga7O4_1-65Ad9AuXlj_bTYuA-jKsiqkrc8PbI9C27KiJhYbxQumhLUMoh7AVgrfe0VdWPxSJwYikpo8pXUgnC5G9Qmv7TxQ8-msgv_Yhl_nj0Cw_yGvszlrzkswxhTabP00JBx-c7nm91HWnjNP_mRt35iYx65yrlbE72wgE5qPpS8WJ2PHeMe5l6JXKLE2qlHEAvixXTqIt3e2VNMVQC390FE4b1soXkr4iy7MbHae714nvNLYjxFHNh0AUqc84kvJ7FYFdSVSTGVQgFzL1pEQzTWuDLbccu-x9GHdbfLtNdC7Hxf3M3CETOyItBmywTXyo0WMjcASOu-FydECxSYLbcr22SCY9AF3mo=w1078-h721-no?authuser=0"
     >
       <section>
-        <div class={styles.day}>
-          <span class={styles.date}>Sunday 01 October 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Sunday 01 October 2023</span>
 
           <Links.EL
             link={{
@@ -85,8 +85,8 @@ const October = () => {
           <div>Ocean Acidification | Bozeman Science | YouTube</div>
         </div>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Monday 02 October 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Monday 02 October 2023</span>
 
           <h3>Mediterranean climate</h3>
 
@@ -116,8 +116,8 @@ const October = () => {
           </p>
         </div>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Tuesday 03 October 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Tuesday 03 October 2023</span>
           <h3>Unimagined</h3>
           <p>
             My thoughts break in two directions - towards despondency (that my archetypal landscape is artificial, a
@@ -237,16 +237,16 @@ const October = () => {
               Main olive grove types
               <ul>
                 <li>
-                  Low density <strong>LD</strong> (100 trees ha<span class={styles.super}>-1</span>)
+                  Low density <strong>LD</strong> (100 trees ha<span className={styles.super}>-1</span>)
                 </li>
                 <li>
-                  Medium density <strong>MD</strong> (200 trees ha<span class={styles.super}>-1</span>)
+                  Medium density <strong>MD</strong> (200 trees ha<span className={styles.super}>-1</span>)
                 </li>
                 <li>
-                  High density <strong>HD</strong> (400 trees ha<span class={styles.super}>-1</span>)
+                  High density <strong>HD</strong> (400 trees ha<span className={styles.super}>-1</span>)
                 </li>
                 <li>
-                  Super high density <strong>SHD</strong> (1650 trees ha<span class={styles.super}>-1</span>)
+                  Super high density <strong>SHD</strong> (1650 trees ha<span className={styles.super}>-1</span>)
                 </li>
               </ul>
               <div>10.8 Mha of olive trees are cultivated worldwide, 95% of which are in the Mediterranean region.</div>
@@ -336,7 +336,7 @@ const October = () => {
               portable backpack shakers with or without nets covering the floor.
             </li>
             <li>
-              Net production of these olive ecosystems is less than 3t ha<span class={styles.super}>-1</span> of fruits
+              Net production of these olive ecosystems is less than 3t ha<span className={styles.super}>-1</span> of fruits
             </li>
           </ul>
           Medium-Density Olive Orchards (MD)
@@ -372,7 +372,7 @@ const October = () => {
               This agricultural system is undergoing a fast transition to a higher-density system.
             </li>
             <li>
-              Net production of these olive ecosystems is 3-6t ha<span class={styles.super}>-1</span> of fruits
+              Net production of these olive ecosystems is 3-6t ha<span className={styles.super}>-1</span> of fruits
             </li>
           </ul>
           The High- (HD) and Super-High-Density (SHD) Olive Orchards
@@ -383,12 +383,12 @@ const October = () => {
               requiring less water in the summer than in the remaining period of the year.
             </li>
             <li>
-              Nevertheless, in a region with 562 mm year<span class={styles.super}>-1</span> of average rainfall [44],
-              250 mm to 500 mm year<span class={styles.super}>-1</span> of supplemental irrigation water are the
+              Nevertheless, in a region with 562 mm year<span className={styles.super}>-1</span> of average rainfall [44],
+              250 mm to 500 mm year<span className={styles.super}>-1</span> of supplemental irrigation water are the
               necessary values for the trees to achieve their maximum productivity.
             </li>
             <li>
-              This demand is lower when compared to the 500–800 mm year<span class={styles.super}>-1</span> required by
+              This demand is lower when compared to the 500–800 mm year<span className={styles.super}>-1</span> required by
               other perennial species. Under these conditions, higher densities lead to increased productivity.
             </li>
             <li>
@@ -437,11 +437,11 @@ const October = () => {
             <li>
               Olive trees' water requirements are a function of cultivar characteristics, management, and environmental
               demands. Olive trees withstand long periods of drought and can survive in very sparse plantings, even in
-              climates with very low annual rainfall: values of 150–200-250mm year<span class={styles.super}>-1</span>.
+              climates with very low annual rainfall: values of 150–200-250mm year<span className={styles.super}>-1</span>.
             </li>
             <li>
               However, for economic production, much higher precipitation or irrigation are required: an average annual
-              precipitation or irrigation 600-950mm year<span class={styles.super}>-1</span>, in soils with good
+              precipitation or irrigation 600-950mm year<span className={styles.super}>-1</span>, in soils with good
               water-holding capacity, is needed for successful cultivation.
             </li>
             <li>
@@ -478,10 +478,10 @@ const October = () => {
               </ul>
             </li>
             <li>
-              Net production of HD ecosystems is 6-12t ha<span class={styles.super}>-1</span> of fruits
+              Net production of HD ecosystems is 6-12t ha<span className={styles.super}>-1</span> of fruits
             </li>
             <li>
-              Net production of SHD ecosystems is 12-22t ha<span class={styles.super}>-1</span> of fruits
+              Net production of SHD ecosystems is 12-22t ha<span className={styles.super}>-1</span> of fruits
             </li>
           </ul>
           <h5>Agroecological Practices</h5>
@@ -618,8 +618,8 @@ const October = () => {
           <div>Salvatore Campose | Agromillora</div>
         </div>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Wednesday 04 October 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Wednesday 04 October 2023</span>
 
           <h3>The Mediterranean - naturalised home of the olive tree</h3>
 
@@ -656,31 +656,31 @@ const October = () => {
           <table>
             <thead>
               <tr>
-                <th class={styles.medium}>Forest Zone</th>
-                <th class={styles.medium}>Metres above sea level</th>
-                <th class={styles.medium}>Trees</th>
+                <th className={styles.medium}>Forest Zone</th>
+                <th className={styles.medium}>Metres above sea level</th>
+                <th className={styles.medium}>Trees</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class={styles.medium}>Carob and olive (hot dry climate)</td>
-                <td class={styles.medium}>0-100</td>
-                <td class={styles.medium}>Carob, olive</td>
+                <td className={styles.medium}>Carob and olive (hot dry climate)</td>
+                <td className={styles.medium}>0-100</td>
+                <td className={styles.medium}>Carob, olive</td>
               </tr>
               <tr>
-                <td class={styles.medium}>Evergreen forest</td>
-                <td class={styles.medium}>100-700</td>
-                <td class={styles.medium}>Aleppo pine (Steppe), Cork oak, Kermes oak (Garrigue), Holm oak (Maquis)</td>
+                <td className={styles.medium}>Evergreen forest</td>
+                <td className={styles.medium}>100-700</td>
+                <td className={styles.medium}>Aleppo pine (Steppe), Cork oak, Kermes oak (Garrigue), Holm oak (Maquis)</td>
               </tr>
               <tr>
-                <td class={styles.medium}>Deciduous forest</td>
-                <td class={styles.medium}>700-1500</td>
-                <td class={styles.medium}>Sweet chestnut, Deciduous oak, Beech</td>
+                <td className={styles.medium}>Deciduous forest</td>
+                <td className={styles.medium}>700-1500</td>
+                <td className={styles.medium}>Sweet chestnut, Deciduous oak, Beech</td>
               </tr>
               <tr>
-                <td class={styles.medium}>Coniferous forest</td>
-                <td class={styles.medium}>1500-2000</td>
-                <td class={styles.medium}>Pine, Silver fir</td>
+                <td className={styles.medium}>Coniferous forest</td>
+                <td className={styles.medium}>1500-2000</td>
+                <td className={styles.medium}>Pine, Silver fir</td>
               </tr>
             </tbody>
           </table>
@@ -705,7 +705,7 @@ const October = () => {
             <div>
               These forests are rarely seen in their climax state: dense dark woodlands up to 15 metres high, with an
               understory shrub layer of:
-              <ul class={styles.dashedItemsList}>
+              <ul className={styles.dashedItemsList}>
                 <li>
                   Strawberry Trees (<strong>Arbutus unedo</strong>)
                 </li>
@@ -788,7 +788,7 @@ const October = () => {
               the result of felling the primaeval evergreen forests.
             </div>
             <div>Products:</div>
-            <ul class={styles.dashedItemsList}>
+            <ul className={styles.dashedItemsList}>
               <li>Resins</li>
               <li>Tannins</li>
               <li>Gums</li>
@@ -1000,8 +1000,8 @@ const October = () => {
           </blockquote>
         </div>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Friday 06 October 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Friday 06 October 2023</span>
 
           <h3>Fire</h3>
 
@@ -1190,8 +1190,8 @@ const October = () => {
           </ul>
         </blockquote>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Thursday 19 October 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Thursday 19 October 2023</span>
 
           <h3>Revisions</h3>
 
@@ -1228,8 +1228,8 @@ const October = () => {
           </ul>
         </div>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Monday 23 October 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Monday 23 October 2023</span>
 
           <h3>Fire</h3>
 
@@ -1660,8 +1660,8 @@ const October = () => {
           </ul>
         </div>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Tuesday 24 October 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Tuesday 24 October 2023</span>
 
           <h3>Fieldnotes</h3>
 
@@ -1931,8 +1931,8 @@ const October = () => {
           </blockquote>
         </div>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Wednesday 25 October 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Wednesday 25 October 2023</span>
 
           <div>Good resource: </div>
           <Links.EL

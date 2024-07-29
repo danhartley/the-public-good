@@ -4,13 +4,13 @@ const Concrete = () => {
   return (
     <>
       <figure>
-        <ul class={styles.dashedCascadedItemsList}>
+        <ul className={styles.dashedCascadedItemsList}>
           <li>Respect people I build products for and treat them as friends, not users.</li>
           <li>
-            <ol type="A" class={styles.dashedCascadedItemsList}>
+            <ol type="A" className={styles.dashedCascadedItemsList}>
               <li>We pledge not to sell, exchange or exploit user data.</li>
               <li>
-                <ol type="i" class={styles.dashedCascadedItemsList}>
+                <ol type="i" className={styles.dashedCascadedItemsList}>
                   <li>No cross-site or cross-device tracking.</li>
                 </ol>
               </li>

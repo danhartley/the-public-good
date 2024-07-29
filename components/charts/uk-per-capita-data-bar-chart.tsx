@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 
 import CanvasChart from 'components/dashboard/canvas-chart';
 
@@ -95,7 +95,7 @@ const MiniPieChart = ({energyUses}) => {
         <>
         { data === null 
             ? <div>No do!</div>
-            : <div class={styles.mini}>
+            : <div className={styles.mini}>
                 <CanvasChart type={type} data={data} plugins={plugins} options={options} scales={null} /> 
             </div>
             

@@ -30,7 +30,7 @@ const Pledges = () => {
       <section>
         <h2>
           "If anyone is feeling anxious, worried or maybe you just want a chat, please, please do not come crying to
-          me." <span class={styles.attribution}>Sister Michael, Derry Girls</span>
+          me." <span className={styles.attribution}>Sister Michael, Derry Girls</span>
         </h2>
         <figure>
           <div>
@@ -39,7 +39,7 @@ const Pledges = () => {
               href="https://commons.wikimedia.org/wiki/File:Beardsley-peacockskirt.PNG"
             >
               <img
-                class={styles.externalImg}
+                className={styles.externalImg}
                 width="172px"
                 height="240px"
                 alt="Beardsley-peacockskirt"
@@ -93,7 +93,7 @@ const Pledges = () => {
         <p>
           <h3>Pledges</h3>
           <p>
-            <div class={styles.inset}>
+            <div className={styles.inset}>
               <div>
                 I pledge to stop using ChatGPT until the conditions and rights of employees involved in outsourced work
                 have been addressed.
@@ -104,7 +104,7 @@ const Pledges = () => {
             </div>
           </p>
           <p>
-            <div class={styles.inset}>
+            <div className={styles.inset}>
               <div>
                 <del>
                   To prevent myself from being distracted by advances in AI, I pledge to return my focus to other
@@ -127,7 +127,7 @@ const Pledges = () => {
             </div>
           </p>
           <p>
-            <div class={styles.inset}>
+            <div className={styles.inset}>
               <div>
                 To compensate for the water use of my chats with ChatGPT, I pledge to use grey water for my plants.
               </div>
@@ -137,7 +137,7 @@ const Pledges = () => {
             </div>
           </p>
           <p>
-            <div class={styles.inset}>
+            <div className={styles.inset}>
               <div>
                 To share what I learn about AI, I pledge to provide links to the materials, sources, and people that
                 have helped me.

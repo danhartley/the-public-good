@@ -76,7 +76,7 @@ const Trees = () => {
               </strong>
             </dt>
             <dd>
-              44 &#247; 12 = 3<span class={styles.fraction}>&#8532;</span>
+              44 &#247; 12 = 3<span className={styles.fraction}>&#8532;</span>
             </dd>
             <dt>
               <strong>
@@ -84,8 +84,8 @@ const Trees = () => {
               </strong>
             </dt>
             <dd>
-              Example 2 tonnes C to <Formula>CO2</Formula>: 2 &#215; 3<span class={styles.fraction}>&#8532;</span> = 7
-              <span class={styles.fraction}>&#8531;</span> t
+              Example 2 tonnes C to <Formula>CO2</Formula>: 2 &#215; 3<span className={styles.fraction}>&#8532;</span> = 7
+              <span className={styles.fraction}>&#8531;</span> t
             </dd>
           </dl>
           <div>
@@ -98,7 +98,7 @@ const Trees = () => {
 
         <aside>
           To convert a mass in carbon C to <Formula>CO2</Formula> multiple by 3
-          <span class={styles.fraction}>&#8532;</span>
+          <span className={styles.fraction}>&#8532;</span>
         </aside>
 
         <p>
@@ -252,8 +252,8 @@ const Trees = () => {
               </strong>
             </dt>
             <dd>
-              665 kg &#215; 3<span class={styles.fraction}>&#8532;</span> = 2438
-              <span class={styles.fraction}>&#8531;</span> kg
+              665 kg &#215; 3<span className={styles.fraction}>&#8532;</span> = 2438
+              <span className={styles.fraction}>&#8531;</span> kg
             </dd>
           </dl>
           <div>1 tonne is equal to 1000 kg.</div>
@@ -354,7 +354,7 @@ const Trees = () => {
         </dl>
 
         <aside>
-          Per capita we emit ~6<span class={styles.fraction}>&#188;</span> tonnes of <Formula>CO2</Formula>e each year
+          Per capita we emit ~6<span className={styles.fraction}>&#188;</span> tonnes of <Formula>CO2</Formula>e each year
         </aside>
 
         <h3>How many trees would we need to sequester all of our emissions?</h3>
@@ -647,7 +647,7 @@ const Trees = () => {
               <strong>Current emissions in carbon</strong>
             </dt>
             <dd>
-              50 Gt &#247; 3<span class={styles.fraction}>&#8532;</span> = 13.6 Gt
+              50 Gt &#247; 3<span className={styles.fraction}>&#8532;</span> = 13.6 Gt
             </dd>
             <dt>
               <strong>Total emissions at current rate</strong>
@@ -970,7 +970,7 @@ const Trees = () => {
               Since 1751 the world has emitted over 1.5 trillion tonnes of CO2
             </Links.EL>
             . We know this equates to roughly 400 billion tonnes/400 Gigatonnes of carbon (1.5 trillion &#247; 3
-            <span class={styles.fraction}>&#8532;</span>).
+            <span className={styles.fraction}>&#8532;</span>).
           </div>
         </p>
       </section>

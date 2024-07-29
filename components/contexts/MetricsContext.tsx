@@ -1,5 +1,5 @@
-import { useContext, useState } from 'preact/hooks';
-import { createContext } from 'preact';
+import { useContext, useState } from 'react';
+import { createContext } from 'react';
 import { MetricsContextState, Metrics } from 'components/shared/types';
 
 const MetricsContext = createContext({} as MetricsContextState);

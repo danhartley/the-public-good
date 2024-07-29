@@ -21,7 +21,7 @@ const Services = () => {
         <h2>New sites</h2>
         <p>
           <span>The sites I build have the following characteristics:</span>
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             <li>
               <strong>Secure</strong>: opportunities for attack are minimised.
             </li>
@@ -63,10 +63,10 @@ const Services = () => {
 
         <h2>Best practices</h2>
         <p>
-          <span class={styles.internalLink}>
+          <span className={styles.internalLink}>
             I have selected and tested this development stack over the course of{' '}
             <Link href={'/projects'}>
-              <a>4 projects</a>
+              4 projects
             </Link>
             .
           </span>

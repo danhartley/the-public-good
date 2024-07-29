@@ -61,7 +61,7 @@ const Meetings = () => {
         <p>
           <Links.IL link={{ source: 'web-development/practice/titles' }}>Titles</Links.IL>
         </p>
-        <p class={styles.medium}>NB There are times when short meetings are appropriate.</p>
+        <p className={styles.medium}>NB There are times when short meetings are appropriate.</p>
       </section>
       <section>
         <h2>External Links</h2>

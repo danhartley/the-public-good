@@ -12,8 +12,8 @@ const July = () => {
       image="https://lh3.googleusercontent.com/xYJeSlYaHX6cb3Jv7V7HxYZDTmT6vQQT6BoLAeC-c2F8GH1O9F0Mz1x2e1KGLY1Qx8HlfCIU2GLbC4HqHwOEfWNqauMXesTRJHNRtZFPnOLX7IEPJnK7HhFjzHQ4RhwVsli_fynV-9yuZJkIyiv3TyNRNvp3S1nXZkccrszVcNzTDKlsK4DaOIXQpf6R0opkJxRQWfxRcrcCckA85H8MYwzsGD1-w-o0S6MXaIlaMH37wS1-pvnG-xWkwCUyVyFllTwXMhcFTxyRaHiuNYqfbXTfk4gfOwhgrvJHHEqch096v5nCxvguBtKgqQ0kgtobozubuKxM3-23oRrWlou2vDu5G4FAsqPhx5wVrvvJ2cvv1HGdtsga7O4_1-65Ad9AuXlj_bTYuA-jKsiqkrc8PbI9C27KiJhYbxQumhLUMoh7AVgrfe0VdWPxSJwYikpo8pXUgnC5G9Qmv7TxQ8-msgv_Yhl_nj0Cw_yGvszlrzkswxhTabP00JBx-c7nm91HWnjNP_mRt35iYx65yrlbE72wgE5qPpS8WJ2PHeMe5l6JXKLE2qlHEAvixXTqIt3e2VNMVQC390FE4b1soXkr4iy7MbHae714nvNLYjxFHNh0AUqc84kvJ7FYFdSVSTGVQgFzL1pEQzTWuDLbccu-x9GHdbfLtNdC7Hxf3M3CETOyItBmywTXyo0WMjcASOu-FydECxSYLbcr22SCY9AF3mo=w1078-h721-no?authuser=0"
     >
       <section>
-        <div class={styles.day}>
-          <span class={styles.date}>Saturday 01 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Saturday 01 July 2023</span>
 
           <h2>AI & Electricity</h2>
 
@@ -49,8 +49,8 @@ const July = () => {
           </p>
           <p>Is AI sustainable, and how should we use it?</p>
         </div>
-        <div class={styles.day}>
-          <div class={styles.date}>Thursday 06 July 2023</div>
+        <div className={styles.day}>
+          <div className={styles.date}>Thursday 06 July 2023</div>
 
           <h2>On providing supporting evidence to my arguments</h2>
 
@@ -107,8 +107,8 @@ const July = () => {
           </div>
           <div>CarbonBrief | Orla Dwyer</div>
         </div>
-        <div class={styles.day}>
-          <div class={styles.date}>Friday 07 July 2023</div>
+        <div className={styles.day}>
+          <div className={styles.date}>Friday 07 July 2023</div>
 
           <h3>On Superalignment</h3>
 
@@ -318,8 +318,8 @@ const July = () => {
             </Links.EL>
           </div>
         </div>
-        <div class={styles.day}>
-          <span class={styles.date}>Saturday 08 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Saturday 08 July 2023</span>
 
           <h3>On AI & Exploitation</h3>
 
@@ -387,8 +387,8 @@ const July = () => {
             </li>
           </ul>
         </div>
-        <div class={styles.day}>
-          <span class={styles.date}>Sunday 09 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Sunday 09 July 2023</span>
 
           <h3>The old switcheroo</h3>
 
@@ -550,8 +550,8 @@ const July = () => {
             costs and making a case for net gain.
           </p>
         </div>
-        <div class={styles.day}>
-          <span class={styles.date}>Monday 10 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Monday 10 July 2023</span>
 
           <h3>Stochastic parrots again</h3>
 
@@ -588,8 +588,8 @@ const July = () => {
             <li>Ridicules idea that humans are stochastic parrots which is fine, but no explanation as to why</li>
           </ul>
         </div>
-        <div class={styles.day}>
-          <span class={styles.date}>Tuesday 11 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Tuesday 11 July 2023</span>
 
           <h3>Cost of ML</h3>
 
@@ -626,15 +626,15 @@ const July = () => {
           <p>ICT sector currently accounts for ~1.4% global GHG emissions</p>
           <ul>
             <li>
-              <span class={styles.fraction}>&#8532;</span> operational energy use (Scope 1 & 2)
+              <span className={styles.fraction}>&#8532;</span> operational energy use (Scope 1 & 2)
             </li>
             <li>
-              <span class={styles.fraction}>&#8531;</span> materials extraction, manufacturing, transportation and
+              <span className={styles.fraction}>&#8531;</span> materials extraction, manufacturing, transportation and
               end-of-life phase (Scope 3)
             </li>
             <li>
               Cloud and hyperscale data centres account for ~.1-.2% global GHG emissions of which ML less than{' '}
-              <span class={styles.fraction}>&#188;</span>
+              <span className={styles.fraction}>&#188;</span>
             </li>
             <li>
               Energy for training and using ML is growing rapidly but so is efficiency (overall ICT energy rose 6%
@@ -719,8 +719,8 @@ const July = () => {
             <li>Standards and shift from private to public entities, and enforced interoperability</li>
           </ul>
         </div>
-        <div class={styles.day}>
-          <span class={styles.date}>Thursday 13 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Thursday 13 July 2023</span>
 
           <h3>AI & Ethics</h3>
 
@@ -898,8 +898,8 @@ const July = () => {
             </aside>
           </Accordion>
         </div>
-        <div class={styles.day}>
-          <span class={styles.date}>Monday 17 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Monday 17 July 2023</span>
 
           <h3>Sustainable AI</h3>
 
@@ -1027,7 +1027,7 @@ const July = () => {
           </p>
 
           <p>
-            The units of measurement are gCO<span class={styles.sub}>2</span>eq/kWh.
+            The units of measurement are gCO<span className={styles.sub}>2</span>eq/kWh.
           </p>
 
           <p>
@@ -1049,7 +1049,7 @@ const July = () => {
             <br />
             <br />
             <i>
-              0.3 kW × 100 h × 500 g/kWh = 15000 g = 15 kg of CO<span class={styles.sub}>2</span>eq
+              0.3 kW × 100 h × 500 g/kWh = 15000 g = 15 kg of CO<span className={styles.sub}>2</span>eq
             </i>
           </p>
 
@@ -1088,25 +1088,25 @@ const July = () => {
           </p>
 
           <dl>
-            <dt class={styles.mb}>
+            <dt className={styles.mb}>
               <strong>Low carbon intensity</strong>
             </dt>
-            <dd class={styles.ml}>
+            <dd className={styles.ml}>
               hydroelectricity, solar and wind{' '}
               <strong>
-                11 to 147 gCO<span class={styles.sub}>2</span>eq/kWh
+                11 to 147 gCO<span className={styles.sub}>2</span>eq/kWh
               </strong>
             </dd>
           </dl>
 
           <dl>
-            <dt class={styles.mb}>
+            <dt className={styles.mb}>
               <strong>High(er) carbon intensity</strong>
             </dt>
-            <dd class={styles.ml}>
+            <dd className={styles.ml}>
               coal, natural gas and oil{' '}
               <strong>
-                360 to 680 gCO<span class={styles.sub}>2</span>eq/kWh
+                360 to 680 gCO<span className={styles.sub}>2</span>eq/kWh
               </strong>
             </dd>
           </dl>
@@ -1122,15 +1122,15 @@ const July = () => {
             <caption>Main Energy Sources for the models analyzed and their carbon intensities</caption>
             <thead>
               <tr>
-                <th class={styles.medium}>
+                <th className={styles.medium}>
                   <u>Main</u> energy source
                 </th>
-                <th class={styles.medium}>Number of Models</th>
-                <th class={styles.medium}>Low-Carbon?</th>
-                <th class={styles.medium}>
+                <th className={styles.medium}>Number of Models</th>
+                <th className={styles.medium}>Low-Carbon?</th>
+                <th className={styles.medium}>
                   Average Carbon Intensity{' '}
-                  <span class={styles.small}>
-                    gCO<span class={styles.sub}>2</span>eq/kWh
+                  <span className={styles.small}>
+                    gCO<span className={styles.sub}>2</span>eq/kWh
                   </span>
                 </th>
               </tr>
@@ -1173,8 +1173,8 @@ const July = () => {
             <caption>Models trained by country</caption>
             <thead>
               <tr>
-                <th class={styles.medium}>Country</th>
-                <th class={styles.medium}>Number of models</th>
+                <th className={styles.medium}>Country</th>
+                <th className={styles.medium}>Number of models</th>
               </tr>
             </thead>
             <tbody>
@@ -1227,7 +1227,7 @@ const July = () => {
 
           <h5>What is the order of magnitude of CO2 emissions produced by training ML models?</h5>
 
-          <p class={styles.fontDefault}>
+          <p className={styles.fontDefault}>
             <q>The relationship between energy consumed and carbon emitted is largely linear.</q>
             <br />
             <q>
@@ -1286,11 +1286,11 @@ const July = () => {
                 to reduce it
               </li>
               <li>
-                Total emissions from training is significant ~253 tons of CO<span class={styles.sub}>2</span>eq
+                Total emissions from training is significant ~253 tons of CO<span className={styles.sub}>2</span>eq
               </li>
               <li>
-                Emissions per model trained is rising, from an average of 487 tons CO<span class={styles.sub}>2</span>eq
-                in 2015-16 to 2020 tons CO<span class={styles.sub}>2</span>eq in 2020-22
+                Emissions per model trained is rising, from an average of 487 tons CO<span className={styles.sub}>2</span>eq
+                in 2015-16 to 2020 tons CO<span className={styles.sub}>2</span>eq in 2020-22
               </li>
               <li>Overall emissions due to ML model training are rising</li>
               <li>
@@ -1309,29 +1309,29 @@ const July = () => {
           <p>
             Training numbers
             <dl>
-              <dt class={styles.mb}>
+              <dt className={styles.mb}>
                 <strong>Range</strong>
               </dt>
-              <dd class={styles.ml}>15 minutes to 400,000 hours (total GPU/TPU time)</dd>
-              <dt class={styles.mb}>
+              <dd className={styles.ml}>15 minutes to 400,000 hours (total GPU/TPU time)</dd>
+              <dt className={styles.mb}>
                 <strong>Median</strong>
               </dt>
-              <dd class={styles.ml}>72 hours (total GPU/TPU time)</dd>
-              <dt class={styles.mb}>
+              <dd className={styles.ml}>72 hours (total GPU/TPU time)</dd>
+              <dt className={styles.mb}>
                 <strong>Maximum in sample</strong>
               </dt>
-              <dd class={styles.ml}>400,000 GPU hours (equivalent to about 170 days with 100 GPUs)</dd>
-              <dt class={styles.mb}>
+              <dd className={styles.ml}>400,000 GPU hours (equivalent to about 170 days with 100 GPUs)</dd>
+              <dt className={styles.mb}>
                 <strong>GPT 3 (not in sample)</strong>
               </dt>
-              <dd class={styles.ml}>
+              <dd className={styles.ml}>
                 est. 3.5 million GPU hours (equivalent to about 14.8 days with 10,000 GPUs, or 1,480 days if had been
                 trained using 100 GPUs)
               </dd>
-              <dt class={styles.mb}>
+              <dt className={styles.mb}>
                 <strong>GPT 4 (not in sample)</strong>
               </dt>
-              <dd class={styles.ml}>Unknown</dd>
+              <dd className={styles.ml}>Unknown</dd>
             </dl>
           </p>
 
@@ -1404,7 +1404,7 @@ const July = () => {
           <h4>Running codecarbon locally</h4>
 
           <p>
-            <div class={styles.fontDefault}>
+            <div className={styles.fontDefault}>
               Instructions <Links.EL link={{ source: 'https://github.com/mlco2/codecarbon' }}>Code Carbon</Links.EL>.
               <br />
               - Note to self: paths not updated so after installing python used:
@@ -1416,7 +1416,7 @@ const July = () => {
 
           <p>Example output</p>
 
-          <code class={styles.small}>
+          <code className={styles.small}>
             <div>[codecarbon INFO @ 12:02:29] Energy consumed for RAM : 0.000100 kWh. RAM Power : 6.0 W</div>
             <div>[codecarbon DEBUG @ 12:02:29] RAM : 6.00 W during 10.00 s [measurement time: 0.0004]</div>
             <div>[codecarbon INFO @ 12:02:29] Energy consumed for all CPUs : 0.000083 kWh. Total CPU Power : 5.0 W</div>
@@ -1453,8 +1453,8 @@ const July = () => {
             <div>Andrew Deck for rest of world</div>
           </div>
         </div>
-        <div class={styles.day}>
-          <span class={styles.date}>Tuesday 18 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Tuesday 18 July 2023</span>
 
           <h3>The cost of using generative AI</h3>
 
@@ -1490,7 +1490,7 @@ const July = () => {
           </p>
 
           <p>
-            One Google search emits about 0.2g of CO<span class={styles.sub}>2</span>e
+            One Google search emits about 0.2g of CO<span className={styles.sub}>2</span>e
           </p>
 
           <blockquote cite="https://weareyard.com/insights/the-carbon-impact-of-ai-vs-search-engines">
@@ -1533,7 +1533,7 @@ const July = () => {
             <ul>
               <li>
                 A ChatGPT-like application with estimated use of 11 million requests/hour produces emissions of 12.8k
-                metric ton CO<span class={styles.sub}>2</span>/year
+                metric ton CO<span className={styles.sub}>2</span>/year
               </li>
               <li>This is 25 times the cost of training GPT-3</li>
               <li>
@@ -1579,10 +1579,10 @@ const July = () => {
             <caption>Annual Compute for Inference and Model Training, various workload models (A100 GPU-hrs)</caption>
             <thead>
               <tr>
-                <th class={styles.medium}>Workload Model</th>
-                <th class={styles.medium}>Inference Cost (GPU-hrs)</th>
-                <th class={styles.medium}>Training Cost (GPU-hrs)</th>
-                <th class={styles.medium}>Inference/Training</th>
+                <th className={styles.medium}>Workload Model</th>
+                <th className={styles.medium}>Inference Cost (GPU-hrs)</th>
+                <th className={styles.medium}>Training Cost (GPU-hrs)</th>
+                <th className={styles.medium}>Inference/Training</th>
               </tr>
             </thead>
             <tbody>
@@ -1635,14 +1635,14 @@ const July = () => {
               </Links.EL>{' '}
               package or after training using the{' '}
               <Links.EL link={{ source: 'https://mlco2.github.io/impact/', label: 'ML CO2 Calculator' }}>
-                ML CO<span class={styles.sub}>2</span> Calculator
+                ML CO<span className={styles.sub}>2</span> Calculator
               </Links.EL>{' '}
               .
             </li>
           </ul>
         </div>
-        <div class={styles.day}>
-          <span class={styles.date}>Wednesday 19 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Wednesday 19 July 2023</span>
 
           <h3>Llama 2</h3>
 
@@ -1671,8 +1671,8 @@ const July = () => {
             </li>
           </ul>
         </div>
-        <div class={styles.day}>
-          <span class={styles.date}>Thursday 20 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Thursday 20 July 2023</span>
           <h3>Open letter</h3>
           <div>
             <Links.EL
@@ -1839,8 +1839,8 @@ const July = () => {
           </ul>
           <div>Note: reached Transportation. TBC.</div>
         </div>
-        <div class={styles.day}>
-          <span class={styles.date}>Friday 21 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Friday 21 July 2023</span>
           <h3>Interactive fiction</h3>
           <div>
             <Links.EL
@@ -1940,8 +1940,8 @@ const July = () => {
           <div>Emily M. Bender</div>
         </div>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Thursday 27 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Thursday 27 July 2023</span>
 
           <h3>Fun</h3>
 
@@ -1958,8 +1958,8 @@ const July = () => {
           <div>Waxy.org | Andy Baio</div>
         </div>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Friday 28 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Friday 28 July 2023</span>
 
           <h3>AI & Democracy</h3>
 
@@ -1977,8 +1977,8 @@ const July = () => {
           <div>The Guardian | Polly Curtis | Demos</div>
         </div>
 
-        <div class={styles.day}>
-          <span class={styles.date}>Saturday 29 July 2023</span>
+        <div className={styles.day}>
+          <span className={styles.date}>Saturday 29 July 2023</span>
 
           <h3>Climate change</h3>
 

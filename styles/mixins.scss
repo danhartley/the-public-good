@@ -1,3 +1,16 @@
+@mixin vars {    
+    --m:light;
+    --fg:12, 12, 12;
+    --bg:250, 255, 250;
+    --l:28, 83, 120;
+    --l-v:78, 44, 146;
+    --il:50, 50, 50;
+    --il-fw:bold;
+    --table-bg-brown:204, 190, 159;
+    --table-bg-blue:171, 195, 201;
+    --em:155, 0, 0;
+    --key:45, 45, 45;
+}
 @mixin inset() {
     padding: 0 0 0 calc(0.5rem + 1vw);
     margin: 0.1rem 0;

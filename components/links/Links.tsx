@@ -4,35 +4,35 @@ import styles from 'components/links/Links.module.scss';
 
 const EL = ({link, children = null}) => {
     return link.label 
-        ? <span class={styles.externalLink}><a aria-label={link.label} href={`${link.source}`}>{children}</a></span>
-        : <span class={styles.externalLink}><a href={`${link.source}`}>{children}</a></span>
+        ? <span className={styles.externalLink}><a aria-label={link.label} href={`${link.source}`}>{children}</a></span>
+        : <span className={styles.externalLink}><a href={`${link.source}`}>{children}</a></span>
 }
 
 const ExternalLinksList = ({links}) => {
     const list = links.map(link => {
-        return <li class={styles.externalLink}>
+        return <li className={styles.externalLink}>
             <a href={`${link.source}`}>{link.name}</a>
         </li>
     });
 
     return (
-        <ul class={styles.unorderedList}>{list}</ul>
+        <ul className={styles.unorderedList}>{list}</ul>
     )
 };
 
 const IL = ({link, children = null}) => {
-    return  <span class={styles.internalLink}>                
+    return  <span className={styles.internalLink}>                
                 <Link href={`/${link.source}`}>
-                    <a href={`/${link.source}`}>{children}</a>
+                    {children}
                 </Link>
             </span>            
 };
 
 const ILBlock = ({link}) => {
     return  <p>
-                <span class={styles.internalLink}>                
+                <span className={styles.internalLink}>                
                     <Link href={`/${link.value}`}>
-                        <a href={`/${link.value}`}>{link.text}</a>
+                        {link.text}
                     </Link>
                 </span>
             </p>
@@ -40,11 +40,10 @@ const ILBlock = ({link}) => {
 
 const Home = ({ textAlign = 'left' }) => {
     return (
-        <section class={styles.internalLinkBlock}>
-        {/* <section class={styles.internalLinkBlock} style={`text-align:${textAlign}`}> */}
-            <p class={styles.internalLink}>
+        <section className={styles.internalLinkBlock}>
+            <p className={styles.internalLink}>
                 <Link href={'/'}>
-                    <a href={'/'}>The PG Home</a>
+                    The PG Home
                 </Link>
             </p>
         </section>
@@ -53,25 +52,25 @@ const Home = ({ textAlign = 'left' }) => {
 
 const RelatedLinks = ({links}) => {
 
-    const list = links.map(link => {        
+    const list = links.map((link, i) => {        
         return link.value.indexOf('http') > -1
         ? 
-        <li class={styles.externalLink}>
+        <li key={i.toString()} className={styles.externalLink}>
             <a href={`${link.value}`}>{link.text}</a>
         </li>
         :
         <li>
-            <Link href={`/${link.value}`}>
-                <a href={`/${link.value}`}>{link.text}</a>
+            <Link key={i.toString()} href={`/${link.value}`}>
+            {link.text}
             </Link>
         </li>
     });
 
     return (
         <section>
-            <p class={styles.internalLink}>
-                <h2>Related content</h2>
-                <ul class={styles.dashedItemsList}>
+            <h2>Related content</h2>
+            <p className={styles.internalLink}>
+                <ul className={styles.dashedItemsList}>
                     {list}
                 </ul>
             </p>                

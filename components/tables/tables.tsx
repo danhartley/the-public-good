@@ -70,7 +70,7 @@ const EnergyDensities = () => {
                 <th>Energy density</th>
             </tr>
         </thead>
-        <tbody class={styles.externalLink}>
+        <tbody className={styles.externalLink}>
             { fuels }
         </tbody>
     </table>);
@@ -136,7 +136,7 @@ const PowerDensities = () => {
                 <th>Power density W/m2 median+</th>
             </tr>
         </thead>
-        <tbody class={styles.externalLink}>
+        <tbody className={styles.externalLink}>
             { vs }
         </tbody>
     </table>);    
@@ -196,7 +196,7 @@ const FuelEmissions = () => {
                 <th>Emis­sions kgCO2/GJ</th>
             </tr>
         </thead>
-        <tbody class={styles.externalLink}>
+        <tbody className={styles.externalLink}>
             { fuels }
         </tbody>
     </table>);
@@ -236,7 +236,7 @@ const CumulativeEmissions = () => {
                     <th>Cumulative emissions (billions of tonnes)</th>
                 </tr>
             </thead>
-            <tbody class={styles.externalLink}>
+            <tbody className={styles.externalLink}>
                 { emissions }
             </tbody>
         </table>);
@@ -349,7 +349,7 @@ const Humans = () => {
                 <th>Notes</th>
             </tr>
         </thead>
-        <tbody class={styles.externalLink}>
+        <tbody className={styles.externalLink}>
             { humans }
         </tbody>
     </table>);
@@ -420,7 +420,7 @@ const Geology = () => {
                 <th>Notes</th>
             </tr>
         </thead>
-        <tbody class={styles.externalLink}>
+        <tbody className={styles.externalLink}>
             { geology }
         </tbody>
     </table>);
@@ -549,9 +549,9 @@ const Calculators = ({withScores = false}) => {
             <tr>
                 <td>{c.name}</td>
                 <td>{c.score.co2}t CO2e</td>
-                <td class={styles.wideOnly}>{c.score.shareable ? 'true' : 'false'}</td>
-                {c.score.method ? <td class={styles.wideOnly}><a id={c.name} href={c.score.method}>{c.score.sources ? 'true' : 'false'}</a></td> : null }
-                <td class={styles.wideOnly}><ul class={styles.dashedItemsList}>{other}</ul></td>
+                <td className={styles.wideOnly}>{c.score.shareable ? 'true' : 'false'}</td>
+                {c.score.method ? <td className={styles.wideOnly}><a id={c.name} href={c.score.method}>{c.score.sources ? 'true' : 'false'}</a></td> : null }
+                <td className={styles.wideOnly}><ul className={styles.dashedItemsList}>{other}</ul></td>
             </tr> )
         });
 
@@ -561,12 +561,12 @@ const Calculators = ({withScores = false}) => {
                 <tr>
                     <th>Calculator</th>
                     <th>Footprint</th>
-                    <th class={styles.wideOnly}>Shareable</th>
-                    <th class={styles.wideOnly}>Sources</th>
-                    <th class={styles.wideOnly}>Other</th>
+                    <th className={styles.wideOnly}>Shareable</th>
+                    <th className={styles.wideOnly}>Sources</th>
+                    <th className={styles.wideOnly}>Other</th>
                 </tr>
             </thead>
-            <tbody class={styles.externalLink}>
+            <tbody className={styles.externalLink}>
                 { rows }
             </tbody>
             </table>
@@ -624,7 +624,7 @@ const EmissionsDates = () => {
                 <th></th>
             </tr>
         </thead>
-        <tbody class={styles.externalLink}>
+        <tbody className={styles.externalLink}>
             { edates }
         </tbody>
     </table>);
@@ -675,7 +675,7 @@ const MetricPrefixes = () => {
             <tr>
                 <td>{p.name}</td>
                 <td>{p.symbol}</td>
-                <td>10<span class={styles.super}>{p.base}</span></td>
+                <td>10<span className={styles.super}>{p.base}</span></td>
             </tr>
         )
     });
@@ -688,7 +688,7 @@ const MetricPrefixes = () => {
                 <th>Base</th>
             </tr>
         </thead>
-        <tbody class={styles.externalLink}>
+        <tbody className={styles.externalLink}>
             { ps }
         </tbody>
     </table>);

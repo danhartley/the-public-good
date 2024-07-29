@@ -35,7 +35,7 @@ const PledgeWorks = () => {
                     For an introduction to the open source project, please go to <Links.EL link={{source:"https://responsibletech.work/tools/development/pledge-works/"}}>Pledge Works</Links.EL>.                    
                 </p>
                 <p>If you are interested in how I use Pledge Works at The Public Good, see below.</p>
-                <ul class={styles.dashedItemsList}>
+                <ul className={styles.dashedItemsList}>
                     {
                         pwLinks.map(link => {
                             return <li><Links.IL link={{source:link.source}}>{link.name}</Links.IL> </li>

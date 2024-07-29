@@ -13,7 +13,7 @@ const showYourWorkings = () => {
     >
       <section>
         <h2>
-          "1729 is the magic number." <span class={styles.attribution}> Srinivas Ramanujan</span>
+          "1729 is the magic number." <span className={styles.attribution}> Srinivas Ramanujan</span>
         </h2>
       </section>
       <h3>How resource intensive is AI?</h3>
@@ -53,9 +53,9 @@ const showYourWorkings = () => {
         <caption>Context window</caption>
         <thead>
           <tr>
-            <th class={styles.medium}>Model</th>
-            <th class={styles.medium}>Tokens</th>
-            <th class={styles.medium}>Words</th>
+            <th className={styles.medium}>Model</th>
+            <th className={styles.medium}>Tokens</th>
+            <th className={styles.medium}>Words</th>
           </tr>
         </thead>
         <tbody>

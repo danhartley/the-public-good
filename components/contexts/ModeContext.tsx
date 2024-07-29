@@ -1,4 +1,4 @@
-import { createContext } from 'preact';
+import { createContext } from 'react';
 import { Mode } from 'components/shared/types';
 
 const mode:Mode = { isDark: true, style: ``};

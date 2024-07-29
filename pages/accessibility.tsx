@@ -2,7 +2,7 @@ import Layout from 'components/layout/layout'
 import Links from 'components/links/Links'
 import styles from 'pages/pages.module.scss'
 import Published from 'components/published/published'
-import { FunctionalComponent } from 'preact'
+import { FunctionalComponent } from 'react'
 
 const links = [
   {
@@ -97,7 +97,7 @@ const Accessibility: FunctionalComponent = () => {
             <Links.EL link={{ source: 'https://webaim.org/resources/contrastchecker' }}>of the WCAG</Links.EL> (Web
             Content Accessibility Guidelines):
           </p>
-          <dl class={styles.dataTable}>
+          <dl className={styles.dataTable}>
             <dt>
               <strong>WCAG Level AAA</strong>
             </dt>

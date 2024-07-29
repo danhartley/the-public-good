@@ -472,7 +472,7 @@ const NCSPartTwo = () => {
         <Accordion header="Benefits of trees">
           <aside>
             <h4>Benefits of trees</h4>
-            <ul class={styles.unorderedList}>
+            <ul className={styles.unorderedList}>
               <li>
                 Clean the air of harmful pollutants (such as carbon monoxide, ammonia and sulphur dioxide through their
                 leaves, barks and roots).

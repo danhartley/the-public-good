@@ -113,13 +113,13 @@ const Hyperlinks = () => {
         <h3>Is blue the warmest colour?</h3>
 
         <p>
-          The default colour for links the user hasn't clicked on is <span class={styles.defaultBlue}>blue</span>. Why
+          The default colour for links the user hasn't clicked on is <span className={styles.defaultBlue}>blue</span>. Why
           blue? According to Tim Berners-Lee, there is no good reason,{' '}
           <Links.EL link={{ source: 'https://www.w3.org/People/Berners-Lee/FAQ.html' }}>it is just a default</Links.EL>.
         </p>
 
         <p>
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <span>
               The mother of bad web design conventions is the decision to make hypertext links blue. Other colors would
               have been a better choice and would have increased the reading speed of the anchor text by a few percent.
@@ -139,7 +139,7 @@ const Hyperlinks = () => {
 
         <p>
           <div>
-            Dark blue, or <span class={styles.defaultPurple}>purple</span> is used for links the user has clicked on.
+            Dark blue, or <span className={styles.defaultPurple}>purple</span> is used for links the user has clicked on.
           </div>
         </p>
 
@@ -190,7 +190,7 @@ const Hyperlinks = () => {
           </Links.EL>{' '}
           can cause text to run together because the line cuts through the descenders of characters like g and y. The
           word{' '}
-          <a class={styles.a} href="https://en.wiktionary.org/wiki/poppy">
+          <a className={styles.a} href="https://en.wiktionary.org/wiki/poppy">
             poppy
           </a>{' '}
           for example.
@@ -198,7 +198,7 @@ const Hyperlinks = () => {
 
         <p>
           On the other hand, WebAIM warns us not to neglect readers with forms of colour blindness:
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <span>Make sure that colors are not the only method of conveying important information. </span>
             <Links.EL link={{ source: 'https://webaim.org/articles/visual/colorblind' }}>
               Designing for Color-blindness
@@ -226,7 +226,7 @@ const Hyperlinks = () => {
         <p>
           Evidence suggests that judicious use of links does not impair understanding, or interrupt the reader's
           concentration.
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <div>
               In terms of Web design and layouts, the present results highlight the importance of carefully considering
               which words are hyperlinked in webpages. The key lesson for Web designers that we have found here is that
@@ -247,7 +247,7 @@ const Hyperlinks = () => {
           Solitary links are salient and may be distracting; a sprinkling of links, composed of common words, singly or
           in or short sentences, seems to be the best approach. It is recommended to use words of high frequency (words
           familiar to the target audience). The more relevant, specific and pithy the better.
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <div>
               Hyperlinks highlight important information and suggest additional content, which for more difficult
               concepts, invites rereading of the preceding text.
@@ -319,7 +319,7 @@ const Hyperlinks = () => {
 
         <p>
           The W3C (World Wide Web Consortium) recommends that links open in the same window or tab as the current page.
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <div>
               In general, it is better not to open new windows and tabs since they can be disorienting for people,
               especially people who have difficulty perceiving visual content.

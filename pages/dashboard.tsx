@@ -7,7 +7,7 @@ import styles from 'components/dashboard/Dashboard.module.scss'
 
 const Dashboard = () => {
   return (
-    <div class={styles.wrapper}>
+    <div className={styles.wrapper}>
       <Layout header={'Dashboard'} title={'Dashboard'} description={'Dashboard'}>
         <p>As you navigate this website, data are collected on the performance of each page (including this one).</p>
         <h2>Data</h2>

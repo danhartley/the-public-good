@@ -64,7 +64,7 @@ const Roles = () => {
           I stayed for a few weeks, working in the same room, listening to them, testing out ideas. I rebuilt the CMS (I
           'migrated' from ASP pages to ASP.NET). The new site cut data entry time by fifty percent and didn't give
           people{' '}
-          <abbr class={styles.abbr} title="Repetitive strain injury">
+          <abbr className={styles.abbr} title="Repetitive strain injury">
             RSI
           </abbr>
           .

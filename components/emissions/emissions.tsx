@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { browser } from '@danhartley/emissions';
 
-import { useEffect } from 'preact/hooks';
+import { useEffect } from 'react';
 
 const Emissions = () => {
 

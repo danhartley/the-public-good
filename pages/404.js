@@ -1,6 +1,7 @@
 const Custom404 = () => {
     return (
-        <section style={'margin:2rem;'}>
+        <section>
+        {/* <section style={'margin:2rem;'}> */}
             <h1>404 - Page Not Found</h1>
             <p>
                 <a href='https://www.the-public-good.com/'>The Public Good</a>

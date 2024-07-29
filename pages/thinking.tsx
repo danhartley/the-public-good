@@ -8,7 +8,7 @@ const Thinking = () => {
       <section>
         <h1>Thinking</h1>
         <h2>How to act</h2>
-        <div class={styles.timing}>5 minute read</div>
+        <div className={styles.timing}>5 minute read</div>
         <p>What is the value of an individual act?</p>
         <p>
           Before we begin let us secure the door against two hangers on to this discussion; he who wishes to shame
@@ -59,7 +59,7 @@ const Thinking = () => {
             'Where has all the oil gone?
           </a>
           ', Julie Doyle sums up BP's rationale:
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             …through the use of the language and symbols of environmental discourse, as well as the discourse of
             sustainable development, BP is able to acknowledge the current reality of climate change (and the role of
             fossil fuels within this), whilst simultaneously erase its own implications, as an oil company.
@@ -104,7 +104,7 @@ const Thinking = () => {
           </Links.EL>
           , Mark Kaufman argues the burden of responsibility for global warming must be placed squarely on the fossil
           fuel industry. He concludes,
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             BP wants you to accept responsibility for the globally disrupted climate. Just like beverage industrialists
             wanted people to feel bad about the amassing pollution created by their plastics and cans, or more
             sinisterly, tobacco companies blamed smokers for becoming addicted to addictive carcinogenic products. We’ve
@@ -119,7 +119,7 @@ const Thinking = () => {
           <Links.EL link={{ source: 'https://www.ft.com/content/b6bdc4b1-d41f-49f0-a3df-61614cc1a2b7' }}>
             review
           </Links.EL>{' '}
-          <span class={styles.super}>paywall</span> of books by Michael E Mann, Bill Gates and Jonathan Franzen, the
+          <span className={styles.super}>paywall</span> of books by Michael E Mann, Bill Gates and Jonathan Franzen, the
           authors are presented respectively as favouring legislation, technology, and mitigation.
         </p>
         <p>
@@ -134,13 +134,13 @@ const Thinking = () => {
             Lifestyle Changes Aren’t Enough to Save the Planet. Here’s What Could
           </a>
           , Mann writes,
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             If all climate advocates were expected to live off the grid, eating only what they could grow themselves and
             wearing only the clothes they’d knitted from scratch, there wouldn’t be much of a climate movement. That
             level of sacrifice is unacceptable to most.
           </span>
           He continues,
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             We need systemic changes that will reduce everyone’s carbon footprint, whether or not they care.
           </span>
         </p>
@@ -413,7 +413,7 @@ const Thinking = () => {
             The Economics of Biodiversity
           </Links.EL>
           , undertaken on behalf of HM Treasury (UK), the author, Professor Partha Dasgupta, writes:
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             The economics of climate change and international negotiations over carbon emissions would seem to have gone
             further. There is an implicit suggestion there that GDP growth is the only viable route for (i) reducing
             carbon emissions, (ii) eliminating global poverty, and (iii) ensuring that development is sustainable. That
@@ -422,7 +422,7 @@ const Thinking = () => {
             been achieved are known to increase the footprint.
           </span>
           He continues,
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             The Review has addressed the currently near-universal conception of economic progress and shown it to be
             wildly misleading.
           </span>
@@ -457,7 +457,7 @@ const Thinking = () => {
         <p>
           Failure to meet the Aichi Biodiversity Targets made in 2010 have been attributed in part to their form, which
           made them hard to measure. The first target was to ensure that{' '}
-          <span class={styles.quote}>
+          <span className={styles.quote}>
             By 2020, at the latest, people are aware of the values of biodiversity and the steps they can take to
             conserve and use it sustainably.
           </span>
@@ -510,7 +510,7 @@ const Thinking = () => {
                 https://www.globalwitness.org/en/campaigns/environmental-activists/defending-tomorrow/ */}
         <p>
           As Tim Christophersen, head of the Nature for Climate branch at the UN Environment Programme, puts it,
-          <span class={styles.quote}>Ecosystem restoration is not a technical challenge; it’s a social challenge.</span>
+          <span className={styles.quote}>Ecosystem restoration is not a technical challenge; it’s a social challenge.</span>
         </p>
         <p>
           Mann is worried that debates about personal choices will distract from the need to police carbon emissions.

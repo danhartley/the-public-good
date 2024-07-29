@@ -18,7 +18,7 @@ const Projects = () => {
               each of which required a major refactor. As a developer I did good work, but I was a poor client, having
               too little understanding of my subject, my goals, and my users. But there were positives:
             </p>
-            <ul class={styles.dashedItemsList}>
+            <ul className={styles.dashedItemsList}>
               <li>
                 The switch to <Links.EL link={{ source: 'https://webpack.js.org' }}>webpack</Links.EL> from{' '}
                 <Links.EL link={{ source: 'https://gruntjs.com/' }}>Grunt</Links.EL> for bundling and optimising files.
@@ -89,7 +89,7 @@ const Projects = () => {
             <p>
               At the outset, I put in place generic rules to avoid the problems I had encountered on the previous
               project. Any project should now:
-              <ul class={styles.dashedItemsList}>
+              <ul className={styles.dashedItemsList}>
                 <li>Take no more than 6 weeks to complete, including scoping, design, development and user testing.</li>
                 <li>
                   Have a clear, achievable goal; in this case, the ability to test any Portuguese or Spanish verb.
@@ -113,7 +113,7 @@ const Projects = () => {
               <Links.EL link={{ source: 'https://www.typescriptlang.org/' }}>Typescript</Links.EL>, and{' '}
               <Links.EL link={{ source: 'https://jamstack.org/what-is-jamstack/' }}>Jamstack</Links.EL> features:
             </p>
-            <ul class={styles.dashedItemsList}>
+            <ul className={styles.dashedItemsList}>
               <li>
                 <Links.EL link={{ source: 'https://nextjs.org/' }}>Next.js</Links.EL> for Static Site Generation.
               </li>

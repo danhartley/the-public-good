@@ -122,7 +122,7 @@ const Sustainability = () => {
         <p>
           Tracked by <Links.EL link={{ source: 'https://ourworldindata.org/' }}>Our World in Data</Links.EL>.
         </p>
-        <ul class={styles.unorderedList}>
+        <ul className={styles.unorderedList}>
           <li>
             <Links.EL
               link={{
@@ -167,11 +167,11 @@ const Sustainability = () => {
         </p>
       </section>
       <section>
-        <p class={styles.centred}>
+        <p className={styles.centred}>
           <img
             src="https://api.thegreenwebfoundation.org/greencheckimage/www.the-public-good.com?nocache=true"
             alt="Checked by thegreenwebfoundation.org"
-            class={styles.gwf}
+            className={styles.gwf}
           />
         </p>
       </section>

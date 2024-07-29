@@ -61,7 +61,7 @@ const Introduction = () => {
           Principles are general and abstract, work is specific and concrete. We have three practices for bridging this
           gap:
           <em>
-            <ul class={styles.dashedItemsList}>
+            <ul className={styles.dashedItemsList}>
               <li>Writing pledges</li>
               <li>Challenging decisions</li>
               <li>Voting</li>
@@ -77,7 +77,7 @@ const Introduction = () => {
         </p>
 
         <blockquote>
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             <li>We want to add analytics to our site, and it must be free or cheap.</li>
             <li>We want to add a discussion platform to our site, and it must be free or cheap.</li>
           </ul>
@@ -102,7 +102,7 @@ const Introduction = () => {
         <p>To select third-party software that handles user data responsibly we add context-specific pledges.</p>
 
         <blockquote>
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             <li>We pledge not to undertake new work without first evaluating its cost.</li>
             <li>We pledge not to sell, exchange or exploit user data.</li>
             <li>We pledge to consider the risks and consequences of using third party services.</li>
@@ -135,7 +135,7 @@ const Introduction = () => {
             </Links.EL>{' '}
             requirements. They describe how the system should behave. We want the analytics tool we choose to{' '}
             <em>be</em> GDPR compliant
-            <span class={styles.super}>
+            <span className={styles.super}>
               <a href="#carbon">+</a>
             </span>{' '}
             but we don't need to know <em>how</em> it does this.

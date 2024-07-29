@@ -1,4 +1,4 @@
-import { useRef } from 'preact/hooks'
+import { useRef } from 'react'
 import Links from 'components/links/Links'
 import Layout from 'components/layout/layout'
 import Accordion from 'components/accordion/accordion'
@@ -104,7 +104,7 @@ const MentalModel = () => {
             The head contains meta information about the document such as its author. The content of the page appears in
             the body.
             <p>
-              <ul class={styles.nestedElements}>
+              <ul className={styles.nestedElements}>
                 <li>head</li>
                 <li>
                   body
@@ -212,7 +212,7 @@ const MentalModel = () => {
         <p>Which button would you choose?</p>
 
         <p>
-          <div class={styles.fakeBtns}>
+          <div className={styles.fakeBtns}>
             <button ref={saved} onClick={() => saveMe("You're saved!", saved)}>
               Salvation
             </button>{' '}
@@ -257,7 +257,7 @@ const MentalModel = () => {
         <p>By convention headers decrease in size.</p>
 
         <p>
-          <div class={styles.diminishingHeaders}>
+          <div className={styles.diminishingHeaders}>
             H1
             <span>
               H2
@@ -340,7 +340,7 @@ const MentalModel = () => {
         <h3>Mental models, conventions, and preconceptions</h3>
 
         <p>
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <span>Users spend most of their time on other sites. </span>
             <span>
               <Links.EL link={{ source: 'https://www.nngroup.com/videos/jakobs-law-internet-ux/' }}>
@@ -382,7 +382,7 @@ const MentalModel = () => {
         <h3>If your model doesn't fit the user's model, change your model</h3>
 
         <p>
-          <div class={styles.quote}>
+          <div className={styles.quote}>
             <span>A mental model is what the user believes about the system at hand. </span>
             <div>
               <Links.EL link={{ source: 'https://www.nngroup.com/articles/mental-models/' }}>Mental Models</Links.EL>{' '}

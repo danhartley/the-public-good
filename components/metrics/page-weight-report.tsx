@@ -14,5 +14,6 @@ export const PageWeightReport = metrics => {
             break;     
     }
 
-    return <div><em>{report}</em></div>
+    return <span></span>
+    // return <span><em>{report}</em></span>
 };

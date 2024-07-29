@@ -88,7 +88,7 @@ const SustainableReportingAndTooling = () => {
           Sustainability has a lot in common with accessibility. The Web Sustainability Guidelines (WSG) are analogous
           to the Web Content Accessibility Guidelines (WCAG) and there is plenty of common ground between the two. The
           intention is that the{' '}
-          <abbr class={styles.abbr} title="Web Sustainability Guidelines">
+          <abbr className={styles.abbr} title="Web Sustainability Guidelines">
             WSG
           </abbr>{' '}
           will follow a similar path to acceptance and adoption supported by tooling and best practices. Websites will
@@ -125,7 +125,7 @@ const SustainableReportingAndTooling = () => {
         </ul>
 
         <p>
-          <abbr class={styles.abbr} title="Sustainable Tooling And Reporting">
+          <abbr className={styles.abbr} title="Sustainable Tooling And Reporting">
             STAR
           </abbr>{' '}
           has over 150 items for evaluation and it requires a painstaking review of a website or app.
@@ -180,11 +180,11 @@ const SustainableReportingAndTooling = () => {
 
         <p>
           It is essential to have an{' '}
-          <abbr class={styles.abbr} title="Information Architecture">
+          <abbr className={styles.abbr} title="Information Architecture">
             IA
           </abbr>{' '}
           model or design and to revisit it frequently. A comparison of your{' '}
-          <abbr class={styles.abbr} title="Information Architecture">
+          <abbr className={styles.abbr} title="Information Architecture">
             IA
           </abbr>
           , your software architecture, and the living app is a good subject for a{' '}

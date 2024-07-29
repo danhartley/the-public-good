@@ -5,12 +5,12 @@ const Formula = ({children}) => {
     let elements = []
     elements = Array.from(children);
 
-    const formula = elements.map(element => {
+    const formula = elements.map((element, i) => {
         return isNaN(element as any) 
                 ? (/[a-z]/).test(element as any) || element === '+'
-                    ? <span class={styles.sub}>{element}</span>
+                    ? <span className={styles.sub}>{element}</span>
                     : element
-                : <span class={styles.sub}>{element}</span>
+                : <span key={i.toString()} className={styles.sub}>{element}</span>
     });
 
     return (

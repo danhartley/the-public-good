@@ -17,7 +17,7 @@ const Architecture = (): JSX.Element => {
         <h2>Technology</h2>
 
         <p>
-          <ul class={styles.dashedItemsList}>
+          <ul className={styles.dashedItemsList}>
             <li>
               Framework: <Links.EL link={{ source: 'https://preactjs.com/' }}>Preact</Links.EL>
             </li>
@@ -58,14 +58,14 @@ const Architecture = (): JSX.Element => {
         <h2>Documentation</h2>
 
         <p>
-          <ul class={styles.unorderedList}>
+          <ul className={styles.unorderedList}>
             <li>
               <span>
                 The conventions, good practices, and solutions used to develop and build the website. They influence how
                 the the website is assembled. They are not essential, and could be replaced without affecting the
                 appearance or performance of the website. They do not add to page weight.
               </span>
-              <ul class={styles.dashedItemsList}>
+              <ul className={styles.dashedItemsList}>
                 <li>
                   <Links.EL link={{ source: 'https://www.typescriptlang.org/' }}>Typescript</Links.EL> adds features to
                   JavaScript which help to better structure and test code.{' '}
@@ -88,7 +88,7 @@ const Architecture = (): JSX.Element => {
                 Code developed by third-parties which affect both how the site is built and its performance in the
                 browser.
               </span>
-              <ul class={styles.dashedItemsList}>
+              <ul className={styles.dashedItemsList}>
                 <li>
                   <Links.EL link={{ source: 'https://preactjs.com/' }}>Preact</Links.EL> is a light-weight alternative
                   to React which models the state of a page and modifies it in response to user actions. Preact adds to
@@ -100,7 +100,7 @@ const Architecture = (): JSX.Element => {
             </li>
             <li>
               <span>Settings and tweaks that keep things running smoothly.</span>
-              <ul class={styles.dashedItemsList}>
+              <ul className={styles.dashedItemsList}>
                 <li>PWA support.</li>
                 <li>Configuration to enable Sass, Typescript, Jest, and Preact to be used together.</li>
                 <li>Layout design pattern.</li>

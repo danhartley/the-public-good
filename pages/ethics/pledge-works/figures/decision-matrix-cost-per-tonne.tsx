@@ -2,21 +2,21 @@ import styles from 'pages/pages.module.scss'
 
 const CostPerTonne = () => {
   return (
-    <div class={styles.decisionMatrix}>
+    <div className={styles.decisionMatrix}>
       <table>
         <thead>
           <tr>
             <th>Rank</th>
             <th>Criteria</th>
-            <th class={styles.centredText}>
+            <th className={styles.centredText}>
               <div>$25/t</div>
               <span>Weighted score</span>
             </th>
-            <th class={styles.centredText}>
+            <th className={styles.centredText}>
               <div>$50/t</div>
               <span>Weighted score</span>
             </th>
-            <th class={styles.centredText}>
+            <th className={styles.centredText}>
               <div>$100/t</div>
               <span>Weighted score</span>
             </th>

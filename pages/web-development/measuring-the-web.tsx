@@ -1,9 +1,8 @@
-import { useEffect, useState, useRef } from 'preact/hooks'
+import { useEffect, useState, useRef } from 'react'
 
 import Layout from 'components/layout/layout'
 import Links from 'components/links/Links'
 import EnergyAndEmissionsTable from 'components/charts/energy-intensity-and-emissions-table'
-import WebsiteEnergyAndEmissionsTable from 'components/charts/examples-of-website-energy-and-emissions-table'
 import UKDataOptionsTable from 'components/charts/examples-of-internet-data-usage-table'
 import PieChartComponentEnergyConsumption from 'components/charts/main-components-of-energy-consumption-in-ict-pie-chart'
 import MiniBarChart from 'components/charts/uk-per-capita-data-bar-chart'
@@ -27,10 +26,10 @@ const Output = ({ inputs }) => {
 
   return (
     <>
-      <div class={styles.widescreen}>
+      <div className={styles.widescreen}>
         <span ref={calculatedEnergyValue}></span> <span>kWh of energy</span>
       </div>
-      <div class={styles.widescreen}>
+      <div className={styles.widescreen}>
         <span ref={calculatedEmissionsValue}></span>{' '}
         <span>
           g of <Formula>CO2</Formula> emissions
@@ -278,7 +277,7 @@ const MeasuringTheWeb = () => {
   }, [])
 
   return (
-    <div class={styles.wrapper}>
+    <div className={styles.wrapper}>
       <Layout
         rt="7 to 8"
         header={'Measuring the web'}
@@ -294,7 +293,7 @@ const MeasuringTheWeb = () => {
             carbon emissions for which they are responsible.
           </h2>
           <p>
-            The CO<span class={styles.sub}>2</span> emissions associated with digital products and services depends on
+            The CO<span className={styles.sub}>2</span> emissions associated with digital products and services depends on
             many factors and varies depending on which are taken into account.
           </p>
           <p>
@@ -369,7 +368,7 @@ const MeasuringTheWeb = () => {
             will fall to 0 in 2050. The figure for France in 2019 was just 56 grammes, a consequence of their reliance
             on nuclear energy.
           </p>
-          <p>
+          <div>
             <aside>
               <strong>
                 <Formula>CO2</Formula>e
@@ -384,7 +383,7 @@ const MeasuringTheWeb = () => {
                 gigatonnes or 50 billion tonnes.
               </div>
             </aside>
-          </p>
+          </div>
           <h3 id="inputs">Measuring electricity & emissions</h3>
           <p>
             There are many online tools and APIs for measuring the carbon emissions associated with Internet data. I
@@ -400,13 +399,13 @@ const MeasuringTheWeb = () => {
           </p>
           <p>
             If you are more interested in web pages:- &nbsp;
-            <button class={styles.btn} onClick={e => onChangeInput({ prop: 'bytes', value: 0.002198 })}>
+            <button className={styles.btn} onClick={e => onChangeInput({ prop: 'bytes', value: 0.002198 })}>
               {' '}
               Set data input to median web page weight{' '}
             </button>
           </p>
           <p>
-            <div class={styles.inset}>
+            <div className={styles.inset}>
               <EnergyAndEmissionsTable setEnergyAndEmissionsState={setEnergyAndEmissionsState} />
             </div>
           </p>
@@ -416,8 +415,8 @@ const MeasuringTheWeb = () => {
           {showOutputs ? (
             <p>
               <div></div>
-              <div class={styles.inputDataFixedPosition}>
-                <div class={styles.inputData}>
+              <div className={styles.inputDataFixedPosition}>
+                <div className={styles.inputData}>
                   <div>
                     <strong>Input values</strong>
                   </div>
@@ -461,7 +460,7 @@ const MeasuringTheWeb = () => {
               </div>
 
               <p>
-                <div class={styles.calculatedValues}>
+                <div className={styles.calculatedValues}>
                   <Output inputs={inputs} />
                 </div>
               </p>
@@ -483,7 +482,7 @@ const MeasuringTheWeb = () => {
           <p>
             If you are calculating values for a specific website or service, consider evaluating the main components
             separately - servers (data centres), networks, and devices{' '}
-            <span class={styles.super}>
+            <span className={styles.super}>
               <a id="appendixRef" href="#appendix">
                 +
               </a>
@@ -571,13 +570,13 @@ const MeasuringTheWeb = () => {
             *12) {(1680).toLocaleString()} GBs.
           </p>
           <p>
-            <div class={styles.inset}>
+            <div className={styles.inset}>
               <UKDataOptionsTable setDataOptionsState={setDataOptionsState} />
             </div>
           </p>
           <h4>Output values</h4>
           <p>
-            <div class={styles.calculatedValues}>
+            <div className={styles.calculatedValues}>
               <div>
                 <span ref={calculatedCiscoPerUserEnergyValue}></span> <span>kWhs of energy</span>
               </div>
@@ -594,7 +593,7 @@ const MeasuringTheWeb = () => {
             </div>
           </p>
           <p>
-            <div class={styles.inset}>
+            <div className={styles.inset}>
               How does this compare to <strong>UK average electricity</strong> use per person of{' '}
               <Links.EL
                 link={{
@@ -621,7 +620,7 @@ const MeasuringTheWeb = () => {
             </div>
           </p>
           <p>
-            <div class={styles.inset}>
+            <div className={styles.inset}>
               <div>
                 How does this compare to average{' '}
                 <strong>
@@ -903,7 +902,7 @@ const MeasuringTheWeb = () => {
             </div>
           </p>
 
-          <div class={styles.inset}>
+          <div className={styles.inset}>
             <Links.IL link={{ source: 'web-development/measuring-the-web/#appendixRef' }}>
               Return to <strong>Are these figures accurate?</strong>
             </Links.IL>

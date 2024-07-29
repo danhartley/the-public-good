@@ -24,11 +24,11 @@ const DashboardControls = ({snapShots, snapShot, setActiveSnapShot}) => {
 
     return (
         <nav id="display">
-            <ul class={styles.unorderedHorizontalList}>
+            <ul className={styles.unorderedHorizontalList}>
                 {
                     options.map(o => {
                         const classes = o.active ? 'tab active' :  'tab';                                            
-                        return <li class={classes}><button class={styles.btn} onClick={handleDisplayOptionChange}>{o.text}</button></li>
+                        return <li className={classes}><button className={styles.btn} onClick={handleDisplayOptionChange}>{o.text}</button></li>
                     })
                 }
             </ul>
