@@ -539,14 +539,14 @@ const Calculators = ({withScores = false}) => {
 
         const rows = calculators.map(c => {
 
-            const other = c.score.other.map(o => {
+            const other = c.score.other.map((o,i) => {
                 return (
-                    <li>{o}</li>
+                    <li key={i}>{o}</li>
                 )
             });
 
             return (
-            <tr>
+            <tr key={c.name}>
                 <td>{c.name}</td>
                 <td>{c.score.co2}t CO2e</td>
                 <td className={styles.wideOnly}>{c.score.shareable ? 'true' : 'false'}</td>

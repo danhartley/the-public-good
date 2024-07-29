@@ -413,7 +413,7 @@ const MeasuringTheWeb = () => {
           <h4>Output values</h4>
 
           {showOutputs ? (
-            <p>
+            <div>
               <div></div>
               <div className={styles.inputDataFixedPosition}>
                 <div className={styles.inputData}>
@@ -459,12 +459,12 @@ const MeasuringTheWeb = () => {
                 </div>
               </div>
 
-              <p>
+              <div>
                 <div className={styles.calculatedValues}>
                   <Output inputs={inputs} />
                 </div>
-              </p>
-            </p>
+              </div>
+            </div>
           ) : null}
 
           <h3>Are these figures accurate?</h3>
@@ -509,35 +509,31 @@ const MeasuringTheWeb = () => {
           </cite>
 
           <p>
-            <div>
-              Chris Adams'{' '}
-              <Links.EL
-                link={{
-                  source:
-                    'https://www.thegreenwebfoundation.org/news/understanding-trends-at-the-layer-below-the-internet-stack/',
-                }}
-              >
-                {' '}
-                introduction to marginal costs, energy grids, and computational demands
-              </Links.EL>{' '}
-              is well worth reading if you want to examine your development stack in detail.
-            </div>
+            Chris Adams'{' '}
+            <Links.EL
+              link={{
+                source:
+                  'https://www.thegreenwebfoundation.org/news/understanding-trends-at-the-layer-below-the-internet-stack/',
+              }}
+            >
+              {' '}
+              introduction to marginal costs, energy grids, and computational demands
+            </Links.EL>{' '}
+            is well worth reading if you want to examine your development stack in detail.
           </p>
 
           <p>
-            <div>
-              <Links.EL link={{ source: 'https://www.wholegraindigital.com/blog/website-energy-consumption/' }}>
-                Tom Greenwood
-              </Links.EL>{' '}
-              describes the problem of where to set emissions' boundaries, and explains how the{' '}
-              <Links.EL link={{ source: 'https://www.websitecarbon.com/' }}>website carbon calculator</Links.EL>{' '}
-              measures a site's emissions. Tom uses a value for emissions intensity of 1.8 kWh/GB in his article but I
-              understand the website carbon calculator is now using a value of 0.81 kWh/GB in line with{' '}
-              <Links.EL link={{ source: 'https://sustainablewebdesign.org/calculating-digital-emissions/' }}>
-                Sustainable Web Design
-              </Links.EL>
-              .
-            </div>
+            <Links.EL link={{ source: 'https://www.wholegraindigital.com/blog/website-energy-consumption/' }}>
+              Tom Greenwood
+            </Links.EL>{' '}
+            describes the problem of where to set emissions' boundaries, and explains how the{' '}
+            <Links.EL link={{ source: 'https://www.websitecarbon.com/' }}>website carbon calculator</Links.EL>{' '}
+            measures a site's emissions. Tom uses a value for emissions intensity of 1.8 kWh/GB in his article but I
+            understand the website carbon calculator is now using a value of 0.81 kWh/GB in line with{' '}
+            <Links.EL link={{ source: 'https://sustainablewebdesign.org/calculating-digital-emissions/' }}>
+              Sustainable Web Design
+            </Links.EL>
+            .
           </p>
 
           <h3>Are there data we can compare our figures with?</h3>

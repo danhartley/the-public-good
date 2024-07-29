@@ -151,13 +151,13 @@ const CarbonFootprint = () => {
             carbon dioxide-equivalents
           </Links.EL>
           .
-          <p>
-            The total figure for all greenhouse gas emissions is therefore higher, more than{' '}
-            <Links.EL link={{ source: 'https://ourworldindata.org/greenhouse-gas-emissions' }}>
-              50 billion tonnes of CO2e
-            </Links.EL>
-            .
-          </p>
+        </p>
+        <p>
+          The total figure for all greenhouse gas emissions is therefore higher, more than{' '}
+          <Links.EL link={{ source: 'https://ourworldindata.org/greenhouse-gas-emissions' }}>
+            50 billion tonnes of CO2e
+          </Links.EL>
+          .
         </p>
 
         <h3>Carbon footprints</h3>
@@ -255,13 +255,11 @@ const CarbonFootprint = () => {
           </div>
           <div>
             <p>
-              <div>
-                <em>
-                  A <Links.EL link={{ source: 'https://pubs.acs.org/doi/10.1021/es803496a#' }}>paper</Links.EL> from
-                  2009, puts the domestic share of emissions at 80%, the world average at 73%, and most European
-                  countries in the 60s. (Ed. {new Date('Mon 29 March 2021').toDateString()})
-                </em>
-              </div>
+              <em>
+                A <Links.EL link={{ source: 'https://pubs.acs.org/doi/10.1021/es803496a#' }}>paper</Links.EL> from
+                2009, puts the domestic share of emissions at 80%, the world average at 73%, and most European
+                countries in the 60s. (Ed. {new Date('Mon 29 March 2021').toDateString()})
+              </em>
             </p>
           </div>
         </div>
@@ -362,19 +360,15 @@ const CarbonFootprint = () => {
           specificity.
         </p>
 
-        <p>
-          <Tables.Calculators></Tables.Calculators>
-        </p>
+        <Tables.Calculators></Tables.Calculators>
 
         <p>
-          <div>
-            NB Not all calculators are the same. The Global Food Network makes clear their{' '}
-            <Links.EL link={{ source: 'https://www.footprintnetwork.org/footprint-calculator-faq/#gen1' }}>
-              calculator
-            </Links.EL>{' '}
-            is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true
-            footprint, measured by area) and a figure for CO2 emissions (a carbon footprint).
-          </div>
+          NB Not all calculators are the same. The Global Food Network makes clear their{' '}
+          <Links.EL link={{ source: 'https://www.footprintnetwork.org/footprint-calculator-faq/#gen1' }}>
+            calculator
+          </Links.EL>{' '}
+          is not a carbon calculator but a Footprint calculator, with two parts: an Ecological Footprint (a true
+          footprint, measured by area) and a figure for CO2 emissions (a carbon footprint).
         </p>
 
         <h3 id="comparison">Results from 5 calculators</h3>
@@ -471,7 +465,7 @@ const CarbonFootprint = () => {
         <p>Do individual acts detract from systemic changes that might be more productive?</p>
 
         <p>
-          Two recent studies provide evidential support that we keep a tally of our moral acts, and are quick to call in
+        Two recent studies provide evidential support that we keep a tally of our moral acts, and are quick to call in
           our debt; acceptance of{' '}
           <Links.EL
             link={{
@@ -484,19 +478,25 @@ const CarbonFootprint = () => {
           , even at the lower end of a range, lessens acceptance of further taxation. A paper in{' '}
           <Links.EL link={{ source: 'https://www.nature.com/articles/nclimate3316' }}>Nature</Links.EL> that looked at
           how small changes might adversely affect willingness to accept larger ones, concluded,
-          <div className={styles.quote}>
+        </p>
+        <blockquote>
+          <div>
             It appears that, while people are generally concerned about societal problems such as climate change, they
             may not be willing to incur large costs to achieve a solution. With the perceived existence of a low-cost
             solution (a nudge), motivated reasoning may tempt some to exaggerate its ultimately small environmental
             impact. This may explain why participants generally thought the nudge was as or more effective at reducing
-            pollution than the carbon tax. However, even those who knew that the carbon tax is more effective than the
+            pollution than the carbon tax. 
+          </div>
+          <div>
+            However, even those who knew that the carbon tax is more effective than the
             green energy nudge were discouraged from implementing the tax when a nudge became available, suggesting that
             crowding-out is not merely the result of incorrect perceptions of relative effectiveness. When these
             perceptions are corrected at the time of decision, however, motivated reasoning is difficult and
             crowding-out disappears.
-          </div>
-          A little hope in the final sentence.
-        </p>
+          </div>          
+        </blockquote>
+
+        <p>A little hope in the final sentence.</p>
 
         <p>
           The choice, however, is ours, we can save electricity and water, become a vegan and run for office. If we
@@ -544,7 +544,7 @@ const CarbonFootprint = () => {
         <Top></Top>
       </section>
       <section id="discrepancy">
-        <p>
+        <div>
           * There is a discrepancy hidden in these figures:
           <div className={styles.quote}>4.73 tonnes &#215; 7.55 billion = 35.70 billion tonnes of CO2</div>
           And yet,
@@ -558,10 +558,10 @@ const CarbonFootprint = () => {
               Return to current emissions
             </Links.IL>
           </div>
-        </p>
+        </div>
       </section>
       <section id="profile">
-        <p>
+        <div>
           + My profile
           <ul className={styles.dashedItemsList}>
             <li>No meat, cheese, eggs most days, no milk</li>
@@ -584,7 +584,7 @@ const CarbonFootprint = () => {
               Return to emissions table
             </Links.IL>
           </div>
-        </p>
+        </div>
       </section>
 
       <Published

@@ -156,24 +156,24 @@ const Sustainability = () => {
         </ul>
       </section>
       <section>
-        <p>          
+        <div>          
           <WebsiteCarbonBadge dark={false} percentage='94' co2='0.06' />          
-        </p>
+        </div>
       </section>
       <section>
-        <p>
+        <div>
           <div id="dbb"></div>
           <script async defer src="https://digitalbeacon.co/js/badge.min.js"></script>
-        </p>
+        </div>
       </section>
       <section>
-        <p className={styles.centred}>
+        <div className={styles.centred}>
           <img
             src="https://api.thegreenwebfoundation.org/greencheckimage/www.the-public-good.com?nocache=true"
             alt="Checked by thegreenwebfoundation.org"
             className={styles.gwf}
           />
-        </p>
+        </div>
       </section>
       <section>
         <h2>Links to external references</h2>
