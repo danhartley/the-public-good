@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import React from 'react'
 import { Mode } from 'components/shared/types'
 import { useLocalStorageState } from 'hooks/local-storage'
 
@@ -30,7 +31,7 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
       : `
             --m:light;
             --fg:12, 12, 12;
-            --bg:250, 255, 250;
+            --bg:255, 255, 255;
             --l:28, 83, 120;
             --l-v:78, 44, 146;
             --il:50, 50, 50;
@@ -49,7 +50,7 @@ const PublicGoodApp = ({ Component, pageProps }: AppProps) => {
     setDarkMode(!darkMode)
     mode.isDark = darkMode
     mode.style = getStyle(darkMode) as any
-    document.body.style.backgroundColor = darkMode ? 'rgb(250, 255, 250)' : 'rgb(45, 45, 45)'
+    document.body.style.backgroundColor = darkMode ? 'rgb(255, 255, 255)' : 'rgb(45, 45, 45)'
   }
 
   return (

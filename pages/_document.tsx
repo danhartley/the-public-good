@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import React from 'react'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -10,11 +11,11 @@ class MyDocument extends Document {
     return (
       <Html lang="en-GB" dir="ltr">
         <Head>
-          <meta http-equiv="content-type" content="text/html" />
+          <meta httpEquiv="content-type" content="text/html" />
         </Head>
         <body
           style={{
-            backgroundColor:'rgb(250, 255, 250)',
+            backgroundColor:'rgb(255, 255, 255)',
             margin: '0 calc(.75rem + 1vw) .5rem calc(.75rem + 1vw)'            
           }}
         >
