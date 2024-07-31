@@ -48,4 +48,4 @@ yarn-error.log*
 package-lock.json
 
 # sw file is generated at runtime (copied from the package)
-public/sw.js
+# public/sw.js
