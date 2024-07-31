@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+/* eslint-disable react/prop-types */
+import React, { useEffect, useState } from 'react';
 
 import CanvasChart from 'components/dashboard/canvas-chart';
 
@@ -109,10 +110,10 @@ const MiniBarChart = ({dataSources, config}) => {
 
     if(!dataSources || isNaN(dataSources.find(ds => ds.source === 'Internet').value)) return <div></div>;
 
-    const [data, setData] = useState<ChartProps>({ labels: [], label: "", datasets: [{ indexAxis: "", label: "", data: [], backgroundColor: [] }] });
-    const [type, setType] = useState(ChartType.Bar);
-    const [options, setOptions] = useState({});
-    const [plugins, setPlugins] = useState(null);
+    const [data, setData] = useState({ labels: [], label: "", datasets: [{ indexAxis: "", label: "", data: [], backgroundColor: [] }] });
+    const [type] = useState(ChartType.Bar);
+    const [options] = useState({indexAxis: 'y'});
+    const [plugins] = useState(null);
     const [scales, setScales] = useState<Coordinates>({
         x: { type: '', min: 0, max: 0, title: { display: false, text: '', padding: { top: 0}}}, y: {ticks: {padding: 0}}
     });
@@ -128,13 +129,13 @@ const MiniBarChart = ({dataSources, config}) => {
                     {
                         indexAxis: 'y',
                         label: ` ${config.units} `,
-                        data: dataSources.map(d => Math.round(funcs.multiplyInputs([d.value]) * 1000) / 1000) ,
+                        data: dataSources.map(d => d.value === 0 ? 0 : Math.round(funcs.multiplyInputs([d.value]) * 1000) / 1000),
                         backgroundColor: config.colours,
                     }
                 ]
             }
         );
-    
+    console.log(data)
         setScales({
             x: {
                 type: 'linear',
@@ -153,11 +154,11 @@ const MiniBarChart = ({dataSources, config}) => {
             }
         });
     
-    }, [dataSources]);
+    }, [dataSources, config]);
 
     return (
         <>
-        { data === null 
+        { data === null || data.label.length === 0
             ? <div>There is either no data, or you have disabled JavaScript which is necessary to view charts on this site.</div>
             : <div>
                 <CanvasChart type={type} data={data} plugins={plugins} options={options} scales={null} /> 
