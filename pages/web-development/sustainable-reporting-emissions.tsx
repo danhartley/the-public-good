@@ -132,13 +132,13 @@ const SustainableReportingEmissions = () => {
         <h3>End-to-end testing</h3>
 
         <p>
-          In order to record requests and calculate emissions, I created a simple helper class{' '}
+          In order to record requests and calculate emissions, I created a simple helper class <em>which I have since converted into an npm library - </em>
           <Links.EL
             link={{
-              source: 'https://github.com/danhartley/the-public-good/blob/main/emissions-tracker/emissions-tracker.js',
+              source: 'https://github.com/danhartley/emissions',
             }}
           >
-            EmissionsTracker
+            @danhartley/emissions
           </Links.EL>
           .
         </p>

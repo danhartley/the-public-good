@@ -13,7 +13,7 @@ npm run prettier-format
 
 See <https://www.digitalocean.com/community/tutorials/nodejs-node-version-manager>
 
-## Production
+## Netlify console
 
 <https://app.netlify.com/sites/the-public-good/overview>
 
