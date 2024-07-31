@@ -383,8 +383,8 @@ const NCSPartOne = () => {
           </aside>
         </Accordion>
         <p>
-          <strong>Example</strong>: repeat the calculation made for the sycamore - <em>Acer pseudoplatanus</em> - in
-          the Edinburgh{' '}
+          <strong>Example</strong>: repeat the calculation made for the sycamore - <em>Acer pseudoplatanus</em> - in the
+          Edinburgh{' '}
           <Links.EL link={{ source: 'https://ecometrica.com/assets/one_tonne_carbon_tree_discussion_paper_3.pdf' }}>
             experiment
           </Links.EL>{' '}
@@ -489,8 +489,9 @@ const NCSPartOne = () => {
                 </strong>
               </dt>
               <dd>
-                Example: 475 kg C to <Formula>CO2</Formula>: 475 &#215; 3<span className={styles.fraction}>&#8532;</span> =
-                1741<span className={styles.fraction}>&#8532;</span> kg
+                Example: 475 kg C to <Formula>CO2</Formula>: 475 &#215; 3
+                <span className={styles.fraction}>&#8532;</span> = 1741<span className={styles.fraction}>&#8532;</span>{' '}
+                kg
               </dd>
             </dl>
             <div>
@@ -510,24 +511,24 @@ const NCSPartOne = () => {
           branches.
         </p>
         <p>
-            Because of natural variability there is no typical value for the annual rate of carbon dioxide
-            sequestration. A representative range extends from{' '}
-            <Links.EL
-              link={{ source: 'https://www.eea.europa.eu/articles/forests-health-and-climate-change/key-facts/' }}
-            >
-              22
-            </Links.EL>
-            , through <Links.EL link={{ source: 'https://greenearthappeal.org/co2-verification/' }}>25</Links.EL> and{' '}
-            <Links.EL link={{ source: 'https://ecotree.green/en/how-much-co2-does-a-tree-absorb' }}>30</Links.EL> to{' '}
-            <Links.EL
-              link={{
-                source:
-                  'https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references#seedlings',
-              }}
-            >
-              60
-            </Links.EL>{' '}
-            kg.
+          Because of natural variability there is no typical value for the annual rate of carbon dioxide sequestration.
+          A representative range extends from{' '}
+          <Links.EL
+            link={{ source: 'https://www.eea.europa.eu/articles/forests-health-and-climate-change/key-facts/' }}
+          >
+            22
+          </Links.EL>
+          , through <Links.EL link={{ source: 'https://greenearthappeal.org/co2-verification/' }}>25</Links.EL> and{' '}
+          <Links.EL link={{ source: 'https://ecotree.green/en/how-much-co2-does-a-tree-absorb' }}>30</Links.EL> to{' '}
+          <Links.EL
+            link={{
+              source:
+                'https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references#seedlings',
+            }}
+          >
+            60
+          </Links.EL>{' '}
+          kg.
         </p>
         <p>A conservative estimate is 20 kg per tree per year.</p>
         <Accordion header="Trees to absorb all GHG emissions">
@@ -801,15 +802,15 @@ const NCSPartOne = () => {
           observations.
         </p>
         <p>
-            In a supporting article for the{' '}
-            <Links.EL
-              link={{ source: 'https://www.wri.org/insights/forests-absorb-twice-much-carbon-they-emit-each-year' }}
-            >
-              World Resources Institute
-            </Links.EL>
-            , the authors state that of the 3 major rainforests only the Congo River Basin has enough forest standing to
-            remain a carbon sink. The forests of Southeast Asia are collectively a source of carbon, and the Amazon
-            Basin is teetering on the edge of becoming a source.
+          In a supporting article for the{' '}
+          <Links.EL
+            link={{ source: 'https://www.wri.org/insights/forests-absorb-twice-much-carbon-they-emit-each-year' }}
+          >
+            World Resources Institute
+          </Links.EL>
+          , the authors state that of the 3 major rainforests only the Congo River Basin has enough forest standing to
+          remain a carbon sink. The forests of Southeast Asia are collectively a source of carbon, and the Amazon Basin
+          is teetering on the edge of becoming a source.
         </p>
         <p>
           Tropical rainforests are far and away the most important ecosystems for mitigating climate change. New forest

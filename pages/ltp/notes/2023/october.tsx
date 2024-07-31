@@ -336,7 +336,8 @@ const October = () => {
               portable backpack shakers with or without nets covering the floor.
             </li>
             <li>
-              Net production of these olive ecosystems is less than 3t ha<span className={styles.super}>-1</span> of fruits
+              Net production of these olive ecosystems is less than 3t ha<span className={styles.super}>-1</span> of
+              fruits
             </li>
           </ul>
           Medium-Density Olive Orchards (MD)
@@ -383,13 +384,13 @@ const October = () => {
               requiring less water in the summer than in the remaining period of the year.
             </li>
             <li>
-              Nevertheless, in a region with 562 mm year<span className={styles.super}>-1</span> of average rainfall [44],
-              250 mm to 500 mm year<span className={styles.super}>-1</span> of supplemental irrigation water are the
-              necessary values for the trees to achieve their maximum productivity.
+              Nevertheless, in a region with 562 mm year<span className={styles.super}>-1</span> of average rainfall
+              [44], 250 mm to 500 mm year<span className={styles.super}>-1</span> of supplemental irrigation water are
+              the necessary values for the trees to achieve their maximum productivity.
             </li>
             <li>
-              This demand is lower when compared to the 500–800 mm year<span className={styles.super}>-1</span> required by
-              other perennial species. Under these conditions, higher densities lead to increased productivity.
+              This demand is lower when compared to the 500–800 mm year<span className={styles.super}>-1</span> required
+              by other perennial species. Under these conditions, higher densities lead to increased productivity.
             </li>
             <li>
               For soil management, the soil is normally covered with spontaneous or sowed herbaceous vegetation to
@@ -437,7 +438,8 @@ const October = () => {
             <li>
               Olive trees' water requirements are a function of cultivar characteristics, management, and environmental
               demands. Olive trees withstand long periods of drought and can survive in very sparse plantings, even in
-              climates with very low annual rainfall: values of 150–200-250mm year<span className={styles.super}>-1</span>.
+              climates with very low annual rainfall: values of 150–200-250mm year
+              <span className={styles.super}>-1</span>.
             </li>
             <li>
               However, for economic production, much higher precipitation or irrigation are required: an average annual
@@ -670,7 +672,9 @@ const October = () => {
               <tr>
                 <td className={styles.medium}>Evergreen forest</td>
                 <td className={styles.medium}>100-700</td>
-                <td className={styles.medium}>Aleppo pine (Steppe), Cork oak, Kermes oak (Garrigue), Holm oak (Maquis)</td>
+                <td className={styles.medium}>
+                  Aleppo pine (Steppe), Cork oak, Kermes oak (Garrigue), Holm oak (Maquis)
+                </td>
               </tr>
               <tr>
                 <td className={styles.medium}>Deciduous forest</td>

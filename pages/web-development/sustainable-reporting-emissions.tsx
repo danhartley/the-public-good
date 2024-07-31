@@ -56,7 +56,13 @@ const SustainableReportingEmissions = () => {
       <section className={styles.report}>
         <h2 className={styles.mt0}>Tracking carbon emissions in end-to-end tests.</h2>
 
-        <p><em>This tooling used in this report has been superseded by the npm package <Links.EL link={{source:'https://github.com/danhartley/emissions'}}>@danhartley/emissions</Links.EL> [24 July 2024].</em></p>
+        <p>
+          <em>
+            This tooling used in this report has been superseded by the npm package{' '}
+            <Links.EL link={{ source: 'https://github.com/danhartley/emissions' }}>@danhartley/emissions</Links.EL> [24
+            July 2024].
+          </em>
+        </p>
 
         <p>
           Measuring carbon emissions associated with websites and apps is in its infancy but there are benefits to doing
@@ -132,7 +138,8 @@ const SustainableReportingEmissions = () => {
         <h3>End-to-end testing</h3>
 
         <p>
-          In order to record requests and calculate emissions, I created a simple helper class <em>which I have since converted into an npm library - </em>
+          In order to record requests and calculate emissions, I created a simple helper class{' '}
+          <em>which I have since converted into an npm library - </em>
           <Links.EL
             link={{
               source: 'https://github.com/danhartley/emissions',

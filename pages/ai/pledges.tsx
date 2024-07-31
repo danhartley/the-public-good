@@ -90,29 +90,27 @@ const Pledges = () => {
           AI, to our privacy, to people's rights, and to the environment.
         </p>
         <p>I will return to these questions in later posts, but for now, here are my pledges.</p>
-        
+
         <h3>Pledges</h3>
-        
+
         <div className={styles.inset}>
           <div>
-            I pledge to stop using ChatGPT until the conditions and rights of employees involved in outsourced work
-            have been addressed.
+            I pledge to stop using ChatGPT until the conditions and rights of employees involved in outsourced work have
+            been addressed.
           </div>
           <div>
             <strong>Pledge checkpoint: end of August 2023</strong>
-          </div>      
+          </div>
         </div>
         <div className={styles.inset}>
           <div>
             <del>
-              To prevent myself from being distracted by advances in AI, I pledge to return my focus to other
-              things.
+              To prevent myself from being distracted by advances in AI, I pledge to return my focus to other things.
             </del>
           </div>
           <div>
             <ins>
-              I pledge to stop using ChatGPT until I have a better understanding of its impact on resources and
-              people.
+              I pledge to stop using ChatGPT until I have a better understanding of its impact on resources and people.
             </ins>
             <span> [Updated 6 July 2023]</span>
           </div>
@@ -124,17 +122,15 @@ const Pledges = () => {
           </div>
         </div>
         <div className={styles.inset}>
-          <div>
-            To compensate for the water use of my chats with ChatGPT, I pledge to use grey water for my plants.
-          </div>
+          <div>To compensate for the water use of my chats with ChatGPT, I pledge to use grey water for my plants.</div>
           <div>
             <strong>Pledge checkpoint: end of summer 2023</strong>
           </div>
-        </div>        
+        </div>
         <div className={styles.inset}>
           <div>
-            To share what I learn about AI, I pledge to provide links to the materials, sources, and people that
-            have helped me.
+            To share what I learn about AI, I pledge to provide links to the materials, sources, and people that have
+            helped me.
           </div>
           <div>
             <strong>Pledge checkpoint: tricky, but I'll review this one at the end of the summer too</strong>
@@ -149,7 +145,6 @@ const Pledges = () => {
           <Links.EL link={{ source: 'https://www.altruistiq.com/our-team' }}>Altruistiq</Links.EL> with all of whom I
           have shared conversations about the upsides, downsides, and conundrums of recent developments in AI.
         </p>
-
       </section>
 
       <section>

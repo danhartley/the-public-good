@@ -15,8 +15,8 @@ class MyDocument extends Document {
         </Head>
         <body
           style={{
-            backgroundColor:'rgb(255, 255, 255)',
-            margin: '0 calc(.75rem + 1vw) .5rem calc(.75rem + 1vw)'            
+            backgroundColor: 'rgb(255, 255, 255)',
+            margin: '0 calc(.75rem + 1vw) .5rem calc(.75rem + 1vw)',
           }}
         >
           <Main />

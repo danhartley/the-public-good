@@ -52,21 +52,17 @@ const Services = () => {
           The sociable contract outlines the principles upon which a website is built. It reflects the efforts of
           everyone who contributes to the project.
         </p>
-        
+
         <div>
-          I have created a{' '}
-          <Links.IL link={{ source: 'web-development/sociable-contract' }}>sociable contract</Links.IL> for The Public
-          Good.
+          I have created a <Links.IL link={{ source: 'web-development/sociable-contract' }}>sociable contract</Links.IL>{' '}
+          for The Public Good.
         </div>
 
         <h2>Best practices</h2>
         <p>
           <span className={styles.internalLink}>
             I have selected and tested this development stack over the course of{' '}
-            <Link href={'/projects'}>
-              4 projects
-            </Link>
-            .
+            <Link href={'/projects'}>4 projects</Link>.
           </span>
         </p>
         <p>

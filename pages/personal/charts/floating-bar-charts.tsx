@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 
 import { Bar } from 'react-chartjs-2'
-import { Chart, registerables } from 'chart.js';
+import { Chart, registerables } from 'chart.js'
 
 import styles from 'components/dashboard/Dashboard.module.scss'
 
 import annotationPlugin from 'chartjs-plugin-annotation'
 
-Chart.register(...registerables);
+Chart.register(...registerables)
 Chart.register(annotationPlugin)
 
 const FloatingBarChart = ({ dataSources, config }) => {

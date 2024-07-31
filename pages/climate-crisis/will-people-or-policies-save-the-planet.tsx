@@ -78,11 +78,9 @@ const CarbonFootprint = () => {
         <p className={styles.quote}>
           The cumulative amount of carbon dioxide (CO2) emissions permitted over a period of time to keep within a
           certain temperature threshold.{' '}
-          <Links.EL link={{ source: 'https://carbontracker.org/carbon-budgets-explained/' }}>
-            Carbon Tracker
-          </Links.EL>
+          <Links.EL link={{ source: 'https://carbontracker.org/carbon-budgets-explained/' }}>Carbon Tracker</Links.EL>
         </p>
-        
+
         <p>
           The{' '}
           <Links.EL link={{ source: 'https://essd.copernicus.org/articles/12/3269/2020/' }}>
@@ -90,8 +88,8 @@ const CarbonFootprint = () => {
           </Links.EL>
           , published annually, provides an account of the balance between carbon sources - emissions - and sinks. The
           movement of carbon atoms betweens sinks and sources is called the{' '}
-          <Links.EL link={{ source: 'https://oceanservice.noaa.gov/facts/carbon-cycle.html' }}>carbon cycle</Links.EL>
-          , and it is perturbations in this cycle which cause global warming. Since 1950 around{' '}
+          <Links.EL link={{ source: 'https://oceanservice.noaa.gov/facts/carbon-cycle.html' }}>carbon cycle</Links.EL>,
+          and it is perturbations in this cycle which cause global warming. Since 1950 around{' '}
           <Links.EL
             link={{
               source:
@@ -112,8 +110,8 @@ const CarbonFootprint = () => {
           .
         </p>
         <p>
-          Natural sinks cannot be relied on indefinitely, and become sources of emissions if they are removed or
-          die. IPCC calculations and Nationally Determined Contributions{' '}
+          Natural sinks cannot be relied on indefinitely, and become sources of emissions if they are removed or die.
+          IPCC calculations and Nationally Determined Contributions{' '}
           <Links.EL
             link={{
               source:
@@ -132,8 +130,8 @@ const CarbonFootprint = () => {
           (DAC).
         </p>
         <p>
-          Carbon capture and storage, and carbon offsetting are used, at best, to keep emissions from an activity
-          carbon neutral; they do not reduce carbon already in the atmosphere.
+          Carbon capture and storage, and carbon offsetting are used, at best, to keep emissions from an activity carbon
+          neutral; they do not reduce carbon already in the atmosphere.
         </p>
 
         <h3>CO2e</h3>
@@ -164,8 +162,8 @@ const CarbonFootprint = () => {
 
         <div className={styles.quote}>
           <div>
-            The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or
-            product, expressed as carbon dioxide equivalent.{' '}
+            The total greenhouse gas (GHG) emissions caused by an individual, event, organisation, service, or product,
+            expressed as carbon dioxide equivalent.{' '}
             <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Carbon_footprint' }}>Wikipedia</Links.EL>
           </div>
         </div>
@@ -181,7 +179,7 @@ const CarbonFootprint = () => {
             We need systemic changes that will reduce everyone’s carbon footprint, whether or not they care.
           </div>
         </div>
-        
+
         <div>
           The debate around carbon footprints is often about who is{' '}
           <Links.EL
@@ -219,7 +217,7 @@ const CarbonFootprint = () => {
           </Links.EL>{' '}
           (2013) assets.
         </div>
-        
+
         <div>
           In his article,{' '}
           <Links.EL link={{ source: 'https://mashable.com/feature/carbon-footprint-pr-campaign-sham' }}>
@@ -229,13 +227,13 @@ const CarbonFootprint = () => {
           , Mark Kaufman argues the burden of responsibility for global warming must be placed squarely on the fossil
           fuel industry. He concludes,
           <div className={styles.quote}>
-            BP wants you to accept responsibility for the globally disrupted climate. Just like beverage
-            industrialists wanted people to feel bad about the amassing pollution created by their plastics and cans,
-            or more sinisterly, tobacco companies blamed smokers for becoming addicted to addictive carcinogenic
-            products. We’ve seen this manipulative playbook before, and BP played it well.
+            BP wants you to accept responsibility for the globally disrupted climate. Just like beverage industrialists
+            wanted people to feel bad about the amassing pollution created by their plastics and cans, or more
+            sinisterly, tobacco companies blamed smokers for becoming addicted to addictive carcinogenic products. We’ve
+            seen this manipulative playbook before, and BP played it well.
           </div>
         </div>
-        
+
         <h3>Carbon footprint of societies</h3>
 
         <div>
@@ -256,9 +254,9 @@ const CarbonFootprint = () => {
           <div>
             <p>
               <em>
-                A <Links.EL link={{ source: 'https://pubs.acs.org/doi/10.1021/es803496a#' }}>paper</Links.EL> from
-                2009, puts the domestic share of emissions at 80%, the world average at 73%, and most European
-                countries in the 60s. (Ed. {new Date('Mon 29 March 2021').toDateString()})
+                A <Links.EL link={{ source: 'https://pubs.acs.org/doi/10.1021/es803496a#' }}>paper</Links.EL> from 2009,
+                puts the domestic share of emissions at 80%, the world average at 73%, and most European countries in
+                the 60s. (Ed. {new Date('Mon 29 March 2021').toDateString()})
               </em>
             </p>
           </div>
@@ -282,7 +280,7 @@ const CarbonFootprint = () => {
             (PDF)
           </li>
         </ul>
-        
+
         <h3>Downsides of carbon footprints</h3>
 
         <ul className={styles.dashedItemsList}>
@@ -465,7 +463,7 @@ const CarbonFootprint = () => {
         <p>Do individual acts detract from systemic changes that might be more productive?</p>
 
         <p>
-        Two recent studies provide evidential support that we keep a tally of our moral acts, and are quick to call in
+          Two recent studies provide evidential support that we keep a tally of our moral acts, and are quick to call in
           our debt; acceptance of{' '}
           <Links.EL
             link={{
@@ -485,15 +483,14 @@ const CarbonFootprint = () => {
             may not be willing to incur large costs to achieve a solution. With the perceived existence of a low-cost
             solution (a nudge), motivated reasoning may tempt some to exaggerate its ultimately small environmental
             impact. This may explain why participants generally thought the nudge was as or more effective at reducing
-            pollution than the carbon tax. 
+            pollution than the carbon tax.
           </div>
           <div>
-            However, even those who knew that the carbon tax is more effective than the
-            green energy nudge were discouraged from implementing the tax when a nudge became available, suggesting that
-            crowding-out is not merely the result of incorrect perceptions of relative effectiveness. When these
-            perceptions are corrected at the time of decision, however, motivated reasoning is difficult and
-            crowding-out disappears.
-          </div>          
+            However, even those who knew that the carbon tax is more effective than the green energy nudge were
+            discouraged from implementing the tax when a nudge became available, suggesting that crowding-out is not
+            merely the result of incorrect perceptions of relative effectiveness. When these perceptions are corrected
+            at the time of decision, however, motivated reasoning is difficult and crowding-out disappears.
+          </div>
         </blockquote>
 
         <p>A little hope in the final sentence.</p>

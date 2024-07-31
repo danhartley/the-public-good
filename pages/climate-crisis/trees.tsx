@@ -84,8 +84,8 @@ const Trees = () => {
               </strong>
             </dt>
             <dd>
-              Example 2 tonnes C to <Formula>CO2</Formula>: 2 &#215; 3<span className={styles.fraction}>&#8532;</span> = 7
-              <span className={styles.fraction}>&#8531;</span> t
+              Example 2 tonnes C to <Formula>CO2</Formula>: 2 &#215; 3<span className={styles.fraction}>&#8532;</span> =
+              7<span className={styles.fraction}>&#8531;</span> t
             </dd>
           </dl>
           <div>
@@ -354,7 +354,8 @@ const Trees = () => {
         </dl>
 
         <aside>
-          Per capita we emit ~6<span className={styles.fraction}>&#188;</span> tonnes of <Formula>CO2</Formula>e each year
+          Per capita we emit ~6<span className={styles.fraction}>&#188;</span> tonnes of <Formula>CO2</Formula>e each
+          year
         </aside>
 
         <h3>How many trees would we need to sequester all of our emissions?</h3>

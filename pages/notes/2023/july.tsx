@@ -1289,8 +1289,9 @@ const July = () => {
                 Total emissions from training is significant ~253 tons of CO<span className={styles.sub}>2</span>eq
               </li>
               <li>
-                Emissions per model trained is rising, from an average of 487 tons CO<span className={styles.sub}>2</span>eq
-                in 2015-16 to 2020 tons CO<span className={styles.sub}>2</span>eq in 2020-22
+                Emissions per model trained is rising, from an average of 487 tons CO
+                <span className={styles.sub}>2</span>eq in 2015-16 to 2020 tons CO<span className={styles.sub}>2</span>
+                eq in 2020-22
               </li>
               <li>Overall emissions due to ML model training are rising</li>
               <li>

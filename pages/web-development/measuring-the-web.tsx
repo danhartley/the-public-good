@@ -293,8 +293,8 @@ const MeasuringTheWeb = () => {
             carbon emissions for which they are responsible.
           </h2>
           <p>
-            The CO<span className={styles.sub}>2</span> emissions associated with digital products and services depends on
-            many factors and varies depending on which are taken into account.
+            The CO<span className={styles.sub}>2</span> emissions associated with digital products and services depends
+            on many factors and varies depending on which are taken into account.
           </p>
           <p>
             I am going to concentrate on websites, including web apps, and briefly cover streaming video. The aim is to
@@ -408,7 +408,6 @@ const MeasuringTheWeb = () => {
           <div className={styles.inset}>
             <EnergyAndEmissionsTable setEnergyAndEmissionsState={setEnergyAndEmissionsState} />
           </div>
-
 
           <h4>Output values</h4>
 
@@ -527,9 +526,9 @@ const MeasuringTheWeb = () => {
               Tom Greenwood
             </Links.EL>{' '}
             describes the problem of where to set emissions' boundaries, and explains how the{' '}
-            <Links.EL link={{ source: 'https://www.websitecarbon.com/' }}>website carbon calculator</Links.EL>{' '}
-            measures a site's emissions. Tom uses a value for emissions intensity of 1.8 kWh/GB in his article but I
-            understand the website carbon calculator is now using a value of 0.81 kWh/GB in line with{' '}
+            <Links.EL link={{ source: 'https://www.websitecarbon.com/' }}>website carbon calculator</Links.EL> measures
+            a site's emissions. Tom uses a value for emissions intensity of 1.8 kWh/GB in his article but I understand
+            the website carbon calculator is now using a value of 0.81 kWh/GB in line with{' '}
             <Links.EL link={{ source: 'https://sustainablewebdesign.org/calculating-digital-emissions/' }}>
               Sustainable Web Design
             </Links.EL>
@@ -563,10 +562,10 @@ const MeasuringTheWeb = () => {
           <p>
             Using Cisco's figure value for gigabytes of data gives an annual value of ({averageMonthlyTrafficPerUser}
             *12) {(1680).toLocaleString()} GBs.
-          </p>          
+          </p>
           <div className={styles.inset}>
             <UKDataOptionsTable setDataOptionsState={setDataOptionsState} />
-          </div>        
+          </div>
           <h4>Output values</h4>
           <div className={styles.calculatedValues}>
             <div>
@@ -584,16 +583,16 @@ const MeasuringTheWeb = () => {
             </div>
           </div>
           <div className={styles.inset}>
-              How does this compare to <strong>UK average electricity</strong> use per person of{' '}
-              <Links.EL
-                link={{
-                  source:
-                    'https://ourworldindata.org/energy/country/united-kingdom#per-capita-how-much-energy-does-the-average-person-consumehttps://ourworldindata.org/energy/country/united-kingdom#per-capita-how-much-energy-does-the-average-person-consume',
-                }}
-              >
-                {averageAnnualElectricty.toLocaleString()} kWhs
-              </Links.EL>
-              ?
+            How does this compare to <strong>UK average electricity</strong> use per person of{' '}
+            <Links.EL
+              link={{
+                source:
+                  'https://ourworldindata.org/energy/country/united-kingdom#per-capita-how-much-energy-does-the-average-person-consumehttps://ourworldindata.org/energy/country/united-kingdom#per-capita-how-much-energy-does-the-average-person-consume',
+              }}
+            >
+              {averageAnnualElectricty.toLocaleString()} kWhs
+            </Links.EL>
+            ?
           </div>
           <div>
             <div>
@@ -623,7 +622,7 @@ const MeasuringTheWeb = () => {
               </Links.EL>{' '}
               (2019)?
             </div>
-          </div>     
+          </div>
           <div>
             <div>
               <MiniBarChart
@@ -823,16 +822,14 @@ const MeasuringTheWeb = () => {
                 <span>
                   <strong>Main components of ICT energy consumption (2021)</strong>
                 </span>
-                <Links.EL
-                  link={{ source: 'https://www.greenit.fr/impacts-environnementaux-du-numerique-en-france/' }}
-                >
+                <Links.EL link={{ source: 'https://www.greenit.fr/impacts-environnementaux-du-numerique-en-france/' }}>
                   GreenIT - iNUM : impacts environnementaux du numérique en France
                 </Links.EL>
               </div>
             </figcaption>
             <PieChartComponentEnergyConsumption model={'greenIT'} />
           </figure>
-          <p>Climate care includes the energy used to manufacture the hardware.</p>          
+          <p>Climate care includes the energy used to manufacture the hardware.</p>
           <figure>
             <figcaption>
               <div>

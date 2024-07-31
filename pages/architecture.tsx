@@ -32,7 +32,6 @@ const Architecture = (): JSX.Element => {
           </li>
         </ul>
 
-
         <p>
           With each website I do something new. For this website I experimented with{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Light-on-dark_color_scheme' }}>dark mode</Links.EL>.
@@ -74,10 +73,10 @@ const Architecture = (): JSX.Element => {
               </li>
               <li>
                 Pages are statically generated using{' '}
-                <Links.EL link={{ source: 'https://nextjs.org/' }}>next.js</Links.EL>. Instead of serving dynamic
-                pages based on variables, such as a specific product or blog, a static site generator (SSG), like
-                Next.js, is used to create all of these pages - which could be many thousands - each time the site is
-                updated. They are therefore immediately available to a browser request.
+                <Links.EL link={{ source: 'https://nextjs.org/' }}>next.js</Links.EL>. Instead of serving dynamic pages
+                based on variables, such as a specific product or blog, a static site generator (SSG), like Next.js, is
+                used to create all of these pages - which could be many thousands - each time the site is updated. They
+                are therefore immediately available to a browser request.
               </li>
             </ul>
           </li>
@@ -88,10 +87,10 @@ const Architecture = (): JSX.Element => {
             </span>
             <ul className={styles.dashedItemsList}>
               <li>
-                <Links.EL link={{ source: 'https://preactjs.com/' }}>Preact</Links.EL> is a light-weight alternative
-                to React which models the state of a page and modifies it in response to user actions. Preact adds to
-                the page weight. For this site I could have dispensed with a framework, it is sufficiently simple that
-                I could have written it in Notepad, but this site is also intended to serve as a guide on more complex
+                <Links.EL link={{ source: 'https://preactjs.com/' }}>Preact</Links.EL> is a light-weight alternative to
+                React which models the state of a page and modifies it in response to user actions. Preact adds to the
+                page weight. For this site I could have dispensed with a framework, it is sufficiently simple that I
+                could have written it in Notepad, but this site is also intended to serve as a guide on more complex
                 projects.
               </li>
             </ul>

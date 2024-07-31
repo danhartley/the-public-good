@@ -510,7 +510,9 @@ const Thinking = () => {
                 https://www.globalwitness.org/en/campaigns/environmental-activists/defending-tomorrow/ */}
         <p>
           As Tim Christophersen, head of the Nature for Climate branch at the UN Environment Programme, puts it,
-          <span className={styles.quote}>Ecosystem restoration is not a technical challenge; it’s a social challenge.</span>
+          <span className={styles.quote}>
+            Ecosystem restoration is not a technical challenge; it’s a social challenge.
+          </span>
         </p>
         <p>
           Mann is worried that debates about personal choices will distract from the need to police carbon emissions.

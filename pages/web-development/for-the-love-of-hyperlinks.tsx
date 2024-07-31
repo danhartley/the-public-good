@@ -77,9 +77,9 @@ const Hyperlinks = () => {
 
         <p>
           Connecting to an external resource is like conferring a little bit of praise or, at least, vouching for the
-          worth of the recipient. For this reason it is incumbent on the referrer to check they are not sending
-          readers to sites behind paywalls or that will bombard them with pop-ups, that will not steal their data, and
-          that has little or no advertising.
+          worth of the recipient. For this reason it is incumbent on the referrer to check they are not sending readers
+          to sites behind paywalls or that will bombard them with pop-ups, that will not steal their data, and that has
+          little or no advertising.
         </p>
 
         <p>
@@ -88,17 +88,17 @@ const Hyperlinks = () => {
         </p>
 
         <p>
-            To increase the security of a site and to avoid endorsing the source of a link the attributes{' '}
-            <Links.EL link={{ source: 'https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/' }}>
-              noopener, noreferrer and nofollow
-            </Links.EL>{' '}
-            can be added. Google has introduced 'sponsored' and 'user-generated content' attributes to{' '}
-            <Links.EL
-              link={{ source: 'https://developers.google.com/search/docs/advanced/guidelines/qualify-outbound-links' }}
-            >
-              qualify outbound links
-            </Links.EL>{' '}
-            to site sponsors and for links added by users in comments and forums.
+          To increase the security of a site and to avoid endorsing the source of a link the attributes{' '}
+          <Links.EL link={{ source: 'https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/' }}>
+            noopener, noreferrer and nofollow
+          </Links.EL>{' '}
+          can be added. Google has introduced 'sponsored' and 'user-generated content' attributes to{' '}
+          <Links.EL
+            link={{ source: 'https://developers.google.com/search/docs/advanced/guidelines/qualify-outbound-links' }}
+          >
+            qualify outbound links
+          </Links.EL>{' '}
+          to site sponsors and for links added by users in comments and forums.
         </p>
 
         <p>
@@ -109,23 +109,20 @@ const Hyperlinks = () => {
         <h3>Is blue the warmest colour?</h3>
 
         <p>
-          The default colour for links the user hasn't clicked on is <span className={styles.defaultBlue}>blue</span>. Why
-          blue? According to Tim Berners-Lee, there is no good reason,{' '}
+          The default colour for links the user hasn't clicked on is <span className={styles.defaultBlue}>blue</span>.
+          Why blue? According to Tim Berners-Lee, there is no good reason,{' '}
           <Links.EL link={{ source: 'https://www.w3.org/People/Berners-Lee/FAQ.html' }}>it is just a default</Links.EL>.
         </p>
 
         <blockquote>
-            <div>
-              The mother of bad web design conventions is the decision to make hypertext links blue. Other colors would
-              have been a better choice and would have increased the reading speed of the anchor text by a few percent.
-              It is unfortunate to put the most important text on the page in a color that is known to reduce
-              readability.
-            </div>
+          <div>
+            The mother of bad web design conventions is the decision to make hypertext links blue. Other colors would
+            have been a better choice and would have increased the reading speed of the anchor text by a few percent. It
+            is unfortunate to put the most important text on the page in a color that is known to reduce readability.
+          </div>
         </blockquote>
         <cite>
-          <Links.EL
-            link={{ source: 'https://www.nngroup.com/articles/when-bad-design-elements-become-the-standard/' }}
-          >
+          <Links.EL link={{ source: 'https://www.nngroup.com/articles/when-bad-design-elements-become-the-standard/' }}>
             When Bad Design Elements Become the Standard
           </Links.EL>{' '}
           <span>Jakob Nielsen</span>
@@ -140,7 +137,7 @@ const Hyperlinks = () => {
           already visited. This is especially important if the link is to an external source.
         </p>
 
-        <p>          
+        <p>
           It is tempting to override the defaults for links, and there are sound reasons for doing so. I will come to
           these.
         </p>
@@ -186,9 +183,7 @@ const Hyperlinks = () => {
           for example.
         </p>
 
-        <p>
-          On the other hand, WebAIM warns us not to neglect readers with forms of colour blindness:
-        </p>
+        <p>On the other hand, WebAIM warns us not to neglect readers with forms of colour blindness:</p>
         <blockquote>
           <div>Make sure that colors are not the only method of conveying important information. </div>
         </blockquote>
@@ -219,24 +214,23 @@ const Hyperlinks = () => {
           Evidence suggests that judicious use of links does not impair understanding, or interrupt the reader's
           concentration.
         </p>
-          <blockquote>
-            <div>
-              In terms of Web design and layouts, the present results highlight the importance of carefully considering
-              which words are hyperlinked in webpages. The key lesson for Web designers that we have found here is that
-              coloured words do not have any negative impact on reading behaviour.
-            </div>
-          </blockquote>
-          <cite>
-            <Links.EL
-              link={{
-                label: 'Gemma Fitzsimmons | The impact of hyperlinks on reading text',
-                source: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210900',
-              }}
-            >
-              The impact of hyperlinks on reading text
-            </Links.EL>
-          </cite>
-        
+        <blockquote>
+          <div>
+            In terms of Web design and layouts, the present results highlight the importance of carefully considering
+            which words are hyperlinked in webpages. The key lesson for Web designers that we have found here is that
+            coloured words do not have any negative impact on reading behaviour.
+          </div>
+        </blockquote>
+        <cite>
+          <Links.EL
+            link={{
+              label: 'Gemma Fitzsimmons | The impact of hyperlinks on reading text',
+              source: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210900',
+            }}
+          >
+            The impact of hyperlinks on reading text
+          </Links.EL>
+        </cite>
 
         <p>
           Solitary links are salient and may be distracting; a sprinkling of links, composed of common words, singly or
@@ -259,20 +253,20 @@ const Hyperlinks = () => {
             The impact of hyperlinks on reading text
           </Links.EL>
         </cite>
-        
+
         <p>
-            Meaningful and distinguishable link text is essential for users of screen readers who may scan links
-            independently of other content. If the link text is insufficient, alternative text can be placed in an{' '}
-            <Links.EL
-              link={{
-                label: 'MDN Using the aria-label attribute',
-                source:
-                  'https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute',
-              }}
-            >
-              aria-label attribute
-            </Links.EL>{' '}
-            which will not be seen by sighted readers.
+          Meaningful and distinguishable link text is essential for users of screen readers who may scan links
+          independently of other content. If the link text is insufficient, alternative text can be placed in an{' '}
+          <Links.EL
+            link={{
+              label: 'MDN Using the aria-label attribute',
+              source:
+                'https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute',
+            }}
+          >
+            aria-label attribute
+          </Links.EL>{' '}
+          which will not be seen by sighted readers.
         </p>
 
         <p>
@@ -313,7 +307,7 @@ const Hyperlinks = () => {
         <p>
           The W3C (World Wide Web Consortium) recommends that links open in the same window or tab as the current page.
         </p>
-          <blockquote>
+        <blockquote>
           <div>
             In general, it is better not to open new windows and tabs since they can be disorienting for people,
             especially people who have difficulty perceiving visual content.
@@ -332,9 +326,7 @@ const Hyperlinks = () => {
 
         <p>If the user wishes to open a new window or tab, that option remains available.</p>
 
-        <p>
-          If you don't know the keyboard shortcuts, here they are:
-        </p>
+        <p>If you don't know the keyboard shortcuts, here they are:</p>
         <ul>
           <li>Mac: ⌘ + link</li>
           <li>Windows & Linux: Ctrl + link</li>

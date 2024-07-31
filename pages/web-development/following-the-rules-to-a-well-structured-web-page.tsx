@@ -182,14 +182,14 @@ const MentalModel = () => {
           The basic structure of a page is set out using HTML elements. HTML is also innately semantic; it confers
           meaning.
         </p>
-        
+
         <p>
           Visual elaboration of meaning - design - is usually via rules written in a language called{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/CSS' }}>CSS</Links.EL>. CSS wasn't part of the
           original specification for web pages but was added later to provide designers and developers with greater
           control over presentation, formatting, and layout.
         </p>
-        
+
         <p>
           CSS can be used to control every aspect of a page from fonts, colours, the look and behaviour of buttons and
           links, to page layout.
@@ -214,7 +214,7 @@ const MentalModel = () => {
             Salvation
           </div>
         </div>
-        
+
         <p>If you are using a screen reader you know the answer. There is only one button.</p>
 
         <p>
@@ -260,7 +260,7 @@ const MentalModel = () => {
             </span>
           </span>
         </div>
-        
+
         <p>
           The specification recommends one H1 element per page and so it is often reserved for the title. The author may
           use as many of the other headers as they please provided they are nested correctly - H3 within H2, etc.
@@ -329,9 +329,7 @@ const MentalModel = () => {
           <div>Users spend most of their time on other sites.</div>
         </blockquote>
         <cite>
-          <Links.EL link={{ source: 'https://www.nngroup.com/videos/jakobs-law-internet-ux/' }}>
-            Jakob's Law
-        </Links.EL>
+          <Links.EL link={{ source: 'https://www.nngroup.com/videos/jakobs-law-internet-ux/' }}>Jakob's Law</Links.EL>
         </cite>
 
         <p>

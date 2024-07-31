@@ -129,8 +129,8 @@ const Carbon = () => {
 
         <p>
           Carbon assumes different structural forms -{' '}
-          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Allotropy' }}>allotropes</Links.EL>. Alternate
-          forms of the same element are created by external forces, such as heat and pressure.
+          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Allotropy' }}>allotropes</Links.EL>. Alternate forms
+          of the same element are created by external forces, such as heat and pressure.
         </p>
 
         <p>
@@ -234,8 +234,10 @@ const Carbon = () => {
         </p>
 
         <div>
-          <p>When hydrocarbons are burnt in air they react with oxygen to release the energy stored in their covalent bonds
-          in the form of light and heat.</p>
+          <p>
+            When hydrocarbons are burnt in air they react with oxygen to release the energy stored in their covalent
+            bonds in the form of light and heat.
+          </p>
           <div className={styles.inset}>
             <span>Hydrocarbon + oxygen → carbon dioxide + water + energy (light and heat)</span>
             <span>
@@ -258,39 +260,40 @@ const Carbon = () => {
 
         <p>
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Acetylene' }}>Acetylene</Links.EL> C
-          <span className={styles.sub}>2</span>H<span className={styles.sub}>2</span> burns at around 3,330°C in pure oxygen
-          (oxyacetylene process) making it suitable for welding and cutting metals. The bulk of the energy released from
-          acetylene is derived from the triple bond that exists between the two carbon atoms in each molecule.
+          <span className={styles.sub}>2</span>H<span className={styles.sub}>2</span> burns at around 3,330°C in pure
+          oxygen (oxyacetylene process) making it suitable for welding and cutting metals. The bulk of the energy
+          released from acetylene is derived from the triple bond that exists between the two carbon atoms in each
+          molecule.
         </p>
 
         <Accordion header="Forms and formulae of fossil fuels">
           <div className={styles.inset}>
-              <div>
-                C<span className={styles.sub}>4</span>H<span className={styles.sub}>10</span> - butane and C
-                <span className={styles.sub}>8</span>H<span className={styles.sub}>18</span> - octane are pure hydrocarbons.
-                Petrol is a mixture of many hydrocarbons.
-              </div>
-              <div>
-                Naturally occurring, unrefined fossil fuels, such as crude oil and coal, contain impurities which are
-                released when they are burnt. Coal is of variable quality; higher grade forms such as anthracite have a
-                higher ratio of carbon to other elements, including oxygen - O, nitrogen - N and sulfur - S.
-              </div>
-              <div>
-                Low grade <strong>bituminous</strong> coal has the formula{' '}
-                <strong>
-                  C<span className={styles.sub}>137</span>H<span className={styles.sub}>97</span>O
-                  <span className={styles.sub}>9</span>NS
-                </strong>
-                .
-              </div>
-              <div>
-                High grade <strong>anthracite</strong> has the formula{' '}
-                <strong>
-                  C<span className={styles.sub}>240</span>H<span className={styles.sub}>99</span>O
-                  <span className={styles.sub}>4</span>NS
-                </strong>
-                .
-              </div>
+            <div>
+              C<span className={styles.sub}>4</span>H<span className={styles.sub}>10</span> - butane and C
+              <span className={styles.sub}>8</span>H<span className={styles.sub}>18</span> - octane are pure
+              hydrocarbons. Petrol is a mixture of many hydrocarbons.
+            </div>
+            <div>
+              Naturally occurring, unrefined fossil fuels, such as crude oil and coal, contain impurities which are
+              released when they are burnt. Coal is of variable quality; higher grade forms such as anthracite have a
+              higher ratio of carbon to other elements, including oxygen - O, nitrogen - N and sulfur - S.
+            </div>
+            <div>
+              Low grade <strong>bituminous</strong> coal has the formula{' '}
+              <strong>
+                C<span className={styles.sub}>137</span>H<span className={styles.sub}>97</span>O
+                <span className={styles.sub}>9</span>NS
+              </strong>
+              .
+            </div>
+            <div>
+              High grade <strong>anthracite</strong> has the formula{' '}
+              <strong>
+                C<span className={styles.sub}>240</span>H<span className={styles.sub}>99</span>O
+                <span className={styles.sub}>4</span>NS
+              </strong>
+              .
+            </div>
           </div>
         </Accordion>
 
@@ -448,8 +451,8 @@ const Carbon = () => {
         </p>
 
         <p>
-            Will we enjoy an equally profitable but more sustainable relationship with{' '}
-            <Links.IL link={{ source: 'climate-crisis/hydrogen-a-singular-atom' }}>hydrogen</Links.IL>?
+          Will we enjoy an equally profitable but more sustainable relationship with{' '}
+          <Links.IL link={{ source: 'climate-crisis/hydrogen-a-singular-atom' }}>hydrogen</Links.IL>?
         </p>
 
         <Top></Top>

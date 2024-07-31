@@ -102,11 +102,11 @@ const Hydrogen = () => {
         </p>
 
         <p>
-            Hydrogen was the first element in the universe and it is the{' '}
-            <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements' }}>
-              most abundant
-            </Links.EL>
-            . From it all other elements are formed.
+          Hydrogen was the first element in the universe and it is the{' '}
+          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements' }}>
+            most abundant
+          </Links.EL>
+          . From it all other elements are formed.
         </p>
 
         <h3>Covalent and hydrogen bonds</h3>
@@ -134,11 +134,11 @@ const Hydrogen = () => {
         </p>
 
         <p>
-          The bonds in these compounds are polar. In a molecule of water, the shared electrons spend more time near
-          the (more electronegative) oxygen atom, which therefore takes on a partial negative charge. The hydrogen end
-          of the molecule, where the electron spends less time, takes on a partial positive charge. Molecules of water
-          position themselves in response to these partial charges; the hydrogen of one molecule being attracted to
-          the oxygen of another (unlike charges attract), to form a <strong>hydrogen bond</strong>.
+          The bonds in these compounds are polar. In a molecule of water, the shared electrons spend more time near the
+          (more electronegative) oxygen atom, which therefore takes on a partial negative charge. The hydrogen end of
+          the molecule, where the electron spends less time, takes on a partial positive charge. Molecules of water
+          position themselves in response to these partial charges; the hydrogen of one molecule being attracted to the
+          oxygen of another (unlike charges attract), to form a <strong>hydrogen bond</strong>.
         </p>
 
         <p>
@@ -150,10 +150,10 @@ const Hydrogen = () => {
           <div className={styles.inset}>
             <p>
               The polarity of water makes it a good solvent. When salt Na<span className={styles.super}>+</span>Cl
-              <span className={styles.super}>-</span> is added to water, it dissolves; positive sodium ions - charged atoms
-              are called ions - are attracted to the slightly negative hydrogen end of the water molecule, and positive
-              chlorine ions are attracted to the oxygen end, thereby breaking apart, or dissolving, the bonds between
-              the sodium and chlorine atoms.
+              <span className={styles.super}>-</span> is added to water, it dissolves; positive sodium ions - charged
+              atoms are called ions - are attracted to the slightly negative hydrogen end of the water molecule, and
+              positive chlorine ions are attracted to the oxygen end, thereby breaking apart, or dissolving, the bonds
+              between the sodium and chlorine atoms.
             </p>
             <p>
               Why are the sodium and chlorine atoms in salt charged? The sodium and chlorine atoms in salt are bound
@@ -161,7 +161,8 @@ const Hydrogen = () => {
               <Links.EL link={{ source: 'https://www.youtube.com/watch?v=hiyTfhjeF_U' }}>ionic bond</Links.EL> (video).
               Ionic bonds occur where an electron, or electrons, are transferred from one atom to another, in this case
               from a sodium atom to a chlorine atom. Since the two atoms now have opposite charges they attract. Na
-              becomes Na<span className={styles.super}>+</span> and Cl becomes Cl<span className={styles.super}>-</span>.
+              becomes Na<span className={styles.super}>+</span> and Cl becomes Cl<span className={styles.super}>-</span>
+              .
             </p>
           </div>
         </Accordion>
@@ -201,8 +202,7 @@ const Hydrogen = () => {
             <p className={styles.inset}>
               <strong>Steam-methane reforming reaction</strong>
               <span>
-                <Formula>CH4</Formula> + <Formula>H2O</Formula> (+heat) → <Formula>CO</Formula> + 3
-                <Formula>H2</Formula>
+                <Formula>CH4</Formula> + <Formula>H2O</Formula> (+heat) → <Formula>CO</Formula> + 3<Formula>H2</Formula>
               </span>
               <strong>Water-gas shift reaction</strong>
               <span>
@@ -243,8 +243,7 @@ const Hydrogen = () => {
           >
             other methods of hydrogen production
           </Links.EL>{' '}
-          including photobiological, photoelectrochemical, solar thermochemical, biological processes, and
-          electrolysis.
+          including photobiological, photoelectrochemical, solar thermochemical, biological processes, and electrolysis.
         </p>
 
         <h3>Electrolysis</h3>
@@ -289,8 +288,8 @@ const Hydrogen = () => {
         <h3>Transporting hydrogen</h3>
 
         <p>
-          Converting pipelines to carry a natural gas hydrogen mix is feasible. The cost of adapting existing lines
-          for compressed hydrogen varies depending on whether you ask{' '}
+          Converting pipelines to carry a natural gas hydrogen mix is feasible. The cost of adapting existing lines for
+          compressed hydrogen varies depending on whether you ask{' '}
           <Links.EL
             link={{
               label: 'European Hydrogen Backbone report',
@@ -309,8 +308,8 @@ const Hydrogen = () => {
             critics
           </Links.EL>
           . At the heart of the debate is the feasibility of producing green hydrogen in large volumes soon. If the
-          hydrogen passing through pipelines does not come from renewable sources, it will lock us in to further use
-          of, and dependency on, fossil gas at the expense of investment in renewables.
+          hydrogen passing through pipelines does not come from renewable sources, it will lock us in to further use of,
+          and dependency on, fossil gas at the expense of investment in renewables.
         </p>
 
         <p>
@@ -343,8 +342,8 @@ const Hydrogen = () => {
         <p className={styles.quote}>
           <span>
             A fuel, such as hydrogen, is fed to the anode, and air is fed to the cathode. In a hydrogen fuel cell, a
-            catalyst at the anode separates hydrogen molecules into protons and electrons, which take different paths
-            to the cathode. The electrons go through an external circuit, creating a flow of electricity.
+            catalyst at the anode separates hydrogen molecules into protons and electrons, which take different paths to
+            the cathode. The electrons go through an external circuit, creating a flow of electricity.
           </span>
         </p>
         <p>
@@ -399,10 +398,10 @@ const Hydrogen = () => {
             spectrum
           </Links.EL>{' '}
           (image). 'Grey' hydrogen is produced by burning coal without capturing <Formula>CO2</Formula> emissions. The
-          gas industry in particular is promoting 'blue' hydrogen whereby greenhouse gases emitted during the
-          combustion of gas are sequestered. Carbon capture and storage (CCS) is not, however, established at the
-          scale required despite a decade or more of trials, heavy investment, and government subsidies. In 2020 40
-          million tonnes of <Formula>CO2</Formula> were captured from{' '}
+          gas industry in particular is promoting 'blue' hydrogen whereby greenhouse gases emitted during the combustion
+          of gas are sequestered. Carbon capture and storage (CCS) is not, however, established at the scale required
+          despite a decade or more of trials, heavy investment, and government subsidies. In 2020 40 million tonnes of{' '}
+          <Formula>CO2</Formula> were captured from{' '}
           <Links.EL
             link={{
               label: 'Global CCS Institute report: Global status of CCS 2020',
@@ -431,8 +430,8 @@ const Hydrogen = () => {
 
         <blockquote>
           <span>
-            Producing hydrogen from natural gas with carbon capture and storage, so-called blue hydrogen, could also
-            be <em>the key to keeping Norwegian gas valuable in a low carbon future</em> [emphasis added].
+            Producing hydrogen from natural gas with carbon capture and storage, so-called blue hydrogen, could also be{' '}
+            <em>the key to keeping Norwegian gas valuable in a low carbon future</em> [emphasis added].
           </span>
         </blockquote>
         <cite>
@@ -461,8 +460,8 @@ const Hydrogen = () => {
         <p>
           Hydrogen may have a successful future if it is unburdened by hype, it just might take time for sensible
           methods of production and suitable uses to be found. Produced close to sources of excess renewable energy it
-          may be a good fit for larger forms of transportation (fuel cells) including shipping, for energy storage,
-          and domestic and commercial heating (
+          may be a good fit for larger forms of transportation (fuel cells) including shipping, for energy storage, and
+          domestic and commercial heating (
           <Links.EL
             link={{
               label: 'BBC article - Climate change hope for hydrogen fuel',

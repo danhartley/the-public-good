@@ -61,13 +61,13 @@ const Introduction = () => {
           Principles are general and abstract, work is specific and concrete. We have three practices for bridging this
           gap:
         </p>
-          
+
         <ul className={styles.dashedItemsList}>
           <li>Writing pledges</li>
           <li>Challenging decisions</li>
           <li>Voting</li>
         </ul>
-      
+
         <h4>The idea</h4>
 
         <p>
@@ -131,8 +131,8 @@ const Introduction = () => {
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Non-functional_requirement' }}>
             non-functional
           </Links.EL>{' '}
-          requirements. They describe how the system should behave. We want the analytics tool we choose to{' '}
-          <em>be</em> GDPR compliant
+          requirements. They describe how the system should behave. We want the analytics tool we choose to <em>be</em>{' '}
+          GDPR compliant
           <span className={styles.super}>
             <a href="#carbon">+</a>
           </span>{' '}

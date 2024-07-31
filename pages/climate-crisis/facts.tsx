@@ -102,19 +102,21 @@ const Facts = () => {
 
         <h3>Oil & Gas</h3>
         <blockquote>
-            70% of oil deposits existing today were formed in the Mesozoic age (252 to 66 million years ago), 20% were
-            formed in the Cenozoic age (65 million years ago), and only 10% were formed in the Paleozoic age (541 to 252
-            million years ago). This is likely because the Mesozoic age was marked by a tropical climate, with large
-            amounts of plankton in the ocean.{' '}
-          </blockquote>
-          <cite>
-            {' '}
-            <Links.EL link={{ source: 'https://energyeducation.ca/encyclopedia/Oil_formation' }}>
-              Energy Education: oil formation
-            </Links.EL>
-          </cite>
+          70% of oil deposits existing today were formed in the Mesozoic age (252 to 66 million years ago), 20% were
+          formed in the Cenozoic age (65 million years ago), and only 10% were formed in the Paleozoic age (541 to 252
+          million years ago). This is likely because the Mesozoic age was marked by a tropical climate, with large
+          amounts of plankton in the ocean.{' '}
+        </blockquote>
+        <cite>
+          {' '}
+          <Links.EL link={{ source: 'https://energyeducation.ca/encyclopedia/Oil_formation' }}>
+            Energy Education: oil formation
+          </Links.EL>
+        </cite>
 
-        <h2 id="time" className={`${styles.mt2} ${styles.mb0}`}>Time</h2>
+        <h2 id="time" className={`${styles.mt2} ${styles.mb0}`}>
+          Time
+        </h2>
 
         <h3 className={styles.mt1}>Geologic time</h3>
 
@@ -132,7 +134,9 @@ const Facts = () => {
 
         <Tables.Humans></Tables.Humans>
 
-        <h2 id="emissions" className={`${styles.mt1} ${styles.mb}`}>Emissions</h2>
+        <h2 id="emissions" className={`${styles.mt1} ${styles.mb}`}>
+          Emissions
+        </h2>
 
         <h3 className={styles.mt1}>Emissions since when?</h3>
 
@@ -177,7 +181,9 @@ const Facts = () => {
 
         <Tables.FuelEmissions></Tables.FuelEmissions>
 
-        <h2 id="energy" className={`${styles.mt1} ${styles.mb}`}>Energy</h2>
+        <h2 id="energy" className={`${styles.mt1} ${styles.mb}`}>
+          Energy
+        </h2>
 
         <h3 className={styles.mt1}>Units</h3>
 
@@ -315,24 +321,25 @@ const Facts = () => {
           </div>
         </div>
 
-        <h2 id="photosynthesis" className={`${styles.mt1} ${styles.mb}`}>Photosynthesis</h2>
-
+        <h2 id="photosynthesis" className={`${styles.mt1} ${styles.mb}`}>
+          Photosynthesis
+        </h2>
 
         <blockquote>
           Photosynthesis is an inherently inefficient energy conversion process, and production of biomass has large
           space requirements. Even with an intensively cultivated plantation of fast-growing trees, a wood-burning
-          electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations
-          the rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of
+          electricity generation plant would not have power densities higher than 0.6 W/m2, and for most operations the
+          rate would be below 0.5 W/m2. Space demand for such facilities, then, would be two to three orders of
           magnitude (100 to 1,000 times) greater than for coal- or gas-fired electricity generation.
-          </blockquote>
-          <cite>
-            <Links.EL
-              link={{ source: 'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf' }}
-            >
-              Power density primer Vaclav Smil
-            </Links.EL>{' '}
-            (PDF)
-          </cite>
+        </blockquote>
+        <cite>
+          <Links.EL
+            link={{ source: 'http://vaclavsmil.com/wp-content/uploads/docs/smil-article-power-density-primer.pdf' }}
+          >
+            Power density primer Vaclav Smil
+          </Links.EL>{' '}
+          (PDF)
+        </cite>
 
         {/* <h2>Ocean acidification</h2> */}
       </section>

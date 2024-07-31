@@ -110,7 +110,6 @@ const externalLinks = [
 ]
 
 const Sustainability = () => {
-
   return (
     <Layout header="Sustainability" title="Web sustainability" description={'Web sustainability'}>
       <section>
@@ -156,8 +155,8 @@ const Sustainability = () => {
         </ul>
       </section>
       <section>
-        <div>          
-          <WebsiteCarbonBadge dark={false} percentage='94' co2='0.06' />          
+        <div>
+          <WebsiteCarbonBadge dark={false} percentage="94" co2="0.06" />
         </div>
       </section>
       <section>

@@ -137,9 +137,7 @@ const Change = () => {
           </div>
         </div>
 
-        <p>
-          Commitments have not been honoured.
-        </p>
+        <p>Commitments have not been honoured.</p>
         <blockquote>
           After a year disrupted by the Covid-19 pandemic, nations representing only around 28% of global emissions
           registered new or updated “nationally determined contributions” (NDCs) on the UN’s official registry by the
@@ -147,7 +145,7 @@ const Change = () => {
           absences included the US, India and China.
         </blockquote>
         <cite>
-        <Links.EL
+          <Links.EL
             link={{
               source:
                 'https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition',
@@ -155,7 +153,7 @@ const Change = () => {
           >
             Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?
           </Links.EL>
-        </cite>          
+        </cite>
         <p>
           As a result,{' '}
           <Links.EL link={{ source: 'https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions' }}>
@@ -242,8 +240,8 @@ const Change = () => {
 
         <blockquote>
           You can start explaining some of the limits and possibilities of everyday life or historical progress by
-          playing with energy densities: the more concentrated sources of energy give you many great advantages in
-          terms of their extraction, portability, transportation and storage costs, and conversion options.
+          playing with energy densities: the more concentrated sources of energy give you many great advantages in terms
+          of their extraction, portability, transportation and storage costs, and conversion options.
         </blockquote>
         <cite>
           <Links.EL
@@ -505,9 +503,9 @@ const Change = () => {
 
         <p>
           The future is unlikely to be a clear path agreed upon by all, but a hotchpotch of competing ideas, ideals,
-          protest, chicanery and ingenuity. The emergence of citizen's assemblies may play an important part,
-          reflecting popular convictions that traditional, partisan politics are unable to represent. The French
-          government legislated for a{' '}
+          protest, chicanery and ingenuity. The emergence of citizen's assemblies may play an important part, reflecting
+          popular convictions that traditional, partisan politics are unable to represent. The French government
+          legislated for a{' '}
           <Links.EL
             link={{
               source:
@@ -523,16 +521,15 @@ const Change = () => {
           . The UK government's{' '}
           <Links.EL
             link={{
-              source:
-                'https://www.gov.uk/government/publications/the-ten-point-plan-for-a-green-industrial-revolution',
+              source: 'https://www.gov.uk/government/publications/the-ten-point-plan-for-a-green-industrial-revolution',
             }}
           >
             10 point plan on climate change
           </Links.EL>{' '}
           echoes, in part, the findings of the{' '}
           <Links.EL link={{ source: 'https://www.climateassembly.uk/' }}>Climate Assembly UK</Links.EL>. The{' '}
-          <Links.EL link={{ source: 'https://globalassembly.org/' }}>Global Assembly</Links.EL> has a commendably
-          broad constituency but lacks an accountable body.
+          <Links.EL link={{ source: 'https://globalassembly.org/' }}>Global Assembly</Links.EL> has a commendably broad
+          constituency but lacks an accountable body.
         </p>
 
         <p>

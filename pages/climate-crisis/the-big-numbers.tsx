@@ -61,8 +61,8 @@ const BigNumbers = () => {
               </strong>
             </dt>
             <dd>
-              Example 2 tonnes C to <Formula>CO2</Formula>: 2 &#215; 3<span className={styles.fraction}>&#8532;</span> = 7
-              <span className={styles.fraction}>&#8531;</span> t
+              Example 2 tonnes C to <Formula>CO2</Formula>: 2 &#215; 3<span className={styles.fraction}>&#8532;</span> =
+              7<span className={styles.fraction}>&#8531;</span> t
             </dd>
           </dl>
           <div>
