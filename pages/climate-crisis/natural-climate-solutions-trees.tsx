@@ -291,11 +291,11 @@ const NCSPartOne = () => {
         </p>
         <p>Here is one simple way to measure the height of a tree on level ground.</p>
 
-        <p className={styles.inset}>
+        <div className={styles.inset}>
           Cut a stick the length of your arm. Extend your arm fully in front with the stick held vertically. Walk
           towards the tree until the top and bottom of the stick line up with the top and bottom of the tree. The
           distance to the tree approximates to its height.
-        </p>
+        </div>
 
         <p>
           There are many other, more precise ways to{' '}

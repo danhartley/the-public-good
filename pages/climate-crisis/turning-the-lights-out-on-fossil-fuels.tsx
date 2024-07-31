@@ -40,8 +40,8 @@ const Change = () => {
 
         <h3>The IPCC is established</h3>
 
-        <div>
-          In 1988 the World Meteorological Organisation{' '}
+        <p>
+        In 1988 the World Meteorological Organisation{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/World_Meteorological_Organization' }}>WMO</Links.EL>{' '}
           and the United Nations Environment Programme UNEP established the Intergovernmental Panel on Climate Change{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change' }}>
@@ -54,11 +54,12 @@ const Change = () => {
             UNFCCC
           </Links.EL>{' '}
           whose objective was to,
-          <div className={styles.quote}>
-            Stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous
-            anthropogenic (human-induced) interference with the climate system.
-          </div>
-        </div>
+        </p>
+          
+        <blockquote>
+          Stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous
+          anthropogenic (human-induced) interference with the climate system.
+        </blockquote>
 
         <h3>Assessment reports</h3>
 
@@ -103,7 +104,7 @@ const Change = () => {
 
         <h3>The Paris Agreement</h3>
 
-        <div>
+        <p>
           In accordance with the{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Paris_Agreement' }}>Paris Agreement</Links.EL>,
           signed at{' '}
@@ -125,17 +126,17 @@ const Change = () => {
             NDC
           </Links.EL>{' '}
           which should,
-          <div className={styles.quote}>
-            …embody efforts by each country to reduce national emissions and adapt to the impacts of climate change.
-          </div>
-          The agreement continued,
-          <div className={styles.quote}>
+          </p>
+          <blockquote>
+          …embody efforts by each country to reduce national emissions and adapt to the impacts of climate change.
+          </blockquote>
+          <p>The agreement continued,</p>
+          <blockquote>
             Together, these climate actions determine whether the world achieves the long-term goals of the Paris
             Agreement and to reach global peaking of greenhouse gas (GHG) emissions as soon as possible and to undertake
             rapid reductions thereafter in accordance with best available science, so as to achieve a balance between
             anthropogenic emissions by sources and removals by sinks of GHGs in the second half of this century.
-          </div>
-        </div>
+          </blockquote>
 
         <p>Commitments have not been honoured.</p>
         <blockquote>
@@ -151,7 +152,7 @@ const Change = () => {
                 'https://www.carbonbrief.org/analysis-which-countries-met-the-uns-2020-deadline-to-raise-climate-ambition',
             }}
           >
-            Carbon Brief Analysis: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?
+            Carbon Brief: Which countries met the UN’s 2020 deadline to raise ‘climate ambition’?
           </Links.EL>
         </cite>
         <p>
@@ -371,8 +372,8 @@ const Change = () => {
 
         <h3>Mind the GDP</h3>
 
-        <div>
-          Energy demand is falling in rich countries. In the{' '}
+        <p>
+            Energy demand is falling in rich countries. In the{' '}
           <Links.EL link={{ source: 'https://ourworldindata.org/energy/country/united-states?country=~USA' }}>
             US
           </Links.EL>
@@ -386,25 +387,25 @@ const Change = () => {
           a broad set of values and principles rather than focusing on gross domestic product{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Gross_domestic_product' }}>GDP</Links.EL>. The
           Dasgupta report, commissioned by the UK treasury, sets out the following case,
-          <div className={styles.quote}>
-            The options [set out by this report] for change are geared towards three broad, interconnected transitions,
-            requiring humanity to ensure that our demands on Nature do not exceed its supply, and that we increase
-            Nature’s supply relative to its current level; change our measures of economic success to guide us on a more
-            sustainable path; and transform our institutions and systems – in particular our finance and education
-            systems – to enable these changes and sustain them for future generations.
-            <div>
-              <Links.EL
-                link={{
-                  label: 'The Economics of Biodiversity: The Dasgupta Review',
-                  source:
-                    'https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review',
-                }}
-              >
-                The Economics of Biodiversity: The Dasgupta Review
-              </Links.EL>
-            </div>
-          </div>
-        </div>
+        </p>
+        <blockquote>
+          The options [set out by this report] for change are geared towards three broad, interconnected transitions,
+          requiring humanity to ensure that our demands on Nature do not exceed its supply, and that we increase
+          Nature’s supply relative to its current level; change our measures of economic success to guide us on a more
+          sustainable path; and transform our institutions and systems – in particular our finance and education
+          systems – to enable these changes and sustain them for future generations.
+        </blockquote>
+        <cite>
+          <Links.EL
+            link={{
+              label: 'The Economics of Biodiversity: The Dasgupta Review',
+              source:
+                'https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review',
+            }}
+          >
+            The Economics of Biodiversity: The Dasgupta Review
+          </Links.EL>
+        </cite>
 
         <h3>Historical emissions</h3>
 
@@ -629,12 +630,14 @@ const Change = () => {
               </Links.EL>
             </div>
           </div>
+          <p>
           In 1965 the UK was dependent on coal for 59% of its energy needs; dwindling reserves, the discovery of North
-          Sea Gas, and laterly support for renewables has seen a shift in its energy mix. By 2019 coal supplied just{' '}
+          Sea Gas, and latterly support for renewable energy has seen a shift in its energy mix. By 2019 coal supplied just{' '}
           <Links.EL link={{ source: 'https://ourworldindata.org/energy/country/united-kingdom?country=~GBR' }}>
             3.35%
           </Links.EL>{' '}
           of energy, less than half that of wind power (7.29%).
+          </p>
         </div>
 
         <h3>The transition to oil</h3>

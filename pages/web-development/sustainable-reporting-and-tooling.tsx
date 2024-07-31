@@ -96,14 +96,14 @@ const SustainableReportingAndTooling = () => {
         </p>
 
         <blockquote cite="https://w3c.github.io/sustyweb/">
-          <p>
+          <div>
             Environmental impact through a mixture of user-centered design, performant web development, renewable
             infrastructure, sustainable business strategy, and (with metrics) various combinations of those mentioned.
-          </p>
-          <p>
+          </div>
+          <div>
             Following these guidelines will often make Web content more accessible, usable, and performant as a
             by-product.
-          </p>
+          </div>
         </blockquote>
         <cite>
           <Links.EL

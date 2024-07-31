@@ -75,7 +75,7 @@ const CarbonFootprint = () => {
 
         <h3>Carbon budgets</h3>
 
-        <p className={styles.quote}>
+        <p>
           The cumulative amount of carbon dioxide (CO2) emissions permitted over a period of time to keep within a
           certain temperature threshold.{' '}
           <Links.EL link={{ source: 'https://carbontracker.org/carbon-budgets-explained/' }}>Carbon Tracker</Links.EL>
@@ -168,19 +168,19 @@ const CarbonFootprint = () => {
           </div>
         </div>
 
-        <div>
+        <p>
           The climatologist, Michael E Mann, argues that whilst individual action is important, it must not distract
           from policy. In an article for Time,{' '}
           <Links.EL link={{ source: 'https://time.com/5669071/lifestyle-changes-climate-change/' }}>
-            Lifestyle Changes Aren’t Enough to Save the Planet
+            Lifestyle Changes Aren’t Enough to Save the Planet. Here’s What Could
           </Links.EL>
-          . Here’s What Could, he writes,
+          , he writes,
+          </p>
           <div className={styles.quote}>
             We need systemic changes that will reduce everyone’s carbon footprint, whether or not they care.
           </div>
-        </div>
 
-        <div>
+        <p>
           The debate around carbon footprints is often about who is{' '}
           <Links.EL
             link={{
@@ -191,9 +191,9 @@ const CarbonFootprint = () => {
             responsible
           </Links.EL>{' '}
           for carbon emissions.
-        </div>
+        </p>
 
-        <div>
+        <p>
           In 2002 BP rebranded itself as 'Beyond Petroleum'; as part of their{' '}
           <Links.EL link={{ source: 'https://www.nytimes.com/2006/08/14/opinion/14kenney.html' }}>
             marketing campaign
@@ -216,7 +216,7 @@ const CarbonFootprint = () => {
             wind
           </Links.EL>{' '}
           (2013) assets.
-        </div>
+        </p>
 
         <div>
           In his article,{' '}
@@ -286,13 +286,13 @@ const CarbonFootprint = () => {
         <ul className={styles.dashedItemsList}>
           <li>
             Individual profiles are primarily based on averages with minimal personal data.
-            <div>
+            
               For a comparison compare one{' '}
               <Links.EL link={{ source: 'https://calculator.farmcarbontoolkit.org.uk/' }}>
-                carbon footprint calculator for UK farmers
+               carbon footprint calculator for UK farmers
               </Links.EL>{' '}
               which takes 30 mins to 2 hours to complete.
-            </div>
+            
           </li>
           <li>
             Tracing back carbon emissions is hard; many calculations are derived from assumptions based on figures for

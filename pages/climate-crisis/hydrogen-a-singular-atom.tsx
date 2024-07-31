@@ -336,9 +336,7 @@ const Hydrogen = () => {
           .
         </p>
 
-        <p className={styles.inset}>
-          <strong>How fuel cells work</strong>
-        </p>
+        <h4>How fuel cells work</h4>
         <p className={styles.quote}>
           <span>
             A fuel, such as hydrogen, is fed to the anode, and air is fed to the cathode. In a hydrogen fuel cell, a
