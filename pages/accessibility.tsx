@@ -2,7 +2,7 @@ import Layout from 'components/layout/layout'
 import Links from 'components/links/Links'
 import styles from 'pages/pages.module.scss'
 import Published from 'components/published/published'
-import { FunctionalComponent } from 'react'
+import { FunctionComponent } from 'react'
 
 const links = [
   {
@@ -80,7 +80,7 @@ const links = [
   },
 ]
 
-const Accessibility: FunctionalComponent = () => {
+const Accessibility: FunctionComponent = () => {
   return (
     <Layout header="Accessibility" title="Web accessibility" description={'Web accessibility'}>
       <section>
