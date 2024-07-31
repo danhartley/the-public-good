@@ -65,6 +65,5 @@
     "venn.js": "^0.2.10",
     "webpack": "^5.61.0",
     "webpack-dashboard": "^3.3.7"
-  },
-  "type": "module"
+  }
 }
