@@ -238,7 +238,7 @@ const Hydrogen = () => {
           <Links.EL
             link={{
               label: 'US Energy article on Hydrogen Fuel Basics',
-              source: 'href="https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics"',
+              source: 'https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics',
             }}
           >
             other methods of hydrogen production
