@@ -129,7 +129,7 @@ const Layout = ({
                     <div><span>© <Links.EL link={{source:'mailto:dbmhartley@protonmail.com'}}>Daniel Hartley</Links.EL> 2024. All rights reserved.</span></div>
                     <div className={styles.externalList}><Links.EL link={{source:'https://www.linkedin.com/in/danhartley/'}}>LinkedIn</Links.EL> | <Links.IL link={{source:'personal/cv'}}>CV</Links.IL> | <Links.EL link={{source:`https://github.com/danhartley/the-public-good/discussions${discussions}`}}>Comment</Links.EL></div>
                     <SiteMetrics title={title} />
-                    <Emissions />
+                    {/* <Emissions /> */}
                 </footer>
             </div>            
         </div>
