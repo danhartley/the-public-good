@@ -175,10 +175,10 @@ const CarbonFootprint = () => {
             Lifestyle Changes Aren’t Enough to Save the Planet. Here’s What Could
           </Links.EL>
           , he writes,
-          </p>
-          <div className={styles.quote}>
-            We need systemic changes that will reduce everyone’s carbon footprint, whether or not they care.
-          </div>
+        </p>
+        <div className={styles.quote}>
+          We need systemic changes that will reduce everyone’s carbon footprint, whether or not they care.
+        </div>
 
         <p>
           The debate around carbon footprints is often about who is{' '}
@@ -285,14 +285,11 @@ const CarbonFootprint = () => {
 
         <ul className={styles.dashedItemsList}>
           <li>
-            Individual profiles are primarily based on averages with minimal personal data.
-            
-              For a comparison compare one{' '}
-              <Links.EL link={{ source: 'https://calculator.farmcarbontoolkit.org.uk/' }}>
-               carbon footprint calculator for UK farmers
-              </Links.EL>{' '}
-              which takes 30 mins to 2 hours to complete.
-            
+            Individual profiles are primarily based on averages with minimal personal data. For a comparison compare one{' '}
+            <Links.EL link={{ source: 'https://calculator.farmcarbontoolkit.org.uk/' }}>
+              carbon footprint calculator for UK farmers
+            </Links.EL>{' '}
+            which takes 30 mins to 2 hours to complete.
           </li>
           <li>
             Tracing back carbon emissions is hard; many calculations are derived from assumptions based on figures for

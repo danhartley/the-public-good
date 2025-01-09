@@ -363,15 +363,15 @@ const Carbon = () => {
         <h3>Carbon emissions and reserves</h3>
 
         <p>
-        Cumulative <Links.EL link={{ source: 'https://ourworldindata.org/co2-emissions' }}>emissions</Links.EL> of
-        carbon dioxide to date are ~1.5 trillion tonnes.
+          Cumulative <Links.EL link={{ source: 'https://ourworldindata.org/co2-emissions' }}>emissions</Links.EL> of
+          carbon dioxide to date are ~1.5 trillion tonnes.
         </p>
 
         <blockquote>
           <span>Remaining reserves in tonnes: 900 coal, 150 oil, 105 gas, 540 shale gas, etc. = 1.695 trillion.</span>
           <div>
-            Carbon is also found in methane hydrates in polar regions and under the seas. Estimates vary between 500
-            and 3,000 gigatonnes of carbon.
+            Carbon is also found in methane hydrates in polar regions and under the seas. Estimates vary between 500 and
+            3,000 gigatonnes of carbon.
           </div>
           <div>
             <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Carbon' }}>Wikipedia</Links.EL>

@@ -9,8 +9,7 @@ const Extracts = () => {
       title="Extracts from 'Walking somehow from the sun'"
       description={'Extracts'}
     >
-      <h2>Extracts from a novel</h2>
-      <section>
+      <h2>Extracts from a novel</h2><section>
         <ul className={styles.unorderedList}>
           <li>
             <Links.IL link={{ source: 'personal/oleta' }}>Oleta</Links.IL>

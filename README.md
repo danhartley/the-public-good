@@ -24,3 +24,10 @@ To generate a new sitemap
 ```bash
 node siteMapGenerator.js
 ```
+
+## Deployment
+
+Push changes to `netlify-deploy`
+
+This website [deploys from GitHub](https://app.netlify.com/sites/the-public-good/overview)
+

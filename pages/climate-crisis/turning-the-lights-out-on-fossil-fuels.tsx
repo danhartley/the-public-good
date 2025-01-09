@@ -41,7 +41,7 @@ const Change = () => {
         <h3>The IPCC is established</h3>
 
         <p>
-        In 1988 the World Meteorological Organisation{' '}
+          In 1988 the World Meteorological Organisation{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/World_Meteorological_Organization' }}>WMO</Links.EL>{' '}
           and the United Nations Environment Programme UNEP established the Intergovernmental Panel on Climate Change{' '}
           <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change' }}>
@@ -55,7 +55,7 @@ const Change = () => {
           </Links.EL>{' '}
           whose objective was to,
         </p>
-          
+
         <blockquote>
           Stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous
           anthropogenic (human-induced) interference with the climate system.
@@ -126,17 +126,17 @@ const Change = () => {
             NDC
           </Links.EL>{' '}
           which should,
-          </p>
-          <blockquote>
+        </p>
+        <blockquote>
           …embody efforts by each country to reduce national emissions and adapt to the impacts of climate change.
-          </blockquote>
-          <p>The agreement continued,</p>
-          <blockquote>
-            Together, these climate actions determine whether the world achieves the long-term goals of the Paris
-            Agreement and to reach global peaking of greenhouse gas (GHG) emissions as soon as possible and to undertake
-            rapid reductions thereafter in accordance with best available science, so as to achieve a balance between
-            anthropogenic emissions by sources and removals by sinks of GHGs in the second half of this century.
-          </blockquote>
+        </blockquote>
+        <p>The agreement continued,</p>
+        <blockquote>
+          Together, these climate actions determine whether the world achieves the long-term goals of the Paris
+          Agreement and to reach global peaking of greenhouse gas (GHG) emissions as soon as possible and to undertake
+          rapid reductions thereafter in accordance with best available science, so as to achieve a balance between
+          anthropogenic emissions by sources and removals by sinks of GHGs in the second half of this century.
+        </blockquote>
 
         <p>Commitments have not been honoured.</p>
         <blockquote>
@@ -373,7 +373,7 @@ const Change = () => {
         <h3>Mind the GDP</h3>
 
         <p>
-            Energy demand is falling in rich countries. In the{' '}
+          Energy demand is falling in rich countries. In the{' '}
           <Links.EL link={{ source: 'https://ourworldindata.org/energy/country/united-states?country=~USA' }}>
             US
           </Links.EL>
@@ -392,8 +392,8 @@ const Change = () => {
           The options [set out by this report] for change are geared towards three broad, interconnected transitions,
           requiring humanity to ensure that our demands on Nature do not exceed its supply, and that we increase
           Nature’s supply relative to its current level; change our measures of economic success to guide us on a more
-          sustainable path; and transform our institutions and systems – in particular our finance and education
-          systems – to enable these changes and sustain them for future generations.
+          sustainable path; and transform our institutions and systems – in particular our finance and education systems
+          – to enable these changes and sustain them for future generations.
         </blockquote>
         <cite>
           <Links.EL
@@ -631,12 +631,13 @@ const Change = () => {
             </div>
           </div>
           <p>
-          In 1965 the UK was dependent on coal for 59% of its energy needs; dwindling reserves, the discovery of North
-          Sea Gas, and latterly support for renewable energy has seen a shift in its energy mix. By 2019 coal supplied just{' '}
-          <Links.EL link={{ source: 'https://ourworldindata.org/energy/country/united-kingdom?country=~GBR' }}>
-            3.35%
-          </Links.EL>{' '}
-          of energy, less than half that of wind power (7.29%).
+            In 1965 the UK was dependent on coal for 59% of its energy needs; dwindling reserves, the discovery of North
+            Sea Gas, and latterly support for renewable energy has seen a shift in its energy mix. By 2019 coal supplied
+            just{' '}
+            <Links.EL link={{ source: 'https://ourworldindata.org/energy/country/united-kingdom?country=~GBR' }}>
+              3.35%
+            </Links.EL>{' '}
+            of energy, less than half that of wind power (7.29%).
           </p>
         </div>
 

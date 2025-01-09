@@ -135,10 +135,14 @@ const CurriculumVitae = () => {
         description={'Curriculum Vitae'}
       >
         <p>
-          I am a web developer with 20+ years experience. I love to code, to design, and to build web sites and apps
-          that are useful and beneficial.
+          I am a web developer with 25 years experience. I love to code, to design, and to build web sites and apps that
+          are useful and beneficial.
         </p>
-        <p>I initiate and enable new projects, and improve existing ones.</p>
+        <p>
+          I am currently creating workshops, building chrome extensions, aiming to reduce developer dependencies and
+          spend time in the browser at{' '}
+          <Links.EL link={{ source: 'https://people-and-code.com/' }}>People and Code</Links.EL>.
+        </p>
         <p>
           I am an advocate of responsible web development - building high performance websites that are sustainable,
           accessible and fast.

@@ -1,6 +1,26 @@
 {
     "companies": [
         {
+            "name": "People and Code",
+            "projects": [
+              {
+                  "title": "People and Code",
+                  "src": "https://people-and-code.com/"
+              },
+              {
+                  "title": "People and Code Workshops",
+                  "src": "https://workshops.people-and-code.com/"
+              }
+          ],
+            "dates": {
+                "start": "2024-06-01"
+            },
+            "languages": [ "HTML", "JS", "CSS" ],
+            "technologies": [ "Vanilla JS", "Chrome extensions", "npm packages" ],
+            "roles": [ "founder", "frontend developer", "designer", "product owner" ],
+            "blurb": "Specialists in responsible web development"
+        },
+        {
             "name": "Venga Vamos",
             "projects": [
               {

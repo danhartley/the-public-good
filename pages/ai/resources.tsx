@@ -4,9 +4,9 @@ import Layout from 'components/layout/layout'
 const AIOResources = () => {
   return (
     <Layout header="AI Resources" title="AI Resources" description={'AI Resources'}>
-      <h2 class='mb0'>Web directory</h2>
+      <h2 class="mb0">Web directory</h2>
       <section>
-        <h3 class='mt0'>Ethics</h3>
+        <h3 class="mt0">Ethics</h3>
         <div>
           <Links.EL
             link={{
