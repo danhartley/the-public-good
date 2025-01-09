@@ -1,619 +1,751 @@
 {
-    "companies": [
+  "companies": [
+    {
+      "name": "People and Code",
+      "projects": [
         {
-            "name": "People and Code",
-            "projects": [
-              {
-                  "title": "People and Code",
-                  "src": "https://people-and-code.com/"
-              },
-              {
-                  "title": "People and Code Workshops",
-                  "src": "https://workshops.people-and-code.com/"
-              }
-          ],
-            "dates": {
-                "start": "2024-06-01"
-            },
-            "languages": [ "HTML", "JS", "CSS" ],
-            "technologies": [ "Vanilla JS", "Chrome extensions", "npm packages" ],
-            "roles": [ "founder", "frontend developer", "designer", "product owner" ],
-            "blurb": "Specialists in responsible web development"
+          "title": "People and Code",
+          "src": "https://people-and-code.com/"
         },
         {
-            "name": "Venga Vamos",
-            "projects": [
-              {
-                  "title": "iFieldnotes",
-                  "src": "https://ifieldnotes.org/"
-              }
-          ],
-            "dates": {
-                "start": "2022-07-01"
-            },
-            "languages": [ "HTML", "JS", "CSS" ],
-            "technologies": [ "Vanilla JS", "Firebase" ],
-            "roles": [ "frontend developer", "designer", "product owner" ],
-            "blurb": "Digital wildlife fieldnotes."
-        },
-        {
-            "name": "Altruistiq",
-            "projects": [
-              {
-                  "title": "Altruistiq",
-                  "src": "https://www.altruistiq.com/"
-              }
-          ],
-            "dates": {
-                "start": "2022-06-05"
-                , "end": "2023-06-30"
-            },
-            "languages": [ "HTML", "TS", "CSS" ],
-            "technologies": [ "Vue", "Vite", "Pinia", "Vuex", "vee-validate", "vue/test-utils", "vitest/ui", "Storybook", "MSW", "Typescript", "Cypress", "Jest", "GitLab", "GitHub", "Pug", "handlebars", "lodash" ],
-            "roles": [ "senior frontend developer" ],
-            "blurb": "Building tools for companies to measure and evaluate the carbon emissions of their products and in their supply chains.\n \nPushed for introduction of client-side testing, introduced MSW for proxy data\n \nHelped with move from JS to TS."
-        },
-        {
-            "name": "RTW & TPG",
-            "projects": [
-              {
-                  "title": "Dashboard",
-                  "src": "https://danhartley.github.io/dashboard"
-              }
-          ],
-            "dates": {
-                "start": "2022-04-01"
-            },
-            "languages": [ "HTML", "TS", "CSS" ],
-            "technologies": [ "React", "Typescript", "Cypress", "Cucumber.js", "Jest", "React Testing Library", "React Query", "MSW", "json-server", "Tailwind CSS", "PostCSS", "Reach UI", "GitHub" ],
-            "roles": [ "core contributor", "r&d", "developer" ],
-            "blurb": "Responsible dashboard that illustrates the outcome of company pledges, broken down by principles, values and requirement checklists."
-        },
-        {
-            "name": "ResponsibleTech.Work",
-            "projects": [
-                {
-                    "title": "Framework",
-                    "src": "https://responsibletech.work/"
-                }
-            ],
-            "dates": {
-                "start": "2021-09-01"
-            },
-            "languages": [ "HTML", "JS", "CSS" ],
-            "technologies": [ "Trello Power-Ups", "Figma", "Mural", "Mermaid", "venn.js", "Outline", "Trello", "Whereby", "GitHub", "GitLab", "Jekyll", "Parcel", "Yarn", "JSON Typedef" ],
-            "roles": [ "core contributor", "r&d", "developer" ],
-            "blurb": "As a core contributor on the open source project ResponsibleTech.Work, I work on practices and tools to improve decision making, and promote thoughtful programming and design."
-        },
-        {
-            "name": "The Public Good",
-            "dates": {
-                "start": "2021-02-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "TS" ],
-            "technologies": [ "Jamstack", "Preact", "TypeScript", "Sass", "Next.js", "Netlify", "GitHub", "Jest", "webpack", "Lighthouse budget", "axe Accessibility Linter", "ts/tsx eslint", "Chart.js" ],
-            "roles": ["writer", "front-end developer"],
-            "blurb": "Where I write about the climate crisis and responsible web development. The site shows best practice website optimisation, performance and accessibility. There are links to online tools, an overview of the services I offer, and an example of a sociable contract."
-        },
-        {
-            "name": "Venga Vamos",
-            "projects": [
-                {
-                    "title": "learn the planet",
-                    "src": "https://www.learn-the-planet.com "
-                }, 
-                {
-                    "title": "snapdragon retrieval",
-                    "src": "https://snapdragon-retrieval.netlify.app/providers"
-                }, 
-                {
-                    "title": "the verb",
-                    "src": "https://danhartley.github.io/snapdragon-verbs"
-                }
-            ],
-            "dates": {
-                "start": "2013-04-01",
-                "end": "2022-05-31"
-            },
-            "languages": [ "HTML", "JS", "CSS" ],
-            "technologies": [ "Jamstack", "Preact", "TypeScript", "Node JS", "Sass", "Next.js", "Netlify", "GitHub", "Jest", "webpack", "Bootstrap", "Material Design", "Netlify CMS", "Fauna", "GraphQL", "Enzyme", "Redux", "Functional JS", "Modern ES", "CSS Grid", "CSS Flexbox", "Sentry", "Google Cloud Platform", "Google Cloud Firestore", "MongoDB", "Formik", "Downshift" ],
-            "roles": ["full stack developer", "UI developer", "director"],
-            "blurb": "The Public Good \nA site demonstrating responsible web practices with articles on climate change and web development. \n \nSnapdragon Retrieval \nMVP demonstrating how quick lessons and flashcards can be used to encourage and enable long term understanding of new material; site can be embedded as a widget to support articles and podcasts containing definitive and/or evergreen content. \n \nLearn the Planet \nGuides to species, complementary information and tests. Climate change flashcards.\n \nThe Verb \nDrills and tests for Portuguese and Spanish verbs."
-        },
-        {
-            "name": "Tippstr",
-            "dates": {
-                "start": "2013-02-01",
-                "end": "2017-03-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
-            "technologies": [ "Grunt", "Cucumber", "Angular 2", "Bootstrap", "ngScenario", "Karma", "Protractor", "D3", "JIRA" ],
-            "roles": ["front-end architect", "front-end team lead"],
-            "blurb": "I set up the project, tooling and practices for this greenfield startup website.\nI interviewed and appointed team members, then led the team."
-        },
-        {
-            "name": "Seatwave | Ticketmaster",
-            "dates": {
-                "start": "2011-05-01",
-                "end": "2012-12-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
-            "technologies": [ "ASP.NET", "Razor" ],
-            "roles": ["full stack developer"],
-            "blurb": "Full stack developer for this high volume ecommerce site.\nRefactored code (service layer pattern) to enable a public API and testing.\nBuilt the web version of the site for mobile users.\nOversaw production builds."
-        },
-        {
-            "name": "Digital & Direct",
-            "dates": {
-                "start": "2011-01-01",
-                "end": "2011-03-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL", "C#", "LINQ" ],
-            "technologies": [ "XFBML", "Fluent NHibernate", ".Net 4.0", "LINQ", "Ninject", "Automapper", "FB Graph API", "Subversion" ],
-            "roles": ["full stack developer"],
-            "blurb": "Built a micro website for a Lucozade Facebook campaign."
-        },
-        {
-            "name": "Mastercard partner",
-            "dates": {
-                "start": "2010-12-01",
-                "end": "2011-01-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL", "C#", "LINQ" ],
-            "technologies": [ "XFBML", "Fluent NHibernate", ".Net 4.0", "LINQ", "Ninject", "Automapper", "FB Graph API", "Subversion" ],
-            "roles": ["full stack developer", "middle tier architect"],
-            "blurb": "Implemented the specification for a Facebook game for Mastercard."
-        },
-        {
-            "name": "Enteraction",
-            "dates": {
-                "start": "2010-08-01",
-                "end": "2010-11-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL", "C#", "LINQ" ],
-            "technologies": [ "WCF/RESTful services", "Facebook APIs (Graph, FQL, FBML, OAuth)", "Windows Azure Cloud Platform", "ASP.NET 4.0", "LINQ", "C# 4", "Subversion", "MS Unit Testing", "Moq", "Ninject", "Resharper", "OData" ],
-            "roles": ["full stack developer", "middle tier architect"],
-            "blurb": "Middle-tier architect and developer on the official Coronation Street Facebook game."
-        },
-        {
-            "name": "MyBridge Media",
-            "dates": {
-                "start": "2009-11-01",
-                "end": "2010-03-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
-            "technologies": [ ],
-            "roles": ["team lead", "product manager", "director", "architect", "project manager", "full stack developer"],
-            "blurb": "MyBridge Media was a global booking platform that helped exhibitors and digital content owners negotiate screening terms quickly and economically. \nWe were a dedicated team with wide experience in film and television production and the Internet. \nMy role combined site and database architecture, product design and implementation, project management, company strategy and copy editing."
-        },
-        {
-            "name": "Seatwave | Ticketmaster",
-            "dates": {
-                "start": "2006-10-01",
-                "end": "2010-04-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
-            "technologies": [ "ASP.NET", "Razor" ],
-            "roles": ["full stack developer"],
-            "blurb": "Member of the exceptional team which helped Seatwave become the leading secondary ticket exchange in Europe (named the number one Tech Media 100 Company in 2009).\nTogether with the architect, designers and UI specialists created and evolved an extensible, multi-language framework. \nCollaborated with the senior designer on the specification and implementation of a flexible architecture for a variety of co-branded versions of the site for clients including MSN and Virgin Media. \nWorked with the Marketing Director to develop an extensive affiliate programme. \nWorked with the Senior Product Manager to create a system for A/B testing. \nRan 50+ software releases during a period in which Seatwave sales grew nearly 500%."
-        },
-        {
-            "name": "Arc Interactive",
-            "dates": {
-                "start": "2006-05-01",
-                "end": "2006-09-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
-            "technologies": [ "ASP.NET" ],
-            "roles": ["full stack developer"],
-            "blurb": "Worked on multiple projects with extremely tight deadlines with the focus on design and usability. \nDeveloped key sites for major clients including Malboro, Samsung and HMG."
-        },
-        {
-            "name": "ABT",
-            "dates": {
-                "start": "2002-04-01",
-                "end": "2006-02-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL", "C#" ],
-            "technologies": [ "Classic ASP", "ASP.NET" ],
-            "roles": ["team lead", "project manager", "product manager", "business partner", "full stack developer"],
-            "blurb": "Designed and built a suite of online applications for the creation and maintenance of a fixed odds betting book on behalf of the first independent bookmaker in Italy. \nThe suite of tools comprised a data input console, liability monitoring, accounting tools and a web site intended for use within a walled garden. \nWorked closely with the client throughout the product life-cycle from the creation of a requirements list, technical specification and during the evolution of the product, through to delivery. \nDesigned and implemented a sports betting information site and bespoke CMS which was subsequently sold to a third party."
-        },
-        {
-            "name": "Victor Chandler",
-            "dates": {
-                "start": "2005-05-01",
-                "end": "2005-07-01"
-            },
-            "languages": [ ],
-            "technologies": [ ],
-            "roles": ["consultant"],
-            "blurb": "Acted as an intermediary consultant between VC and a major affiliate in Greece. Assessed the APIs and other tools used by VC and recommended how best the affiliate could extend the system for their own needs without compromising VC's internal guidelines or tying up too many resources."
-        },
-        {
-            "name": "Betfair",
-            "dates": {
-                "start": "2005-03-01",
-                "end": "2005-05-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL", "C#", "XML" ],
-            "technologies": [ ],
-            "roles": ["consultant", "full stack developer"],
-            "blurb": "Betfair asked me to build an interface for one of their main clients using the Betfair XML API. \nThe application enabled the client to lay and bet, maintain a local version of activity and monitor their liability. \nThe business logic was written in C# and JavaScript and aggregate data from the feeds was stored locally in an SQL DB."
-        },
-        {
-            "name": "Snai International",
-            "dates": {
-                "start": "2000-04-01",
-                "end": "2002-02-01"
-            },
-            "languages": [ "HTML", "JS", "CSS", "SQL" ],
-            "technologies": [ "Classic ASP" ],
-            "roles": ["team lead", "project manager", "full stack developer"],
-            "blurb": "I set up and ran a 5 person team responsible for building an on-line betting system for a Chinese client. Snai is the number betting company in Italy and is listed on the Italian stock exchange."
-        },
-        {
-            "name": "TV Producer",
-            "dates": {
-                "start": "1993-09-01",
-                "end": "1999-09-01"
-            },
-            "languages": [  ],
-            "technologies": [  ],
-            "roles": [ "producer", "production coordinator", "production manager", "researcher", "runner"],
-            "blurb": "Six years production experience on programmes commissioned by the BBC, Channel 4 and ITV. \n \nAs Production Manager I frequently oversaw large teams. I wrote budgets, negotiated with Channel 4 and produced itineraries, hired both internal production staff and contracted technicians. \n \nAs Producer I specialised on the war and its aftermath in the Former Yugoslavia. \n \nWorked on a variety of programmes - light entertainment, documentary, studio and drama. \n \nI set up a website for independent producers which stimulated my interest in the Internet and prompted me to take my MSc."
+          "title": "People and Code Workshops",
+          "src": "https://workshops.people-and-code.com/"
         }
-    ],
-    "skills": [
+      ],
+      "dates": {
+        "start": "2024-06-01"
+      },
+      "languages": ["HTML", "JS", "CSS"],
+      "technologies": ["Vanilla JS", "Chrome extensions", "npm packages", "GitHub workflows & actions"],
+      "roles": ["founder", "frontend developer", "designer", "product owner"],
+      "blurb": "Specialists in responsible web development"
+    },
+    {
+      "name": "Venga Vamos",
+      "projects": [
         {
-            "type": "languages",
-            "set": [
-                {
-                    "name": "HTML",
-                    "start": "1997-01-01"
-                },
-                {
-                    "name": "JavaScript",
-                    "start": "1997-01-01"
-                },
-                {
-                    "name": "CSS",
-                    "start": "1997-01-01"
-                },
-                {
-                    "name": "JSON",
-                    "start": "2010-01-01"
-                },
-                {
-                    "name": "Java",
-                    "start": "2000-07-01",
-                    "end": "2001-07-01"
-                },
-                {
-                    "name": "C++",
-                    "start": "2000-07-01",
-                    "end": "2001-07-01"
-                },
-                {
-                    "name": "C#",
-                    "start": "2003-06-01",
-                    "end": "2017-07-01"
-                },
-                {
-                    "name": "TypeScript",
-                    "start": "2019-06-01"
-                },
-                {
-                    "name": "XML",
-                    "start": "2000-01-01",
-                    "end": "2005-01-01"
-                },
-                {
-                    "name": "LINQ",
-                    "start": "2008-01-01",
-                    "end": "2010-01-01"
-                },
-                {
-                    "name": "GraphQL",
-                    "start": "2019-06-01",
-                    "end": "2020-01-01"
-                },
-                {
-                    "name": "SQL",
-                    "start": "1997-06-01",
-                    "end": "2013-06-01"
-                }
-            ]
-        },
-        {
-            "type": "hosting",
-            "set": [
-                {
-                    "name": "Google Cloud Platform",
-                    "start": "2017-01-01"
-                },
-                {
-                    "name": "Microsoft IIS",
-                    "start": "1997-01-01",
-                    "end": "2012-01-01"
-                },
-                {
-                    "name": "SQL Server",
-                    "start": "1997-01-01",
-                    "end": "2012-01-01"
-                },
-                {
-                    "name": "MongoDB",
-                    "start": "2013-04-01",
-                    "end": "2014-01-01"
-                },
-                {
-                    "name": "Google Cloud Firestore",
-                    "start": "2017-01-01"
-                },                
-                {
-                    "name": "Netlify",
-                    "start": "2019-1-01"
-                },
-                {
-                    "name": "Azure Cloud Platform",
-                    "start": "2010-08-01",
-                    "end": "2011-01-01"
-                },
-                {
-                    "name": "Fauna",
-                    "start": "2018-08-01",
-                    "end": "2020-01-01"
-                },
-                {
-                    "name": "mLab",
-                    "start": "2013-04-01",
-                    "end": "2014-01-01"
-                }
-            ]
-        },
-        {
-            "type": "tooling",
-            "set": [
-                {
-                    "name": "Jest",
-                    "start": "2018-09-01"
-                },
-                {
-                    "name": "Cucumber",
-                    "start": "2013-05-01",
-                    "end": "2014-01-01"
-                },
-                {
-                    "name": "Jira",
-                    "start": "2013-02-01",
-                    "end": "2017-03-01"
-                },
-                {
-                    "name": "Trello",
-                    "start": "2021-08-01",
-                    "end": "2022-06-01"
-                },
-                {
-                    "name": "Cucumber",
-                    "start": "2021-11-01"
-                },
-                {
-                    "name": "Protractor",
-                    "start": "2013-05-01",
-                    "end": "2017-01-01"
-                },
-                {
-                    "name": "Grunt",
-                    "start": "2016-10-01",
-                    "end": "2017-4-01"
-                },
-                {
-                    "name": "MSBuild",
-                    "start": "2007-1-01",
-                    "end": "2011-1-01"
-                },
-                {
-                    "name": "MS Unit Testing",
-                    "start": "2010-1-01",
-                    "end": "2012-1-01"
-                },
-                {
-                    "name": "webpack",
-                    "start": "2017-04-01",
-                    "end": "2022-06-01"
-                },
-                {
-                    "name": "Parcel",
-                    "start": "2021-09-01"
-                },
-                {
-                    "name": "Jasmine",
-                    "start": "2013-11-01",
-                    "end": "2017-03-01"
-                },
-                {
-                    "name": "ngScenario",
-                    "start": "2013-11-01",
-                    "end": "2017-03-01"
-                },
-                {
-                    "name": "Karma",
-                    "start": "2013-11-01",
-                    "end": "2017-03-01"
-                },
-                {
-                    "name": "Sentry Logging",
-                    "start": "2015-01-01",
-                    "end": "2023-07-01"
-                },
-                {
-                    "name": "Git",
-                    "start": "2013-01-01"
-                },
-                {
-                    "name": "Subversion",
-                    "start": "2009-01-01",
-                    "end": "2013-01-01"
-                },
-                {
-                    "name": "GitHub",
-                    "start": "2013-01-01"
-                },
-                {
-                    "name": "GitLab",
-                    "start": "2021-09-01",
-                    "end": "2022-06-01"
-                },
-                {
-                    "name": "Testing Library",
-                    "start": "2020-04-01",
-                    "end": "2022-06-01"
-                },
-                {
-                    "name": "vee-validate",
-                    "start": "2022-06-01",
-                    "end": "2023-07-01"
-                },
-                {
-                    "name": "vitest/ui",
-                    "start": "2022-06-01",
-                    "end": "2023-07-01"
-                },
-                {
-                    "name": "vue/test-utils",
-                    "start": "2022-06-01",
-                    "end": "2023-07-01"
-                },
-                {
-                    "name": "Mock Service Workers (MSW)",
-                    "start": "2022-04-01",
-                    "end": "2023-07-01"
-                },
-                {
-                    "name": "json-server",
-                    "start": "2022-04-01",
-                    "end": "2023-07-01"
-                }
-            ]
-        },
-        {
-            "type": "frameworks",
-            "set": [
-                {
-                    "name": "Preact",
-                    "start": "2020-09-01",
-                    "end": "2022-06-01"
-                },
-                {
-                    "name": "HTML (JS) (CSS)",
-                    "start": "1997-01-01"
-                },
-                {
-                    "name": "Classic ASP",
-                    "start": "1997-01-01",
-                    "end": "2002-01-01"
-                },
-                {
-                    "name": "ASP.NET",
-                    "start": "2002-01-01",
-                    "end": "2010-01-01"
-                },
-                {
-                    "name": "ASP.NET MVC",
-                    "start": "2010-10-01",
-                    "end": "2012-12-01"
-                },
-                {
-                    "name": "React",
-                    "start": "2020-09-01",
-                    "end": "2022-06-01"
-                },
-                {
-                    "name": "Vue",
-                    "start": "2022-06-01",
-                    "end": "2023-07-01"
-                },
-                {
-                    "name": "Vite",
-                    "start": "2022-06-01",
-                    "end": "2023-07-01"
-                },
-                {
-                    "name": "Pinia",
-                    "start": "2022-06-01",
-                    "end": "2023-07-01"
-                },
-                {
-                    "name": "Vuex",
-                    "start": "2022-06-01",
-                    "end": "2023-07-01"
-                },
-                {
-                    "name": "Jekyll",
-                    "start": "2021-09-01",
-                    "end": "2021-12-01"
-                },
-                {
-                    "name": "Next.js",
-                    "start": "2019-09-01",
-                    "end": "2022-06-01"
-                },
-                {
-                    "name": "Less",
-                    "start": "2013-11-01",
-                    "end": "2017-03-01"
-                },
-                {
-                    "name": "SCSS",
-                    "start": "2017-05-01",
-                    "end": "2022-06-01"
-                },
-                {
-                    "name": "jQuery",
-                    "start": "2007-10-01",
-                    "end": "2012-09-01"
-                },
-                {
-                    "name": "Bootstrap",
-                    "start": "2013-02-01",
-                    "end": "2018-09-01"
-                },
-                {
-                    "name": "Redux",
-                    "start": "2017-05-01",
-                    "end": "2020-05-01"
-                },
-                {
-                    "name": "Repository-Service pattern",
-                    "start": "2011-05-01",
-                    "end": "2012-12-01"
-                },
-                {
-                    "name": "Dependency injection",
-                    "start": "2011-05-01",
-                    "end": "2012-12-01"
-                },
-                {
-                    "name": "Chart.js",
-                    "start": "2021-09-01",
-                    "end": "2022-02-01"
-                }, 
-                {
-                    "name": "React Query",
-                    "start": "2022-04-01",
-                    "end": "2022-12-01"
-                },    
-                {
-                    "name": "Tailwind CSS",
-                    "start": "2022-04-01",
-                    "end": "2022-12-01"
-                }
-            ]
+          "title": "iFieldnotes",
+          "src": "https://ifieldnotes.org/"
         }
-    ],
-    "education": [
-        "MA English Literature Edinburgh University",
-        "MSc Object Oriented Software Systems City University"        
-    ]
+      ],
+      "dates": {
+        "start": "2022-07-01"
+      },
+      "languages": ["HTML", "JS", "CSS"],
+      "technologies": ["Vanilla JS", "Firebase"],
+      "roles": ["frontend developer", "designer", "product owner"],
+      "blurb": "Digital wildlife fieldnotes."
+    },
+    {
+      "name": "Altruistiq",
+      "projects": [
+        {
+          "title": "Altruistiq",
+          "src": "https://www.altruistiq.com/"
+        }
+      ],
+      "dates": {
+        "start": "2022-06-05",
+        "end": "2023-06-30"
+      },
+      "languages": ["HTML", "TS", "CSS"],
+      "technologies": [
+        "Vue",
+        "Vite",
+        "Pinia",
+        "Vuex",
+        "vee-validate",
+        "vue/test-utils",
+        "vitest/ui",
+        "Storybook",
+        "MSW",
+        "Typescript",
+        "Cypress",
+        "Jest",
+        "GitLab",
+        "GitHub",
+        "Pug",
+        "handlebars",
+        "lodash"
+      ],
+      "roles": ["senior frontend developer"],
+      "blurb": "Building tools for companies to measure and evaluate the carbon emissions of their products and in their supply chains.\n \nPushed for introduction of client-side testing, introduced MSW for proxy data\n \nHelped with move from JS to TS."
+    },
+    {
+      "name": "RTW & TPG",
+      "projects": [
+        {
+          "title": "Dashboard",
+          "src": "https://danhartley.github.io/dashboard"
+        }
+      ],
+      "dates": {
+        "start": "2022-04-01"
+      },
+      "languages": ["HTML", "TS", "CSS"],
+      "technologies": [
+        "React",
+        "Typescript",
+        "Cypress",
+        "Cucumber.js",
+        "Jest",
+        "React Testing Library",
+        "React Query",
+        "MSW",
+        "json-server",
+        "Tailwind CSS",
+        "PostCSS",
+        "Reach UI",
+        "GitHub"
+      ],
+      "roles": ["core contributor", "r&d", "developer"],
+      "blurb": "Responsible dashboard that illustrates the outcome of company pledges, broken down by principles, values and requirement checklists."
+    },
+    {
+      "name": "ResponsibleTech.Work",
+      "projects": [
+        {
+          "title": "Framework",
+          "src": "https://responsibletech.work/"
+        }
+      ],
+      "dates": {
+        "start": "2021-09-01"
+      },
+      "languages": ["HTML", "JS", "CSS"],
+      "technologies": [
+        "Trello Power-Ups",
+        "Figma",
+        "Mural",
+        "Mermaid",
+        "venn.js",
+        "Outline",
+        "Trello",
+        "Whereby",
+        "GitHub",
+        "GitLab",
+        "Jekyll",
+        "Parcel",
+        "Yarn",
+        "JSON Typedef"
+      ],
+      "roles": ["core contributor", "r&d", "developer"],
+      "blurb": "As a core contributor on the open source project ResponsibleTech.Work, I work on practices and tools to improve decision making, and promote thoughtful programming and design."
+    },
+    {
+      "name": "The Public Good",
+      "dates": {
+        "start": "2021-02-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "TS"],
+      "technologies": [
+        "Jamstack",
+        "Preact",
+        "TypeScript",
+        "Sass",
+        "Next.js",
+        "Netlify",
+        "GitHub",
+        "Jest",
+        "webpack",
+        "Lighthouse budget",
+        "axe Accessibility Linter",
+        "ts/tsx eslint",
+        "Chart.js"
+      ],
+      "roles": ["writer", "front-end developer"],
+      "blurb": "Where I write about the climate crisis and responsible web development. The site shows best practice website optimisation, performance and accessibility. There are links to online tools, an overview of the services I offer, and an example of a sociable contract."
+    },
+    {
+      "name": "Venga Vamos",
+      "projects": [
+        {
+          "title": "learn the planet",
+          "src": "https://www.learn-the-planet.com "
+        },
+        {
+          "title": "snapdragon retrieval",
+          "src": "https://snapdragon-retrieval.netlify.app/providers"
+        },
+        {
+          "title": "the verb",
+          "src": "https://danhartley.github.io/snapdragon-verbs"
+        }
+      ],
+      "dates": {
+        "start": "2013-04-01",
+        "end": "2022-05-31"
+      },
+      "languages": ["HTML", "JS", "CSS"],
+      "technologies": [
+        "Jamstack",
+        "Preact",
+        "TypeScript",
+        "Node JS",
+        "Sass",
+        "Next.js",
+        "Netlify",
+        "GitHub",
+        "Jest",
+        "webpack",
+        "Bootstrap",
+        "Material Design",
+        "Netlify CMS",
+        "Fauna",
+        "GraphQL",
+        "Enzyme",
+        "Redux",
+        "Functional JS",
+        "Modern ES",
+        "CSS Grid",
+        "CSS Flexbox",
+        "Sentry",
+        "Google Cloud Platform",
+        "Google Cloud Firestore",
+        "MongoDB",
+        "Formik",
+        "Downshift"
+      ],
+      "roles": ["full stack developer", "UI developer", "director"],
+      "blurb": "The Public Good \nA site demonstrating responsible web practices with articles on climate change and web development. \n \nSnapdragon Retrieval \nMVP demonstrating how quick lessons and flashcards can be used to encourage and enable long term understanding of new material; site can be embedded as a widget to support articles and podcasts containing definitive and/or evergreen content. \n \nLearn the Planet \nGuides to species, complementary information and tests. Climate change flashcards.\n \nThe Verb \nDrills and tests for Portuguese and Spanish verbs."
+    },
+    {
+      "name": "Tippstr",
+      "dates": {
+        "start": "2013-02-01",
+        "end": "2017-03-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL", "C#"],
+      "technologies": [
+        "Grunt",
+        "Cucumber",
+        "Angular 2",
+        "Bootstrap",
+        "ngScenario",
+        "Karma",
+        "Protractor",
+        "D3",
+        "JIRA"
+      ],
+      "roles": ["front-end architect", "front-end team lead"],
+      "blurb": "I set up the project, tooling and practices for this greenfield startup website.\nI interviewed and appointed team members, then led the team."
+    },
+    {
+      "name": "Seatwave | Ticketmaster",
+      "dates": {
+        "start": "2011-05-01",
+        "end": "2012-12-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL", "C#"],
+      "technologies": ["ASP.NET", "Razor"],
+      "roles": ["full stack developer"],
+      "blurb": "Full stack developer for this high volume ecommerce site.\nRefactored code (service layer pattern) to enable a public API and testing.\nBuilt the web version of the site for mobile users.\nOversaw production builds."
+    },
+    {
+      "name": "Digital & Direct",
+      "dates": {
+        "start": "2011-01-01",
+        "end": "2011-03-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL", "C#", "LINQ"],
+      "technologies": [
+        "XFBML",
+        "Fluent NHibernate",
+        ".Net 4.0",
+        "LINQ",
+        "Ninject",
+        "Automapper",
+        "FB Graph API",
+        "Subversion"
+      ],
+      "roles": ["full stack developer"],
+      "blurb": "Built a micro website for a Lucozade Facebook campaign."
+    },
+    {
+      "name": "Mastercard partner",
+      "dates": {
+        "start": "2010-12-01",
+        "end": "2011-01-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL", "C#", "LINQ"],
+      "technologies": [
+        "XFBML",
+        "Fluent NHibernate",
+        ".Net 4.0",
+        "LINQ",
+        "Ninject",
+        "Automapper",
+        "FB Graph API",
+        "Subversion"
+      ],
+      "roles": ["full stack developer", "middle tier architect"],
+      "blurb": "Implemented the specification for a Facebook game for Mastercard."
+    },
+    {
+      "name": "Enteraction",
+      "dates": {
+        "start": "2010-08-01",
+        "end": "2010-11-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL", "C#", "LINQ"],
+      "technologies": [
+        "WCF/RESTful services",
+        "Facebook APIs (Graph, FQL, FBML, OAuth)",
+        "Windows Azure Cloud Platform",
+        "ASP.NET 4.0",
+        "LINQ",
+        "C# 4",
+        "Subversion",
+        "MS Unit Testing",
+        "Moq",
+        "Ninject",
+        "Resharper",
+        "OData"
+      ],
+      "roles": ["full stack developer", "middle tier architect"],
+      "blurb": "Middle-tier architect and developer on the official Coronation Street Facebook game."
+    },
+    {
+      "name": "MyBridge Media",
+      "dates": {
+        "start": "2009-11-01",
+        "end": "2010-03-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL", "C#"],
+      "technologies": [],
+      "roles": ["team lead", "product manager", "director", "architect", "project manager", "full stack developer"],
+      "blurb": "MyBridge Media was a global booking platform that helped exhibitors and digital content owners negotiate screening terms quickly and economically. \nWe were a dedicated team with wide experience in film and television production and the Internet. \nMy role combined site and database architecture, product design and implementation, project management, company strategy and copy editing."
+    },
+    {
+      "name": "Seatwave | Ticketmaster",
+      "dates": {
+        "start": "2006-10-01",
+        "end": "2010-04-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL", "C#"],
+      "technologies": ["ASP.NET", "Razor"],
+      "roles": ["full stack developer"],
+      "blurb": "Member of the exceptional team which helped Seatwave become the leading secondary ticket exchange in Europe (named the number one Tech Media 100 Company in 2009).\nTogether with the architect, designers and UI specialists created and evolved an extensible, multi-language framework. \nCollaborated with the senior designer on the specification and implementation of a flexible architecture for a variety of co-branded versions of the site for clients including MSN and Virgin Media. \nWorked with the Marketing Director to develop an extensive affiliate programme. \nWorked with the Senior Product Manager to create a system for A/B testing. \nRan 50+ software releases during a period in which Seatwave sales grew nearly 500%."
+    },
+    {
+      "name": "Arc Interactive",
+      "dates": {
+        "start": "2006-05-01",
+        "end": "2006-09-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL", "C#"],
+      "technologies": ["ASP.NET"],
+      "roles": ["full stack developer"],
+      "blurb": "Worked on multiple projects with extremely tight deadlines with the focus on design and usability. \nDeveloped key sites for major clients including Malboro, Samsung and HMG."
+    },
+    {
+      "name": "ABT",
+      "dates": {
+        "start": "2002-04-01",
+        "end": "2006-02-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL", "C#"],
+      "technologies": ["Classic ASP", "ASP.NET"],
+      "roles": ["team lead", "project manager", "product manager", "business partner", "full stack developer"],
+      "blurb": "Designed and built a suite of online applications for the creation and maintenance of a fixed odds betting book on behalf of the first independent bookmaker in Italy. \nThe suite of tools comprised a data input console, liability monitoring, accounting tools and a web site intended for use within a walled garden. \nWorked closely with the client throughout the product life-cycle from the creation of a requirements list, technical specification and during the evolution of the product, through to delivery. \nDesigned and implemented a sports betting information site and bespoke CMS which was subsequently sold to a third party."
+    },
+    {
+      "name": "Victor Chandler",
+      "dates": {
+        "start": "2005-05-01",
+        "end": "2005-07-01"
+      },
+      "languages": [],
+      "technologies": [],
+      "roles": ["consultant"],
+      "blurb": "Acted as an intermediary consultant between VC and a major affiliate in Greece. Assessed the APIs and other tools used by VC and recommended how best the affiliate could extend the system for their own needs without compromising VC's internal guidelines or tying up too many resources."
+    },
+    {
+      "name": "Betfair",
+      "dates": {
+        "start": "2005-03-01",
+        "end": "2005-05-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL", "C#", "XML"],
+      "technologies": [],
+      "roles": ["consultant", "full stack developer"],
+      "blurb": "Betfair asked me to build an interface for one of their main clients using the Betfair XML API. \nThe application enabled the client to lay and bet, maintain a local version of activity and monitor their liability. \nThe business logic was written in C# and JavaScript and aggregate data from the feeds was stored locally in an SQL DB."
+    },
+    {
+      "name": "Snai International",
+      "dates": {
+        "start": "2000-04-01",
+        "end": "2002-02-01"
+      },
+      "languages": ["HTML", "JS", "CSS", "SQL"],
+      "technologies": ["Classic ASP"],
+      "roles": ["team lead", "project manager", "full stack developer"],
+      "blurb": "I set up and ran a 5 person team responsible for building an on-line betting system for a Chinese client. Snai is the number betting company in Italy and is listed on the Italian stock exchange."
+    },
+    {
+      "name": "TV Producer",
+      "dates": {
+        "start": "1993-09-01",
+        "end": "1999-09-01"
+      },
+      "languages": [],
+      "technologies": [],
+      "roles": ["producer", "production coordinator", "production manager", "researcher", "runner"],
+      "blurb": "Six years production experience on programmes commissioned by the BBC, Channel 4 and ITV. \n \nAs Production Manager I frequently oversaw large teams. I wrote budgets, negotiated with Channel 4 and produced itineraries, hired both internal production staff and contracted technicians. \n \nAs Producer I specialised on the war and its aftermath in the Former Yugoslavia. \n \nWorked on a variety of programmes - light entertainment, documentary, studio and drama. \n \nI set up a website for independent producers which stimulated my interest in the Internet and prompted me to take my MSc."
+    }
+  ],
+  "skills": [
+    {
+      "type": "languages",
+      "set": [
+        {
+          "name": "HTML",
+          "start": "1997-01-01"
+        },
+        {
+          "name": "JavaScript",
+          "start": "1997-01-01"
+        },
+        {
+          "name": "CSS",
+          "start": "1997-01-01"
+        },
+        {
+          "name": "JSON",
+          "start": "2010-01-01"
+        },
+        {
+          "name": "Java",
+          "start": "2000-07-01",
+          "end": "2001-07-01"
+        },
+        {
+          "name": "C++",
+          "start": "2000-07-01",
+          "end": "2001-07-01"
+        },
+        {
+          "name": "C#",
+          "start": "2003-06-01",
+          "end": "2017-07-01"
+        },
+        {
+          "name": "TypeScript",
+          "start": "2019-06-01"
+        },
+        {
+          "name": "XML",
+          "start": "2000-01-01",
+          "end": "2005-01-01"
+        },
+        {
+          "name": "LINQ",
+          "start": "2008-01-01",
+          "end": "2010-01-01"
+        },
+        {
+          "name": "GraphQL",
+          "start": "2019-06-01",
+          "end": "2020-01-01"
+        },
+        {
+          "name": "SQL",
+          "start": "1997-06-01",
+          "end": "2013-06-01"
+        }
+      ]
+    },
+    {
+      "type": "hosting",
+      "set": [
+        {
+          "name": "Google Cloud Platform",
+          "start": "2017-01-01"
+        },
+        {
+          "name": "Microsoft IIS",
+          "start": "1997-01-01",
+          "end": "2012-01-01"
+        },
+        {
+          "name": "SQL Server",
+          "start": "1997-01-01",
+          "end": "2012-01-01"
+        },
+        {
+          "name": "MongoDB",
+          "start": "2013-04-01",
+          "end": "2014-01-01"
+        },
+        {
+          "name": "Google Cloud Firestore",
+          "start": "2017-01-01"
+        },
+        {
+          "name": "Netlify",
+          "start": "2019-1-01"
+        },
+        {
+          "name": "Azure Cloud Platform",
+          "start": "2010-08-01",
+          "end": "2011-01-01"
+        },
+        {
+          "name": "Fauna",
+          "start": "2018-08-01",
+          "end": "2020-01-01"
+        },
+        {
+          "name": "mLab",
+          "start": "2013-04-01",
+          "end": "2014-01-01"
+        }
+      ]
+    },
+    {
+      "type": "tooling",
+      "set": [
+        {
+          "name": "Jest",
+          "start": "2018-09-01"
+        },
+        {
+          "name": "Cucumber",
+          "start": "2013-05-01",
+          "end": "2014-01-01"
+        },
+        {
+          "name": "Jira",
+          "start": "2013-02-01",
+          "end": "2017-03-01"
+        },
+        {
+          "name": "Trello",
+          "start": "2021-08-01",
+          "end": "2022-06-01"
+        },
+        {
+          "name": "Cucumber",
+          "start": "2021-11-01"
+        },
+        {
+          "name": "Protractor",
+          "start": "2013-05-01",
+          "end": "2017-01-01"
+        },
+        {
+          "name": "Grunt",
+          "start": "2016-10-01",
+          "end": "2017-4-01"
+        },
+        {
+          "name": "MSBuild",
+          "start": "2007-1-01",
+          "end": "2011-1-01"
+        },
+        {
+          "name": "MS Unit Testing",
+          "start": "2010-1-01",
+          "end": "2012-1-01"
+        },
+        {
+          "name": "webpack",
+          "start": "2017-04-01",
+          "end": "2022-06-01"
+        },
+        {
+          "name": "Parcel",
+          "start": "2021-09-01"
+        },
+        {
+          "name": "Jasmine",
+          "start": "2013-11-01",
+          "end": "2017-03-01"
+        },
+        {
+          "name": "ngScenario",
+          "start": "2013-11-01",
+          "end": "2017-03-01"
+        },
+        {
+          "name": "Karma",
+          "start": "2013-11-01",
+          "end": "2017-03-01"
+        },
+        {
+          "name": "Sentry Logging",
+          "start": "2015-01-01",
+          "end": "2023-07-01"
+        },
+        {
+          "name": "Git",
+          "start": "2013-01-01"
+        },
+        {
+          "name": "Subversion",
+          "start": "2009-01-01",
+          "end": "2013-01-01"
+        },
+        {
+          "name": "GitHub",
+          "start": "2013-01-01"
+        },
+        {
+          "name": "GitLab",
+          "start": "2021-09-01",
+          "end": "2022-06-01"
+        },
+        {
+          "name": "Testing Library",
+          "start": "2020-04-01",
+          "end": "2022-06-01"
+        },
+        {
+          "name": "vee-validate",
+          "start": "2022-06-01",
+          "end": "2023-07-01"
+        },
+        {
+          "name": "vitest/ui",
+          "start": "2022-06-01",
+          "end": "2023-07-01"
+        },
+        {
+          "name": "vue/test-utils",
+          "start": "2022-06-01",
+          "end": "2023-07-01"
+        },
+        {
+          "name": "Mock Service Workers (MSW)",
+          "start": "2022-04-01",
+          "end": "2023-07-01"
+        },
+        {
+          "name": "json-server",
+          "start": "2022-04-01",
+          "end": "2023-07-01"
+        }
+      ]
+    },
+    {
+      "type": "frameworks",
+      "set": [
+        {
+          "name": "Preact",
+          "start": "2020-09-01",
+          "end": "2022-06-01"
+        },
+        {
+          "name": "HTML (JS) (CSS)",
+          "start": "1997-01-01"
+        },
+        {
+          "name": "Classic ASP",
+          "start": "1997-01-01",
+          "end": "2002-01-01"
+        },
+        {
+          "name": "ASP.NET",
+          "start": "2002-01-01",
+          "end": "2010-01-01"
+        },
+        {
+          "name": "ASP.NET MVC",
+          "start": "2010-10-01",
+          "end": "2012-12-01"
+        },
+        {
+          "name": "React",
+          "start": "2020-09-01",
+          "end": "2022-06-01"
+        },
+        {
+          "name": "Vue",
+          "start": "2022-06-01",
+          "end": "2023-07-01"
+        },
+        {
+          "name": "Vite",
+          "start": "2022-06-01",
+          "end": "2023-07-01"
+        },
+        {
+          "name": "Pinia",
+          "start": "2022-06-01",
+          "end": "2023-07-01"
+        },
+        {
+          "name": "Vuex",
+          "start": "2022-06-01",
+          "end": "2023-07-01"
+        },
+        {
+          "name": "Jekyll",
+          "start": "2021-09-01",
+          "end": "2021-12-01"
+        },
+        {
+          "name": "Next.js",
+          "start": "2019-09-01",
+          "end": "2022-06-01"
+        },
+        {
+          "name": "Less",
+          "start": "2013-11-01",
+          "end": "2017-03-01"
+        },
+        {
+          "name": "SCSS",
+          "start": "2017-05-01",
+          "end": "2022-06-01"
+        },
+        {
+          "name": "jQuery",
+          "start": "2007-10-01",
+          "end": "2012-09-01"
+        },
+        {
+          "name": "Bootstrap",
+          "start": "2013-02-01",
+          "end": "2018-09-01"
+        },
+        {
+          "name": "Redux",
+          "start": "2017-05-01",
+          "end": "2020-05-01"
+        },
+        {
+          "name": "Repository-Service pattern",
+          "start": "2011-05-01",
+          "end": "2012-12-01"
+        },
+        {
+          "name": "Dependency injection",
+          "start": "2011-05-01",
+          "end": "2012-12-01"
+        },
+        {
+          "name": "Chart.js",
+          "start": "2021-09-01",
+          "end": "2022-02-01"
+        },
+        {
+          "name": "React Query",
+          "start": "2022-04-01",
+          "end": "2022-12-01"
+        },
+        {
+          "name": "Tailwind CSS",
+          "start": "2022-04-01",
+          "end": "2022-12-01"
+        },
+        {
+          "name": "prettier",
+          "start": "2017-01-01",
+          "end": "2025-01-01"
+        }
+      ]
+    }
+  ],
+  "education": ["MA English Literature Edinburgh University", "MSc Object Oriented Software Systems City University"]
 }

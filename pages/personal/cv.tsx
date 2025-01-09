@@ -8,7 +8,7 @@ import data from 'pages/personal/cv.json'
 import styles from 'components/dashboard/Dashboard.module.scss'
 import funcs from 'components/functions/functions'
 
-const now = 2024
+const now = 2025
 
 // https://venngage.com/blog/color-blind-friendly-palette/
 const zesty = ['#F5793A', '#A95AA1', '#85C0F9', '#0F2080']
@@ -52,7 +52,8 @@ const Companies = () => {
 
     const clickableCells = Array.from(document.querySelectorAll('td span'))
 
-    clickableCells.forEach(cell => {
+    clickableCells.forEach((cell, i) => {
+      cell['key'] = i
       cell.addEventListener('click', () => toggleBlurb((cell as HTMLElement).innerText))
     })
   })
@@ -64,7 +65,7 @@ const Companies = () => {
       return (
         <>
           <br />
-          <a className={styles.externalLink} href={p.src}>
+          <a className={styles.externalLink} href={p.src} key={p.title}>
             {p.title}
           </a>
         </>
@@ -134,29 +135,35 @@ const CurriculumVitae = () => {
         title={'Curriculum Vitae'}
         description={'Curriculum Vitae'}
       >
-        <p>
-          I am a web developer with 25 years experience. I love to code, to design, and to build web sites and apps that
-          are useful and beneficial.
-        </p>
-        <p>
-          I am currently creating workshops, building chrome extensions, aiming to reduce developer dependencies and
-          spend time in the browser at{' '}
-          <Links.EL link={{ source: 'https://people-and-code.com/' }}>People and Code</Links.EL>.
-        </p>
-        <p>
-          I am an advocate of responsible web development - building high performance websites that are sustainable,
-          accessible and fast.
-        </p>
-        <p>
-          As a core contributor on the open source project{' '}
-          <Links.EL link={{ source: 'https://responsibletech.work/' }}>ResponsibleTech.Work</Links.EL>, I work on
-          practices and tools to improve decision making and promote thoughtful programming and design.
-        </p>
-        <p>
-          At <Links.IL link={{ source: '' }}>The Public Good</Links.IL> I write articles on the climate crisis and
-          responsible web development.
-        </p>
-        <p>At Venga Vamos I imagine, design and build web apps.</p>
+        <div className={styles.summary}>
+          <p>
+            I am a web developer with 25 years experience. I love to code, to design, and to build web sites and apps
+            that are useful and beneficial.
+          </p>
+          <p>
+            I am currently creating workshops, building chrome extensions and npm packages, reducing developer
+            dependencies and spending time in the browser at{' '}
+            <Links.EL link={{ source: 'https://people-and-code.com/' }}>People and Code</Links.EL>.
+          </p>
+          <p>
+            I am an advocate of responsible web development - building high performance websites that are sustainable,
+            accessible and fast.
+          </p>
+          <p>
+            As a core contributor on the open source project{' '}
+            <Links.EL link={{ source: 'https://responsibletech.work/' }}>ResponsibleTech.Work</Links.EL>, I worked on
+            practices and tools to improve decision making and promote thoughtful programming and design. I co-created{' '}
+            <Links.EL link={{ source: 'https://responsibletech.work/tools/development/pledge-works/' }}>
+              Pledge Works
+            </Links.EL>
+            .
+          </p>
+          <p>
+            At <Links.IL link={{ source: '' }}>The Public Good</Links.IL> I write articles on the climate crisis and
+            responsible web development.
+          </p>
+          <p>At Venga Vamos I imagine, design and build web apps.</p>
+        </div>
         <Companies />
         <h2>Web languages & formats</h2>
         <section>
@@ -179,46 +186,39 @@ const CurriculumVitae = () => {
         </section>
         <section>
           <h2>Education</h2>
-          {data.education.map(e => {
-            return <div>{e}</div>
+          {data.education.map((e, i) => {
+            return <div key={i}>{e}</div>
           })}
         </section>
         <section>
           <h2>Contact</h2>
-          <p>
-            <div className={styles.internalLink}>
-              Profile:{' '}
-              <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/danhartley/">
-                linkedin.com/in/danhartley
-              </a>
-            </div>
+          <p className={styles.internalLink}>
+            Profile:{' '}
+            <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/danhartley/">
+              linkedin.com/in/danhartley
+            </a>
           </p>
           <p>
-            <div>
-              Mobile: <span>+351 967 256 941</span>
-            </div>
+            Mobile: <span>+351 967 256 941</span>
           </p>
-          <p>
-            <div className={styles.internalLink}>
-              Email:{' '}
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="mailto:danhartleybcn@gmail.com?subject=Web%20development%20enquiry"
-              >
-                Web development enquiry
-              </a>
-            </div>
+          <p className={styles.internalLink}>
+            Email:{' '}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="mailto:danhartleybcn@gmail.com?subject=Web%20development%20enquiry"
+            >
+              Web development enquiry
+            </a>
           </p>
         </section>
-        <p className={styles.download}>
-          <h3>Do you need to download the raw data?</h3>
-          <div className={styles.internalLink}>
-            <a id="download" href="https://the-public-good.com/" onClick={download}>
-              Download
-            </a>
-          </div>
-        </p>
+
+        <h3>Do you need to download the raw data?</h3>
+        <div className={styles.internalLink}>
+          <a id="download" href="https://the-public-good.com/" onClick={download}>
+            Download
+          </a>
+        </div>
       </Layout>
     </div>
   )

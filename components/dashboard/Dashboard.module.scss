@@ -3,363 +3,377 @@
 $results-color: black;
 
 @mixin wrapper {
-     
-    @include radioButtons();
-    table {
-        // min-width: 40rem;
-        margin: 0;
-        caption {
-            margin: 1rem;
-            font-style: italic;
-        }
-        th, td {            
-            height: 1.75rem;
-            & > div {            
-                height: 1.75rem;
-                display: flex;
-                align-items: center;
-                &.checked {
-                    color: rgba(var(--fg),1);              
-                }
-            }        
-            input[type="radio"] {
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-              
-                border-radius: 50%;
-                width: 1rem;
-                height: 1rem;
-                            
-                border: .2rem solid #999;
-                transition: 0.2s all linear;
-              
-                margin: 0 .5rem 0 0;
-                &:checked {
-                    border: .3rem solid #999;
-                    background-color: rgba(var(--fg),1);
-                }                
-            }
-            label {
-                cursor: pointer;
-            }
-        }    
-        tr:nth-child(2) th {
-            padding-top: 0;
-        }    
-        tr:not(:first-child) th {
-            border-bottom: .1rem solid lightgrey;   
-        }
-        th[colspan] {
-            text-align: center;
-        }
-        td:nth-child(3) > div, td:nth-child(4) > div {            
-            justify-content: center;
-        }
-        td button {
-            font-size: inherit;
-        }
-        td button.value {
-            border: transparent;
-            background: transparent;
-            padding: 0;
-            cursor: pointer;
-            padding-bottom: .2rem;
-            border-bottom: .1rem solid transparent;
-            font-family: Elena, "PT Serif", serif;
-            &:hover {
-                color: rgba(var(--fg),1);
-                border-bottom: 1px solid rgba(var(--fg),.4);
-            }
-        }
-        th.centredText, td.centredText {
-            text-align: center;
-        }
-        td.cross::after {
-            content: '✗';
-        }
-        td.tick::after {
-            content: '✓';
-        }
-        td.inlineHeader {
-            color: rgba(var(--fg),1);
-            button {
-                color: rgba(var(--fg),1)
-            }
-        }
-        &.fade {
-            color:rgba(var(--fg), .2);
-            button {
-                color:rgba(var(--fg), .2);
-            }
-            th {
-                color: rgba(var(--fg),1);    
-            }
-        }
-        table {
-            color: rgba(var(--fg),1);
-            padding: 0;
-            width: 100%;
-            font-size: .9em;
-        }        
-    }
+  .summary {
+    max-width: 80ch;
+  }
 
-    .results {        
-        margin: 2rem 0;
-        & > div {
-            margin-top: 1rem;
-            font-size: 1.5rem;
-        }
-        & > div:nth-child(1) {
-            margin-bottom: 1rem;
-        }
+  @include radioButtons();
+  table {
+    // min-width: 40rem;
+    margin: 0;
+    caption {
+      margin: 1rem;
+      font-style: italic;
     }
-    .inputDataFixedPosition {
-        @media (min-width:1025px) {        
-            width: calc((100vw - 800px) / 2);
-            position: fixed;
-            left: 0;
-            top: 30vh;
-            display: flex;
-            justify-content: center;            
-        }
-    }
-    .inputData {
-        display: flex;                
-        font-size: .9rem;
-        flex-direction: column; 
-        & > div {         
-            margin: .5rem 0 0 0;    
-        }
-        input[type="number"] {
-            outline: none;
-            width: 4rem;
-            border: .1rem solid #bebebe;
-            margin: 0 .5rem 0 0;
-            padding: .5rem;
-            border-radius: .25rem;
-            &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
-                opacity: 1;
-            }
-            &:focus {
-                border: .1rem solid $results-color;
-            }
-        }
-        .widescreen {
-            display: none;
-        }
-        @media (min-width:1025px) {       
-            .widescreen {
-                display: initial;
-            }
-            & > div {
-                width: calc((100vw - 800px) / 3);
-            }
-            padding: 0; 
-            label, input {
-                align-self: flex-start;
-                margin: 0 0 .25rem 0;                
-            }
-            input {
-                margin-bottom: 1rem;
-            }
-        }
-    }
-    .calculatedValues {
+    th,
+    td {
+      height: 1.75rem;
+      & > div {
+        height: 1.75rem;
         display: flex;
-        flex-direction: column;
-        font-style: italic;
-        & > div > span:nth-child(1) {
-            font-weight: bold;
+        align-items: center;
+        &.checked {
+          color: rgba(var(--fg), 1);
         }
-    }
-    p {
-        border: transparent;
-    }
-    .btn {
-        @include button();
-        font-size: .8rem;
-    }
-    figure {
-        margin: 2rem 0 0 0 !important;
-        &.boxed {
-            border: .1rem solid lightgray;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
+      }
+      input[type='radio'] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        border-radius: 50%;
+        width: 1rem;
+        height: 1rem;
+
+        border: 0.2rem solid #999;
+        transition: 0.2s all linear;
+
+        margin: 0 0.5rem 0 0;
+        &:checked {
+          border: 0.3rem solid #999;
+          background-color: rgba(var(--fg), 1);
         }
+      }
+      label {
+        cursor: pointer;
+      }
     }
-    figcaption {
-        display: flex;
-        justify-content: center;        
-        font-style: italic;
-        div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            & > span:nth-child(2) {
-                font-size: .8rem;
-            }
-        }
+    tr:nth-child(2) th {
+      padding-top: 0;
     }
+    tr:not(:first-child) th {
+      border-bottom: 0.1rem solid lightgrey;
+    }
+    th[colspan] {
+      text-align: center;
+    }
+    td:nth-child(3) > div,
+    td:nth-child(4) > div {
+      justify-content: center;
+    }
+    td button {
+      font-size: inherit;
+    }
+    td button.value {
+      border: transparent;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      padding-bottom: 0.2rem;
+      border-bottom: 0.1rem solid transparent;
+      font-family: Elena, 'PT Serif', serif;
+      &:hover {
+        color: rgba(var(--fg), 1);
+        border-bottom: 1px solid rgba(var(--fg), 0.4);
+      }
+    }
+    th.centredText,
+    td.centredText {
+      text-align: center;
+    }
+    td.cross::after {
+      content: '✗';
+    }
+    td.tick::after {
+      content: '✓';
+    }
+    td.inlineHeader {
+      color: rgba(var(--fg), 1);
+      button {
+        color: rgba(var(--fg), 1);
+      }
+    }
+    &.fade {
+      color: rgba(var(--fg), 0.2);
+      button {
+        color: rgba(var(--fg), 0.2);
+      }
+      th {
+        color: rgba(var(--fg), 1);
+      }
+    }
+    table {
+      color: rgba(var(--fg), 1);
+      padding: 0;
+      width: 100%;
+      font-size: 0.9em;
+    }
+  }
+
+  .results {
+    margin: 2rem 0;
+    & > div {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+    & > div:nth-child(1) {
+      margin-bottom: 1rem;
+    }
+  }
+  .inputDataFixedPosition {
+    @media (min-width: 1025px) {
+      width: calc((100vw - 800px) / 2);
+      position: fixed;
+      left: 0;
+      top: 30vh;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .inputData {
+    display: flex;
+    font-size: 0.9rem;
+    flex-direction: column;
+    & > div {
+      margin: 0.5rem 0 0 0;
+    }
+    input[type='number'] {
+      outline: none;
+      width: 4rem;
+      border: 0.1rem solid #bebebe;
+      margin: 0 0.5rem 0 0;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        opacity: 1;
+      }
+      &:focus {
+        border: 0.1rem solid $results-color;
+      }
+    }
+    .widescreen {
+      display: none;
+    }
+    @media (min-width: 1025px) {
+      .widescreen {
+        display: initial;
+      }
+      & > div {
+        width: calc((100vw - 800px) / 3);
+      }
+      padding: 0;
+      label,
+      input {
+        align-self: flex-start;
+        margin: 0 0 0.25rem 0;
+      }
+      input {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .calculatedValues {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    & > div > span:nth-child(1) {
+      font-weight: bold;
+    }
+  }
+  p {
+    border: transparent;
+  }
+  .btn {
+    @include button();
+    font-size: 0.8rem;
+  }
+  figure {
+    margin: 2rem 0 0 0 !important;
+    &.boxed {
+      border: 0.1rem solid lightgray;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  figcaption {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > span:nth-child(2) {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
 
 .wrapper {
-    @include wrapper();
-    table.pledgesByType {
-        td { 
-            width: 20%;             
-        }
-        td:nth-child(1) {
-            width: 50%;
-            table td:nth-child(1) {
-                font-style: italic;
-                font-family: sans-serif;
-                font-size: .9em;
-            }
-        }
+  @include wrapper();
+  table.pledgesByType {
+    td {
+      width: 20%;
     }
+    td:nth-child(1) {
+      width: 50%;
+      table td:nth-child(1) {
+        font-style: italic;
+        font-family: sans-serif;
+        font-size: 0.9em;
+      }
+    }
+  }
 }
 
 .wideWrapper {
-    @include wrapper();
-    main {
-        max-width: calc(60vw) !important;
-        h1 {
-            font-size: calc(1rem + 1.25vw);
-        }
-        h2 {
-            font-size: calc(1rem + .5vw);
-            margin: calc(1.5rem + .25vw) 0 calc(.5rem + .25vw) 0;
-        }
+  @include wrapper();
+  main {
+    max-width: calc(60vw) !important;
+    h1 {
+      font-size: calc(1rem + 1.25vw);
     }
-    section {
-        margin: 0 0 1rem 0;
-        padding: 0 0 2rem 0;
+    h2 {
+      font-size: calc(1rem + 0.5vw);
+      margin: calc(1.5rem + 0.25vw) 0 calc(0.5rem + 0.25vw) 0;
     }
+  }
+  section {
+    margin: 0 0 1rem 0;
+    padding: 0 0 2rem 0;
+  }
 }
 
 .dashboard {
-    margin: 2rem auto;
+  margin: 2rem auto;
 }
 
-.canvas {    
-    margin: 0 auto 2rem auto;    
-    width: calc(94vw);
-    max-width: 400px;
-    @media (min-width:1025px) {       
-        width: calc(100vw/2);    
-    }
+.canvas {
+  margin: 0 auto 2rem auto;
+  width: calc(94vw);
+  max-width: 400px;
+  @media (min-width: 1025px) {
+    width: calc(100vw / 2);
+  }
 }
 
 .mini {
-    .canvas {
-        width: calc(100vw/2);
-        max-width: 240px;    
-    }
+  .canvas {
+    width: calc(100vw / 2);
+    max-width: 240px;
+  }
 }
 
 .pie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
-    & > div:nth-child(2) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: .9rem;
-        width: 30%;
-    }
+    font-size: 0.9rem;
+    width: 30%;
+  }
 }
 
 .inset {
-    span { 
-        display: inline;
-    }
+  span {
+    display: inline;
+  }
 }
 
-.work {    
-
-    table {
-        td:nth-child(1) {
-            font-style: italic;
-        }
-        td:nth-child(1), td:nth-child(2) {
-            white-space: nowrap;
-        }
-        td:nth-child(2), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
-            font-size: .8rem;
-        }
-        td span {
-            cursor: pointer;
-            padding-bottom: .25rem;
-            border-bottom: .1rem solid transparent;
-            &:hover {                
-                border-bottom: .1rem solid darkgray;
-            }
-        }
-        td.showBlurb {
-            white-space: pre-wrap;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-            font-weight: bold;
-        }
-        td.hideBlurb {
-            white-space: pre-wrap;
-            display: none;
-        }
+.work {
+  table {
+    td:nth-child(1) {
+      font-style: italic;
     }
+    td:nth-child(1),
+    td:nth-child(2) {
+      white-space: nowrap;
+    }
+    td:nth-child(2),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6) {
+      font-size: 0.8rem;
+    }
+    td span {
+      cursor: pointer;
+      padding-bottom: 0.25rem;
+      border-bottom: 0.1rem solid transparent;
+      &:hover {
+        border-bottom: 0.1rem solid darkgray;
+      }
+    }
+    td.showBlurb {
+      white-space: pre-wrap;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      font-weight: bold;
+    }
+    td.hideBlurb {
+      white-space: pre-wrap;
+      display: none;
+    }
+  }
 }
 
 .externalLink {
-    color: inherit;
-    font-size: .8rem;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(var(--l), .4);
+  color: inherit;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(var(--l), 0.4);
 }
 
 .skills {
-    margin: 0 auto 2rem auto;    
-    width: calc(80vw);
-    @media (min-width:1025px) {       
-        width: calc(100vw/2);    
+  margin: 0 auto 2rem auto;
+  width: calc(80vw);
+  @media (min-width: 1025px) {
+    width: calc(100vw / 2);
+  }
+}
+
+@media print {
+  .wideWrapper {
+    header,
+    footer,
+    nav,
+    .download {
+      display: none;
     }
+    main {
+      max-width: 800px !important;
+    }
+    a,
+    a:visited {
+      padding-bottom: 0.15rem;
+      text-decoration: none;
+      color: rgb(var(--il));
+      border-bottom: 1px dashed rgb(var(--il));
+      font-weight: var(--il-fw);
+    }
+  }
 }
 
-
-@media print {    
-    .wideWrapper {
-        header, footer, nav, .download {
-            display: none;
-        }
-        main {
-            max-width: 800px !important;
-        }
-        a, a:visited {
-            padding-bottom: 0.15rem;
-            text-decoration: none;
-            color: rgb(var(--il));
-            border-bottom: 1px dashed rgb(var(--il));
-            font-weight: var(--il-fw);
-        }
-    }    
-}
-    
 @media screen and (max-width: 600px) {
-    .wideWrapper {
-        main {
-            max-width: calc(90vw) !important;
-        }
-        table thead {
-            display: none;
-        }  
-        table td {
-            display: flex;
-            height: initial;
-            flex-direction: column;
-        }
-        td:nth-child(1) {
-            font-weight: bold;
-        }
+  .wideWrapper {
+    main {
+      max-width: calc(90vw) !important;
     }
+    table thead {
+      display: none;
+    }
+    table td {
+      display: flex;
+      height: initial;
+      flex-direction: column;
+    }
+    td:nth-child(1) {
+      font-weight: bold;
+    }
+  }
 }
