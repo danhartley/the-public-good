@@ -16,7 +16,25 @@
         "start": "2024-06-01"
       },
       "languages": ["HTML", "JS", "CSS"],
-      "technologies": ["Vanilla JS", "Chrome extensions", "npm packages", "GitHub workflows & actions"],
+      "technologies": [
+        "Vanilla JS",
+        "Chrome extensions",
+        "npm packages",
+        "GitHub workflows & actions",
+        "eslint",
+        "jest",
+        "puppeteer",
+        "jest-puppeteer",
+        "parcel",
+        "prettier",
+        "stylelint",
+        "mochawesome",
+        "react",
+        "react-dom",
+        "next",
+        "cypress",
+        "cypress-axe"
+      ],
       "roles": ["founder", "frontend developer", "designer", "product owner"],
       "blurb": "Specialists in responsible web development"
     },
