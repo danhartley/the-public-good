@@ -21,16 +21,29 @@ const ThatIsNotWhatIMeantAtAll = () => {
       image="https://live.staticflickr.com/65535/51143928462_2fec2d283e_z_d.jpg"
     >
       <section>
-        <h2 className={styles.mb0}>The man from Porlock has no business here.</h2>
+        <h2 className={styles.mb0}>
+          The man from Porlock has no business here{' '}
+          <sup className={styles.small}>
+            <a href="#references">1</a>
+          </sup>{' '}
+        </h2>
         <section className={styles.m0} aria-labelledby="act-one">
-          <h3 className={styles.m0}>Act I</h3>
+          <h3 id="act-one" className={styles.mt0}>
+            Act I
+          </h3>
           <p>
             <em>Scene I: A chat interface</em>
           </p>
           <p>
-            I ask the LLM to offer advice only on technical matters. It pauses for a moment before responding
-            effortlessly. It prompts me to think about my audience, intentions, and style. There are no spelling
-            mistakes or grammatical errors. It is flawless.
+            I ask a Large Language Model (LLM)
+            <sup className={styles.small}>
+              <a className={styles.pl1} href="#llm-definition">
+                2
+              </a>
+            </sup>{' '}
+            to offer advice only on technical matters. It pauses for a moment before responding effortlessly. It prompts
+            me to think about my audience, intentions, and style. There are no spelling mistakes or grammatical errors.
+            It is flawless.
           </p>
           <blockquote>
             <em>Who is your intended reader?</em>
@@ -83,7 +96,7 @@ const ThatIsNotWhatIMeantAtAll = () => {
           <blockquote>
             These fragments I have shored against my ruins.
             <br />
-            <strong>The Love Song of J. Alfred Prufrock by T.S.Eliot </strong>
+            <strong>The Love Song of J.Alfred Prufrock by T.S.Eliot </strong>
           </blockquote>
           <p>
             <em>Scene III: The LLM, which has no means of telling the time, waits patiently in an empty room.</em>
@@ -116,7 +129,9 @@ const ThatIsNotWhatIMeantAtAll = () => {
           </p>
         </section>
         <section aria-labelledby="act-two">
-          <h3 id="act-two">Act II</h3>
+          <h3 id="act-two" className={styles.mt0}>
+            Act II
+          </h3>
           <p>
             <em>Scene I: Me in several places, sometimes with George Orwell.</em>
           </p>
@@ -126,7 +141,7 @@ const ThatIsNotWhatIMeantAtAll = () => {
             your thoughts for you, to a certain extent -- and at need they will perform the important service of
             partially concealing your meaning even from yourself.
             <br />
-            <strong>Politics and the English Language, George Orwell, 1946</strong>
+            <strong>Politics and the English Language by George Orwell, 1946</strong>
           </blockquote>
           <p>
             Orwell’s assertion was that “the English language is in a bad way”. He thought people had become lazy and
@@ -185,7 +200,9 @@ const ThatIsNotWhatIMeantAtAll = () => {
           <p>Is that it, is that what I meant to say?</p>
         </section>
         <section aria-labelledby="act-three">
-          <h3 id="act-three">Act III</h3>
+          <h3 id="act-three" className={styles.mt0}>
+            Act III
+          </h3>
           <p>
             <em>Scene I: A page</em>
           </p>
@@ -211,45 +228,54 @@ const ThatIsNotWhatIMeantAtAll = () => {
             <br />
             For decisions and revisions which a minute will reverse
             <br />
-            <strong>The Wasteland, T.S.Eliot</strong>
+            <strong>The Wasteland by T.S.Eliot</strong>
           </blockquote>
         </section>
         <Top></Top>
       </section>
 
-      <Published strDate="Sat 15 March 2025"></Published>
+      <Published strDate="Sun 16 March 2025"></Published>
 
-      <section>
-        <h2>Links to external references</h2>
-        <Links.ExternalLinksList links={externalLinks} />
+      <section aria-labelledby="references">
+        <h2 id="references">References</h2>
+        <p id="llm-definition">
+          A{' '}
+          <Links.EL link={{ source: 'https://en.wikipedia.org/wiki/Large_language_model' }}>
+            large language model
+          </Links.EL>{' '}
+          (LLM) is a type of machine learning model designed for natural language processing tasks such as language
+          generation. LLMs are language models with many parameters, and are trained with self-supervised learning on a
+          vast amount of text.
+        </p>
+        <p>For the purposes of this article, an LLM is synonymous with Artificial Intelligence.</p>
+        <Links.ExternalLinksList links={references} />
       </section>
-
-      <Links.RelatedLinks
-        links={[
-          {
-            value: 'web-development/sustainable-reporting-emissions',
-            text: 'Sustainable Reporting - Emissions',
-          },
-          {
-            value: 'web-development/sustainable-practices',
-            text: 'Sustainable practices',
-          },
-          {
-            value: 'web-development/following-the-rules-to-a-well-structured-web-page',
-            text: 'Following the rules to a well-structured web page',
-          },
-          {
-            value: 'web-development/for-the-love-of-hyperlinks',
-            text: 'For the love of hyperlinks',
-          },
-          {
-            value: 'web-development/for-the-love-of-urls',
-            text: 'For the love of urls',
-          },
-        ]}
-      ></Links.RelatedLinks>
     </Layout>
   )
 }
 
 export default ThatIsNotWhatIMeantAtAll
+
+const references = [
+  {
+    name: 'Person on Business from Porlock',
+    source: 'https://en.wikipedia.org/wiki/Person_on_business_from_Porlock',
+  },
+  {
+    name: 'Macbeth, William Shakespeare',
+    source: 'https://www.fulltextarchive.com/book/macbeth/',
+  },
+  {
+    name: 'The Love Song of J.Alfred Prufrock, T.S.Eliot',
+    source: 'https://www.poetryfoundation.org/poetrymagazine/poems/44212/the-love-song-of-j-alfred-prufrock',
+  },
+  {
+    name: 'Politics and the English Language, George Orwell, 1946',
+    source:
+      'https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/',
+  },
+  {
+    name: 'The Wasteland, T.S.Eliot',
+    source: 'https://www.poetryfoundation.org/poems/47311/the-waste-land',
+  },
+]
