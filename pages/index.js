@@ -1,5 +1,6 @@
 import Layout from 'components/layout/layout'
 import Links from 'components/links/Links'
+import Link from 'next/link'
 import styles from 'pages/pages.module.scss'
 
 export default function Home() {
@@ -37,6 +38,13 @@ export default function Home() {
         </p>
 
         <p>Our ability to mitigate the threats we pose to the planet depends on individual and collective action.</p>
+
+        <p>
+          <Links.IL link={{ source: 'essays/that-is-not-what-I-meant-at-all' }}>
+            That is not what I meant at all
+          </Links.IL>
+          , an essay on writing with an LLM.
+        </p>
 
         <p>
           I write about the climate crisis, responsible web development, and occasionally{' '}
