@@ -17,7 +17,7 @@ const ThatIsNotWhatIMeantAtAll = () => {
       header="That is not what I meant at all"
       rt="3 to 4"
       title="Essays on working with LLMs | That is not what I meant at all"
-      description={'An essay on writing with an LLM'}
+      description={'Essay written in conversation with an LLM with the help of George Orwell'}
       image="https://live.staticflickr.com/65535/51143928462_2fec2d283e_z_d.jpg"
     >
       <section>
@@ -27,10 +27,9 @@ const ThatIsNotWhatIMeantAtAll = () => {
           The prompt
         </h3>
         <p>
-          I'm writing an essay on writing. I want you - the LLM - to enforce good writing practices and to review what I
-          have written when asked.
+          I'm writing an essay on writing. I want the LLM to enforce good writing practices and to review what I have
+          written when asked.
         </p>
-        <hr />
         <p>
           I ask the Large Language Model (LLM)
           <sup className={styles.small}>
