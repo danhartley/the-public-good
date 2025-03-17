@@ -24,12 +24,13 @@ const ThatIsNotWhatIMeantAtAll = () => {
         <h2 className={styles.mb0}>Essay written in conversation with an LLM</h2>
 
         <h3 id="first-prompt" className={styles.mt0}>
-          First prompt
+          The prompt
         </h3>
         <p>
-          I'm writing an essay on writing. I want the LLM to enforce good writing practices which I hope to convert into
-          habits. I also want the LLM to act as editor.
+          I'm writing an essay on writing. I want you - the LLM - to enforce good writing practices and to review what I
+          have written when asked.
         </p>
+        <hr />
         <p>
           I ask the Large Language Model (LLM)
           <sup className={styles.small}>
@@ -59,30 +60,17 @@ const ThatIsNotWhatIMeantAtAll = () => {
           <br />
           <em>Will you offer a final reflection or leave them with a question to consider?</em>
         </blockquote>
-        <p>I do not expect this to be easy. I expect to work hard if I am to improve. But this isn't working.</p>
+        <p>Everything the LLM asks of me is reasonable. The problem is I have nothing to say.</p>
         <h3>The outline</h3>
         <p>
           I'm sitting in the exam hall of my old school looking at the space at the top of the answer paper where I will
           write my outline. This should take me no more than five minutes and will help me put my thoughts in order. The
           clock is at an uneven time, say five past ten, because someone has entered late. A teacher turned invigilator
-          coughs to get our attention; we may now turn over our papers. I scratch out a few headings in a shaky hand
-          before my pen leaps ahead. A brilliant opening sentence, snatched out of the air, will not wait.
+          coughs to get our attention; we may now turn over our papers.
         </p>
-        <blockquote>
-          I have no spur
-          <br />
-          To prick the sides of my intent, but only
-          <br />
-          Vaulting ambition, which o’erleaps itself
-          <br />
-          And falls on th’other.
-          <br />
-          <strong>Macbeth Act I, Scene VII by William Shakespeare</strong>
-        </blockquote>
         <p>
-          I do not share my memory dipped in ink from long before the LLM was born. Instead I hand over some ideas on
-          the subject we are discussing. It unfurls its response like a charter for me to admire. I read over it
-          quickly, mourning, without knowing their value, the things I have lost.
+          My plan does not work. I abandon the outline and rush on with an opening sentence fatal to my chances of
+          saying anything sensible.
         </p>
         <blockquote>
           These fragments I have shored against my ruins.
@@ -90,14 +78,18 @@ const ThatIsNotWhatIMeantAtAll = () => {
           <strong>The Love Song of J.Alfred Prufrock by T.S.Eliot </strong>
         </blockquote>
         <p>
+          I do not share my ink-blotted memory, I want to rein in my wandering mind, so I offer up some ideas on the
+          subject we are discussing. The LLM unfurls its response like a charter for me to admire. I read over it
+          quickly, mourning, without knowing their value, the things I have lost.
+        </p>
+        <p>
           I head to the kitchen to make coffee and stand looking out the window. The LLM, which has no understanding of
           time present or time past, waits patiently in the empty room.
         </p>
         <p>
           <h3>Not what I meant</h3>
           The chat has an undertow that pulls me out to sea. I throw out words like an anchor. There is a pause. Have I
-          said something wrong? The LLM shifts the subject ever so slightly and moves things along by asking me, in a
-          roundabout way, to try again.
+          said something wrong? The LLM moves things along by asking me, in a roundabout way, to try again.
         </p>
         <blockquote>
           Would you like to refine this structure further, or do you already have a particular way you want to build
@@ -140,7 +132,7 @@ const ThatIsNotWhatIMeantAtAll = () => {
         <p>
           I like these rules, they are clear and simple. Surely I can follow them and by doing so line up my words with
           my thoughts. They will help me handle the slippery ideas which keep escaping and by applying good sense at the
-          level of the sentence I might hope to lift up my paragraphs too.
+          level of the sentence I might lift up my paragraphs too.
         </p>
         <p>
           The LLM says it is confident it can follow Orwell’s rules and promptly rewrites them in its own words. This is
@@ -158,8 +150,8 @@ const ThatIsNotWhatIMeantAtAll = () => {
           They are not as good as the original but who could match, "Never use a long word where a short one will do"?
         </p>
         <p>
-          Besides, I know the rules (I'd read the essay before) and often fail to use them. Then I noticed the LLM had
-          made a suggestion.
+          Besides, I know the rules (I'd read the essay before) and often fail to use them. But the LLM has also made a
+          suggestion.
         </p>
         <blockquote>
           <p>Would you like me to assess your writing according to these rules once you have a draft?</p>
@@ -174,7 +166,6 @@ const ThatIsNotWhatIMeantAtAll = () => {
           <strong>The Wasteland by T.S.Eliot</strong>
         </blockquote>
         <p>I would, and it did.</p>
-
         <Top></Top>
       </section>
 
